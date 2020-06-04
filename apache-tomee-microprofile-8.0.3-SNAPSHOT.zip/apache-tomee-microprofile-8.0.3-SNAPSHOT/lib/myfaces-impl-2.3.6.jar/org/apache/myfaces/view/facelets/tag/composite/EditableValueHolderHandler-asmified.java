@@ -22,49 +22,49 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "Lorg/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler<Ljavax/faces/view/EditableValueHolderAttachedObjectTarget;>;", "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "Lorg/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler<Ljakarta/faces/view/EditableValueHolderAttachedObjectTarget;>;", "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/TagConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler", "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler", "<init>", "(Ljakarta/faces/view/facelets/TagConfig;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createAttachedObjectTarget", "(Ljavax/faces/view/facelets/FaceletContext;)Ljavax/faces/view/EditableValueHolderAttachedObjectTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createAttachedObjectTarget", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljakarta/faces/view/EditableValueHolderAttachedObjectTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_name", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_name", "Ljakarta/faces/view/facelets/TagAttribute;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_name", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_name", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", "setName", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", "setName", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_targets", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_targets", "Ljakarta/faces/view/facelets/TagAttribute;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_targets", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "_targets", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", "setTargets", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", "setTargets", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -73,11 +73,11 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "createAttachedObjectTarget", "(Ljavax/faces/view/facelets/FaceletContext;)Ljavax/faces/view/AttachedObjectTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "createAttachedObjectTarget", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljakarta/faces/view/AttachedObjectTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "createAttachedObjectTarget", "(Ljavax/faces/view/facelets/FaceletContext;)Ljavax/faces/view/EditableValueHolderAttachedObjectTarget;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler", "createAttachedObjectTarget", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljakarta/faces/view/EditableValueHolderAttachedObjectTarget;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

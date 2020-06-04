@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/wss4j/binding/wss10/BinarySecurityTokenType", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "BinarySecurityTokenType");
 annotationVisitor0.visit("namespace", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd");
 {
@@ -43,14 +43,14 @@ annotationVisitor0.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "content", "Ljava/util/List;", "Ljava/util/List<Ljava/io/Serializable;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementRef;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementRef;", true);
 annotationVisitor0.visit("name", "Include");
 annotationVisitor0.visit("namespace", "http://www.w3.org/2004/08/xop/include");
-annotationVisitor0.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor0.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlMixed;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlMixed;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -58,12 +58,12 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "valueType", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visit("name", "ValueType");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchemaType;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchemaType;", true);
 annotationVisitor0.visit("name", "anyURI");
 annotationVisitor0.visitEnd();
 }
@@ -72,12 +72,12 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "encodingType", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visit("name", "EncodingType");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchemaType;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchemaType;", true);
 annotationVisitor0.visit("name", "anyURI");
 annotationVisitor0.visitEnd();
 }
@@ -86,22 +86,22 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "id", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visit("name", "Id");
 annotationVisitor0.visit("namespace", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlID;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlID;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchemaType;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchemaType;", true);
 annotationVisitor0.visit("name", "ID");
 annotationVisitor0.visitEnd();
 }
@@ -110,7 +110,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "otherAttributes", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/xml/namespace/QName;Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAnyAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAnyAttribute;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createBrokerObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createBrokerObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -55,27 +55,27 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljava/lang/String;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljava/lang/String;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljava/lang/String;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljava/lang/String;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -89,16 +89,16 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/Brok
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDestinationName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -113,10 +113,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/Brok
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
@@ -164,19 +164,19 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createSubscriptionName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createSubscriptionName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createSubscriptionName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createSubscriptionName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -260,28 +260,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerName", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -343,27 +343,27 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createXATransactionName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createXATransactionName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljava/lang/String;Lorg/apache/activemq/transaction/XATransaction;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljava/lang/String;Lorg/apache/activemq/transaction/XATransaction;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createXATransactionName", "(Ljava/lang/String;Lorg/apache/activemq/transaction/XATransaction;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createXATransactionName", "(Ljava/lang/String;Lorg/apache/activemq/transaction/XATransaction;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -390,16 +390,16 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createLog4JConfigViewName", "(Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createLog4JConfigViewName", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -412,16 +412,16 @@ methodVisitor.visitLdcInsn(",service=Log4JConfiguration");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPersistenceAdapterName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPersistenceAdapterName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -446,27 +446,27 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createAbortSlowConsumerStrategyName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createAbortSlowConsumerStrategyName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createAbortSlowConsumerStrategyName", "(Ljava/lang/String;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createAbortSlowConsumerStrategyName", "(Ljava/lang/String;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createAbortSlowConsumerStrategyName", "(Ljava/lang/String;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createAbortSlowConsumerStrategyName", "(Ljava/lang/String;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -483,10 +483,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -494,19 +494,19 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectorName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectorName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -526,10 +526,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -537,22 +537,22 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkConnectorName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkConnectorName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createNetworkConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createNetworkConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createVirtualDestinationSelectorCacheName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createVirtualDestinationSelectorCacheName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -570,10 +570,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -581,7 +581,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -601,10 +601,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -612,10 +612,10 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionViewByType", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionViewByType", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -641,21 +641,21 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkBridgeObjectName", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkBridgeObjectName", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/Hashtable");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "getKeyPropertyList", "()Ljava/util/Hashtable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "getKeyPropertyList", "()Ljava/util/Hashtable;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Hashtable", "<init>", "(Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -664,21 +664,21 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport", "encodeObjectNamePart", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Hashtable", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "getDomain", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "getDomain", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;Ljava/util/Hashtable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;Ljava/util/Hashtable;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkOutBoundDestinationObjectName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkOutBoundDestinationObjectName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -692,19 +692,19 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/Brok
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkInBoundDestinationObjectName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createNetworkInBoundDestinationObjectName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -718,28 +718,28 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/Brok
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProxyConnectorName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProxyConnectorName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProxyConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProxyConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProxyConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProxyConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -759,10 +759,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -770,19 +770,19 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJmsConnectorName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJmsConnectorName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createJmsConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createJmsConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJmsConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJmsConnectorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -802,10 +802,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -813,17 +813,17 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJobSchedulerServiceName", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJobSchedulerServiceName", "(Ljakarta/management/ObjectName;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createJobSchedulerServiceName", "(Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createJobSchedulerServiceName", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJobSchedulerServiceName", "(Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createJobSchedulerServiceName", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -836,10 +836,10 @@ methodVisitor.visitLdcInsn(",service=JobScheduler,name=JMS");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
@@ -847,17 +847,17 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createHealthServiceName", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createHealthServiceName", "(Ljakarta/management/ObjectName;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createHealthServiceName", "(Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createHealthServiceName", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createHealthServiceName", "(Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createHealthServiceName", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -870,10 +870,10 @@ methodVisitor.visitLdcInsn(",service=Health");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
@@ -881,24 +881,24 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createBrokerObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createBrokerObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -911,25 +911,25 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport", "encodeObjectNamePart", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQueueQuery", "(Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQueueQuery", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("*");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQueueQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQueueQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -942,25 +942,25 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport", "encodeObjectNamePart", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createTopicQuery", "(Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createTopicQuery", "(Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("*");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createTopicQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createTopicQuery", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -973,28 +973,28 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMXSupport", "encodeObjectNamePart", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createConsumerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1023,28 +1023,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(",consumerId=*");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createProducerQueury", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1073,7 +1073,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(",producerId=*");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

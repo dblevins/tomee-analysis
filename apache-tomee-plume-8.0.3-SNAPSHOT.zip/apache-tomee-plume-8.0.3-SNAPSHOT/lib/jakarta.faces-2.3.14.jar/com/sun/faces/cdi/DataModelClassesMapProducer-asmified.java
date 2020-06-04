@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/DataModelClassesMapProducer", "Lcom/sun/faces/cdi/CdiProducer<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljavax/faces/model/DataModel<*>;>;>;>;", "com/sun/faces/cdi/CdiProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/DataModelClassesMapProducer", "Lcom/sun/faces/cdi/CdiProducer<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljakarta/faces/model/DataModel<*>;>;>;>;", "com/sun/faces/cdi/CdiProducer", null);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -38,7 +38,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "<
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("comSunFacesDataModelClassesMap");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "name", "(Ljava/lang/String;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/ApplicationScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/ApplicationScoped;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "scope", "(Ljava/lang/Class;)Lcom/sun/faces/cdi/CdiProducer;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -62,7 +62,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "types", "([Ljava/lang/reflect/Type;)Lcom/sun/faces/cdi/CdiProducer;", false);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/Map;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "beanClass", "(Ljava/lang/Class;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/DataModelClassesMapProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/DataModelClassesMapProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "create", "(Ljava/util/function/Function;)Lcom/sun/faces/cdi/CdiProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -160,14 +160,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/enterprise/inject/spi/CDI", "current", "()Ljavax/enterprise/inject/spi/CDI;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/enterprise/inject/spi/CDI", "current", "()Ljakarta/enterprise/inject/spi/CDI;", false);
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/faces/cdi/CdiExtension;"));
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/cdi/CdiExtension");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiExtension", "getForClassToDataModelClass", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);

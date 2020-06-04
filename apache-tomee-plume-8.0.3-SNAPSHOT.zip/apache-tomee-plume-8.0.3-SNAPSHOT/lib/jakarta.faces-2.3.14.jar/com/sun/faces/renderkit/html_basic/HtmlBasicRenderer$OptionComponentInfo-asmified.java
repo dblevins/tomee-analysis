@@ -51,12 +51,12 @@ fieldVisitor = classWriter.visitField(0, "hideNoSelection", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -84,11 +84,11 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/html_basic/HtmlBasicRenderer$OptionComponentInfo", "unselectedClass", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "componentIsDisabled", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "componentIsDisabled", "(Ljakarta/faces/component/UIComponent;)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/html_basic/HtmlBasicRenderer$OptionComponentInfo", "disabled", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/html_basic/MenuRenderer", "isHideNoSelection", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/html_basic/MenuRenderer", "isHideNoSelection", "(Ljakarta/faces/component/UIComponent;)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/html_basic/HtmlBasicRenderer$OptionComponentInfo", "hideNoSelection", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);

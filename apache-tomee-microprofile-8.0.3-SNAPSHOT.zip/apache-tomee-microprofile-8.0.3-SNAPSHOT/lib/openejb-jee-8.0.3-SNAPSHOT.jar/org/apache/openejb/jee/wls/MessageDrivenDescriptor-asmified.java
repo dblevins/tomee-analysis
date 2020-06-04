@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/wls/MessageDrivenDescriptor", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "message-driven-descriptor");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -63,7 +63,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "timerDescriptor", "Lorg/apache/openejb/jee/wls/TimerDescriptor;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "timer-descriptor");
 annotationVisitor0.visitEnd();
 }
@@ -72,7 +72,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "resourceAdapterJndiName", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "resource-adapter-jndi-name");
 annotationVisitor0.visitEnd();
 }
@@ -81,7 +81,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "destinationJndiName", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "destination-jndi-name");
 annotationVisitor0.visitEnd();
 }
@@ -90,7 +90,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "initialContextFactory", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "initial-context-factory");
 annotationVisitor0.visitEnd();
 }
@@ -99,7 +99,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "providerUrl", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "provider-url");
 annotationVisitor0.visitEnd();
 }
@@ -108,7 +108,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionFactoryJndiName", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "connection-factory-jndi-name");
 annotationVisitor0.visitEnd();
 }
@@ -117,7 +117,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "destinationResourceLink", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "destination-resource-link");
 annotationVisitor0.visitEnd();
 }
@@ -126,7 +126,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionFactoryResourceLink", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "connection-factory-resource-link");
 annotationVisitor0.visitEnd();
 }
@@ -135,7 +135,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "jmsPollingIntervalSeconds", "Ljava/math/BigInteger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "jms-polling-interval-seconds");
 annotationVisitor0.visitEnd();
 }
@@ -144,7 +144,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "jmsClientId", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "jms-client-id");
 annotationVisitor0.visitEnd();
 }
@@ -153,12 +153,12 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "generateUniqueJmsClientId", "Ljava/lang/Boolean;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "generate-unique-jms-client-id");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/openejb/jee/wls/TrueFalseAdapter;"));
 annotationVisitor0.visitEnd();
 }
@@ -167,12 +167,12 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "durableSubscriptionDeletion", "Ljava/lang/Boolean;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "durable-subscription-deletion");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/openejb/jee/wls/TrueFalseAdapter;"));
 annotationVisitor0.visitEnd();
 }
@@ -181,7 +181,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "maxMessagesInTransaction", "Ljava/math/BigInteger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "max-messages-in-transaction");
 annotationVisitor0.visitEnd();
 }
@@ -190,7 +190,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "distributedDestinationConnection", "Lorg/apache/openejb/jee/wls/DistributedDestinationConnection;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "distributed-destination-connection");
 annotationVisitor0.visitEnd();
 }
@@ -199,7 +199,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "initSuspendSeconds", "Ljava/math/BigInteger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "init-suspend-seconds");
 annotationVisitor0.visitEnd();
 }
@@ -208,7 +208,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "maxSuspendSeconds", "Ljava/math/BigInteger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "max-suspend-seconds");
 annotationVisitor0.visitEnd();
 }
@@ -217,7 +217,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "securityPlugin", "Lorg/apache/openejb/jee/wls/SecurityPlugin;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "security-plugin");
 annotationVisitor0.visitEnd();
 }
@@ -226,16 +226,16 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "id", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlID;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlID;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();

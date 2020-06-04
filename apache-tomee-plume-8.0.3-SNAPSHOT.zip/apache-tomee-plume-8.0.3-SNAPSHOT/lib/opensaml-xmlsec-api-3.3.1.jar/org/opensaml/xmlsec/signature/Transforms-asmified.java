@@ -43,7 +43,7 @@ fieldVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransforms", "()Ljava/util/List;", "()Ljava/util/List<Lorg/opensaml/xmlsec/signature/Transform;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

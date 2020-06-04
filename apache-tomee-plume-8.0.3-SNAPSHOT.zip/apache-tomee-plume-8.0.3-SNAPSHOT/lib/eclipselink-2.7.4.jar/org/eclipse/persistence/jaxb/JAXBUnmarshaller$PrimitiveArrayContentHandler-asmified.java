@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "componentClass", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jaxbElement", "Ljavax/xml/bind/JAXBElement;", "Ljavax/xml/bind/JAXBElement<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jaxbElement", "Ljakarta/xml/bind/JAXBElement;", "Ljakarta/xml/bind/JAXBElement<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -386,10 +386,10 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJaxbElement", "()Ljavax/xml/bind/JAXBElement;", "()Ljavax/xml/bind/JAXBElement<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJaxbElement", "()Ljakarta/xml/bind/JAXBElement;", "()Ljakarta/xml/bind/JAXBElement<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljavax/xml/bind/JAXBElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljakarta/xml/bind/JAXBElement;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -407,19 +407,19 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "currentIndex", "I");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "qName", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "arrayClass", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljavax/xml/bind/JAXBElement;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljakarta/xml/bind/JAXBElement;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljavax/xml/bind/JAXBElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler", "jaxbElement", "Ljakarta/xml/bind/JAXBElement;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

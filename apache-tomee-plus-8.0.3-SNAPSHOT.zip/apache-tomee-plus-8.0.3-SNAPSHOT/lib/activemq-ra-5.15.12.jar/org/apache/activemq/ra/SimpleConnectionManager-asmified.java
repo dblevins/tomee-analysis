@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ra/SimpleConnectionManager", null, "java/lang/Object", new String[] { "javax/resource/spi/ConnectionManager", "javax/resource/spi/ConnectionEventListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ra/SimpleConnectionManager", null, "java/lang/Object", new String[] { "jakarta/resource/spi/ConnectionManager", "jakarta/resource/spi/ConnectionEventListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-7662970495944876239L));
@@ -42,46 +42,46 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allocateConnection", "(Ljavax/resource/spi/ManagedConnectionFactory;Ljavax/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allocateConnection", "(Ljakarta/resource/spi/ManagedConnectionFactory;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnectionFactory", "createManagedConnection", "(Ljavax/security/auth/Subject;Ljavax/resource/spi/ConnectionRequestInfo;)Ljavax/resource/spi/ManagedConnection;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnectionFactory", "createManagedConnection", "(Ljakarta/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljakarta/resource/spi/ManagedConnection;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "addConnectionEventListener", "(Ljavax/resource/spi/ConnectionEventListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "addConnectionEventListener", "(Ljakarta/resource/spi/ConnectionEventListener;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "getConnection", "(Ljavax/security/auth/Subject;Ljavax/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "getConnection", "(Ljakarta/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectionClosed", "(Ljavax/resource/spi/ConnectionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectionClosed", "(Ljakarta/resource/spi/ConnectionEvent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/ResourceException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/resource/ResourceException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/ManagedConnection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "cleanup", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/ManagedConnection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "cleanup", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/SimpleConnectionManager", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Error occured during the cleanup of a managed connection: ");
@@ -90,14 +90,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "warn", "(Lja
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/ManagedConnection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "destroy", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/ManagedConnection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "destroy", "()V", true);
 methodVisitor.visitLabel(label4);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/SimpleConnectionManager", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Error occured during the destruction of a managed connection: ");
@@ -110,51 +110,51 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionStarted", "(Ljavax/resource/spi/ConnectionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionStarted", "(Ljakarta/resource/spi/ConnectionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionCommitted", "(Ljavax/resource/spi/ConnectionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionCommitted", "(Ljakarta/resource/spi/ConnectionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionRolledback", "(Ljavax/resource/spi/ConnectionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "localTransactionRolledback", "(Ljakarta/resource/spi/ConnectionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectionErrorOccurred", "(Ljavax/resource/spi/ConnectionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectionErrorOccurred", "(Ljakarta/resource/spi/ConnectionEvent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/ResourceException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/resource/ResourceException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/SimpleConnectionManager", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Managed connection experiened an error: ");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/ConnectionEvent", "getException", "()Ljava/lang/Exception;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/ConnectionEvent", "getException", "()Ljava/lang/Exception;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "warn", "(Ljava/lang/String;Ljava/lang/Throwable;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/ManagedConnection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "cleanup", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/ManagedConnection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "cleanup", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/SimpleConnectionManager", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Error occured during the cleanup of a managed connection: ");
@@ -163,14 +163,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "warn", "(Lja
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/ManagedConnection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnection", "destroy", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/ConnectionEvent", "getSource", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/ManagedConnection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnection", "destroy", "()V", true);
 methodVisitor.visitLabel(label4);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/SimpleConnectionManager", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Error occured during the destruction of a managed connection: ");

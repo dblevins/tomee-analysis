@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", null, "javax/xml/soap/SOAPPart", new String[] { "com/sun/xml/messaging/saaj/soap/SOAPDocument" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", null, "jakarta/xml/soap/SOAPPart", new String[] { "com/sun/xml/messaging/saaj/soap/SOAPDocument" });
 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/soap/SOAPPartImpl$1", null, null, 0);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "headers", "Ljavax/xml/soap/MimeHeaders;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "headers", "Ljakarta/xml/soap/MimeHeaders;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -80,7 +80,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/MessageImpl;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPPart", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPPart", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "sourceWasSet", "Z");
@@ -97,19 +97,19 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPPartImpl;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "document", "Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/MimeHeaders");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/MimeHeaders");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/MimeHeaders", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/MimeHeaders", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "message", "Lcom/sun/xml/messaging/saaj/soap/MessageImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getContentType", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -119,11 +119,11 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getConten
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createEnvelopeFromSource", "()Lcom/sun/xml/messaging/saaj/soap/Envelope;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createEnvelopeFromSource", "()Lcom/sun/xml/messaging/saaj/soap/Envelope;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createEmptyEnvelope", "(Ljava/lang/String;)Lcom/sun/xml/messaging/saaj/soap/Envelope;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createEmptyEnvelope", "(Ljava/lang/String;)Lcom/sun/xml/messaging/saaj/soap/Envelope;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
@@ -161,7 +161,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "sourceWasSet", "Z");
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "lookForEnvelope", "()V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "lookForEnvelope", "()V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "document", "Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;");
@@ -260,7 +260,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "document", "Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljavax/xml/soap/Node;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljakarta/xml/soap/Node;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "log", "Ljava/util/logging/Logger;");
@@ -276,7 +276,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "document", "Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljavax/xml/soap/Node;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljakarta/xml/soap/Node;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -343,8 +343,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeAllMimeHeaders", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "removeAllHeaders", "()V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "removeAllHeaders", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -353,9 +353,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeMimeHeader", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "removeHeader", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "removeHeader", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -364,9 +364,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMimeHeader", "(Ljava/lang/String;)[Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -375,10 +375,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMimeHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -387,48 +387,48 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMimeHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllMimeHeaders", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljavax/xml/soap/MimeHeader;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllMimeHeaders", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljakarta/xml/soap/MimeHeader;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "getAllHeaders", "()Ljava/util/Iterator;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "getAllHeaders", "()Ljava/util/Iterator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingMimeHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", "([Ljava/lang/String;)Ljava/util/Iterator<Ljavax/xml/soap/MimeHeader;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingMimeHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", "([Ljava/lang/String;)Ljava/util/Iterator<Ljakarta/xml/soap/MimeHeader;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingMimeHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", "([Ljava/lang/String;)Ljava/util/Iterator<Ljavax/xml/soap/MimeHeader;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingMimeHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", "([Ljava/lang/String;)Ljava/util/Iterator<Ljakarta/xml/soap/MimeHeader;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MimeHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MimeHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Iterator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "()Ljavax/xml/transform/Source;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "()Ljavax/xml/transform/Source;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -489,7 +489,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/Envelope");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/messaging/saaj/soap/Envelope", "getContent", "()Ljavax/xml/transform/Source;", true);
 methodVisitor.visitInsn(ARETURN);
@@ -497,7 +497,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContent", "(Ljavax/xml/transform/Source;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContent", "(Ljavax/xml/transform/Source;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -661,7 +661,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "source", "Ljavax/xml/transform/Source;");
 Label label6 = new Label();
@@ -746,7 +746,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/Envelope");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -758,7 +758,7 @@ methodVisitor.visitLabel(label4);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "com/sun/xml/messaging/saaj/util/ByteOutputStream", "com/sun/xml/messaging/saaj/soap/Envelope"}, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "com/sun/xml/messaging/saaj/util/ByteOutputStream", "com/sun/xml/messaging/saaj/soap/Envelope"}, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitLdcInsn("SAAJ0547.soap.cannot.externalize");
@@ -778,12 +778,12 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getMimePart", "()Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(0, "getMimePart", "()Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
@@ -793,17 +793,17 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packagi
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getDataHandler", "()Ljavax/activation/DataHandler;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart", "setDataHandler", "(Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getDataHandler", "()Ljakarta/activation/DataHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart", "setDataHandler", "(Ljakarta/activation/DataHandler;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "copyMimeHeaders", "(Ljavax/xml/soap/MimeHeaders;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "copyMimeHeaders", "(Ljakarta/xml/soap/MimeHeaders;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ATHROW);
@@ -823,26 +823,26 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getMimeHeaders", "()Ljavax/xml/soap/MimeHeaders;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getMimeHeaders", "()Ljakarta/xml/soap/MimeHeaders;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getDataHandler", "()Ljavax/activation/DataHandler;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getDataHandler", "()Ljakarta/activation/DataHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl$1", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPPartImpl;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -892,16 +892,16 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -918,7 +918,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "handleNewSource", "()V", false);
 methodVisitor.visitLabel(label0);
@@ -928,7 +928,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1138,9 +1138,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SO
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/util/MimeHeadersUtil", "copy", "(Ljavax/xml/soap/MimeHeaders;)Ljavax/xml/soap/MimeHeaders;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/util/MimeHeadersUtil", "copy", "(Ljakarta/xml/soap/MimeHeaders;)Ljakarta/xml/soap/MimeHeaders;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "source", "Ljavax/xml/transform/Source;");
@@ -1422,19 +1422,19 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "sourceWasSet", "Z");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1443,7 +1443,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "lookForXmlDecl", "()Lcom/sun/xml/messaging/saaj/util/XMLDeclarationParser;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "lookForXmlDecl", "()Lcom/sun/xml/messaging/saaj/util/XMLDeclarationParser;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1947,7 +1947,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParentElement", "(Ljavax/xml/soap/SOAPElement;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParentElement", "(Ljakarta/xml/soap/SOAPElement;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitLdcInsn("SAAJ0570.soappart.parent.element.not.defined");
@@ -1961,7 +1961,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentElement", "()Ljavax/xml/soap/SOAPElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentElement", "()Ljakarta/xml/soap/SOAPElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NO_OP_CALLBACK", "Ljavax/ws/rs/client/InvocationCallback;", "Ljavax/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NO_OP_CALLBACK", "Ljakarta/ws/rs/client/InvocationCallback;", "Ljakarta/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,14 +59,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cdiInstances", "Ljava/util/L
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/net/URI;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/net/URI;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/client/LocalClientState");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/LocalClientState", "<init>", "(Ljava/net/URI;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -90,13 +90,13 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/proxy
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "init", "(Ljava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "init", "(Ljava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Lorg/apache/cxf/jaxrs/client/ClientState;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Lorg/apache/cxf/jaxrs/client/ClientState;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -122,13 +122,13 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/proxy
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "init", "(Ljava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "init", "(Ljava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "init", "(Ljava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "init", "(Ljava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "cfg", "Lorg/apache/cxf/jaxrs/client/ClientConfiguration;");
@@ -141,7 +141,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "cfg", "Lorg/apache/cxf/jaxrs/client/ClientConfiguration;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ClientConfiguration", "getRequestContext", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "cfg", "Lorg/apache/cxf/jaxrs/client/ClientConfiguration;");
@@ -164,12 +164,12 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkAsyncCallback", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljava/util/Map;Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/client/InvocationCallback;", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkAsyncCallback", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljava/util/Map;Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/client/InvocationCallback;", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/InvocationCallback;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/InvocationCallback;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getContent", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/InvocationCallback");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/InvocationCallback");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -180,14 +180,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/Operati
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getReturnType", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "NO_OP_CALLBACK", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "NO_OP_CALLBACK", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/InvocationCallback;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/InvocationCallback;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "setContent", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/client/InvocationCallback"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/client/InvocationCallback"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doInvokeAsync", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljavax/ws/rs/client/InvocationCallback;)Ljava/lang/Object;", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljavax/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doInvokeAsync", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/client/InvocationCallback;)Ljava/lang/Object;", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/microprofile/client/proxy/MPAsyncInvocationInterceptorImpl");
 methodVisitor.visitInsn(DUP);
@@ -226,7 +226,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "doInvokeAsync", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljavax/ws/rs/client/InvocationCallback;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "doInvokeAsync", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/client/InvocationCallback;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
@@ -256,7 +256,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newJaxrsClientCallback", "(Ljavax/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;", "(Ljavax/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;Lorg/apache/cxf/message/Message;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newJaxrsClientCallback", "(Ljakarta/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;", "(Ljakarta/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;Lorg/apache/cxf/message/Message;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/microprofile/client/MPRestClientCallback");
 methodVisitor.visitInsn(DUP);
@@ -264,13 +264,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/MPRestClientCallback", "<init>", "(Ljavax/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/MPRestClientCallback", "<init>", "(Ljakarta/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkResponse", "(Ljava/lang/reflect/Method;Ljavax/ws/rs/core/Response;Lorg/apache/cxf/message/Message;)V", null, new String[] { "java/lang/Throwable" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkResponse", "(Ljava/lang/reflect/Method;Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/message/Message;)V", null, new String[] { "java/lang/Throwable" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory", "getInstance", "(Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/microprofile/client/MicroProfileClientProviderFactory;", false);
@@ -296,15 +296,15 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/rest/client/ext
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response", "getStatus", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response", "getStatus", "()I", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper", "handles", "(ILjavax/ws/rs/core/MultivaluedMap;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper", "handles", "(ILjakarta/ws/rs/core/MultivaluedMap;)Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper", "toThrowable", "(Ljavax/ws/rs/core/Response;)Ljava/lang/Throwable;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper", "toThrowable", "(Ljakarta/ws/rs/core/Response;)Ljava/lang/Throwable;", true);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/RuntimeException");
@@ -350,7 +350,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitIincInsn(11, 1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "javax/ws/rs/core/Response", "org/apache/cxf/message/Message", "org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory", "java/util/List", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "jakarta/ws/rs/core/Response", "org/apache/cxf/message/Message", "org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory", "java/util/List", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -437,7 +437,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createMessage", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljavax/ws/rs/core/MultivaluedMap;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map;Z)Lorg/apache/cxf/message/Message;", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)Lorg/apache/cxf/message/Message;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createMessage", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map;Z)Lorg/apache/cxf/message/Message;", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)Lorg/apache/cxf/message/Message;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfo", "getMethodToInvoke", "()Ljava/lang/reflect/Method;", false);
@@ -450,7 +450,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "createMessage", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljavax/ws/rs/core/MultivaluedMap;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map;Z)Lorg/apache/cxf/message/Message;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "createMessage", "(Ljava/lang/Object;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/net/URI;Lorg/apache/cxf/message/Exchange;Ljava/util/Map;Z)Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
@@ -983,7 +983,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "handleHeaders", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljavax/ws/rs/core/MultivaluedMap;Ljava/util/List;Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/Parameter;>;Ljavax/ws/rs/core/MultivaluedMap<Lorg/apache/cxf/jaxrs/model/ParameterType;Lorg/apache/cxf/jaxrs/model/Parameter;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "handleHeaders", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/util/List;Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/Parameter;>;Ljakarta/ws/rs/core/MultivaluedMap<Lorg/apache/cxf/jaxrs/model/ParameterType;Lorg/apache/cxf/jaxrs/model/Parameter;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -998,7 +998,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "handleHeaders", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljavax/ws/rs/core/MultivaluedMap;Ljava/util/List;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/ClientProxyImpl", "handleHeaders", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/util/List;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getDeclaringClass", "()Ljava/lang/Class;", false);
@@ -1031,7 +1031,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "[Ljava/lang/Object;", "javax/ws/rs/core/MultivaluedMap", "java/util/List", "javax/ws/rs/core/MultivaluedMap", "java/lang/Class", "[Lorg/eclipse/microprofile/rest/client/annotation/ClientHeaderParam;", "[Lorg/eclipse/microprofile/rest/client/annotation/ClientHeaderParam;", "org/eclipse/microprofile/rest/client/annotation/RegisterClientHeaders"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "[Ljava/lang/Object;", "jakarta/ws/rs/core/MultivaluedMap", "java/util/List", "jakarta/ws/rs/core/MultivaluedMap", "java/lang/Class", "[Lorg/eclipse/microprofile/rest/client/annotation/ClientHeaderParam;", "[Lorg/eclipse/microprofile/rest/client/annotation/ClientHeaderParam;", "org/eclipse/microprofile/rest/client/annotation/RegisterClientHeaders"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 10);
@@ -1055,7 +1055,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/cl
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 14);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "containsKey", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "containsKey", "(Ljava/lang/Object;)Z", true);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1070,7 +1070,7 @@ methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/Parameter", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/Parameter", "getDefaultValue", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitIincInsn(12, 1);
@@ -1100,7 +1100,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/cl
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 14);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "containsKey", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "containsKey", "(Ljava/lang/Object;)Z", true);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label10);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1115,7 +1115,7 @@ methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/Parameter", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/Parameter", "getDefaultValue", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitIincInsn(12, 1);
@@ -1130,9 +1130,9 @@ methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "mergeHeaders", "(Ljava/lang/Class;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "mergeHeaders", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "[Ljava/lang/Object;", "javax/ws/rs/core/MultivaluedMap", "java/util/List", "javax/ws/rs/core/MultivaluedMap"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/reflect/Method", "[Ljava/lang/Object;", "jakarta/ws/rs/core/MultivaluedMap", "java/util/List", "jakarta/ws/rs/core/MultivaluedMap"}, 0, new Object[] {});
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label2);
@@ -1163,7 +1163,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "mergeHeaders", "(Ljava/lang/Class;Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/Class<Lorg/eclipse/microprofile/rest/client/ext/ClientHeadersFactory;>;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "mergeHeaders", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/Class<Lorg/eclipse/microprofile/rest/client/ext/ClientHeadersFactory;>;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1231,21 +1231,21 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElse", "(L
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/Class", "javax/ws/rs/core/MultivaluedMap", "org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory", "org/apache/cxf/message/Message"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/Class", "jakarta/ws/rs/core/MultivaluedMap", "org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory", "org/apache/cxf/message/Message"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "getJaxrsHeaders", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "getJaxrsHeaders", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory", "update", "(Ljavax/ws/rs/core/MultivaluedMap;Ljavax/ws/rs/core/MultivaluedMap;)Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory", "update", "(Ljakarta/ws/rs/core/MultivaluedMap;Ljakarta/ws/rs/core/MultivaluedMap;)Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/Class", "javax/ws/rs/core/MultivaluedMap"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "java/lang/Class", "jakarta/ws/rs/core/MultivaluedMap"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "LOG", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
@@ -1329,11 +1329,11 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getJaxrsHeaders", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getJaxrsHeaders", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/MultivaluedHashMap");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/MultivaluedHashMap");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/MultivaluedHashMap", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/MultivaluedHashMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -1344,9 +1344,9 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/message/Message", "PROTO
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/CastUtils", "cast", "(Ljava/util/Map;)Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/MultivaluedMap"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/MultivaluedMap"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -1405,7 +1405,7 @@ methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/microprofile/client/prox
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "NO_OP_CALLBACK", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "NO_OP_CALLBACK", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitLdcInsn("org.apache.cxf.jaxrs.utils.JAXRSUtils");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);

@@ -78,7 +78,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "read", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "javax/ws/rs/WebApplicationException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "read", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "jakarta/ws/rs/WebApplicationException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/phase/PhaseInterceptorChain", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -89,7 +89,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/JAXR
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding$MessageBodyDataReader", "this$0", "Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding", "access$400", "(Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;)Ljavax/ws/rs/ext/MessageBodyReader;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding", "access$400", "(Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;)Ljakarta/ws/rs/ext/MessageBodyReader;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -102,13 +102,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getPar
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotations", "()[Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "APPLICATION_ATOM_XML_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "APPLICATION_ATOM_XML_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding$MessageBodyDataReader", "this$0", "Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding", "access$500", "(Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/JAXRSDataBinding", "access$500", "(Lorg/apache/cxf/jaxrs/provider/JAXRSDataBinding;Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/MessageBodyReader", "readFrom", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/InputStream;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/MessageBodyReader", "readFrom", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/io/InputStream;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();

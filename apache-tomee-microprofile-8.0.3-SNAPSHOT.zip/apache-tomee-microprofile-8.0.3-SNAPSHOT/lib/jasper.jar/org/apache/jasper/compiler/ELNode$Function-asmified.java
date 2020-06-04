@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "uri", "Ljava/lang/String;", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "functionInfo", "Ljavax/servlet/jsp/tagext/FunctionInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "functionInfo", "Ljakarta/servlet/jsp/tagext/FunctionInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -131,20 +131,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionInfo", "(Ljavax/servlet/jsp/tagext/FunctionInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionInfo", "(Ljakarta/servlet/jsp/tagext/FunctionInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ELNode$Function", "functionInfo", "Ljavax/servlet/jsp/tagext/FunctionInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ELNode$Function", "functionInfo", "Ljakarta/servlet/jsp/tagext/FunctionInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionInfo", "()Ljavax/servlet/jsp/tagext/FunctionInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionInfo", "()Ljakarta/servlet/jsp/tagext/FunctionInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ELNode$Function", "functionInfo", "Ljavax/servlet/jsp/tagext/FunctionInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ELNode$Function", "functionInfo", "Ljakarta/servlet/jsp/tagext/FunctionInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -25,20 +25,20 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/jaxrs/JacksonOpenAPIYamlBodyWriter", "<T:Ljava/lang/Object;>Lorg/apache/geronimo/microprofile/openapi/jaxrs/BaseOpenAPIYamlBodyWriter<TT;>;", "org/apache/geronimo/microprofile/openapi/jaxrs/BaseOpenAPIYamlBodyWriter", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/Dependent;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/Dependent;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ConstrainedTo;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/ws/rs/RuntimeType;", "SERVER");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ConstrainedTo;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/ws/rs/RuntimeType;", "SERVER");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "text/vnd.yaml");
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;Ljava/io/OutputStream;)V", new String[] { "java/io/IOException", "javax/ws/rs/WebApplicationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;Ljava/io/OutputStream;)V", new String[] { "java/io/IOException", "jakarta/ws/rs/WebApplicationException" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/jaxrs/JacksonOpenAPIYamlBodyWriter$Mapper", "get", "()Lcom/fasterxml/jackson/databind/ObjectMapper;", false);
 methodVisitor.visitVarInsn(ALOAD, 7);

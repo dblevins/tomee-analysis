@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/oejb2/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/openejb/jee/oejb2/GroupType$CmrField", "org/apache/openejb/jee/oejb2/GroupType", "CmrField", ACC_PUBLIC | ACC_STATIC);
@@ -804,175 +804,175 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeReferences", "(Lorg/apache/openejb/jee/oejb2/ReferencesType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ReferencesType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ReferencesType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeReferences", "(Lorg/apache/openejb/jee/oejb2/ReferencesType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ReferencesType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ReferencesType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "references");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeReferences_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ReferencesType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeXmlReference", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/XmlAttributeType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeXmlReference", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/XmlAttributeType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "xml-reference");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeXmlReference_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/XmlAttributeType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeDependency", "(Lorg/apache/openejb/jee/oejb2/PatternType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/PatternType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/PatternType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeDependency", "(Lorg/apache/openejb/jee/oejb2/PatternType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/PatternType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/PatternType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "dependency");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeDependency_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/PatternType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeAttribute", "(Lorg/apache/openejb/jee/oejb2/AttributeType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AttributeType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AttributeType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeAttribute", "(Lorg/apache/openejb/jee/oejb2/AttributeType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AttributeType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AttributeType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "attribute");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeAttribute_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/AttributeType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeReference", "(Lorg/apache/openejb/jee/oejb2/ReferenceType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ReferenceType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ReferenceType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeReference", "(Lorg/apache/openejb/jee/oejb2/ReferenceType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ReferenceType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ReferenceType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "reference");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeReference_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ReferenceType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeXmlAttribute", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/XmlAttributeType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanTypeXmlAttribute", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/XmlAttributeType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/XmlAttributeType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "xml-attribute");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanTypeXmlAttribute_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/XmlAttributeType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceEnvRef", "(Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceEnvRef", "(Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "resource-env-ref");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ResourceEnvRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ResourceEnvRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceRef", "(Lorg/apache/openejb/jee/oejb2/ResourceRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceRef", "(Lorg/apache/openejb/jee/oejb2/ResourceRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "resource-ref");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ResourceRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ResourceRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManagerFactoryRef", "(Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManagerFactoryRef", "(Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "entity-manager-factory-ref");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
@@ -980,281 +980,281 @@ annotationVisitor0.visit("substitutionHeadName", "abstract-naming-entry");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_EntityManagerFactoryRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/PersistenceUnitRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAbstractNamingEntry", "(Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAbstractNamingEntry", "(Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "abstract-naming-entry");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_AbstractNamingEntry_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDependencies", "(Lorg/apache/openejb/jee/oejb2/DependenciesType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/DependenciesType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/DependenciesType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDependencies", "(Lorg/apache/openejb/jee/oejb2/DependenciesType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/DependenciesType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/DependenciesType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "dependencies");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Dependencies_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/DependenciesType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createApplication", "(Lorg/apache/openejb/jee/oejb2/ApplicationType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ApplicationType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ApplicationType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createApplication", "(Lorg/apache/openejb/jee/oejb2/ApplicationType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ApplicationType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ApplicationType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
 annotationVisitor0.visit("name", "application");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Application_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ApplicationType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessageDestination", "(Lorg/apache/openejb/jee/oejb2/MessageDestinationType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/MessageDestinationType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/MessageDestinationType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessageDestination", "(Lorg/apache/openejb/jee/oejb2/MessageDestinationType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/MessageDestinationType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/MessageDestinationType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "message-destination");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_MessageDestination_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/MessageDestinationType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createModule", "(Lorg/apache/openejb/jee/oejb2/ServiceModuleType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ServiceModuleType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ServiceModuleType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createModule", "(Lorg/apache/openejb/jee/oejb2/ServiceModuleType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ServiceModuleType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ServiceModuleType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "module");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Module_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ServiceModuleType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createClustering", "(Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createClustering", "(Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
 annotationVisitor0.visit("name", "clustering");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Clustering_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/AbstractClusteringType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyGenerator", "(Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyGenerator", "(Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://tomee.apache.org/xml/ns/pkgen-2.1");
 annotationVisitor0.visit("name", "key-generator");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_KeyGenerator_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/KeyGeneratorType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "environment");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Environment_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/EnvironmentType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurity", "(Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurity", "(Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
 annotationVisitor0.visit("name", "security");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Security_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/AbstractSecurityType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceAdapter", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResourceAdapter", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "resource-adapter");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ResourceAdapter_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbLocalRef", "(Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbLocalRef", "(Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "ejb-local-ref");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_EjbLocalRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/EjbLocalRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServerEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServerEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "server-environment");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ServerEnvironment_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/EnvironmentType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createService", "(Lorg/apache/openejb/jee/oejb2/AbstractServiceType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractServiceType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractServiceType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createService", "(Lorg/apache/openejb/jee/oejb2/AbstractServiceType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/AbstractServiceType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/AbstractServiceType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "service");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Service_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/AbstractServiceType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbean", "(Lorg/apache/openejb/jee/oejb2/GbeanType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbean", "(Lorg/apache/openejb/jee/oejb2/GbeanType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "gbean");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
@@ -1262,21 +1262,21 @@ annotationVisitor0.visit("substitutionHeadName", "service");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Gbean_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurity", "(Lorg/apache/openejb/jee/oejb2/SecurityType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/SecurityType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/SecurityType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurity", "(Lorg/apache/openejb/jee/oejb2/SecurityType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/SecurityType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/SecurityType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/security-2.0");
 annotationVisitor0.visit("name", "security");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
@@ -1284,101 +1284,101 @@ annotationVisitor0.visit("substitutionHeadName", "security");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Security2_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/SecurityType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWorkmanager", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWorkmanager", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "workmanager");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_Workmanager_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceRef", "(Lorg/apache/openejb/jee/oejb2/ServiceRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ServiceRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ServiceRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceRef", "(Lorg/apache/openejb/jee/oejb2/ServiceRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ServiceRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ServiceRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "service-ref");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ServiceRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ServiceRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCmpConnectionFactory", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCmpConnectionFactory", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "cmp-connection-factory");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_CmpConnectionFactory_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/ResourceLocatorType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createClientEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createClientEnvironment", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EnvironmentType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EnvironmentType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor0.visit("name", "client-environment");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_ClientEnvironment_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/EnvironmentType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanRef", "(Lorg/apache/openejb/jee/oejb2/GbeanRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGbeanRef", "(Lorg/apache/openejb/jee/oejb2/GbeanRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "gbean-ref");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
@@ -1386,93 +1386,93 @@ annotationVisitor0.visit("substitutionHeadName", "abstract-naming-entry");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_GbeanRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOpenejbJar", "(Lorg/apache/openejb/jee/oejb2/OpenejbJarType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/OpenejbJarType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/OpenejbJarType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOpenejbJar", "(Lorg/apache/openejb/jee/oejb2/OpenejbJarType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/OpenejbJarType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/OpenejbJarType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://tomee.apache.org/xml/ns/openejb-jar-2.2");
 annotationVisitor0.visit("name", "openejb-jar");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_OpenejbJar_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/OpenejbJarType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbRef", "(Lorg/apache/openejb/jee/oejb2/EjbRefType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EjbRefType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EjbRefType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbRef", "(Lorg/apache/openejb/jee/oejb2/EjbRefType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/EjbRefType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/EjbRefType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "ejb-ref");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_EjbRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/EjbRefType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWebContainer", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWebContainer", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor0.visit("name", "web-container");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_WebContainer_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GbeanLocatorType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbJar", "(Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEjbJar", "(Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/j2ee/ejb/openejb-2.0");
 annotationVisitor0.visit("name", "ejb-jar");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_EjbJar_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/GeronimoEjbJarType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
@@ -1488,9 +1488,9 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOpenejbClusteringWadi", "(Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOpenejbClusteringWadi", "(Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://geronimo.apache.org/xml/ns/openejb-clustering-wadi-1.2");
 annotationVisitor0.visit("name", "openejb-clustering-wadi");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
@@ -1498,13 +1498,13 @@ annotationVisitor0.visit("substitutionHeadName", "clustering");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/oejb2/ObjectFactory", "_OpenejbClusteringWadi_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/oejb2/OpenejbClusteringWadiType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

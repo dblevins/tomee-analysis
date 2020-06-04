@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/meta/Types$MappedSuper", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/Types$Identifiable<TX;>;Ljavax/persistence/metamodel/MappedSuperclassType<TX;>;", "org/apache/openjpa/persistence/meta/Types$Identifiable", new String[] { "javax/persistence/metamodel/MappedSuperclassType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/meta/Types$MappedSuper", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/Types$Identifiable<TX;>;Ljakarta/persistence/metamodel/MappedSuperclassType<TX;>;", "org/apache/openjpa/persistence/meta/Types$Identifiable", new String[] { "jakarta/persistence/metamodel/MappedSuperclassType" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$MappedSuper", "org/apache/openjpa/persistence/meta/Types", "MappedSuper", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$Identifiable", "org/apache/openjpa/persistence/meta/Types", "Identifiable", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
@@ -42,9 +42,9 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljavax/persistence/metamodel/Type$PersistenceType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljakarta/persistence/metamodel/Type$PersistenceType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljavax/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

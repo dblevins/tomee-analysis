@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/compiler/Instruction", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "write", "(Ljavax/faces/context/FacesContext;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "write", "(Ljakarta/faces/context/FacesContext;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;)Lorg/apache/myfaces/view/facelets/compiler/Instruction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;)Lorg/apache/myfaces/view/facelets/compiler/Instruction;", null, null);
 methodVisitor.visitEnd();
 }
 {

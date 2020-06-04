@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC, "messageNumber", "I", null, nu
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(BIPUSH, 6);

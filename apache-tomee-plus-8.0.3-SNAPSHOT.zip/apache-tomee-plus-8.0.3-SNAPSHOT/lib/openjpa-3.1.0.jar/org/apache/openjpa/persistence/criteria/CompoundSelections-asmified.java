@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "getFillStrategy", "(Ljavax/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/FillStrategy;", "<X:Ljava/lang/Object;>(Ljavax/persistence/criteria/Selection<TX;>;)Lorg/apache/openjpa/kernel/FillStrategy<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getFillStrategy", "(Ljakarta/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/FillStrategy;", "<X:Ljava/lang/Object;>(Ljakarta/persistence/criteria/Selection<TX;>;)Lorg/apache/openjpa/kernel/FillStrategy<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/persistence/criteria/CompoundSelections$CompoundSelectionImpl");

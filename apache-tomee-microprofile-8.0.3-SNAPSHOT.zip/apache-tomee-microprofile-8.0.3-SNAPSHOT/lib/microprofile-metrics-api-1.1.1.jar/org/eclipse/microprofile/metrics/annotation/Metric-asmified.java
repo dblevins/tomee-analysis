@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/microprofile/metrics/annotation/Metric", null, "java/lang/Object", new String[] { "java/lang/annotation/Annotation" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/InterceptorBinding;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/InterceptorBinding;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -69,7 +69,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -82,7 +82,7 @@ annotationVisitor0.visit(null, Boolean.FALSE);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -95,7 +95,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -108,7 +108,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -121,7 +121,7 @@ annotationVisitor0.visit(null, "none");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

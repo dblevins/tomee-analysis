@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/saml1/binding
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -48,7 +48,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildArtifact", "([B)Lorg/opensaml/saml/saml1/binding/artifact/SAML1ArtifactType0001;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -77,16 +77,16 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildArtifact", "(Lorg/opensaml/messaging/context/MessageContext;Lorg/opensaml/saml/saml1/core/Assertion;)Lorg/opensaml/saml/saml1/binding/artifact/SAML1ArtifactType0001;", "(Lorg/opensaml/messaging/context/MessageContext<Lorg/opensaml/saml/common/SAMLObject;>;Lorg/opensaml/saml/saml1/core/Assertion;)Lorg/opensaml/saml/saml1/binding/artifact/SAML1ArtifactType0001;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -144,12 +144,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getArtifactContext", "(Lorg/opensaml/messaging/context/MessageContext;)Lorg/opensaml/saml/common/messaging/context/SAMLArtifactContext;", "(Lorg/opensaml/messaging/context/MessageContext<Lorg/opensaml/saml/common/SAMLObject;>;)Lorg/opensaml/saml/common/messaging/context/SAMLArtifactContext;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -164,12 +164,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSourceEntityId", "(Lorg/opensaml/messaging/context/MessageContext;)Ljava/lang/String;", "(Lorg/opensaml/messaging/context/MessageContext<Lorg/opensaml/saml/common/SAMLObject;>;)Ljava/lang/String;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -211,7 +211,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "buildArtifact", "([B)Lorg/opensaml/saml/saml1/binding/artifact/AbstractSAML1Artifact;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -225,16 +225,16 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "buildArtifact", "(Lorg/opensaml/messaging/context/MessageContext;Lorg/opensaml/saml/saml1/core/Assertion;)Lorg/opensaml/saml/saml1/binding/artifact/AbstractSAML1Artifact;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

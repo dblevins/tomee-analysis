@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/compiler/ImplementationUnit", null, "com/sun/faces/facelets/compiler/TrimmedTagUnit", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -33,7 +33,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/TrimmedTagUnit", "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/TrimmedTagUnit", "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();

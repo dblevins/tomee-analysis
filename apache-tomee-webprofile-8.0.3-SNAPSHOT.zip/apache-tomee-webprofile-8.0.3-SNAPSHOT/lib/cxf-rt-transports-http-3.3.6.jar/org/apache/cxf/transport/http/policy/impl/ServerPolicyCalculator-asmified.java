@@ -596,8 +596,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/transports/http/configuration/O
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transports/http/configuration/ObjectFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transports/http/configuration/ObjectFactory", "createServer", "(Lorg/apache/cxf/transports/http/configuration/HTTPServerPolicy;)Ljavax/xml/bind/JAXBElement;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transports/http/configuration/ObjectFactory", "createServer", "(Lorg/apache/cxf/transports/http/configuration/HTTPServerPolicy;)Ljakarta/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

@@ -27,12 +27,12 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/opensaml
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshall", "(Lorg/w3c/dom/Element;)Lorg/opensaml/core/xml/XMLObject;", null, new String[] { "org/opensaml/core/xml/io/UnmarshallingException" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

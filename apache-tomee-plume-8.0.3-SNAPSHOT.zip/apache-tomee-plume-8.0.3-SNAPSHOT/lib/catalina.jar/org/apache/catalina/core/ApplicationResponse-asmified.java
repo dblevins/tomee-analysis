@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationResponse", null, "javax/servlet/ServletResponseWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationResponse", null, "jakarta/servlet/ServletResponseWrapper", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "included", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletResponse;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletResponse;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletResponseWrapper", "<init>", "(Ljavax/servlet/ServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletResponseWrapper", "<init>", "(Ljakarta/servlet/ServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationResponse", "included", "Z");
@@ -52,15 +52,15 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "isCommitted", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "isCommitted", "()Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "reset", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "reset", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -75,9 +75,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "setContentLength", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "setContentLength", "(I)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -92,9 +92,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "setContentLengthLong", "(J)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "setContentLengthLong", "(J)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -109,9 +109,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "setContentType", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "setContentType", "(Ljava/lang/String;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -126,9 +126,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "setLocale", "(Ljava/util/Locale;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "setLocale", "(Ljava/util/Locale;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -143,9 +143,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationResp
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationResponse", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "setBufferSize", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "setBufferSize", "(I)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -153,11 +153,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResponse", "(Ljavax/servlet/ServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResponse", "(Ljakarta/servlet/ServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletResponseWrapper", "setResponse", "(Ljavax/servlet/ServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletResponseWrapper", "setResponse", "(Ljakarta/servlet/ServletResponse;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/saml1/binding
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -35,7 +35,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bindingDescriptor", "Lorg/opensaml/saml/common/binding/BindingDescriptor;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -56,7 +56,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindingURI", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -72,7 +72,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindingDescriptor", "()Lorg/opensaml/saml/common/binding/BindingDescriptor;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -86,7 +86,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBindingDescriptor", "(Lorg/opensaml/saml/common/binding/BindingDescriptor;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -105,11 +105,11 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/messaging/context/MessageContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPPostDecoder", "getHttpServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPPostDecoder", "getHttpServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLdcInsn("POST");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -119,10 +119,10 @@ methodVisitor.visitLdcInsn("This message decoder only supports the HTTP POST met
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/messaging/decoder/MessageDecodingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/opensaml/messaging/context/MessageContext", "javax/servlet/http/HttpServletRequest"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/opensaml/messaging/context/MessageContext", "jakarta/servlet/http/HttpServletRequest"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("TARGET");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPPostDecoder", "log", "Lorg/slf4j/Logger;");
@@ -134,7 +134,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/opensaml/saml/common/binding/SAMLBindingSupport", "setRelayState", "(Lorg/opensaml/messaging/context/MessageContext;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("SAMLResponse");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/codec/Base64Support", "decode", "(Ljava/lang/String;)[B", false);

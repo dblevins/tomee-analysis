@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "<T:Ljava/lang/Object;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extension", "Ljavax/enterprise/inject/spi/Extension;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extension", "Ljakarta/enterprise/inject/spi/Extension;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedTypeCon
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/Extension;Ljava/lang/String;Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl;)V", "(Ljavax/enterprise/inject/spi/Extension;Ljava/lang/String;Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/Extension;Ljava/lang/String;Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl;)V", "(Ljakarta/enterprise/inject/spi/Extension;Ljava/lang/String;Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "extension", "Ljavax/enterprise/inject/spi/Extension;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "extension", "Ljakarta/enterprise/inject/spi/Extension;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "id", "Ljava/lang/String;");
@@ -55,10 +55,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtension", "()Ljavax/enterprise/inject/spi/Extension;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtension", "()Ljakarta/enterprise/inject/spi/Extension;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "extension", "Ljavax/enterprise/inject/spi/Extension;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder", "extension", "Ljakarta/enterprise/inject/spi/Extension;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -92,7 +92,7 @@ methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBMetaData", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/EJBMetaData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBMetaData", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/EJBMetaData;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/ejbd/CallContext", "getCallContext", "()Lorg/apache/openejb/server/ejbd/CallContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -111,7 +111,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/Handle;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/Handle;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -192,7 +192,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHomeHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/HomeHandle;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHomeHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/HomeHandle;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -254,7 +254,7 @@ methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/EJBObject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/EJBObject;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -309,7 +309,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/client/EJBObject
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/EJBObjectHandler", "createEJBObjectProxy", "()Lorg/apache/openejb/client/EJBObjectProxy;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBObject");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBObject");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
@@ -451,7 +451,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

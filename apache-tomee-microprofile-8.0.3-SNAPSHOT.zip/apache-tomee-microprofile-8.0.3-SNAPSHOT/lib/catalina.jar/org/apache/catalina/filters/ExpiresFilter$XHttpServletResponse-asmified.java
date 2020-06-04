@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", null, "javax/servlet/http/HttpServletResponseWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", null, "jakarta/servlet/http/HttpServletResponseWrapper", null);
 
 classWriter.visitInnerClass("org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "org/apache/catalina/filters/ExpiresFilter", "XHttpServletResponse", ACC_PUBLIC);
 
@@ -47,11 +47,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "printWriter", "Ljava/io/Prin
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletOutputStream", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -63,17 +63,17 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "this$0", "Lorg/apache/catalina/filters/ExpiresFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -84,7 +84,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(LLOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "addDateHeader", "(Ljava/lang/String;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "addDateHeader", "(Ljava/lang/String;J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "lastModifiedHeaderSet", "Z");
 Label label0 = new Label();
@@ -107,7 +107,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLdcInsn("Cache-Control");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);
@@ -144,10 +144,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -156,16 +156,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "this$0", "Lorg/apache/catalina/filters/ExpiresFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/ExpiresFilter$XServletOutputStream", "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljavax/servlet/ServletOutputStream;Ljavax/servlet/http/HttpServletRequest;Lorg/apache/catalina/filters/ExpiresFilter$XHttpServletResponse;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/ExpiresFilter$XServletOutputStream", "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljakarta/servlet/ServletOutputStream;Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/catalina/filters/ExpiresFilter$XHttpServletResponse;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
@@ -183,11 +183,11 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "this$0", "Lorg/apache/catalina/filters/ExpiresFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "getWriter", "()Ljava/io/PrintWriter;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "getWriter", "()Ljava/io/PrintWriter;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/ExpiresFilter$XPrintWriter", "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljava/io/PrintWriter;Ljavax/servlet/http/HttpServletRequest;Lorg/apache/catalina/filters/ExpiresFilter$XHttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/ExpiresFilter$XPrintWriter", "<init>", "(Lorg/apache/catalina/filters/ExpiresFilter;Ljava/io/PrintWriter;Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/catalina/filters/ExpiresFilter$XHttpServletResponse;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "printWriter", "Ljava/io/PrintWriter;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -219,7 +219,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "reset", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "reset", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(LCONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/filters/ExpiresFilter$XHttpServletResponse", "lastModifiedHeader", "J");
@@ -239,7 +239,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(LLOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "setDateHeader", "(Ljava/lang/String;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "setDateHeader", "(Ljava/lang/String;J)V", false);
 methodVisitor.visitLdcInsn("Last-Modified");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);
@@ -263,7 +263,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLdcInsn("Cache-Control");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);

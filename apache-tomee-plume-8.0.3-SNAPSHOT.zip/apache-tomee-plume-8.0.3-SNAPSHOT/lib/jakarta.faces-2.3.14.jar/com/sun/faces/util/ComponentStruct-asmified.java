@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/util/ComponentStruct", null, "java/lang/Object", new String[] { "javax/faces/component/StateHolder" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/util/ComponentStruct", null, "java/lang/Object", new String[] { "jakarta/faces/component/StateHolder" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADD", "Ljava/lang/String;", null, "ADD");
@@ -112,7 +112,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -168,7 +168,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();

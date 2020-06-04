@@ -25,31 +25,31 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/core/cmp/CmpCallback", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setEntityContext", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setEntityContext", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unsetEntityContext", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unsetEntityContext", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbActivate", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbActivate", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbPassivate", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbPassivate", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbLoad", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbLoad", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbStore", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbStore", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbRemove", "(Ljavax/ejb/EntityBean;)V", null, new String[] { "javax/ejb/RemoveException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "ejbRemove", "(Ljakarta/ejb/EntityBean;)V", null, new String[] { "jakarta/ejb/RemoveException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsExtension", null, "java/lang/Object", new String[] { "javax/websocket/Extension" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsExtension", null, "java/lang/Object", new String[] { "jakarta/websocket/Extension" });
 
-classWriter.visitInnerClass("javax/websocket/Extension$Parameter", "javax/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Extension$Parameter", "jakarta/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "name", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "parameters", "Ljava/util/List;", "Ljava/util/List<Ljavax/websocket/Extension$Parameter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "parameters", "Ljava/util/List;", "Ljava/util/List<Ljakarta/websocket/Extension$Parameter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "addParameter", "(Ljavax/websocket/Extension$Parameter;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "addParameter", "(Ljakarta/websocket/Extension$Parameter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsExtension", "parameters", "Ljava/util/List;");
@@ -73,7 +73,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/websocket/Extension$Parameter;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/websocket/Extension$Parameter;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsExtension", "parameters", "Ljava/util/List;");

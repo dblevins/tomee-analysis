@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/core/cmp/CmpEngineFactory", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionManager", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionSynchronizationRegistry", "(Ljavax/transaction/TransactionSynchronizationRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionSynchronizationRegistry", "(Ljakarta/transaction/TransactionSynchronizationRegistry;)V", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -31,7 +31,7 @@ classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -39,7 +39,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "policyMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Lnet/shibboleth/utilities/java/support/security/AccessControl;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -68,7 +68,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPolicyMap", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Lnet/shibboleth/utilities/java/support/security/AccessControl;>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, false);
@@ -135,12 +135,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInstance", "(Ljava/lang/String;)Lnet/shibboleth/utilities/java/support/security/AccessControl;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

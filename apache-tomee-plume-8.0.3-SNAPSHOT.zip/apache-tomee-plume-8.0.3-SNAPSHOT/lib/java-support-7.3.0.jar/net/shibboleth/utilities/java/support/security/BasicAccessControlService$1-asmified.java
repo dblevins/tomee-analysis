@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "checkAccess", "(Ljavax/servlet/ServletRequest;Ljava/lang/String;Ljava/lang/String;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "checkAccess", "(Ljakarta/servlet/ServletRequest;Ljava/lang/String;Ljava/lang/String;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);

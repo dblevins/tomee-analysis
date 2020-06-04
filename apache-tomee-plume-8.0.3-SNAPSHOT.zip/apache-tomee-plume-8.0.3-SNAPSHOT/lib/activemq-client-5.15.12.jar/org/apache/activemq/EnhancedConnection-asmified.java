@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/EnhancedConnection", null, "java/lang/Object", new String[] { "javax/jms/TopicConnection", "javax/jms/QueueConnection", "org/apache/activemq/Closeable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/EnhancedConnection", null, "java/lang/Object", new String[] { "jakarta/jms/TopicConnection", "jakarta/jms/QueueConnection", "org/apache/activemq/Closeable" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getDestinationSource", "()Lorg/apache/activemq/advisory/DestinationSource;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getDestinationSource", "()Lorg/apache/activemq/advisory/DestinationSource;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

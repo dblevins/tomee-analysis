@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/o
 classWriter.visitInnerClass("org/apache/openejb/core/transaction/BeanTransactionPolicy$SuspendedTransaction", "org/apache/openejb/core/transaction/BeanTransactionPolicy", "SuspendedTransaction", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getUserTransaction", "()Ljavax/transaction/UserTransaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getUserTransaction", "()Ljakarta/transaction/UserTransaction;", null, null);
 methodVisitor.visitEnd();
 }
 {

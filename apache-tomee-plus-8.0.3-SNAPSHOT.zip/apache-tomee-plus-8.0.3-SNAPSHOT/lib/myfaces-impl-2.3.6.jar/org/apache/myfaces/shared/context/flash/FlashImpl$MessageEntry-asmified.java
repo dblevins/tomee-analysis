@@ -35,11 +35,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clientId", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "message", "Ljavax/faces/application/FacesMessage;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "message", "Ljakarta/faces/application/FacesMessage;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry", "clientId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry", "message", "Ljavax/faces/application/FacesMessage;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry", "message", "Ljakarta/faces/application/FacesMessage;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -63,10 +63,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry", "message", "Ljavax/faces/application/FacesMessage;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/context/flash/FlashImpl$MessageEntry", "message", "Ljakarta/faces/application/FacesMessage;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

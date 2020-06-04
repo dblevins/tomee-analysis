@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/application/ResourceHandl
 classWriter.visitInnerClass("org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "org/apache/myfaces/application/ResourceHandlerImpl", "FilterInvalidSuffixViewResourceIterator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,14 +35,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validSuffixes", "Ljava/util/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Iterator;Ljavax/faces/context/FacesContext;Ljava/util/Set;)V", "(Ljava/util/Iterator<Ljava/lang/String;>;Ljavax/faces/context/FacesContext;Ljava/util/Set<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Iterator;Ljakarta/faces/context/FacesContext;Ljava/util/Set;)V", "(Ljava/util/Iterator<Ljava/lang/String;>;Ljakarta/faces/context/FacesContext;Ljava/util/Set<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/util/SkipMatchIterator", "<init>", "(Ljava/util/Iterator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "validSuffixes", "Ljava/util/Set;");
@@ -56,22 +56,22 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getViewHandler", "()Ljavax/faces/application/ViewHandler;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ViewHandler", "getViewDeclarationLanguage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/view/ViewDeclarationLanguage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ViewHandler", "getViewDeclarationLanguage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/view/ViewDeclarationLanguage;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/ViewDeclarationLanguage", "viewExists", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/ViewDeclarationLanguage", "viewExists", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
@@ -81,7 +81,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "java/lang/String", "java/lang/String", "javax/faces/view/ViewDeclarationLanguage", Opcodes.INTEGER, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator", "java/lang/String", "java/lang/String", "jakarta/faces/view/ViewDeclarationLanguage", Opcodes.INTEGER, "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label2 = new Label();

@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setUseSharedTxContext", "(Z)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setUseSharedTxContext", "(Z)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ManagedTransactionContext", "isInLocalTransaction", "()Z", false);
@@ -63,10 +63,10 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/JMSException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/JMSException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("The resource is already being used in transaction context.");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -78,7 +78,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ManagedTransactionContext", "useSharedTxContext", "Z");
@@ -100,7 +100,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ManagedTransactionContext", "useSharedTxContext", "Z");
@@ -362,7 +362,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ManagedTransactionContext", "useSharedTxContext", "Z");

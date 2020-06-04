@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contextBind", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "httpUpgradeHandler", "Ljavax/servlet/http/HttpUpgradeHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "httpUpgradeHandler", "Ljakarta/servlet/http/HttpUpgradeHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "instanceManager"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,7 +46,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/UpgradeToken", "contextBind", "Lorg/apache/tomcat/ContextBind;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/UpgradeToken", "httpUpgradeHandler", "Ljavax/servlet/http/HttpUpgradeHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/UpgradeToken", "httpUpgradeHandler", "Ljakarta/servlet/http/HttpUpgradeHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/UpgradeToken", "instanceManager", "Lorg/apache/tomcat/InstanceManager;");
@@ -64,10 +64,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getHttpUpgradeHandler", "()Ljavax/servlet/http/HttpUpgradeHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getHttpUpgradeHandler", "()Ljakarta/servlet/http/HttpUpgradeHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/UpgradeToken", "httpUpgradeHandler", "Ljavax/servlet/http/HttpUpgradeHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/UpgradeToken", "httpUpgradeHandler", "Ljakarta/servlet/http/HttpUpgradeHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

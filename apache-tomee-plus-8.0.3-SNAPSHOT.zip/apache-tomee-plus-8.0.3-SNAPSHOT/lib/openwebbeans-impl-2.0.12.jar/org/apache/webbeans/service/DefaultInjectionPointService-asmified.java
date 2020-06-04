@@ -115,11 +115,11 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasInjection", "(Ljavax/enterprise/inject/spi/Annotated;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasInjection", "(Ljakarta/enterprise/inject/spi/Annotated;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/inject/Inject;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/inject/Inject;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -135,7 +135,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInvokeDynamicInsn("test", "(Lorg/apache/webbeans/service/DefaultInjectionPointService;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/webbeans/service/DefaultInjectionPointService", "lambda$hasInjection$3", "(Ljava/lang/annotation/Annotation;)Z", false), Type.getType("(Ljava/lang/annotation/Annotation;)Z")});
@@ -143,7 +143,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "anyMa
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/service/DefaultInjectionPointService", "lambda$hasInjection$4", "(Ljava/lang/annotation/Annotation;)Z", false), Type.getType("(Ljava/lang/annotation/Annotation;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "noneMatch", "(Ljava/util/function/Predicate;)Z", true);
@@ -165,18 +165,18 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/service/DefaultInjectionPointService", "delegates", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("test", "(Ljavax/enterprise/inject/spi/Annotated;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/service/DefaultInjectionPointService", "lambda$hasInjection$5", "(Ljavax/enterprise/inject/spi/Annotated;Lorg/apache/webbeans/spi/InjectionPointService;)Z", false), Type.getType("(Lorg/apache/webbeans/spi/InjectionPointService;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "(Ljakarta/enterprise/inject/spi/Annotated;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/service/DefaultInjectionPointService", "lambda$hasInjection$5", "(Ljakarta/enterprise/inject/spi/Annotated;Lorg/apache/webbeans/spi/InjectionPointService;)Z", false), Type.getType("(Lorg/apache/webbeans/spi/InjectionPointService;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "anyMatch", "(Ljava/util/function/Predicate;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$hasInjection$5", "(Ljavax/enterprise/inject/spi/Annotated;Lorg/apache/webbeans/spi/InjectionPointService;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$hasInjection$5", "(Ljakarta/enterprise/inject/spi/Annotated;Lorg/apache/webbeans/spi/InjectionPointService;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/InjectionPointService", "hasInjection", "(Ljavax/enterprise/inject/spi/Annotated;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/InjectionPointService", "hasInjection", "(Ljakarta/enterprise/inject/spi/Annotated;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -186,7 +186,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/Produces;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/Produces;"));
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -218,10 +218,10 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/annotation/Priority;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/annotation/Priority;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/annotation/Priority", "value", "()I", true), Type.getType("(Ljavax/annotation/Priority;)Ljava/lang/Integer;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/annotation/Priority", "value", "()I", true), Type.getType("(Ljakarta/annotation/Priority;)Ljava/lang/Integer;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitLdcInsn(new Integer(2147483647));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);

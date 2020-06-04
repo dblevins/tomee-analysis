@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/command/ActiveMQBytesMessage", null, "org/apache/activemq/command/ActiveMQMessage", new String[] { "javax/jms/BytesMessage" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/command/ActiveMQBytesMessage", null, "org/apache/activemq/command/ActiveMQMessage", new String[] { "jakarta/jms/BytesMessage" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATA_STRUCTURE_TYPE", "B", null, new Integer(24));
@@ -90,7 +90,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onSend", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onSend", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/command/ActiveMQMessage", "onSend", "()V", false);
@@ -266,7 +266,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clearBody", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clearBody", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/command/ActiveMQMessage", "clearBody", "()V", false);
@@ -284,7 +284,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBodyLength", "()J", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBodyLength", "()J", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/command/ActiveMQBytesMessage", "initializeReading", "()V", false);
@@ -296,7 +296,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBoolean", "()Z", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBoolean", "()Z", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -316,19 +316,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readByte", "()B", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readByte", "()B", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -348,19 +348,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedByte", "()I", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedByte", "()I", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -380,19 +380,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readShort", "()S", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readShort", "()S", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -412,19 +412,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedShort", "()I", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedShort", "()I", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -444,19 +444,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readChar", "()C", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readChar", "()C", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -476,19 +476,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readInt", "()I", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readInt", "()I", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -508,19 +508,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readLong", "()J", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readLong", "()J", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -540,19 +540,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readFloat", "()F", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readFloat", "()F", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -572,19 +572,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readDouble", "()D", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readDouble", "()D", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -604,19 +604,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUTF", "()Ljava/lang/String;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUTF", "()Ljava/lang/String;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -636,19 +636,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBytes", "([B)I", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBytes", "([B)I", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -660,7 +660,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBytes", "([BI)I", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBytes", "([BI)I", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -718,19 +718,19 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/command/ActiveMQBytesMessage", "[B", Opcodes.INTEGER}, 1, new Object[] {"java/io/EOFException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljavax/jms/MessageEOFException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageEOFException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageEOFException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljavax/jms/MessageFormatException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "createMessageFormatException", "(Ljava/lang/Exception;)Ljakarta/jms/MessageFormatException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBoolean", "(Z)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBoolean", "(Z)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -750,7 +750,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -759,7 +759,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeByte", "(B)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeByte", "(B)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -779,7 +779,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -788,7 +788,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeShort", "(S)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeShort", "(S)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -808,7 +808,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -817,7 +817,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeChar", "(C)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeChar", "(C)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -837,7 +837,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -846,7 +846,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeInt", "(I)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeInt", "(I)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -866,7 +866,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -875,7 +875,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeLong", "(J)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeLong", "(J)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -895,7 +895,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -904,7 +904,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeFloat", "(F)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeFloat", "(F)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -924,7 +924,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -933,7 +933,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeDouble", "(D)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeDouble", "(D)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -953,7 +953,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -962,7 +962,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeUTF", "(Ljava/lang/String;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeUTF", "(Ljava/lang/String;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -982,7 +982,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -991,7 +991,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBytes", "([B)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBytes", "([B)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1011,7 +1011,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1020,7 +1020,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBytes", "([BII)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBytes", "([BII)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1042,7 +1042,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1051,7 +1051,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/Object;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1184,7 +1184,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/Active
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/MessageFormatException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/MessageFormatException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1195,7 +1195,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/MessageFormatException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/MessageFormatException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1204,7 +1204,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1257,7 +1257,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1266,7 +1266,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initializeWriting", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initializeWriting", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/ActiveMQBytesMessage", "checkReadOnlyBody", "()V", false);
@@ -1297,7 +1297,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "restoreOldContent", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "restoreOldContent", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1350,7 +1350,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/activemq/command/ActiveMQBytesMessage"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1359,16 +1359,16 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkWriteOnlyBody", "()V", null, new String[] { "javax/jms/MessageNotReadableException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkWriteOnlyBody", "()V", null, new String[] { "jakarta/jms/MessageNotReadableException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/command/ActiveMQBytesMessage", "readOnlyBody", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/MessageNotReadableException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/MessageNotReadableException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Message body is write-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/MessageNotReadableException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/MessageNotReadableException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1377,7 +1377,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initializeReading", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initializeReading", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1447,7 +1447,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/activemq/command/ActiveMQBytesMessage"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1537,7 +1537,7 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObjectProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObjectProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/command/ActiveMQBytesMessage", "initializeWriting", "()V", false);

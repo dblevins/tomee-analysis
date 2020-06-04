@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxb/JAXBEncoderDecoder$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljava/lang/reflect/Member;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
-classWriter.visitOuterClass("org/apache/cxf/jaxb/JAXBEncoderDecoder", "marshallException", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Exception;Lorg/apache/cxf/service/model/MessagePartInfo;Ljava/lang/Object;)V");
+classWriter.visitOuterClass("org/apache/cxf/jaxb/JAXBEncoderDecoder", "marshallException", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Exception;Lorg/apache/cxf/service/model/MessagePartInfo;Ljava/lang/Object;)V");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxb/JAXBEncoderDecoder$1", null, null, ACC_STATIC);
 

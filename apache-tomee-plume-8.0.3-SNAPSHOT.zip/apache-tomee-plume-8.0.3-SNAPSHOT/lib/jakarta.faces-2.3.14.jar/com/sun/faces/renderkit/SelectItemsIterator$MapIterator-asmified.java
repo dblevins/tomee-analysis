@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "Ljava/lang/Object;Lcom/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator<Ljavax/faces/model/SelectItem;>;", "java/lang/Object", new String[] { "com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "Ljava/lang/Object;Lcom/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator<Ljakarta/faces/model/SelectItem;>;", "java/lang/Object", new String[] { "com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator" });
 
 classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "com/sun/faces/renderkit/SelectItemsIterator", "MapIterator", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -33,7 +33,7 @@ classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$1", nul
 classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator", "com/sun/faces/renderkit/SelectItemsIterator", "ComponentAwareSelectItemIterator", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "item", "Ljavax/faces/model/SelectItem;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "item", "Ljakarta/faces/model/SelectItem;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,19 +41,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "iterator", "Ljava/util/Itera
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "parent", "Ljavax/faces/component/UIComponent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "parent", "Ljakarta/faces/component/UIComponent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Map;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Map;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/model/SelectItem");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/model/SelectItem");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/model/SelectItem", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/model/SelectItem", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
@@ -61,16 +61,16 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "iterator", "Ljava/util/Iterator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "parent", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "parent", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "currentSelectComponent", "()Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "currentSelectComponent", "()Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "parent", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "parent", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -86,7 +86,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/faces/model/SelectItem;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/faces/model/SelectItem;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "iterator", "Ljava/util/Iterator;");
@@ -100,7 +100,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -109,14 +109,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 1, new Object[] {"javax/faces/model/SelectItem"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 1, new Object[] {"jakarta/faces/model/SelectItem"});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 2, new Object[] {"javax/faces/model/SelectItem", "java/lang/String"});
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/model/SelectItem", "setLabel", "(Ljava/lang/String;)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 2, new Object[] {"jakarta/faces/model/SelectItem", "java/lang/String"});
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/model/SelectItem", "setLabel", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
@@ -124,13 +124,13 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/faces/model/SelectItem"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/faces/model/SelectItem"});
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 2, new Object[] {"javax/faces/model/SelectItem", "java/lang/Object"});
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/model/SelectItem", "setValue", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "java/util/Map$Entry", "java/lang/Object", "java/lang/Object"}, 2, new Object[] {"jakarta/faces/model/SelectItem", "java/lang/Object"});
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/model/SelectItem", "setValue", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -149,18 +149,18 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "next", "()Ljavax/faces/model/SelectItem;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "next", "()Ljakarta/faces/model/SelectItem;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/util/Map;Ljavax/faces/component/UIComponent;Lcom/sun/faces/renderkit/SelectItemsIterator$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/util/Map;Ljakarta/faces/component/UIComponent;Lcom/sun/faces/renderkit/SelectItemsIterator$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "<init>", "(Ljava/util/Map;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/SelectItemsIterator$MapIterator", "<init>", "(Ljava/util/Map;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

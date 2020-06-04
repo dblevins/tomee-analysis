@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/CdiPlugin$EjbProducer", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/Producer<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Producer" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/CdiPlugin$EjbProducer", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/Producer<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Producer" });
 
 classWriter.visitInnerClass("org/apache/openejb/cdi/CdiPlugin$InstanceBean", "org/apache/openejb/cdi/CdiPlugin", "InstanceBean", ACC_PRIVATE | ACC_STATIC);
 
@@ -52,12 +52,12 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$EjbProducer", "instance", "Lorg/apache/openejb/cdi/CdiPlugin$InstanceBean;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);

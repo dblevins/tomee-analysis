@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadServiceImplementations", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/Extension;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadServiceImplementations", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/Extension;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -97,7 +97,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/Extension;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/Extension;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -508,7 +508,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitLdcInsn("META-INF/services/");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/Extension;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/Extension;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);

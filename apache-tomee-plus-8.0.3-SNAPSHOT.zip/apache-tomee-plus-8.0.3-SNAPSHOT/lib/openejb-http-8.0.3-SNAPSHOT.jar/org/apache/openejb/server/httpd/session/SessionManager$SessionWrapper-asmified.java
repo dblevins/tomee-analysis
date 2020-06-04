@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper", null, "javax/servlet/http/HttpSessionEvent", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper", null, "jakarta/servlet/http/HttpSessionEvent", null);
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper", "org/apache/openejb/server/httpd/session/SessionManager", "SessionWrapper", ACC_PUBLIC | ACC_STATIC);
 
@@ -47,7 +47,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/open
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpSessionEvent", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpSessionEvent", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper", "begin", "Lorg/apache/openejb/server/httpd/BeginWebBeansListener;");

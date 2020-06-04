@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/metadata/reso
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -35,7 +35,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "roleWhiteList", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/namespace/QName;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extRoleDescriptor", "Ljavax/xml/namespace/QName;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -64,7 +64,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/namespace/QName;>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -114,7 +114,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRoleWhiteList", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/namespace/QName;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -177,12 +177,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Lorg/opensaml/core/xml/XMLObject;)Lorg/opensaml/core/xml/XMLObject;", null, new String[] { "org/opensaml/saml/metadata/resolver/filter/FilterException" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -220,7 +220,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "filterEntitiesDescriptor", "(Lorg/opensaml/saml/saml2/metadata/EntitiesDescriptor;)V", null, new String[] { "org/opensaml/saml/metadata/resolver/filter/FilterException" });
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -371,7 +371,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "filterEntityDescriptor", "(Lorg/opensaml/saml/saml2/metadata/EntityDescriptor;)V", null, new String[] { "org/opensaml/saml/metadata/resolver/filter/FilterException" });
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -424,7 +424,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getRoleName", "(Lorg/opensaml/saml/saml2/metadata/RoleDescriptor;)Ljavax/xml/namespace/QName;", null, new String[] { "org/opensaml/saml/metadata/resolver/filter/FilterException" });
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

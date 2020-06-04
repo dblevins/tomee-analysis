@@ -86,7 +86,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/Unmarshaller;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/Unmarshaller;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -101,7 +101,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/Unmarshaller;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/Unmarshaller;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -116,7 +116,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/Marshaller;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/Marshaller;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/metatype/sxc/jaxb/LifecycleCallback", "getDeclaredMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeMarshal", "Ljava/lang/reflect/Method;");
@@ -127,7 +127,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/Marshaller;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/Marshaller;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/metatype/sxc/jaxb/LifecycleCallback", "getDeclaredMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "afterMarshal", "Ljava/lang/reflect/Method;");
@@ -211,7 +211,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeUnmarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeUnmarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeUnmarshal", "Ljava/lang/reflect/Method;");
@@ -238,7 +238,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterUnmarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterUnmarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "afterUnmarshal", "Ljava/lang/reflect/Method;");
@@ -265,7 +265,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeMarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Marshaller;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeMarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Marshaller;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeMarshal", "Ljava/lang/reflect/Method;");
@@ -288,7 +288,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterMarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Marshaller;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterMarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Marshaller;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/LifecycleCallback", "afterMarshal", "Ljava/lang/reflect/Method;");

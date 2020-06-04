@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCurrentSingletonContext", "()Ljavax/enterprise/context/spi/Context;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCurrentSingletonContext", "()Ljakarta/enterprise/context/spi/Context;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/corespi/se/StandaloneContextsService", "singletonContext", "Lorg/apache/webbeans/context/SingletonContext;");

@@ -93,7 +93,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/transform/TransformerFact
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/TransformerFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitLabel(label1);

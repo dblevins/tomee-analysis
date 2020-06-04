@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/OptimizedLoaderService$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/enterprise/inject/spi/Extension;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/OptimizedLoaderService$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/enterprise/inject/spi/Extension;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 classWriter.visitOuterClass("org/apache/openejb/cdi/OptimizedLoaderService", "loadExtensions", "(Ljava/lang/ClassLoader;)Ljava/util/List;");
 
@@ -45,15 +45,15 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/enterprise/inject/spi/Extension;Ljavax/enterprise/inject/spi/Extension;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/enterprise/inject/spi/Extension;Ljakarta/enterprise/inject/spi/Extension;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "getVal", "(Ljavax/enterprise/inject/spi/Extension;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "getVal", "(Ljakarta/enterprise/inject/spi/Extension;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "getVal", "(Ljavax/enterprise/inject/spi/Extension;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "getVal", "(Ljakarta/enterprise/inject/spi/Extension;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
@@ -77,7 +77,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getVal", "(Ljavax/enterprise/inject/spi/Extension;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getVal", "(Ljakarta/enterprise/inject/spi/Extension;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -123,10 +123,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Extension");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Extension");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Extension");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "compare", "(Ljavax/enterprise/inject/spi/Extension;Ljavax/enterprise/inject/spi/Extension;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Extension");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/OptimizedLoaderService$1", "compare", "(Ljakarta/enterprise/inject/spi/Extension;Ljakarta/enterprise/inject/spi/Extension;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

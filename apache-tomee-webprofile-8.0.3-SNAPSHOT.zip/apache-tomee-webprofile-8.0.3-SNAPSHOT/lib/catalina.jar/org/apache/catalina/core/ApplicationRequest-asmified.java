@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationRequest", null, "javax/servlet/ServletRequestWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationRequest", null, "jakarta/servlet/ServletRequestWrapper", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "specials", "[Ljava/lang/String;", null, null);
@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "attributes", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletRequest;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletRequestWrapper", "<init>", "(Ljavax/servlet/ServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletRequestWrapper", "<init>", "(Ljakarta/servlet/ServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -45,7 +45,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationRequest", "attributes", "Ljava/util/HashMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "setRequest", "(Ljavax/servlet/ServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "setRequest", "(Ljakarta/servlet/ServletRequest;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -144,9 +144,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/Applicati
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "getRequest", "()Ljavax/servlet/ServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "removeAttribute", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "removeAttribute", "(Ljava/lang/String;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -195,10 +195,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/Applicati
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "getRequest", "()Ljavax/servlet/ServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationRequest", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -221,7 +221,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequest", "(Ljavax/servlet/ServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequest", "(Ljakarta/servlet/ServletRequest;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -231,7 +231,7 @@ Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletRequestWrapper", "setRequest", "(Ljavax/servlet/ServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletRequestWrapper", "setRequest", "(Ljakarta/servlet/ServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationRequest", "attributes", "Ljava/util/HashMap;");
 methodVisitor.visitInsn(DUP);
@@ -242,7 +242,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationRequest", "attributes", "Ljava/util/HashMap;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "clear", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getAttributeNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttributeNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
@@ -257,7 +257,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationRequest", "attributes", "Ljava/util/HashMap;");

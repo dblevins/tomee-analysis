@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "AJAX_BEHAVIORS", "Ljava/lang/String;", null, "javax.faces.component.AjaxBehaviors");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "AJAX_BEHAVIORS", "Ljava/lang/String;", null, "jakarta.faces.component.AjaxBehaviors");
 fieldVisitor.visitEnd();
 }
 {
@@ -56,13 +56,13 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAjaxBehaviors", "(Ljavax/faces/context/FacesContext;Z)Lcom/sun/faces/component/behavior/AjaxBehaviors;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAjaxBehaviors", "(Ljakarta/faces/context/FacesContext;Z)Lcom/sun/faces/component/behavior/AjaxBehaviors;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.component.AjaxBehaviors");
+methodVisitor.visitLdcInsn("jakarta.faces.component.AjaxBehaviors");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/component/behavior/AjaxBehaviors");
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -76,7 +76,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/behavior/AjaxBehaviors", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.component.AjaxBehaviors");
+methodVisitor.visitLdcInsn("jakarta.faces.component.AjaxBehaviors");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -88,7 +88,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addBehaviors", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/behavior/ClientBehaviorHolder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addBehaviors", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/behavior/ClientBehaviorHolder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/behavior/AjaxBehaviors", "behaviorStack", "Ljava/util/ArrayDeque;");
@@ -120,7 +120,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo", "addBehavior", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/behavior/ClientBehaviorHolder;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo", "addBehavior", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/behavior/ClientBehaviorHolder;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -129,7 +129,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pushBehavior", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/behavior/AjaxBehavior;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pushBehavior", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/behavior/AjaxBehavior;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/behavior/AjaxBehaviors", "behaviorStack", "Ljava/util/ArrayDeque;");
@@ -138,7 +138,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo", "<init>", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/behavior/AjaxBehavior;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo", "<init>", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/behavior/AjaxBehavior;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/ArrayDeque", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

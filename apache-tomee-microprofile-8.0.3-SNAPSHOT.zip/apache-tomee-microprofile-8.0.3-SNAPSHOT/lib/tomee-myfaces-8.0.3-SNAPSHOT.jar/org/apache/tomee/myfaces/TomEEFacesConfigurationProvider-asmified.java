@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWebAppFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWebAppFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("/WEB-INF/faces-config.xml");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -54,7 +54,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/InputStream"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/DefaultFacesConfigurationProvider", "getWebAppFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/DefaultFacesConfigurationProvider", "getWebAppFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

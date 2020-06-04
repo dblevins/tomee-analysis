@@ -82,7 +82,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/soap/SOAPMessage;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/soap/SOAPMessage;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getContent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);

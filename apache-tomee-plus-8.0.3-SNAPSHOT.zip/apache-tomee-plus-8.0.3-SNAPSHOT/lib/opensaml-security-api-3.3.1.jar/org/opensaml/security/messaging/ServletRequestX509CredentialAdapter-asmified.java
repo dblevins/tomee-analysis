@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "certChain", "Ljava/util/List
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletRequest;)V", null, new String[] { "org/opensaml/security/SecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletRequest;)V", null, new String[] { "org/opensaml/security/SecurityException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/security/credential/AbstractCredential", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("javax.servlet.request.X509Certificate");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/X509Certificate;");
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/X509Certificate;");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -55,7 +55,7 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/opensaml/security/messaging/ServletRequestX509CredentialAdapter", "javax/servlet/ServletRequest", "[Ljava/security/cert/X509Certificate;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/opensaml/security/messaging/ServletRequestX509CredentialAdapter", "jakarta/servlet/ServletRequest", "[Ljava/security/cert/X509Certificate;"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "org/opensaml/security/SecurityException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Servlet request does not contain X.509 certificates in attribute javax.servlet.request.X509Certificate");

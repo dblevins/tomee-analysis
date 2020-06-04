@@ -81,8 +81,8 @@ methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/c
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/CompositeLibrary", "addTagHandler", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("renderFacet");
-methodVisitor.visitLdcInsn("javax.faces.Output");
-methodVisitor.visitLdcInsn("javax.faces.CompositeFacet");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.CompositeFacet");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/composite/RenderFacetHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/composite/CompositeLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

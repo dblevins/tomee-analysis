@@ -27,29 +27,29 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/spring/Jax
 classWriter.visitInnerClass("org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter", "org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor", "ServletAdapter", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "controller", "Ljavax/servlet/Servlet;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "controller", "Ljakarta/servlet/Servlet;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/Servlet;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/Servlet;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter", "controller", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter", "controller", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleRequest", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/springframework/web/servlet/ModelAndView;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleRequest", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)Lorg/springframework/web/servlet/ModelAndView;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter", "controller", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter", "controller", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/Servlet", "service", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/Servlet", "service", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", true);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);

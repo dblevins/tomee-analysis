@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/GraphContext", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -92,7 +92,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPath", "()Lorg/apache/bv
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/GraphContext", "path", "Lorg/apache/bval/jsr/util/PathImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljavax/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljakarta/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -111,11 +111,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "child", "(Lorg/apache/bval/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/GraphContext", "path", "Lorg/apache/bval/jsr/util/PathImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljavax/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljakarta/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljavax/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljakarta/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/GraphContext");
 methodVisitor.visitInsn(DUP);
@@ -130,10 +130,10 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "child", "(Ljavax/validation/Path;Ljava/lang/Object;)Lorg/apache/bval/jsr/GraphContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "child", "(Ljakarta/validation/Path;Ljava/lang/Object;)Lorg/apache/bval/jsr/GraphContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "of", "(Ljavax/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "of", "(Ljakarta/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
@@ -146,14 +146,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljavax/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/PathImpl", "copy", "(Ljakarta/validation/Path;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "javax/validation/Path", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl"}, 3, new Object[] {label0, label0, "org/apache/bval/jsr/ApacheFactoryContext"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "jakarta/validation/Path", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl"}, 3, new Object[] {label0, label0, "org/apache/bval/jsr/ApacheFactoryContext"});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "javax/validation/Path", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl"}, 4, new Object[] {label0, label0, "org/apache/bval/jsr/ApacheFactoryContext", "org/apache/bval/jsr/util/PathImpl"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "jakarta/validation/Path", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl"}, 4, new Object[] {label0, label0, "org/apache/bval/jsr/ApacheFactoryContext", "org/apache/bval/jsr/util/PathImpl"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/GraphContext", "<init>", "(Lorg/apache/bval/jsr/ApacheFactoryContext;Lorg/apache/bval/jsr/util/PathImpl;Ljava/lang/Object;Lorg/apache/bval/jsr/GraphContext;)V", false);
@@ -354,7 +354,7 @@ methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ValidationException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ValidationException;")});
 methodVisitor.visitLdcInsn("Value %s is not assignment-compatible with %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");

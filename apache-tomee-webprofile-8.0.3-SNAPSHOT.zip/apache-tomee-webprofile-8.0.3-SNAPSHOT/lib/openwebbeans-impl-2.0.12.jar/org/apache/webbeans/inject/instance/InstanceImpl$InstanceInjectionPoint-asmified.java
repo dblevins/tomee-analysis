@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/InjectionPoint", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/InjectionPoint", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "org/apache/webbeans/inject/instance/InstanceImpl", "InstanceInjectionPoint", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "qualifiers", "Ljava/util/Set
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
@@ -58,8 +58,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljava/lang/reflect/Type;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -74,11 +74,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBean", "()Ljavax/enterprise/inject/spi/Bean;", "()Ljavax/enterprise/inject/spi/Bean<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", "()Ljakarta/enterprise/inject/spi/Bean<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getBean", "()Ljavax/enterprise/inject/spi/Bean;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -87,18 +87,18 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMember", "()Ljava/lang/reflect/Member;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -107,8 +107,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isDelegate", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "isDelegate", "()Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "isDelegate", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -117,8 +117,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isTransient", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "isTransient", "()Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "isTransient", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -140,12 +140,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "qualifiers", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/InjectionPoint;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/InjectionPoint;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/OwbCustomObjectInputStream", "readObject", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/InjectionPoint");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/InjectionPoint");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -164,7 +164,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/Inst
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectOutputStream", "writeObject", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint", "delegate", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectOutputStream", "writeObject", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);

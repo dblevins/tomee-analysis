@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<X:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter<Ljavax/persistence/metamodel/Attribute<-TX;*>;>;", "java/lang/Object", new String[] { "org/apache/openjpa/persistence/meta/AbstractManagedType$Filter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<X:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter<Ljakarta/persistence/metamodel/Attribute<-TX;*>;>;", "java/lang/Object", new String[] { "org/apache/openjpa/persistence/meta/AbstractManagedType$Filter" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/PluralAttribute$CollectionType", "javax/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/PluralAttribute$CollectionType", "jakarta/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "org/apache/openjpa/persistence/meta/AbstractManagedType", "PluralCategoryFilter", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$Filter", "org/apache/openjpa/persistence/meta/AbstractManagedType", "Filter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_category", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_category", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,24 +39,24 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_invert", "Z", n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_invert", "Z");
@@ -65,17 +65,17 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "selects", "(Ljavax/persistence/metamodel/Attribute;)Z", "(Ljavax/persistence/metamodel/Attribute<-TX;*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "selects", "(Ljakarta/persistence/metamodel/Attribute;)Z", "(Ljakarta/persistence/metamodel/Attribute<-TX;*>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/persistence/metamodel/PluralAttribute");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/persistence/metamodel/PluralAttribute");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/PluralAttribute");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/PluralAttribute", "getCollectionType", "()Ljavax/persistence/metamodel/PluralAttribute$CollectionType;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/PluralAttribute");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/PluralAttribute", "getCollectionType", "()Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitInsn(ICONST_1);
 Label label1 = new Label();
@@ -117,7 +117,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_category", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "_invert", "Z");
 Label label1 = new Label();
@@ -126,11 +126,11 @@ methodVisitor.visitInsn(ICONST_1);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter"}, 3, new Object[] {label0, label0, "javax/persistence/metamodel/PluralAttribute$CollectionType"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter"}, 3, new Object[] {label0, label0, "jakarta/persistence/metamodel/PluralAttribute$CollectionType"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter"}, 4, new Object[] {label0, label0, "javax/persistence/metamodel/PluralAttribute$CollectionType", Opcodes.INTEGER});
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;Z)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter"}, 4, new Object[] {label0, label0, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", Opcodes.INTEGER});
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -149,8 +149,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "selects", "(Ljavax/persistence/metamodel/Attribute;)Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "selects", "(Ljakarta/persistence/metamodel/Attribute;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

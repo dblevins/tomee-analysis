@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Ljava/util/List;Ljavax/validation/ElementKind;)V", "(Ljava/util/List<Lorg/apache/bval/jsr/metadata/HierarchyBuilder$ContainerDelegate<TE;>;>;Ljavax/validation/ElementKind;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Ljava/util/List;Ljakarta/validation/ElementKind;)V", "(Ljava/util/List<Lorg/apache/bval/jsr/metadata/HierarchyBuilder$ContainerDelegate<TE;>;>;Ljakarta/validation/ElementKind;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -50,8 +50,8 @@ methodVisitor.visitLdcInsn("elementKind");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Validate", "notNull", "(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ElementKind");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/Liskov", "validateContainerHierarchy", "(Ljava/util/Collection;Ljavax/validation/ElementKind;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ElementKind");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/Liskov", "validateContainerHierarchy", "(Ljava/util/Collection;Ljakarta/validation/ElementKind;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

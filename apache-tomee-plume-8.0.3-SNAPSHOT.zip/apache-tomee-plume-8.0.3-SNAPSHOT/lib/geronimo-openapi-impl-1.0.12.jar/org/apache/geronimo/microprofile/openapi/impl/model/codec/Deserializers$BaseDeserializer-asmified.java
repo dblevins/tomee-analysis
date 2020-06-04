@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/json/bind/serializer/JsonbDeserializer<TT;>;", "java/lang/Object", new String[] { "javax/json/bind/serializer/JsonbDeserializer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/json/bind/serializer/JsonbDeserializer<TT;>;", "java/lang/Object", new String[] { "jakarta/json/bind/serializer/JsonbDeserializer" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers", "BaseDeserializer", ACC_PROTECTED | ACC_STATIC);
@@ -47,13 +47,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljavax/json/stream/JsonParser;Ljavax/json/bind/serializer/DeserializationContext;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "(Ljavax/json/stream/JsonParser;Ljavax/json/bind/serializer/DeserializationContext;Ljava/lang/reflect/Type;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljakarta/json/stream/JsonParser;Ljakarta/json/bind/serializer/DeserializationContext;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "(Ljakarta/json/stream/JsonParser;Ljakarta/json/bind/serializer/DeserializationContext;Ljava/lang/reflect/Type;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer", "actualType", "Ljava/lang/reflect/Type;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/serializer/DeserializationContext", "deserialize", "(Ljava/lang/reflect/Type;Ljavax/json/stream/JsonParser;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/serializer/DeserializationContext", "deserialize", "(Ljava/lang/reflect/Type;Ljakarta/json/stream/JsonParser;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

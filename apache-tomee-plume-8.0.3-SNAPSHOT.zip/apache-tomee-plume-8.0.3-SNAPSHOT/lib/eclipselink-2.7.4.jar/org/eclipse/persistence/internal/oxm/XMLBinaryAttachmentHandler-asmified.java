@@ -262,7 +262,7 @@ methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/XMLBinaryAttachmentHandler", "c_id", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller", "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljavax/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller", "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljakarta/activation/DataHandler;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
@@ -399,7 +399,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectValueFromDataHandler", "(Ljavax/activation/DataHandler;Ljava/lang/Class;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectValueFromDataHandler", "(Ljakarta/activation/DataHandler;Ljava/lang/Class;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);

@@ -73,7 +73,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "stop", "(Lorg/osgi/framework/BundleContext;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/ext/RuntimeDelegate", "setInstance", "(Ljavax/ws/rs/ext/RuntimeDelegate;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/ext/RuntimeDelegate", "setInstance", "(Ljakarta/ws/rs/ext/RuntimeDelegate;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

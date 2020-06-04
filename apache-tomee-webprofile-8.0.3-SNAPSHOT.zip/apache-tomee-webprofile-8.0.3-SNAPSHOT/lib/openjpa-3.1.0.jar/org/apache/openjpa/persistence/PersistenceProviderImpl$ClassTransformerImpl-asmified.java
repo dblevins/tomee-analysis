@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/PersistenceProviderImpl$ClassTransformerImpl", null, "java/lang/Object", new String[] { "javax/persistence/spi/ClassTransformer" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/PersistenceProviderImpl$ClassTransformerImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/ClassTransformer" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/PersistenceProviderImpl$ClassTransformerImpl", "org/apache/openjpa/persistence/PersistenceProviderImpl", "ClassTransformerImpl", ACC_PRIVATE | ACC_STATIC);
 

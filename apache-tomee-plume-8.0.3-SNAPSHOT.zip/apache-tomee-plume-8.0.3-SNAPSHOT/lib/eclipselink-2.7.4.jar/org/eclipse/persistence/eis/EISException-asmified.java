@@ -173,7 +173,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "resourceException", "(Ljavax/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "resourceException", "(Ljakarta/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -184,12 +184,12 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "resourceException", "(Ljavax/resource/ResourceException;Lorg/eclipse/persistence/queries/Call;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "resourceException", "(Ljakarta/resource/ResourceException;Lorg/eclipse/persistence/queries/Call;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/eis/EISException", "resourceException", "(Ljavax/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/eis/EISException", "resourceException", "(Ljakarta/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -202,13 +202,13 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createResourceException", "([Ljava/lang/Object;I)Lorg/eclipse/persistence/eis/EISException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/eis/EISException;"));
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/i18n/ExceptionMessageGenerator", "buildMessage", "(Ljava/lang/Class;I[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/eis/EISException");
 methodVisitor.visitInsn(DUP);

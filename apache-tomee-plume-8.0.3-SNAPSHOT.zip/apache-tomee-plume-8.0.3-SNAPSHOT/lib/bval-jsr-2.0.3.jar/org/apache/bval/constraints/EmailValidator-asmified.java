@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/EmailValidator", "Lorg/apache/bval/constraints/AbstractPatternValidator<Ljavax/validation/constraints/Email;Ljava/lang/CharSequence;>;", "org/apache/bval/constraints/AbstractPatternValidator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/EmailValidator", "Lorg/apache/bval/constraints/AbstractPatternValidator<Ljakarta/validation/constraints/Email;Ljava/lang/CharSequence;>;", "org/apache/bval/constraints/AbstractPatternValidator", null);
 
 classWriter.visitInnerClass("org/apache/bval/constraints/EmailValidator$1", null, null, 0);
 
@@ -34,14 +34,14 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/constraints/EmailValidator", "lambda$new$0", "(Ljavax/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", false), Type.getType("(Ljavax/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/constraints/EmailValidator", "lambda$new$0", "(Ljakarta/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", false), Type.getType("(Ljakarta/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;")});
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/AbstractPatternValidator", "<init>", "(Ljava/util/function/Function;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/CharSequence;Ljavax/validation/ConstraintValidatorContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/CharSequence;Ljakarta/validation/ConstraintValidatorContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/routines/EMailValidationUtils", "isValid", "(Ljava/lang/Object;)Z", false);
@@ -50,7 +50,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/AbstractPatternValidator", "isValid", "(Ljava/lang/CharSequence;Ljavax/validation/ConstraintValidatorContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/AbstractPatternValidator", "isValid", "(Ljava/lang/CharSequence;Ljakarta/validation/ConstraintValidatorContext;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_1);
 Label label1 = new Label();
@@ -65,24 +65,24 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/CharSequence");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/EmailValidator", "isValid", "(Ljava/lang/CharSequence;Ljavax/validation/ConstraintValidatorContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/EmailValidator", "isValid", "(Ljava/lang/CharSequence;Ljakarta/validation/ConstraintValidatorContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/constraints/EmailValidator$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/EmailValidator$1", "<init>", "(Ljavax/validation/constraints/Email;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/EmailValidator$1", "<init>", "(Ljakarta/validation/constraints/Email;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

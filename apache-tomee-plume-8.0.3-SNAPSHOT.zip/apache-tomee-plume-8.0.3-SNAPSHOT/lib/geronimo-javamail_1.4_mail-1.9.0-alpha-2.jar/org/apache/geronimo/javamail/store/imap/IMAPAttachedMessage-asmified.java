@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage", null, "org/apache/geronimo/javamail/store/imap/IMAPMessage", null);
 
-classWriter.visitInnerClass("javax/mail/Flags$Flag", "javax/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/Flags$Flag", "jakarta/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parent", "Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;", null, null);
@@ -35,7 +35,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/gero
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "getFolder", "()Ljavax/mail/Folder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "getFolder", "()Ljakarta/mail/Folder;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/IMAPFolder");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
@@ -61,7 +61,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage", "parent", "Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;");
@@ -91,33 +91,33 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlags", "()Ljavax/mail/Flags;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlags", "()Ljakarta/mail/Flags;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage", "parent", "Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "getFlags", "()Ljavax/mail/Flags;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "getFlags", "()Ljakarta/mail/Flags;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSet", "(Ljavax/mail/Flags$Flag;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSet", "(Ljakarta/mail/Flags$Flag;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage", "parent", "Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "isSet", "(Ljavax/mail/Flags$Flag;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "isSet", "(Ljakarta/mail/Flags$Flag;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlags", "(Ljavax/mail/Flags;Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlags", "(Ljakarta/mail/Flags;Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Flags cannot be set on message attachements");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

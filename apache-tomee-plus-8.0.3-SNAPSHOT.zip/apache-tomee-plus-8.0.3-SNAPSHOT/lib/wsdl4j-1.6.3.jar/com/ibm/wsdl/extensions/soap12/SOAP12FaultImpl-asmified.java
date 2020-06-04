@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/soap12/SOAP12FaultImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/soap12/SOAP12Fault" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/soap12/SOAP12FaultImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/soap12/SOAP12Fault" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);

@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -59,7 +59,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine",
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/lifecycle/UpdateModelValuesPhase", "$assertionsDisabled", "Z");
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -71,10 +71,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/AssertionError", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/component/UIComponent"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/component/UIComponent"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "processUpdates", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "processUpdates", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
@@ -99,11 +99,11 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/RuntimeException", "java/lang/String"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -122,9 +122,9 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getId", "()Ljavax/faces/event/PhaseId;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getId", "()Ljakarta/faces/event/PhaseId;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/event/PhaseId", "UPDATE_MODEL_VALUES", "Ljavax/faces/event/PhaseId;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/event/PhaseId", "UPDATE_MODEL_VALUES", "Ljakarta/faces/event/PhaseId;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

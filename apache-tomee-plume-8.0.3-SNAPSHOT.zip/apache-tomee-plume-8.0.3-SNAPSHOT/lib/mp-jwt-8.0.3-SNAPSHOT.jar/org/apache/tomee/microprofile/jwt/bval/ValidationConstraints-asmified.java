@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validationMethod
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validator", "Ljavax/validation/executable/ExecutableValidator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validator", "Ljakarta/validation/executable/ExecutableValidator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "instance", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljavax/validation/executable/ExecutableValidator;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;>;Ljavax/validation/executable/ExecutableValidator;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljakarta/validation/executable/ExecutableValidator;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;>;Ljakarta/validation/executable/ExecutableValidator;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validationMethods", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validator", "Ljavax/validation/executable/ExecutableValidator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validator", "Ljakarta/validation/executable/ExecutableValidator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "instance", "Ljava/lang/Object;");
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "(Ljava/lang/reflect/Method;Lorg/eclipse/microprofile/jwt/JsonWebToken;)Ljava/util/Set;", "(Ljava/lang/reflect/Method;Lorg/eclipse/microprofile/jwt/JsonWebToken;)Ljava/util/Set<Ljavax/validation/ConstraintViolation<Ljava/lang/Object;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "(Ljava/lang/reflect/Method;Lorg/eclipse/microprofile/jwt/JsonWebToken;)Ljava/util/Set;", "(Ljava/lang/reflect/Method;Lorg/eclipse/microprofile/jwt/JsonWebToken;)Ljava/util/Set<Ljakarta/validation/ConstraintViolation<Ljava/lang/Object;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validationMethods", "Ljava/util/Map;");
@@ -73,14 +73,14 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/reflect/Method"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validator", "Ljavax/validation/executable/ExecutableValidator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "validator", "Ljakarta/validation/executable/ExecutableValidator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "instance", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/executable/ExecutableValidator", "validateReturnValue", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/executable/ExecutableValidator", "validateReturnValue", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
@@ -150,16 +150,16 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/validation/Validation", "buildDefaultValidatorFactory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getValidator", "()Ljavax/validation/Validator;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Validator", "forExecutables", "()Ljavax/validation/executable/ExecutableValidator;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/validation/Validation", "buildDefaultValidatorFactory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getValidator", "()Ljakarta/validation/Validator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Validator", "forExecutables", "()Ljakarta/validation/executable/ExecutableValidator;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljavax/validation/executable/ExecutableValidator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljakarta/validation/executable/ExecutableValidator;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();

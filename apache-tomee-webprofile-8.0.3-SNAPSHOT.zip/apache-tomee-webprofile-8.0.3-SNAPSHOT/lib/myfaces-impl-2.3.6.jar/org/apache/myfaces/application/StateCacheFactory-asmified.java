@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT | ACC_DEPRECATED, "org/apache/myfaces/application/StateCacheFactory", "Ljava/lang/Object;Ljavax/faces/FacesWrapper<Lorg/apache/myfaces/application/StateCacheFactory;>;", "java/lang/Object", new String[] { "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT | ACC_DEPRECATED, "org/apache/myfaces/application/StateCacheFactory", "Ljava/lang/Object;Ljakarta/faces/FacesWrapper<Lorg/apache/myfaces/application/StateCacheFactory;>;", "java/lang/Object", new String[] { "jakarta/faces/FacesWrapper" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/Deprecated;", true);
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStateCache", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStateCache", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
 methodVisitor.visitEnd();
 }
 {

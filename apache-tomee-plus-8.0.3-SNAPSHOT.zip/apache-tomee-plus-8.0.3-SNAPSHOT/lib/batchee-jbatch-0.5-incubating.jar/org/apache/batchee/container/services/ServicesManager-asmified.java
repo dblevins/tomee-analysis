@@ -742,7 +742,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
-methodVisitor.visitLdcInsn("javax.enterprise.inject.spi.BeanManager");
+methodVisitor.visitLdcInsn("jakarta.enterprise.inject.spi.BeanManager");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/services/ServicesManager", "SERVICE_IMPL_CLASS_NAMES", "Ljava/util/Map;");

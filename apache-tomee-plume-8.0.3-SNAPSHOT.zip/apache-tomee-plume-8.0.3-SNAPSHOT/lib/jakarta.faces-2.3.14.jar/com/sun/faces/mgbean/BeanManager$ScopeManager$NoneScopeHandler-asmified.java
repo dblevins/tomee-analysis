@@ -42,14 +42,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isInScope", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isInScope", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFromScope", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFromScope", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

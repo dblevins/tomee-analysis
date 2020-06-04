@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "proxySubClass", "Ljava/lang/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)V", "(Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)V", "(Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -41,21 +41,21 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/InjectionTargetImpl", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/InjectionTargetImpl", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConstructor", "()Ljavax/enterprise/inject/spi/AnnotatedConstructor;", "()Ljavax/enterprise/inject/spi/AnnotatedConstructor<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConstructor", "()Ljakarta/enterprise/inject/spi/AnnotatedConstructor;", "()Ljakarta/enterprise/inject/spi/AnnotatedConstructor<TT;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NoSuchMethodException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -77,8 +77,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDec
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getSubclassProxyFactory", "()Lorg/apache/webbeans/proxy/SubclassProxyFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/SubclassProxyFactory", "createImplementedSubclass", "(Ljava/lang/ClassLoader;Ljavax/enterprise/inject/spi/AnnotatedType;)Ljava/lang/Class;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/SubclassProxyFactory", "createImplementedSubclass", "(Ljava/lang/ClassLoader;Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljava/lang/Class;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "proxySubClass", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -115,8 +115,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDec
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Constructor;Ljava/lang/reflect/Constructor;Ljavax/enterprise/inject/spi/AnnotatedType;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Constructor;Ljava/lang/reflect/Constructor;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
@@ -125,17 +125,17 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConstructor", "()Lorg/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl;", "()Lorg/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljavax/enterprise/inject/spi/AnnotatedConstructor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljakarta/enterprise/inject/spi/AnnotatedConstructor;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "createConstructor", "()Ljavax/enterprise/inject/spi/AnnotatedConstructor;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljavax/enterprise/inject/spi/AnnotatedConstructor;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "createConstructor", "()Ljakarta/enterprise/inject/spi/AnnotatedConstructor;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljakarta/enterprise/inject/spi/AnnotatedConstructor;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljavax/enterprise/inject/spi/AnnotatedConstructor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "constructor", "Ljakarta/enterprise/inject/spi/AnnotatedConstructor;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -154,14 +154,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/Abstr
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl", "getJavaMember", "()Ljava/lang/reflect/Constructor;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$AbstractDecoratorInjectableConstructor", "<init>", "(Ljava/lang/reflect/Constructor;Ljava/lang/reflect/Constructor;Ljavax/enterprise/inject/spi/InjectionTarget;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$AbstractDecoratorInjectableConstructor", "<init>", "(Ljava/lang/reflect/Constructor;Ljava/lang/reflect/Constructor;Ljakarta/enterprise/inject/spi/InjectionTarget;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$AbstractDecoratorInjectableConstructor", "doInjection", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "getConstructor", "()Ljavax/enterprise/inject/spi/AnnotatedConstructor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "getConstructor", "()Ljakarta/enterprise/inject/spi/AnnotatedConstructor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AbstractDecoratorInjectionTarget", "getConstructor", "()Lorg/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl;", false);

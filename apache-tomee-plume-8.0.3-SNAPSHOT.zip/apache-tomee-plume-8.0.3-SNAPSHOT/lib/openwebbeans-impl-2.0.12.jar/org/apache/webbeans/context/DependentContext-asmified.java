@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/AbstractContext", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInstance", "(Ljavax/enterprise/context/spi/Contextual;Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/context/spi/Contextual<TT;>;Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInstance", "(Ljakarta/enterprise/context/spi/Contextual;Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/context/spi/Contextual<TT;>;Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -53,7 +53,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Contextual", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Contextual", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(0, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/context/spi/Contextual<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/context/spi/Contextual<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

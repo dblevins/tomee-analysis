@@ -33,17 +33,17 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/servlet/Filter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/servlet/Filter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/Filter;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/Filter;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljakarta/servlet/Filter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/FilterListener", "context", "Ljava/lang/String;");
@@ -72,7 +72,7 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openejb/server/httpd/Servlet
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/server/httpd/ServletRequestAdapter");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/ServletRequestAdapter", "getRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/ServletRequestAdapter", "getRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openejb/server/httpd/HttpRequestImpl");
@@ -112,7 +112,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/Ht
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljakarta/servlet/Filter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/httpd/FilterListener$SimpleFilterChain");
@@ -120,16 +120,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/FilterListener$SimpleFilterChain", "<init>", "(Lorg/apache/openejb/server/httpd/FilterListener;Lorg/apache/openejb/server/httpd/FilterListener$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/Filter", "doFilter", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/Filter", "doFilter", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljakarta/servlet/FilterChain;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDelegate", "()Ljavax/servlet/Filter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDelegate", "()Ljakarta/servlet/Filter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/FilterListener", "delegate", "Ljakarta/servlet/Filter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

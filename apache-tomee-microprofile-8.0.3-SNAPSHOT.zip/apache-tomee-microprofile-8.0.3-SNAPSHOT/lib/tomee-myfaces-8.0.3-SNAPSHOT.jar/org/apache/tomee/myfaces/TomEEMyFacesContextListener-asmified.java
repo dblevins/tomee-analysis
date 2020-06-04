@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/myfaces/TomEEMyFacesContextListener", null, "java/lang/Object", new String[] { "javax/servlet/ServletContextListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/myfaces/TomEEMyFacesContextListener", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContextListener" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,18 +34,18 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletContextEvent", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletContextEvent", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "clear", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);

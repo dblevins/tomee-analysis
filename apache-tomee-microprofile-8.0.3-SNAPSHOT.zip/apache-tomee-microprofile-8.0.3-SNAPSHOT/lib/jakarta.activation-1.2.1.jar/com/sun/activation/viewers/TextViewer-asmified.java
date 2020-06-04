@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/sun/activation/viewers/TextViewer", null, "java/awt/Panel", new String[] { "javax/activation/CommandObject" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/sun/activation/viewers/TextViewer", null, "java/awt/Panel", new String[] { "jakarta/activation/CommandObject" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "text_area", "Ljava/awt/TextArea;", null, null);
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "text_buffer", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_dh", "Ljavax/activation/DataHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_dh", "Ljakarta/activation/DataHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -60,7 +60,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "text_buffer", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "DEBUG", "Z");
@@ -94,15 +94,15 @@ methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCommandContext", "(Ljava/lang/String;Ljavax/activation/DataHandler;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCommandContext", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/activation/viewers/TextViewer", "_dh", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/activation/viewers/TextViewer", "setInputStream", "(Ljava/io/InputStream;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);

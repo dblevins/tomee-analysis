@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "<P:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/ProducerFactory<TP;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/ProducerFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "<P:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/ProducerFactory<TP;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/ProducerFactory" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "providerType", "Ljava/lang/Class;", "Ljava/lang/Class<*>;", null);
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "proxy", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "provider", "Ljavax/inject/Provider;", "Ljavax/inject/Provider<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "provider", "Ljakarta/inject/Provider;", "Ljakarta/inject/Provider<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "webBeansContext", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ZLjavax/inject/Provider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;)V", "(ZLjavax/inject/Provider<*>;Ljava/lang/Class<*>;Lorg/apache/webbeans/config/WebBeansContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ZLjakarta/inject/Provider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;)V", "(ZLjakarta/inject/Provider<*>;Ljava/lang/Class<*>;Lorg/apache/webbeans/config/WebBeansContext;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -53,7 +53,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/Asserts", "assertNotNull", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "provider", "Ljavax/inject/Provider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "provider", "Ljakarta/inject/Provider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "providerType", "Ljava/lang/Class;");
@@ -68,7 +68,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;)Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;)Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/portable/ProviderBasedProducer");
 methodVisitor.visitInsn(DUP);
@@ -77,10 +77,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBas
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "providerType", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "provider", "Ljavax/inject/Provider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "provider", "Ljakarta/inject/Provider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "proxy", "Z");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducer", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/inject/Provider;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducer", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/inject/Provider;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

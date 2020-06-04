@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ra/MessageEndpointProxy", null, "java/lang/Object", new String[] { "javax/jms/MessageListener", "javax/resource/spi/endpoint/MessageEndpoint" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ra/MessageEndpointProxy", null, "java/lang/Object", new String[] { "jakarta/jms/MessageListener", "jakarta/resource/spi/endpoint/MessageEndpoint" });
 
 classWriter.visitInnerClass("org/apache/activemq/ra/MessageEndpointProxy$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -53,11 +53,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "proxyID", "I", n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageListener", "Ljavax/jms/MessageListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageListener", "Ljakarta/jms/MessageListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "state", "Lorg/apache/activem
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/endpoint/MessageEndpoint;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/endpoint/MessageEndpoint;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -73,7 +73,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/MessageEndpointProxy", "ALIVE", "Lorg/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState;");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "state", "Lorg/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/jms/MessageListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/jms/MessageListener");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
@@ -82,17 +82,17 @@ methodVisitor.visitLdcInsn("MessageEndpoint is not a MessageListener");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/activemq/ra/MessageEndpointProxy", "javax/resource/spi/endpoint/MessageEndpoint"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/activemq/ra/MessageEndpointProxy", "jakarta/resource/spi/endpoint/MessageEndpoint"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/MessageListener");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "messageListener", "Ljavax/jms/MessageListener;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/MessageListener");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "messageListener", "Ljakarta/jms/MessageListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/MessageEndpointProxy", "getID", "()I", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "proxyID", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "java/lang/NoSuchMethodException", "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "java/lang/NoSuchMethodException", "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/MessageEndpointProxy", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Invoking MessageEndpoint.beforeDelivery()");
@@ -125,7 +125,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/MessageEndpointProxy", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Invoking MessageEndpoint.onMethod()");
@@ -134,13 +134,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "state", "Lorg/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState", "onMessage", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljavax/jms/Message;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState", "onMessage", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljakarta/jms/Message;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "()V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "()V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/MessageEndpointProxy", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Invoking MessageEndpoint.afterDelivery()");
@@ -181,7 +181,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(", endpoint: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" }");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -202,10 +202,10 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)Ljavax/resource/spi/endpoint/MessageEndpoint;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -219,10 +219,10 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)Ljavax/jms/MessageListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)Ljakarta/jms/MessageListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "messageListener", "Ljavax/jms/MessageListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/MessageEndpointProxy", "messageListener", "Ljakarta/jms/MessageListener;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

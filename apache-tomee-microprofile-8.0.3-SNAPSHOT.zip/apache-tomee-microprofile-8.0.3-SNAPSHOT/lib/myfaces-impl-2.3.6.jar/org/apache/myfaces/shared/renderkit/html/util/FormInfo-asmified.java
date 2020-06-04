@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "form", "Ljavax/faces/component/UIComponent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "form", "Ljakarta/faces/component/UIComponent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "formName", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", "form", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", "form", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", "formName", "Ljava/lang/String;");
@@ -48,10 +48,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getForm", "()Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getForm", "()Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", "form", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/util/FormInfo", "form", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

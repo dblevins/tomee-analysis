@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/eis/DOMRecord", null, "java/lang/Object", new String[] { "javax/resource/cci/Record" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/eis/DOMRecord", null, "java/lang/Object", new String[] { "jakarta/resource/cci/Record" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getDOM", "()Lorg/w3c/dom/Node;", null, null);

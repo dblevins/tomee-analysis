@@ -34,9 +34,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createUnproxyableResolutionException", "(Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)Ljavax/enterprise/inject/UnproxyableResolutionException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createUnproxyableResolutionException", "(Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)Ljakarta/enterprise/inject/UnproxyableResolutionException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/enterprise/inject/UnproxyableResolutionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/inject/UnproxyableResolutionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
@@ -54,13 +54,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/help
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "addLine", "([Ljava/lang/String;)Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/inject/UnproxyableResolutionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/inject/UnproxyableResolutionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "throwUnsatisfiedResolutionException", "(Ljava/lang/Class;Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "throwUnsatisfiedResolutionException", "(Ljava/lang/Class;Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
@@ -86,7 +86,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "createQualifierMessage", "(Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "createQualifierMessage", "(Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "addLine", "([Ljava/lang/String;)Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;", false);
 methodVisitor.visitInsn(POP);
@@ -109,17 +109,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/help
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/webbeans/exception/helper/ViolationMessageBuilder"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/enterprise/inject/UnsatisfiedResolutionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/inject/UnsatisfiedResolutionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/inject/UnsatisfiedResolutionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/inject/UnsatisfiedResolutionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "throwAmbiguousResolutionExceptionForBeanName", "(Ljava/util/Set;Ljava/lang/String;)V", "(Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;Ljava/lang/String;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "throwAmbiguousResolutionExceptionForBeanName", "(Ljava/util/Set;Ljava/lang/String;)V", "(Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;Ljava/lang/String;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_2);
@@ -139,24 +139,24 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "throwAmbiguousResolutionException", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "throwAmbiguousResolutionException", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "throwAmbiguousResolutionException", "(Ljava/util/Set;Ljava/lang/Class;Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "throwAmbiguousResolutionException", "(Ljava/util/Set;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "throwAmbiguousResolutionException", "(Ljava/util/Set;Ljava/lang/Class;Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", "(Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;Ljava/lang/Class;Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "throwAmbiguousResolutionException", "(Ljava/util/Set;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", "(Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "createQualifierMessage", "(Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "createQualifierMessage", "(Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -178,7 +178,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/ClassUtil", "getClass", "(Ljava/lang/reflect/Type;)Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -208,10 +208,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/util/Set", "java/lang/Class", "javax/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/String", "java/lang/String"}, 3, new Object[] {"[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/util/Set", "java/lang/Class", "jakarta/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/String", "java/lang/String"}, 3, new Object[] {"[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER});
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/util/Set", "java/lang/Class", "javax/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/String", "java/lang/String"}, 4, new Object[] {"[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER, "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/util/Set", "java/lang/Class", "jakarta/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/String", "java/lang/String"}, 4, new Object[] {"[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER, "java/lang/String"});
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
@@ -246,7 +246,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "throwAmbiguousResolutionExceptionForBeans", "(Ljava/util/Set;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", "(Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "throwAmbiguousResolutionExceptionForBeans", "(Ljava/util/Set;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", "(Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
@@ -260,17 +260,17 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/InjectionExceptionUtil", "addBeanInfo", "(Ljava/util/Set;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/enterprise/inject/AmbiguousResolutionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/inject/AmbiguousResolutionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/inject/AmbiguousResolutionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/inject/AmbiguousResolutionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "addBeanInfo", "(Ljava/util/Set;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", "(Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "addBeanInfo", "(Ljava/util/Set;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", "(Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;Lorg/apache/webbeans/exception/helper/ViolationMessageBuilder;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -288,11 +288,11 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Bean");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Bean");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -311,12 +311,12 @@ methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"java/util/Set", "org/apache/webbeans/exception/helper/ViolationMessageBuilder", Opcodes.TOP, "java/util/Iterator", "javax/enterprise/inject/spi/Bean"}, 1, new Object[] {"java/lang/RuntimeException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"java/util/Set", "org/apache/webbeans/exception/helper/ViolationMessageBuilder", Opcodes.TOP, "java/util/Iterator", "jakarta/enterprise/inject/spi/Bean"}, 1, new Object[] {"java/lang/RuntimeException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLdcInsn("unknown path");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"java/util/Set", "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "java/lang/String", "java/util/Iterator", "javax/enterprise/inject/spi/Bean"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"java/util/Set", "org/apache/webbeans/exception/helper/ViolationMessageBuilder", "java/lang/String", "java/util/Iterator", "jakarta/enterprise/inject/spi/Bean"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
@@ -344,7 +344,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_VARARGS, "createQualifierMessage", "(Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_VARARGS, "createQualifierMessage", "(Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -359,9 +359,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getQualifiers", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getQualifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getQualifiers", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getQualifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
@@ -390,7 +390,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 6);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"javax/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/StringBuilder", Opcodes.INTEGER, "[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"jakarta/enterprise/inject/spi/InjectionPoint", "[Ljava/lang/annotation/Annotation;", "java/lang/StringBuilder", Opcodes.INTEGER, "[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 5);
 Label label4 = new Label();

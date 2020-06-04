@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "<T:Ljava/lang/Object;>Lorg/apache/webbeans/component/AbstractOwbBean<TT;>;Ljava/io/Serializable;", "org/apache/webbeans/component/AbstractOwbBean", new String[] { "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "producer", "Ljavax/enterprise/inject/spi/Producer;", "Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "producer", "Ljakarta/enterprise/inject/spi/Producer;", "Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;ZLjavax/enterprise/inject/spi/ProducerFactory;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;Ljava/lang/Class<*>;ZLjavax/enterprise/inject/spi/ProducerFactory<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;ZLjakarta/enterprise/inject/spi/ProducerFactory;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;Ljava/lang/Class<*>;ZLjakarta/enterprise/inject/spi/ProducerFactory<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -37,12 +37,12 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ILOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/AbstractOwbBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/AbstractOwbBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProducerFactory", "createProducer", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/Producer;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "producer", "Ljavax/enterprise/inject/spi/Producer;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProducerFactory", "createProducer", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/Producer;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "producer", "Ljakarta/enterprise/inject/spi/Producer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/AbstractOwbBean", "getId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -65,16 +65,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "passivatingId", "Ljava/lang/String;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "org/apache/webbeans/config/WebBeansContext", "org/apache/webbeans/component/WebBeansType", "javax/enterprise/inject/spi/BeanAttributes", "java/lang/Class", Opcodes.INTEGER, "javax/enterprise/inject/spi/ProducerFactory", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "org/apache/webbeans/config/WebBeansContext", "org/apache/webbeans/component/WebBeansType", "jakarta/enterprise/inject/spi/BeanAttributes", "java/lang/Class", Opcodes.INTEGER, "jakarta/enterprise/inject/spi/ProducerFactory", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljavax/enterprise/inject/spi/Producer;", "()Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljakarta/enterprise/inject/spi/Producer;", "()Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "producer", "Ljavax/enterprise/inject/spi/Producer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/ProducerAwareInjectionTargetBean", "producer", "Ljakarta/enterprise/inject/spi/Producer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

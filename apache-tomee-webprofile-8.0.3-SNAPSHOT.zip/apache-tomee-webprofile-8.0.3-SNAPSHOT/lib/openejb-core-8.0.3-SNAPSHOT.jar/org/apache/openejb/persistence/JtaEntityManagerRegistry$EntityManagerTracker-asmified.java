@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "counter", "I
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "entityManager", "Ljavax/persistence/EntityManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "entityManager", "Ljakarta/persistence/EntityManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "autoJoinTx", "Z"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -52,13 +52,13 @@ methodVisitor.visitLdcInsn("entityManager is null.");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "javax/persistence/EntityManager", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "jakarta/persistence/EntityManager", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "counter", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "entityManager", "Ljavax/persistence/EntityManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "entityManager", "Ljakarta/persistence/EntityManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "autoJoinTx", "Z");
@@ -95,10 +95,10 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityManager", "()Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityManager", "()Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "entityManager", "Ljavax/persistence/EntityManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker", "entityManager", "Ljakarta/persistence/EntityManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

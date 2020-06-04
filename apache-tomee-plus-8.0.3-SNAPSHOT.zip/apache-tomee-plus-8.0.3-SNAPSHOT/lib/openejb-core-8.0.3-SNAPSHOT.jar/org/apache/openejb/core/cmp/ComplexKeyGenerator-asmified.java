@@ -117,7 +117,7 @@ methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPrimaryKey", "(Ljavax/ejb/EntityBean;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPrimaryKey", "(Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -134,9 +134,9 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/core/cmp/ComplexKeyGenerator", "javax/ejb/EntityBean", "java/lang/Object"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/core/cmp/ComplexKeyGenerator", "jakarta/ejb/EntityBean", "java/lang/Object"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/EJBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/EJBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -149,7 +149,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/EJBException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/EJBException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -171,7 +171,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/ComplexKeyGenerator$PkField", "copyToPkObject", "(Ljavax/ejb/EntityBean;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/ComplexKeyGenerator$PkField", "copyToPkObject", "(Ljakarta/ejb/EntityBean;Ljava/lang/Object;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

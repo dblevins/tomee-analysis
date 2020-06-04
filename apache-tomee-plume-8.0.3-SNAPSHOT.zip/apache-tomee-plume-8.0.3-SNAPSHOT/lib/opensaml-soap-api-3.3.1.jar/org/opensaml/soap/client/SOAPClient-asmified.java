@@ -34,11 +34,11 @@ classWriter.visitInnerClass("org/opensaml/soap/client/SOAPClient$SOAPRequestPara
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "send", "(Ljava/lang/String;Lorg/opensaml/messaging/context/InOutOperationContext;)V", null, new String[] { "org/opensaml/soap/common/SOAPException", "org/opensaml/security/SecurityException" });
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, false);

@@ -22,39 +22,39 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/component/search/SearchExpressionContextFactoryImpl", null, "javax/faces/component/search/SearchExpressionContextFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/component/search/SearchExpressionContextFactoryImpl", null, "jakarta/faces/component/search/SearchExpressionContextFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/component/search/SearchExpressionContextFactory", "<init>", "(Ljavax/faces/component/search/SearchExpressionContextFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/search/SearchExpressionContextFactory", "<init>", "(Ljakarta/faces/component/search/SearchExpressionContextFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/search/SearchExpressionContextFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/search/SearchExpressionContextFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/component/search/SearchExpressionContextFactory", "<init>", "(Ljavax/faces/component/search/SearchExpressionContextFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/search/SearchExpressionContextFactory", "<init>", "(Ljakarta/faces/component/search/SearchExpressionContextFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchExpressionContext", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/util/Set;Ljava/util/Set;)Ljavax/faces/component/search/SearchExpressionContext;", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/util/Set<Ljavax/faces/component/search/SearchExpressionHint;>;Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;)Ljavax/faces/component/search/SearchExpressionContext;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchExpressionContext", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/util/Set;Ljava/util/Set;)Ljakarta/faces/component/search/SearchExpressionContext;", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/util/Set<Ljakarta/faces/component/search/SearchExpressionHint;>;Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;)Ljakarta/faces/component/search/SearchExpressionContext;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/component/search/SearchExpressionContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/search/SearchExpressionContextImpl", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/search/SearchExpressionContextImpl", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchExpressionContextImpl", "setSource", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchExpressionContextImpl", "setSource", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -66,10 +66,10 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "(I)
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/component/search/SearchExpressionContextFactoryImpl", "javax/faces/context/FacesContext", "javax/faces/component/UIComponent", "java/util/Set", "java/util/Set", "com/sun/faces/component/search/SearchExpressionContextImpl"}, 1, new Object[] {"com/sun/faces/component/search/SearchExpressionContextImpl"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/component/search/SearchExpressionContextFactoryImpl", "jakarta/faces/context/FacesContext", "jakarta/faces/component/UIComponent", "java/util/Set", "java/util/Set", "com/sun/faces/component/search/SearchExpressionContextImpl"}, 1, new Object[] {"com/sun/faces/component/search/SearchExpressionContextImpl"});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/component/search/SearchExpressionContextFactoryImpl", "javax/faces/context/FacesContext", "javax/faces/component/UIComponent", "java/util/Set", "java/util/Set", "com/sun/faces/component/search/SearchExpressionContextImpl"}, 2, new Object[] {"com/sun/faces/component/search/SearchExpressionContextImpl", "java/util/Set"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/component/search/SearchExpressionContextFactoryImpl", "jakarta/faces/context/FacesContext", "jakarta/faces/component/UIComponent", "java/util/Set", "java/util/Set", "com/sun/faces/component/search/SearchExpressionContextImpl"}, 2, new Object[] {"com/sun/faces/component/search/SearchExpressionContextImpl", "java/util/Set"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchExpressionContextImpl", "setExpressionHints", "(Ljava/util/Set;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);

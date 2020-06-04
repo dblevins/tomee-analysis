@@ -93,7 +93,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax/ejb/EntityBean");
+methodVisitor.visitLdcInsn("jakarta/ejb/EntityBean");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/asm7/ClassWriter", "visit", "(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

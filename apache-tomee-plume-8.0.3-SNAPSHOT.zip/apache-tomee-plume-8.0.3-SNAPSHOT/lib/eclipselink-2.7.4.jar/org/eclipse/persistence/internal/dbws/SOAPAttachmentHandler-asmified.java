@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "count", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attachments", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attachments", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachments", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachments", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/SOAPAttachmentHandler", "attachments", "Ljava/util/HashMap;");
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljavax/activation/DataHandler;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljakarta/activation/DataHandler;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);
@@ -122,14 +122,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/SO
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("application/octet-stream");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource", "<init>", "([BLjava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/SOAPAttachmentHandler", "attachments", "Ljava/util/HashMap;");
@@ -143,7 +143,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljavax/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljakarta/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -177,14 +177,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/UUID", "toString", "()Lj
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("application/octet-stream");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource", "<init>", "([BLjava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/SOAPAttachmentHandler", "attachments", "Ljava/util/HashMap;");

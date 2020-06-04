@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/context/CustomPassivatingContextImpl", null, "java/lang/Object", new String[] { "javax/enterprise/context/spi/Context" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/context/CustomPassivatingContextImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/context/spi/Context" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "sbv", "Lorg/apache/webbeans/container/SerializableBeanVault;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "context", "Ljavax/enterprise/context/spi/Context;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "context", "Ljakarta/enterprise/context/spi/Context;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/container/SerializableBeanVault;Ljavax/enterprise/context/spi/Context;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/container/SerializableBeanVault;Ljakarta/enterprise/context/spi/Context;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -42,36 +42,36 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "sbv", "Lorg/apache/webbeans/container/SerializableBeanVault;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljavax/enterprise/context/spi/Context;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljakarta/enterprise/context/spi/Context;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/enterprise/context/spi/Contextual;Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/context/spi/Contextual<TT;>;Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/enterprise/context/spi/Contextual;Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/context/spi/Contextual<TT;>;Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljavax/enterprise/context/spi/Context;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljakarta/enterprise/context/spi/Context;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "sbv", "Lorg/apache/webbeans/container/SerializableBeanVault;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/SerializableBeanVault", "getSerializableBean", "(Ljavax/enterprise/context/spi/Contextual;)Ljavax/enterprise/context/spi/Contextual;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/SerializableBeanVault", "getSerializableBean", "(Ljakarta/enterprise/context/spi/Contextual;)Ljakarta/enterprise/context/spi/Contextual;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "get", "(Ljavax/enterprise/context/spi/Contextual;Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "get", "(Ljakarta/enterprise/context/spi/Contextual;Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/context/spi/Contextual<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/context/spi/Contextual<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljavax/enterprise/context/spi/Context;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljakarta/enterprise/context/spi/Context;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "sbv", "Lorg/apache/webbeans/container/SerializableBeanVault;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/SerializableBeanVault", "getSerializableBean", "(Ljavax/enterprise/context/spi/Contextual;)Ljavax/enterprise/context/spi/Contextual;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "get", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/SerializableBeanVault", "getSerializableBean", "(Ljakarta/enterprise/context/spi/Contextual;)Ljakarta/enterprise/context/spi/Contextual;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "get", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -80,8 +80,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getScope", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljavax/enterprise/context/spi/Context;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "getScope", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljakarta/enterprise/context/spi/Context;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "getScope", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -90,8 +90,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isActive", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljavax/enterprise/context/spi/Context;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "isActive", "()Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/CustomPassivatingContextImpl", "context", "Ljakarta/enterprise/context/spi/Context;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "isActive", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

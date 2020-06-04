@@ -209,7 +209,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "STRI
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTALLED_EXTENSIONS", "Ljava/util/List;", "Ljava/util/List<Ljavax/websocket/Extension;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTALLED_EXTENSIONS", "Ljava/util/List;", "Ljava/util/List<Ljakarta/websocket/Extension;>;", null);
 fieldVisitor.visitEnd();
 }
 {

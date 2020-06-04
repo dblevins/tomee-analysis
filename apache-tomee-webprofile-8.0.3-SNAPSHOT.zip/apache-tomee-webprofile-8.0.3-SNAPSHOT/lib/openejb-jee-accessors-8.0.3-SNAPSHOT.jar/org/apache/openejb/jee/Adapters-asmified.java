@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/Adapters", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "collapsedStringAdapterAdapter", "Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "collapsedStringAdapterAdapter", "Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -64,10 +64,10 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/annotation/adapters/CollapsedStringAdapter");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/annotation/adapters/CollapsedStringAdapter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/CollapsedStringAdapter", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/Adapters", "collapsedStringAdapterAdapter", "Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/CollapsedStringAdapter", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/Adapters", "collapsedStringAdapterAdapter", "Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/StringAdapter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/StringAdapter", "<init>", "()V", false);

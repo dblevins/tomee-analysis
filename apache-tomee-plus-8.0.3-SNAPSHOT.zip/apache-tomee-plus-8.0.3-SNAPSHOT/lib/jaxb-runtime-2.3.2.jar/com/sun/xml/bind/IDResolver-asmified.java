@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

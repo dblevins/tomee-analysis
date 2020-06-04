@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStyle", "(Ljava/lang/String;Ljava/lang/String;)I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStyle", "(Ljava/lang/String;Ljava/lang/String;)I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitVarInsn(ISTORE, 2);
@@ -154,7 +154,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
@@ -164,7 +164,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ILOAD, 2);
@@ -263,11 +263,11 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getRequestLocales", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Enumeration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getRequestLocales", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/util/Enumeration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("accept-language");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getHeaders", "(Ljava/lang/String;)Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getHeaders", "(Ljava/lang/String;)Ljava/util/Enumeration;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -283,7 +283,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMore
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getLocales", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getLocales", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDestinationPaths", "(Lorg/apache/activemq/command/Message;)[Ljava/lang/String;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDestinationPaths", "(Lorg/apache/activemq/command/Message;)[Ljava/lang/String;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/Message", "getDestination", "()Lorg/apache/activemq/command/ActiveMQDestination;", false);

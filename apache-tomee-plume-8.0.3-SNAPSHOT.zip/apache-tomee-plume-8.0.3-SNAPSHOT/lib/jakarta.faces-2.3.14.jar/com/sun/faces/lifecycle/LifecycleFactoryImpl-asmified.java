@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/lifecycle/LifecycleFactoryImpl", null, "javax/faces/lifecycle/LifecycleFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/lifecycle/LifecycleFactoryImpl", null, "jakarta/faces/lifecycle/LifecycleFactory", null);
 
 classWriter.visitInnerClass("java/util/concurrent/ConcurrentHashMap$KeySetView", "java/util/concurrent/ConcurrentHashMap", "KeySetView", ACC_PUBLIC | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "LOGGER", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "lifecycleMap", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljava/lang/String;Ljavax/faces/lifecycle/Lifecycle;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "lifecycleMap", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljava/lang/String;Ljakarta/faces/lifecycle/Lifecycle;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/lifecycle/LifecycleFactory", "<init>", "(Ljavax/faces/lifecycle/LifecycleFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/lifecycle/LifecycleFactory", "<init>", "(Ljakarta/faces/lifecycle/LifecycleFactory;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/lifecycle/LifecycleFactoryImpl", "lifecycleMap", "Ljava/util/concurrent/ConcurrentHashMap;");
@@ -53,8 +53,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleFactory
 methodVisitor.visitLdcInsn("DEFAULT");
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/lifecycle/LifecycleImpl");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/lifecycle/LifecycleImpl", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/lifecycle/LifecycleImpl", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/ConcurrentHashMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/lifecycle/LifecycleFactoryImpl", "LOGGER", "Ljava/util/logging/Logger;");
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addLifecycle", "(Ljava/lang/String;Ljavax/faces/lifecycle/Lifecycle;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addLifecycle", "(Ljava/lang/String;Ljakarta/faces/lifecycle/Lifecycle;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -177,7 +177,7 @@ methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLifecycle", "(Ljava/lang/String;)Ljavax/faces/lifecycle/Lifecycle;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLifecycle", "(Ljava/lang/String;)Ljakarta/faces/lifecycle/Lifecycle;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -226,7 +226,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleFactoryImpl", "lifecycleMap", "Ljava/util/concurrent/ConcurrentHashMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/ConcurrentHashMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/lifecycle/Lifecycle");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/lifecycle/Lifecycle");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/lifecycle/LifecycleFactoryImpl", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
@@ -248,7 +248,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/lifecycle/Lifecycle"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/lifecycle/Lifecycle"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);

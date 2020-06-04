@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/persistence/QueryOperation", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljavax/persistence/Query;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljakarta/persistence/Query;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -47,7 +47,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.transaction.UserTransaction");
+methodVisitor.visitLdcInsn("jakarta.transaction.UserTransaction");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/naming/AbstractRef", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);

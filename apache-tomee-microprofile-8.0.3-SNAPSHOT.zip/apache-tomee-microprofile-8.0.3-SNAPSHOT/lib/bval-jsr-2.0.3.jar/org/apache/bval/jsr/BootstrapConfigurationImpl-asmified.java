@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/BootstrapConfigurationImpl", null, "java/lang/Object", new String[] { "javax/validation/BootstrapConfiguration" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/BootstrapConfigurationImpl", null, "java/lang/Object", new String[] { "jakarta/validation/BootstrapConfiguration" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DEFAULT", "Lorg/apache/bval/jsr/BootstrapConfigurationImpl;", null, null);
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executableValida
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "defaultValidatedExecutableTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "defaultValidatedExecutableTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -73,7 +73,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clockProviderClassName", "Lj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/lang/String;Ljava/util/Set;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljavax/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/lang/String;Ljava/util/Set;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljakarta/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -108,7 +108,7 @@ methodVisitor.visitMaxs(6, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/util/Set;)V", "(Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljavax/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/util/Set;)V", "(Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljakarta/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -197,7 +197,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatedExecutableTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatedExecutableTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/BootstrapConfigurationImpl", "defaultValidatedExecutableTypes", "Ljava/util/Set;");
@@ -242,7 +242,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/BootstrapConfigurationImpl
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "IMPLICIT", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "IMPLICIT", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "of", "(Ljava/lang/Enum;)Ljava/util/EnumSet;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);

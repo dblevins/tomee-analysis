@@ -22,38 +22,38 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/CustomDestination", null, "java/lang/Object", new String[] { "javax/jms/Destination" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/CustomDestination", null, "java/lang/Object", new String[] { "jakarta/jms/Destination" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createConsumer", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;)Ljavax/jms/MessageConsumer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createConsumer", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;)Ljakarta/jms/MessageConsumer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createConsumer", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Z)Ljavax/jms/MessageConsumer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createConsumer", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Z)Ljakarta/jms/MessageConsumer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSubscriber", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Z)Ljavax/jms/TopicSubscriber;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSubscriber", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Z)Ljakarta/jms/TopicSubscriber;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDurableSubscriber", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Ljava/lang/String;Z)Ljavax/jms/TopicSubscriber;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDurableSubscriber", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;Ljava/lang/String;Z)Ljakarta/jms/TopicSubscriber;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createReceiver", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;)Ljavax/jms/QueueReceiver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createReceiver", "(Lorg/apache/activemq/ActiveMQSession;Ljava/lang/String;)Ljakarta/jms/QueueReceiver;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createProducer", "(Lorg/apache/activemq/ActiveMQSession;)Ljavax/jms/MessageProducer;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createProducer", "(Lorg/apache/activemq/ActiveMQSession;)Ljakarta/jms/MessageProducer;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createPublisher", "(Lorg/apache/activemq/ActiveMQSession;)Ljavax/jms/TopicPublisher;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createPublisher", "(Lorg/apache/activemq/ActiveMQSession;)Ljakarta/jms/TopicPublisher;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSender", "(Lorg/apache/activemq/ActiveMQSession;)Ljavax/jms/QueueSender;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSender", "(Lorg/apache/activemq/ActiveMQSession;)Ljakarta/jms/QueueSender;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

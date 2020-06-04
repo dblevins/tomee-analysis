@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getJAXBContext", "(Ljavax/xml/bind/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBContext;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getJAXBContext", "(Ljakarta/xml/bind/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBContext;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getUnmarshaller", "(Ljavax/xml/bind/Unmarshaller;)Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getUnmarshaller", "(Ljakarta/xml/bind/Unmarshaller;)Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -96,7 +96,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMarshaller", "(Ljavax/xml/bind/Marshaller;)Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMarshaller", "(Ljakarta/xml/bind/Marshaller;)Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -127,7 +127,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBinder", "(Ljavax/xml/bind/Binder;)Lorg/eclipse/persistence/jaxb/JAXBBinder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBinder", "(Ljakarta/xml/bind/Binder;)Lorg/eclipse/persistence/jaxb/JAXBBinder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -158,7 +158,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljavax/xml/bind/JAXBContext;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/xml/bind/JAXBContext;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljakarta/xml/bind/JAXBContext;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/xml/bind/JAXBContext;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -203,7 +203,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/lo
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/xml/bind/JAXBContext", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/xml/bind/JAXBContext", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -222,7 +222,7 @@ methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljavax/xml/bind/Unmarshaller;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/xml/bind/Unmarshaller;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -267,7 +267,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/lo
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/xml/bind/Unmarshaller", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/xml/bind/Unmarshaller", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -286,7 +286,7 @@ methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/xml/bind/Marshaller;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/xml/bind/Marshaller;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -331,7 +331,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/lo
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/xml/bind/Marshaller", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/xml/bind/Marshaller", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -350,7 +350,7 @@ methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljavax/xml/bind/Binder;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/xml/bind/Binder;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unwrap", "(Ljakarta/xml/bind/Binder;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/xml/bind/Binder;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -395,7 +395,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/lo
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/xml/bind/Binder", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/xml/bind/Binder", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);

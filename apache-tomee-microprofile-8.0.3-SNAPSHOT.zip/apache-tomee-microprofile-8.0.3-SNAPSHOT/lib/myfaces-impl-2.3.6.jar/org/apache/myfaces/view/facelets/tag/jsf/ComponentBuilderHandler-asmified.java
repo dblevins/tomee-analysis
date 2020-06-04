@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/tag/jsf/ComponentBuilderHandler", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createComponent", "(Ljavax/faces/view/facelets/FaceletContext;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createComponent", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

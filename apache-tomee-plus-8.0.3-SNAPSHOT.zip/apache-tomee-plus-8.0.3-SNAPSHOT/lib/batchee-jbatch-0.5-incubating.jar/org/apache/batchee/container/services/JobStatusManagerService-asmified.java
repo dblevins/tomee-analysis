@@ -41,11 +41,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobStatus
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateJobBatchStatus", "(JLjavax/batch/runtime/BatchStatus;)V", null, new String[] { "org/apache/batchee/container/exception/BatchContainerServiceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateJobBatchStatus", "(JLjakarta/batch/runtime/BatchStatus;)V", null, new String[] { "org/apache/batchee/container/exception/BatchContainerServiceException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateJobExecutionStatus", "(JLjavax/batch/runtime/BatchStatus;Ljava/lang/String;)V", null, new String[] { "org/apache/batchee/container/exception/BatchContainerServiceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateJobExecutionStatus", "(JLjakarta/batch/runtime/BatchStatus;Ljava/lang/String;)V", null, new String[] { "org/apache/batchee/container/exception/BatchContainerServiceException" });
 methodVisitor.visitEnd();
 }
 {

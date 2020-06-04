@@ -22,60 +22,60 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbApplication", null, "javax/faces/application/ApplicationWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbApplication", null, "jakarta/faces/application/ApplicationWrapper", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "wrappedApplication", "Ljavax/faces/application/Application;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "wrappedApplication", "Ljakarta/faces/application/Application;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "expressionFactory", "Ljavax/el/ExpressionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "expressionFactory", "Ljakarta/el/ExpressionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/application/Application;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/application/Application;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/ApplicationWrapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/ApplicationWrapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljakarta/faces/application/Application;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljavax/faces/application/Application;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljakarta/faces/application/Application;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/config/WebBeansContext", "getInstance", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getBeanManagerImpl", "()Lorg/apache/webbeans/container/BeanManagerImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljavax/el/ExpressionFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "wrapExpressionFactory", "(Ljavax/el/ExpressionFactory;)Ljavax/el/ExpressionFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "wrapExpressionFactory", "(Ljakarta/el/ExpressionFactory;)Ljakarta/el/ExpressionFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/application/Application;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/application/Application;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplication", "wrappedApplication", "Ljakarta/faces/application/Application;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,7 +84,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbApplication", "getWrapped", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbApplication", "getWrapped", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

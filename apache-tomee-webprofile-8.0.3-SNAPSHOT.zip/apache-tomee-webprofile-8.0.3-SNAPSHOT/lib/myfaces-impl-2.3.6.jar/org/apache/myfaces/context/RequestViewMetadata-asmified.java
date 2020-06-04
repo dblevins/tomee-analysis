@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "processedClasses", "Ljava/ut
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "addedResources", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/faces/application/ResourceDependency;Ljava/lang/Boolean;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "addedResources", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/faces/application/ResourceDependency;Ljava/lang/Boolean;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialProcessedClasses", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialAddedResources", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/faces/application/ResourceDependency;Ljava/lang/Boolean;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialAddedResources", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/faces/application/ResourceDependency;Ljava/lang/Boolean;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -125,7 +125,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isResourceDependencyAlreadyProcessed", "(Ljavax/faces/application/ResourceDependency;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isResourceDependencyAlreadyProcessed", "(Ljakarta/faces/application/ResourceDependency;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/RequestViewMetadata", "initialAddedResources", "Ljava/util/Map;");
@@ -157,7 +157,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceDependencyAsProcessed", "(Ljavax/faces/application/ResourceDependency;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceDependencyAsProcessed", "(Ljakarta/faces/application/ResourceDependency;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/RequestViewMetadata", "addedResources", "Ljava/util/Map;");
@@ -219,7 +219,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceDependencyAnnotations", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljavax/faces/application/ResourceDependency;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceDependencyAnnotations", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljakarta/faces/application/ResourceDependency;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/RequestViewMetadata", "initialAddedResources", "Ljava/util/Map;");
@@ -253,10 +253,10 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/ResourceDependency");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/ResourceDependency");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/application/ResourceDependency", "target", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/application/ResourceDependency", "target", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label3 = new Label();
@@ -265,20 +265,20 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
 methodVisitor.visitJumpInsn(IFLE, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/el/ELText", "parse", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;Ljava/lang/String;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/el/ELText", "parse", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;Ljava/lang/String;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljavax/el/ELContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljakarta/el/ELContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/application/ResourceDependency", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/application/ResourceDependency", "java/lang/String"}, 0, null);
 methodVisitor.visitLdcInsn("head");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label4);
@@ -308,7 +308,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/context/RequestViewMetadata", "javax/faces/context/FacesContext", "java/util/Map"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/context/RequestViewMetadata", "jakarta/faces/context/FacesContext", "java/util/Map"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/RequestViewMetadata", "addedResources", "Ljava/util/Map;");
 Label label6 = new Label();
@@ -326,10 +326,10 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/ResourceDependency");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/ResourceDependency");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/application/ResourceDependency", "target", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/application/ResourceDependency", "target", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label8 = new Label();
@@ -338,20 +338,20 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
 methodVisitor.visitJumpInsn(IFLE, label8);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/el/ELText", "parse", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;Ljava/lang/String;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/el/ELText", "parse", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;Ljava/lang/String;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljavax/el/ELContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljakarta/el/ELContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/application/ResourceDependency", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/application/ResourceDependency", "java/lang/String"}, 0, null);
 methodVisitor.visitLdcInsn("head");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label9);
@@ -381,7 +381,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/context/RequestViewMetadata", "javax/faces/context/FacesContext", "java/util/Map"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/context/RequestViewMetadata", "jakarta/faces/context/FacesContext", "java/util/Map"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 7);

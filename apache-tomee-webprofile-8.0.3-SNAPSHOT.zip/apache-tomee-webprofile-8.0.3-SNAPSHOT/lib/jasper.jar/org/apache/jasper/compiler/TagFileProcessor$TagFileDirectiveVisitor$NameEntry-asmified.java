@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "node", "Lorg/apache/jasper/c
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attr", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attr", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;Lorg/apache/jasper/compiler/Node;Ljavax/servlet/jsp/tagext/TagAttributeInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;Lorg/apache/jasper/compiler/Node;Ljakarta/servlet/jsp/tagext/TagAttributeInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -53,7 +53,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry", "node", "Lorg/apache/jasper/compiler/Node;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry", "attr", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry", "attr", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -77,10 +77,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getTagAttributeInfo", "()Ljavax/servlet/jsp/tagext/TagAttributeInfo;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getTagAttributeInfo", "()Ljakarta/servlet/jsp/tagext/TagAttributeInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry", "attr", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry", "attr", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

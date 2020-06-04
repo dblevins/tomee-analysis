@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/openejb/BeanContext$LegacyView", "org/ap
 classWriter.visitInnerClass("org/apache/openejb/BeanContext$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbHomeRef", "Ljavax/ejb/EJBHome;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbHomeRef", "Ljakarta/ejb/EJBHome;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbLocalHomeRef", "Ljavax/ejb/EJBLocalHome;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbLocalHomeRef", "Ljakarta/ejb/EJBLocalHome;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -155,41 +155,41 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1400", "(Lorg/apache/openejb/BeanContext$LegacyView;)Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1400", "(Lorg/apache/openejb/BeanContext$LegacyView;)Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbHomeRef", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbHomeRef", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1402", "(Lorg/apache/openejb/BeanContext$LegacyView;Ljavax/ejb/EJBHome;)Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1402", "(Lorg/apache/openejb/BeanContext$LegacyView;Ljakarta/ejb/EJBHome;)Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbHomeRef", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbHomeRef", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1500", "(Lorg/apache/openejb/BeanContext$LegacyView;)Ljavax/ejb/EJBLocalHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1500", "(Lorg/apache/openejb/BeanContext$LegacyView;)Ljakarta/ejb/EJBLocalHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbLocalHomeRef", "Ljavax/ejb/EJBLocalHome;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbLocalHomeRef", "Ljakarta/ejb/EJBLocalHome;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1502", "(Lorg/apache/openejb/BeanContext$LegacyView;Ljavax/ejb/EJBLocalHome;)Ljavax/ejb/EJBLocalHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1502", "(Lorg/apache/openejb/BeanContext$LegacyView;Ljakarta/ejb/EJBLocalHome;)Ljakarta/ejb/EJBLocalHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbLocalHomeRef", "Ljavax/ejb/EJBLocalHome;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$LegacyView", "ejbLocalHomeRef", "Ljakarta/ejb/EJBLocalHome;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

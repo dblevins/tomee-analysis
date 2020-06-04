@@ -25,35 +25,35 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/johnzon/jsonb/api/experimental/JsonbExtension", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJsonValue", "(Ljavax/json/JsonValue;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/json/JsonValue;Ljava/lang/Class<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJsonValue", "(Ljakarta/json/JsonValue;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/json/JsonValue;Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJsonValue", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJsonValue", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;)TT;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJsonValue", "(Ljava/lang/Object;)Ljavax/json/JsonValue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJsonValue", "(Ljava/lang/Object;)Ljakarta/json/JsonValue;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJsonValue", "(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljavax/json/JsonValue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJsonValue", "(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljakarta/json/JsonValue;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljavax/json/stream/JsonParser;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/json/stream/JsonParser;Ljava/lang/Class<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljakarta/json/stream/JsonParser;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/json/stream/JsonParser;Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljavax/json/stream/JsonParser;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/json/stream/JsonParser;Ljava/lang/reflect/Type;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljakarta/json/stream/JsonParser;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/json/stream/JsonParser;Ljava/lang/reflect/Type;)TT;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJson", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJson", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJson", "(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljavax/json/stream/JsonGenerator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toJson", "(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljakarta/json/stream/JsonGenerator;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

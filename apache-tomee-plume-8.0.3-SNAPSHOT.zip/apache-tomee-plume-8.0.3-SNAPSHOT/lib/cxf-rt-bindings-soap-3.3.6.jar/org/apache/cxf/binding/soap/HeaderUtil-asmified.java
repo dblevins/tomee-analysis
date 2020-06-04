@@ -77,7 +77,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/service/model/Bindi
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/service/model/MessageInfo", "getMessageParts", "()Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/wsdl/extensions/ExtensibilityElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/wsdl/extensions/ExtensibilityElement;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/service/model/BindingMessageInfo", "getExtensors", "(Ljava/lang/Class;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -94,7 +94,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/ExtensibilityElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/ExtensibilityElement");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/SOAPBindingUtil", "isSOAPHeader", "(Ljava/lang/Object;)Z", false);
@@ -111,7 +111,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 8);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/service/model/BindingMessageInfo", "java/util/Set", "java/util/List", "java/util/List", "java/util/Iterator", "javax/wsdl/extensions/ExtensibilityElement", "org/apache/cxf/binding/soap/wsdl/extensions/SoapHeader", "java/lang/String", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/service/model/BindingMessageInfo", "java/util/Set", "java/util/List", "java/util/List", "java/util/Iterator", "jakarta/wsdl/extensions/ExtensibilityElement", "org/apache/cxf/binding/soap/wsdl/extensions/SoapHeader", "java/lang/String", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label2);

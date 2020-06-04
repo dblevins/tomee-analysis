@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/batchee/container/services/factory/CDIBa
 classWriter.visitInnerClass("org/apache/batchee/spi/BatchArtifactFactory$Instance", "org/apache/batchee/spi/BatchArtifactFactory", "Instance", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,14 +39,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/batchee/container/services/factory/CDIBatchArtifactFactory;Ljavax/enterprise/context/spi/CreationalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/batchee/container/services/factory/CDIBatchArtifactFactory;Ljakarta/enterprise/context/spi/CreationalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1", "this$0", "Lorg/apache/batchee/container/services/factory/CDIBatchArtifactFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1", "val$creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1", "val$creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -57,8 +57,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "()V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1", "val$creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/CreationalContext", "release", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1", "val$creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/CreationalContext", "release", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -26,7 +26,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/co
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/xml/bind/annotation/XmlElementDecl$GLOBAL", "javax/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/xml/bind/annotation/XmlElementDecl$GLOBAL", "jakarta/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/compiler/SchemaGenerator$AddToSchemaResult", "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "AddToSchemaResult", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -73,11 +73,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "arrayClassesToGeneratedClass
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_ACTIVATION_DATAHANDLER", "Ljava/lang/String;", null, "javax.activation.DataHandler");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_ACTIVATION_DATAHANDLER", "Ljava/lang/String;", null, "jakarta.activation.DataHandler");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_MAIL_INTERNET_MIMEMULTIPART", "Ljava/lang/String;", null, "javax.mail.internet.MimeMultipart");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_MAIL_INTERNET_MIMEMULTIPART", "Ljava/lang/String;", null, "jakarta.mail.internet.MimeMultipart");
 fieldVisitor.visitEnd();
 }
 {
@@ -145,7 +145,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SLA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -185,11 +185,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljava/util/List;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljavax/xml/bind/SchemaOutputResolver;)V", "(Ljava/util/List<Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;>;Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/persistence/jaxb/compiler/TypeInfo;>;Ljava/util/Map<Ljava/lang/String;Ljavax/xml/namespace/QName;>;Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/persistence/jaxb/compiler/PackageInfo;>;Ljava/util/Map<Ljavax/xml/namespace/QName;Lorg/eclipse/persistence/jaxb/compiler/ElementDeclaration;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class;>;Ljavax/xml/bind/SchemaOutputResolver;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljava/util/List;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljakarta/xml/bind/SchemaOutputResolver;)V", "(Ljava/util/List<Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;>;Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/persistence/jaxb/compiler/TypeInfo;>;Ljava/util/Map<Ljava/lang/String;Ljavax/xml/namespace/QName;>;Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/persistence/jaxb/compiler/PackageInfo;>;Ljava/util/Map<Ljavax/xml/namespace/QName;Lorg/eclipse/persistence/jaxb/compiler/ElementDeclaration;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class;>;Ljakarta/xml/bind/SchemaOutputResolver;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -703,7 +703,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "helper", "Lorg/eclipse/persistence/jaxb/javamodel/Helper;");
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Property", "getElement", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchemaType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchemaType;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javamodel/Helper", "isAnnotationPresent", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;Ljava/lang/Class;)Z", false);
 Label label25 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label25);
@@ -711,16 +711,16 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "helper", "Lorg/eclipse/persistence/jaxb/javamodel/Helper;");
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Property", "getElement", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchemaType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchemaType;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javamodel/Helper", "getAnnotation", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlSchemaType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlSchemaType");
 methodVisitor.visitVarInsn(ASTORE, 18);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 18);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchemaType", "namespace", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchemaType", "namespace", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 18);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchemaType", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchemaType", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitLabel(label25);
@@ -805,7 +805,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "helper", "Lorg/eclipse/persistence/jaxb/javamodel/Helper;");
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Property", "getElement", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchemaType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchemaType;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javamodel/Helper", "isAnnotationPresent", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;Ljava/lang/Class;)Z", false);
 Label label31 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label31);
@@ -813,16 +813,16 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "helper", "Lorg/eclipse/persistence/jaxb/javamodel/Helper;");
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Property", "getElement", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchemaType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchemaType;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javamodel/Helper", "getAnnotation", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaHasAnnotations;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlSchemaType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlSchemaType");
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 14);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchemaType", "namespace", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchemaType", "namespace", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 14);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchemaType", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchemaType", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 13);
 methodVisitor.visitLabel(label31);
@@ -1978,15 +1978,15 @@ methodVisitor.visitJumpInsn(IF_ICMPLT, label10);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label11);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -2341,7 +2341,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jaxb/compiler/El
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", "getScopeClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
@@ -2404,7 +2404,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/eclipse/persistence/internal/oxm/schema/model/Element", "org/eclipse/persistence/jaxb/javamodel/JavaClass", "javax/xml/namespace/QName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitLdcInsn("javax.activation.DataHandler");
+methodVisitor.visitLdcInsn("jakarta.activation.DataHandler");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "areEquals", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;Ljava/lang/String;)Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label5);
@@ -2430,7 +2430,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compi
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitLdcInsn("javax.mail.internet.MimeMultipart");
+methodVisitor.visitLdcInsn("jakarta.mail.internet.MimeMultipart");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/SchemaGenerator", "areEquals", "(Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;Ljava/lang/String;)Z", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
@@ -5100,7 +5100,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compi
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", "getScopeClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 8);
@@ -5228,7 +5228,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compi
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", "getScopeClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label12);
 methodVisitor.visitVarInsn(ALOAD, 10);

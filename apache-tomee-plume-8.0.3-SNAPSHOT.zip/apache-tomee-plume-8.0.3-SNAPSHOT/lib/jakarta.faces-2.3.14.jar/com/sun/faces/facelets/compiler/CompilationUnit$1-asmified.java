@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/compiler/CompilationUnit$1", null, "java/lang/Object", new String[] { "javax/faces/view/facelets/FaceletHandler" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/compiler/CompilationUnit$1", null, "java/lang/Object", new String[] { "jakarta/faces/view/facelets/FaceletHandler" });
 
 classWriter.visitOuterClass("com/sun/faces/facelets/compiler/CompilationUnit", null, null);
 
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);

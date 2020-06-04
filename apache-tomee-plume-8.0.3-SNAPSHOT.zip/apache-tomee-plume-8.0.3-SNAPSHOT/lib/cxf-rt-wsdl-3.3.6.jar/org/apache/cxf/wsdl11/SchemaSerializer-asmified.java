@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/wsdl11/SchemaSerializer", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/ExtensionSerializer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/wsdl11/SchemaSerializer", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/ExtensionSerializer" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljavax/wsdl/extensions/ExtensibilityElement;Ljava/io/PrintWriter;Ljavax/wsdl/Definition;Ljavax/wsdl/extensions/ExtensionRegistry;)V", null, new String[] { "javax/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljakarta/wsdl/extensions/ExtensibilityElement;Ljava/io/PrintWriter;Ljakarta/wsdl/Definition;Ljakarta/wsdl/extensions/ExtensionRegistry;)V", null, new String[] { "jakarta/wsdl/WSDLException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -43,8 +43,8 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/stream/XMLSt
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/schema/Schema");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/schema/Schema", "getElement", "()Lorg/w3c/dom/Element;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/schema/Schema");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/schema/Schema", "getElement", "()Lorg/w3c/dom/Element;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/SchemaSerializer", "writeXml", "(Lorg/w3c/dom/Node;Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitLabel(label1);
@@ -53,12 +53,12 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/stream/XMLStreamException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
-methodVisitor.visitTypeInsn(NEW, "javax/wsdl/WSDLException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/wsdl/WSDLException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitLdcInsn("Could not write schema.");
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/wsdl/WSDLException", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/wsdl/WSDLException", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

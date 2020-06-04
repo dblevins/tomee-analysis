@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clazz", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "encoder", "Ljavax/websocket/Encoder;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "encoder", "Ljakarta/websocket/Encoder;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljavax/websocket/Encoder;)V", "(Ljava/lang/Class<*>;Ljavax/websocket/Encoder;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljakarta/websocket/Encoder;)V", "(Ljava/lang/Class<*>;Ljakarta/websocket/Encoder;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry", "clazz", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry", "encoder", "Ljavax/websocket/Encoder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry", "encoder", "Ljakarta/websocket/Encoder;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -59,10 +59,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoder", "()Ljavax/websocket/Encoder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoder", "()Ljakarta/websocket/Encoder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry", "encoder", "Ljavax/websocket/Encoder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry", "encoder", "Ljakarta/websocket/Encoder;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

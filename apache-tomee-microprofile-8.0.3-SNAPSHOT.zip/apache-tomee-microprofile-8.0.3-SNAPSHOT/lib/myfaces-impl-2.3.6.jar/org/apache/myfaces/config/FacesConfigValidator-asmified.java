@@ -38,10 +38,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/RuntimeConfig", "getManagedBeans", "()Ljava/util/Map;", false);
@@ -62,13 +62,13 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validate", "(Ljava/util/Collection;Ljava/util/Collection;Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validate", "(Ljava/util/Collection;Ljava/util/Collection;Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljava/util/Collection;Ljava/util/Collection;Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljava/util/Collection<+Lorg/apache/myfaces/config/element/ManagedBean;>;Ljava/util/Collection<+Lorg/apache/myfaces/config/element/NavigationRule;>;Ljavax/faces/context/ExternalContext;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljava/util/Collection;Ljava/util/Collection;Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljava/util/Collection<+Lorg/apache/myfaces/config/element/ManagedBean;>;Ljava/util/Collection<+Lorg/apache/myfaces/config/element/NavigationRule;>;Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -88,7 +88,7 @@ methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validateNavRules", "(Ljava/util/Collection;Ljava/util/List;Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validateNavRules", "(Ljava/util/Collection;Ljava/util/List;Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "validateNavRules", "(Ljava/util/Collection;Ljava/util/List;Ljavax/faces/context/ExternalContext;)V", "(Ljava/util/Collection<+Lorg/apache/myfaces/config/element/NavigationRule;>;Ljava/util/List<Ljava/lang/String;>;Ljavax/faces/context/ExternalContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "validateNavRules", "(Ljava/util/Collection;Ljava/util/List;Ljakarta/faces/context/ExternalContext;)V", "(Ljava/util/Collection<+Lorg/apache/myfaces/config/element/NavigationRule;>;Ljava/util/List<Ljava/lang/String;>;Ljakarta/faces/context/ExternalContext;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
@@ -116,7 +116,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validateNavRule", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List;Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/FacesConfigValidator", "validateNavRule", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List;Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -125,7 +125,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "validateNavRule", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List;Ljavax/faces/context/ExternalContext;)V", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List<Ljava/lang/String;>;Ljavax/faces/context/ExternalContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "validateNavRule", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List;Ljakarta/faces/context/ExternalContext;)V", "(Lorg/apache/myfaces/config/element/NavigationRule;Ljava/util/List<Ljava/lang/String;>;Ljakarta/faces/context/ExternalContext;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -141,7 +141,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -167,7 +167,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/config/element/NavigationRule", "java/util/List", "javax/faces/context/ExternalContext", "java/lang/String"}, 1, new Object[] {"java/net/MalformedURLException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/config/element/NavigationRule", "java/util/List", "jakarta/faces/context/ExternalContext", "java/lang/String"}, 1, new Object[] {"java/net/MalformedURLException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -201,7 +201,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/NavigationCase", "getToViewId", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitJumpInsn(IFNONNULL, label4);

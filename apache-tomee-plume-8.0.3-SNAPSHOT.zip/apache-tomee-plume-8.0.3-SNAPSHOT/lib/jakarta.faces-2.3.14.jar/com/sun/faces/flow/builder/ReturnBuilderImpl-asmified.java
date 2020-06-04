@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/ReturnBuilderImpl", null, "javax/faces/flow/builder/ReturnBuilder", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/ReturnBuilderImpl", null, "jakarta/faces/flow/builder/ReturnBuilder", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;", null, null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/flow/builder/FlowBuilderImpl;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/builder/ReturnBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/builder/ReturnBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/builder/ReturnBuilderImpl", "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;");
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "markAsStartNode", "()Ljavax/faces/flow/builder/ReturnBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "markAsStartNode", "()Ljakarta/faces/flow/builder/ReturnBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/ReturnBuilderImpl", "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;");
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljava/lang/String;)Ljavax/faces/flow/builder/ReturnBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/ReturnBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("outcome");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljavax/el/ValueExpression;)Ljavax/faces/flow/builder/ReturnBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljakarta/el/ValueExpression;)Ljakarta/faces/flow/builder/ReturnBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("outcome");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -104,7 +104,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/ReturnNodeImpl"
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/ReturnNodeImpl", "setFromOutcome", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/ReturnNodeImpl", "setFromOutcome", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/ReturnBuilderImpl", "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/FlowBuilderImpl", "_getFlow", "()Lcom/sun/faces/flow/FlowImpl;", false);
@@ -120,10 +120,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljavax/faces/flow/builder/NodeBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljakarta/faces/flow/builder/NodeBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/ReturnBuilderImpl", "markAsStartNode", "()Ljavax/faces/flow/builder/ReturnBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/ReturnBuilderImpl", "markAsStartNode", "()Ljakarta/faces/flow/builder/ReturnBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

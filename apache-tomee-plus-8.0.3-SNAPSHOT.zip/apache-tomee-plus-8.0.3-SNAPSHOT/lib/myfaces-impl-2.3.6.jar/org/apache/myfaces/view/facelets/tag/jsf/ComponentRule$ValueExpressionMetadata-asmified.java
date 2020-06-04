@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", null, "javax/faces/view/facelets/Metadata", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", null, "jakarta/faces/view/facelets/Metadata", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule", "ValueExpressionMetadata", ACC_FINAL | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_name", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attr", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attr", "Ljakarta/faces/view/facelets/TagAttribute;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,16 +39,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_type", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Ljavax/faces/view/facelets/TagAttribute;)V", "(Ljava/lang/String;Ljava/lang/Class<*>;Ljavax/faces/view/facelets/TagAttribute;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Ljakarta/faces/view/facelets/TagAttribute;)V", "(Ljava/lang/String;Ljava/lang/Class<*>;Ljakarta/faces/view/facelets/TagAttribute;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/Metadata", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/Metadata", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_attr", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_attr", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_type", "Ljava/lang/Class;");
@@ -57,19 +57,19 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIComponent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIComponent");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_attr", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_attr", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$ValueExpressionMetadata", "_type", "Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

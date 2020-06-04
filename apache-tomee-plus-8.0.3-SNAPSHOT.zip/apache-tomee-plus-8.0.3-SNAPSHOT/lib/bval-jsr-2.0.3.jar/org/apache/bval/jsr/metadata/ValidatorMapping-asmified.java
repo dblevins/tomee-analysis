@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "source", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validatorTypes", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validatorTypes", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/util/List;)V", "(Ljava/lang/String;Ljava/util/List<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/util/List;)V", "(Ljava/lang/String;Ljava/util/List<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/util/List;Lorg/apache/bval/jsr/metadata/AnnotationBehavior;)V", "(Ljava/lang/String;Ljava/util/List<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;Lorg/apache/bval/jsr/metadata/AnnotationBehavior;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/util/List;Lorg/apache/bval/jsr/metadata/AnnotationBehavior;)V", "(Ljava/lang/String;Ljava/util/List<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;Lorg/apache/bval/jsr/metadata/AnnotationBehavior;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -169,7 +169,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidatorTypes", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidatorTypes", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/metadata/ValidatorMapping", "validatorTypes", "Ljava/util/List;");

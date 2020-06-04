@@ -53,13 +53,13 @@ methodVisitor = classWriter.visitMethod(0, "process", "(Ljava/lang/String;Ljava/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/CacheStoreMode", "BYPASS", "Ljavax/persistence/CacheStoreMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/CacheStoreMode", "BYPASS", "Ljakarta/persistence/CacheStoreMode;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/CacheStoreMode", "BYPASS", "Ljavax/persistence/CacheStoreMode;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/CacheStoreMode", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/CacheStoreMode", "BYPASS", "Ljakarta/persistence/CacheStoreMode;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/CacheStoreMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitInsn(ICONST_0);

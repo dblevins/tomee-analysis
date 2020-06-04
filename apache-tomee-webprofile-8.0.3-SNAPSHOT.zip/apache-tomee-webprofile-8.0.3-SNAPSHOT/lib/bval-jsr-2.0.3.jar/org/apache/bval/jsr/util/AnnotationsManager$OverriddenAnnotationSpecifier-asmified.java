@@ -39,13 +39,13 @@ fieldVisitor = classWriter.visitField(ACC_FINAL, "constraintIndex", "I", null, n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/validation/OverridesAttribute;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/validation/OverridesAttribute;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/OverridesAttribute", "constraint", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/OverridesAttribute", "constraint", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/OverridesAttribute", "constraintIndex", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/OverridesAttribute", "constraintIndex", "()I", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/AnnotationsManager$OverriddenAnnotationSpecifier", "<init>", "(Ljava/lang/Class;I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);

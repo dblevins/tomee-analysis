@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/metamodel/Attribute<TX;TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/persistence/metamodel/Attribute", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/metamodel/Attribute<TX;TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/persistence/metamodel/Attribute", "java/io/Serializable" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Attribute$PersistentAttributeType", "javax/persistence/metamodel/Attribute", "PersistentAttributeType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "jakarta/persistence/metamodel/Attribute", "PersistentAttributeType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "managedType", "Lorg/eclipse/persistence/internal/jpa/metamodel/ManagedTypeImpl;", "Lorg/eclipse/persistence/internal/jpa/metamodel/ManagedTypeImpl<TX;>;", null);
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaringType", "()Ljavax/persistence/metamodel/ManagedType;", "()Ljavax/persistence/metamodel/ManagedType<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaringType", "()Ljakarta/persistence/metamodel/ManagedType;", "()Ljakarta/persistence/metamodel/ManagedType<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", "getManagedTypeImpl", "()Lorg/eclipse/persistence/internal/jpa/metamodel/ManagedTypeImpl;", false);
@@ -281,14 +281,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistentAttributeType", "()Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistentAttributeType", "()Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", "mapping", "Lorg/eclipse/persistence/mappings/DatabaseMapping;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isAbstractDirectMapping", "()Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "BASIC", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "BASIC", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -297,7 +297,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/met
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isAggregateObjectMapping", "()Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "EMBEDDED", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "EMBEDDED", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -306,7 +306,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/met
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isOneToManyMapping", "()Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_MANY", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_MANY", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -321,11 +321,11 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/mappings/ManyToM
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/ManyToManyMapping", "isDefinedAsOneToManyMapping", "()Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_MANY", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_MANY", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "MANY_TO_MANY", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "MANY_TO_MANY", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -334,7 +334,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/met
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isManyToOneMapping", "()Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "MANY_TO_ONE", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "MANY_TO_ONE", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -343,11 +343,11 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/met
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isOneToOneMapping", "()Z", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_ONE", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "ONE_TO_ONE", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Attribute$PersistentAttributeType", "ELEMENT_COLLECTION", "Ljavax/persistence/metamodel/Attribute$PersistentAttributeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Attribute$PersistentAttributeType", "ELEMENT_COLLECTION", "Ljakarta/persistence/metamodel/Attribute$PersistentAttributeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

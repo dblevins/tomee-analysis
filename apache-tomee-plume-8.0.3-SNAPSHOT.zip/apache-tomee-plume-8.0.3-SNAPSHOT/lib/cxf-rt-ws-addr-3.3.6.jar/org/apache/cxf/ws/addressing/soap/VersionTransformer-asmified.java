@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encodeAsExposed", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", "<T:Ljava/lang/Object;>(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;TT;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljavax/xml/bind/JAXBContext;Z)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encodeAsExposed", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", "<T:Ljava/lang/Object;>(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;TT;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljakarta/xml/bind/JAXBContext;Z)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -75,7 +75,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -103,7 +103,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200408/AttributedURI;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -126,7 +126,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "EPR_TYPE", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -148,7 +148,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200408/Relationship;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -175,7 +175,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200403/AttributedURI;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -198,7 +198,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200403", "EPR_TYPE", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -220,7 +220,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200403/Relationship;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/bind/JAXBContext;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "encodeMAP", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljakarta/xml/bind/JAXBContext;Z)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -228,7 +228,7 @@ methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "decodeAsNative", "(Ljava/lang/String;Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "decodeAsNative", "(Ljava/lang/String;Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -270,7 +270,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -292,7 +292,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200408/AttributedURI;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200408/AttributedURI");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200408/AttributedURI;)Lorg/apache/cxf/ws/addressing/AttributedURIType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -311,7 +311,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "EPR_TYPE", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200408/EndpointReferenceType");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200408/EndpointReferenceType;)Lorg/apache/cxf/ws/addressing/EndpointReferenceType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -329,7 +329,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200408/Relationship;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200408/Relationship");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200408/Relationship;)Lorg/apache/cxf/ws/addressing/RelatesToType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -352,7 +352,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200403/AttributedURI;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200403/AttributedURI");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200403/AttributedURI;)Lorg/apache/cxf/ws/addressing/AttributedURIType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -371,7 +371,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200403", "EPR_TYPE", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200403/EndpointReferenceType");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200403/EndpointReferenceType;)Lorg/apache/cxf/ws/addressing/EndpointReferenceType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -389,7 +389,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/addressing/soap/Versio
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200403/Relationship;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljavax/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/addressing/soap/MAPCodec", "decodeMAP", "(Ljava/lang/Class;Lorg/w3c/dom/Element;Ljakarta/xml/bind/Unmarshaller;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/v200403/Relationship");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/ws/addressing/soap/VersionTransformer", "convert", "(Lorg/apache/cxf/ws/addressing/v200403/Relationship;)Lorg/apache/cxf/ws/addressing/RelatesToType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);

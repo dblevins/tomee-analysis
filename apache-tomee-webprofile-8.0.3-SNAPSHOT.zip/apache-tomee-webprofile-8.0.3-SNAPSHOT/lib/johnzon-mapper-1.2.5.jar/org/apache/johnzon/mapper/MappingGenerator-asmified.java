@@ -25,20 +25,20 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/johnzon/mapper/MappingGenerator", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJsonGenerator", "()Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJsonGenerator", "()Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeObject", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeObject", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

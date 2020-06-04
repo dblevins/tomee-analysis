@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/metatype/sxc/jaxb/ValidationEventLocatorImpl", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventLocator" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/metatype/sxc/jaxb/ValidationEventLocatorImpl", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventLocator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "location", "Ljavax/xml/stream/Location;", null, null);

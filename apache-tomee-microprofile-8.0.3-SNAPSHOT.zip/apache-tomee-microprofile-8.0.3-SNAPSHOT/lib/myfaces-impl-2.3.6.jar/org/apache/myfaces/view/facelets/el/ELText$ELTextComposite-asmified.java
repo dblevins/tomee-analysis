@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljava/io/Writer;Ljavax/el/ELContext;)V", null, new String[] { "javax/el/ELException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljava/io/Writer;Ljakarta/el/ELContext;)V", null, new String[] { "jakarta/el/ELException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -63,7 +63,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "write", "(Ljava/io/Writer;Ljavax/el/ELContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "write", "(Ljava/io/Writer;Ljakarta/el/ELContext;)V", false);
 methodVisitor.visitIincInsn(3, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
@@ -73,7 +73,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeText", "(Ljavax/faces/context/ResponseWriter;Ljavax/el/ELContext;)V", null, new String[] { "javax/el/ELException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeText", "(Ljakarta/faces/context/ResponseWriter;Ljakarta/el/ELContext;)V", null, new String[] { "jakarta/el/ELException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -92,7 +92,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "writeText", "(Ljavax/faces/context/ResponseWriter;Ljavax/el/ELContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "writeText", "(Ljakarta/faces/context/ResponseWriter;Ljakarta/el/ELContext;)V", false);
 methodVisitor.visitIincInsn(3, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "(Ljavax/el/ELContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "(Ljakarta/el/ELContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuffer");
 methodVisitor.visitInsn(DUP);
@@ -125,7 +125,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/ELTe
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljavax/el/ELContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "toString", "(Ljakarta/el/ELContext;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(3, 1);
@@ -183,7 +183,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;)Lorg/apache/myfaces/view/facelets/el/ELText;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;)Lorg/apache/myfaces/view/facelets/el/ELText;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/ELText$ELTextComposite", "txt", "[Lorg/apache/myfaces/view/facelets/el/ELText;");
@@ -209,7 +209,7 @@ methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "apply", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/ELText", "apply", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;)Lorg/apache/myfaces/view/facelets/el/ELText;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);

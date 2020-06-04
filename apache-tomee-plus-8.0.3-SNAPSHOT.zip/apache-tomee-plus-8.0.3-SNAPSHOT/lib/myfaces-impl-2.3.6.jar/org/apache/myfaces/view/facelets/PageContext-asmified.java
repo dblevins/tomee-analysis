@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttributes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttributes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 methodVisitor.visitEnd();
 }
 {

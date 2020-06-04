@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/BeanContext$BusinessRemoteHome", null, "java/lang/Object", new String[] { "javax/ejb/EJBHome" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/BeanContext$BusinessRemoteHome", null, "java/lang/Object", new String[] { "jakarta/ejb/EJBHome" });
 
 classWriter.visitInnerClass("org/apache/openejb/BeanContext$BusinessRemoteHome", "org/apache/openejb/BeanContext", "BusinessRemoteHome", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 

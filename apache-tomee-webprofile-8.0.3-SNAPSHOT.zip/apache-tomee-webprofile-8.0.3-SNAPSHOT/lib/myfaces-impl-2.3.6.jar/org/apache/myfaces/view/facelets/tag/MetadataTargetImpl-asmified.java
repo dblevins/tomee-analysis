@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetadataTargetImpl", null, "javax/faces/view/facelets/MetadataTarget", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetadataTargetImpl", null, "jakarta/faces/view/facelets/MetadataTarget", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_pd", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/beans/PropertyDescriptor;>;", null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;)V", new String[] { "java/beans/IntrospectionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/MetadataTarget", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/MetadataTarget", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetadataTargetImpl", "_type", "Ljava/lang/Class;");

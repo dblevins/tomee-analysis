@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$HeaderStyleSerializer", "Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer<Lorg/eclipse/microprofile/openapi/models/headers/Header$Style;>;Ljavax/json/bind/adapter/JsonbAdapter<Lorg/eclipse/microprofile/openapi/models/headers/Header$Style;Ljava/lang/String;>;", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer", new String[] { "javax/json/bind/adapter/JsonbAdapter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$HeaderStyleSerializer", "Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer<Lorg/eclipse/microprofile/openapi/models/headers/Header$Style;>;Ljakarta/json/bind/adapter/JsonbAdapter<Lorg/eclipse/microprofile/openapi/models/headers/Header$Style;Ljava/lang/String;>;", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer", new String[] { "jakarta/json/bind/adapter/JsonbAdapter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$HeaderStyleSerializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers", "HeaderStyleSerializer", ACC_PUBLIC | ACC_STATIC);

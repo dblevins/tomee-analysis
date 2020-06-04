@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", null, "javax/servlet/http/HttpServletResponseWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", null, "jakarta/servlet/http/HttpServletResponseWrapper", null);
 
 classWriter.visitInnerClass("org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "org/apache/jasper/tagplugins/jstl/Util", "ImportResponseWrapper", ACC_PUBLIC | ACC_STATIC);
 
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bos", "Ljava/io/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sos", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sos", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,11 +57,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "charEncoding", "Ljava/lang/S
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/StringWriter");
 methodVisitor.visitInsn(DUP);
@@ -77,7 +77,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/tagplugins/jstl/Util$ImportR
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper$1", "<init>", "(Lorg/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "sos", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "sos", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(SIPUSH, 200);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "status", "I");
@@ -113,7 +113,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "isWriterUsed", "Z");
@@ -131,7 +131,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "isStreamUsed", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "sos", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper", "sos", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

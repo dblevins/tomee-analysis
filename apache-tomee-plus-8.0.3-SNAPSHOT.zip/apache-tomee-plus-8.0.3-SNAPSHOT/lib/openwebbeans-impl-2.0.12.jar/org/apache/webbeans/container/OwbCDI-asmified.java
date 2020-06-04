@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/OwbCDI", "Ljavax/enterprise/inject/spi/CDI<Ljava/lang/Object;>;", "javax/enterprise/inject/spi/CDI", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/OwbCDI", "Ljakarta/enterprise/inject/spi/CDI<Ljava/lang/Object;>;", "jakarta/enterprise/inject/spi/CDI", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/inject/spi/CDI", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/inject/spi/CDI", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "instance", "()Ljavax/enterprise/inject/Instance;", "()Ljavax/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "instance", "()Ljakarta/enterprise/inject/Instance;", "()Ljakarta/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/OwbCDI", "getWebBeansContext", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
@@ -52,20 +52,20 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBean
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "createCreationalContext", "(Ljavax/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "createCreationalContext", "(Ljakarta/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getWebBeansUtil", "()Lorg/apache/webbeans/util/WebBeansUtil;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/WebBeansUtil", "getInstanceBean", "()Lorg/apache/webbeans/component/InstanceBean;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/InstanceBean", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/Instance");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/InstanceBean", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/Instance");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/container/InjectableBeanManager");
 methodVisitor.visitInsn(DUP);
@@ -78,12 +78,12 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "([Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", "([Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "([Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", "([Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "select", "([Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "select", "([Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -92,8 +92,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isUnsatisfied", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -102,8 +102,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAmbiguous", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -122,25 +122,25 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljavax/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", "<U:Ljava/lang/Object;>(Ljavax/enterprise/util/TypeLiteral<TU;>;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance<TU;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljakarta/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", "<U:Ljava/lang/Object;>(Ljakarta/enterprise/util/TypeLiteral<TU;>;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance<TU;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "select", "(Ljavax/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "select", "(Ljakarta/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", "<U:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance<TU;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", "<U:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance<TU;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -149,8 +149,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -159,8 +159,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/OwbCDI", "instance", "()Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

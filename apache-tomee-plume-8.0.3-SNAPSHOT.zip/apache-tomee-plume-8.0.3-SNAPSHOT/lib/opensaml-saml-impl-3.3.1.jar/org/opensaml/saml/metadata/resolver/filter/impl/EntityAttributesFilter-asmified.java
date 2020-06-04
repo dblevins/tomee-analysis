@@ -29,7 +29,7 @@ classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -37,7 +37,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "applyMap", "Lcom/google/common/collect/Multimap;", "Lcom/google/common/collect/Multimap<Lcom/google/common/base/Predicate<Lorg/opensaml/saml/saml2/metadata/EntityDescriptor;>;Lorg/opensaml/saml/saml2/core/Attribute;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extBuilder", "Lorg/opensaml/saml/common/SAMLObjectBuilder;", "Lorg/opensaml/saml/common/SAMLObjectBuilder<Lorg/opensaml/saml/saml2/metadata/Extensions;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -57,7 +57,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "entityAttributesBuilder", "Lorg/opensaml/saml/common/SAMLObjectBuilder;", "Lorg/opensaml/saml/common/SAMLObjectBuilder<Lorg/opensaml/saml/ext/saml2mdattr/EntityAttributes;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -91,7 +91,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRules", "(Ljava/util/Map;)V", "(Ljava/util/Map<Lcom/google/common/base/Predicate<Lorg/opensaml/saml/saml2/metadata/EntityDescriptor;>;Ljava/util/Collection<Lorg/opensaml/saml/saml2/core/Attribute;>;>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, false);
@@ -155,12 +155,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Lorg/opensaml/core/xml/XMLObject;)Lorg/opensaml/core/xml/XMLObject;", null, new String[] { "org/opensaml/saml/metadata/resolver/filter/FilterException" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -198,7 +198,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "filterEntityDescriptor", "(Lorg/opensaml/saml/saml2/metadata/EntityDescriptor;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -333,7 +333,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "filterEntitiesDescriptor", "(Lorg/opensaml/saml/saml2/metadata/EntitiesDescriptor;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

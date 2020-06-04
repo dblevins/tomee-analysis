@@ -22,29 +22,29 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "<M:Ljava/lang/Object;A::Ljavax/enterprise/inject/spi/AnnotatedMember<TM;>;>Lorg/apache/webbeans/component/creation/BeanAttributesBuilder<TM;TA;>;", "org/apache/webbeans/component/creation/BeanAttributesBuilder", null);
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "<M:Ljava/lang/Object;A::Ljakarta/enterprise/inject/spi/AnnotatedMember<TM;>;>Lorg/apache/webbeans/component/creation/BeanAttributesBuilder<TM;TA;>;", "org/apache/webbeans/component/creation/BeanAttributesBuilder", null);
 
 classWriter.visitInnerClass("org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "org/apache/webbeans/component/creation/BeanAttributesBuilder", "AnnotatedMemberBeanAttributesBuilder", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedMember;)V", "(Lorg/apache/webbeans/config/WebBeansContext;TA;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedMember;)V", "(Lorg/apache/webbeans/config/WebBeansContext;TA;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/Annotated;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/Annotated;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSuperType", "()Ljavax/enterprise/inject/spi/AnnotatedType;", "()Ljavax/enterprise/inject/spi/AnnotatedType<-TM;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSuperType", "()Ljakarta/enterprise/inject/spi/AnnotatedType;", "()Ljakarta/enterprise/inject/spi/AnnotatedType<-TM;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/AnnotatedMember");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedMember", "getDeclaringType", "()Ljavax/enterprise/inject/spi/AnnotatedType;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/AnnotatedMember");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedMember", "getDeclaringType", "()Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSuperclass", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -58,7 +58,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getAnnotatedElementFactory", "()Lorg/apache/webbeans/portable/AnnotatedElementFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "getAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "getAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

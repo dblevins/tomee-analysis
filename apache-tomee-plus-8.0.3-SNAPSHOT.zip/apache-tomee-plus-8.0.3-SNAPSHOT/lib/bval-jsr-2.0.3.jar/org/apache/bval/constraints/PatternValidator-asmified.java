@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/PatternValidator", "Lorg/apache/bval/constraints/AbstractPatternValidator<Ljavax/validation/constraints/Pattern;Ljava/lang/CharSequence;>;", "org/apache/bval/constraints/AbstractPatternValidator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/PatternValidator", "Lorg/apache/bval/constraints/AbstractPatternValidator<Ljakarta/validation/constraints/Pattern;Ljava/lang/CharSequence;>;", "org/apache/bval/constraints/AbstractPatternValidator", null);
 
 classWriter.visitInnerClass("org/apache/bval/constraints/PatternValidator$1", null, null, 0);
 
@@ -34,19 +34,19 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/constraints/PatternValidator", "lambda$new$0", "(Ljavax/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", false), Type.getType("(Ljavax/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/constraints/PatternValidator", "lambda$new$0", "(Ljakarta/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", false), Type.getType("(Ljakarta/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;")});
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/AbstractPatternValidator", "<init>", "(Ljava/util/function/Function;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/validation/constraints/Pattern;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/constraints/PatternValidator$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/PatternValidator$1", "<init>", "(Ljavax/validation/constraints/Pattern;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/PatternValidator$1", "<init>", "(Ljakarta/validation/constraints/Pattern;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

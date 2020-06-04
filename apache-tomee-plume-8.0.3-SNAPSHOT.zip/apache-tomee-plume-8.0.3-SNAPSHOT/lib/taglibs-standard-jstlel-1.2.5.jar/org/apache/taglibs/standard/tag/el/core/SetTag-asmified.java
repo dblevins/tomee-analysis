@@ -113,7 +113,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalValue", "()Ljava/lang/Object;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalValue", "()Ljava/lang/Object;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("value");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -121,14 +121,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalTarget", "()Ljava/lang/Object;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalTarget", "()Ljava/lang/Object;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("target");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -136,14 +136,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalProperty", "()Ljava/lang/String;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evalProperty", "()Ljava/lang/String;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("property");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -151,8 +151,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/core/SetTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);

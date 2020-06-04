@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", null, "javax/servlet/jsp/tagext/TagSupport", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", null, "jakarta/servlet/jsp/tagext/TagSupport", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "TIMESTAMP_TYPE", "Ljava/lang/String;", null, "timestamp");
@@ -48,7 +48,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagSupport", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "init", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -69,21 +69,21 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/jsp/jstl/sql/SQLExecutionTag;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "findAncestorWithClass", "(Ljavax/servlet/jsp/tagext/Tag;Ljava/lang/Class;)Ljavax/servlet/jsp/tagext/Tag;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/jsp/jstl/sql/SQLExecutionTag");
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/jsp/jstl/sql/SQLExecutionTag;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "findAncestorWithClass", "(Ljakarta/servlet/jsp/tagext/Tag;Ljava/lang/Class;)Ljakarta/servlet/jsp/tagext/Tag;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/jsp/jstl/sql/SQLExecutionTag");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspTagException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspTagException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("SQL_PARAM_OUTSIDE_PARENT");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -96,14 +96,14 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "value", "Ljava/util/Date;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/jsp/jstl/sql/SQLExecutionTag", "addSQLParameter", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/jsp/jstl/sql/SQLExecutionTag", "addSQLParameter", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitIntInsn(BIPUSH, 6);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "convertValue", "()V", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "convertValue", "()V", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "type", "Ljava/lang/String;");
@@ -171,7 +171,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/sql/Date", "<init>", "(J)V", 
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "value", "Ljava/util/Date;");
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("SQL_DATE_PARAM_INVALID_TYPE");
 methodVisitor.visitInsn(ICONST_1);
@@ -182,7 +182,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/DateParamTagSupport", "type", "Ljava/lang/String;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitInsn(RETURN);

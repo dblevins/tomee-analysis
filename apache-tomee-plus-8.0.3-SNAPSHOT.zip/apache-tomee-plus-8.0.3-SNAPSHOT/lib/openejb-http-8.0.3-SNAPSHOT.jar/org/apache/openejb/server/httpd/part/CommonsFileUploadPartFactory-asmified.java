@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "read", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;)Ljava/util/Collection;", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;)Ljava/util/Collection<Ljavax/servlet/http/Part;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "read", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;)Ljava/util/Collection;", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;)Ljava/util/Collection<Ljakarta/servlet/http/Part;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -75,7 +75,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/fileupload/servlet/ServletRequestContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/fileupload/servlet/ServletRequestContext", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/fileupload/servlet/ServletRequestContext", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/fileupload/servlet/ServletFileUpload", "parseRequest", "(Lorg/apache/commons/fileupload/RequestContext;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);

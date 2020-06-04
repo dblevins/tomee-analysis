@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters", "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "Counters", ACC_PRIVATE | ACC_STATIC);
@@ -43,7 +43,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "metrics", "Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -51,7 +51,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "unwrappedCache", "Lorg/apache/safeguard/impl/cache/UnwrappedCache;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();

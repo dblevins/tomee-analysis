@@ -29,7 +29,7 @@ classWriter.visitOuterClass("com/sun/xml/messaging/saaj/soap/impl/ElementImpl", 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "eachNode", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljavax/xml/soap/Node;>;", null);
+fieldVisitor = classWriter.visitField(0, "eachNode", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljakarta/xml/soap/Node;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -120,7 +120,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/xml/soap/Node;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/xml/soap/Node;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", "hasNext", "()Z", false);
@@ -135,7 +135,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", "next", "Lorg/w3c/dom/Node;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", "last", "Lorg/w3c/dom/Node;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/Node");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/Node");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -178,7 +178,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", "next", "()Ljavax/xml/soap/Node;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$3", "next", "()Ljakarta/xml/soap/Node;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

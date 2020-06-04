@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/tag/ui/ComponentRefHandler", null, "javax/faces/view/facelets/ComponentHandler", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/tag/ui/ComponentRefHandler", null, "jakarta/faces/view/facelets/ComponentHandler", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "Name", "Ljava/lang/String;", null, "component");
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/ComponentConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/ComponentConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/ComponentHandler", "<init>", "(Ljavax/faces/view/facelets/ComponentConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/ComponentHandler", "<init>", "(Ljakarta/faces/view/facelets/ComponentConfig;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

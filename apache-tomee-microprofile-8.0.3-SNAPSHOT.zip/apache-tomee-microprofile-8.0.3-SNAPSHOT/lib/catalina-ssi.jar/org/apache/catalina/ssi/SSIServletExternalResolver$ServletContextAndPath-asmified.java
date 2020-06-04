@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/ssi/SSIServ
 classWriter.visitInnerClass("org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "org/apache/catalina/ssi/SSIServletExternalResolver", "ServletContextAndPath", ACC_PROTECTED | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "path", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "path", "Ljava/lang/String;");
@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

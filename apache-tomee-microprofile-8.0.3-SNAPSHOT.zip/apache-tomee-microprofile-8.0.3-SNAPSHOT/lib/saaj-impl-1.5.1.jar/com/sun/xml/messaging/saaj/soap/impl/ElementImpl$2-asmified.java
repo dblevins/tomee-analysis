@@ -153,7 +153,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/impl/Ele
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$2", "last", "Lorg/w3c/dom/Node;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/w3c/dom/Element");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl", "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl", "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl$2", "last", "Lorg/w3c/dom/Node;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);

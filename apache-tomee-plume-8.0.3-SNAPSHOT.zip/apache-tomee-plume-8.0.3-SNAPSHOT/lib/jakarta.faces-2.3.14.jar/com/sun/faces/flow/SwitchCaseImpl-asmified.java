@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/SwitchCaseImpl", null, "javax/faces/flow/SwitchCase", new String[] { "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/SwitchCaseImpl", null, "jakarta/faces/flow/SwitchCase", new String[] { "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-8982500105361921446L));
@@ -41,61 +41,61 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "condition", "Ljava/lang/Stri
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "conditionExpr", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "conditionExpr", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/SwitchCase", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/SwitchCase", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConditionExpression", "()Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConditionExpression", "()Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCondition", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Boolean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCondition", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Boolean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "condition", "Ljava/lang/String;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "condition", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Boolean;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -119,11 +119,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConditionExpression", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConditionExpression", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchCaseImpl", "conditionExpr", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

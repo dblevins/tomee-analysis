@@ -37,11 +37,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "clear", "()V
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeExternal", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/Object;Ljava/io/ObjectOutput;)V", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;TT;Ljava/io/ObjectOutput;)V", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeExternal", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/Object;Ljava/io/ObjectOutput;)V", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;TT;Ljava/io/ObjectOutput;)V", new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "readExternal", "(Ljavax/enterprise/inject/spi/Bean;Ljava/io/ObjectInput;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;Ljava/io/ObjectInput;)TT;", new String[] { "java/io/IOException", "java/lang/ClassNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "readExternal", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/io/ObjectInput;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;Ljava/io/ObjectInput;)TT;", new String[] { "java/io/IOException", "java/lang/ClassNotFoundException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

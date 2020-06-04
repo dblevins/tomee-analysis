@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentContext", "(Ljava/lang/Class;)Ljavax/enterprise/context/spi/Context;", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljavax/enterprise/context/spi/Context;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentContext", "(Ljava/lang/Class;)Ljakarta/enterprise/context/spi/Context;", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljakarta/enterprise/context/spi/Context;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -72,11 +72,11 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentContext", "(Ljava/lang/Class;Z)Ljavax/enterprise/context/spi/Context;", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Z)Ljavax/enterprise/context/spi/Context;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentContext", "(Ljava/lang/Class;Z)Ljakarta/enterprise/context/spi/Context;", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Z)Ljakarta/enterprise/context/spi/Context;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/AbstractContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljavax/enterprise/context/spi/Context;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/AbstractContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljakarta/enterprise/context/spi/Context;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -89,7 +89,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;)V", new String[] { "javax/enterprise/context/ContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;)V", new String[] { "jakarta/enterprise/context/ContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
@@ -118,15 +118,15 @@ methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/SessionScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/SessionScoped;"));
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/AbstractContextsService", "getCurrentContext", "(Ljava/lang/Class;Z)Ljavax/enterprise/context/spi/Context;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/AbstractContextsService", "getCurrentContext", "(Ljava/lang/Class;Z)Ljakarta/enterprise/context/spi/Context;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "isActive", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "isActive", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/AbstractContextsService", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -135,7 +135,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationManager", "getSessionConversations", "(Ljavax/enterprise/context/spi/Context;Z)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationManager", "getSessionConversations", "(Ljakarta/enterprise/context/spi/Context;Z)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -144,7 +144,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/webbeans/context/AbstractContextsService", "org/apache/webbeans/context/ConversationContext", "org/apache/webbeans/conversation/ConversationManager", "javax/enterprise/context/spi/Context", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/webbeans/context/AbstractContextsService", "org/apache/webbeans/context/ConversationContext", "org/apache/webbeans/conversation/ConversationManager", "jakarta/enterprise/context/spi/Context", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);

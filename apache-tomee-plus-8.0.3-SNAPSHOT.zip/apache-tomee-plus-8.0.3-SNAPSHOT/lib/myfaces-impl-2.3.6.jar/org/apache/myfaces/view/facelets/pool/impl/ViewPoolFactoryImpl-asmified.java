@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultViewPool", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/ViewPoolFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/RuntimeConfig", "getViewPoolMappings", "()Ljava/util/List;", false);
@@ -57,10 +57,10 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl", "<init>", "(Ljavax/faces/context/FacesContext;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl", "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/util/Map;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/ViewPoolFactoryImpl", "defaultViewPool", "Lorg/apache/myfaces/view/facelets/pool/ViewPool;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/view/facelets/pool/impl/ViewPoolFactoryImpl", "javax/faces/context/FacesContext", "org/apache/myfaces/config/RuntimeConfig"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/view/facelets/pool/impl/ViewPoolFactoryImpl", "jakarta/faces/context/FacesContext", "org/apache/myfaces/config/RuntimeConfig"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -127,7 +127,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/pool/impl/Vie
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl", "<init>", "(Ljavax/faces/context/FacesContext;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl", "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/util/Map;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewPool", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewPool;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewPool", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewPool;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -158,7 +158,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljav
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ViewProtectionUtils", "matchPattern", "(Ljava/lang/String;Ljava/lang/String;)Z", false);
 Label label2 = new Label();
@@ -180,7 +180,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/im
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oamEnableViewPool");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", new String[] { "javax/ws/rs/client/ClientResponseContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", new String[] { "jakarta/ws/rs/client/ClientResponseContext" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/jaxrs/impl/ResponseImpl;Lorg/apache/cxf/message/Message;)V", null, null);
@@ -59,11 +59,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl", "m", "Lorg/apache/cxf/message/Message;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableStringHeaders", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableStringHeaders", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -95,8 +95,8 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -120,7 +120,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOE
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

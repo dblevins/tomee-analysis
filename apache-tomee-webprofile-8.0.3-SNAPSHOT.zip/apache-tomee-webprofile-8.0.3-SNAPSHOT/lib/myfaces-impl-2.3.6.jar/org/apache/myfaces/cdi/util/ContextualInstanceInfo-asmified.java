@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contextualInstance", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", "Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", "Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,20 +42,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCreationalContext", "()Ljavax/enterprise/context/spi/CreationalContext;", "()Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCreationalContext", "()Ljakarta/enterprise/context/spi/CreationalContext;", "()Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/util/ContextualInstanceInfo", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/util/ContextualInstanceInfo", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCreationalContext", "(Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCreationalContext", "(Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/util/ContextualInstanceInfo", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/util/ContextualInstanceInfo", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry", "RemoveTransactionResources", ACC_PRIVATE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljavax/transaction/Transaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljakarta/transaction/Transaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/SimpleTransactionSynchronizationRegistry;Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/SimpleTransactionSynchronizationRegistry;Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -63,7 +63,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "this$0", "Lorg/apache/openejb/core/SimpleTransactionSynchronizationRegistry;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry", "access$000", "(Lorg/apache/openejb/core/SimpleTransactionSynchronizationRegistry;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

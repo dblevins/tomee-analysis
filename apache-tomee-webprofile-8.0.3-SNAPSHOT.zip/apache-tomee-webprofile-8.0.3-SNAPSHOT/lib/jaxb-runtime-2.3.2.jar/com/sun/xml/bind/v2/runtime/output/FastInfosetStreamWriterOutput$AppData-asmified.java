@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/output/FastInfosetStrea
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput$AppData", "com/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput", "AppData", ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL, "contexts", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/xml/bind/JAXBContext;Lcom/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput$TablesPerJAXBContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_FINAL, "contexts", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/xml/bind/JAXBContext;Lcom/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput$TablesPerJAXBContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {

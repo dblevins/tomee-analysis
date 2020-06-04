@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/proxy/ListAttributeProxyImpl", "<X:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl<TX;Ljava/util/List<TV;>;TV;>;Ljavax/persistence/metamodel/ListAttribute<TX;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl", new String[] { "javax/persistence/metamodel/ListAttribute" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/proxy/ListAttributeProxyImpl", "<X:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl<TX;Ljava/util/List<TV;>;TV;>;Ljakarta/persistence/metamodel/ListAttribute<TX;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl", new String[] { "jakarta/persistence/metamodel/ListAttribute" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

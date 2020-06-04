@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/config/ConfigValueImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Typed;", true);
 annotationVisitor0.visitEnd();
 }
 {

@@ -25,17 +25,17 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/vendor/Tomcat6InjectionProvider", null, "com/sun/faces/spi/DiscoverableInjectionProvider", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/spi/DiscoverableInjectionProvider", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/vendor/Tomcat6InjectionProvider", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/vendor/Tomcat6InjectionProvider", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -131,10 +131,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getProcessor", "()Lorg/apache/AnnotationProcessor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/vendor/Tomcat6InjectionProvider", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/vendor/Tomcat6InjectionProvider", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/AnnotationProcessor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/AnnotationProcessor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);

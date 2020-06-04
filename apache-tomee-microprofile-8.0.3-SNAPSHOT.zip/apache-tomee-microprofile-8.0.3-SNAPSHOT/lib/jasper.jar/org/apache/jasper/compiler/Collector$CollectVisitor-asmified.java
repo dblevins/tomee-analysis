@@ -362,12 +362,12 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/jasper/compiler/Node$CustomTa
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$CustomTag", "getVariableInfos", "()[Ljavax/servlet/jsp/tagext/VariableInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$CustomTag", "getVariableInfos", "()[Ljakarta/servlet/jsp/tagext/VariableInfo;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFGT, label4);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$CustomTag", "getTagVariableInfos", "()[Ljavax/servlet/jsp/tagext/TagVariableInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$CustomTag", "getTagVariableInfos", "()[Ljakarta/servlet/jsp/tagext/TagVariableInfo;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label5);

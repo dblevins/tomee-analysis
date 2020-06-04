@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/MessageDrivenBean", null, "java/lang/Object", new String[] { "org/apache/openejb/jee/EnterpriseBean", "org/apache/openejb/jee/TimerConsumer", "org/apache/openejb/jee/Invokable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "message-driven-beanType");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -75,7 +75,7 @@ annotationVisitor0.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "description", "Lorg/apache/openejb/jee/TextMap;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlTransient;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlTransient;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -83,7 +83,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "displayName", "Lorg/apache/openejb/jee/TextMap;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlTransient;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlTransient;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -91,7 +91,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "icon", "Lorg/apache/openejb/jee/LocalCollection;", "Lorg/apache/openejb/jee/LocalCollection<Lorg/apache/openejb/jee/Icon;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "icon");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -101,7 +101,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "ejbName", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "ejb-name");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -111,7 +111,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "mappedName", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "mapped-name");
 annotationVisitor0.visitEnd();
 }
@@ -120,7 +120,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "ejbClass", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "ejb-class");
 annotationVisitor0.visitEnd();
 }
@@ -129,7 +129,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "messagingType", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "messaging-type");
 annotationVisitor0.visitEnd();
 }
@@ -138,7 +138,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "timeoutMethod", "Lorg/apache/openejb/jee/NamedMethod;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "timeout-method");
 annotationVisitor0.visitEnd();
 }
@@ -151,7 +151,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "transactionType", "Lorg/apache/openejb/jee/TransactionType;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "transaction-type");
 annotationVisitor0.visitEnd();
 }
@@ -160,7 +160,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "messageDestinationType", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "message-destination-type");
 annotationVisitor0.visitEnd();
 }
@@ -169,7 +169,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "messageDestinationLink", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "message-destination-link");
 annotationVisitor0.visitEnd();
 }
@@ -178,7 +178,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "activationConfig", "Lorg/apache/openejb/jee/ActivationConfig;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "activation-config");
 annotationVisitor0.visitEnd();
 }
@@ -187,7 +187,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "aroundInvoke", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/AroundInvoke;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "around-invoke");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -197,7 +197,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "aroundTimeout", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/AroundTimeout;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "around-timeout");
 annotationVisitor0.visitEnd();
 }
@@ -206,7 +206,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "envEntry", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/EnvEntry;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "env-entry");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -216,7 +216,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "ejbRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/EjbRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "ejb-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -226,7 +226,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "ejbLocalRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/EjbLocalRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "ejb-local-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -236,7 +236,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "serviceRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/ServiceRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "service-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -246,7 +246,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "resourceRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/ResourceRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "resource-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -256,7 +256,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "resourceEnvRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/ResourceEnvRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "resource-env-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -266,7 +266,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "messageDestinationRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/MessageDestinationRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "message-destination-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -276,7 +276,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "persistenceContextRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/PersistenceContextRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "persistence-context-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -286,7 +286,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "persistenceUnitRef", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/PersistenceUnitRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "persistence-unit-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -296,7 +296,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "dataSource", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/DataSource;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "data-source");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -306,7 +306,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "jmsConnectionFactories", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/JMSConnectionFactory;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "jms-connection-factory");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -316,7 +316,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "jmsDestinations", "Lorg/apache/openejb/jee/KeyedCollection;", "Lorg/apache/openejb/jee/KeyedCollection<Ljava/lang/String;Lorg/apache/openejb/jee/JMSDestination;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "jms-destination");
 annotationVisitor0.visitEnd();
 }
@@ -325,7 +325,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "postConstruct", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/LifecycleCallback;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "post-construct");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -335,7 +335,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "preDestroy", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/LifecycleCallback;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "pre-destroy");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -345,7 +345,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "securityRoleRef", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/SecurityRoleRef;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "security-role-ref");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -355,7 +355,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "securityIdentity", "Lorg/apache/openejb/jee/SecurityIdentity;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "security-identity");
 annotationVisitor0.visitEnd();
 }
@@ -364,16 +364,16 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "id", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlID;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlID;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -500,7 +500,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDescriptions", "()[Lorg/apache/openejb/jee/Text;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "description");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -537,7 +537,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDisplayNames", "()[Lorg/apache/openejb/jee/Text;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "display-name");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -771,7 +771,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMessageDrivenDestination", "(Lorg/apache/openejb/jee/MessageDrivenDestination;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "message-driven-destination");
 annotationVisitor0.visitEnd();
 }
@@ -822,7 +822,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageSelector", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "message-selector");
 annotationVisitor0.visitEnd();
 }
@@ -863,7 +863,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAcknowledgeMode", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "acknowledge-mode");
 annotationVisitor0.visitEnd();
 }

@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "Ljava/lang/Object;Ljavax/xml/ws/AsyncHandler<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "javax/xml/ws/AsyncHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "Ljava/lang/Object;Ljakarta/xml/ws/AsyncHandler<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "jakarta/xml/ws/AsyncHandler" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker", "JaxwsServerHandler", 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "r", "Ljavax/xml/ws/Response;", "Ljavax/xml/ws/Response<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(0, "r", "Ljakarta/xml/ws/Response;", "Ljakarta/xml/ws/Response<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -58,11 +58,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "handleResponse", "(Ljavax/xml/ws/Response;)V", "(Ljavax/xml/ws/Response<Ljava/lang/Object;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "handleResponse", "(Ljakarta/xml/ws/Response;)V", "(Ljakarta/xml/ws/Response<Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "r", "Ljavax/xml/ws/Response;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "r", "Ljakarta/xml/ws/Response;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "done", "Z");
@@ -142,8 +142,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObject", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "r", "Ljavax/xml/ws/Response;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/Response", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler", "r", "Ljakarta/xml/ws/Response;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/Response", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

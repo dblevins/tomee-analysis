@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "alias", "Ljava/lang/String;"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servlet", "Ljavax/servlet/Servlet;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servlet", "Ljakarta/servlet/Servlet;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,13 +49,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "httpService", "Lorg/osgi/ser
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/Servlet;Lorg/osgi/service/http/HttpService;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/Servlet;Lorg/osgi/service/http/HttpService;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "servlet", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "servlet", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "httpService", "Lorg/osgi/service/http/HttpService;");
@@ -376,10 +376,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/osgi/Servl
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "alias", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "servlet", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/osgi/ServletExporter", "servlet", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/service/http/HttpService", "registerServlet", "(Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Dictionary;Lorg/osgi/service/http/HttpContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/service/http/HttpService", "registerServlet", "(Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Dictionary;Lorg/osgi/service/http/HttpContext;)V", true);
 methodVisitor.visitLabel(label4);
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label15);

@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "_lo
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LANG_JPQL", "Ljava/lang/String;", null, "javax.persistence.JPQL");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LANG_JPQL", "Ljava/lang/String;", null, "jakarta.persistence.JPQL");
 fieldVisitor.visitEnd();
 }
 {
@@ -186,7 +186,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLanguage", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.persistence.JPQL");
+methodVisitor.visitLdcInsn("jakarta.persistence.JPQL");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

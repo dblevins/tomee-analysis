@@ -363,7 +363,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder", "defaultNsUri", "Ljava/lang/String;");

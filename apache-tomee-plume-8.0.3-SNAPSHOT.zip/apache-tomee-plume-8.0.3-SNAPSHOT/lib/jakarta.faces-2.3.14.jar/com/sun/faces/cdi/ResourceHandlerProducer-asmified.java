@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/ResourceHandlerProducer", "Lcom/sun/faces/cdi/CdiProducer<Ljavax/faces/application/ResourceHandler;>;", "com/sun/faces/cdi/CdiProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/ResourceHandlerProducer", "Lcom/sun/faces/cdi/CdiProducer<Ljakarta/faces/application/ResourceHandler;>;", "com/sun/faces/cdi/CdiProducer", null);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -38,11 +38,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "<
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("resource");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "name", "(Ljava/lang/String;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/RequestScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/RequestScoped;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "scope", "(Ljava/lang/Class;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/application/ResourceHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/application/ResourceHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "beanClassAndType", "(Ljava/lang/Class;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/ResourceHandlerProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/application/ResourceHandler;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/application/ResourceHandler;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/ResourceHandlerProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/application/ResourceHandler;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/application/ResourceHandler;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "create", "(Ljava/util/function/Function;)Lcom/sun/faces/cdi/CdiProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -140,11 +140,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/application/ResourceHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/application/ResourceHandler;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getResourceHandler", "()Ljavax/faces/application/ResourceHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getResourceHandler", "()Ljakarta/faces/application/ResourceHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

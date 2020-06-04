@@ -38,9 +38,9 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "<
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("cc");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "name", "(Ljava/lang/String;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/component/UIComponent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/component/UIComponent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "beanClassAndType", "(Ljava/lang/Class;)Lcom/sun/faces/cdi/CdiProducer;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/CompositeComponentProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "com/sun/faces/cdi/CompositeComponentProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/cdi/CdiProducer", "create", "(Ljava/util/function/Function;)Lcom/sun/faces/cdi/CdiProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -84,22 +84,22 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiProducer", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -159,22 +159,22 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/component/CompositeComponentStackManager", "getManager", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/component/CompositeComponentStackManager;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/CompositeComponentStackManager", "peek", "()Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/component/CompositeComponentStackManager", "getManager", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/component/CompositeComponentStackManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/CompositeComponentStackManager", "peek", "()Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponent", "getCurrentCompositeComponent", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponent", "getCurrentCompositeComponent", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/context/FacesContext", "javax/faces/component/UIComponent"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/context/FacesContext", "jakarta/faces/component/UIComponent"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 3);

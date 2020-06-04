@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClassesInCurrentModule", "(Ljavax/servlet/ServletContext;)Ljava/util/Map;", "(Ljavax/servlet/ServletContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/sun/faces/spi/AnnotationScanner$ScannedAnnotation;>;>;", new String[] { "com/sun/faces/spi/InjectionProviderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClassesInCurrentModule", "(Ljakarta/servlet/ServletContext;)Ljava/util/Map;", "(Ljakarta/servlet/ServletContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/sun/faces/spi/AnnotationScanner$ScannedAnnotation;>;>;", new String[] { "com/sun/faces/spi/InjectionProviderException" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);

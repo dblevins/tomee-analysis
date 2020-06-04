@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/xml/bind/annotation/XmlElementDecl$GLOBAL", "javax/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/xml/bind/annotation/XmlElementDecl$GLOBAL", "jakarta/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "elementName", "Ljavax/xml/namespace/QName;", null, null);
@@ -119,7 +119,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", "isList", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/compiler/ElementDeclaration", "scopeClass", "Ljava/lang/Class;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);

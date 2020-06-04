@@ -27,11 +27,11 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/testing/Appl
 classWriter.visitInnerClass("org/apache/openejb/testing/ApplicationComposers$ExtensionAwareOptimizedLoaderService", "org/apache/openejb/testing/ApplicationComposers", "ExtensionAwareOptimizedLoaderService", ACC_PROTECTED | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extensions", "[Ljava/lang/Class;", "[Ljava/lang/Class<+Ljavax/enterprise/inject/spi/Extension;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extensions", "[Ljava/lang/Class;", "[Ljava/lang/Class<+Ljakarta/enterprise/inject/spi/Extension;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "([Ljava/lang/Class;)V", "([Ljava/lang/Class<+Ljavax/enterprise/inject/spi/Extension;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "([Ljava/lang/Class;)V", "([Ljava/lang/Class<+Ljakarta/enterprise/inject/spi/Extension;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/Properties");
@@ -46,7 +46,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "loadExtensions", "(Ljava/lang/ClassLoader;)Ljava/util/List;", "(Ljava/lang/ClassLoader;)Ljava/util/List<+Ljavax/enterprise/inject/spi/Extension;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "loadExtensions", "(Ljava/lang/ClassLoader;)Ljava/util/List;", "(Ljava/lang/ClassLoader;)Ljava/util/List<+Ljakarta/enterprise/inject/spi/Extension;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

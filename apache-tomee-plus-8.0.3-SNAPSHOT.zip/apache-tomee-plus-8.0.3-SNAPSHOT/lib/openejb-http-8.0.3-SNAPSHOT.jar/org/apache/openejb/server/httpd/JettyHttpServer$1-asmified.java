@@ -29,7 +29,7 @@ classWriter.visitOuterClass("org/apache/openejb/server/httpd/JettyHttpServer", "
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/JettyHttpServer$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/server/httpd/JettyHttpServer;Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/server/httpd/JettyHttpServer;Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "this$0", "Lorg/apache/openejb/server/httpd/JettyHttpServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "val$servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "val$servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/mortbay/jetty/handler/AbstractHandler", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -52,13 +52,13 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;I)V", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "(Ljava/lang/String;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;I)V", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/servlet/ServletException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/servlet/ServletException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
@@ -71,13 +71,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "val$servletContext", "Ljavax/servlet/ServletContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletRequestAdapter", "<init>", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "val$servletContext", "Ljakarta/servlet/ServletContext;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletRequestAdapter", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/httpd/ServletResponseAdapter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletResponseAdapter", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletResponseAdapter", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/JettyHttpServer$1", "this$0", "Lorg/apache/openejb/server/httpd/JettyHttpServer;");
@@ -96,10 +96,10 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

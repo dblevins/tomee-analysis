@@ -38,10 +38,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerLiteralId", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/String;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerLiteralId", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/String;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Deque", "peek", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -71,10 +71,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "startIteration", "(Ljavax/faces/view/facelets/FaceletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "startIteration", "(Ljakarta/faces/view/facelets/FaceletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Deque", "peek", "()Ljava/lang/Object;", true);
@@ -97,10 +97,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "stopIteration", "(Ljavax/faces/view/facelets/FaceletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "stopIteration", "(Ljakarta/faces/view/facelets/FaceletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Deque", "pop", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -108,10 +108,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "startNamingContainer", "(Ljavax/faces/view/facelets/FaceletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "startNamingContainer", "(Ljakarta/faces/view/facelets/FaceletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Deque", "push", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
@@ -119,10 +119,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "stopNamingContainer", "(Ljavax/faces/view/facelets/FaceletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "stopNamingContainer", "(Ljakarta/faces/view/facelets/FaceletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/tag/jsf/IterationIdManager", "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Deque", "pop", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -130,11 +130,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "isIterating", "(Ljavax/faces/view/facelets/FaceletContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "isIterating", "(Ljakarta/faces/view/facelets/FaceletContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("com.sun.faces.facelets.tag.js._TRACKED_IDS");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/FaceletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Deque");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -156,11 +156,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "_getStackOfTrackedIds", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/util/Deque<Ljava/util/Set<Ljava/lang/String;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "_getStackOfTrackedIds", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque;", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/util/Deque<Ljava/util/Set<Ljava/lang/String;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("com.sun.faces.facelets.tag.js._TRACKED_IDS");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/FaceletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Deque");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -173,7 +173,7 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("com.sun.faces.facelets.tag.js._TRACKED_IDS");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/FaceletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Deque"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -199,7 +199,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolateMessage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolateMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -210,7 +210,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "getCurrentLoader", "(Ljava/lang/Object;)Ljava/lang/ClassLoader;", false);
@@ -223,12 +223,12 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Locale", "getDefault", "(
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/util/FacesLogger", "javax/faces/context/FacesContext", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/util/ResourceBundle", "javax/faces/component/UIViewRoot", Opcodes.TOP, "java/lang/ClassLoader"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/util/FacesLogger", "jakarta/faces/context/FacesContext", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/util/ResourceBundle", "jakarta/faces/component/UIViewRoot", Opcodes.TOP, "java/lang/ClassLoader"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/util/FacesLogger", "javax/faces/context/FacesContext", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/util/ResourceBundle", "javax/faces/component/UIViewRoot", "java/util/Locale", "java/lang/ClassLoader"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/util/FacesLogger", "jakarta/faces/context/FacesContext", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/util/ResourceBundle", "jakarta/faces/component/UIViewRoot", "java/util/Locale", "java/lang/ClassLoader"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/util/FacesLogger", "getResourcesName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 7);

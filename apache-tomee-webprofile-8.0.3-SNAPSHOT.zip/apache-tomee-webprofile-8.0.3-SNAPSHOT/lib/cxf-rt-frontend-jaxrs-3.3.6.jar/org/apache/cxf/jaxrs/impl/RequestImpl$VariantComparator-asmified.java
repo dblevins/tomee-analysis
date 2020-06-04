@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/ws/rs/core/Variant;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/ws/rs/core/Variant;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "org/apache/cxf/jaxrs/impl/RequestImpl", "VariantComparator", ACC_PRIVATE | ACC_STATIC);
 
@@ -40,13 +40,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/ws/rs/core/Variant;Ljavax/ws/rs/core/Variant;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/ws/rs/core/Variant;Ljakarta/ws/rs/core/Variant;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getMediaType", "()Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getMediaType", "()Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compareMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compareMediaTypes", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 3);
 Label label0 = new Label();
@@ -56,18 +56,18 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getLanguage", "()Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getLanguage", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getLanguage", "()Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getLanguage", "()Ljava/util/Locale;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compareLanguages", "(Ljava/util/Locale;Ljava/util/Locale;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 3);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getEncoding", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getEncoding", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Variant", "getEncoding", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Variant", "getEncoding", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compareEncodings", "(Ljava/lang/String;Ljava/lang/String;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitLabel(label1);
@@ -78,7 +78,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "compareMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "compareMediaTypes", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -100,7 +100,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "compareMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "compareMediaTypes", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -162,10 +162,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Variant");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compare", "(Ljavax/ws/rs/core/Variant;Ljavax/ws/rs/core/Variant;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Variant");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator", "compare", "(Ljakarta/ws/rs/core/Variant;Ljakarta/ws/rs/core/Variant;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

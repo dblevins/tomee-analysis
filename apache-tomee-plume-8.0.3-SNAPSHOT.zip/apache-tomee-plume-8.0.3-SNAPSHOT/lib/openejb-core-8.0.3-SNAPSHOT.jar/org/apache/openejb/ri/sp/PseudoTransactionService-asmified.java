@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoTransactionService", null, "java/lang/Object", new String[] { "org/apache/openejb/spi/TransactionService", "javax/transaction/TransactionManager", "javax/transaction/TransactionSynchronizationRegistry" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoTransactionService", null, "java/lang/Object", new String[] { "org/apache/openejb/spi/TransactionService", "jakarta/transaction/TransactionManager", "jakarta/transaction/TransactionSynchronizationRegistry" });
 
 classWriter.visitInnerClass("org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "org/apache/openejb/ri/sp/PseudoTransactionService", "MyTransaction", ACC_PUBLIC);
 
@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -93,12 +93,12 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService", "threadTransaction", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Transaction");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Transaction");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -152,17 +152,17 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "javax/transaction/NotSupportedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "jakarta/transaction/NotSupportedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService", "threadTransaction", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/NotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/NotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("A transaction is already active");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/NotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/NotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -180,7 +180,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/transaction/RollbackException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/transaction/RollbackException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -270,26 +270,26 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService", "threadTransaction", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Transaction");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Transaction");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljavax/transaction/Transaction;)V", null, new String[] { "javax/transaction/InvalidTransactionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljakarta/transaction/Transaction;)V", null, new String[] { "jakarta/transaction/InvalidTransactionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/InvalidTransactionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/InvalidTransactionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Transaction is null");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -297,7 +297,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/InvalidTransactionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/InvalidTransactionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -309,7 +309,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -337,7 +337,7 @@ methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitJumpInsn(IF_ICMPEQ, label3);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/InvalidTransactionException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/InvalidTransactionException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -347,7 +347,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/InvalidTransactionException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
@@ -363,7 +363,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionKey", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService", "getTransaction", "()Ljavax/transaction/Transaction;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService", "getTransaction", "()Ljakarta/transaction/Transaction;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -431,7 +431,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerInterposedSynchronization", "(Ljavax/transaction/Synchronization;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerInterposedSynchronization", "(Ljakarta/transaction/Synchronization;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService", "threadTransaction", "Ljava/lang/ThreadLocal;");
@@ -450,7 +450,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "registerInterposedSynchronization", "(Ljavax/transaction/Synchronization;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "registerInterposedSynchronization", "(Ljakarta/transaction/Synchronization;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

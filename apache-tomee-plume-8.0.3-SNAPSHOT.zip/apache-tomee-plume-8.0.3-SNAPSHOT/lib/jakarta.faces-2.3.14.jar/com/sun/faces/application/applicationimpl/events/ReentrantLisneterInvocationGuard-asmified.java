@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isGuardSet", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;)Z", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isGuardSet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;)Z", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -63,11 +63,11 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setGuard", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;)V", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setGuard", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;)V", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -79,11 +79,11 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clearGuard", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;)V", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clearGuard", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;)V", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard", "getDataStructure", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -95,12 +95,12 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDataStructure", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Boolean;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDataStructure", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Boolean;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLdcInsn("com.sun.faces.application.ApplicationImpl.IS_PROCESSING_LISTENERS");
 methodVisitor.visitVarInsn(ASTORE, 4);

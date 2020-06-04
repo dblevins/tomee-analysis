@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "<X:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/AttributeImpl<TX;TC;>;Ljavax/persistence/metamodel/PluralAttribute<TX;TC;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", new String[] { "javax/persistence/metamodel/PluralAttribute" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "<X:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/AttributeImpl<TX;TC;>;Ljakarta/persistence/metamodel/PluralAttribute<TX;TC;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", new String[] { "jakarta/persistence/metamodel/PluralAttribute" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Bindable$BindableType", "javax/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Bindable$BindableType", "jakarta/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/PluralAttribute$CollectionType", "javax/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/PluralAttribute$CollectionType", "jakarta/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "elementType", "Ljavax/persistence/metamodel/Type;", "Ljavax/persistence/metamodel/Type<TV;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "elementType", "Ljakarta/persistence/metamodel/Type;", "Ljakarta/persistence/metamodel/Type<TV;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -58,7 +58,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/descriptors/ClassDescriptor", "getJavaClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/MetamodelImpl", "getType", "(Ljava/lang/Class;)Lorg/eclipse/persistence/internal/jpa/metamodel/TypeImpl;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -165,7 +165,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "getMetamodel", "()Lorg/eclipse/persistence/internal/jpa/metamodel/MetamodelImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/MetamodelImpl", "getType", "(Ljava/lang/Class;)Lorg/eclipse/persistence/internal/jpa/metamodel/TypeImpl;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -176,16 +176,16 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableJavaType", "()Ljava/lang/Class;", "()Ljava/lang/Class<TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljavax/persistence/metamodel/Bindable$BindableType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljakarta/persistence/metamodel/Bindable$BindableType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Bindable$BindableType", "PLURAL_ATTRIBUTE", "Ljavax/persistence/metamodel/Bindable$BindableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Bindable$BindableType", "PLURAL_ATTRIBUTE", "Ljakarta/persistence/metamodel/Bindable$BindableType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -201,14 +201,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCollectionType", "()Ljavax/persistence/metamodel/PluralAttribute$CollectionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCollectionType", "()Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementType", "()Ljavax/persistence/metamodel/Type;", "()Ljavax/persistence/metamodel/Type<TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementType", "()Ljakarta/persistence/metamodel/Type;", "()Ljakarta/persistence/metamodel/Type<TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/PluralAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

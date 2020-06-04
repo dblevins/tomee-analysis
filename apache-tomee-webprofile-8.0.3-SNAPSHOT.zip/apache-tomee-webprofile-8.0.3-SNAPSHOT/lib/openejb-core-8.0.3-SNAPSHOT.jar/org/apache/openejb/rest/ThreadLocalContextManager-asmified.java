@@ -69,7 +69,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APPLICATION", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljavax/ws/rs/core/Application;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APPLICATION", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljakarta/ws/rs/core/Application;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -150,7 +150,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "findThreadLocal", "(Ljava/lang/Class;)Ljava/lang/Object;", "(Ljava/lang/Class<*>;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Request;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Request;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
@@ -159,7 +159,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/UriInfo;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/UriInfo;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
@@ -168,7 +168,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/HttpHeaders;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/HttpHeaders;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
@@ -177,7 +177,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/SecurityContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/SecurityContext;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label3 = new Label();
@@ -186,7 +186,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/ext/ContextResolver;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/ext/ContextResolver;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label4 = new Label();
@@ -195,7 +195,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/ext/Providers;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/ext/Providers;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label5 = new Label();
@@ -204,7 +204,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletRequest;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label6 = new Label();
@@ -213,7 +213,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletRequest;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label7 = new Label();
@@ -222,7 +222,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletResponse;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletResponse;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label8 = new Label();
@@ -231,7 +231,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletConfig;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletConfig;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label9 = new Label();
@@ -240,7 +240,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletContext;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label10 = new Label();
@@ -249,7 +249,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/container/ResourceInfo;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/container/ResourceInfo;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label11 = new Label();
@@ -258,7 +258,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/container/ResourceContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/container/ResourceContext;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label12 = new Label();
@@ -267,7 +267,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Application;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Application;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label13 = new Label();
@@ -276,7 +276,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/rest/ThreadLocalCont
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Configuration;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Configuration;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label14 = new Label();

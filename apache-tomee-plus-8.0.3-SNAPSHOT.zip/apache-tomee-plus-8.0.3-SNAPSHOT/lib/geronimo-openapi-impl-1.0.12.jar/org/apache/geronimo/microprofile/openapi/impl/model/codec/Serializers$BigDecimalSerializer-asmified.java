@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer", "Ljava/lang/Object;Ljavax/json/bind/adapter/JsonbAdapter<Ljava/math/BigDecimal;Ljava/lang/Number;>;", "java/lang/Object", new String[] { "javax/json/bind/adapter/JsonbAdapter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer", "Ljava/lang/Object;Ljakarta/json/bind/adapter/JsonbAdapter<Ljava/math/BigDecimal;Ljava/lang/Number;>;", "java/lang/Object", new String[] { "jakarta/json/bind/adapter/JsonbAdapter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers", "BigDecimalSerializer", ACC_PUBLIC | ACC_STATIC);

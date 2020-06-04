@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/context/control/RequestContextControllerProducer", "Lorg/apache/webbeans/portable/AbstractProducer<Ljavax/enterprise/context/control/RequestContextController;>;", "org/apache/webbeans/portable/AbstractProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/context/control/RequestContextControllerProducer", "Lorg/apache/webbeans/portable/AbstractProducer<Ljakarta/enterprise/context/control/RequestContextController;>;", "org/apache/webbeans/portable/AbstractProducer", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;", null, null);
@@ -41,7 +41,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljavax/enterprise/context/control/RequestContextController;", "(Ljava/util/Map<Ljavax/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<Ljavax/enterprise/context/control/RequestContextController;>;)Ljavax/enterprise/context/control/RequestContextController;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljakarta/enterprise/context/control/RequestContextController;", "(Ljava/util/Map<Ljakarta/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<Ljakarta/enterprise/context/control/RequestContextController;>;)Ljakarta/enterprise/context/control/RequestContextController;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/context/control/OwbRequestContextController");
 methodVisitor.visitInsn(DUP);
@@ -58,7 +58,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/control/RequestContextControllerProducer", "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljavax/enterprise/context/control/RequestContextController;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/context/control/RequestContextControllerProducer", "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljakarta/enterprise/context/control/RequestContextController;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

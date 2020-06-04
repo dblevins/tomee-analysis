@@ -45,78 +45,78 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntityContext", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntityContext", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$300", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$300", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsetEntityContext", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsetEntityContext", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$400", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$400", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbActivate", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbActivate", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$500", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$500", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbPassivate", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbPassivate", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$600", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$600", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbLoad", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbLoad", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$700", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$700", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbStore", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbStore", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$200", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$200", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbRemove", "(Ljavax/ejb/EntityBean;)V", null, new String[] { "javax/ejb/RemoveException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ejbRemove", "(Ljakarta/ejb/EntityBean;)V", null, new String[] { "jakarta/ejb/RemoveException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$800", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$800", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

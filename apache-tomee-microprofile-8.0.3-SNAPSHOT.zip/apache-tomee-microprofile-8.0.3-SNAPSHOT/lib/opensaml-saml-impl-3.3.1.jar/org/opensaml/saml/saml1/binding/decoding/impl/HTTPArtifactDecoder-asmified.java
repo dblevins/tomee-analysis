@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/saml1/binding
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -35,7 +35,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bindingDescriptor", "Lorg/opensaml/saml/common/binding/BindingDescriptor;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -56,7 +56,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindingURI", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -72,7 +72,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindingDescriptor", "()Lorg/opensaml/saml/common/binding/BindingDescriptor;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -86,7 +86,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBindingDescriptor", "(Lorg/opensaml/saml/common/binding/BindingDescriptor;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nullable;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -105,16 +105,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/messaging/context/MessageContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "getHttpServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "getHttpServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "decodeTarget", "(Lorg/opensaml/messaging/context/MessageContext;Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "decodeTarget", "(Lorg/opensaml/messaging/context/MessageContext;Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "processArtifacts", "(Lorg/opensaml/messaging/context/MessageContext;Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "processArtifacts", "(Lorg/opensaml/messaging/context/MessageContext;Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml1/binding/decoding/impl/HTTPArtifactDecoder", "populateBindingContext", "(Lorg/opensaml/messaging/context/MessageContext;)V", false);
@@ -126,11 +126,11 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "decodeTarget", "(Lorg/opensaml/messaging/context/MessageContext;Ljavax/servlet/http/HttpServletRequest;)V", null, new String[] { "org/opensaml/messaging/decoder/MessageDecodingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "decodeTarget", "(Lorg/opensaml/messaging/context/MessageContext;Ljakarta/servlet/http/HttpServletRequest;)V", null, new String[] { "org/opensaml/messaging/decoder/MessageDecodingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("TARGET");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/primitive/StringSupport", "trim", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -155,11 +155,11 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processArtifacts", "(Lorg/opensaml/messaging/context/MessageContext;Ljavax/servlet/http/HttpServletRequest;)V", null, new String[] { "org/opensaml/messaging/decoder/MessageDecodingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processArtifacts", "(Lorg/opensaml/messaging/context/MessageContext;Ljakarta/servlet/http/HttpServletRequest;)V", null, new String[] { "org/opensaml/messaging/decoder/MessageDecodingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("SAMLart");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();

@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "violationDescrip
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertyPath", "Ljavax/validation/Path;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertyPath", "Ljakarta/validation/Path;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljavax/validation/Path;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljakarta/validation/Path;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "violationDescription", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -57,7 +57,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Violated constraint on property ");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(": \"");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -72,12 +72,12 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljavax/validation/Path;Lorg/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljakarta/validation/Path;Lorg/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "<init>", "(Ljava/lang/String;Ljavax/validation/Path;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBBeanValidator$ConstraintViolationInfo", "<init>", "(Ljava/lang/String;Ljakarta/validation/Path;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

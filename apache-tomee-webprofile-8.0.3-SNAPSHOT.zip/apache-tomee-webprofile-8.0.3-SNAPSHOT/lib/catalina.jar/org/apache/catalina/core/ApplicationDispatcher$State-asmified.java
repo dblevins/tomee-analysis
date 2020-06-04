@@ -27,19 +27,19 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationDispatch
 classWriter.visitInnerClass("org/apache/catalina/core/ApplicationDispatcher$State", "org/apache/catalina/core/ApplicationDispatcher", "State", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(0, "outerRequest", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(0, "outerRequest", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "outerResponse", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(0, "outerResponse", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "wrapRequest", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(0, "wrapRequest", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "wrapResponse", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(0, "wrapResponse", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,45 +47,45 @@ fieldVisitor = classWriter.visitField(0, "including", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "hrequest", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(0, "hrequest", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "hresponse", "Ljavax/servlet/http/HttpServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(0, "hresponse", "Ljakarta/servlet/http/HttpServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerRequest", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerRequest", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerResponse", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerResponse", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "wrapRequest", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "wrapRequest", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "wrapResponse", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "wrapResponse", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "including", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "hrequest", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "hrequest", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "hresponse", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "hresponse", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerRequest", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerRequest", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerResponse", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "outerResponse", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationDispatcher$State", "including", "Z");

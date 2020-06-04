@@ -75,7 +75,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "enabledProtocols", "[Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -456,20 +456,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/SSLHostConfig", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/SSLHostConfig", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObjectName", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObjectName", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SSLHostConfig", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SSLHostConfig", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

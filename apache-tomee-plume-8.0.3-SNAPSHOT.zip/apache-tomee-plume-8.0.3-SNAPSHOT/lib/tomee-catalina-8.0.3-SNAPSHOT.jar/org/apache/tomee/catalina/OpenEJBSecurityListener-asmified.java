@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/catalina/OpenEJBSecurityListener", null, "java/lang/Object", new String[] { "javax/servlet/AsyncListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/catalina/OpenEJBSecurityListener", null, "java/lang/Object", new String[] { "jakarta/servlet/AsyncListener" });
 
 classWriter.visitInnerClass("org/apache/tomee/catalina/OpenEJBSecurityListener$RequestCapturer", "org/apache/tomee/catalina/OpenEJBSecurityListener", "RequestCapturer", ACC_PUBLIC | ACC_STATIC);
 
@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/OpenEJBSecurityListener", "asyncExit", "()V", false);
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/OpenEJBSecurityListener", "asyncExit", "()V", false);
@@ -76,12 +76,12 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/AsyncEvent", "getAsyncContext", "()Ljavax/servlet/AsyncContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/AsyncEvent", "getAsyncContext", "()Ljakarta/servlet/AsyncContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "addListener", "(Ljavax/servlet/AsyncListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "addListener", "(Ljakarta/servlet/AsyncListener;)V", true);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/catalina/OpenEJBSecurityListener", "requests", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/OpenEJBSecurityListener", "request", "Lorg/apache/catalina/connector/Request;");
@@ -93,7 +93,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/OpenEJBSecurityListener", "asyncExit", "()V", false);

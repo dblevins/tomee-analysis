@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxrs/utils/MimeTypesIntersector", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "intersect", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "intersect", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)Z", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

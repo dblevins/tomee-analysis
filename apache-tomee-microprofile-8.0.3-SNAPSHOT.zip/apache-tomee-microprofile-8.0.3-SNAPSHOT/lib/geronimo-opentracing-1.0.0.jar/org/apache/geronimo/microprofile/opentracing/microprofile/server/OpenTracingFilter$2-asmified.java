@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$2", null, "java/lang/Object", new String[] { "javax/servlet/AsyncListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$2", null, "java/lang/Object", new String[] { "jakarta/servlet/AsyncListener" });
 
-classWriter.visitOuterClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter", "lambda$doFilter$13", "(Ljavax/servlet/ServletRequest;Lio/opentracing/Scope;)V");
+classWriter.visitOuterClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter", "lambda$doFilter$13", "(Ljakarta/servlet/ServletRequest;Lio/opentracing/Scope;)V");
 
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$2", null, null, 0);
 
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljavax/servlet/AsyncEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljakarta/servlet/AsyncEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$2", "val$scope", "Lio/opentracing/Scope;");
@@ -62,21 +62,21 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljavax/servlet/AsyncEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljakarta/servlet/AsyncEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljavax/servlet/AsyncEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljakarta/servlet/AsyncEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljavax/servlet/AsyncEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljakarta/servlet/AsyncEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

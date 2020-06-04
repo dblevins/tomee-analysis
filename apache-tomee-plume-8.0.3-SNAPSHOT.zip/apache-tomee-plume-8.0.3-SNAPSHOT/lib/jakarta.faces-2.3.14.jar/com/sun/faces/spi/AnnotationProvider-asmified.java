@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/faces/spi/AnnotationProvider", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,14 +33,14 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "wrappedAnnotationProvider"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/spi/AnnotationProvider", "initialize", "(Ljavax/servlet/ServletContext;Lcom/sun/faces/spi/AnnotationProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/spi/AnnotationProvider", "initialize", "(Ljakarta/servlet/ServletContext;Lcom/sun/faces/spi/AnnotationProvider;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -55,15 +55,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_FINAL, "initialize", "(Ljavax/servlet/ServletContext;Lcom/sun/faces/spi/AnnotationProvider;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_FINAL, "initialize", "(Ljakarta/servlet/ServletContext;Lcom/sun/faces/spi/AnnotationProvider;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/spi/AnnotationProvider", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/spi/AnnotationProvider", "servletContext", "Ljakarta/servlet/ServletContext;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/spi/AnnotationProvider", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/spi/AnnotationProvider", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);

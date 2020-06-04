@@ -22,17 +22,17 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/ServerProviderFactory$ServerFeatureContextConfigurable", "Lorg/apache/cxf/jaxrs/impl/ConfigurableImpl<Ljavax/ws/rs/core/FeatureContext;>;", "org/apache/cxf/jaxrs/impl/ConfigurableImpl", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/ServerProviderFactory$ServerFeatureContextConfigurable", "Lorg/apache/cxf/jaxrs/impl/ConfigurableImpl<Ljakarta/ws/rs/core/FeatureContext;>;", "org/apache/cxf/jaxrs/impl/ConfigurableImpl", null);
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/ServerProviderFactory$ServerFeatureContextConfigurable", "org/apache/cxf/jaxrs/provider/ServerProviderFactory", "ServerFeatureContextConfigurable", ACC_PRIVATE | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/ws/rs/core/FeatureContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/ws/rs/core/FeatureContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/RuntimeType", "SERVER", "Ljavax/ws/rs/RuntimeType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurableImpl", "<init>", "(Ljavax/ws/rs/core/Configurable;Ljavax/ws/rs/RuntimeType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/RuntimeType", "SERVER", "Ljakarta/ws/rs/RuntimeType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurableImpl", "<init>", "(Ljakarta/ws/rs/core/Configurable;Ljakarta/ws/rs/RuntimeType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

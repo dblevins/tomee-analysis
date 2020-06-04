@@ -44,7 +44,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/InterceptorBinding;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/InterceptorBinding;", true);
 annotationVisitor0.visitEnd();
 }
 {

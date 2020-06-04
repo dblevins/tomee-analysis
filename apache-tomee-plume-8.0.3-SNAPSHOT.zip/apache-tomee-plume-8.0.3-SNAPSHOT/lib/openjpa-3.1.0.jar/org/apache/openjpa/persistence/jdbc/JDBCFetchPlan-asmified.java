@@ -253,11 +253,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setMaxFetchD
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setReadLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setReadLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setWriteLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setWriteLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -329,21 +329,21 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setIgnoreDfg
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setWriteLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setWriteLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/jdbc/JDBCFetchPlan", "setWriteLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/jdbc/JDBCFetchPlan", "setWriteLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setReadLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setReadLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/jdbc/JDBCFetchPlan", "setReadLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/jdbc/JDBCFetchPlan", "setReadLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/jdbc/JDBCFetchPlan;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -40,12 +40,12 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolder", "(Ljava/lang/String;)Ljavax/mail/Folder;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolder", "(Ljava/lang/String;)Ljakarta/mail/Folder;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/imap/IMAPFolder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPRootFolder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPRootFolder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/IMAPStore");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParent", "()Ljavax/mail/Folder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParent", "()Ljakarta/mail/Folder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -111,56 +111,56 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(I)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(I)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Default IMAP folder cannot be created");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Z)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Z)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Default IMAP folder cannot be deleted");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rename", "(Z)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rename", "(Z)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Default IMAP folder cannot be renamed");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "appendMessages", "([Ljavax/mail/Message;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "appendMessages", "([Ljakarta/mail/Message;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Messages cannot be appended to Default IMAP folder");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "expunge", "()[Ljavax/mail/Message;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "expunge", "()[Ljakarta/mail/Message;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Messages cannot be expunged from Default IMAP folder");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

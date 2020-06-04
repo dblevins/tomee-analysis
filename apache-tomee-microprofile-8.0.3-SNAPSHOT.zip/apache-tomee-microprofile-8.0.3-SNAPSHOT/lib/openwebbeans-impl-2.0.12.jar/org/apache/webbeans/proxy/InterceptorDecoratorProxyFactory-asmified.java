@@ -43,11 +43,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FIEL
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedProxyClasses", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljavax/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedProxyClasses", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljakarta/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedProxyClassesByAt", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljavax/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/Class<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedProxyClassesByAt", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljakarta/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/Class<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createProxyClass", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/ClassLoader;Ljava/lang/Class;[Ljava/lang/reflect/Method;[Ljava/lang/reflect/Method;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;Ljava/lang/ClassLoader;Ljava/lang/Class<TT;>;[Ljava/lang/reflect/Method;[Ljava/lang/reflect/Method;)Ljava/lang/Class<TT;>;", new String[] { "org/apache/webbeans/exception/ProxyGenerationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createProxyClass", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/ClassLoader;Ljava/lang/Class;[Ljava/lang/reflect/Method;[Ljava/lang/reflect/Method;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;Ljava/lang/ClassLoader;Ljava/lang/Class<TT;>;[Ljava/lang/reflect/Method;[Ljava/lang/reflect/Method;)Ljava/lang/Class<TT;>;", new String[] { "org/apache/webbeans/exception/ProxyGenerationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -227,7 +227,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/ClassLoader;)Ljava/lang/Class<TT;>;", new String[] { "org/apache/webbeans/exception/ProxyGenerationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/ClassLoader;)Ljava/lang/Class<TT;>;", new String[] { "org/apache/webbeans/exception/ProxyGenerationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "getBusinessMethodsInfo", "()Ljava/util/Map;", false);
@@ -239,7 +239,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "size", "()I", true);
@@ -337,7 +337,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCachedProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/ClassLoader;)Ljava/lang/Class<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCachedProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/ClassLoader;)Ljava/lang/Class<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "cachedProxyClassesByAt", "Ljava/util/concurrent/ConcurrentMap;");
@@ -352,7 +352,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "createProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "createProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
@@ -362,7 +362,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCachedProxyClass", "(Ljavax/enterprise/inject/spi/Bean;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;)Ljava/lang/Class<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCachedProxyClass", "(Ljakarta/enterprise/inject/spi/Bean;)Ljava/lang/Class;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;)Ljava/lang/Class<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "cachedProxyClasses", "Ljava/util/concurrent/ConcurrentMap;");

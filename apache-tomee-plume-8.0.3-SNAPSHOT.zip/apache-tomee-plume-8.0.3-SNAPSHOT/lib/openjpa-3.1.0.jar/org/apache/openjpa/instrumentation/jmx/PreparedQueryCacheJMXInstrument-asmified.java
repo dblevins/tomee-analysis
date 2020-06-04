@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MBE
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_objName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_objName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/instrumentation/AbstractPreparedQueryCacheInstrument", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -107,27 +107,27 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/instrumentation/jmx/JMXProvider", "createObjectName", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/instrumentation/jmx/JMXProvider", "createObjectName", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument", "_objName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

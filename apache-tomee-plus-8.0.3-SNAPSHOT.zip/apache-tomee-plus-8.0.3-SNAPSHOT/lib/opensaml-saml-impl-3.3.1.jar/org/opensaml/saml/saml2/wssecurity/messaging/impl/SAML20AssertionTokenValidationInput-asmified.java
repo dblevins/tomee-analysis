@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messageContext", "Lorg/opens
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "httpServletRequest", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "httpServletRequest", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,18 +37,18 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "assertion", "Lorg/opensaml/s
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/opensaml/messaging/context/MessageContext;Ljavax/servlet/http/HttpServletRequest;Lorg/opensaml/saml/saml2/core/Assertion;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/opensaml/messaging/context/MessageContext;Ljakarta/servlet/http/HttpServletRequest;Lorg/opensaml/saml/saml2/core/Assertion;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(3, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -64,8 +64,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("HttpServletRequest may not be null");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/logic/Constraint", "isNotNull", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletRequest");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/saml2/wssecurity/messaging/impl/SAML20AssertionTokenValidationInput", "httpServletRequest", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletRequest");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/saml2/wssecurity/messaging/impl/SAML20AssertionTokenValidationInput", "httpServletRequest", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("Assertion may not be null");
@@ -79,7 +79,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Lorg/opensaml/messaging/context/MessageContext;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -90,14 +90,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHttpServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHttpServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/saml2/wssecurity/messaging/impl/SAML20AssertionTokenValidationInput", "httpServletRequest", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/saml2/wssecurity/messaging/impl/SAML20AssertionTokenValidationInput", "httpServletRequest", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -105,7 +105,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAssertion", "()Lorg/opensaml/saml/saml2/core/Assertion;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "handleObtained", "(Lorg/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor;Lorg/apache/geronimo/connector/outbound/ConnectionInfo;Z)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "handleObtained", "(Lorg/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor;Lorg/apache/geronimo/connector/outbound/ConnectionInfo;Z)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitEnd();
 }
 {

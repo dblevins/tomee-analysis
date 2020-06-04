@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Extension" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Extension" });
 
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -37,11 +37,11 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy$Default", "org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy", "Default", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "endpoints", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/enterprise/inject/spi/Bean<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "endpoints", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/enterprise/inject/spi/Bean<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "openapis", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/ws/rs/core/Application;Lorg/eclipse/microprofile/openapi/models/OpenAPI;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "openapis", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/ws/rs/core/Application;Lorg/eclipse/microprofile/openapi/models/OpenAPI;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -96,10 +96,10 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "init", "(Ljavax/enterprise/inject/spi/BeforeBeanDiscovery;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "init", "(Ljakarta/enterprise/inject/spi/BeforeBeanDiscovery;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -121,7 +121,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "config", "Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "loadNamingStrategy", "(Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy;", false);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor", "<init>", "(Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;Lorg/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy;Ljavax/json/JsonReaderFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor", "<init>", "(Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;Lorg/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy;Ljakarta/json/JsonReaderFactory;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "processor", "Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -170,24 +170,24 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultMediaType", "()Ljavax/ws/rs/core/MediaType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultMediaType", "()Ljakarta/ws/rs/core/MediaType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "jacksonIsPresent", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/MediaType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/MediaType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("text");
 methodVisitor.visitLdcInsn("vnd.yaml");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/MediaType", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/MediaType", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/ws/rs/core/MediaType"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/ws/rs/core/MediaType"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -220,10 +220,10 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "vetoJacksonIfNotHere", "(Ljavax/enterprise/inject/spi/ProcessAnnotatedType;)V", "(Ljavax/enterprise/inject/spi/ProcessAnnotatedType<Lorg/apache/geronimo/microprofile/openapi/jaxrs/JacksonOpenAPIYamlBodyWriter;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "vetoJacksonIfNotHere", "(Ljakarta/enterprise/inject/spi/ProcessAnnotatedType;)V", "(Ljakarta/enterprise/inject/spi/ProcessAnnotatedType<Lorg/apache/geronimo/microprofile/openapi/jaxrs/JacksonOpenAPIYamlBodyWriter;>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -232,7 +232,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessAnnotatedType", "veto", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessAnnotatedType", "veto", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -240,16 +240,16 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "findEndpointsAndApplication", "(Ljavax/enterprise/inject/spi/ProcessBean;)V", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/ProcessBean<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "findEndpointsAndApplication", "(Ljakarta/enterprise/inject/spi/ProcessBean;)V", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/ProcessBean<TT;>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getBaseType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getBaseType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Type", "getTypeName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -260,9 +260,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "skipScan", "Z");
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/Path;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/Path;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("org.apache.geronimo.microprofile.openapi.");
@@ -287,7 +287,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "endpoints", "Ljava/util/Collection;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessBean", "getBean", "()Ljavax/enterprise/inject/spi/Bean;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessBean", "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -297,7 +297,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOrCreateOpenAPI", "(Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOrCreateOpenAPI", "(Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "classes", "Ljava/util/Collection;");
@@ -312,7 +312,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljavax/ws/rs/core/Application;Ljava/lang/ClassLoader;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$3", "(Ljavax/ws/rs/core/Application;Ljava/lang/ClassLoader;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljakarta/ws/rs/core/Application;Ljava/lang/ClassLoader;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$3", "(Ljakarta/ws/rs/core/Application;Ljava/lang/ClassLoader;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/openapi/models/OpenAPI");
 methodVisitor.visitInsn(ARETURN);
@@ -323,12 +323,12 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label2);
@@ -338,7 +338,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljavax/ws/rs/core/Application;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$4", "(Ljavax/ws/rs/core/Application;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljakarta/ws/rs/core/Application;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$4", "(Ljakarta/ws/rs/core/Application;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/openapi/models/OpenAPI");
 methodVisitor.visitInsn(ARETURN);
@@ -349,7 +349,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljavax/ws/rs/core/Application;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$5", "(Ljavax/ws/rs/core/Application;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljakarta/ws/rs/core/Application;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$getOrCreateOpenAPI$5", "(Ljakarta/ws/rs/core/Application;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/openapi/models/OpenAPI");
 methodVisitor.visitInsn(ARETURN);
@@ -377,7 +377,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createOpenApi", "(Ljava/lang/Class;Ljava/util/stream/Stream;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", "(Ljava/lang/Class<*>;Ljava/util/stream/Stream<Ljava/lang/Class<*>;>;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/enterprise/inject/spi/CDI", "current", "()Ljavax/enterprise/inject/spi/CDI;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/enterprise/inject/spi/CDI", "current", "()Ljakarta/enterprise/inject/spi/CDI;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "config", "Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;");
@@ -387,17 +387,17 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/geronimo/microprofile
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljavax/enterprise/inject/spi/CDI;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$8", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/String;)Ljava/lang/Object;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljakarta/enterprise/inject/spi/CDI;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$8", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/String;)Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$9", "(Ljava/lang/Object;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljava/lang/Object;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitInvokeDynamicInsn("get", "(Ljavax/enterprise/inject/spi/CDI;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$10", "(Ljavax/enterprise/inject/spi/CDI;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("()Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
+methodVisitor.visitInvokeDynamicInsn("get", "(Ljakarta/enterprise/inject/spi/CDI;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$10", "(Ljakarta/enterprise/inject/spi/CDI;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("()Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/openapi/models/OpenAPI");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/CDI", "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/CDI", "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "processor", "Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor;");
@@ -406,9 +406,9 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/cdi/G
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljavax/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljakarta/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor", "processApplication", "(Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljava/lang/reflect/AnnotatedElement;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "skipScan", "Z");
@@ -421,12 +421,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/o
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/openapi/models/OpenAPI", "paths", "(Lorg/eclipse/microprofile/openapi/models/Paths;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/enterprise/inject/spi/CDI", "org/eclipse/microprofile/openapi/models/OpenAPI", "javax/enterprise/inject/spi/BeanManager"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/enterprise/inject/spi/CDI", "org/eclipse/microprofile/openapi/models/OpenAPI", "jakarta/enterprise/inject/spi/BeanManager"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletContext;"));
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "config", "Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;");
@@ -442,18 +442,18 @@ methodVisitor.visitVarInsn(ILOAD, 7);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContext");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/enterprise/inject/Instance", Opcodes.INTEGER, "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/enterprise/inject/Instance", Opcodes.INTEGER, "java/lang/String"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
@@ -480,12 +480,12 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Ljavax/enterprise/inject/spi/BeanManager;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", true), Type.getType("(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Ljakarta/enterprise/inject/spi/BeanManager;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", true), Type.getType("(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$15", "(Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljavax/enterprise/inject/spi/AnnotatedType;)V", false), Type.getType("(Ljavax/enterprise/inject/spi/AnnotatedType;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$15", "(Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", false), Type.getType("(Ljakarta/enterprise/inject/spi/AnnotatedType;)V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "forEach", "(Ljava/util/function/Consumer;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "config", "Lorg/apache/geronimo/microprofile/openapi/config/GeronimoOpenAPIConfig;");
@@ -495,7 +495,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/geronimo/microprofile
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljavax/enterprise/inject/spi/CDI;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$16", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/String;)Ljava/lang/Object;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension;Ljakarta/enterprise/inject/spi/CDI;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$16", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/String;)Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/eclipse/microprofile/openapi/models/OpenAPI;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$createOpenApi$17", "(Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljava/lang/Object;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false), Type.getType("(Ljava/lang/Object;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;")});
@@ -508,7 +508,7 @@ methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "newInstance", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", "(Ljavax/enterprise/inject/spi/CDI<Ljava/lang/Object;>;Ljava/lang/String;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "newInstance", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", "(Ljakarta/enterprise/inject/spi/CDI<Ljava/lang/Object;>;Ljava/lang/String;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -532,16 +532,16 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isAmbiguous", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "isUnsatisfied", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
@@ -563,7 +563,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "n
 methodVisitor.visitLabel(label6);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "javax/enterprise/inject/spi/CDI", "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "jakarta/enterprise/inject/spi/CDI", "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -598,18 +598,18 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$16", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$16", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "newInstance", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "newInstance", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$15", "(Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljavax/enterprise/inject/spi/AnnotatedType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$15", "(Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "processor", "Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor;");
@@ -619,11 +619,11 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/cdi/G
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljavax/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljakarta/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getMethods", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getMethods", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$null$14", "(Ljavax/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;", false), Type.getType("(Ljavax/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "lambda$null$14", "(Ljakarta/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;", false), Type.getType("(Ljakarta/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor", "processClass", "(Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/OpenAPI;Ljava/lang/reflect/AnnotatedElement;Ljava/util/stream/Stream;)V", false);
 methodVisitor.visitInsn(RETURN);
@@ -631,13 +631,13 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$null$14", "(Ljavax/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$null$14", "(Ljakarta/enterprise/inject/spi/AnnotatedMethod;)Lorg/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$MethodElementImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$MethodElementImpl", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedMethod;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$MethodElementImpl", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedMethod;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -711,14 +711,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$createOpenApi$10", "(Ljavax/enterprise/inject/spi/CDI;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$createOpenApi$10", "(Ljakarta/enterprise/inject/spi/CDI;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/loader/DefaultLoader;"));
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/Instance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/CDI", "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/Instance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/Instance", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/microprofile/openapi/impl/loader/DefaultLoader");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/openapi/impl/loader/DefaultLoader", "loadDefaultApi", "()Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -738,12 +738,12 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$8", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$createOpenApi$8", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "newInstance", "(Ljavax/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "newInstance", "(Ljakarta/enterprise/inject/spi/CDI;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -786,7 +786,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$5", "(Ljavax/ws/rs/core/Application;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$5", "(Ljakarta/ws/rs/core/Application;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -794,7 +794,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "endpoints", "Ljava/util/Collection;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true), Type.getType("(Ljavax/enterprise/inject/spi/Bean;)Ljava/lang/Class;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true), Type.getType("(Ljakarta/enterprise/inject/spi/Bean;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "createOpenApi", "(Ljava/lang/Class;Ljava/util/stream/Stream;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -802,7 +802,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$4", "(Ljavax/ws/rs/core/Application;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$4", "(Ljakarta/ws/rs/core/Application;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -810,13 +810,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension", "endpoints", "Ljava/util/Collection;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true), Type.getType("(Ljavax/enterprise/inject/spi/Bean;)Ljava/lang/Class;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true), Type.getType("(Ljakarta/enterprise/inject/spi/Bean;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false), Type.getType("(Ljava/lang/Object;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
@@ -828,7 +828,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$3", "(Ljavax/ws/rs/core/Application;Ljava/lang/ClassLoader;Ljavax/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$getOrCreateOpenAPI$3", "(Ljakarta/ws/rs/core/Application;Ljava/lang/ClassLoader;Ljakarta/ws/rs/core/Application;)Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

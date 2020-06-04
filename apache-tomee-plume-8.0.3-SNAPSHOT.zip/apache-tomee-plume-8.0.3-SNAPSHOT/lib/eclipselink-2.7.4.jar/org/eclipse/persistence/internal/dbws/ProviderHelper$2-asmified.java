@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/dbws/ProviderHelper$2", null, "java/lang/Object", new String[] { "org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller" });
 
-classWriter.visitOuterClass("org/eclipse/persistence/internal/dbws/ProviderHelper", "invoke", "(Ljavax/xml/soap/SOAPMessage;)Ljavax/xml/soap/SOAPMessage;");
+classWriter.visitOuterClass("org/eclipse/persistence/internal/dbws/ProviderHelper", "invoke", "(Ljakarta/xml/soap/SOAPMessage;)Ljakarta/xml/soap/SOAPMessage;");
 
 classWriter.visitInnerClass("org/eclipse/persistence/internal/dbws/ProviderHelper$2", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "attachments", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+fieldVisitor = classWriter.visitField(0, "attachments", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachments", "(Ljava/util/Map;)Lorg/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller;", "(Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;)Lorg/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachments", "(Ljava/util/Map;)Lorg/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller;", "(Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;)Lorg/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -68,7 +68,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljavax/activation/DataHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljakarta/activation/DataHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/ProviderHelper$2", "attachments", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -109,7 +109,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/ProviderHelper$2", "attachments", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/activation/DataHandler");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -117,9 +117,9 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/io/ByteArrayOutputStream", "javax/activation/DataHandler"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/io/ByteArrayOutputStream", "jakarta/activation/DataHandler"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "java/io/ByteArrayOutputStream");
 methodVisitor.visitInsn(DUP);

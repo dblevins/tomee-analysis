@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/PropertyNamingStrategyFactory$ConfigurableNamingStrategy", null, "java/lang/Object", new String[] { "javax/json/bind/config/PropertyNamingStrategy" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/PropertyNamingStrategyFactory$ConfigurableNamingStrategy", null, "java/lang/Object", new String[] { "jakarta/json/bind/config/PropertyNamingStrategy" });
 
 classWriter.visitInnerClass("org/apache/johnzon/jsonb/PropertyNamingStrategyFactory$ConfigurableNamingStrategy", "org/apache/johnzon/jsonb/PropertyNamingStrategyFactory", "ConfigurableNamingStrategy", ACC_PRIVATE | ACC_STATIC);
 

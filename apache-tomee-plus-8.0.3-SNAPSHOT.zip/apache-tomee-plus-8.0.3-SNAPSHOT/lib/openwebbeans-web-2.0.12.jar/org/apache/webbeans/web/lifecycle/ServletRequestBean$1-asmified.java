@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/web/lifecycle/ServletRequestBean$1", "Ljava/lang/Object;Ljavax/inject/Provider<Ljavax/servlet/http/HttpServletRequest;>;", "java/lang/Object", new String[] { "javax/inject/Provider" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/web/lifecycle/ServletRequestBean$1", "Ljava/lang/Object;Ljakarta/inject/Provider<Ljakarta/servlet/http/HttpServletRequest;>;", "java/lang/Object", new String[] { "jakarta/inject/Provider" });
 
 classWriter.visitOuterClass("org/apache/webbeans/web/lifecycle/ServletRequestBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/web/context/WebContextsService;)V");
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljavax/servlet/http/HttpServletRequest;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljakarta/servlet/http/HttpServletRequest;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/web/lifecycle/ServletRequestBean$1", "val$contexts", "Lorg/apache/webbeans/web/context/WebContextsService;");
@@ -61,9 +61,9 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/webbeans/web/context/ServletRequestContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/web/context/ServletRequestContext", "getServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/web/context/ServletRequestContext", "getServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/servlet/http/HttpServletRequest"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/servlet/http/HttpServletRequest"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -72,7 +72,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "get", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/web/lifecycle/ServletRequestBean$1", "get", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/web/lifecycle/ServletRequestBean$1", "get", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

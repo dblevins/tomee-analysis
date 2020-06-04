@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/mgbean/Mana
 classWriter.visitInnerClass("com/sun/faces/mgbean/ManagedBeanBuilder$BakedProperty", "com/sun/faces/mgbean/ManagedBeanBuilder", "BakedProperty", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "set", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "set", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

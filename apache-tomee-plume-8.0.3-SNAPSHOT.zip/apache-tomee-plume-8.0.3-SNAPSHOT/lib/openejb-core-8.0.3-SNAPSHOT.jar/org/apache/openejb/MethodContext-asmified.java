@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "self", "Lorg/apache/openejb/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lockType", "Ljavax/ejb/LockType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lockType", "Ljakarta/ejb/LockType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -213,33 +213,33 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockType", "()Ljavax/ejb/LockType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockType", "()Ljakarta/ejb/LockType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljakarta/ejb/LockType;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljakarta/ejb/LockType;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/MethodContext", "beanContext", "Lorg/apache/openejb/BeanContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getLockType", "()Ljavax/ejb/LockType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getLockType", "()Ljakarta/ejb/LockType;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/ejb/LockType"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/ejb/LockType"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockType", "(Ljavax/ejb/LockType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockType", "(Ljakarta/ejb/LockType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/MethodContext", "lockType", "Ljakarta/ejb/LockType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

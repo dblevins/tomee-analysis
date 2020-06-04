@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", null, "java/lang/Object", new String[] { "javax/persistence/spi/PersistenceUnitInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/PersistenceUnitInfo" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "cacheMode", "Ljavax/persistence/SharedCacheMode;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "cacheMode", "Ljakarta/persistence/SharedCacheMode;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "validationMode", "Ljavax/persistence/ValidationMode;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "validationMode", "Ljakarta/persistence/ValidationMode;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "nonJtaDataSource", "Ljavax
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "persistenceUnitTransactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "persistenceUnitTransactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -126,8 +126,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Properties", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "properties", "Ljava/util/Properties;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "RESOURCE_LOCAL", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/PersistenceUnitTransactionType", "RESOURCE_LOCAL", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -190,20 +190,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljakarta/persistence/spi/PersistenceUnitTransactionType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "persistenceUnitTransactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -452,7 +452,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljavax/persistence/spi/ClassTransformer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljakarta/persistence/spi/ClassTransformer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
@@ -482,8 +482,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSharedCacheMode", "(Ljav
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/SharedCacheMode", "valueOf", "(Ljava/lang/String;)Ljavax/persistence/SharedCacheMode;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "cacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/SharedCacheMode", "valueOf", "(Ljava/lang/String;)Ljakarta/persistence/SharedCacheMode;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "cacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -493,8 +493,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidationMode", "(Ljava
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/ValidationMode", "valueOf", "(Ljava/lang/String;)Ljavax/persistence/ValidationMode;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/ValidationMode", "valueOf", "(Ljava/lang/String;)Ljakarta/persistence/ValidationMode;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "validationMode", "Ljakarta/persistence/ValidationMode;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -521,28 +521,28 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceXMLSchemaVersion", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/persistence/PersistenceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/persistence/PersistenceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Not Yet Implemented");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/PersistenceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/PersistenceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljavax/persistence/SharedCacheMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljakarta/persistence/SharedCacheMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "cacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "cacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljavax/persistence/ValidationMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljakarta/persistence/ValidationMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "validationMode", "Ljakarta/persistence/ValidationMode;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

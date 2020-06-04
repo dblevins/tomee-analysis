@@ -34,31 +34,31 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beginTransaction", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beginTransaction", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getTransaction", "()Ljavax/persistence/EntityTransaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "begin", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getTransaction", "()Ljakarta/persistence/EntityTransaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "begin", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commitTransaction", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commitTransaction", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getTransaction", "()Ljavax/persistence/EntityTransaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "commit", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getTransaction", "()Ljakarta/persistence/EntityTransaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "commit", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollbackTransaction", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollbackTransaction", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getTransaction", "()Ljavax/persistence/EntityTransaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "rollback", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getTransaction", "()Ljakarta/persistence/EntityTransaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "rollback", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

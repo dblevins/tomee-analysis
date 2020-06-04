@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/el/LegacyELContext$EmptyFunctionMapper", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/el/LegacyELContext$EmptyFunctionMapper", null, "jakarta/el/FunctionMapper", null);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/el/LegacyELContext$EmptyFunctionMapper", "com/sun/faces/facelets/el/LegacyELContext", "EmptyFunctionMapper", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("com/sun/faces/facelets/el/LegacyELContext$1", null,
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

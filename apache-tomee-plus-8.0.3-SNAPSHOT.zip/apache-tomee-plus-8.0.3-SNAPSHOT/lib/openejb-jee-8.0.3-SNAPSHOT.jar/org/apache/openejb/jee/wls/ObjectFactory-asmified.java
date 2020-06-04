@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/wls/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -806,152 +806,152 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFieldGroupCmpField", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFieldGroupCmpField", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "cmp-field");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/FieldGroup;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_FieldGroupCmpField_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/FieldGroup;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFieldGroupCmrField", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFieldGroupCmrField", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "cmr-field");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/FieldGroup;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_FieldGroupCmrField_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/FieldGroup;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurityRoleAssignmentPrincipalName", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSecurityRoleAssignmentPrincipalName", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "principal-name");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/SecurityRoleAssignment;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_SecurityRoleAssignmentPrincipalName_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/SecurityRoleAssignment;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicEjbJar", "(Lorg/apache/openejb/jee/wls/WeblogicEjbJar;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/wls/WeblogicEjbJar;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/wls/WeblogicEjbJar;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicEjbJar", "(Lorg/apache/openejb/jee/wls/WeblogicEjbJar;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/wls/WeblogicEjbJar;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/wls/WeblogicEjbJar;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "weblogic-ejb-jar");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_WeblogicEjbJar_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/WeblogicEjbJar;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationWeblogicRelationshipRole", "(Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationWeblogicRelationshipRole", "(Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "weblogic-relationship-role");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_WeblogicRdbmsRelationWeblogicRelationshipRole_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRelationshipRole;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationTableName", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationTableName", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "table-name");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_WeblogicRdbmsRelationTableName_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationRelationName", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWeblogicRdbmsRelationRelationName", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.bea.com/ns/weblogic/90");
 annotationVisitor0.visit("name", "relation-name");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/wls/ObjectFactory", "_WeblogicRdbmsRelationRelationName_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/wls/WeblogicRdbmsRelation;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

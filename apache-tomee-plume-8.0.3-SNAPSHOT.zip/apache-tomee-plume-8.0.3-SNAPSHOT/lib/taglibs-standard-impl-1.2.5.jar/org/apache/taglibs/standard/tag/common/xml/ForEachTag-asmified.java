@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", null, "javax/servlet/jsp/jstl/core/LoopTagSupport", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", null, "jakarta/servlet/jsp/jstl/core/LoopTagSupport", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "select", "Lorg/apache/xpath/XPath;", null, null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/LoopTagSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/LoopTagSupport", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -45,7 +45,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/LoopTagSupport", "release", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/LoopTagSupport", "release", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "select", "Lorg/apache/xpath/XPath;");
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "prepare", "()V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "prepare", "()V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -66,8 +66,8 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/transform/Tr
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/xml/XalanUtil", "getContext", "(Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Lorg/apache/xpath/XPathContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/xml/XalanUtil", "getContext", "(Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Lorg/apache/xpath/XPathContext;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "context", "Lorg/apache/xpath/XPathContext;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -92,10 +92,10 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspTagException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspTagException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitInsn(RETURN);
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "hasNext", "()Z", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "hasNext", "()Z", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "context", "Lorg/apache/xpath/XPathContext;");
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "next", "()Ljava/lang/Object;", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "next", "()Ljava/lang/Object;", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "context", "Lorg/apache/xpath/XPathContext;");
@@ -149,13 +149,13 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doAfterBody", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doAfterBody", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "context", "Lorg/apache/xpath/XPathContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xpath/XPathContext", "popCurrentNode", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/LoopTagSupport", "doAfterBody", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/LoopTagSupport", "doAfterBody", "()I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -175,7 +175,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/xml/ForEachTag", "context", "Lorg/apache/xpath/XPathContext;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/LoopTagSupport", "doFinally", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/LoopTagSupport", "doFinally", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -212,7 +212,7 @@ methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBegin", "(I)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBegin", "(I)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -227,7 +227,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEnd", "(I)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEnd", "(I)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -242,7 +242,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStep", "(I)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStep", "(I)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);

@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxrs/model/wadl/WadlGenerator;Ljava/util/List;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)V", "(Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Ljava/net/URI;>;Ljavax/ws/rs/core/UriInfo;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxrs/model/wadl/WadlGenerator;Ljava/util/List;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)V", "(Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Ljava/net/URI;>;Ljakarta/ws/rs/core/UriInfo;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -56,7 +56,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "org/apache/cxf/jaxrs/model/wadl/WadlGenerator", "java/util/List", "java/util/List", "javax/ws/rs/core/UriInfo", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "org/apache/cxf/jaxrs/model/wadl/WadlGenerator", "java/util/List", "java/util/List", "jakarta/ws/rs/core/UriInfo", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label1 = new Label();
@@ -82,7 +82,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitLdcInsn("import");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -90,7 +90,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitLdcInsn("include");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "isEmpty", "()Z", true);
@@ -115,13 +115,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "org/apache/cxf/jaxrs/model/wadl/WadlGenerator", "java/util/List", "java/util/List", "javax/ws/rs/core/UriInfo"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter", "org/apache/cxf/jaxrs/model/wadl/WadlGenerator", "java/util/List", "java/util/List", "jakarta/ws/rs/core/UriInfo"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List<Ljava/net/URI;>;Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getLocationsMap", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/xml/XMLSource;Ljava/lang/String;Ljava/util/List<Ljava/net/URI;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -219,13 +219,13 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/net/URI"}, 0, n
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -242,12 +242,12 @@ methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

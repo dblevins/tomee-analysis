@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$3$1", "Ljava/lang/Object;Ljava/util/Iterator<Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$3$1", "Ljava/lang/Object;Ljava/util/Iterator<Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitOuterClass("com/sun/faces/application/NavigationHandlerImpl$NavigationMap$3", "iterator", "()Ljava/util/Iterator;");
 
@@ -35,7 +35,7 @@ classWriter.visitInnerClass("com/sun/faces/application/NavigationHandlerImpl$Nav
 classWriter.visitInnerClass("com/sun/faces/application/NavigationHandlerImpl$NavigationMap$3$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "i", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;>;>;", null);
+fieldVisitor = classWriter.visitField(0, "i", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$3$1", "i", "Ljava/util/Iterator;");

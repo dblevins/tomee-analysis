@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/cxf/jaxws/context/WrappedAttachments$Wra
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attachments", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attachments", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljava/util/Map;", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -182,8 +182,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", 
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/activation/DataHandler");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/activation/DataHandler");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAttachments", "cache", "Ljava/util/Map;");
@@ -222,7 +222,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAtta
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -357,7 +357,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAtta
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -523,7 +523,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getAttachments", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+methodVisitor = classWriter.visitMethod(0, "getAttachments", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAttachments", "attachments", "Ljava/util/Map;");

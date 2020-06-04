@@ -40,10 +40,10 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljavax/persistence/FetchType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljakarta/persistence/FetchType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

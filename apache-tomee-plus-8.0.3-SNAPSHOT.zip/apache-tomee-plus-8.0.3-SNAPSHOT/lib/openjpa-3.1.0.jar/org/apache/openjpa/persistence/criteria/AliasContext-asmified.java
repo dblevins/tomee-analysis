@@ -25,27 +25,27 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAlias", "(Ljavax/persistence/criteria/Selection;)Ljava/lang/String;", "(Ljavax/persistence/criteria/Selection<*>;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAlias", "(Ljakarta/persistence/criteria/Selection;)Ljava/lang/String;", "(Ljakarta/persistence/criteria/Selection<*>;)Ljava/lang/String;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "registerVariable", "(Ljavax/persistence/criteria/Selection;Lorg/apache/openjpa/kernel/exps/Value;Lorg/apache/openjpa/kernel/exps/Value;)V", "(Ljavax/persistence/criteria/Selection<*>;Lorg/apache/openjpa/kernel/exps/Value;Lorg/apache/openjpa/kernel/exps/Value;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "registerVariable", "(Ljakarta/persistence/criteria/Selection;Lorg/apache/openjpa/kernel/exps/Value;Lorg/apache/openjpa/kernel/exps/Value;)V", "(Ljakarta/persistence/criteria/Selection<*>;Lorg/apache/openjpa/kernel/exps/Value;Lorg/apache/openjpa/kernel/exps/Value;)V", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isRegistered", "(Ljavax/persistence/criteria/Selection;)Z", "(Ljavax/persistence/criteria/Selection<*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isRegistered", "(Ljakarta/persistence/criteria/Selection;)Z", "(Ljakarta/persistence/criteria/Selection<*>;)Z", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredVariable", "(Ljavax/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljavax/persistence/criteria/Selection<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredVariable", "(Ljakarta/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljakarta/persistence/criteria/Selection<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredRootVariable", "(Ljavax/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljavax/persistence/criteria/Root<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredRootVariable", "(Ljakarta/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljakarta/persistence/criteria/Root<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredValue", "(Ljavax/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljavax/persistence/criteria/Selection<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRegisteredValue", "(Ljakarta/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", "(Ljakarta/persistence/criteria/Selection<*>;)Lorg/apache/openjpa/kernel/exps/Value;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

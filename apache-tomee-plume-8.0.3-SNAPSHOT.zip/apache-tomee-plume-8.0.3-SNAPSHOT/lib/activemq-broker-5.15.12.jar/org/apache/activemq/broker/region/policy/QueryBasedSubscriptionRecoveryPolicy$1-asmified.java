@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", null, "java/lang/Object", new String[] { "javax/jms/MessageListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", null, "java/lang/Object", new String[] { "jakarta/jms/MessageListener" });
 
 classWriter.visitOuterClass("org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "recover", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/Topic;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V");
 
@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", "this$0", "Lorg/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy;");
@@ -77,7 +77,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", "val$context", "Lorg/apache/activemq/broker/ConnectionContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", "val$sub", "Lorg/apache/activemq/broker/region/SubscriptionRecovery;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "dispatchInitialMessage", "(Ljavax/jms/Message;Lorg/apache/activemq/broker/region/Destination;Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "dispatchInitialMessage", "(Ljakarta/jms/Message;Lorg/apache/activemq/broker/region/Destination;Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();

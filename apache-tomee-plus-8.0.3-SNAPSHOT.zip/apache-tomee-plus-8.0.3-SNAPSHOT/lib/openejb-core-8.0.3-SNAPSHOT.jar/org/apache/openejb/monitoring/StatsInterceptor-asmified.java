@@ -215,16 +215,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -243,9 +243,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PostConstruct", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PostConstruct", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PostConstruct;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PostConstruct;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -255,7 +255,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "PostConstruct", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J", false);
 methodVisitor.visitVarInsn(LSTORE, 4);
@@ -268,7 +268,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
@@ -299,9 +299,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PreDestroy", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PreDestroy", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -311,7 +311,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "PreDestroy", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J", false);
 methodVisitor.visitVarInsn(LSTORE, 4);
@@ -324,7 +324,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
@@ -355,9 +355,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PostActivate", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PostActivate", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ejb/PostActivate;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ejb/PostActivate;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -365,7 +365,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "PostActivate", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -385,9 +385,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PrePassivate", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "PrePassivate", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ejb/PrePassivate;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ejb/PrePassivate;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -395,7 +395,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "PrePassivate", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -415,9 +415,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AroundTimeout", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AroundTimeout", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundTimeout;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundTimeout;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -425,7 +425,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "AroundTimeout", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -445,9 +445,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AfterBegin", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AfterBegin", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ejb/AfterBegin;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ejb/AfterBegin;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -455,7 +455,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "AfterBegin", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -475,9 +475,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "BeforeCompletion", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "BeforeCompletion", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ejb/BeforeCompletion;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ejb/BeforeCompletion;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -485,7 +485,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "BeforeCompletion", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -505,9 +505,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AfterCompletion", "(Ljavax/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "AfterCompletion", "(Ljakarta/interceptor/InvocationContext;)V", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ejb/AfterCompletion;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ejb/AfterCompletion;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -515,14 +515,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor", "AfterCompletion", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "record", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "record", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -541,7 +541,7 @@ methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "stats", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Lorg/apache/openejb/monitoring/StatsInterceptor$Stats;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/StatsInterceptor", "stats", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Lorg/apache/openejb/monitoring/StatsInterceptor$Stats;", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
@@ -554,7 +554,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J
 methodVisitor.visitVarInsn(LSTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J", false);
@@ -572,7 +572,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(LLOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor$Stats", "record", "(J)V", false);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "javax/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG, "java/lang/Object", Opcodes.LONG}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "jakarta/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG, "java/lang/Object", Opcodes.LONG}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/StatsInterceptor", "invocationTime", "Ljava/util/concurrent/atomic/AtomicLong;");
 methodVisitor.visitVarInsn(LLOAD, 7);
@@ -581,7 +581,7 @@ methodVisitor.visitInsn(POP2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "javax/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "jakarta/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J", false);
@@ -599,7 +599,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(LLOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/StatsInterceptor$Stats", "record", "(J)V", false);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "javax/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable", Opcodes.LONG}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/openejb/monitoring/StatsInterceptor", "jakarta/interceptor/InvocationContext", "java/lang/reflect/Method", "org/apache/openejb/monitoring/StatsInterceptor$Stats", Opcodes.LONG, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable", Opcodes.LONG}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/StatsInterceptor", "invocationTime", "Ljava/util/concurrent/atomic/AtomicLong;");
 methodVisitor.visitVarInsn(LLOAD, 10);
@@ -622,7 +622,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "stats", "(Ljavax/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Lorg/apache/openejb/monitoring/StatsInterceptor$Stats;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "stats", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/reflect/Method;)Lorg/apache/openejb/monitoring/StatsInterceptor$Stats;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -634,7 +634,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);

@@ -24,14 +24,14 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", null, "java/lang/Object", new String[] { "org/apache/safeguard/impl/fallback/FallbackInterceptor$EnrichedExecutionContext" });
 
-classWriter.visitOuterClass("org/apache/safeguard/impl/fallback/FallbackInterceptor", "withFallback", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/apache/safeguard/impl/fallback/FallbackInterceptor", "withFallback", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/fallback/FallbackInterceptor$1", null, null, 0);
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/fallback/FallbackInterceptor$EnrichedExecutionContext", "org/apache/safeguard/impl/fallback/FallbackInterceptor", "EnrichedExecutionContext", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljavax/interceptor/InvocationContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljakarta/interceptor/InvocationContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,14 +43,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/safeguard/impl/fallback/FallbackInterceptor;Ljavax/interceptor/InvocationContext;Ljava/lang/Throwable;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/safeguard/impl/fallback/FallbackInterceptor;Ljakarta/interceptor/InvocationContext;Ljava/lang/Throwable;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "this$0", "Lorg/apache/safeguard/impl/fallback/FallbackInterceptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$e", "Ljava/lang/Throwable;");
@@ -64,8 +64,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -74,8 +74,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethod", "()Ljava/lang/reflect/Method;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,8 +84,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()[Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getParameters", "()[Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/fallback/FallbackInterceptor$1", "val$context", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getParameters", "()[Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

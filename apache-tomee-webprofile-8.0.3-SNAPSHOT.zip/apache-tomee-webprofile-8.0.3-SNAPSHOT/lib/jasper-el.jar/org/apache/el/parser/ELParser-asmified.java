@@ -119,7 +119,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jj_endpos", "I", null, null)
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parse", "(Ljava/lang/String;)Lorg/apache/el/parser/Node;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parse", "(Ljava/lang/String;)Lorg/apache/el/parser/Node;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -139,11 +139,11 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/el/parser/ParseException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/el/ELException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/ELException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/el/parser/ParseException", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ELException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ELException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();

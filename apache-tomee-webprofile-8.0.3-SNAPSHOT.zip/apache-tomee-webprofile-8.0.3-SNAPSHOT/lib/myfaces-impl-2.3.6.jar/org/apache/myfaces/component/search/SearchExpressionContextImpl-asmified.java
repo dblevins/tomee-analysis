@@ -22,57 +22,57 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/component/search/SearchExpressionContextImpl", null, "javax/faces/component/search/SearchExpressionContext", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/component/search/SearchExpressionContextImpl", null, "jakarta/faces/component/search/SearchExpressionContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "source", "Ljavax/faces/component/UIComponent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "source", "Ljakarta/faces/component/UIComponent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "visitHints", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "visitHints", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "expressionHints", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/faces/component/search/SearchExpressionHint;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "expressionHints", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/faces/component/search/SearchExpressionHint;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/component/search/SearchExpressionContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/search/SearchExpressionContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSource", "()Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSource", "()Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "source", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "source", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSource", "(Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSource", "(Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "source", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "source", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVisitHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVisitHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "visitHints", "Ljava/util/Set;");
@@ -81,7 +81,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVisitHints", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVisitHints", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/faces/component/search/SearchExpressionHint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/faces/component/search/SearchExpressionHint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "expressionHints", "Ljava/util/Set;");
@@ -100,7 +100,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExpressionHints", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljavax/faces/component/search/SearchExpressionHint;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExpressionHints", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljakarta/faces/component/search/SearchExpressionHint;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -110,10 +110,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionContextImpl", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

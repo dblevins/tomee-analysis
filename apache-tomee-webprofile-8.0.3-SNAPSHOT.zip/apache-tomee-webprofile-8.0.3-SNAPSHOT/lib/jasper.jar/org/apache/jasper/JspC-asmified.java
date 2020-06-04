@@ -309,7 +309,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "caching", "Z", null, null)
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "cache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "cache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -1409,7 +1409,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCache", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCache", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "cache", "Ljava/util/Map;");
@@ -3187,7 +3187,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "context", "Lor
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "rctxt", "Lorg/apache/jasper/compiler/JspRuntimeContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "targetClassName", "Ljava/lang/String;");
@@ -4344,7 +4344,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/servlet/TldScanner", "<init>", "(Ljavax/servlet/ServletContext;ZZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/servlet/TldScanner", "<init>", "(Ljakarta/servlet/ServletContext;ZZZ)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
@@ -4427,7 +4427,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/servlet/TldScann
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "scanner", "Lorg/apache/jasper/servlet/TldScanner;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/servlet/TldScanner", "getTldResourcePathTaglibXmlMap", "()Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/TldCache", "<init>", "(Ljavax/servlet/ServletContext;Ljava/util/Map;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/TldCache", "<init>", "(Ljakarta/servlet/ServletContext;Ljava/util/Map;Ljava/util/Map;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspC", "tldCache", "Lorg/apache/jasper/compiler/TldCache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "context", "Lorg/apache/jasper/servlet/JspCServletContext;");
@@ -4441,21 +4441,21 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "context", "Lorg/apache/jasper/servlet/JspCServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/JspRuntimeContext", "<init>", "(Ljavax/servlet/ServletContext;Lorg/apache/jasper/Options;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/JspRuntimeContext", "<init>", "(Ljakarta/servlet/ServletContext;Lorg/apache/jasper/Options;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspC", "rctxt", "Lorg/apache/jasper/compiler/JspRuntimeContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/compiler/JspConfig");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "context", "Lorg/apache/jasper/servlet/JspCServletContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/JspConfig", "<init>", "(Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/JspConfig", "<init>", "(Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspC", "jspConfig", "Lorg/apache/jasper/compiler/JspConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/compiler/TagPluginManager");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspC", "context", "Lorg/apache/jasper/servlet/JspCServletContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/TagPluginManager", "<init>", "(Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/compiler/TagPluginManager", "<init>", "(Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspC", "tagPluginManager", "Lorg/apache/jasper/compiler/TagPluginManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 5);
@@ -4991,7 +4991,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/runtime/JspFactoryImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/runtime/JspFactoryImpl", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/servlet/jsp/JspFactory", "setDefaultFactory", "(Ljavax/servlet/jsp/JspFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/JspFactory", "setDefaultFactory", "(Ljakarta/servlet/jsp/JspFactory;)V", false);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/jasper/JspC;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/juli/logging/LogFactory", "getLog", "(Ljava/lang/Class;)Lorg/apache/juli/logging/Log;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/jasper/JspC", "log", "Lorg/apache/juli/logging/Log;");

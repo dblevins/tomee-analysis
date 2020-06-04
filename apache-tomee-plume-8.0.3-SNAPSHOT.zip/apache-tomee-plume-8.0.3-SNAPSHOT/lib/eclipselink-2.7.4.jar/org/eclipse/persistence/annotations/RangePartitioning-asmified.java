@@ -45,7 +45,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "name", "()Lj
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "partitionColumn", "()Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "partitionColumn", "()Ljakarta/persistence/Column;", null, null);
 methodVisitor.visitEnd();
 }
 {

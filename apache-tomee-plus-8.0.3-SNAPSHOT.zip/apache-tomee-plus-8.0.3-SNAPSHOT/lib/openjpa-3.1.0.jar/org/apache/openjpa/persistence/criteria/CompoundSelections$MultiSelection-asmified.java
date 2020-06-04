@@ -37,12 +37,12 @@ classWriter.visitInnerClass("org/apache/openjpa/kernel/FillStrategy$Assign", "or
 classWriter.visitInnerClass("org/apache/openjpa/kernel/FillStrategy$NewInstance", "org/apache/openjpa/kernel/FillStrategy", "NewInstance", ACC_PUBLIC | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljavax/persistence/criteria/Selection;)V", "(Ljava/lang/Class<TT;>;[Ljavax/persistence/criteria/Selection<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljakarta/persistence/criteria/Selection;)V", "(Ljava/lang/Class<TT;>;[Ljakarta/persistence/criteria/Selection<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/CompoundSelections$CompoundSelectionImpl", "<init>", "(Ljava/lang/Class;[Ljavax/persistence/criteria/Selection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/CompoundSelections$CompoundSelectionImpl", "<init>", "(Ljava/lang/Class;[Ljakarta/persistence/criteria/Selection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -58,7 +58,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/cri
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/Tuple;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/Tuple;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
@@ -68,10 +68,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/persistence/TupleElement");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/persistence/TupleElement");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/persistence/TupleElement;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/TupleFactory", "<init>", "([Ljavax/persistence/TupleElement;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/persistence/TupleElement;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/TupleFactory", "<init>", "([Ljakarta/persistence/TupleElement;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/kernel/FillStrategy$Factory");
 methodVisitor.visitInsn(DUP);

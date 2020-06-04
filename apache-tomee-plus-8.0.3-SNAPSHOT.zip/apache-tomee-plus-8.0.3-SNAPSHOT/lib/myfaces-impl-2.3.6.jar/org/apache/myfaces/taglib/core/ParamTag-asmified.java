@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/taglib/core/ParamTag", null, "org/apache/myfaces/shared/taglib/UIComponentELTagBase", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_name", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_name", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -40,7 +40,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getComponentType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.faces.Parameter");
+methodVisitor.visitLdcInsn("jakarta.faces.Parameter");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -54,27 +54,27 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setProperties", "(Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setProperties", "(Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/taglib/UIComponentELTagBase", "setProperties", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/taglib/UIComponentELTagBase", "setProperties", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("name");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ParamTag", "_name", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ParamTag", "setStringProperty", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ParamTag", "_name", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ParamTag", "setStringProperty", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setName", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setName", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ParamTag", "_name", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ParamTag", "_name", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

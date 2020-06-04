@@ -859,20 +859,20 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateAction", "(Ljavax/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/security/PrivilegedAction;", "<T:Ljava/lang/Object;>(Ljavax/validation/Validator;TT;[Ljava/lang/Class<*>;)Ljava/security/PrivilegedAction<Ljava/util/Set<Ljavax/validation/ConstraintViolation<TT;>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateAction", "(Ljakarta/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/security/PrivilegedAction;", "<T:Ljava/lang/Object;>(Ljakarta/validation/Validator;TT;[Ljava/lang/Class<*>;)Ljava/security/PrivilegedAction<Ljava/util/Set<Ljakarta/validation/ConstraintViolation<TT;>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/lib/util/J2DoPrivHelper$61");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "<init>", "(Ljavax/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "<init>", "(Ljakarta/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildDefaultValidatorFactoryAction", "()Ljava/security/PrivilegedAction;", "<T:Ljava/lang/Object;>()Ljava/security/PrivilegedAction<Ljavax/validation/ValidatorFactory;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildDefaultValidatorFactoryAction", "()Ljava/security/PrivilegedAction;", "<T:Ljava/lang/Object;>()Ljava/security/PrivilegedAction<Ljakarta/validation/ValidatorFactory;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/lib/util/J2DoPrivHelper$62");
 methodVisitor.visitInsn(DUP);

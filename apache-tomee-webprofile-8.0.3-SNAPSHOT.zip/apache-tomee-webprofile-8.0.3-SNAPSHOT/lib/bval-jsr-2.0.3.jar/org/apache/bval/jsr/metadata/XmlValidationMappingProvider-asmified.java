@@ -91,7 +91,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map",
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/metadata/XmlValidationMappingProvider", "classNameTransformer", "Ljava/util/function/Function;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/ConstraintValidator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/ConstraintValidator;"));
 methodVisitor.visitInvokeDynamicInsn("accept", "()Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/metadata/XmlValidationMappingProvider", "lambda$doGetValidatorMapping$0", "(Ljava/lang/ClassNotFoundException;)V", false), Type.getType("(Ljava/lang/ClassNotFoundException;)V")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/XmlValidationMappingProvider", "load", "(Ljava/util/stream/Stream;Ljava/lang/Class;Ljava/util/function/Consumer;)Ljava/util/stream/Stream;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Collectors", "toList", "()Ljava/util/stream/Collector;", false);

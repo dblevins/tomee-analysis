@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/BasicTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/TypeImpl<TX;>;Ljavax/persistence/metamodel/BasicType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/TypeImpl", new String[] { "javax/persistence/metamodel/BasicType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/BasicTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/TypeImpl<TX;>;Ljakarta/persistence/metamodel/BasicType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/TypeImpl", new String[] { "jakarta/persistence/metamodel/BasicType" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-4235705513407442769L));
@@ -41,9 +41,9 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljavax/persistence/metamodel/Type$PersistenceType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljakarta/persistence/metamodel/Type$PersistenceType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "BASIC", "Ljavax/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "BASIC", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

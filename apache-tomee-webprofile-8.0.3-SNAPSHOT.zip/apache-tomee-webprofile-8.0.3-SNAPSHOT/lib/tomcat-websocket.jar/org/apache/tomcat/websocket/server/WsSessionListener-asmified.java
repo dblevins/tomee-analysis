@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/server/WsSessionListener", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpSessionListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/server/WsSessionListener", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpSessionListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wsServerContainer", "Lorg/apache/tomcat/websocket/server/WsServerContainer;", null, null);
@@ -41,13 +41,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsSessionListener", "wsServerContainer", "Lorg/apache/tomcat/websocket/server/WsServerContainer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/server/WsServerContainer", "closeAuthenticatedSession", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);

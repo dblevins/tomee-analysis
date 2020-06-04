@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesServletMappings", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/spi/ServletMapping;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesServletMappings", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/spi/ServletMapping;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isErrorPagePresent", "(Ljavax/faces/context/ExternalContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isErrorPagePresent", "(Ljakarta/faces/context/ExternalContext;)Z", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

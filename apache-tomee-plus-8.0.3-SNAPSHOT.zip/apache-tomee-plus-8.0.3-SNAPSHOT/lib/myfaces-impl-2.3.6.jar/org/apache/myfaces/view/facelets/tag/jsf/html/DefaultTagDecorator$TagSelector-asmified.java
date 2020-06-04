@@ -40,7 +40,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExecutorIfApplies", "(Ljavax/faces/view/facelets/Tag;)Lorg/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$TagDecoratorExecutor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExecutorIfApplies", "(Ljakarta/faces/view/facelets/Tag;)Lorg/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$TagDecoratorExecutor;", null, null);
 methodVisitor.visitEnd();
 }
 {

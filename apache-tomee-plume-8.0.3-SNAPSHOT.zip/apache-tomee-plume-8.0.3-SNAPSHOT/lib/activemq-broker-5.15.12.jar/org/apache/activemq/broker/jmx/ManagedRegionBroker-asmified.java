@@ -39,79 +39,79 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "managementContex
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "brokerObjectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "brokerObjectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topics", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topics", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queues", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queues", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueues", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueues", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopics", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopics", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queueSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queueSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "durableTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "durableTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "inactiveDurableTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "inactiveDurableTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueueSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueueSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopicSubscribers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/SubscriptionView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queueProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "queueProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topicProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "topicProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueueProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryQueueProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopicProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "temporaryTopicProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dynamicDestinationProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dynamicDestinationProducers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/ProducerView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subscriptionKeys", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/activemq/util/SubscriptionKey;Ljavax/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subscriptionKeys", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/activemq/util/SubscriptionKey;Ljakarta/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subscriptionMap", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/activemq/broker/region/Subscription;Ljavax/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subscriptionMap", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/activemq/broker/region/Subscription;Ljakarta/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registeredMBeans", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registeredMBeans", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -127,7 +127,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbeanTimeout", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/broker/jmx/ManagementContext;Ljavax/management/ObjectName;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/usage/SystemUsage;Lorg/apache/activemq/broker/region/DestinationFactory;Lorg/apache/activemq/broker/region/DestinationInterceptor;Lorg/apache/activemq/thread/Scheduler;Ljava/util/concurrent/ThreadPoolExecutor;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/broker/jmx/ManagementContext;Ljakarta/management/ObjectName;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/usage/SystemUsage;Lorg/apache/activemq/broker/region/DestinationFactory;Lorg/apache/activemq/broker/region/DestinationInterceptor;Lorg/apache/activemq/thread/Scheduler;Ljava/util/concurrent/ThreadPoolExecutor;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -235,7 +235,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getMbeanInvocationTimeout", "()J", false);
@@ -251,10 +251,10 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/BrokerService", "org/apache/activemq/broker/jmx/ManagementContext", "javax/management/ObjectName", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/usage/SystemUsage", "org/apache/activemq/broker/region/DestinationFactory", "org/apache/activemq/broker/region/DestinationInterceptor", "org/apache/activemq/thread/Scheduler", "java/util/concurrent/ThreadPoolExecutor"}, 1, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/BrokerService", "org/apache/activemq/broker/jmx/ManagementContext", "jakarta/management/ObjectName", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/usage/SystemUsage", "org/apache/activemq/broker/region/DestinationFactory", "org/apache/activemq/broker/region/DestinationInterceptor", "org/apache/activemq/thread/Scheduler", "java/util/concurrent/ThreadPoolExecutor"}, 1, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/BrokerService", "org/apache/activemq/broker/jmx/ManagementContext", "javax/management/ObjectName", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/usage/SystemUsage", "org/apache/activemq/broker/region/DestinationFactory", "org/apache/activemq/broker/region/DestinationInterceptor", "org/apache/activemq/thread/Scheduler", "java/util/concurrent/ThreadPoolExecutor"}, 2, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "java/util/concurrent/ExecutorService"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/BrokerService", "org/apache/activemq/broker/jmx/ManagementContext", "jakarta/management/ObjectName", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/usage/SystemUsage", "org/apache/activemq/broker/region/DestinationFactory", "org/apache/activemq/broker/region/DestinationInterceptor", "org/apache/activemq/thread/Scheduler", "java/util/concurrent/ThreadPoolExecutor"}, 2, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "java/util/concurrent/ExecutorService"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "asyncInvokeService", "Ljava/util/concurrent/ExecutorService;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 10);
@@ -277,7 +277,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/InstanceNotFoundException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/InstanceNotFoundException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -296,18 +296,18 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/ServiceStopper", "java/util/Iterator", "javax/management/ObjectName"}, 1, new Object[] {"javax/management/InstanceNotFoundException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/ServiceStopper", "java/util/Iterator", "jakarta/management/ObjectName"}, 1, new Object[] {"jakarta/management/InstanceNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("The MBean {} is no longer registered with JMX");
@@ -406,9 +406,9 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/activemq/broker/region/Queue");
@@ -424,7 +424,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/activemq/broker/region/Topic");
 Label label5 = new Label();
@@ -453,7 +453,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerDestination", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/DestinationView;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerDestination", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/DestinationView;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 Label label6 = new Label();
@@ -481,13 +481,13 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterDestination", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterDestination", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -506,7 +506,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSubscription", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/Subscription;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSubscription", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/Subscription;)Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -526,11 +526,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/util/Subscript
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/Subscription", "getConsumerInfo", "()Lorg/apache/activemq/command/ConsumerInfo;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/Subscription", "getConsumerInfo", "()Lorg/apache/activemq/command/ConsumerInfo;", true);
@@ -570,7 +570,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/Man
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "org/apache/activemq/util/SubscriptionKey", "javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "org/apache/activemq/util/SubscriptionKey", "jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerService", "Lorg/apache/activemq/broker/BrokerService;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "isPopulateUserNameInMBeans", "()Z", false);
@@ -631,14 +631,14 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/SubscriptionView", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/activemq/broker/region/Subscription;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/broker/region/Subscription", "java/lang/String", "org/apache/activemq/util/SubscriptionKey", "javax/management/ObjectName", "org/apache/activemq/broker/jmx/SubscriptionView", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/broker/region/Subscription", "java/lang/String", "org/apache/activemq/util/SubscriptionKey", "jakarta/management/ObjectName", "org/apache/activemq/broker/jmx/SubscriptionView", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/Subscription", "getConsumerInfo", "()Lorg/apache/activemq/command/ConsumerInfo;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerSubscription", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ConsumerInfo;Lorg/apache/activemq/util/SubscriptionKey;Lorg/apache/activemq/broker/jmx/SubscriptionView;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerSubscription", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ConsumerInfo;Lorg/apache/activemq/util/SubscriptionKey;Lorg/apache/activemq/broker/jmx/SubscriptionView;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -720,7 +720,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionKeys", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label0 = new Label();
@@ -728,10 +728,10 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerSubscription", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/Subscription;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerSubscription", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/Subscription;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/activemq/broker/region/Subscription", "org/apache/activemq/util/SubscriptionKey", "javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/activemq/broker/region/Subscription", "org/apache/activemq/util/SubscriptionKey", "jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 6);
@@ -767,9 +767,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterSubscription", "(Ljavax/management/ObjectName;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterSubscription", "(Ljakarta/management/ObjectName;Z)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -794,11 +794,11 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ConnectionContext", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ConnectionContext", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerService", "Lorg/apache/activemq/broker/BrokerService;");
@@ -810,7 +810,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/Connect
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
@@ -828,7 +828,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/ProducerInfo", "getDestination", "()Lorg/apache/activemq/command/ActiveMQDestination;", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerProducer", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/ProducerView;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registerProducer", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/ProducerView;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
@@ -837,15 +837,15 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeProducer", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/command/ProducerInfo;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ConnectionContext", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterProducer", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "unregisterProducer", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -878,12 +878,12 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/ProducerInfo", "getProducerId", "()Lorg/apache/activemq/command/ProducerId;", false);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ProducerBrokerExchange", "getConnectionContext", "()Lorg/apache/activemq/broker/ConnectionContext;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ConnectionContext", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createProducerName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ProducerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "dynamicDestinationProducers", "Ljava/util/Map;");
@@ -922,7 +922,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label3 = new Label();
@@ -942,7 +942,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionKeys", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -954,9 +954,9 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
@@ -973,7 +973,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerDestination", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/DestinationView;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerDestination", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/DestinationView;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1034,7 +1034,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -1063,7 +1063,7 @@ methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterDestination", "(Ljavax/management/ObjectName;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterDestination", "(Ljakarta/management/ObjectName;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1078,28 +1078,28 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topics", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queues", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueues", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopics", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "removeAndRemember", "(Ljava/util/Map;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -1111,11 +1111,11 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "javax/management/ObjectName", "org/apache/activemq/broker/jmx/DestinationView"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "jakarta/management/ObjectName", "org/apache/activemq/broker/jmx/DestinationView"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Failed to unregister MBean {}");
@@ -1131,7 +1131,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/DestinationView", "getSlowConsumerStrategy", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/DestinationView", "getSlowConsumerStrategy", "()Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label7);
@@ -1144,7 +1144,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label5);
@@ -1165,7 +1165,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerProducer", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/ProducerView;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerProducer", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;Lorg/apache/activemq/broker/jmx/ProducerView;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1238,7 +1238,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -1267,7 +1267,7 @@ methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterProducer", "(Ljavax/management/ObjectName;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterProducer", "(Ljakarta/management/ObjectName;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1308,7 +1308,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -1329,7 +1329,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "removeAndRemember", "(Ljava/util/Map;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", "(Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "removeAndRemember", "(Ljava/util/Map;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", "(Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;)Lorg/apache/activemq/broker/jmx/DestinationView;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -1361,7 +1361,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerSubscription", "(Ljavax/management/ObjectName;Lorg/apache/activemq/command/ConsumerInfo;Lorg/apache/activemq/util/SubscriptionKey;Lorg/apache/activemq/broker/jmx/SubscriptionView;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerSubscription", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ConsumerInfo;Lorg/apache/activemq/util/SubscriptionKey;Lorg/apache/activemq/broker/jmx/SubscriptionView;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1428,7 +1428,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionKeys", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -1445,7 +1445,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -1476,7 +1476,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -1505,7 +1505,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterSubscription", "(Ljavax/management/ObjectName;Z)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterSubscription", "(Ljakarta/management/ObjectName;Z)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1541,7 +1541,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -1612,10 +1612,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/DurableSu
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "javax/management/ObjectName", Opcodes.INTEGER, "org/apache/activemq/broker/jmx/DurableSubscriptionView", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"}, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "jakarta/management/ObjectName", Opcodes.INTEGER, "org/apache/activemq/broker/jmx/DurableSubscriptionView", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"}, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "javax/management/ObjectName", Opcodes.INTEGER, "org/apache/activemq/broker/jmx/DurableSubscriptionView", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"}, 4, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo", "org/apache/activemq/broker/region/Subscription"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "jakarta/management/ObjectName", Opcodes.INTEGER, "org/apache/activemq/broker/jmx/DurableSubscriptionView", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo"}, 4, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/util/SubscriptionKey", "org/apache/activemq/command/SubscriptionInfo", "org/apache/activemq/broker/region/Subscription"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "addInactiveSubscription", "(Lorg/apache/activemq/util/SubscriptionKey;Lorg/apache/activemq/command/SubscriptionInfo;Lorg/apache/activemq/broker/region/Subscription;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -1795,11 +1795,11 @@ methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/activemq/command/ConsumerInfo"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/SubscriptionInfo", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljavax/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createSubscriptionName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Lorg/apache/activemq/command/ConsumerInfo;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/broker/jmx/InactiveDurableSubscriptionView");
 methodVisitor.visitInsn(DUP);
@@ -1821,7 +1821,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -1829,7 +1829,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/activemq/command/ConsumerInfo", "javax/management/ObjectName", "org/apache/activemq/broker/jmx/SubscriptionView"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/activemq/command/ConsumerInfo", "jakarta/management/ObjectName", "org/apache/activemq/broker/jmx/SubscriptionView"}, 0, null);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
@@ -1887,7 +1887,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/Man
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/openmbean/CompositeData");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/openmbean/CompositeData");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
@@ -1942,7 +1942,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/OpenTypeSupport$OpenTypeFactory", "getCompositeType", "()Ljavax/management/openmbean/CompositeType;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("MessageList");
 methodVisitor.visitLdcInsn("MessageList");
@@ -1953,25 +1953,25 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLdcInsn("JMSMessageID");
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 7);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/jmx/SubscriptionView", "org/apache/activemq/broker/jmx/OpenTypeSupport$OpenTypeFactory", "[Lorg/apache/activemq/command/Message;", "javax/management/openmbean/CompositeType", "javax/management/openmbean/TabularType", "javax/management/openmbean/TabularDataSupport", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/broker/jmx/SubscriptionView", "org/apache/activemq/broker/jmx/OpenTypeSupport$OpenTypeFactory", "[Lorg/apache/activemq/command/Message;", "jakarta/management/openmbean/CompositeType", "jakarta/management/openmbean/TabularType", "jakarta/management/openmbean/TabularDataSupport", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/CompositeDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/CompositeDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -1979,8 +1979,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/OpenTypeSupport$OpenTypeFactory", "getFields", "(Ljava/lang/Object;)Ljava/util/Map;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;Ljava/util/Map;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
 methodVisitor.visitIincInsn(7, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
@@ -2055,7 +2055,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/IllegalStateException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/IllegalStateException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -2065,7 +2065,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -2147,7 +2147,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", "(Ljava/util/Set<Ljavax/management/ObjectName;>;)[Ljavax/management/ObjectName;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", "(Ljava/util/Set<Ljakarta/management/ObjectName;>;)[Ljakarta/management/ObjectName;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -2165,12 +2165,12 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "isAllowedToRegister", "(Ljavax/management/ObjectName;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "isAllowedToRegister", "(Ljakarta/management/ObjectName;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -2185,15 +2185,15 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopics", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopics", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topics", "Ljava/util/Map;");
@@ -2202,27 +2202,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicsNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicsNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topics", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueues", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueues", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queues", "Ljava/util/Map;");
@@ -2231,27 +2231,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueuesNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueuesNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queues", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopics", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopics", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopics", "Ljava/util/Map;");
@@ -2260,27 +2260,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicsNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicsNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopics", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueues", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueues", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueues", "Ljava/util/Map;");
@@ -2289,27 +2289,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueuesNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueuesNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueues", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topicSubscribers", "Ljava/util/Map;");
@@ -2318,27 +2318,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topicSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDurableTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDurableTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "durableTopicSubscribers", "Ljava/util/Map;");
@@ -2347,27 +2347,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDurableTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDurableTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "durableTopicSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queueSubscribers", "Ljava/util/Map;");
@@ -2376,27 +2376,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queueSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopicSubscribers", "Ljava/util/Map;");
@@ -2405,27 +2405,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopicSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueueSubscribers", "Ljava/util/Map;");
@@ -2434,27 +2434,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueueSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInactiveDurableTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInactiveDurableTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "inactiveDurableTopicSubscribers", "Ljava/util/Map;");
@@ -2463,27 +2463,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInactiveDurableTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInactiveDurableTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "inactiveDurableTopicSubscribers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topicProducers", "Ljava/util/Map;");
@@ -2492,27 +2492,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicProducersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topicProducers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queueProducers", "Ljava/util/Map;");
@@ -2521,27 +2521,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueProducersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getQueueProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queueProducers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopicProducers", "Ljava/util/Map;");
@@ -2550,27 +2550,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicProducersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryTopicProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryTopicProducers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueueProducers", "Ljava/util/Map;");
@@ -2579,27 +2579,27 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueProducersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTemporaryQueueProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "temporaryQueueProducers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDynamicDestinationProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDynamicDestinationProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "dynamicDestinationProducers", "Ljava/util/Map;");
@@ -2608,21 +2608,21 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/ObjectName;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDynamicDestinationProducersNonSuppressed", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDynamicDestinationProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "dynamicDestinationProducers", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "onlyNonSuppressed", "(Ljava/util/Set;)[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -2647,7 +2647,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSlowConsumerStrategy", "(Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSlowConsumerStrategy", "(Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -2657,9 +2657,9 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createAbortSlowConsumerStrategyName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createAbortSlowConsumerStrategyName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -2682,7 +2682,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/management/ObjectName", "org/apache/activemq/broker/jmx/AbortSlowConsumerStrategyView"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/management/ObjectName", "org/apache/activemq/broker/jmx/AbortSlowConsumerStrategyView"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/broker/jmx/AbortSlowConsumerStrategyView");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2699,7 +2699,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -2737,9 +2737,9 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -2760,7 +2760,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AsyncAnnotatedMBean", "registerMBean", "(Ljava/util/concurrent/ExecutorService;JLorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -2801,9 +2801,9 @@ Label label5 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/Exception");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljavax/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createXATransactionName", "(Ljakarta/management/ObjectName;Lorg/apache/activemq/transaction/XATransaction;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");
@@ -2814,11 +2814,11 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/transaction/XATransaction", "javax/management/ObjectName"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/broker/jmx/ManagedRegionBroker", "org/apache/activemq/transaction/XATransaction", "jakarta/management/ObjectName"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Failed to unregister MBean {}");
@@ -2847,19 +2847,19 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubscriberObjectName", "(Lorg/apache/activemq/broker/region/Subscription;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubscriberObjectName", "(Lorg/apache/activemq/broker/region/Subscription;)Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "subscriptionMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubscriber", "(Ljavax/management/ObjectName;)Lorg/apache/activemq/broker/region/Subscription;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubscriber", "(Ljakarta/management/ObjectName;)Lorg/apache/activemq/broker/region/Subscription;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -2881,9 +2881,9 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -2902,7 +2902,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueViews", "()Ljava/util/Map;", "()Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueViews", "()Ljava/util/Map;", "()Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queues", "Ljava/util/Map;");
@@ -2911,7 +2911,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicViews", "()Ljava/util/Map;", "()Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicViews", "()Ljava/util/Map;", "()Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "topics", "Ljava/util/Map;");
@@ -2920,14 +2920,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueView", "(Ljava/lang/String;)Lorg/apache/activemq/broker/jmx/DestinationView;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueView", "(Ljava/lang/String;)Lorg/apache/activemq/broker/jmx/DestinationView;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "brokerObjectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("Queue");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createDestinationName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "queues", "Ljava/util/Map;");
@@ -2939,7 +2939,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRegisteredMbeans", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/management/ObjectName;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRegisteredMbeans", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/management/ObjectName;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "registeredMBeans", "Ljava/util/Set;");

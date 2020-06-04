@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/rest/ThreadLocalResourceInfo", "Lorg/apache/openejb/rest/AbstractRestThreadLocalProxy<Ljavax/ws/rs/container/ResourceInfo;>;Ljavax/ws/rs/container/ResourceInfo;", "org/apache/openejb/rest/AbstractRestThreadLocalProxy", new String[] { "javax/ws/rs/container/ResourceInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/rest/ThreadLocalResourceInfo", "Lorg/apache/openejb/rest/AbstractRestThreadLocalProxy<Ljakarta/ws/rs/container/ResourceInfo;>;Ljakarta/ws/rs/container/ResourceInfo;", "org/apache/openejb/rest/AbstractRestThreadLocalProxy", new String[] { "jakarta/ws/rs/container/ResourceInfo" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/container/ResourceInfo;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/container/ResourceInfo;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/rest/AbstractRestThreadLocalProxy", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -39,8 +39,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceMethod", "()Ljav
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/rest/ThreadLocalResourceInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/container/ResourceInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/container/ResourceInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -50,8 +50,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceClass", "()Ljava
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/rest/ThreadLocalResourceInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/container/ResourceInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/container/ResourceInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

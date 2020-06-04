@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationMapping$MappingImpl", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpServletMapping" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationMapping$MappingImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpServletMapping" });
 
 classWriter.visitInnerClass("org/apache/catalina/core/ApplicationMapping$MappingImpl", "org/apache/catalina/core/ApplicationMapping", "MappingImpl", ACC_PRIVATE | ACC_STATIC);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pattern", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mappingType", "Ljavax/servlet/http/MappingMatch;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mappingType", "Ljakarta/servlet/http/MappingMatch;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "servletName", "L
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/MappingMatch;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/http/MappingMatch;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -55,7 +55,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "pattern", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "mappingType", "Ljavax/servlet/http/MappingMatch;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "mappingType", "Ljakarta/servlet/http/MappingMatch;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "servletName", "Ljava/lang/String;");
@@ -82,10 +82,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMappingMatch", "()Ljavax/servlet/http/MappingMatch;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMappingMatch", "()Ljakarta/servlet/http/MappingMatch;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "mappingType", "Ljavax/servlet/http/MappingMatch;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationMapping$MappingImpl", "mappingType", "Ljakarta/servlet/http/MappingMatch;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

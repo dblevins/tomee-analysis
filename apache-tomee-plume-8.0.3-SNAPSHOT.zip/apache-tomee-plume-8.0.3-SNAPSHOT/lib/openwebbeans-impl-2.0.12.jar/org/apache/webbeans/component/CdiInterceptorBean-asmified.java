@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "interceptorBindings", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Set;ZLjava/util/Map;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;Ljava/lang/Class<TT;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;ZLjava/util/Map<Ljavax/enterprise/inject/spi/InterceptionType;[Ljava/lang/reflect/Method;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Set;ZLjava/util/Map;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;Ljava/lang/Class<TT;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;ZLjava/util/Map<Ljakarta/enterprise/inject/spi/InterceptionType;[Ljava/lang/reflect/Method;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -37,7 +37,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/InterceptorBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/InterceptorBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/CdiInterceptorBean", "interceptorBindings", "Ljava/util/Set;");

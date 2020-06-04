@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/oejb3/PropertiesAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljava/util/Properties;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/oejb3/PropertiesAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljava/util/Properties;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 classWriter.visitInnerClass("org/apache/openejb/jee/oejb3/PropertiesAdapter$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/openejb/jee/oejb3/PropertiesAdapter$Sort
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

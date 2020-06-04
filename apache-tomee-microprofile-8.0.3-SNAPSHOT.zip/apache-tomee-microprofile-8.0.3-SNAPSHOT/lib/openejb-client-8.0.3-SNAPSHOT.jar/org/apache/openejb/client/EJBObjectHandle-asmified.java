@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBObjectHandle", null, "java/lang/Object", new String[] { "java/io/Externalizable", "javax/ejb/Handle" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBObjectHandle", null, "java/lang/Object", new String[] { "java/io/Externalizable", "jakarta/ejb/Handle" });
 
 classWriter.visitInnerClass("org/apache/openejb/client/JNDIContext$AuthenticationInfo", "org/apache/openejb/client/JNDIContext", "AuthenticationInfo", ACC_PUBLIC | ACC_STATIC);
 
@@ -93,11 +93,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "()Ljavax/ejb/EJBObject;", null, new String[] { "java/rmi/RemoteException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "()Ljakarta/ejb/EJBObject;", null, new String[] { "java/rmi/RemoteException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBObjectHandle", "ejbObjectProxy", "Lorg/apache/openejb/client/EJBObjectProxy;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBObject");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBObject");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

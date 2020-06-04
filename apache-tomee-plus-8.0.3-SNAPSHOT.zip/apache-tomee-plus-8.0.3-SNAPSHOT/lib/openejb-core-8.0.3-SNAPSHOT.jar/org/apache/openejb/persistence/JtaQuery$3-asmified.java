@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/persistence/JtaQuery$3", null, "java/lang/Object", new String[] { "org/apache/openejb/persistence/QueryOperation" });
 
-classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/Query;");
+classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/Query;");
 
 classWriter.visitInnerClass("org/apache/openejb/persistence/JtaQuery$3", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$flushModeType", "Ljavax/persistence/FlushModeType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$flushModeType", "Ljakarta/persistence/FlushModeType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/persistence/JtaQuery;Ljavax/persistence/FlushModeType;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/persistence/JtaQuery;Ljakarta/persistence/FlushModeType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$3", "this$0", "Lorg/apache/openejb/persistence/JtaQuery;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$3", "val$flushModeType", "Ljavax/persistence/FlushModeType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$3", "val$flushModeType", "Ljakarta/persistence/FlushModeType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -52,12 +52,12 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/persistence/Query;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/persistence/Query;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$3", "val$flushModeType", "Ljavax/persistence/FlushModeType;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/Query", "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/Query;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$3", "val$flushModeType", "Ljakarta/persistence/FlushModeType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/Query", "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/Query;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

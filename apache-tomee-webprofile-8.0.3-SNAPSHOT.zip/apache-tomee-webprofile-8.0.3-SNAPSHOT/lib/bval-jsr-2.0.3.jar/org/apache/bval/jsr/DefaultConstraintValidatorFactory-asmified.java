@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultConstraintValidatorFactory", null, "java/lang/Object", new String[] { "javax/validation/ConstraintValidatorFactory", "java/io/Closeable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultConstraintValidatorFactory", null, "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidatorFactory", "java/io/Closeable" });
 
 classWriter.visitInnerClass("org/apache/bval/cdi/BValExtension$Releasable", "org/apache/bval/cdi/BValExtension", "Releasable", ACC_PUBLIC | ACC_STATIC);
 
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInstance", "(Ljava/lang/Class;)Ljavax/validation/ConstraintValidator;", "<T::Ljavax/validation/ConstraintValidator<**>;>(Ljava/lang/Class<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInstance", "(Ljava/lang/Class;)Ljakarta/validation/ConstraintValidator;", "<T::Ljakarta/validation/ConstraintValidator<**>;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -92,7 +92,7 @@ Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label14);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/cdi/BValExtension", "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/cdi/BValExtension", "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", false);
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label15);
 methodVisitor.visitInsn(ICONST_1);
@@ -147,7 +147,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "add", "(
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/cdi/BValExtension$Releasable", "getInstance", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ConstraintValidator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ConstraintValidator");
 methodVisitor.visitLabel(label8);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label10);
@@ -177,13 +177,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor"
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ConstraintValidator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ConstraintValidator");
 methodVisitor.visitLabel(label13);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -194,13 +194,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "releaseInstance", "(Ljavax/validation/ConstraintValidator;)V", "(Ljavax/validation/ConstraintValidator<**>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "releaseInstance", "(Ljakarta/validation/ConstraintValidator;)V", "(Ljakarta/validation/ConstraintValidator<**>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
@@ -225,12 +225,12 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/cdi/BValExtension$Releasable");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/ConstraintValidator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/ConstraintValidator;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/cdi/BValExtension$Releasable", "getInstance", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ConstraintValidator");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/DefaultConstraintValidatorFactory", "releaseInstance", "(Ljavax/validation/ConstraintValidator;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ConstraintValidator");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/DefaultConstraintValidatorFactory", "releaseInstance", "(Ljakarta/validation/ConstraintValidator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/cdi/BValExtension$Releasable", "release", "()V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);

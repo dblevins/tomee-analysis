@@ -34,13 +34,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljavax/persistence/EntityManager;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljakarta/persistence/EntityManager;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getTransaction", "()Ljavax/persistence/EntityTransaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getTransaction", "()Ljakarta/persistence/EntityTransaction;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "begin", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "begin", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 3);
@@ -49,11 +49,11 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "(Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/EntityTransaction;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/EntityTransaction;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/EntityTransaction");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "commit", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/EntityTransaction");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "commit", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -61,11 +61,11 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "(Ljava/lang/Object;Ljava/lang/Exception;)V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/EntityTransaction;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/EntityTransaction;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/EntityTransaction");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityTransaction", "rollback", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/EntityTransaction");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityTransaction", "rollback", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

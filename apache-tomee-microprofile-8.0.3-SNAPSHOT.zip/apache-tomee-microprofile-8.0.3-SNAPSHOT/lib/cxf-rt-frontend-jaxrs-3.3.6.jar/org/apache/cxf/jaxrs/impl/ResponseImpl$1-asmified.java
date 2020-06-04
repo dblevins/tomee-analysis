@@ -22,17 +22,17 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/ResponseImpl$1", null, "java/lang/Object", new String[] { "javax/ws/rs/core/Response$StatusType" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/ResponseImpl$1", null, "java/lang/Object", new String[] { "jakarta/ws/rs/core/Response$StatusType" });
 
-classWriter.visitOuterClass("org/apache/cxf/jaxrs/impl/ResponseImpl", "createStatusType", "(ILjava/lang/String;)Ljavax/ws/rs/core/Response$StatusType;");
+classWriter.visitOuterClass("org/apache/cxf/jaxrs/impl/ResponseImpl", "createStatusType", "(ILjava/lang/String;)Ljakarta/ws/rs/core/Response$StatusType;");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/impl/ResponseImpl$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status", "javax/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status", "jakarta/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status$Family", "javax/ws/rs/core/Response$Status", "Family", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status$Family", "jakarta/ws/rs/core/Response$Status", "Family", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$StatusType", "javax/ws/rs/core/Response", "StatusType", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$StatusType", "jakarta/ws/rs/core/Response", "StatusType", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$statusCode", "I", null, null);
@@ -65,11 +65,11 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFamily", "()Ljavax/ws/rs/core/Response$Status$Family;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFamily", "()Ljakarta/ws/rs/core/Response$Status$Family;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ResponseImpl$1", "val$statusCode", "I");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response$Status$Family", "familyOf", "(I)Ljavax/ws/rs/core/Response$Status$Family;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response$Status$Family", "familyOf", "(I)Ljakarta/ws/rs/core/Response$Status$Family;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -88,17 +88,17 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ResponseImpl$1", "val$statusCode", "I");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response$Status", "fromStatusCode", "(I)Ljavax/ws/rs/core/Response$Status;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response$Status", "fromStatusCode", "(I)Ljakarta/ws/rs/core/Response$Status;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$Status", "getReasonPhrase", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$Status", "getReasonPhrase", "()Ljava/lang/String;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/Response$Status"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/Response$Status"}, 0, null);
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});

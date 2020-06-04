@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/FacesBehaviorAnnotationLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/faces/component/behavior/FacesBehavior;>;Ljavax/faces/component/behavior/FacesBehavior;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/faces/component/behavior/FacesBehavior" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/FacesBehaviorAnnotationLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/faces/component/behavior/FacesBehavior;>;Ljakarta/faces/component/behavior/FacesBehavior;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/faces/component/behavior/FacesBehavior" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-258069073667018312L));
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/FacesBehaviorAnnotationLiteral", "value", "Ljava/lang/String;");

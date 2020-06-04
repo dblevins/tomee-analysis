@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/mdb/EndpointFactory", null, "java/lang/Object", new String[] { "javax/resource/spi/endpoint/MessageEndpointFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/mdb/EndpointFactory", null, "java/lang/Object", new String[] { "jakarta/resource/spi/endpoint/MessageEndpointFactory" });
 
 classWriter.visitInnerClass("org/apache/openejb/BeanContext$ProxyClass", "org/apache/openejb/BeanContext", "ProxyClass", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "activationSpec", "Ljavax/resource/spi/ActivationSpec;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "activationSpec", "Ljakarta/resource/spi/ActivationSpec;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaResourceWrappe
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljavax/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljakarta/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "usePool", "Z", n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/ActivationSpec;Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceFactory;Lorg/apache/openejb/core/mdb/MdbInstanceManager;Lorg/apache/openejb/resource/XAResourceWrapper;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/ActivationSpec;Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceFactory;Lorg/apache/openejb/core/mdb/MdbInstanceManager;Lorg/apache/openejb/resource/XAResourceWrapper;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -82,7 +82,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "(
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "jmxNames", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "activationSpec", "Ljavax/resource/spi/ActivationSpec;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "activationSpec", "Ljakarta/resource/spi/ActivationSpec;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "container", "Lorg/apache/openejb/core/mdb/BaseMdbContainer;");
@@ -110,7 +110,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/mdb/Base
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/resource/spi/endpoint/MessageEndpoint;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/resource/spi/endpoint/MessageEndpoint;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "interfaces", "[Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -149,7 +149,7 @@ methodVisitor.visitInsn(POP);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/openejb/core/mdb/EndpointFactory", "javax/resource/spi/ActivationSpec", "org/apache/openejb/core/mdb/BaseMdbContainer", "org/apache/openejb/BeanContext", "org/apache/openejb/core/mdb/MdbInstanceFactory", "org/apache/openejb/core/mdb/MdbInstanceManager", "org/apache/openejb/resource/XAResourceWrapper", Opcodes.INTEGER, "org/apache/openejb/BeanContext$ProxyClass"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/openejb/core/mdb/EndpointFactory", "jakarta/resource/spi/ActivationSpec", "org/apache/openejb/core/mdb/BaseMdbContainer", "org/apache/openejb/BeanContext", "org/apache/openejb/core/mdb/MdbInstanceFactory", "org/apache/openejb/core/mdb/MdbInstanceManager", "org/apache/openejb/resource/XAResourceWrapper", Opcodes.INTEGER, "org/apache/openejb/BeanContext$ProxyClass"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext$ProxyClass", "getProxy", "()Ljava/lang/Class;", false);
@@ -161,10 +161,10 @@ methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActivationSpec", "()Ljavax/resource/spi/ActivationSpec;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActivationSpec", "()Ljakarta/resource/spi/ActivationSpec;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "activationSpec", "Ljavax/resource/spi/ActivationSpec;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "activationSpec", "Ljakarta/resource/spi/ActivationSpec;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -179,7 +179,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljavax/resource/spi/endpoint/MessageEndpoint;", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -247,14 +247,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "proxy", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/proxy/LocalBeanProxyFactory", "constructProxy", "(Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/endpoint/MessageEndpoint");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/endpoint/MessageEndpoint");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/InternalError"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/resource/spi/endpoint/MessageEndpoint;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/resource/spi/endpoint/MessageEndpoint;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -265,14 +265,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "interfaces", "[Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/proxy/LocalBeanProxyFactory", "newProxyInstance", "(Ljava/lang/ClassLoader;Ljava/lang/reflect/InvocationHandler;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/endpoint/MessageEndpoint");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/endpoint/MessageEndpoint");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/core/mdb/EndpointFactory", "javax/transaction/xa/XAResource", "java/lang/reflect/InvocationHandler", "java/lang/InternalError"}, 1, new Object[] {"java/lang/InternalError"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/resource/spi/endpoint/MessageEndpoint;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/resource/spi/endpoint/MessageEndpoint;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "classLoader", "Ljava/lang/ClassLoader;");
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -283,7 +283,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/EndpointFactory", "interfaces", "[Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/proxy/LocalBeanProxyFactory", "newProxyInstance", "(Ljava/lang/ClassLoader;Ljava/lang/reflect/InvocationHandler;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/endpoint/MessageEndpoint");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/endpoint/MessageEndpoint");
 methodVisitor.visitLabel(label7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
@@ -295,7 +295,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljavax/transaction/xa/XAResource;J)Ljavax/resource/spi/endpoint/MessageEndpoint;", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljavax/transaction/xa/XAResource;J)Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -308,7 +308,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFGT, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/EndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljavax/resource/spi/endpoint/MessageEndpoint;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/EndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljakarta/resource/spi/endpoint/MessageEndpoint;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -320,7 +320,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.LONG, "javax/resource/spi/endpoint/MessageEndpoint"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.LONG, "jakarta/resource/spi/endpoint/MessageEndpoint"}, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
 methodVisitor.visitVarInsn(LLOAD, 4);
 methodVisitor.visitInsn(LCMP);
@@ -329,7 +329,7 @@ methodVisitor.visitJumpInsn(IFGT, label5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/EndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljavax/resource/spi/endpoint/MessageEndpoint;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/EndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljakarta/resource/spi/endpoint/MessageEndpoint;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label5);
@@ -346,7 +346,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/UnavailableException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/UnavailableException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -356,7 +356,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(J)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/UnavailableException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/UnavailableException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 8);
 methodVisitor.visitEnd();

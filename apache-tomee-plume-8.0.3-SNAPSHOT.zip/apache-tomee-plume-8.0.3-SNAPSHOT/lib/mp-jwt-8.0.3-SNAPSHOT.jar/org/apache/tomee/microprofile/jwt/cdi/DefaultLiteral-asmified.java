@@ -22,17 +22,17 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Default;>;Ljavax/enterprise/inject/Default;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/Default" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Default;>;Ljakarta/enterprise/inject/Default;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/Default" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljavax/enterprise/inject/Default;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljakarta/enterprise/inject/Default;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -43,7 +43,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral", "INSTANCE", "Ljavax/enterprise/inject/Default;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral", "INSTANCE", "Ljakarta/enterprise/inject/Default;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

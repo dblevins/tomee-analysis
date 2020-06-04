@@ -39,10 +39,10 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "strategy", "()Ljavax/persistence/GenerationType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "strategy", "()Ljakarta/persistence/GenerationType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/GenerationType;", "AUTO");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/GenerationType;", "AUTO");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

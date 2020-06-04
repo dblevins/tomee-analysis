@@ -51,10 +51,10 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "removeByPrimaryKey", "(Ljava/lang/Class;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Throwable" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/RemoveException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/RemoveException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Session objects are private resources and do not have primary keys");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/RemoveException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/RemoveException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();

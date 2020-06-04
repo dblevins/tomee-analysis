@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/catalina/authenticator/SavedRequest", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cookies", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/http/Cookie;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cookies", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/http/Cookie;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljavax/servlet/http/Cookie;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljakarta/servlet/http/Cookie;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/SavedRequest", "cookies", "Ljava/util/List;");
@@ -115,7 +115,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCookies", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljavax/servlet/http/Cookie;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCookies", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljakarta/servlet/http/Cookie;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/SavedRequest", "cookies", "Ljava/util/List;");

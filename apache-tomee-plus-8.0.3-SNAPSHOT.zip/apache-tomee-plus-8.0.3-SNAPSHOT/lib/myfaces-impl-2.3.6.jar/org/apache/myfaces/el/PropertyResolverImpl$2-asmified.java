@@ -70,7 +70,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -80,7 +80,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$2", "val$property", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$2", "val$newValue", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELResolver", "setValue", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELResolver", "setValue", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);

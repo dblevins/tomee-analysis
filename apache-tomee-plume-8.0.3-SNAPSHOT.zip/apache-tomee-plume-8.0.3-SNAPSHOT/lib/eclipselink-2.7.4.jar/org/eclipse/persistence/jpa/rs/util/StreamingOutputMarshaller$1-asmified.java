@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller$1", null, "javax/xml/bind/Marshaller$Listener", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller$1", null, "jakarta/xml/bind/Marshaller$Listener", null);
 
-classWriter.visitOuterClass("org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "createMarshaller", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljavax/ws/rs/core/MediaType;)Ljavax/xml/bind/Marshaller;");
+classWriter.visitOuterClass("org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "createMarshaller", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljakarta/ws/rs/core/MediaType;)Ljakarta/xml/bind/Marshaller;");
 
-classWriter.visitInnerClass("javax/xml/bind/Marshaller$Listener", "javax/xml/bind/Marshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/xml/bind/Marshaller$Listener", "jakarta/xml/bind/Marshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 classWriter.visitInnerClass("org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller$1", null, null, 0);
 
@@ -34,7 +34,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/jpa/rs/util/StreamingOutput
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/Marshaller$Listener", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/Marshaller$Listener", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

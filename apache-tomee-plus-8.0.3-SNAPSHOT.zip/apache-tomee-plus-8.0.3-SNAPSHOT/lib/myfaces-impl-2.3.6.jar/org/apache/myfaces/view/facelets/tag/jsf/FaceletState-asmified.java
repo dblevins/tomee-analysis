@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", null, "java/lang/Object", new String[] { "javax/faces/component/StateHolder", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", null, "java/lang/Object", new String[] { "jakarta/faces/component/StateHolder", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-7823771271935942737L));
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "stateMap", "Ljava/util/Map;"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bindingsMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bindingsMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -88,16 +88,16 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "initialStateMarked", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "initialStateMarked", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "stateMap", "Ljava/util/Map;");
@@ -111,12 +111,12 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "stateMap", "Ljava/util/Map;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "saveAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "saveAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/component/UIViewRoot"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/component/UIViewRoot"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
@@ -129,14 +129,14 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "stateMap", "Ljava/util/Map;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "saveAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "saveAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "bindingsMap", "Ljava/util/Map;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "saveAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "saveAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -172,7 +172,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "restoreAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "restoreAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "stateMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -180,7 +180,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "restoreAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "restoreAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "bindingsMap", "Ljava/util/Map;");
 Label label2 = new Label();
@@ -203,7 +203,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponentBase", "restoreAttachedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponentBase", "restoreAttachedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "stateMap", "Ljava/util/Map;");
 methodVisitor.visitLabel(label2);
@@ -256,7 +256,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putBinding", "(Ljava/lang/String;Ljava/lang/String;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putBinding", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "bindingsMap", "Ljava/util/Map;");
@@ -300,7 +300,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "bindingsMap", "Ljava/util/Map;");
@@ -326,13 +326,13 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, 
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindings", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindings", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/FaceletState", "bindingsMap", "Ljava/util/Map;");

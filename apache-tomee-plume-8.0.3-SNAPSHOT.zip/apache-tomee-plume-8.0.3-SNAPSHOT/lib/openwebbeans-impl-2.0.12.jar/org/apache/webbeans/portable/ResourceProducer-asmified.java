@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "isStatic", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference;)V", "(Ljavax/enterprise/inject/spi/Bean<TP;>;Ljavax/enterprise/inject/spi/AnnotatedField<-TP;>;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference<**>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference;)V", "(Ljakarta/enterprise/inject/spi/Bean<TP;>;Ljakarta/enterprise/inject/spi/AnnotatedField<-TP;>;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference<**>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -41,10 +41,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProducerFieldProducer", "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/AnnotatedField;Ljavax/enterprise/inject/spi/AnnotatedMethod;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProducerFieldProducer", "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/AnnotatedField;Ljakarta/enterprise/inject/spi/AnnotatedMethod;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedField", "getJavaMember", "()Ljava/lang/reflect/Field;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedField", "getJavaMember", "()Ljava/lang/reflect/Field;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Field", "getModifiers", "()I", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Modifier", "isStatic", "(I)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ResourceProducer", "isStatic", "Z");
@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Object;", "(Ljava/util/Map<Ljavax/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Object;", "(Ljava/util/Map<Ljakarta/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ResourceProducer", "isStatic", "Z");

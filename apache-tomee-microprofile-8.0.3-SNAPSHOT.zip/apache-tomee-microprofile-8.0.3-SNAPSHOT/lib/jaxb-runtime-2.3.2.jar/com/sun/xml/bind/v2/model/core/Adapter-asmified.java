@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", "(Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader<TTypeT;TClassDeclT;**>;Lcom/sun/xml/bind/v2/model/nav/Navigator<TTypeT;TClassDeclT;**>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", "(Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader<TTypeT;TClassDeclT;**>;Lcom/sun/xml/bind/v2/model/nav/Navigator<TTypeT;TClassDeclT;**>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -69,7 +69,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "use", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/adapters/XmlAdapter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/adapters/XmlAdapter;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "asDecl", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "getBaseClass", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);

@@ -24,16 +24,16 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "Lorg/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase<Ljava/lang/String;>;", "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase", null);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$Text", "javax/websocket/Decoder", "Text", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$Text", "jakarta/websocket/Decoder", "Text", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$TextStream", "javax/websocket/Decoder", "TextStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$TextStream", "jakarta/websocket/Decoder", "TextStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "decoders", "Ljava/util/List;", "Ljava/util/List<Ljavax/websocket/Decoder;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "decoders", "Ljava/util/List;", "Ljava/util/List<Ljakarta/websocket/Decoder;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "primitiveType", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;Ljava/util/List;[Ljava/lang/Object;IZIJ)V", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;[Ljava/lang/Object;IZIJ)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;Ljava/util/List;[Ljava/lang/Object;IZIJ)V", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;[Ljava/lang/Object;IZIJ)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -56,7 +56,7 @@ methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitVarInsn(LLOAD, 10);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIJ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIJ)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -69,7 +69,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label3);
 methodVisitor.visitVarInsn(LLOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Session", "getMaxTextMessageBufferSize", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Session", "getMaxTextMessageBufferSize", "()I", true);
 methodVisitor.visitInsn(I2L);
 methodVisitor.visitInsn(LCMP);
 methodVisitor.visitJumpInsn(IFLE, label3);
@@ -86,11 +86,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringM
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "java/lang/Object", "java/lang/reflect/Method", "javax/websocket/Session", "javax/websocket/EndpointConfig", "java/util/List", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.LONG}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "java/lang/Object", "java/lang/reflect/Method", "jakarta/websocket/Session", "jakarta/websocket/EndpointConfig", "java/util/List", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.LONG}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(LLOAD, 10);
 methodVisitor.visitInsn(L2I);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Session", "setMaxTextMessageBufferSize", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Session", "setMaxTextMessageBufferSize", "(I)V", true);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -127,7 +127,7 @@ methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitVarInsn(ASTORE, 14);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$Text;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$Text;"));
 methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label7 = new Label();
@@ -139,11 +139,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor"
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder$Text");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder$Text");
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder$Text", "init", "(Ljavax/websocket/EndpointConfig;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder$Text", "init", "(Ljakarta/websocket/EndpointConfig;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "decoders", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 15);
@@ -153,7 +153,7 @@ Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$TextStream;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$TextStream;"));
 methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label8);
@@ -164,11 +164,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor"
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder$TextStream");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder$TextStream");
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder$TextStream", "init", "(Ljavax/websocket/EndpointConfig;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder$TextStream", "init", "(Ljakarta/websocket/EndpointConfig;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "decoders", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 15);
@@ -196,7 +196,7 @@ methodVisitor.visitMaxs(10, 16);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "decode", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/websocket/DecodeException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "decode", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/websocket/DecodeException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -226,25 +226,25 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/websocket/Decoder$Text");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/websocket/Decoder$Text");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder$Text");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder$Text");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder$Text", "willDecode", "(Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder$Text", "willDecode", "(Ljava/lang/String;)Z", true);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder$Text");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder$Text");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder$Text", "decode", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder$Text", "decode", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/websocket/Decoder"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/websocket/Decoder"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "java/io/StringReader");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -252,22 +252,22 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/StringReader", "<init>", "
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder$TextStream");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder$TextStream");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder$TextStream", "decode", "(Ljava/io/Reader;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder$TextStream", "decode", "(Ljava/io/Reader;)Ljava/lang/Object;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "java/lang/String", "java/util/Iterator", "javax/websocket/Decoder", "java/io/StringReader"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "java/lang/String", "java/util/Iterator", "jakarta/websocket/Decoder", "java/io/StringReader"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/DecodeException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/DecodeException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeText", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("pojoMessageHandlerWhole.decodeIoFail");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/DecodeException", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/DecodeException", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -306,10 +306,10 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Decoder");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Decoder");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Decoder", "destroy", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Decoder", "destroy", "()V", true);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -318,7 +318,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "decode", "(Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "javax/websocket/DecodeException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "decode", "(Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "jakarta/websocket/DecodeException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

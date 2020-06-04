@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Default;>;Ljavax/enterprise/inject/Default;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/Default" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Default;>;Ljakarta/enterprise/inject/Default;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/Default" });
 
 classWriter.visitInnerClass("org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral", "org/apache/cxf/microprofile/client/cdi/RestClientBean", "DefaultLiteral", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

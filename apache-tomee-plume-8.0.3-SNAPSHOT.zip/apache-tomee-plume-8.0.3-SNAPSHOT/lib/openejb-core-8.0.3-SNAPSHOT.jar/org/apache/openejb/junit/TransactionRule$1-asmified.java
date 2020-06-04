@@ -28,7 +28,7 @@ classWriter.visitOuterClass("org/apache/openejb/junit/TransactionRule", "apply",
 
 classWriter.visitInnerClass("org/apache/openejb/junit/TransactionRule$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/transaction/Transactional$TxType", "javax/transaction/Transactional", "TxType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/transaction/Transactional$TxType", "jakarta/transaction/Transactional", "TxType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$description", "Lorg/junit/runner/Description;", null, null);
@@ -71,15 +71,15 @@ Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/junit/TransactionRule$1", "val$description", "Lorg/junit/runner/Description;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/TransactionAttribute;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/TransactionAttribute;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/junit/runner/Description", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/TransactionAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/TransactionAttribute");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/junit/TransactionRule$1", "val$description", "Lorg/junit/runner/Description;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/Transactional;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/Transactional;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/junit/runner/Description", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Transactional");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Transactional");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label4 = new Label();
@@ -91,7 +91,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/junit/TransactionRule
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/junit/runners/model/Statement", "evaluate", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/ejb/TransactionAttribute", "javax/transaction/Transactional"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/ejb/TransactionAttribute", "jakarta/transaction/Transactional"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/junit/TransactionRule$1", "this$0", "Lorg/apache/openejb/junit/TransactionRule;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/junit/TransactionRule", "getBeanContext", "()Lorg/apache/openejb/BeanContext;", false);
@@ -109,18 +109,18 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transactional", "value", "()Ljavax/transaction/Transactional$TxType;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/transaction/Transactional$TxType", "name", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ejb/TransactionAttributeType", "valueOf", "(Ljava/lang/String;)Ljavax/ejb/TransactionAttributeType;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transactional", "value", "()Ljakarta/transaction/Transactional$TxType;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/transaction/Transactional$TxType", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ejb/TransactionAttributeType", "valueOf", "(Ljava/lang/String;)Ljakarta/ejb/TransactionAttributeType;", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/BeanContext", "java/lang/reflect/Method"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/TransactionAttribute", "value", "()Ljavax/ejb/TransactionAttributeType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/TransactionAttribute", "value", "()Ljakarta/ejb/TransactionAttributeType;", true);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/ejb/TransactionAttributeType"});
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/transaction/TransactionType", "get", "(Ljavax/ejb/TransactionAttributeType;)Lorg/apache/openejb/core/transaction/TransactionType;", false);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/ejb/TransactionAttributeType"});
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/transaction/TransactionType", "get", "(Ljakarta/ejb/TransactionAttributeType;)Lorg/apache/openejb/core/transaction/TransactionType;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);

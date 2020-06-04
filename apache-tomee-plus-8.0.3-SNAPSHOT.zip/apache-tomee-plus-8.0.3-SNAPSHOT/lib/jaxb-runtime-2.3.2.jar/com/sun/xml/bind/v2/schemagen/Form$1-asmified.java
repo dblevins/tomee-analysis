@@ -29,7 +29,7 @@ classWriter.visitOuterClass("com/sun/xml/bind/v2/schemagen/Form", null, null);
 classWriter.visitInnerClass("com/sun/xml/bind/v2/schemagen/Form$1", null, null, ACC_FINAL | ACC_ENUM);
 
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -37,7 +37,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form", "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;ZLcom/sun/xml/bind/v2/schemagen/Form$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form", "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;ZLcom/sun/xml/bind/v2/schemagen/Form$1;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();

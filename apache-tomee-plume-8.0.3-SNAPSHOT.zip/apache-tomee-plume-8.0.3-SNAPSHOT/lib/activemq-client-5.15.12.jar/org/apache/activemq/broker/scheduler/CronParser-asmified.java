@@ -60,7 +60,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getNextScheduledTime", "(Ljava/lang/String;J)J", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getNextScheduledTime", "(Ljava/lang/String;J)J", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(LCONST_0);
 methodVisitor.visitVarInsn(LSTORE, 3);
@@ -261,7 +261,7 @@ methodVisitor.visitMaxs(4, 17);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "doUpdateCurrentMonth", "(Ljava/util/Calendar;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)J", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "doUpdateCurrentMonth", "(Ljava/util/Calendar;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)J", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_2);
@@ -297,7 +297,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "doUpdateCurrentDay", "(Ljava/util/Calendar;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)J", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "doUpdateCurrentDay", "(Ljava/util/Calendar;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)J", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(BIPUSH, 7);
@@ -383,7 +383,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljava/lang/String;)V", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validate", "(Ljava/lang/String;)V", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/scheduler/CronParser", "tokenize", "(Ljava/lang/String;)Ljava/util/List;", false);
@@ -415,7 +415,7 @@ methodVisitor.visitMaxs(1, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "validate", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)V", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "validate", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;)V", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/scheduler/CronParser$CronEntry", "currentWhen", "Ljava/util/List;");
@@ -446,7 +446,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/List"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/MessageFormatException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/MessageFormatException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -456,7 +456,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/MessageFormatException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/MessageFormatException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -465,7 +465,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "getNext", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;ILjava/util/Calendar;)I", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getNext", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;ILjava/util/Calendar;)I", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -578,7 +578,7 @@ methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "isCurrent", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;I)Z", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "isCurrent", "(Lorg/apache/activemq/broker/scheduler/CronParser$CronEntry;I)Z", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/scheduler/CronParser$CronEntry", "currentWhen", "Ljava/util/List;");

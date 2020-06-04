@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/webbeans/portable/events/discovery/ExtensionAware", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setExtension", "(Ljavax/enterprise/inject/spi/Extension;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setExtension", "(Ljakarta/enterprise/inject/spi/Extension;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

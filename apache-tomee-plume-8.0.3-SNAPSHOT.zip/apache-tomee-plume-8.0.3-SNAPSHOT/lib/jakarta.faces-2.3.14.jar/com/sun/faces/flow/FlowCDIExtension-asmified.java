@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/FlowCDIExtension", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Extension" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/FlowCDIExtension", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Extension" });
 
 classWriter.visitInnerClass("com/sun/faces/flow/FlowCDIContext$FlowBeanInfo", "com/sun/faces/flow/FlowCDIContext", "FlowBeanInfo", ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "flowScopedBeanFlowIds", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/enterprise/context/spi/Contextual<*>;Lcom/sun/faces/flow/FlowCDIContext$FlowBeanInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "flowScopedBeanFlowIds", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/enterprise/context/spi/Contextual<*>;Lcom/sun/faces/flow/FlowCDIContext$FlowBeanInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -60,25 +60,25 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ConcurrentHas
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIExtension", "flowScopedBeanFlowIds", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "isCdiOneOneOrLater", "(Ljavax/faces/context/FacesContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "isCdiOneOneOrLater", "(Ljakarta/faces/context/FacesContext;)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIExtension", "isCdiOneOneOrGreater", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processBean", "(Ljavax/enterprise/inject/spi/ProcessBean;)V", "(Ljavax/enterprise/inject/spi/ProcessBean<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processBean", "(Ljakarta/enterprise/inject/spi/ProcessBean;)V", "(Ljakarta/enterprise/inject/spi/ProcessBean<*>;)V", null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/flow/FlowScoped;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/flow/FlowScoped");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessBean", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/flow/FlowScoped;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/flow/FlowScoped");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -90,47 +90,47 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/flow/FlowScoped", "definingDocumentId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/flow/FlowScoped", "definingDocumentId", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIContext$FlowBeanInfo", "definingDocumentId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/flow/FlowScoped", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/flow/FlowScoped", "value", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIContext$FlowBeanInfo", "id", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/FlowCDIExtension", "flowScopedBeanFlowIds", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ProcessBean", "getBean", "()Ljavax/enterprise/inject/spi/Bean;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ProcessBean", "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/flow/FlowScoped"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/flow/FlowScoped"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeBeanDiscovery", "(Ljavax/enterprise/inject/spi/BeforeBeanDiscovery;Ljavax/enterprise/inject/spi/BeanManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeBeanDiscovery", "(Ljakarta/enterprise/inject/spi/BeforeBeanDiscovery;Ljakarta/enterprise/inject/spi/BeanManager;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/flow/FlowScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/flow/FlowScoped;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeforeBeanDiscovery", "addScope", "(Ljava/lang/Class;ZZ)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeforeBeanDiscovery", "addScope", "(Ljava/lang/Class;ZZ)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "afterBeanDiscovery", "(Ljavax/enterprise/inject/spi/AfterBeanDiscovery;Ljavax/enterprise/inject/spi/BeanManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "afterBeanDiscovery", "(Ljakarta/enterprise/inject/spi/AfterBeanDiscovery;Ljakarta/enterprise/inject/spi/BeanManager;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -144,7 +144,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/FlowCDIExtension", "flowScopedBeanFlowIds", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext", "<init>", "(Ljava/util/Map;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AfterBeanDiscovery", "addContext", "(Ljavax/enterprise/context/spi/Context;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AfterBeanDiscovery", "addContext", "(Ljakarta/enterprise/context/spi/Context;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/FlowCDIExtension", "flowScopedBeanFlowIds", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "clear", "()V", true);
@@ -162,7 +162,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/flow/FlowCDIExtension", "javax/enterprise/inject/spi/AfterBeanDiscovery", "javax/enterprise/inject/spi/BeanManager", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/flow/FlowCDIExtension", "jakarta/enterprise/inject/spi/AfterBeanDiscovery", "jakarta/enterprise/inject/spi/BeanManager", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/flow/FlowCDIExtension", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "SEVERE", "Ljava/util/logging/Level;");
@@ -240,11 +240,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/FlowCDIExtension", "cdiUtil", "Lcom/sun/faces/util/cdi11/CDIUtil;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/util/cdi11/CDIUtil", "createHelperBean", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljavax/enterprise/inject/spi/Bean;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/util/cdi11/CDIUtil", "createHelperBean", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/Bean;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AfterBeanDiscovery", "addBean", "(Ljavax/enterprise/inject/spi/Bean;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AfterBeanDiscovery", "addBean", "(Ljakarta/enterprise/inject/spi/Bean;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

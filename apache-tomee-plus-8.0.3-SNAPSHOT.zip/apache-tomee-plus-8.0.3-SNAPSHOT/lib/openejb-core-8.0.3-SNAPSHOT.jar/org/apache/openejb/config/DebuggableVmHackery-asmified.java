@@ -385,7 +385,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/jee/ResourceRef");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ResourceRef", "getResType", "()Ljava/lang/String;", false);
-methodVisitor.visitLdcInsn("javax.jms.");
+methodVisitor.visitLdcInsn("jakarta.jms.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);

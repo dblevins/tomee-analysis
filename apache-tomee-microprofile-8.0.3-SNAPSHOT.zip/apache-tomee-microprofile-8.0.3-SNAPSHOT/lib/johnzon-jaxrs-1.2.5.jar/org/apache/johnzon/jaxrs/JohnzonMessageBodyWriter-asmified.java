@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jaxrs/JohnzonMessageBodyWriter", "<T:Ljava/lang/Object;>Lorg/apache/johnzon/jaxrs/IgnorableTypes;Ljavax/ws/rs/ext/MessageBodyWriter<TT;>;", "org/apache/johnzon/jaxrs/IgnorableTypes", new String[] { "javax/ws/rs/ext/MessageBodyWriter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jaxrs/JohnzonMessageBodyWriter", "<T:Ljava/lang/Object;>Lorg/apache/johnzon/jaxrs/IgnorableTypes;Ljakarta/ws/rs/ext/MessageBodyWriter<TT;>;", "org/apache/johnzon/jaxrs/IgnorableTypes", new String[] { "jakarta/ws/rs/ext/MessageBodyWriter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)J", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)J", null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitInsn(LRETURN);
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isWriteable", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z", "(Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isWriteable", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)Z", "(Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -99,7 +99,7 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/io/Writer;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/StreamingOutput;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/StreamingOutput;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -107,11 +107,11 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/CharSequence;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Response;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Response;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonStructure;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonStructure;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -128,7 +128,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;Ljava/io/OutputStream;)V", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", "(TT;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;Ljava/io/OutputStream;)V", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isArray", "()Z", false);

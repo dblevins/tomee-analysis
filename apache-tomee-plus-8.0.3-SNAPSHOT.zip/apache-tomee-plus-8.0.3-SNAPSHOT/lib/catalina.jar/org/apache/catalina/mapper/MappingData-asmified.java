@@ -73,7 +73,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "redirectPath", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "matchType", "Ljavax/servlet/http/MappingMatch;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "matchType", "Ljakarta/servlet/http/MappingMatch;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -116,7 +116,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/buf/MessageB
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mapper/MappingData", "redirectPath", "Lorg/apache/tomcat/util/buf/MessageBytes;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mapper/MappingData", "matchType", "Ljavax/servlet/http/MappingMatch;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mapper/MappingData", "matchType", "Ljakarta/servlet/http/MappingMatch;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -159,7 +159,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mapper/MappingData",
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/buf/MessageBytes", "recycle", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mapper/MappingData", "matchType", "Ljavax/servlet/http/MappingMatch;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mapper/MappingData", "matchType", "Ljakarta/servlet/http/MappingMatch;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

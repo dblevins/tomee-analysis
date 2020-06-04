@@ -48,7 +48,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "selectedColumns", "()[Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "selectedColumns", "()[Ljakarta/persistence/Column;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

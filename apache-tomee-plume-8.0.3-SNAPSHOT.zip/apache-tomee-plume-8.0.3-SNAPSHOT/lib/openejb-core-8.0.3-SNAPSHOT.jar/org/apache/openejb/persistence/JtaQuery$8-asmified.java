@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/persistence/JtaQuery$8", null, "java/lang/Object", new String[] { "org/apache/openejb/persistence/QueryOperation" });
 
-classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/Query;");
+classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/Query;");
 
 classWriter.visitInnerClass("org/apache/openejb/persistence/JtaQuery$8", null, null, 0);
 
@@ -59,14 +59,14 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/persistence/Query;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/persistence/Query;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$8", "val$i", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$8", "val$o", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/Query", "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/Query;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/Query", "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/Query;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

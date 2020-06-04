@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "superClassOverride", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "XML_REGISTRY_CLASS_NAME", "Ljava/lang/String;", null, "javax.xml.bind.annotation.XmlRegistry");
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "XML_REGISTRY_CLASS_NAME", "Ljava/lang/String;", null, "jakarta.xml.bind.annotation.XmlRegistry");
 fieldVisitor.visitEnd();
 }
 {
@@ -280,7 +280,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jaxb/javamodel/JavaClass", "getQualifiedName", "()Ljava/lang/String;", true);
-methodVisitor.visitLdcInsn("javax.xml.bind.annotation.XmlRegistry");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.annotation.XmlRegistry");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitLabel(label1);
@@ -1741,7 +1741,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jaxb/javamodel/JavaClass", "getQualifiedName", "()Ljava/lang/String;", true);
-methodVisitor.visitLdcInsn("javax.xml.bind.annotation.XmlRegistry");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.annotation.XmlRegistry");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitLabel(label1);

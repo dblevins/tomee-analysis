@@ -31,12 +31,12 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$Constant", "org/apache/openjpa/persistence/criteria/Expressions", "Constant", ACC_PUBLIC | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;)V", "(Ljavax/persistence/criteria/Expression<+Ljava/util/Collection<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;)V", "(Ljakarta/persistence/criteria/Expression<+Ljava/util/Collection<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Integer;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression", "<init>", "(Ljava/lang/Class;Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression", "<init>", "(Ljava/lang/Class;Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -49,7 +49,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expres
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Object;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Size", "<init>", "(Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Size", "<init>", "(Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

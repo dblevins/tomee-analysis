@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/jba/cmp/TypeMapping", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -55,14 +55,14 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRootElement;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRootElement;", true);
 annotationVisitor0.visit("name", "type-mapping");
 annotationVisitor0.visitEnd();
 }
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "name", "Lorg/apache/openejb/jee/jba/cmp/Name;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }
@@ -71,7 +71,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "rowLockingTemplate", "Lorg/apache/openejb/jee/jba/cmp/RowLockingTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "row-locking-template");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -81,7 +81,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "pkConstraintTemplate", "Lorg/apache/openejb/jee/jba/cmp/PkConstraintTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "pk-constraint-template");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -91,7 +91,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "fkConstraintTemplate", "Lorg/apache/openejb/jee/jba/cmp/FkConstraintTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "fk-constraint-template");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -101,7 +101,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "autoIncrementTemplate", "Lorg/apache/openejb/jee/jba/cmp/AutoIncrementTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "auto-increment-template");
 annotationVisitor0.visitEnd();
 }
@@ -110,7 +110,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "addColumnTemplate", "Lorg/apache/openejb/jee/jba/cmp/AddColumnTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "add-column-template");
 annotationVisitor0.visitEnd();
 }
@@ -119,7 +119,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "alterColumnTemplate", "Lorg/apache/openejb/jee/jba/cmp/AlterColumnTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "alter-column-template");
 annotationVisitor0.visitEnd();
 }
@@ -128,7 +128,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "dropColumnTemplate", "Lorg/apache/openejb/jee/jba/cmp/DropColumnTemplate;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "drop-column-template");
 annotationVisitor0.visitEnd();
 }
@@ -137,7 +137,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "aliasHeaderPrefix", "Lorg/apache/openejb/jee/jba/cmp/AliasHeaderPrefix;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "alias-header-prefix");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -147,7 +147,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "aliasHeaderSuffix", "Lorg/apache/openejb/jee/jba/cmp/AliasHeaderSuffix;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "alias-header-suffix");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -157,7 +157,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "aliasMaxLength", "Lorg/apache/openejb/jee/jba/cmp/AliasMaxLength;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "alias-max-length");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -167,7 +167,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "subquerySupported", "Lorg/apache/openejb/jee/jba/cmp/SubquerySupported;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "subquery-supported");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -177,7 +177,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "trueMapping", "Lorg/apache/openejb/jee/jba/cmp/TrueMapping;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "true-mapping");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -187,7 +187,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "falseMapping", "Lorg/apache/openejb/jee/jba/cmp/FalseMapping;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "false-mapping");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
@@ -197,7 +197,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "functionMapping", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/jba/cmp/FunctionMapping;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "function-mapping");
 annotationVisitor0.visitEnd();
 }
@@ -206,7 +206,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "mapping", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/jee/jba/cmp/Mapping;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }

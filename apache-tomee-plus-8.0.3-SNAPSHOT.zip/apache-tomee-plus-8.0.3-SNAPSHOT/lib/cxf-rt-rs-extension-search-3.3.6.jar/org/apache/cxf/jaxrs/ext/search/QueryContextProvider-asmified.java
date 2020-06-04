@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/QueryContextProvider", "Ljava/lang/Object;Lorg/apache/cxf/jaxrs/ext/ContextProvider<Lorg/apache/cxf/jaxrs/ext/search/QueryContext;>;", "java/lang/Object", new String[] { "org/apache/cxf/jaxrs/ext/ContextProvider" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/ext/search/QueryContextProvider$QueryContextImpl", "org/apache/cxf/jaxrs/ext/search/QueryContextProvider", "QueryContextImpl", ACC_PRIVATE | ACC_STATIC);

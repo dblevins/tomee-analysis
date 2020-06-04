@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/services/ImplicitConfidentialGrantService", null, "org/apache/cxf/rs/security/oauth2/services/AbstractImplicitGrantService", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "/implicit-confidential");
 annotationVisitor0.visitEnd();
 }

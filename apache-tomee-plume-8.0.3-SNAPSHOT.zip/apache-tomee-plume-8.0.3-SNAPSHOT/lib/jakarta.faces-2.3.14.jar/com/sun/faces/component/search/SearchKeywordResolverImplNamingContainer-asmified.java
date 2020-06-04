@@ -34,21 +34,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolve", "(Ljavax/faces/component/search/SearchKeywordContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolve", "(Ljakarta/faces/component/search/SearchKeywordContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/component/NamingContainer;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/component/NamingContainer;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchKeywordResolverImplNamingContainer", "closest", "(Ljava/lang/Class;Ljavax/faces/component/UIComponent;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIComponent");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/search/SearchKeywordContext", "invokeContextCallback", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchKeywordResolverImplNamingContainer", "closest", "(Ljava/lang/Class;Ljakarta/faces/component/UIComponent;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIComponent");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/search/SearchKeywordContext", "invokeContextCallback", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isResolverForKeyword", "(Ljavax/faces/component/search/SearchExpressionContext;Ljava/lang/String;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isResolverForKeyword", "(Ljakarta/faces/component/search/SearchExpressionContext;Ljava/lang/String;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("namingcontainer");
 methodVisitor.visitVarInsn(ALOAD, 2);

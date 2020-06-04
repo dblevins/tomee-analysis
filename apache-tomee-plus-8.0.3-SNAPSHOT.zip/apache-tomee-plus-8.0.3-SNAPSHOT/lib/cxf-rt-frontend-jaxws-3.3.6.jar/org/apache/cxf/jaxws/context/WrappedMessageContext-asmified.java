@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/context/WrappedMessageContext", null, "java/lang/Object", new String[] { "javax/xml/ws/handler/MessageContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/context/WrappedMessageContext", null, "java/lang/Object", new String[] { "jakarta/xml/ws/handler/MessageContext" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/context/WrappedMessageContext$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/xml/ws/handler/MessageContext$Scope", "javax/xml/ws/handler/MessageContext", "Scope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/xml/ws/handler/MessageContext$Scope", "jakarta/xml/ws/handler/MessageContext", "Scope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -55,11 +55,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "exchange", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scopes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/xml/ws/handler/MessageContext$Scope;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scopes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/xml/ws/handler/MessageContext$Scope;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultScope", "Ljavax/xml/ws/handler/MessageContext$Scope;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultScope", "Ljakarta/xml/ws/handler/MessageContext$Scope;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,27 +67,27 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/ws/handler/MessageContext$Scope", "HANDLER", "Ljavax/xml/ws/handler/MessageContext$Scope;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Lorg/apache/cxf/message/Message;Ljavax/xml/ws/handler/MessageContext$Scope;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/ws/handler/MessageContext$Scope", "HANDLER", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Lorg/apache/cxf/message/Message;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/message/Message;Ljavax/xml/ws/handler/MessageContext$Scope;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/message/Message;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Ljava/util/Map;Lorg/apache/cxf/message/Exchange;Ljavax/xml/ws/handler/MessageContext$Scope;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Ljava/util/Map;Lorg/apache/cxf/message/Exchange;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Map;Lorg/apache/cxf/message/Exchange;Ljavax/xml/ws/handler/MessageContext$Scope;)V", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/apache/cxf/message/Exchange;Ljavax/xml/ws/handler/MessageContext$Scope;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Map;Lorg/apache/cxf/message/Exchange;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/apache/cxf/message/Exchange;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -99,7 +99,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "exchange", "Lorg/apache/cxf/message/Exchange;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljavax/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "message", "Ljava/util/Map;");
@@ -127,7 +127,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/context/WrappedMess
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/context/WrappedMessageContext", "java/util/Map", "org/apache/cxf/message/Exchange", "javax/xml/ws/handler/MessageContext$Scope"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/context/WrappedMessageContext", "java/util/Map", "org/apache/cxf/message/Exchange", "jakarta/xml/ws/handler/MessageContext$Scope"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "exchange", "Lorg/apache/cxf/message/Exchange;");
@@ -1105,7 +1105,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "scopes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/ws/handler/MessageContext$Scope", "APPLICATION", "Ljavax/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/ws/handler/MessageContext$Scope", "APPLICATION", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
@@ -1238,14 +1238,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljavax/xml/ws/handler/MessageContext$Scope;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "put", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/ws/handler/MessageContext$Scope;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "put", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/xml/ws/handler/MessageContext$Scope;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "put", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/ws/handler/MessageContext$Scope;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "put", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/xml/ws/handler/MessageContext$Scope;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1559,7 +1559,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setScope", "(Ljava/lang/String;Ljavax/xml/ws/handler/MessageContext$Scope;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setScope", "(Ljava/lang/String;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1602,7 +1602,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getScope", "(Ljava/lang/String;)Ljavax/xml/ws/handler/MessageContext$Scope;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getScope", "(Ljava/lang/String;)Ljakarta/xml/ws/handler/MessageContext$Scope;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1618,7 +1618,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "scopes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/MessageContext$Scope");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/MessageContext$Scope");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
@@ -1628,7 +1628,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/context/Wrapp
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljavax/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "defaultScope", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1650,7 +1650,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getScopes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/xml/ws/handler/MessageContext$Scope;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getScopes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/xml/ws/handler/MessageContext$Scope;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedMessageContext", "scopes", "Ljava/util/Map;");

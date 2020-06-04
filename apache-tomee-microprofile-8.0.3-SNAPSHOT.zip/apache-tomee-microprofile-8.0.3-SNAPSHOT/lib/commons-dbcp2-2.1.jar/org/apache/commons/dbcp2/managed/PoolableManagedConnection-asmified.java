@@ -35,7 +35,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/PoolableManagedConnection", "transactionRegistry", "Lorg/apache/commons/dbcp2/managed/TransactionRegistry;");

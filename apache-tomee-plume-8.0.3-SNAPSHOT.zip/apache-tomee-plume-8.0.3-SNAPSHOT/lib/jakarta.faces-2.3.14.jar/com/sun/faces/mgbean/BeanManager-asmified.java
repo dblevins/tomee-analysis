@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/mgbean/BeanManager", null, "java/lang/Object", new String[] { "javax/faces/event/SystemEventListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/mgbean/BeanManager", null, "java/lang/Object", new String[] { "jakarta/faces/event/SystemEventListener" });
 
 classWriter.visitInnerClass("com/sun/faces/mgbean/BeanManager$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -97,14 +97,14 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljavax/faces/event/SystemEvent;)V", null, new String[] { "javax/faces/event/AbortProcessingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljakarta/faces/event/SystemEvent;)V", null, new String[] { "jakarta/faces/event/AbortProcessingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/PreDestroyCustomScopeEvent");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/PreDestroyCustomScopeEvent", "getContext", "()Ljavax/faces/event/ScopeContext;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/PreDestroyCustomScopeEvent");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/PreDestroyCustomScopeEvent", "getContext", "()Ljakarta/faces/event/ScopeContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/ScopeContext", "getScope", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/ScopeContext", "getScope", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
@@ -112,7 +112,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/faces/event/ScopeContext", "java/util/Map", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/faces/event/ScopeContext", "java/util/Map", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label1 = new Label();
@@ -153,7 +153,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isListenerForSource", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/event/ScopeContext");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/event/ScopeContext");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -372,31 +372,31 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBeanInScope", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBeanInScope", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "getScope", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "isInScope", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/context/FacesContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "isInScope", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanFromScope", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanFromScope", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "getScope", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "getFromScope", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "getFromScope", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanFromScope", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanFromScope", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -406,13 +406,13 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "getFromScope", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "getFromScope", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -422,13 +422,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/mgbean/BeanBuilder");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanManager", "create", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanManager", "create", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -466,7 +466,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/mgbean/BeanManager", "createAndPush", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/mgbean/BeanManager", "createAndPush", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -836,20 +836,20 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createAndPush", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createAndPush", "(Ljava/lang/String;Lcom/sun/faces/mgbean/BeanBuilder;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanManager", "injectionProvider", "Lcom/sun/faces/spi/InjectionProvider;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "build", "(Lcom/sun/faces/spi/InjectionProvider;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "build", "(Lcom/sun/faces/spi/InjectionProvider;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "getScope", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "pushToScope", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/mgbean/BeanManager$ScopeManager", "pushToScope", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 5);

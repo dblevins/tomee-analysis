@@ -25,17 +25,17 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/classic/cmd/ConfigurationInfoEjb", null, "java/lang/Object", new String[] { "org/apache/openejb/assembler/classic/cmd/ConfigurationInfo" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Singleton;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Singleton;", true);
 annotationVisitor0.visit("name", "openejb/ConfigurationInfo");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Lock;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/ejb/LockType;", "READ");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Lock;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/ejb/LockType;", "READ");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Remote;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Remote;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, Type.getType("Lorg/apache/openejb/assembler/classic/cmd/ConfigurationInfo;"));

@@ -399,7 +399,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "stop", "()V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(0, "stop", "()V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -458,7 +458,7 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "interrupt", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljavax/jms/JMSException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/JMSExceptionSupport", "create", "(Ljava/lang/Exception;)Ljakarta/jms/JMSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

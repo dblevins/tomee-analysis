@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", null, "java/lang/Object", new String[] { "javax/security/jacc/PolicyConfiguration" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", null, "java/lang/Object", new String[] { "jakarta/security/jacc/PolicyConfiguration" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/security/jacc/BasicPolicyConfiguration$RoleResolver", "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "RoleResolver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -79,7 +79,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextID", "()Ljava/lang/String;", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextID", "()Ljava/lang/String;", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "contextID", "Ljava/lang/String;");
@@ -179,7 +179,7 @@ methodVisitor.visitMaxs(3, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToRole", "(Ljava/lang/String;Ljava/security/PermissionCollection;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToRole", "(Ljava/lang/String;Ljava/security/PermissionCollection;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -217,7 +217,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToRole", "(Ljava/lang/String;Ljava/security/Permission;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToRole", "(Ljava/lang/String;Ljava/security/Permission;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -260,7 +260,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToUncheckedPolicy", "(Ljava/security/PermissionCollection;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToUncheckedPolicy", "(Ljava/security/PermissionCollection;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -297,7 +297,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToUncheckedPolicy", "(Ljava/security/Permission;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToUncheckedPolicy", "(Ljava/security/Permission;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -331,7 +331,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToExcludedPolicy", "(Ljava/security/PermissionCollection;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToExcludedPolicy", "(Ljava/security/PermissionCollection;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -368,7 +368,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToExcludedPolicy", "(Ljava/security/Permission;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToExcludedPolicy", "(Ljava/security/Permission;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -402,7 +402,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeRole", "(Ljava/lang/String;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeRole", "(Ljava/lang/String;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -426,7 +426,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeUncheckedPolicy", "()V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeUncheckedPolicy", "()V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -448,7 +448,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeExcludedPolicy", "()V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeExcludedPolicy", "()V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -470,7 +470,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "linkConfiguration", "(Ljavax/security/jacc/PolicyConfiguration;)V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "linkConfiguration", "(Ljakarta/security/jacc/PolicyConfiguration;)V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -489,7 +489,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "()V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "()V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_3);
@@ -499,7 +499,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");
@@ -521,7 +521,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inService", "()Z", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inService", "()Z", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jacc/BasicPolicyConfiguration", "state", "I");

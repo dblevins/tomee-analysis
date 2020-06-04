@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/advisory/ConsumerEventSource", null, "java/lang/Object", new String[] { "org/apache/activemq/Service", "javax/jms/MessageListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/advisory/ConsumerEventSource", null, "java/lang/Object", new String[] { "org/apache/activemq/Service", "jakarta/jms/MessageListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Lorg/slf4j/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connection", "Ljavax/jms/Connection;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connection", "Ljakarta/jms/Connection;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "consumerCount", "Ljava/util/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "session", "Ljavax/jms/Session;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "session", "Ljakarta/jms/Session;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "consumer", "Lorg/apache/acti
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/jms/Connection;Ljavax/jms/Destination;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/jms/Connection;Ljakarta/jms/Destination;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -74,10 +74,10 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/Atomic
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "consumerCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "connection", "Ljavax/jms/Connection;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "connection", "Ljakarta/jms/Connection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/command/ActiveMQDestination", "transform", "(Ljavax/jms/Destination;)Lorg/apache/activemq/command/ActiveMQDestination;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/command/ActiveMQDestination", "transform", "(Ljakarta/jms/Destination;)Lorg/apache/activemq/command/ActiveMQDestination;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "destination", "Lorg/apache/activemq/command/ActiveMQDestination;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -127,26 +127,26 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "connection", "Ljavax/jms/Connection;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "connection", "Ljakarta/jms/Connection;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Connection", "createSession", "(ZI)Ljavax/jms/Session;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljavax/jms/Session;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Connection", "createSession", "(ZI)Ljakarta/jms/Session;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljakarta/jms/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "destination", "Lorg/apache/activemq/command/ActiveMQDestination;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/advisory/AdvisorySupport", "getConsumerAdvisoryTopic", "(Lorg/apache/activemq/command/ActiveMQDestination;)Lorg/apache/activemq/command/ActiveMQTopic;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljavax/jms/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljakarta/jms/Session;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Session", "createConsumer", "(Ljavax/jms/Destination;)Ljavax/jms/MessageConsumer;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Session", "createConsumer", "(Ljakarta/jms/Destination;)Ljakarta/jms/MessageConsumer;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/activemq/ActiveMQMessageConsumer");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "consumer", "Lorg/apache/activemq/ActiveMQMessageConsumer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "consumer", "Lorg/apache/activemq/ActiveMQMessageConsumer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQMessageConsumer", "setMessageListener", "(Ljavax/jms/MessageListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQMessageConsumer", "setMessageListener", "(Ljakarta/jms/MessageListener;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -164,11 +164,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/Atomic
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljavax/jms/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljakarta/jms/Session;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljavax/jms/Session;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Session", "close", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEventSource", "session", "Ljakarta/jms/Session;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Session", "close", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -176,7 +176,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/activemq/command/ActiveMQMessage");
@@ -201,7 +201,7 @@ methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/advisory/ConsumerEventSource", "extractConsumerCountFromMessage", "(Ljavax/jms/Message;I)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/advisory/ConsumerEventSource", "extractConsumerCountFromMessage", "(Ljakarta/jms/Message;I)I", false);
 methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/advisory/ConsumerStartedEvent");
@@ -236,7 +236,7 @@ methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/advisory/ConsumerEventSource", "extractConsumerCountFromMessage", "(Ljavax/jms/Message;I)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/advisory/ConsumerEventSource", "extractConsumerCountFromMessage", "(Ljakarta/jms/Message;I)I", false);
 methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/advisory/ConsumerStoppedEvent");
@@ -290,7 +290,7 @@ methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "extractConsumerCountFromMessage", "(Ljavax/jms/Message;I)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "extractConsumerCountFromMessage", "(Ljakarta/jms/Message;I)I", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -302,7 +302,7 @@ methodVisitor.visitTryCatchBlock(label3, label4, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("consumerCount");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "getObjectProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "getObjectProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/Number");
@@ -330,7 +330,7 @@ methodVisitor.visitLabel(label4);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/advisory/ConsumerEventSource", "javax/jms/Message", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/advisory/ConsumerEventSource", "jakarta/jms/Message", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/advisory/ConsumerEventSource", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");

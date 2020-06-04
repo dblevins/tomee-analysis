@@ -42,7 +42,7 @@ AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, 
 annotationVisitor2.visitEnum("type", "Lorg/springframework/context/annotation/FilterType;", "ANNOTATION");
 {
 AnnotationVisitor annotationVisitor3 = annotationVisitor2.visitArray("value");
-annotationVisitor3.visit(null, Type.getType("Ljavax/ws/rs/ext/Provider;"));
+annotationVisitor3.visit(null, Type.getType("Ljakarta/ws/rs/ext/Provider;"));
 annotationVisitor3.visit(null, Type.getType("Lorg/apache/cxf/annotations/Provider;"));
 annotationVisitor3.visitEnd();
 }
@@ -161,7 +161,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spring/AbstractJaxRsClientConfiguration", "context", "Lorg/springframework/context/ApplicationContext;");
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/ext/Provider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/ext/Provider;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/springframework/context/ApplicationContext", "findAnnotationOnBean", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);

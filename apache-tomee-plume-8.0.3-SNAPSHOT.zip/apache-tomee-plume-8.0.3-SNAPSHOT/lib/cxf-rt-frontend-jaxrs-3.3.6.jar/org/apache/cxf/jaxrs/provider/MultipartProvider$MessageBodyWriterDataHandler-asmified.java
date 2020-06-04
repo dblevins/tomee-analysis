@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "<T:Ljava/lang/Object;>Ljavax/activation/DataHandler;", "javax/activation/DataHandler", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "<T:Ljava/lang/Object;>Ljakarta/activation/DataHandler;", "jakarta/activation/DataHandler", null);
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "org/apache/cxf/jaxrs/provider/MultipartProvider", "MessageBodyWriterDataHandler", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "writer", "Ljavax/ws/rs/ext/MessageBodyWriter;", "Ljavax/ws/rs/ext/MessageBodyWriter<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "writer", "Ljakarta/ws/rs/ext/MessageBodyWriter;", "Ljakarta/ws/rs/ext/MessageBodyWriter<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,11 +47,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "anns", "[Ljava/lang/annotati
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contentType", "Ljavax/ws/rs/core/MediaType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contentType", "Ljakarta/ws/rs/core/MediaType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/ws/rs/ext/MessageBodyWriter;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)V", "(Ljavax/ws/rs/ext/MessageBodyWriter<TT;>;TT;Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/ws/rs/ext/MessageBodyWriter;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)V", "(Ljakarta/ws/rs/ext/MessageBodyWriter<TT;>;TT;Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/attachment/ByteDataSource");
@@ -59,10 +59,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("1");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "getBytes", "()[B", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/ByteDataSource", "<init>", "([B)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "writer", "Ljavax/ws/rs/ext/MessageBodyWriter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "writer", "Ljakarta/ws/rs/ext/MessageBodyWriter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "obj", "Ljava/lang/Object;");
@@ -77,7 +77,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "anns", "[Ljava/lang/annotation/Annotation;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
@@ -91,7 +91,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "writer", "Ljavax/ws/rs/ext/MessageBodyWriter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "writer", "Ljakarta/ws/rs/ext/MessageBodyWriter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "obj", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -101,12 +101,12 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartP
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "anns", "[Ljava/lang/annotation/Annotation;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/MessageBodyWriter", "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/MessageBodyWriter", "writeTo", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -115,7 +115,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOE
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -127,8 +127,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/MultipartProvider$MessageBodyWriterDataHandler", "contentType", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

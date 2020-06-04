@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/core/ApplicationServletRegistration", null, "java/lang/Object", new String[] { "javax/servlet/ServletRegistration$Dynamic" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/core/ApplicationServletRegistration", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletRegistration$Dynamic" });
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/servlet/ServletRegistration$Dynamic", "javax/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/ServletRegistration$Dynamic", "jakarta/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Lorg/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "constraint", "Ljavax/servlet/ServletSecurityElement;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "constraint", "Ljakarta/servlet/ServletSecurityElement;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -316,12 +316,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMultipartConfig", "(Ljavax/servlet/MultipartConfigElement;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMultipartConfig", "(Ljakarta/servlet/MultipartConfigElement;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "wrapper", "Lorg/apache/catalina/Wrapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Wrapper", "setMultipartConfigElement", "(Ljavax/servlet/MultipartConfigElement;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Wrapper", "setMultipartConfigElement", "(Ljakarta/servlet/MultipartConfigElement;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -338,7 +338,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setServletSecurity", "(Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setServletSecurity", "(Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -396,12 +396,12 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljavax/servlet/ServletSecurityElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljakarta/servlet/ServletSecurityElement;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "context", "Lorg/apache/catalina/Context;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "addServletSecurity", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "addServletSecurity", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 2);
 methodVisitor.visitEnd();
@@ -513,15 +513,15 @@ methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljavax/servlet/ServletSecurityElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljakarta/servlet/ServletSecurityElement;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "context", "Lorg/apache/catalina/Context;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljavax/servlet/ServletSecurityElement;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "addServletSecurity", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationServletRegistration", "constraint", "Ljakarta/servlet/ServletSecurityElement;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "addServletSecurity", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

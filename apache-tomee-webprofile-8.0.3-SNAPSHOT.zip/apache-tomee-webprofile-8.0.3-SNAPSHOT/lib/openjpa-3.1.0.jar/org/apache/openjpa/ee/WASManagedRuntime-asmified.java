@@ -87,7 +87,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/ee/WASManagedRuntime$WASTransaction");
 methodVisitor.visitInsn(DUP);
@@ -270,9 +270,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "(Ljava/lang/Throwable;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/WASManagedRuntime", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "setRollbackOnly", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/WASManagedRuntime", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

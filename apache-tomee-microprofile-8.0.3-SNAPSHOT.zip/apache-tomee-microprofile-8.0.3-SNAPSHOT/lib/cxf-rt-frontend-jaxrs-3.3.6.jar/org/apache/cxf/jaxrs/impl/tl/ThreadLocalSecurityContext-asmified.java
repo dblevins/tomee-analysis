@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "Lorg/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy<Ljavax/ws/rs/core/SecurityContext;>;Ljavax/ws/rs/core/SecurityContext;", "org/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy", new String[] { "javax/ws/rs/core/SecurityContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "Lorg/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy<Ljakarta/ws/rs/core/SecurityContext;>;Ljakarta/ws/rs/core/SecurityContext;", "org/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy", new String[] { "jakarta/ws/rs/core/SecurityContext" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -38,8 +38,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAuthenticationScheme", "
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/SecurityContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getAuthenticationScheme", "()Ljava/lang/String;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/SecurityContext");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getAuthenticationScheme", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -49,8 +49,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserPrincipal", "()Ljava
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/SecurityContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/SecurityContext");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -60,8 +60,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSecure", "()Z", null, nul
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/SecurityContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "isSecure", "()Z", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/SecurityContext");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "isSecure", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -71,9 +71,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isUserInRole", "(Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/SecurityContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/SecurityContext");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

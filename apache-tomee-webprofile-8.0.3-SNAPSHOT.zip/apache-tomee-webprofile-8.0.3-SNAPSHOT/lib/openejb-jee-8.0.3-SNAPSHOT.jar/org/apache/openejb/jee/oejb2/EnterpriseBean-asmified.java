@@ -45,7 +45,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJndi", "(
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAbstractNamingEntry", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/bind/JAXBElement<+Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAbstractNamingEntry", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/bind/JAXBElement<+Lorg/apache/openejb/jee/oejb2/AbstractNamingEntryType;>;>;", null);
 methodVisitor.visitEnd();
 }
 {

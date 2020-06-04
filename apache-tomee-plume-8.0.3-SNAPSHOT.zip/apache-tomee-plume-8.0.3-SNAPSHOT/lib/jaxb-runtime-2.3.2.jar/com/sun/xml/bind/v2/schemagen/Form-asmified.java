@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xnf", "Ljavax/xml/bind/annotation/XmlNsForm;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xnf", "Ljakarta/xml/bind/annotation/XmlNsForm;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", "(Ljavax/xml/bind/annotation/XmlNsForm;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", "(Ljakarta/xml/bind/annotation/XmlNsForm;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -84,7 +84,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Enum", "<init>", "(Ljava/lang/String;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/schemagen/Form", "xnf", "Ljavax/xml/bind/annotation/XmlNsForm;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/schemagen/Form", "xnf", "Ljakarta/xml/bind/annotation/XmlNsForm;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/schemagen/Form", "isEffectivelyQualified", "Z");
@@ -165,7 +165,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljavax/xml/bind/annotation/XmlNsForm;)Lcom/sun/xml/bind/v2/schemagen/Form;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljakarta/xml/bind/annotation/XmlNsForm;)Lcom/sun/xml/bind/v2/schemagen/Form;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/schemagen/Form", "values", "()[Lcom/sun/xml/bind/v2/schemagen/Form;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -186,7 +186,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/schemagen/Form", "xnf", "Ljavax/xml/bind/annotation/XmlNsForm;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/schemagen/Form", "xnf", "Ljakarta/xml/bind/annotation/XmlNsForm;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label2);
@@ -206,14 +206,14 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;ZLcom/sun/xml/bind/v2/schemagen/Form$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;ZLcom/sun/xml/bind/v2/schemagen/Form$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form", "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form", "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
@@ -225,25 +225,25 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/schemagen/Form$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("QUALIFIED");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/bind/annotation/XmlNsForm", "QUALIFIED", "Ljavax/xml/bind/annotation/XmlNsForm;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/bind/annotation/XmlNsForm", "QUALIFIED", "Ljakarta/xml/bind/annotation/XmlNsForm;");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$1", "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$1", "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/schemagen/Form", "QUALIFIED", "Lcom/sun/xml/bind/v2/schemagen/Form;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/schemagen/Form$2");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("UNQUALIFIED");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/bind/annotation/XmlNsForm", "UNQUALIFIED", "Ljavax/xml/bind/annotation/XmlNsForm;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/bind/annotation/XmlNsForm", "UNQUALIFIED", "Ljakarta/xml/bind/annotation/XmlNsForm;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$2", "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$2", "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/schemagen/Form", "UNQUALIFIED", "Lcom/sun/xml/bind/v2/schemagen/Form;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/schemagen/Form$3");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("UNSET");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/bind/annotation/XmlNsForm", "UNSET", "Ljavax/xml/bind/annotation/XmlNsForm;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/bind/annotation/XmlNsForm", "UNSET", "Ljakarta/xml/bind/annotation/XmlNsForm;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$3", "<init>", "(Ljava/lang/String;ILjavax/xml/bind/annotation/XmlNsForm;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/schemagen/Form$3", "<init>", "(Ljava/lang/String;ILjakarta/xml/bind/annotation/XmlNsForm;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/schemagen/Form", "UNSET", "Lcom/sun/xml/bind/v2/schemagen/Form;");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "com/sun/xml/bind/v2/schemagen/Form");

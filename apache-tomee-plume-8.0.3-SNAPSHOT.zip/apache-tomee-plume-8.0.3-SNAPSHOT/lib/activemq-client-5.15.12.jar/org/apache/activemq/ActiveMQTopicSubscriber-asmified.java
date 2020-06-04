@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ActiveMQTopicSubscriber", null, "org/apache/activemq/ActiveMQMessageConsumer", new String[] { "javax/jms/TopicSubscriber" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ActiveMQTopicSubscriber", null, "org/apache/activemq/ActiveMQMessageConsumer", new String[] { "jakarta/jms/TopicSubscriber" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ConsumerId;Lorg/apache/activemq/command/ActiveMQDestination;Ljava/lang/String;Ljava/lang/String;IIZZZ)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ConsumerId;Lorg/apache/activemq/command/ActiveMQDestination;Ljava/lang/String;Ljava/lang/String;IIZZZ)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -39,25 +39,25 @@ methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitVarInsn(ILOAD, 10);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageConsumer", "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ConsumerId;Lorg/apache/activemq/command/ActiveMQDestination;Ljava/lang/String;Ljava/lang/String;IIZZZLjavax/jms/MessageListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageConsumer", "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ConsumerId;Lorg/apache/activemq/command/ActiveMQDestination;Ljava/lang/String;Ljava/lang/String;IIZZZLjakarta/jms/MessageListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(12, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopic", "()Ljavax/jms/Topic;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopic", "()Ljakarta/jms/Topic;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQTopicSubscriber", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageConsumer", "getDestination", "()Lorg/apache/activemq/command/ActiveMQDestination;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Topic");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Topic");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNoLocal", "()Z", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNoLocal", "()Z", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQTopicSubscriber", "checkClosed", "()V", false);

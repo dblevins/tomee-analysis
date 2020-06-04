@@ -124,7 +124,7 @@ methodVisitor.visitLdcInsn("\u0009spec => ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/StringWriter", "write", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/QueryStringInteraction", "getInteractionSpec", "()Ljavax/resource/cci/InteractionSpec;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/QueryStringInteraction", "getInteractionSpec", "()Ljakarta/resource/cci/InteractionSpec;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "valueOf", "(Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/StringWriter", "write", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);

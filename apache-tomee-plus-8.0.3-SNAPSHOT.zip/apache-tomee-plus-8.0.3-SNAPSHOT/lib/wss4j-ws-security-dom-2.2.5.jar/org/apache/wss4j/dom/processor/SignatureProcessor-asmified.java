@@ -521,7 +521,7 @@ methodVisitor.visitJumpInsn(IFNULL, label20);
 methodVisitor.visitVarInsn(ALOAD, 18);
 methodVisitor.visitLdcInsn("subject");
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "getSubject", "()Ljavax/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "getSubject", "()Ljakarta/security/auth/Subject;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/engine/WSSecurityEngineResult", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label20);

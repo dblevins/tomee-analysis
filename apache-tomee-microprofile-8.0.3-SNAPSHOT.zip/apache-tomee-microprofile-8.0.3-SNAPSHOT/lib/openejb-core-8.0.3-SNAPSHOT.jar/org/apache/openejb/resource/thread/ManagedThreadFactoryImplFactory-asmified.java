@@ -41,7 +41,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljavax/enterprise/concurrent/ManagedThreadFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljakarta/enterprise/concurrent/ManagedThreadFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/threads/impl/ManagedThreadFactoryImpl");
 methodVisitor.visitInsn(DUP);

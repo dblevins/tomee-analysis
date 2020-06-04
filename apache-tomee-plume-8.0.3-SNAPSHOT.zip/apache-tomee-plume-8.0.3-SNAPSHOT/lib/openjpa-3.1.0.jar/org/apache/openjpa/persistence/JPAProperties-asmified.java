@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "REG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PREFIX", "Ljava/lang/String;", null, "javax.persistence.");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PREFIX", "Ljava/lang/String;", null, "jakarta.persistence.");
 fieldVisitor.visitEnd();
 }
 {
@@ -113,7 +113,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALI
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_GROUP_DEFAULT", "Ljava/lang/String;", null, "javax.validation.groups.Default");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_GROUP_DEFAULT", "Ljava/lang/String;", null, "jakarta.validation.groups.Default");
 fieldVisitor.visitEnd();
 }
 {
@@ -171,7 +171,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.");
+methodVisitor.visitLdcInsn("jakarta.persistence.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -257,7 +257,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAP
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/persistence/CacheRetrieveMode");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/persistence/CacheRetrieveMode");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -280,7 +280,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/persistence/CacheStoreMode");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/persistence/CacheStoreMode");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -329,7 +329,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toUpperCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/CacheRetrieveMode", "valueOf", "(Ljava/lang/String;)Ljavax/persistence/CacheRetrieveMode;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/CacheRetrieveMode", "valueOf", "(Ljava/lang/String;)Ljakarta/persistence/CacheRetrieveMode;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -341,7 +341,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toUpperCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/CacheStoreMode", "valueOf", "(Ljava/lang/String;)Ljavax/persistence/CacheStoreMode;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/CacheStoreMode", "valueOf", "(Ljava/lang/String;)Ljakarta/persistence/CacheStoreMode;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

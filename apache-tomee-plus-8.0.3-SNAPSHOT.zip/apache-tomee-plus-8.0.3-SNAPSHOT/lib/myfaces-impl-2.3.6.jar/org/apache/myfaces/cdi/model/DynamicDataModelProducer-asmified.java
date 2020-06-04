@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljavax/faces/model/DataModel;>;>;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljakarta/faces/model/DataModel;>;>;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Typed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/model/DataModelInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/model/DataModelInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/cdi/model/FacesDataModelAnnotationLiteral");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -53,7 +53,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/model/DataM
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "id", "(Ljava/lang/String;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "scope", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -77,7 +77,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/Abstra
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/Map;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "beanClass", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/model/DynamicDataModelProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/model/DynamicDataModelProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "create", "(Ljava/util/function/Function;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -85,12 +85,12 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDataModel", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljavax/faces/model/DataModel;>;>;>;)Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljavax/faces/model/DataModel;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDataModel", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", "(Ljakarta/enterprise/context/spi/CreationalContext<Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljakarta/faces/model/DataModel;>;>;>;)Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljakarta/faces/model/DataModel;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/cdi/model/FacesDataModelClassBeanHolder;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "lookup", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "lookup", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/cdi/model/FacesDataModelClassBeanHolder");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -100,11 +100,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "createDataModel", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/model/DynamicDataModelProducer", "createDataModel", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

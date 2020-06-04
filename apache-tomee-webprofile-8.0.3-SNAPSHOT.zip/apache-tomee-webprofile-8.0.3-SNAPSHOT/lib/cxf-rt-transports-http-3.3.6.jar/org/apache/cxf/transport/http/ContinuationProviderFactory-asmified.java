@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/transport/http/ContinuationProviderFactory", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createContinuationProvider", "(Lorg/apache/cxf/message/Message;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/cxf/continuations/ContinuationProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createContinuationProvider", "(Lorg/apache/cxf/message/Message;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)Lorg/apache/cxf/continuations/ContinuationProvider;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveFromContinuation", "(Ljavax/servlet/http/HttpServletRequest;)Lorg/apache/cxf/message/Message;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveFromContinuation", "(Ljakarta/servlet/http/HttpServletRequest;)Lorg/apache/cxf/message/Message;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

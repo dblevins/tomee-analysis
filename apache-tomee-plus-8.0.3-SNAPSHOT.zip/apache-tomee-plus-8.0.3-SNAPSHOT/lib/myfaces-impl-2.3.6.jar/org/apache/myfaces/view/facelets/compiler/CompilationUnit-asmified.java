@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/compiler/Co
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/compiler/CompilationUnit$1", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "LEAF", "Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "LEAF", "Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,16 +67,16 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "getNextFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "getNextFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getNextFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getNextFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "children", "Ljava/util/List;");
@@ -89,7 +89,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljavax/faces/view/facelets/FaceletHandler;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljakarta/faces/view/facelets/FaceletHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -106,20 +106,20 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljav
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/view/facelets/compiler/CompilationUnit");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "children", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/view/facelets/FaceletHandler");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/view/facelets/FaceletHandler");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljavax/faces/view/facelets/FaceletHandler;", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljakarta/faces/view/facelets/FaceletHandler;", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -132,16 +132,16 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compile
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/view/facelets/compiler/CompilationUnit");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitIincInsn(2, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/CompositeFaceletHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/CompositeFaceletHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/CompositeFaceletHandler", "<init>", "([Ljavax/faces/view/facelets/FaceletHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/CompositeFaceletHandler", "<init>", "([Ljakarta/faces/view/facelets/FaceletHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -152,7 +152,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/compiler/CompilationUnit$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/compiler/CompilationUnit$1", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljavax/faces/view/facelets/FaceletHandler;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljakarta/faces/view/facelets/FaceletHandler;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

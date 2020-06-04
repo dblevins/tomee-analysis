@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jsf/AttachedBehaviors", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "behaviors", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/TagHandler;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "behaviors", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/TagHandler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "COMPOSITE_BEHAVIORS_KEY", "Ljava/lang/String;", null, "javax.faces.view.ClientBehaviors");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "COMPOSITE_BEHAVIORS_KEY", "Ljava/lang/String;", null, "jakarta.faces.view.ClientBehaviors");
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/String;Ljavax/faces/view/facelets/TagHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/String;Ljakarta/faces/view/facelets/TagHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jsf/AttachedBehaviors", "behaviors", "Ljava/util/Map;");
@@ -60,25 +60,25 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljava/lang/String;)Ljakarta/faces/view/facelets/TagHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jsf/AttachedBehaviors", "behaviors", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/TagHandler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/TagHandler");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachedBehaviorsHandler", "(Ljavax/faces/component/UIComponent;)Lcom/sun/faces/facelets/tag/jsf/AttachedBehaviors;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachedBehaviorsHandler", "(Ljakarta/faces/component/UIComponent;)Lcom/sun/faces/facelets/tag/jsf/AttachedBehaviors;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.view.ClientBehaviors");
+methodVisitor.visitLdcInsn("jakarta.faces.view.ClientBehaviors");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/facelets/tag/jsf/AttachedBehaviors");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -91,7 +91,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/AttachedBehaviors", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.view.ClientBehaviors");
+methodVisitor.visitLdcInsn("jakarta.faces.view.ClientBehaviors");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

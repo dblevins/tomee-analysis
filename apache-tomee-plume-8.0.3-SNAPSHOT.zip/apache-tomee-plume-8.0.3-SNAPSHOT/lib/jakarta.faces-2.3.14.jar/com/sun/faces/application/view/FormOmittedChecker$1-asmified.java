@@ -22,22 +22,22 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/application/view/FormOmittedChecker$1", null, "java/lang/Object", new String[] { "javax/faces/component/visit/VisitCallback" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/application/view/FormOmittedChecker$1", null, "java/lang/Object", new String[] { "jakarta/faces/component/visit/VisitCallback" });
 
-classWriter.visitOuterClass("com/sun/faces/application/view/FormOmittedChecker", "check", "(Ljavax/faces/context/FacesContext;)V");
+classWriter.visitOuterClass("com/sun/faces/application/view/FormOmittedChecker", "check", "(Ljakarta/faces/context/FacesContext;)V");
 
 classWriter.visitInnerClass("com/sun/faces/application/view/FormOmittedChecker$1", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$finalContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$finalContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/view/FormOmittedChecker$1", "val$finalContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/view/FormOmittedChecker$1", "val$finalContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -45,27 +45,27 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljavax/faces/component/visit/VisitContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/visit/VisitResult;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljakarta/faces/component/visit/VisitContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/component/visit/VisitResult;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "ACCEPT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "ACCEPT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$000", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$000", "(Ljakarta/faces/component/UIComponent;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "REJECT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "REJECT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/component/visit/VisitResult"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/component/visit/VisitResult"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$100", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$100", "(Ljakarta/faces/component/UIComponent;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/FormOmittedChecker$1", "val$finalContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/FormOmittedChecker$1", "val$finalContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$200", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/FormOmittedChecker", "access$200", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);

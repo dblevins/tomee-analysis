@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", null, "javax/faces/view/facelets/Metadata", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", null, "jakarta/faces/view/facelets/Metadata", null);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "com/sun/faces/facelets/tag/MethodRule", "MethodExpressionMetadata", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_method", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attribute", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attribute", "Ljakarta/faces/view/facelets/TagAttribute;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,16 +43,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_returnType", "Ljava/lang/Cl
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/reflect/Method;Ljavax/faces/view/facelets/TagAttribute;Ljava/lang/Class;[Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/reflect/Method;Ljakarta/faces/view/facelets/TagAttribute;Ljava/lang/Class;[Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/Metadata", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/Metadata", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_method", "Ljava/lang/reflect/Method;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_paramList", "[Ljava/lang/Class;");
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -74,13 +74,13 @@ Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/IllegalAccessException");
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/IllegalArgumentException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_returnType", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_paramList", "[Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getMethodExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/el/MethodExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getMethodExpression", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/el/MethodExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -98,25 +98,25 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "javax/faces/view/facelets/FaceletContext", "java/lang/Object", "javax/el/MethodExpression"}, 1, new Object[] {"java/lang/reflect/InvocationTargetException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "jakarta/faces/view/facelets/FaceletContext", "java/lang/Object", "jakarta/el/MethodExpression"}, 1, new Object[] {"java/lang/reflect/InvocationTargetException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/TagAttributeException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/TagAttributeException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagAttributeException", "<init>", "(Ljavax/faces/view/facelets/TagAttribute;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/TagAttributeException", "<init>", "(Ljakarta/faces/view/facelets/TagAttribute;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/TagAttributeException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/TagAttributeException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata", "_attribute", "Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagAttributeException", "<init>", "(Ljavax/faces/view/facelets/TagAttribute;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/TagAttributeException", "<init>", "(Ljakarta/faces/view/facelets/TagAttribute;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

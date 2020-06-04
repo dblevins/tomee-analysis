@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/component/search/SearchExpressionHandlerImpl$ResolveClientIdsCallback", null, "java/lang/Object", new String[] { "javax/faces/component/ContextCallback" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/component/search/SearchExpressionHandlerImpl$ResolveClientIdsCallback", null, "java/lang/Object", new String[] { "jakarta/faces/component/ContextCallback" });
 
 classWriter.visitInnerClass("com/sun/faces/component/search/SearchExpressionHandlerImpl$ResolveClientIdsCallback", "com/sun/faces/component/search/SearchExpressionHandlerImpl", "ResolveClientIdsCallback", ACC_PRIVATE | ACC_STATIC);
 
@@ -45,12 +45,12 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getClientId", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getClientId", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/component/search/SearchExpressionHandlerImpl$ResolveClientIdsCallback", "addClientId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", null, "java/lang/Object", new String[] { "javax/persistence/spi/PersistenceUnitInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/PersistenceUnitInfo" });
 
 classWriter.visitInnerClass("org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "PersistenceClassFileTransformer", ACC_PUBLIC | ACC_STATIC);
 
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceProviderClassName
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,11 +87,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceXMLSchemaVersion"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sharedCacheMode", "Ljakarta/persistence/SharedCacheMode;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validationMode", "Ljavax/persistence/ValidationMode;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validationMode", "Ljakarta/persistence/ValidationMode;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -112,8 +112,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -130,8 +130,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/SharedCacheMode", "UNSPECIFIED", "Ljakarta/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
@@ -145,8 +145,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -163,8 +163,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/SharedCacheMode", "UNSPECIFIED", "Ljakarta/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
@@ -230,20 +230,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljakarta/persistence/spi/PersistenceUnitTransactionType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -269,12 +269,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionSynchronizationRegistry;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/TransactionSynchronizationRegistry;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSource", "Ljavax/sql/DataSource;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -313,12 +313,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionSynchronizationRegistry;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/TransactionSynchronizationRegistry;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSource", "Ljavax/sql/DataSource;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -688,7 +688,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljavax/persistence/spi/ClassTransformer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljakarta/persistence/spi/ClassTransformer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
@@ -697,7 +697,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "<init>", "(Ljavax/persistence/spi/ClassTransformer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "<init>", "(Ljakarta/persistence/spi/ClassTransformer;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
@@ -1322,16 +1322,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljavax/persistence/SharedCacheMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljakarta/persistence/SharedCacheMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSharedCacheMode", "(Ljavax/persistence/SharedCacheMode;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSharedCacheMode", "(Ljakarta/persistence/SharedCacheMode;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -1343,29 +1343,29 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl"});
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/SharedCacheMode", "UNSPECIFIED", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "javax/persistence/SharedCacheMode"}, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "javax/persistence/SharedCacheMode"});
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jakarta/persistence/SharedCacheMode"}, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jakarta/persistence/SharedCacheMode"});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljakarta/persistence/SharedCacheMode;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljavax/persistence/ValidationMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljakarta/persistence/ValidationMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljakarta/persistence/ValidationMode;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidationMode", "(Ljavax/persistence/ValidationMode;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidationMode", "(Ljakarta/persistence/ValidationMode;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljakarta/persistence/ValidationMode;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/MPJWTInitializer", null, "java/lang/Object", new String[] { "javax/servlet/ServletContainerInitializer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/MPJWTInitializer", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContainerInitializer" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/servlet/annotation/HandlesTypes;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/servlet/annotation/HandlesTypes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, Type.getType("Lorg/eclipse/microprofile/auth/LoginConfig;"));
@@ -33,7 +33,7 @@ annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/servlet/FilterRegistration$Dynamic", "javax/servlet/FilterRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/FilterRegistration$Dynamic", "jakarta/servlet/FilterRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartup", "(Ljava/util/Set;Ljavax/servlet/ServletContext;)V", "(Ljava/util/Set<Ljava/lang/Class<*>;>;Ljavax/servlet/ServletContext;)V", new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartup", "(Ljava/util/Set;Ljakarta/servlet/ServletContext;)V", "(Ljava/util/Set<Ljava/lang/Class<*>;>;Ljakarta/servlet/ServletContext;)V", new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -90,7 +90,7 @@ methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Class", "org/eclipse/microprofile/auth/LoginConfig"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Application;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Application;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label5 = new Label();
@@ -101,11 +101,11 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("mp-jwt-filter");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/tomee/microprofile/jwt/MPJWTFilter;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "addFilter", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/servlet/FilterRegistration$Dynamic;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "addFilter", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/servlet/FilterRegistration$Dynamic;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterRegistration$Dynamic", "setAsyncSupported", "(Z)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterRegistration$Dynamic", "setAsyncSupported", "(Z)V", true);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_0);
@@ -115,7 +115,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLdcInsn("/*");
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterRegistration$Dynamic", "addMappingForUrlPatterns", "(Ljava/util/EnumSet;Z[Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterRegistration$Dynamic", "addMappingForUrlPatterns", "(Ljava/util/EnumSet;Z[Ljava/lang/String;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);

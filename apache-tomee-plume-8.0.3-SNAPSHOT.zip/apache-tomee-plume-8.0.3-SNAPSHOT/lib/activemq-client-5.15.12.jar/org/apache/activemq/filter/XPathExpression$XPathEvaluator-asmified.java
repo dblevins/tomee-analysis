@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/a
 classWriter.visitInnerClass("org/apache/activemq/filter/XPathExpression$XPathEvaluator", "org/apache/activemq/filter/XPathExpression", "XPathEvaluator", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "evaluate", "(Lorg/apache/activemq/command/Message;)Z", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "evaluate", "(Lorg/apache/activemq/command/Message;)Z", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

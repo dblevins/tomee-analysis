@@ -49,13 +49,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Lorg/opensaml/pro
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects$1", "this$0", "Lorg/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects", "getHttpServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects", "getHttpServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects$1", "this$0", "Lorg/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects", "getHttpServletRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getRemoteAddr", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects", "getHttpServletRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getRemoteAddr", "()Ljava/lang/String;", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);

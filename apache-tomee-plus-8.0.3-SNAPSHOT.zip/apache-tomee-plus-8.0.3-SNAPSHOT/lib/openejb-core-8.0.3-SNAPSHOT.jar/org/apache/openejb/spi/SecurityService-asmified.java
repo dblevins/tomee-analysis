@@ -65,7 +65,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "currentState
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "onLogout", "(Ljavax/servlet/http/HttpServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "onLogout", "(Ljakarta/servlet/http/HttpServletRequest;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

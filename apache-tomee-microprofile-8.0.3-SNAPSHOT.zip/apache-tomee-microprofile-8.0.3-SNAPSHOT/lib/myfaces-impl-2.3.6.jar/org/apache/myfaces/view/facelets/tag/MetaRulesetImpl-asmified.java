@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", null, "javax/faces/view/facelets/MetaRuleset", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", null, "jakarta/faces/view/facelets/MetaRuleset", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/MetaRulesetImp
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NONE", "Ljavax/faces/view/facelets/Metadata;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NONE", "Ljakarta/faces/view/facelets/Metadata;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,31 +39,31 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC | ACC_VOLATILE, "metadata", "Ljava/util/WeakHashMap;", "Ljava/util/WeakHashMap<Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/MetadataTarget;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC | ACC_VOLATILE, "metadata", "Ljava/util/WeakHashMap;", "Ljava/util/WeakHashMap<Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/MetadataTarget;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY", "[Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY", "[Ljakarta/faces/view/facelets/TagAttribute;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attributes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/TagAttribute;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_attributes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/TagAttribute;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_mappers", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/view/facelets/Metadata;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_mappers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/view/facelets/Metadata;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_rules", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/view/facelets/MetaRule;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_rules", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/view/facelets/MetaRule;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_tag", "Ljavax/faces/view/facelets/Tag;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_tag", "Ljakarta/faces/view/facelets/Tag;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_type", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_passthroughRules", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/view/facelets/MetaRule;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_passthroughRules", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/view/facelets/MetaRule;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -90,7 +90,7 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getMetaData", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/MetadataTarget;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getMetaData", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/MetadataTarget;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -137,7 +137,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "createMetaData", "(Ljava/lang/ClassLoader;Ljava/util/Map;)Ljava/util/Map;", "(Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/MetadataTarget;>;)Ljava/util/Map<Ljava/lang/String;Ljavax/faces/view/facelets/MetadataTarget;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "createMetaData", "(Ljava/lang/ClassLoader;Ljava/util/Map;)Ljava/util/Map;", "(Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/MetadataTarget;>;)Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/view/facelets/MetadataTarget;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "metadata", "Ljava/util/WeakHashMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -164,20 +164,20 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/Class;)V", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/Class;)V", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/MetaRuleset", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/MetaRuleset", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljavax/faces/view/facelets/Tag;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljakarta/faces/view/facelets/Tag;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_type", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljavax/faces/view/facelets/Tag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/Tag", "getAttributes", "()Ljavax/faces/view/facelets/TagAttributes;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttributes", "getAll", "()[Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljakarta/faces/view/facelets/Tag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/Tag", "getAttributes", "()Ljakarta/faces/view/facelets/TagAttributes;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttributes", "getAll", "()[Ljakarta/faces/view/facelets/TagAttribute;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -194,7 +194,7 @@ methodVisitor.visitInsn(IDIV);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "javax/faces/view/facelets/Tag", "java/lang/Class", "[Ljavax/faces/view/facelets/TagAttribute;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "jakarta/faces/view/facelets/Tag", "java/lang/Class", "[Ljakarta/faces/view/facelets/TagAttribute;"}, 0, new Object[] {});
 methodVisitor.visitInsn(ICONST_4);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
@@ -224,16 +224,16 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "(I)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughRules", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljavax/faces/view/facelets/Tag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/Tag", "getAttributes", "()Ljavax/faces/view/facelets/TagAttributes;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljakarta/faces/view/facelets/Tag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/Tag", "getAttributes", "()Ljakarta/faces/view/facelets/TagAttributes;", false);
 methodVisitor.visitLdcInsn("http://xmlns.jcp.org/jsf/passthrough");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttributes", "getAll", "(Ljava/lang/String;)[Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttributes", "getAll", "(Ljava/lang/String;)[Ljakarta/faces/view/facelets/TagAttribute;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljavax/faces/view/facelets/Tag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/Tag", "getAttributes", "()Ljavax/faces/view/facelets/TagAttributes;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljakarta/faces/view/facelets/Tag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/Tag", "getAttributes", "()Ljakarta/faces/view/facelets/TagAttributes;", false);
 methodVisitor.visitLdcInsn("http://java.sun.com/jsf/passthrough");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttributes", "getAll", "(Ljava/lang/String;)[Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttributes", "getAll", "(Ljava/lang/String;)[Ljakarta/faces/view/facelets/TagAttribute;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -244,15 +244,15 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {Opcodes.INTEGER, "[Ljavax/faces/view/facelets/TagAttribute;", "[Ljavax/faces/view/facelets/TagAttribute;"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {Opcodes.INTEGER, "[Ljakarta/faces/view/facelets/TagAttribute;", "[Ljakarta/faces/view/facelets/TagAttribute;"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitInsn(IADD);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/view/facelets/TagAttribute");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/view/facelets/TagAttribute");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -264,7 +264,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 10);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "javax/faces/view/facelets/Tag", "java/lang/Class", "[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljavax/faces/view/facelets/TagAttribute;", "[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "jakarta/faces/view/facelets/Tag", "java/lang/Class", "[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljakarta/faces/view/facelets/TagAttribute;", "[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 10);
 methodVisitor.visitVarInsn(ILOAD, 9);
 Label label5 = new Label();
@@ -274,25 +274,25 @@ methodVisitor.visitVarInsn(ILOAD, 10);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label6);
 methodVisitor.visitLdcInsn("http://xmlns.jcp.org/jsf/passthrough");
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitLdcInsn("http://java.sun.com/jsf/passthrough");
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getNamespace", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/view/facelets/TagAttribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/view/facelets/TagAttribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitInsn(AASTORE);
@@ -304,7 +304,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_attributes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -313,14 +313,14 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitIincInsn(10, 1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "javax/faces/view/facelets/Tag", "java/lang/Class", "[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljavax/faces/view/facelets/TagAttribute;", "[Ljavax/faces/view/facelets/TagAttribute;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "jakarta/faces/view/facelets/Tag", "java/lang/Class", "[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, "[Ljakarta/faces/view/facelets/TagAttribute;", "[Ljakarta/faces/view/facelets/TagAttribute;"}, 0, new Object[] {});
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "EMPTY", "[Ljavax/faces/view/facelets/TagAttribute;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "EMPTY", "[Ljakarta/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -330,7 +330,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 9);
 Label label10 = new Label();
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label9);
@@ -341,7 +341,7 @@ methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_attributes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -359,7 +359,7 @@ methodVisitor.visitMaxs(4, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljavax/faces/view/facelets/Metadata;)Ljavax/faces/view/facelets/MetaRuleset;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljakarta/faces/view/facelets/Metadata;)Ljakarta/faces/view/facelets/MetaRuleset;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("mapper");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -383,7 +383,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRule", "(Ljavax/faces/view/facelets/MetaRule;)Ljavax/faces/view/facelets/MetaRuleset;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRule", "(Ljakarta/faces/view/facelets/MetaRule;)Ljakarta/faces/view/facelets/MetaRuleset;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("rule");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -414,7 +414,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/view/facelets/MetaRuleset;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/view/facelets/MetaRuleset;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("attribute");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -426,7 +426,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_attributes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/TagAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/TagAttribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -438,14 +438,14 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/view/facelets/TagAttribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/view/facelets/TagAttribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "finish", "()Ljavax/faces/view/facelets/Metadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "finish", "()Ljakarta/faces/view/facelets/Metadata;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -461,14 +461,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/AssertionError", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/view/facelets/MetadataTarget"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/view/facelets/MetadataTarget"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_attributes", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "isEmpty", "()Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_getMetadataTarget", "()Ljavax/faces/view/facelets/MetadataTarget;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_getMetadataTarget", "()Ljakarta/faces/view/facelets/MetadataTarget;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_rules", "Ljava/util/List;");
@@ -497,12 +497,12 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ISTORE, 6);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/util/Map$Entry", "javax/faces/view/facelets/Metadata", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/util/Map$Entry", "jakarta/faces/view/facelets/Metadata", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_rules", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/MetaRule");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/MetaRule");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -510,9 +510,9 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", 
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/TagAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/TagAttribute");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/MetaRule", "applyRule", "(Ljava/lang/String;Ljavax/faces/view/facelets/TagAttribute;Ljavax/faces/view/facelets/MetadataTarget;)Ljavax/faces/view/facelets/Metadata;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/MetaRule", "applyRule", "(Ljava/lang/String;Ljakarta/faces/view/facelets/TagAttribute;Ljakarta/faces/view/facelets/MetadataTarget;)Ljakarta/faces/view/facelets/Metadata;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitIincInsn(6, -1);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -559,7 +559,7 @@ methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label7);
@@ -571,7 +571,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_getMetadataTarget", "()Ljavax/faces/view/facelets/MetadataTarget;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_getMetadataTarget", "()Ljakarta/faces/view/facelets/MetadataTarget;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -582,7 +582,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughAttributes", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -591,7 +591,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label9 = new Label();
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "javax/faces/view/facelets/MetadataTarget", Opcodes.INTEGER, "[Ljavax/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "jakarta/faces/view/facelets/MetadataTarget", Opcodes.INTEGER, "[Ljakarta/faces/view/facelets/TagAttribute;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label7);
@@ -605,19 +605,19 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ISTORE, 8);
 Label label10 = new Label();
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/faces/view/facelets/TagAttribute", "javax/faces/view/facelets/Metadata", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/faces/view/facelets/TagAttribute", "jakarta/faces/view/facelets/Metadata", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_passthroughRules", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/MetaRule");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/MetaRule");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/MetaRule", "applyRule", "(Ljava/lang/String;Ljavax/faces/view/facelets/TagAttribute;Ljavax/faces/view/facelets/MetadataTarget;)Ljavax/faces/view/facelets/Metadata;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/MetaRule", "applyRule", "(Ljava/lang/String;Ljakarta/faces/view/facelets/TagAttribute;Ljakarta/faces/view/facelets/MetadataTarget;)Ljakarta/faces/view/facelets/Metadata;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitIincInsn(8, -1);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -640,7 +640,7 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getLocalName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" Unhandled by MetaTagHandler for type ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -663,13 +663,13 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "javax/faces/view/facelets/MetadataTarget"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "jakarta/faces/view/facelets/MetadataTarget"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_mappers", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label14);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "NONE", "Ljavax/faces/view/facelets/Metadata;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "NONE", "Ljakarta/faces/view/facelets/Metadata;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -680,16 +680,16 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/Met
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_mappers", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/view/facelets/Metadata");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/view/facelets/Metadata");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/faces/view/facelets/Metadata;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetadataImpl", "<init>", "([Ljavax/faces/view/facelets/Metadata;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/faces/view/facelets/Metadata;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetadataImpl", "<init>", "([Ljakarta/faces/view/facelets/Metadata;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignore", "(Ljava/lang/String;)Ljavax/faces/view/facelets/MetaRuleset;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignore", "(Ljava/lang/String;)Ljakarta/faces/view/facelets/MetaRuleset;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("attribute");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -705,7 +705,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignoreAll", "()Ljavax/faces/view/facelets/MetaRuleset;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignoreAll", "()Ljakarta/faces/view/facelets/MetaRuleset;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_attributes", "Ljava/util/Map;");
@@ -716,7 +716,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "_getMetadataTarget", "()Ljavax/faces/view/facelets/MetadataTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "_getMetadataTarget", "()Ljakarta/faces/view/facelets/MetadataTarget;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -737,7 +737,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/view/facelets/MetadataTarget");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/view/facelets/MetadataTarget");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label7 = new Label();
@@ -753,15 +753,15 @@ methodVisitor.visitLabel(label1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "java/util/Map", "java/lang/String", "javax/faces/view/facelets/MetadataTarget"}, 1, new Object[] {"java/beans/IntrospectionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "java/util/Map", "java/lang/String", "jakarta/faces/view/facelets/MetadataTarget"}, 1, new Object[] {"java/beans/IntrospectionException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/TagException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/TagException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljavax/faces/view/facelets/Tag;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "_tag", "Ljakarta/faces/view/facelets/Tag;");
 methodVisitor.visitLdcInsn("Error Creating TargetMetadata");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagException", "<init>", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/TagException", "<init>", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -780,7 +780,7 @@ methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "java/util/Map", "java/lang/String", "javax/faces/view/facelets/MetadataTarget", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "java/util/Map", "java/lang/String", "jakarta/faces/view/facelets/MetadataTarget", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(MONITOREXIT);
@@ -814,7 +814,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/tag/MetaRules
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata", "<init>", "(Lorg/apache/myfaces/view/facelets/tag/MetaRulesetImpl$1;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "NONE", "Ljavax/faces/view/facelets/Metadata;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "NONE", "Ljakarta/faces/view/facelets/Metadata;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/MetaRulesetImpl;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/logging/Logger", "getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", false);
@@ -824,8 +824,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/WeakHashMap", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "metadata", "Ljava/util/WeakHashMap;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/view/facelets/TagAttribute");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "EMPTY", "[Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/view/facelets/TagAttribute");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "EMPTY", "[Ljakarta/faces/view/facelets/TagAttribute;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();

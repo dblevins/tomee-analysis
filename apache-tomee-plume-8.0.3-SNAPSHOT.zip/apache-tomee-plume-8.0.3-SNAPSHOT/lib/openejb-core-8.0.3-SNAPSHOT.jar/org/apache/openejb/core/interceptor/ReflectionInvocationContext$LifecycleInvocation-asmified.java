@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/openejb/core/interceptor/ReflectionInvoc
 classWriter.visitInnerClass("org/apache/openejb/core/interceptor/ReflectionInvocationContext$Invocation", "org/apache/openejb/core/interceptor/ReflectionInvocationContext", "Invocation", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "invocationContext", "Ljavax/interceptor/InvocationContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "invocationContext", "Ljakarta/interceptor/InvocationContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/interceptor/InvocationContext;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/interceptor/InvocationContext;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$Invocation", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "invocationContext", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "invocationContext", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
@@ -54,8 +54,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$Invocation", "invoke", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "invocationContext", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "invocationContext", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);

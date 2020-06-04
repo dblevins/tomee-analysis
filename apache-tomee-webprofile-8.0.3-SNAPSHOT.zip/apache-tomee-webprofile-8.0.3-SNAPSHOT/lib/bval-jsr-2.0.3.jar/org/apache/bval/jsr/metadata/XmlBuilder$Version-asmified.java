@@ -119,7 +119,7 @@ methodVisitor.visitIincInsn(4, 1);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -129,7 +129,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();

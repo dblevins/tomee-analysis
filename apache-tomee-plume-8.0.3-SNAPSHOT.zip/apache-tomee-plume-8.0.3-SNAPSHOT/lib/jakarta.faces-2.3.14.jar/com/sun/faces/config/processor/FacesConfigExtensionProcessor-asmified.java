@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "process", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/FacesContext;[Lcom/sun/faces/config/manager/documents/DocumentInfo;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "process", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/FacesContext;[Lcom/sun/faces/config/manager/documents/DocumentInfo;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);

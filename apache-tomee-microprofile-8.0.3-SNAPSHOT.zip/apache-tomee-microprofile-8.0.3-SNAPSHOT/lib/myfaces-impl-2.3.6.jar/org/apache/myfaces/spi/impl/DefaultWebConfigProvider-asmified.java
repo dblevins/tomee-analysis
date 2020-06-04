@@ -34,10 +34,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesServletMappings", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/spi/ServletMapping;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesServletMappings", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/spi/ServletMapping;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "getWebXml", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared_impl/webapp/webxml/WebXml;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "getWebXml", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared_impl/webapp/webxml/WebXml;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "getFacesServletMappings", "()Ljava/util/List;", false);
@@ -52,7 +52,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/spi/impl/DefaultWebConfigProvider", "javax/faces/context/ExternalContext", "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "java/util/List", "java/util/List", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/spi/impl/DefaultWebConfigProvider", "jakarta/faces/context/ExternalContext", "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "java/util/List", "java/util/List", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
@@ -80,10 +80,10 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isErrorPagePresent", "(Ljavax/faces/context/ExternalContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isErrorPagePresent", "(Ljakarta/faces/context/ExternalContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "getWebXml", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared_impl/webapp/webxml/WebXml;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "getWebXml", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared_impl/webapp/webxml/WebXml;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared_impl/webapp/webxml/WebXml", "isErrorPagePresent", "()Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);

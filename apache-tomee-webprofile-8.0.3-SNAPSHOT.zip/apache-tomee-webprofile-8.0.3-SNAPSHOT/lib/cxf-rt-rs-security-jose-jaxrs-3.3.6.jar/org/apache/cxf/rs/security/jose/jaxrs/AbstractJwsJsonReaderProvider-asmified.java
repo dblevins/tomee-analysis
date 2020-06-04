@@ -177,13 +177,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "validateHttpHeadersIfNeeded", "(Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/jose/jws/JwsHeaders;)V", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/jose/jws/JwsHeaders;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "validateHttpHeadersIfNeeded", "(Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/jose/jws/JwsHeaders;)V", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/jose/jws/JwsHeaders;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsJsonReaderProvider", "protectedHttpHeaders", "Ljava/util/Set;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/jose/jaxrs/JoseJaxrsUtils", "validateHttpHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/jose/common/JoseHeaders;Ljava/util/Set;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/jose/jaxrs/JoseJaxrsUtils", "validateHttpHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/jose/common/JoseHeaders;Ljava/util/Set;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

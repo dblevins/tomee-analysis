@@ -106,7 +106,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getConsumers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getConsumers", "()[Ljakarta/management/ObjectName;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "The ObjectNames of all Consumers created by this Connection");
@@ -115,7 +115,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getProducers", "()[Ljakarta/management/ObjectName;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "The ObjectNames of all Producers created by this Connection");

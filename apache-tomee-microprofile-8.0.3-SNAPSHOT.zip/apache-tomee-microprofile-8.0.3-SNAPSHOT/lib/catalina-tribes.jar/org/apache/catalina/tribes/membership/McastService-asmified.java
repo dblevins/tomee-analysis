@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "domain", "[B", null, null)
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/tribes/membership/MembershipServiceBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "properties", "Ljava/util/Properties;");
@@ -926,8 +926,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitLdcInsn(",component=Membership");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "registerJmx", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "registerJmx", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_FULL, 14, new Object[] {"org/apache/catalina/tribes/membership/McastService", Opcodes.INTEGER, "java/lang/String", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, "java/net/InetAddress", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.LONG, "org/apache/catalina/tribes/jmx/JmxRegistry"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
@@ -951,18 +951,18 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/membership/McastServiceImpl", "stop", "(I)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljakarta/management/ObjectName;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "channel", "Lorg/apache/catalina/tribes/Channel;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/tribes/jmx/JmxRegistry", "getRegistry", "(Lorg/apache/catalina/tribes/Channel;)Lorg/apache/catalina/tribes/jmx/JmxRegistry;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "unregisterJmx", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "unregisterJmx", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/membership/McastService", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);

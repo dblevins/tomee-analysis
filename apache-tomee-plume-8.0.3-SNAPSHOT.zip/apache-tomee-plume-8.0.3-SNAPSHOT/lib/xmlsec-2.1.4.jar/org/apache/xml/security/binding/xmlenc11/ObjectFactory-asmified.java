@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType$Salt", "org/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType", "Salt", ACC_PUBLIC | ACC_STATIC);
@@ -140,101 +140,101 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConcatKDFParams", "(Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConcatKDFParams", "(Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmlenc11#");
 annotationVisitor0.visit("name", "ConcatKDFParams");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", "_ConcatKDFParams_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmlenc11/ConcatKDFParamsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDerivedKey", "(Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDerivedKey", "(Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmlenc11#");
 annotationVisitor0.visit("name", "DerivedKey");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", "_DerivedKey_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmlenc11/DerivedKeyType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyDerivationMethod", "(Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyDerivationMethod", "(Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmlenc11#");
 annotationVisitor0.visit("name", "KeyDerivationMethod");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", "_KeyDerivationMethod_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmlenc11/KeyDerivationMethodType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPBKDF2Params", "(Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPBKDF2Params", "(Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmlenc11#");
 annotationVisitor0.visit("name", "PBKDF2-params");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", "_PBKDF2Params_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMGF", "(Lorg/apache/xml/security/binding/xmlenc11/MGFType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/MGFType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/MGFType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMGF", "(Lorg/apache/xml/security/binding/xmlenc11/MGFType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmlenc11/MGFType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmlenc11/MGFType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmlenc11#");
 annotationVisitor0.visit("name", "MGF");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmlenc11/ObjectFactory", "_MGF_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmlenc11/MGFType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

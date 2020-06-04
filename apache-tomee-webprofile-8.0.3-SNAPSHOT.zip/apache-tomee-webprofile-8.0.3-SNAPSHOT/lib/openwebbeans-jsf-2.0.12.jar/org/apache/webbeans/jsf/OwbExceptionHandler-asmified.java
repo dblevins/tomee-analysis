@@ -22,35 +22,35 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbExceptionHandler", null, "javax/faces/context/ExceptionHandlerWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbExceptionHandler", null, "jakarta/faces/context/ExceptionHandlerWrapper", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/faces/context/ExceptionHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/faces/context/ExceptionHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/ExceptionHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/ExceptionHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ExceptionHandlerWrapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ExceptionHandlerWrapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljavax/faces/context/ExceptionHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljakarta/faces/context/ExceptionHandler;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/context/ExceptionHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/context/ExceptionHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljavax/faces/context/ExceptionHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljakarta/faces/context/ExceptionHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "()V", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "()V", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbExceptionHandler", "getUnhandledExceptionQueuedEvents", "()Ljava/lang/Iterable;", false);
@@ -65,16 +65,16 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/ExceptionQueuedEvent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/ExceptionQueuedEvent");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/ExceptionQueuedEvent", "getSource", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/ExceptionQueuedEventContext");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/ExceptionQueuedEvent", "getSource", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/ExceptionQueuedEventContext");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/ExceptionQueuedEventContext", "getException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/ExceptionQueuedEventContext", "getException", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/NonexistentConversationException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/NonexistentConversationException;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
@@ -92,8 +92,8 @@ methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljavax/faces/context/ExceptionHandler;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExceptionHandler", "handle", "()V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandler", "delegate", "Ljakarta/faces/context/ExceptionHandler;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExceptionHandler", "handle", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
@@ -102,7 +102,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbExceptionHandler", "getWrapped", "()Ljavax/faces/context/ExceptionHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbExceptionHandler", "getWrapped", "()Ljakarta/faces/context/ExceptionHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -26,7 +26,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/bind
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "State", ACC_PUBLIC | ACC_FINAL);
 
-classWriter.visitInnerClass("javax/xml/bind/Unmarshaller$Listener", "javax/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/xml/bind/Unmarshaller$Listener", "jakarta/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "expectText", "Z", null, null);
@@ -288,7 +288,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmars
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "parent", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getListener", "()Ljavax/xml/bind/Unmarshaller$Listener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getListener", "()Ljakarta/xml/bind/Unmarshaller$Listener;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JaxBeanInfo", "hasBeforeUnmarshalMethod", "()Z", false);
@@ -303,7 +303,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmars
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "getTarget", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JaxBeanInfo", "invokeBeforeUnmarshalMethod", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "javax/xml/bind/Unmarshaller$Listener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "jakarta/xml/bind/Unmarshaller$Listener"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -311,7 +311,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "getPrev", "()Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "getTarget", "()Ljava/lang/Object;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -330,7 +330,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmars
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "parent", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getListener", "()Ljavax/xml/bind/Unmarshaller$Listener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getListener", "()Ljakarta/xml/bind/Unmarshaller$Listener;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JaxBeanInfo", "hasAfterUnmarshalMethod", "()Z", false);
@@ -344,14 +344,14 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "getTarget", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JaxBeanInfo", "invokeAfterUnmarshalMethod", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "javax/xml/bind/Unmarshaller$Listener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "jakarta/xml/bind/Unmarshaller$Listener"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$State", "getTarget", "()Ljava/lang/Object;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -410,7 +410,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label1 = new Label();
@@ -426,11 +426,11 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"java/lang/String", "j
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "getLocator", "()Lcom/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljavax/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljakarta/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "handleEvent", "(Ljavax/xml/bind/ValidationEvent;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext", "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();

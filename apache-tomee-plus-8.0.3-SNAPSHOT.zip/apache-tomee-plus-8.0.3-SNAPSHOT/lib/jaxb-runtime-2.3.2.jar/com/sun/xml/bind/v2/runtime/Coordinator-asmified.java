@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/bind/v2/runtime/Coordinator", null, "java/lang/Object", new String[] { "org/xml/sax/ErrorHandler", "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/bind/v2/runtime/Coordinator", null, "java/lang/Object", new String[] { "org/xml/sax/ErrorHandler", "jakarta/xml/bind/ValidationEventHandler" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapters", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter;>;Ljavax/xml/bind/annotation/adapters/XmlAdapter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapters", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>;Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "putAdapter", "(Ljava/lang/Class;Ljavax/xml/bind/annotation/adapters/XmlAdapter;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", "(Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter;>;Ljavax/xml/bind/annotation/adapters/XmlAdapter;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "putAdapter", "(Ljava/lang/Class;Ljakarta/xml/bind/annotation/adapters/XmlAdapter;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", "(Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>;Ljakarta/xml/bind/annotation/adapters/XmlAdapter;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -60,7 +60,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/Coordinator", "adapters", "Ljava/util/HashMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlAdapter");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -69,13 +69,13 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/Coordinator"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlAdapter");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getAdapter", "(Ljava/lang/Class;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", "<T:Ljavax/xml/bind/annotation/adapters/XmlAdapter;>(Ljava/lang/Class<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getAdapter", "(Ljava/lang/Class;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", "<T:Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -83,29 +83,29 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/Coordinator"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlAdapter");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/ClassFactory", "create", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlAdapter");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "putAdapter", "(Ljava/lang/Class;Ljavax/xml/bind/annotation/adapters/XmlAdapter;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "putAdapter", "(Ljava/lang/Class;Ljakarta/xml/bind/annotation/adapters/XmlAdapter;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/bind/annotation/adapters/XmlAdapter"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/bind/annotation/adapters/XmlAdapter"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsAdapter", "(Ljava/lang/Class;)Z", "<T:Ljavax/xml/bind/annotation/adapters/XmlAdapter;>(Ljava/lang/Class<TT;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsAdapter", "(Ljava/lang/Class;)Z", "<T:Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>(Ljava/lang/Class<TT;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/Coordinator", "adapters", "Ljava/util/HashMap;");
@@ -167,7 +167,7 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -206,14 +206,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "propagateEvent", "(ILorg/xml/sax/SAXParseException;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/SAXParseException", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljavax/xml/bind/ValidationEventLocator;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljakarta/xml/bind/ValidationEventLocator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/SAXParseException", "getException", "()Ljava/lang/Exception;", false);
@@ -223,19 +223,19 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/helpers/ValidationEventImpl", "setLinkedException", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "setLinkedException", "(Ljava/lang/Throwable;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/xml/bind/helpers/ValidationEventImpl", "java/lang/Exception"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/xml/bind/helpers/ValidationEventImpl", "java/lang/Exception"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/helpers/ValidationEventImpl", "setLinkedException", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "setLinkedException", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", false);
 methodVisitor.visitVarInsn(ISTORE, 5);
 methodVisitor.visitVarInsn(ILOAD, 5);
 Label label2 = new Label();

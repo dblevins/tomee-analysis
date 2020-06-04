@@ -62,7 +62,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ExternalSpecifi
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label8);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.validation.Validation");
+methodVisitor.visitLdcInsn("jakarta.validation.Validation");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label9);
@@ -146,7 +146,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isCDIAvailable", "(Ljavax/faces/context/ExternalContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isCDIAvailable", "(Ljakarta/faces/context/ExternalContext;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -156,7 +156,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ExternalSpecifi
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.enterprise.inject.spi.BeanManager");
+methodVisitor.visitLdcInsn("jakarta.enterprise.inject.spi.BeanManager");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
@@ -195,10 +195,10 @@ methodVisitor.visitLdcInsn("enabled");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"javax/faces/context/ExternalContext"}, 2, new Object[] {"java/util/logging/Logger", "java/lang/StringBuilder"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"jakarta/faces/context/ExternalContext"}, 2, new Object[] {"java/util/logging/Logger", "java/lang/StringBuilder"});
 methodVisitor.visitLdcInsn("disabled");
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"javax/faces/context/ExternalContext"}, 3, new Object[] {"java/util/logging/Logger", "java/lang/StringBuilder", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"jakarta/faces/context/ExternalContext"}, 3, new Object[] {"java/util/logging/Logger", "java/lang/StringBuilder", "java/lang/String"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "info", "(Ljava/lang/String;)V", false);
@@ -209,7 +209,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue"
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oam.cdi.BEAN_MANAGER_INSTANCE");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label9);
@@ -236,7 +236,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ExternalSpecifi
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.el.StaticFieldELResolver");
+methodVisitor.visitLdcInsn("jakarta.el.StaticFieldELResolver");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
@@ -301,11 +301,11 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ExternalSpecifi
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.servlet.http.PushBuilder");
+methodVisitor.visitLdcInsn("jakarta.servlet.http.PushBuilder");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletRequest;"));
 methodVisitor.visitLdcInsn("newPushBuilder");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Class;");

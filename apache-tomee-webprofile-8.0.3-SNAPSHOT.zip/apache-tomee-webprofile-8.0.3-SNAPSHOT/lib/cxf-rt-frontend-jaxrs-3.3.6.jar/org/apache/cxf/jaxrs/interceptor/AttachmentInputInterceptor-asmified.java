@@ -56,7 +56,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSupportedTypes", "(Ljava/util/List;)V", "(Ljava/util/List<Ljava/lang/String;>;)V", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Resource;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Resource;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

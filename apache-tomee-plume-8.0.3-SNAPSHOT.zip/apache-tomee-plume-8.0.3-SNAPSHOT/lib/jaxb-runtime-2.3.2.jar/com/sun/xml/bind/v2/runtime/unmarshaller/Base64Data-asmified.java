@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataHandler", "Ljavax/activation/DataHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataHandler", "Ljakarta/activation/DataHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -75,7 +75,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataLen", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "mimeType", "Ljava/lang/String;");
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/activation/DataHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/activation/DataHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -117,7 +117,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "data", "[B");
@@ -126,25 +126,25 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataHandler", "()Ljavax/activation/DataHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataHandler", "()Ljakarta/activation/DataHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1", "<init>", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/Base64Data;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
@@ -189,12 +189,12 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "()Ljava/io/InputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -247,9 +247,9 @@ methodVisitor.visitIntInsn(SIPUSH, 1024);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/util/ByteArrayOutputStreamEx", "<init>", "(I)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getDataSource", "()Ljavax/activation/DataSource;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "dataHandler", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getDataSource", "()Ljakarta/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);

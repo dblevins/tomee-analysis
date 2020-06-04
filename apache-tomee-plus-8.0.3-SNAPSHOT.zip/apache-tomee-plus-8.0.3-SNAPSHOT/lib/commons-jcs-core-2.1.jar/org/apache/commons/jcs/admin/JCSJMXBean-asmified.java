@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/commons/jcs/admin/JCSJMXBean", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/management/MXBean;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/management/MXBean;", true);
 annotationVisitor0.visitEnd();
 }
 {

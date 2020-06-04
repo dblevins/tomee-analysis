@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectionFactor
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;Lorg/apache/tomcat/dbcp/dbcp2/ConnectionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;Lorg/apache/tomcat/dbcp/dbcp2/ConnectionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -51,7 +51,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "<init>", "(Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "<init>", "(Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/LocalXAConnectionFactory", "transactionRegistry", "Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);

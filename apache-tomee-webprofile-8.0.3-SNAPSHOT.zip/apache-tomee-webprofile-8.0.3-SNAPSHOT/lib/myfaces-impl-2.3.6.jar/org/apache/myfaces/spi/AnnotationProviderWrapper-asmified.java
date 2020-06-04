@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/spi/AnnotationProviderWrapper", "Lorg/apache/myfaces/spi/AnnotationProvider;Ljavax/faces/FacesWrapper<Lorg/apache/myfaces/spi/AnnotationProvider;>;", "org/apache/myfaces/spi/AnnotationProvider", new String[] { "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/spi/AnnotationProviderWrapper", "Lorg/apache/myfaces/spi/AnnotationProvider;Ljakarta/faces/FacesWrapper<Lorg/apache/myfaces/spi/AnnotationProvider;>;", "org/apache/myfaces/spi/AnnotationProvider", new String[] { "jakarta/faces/FacesWrapper" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Lorg/apache/myfaces/spi/AnnotationProvider;", null, null);
@@ -50,12 +50,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClasses", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Map;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Map<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/util/Set<Ljava/lang/Class<*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClasses", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Map;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Map<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/util/Set<Ljava/lang/Class<*>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProviderWrapper", "getWrapped", "()Lorg/apache/myfaces/spi/AnnotationProvider;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProvider", "getAnnotatedClasses", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProvider", "getAnnotatedClasses", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -71,12 +71,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseUrls", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseUrls", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProviderWrapper", "getWrapped", "()Lorg/apache/myfaces/spi/AnnotationProvider;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProvider", "getBaseUrls", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/AnnotationProvider", "getBaseUrls", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

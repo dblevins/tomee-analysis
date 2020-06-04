@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/renderkit/RenderKitImpl$1", null, "javax/faces/context/ResponseStream", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/renderkit/RenderKitImpl$1", null, "jakarta/faces/context/ResponseStream", null);
 
-classWriter.visitOuterClass("com/sun/faces/renderkit/RenderKitImpl", "createResponseStream", "(Ljava/io/OutputStream;)Ljavax/faces/context/ResponseStream;");
+classWriter.visitOuterClass("com/sun/faces/renderkit/RenderKitImpl", "createResponseStream", "(Ljava/io/OutputStream;)Ljakarta/faces/context/ResponseStream;");
 
 classWriter.visitInnerClass("com/sun/faces/renderkit/RenderKitImpl$1", null, null, 0);
 
@@ -46,7 +46,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/RenderKitImpl$1", "val$output", "Ljava/io/OutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ResponseStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ResponseStream", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

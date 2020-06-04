@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
-classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "getDataHandler", "()Ljavax/activation/DataHandler;");
+classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data", "getDataHandler", "()Ljakarta/activation/DataHandler;");
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data$1", null, null, 0);
 

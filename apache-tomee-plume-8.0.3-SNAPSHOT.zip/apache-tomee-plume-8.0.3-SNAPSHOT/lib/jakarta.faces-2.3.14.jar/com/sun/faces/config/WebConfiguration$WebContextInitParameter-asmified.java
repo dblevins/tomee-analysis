@@ -395,7 +395,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("StateSavingMethod");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.faces.STATE_SAVING_METHOD");
+methodVisitor.visitLdcInsn("jakarta.faces.STATE_SAVING_METHOD");
 methodVisitor.visitLdcInsn("server");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "StateSavingMethod", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -403,7 +403,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsSuffix");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_SUFFIX");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_SUFFIX");
 methodVisitor.visitLdcInsn(".xhtml");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsSuffix", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -411,7 +411,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("DefaultSuffix");
 methodVisitor.visitInsn(ICONST_3);
-methodVisitor.visitLdcInsn("javax.faces.DEFAULT_SUFFIX");
+methodVisitor.visitLdcInsn("jakarta.faces.DEFAULT_SUFFIX");
 methodVisitor.visitLdcInsn(".xhtml .view.xml .jsp");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "DefaultSuffix", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -419,7 +419,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("JavaxFacesConfigFiles");
 methodVisitor.visitInsn(ICONST_4);
-methodVisitor.visitLdcInsn("javax.faces.CONFIG_FILES");
+methodVisitor.visitLdcInsn("jakarta.faces.CONFIG_FILES");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "JavaxFacesConfigFiles", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -427,7 +427,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("JavaxFacesProjectStage");
 methodVisitor.visitInsn(ICONST_5);
-methodVisitor.visitLdcInsn("javax.faces.PROJECT_STAGE");
+methodVisitor.visitLdcInsn("jakarta.faces.PROJECT_STAGE");
 methodVisitor.visitLdcInsn("Production");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "JavaxFacesProjectStage", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -435,7 +435,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("AlternateLifecycleId");
 methodVisitor.visitIntInsn(BIPUSH, 6);
-methodVisitor.visitLdcInsn("javax.faces.LIFECYCLE_ID");
+methodVisitor.visitLdcInsn("jakarta.faces.LIFECYCLE_ID");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "AlternateLifecycleId", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -443,7 +443,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("ResourceExcludes");
 methodVisitor.visitIntInsn(BIPUSH, 7);
-methodVisitor.visitLdcInsn("javax.faces.RESOURCE_EXCLUDES");
+methodVisitor.visitLdcInsn("jakarta.faces.RESOURCE_EXCLUDES");
 methodVisitor.visitLdcInsn(".class .jsp .jspx .properties .xhtml .groovy");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "ResourceExcludes", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -527,7 +527,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsBufferSize");
 methodVisitor.visitIntInsn(BIPUSH, 17);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_BUFFER_SIZE");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_BUFFER_SIZE");
 methodVisitor.visitLdcInsn("1024");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsBufferSize", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -613,7 +613,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsDefaultRefreshPeriod");
 methodVisitor.visitIntInsn(BIPUSH, 27);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_REFRESH_PERIOD");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_REFRESH_PERIOD");
 methodVisitor.visitLdcInsn("2");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsDefaultRefreshPeriod", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -635,7 +635,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsResourceResolver");
 methodVisitor.visitIntInsn(BIPUSH, 29);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_RESOURCE_RESOLVER");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_RESOURCE_RESOLVER");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsResourceResolver", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -657,7 +657,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsViewMappings");
 methodVisitor.visitIntInsn(BIPUSH, 31);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_VIEW_MAPPINGS");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_VIEW_MAPPINGS");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsViewMappings", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -679,7 +679,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsLibraries");
 methodVisitor.visitIntInsn(BIPUSH, 33);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_LIBRARIES");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_LIBRARIES");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsLibraries", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -701,7 +701,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsDecorators");
 methodVisitor.visitIntInsn(BIPUSH, 35);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_DECORATORS");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_DECORATORS");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FaceletsDecorators", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -731,7 +731,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("ValidateEmptyFields");
 methodVisitor.visitIntInsn(BIPUSH, 38);
-methodVisitor.visitLdcInsn("javax.faces.VALIDATE_EMPTY_FIELDS");
+methodVisitor.visitLdcInsn("jakarta.faces.VALIDATE_EMPTY_FIELDS");
 methodVisitor.visitLdcInsn("auto");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "ValidateEmptyFields", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -739,7 +739,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FullStateSavingViewIds");
 methodVisitor.visitIntInsn(BIPUSH, 39);
-methodVisitor.visitLdcInsn("javax.faces.FULL_STATE_SAVING_VIEW_IDS");
+methodVisitor.visitLdcInsn("jakarta.faces.FULL_STATE_SAVING_VIEW_IDS");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "FullStateSavingViewIds", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -771,7 +771,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("ClientWindowMode");
 methodVisitor.visitIntInsn(BIPUSH, 43);
-methodVisitor.visitLdcInsn("javax.faces.CLIENT_WINDOW_MODE");
+methodVisitor.visitLdcInsn("jakarta.faces.CLIENT_WINDOW_MODE");
 methodVisitor.visitLdcInsn("none");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "ClientWindowMode", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -779,7 +779,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("WebAppResourcesDirectory");
 methodVisitor.visitIntInsn(BIPUSH, 44);
-methodVisitor.visitLdcInsn("javax.faces.WEBAPP_RESOURCES_DIRECTORY");
+methodVisitor.visitLdcInsn("jakarta.faces.WEBAPP_RESOURCES_DIRECTORY");
 methodVisitor.visitLdcInsn("/resources");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "WebAppResourcesDirectory", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");
@@ -787,7 +787,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$WebConte
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("WebAppContractsDirectory");
 methodVisitor.visitIntInsn(BIPUSH, 45);
-methodVisitor.visitLdcInsn("javax.faces.WEBAPP_CONTRACTS_DIRECTORY");
+methodVisitor.visitLdcInsn("jakarta.faces.WEBAPP_CONTRACTS_DIRECTORY");
 methodVisitor.visitLdcInsn("/contracts");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "WebAppContractsDirectory", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");

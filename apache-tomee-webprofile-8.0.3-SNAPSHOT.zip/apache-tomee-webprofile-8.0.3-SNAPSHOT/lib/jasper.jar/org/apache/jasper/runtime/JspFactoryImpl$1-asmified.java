@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$1", null, "javax/servlet/jsp/JspEngineInfo", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$1", null, "jakarta/servlet/jsp/JspEngineInfo", null);
 
-classWriter.visitOuterClass("org/apache/jasper/runtime/JspFactoryImpl", "getEngineInfo", "()Ljavax/servlet/jsp/JspEngineInfo;");
+classWriter.visitOuterClass("org/apache/jasper/runtime/JspFactoryImpl", "getEngineInfo", "()Ljakarta/servlet/jsp/JspEngineInfo;");
 
 classWriter.visitInnerClass("org/apache/jasper/runtime/JspFactoryImpl$1", null, null, 0);
 
@@ -39,7 +39,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$1", "this$0", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspEngineInfo", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspEngineInfo", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

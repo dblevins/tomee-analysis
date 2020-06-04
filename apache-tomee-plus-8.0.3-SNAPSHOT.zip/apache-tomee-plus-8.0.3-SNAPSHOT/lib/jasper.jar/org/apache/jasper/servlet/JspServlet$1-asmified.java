@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/servlet/JspServlet$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/jasper/servlet/JspServlet", "init", "(Ljavax/servlet/ServletConfig;)V");
+classWriter.visitOuterClass("org/apache/jasper/servlet/JspServlet", "init", "(Ljakarta/servlet/ServletConfig;)V");
 
 classWriter.visitInnerClass("org/apache/jasper/servlet/JspServlet$1", null, null, 0);
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Object;", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Object;", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/servlet/JspServlet$1", "this$0", "Lorg/apache/jasper/servlet/JspServlet;");
@@ -55,7 +55,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/servlet/JspServlet$1", "this$0", "Lorg/apache/jasper/servlet/JspServlet;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/servlet/JspServlet", "access$000", "(Lorg/apache/jasper/servlet/JspServlet;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/servlet/JspServlet", "access$100", "(Lorg/apache/jasper/servlet/JspServlet;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/servlet/JspServlet", "access$100", "(Lorg/apache/jasper/servlet/JspServlet;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);

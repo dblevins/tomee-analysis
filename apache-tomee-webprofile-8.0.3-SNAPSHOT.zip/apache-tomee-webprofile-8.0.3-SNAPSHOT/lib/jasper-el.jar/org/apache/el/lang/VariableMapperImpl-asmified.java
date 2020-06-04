@@ -22,21 +22,21 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/lang/VariableMapperImpl", null, "javax/el/VariableMapper", new String[] { "java/io/Externalizable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/lang/VariableMapperImpl", null, "jakarta/el/VariableMapper", new String[] { "java/io/Externalizable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "vars", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "vars", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/VariableMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/VariableMapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -47,19 +47,19 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/VariableMapperImpl", "vars", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -68,7 +68,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/VariableMapperImpl", "vars", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -77,7 +77,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/VariableMapperImpl", 
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

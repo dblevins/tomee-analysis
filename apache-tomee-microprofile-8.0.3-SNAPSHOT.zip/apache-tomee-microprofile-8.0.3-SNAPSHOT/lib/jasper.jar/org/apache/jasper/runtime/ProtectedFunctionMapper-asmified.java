@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/jasper/runtime/ProtectedFunctionMapper", null, "javax/el/FunctionMapper", new String[] { "javax/servlet/jsp/el/FunctionMapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/jasper/runtime/ProtectedFunctionMapper", null, "jakarta/el/FunctionMapper", new String[] { "jakarta/servlet/jsp/el/FunctionMapper" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "fnmap", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/reflect/Method;>;", null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/ProtectedFunctionMapper", "fnmap", "Ljava/util/HashMap;");

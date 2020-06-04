@@ -25,19 +25,19 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/webbeans/spi/TransactionService", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransaction", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransaction", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getUserTransaction", "()Ljavax/transaction/UserTransaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getUserTransaction", "()Ljakarta/transaction/UserTransaction;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "registerTransactionSynchronization", "(Ljavax/enterprise/event/TransactionPhase;Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;)V", "(Ljavax/enterprise/event/TransactionPhase;Ljavax/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;Ljava/lang/Object;)V", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "registerTransactionSynchronization", "(Ljakarta/enterprise/event/TransactionPhase;Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;)V", "(Ljakarta/enterprise/event/TransactionPhase;Ljakarta/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;Ljava/lang/Object;)V", new String[] { "java/lang/Exception" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

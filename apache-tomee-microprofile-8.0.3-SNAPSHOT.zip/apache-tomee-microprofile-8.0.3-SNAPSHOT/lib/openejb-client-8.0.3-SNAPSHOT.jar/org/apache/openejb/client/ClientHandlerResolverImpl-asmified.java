@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/ClientHandlerResolverImpl", null, "java/lang/Object", new String[] { "javax/xml/ws/handler/HandlerResolver" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/ClientHandlerResolverImpl", null, "java/lang/Object", new String[] { "jakarta/xml/ws/handler/HandlerResolver" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handlerChains", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/client/HandlerChainMetaData;>;", null);
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handlerInstances", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/client/ClientInjectionProcessor<Ljavax/xml/ws/handler/Handler;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handlerInstances", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/client/ClientInjectionProcessor<Ljakarta/xml/ws/handler/Handler;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -127,7 +127,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "buildHandlers", "(Ljavax/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "buildHandlers", "(Ljakarta/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -150,7 +150,7 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildHandlers", "(Ljavax/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List;", "(Ljavax/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildHandlers", "(Ljakarta/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List;", "(Ljakarta/xml/ws/handler/PortInfo;Lorg/apache/openejb/client/HandlerChainMetaData;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -160,20 +160,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/HandlerChainMetaData", "getServiceNamePattern", "()Ljavax/xml/namespace/QName;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchServiceName", "(Ljavax/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchServiceName", "(Ljakarta/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/HandlerChainMetaData", "getPortNamePattern", "()Ljavax/xml/namespace/QName;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchPortName", "(Ljavax/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchPortName", "(Ljakarta/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/HandlerChainMetaData", "getProtocolBindings", "()Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchBinding", "(Ljavax/xml/ws/handler/PortInfo;Ljava/util/List;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "matchBinding", "(Ljakarta/xml/ws/handler/PortInfo;Ljava/util/List;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitLabel(label3);
@@ -209,7 +209,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/HandlerMetaData", "getHandlerClass", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/handler/Handler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/handler/Handler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "asSubclass", "(Ljava/lang/Class;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/client/ClientInjectionProcessor");
@@ -232,7 +232,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ClientInjectionProcessor", "postConstruct", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ClientInjectionProcessor", "getInstance", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/Handler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/Handler");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 8);
@@ -247,13 +247,13 @@ methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/ws/handler/PortInfo", "org/apache/openejb/client/HandlerChainMetaData", "java/util/List", "java/util/Iterator", "org/apache/openejb/client/HandlerMetaData"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "jakarta/xml/ws/handler/PortInfo", "org/apache/openejb/client/HandlerChainMetaData", "java/util/List", "java/util/Iterator", "org/apache/openejb/client/HandlerMetaData"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 6);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Failed to instantiate handler");
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -266,7 +266,7 @@ methodVisitor.visitMaxs(7, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchServiceName", "(Ljavax/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchServiceName", "(Ljakarta/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -278,9 +278,9 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl"});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getServiceName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getServiceName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/ws/handler/PortInfo", "javax/xml/namespace/QName"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "jakarta/xml/ws/handler/PortInfo", "javax/xml/namespace/QName"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/namespace/QName"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "match", "(Ljavax/xml/namespace/QName;Ljavax/xml/namespace/QName;)Z", false);
 methodVisitor.visitInsn(IRETURN);
@@ -288,7 +288,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchPortName", "(Ljavax/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchPortName", "(Ljakarta/xml/ws/handler/PortInfo;Ljavax/xml/namespace/QName;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -300,9 +300,9 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl"});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getPortName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getPortName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/ws/handler/PortInfo", "javax/xml/namespace/QName"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "jakarta/xml/ws/handler/PortInfo", "javax/xml/namespace/QName"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/namespace/QName"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "match", "(Ljavax/xml/namespace/QName;Ljavax/xml/namespace/QName;)Z", false);
 methodVisitor.visitInsn(IRETURN);
@@ -310,7 +310,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchBinding", "(Ljavax/xml/ws/handler/PortInfo;Ljava/util/List;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "matchBinding", "(Ljakarta/xml/ws/handler/PortInfo;Ljava/util/List;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -322,9 +322,9 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl"});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getBindingID", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getBindingID", "()Ljava/lang/String;", true);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "javax/xml/ws/handler/PortInfo", "java/util/List"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "jakarta/xml/ws/handler/PortInfo", "java/util/List"}, 2, new Object[] {"org/apache/openejb/client/ClientHandlerResolverImpl", "java/lang/String"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientHandlerResolverImpl", "match", "(Ljava/lang/String;Ljava/util/List;)Z", false);
 methodVisitor.visitInsn(IRETURN);
@@ -499,7 +499,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "sortHandlers", "(Ljava/util/List;)Ljava/util/List;", "(Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "sortHandlers", "(Ljava/util/List;)Ljava/util/List;", "(Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -521,21 +521,21 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/Handler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/Handler");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/ws/handler/LogicalHandler");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/ws/handler/LogicalHandler");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/LogicalHandler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/LogicalHandler");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/ws/handler/Handler"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/ws/handler/Handler"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);

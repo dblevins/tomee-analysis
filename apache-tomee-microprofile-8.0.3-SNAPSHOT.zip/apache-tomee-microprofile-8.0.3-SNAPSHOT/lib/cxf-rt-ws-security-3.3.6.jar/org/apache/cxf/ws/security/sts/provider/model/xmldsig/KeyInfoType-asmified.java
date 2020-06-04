@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/ws/security/sts/provider/model/xmldsig/KeyInfoType", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "KeyInfoType");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -42,62 +42,62 @@ annotationVisitor0.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "content", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Object;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementRefs;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementRefs;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "KeyName");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "KeyValue");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "RetrievalMethod");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "X509Data");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "PGPData");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "SPKIData");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "MgmtData");
 annotationVisitor2.visit("namespace", "http://www.w3.org/2000/09/xmldsig#");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
@@ -106,11 +106,11 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlMixed;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlMixed;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAnyElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAnyElement;", true);
 annotationVisitor0.visit("lax", Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }
@@ -119,21 +119,21 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "id", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAttribute;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAttribute;", true);
 annotationVisitor0.visit("name", "Id");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlID;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlID;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchemaType;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchemaType;", true);
 annotationVisitor0.visit("name", "ID");
 annotationVisitor0.visitEnd();
 }

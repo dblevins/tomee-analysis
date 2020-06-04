@@ -54,7 +54,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/sdo/helper/jaxb/
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/jaxb/JAXBList", "jaxbValueStore", "Lorg/eclipse/persistence/sdo/helper/jaxb/JAXBValueStore;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/jaxb/JAXBValueStore", "getJAXBHelperContext", "()Lorg/eclipse/persistence/sdo/helper/jaxb/JAXBHelperContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/jaxb/JAXBHelperContext", "getJAXBContext", "()Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/jaxb/JAXBHelperContext", "getJAXBContext", "()Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jaxb/JAXBContext");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "managementContex
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectorName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectorName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,11 +41,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbean", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "byClientIdName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "byClientIdName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "byAddressName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "byAddressName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "populateUserName
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/TransportConnector;Lorg/apache/activemq/transport/Transport;Lorg/apache/activemq/broker/Broker;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/broker/jmx/ManagementContext;Ljavax/management/ObjectName;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/TransportConnector;Lorg/apache/activemq/transport/Transport;Lorg/apache/activemq/broker/Broker;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/thread/TaskRunnerFactory;Lorg/apache/activemq/broker/jmx/ManagementContext;Ljakarta/management/ObjectName;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -67,7 +67,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "connectorName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "connectorName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/broker/jmx/ConnectionView");
 methodVisitor.visitInsn(DUP);
@@ -91,14 +91,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("remoteAddress");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/transport/Transport", "getRemoteAddress", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "registerMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "registerMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedTransportConnection", "org/apache/activemq/broker/TransportConnector", "org/apache/activemq/transport/Transport", "org/apache/activemq/broker/Broker", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/broker/jmx/ManagementContext", "javax/management/ObjectName"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/activemq/broker/jmx/ManagedTransportConnection", "org/apache/activemq/broker/TransportConnector", "org/apache/activemq/transport/Transport", "org/apache/activemq/broker/Broker", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/thread/TaskRunnerFactory", "org/apache/activemq/broker/jmx/ManagementContext", "jakarta/management/ObjectName"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
@@ -121,18 +121,18 @@ methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
-methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byAddressName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label1);
@@ -178,18 +178,18 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("clientId");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "registerMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "byClientIdName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "registerMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -198,7 +198,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerMBean", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerMBean", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -213,7 +213,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTr
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "mbean", "Lorg/apache/activemq/broker/jmx/ConnectionViewMBean;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -234,7 +234,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterMBean", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterMBean", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -247,7 +247,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -268,7 +268,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createObjectName", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -276,10 +276,10 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "connectorName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/ManagedTransportConnection", "connectorName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionViewByType", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createConnectionViewByType", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

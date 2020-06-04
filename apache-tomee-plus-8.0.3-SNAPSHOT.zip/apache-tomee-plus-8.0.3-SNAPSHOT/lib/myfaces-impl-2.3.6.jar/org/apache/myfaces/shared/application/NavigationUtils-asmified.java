@@ -36,7 +36,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEvaluatedNavigationParameters", "(Ljavax/faces/context/FacesContext;Ljava/util/Map;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEvaluatedNavigationParameters", "(Ljakarta/faces/context/FacesContext;Ljava/util/Map;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -105,7 +105,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/application/NavigationUtils", "_evaluateValueExpressions", "(Ljavax/faces/context/FacesContext;Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/application/NavigationUtils", "_evaluateValueExpressions", "(Ljakarta/faces/context/FacesContext;Ljava/util/List;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 Label label7 = new Label();
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "_evaluateValueExpressions", "(Ljavax/faces/context/FacesContext;Ljava/util/List;)Ljava/util/List;", "(Ljavax/faces/context/FacesContext;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "_evaluateValueExpressions", "(Ljakarta/faces/context/FacesContext;Ljava/util/List;)Ljava/util/List;", "(Ljakarta/faces/context/FacesContext;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -165,11 +165,11 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/applicati
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "evaluateExpressionGet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "evaluateExpressionGet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label2);

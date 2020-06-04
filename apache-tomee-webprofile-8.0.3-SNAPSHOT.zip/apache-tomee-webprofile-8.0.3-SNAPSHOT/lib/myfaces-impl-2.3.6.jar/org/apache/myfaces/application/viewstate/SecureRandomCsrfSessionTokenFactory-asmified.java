@@ -33,16 +33,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "length", "I", nu
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/CsrfSessionTokenFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_LENGTH");
 methodVisitor.visitIntInsn(BIPUSH, 16);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getIntegerInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;I)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getIntegerInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;I)I", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "length", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/viewstate/SessionIdGenerator");
@@ -55,9 +55,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "length", "I");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SessionIdGenerator", "setSessionIdLength", "(I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_CLASS");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -67,11 +67,11 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SessionIdGenerator", "setSecureRandomClass", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "javax/faces/context/FacesContext", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "jakarta/faces/context/FacesContext", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_PROVIDER");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -83,9 +83,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/vie
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_ALGORITM");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label2 = new Label();
@@ -101,7 +101,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateKey", "(Ljavax/faces/context/FacesContext;)[B", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateKey", "(Ljakarta/faces/context/FacesContext;)[B", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "length", "I");
@@ -117,14 +117,14 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCryptographicallyStrongTokenFromSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCryptographicallyStrongTokenFromSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "generateKey", "(Ljavax/faces/context/FacesContext;)[B", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "generateKey", "(Ljakarta/faces/context/FacesContext;)[B", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/bind/DatatypeConverter", "printHexBinary", "([B)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/DatatypeConverter", "printHexBinary", "([B)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

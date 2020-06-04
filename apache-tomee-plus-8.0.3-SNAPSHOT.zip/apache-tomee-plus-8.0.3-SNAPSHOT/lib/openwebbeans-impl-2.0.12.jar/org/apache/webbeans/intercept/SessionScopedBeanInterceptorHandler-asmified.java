@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "cachedInstances", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/HashMap<Ljavax/enterprise/inject/spi/Bean<*>;Ljava/lang/Object;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "cachedInstances", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/HashMap<Ljakarta/enterprise/inject/spi/Bean<*>;Ljava/lang/Object;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,12 +45,12 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean;)V", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean;)V", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -76,7 +76,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/HashMap"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/SessionScopedBeanInterceptorHandler", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/SessionScopedBeanInterceptorHandler", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -87,7 +87,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/Norm
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/SessionScopedBeanInterceptorHandler", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/SessionScopedBeanInterceptorHandler", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

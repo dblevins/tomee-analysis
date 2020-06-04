@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/spi/TransactionService", null, "java/lang/Object", new String[] { "org/apache/openejb/spi/Service" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

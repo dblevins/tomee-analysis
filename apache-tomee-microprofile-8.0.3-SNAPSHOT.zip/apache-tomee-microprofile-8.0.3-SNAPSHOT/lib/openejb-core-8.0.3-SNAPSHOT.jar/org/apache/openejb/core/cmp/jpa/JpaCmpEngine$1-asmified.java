@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/jpa/JpaCmpEngine$1", "Ljava/lang/ThreadLocal<Ljava/util/Set<Ljavax/ejb/EntityBean;>;>;", "java/lang/ThreadLocal", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/jpa/JpaCmpEngine$1", "Ljava/lang/ThreadLocal<Ljava/util/Set<Ljakarta/ejb/EntityBean;>;>;", "java/lang/ThreadLocal", null);
 
 classWriter.visitOuterClass("org/apache/openejb/core/cmp/jpa/JpaCmpEngine", null, null);
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initialValue", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/ejb/EntityBean;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initialValue", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/ejb/EntityBean;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);

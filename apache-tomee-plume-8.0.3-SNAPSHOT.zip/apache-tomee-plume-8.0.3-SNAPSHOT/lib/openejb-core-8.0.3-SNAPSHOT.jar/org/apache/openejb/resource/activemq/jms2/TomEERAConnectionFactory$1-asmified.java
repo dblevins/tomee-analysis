@@ -28,7 +28,7 @@ classWriter.visitOuterClass("org/apache/openejb/resource/activemq/jms2/TomEERACo
 
 classWriter.visitInnerClass("org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/resource/spi/TransactionSupport$TransactionSupportLevel", "javax/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "jakarta/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I", null, null);
@@ -49,14 +49,14 @@ Label label6 = new Label();
 Label label7 = new Label();
 Label label8 = new Label();
 methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/NoSuchFieldError");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "values", "()[Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "values", "()[Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitIntInsn(NEWARRAY, T_INT);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "XATransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "XATransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label1);
@@ -67,8 +67,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "NoTransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "NoTransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label4);
@@ -79,8 +79,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "LocalTransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "LocalTransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label7);

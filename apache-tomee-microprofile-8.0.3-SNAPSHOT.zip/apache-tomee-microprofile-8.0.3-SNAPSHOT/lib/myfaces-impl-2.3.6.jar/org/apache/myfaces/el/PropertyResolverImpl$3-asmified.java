@@ -63,31 +63,31 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Boolean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Boolean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$3", "this$0", "Lorg/apache/myfaces/el/PropertyResolverImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELResolver", "()Ljavax/el/ELResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELResolver", "()Ljakarta/el/ELResolver;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$3", "this$0", "Lorg/apache/myfaces/el/PropertyResolverImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$3", "val$base", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$3", "val$property", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELResolver", "isReadOnly", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELResolver", "isReadOnly", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)Z", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl$3", "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Boolean;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl$3", "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

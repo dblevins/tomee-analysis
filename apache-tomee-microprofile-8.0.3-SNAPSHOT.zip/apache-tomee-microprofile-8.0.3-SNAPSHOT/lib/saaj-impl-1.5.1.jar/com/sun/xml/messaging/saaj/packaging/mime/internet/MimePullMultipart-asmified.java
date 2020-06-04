@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mm", "Lorg/jvnet/mimepull/MI
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataSource", "Ljavax/activation/DataSource;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataSource", "Ljakarta/activation/DataSource;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "soapPart", "Lorg/jvnet/mimep
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", null, new String[] { "com/sun/xml/messaging/saaj/packaging/mime/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", null, new String[] { "com/sun/xml/messaging/saaj/packaging/mime/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart", "<init>", "()V", false);
@@ -68,7 +68,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "mm", "Lorg/jvnet/mimepull/MIMEMessage;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljakarta/activation/DataSource;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "contType", "Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;");
@@ -88,13 +88,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "contType", "Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "javax/activation/DataSource", "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "jakarta/activation/DataSource", "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "contType", "Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;");
@@ -102,7 +102,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljakarta/activation/DataSource;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "contType", "Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;");
@@ -155,8 +155,8 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "dataSource", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart", "in", "Ljava/io/InputStream;");
 methodVisitor.visitTypeInsn(NEW, "org/jvnet/mimepull/MIMEConfig");
 methodVisitor.visitInsn(DUP);

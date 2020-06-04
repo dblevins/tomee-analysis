@@ -96,7 +96,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;Ljava/util/Map;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;Ljava/util/Map;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -114,7 +114,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 8);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/Constants", "ATTRIBUTE_EVALUATION_EXCEPTION", "Ljava/lang/String;");
 methodVisitor.visitInsn(ICONST_4);
@@ -154,13 +154,13 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/text/MessageFormat", "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ELException", "getRootCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(8, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -170,13 +170,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/Evaluator", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;Ljava/util/Map;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/Evaluator", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;Ljava/util/Map;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parseAndRender", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parseAndRender", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -190,7 +190,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/Constants", "ATTRIBUTE_PARSE_EXCEPTION", "Ljava/lang/String;");
 methodVisitor.visitInsn(ICONST_3);
@@ -216,7 +216,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ELException", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/text/MessageFormat", "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(8, 2);
 methodVisitor.visitEnd();

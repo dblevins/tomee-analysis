@@ -51,11 +51,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "jobOperatorQ
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStepExecutionsForJobExecution", "(J)Ljava/util/List;", "(J)Ljava/util/List<Ljavax/batch/runtime/StepExecution;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStepExecutionsForJobExecution", "(J)Ljava/util/List;", "(J)Ljava/util/List<Ljakarta/batch/runtime/StepExecution;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateBatchStatusOnly", "(JLjavax/batch/runtime/BatchStatus;Ljava/sql/Timestamp;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateBatchStatusOnly", "(JLjakarta/batch/runtime/BatchStatus;Ljava/sql/Timestamp;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -63,7 +63,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "markJobStart
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateWithFinalExecutionStatusesAndTimestamps", "(JLjavax/batch/runtime/BatchStatus;Ljava/lang/String;Ljava/sql/Timestamp;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "updateWithFinalExecutionStatusesAndTimestamps", "(JLjakarta/batch/runtime/BatchStatus;Ljava/lang/String;Ljava/sql/Timestamp;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "jobOperatorG
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameters", "(J)Ljava/util/Properties;", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameters", "(J)Ljava/util/Properties;", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitEnd();
 }
 {
@@ -87,15 +87,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobStatus
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobInstanceIdByExecutionId", "(J)J", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobInstanceIdByExecutionId", "(J)J", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createJobInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/batch/runtime/JobInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createJobInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/batch/runtime/JobInstance;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createJobExecution", "(Ljavax/batch/runtime/JobInstance;Ljava/util/Properties;Ljavax/batch/runtime/BatchStatus;)Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createJobExecution", "(Ljakarta/batch/runtime/JobInstance;Ljava/util/Properties;Ljakarta/batch/runtime/BatchStatus;)Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -143,15 +143,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMostRecen
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSubJobInstance", "(Ljava/lang/String;)Ljavax/batch/runtime/JobInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSubJobInstance", "(Ljava/lang/String;)Ljakarta/batch/runtime/JobInstance;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createFlowInSplitExecution", "(Ljavax/batch/runtime/JobInstance;Ljavax/batch/runtime/BatchStatus;)Lorg/apache/batchee/container/impl/jobinstance/RuntimeFlowInSplitExecution;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createFlowInSplitExecution", "(Ljakarta/batch/runtime/JobInstance;Ljakarta/batch/runtime/BatchStatus;)Lorg/apache/batchee/container/impl/jobinstance/RuntimeFlowInSplitExecution;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStepExecutionByStepExecutionId", "(J)Ljavax/batch/runtime/StepExecution;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStepExecutionByStepExecutionId", "(J)Ljakarta/batch/runtime/StepExecution;", null, null);
 methodVisitor.visitEnd();
 }
 {

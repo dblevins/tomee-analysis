@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/rt/core/IfTag", null, "javax/servlet/jsp/jstl/core/ConditionalTagSupport", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/rt/core/IfTag", null, "jakarta/servlet/jsp/jstl/core/ConditionalTagSupport", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "test", "Z", null, null);
@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/ConditionalTagSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/ConditionalTagSupport", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/rt/core/IfTag", "init", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -43,7 +43,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/ConditionalTagSupport", "release", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/ConditionalTagSupport", "release", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/rt/core/IfTag", "init", "()V", false);
 methodVisitor.visitInsn(RETURN);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl", new String[] { "javax/ws/rs/container/ContainerRequestContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl", new String[] { "jakarta/ws/rs/container/ContainerRequestContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ENDPOINT_ADDRESS_PROPERTY", "Ljava/lang/String;", null, "org.apache.cxf.transport.endpoint.address");
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequest", "()Ljavax/ws/rs/core/Request;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequest", "()Ljakarta/ws/rs/core/Request;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/RequestImpl");
 methodVisitor.visitInsn(DUP);
@@ -71,13 +71,13 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSecurityContext", "()Ljavax/ws/rs/core/SecurityContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSecurityContext", "()Ljakarta/ws/rs/core/SecurityContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "m", "Lorg/apache/cxf/message/Message;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/SecurityContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/SecurityContext;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/SecurityContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/SecurityContext");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -90,16 +90,16 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/Security
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/SecurityContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/SecurityContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/ws/rs/core/SecurityContext"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/ws/rs/core/SecurityContext"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUriInfo", "()Ljavax/ws/rs/core/UriInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUriInfo", "()Ljakarta/ws/rs/core/UriInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/UriInfoImpl");
 methodVisitor.visitInsn(DUP);
@@ -118,8 +118,8 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -143,7 +143,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOE
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toInternalServerErrorException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -163,14 +163,14 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "h", "Ljavax/ws/rs/core/HttpHeaders;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "h", "Ljakarta/ws/rs/core/HttpHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "m", "Lorg/apache/cxf/message/Message;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableStringHeaders", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableStringHeaders", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -274,11 +274,11 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletRequest");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletRequest");
 methodVisitor.visitLdcInsn("org.apache.cxf.transport.endpoint.address");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -286,13 +286,13 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSecurityContext", "(Ljavax/ws/rs/core/SecurityContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSecurityContext", "(Ljakarta/ws/rs/core/SecurityContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "checkContext", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl", "m", "Lorg/apache/cxf/message/Message;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/SecurityContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/SecurityContext;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);

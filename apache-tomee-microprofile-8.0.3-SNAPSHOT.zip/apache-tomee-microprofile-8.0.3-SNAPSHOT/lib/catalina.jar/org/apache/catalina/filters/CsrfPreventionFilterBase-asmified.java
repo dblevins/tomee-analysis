@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljavax/servlet/FilterConfig;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljakarta/servlet/FilterConfig;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -107,7 +107,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ReflectiveOperationException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/FilterBase", "init", "(Ljavax/servlet/FilterConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/FilterBase", "init", "(Ljakarta/servlet/FilterConfig;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/CsrfPreventionFilterBase", "randomClass", "Ljava/lang/String;");
@@ -129,7 +129,7 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/ReflectiveOperationException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/CsrfPreventionFilterBase", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("csrfPrevention.invalidRandomClass");
@@ -142,7 +142,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/CsrfPreventi
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ATHROW);
@@ -267,13 +267,13 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getRequestedPath", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getRequestedPath", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getServletPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getServletPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getPathInfo", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getPathInfo", "()Ljava/lang/String;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -282,7 +282,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getPathInfo", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getPathInfo", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);

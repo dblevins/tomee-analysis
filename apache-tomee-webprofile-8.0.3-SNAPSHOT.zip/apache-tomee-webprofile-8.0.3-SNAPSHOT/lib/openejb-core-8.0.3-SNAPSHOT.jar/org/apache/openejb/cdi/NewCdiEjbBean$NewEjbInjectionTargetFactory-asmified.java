@@ -27,28 +27,28 @@ classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/cdi/NewCdiEjb
 classWriter.visitInnerClass("org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory", "org/apache/openejb/cdi/NewCdiEjbBean", "NewEjbInjectionTargetFactory", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;", "Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;", "Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/InjectionTarget;)V", "(Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/InjectionTarget;)V", "(Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/InjectionTargetFactoryImpl", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/InjectionTargetFactoryImpl", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInjectionTarget", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/InjectionTarget;", "(Ljavax/enterprise/inject/spi/Bean<TT;>;)Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInjectionTarget", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/InjectionTarget;", "(Ljakarta/enterprise/inject/spi/Bean<TT;>;)Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

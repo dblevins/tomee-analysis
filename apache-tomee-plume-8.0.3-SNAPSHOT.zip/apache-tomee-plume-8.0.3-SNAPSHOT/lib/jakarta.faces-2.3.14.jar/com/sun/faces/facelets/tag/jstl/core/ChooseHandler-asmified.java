@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "when", "[Lcom/su
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/TagConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/TagHandlerImpl", "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/TagHandlerImpl", "<init>", "(Ljakarta/faces/view/facelets/TagConfig;)V", false);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/co
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/facelets/tag/jstl/core/ChooseHandler", "javax/faces/view/facelets/TagConfig", "java/util/List", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/facelets/tag/jstl/core/ChooseHandler", "jakarta/faces/view/facelets/TagConfig", "java/util/List", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label1 = new Label();
@@ -65,12 +65,12 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/TagException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/TagException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jstl/core/ChooseHandler", "tag", "Ljavax/faces/view/facelets/Tag;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jstl/core/ChooseHandler", "tag", "Ljakarta/faces/view/facelets/Tag;");
 methodVisitor.visitLdcInsn("Choose Tag must have one or more When Tags");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagException", "<init>", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/TagException", "<init>", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -128,7 +128,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jstl/core/Cho
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseWhenHandler", "isTestTrue", "(Ljavax/faces/view/facelets/FaceletContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseWhenHandler", "isTestTrue", "(Ljakarta/faces/view/facelets/FaceletContext;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -137,7 +137,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseWhenHandler", "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseWhenHandler", "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -153,7 +153,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/jstl/core/ChooseHandler", "otherwise", "Lcom/sun/faces/facelets/tag/jstl/core/ChooseOtherwiseHandler;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseOtherwiseHandler", "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jstl/core/ChooseOtherwiseHandler", "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

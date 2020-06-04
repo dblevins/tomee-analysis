@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "varInfoNames", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "taglibsMap", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "taglibsMap", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -153,7 +153,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "deferredSyntaxAllowedAsLiter
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expressionFactory", "Ljavax/el/ExpressionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expressionFactory", "Ljakarta/el/ExpressionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -254,8 +254,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/PageInfo", "deferredSyntaxAllowedAsLiteral", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/el/ExpressionFactory", "newInstance", "()Ljavax/el/ExpressionFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/PageInfo", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/el/ExpressionFactory", "newInstance", "()Ljakarta/el/ExpressionFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/PageInfo", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/PageInfo", "trimDirectiveWhitespaces", "Z");
@@ -678,7 +678,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTaglib", "(Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTaglib", "(Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/PageInfo", "taglibsMap", "Ljava/util/HashMap;");
@@ -691,19 +691,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglib", "(Ljava/lang/String;)Ljavax/servlet/jsp/tagext/TagLibraryInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglib", "(Ljava/lang/String;)Ljakarta/servlet/jsp/tagext/TagLibraryInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/PageInfo", "taglibsMap", "Ljava/util/HashMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/jsp/tagext/TagLibraryInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/jsp/tagext/TagLibraryInfo");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglibs", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljavax/servlet/jsp/tagext/TagLibraryInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglibs", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljakarta/servlet/jsp/tagext/TagLibraryInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/PageInfo", "taglibsMap", "Ljava/util/HashMap;");
@@ -1568,10 +1568,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/PageInfo", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/PageInfo", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

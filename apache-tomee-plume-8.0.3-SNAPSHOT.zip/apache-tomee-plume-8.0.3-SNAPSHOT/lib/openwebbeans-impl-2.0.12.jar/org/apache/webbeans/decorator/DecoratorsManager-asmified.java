@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "additionalDecoratorClasses",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "webBeansDecorators", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/enterprise/inject/spi/Decorator<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "webBeansDecorators", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/enterprise/inject/spi/Decorator<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -288,7 +288,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/decorator/Decorator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/decorator/Decorator;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAnnotationPresent", "(Ljava/lang/Class;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
@@ -347,7 +347,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecorators", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/Decorator<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecorators", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/Decorator<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/decorator/DecoratorsManager", "webBeansDecorators", "Ljava/util/Set;");
@@ -356,7 +356,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDecorator", "(Ljavax/enterprise/inject/spi/Decorator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDecorator", "(Ljakarta/enterprise/inject/spi/Decorator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/decorator/DecoratorsManager", "webBeansDecorators", "Ljava/util/Set;");
@@ -377,7 +377,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/decorator/DecoratorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getBeanManagerImpl", "()Lorg/apache/webbeans/container/BeanManagerImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addPassivationInfo", "(Ljavax/enterprise/inject/spi/Bean;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addPassivationInfo", "(Ljakarta/enterprise/inject/spi/Bean;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -385,7 +385,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "findDeployedWebBeansDecorator", "(Ljava/util/Set;[Ljava/lang/annotation/Annotation;)Ljava/util/Set;", "(Ljava/util/Set<Ljava/lang/reflect/Type;>;[Ljava/lang/annotation/Annotation;)Ljava/util/Set<Ljavax/enterprise/inject/spi/Decorator<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "findDeployedWebBeansDecorator", "(Ljava/util/Set;[Ljava/lang/annotation/Annotation;)Ljava/util/Set;", "(Ljava/util/Set<Ljava/lang/reflect/Type;>;[Ljava/lang/annotation/Annotation;)Ljava/util/Set<Ljakarta/enterprise/inject/spi/Decorator<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
@@ -453,13 +453,13 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Decorator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Decorator");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/decorator/DecoratorsManager", "isDecoratorMatch", "(Ljavax/enterprise/inject/spi/Decorator;Ljava/util/Set;Ljava/util/Set;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/decorator/DecoratorsManager", "isDecoratorMatch", "(Ljakarta/enterprise/inject/spi/Decorator;Ljava/util/Set;Ljava/util/Set;)Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -477,12 +477,12 @@ methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isDecoratorMatch", "(Ljavax/enterprise/inject/spi/Decorator;Ljava/util/Set;Ljava/util/Set;)Z", "(Ljavax/enterprise/inject/spi/Decorator<*>;Ljava/util/Set<Ljava/lang/reflect/Type;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isDecoratorMatch", "(Ljakarta/enterprise/inject/spi/Decorator;Ljava/util/Set;Ljava/util/Set;)Z", "(Ljakarta/enterprise/inject/spi/Decorator<*>;Ljava/util/Set<Ljava/lang/reflect/Type;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/decorator/DecoratorsManager", "apiTypesMatchDelegateType", "(Ljavax/enterprise/inject/spi/Decorator;Ljava/util/Set;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/decorator/DecoratorsManager", "apiTypesMatchDelegateType", "(Ljakarta/enterprise/inject/spi/Decorator;Ljava/util/Set;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitInsn(ICONST_0);
@@ -490,7 +490,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Decorator", "getDelegateQualifiers", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Decorator", "getDelegateQualifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label1 = new Label();
@@ -557,7 +557,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "apiTypesMatchDelegateType", "(Ljavax/enterprise/inject/spi/Decorator;Ljava/util/Set;)Z", "(Ljavax/enterprise/inject/spi/Decorator<*>;Ljava/util/Set<Ljava/lang/reflect/Type;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "apiTypesMatchDelegateType", "(Ljakarta/enterprise/inject/spi/Decorator;Ljava/util/Set;)Z", "(Ljakarta/enterprise/inject/spi/Decorator<*>;Ljava/util/Set<Ljava/lang/reflect/Type;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -578,7 +578,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Decorator", "getDelegateType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Decorator", "getDelegateType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -626,13 +626,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPriorityClazzDecorator", "(Ljava/lang/Class;Ljavax/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljavax/annotation/Priority;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPriorityClazzDecorator", "(Ljava/lang/Class;Ljakarta/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljakarta/annotation/Priority;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/decorator/DecoratorsManager", "priorityDecorators", "Lorg/apache/webbeans/util/PriorityClasses;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/PriorityClasses", "add", "(Ljava/lang/Class;Ljavax/annotation/Priority;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/PriorityClasses", "add", "(Ljava/lang/Class;Ljakarta/annotation/Priority;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

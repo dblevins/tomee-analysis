@@ -22,30 +22,30 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/FacesELContext", null, "javax/el/ELContext", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/FacesELContext", null, "jakarta/el/ELContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolver", "Ljavax/el/ELResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolver", "Ljakarta/el/ELResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_functionMapper", "Ljavax/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_functionMapper", "Ljakarta/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableMapper", "Ljavax/el/VariableMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableMapper", "Ljakarta/el/VariableMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/ELResolver;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/ELResolver;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ELContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ELContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_elResolver", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_elResolver", "Ljakarta/el/ELResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/context/FacesContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/context/FacesContext;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/FacesELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
@@ -53,48 +53,48 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljavax/el/VariableMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljakarta/el/VariableMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_variableMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_variableMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableMapper", "(Ljavax/el/VariableMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableMapper", "(Ljakarta/el/VariableMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_variableMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_variableMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljavax/el/FunctionMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_functionMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_functionMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionMapper", "(Ljavax/el/FunctionMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionMapper", "(Ljakarta/el/FunctionMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_functionMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_functionMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_elResolver", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/FacesELContext", "_elResolver", "Ljakarta/el/ELResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

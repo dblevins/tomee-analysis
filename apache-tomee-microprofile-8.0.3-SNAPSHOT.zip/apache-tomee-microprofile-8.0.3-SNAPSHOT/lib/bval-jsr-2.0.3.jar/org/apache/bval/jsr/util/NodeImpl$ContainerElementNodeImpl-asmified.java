@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", null, "org/apache/bval/jsr/util/NodeImpl", new String[] { "javax/validation/Path$ContainerElementNode" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", null, "org/apache/bval/jsr/util/NodeImpl", new String[] { "jakarta/validation/Path$ContainerElementNode" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", "org/apache/bval/jsr/util/NodeImpl", "ContainerElementNodeImpl", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/validation/Path$ContainerElementNode", "javax/validation/Path", "ContainerElementNode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$ContainerElementNode", "jakarta/validation/Path", "ContainerElementNode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -61,37 +61,37 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/validation/Path$Node;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/validation/Path$Node;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl", "<init>", "(Ljavax/validation/Path$Node;)V", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/Path$ContainerElementNode;"));
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl", "<init>", "(Ljakarta/validation/Path$Node;)V", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/Path$ContainerElementNode;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/NodeImpl", "access$000", "(Ljava/lang/Class;Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", "lambda$new$0", "(Ljavax/validation/Path$ContainerElementNode;)V", false), Type.getType("(Ljavax/validation/Path$ContainerElementNode;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", "lambda$new$0", "(Ljakarta/validation/Path$ContainerElementNode;)V", false), Type.getType("(Ljakarta/validation/Path$ContainerElementNode;)V")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "ifPresent", "(Ljava/util/function/Consumer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKind", "()Ljavax/validation/ElementKind;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKind", "()Ljakarta/validation/ElementKind;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ElementKind", "CONTAINER_ELEMENT", "Ljavax/validation/ElementKind;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ElementKind", "CONTAINER_ELEMENT", "Ljakarta/validation/ElementKind;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/validation/Path$ContainerElementNode;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/validation/Path$ContainerElementNode;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Path$ContainerElementNode", "getContainerClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Path$ContainerElementNode", "getContainerClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Path$ContainerElementNode", "getTypeArgumentIndex", "()Ljava/lang/Integer;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Path$ContainerElementNode", "getTypeArgumentIndex", "()Ljava/lang/Integer;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl", "inContainer", "(Ljava/lang/Class;Ljava/lang/Integer;)Lorg/apache/bval/jsr/util/NodeImpl;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

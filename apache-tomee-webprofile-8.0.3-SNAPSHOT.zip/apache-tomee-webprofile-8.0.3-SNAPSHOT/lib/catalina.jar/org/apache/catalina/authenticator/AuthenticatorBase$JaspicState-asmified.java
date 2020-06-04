@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/catalina/authenticator/AuthenticatorBase
 classWriter.visitInnerClass("org/apache/catalina/authenticator/AuthenticatorBase$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "messageInfo", "Ljavax/security/auth/message/MessageInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "messageInfo", "Ljakarta/security/auth/message/MessageInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "serverAuthContext", "Ljavax/security/auth/message/config/ServerAuthContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "serverAuthContext", "Ljakarta/security/auth/message/config/ServerAuthContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,10 +43,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/AuthenticatorBase$JaspicState", "messageInfo", "Ljavax/security/auth/message/MessageInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/AuthenticatorBase$JaspicState", "messageInfo", "Ljakarta/security/auth/message/MessageInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/AuthenticatorBase$JaspicState", "serverAuthContext", "Ljavax/security/auth/message/config/ServerAuthContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/AuthenticatorBase$JaspicState", "serverAuthContext", "Ljakarta/security/auth/message/config/ServerAuthContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

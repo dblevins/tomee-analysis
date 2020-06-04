@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", null, "java/lang/Object", new String[] { "javax/websocket/SendHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", null, "java/lang/Object", new String[] { "jakarta/websocket/SendHandler" });
 
 classWriter.visitInnerClass("org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateMachine", "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "StateMachine", ACC_PRIVATE | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "StateUpdateSendHandler", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljavax/websocket/SendHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljakarta/websocket/SendHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "stateMachine", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/websocket/SendHandler;Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateMachine;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/websocket/SendHandler;Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateMachine;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "handler", "Ljavax/websocket/SendHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "handler", "Ljakarta/websocket/SendHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "stateMachine", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateMachine;");
@@ -52,10 +52,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljavax/websocket/SendResult;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljakarta/websocket/SendResult;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/SendResult", "isOK", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/SendResult", "isOK", "()Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -65,9 +65,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemo
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "handler", "Ljavax/websocket/SendHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateUpdateSendHandler", "handler", "Ljakarta/websocket/SendHandler;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/SendHandler", "onResult", "(Ljavax/websocket/SendResult;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/SendHandler", "onResult", "(Ljakarta/websocket/SendResult;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

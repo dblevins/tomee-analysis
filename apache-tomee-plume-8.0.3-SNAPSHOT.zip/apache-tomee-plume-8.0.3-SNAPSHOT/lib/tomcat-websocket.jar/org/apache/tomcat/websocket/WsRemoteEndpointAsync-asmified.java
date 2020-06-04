@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointAsync", null, "org/apache/tomcat/websocket/WsRemoteEndpointBase", new String[] { "javax/websocket/RemoteEndpoint$Async" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointAsync", null, "org/apache/tomcat/websocket/WsRemoteEndpointBase", new String[] { "jakarta/websocket/RemoteEndpoint$Async" });
 
-classWriter.visitInnerClass("javax/websocket/RemoteEndpoint$Async", "javax/websocket/RemoteEndpoint", "Async", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/RemoteEndpoint$Async", "jakarta/websocket/RemoteEndpoint", "Async", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;)V", null, null);
@@ -58,13 +58,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendText", "(Ljava/lang/String;Ljavax/websocket/SendHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendText", "(Ljava/lang/String;Ljakarta/websocket/SendHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointAsync", "base", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendStringByCompletion", "(Ljava/lang/String;Ljavax/websocket/SendHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendStringByCompletion", "(Ljava/lang/String;Ljakarta/websocket/SendHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -92,13 +92,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendBinary", "(Ljava/nio/ByteBuffer;Ljavax/websocket/SendHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendBinary", "(Ljava/nio/ByteBuffer;Ljakarta/websocket/SendHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointAsync", "base", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendBytesByCompletion", "(Ljava/nio/ByteBuffer;Ljavax/websocket/SendHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendBytesByCompletion", "(Ljava/nio/ByteBuffer;Ljakarta/websocket/SendHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -115,13 +115,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendObject", "(Ljava/lang/Object;Ljavax/websocket/SendHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendObject", "(Ljava/lang/Object;Ljakarta/websocket/SendHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointAsync", "base", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendObjectByCompletion", "(Ljava/lang/Object;Ljavax/websocket/SendHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "sendObjectByCompletion", "(Ljava/lang/Object;Ljakarta/websocket/SendHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

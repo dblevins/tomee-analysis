@@ -1290,7 +1290,7 @@ methodVisitor.visitLdcInsn("Send failed for: {}, missing producer state for: {}"
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "warn", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/JMSException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/JMSException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1303,7 +1303,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" with invalid (null) producer state");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/state/ProducerState"}, 0, null);
@@ -1421,7 +1421,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/region/Queue", "systemUsage", "Lorg/apache/activemq/usage/SystemUsage;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/usage/SystemUsage", "isSendFailIfNoSpace", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label11);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/ResourceAllocationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/ResourceAllocationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1440,7 +1440,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(". See http://activemq.apache.org/producer-flow-control.html for more info");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -2101,7 +2101,7 @@ methodVisitor.visitMaxs(9, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "checkUsage", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/command/Message;)V", null, new String[] { "javax/jms/ResourceAllocationException", "java/io/IOException", "java/lang/InterruptedException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "checkUsage", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/command/Message;)V", null, new String[] { "jakarta/jms/ResourceAllocationException", "java/io/IOException", "java/lang/InterruptedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/Message", "isPersistent", "()Z", false);
@@ -5145,7 +5145,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createSelectorFilter", "(Ljava/lang/String;)Lorg/apache/activemq/broker/region/MessageReferenceFilter;", null, new String[] { "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createSelectorFilter", "(Ljava/lang/String;)Lorg/apache/activemq/broker/region/MessageReferenceFilter;", null, new String[] { "jakarta/jms/InvalidSelectorException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -7202,7 +7202,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label23 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label23);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/JMSException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/JMSException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -7229,7 +7229,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/MessageDispatchNotification", "getConsumerId", "()Lorg/apache/activemq/command/ConsumerId;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label23);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -7239,7 +7239,7 @@ methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMatchingSubscription", "(Lorg/apache/activemq/command/MessageDispatchNotification;)Lorg/apache/activemq/broker/region/Subscription;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMatchingSubscription", "(Lorg/apache/activemq/command/MessageDispatchNotification;)Lorg/apache/activemq/broker/region/Subscription;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/tag/BeanPropertyTagRule", null, "javax/faces/view/facelets/MetaRule", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/tag/BeanPropertyTagRule", null, "jakarta/faces/view/facelets/MetaRule", null);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/tag/BeanPropertyTagRule$DynamicPropertyMetadata", "com/sun/faces/facelets/tag/BeanPropertyTagRule", "DynamicPropertyMetadata", ACC_FINAL | ACC_STATIC);
 
@@ -36,30 +36,30 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/MetaRule", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/MetaRule", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyRule", "(Ljava/lang/String;Ljavax/faces/view/facelets/TagAttribute;Ljavax/faces/view/facelets/MetadataTarget;)Ljavax/faces/view/facelets/Metadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyRule", "(Ljava/lang/String;Ljakarta/faces/view/facelets/TagAttribute;Ljakarta/faces/view/facelets/MetadataTarget;)Ljakarta/faces/view/facelets/Metadata;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/MetadataTarget", "getWriteMethod", "(Ljava/lang/String;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/MetadataTarget", "getWriteMethod", "(Ljava/lang/String;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "isLiteral", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "isLiteral", "()Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/BeanPropertyTagRule$LiteralPropertyMetadata");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/BeanPropertyTagRule$LiteralPropertyMetadata", "<init>", "(Ljava/lang/reflect/Method;Ljavax/faces/view/facelets/TagAttribute;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/BeanPropertyTagRule$LiteralPropertyMetadata", "<init>", "(Ljava/lang/reflect/Method;Ljakarta/faces/view/facelets/TagAttribute;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/reflect/Method"}, 0, null);
@@ -67,7 +67,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/BeanPropertyTagRule
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/BeanPropertyTagRule$DynamicPropertyMetadata", "<init>", "(Ljava/lang/reflect/Method;Ljavax/faces/view/facelets/TagAttribute;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/BeanPropertyTagRule$DynamicPropertyMetadata", "<init>", "(Ljava/lang/reflect/Method;Ljakarta/faces/view/facelets/TagAttribute;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

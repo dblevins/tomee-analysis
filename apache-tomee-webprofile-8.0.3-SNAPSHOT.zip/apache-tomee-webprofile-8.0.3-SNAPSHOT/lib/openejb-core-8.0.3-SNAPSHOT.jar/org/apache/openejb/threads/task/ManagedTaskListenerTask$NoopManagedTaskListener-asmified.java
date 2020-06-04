@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/threads/task/ManagedTaskListenerTask$NoopManagedTaskListener", null, "java/lang/Object", new String[] { "javax/enterprise/concurrent/ManagedTaskListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/threads/task/ManagedTaskListenerTask$NoopManagedTaskListener", null, "java/lang/Object", new String[] { "jakarta/enterprise/concurrent/ManagedTaskListener" });
 
 classWriter.visitInnerClass("org/apache/openejb/threads/task/ManagedTaskListenerTask$NoopManagedTaskListener", "org/apache/openejb/threads/task/ManagedTaskListenerTask", "NoopManagedTaskListener", ACC_PRIVATE | ACC_STATIC);
 
@@ -40,28 +40,28 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskSubmitted", "(Ljava/util/concurrent/Future;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", "(Ljava/util/concurrent/Future<*>;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskSubmitted", "(Ljava/util/concurrent/Future;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", "(Ljava/util/concurrent/Future<*>;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskAborted", "(Ljava/util/concurrent/Future;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", "(Ljava/util/concurrent/Future<*>;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskAborted", "(Ljava/util/concurrent/Future;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", "(Ljava/util/concurrent/Future<*>;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskDone", "(Ljava/util/concurrent/Future;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", "(Ljava/util/concurrent/Future<*>;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskDone", "(Ljava/util/concurrent/Future;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", "(Ljava/util/concurrent/Future<*>;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;Ljava/lang/Throwable;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskStarting", "(Ljava/util/concurrent/Future;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", "(Ljava/util/concurrent/Future<*>;Ljavax/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "taskStarting", "(Ljava/util/concurrent/Future;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", "(Ljava/util/concurrent/Future<*>;Ljakarta/enterprise/concurrent/ManagedExecutorService;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);

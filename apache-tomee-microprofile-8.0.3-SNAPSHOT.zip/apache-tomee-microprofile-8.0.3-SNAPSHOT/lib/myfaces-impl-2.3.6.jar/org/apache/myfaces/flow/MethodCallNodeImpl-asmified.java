@@ -22,26 +22,26 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/MethodCallNodeImpl", null, "javax/faces/flow/MethodCallNode", new String[] { "org/apache/myfaces/flow/Freezable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/MethodCallNodeImpl", null, "jakarta/faces/flow/MethodCallNode", new String[] { "org/apache/myfaces/flow/Freezable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_id", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_methodExpression", "Ljavax/el/MethodExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_methodExpression", "Ljakarta/el/MethodExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_outcome", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_outcome", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_parameters", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/flow/Parameter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_parameters", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/flow/Parameter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_unmodifiableParameters", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/flow/Parameter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_unmodifiableParameters", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/flow/Parameter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,7 +52,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/MethodCallNode", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/MethodCallNode", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_id", "Ljava/lang/String;");
@@ -71,25 +71,25 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodExpression", "()Ljavax/el/MethodExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodExpression", "()Ljakarta/el/MethodExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_methodExpression", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_methodExpression", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutcome", "()Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutcome", "()Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_outcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_outcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/flow/Parameter;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/flow/Parameter;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_unmodifiableParameters", "Ljava/util/List;");
@@ -98,7 +98,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addParameter", "(Ljavax/faces/flow/Parameter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addParameter", "(Ljakarta/faces/flow/Parameter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/MethodCallNodeImpl", "checkInitialized", "()V", false);
@@ -139,7 +139,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/flow/Parameter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/flow/Parameter");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/myfaces/flow/Freezable");
@@ -176,25 +176,25 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMethodExpression", "(Ljavax/el/MethodExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMethodExpression", "(Ljakarta/el/MethodExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/MethodCallNodeImpl", "checkInitialized", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_methodExpression", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_methodExpression", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOutcome", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOutcome", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/MethodCallNodeImpl", "checkInitialized", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_outcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/MethodCallNodeImpl", "_outcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -74,43 +74,43 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isDeferredNa
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "storeStaticViewStructureMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "storeStaticViewStructureMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveStaticViewStructureMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewStructureMetadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveStaticViewStructureMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewStructureMetadata;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushStaticStructureView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushStaticStructureView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushPartialStructureView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushPartialStructureView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "popStaticOrPartialStructureView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "popStaticOrPartialStructureView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewEntry;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isWorthToRecycleThisView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isWorthToRecycleThisView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Z", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "storeDynamicViewStructureMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "storeDynamicViewStructureMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveDynamicViewStructureMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)Lorg/apache/myfaces/view/facelets/pool/ViewStructureMetadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retrieveDynamicViewStructureMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)Lorg/apache/myfaces/view/facelets/pool/ViewStructureMetadata;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushDynamicStructureView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pushDynamicStructureView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "popDynamicStructureView", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)Lorg/apache/myfaces/view/facelets/pool/ViewEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "popDynamicStructureView", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;Lorg/apache/myfaces/view/facelets/tag/jsf/FaceletState;)Lorg/apache/myfaces/view/facelets/pool/ViewEntry;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

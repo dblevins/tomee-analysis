@@ -54,7 +54,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "()Ljava/lang/Long;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -69,7 +69,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getValue", "()Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

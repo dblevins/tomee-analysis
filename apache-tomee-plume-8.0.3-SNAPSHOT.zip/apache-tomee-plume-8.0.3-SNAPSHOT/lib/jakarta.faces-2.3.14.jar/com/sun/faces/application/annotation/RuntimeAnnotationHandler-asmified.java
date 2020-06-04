@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/application/annotation/RuntimeAnnotationHandler", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "apply", "(Ljavax/faces/context/FacesContext;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "apply", "(Ljakarta/faces/context/FacesContext;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

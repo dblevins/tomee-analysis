@@ -337,7 +337,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "d
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/UserDatabase;)Ljavax/management/DynamicMBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/UserDatabase;)Ljakarta/management/DynamicMBean;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label12 = new Label();
@@ -391,7 +391,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "d
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/Role"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/Role;)Ljavax/management/DynamicMBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/Role;)Ljakarta/management/DynamicMBean;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);
 Label label15 = new Label();
@@ -448,7 +448,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "d
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/Group"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/Group;)Ljavax/management/DynamicMBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/Group;)Ljakarta/management/DynamicMBean;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label7);
 Label label18 = new Label();
@@ -505,7 +505,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "d
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/User"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/User;)Ljavax/management/DynamicMBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/MBeanUtils", "createMBean", "(Lorg/apache/catalina/User;)Ljakarta/management/DynamicMBean;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label10);
 Label label21 = new Label();

@@ -1957,7 +1957,7 @@ methodVisitor.visitJumpInsn(IFEQ, label14);
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/EJBLocalObject;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/EJBLocalObject;"));
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getReturnType", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);

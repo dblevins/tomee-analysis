@@ -123,77 +123,77 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerQueue", "(Ljavax/jms/Queue;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerQueue", "(Ljakarta/jms/Queue;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setProducerQueue", "(Ljavax/jms/Queue;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setProducerQueue", "(Ljakarta/jms/Queue;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerQueue", "()Ljavax/jms/Queue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerQueue", "()Ljakarta/jms/Queue;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getProducerQueue", "()Ljavax/jms/Queue;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getProducerQueue", "()Ljakarta/jms/Queue;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerConnection", "(Ljavax/jms/QueueConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerConnection", "(Ljakarta/jms/QueueConnection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setProducerConnection", "(Ljavax/jms/QueueConnection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setProducerConnection", "(Ljakarta/jms/QueueConnection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerConnection", "()Ljavax/jms/QueueConnection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerConnection", "()Ljakarta/jms/QueueConnection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getProducerConnection", "()Ljavax/jms/QueueConnection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getProducerConnection", "()Ljakarta/jms/QueueConnection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerQueue", "(Ljavax/jms/Queue;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerQueue", "(Ljakarta/jms/Queue;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setConsumerQueue", "(Ljavax/jms/Queue;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setConsumerQueue", "(Ljakarta/jms/Queue;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerQueue", "()Ljavax/jms/Queue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerQueue", "()Ljakarta/jms/Queue;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getConsumerQueue", "()Ljavax/jms/Queue;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getConsumerQueue", "()Ljakarta/jms/Queue;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerConnection", "(Ljavax/jms/QueueConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerConnection", "(Ljakarta/jms/QueueConnection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setConsumerConnection", "(Ljavax/jms/QueueConnection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "setConsumerConnection", "(Ljakarta/jms/QueueConnection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerConnection", "()Ljavax/jms/QueueConnection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerConnection", "()Ljakarta/jms/QueueConnection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getConsumerConnection", "()Ljavax/jms/QueueConnection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/QueueBridge", "getConsumerConnection", "()Ljakarta/jms/QueueConnection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

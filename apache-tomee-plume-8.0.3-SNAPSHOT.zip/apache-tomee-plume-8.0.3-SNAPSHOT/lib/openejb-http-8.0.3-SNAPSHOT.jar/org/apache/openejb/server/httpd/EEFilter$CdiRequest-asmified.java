@@ -35,12 +35,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webBeansContext"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/server/httpd/EEFilter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/server/httpd/EEFilter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "<init>", "(Ljavax/servlet/http/HttpServletRequest;Lorg/apache/openejb/server/httpd/EEFilter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/openejb/server/httpd/EEFilter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/EEFilter$CdiRequest", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -49,33 +49,33 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startAsync", "()Ljavax/servlet/AsyncContext;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startAsync", "()Ljakarta/servlet/AsyncContext;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "startAsync", "()Ljavax/servlet/AsyncContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "startAsync", "()Ljakarta/servlet/AsyncContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$CdiRequest", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "<init>", "(Ljavax/servlet/AsyncContext;Ljavax/servlet/ServletRequest;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "<init>", "(Ljakarta/servlet/AsyncContext;Ljakarta/servlet/ServletRequest;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startAsync", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljavax/servlet/AsyncContext;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startAsync", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)Ljakarta/servlet/AsyncContext;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "startAsync", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljavax/servlet/AsyncContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$NoCdiRequest", "startAsync", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)Ljakarta/servlet/AsyncContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$CdiRequest", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "<init>", "(Ljavax/servlet/AsyncContext;Ljavax/servlet/ServletRequest;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "<init>", "(Ljakarta/servlet/AsyncContext;Ljakarta/servlet/ServletRequest;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

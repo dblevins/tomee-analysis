@@ -34,17 +34,17 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatorFactory", "()Ljavax/validation/ValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatorFactory", "()Ljakarta/validation/ValidatorFactory;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "validatorFactory", "()Ljavax/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "validatorFactory", "()Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidator", "()Ljavax/validation/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidator", "()Ljakarta/validation/Validator;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "validator", "()Ljavax/validation/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "validator", "()Ljakarta/validation/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

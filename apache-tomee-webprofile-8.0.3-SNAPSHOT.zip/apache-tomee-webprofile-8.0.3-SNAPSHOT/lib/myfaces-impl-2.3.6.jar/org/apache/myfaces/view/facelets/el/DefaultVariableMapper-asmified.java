@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", null, "org/apache/myfaces/view/facelets/el/VariableMapperBase", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_vars", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_vars", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_templateContext", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_delegate", "Ljavax/el/VariableMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_delegate", "Ljakarta/el/VariableMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -64,19 +64,19 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/VariableMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/VariableMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/el/VariableMapperBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -88,10 +88,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_vars", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/el/ValueExpression"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/el/ValueExpression"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -114,7 +114,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/Defa
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/PageContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_trackResolveVariables", "Z");
@@ -129,7 +129,7 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/myfaces/view/facelets/el/Cac
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/view/facelets/el/CacheableValueExpressionWrapper");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/CacheableValueExpressionWrapper", "getWrapped", "()Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/el/CacheableValueExpressionWrapper", "getWrapped", "()Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
@@ -160,7 +160,7 @@ methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_templateContext", "Lorg/apache/myfaces/view/facelets/TemplateContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/TemplateContext", "getParameter", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/TemplateContext", "getParameter", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_trackResolveVariables", "Z");
@@ -196,13 +196,13 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/Defa
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljakarta/el/VariableMapper;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_delegate", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label1);
@@ -221,7 +221,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "_vars", "Ljava/util/Map;");
@@ -239,7 +239,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/Defa
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

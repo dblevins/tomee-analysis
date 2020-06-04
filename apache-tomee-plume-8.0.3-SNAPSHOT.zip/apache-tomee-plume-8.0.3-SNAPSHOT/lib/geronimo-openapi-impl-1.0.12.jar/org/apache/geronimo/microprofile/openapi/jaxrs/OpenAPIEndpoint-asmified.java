@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/jaxrs/OpenAPIEndpoint", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "openapi");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status", "javax/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status", "jakarta/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -47,14 +47,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Lorg/eclipse/microprofile/openapi/models/OpenAPI;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/WebApplicationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/WebApplicationException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/Response$Status", "BAD_REQUEST", "Ljavax/ws/rs/core/Response$Status;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/WebApplicationException", "<init>", "(Ljavax/ws/rs/core/Response$Status;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/Response$Status", "BAD_REQUEST", "Ljakarta/ws/rs/core/Response$Status;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/WebApplicationException", "<init>", "(Ljakarta/ws/rs/core/Response$Status;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

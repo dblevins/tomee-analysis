@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DEFA
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toThrowable", "(Ljavax/ws/rs/core/Response;)Ljava/lang/Throwable;", "(Ljavax/ws/rs/core/Response;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toThrowable", "(Ljakarta/ws/rs/core/Response;)Ljava/lang/Throwable;", "(Ljakarta/ws/rs/core/Response;)TT;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handles", "(ILjavax/ws/rs/core/MultivaluedMap;)Z", "(ILjavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handles", "(ILjakarta/ws/rs/core/MultivaluedMap;)Z", "(ILjakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitIntInsn(SIPUSH, 400);
@@ -58,10 +58,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPriority", "()I", null, 
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/annotation/Priority;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/annotation/Priority;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/annotation/Priority", "value", "()I", true), Type.getType("(Ljavax/annotation/Priority;)Ljava/lang/Integer;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/annotation/Priority", "value", "()I", true), Type.getType("(Ljakarta/annotation/Priority;)Ljava/lang/Integer;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitIntInsn(SIPUSH, 5000);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);

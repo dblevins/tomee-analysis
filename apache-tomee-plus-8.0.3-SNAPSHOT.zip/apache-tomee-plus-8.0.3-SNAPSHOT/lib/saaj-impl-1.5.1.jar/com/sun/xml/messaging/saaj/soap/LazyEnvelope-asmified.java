@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/messaging/saaj/soap/LazyEnvelope", null, "java/lang/Object", new String[] { "com/sun/xml/messaging/saaj/soap/Envelope" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadReader", "()Ljavax/xml/stream/XMLStreamReader;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadReader", "()Ljavax/xml/stream/XMLStreamReader;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
@@ -33,19 +33,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isLazy", "()
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeTo", "(Ljavax/xml/stream/XMLStreamWriter;)V", null, new String[] { "javax/xml/stream/XMLStreamException", "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeTo", "(Ljavax/xml/stream/XMLStreamWriter;)V", null, new String[] { "javax/xml/stream/XMLStreamException", "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadQName", "()Ljavax/xml/namespace/QName;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadQName", "()Ljavax/xml/namespace/QName;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadAttributeValue", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadAttributeValue", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadAttributeValue", "(Ljavax/xml/namespace/QName;)Ljava/lang/String;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPayloadAttributeValue", "(Ljavax/xml/namespace/QName;)Ljava/lang/String;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

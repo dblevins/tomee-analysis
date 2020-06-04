@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/startup/FailedContext", null, "org/apache/catalina/util/LifecycleMBeanBase", new String[] { "org/apache/catalina/Context" });
 
-classWriter.visitInnerClass("javax/servlet/ServletRegistration$Dynamic", "javax/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/ServletRegistration$Dynamic", "jakarta/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
@@ -1017,7 +1017,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -1609,7 +1609,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireRequestInitEvent", "(Ljavax/servlet/ServletRequest;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireRequestInitEvent", "(Ljakarta/servlet/ServletRequest;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -1617,7 +1617,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireRequestDestroyEvent", "(Ljavax/servlet/ServletRequest;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireRequestDestroyEvent", "(Ljakarta/servlet/ServletRequest;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -1670,7 +1670,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljavax/servlet/descriptor/JspConfigDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljakarta/servlet/descriptor/JspConfigDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -1678,14 +1678,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJspConfigDescriptor", "(Ljavax/servlet/descriptor/JspConfigDescriptor;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJspConfigDescriptor", "(Ljakarta/servlet/descriptor/JspConfigDescriptor;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServletContainerInitializer", "(Ljavax/servlet/ServletContainerInitializer;Ljava/util/Set;)V", "(Ljavax/servlet/ServletContainerInitializer;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServletContainerInitializer", "(Ljakarta/servlet/ServletContainerInitializer;Ljava/util/Set;)V", "(Ljakarta/servlet/ServletContainerInitializer;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
@@ -1708,7 +1708,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServletSecurity", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServletSecurity", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

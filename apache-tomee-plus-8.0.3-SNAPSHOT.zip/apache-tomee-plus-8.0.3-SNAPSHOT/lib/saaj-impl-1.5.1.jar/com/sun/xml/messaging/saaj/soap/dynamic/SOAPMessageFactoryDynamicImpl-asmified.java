@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljavax/xml/soap/SOAPMessage;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljakarta/xml/soap/SOAPMessage;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);

@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/f
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$TagDecoratorExecutor", "org/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator", "TagDecoratorExecutor", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "decorate", "(Ljavax/faces/view/facelets/Tag;Ljavax/faces/view/facelets/TagAttributes;)Ljavax/faces/view/facelets/Tag;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "decorate", "(Ljakarta/faces/view/facelets/Tag;Ljakarta/faces/view/facelets/TagAttributes;)Ljakarta/faces/view/facelets/Tag;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

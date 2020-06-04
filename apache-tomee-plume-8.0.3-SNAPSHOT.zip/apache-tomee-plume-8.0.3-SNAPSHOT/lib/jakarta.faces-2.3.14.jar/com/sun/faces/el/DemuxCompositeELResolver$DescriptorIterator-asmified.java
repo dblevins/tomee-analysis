@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/el/DemuxCompositeE
 classWriter.visitInnerClass("com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "com/sun/faces/el/DemuxCompositeELResolver", "DescriptorIterator", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_context", "Ljavax/el/ELContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_context", "Ljakarta/el/ELContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_base", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_resolvers", "[Ljavax/el/ELResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_resolvers", "[Ljakarta/el/ELResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,19 +51,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_currIterator", "Ljava/util/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/ELContext;Ljava/lang/Object;[Ljavax/el/ELResolver;I)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/ELContext;Ljava/lang/Object;[Ljakarta/el/ELResolver;I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_base", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolvers", "[Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolvers", "[Ljakarta/el/ELResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolverCount", "I");
@@ -137,15 +137,15 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolverCount", "I");
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolvers", "[Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_resolvers", "[Ljakarta/el/ELResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_currResolverIndex", "I");
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator", "_base", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELResolver", "getFeatureDescriptors", "(Ljavax/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELResolver", "getFeatureDescriptors", "(Ljakarta/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);

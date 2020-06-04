@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/network/DiscoveryNetworkConnector;Lorg/apache/activemq/broker/BrokerService;Ljavax/management/ObjectName;Lorg/apache/activemq/command/DiscoveryEvent;)V", "(Lorg/apache/activemq/broker/BrokerService;Ljavax/management/ObjectName;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/network/DiscoveryNetworkConnector;Lorg/apache/activemq/broker/BrokerService;Ljakarta/management/ObjectName;Lorg/apache/activemq/command/DiscoveryEvent;)V", "(Lorg/apache/activemq/broker/BrokerService;Ljakarta/management/ObjectName;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -49,7 +49,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/MBeanNetworkListener", "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/network/NetworkBridgeConfiguration;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/MBeanNetworkListener", "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/network/NetworkBridgeConfiguration;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();

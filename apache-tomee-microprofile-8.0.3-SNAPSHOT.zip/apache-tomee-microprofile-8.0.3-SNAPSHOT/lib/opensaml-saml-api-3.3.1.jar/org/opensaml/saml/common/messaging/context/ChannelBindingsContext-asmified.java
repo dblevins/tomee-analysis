@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/common/messag
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "channelBindings", "Ljava/util/Collection;", "Ljava/util/Collection<Lorg/opensaml/saml/ext/saml2cb/ChannelBindings;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getChannelBindings", "()Ljava/util/Collection;", "()Ljava/util/Collection<Lorg/opensaml/saml/ext/saml2cb/ChannelBindings;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {

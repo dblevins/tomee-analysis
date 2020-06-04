@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/CrossParameterD", "<P:Lorg/apache/bval/jsr/descriptor/ExecutableD<**TP;>;E:Ljava/lang/reflect/Executable;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<TP;TE;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForElement<TE;*>;>;Ljavax/validation/metadata/CrossParameterDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "javax/validation/metadata/CrossParameterDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/CrossParameterD", "<P:Lorg/apache/bval/jsr/descriptor/ExecutableD<**TP;>;E:Ljava/lang/reflect/Executable;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<TP;TE;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForElement<TE;*>;>;Ljakarta/validation/metadata/CrossParameterDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "jakarta/validation/metadata/CrossParameterDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForElement", "org/apache/bval/jsr/descriptor/MetadataReader", "ForElement", 0);
 

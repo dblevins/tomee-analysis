@@ -25,18 +25,18 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "<T::Lorg/apache/cxf/message/Message;>Lorg/apache/cxf/phase/AbstractPhaseInterceptor<TT;>;", "org/apache/cxf/phase/AbstractPhaseInterceptor", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "binding", "Ljavax/xml/ws/Binding;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "binding", "Ljakarta/xml/ws/Binding;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/xml/ws/Binding;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/xml/ws/Binding;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/phase/AbstractPhaseInterceptor", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljavax/xml/ws/Binding;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljakarta/xml/ws/Binding;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -98,8 +98,8 @@ methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/handler/HandlerChainInvoker");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljavax/xml/ws/Binding;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/Binding", "getHandlerChain", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljakarta/xml/ws/Binding;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/Binding", "getHandlerChain", "()Ljava/util/List;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "isOutbound", "(Lorg/apache/cxf/message/Message;)Z", false);
@@ -174,10 +174,10 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBinding", "()Ljavax/xml/ws/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBinding", "()Ljakarta/xml/ws/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljavax/xml/ws/Binding;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "binding", "Ljakarta/xml/ws/Binding;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

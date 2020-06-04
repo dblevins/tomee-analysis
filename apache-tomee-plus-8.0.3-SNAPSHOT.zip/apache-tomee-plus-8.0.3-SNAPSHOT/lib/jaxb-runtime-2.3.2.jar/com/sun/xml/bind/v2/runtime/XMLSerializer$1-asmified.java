@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMarshaller", "()Ljavax/xml/bind/Marshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMarshaller", "()Ljakarta/xml/bind/Marshaller;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/XMLSerializer$1", "this$0", "Lcom/sun/xml/bind/v2/runtime/XMLSerializer;");

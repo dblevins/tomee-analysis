@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaImportImpl", null, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", new String[] { "javax/wsdl/extensions/schema/SchemaImport" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaImportImpl", null, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", new String[] { "jakarta/wsdl/extensions/schema/SchemaImport" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));

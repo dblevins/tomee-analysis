@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/config/NamedEventManager", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "events", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/Class<+Ljavax/faces/event/ComponentSystemEvent;>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "events", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/Class<+Ljakarta/faces/event/ComponentSystemEvent;>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -40,34 +40,34 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/NamedEventManager", "events", "Ljava/util/HashMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("postAddToView");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostAddToViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostAddToViewEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("preRenderView");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PreRenderViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PreRenderViewEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("preRenderComponent");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PreRenderComponentEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PreRenderComponentEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("preValidate");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PreValidateEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PreValidateEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("postValidate");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostValidateEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostValidateEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("postRenderView");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostRenderViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostRenderViewEvent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/NamedEventManager", "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", "(Ljava/lang/String;Ljava/lang/Class<+Ljavax/faces/event/ComponentSystemEvent;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedEvent", "(Ljava/lang/String;Ljava/lang/Class;)V", "(Ljava/lang/String;Ljava/lang/Class<+Ljakarta/faces/event/ComponentSystemEvent;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamedEvent", "(Ljava/lang/String;)Ljava/util/Collection;", "(Ljava/lang/String;)Ljava/util/Collection<Ljava/lang/Class<+Ljavax/faces/event/ComponentSystemEvent;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamedEvent", "(Ljava/lang/String;)Ljava/util/Collection;", "(Ljava/lang/String;)Ljava/util/Collection<Ljava/lang/Class<+Ljakarta/faces/event/ComponentSystemEvent;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/NamedEventManager", "events", "Ljava/util/HashMap;");
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getFixedName", "(Ljava/lang/Class;)Ljava/lang/String;", "(Ljava/lang/Class<+Ljavax/faces/event/ComponentSystemEvent;>;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getFixedName", "(Ljava/lang/Class;)Ljava/lang/String;", "(Ljava/lang/Class<+Ljakarta/faces/event/ComponentSystemEvent;>;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);

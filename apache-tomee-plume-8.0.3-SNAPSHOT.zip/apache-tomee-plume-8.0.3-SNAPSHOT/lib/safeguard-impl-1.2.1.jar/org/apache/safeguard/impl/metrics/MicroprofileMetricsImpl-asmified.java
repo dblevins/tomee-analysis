@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/metrics/MicroprofileMetricsImpl", null, "java/lang/Object", new String[] { "org/apache/safeguard/impl/metrics/FaultToleranceMetrics" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/safeguard/impl/metrics/MicroprofileMetricsImpl$1", null, null, 0);

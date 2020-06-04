@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/dbcp2/managed/TransactionRegistry", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "caches", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/transaction/Transaction;Lorg/apache/commons/dbcp2/managed/TransactionContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "caches", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/transaction/Transaction;Lorg/apache/commons/dbcp2/managed/TransactionContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaResources", "L
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -53,7 +53,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/WeakHashMap", "<init>", 
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "xaResources", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -142,10 +142,10 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/SystemException");
 Label label3 = new Label();
 Label label4 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label2, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label3, label4, label2, "jakarta/transaction/SystemException");
 Label label5 = new Label();
 Label label6 = new Label();
 Label label7 = new Label();
@@ -156,8 +156,8 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljavax/transaction/TransactionManager;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljakarta/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -165,9 +165,9 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/transaction/Transaction"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/transaction/Transaction"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label9 = new Label();
@@ -183,7 +183,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/sql/SQLException");
 methodVisitor.visitInsn(DUP);
@@ -211,7 +211,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/commons/dbcp2/managed/TransactionCo
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionContext", "<init>", "(Lorg/apache/commons/dbcp2/managed/TransactionRegistry;Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionContext", "<init>", "(Lorg/apache/commons/dbcp2/managed/TransactionRegistry;Ljakarta/transaction/Transaction;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/managed/TransactionRegistry", "caches", "Ljava/util/Map;");
@@ -227,7 +227,7 @@ methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/commons/dbcp2/managed/TransactionRegistry", "javax/transaction/Transaction", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/commons/dbcp2/managed/TransactionRegistry", "jakarta/transaction/Transaction", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(MONITOREXIT);

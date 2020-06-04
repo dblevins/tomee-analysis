@@ -134,7 +134,7 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitLdcInsn("javax.activation");
+methodVisitor.visitLdcInsn("jakarta.activation");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/logging/Logger", "getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/LogSupport", "logger", "Ljava/util/logging/Logger;");
 methodVisitor.visitInsn(RETURN);

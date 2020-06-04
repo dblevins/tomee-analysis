@@ -22,27 +22,27 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessBeanImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/EventBase;Ljavax/enterprise/inject/spi/ProcessBean<TX;>;", "org/apache/webbeans/portable/events/EventBase", new String[] { "javax/enterprise/inject/spi/ProcessBean" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessBeanImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/EventBase;Ljakarta/enterprise/inject/spi/ProcessBean<TX;>;", "org/apache/webbeans/portable/events/EventBase", new String[] { "jakarta/enterprise/inject/spi/ProcessBean" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotated", "Ljavax/enterprise/inject/spi/Annotated;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotated", "Ljakarta/enterprise/inject/spi/Annotated;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bean", "Ljavax/enterprise/inject/spi/Bean;", "Ljavax/enterprise/inject/spi/Bean<TX;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bean", "Ljakarta/enterprise/inject/spi/Bean;", "Ljakarta/enterprise/inject/spi/Bean<TX;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/Annotated;)V", "(Ljavax/enterprise/inject/spi/Bean<TX;>;Ljavax/enterprise/inject/spi/Annotated;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/Annotated;)V", "(Ljakarta/enterprise/inject/spi/Bean<TX;>;Ljakarta/enterprise/inject/spi/Annotated;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/EventBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "annotated", "Ljavax/enterprise/inject/spi/Annotated;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "annotated", "Ljakarta/enterprise/inject/spi/Annotated;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -62,23 +62,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessBeanImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "annotated", "Ljavax/enterprise/inject/spi/Annotated;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "annotated", "Ljakarta/enterprise/inject/spi/Annotated;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBean", "()Ljavax/enterprise/inject/spi/Bean;", "()Ljavax/enterprise/inject/spi/Bean<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", "()Ljakarta/enterprise/inject/spi/Bean<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessBeanImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessBeanImpl", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

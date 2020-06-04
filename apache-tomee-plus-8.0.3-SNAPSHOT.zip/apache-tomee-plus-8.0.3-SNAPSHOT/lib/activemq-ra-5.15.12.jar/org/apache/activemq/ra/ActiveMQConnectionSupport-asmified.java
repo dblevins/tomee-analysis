@@ -68,7 +68,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -82,7 +82,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;Lorg/apache/activemq/ActiveMQConnectionFactory;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;Lorg/apache/activemq/ActiveMQConnectionFactory;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ActiveMQConnectionRequestInfo", "getUserName", "()Ljava/lang/String;", false);
@@ -93,7 +93,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQConnectionFactory", "createConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/jms/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQConnectionFactory", "createConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/jms/Connection;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/activemq/ActiveMQConnection");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -444,7 +444,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/x
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/sessions/Session", "getProject", "()Lorg/eclipse/persistence/sessions/Project;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/activation/DataHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/activation/DataHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/Project", "getClassDescriptor", "(Ljava/lang/Class;)Lorg/eclipse/persistence/descriptors/ClassDescriptor;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/oxm/XMLDescriptor");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -458,7 +458,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("DataHandler");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/XMLDescriptor", "setAlias", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/activation/DataHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/activation/DataHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/XMLDescriptor", "setJavaClass", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/xr/QueryOperation$DataHandlerInstantiationPolicy");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "Ljava/lang/Object;Ljava/security/PrivilegedAction<[Ljavax/servlet/http/Cookie;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "Ljava/lang/Object;Ljava/security/PrivilegedAction<[Ljakarta/servlet/http/Cookie;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
 classWriter.visitInnerClass("org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "org/apache/catalina/connector/RequestFacade", "GetCookiesPrivilegedAction", ACC_PRIVATE | ACC_FINAL);
 
@@ -45,12 +45,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()[Ljavax/servlet/http/Cookie;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()[Ljakarta/servlet/http/Cookie;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "this$0", "Lorg/apache/catalina/connector/RequestFacade;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/RequestFacade", "request", "Lorg/apache/catalina/connector/Request;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getCookies", "()[Ljavax/servlet/http/Cookie;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getCookies", "()[Ljakarta/servlet/http/Cookie;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -59,7 +59,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "run", "()[Ljavax/servlet/http/Cookie;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/RequestFacade$GetCookiesPrivilegedAction", "run", "()[Ljakarta/servlet/http/Cookie;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

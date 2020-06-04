@@ -49,7 +49,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/security/Cod
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBBeanValidator$2", "this$0", "Lorg/eclipse/persistence/jaxb/JAXBBeanValidator;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jaxb/JAXBBeanValidator", "access$1", "(Lorg/eclipse/persistence/jaxb/JAXBBeanValidator;)Ljavax/validation/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jaxb/JAXBBeanValidator", "access$1", "(Lorg/eclipse/persistence/jaxb/JAXBBeanValidator;)Ljakarta/validation/Validator;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getProtectionDomain", "()Ljava/security/ProtectionDomain;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/ProtectionDomain", "getCodeSource", "()Ljava/security/CodeSource;", false);

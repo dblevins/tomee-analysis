@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor$1", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor$1", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 classWriter.visitOuterClass("org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor", "handleMessage", "(Lorg/apache/cxf/message/Message;)V");
 

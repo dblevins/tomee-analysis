@@ -79,7 +79,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "readConnectionPreface", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, new String[] { "org/apache/coyote/http2/Http2Exception" });
+methodVisitor = classWriter.visitMethod(0, "readConnectionPreface", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, new String[] { "org/apache/coyote/http2/Http2Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/coyote/http2/Http2AsyncParser", "CLIENT_PREFACE_START", "[B");
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -117,7 +117,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;Lorg/apache/coyote/http2/Http2AsyncParser$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;Lorg/apache/coyote/http2/Http2AsyncParser$1;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser", "socketWrapper", "Lorg/apache/tomcat/util/net/SocketWrapperBase;");

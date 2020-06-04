@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/spi/FactoryFinderProvider", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "releaseFactories", "()V", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "releaseFactories", "()V", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitEnd();
 }
 {

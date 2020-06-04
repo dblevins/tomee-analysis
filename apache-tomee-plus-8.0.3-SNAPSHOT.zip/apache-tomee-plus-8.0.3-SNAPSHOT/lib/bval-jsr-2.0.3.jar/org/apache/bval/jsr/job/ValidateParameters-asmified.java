@@ -36,7 +36,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$CrossParameterNod
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$ParameterNodeImpl", "org/apache/bval/jsr/util/NodeImpl", "ParameterNodeImpl", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -126,7 +126,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/job/ValidateParameters$Par
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "describe", "()Ljavax/validation/metadata/ExecutableDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "describe", "()Ljakarta/validation/metadata/ExecutableDescriptor;", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/GraphContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -136,11 +136,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidatePa
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljavax/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljakarta/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters", "parameterValues", "[Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/GraphContext", "<init>", "(Lorg/apache/bval/jsr/ApacheFactoryContext;Lorg/apache/bval/jsr/util/PathImpl;Ljava/lang/Object;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/job/ValidateParameters$ParametersFrame", "<init>", "(Lorg/apache/bval/jsr/job/ValidateParameters;Ljavax/validation/metadata/ExecutableDescriptor;Lorg/apache/bval/jsr/GraphContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/job/ValidateParameters$ParametersFrame", "<init>", "(Lorg/apache/bval/jsr/job/ValidateParameters;Ljakarta/validation/metadata/ExecutableDescriptor;Lorg/apache/bval/jsr/GraphContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(10, 1);
 methodVisitor.visitEnd();
@@ -149,7 +149,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "hasWork", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "describe", "()Ljavax/validation/metadata/ExecutableDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "describe", "()Ljakarta/validation/metadata/ExecutableDescriptor;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -165,11 +165,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "describe", "()Ljavax/validation/metadata/ExecutableDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "describe", "()Ljakarta/validation/metadata/ExecutableDescriptor;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getParameterNames", "(Ljavax/validation/ParameterNameProvider;)Ljava/util/List;", "(Ljavax/validation/ParameterNameProvider;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;)Ljava/util/List;", "(Ljakarta/validation/ParameterNameProvider;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -194,19 +194,19 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/Constraint
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$Frame", "context", "Lorg/apache/bval/jsr/GraphContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/GraphContext", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ConstraintValidatorContextImpl", "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ConstraintValidatorContextImpl", "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "getRootBeanClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ConstraintValidatorContextImpl", "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ConstraintValidatorContextImpl", "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", false);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/descriptor/ConstraintD;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ConstraintDescriptor", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ConstraintDescriptor", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/descriptor/ConstraintD");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/ConstraintD", "getDeclaredOn", "()Ljava/lang/annotation/ElementType;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters", "parameterValues", "[Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/ConstraintViolationImpl", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljavax/validation/Path;Ljava/lang/Object;Ljavax/validation/metadata/ConstraintDescriptor;Ljava/lang/Class;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/ConstraintViolationImpl", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljakarta/validation/Path;Ljava/lang/Object;Ljakarta/validation/metadata/ConstraintDescriptor;Ljava/lang/Class;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(13, 5);
 methodVisitor.visitEnd();
@@ -229,7 +229,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljav
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl$ParameterNodeImpl", "<init>", "(Ljava/lang/String;I)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljavax/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljakarta/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/GraphContext");
 methodVisitor.visitInsn(DUP);
@@ -270,8 +270,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters", "validatorContext", "Lorg/apache/bval/jsr/ApacheFactoryContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "getParameterNames", "(Ljavax/validation/ParameterNameProvider;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/job/ValidateParameters", "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", null, "javax/activation/DataHandler", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", null, "jakarta/activation/DataHandler", null);
 
 classWriter.visitInnerClass("org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter", "JwsSignatureDataHandler", ACC_PRIVATE);
 
 classWriter.visitInnerClass("org/apache/cxf/rs/security/jose/jws/JwsException$Error", "org/apache/cxf/rs/security/jose/jws/JwsException", "Error", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handler", "Ljavax/activation/DataHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handler", "Ljakarta/activation/DataHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter;Ljavax/activation/DataHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter;Ljakarta/activation/DataHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -48,10 +48,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("1");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "getBytes", "()[B", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/ByteDataSource", "<init>", "([B)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -60,8 +60,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getContentType", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getContentType", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,9 +84,9 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jw
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "handler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "writeTo", "(Ljava/io/OutputStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "writeTo", "(Ljava/io/OutputStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jws/JwsOutputStream", "flush", "()V", false);
 methodVisitor.visitLabel(label1);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/MessageHandlerResult", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljavax/websocket/MessageHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljakarta/websocket/MessageHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "type", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/websocket/MessageHandler;Lorg/apache/tomcat/websocket/MessageHandlerResultType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/websocket/MessageHandler;Lorg/apache/tomcat/websocket/MessageHandlerResultType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/MessageHandlerResult", "handler", "Ljavax/websocket/MessageHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/MessageHandlerResult", "handler", "Ljakarta/websocket/MessageHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/MessageHandlerResult", "type", "Lorg/apache/tomcat/websocket/MessageHandlerResultType;");
@@ -48,10 +48,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandler", "()Ljavax/websocket/MessageHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandler", "()Ljakarta/websocket/MessageHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/MessageHandlerResult", "handler", "Ljavax/websocket/MessageHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/MessageHandlerResult", "handler", "Ljakarta/websocket/MessageHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

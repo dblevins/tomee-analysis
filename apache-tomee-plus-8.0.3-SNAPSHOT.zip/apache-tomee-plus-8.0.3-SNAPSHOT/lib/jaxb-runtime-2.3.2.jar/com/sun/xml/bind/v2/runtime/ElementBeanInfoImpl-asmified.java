@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo<Ljavax/xml/bind/JAXBElement;>;", "com/sun/xml/bind/v2/runtime/JaxBeanInfo", null);
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo<Ljakarta/xml/bind/JAXBElement;>;", "com/sun/xml/bind/v2/runtime/JaxBeanInfo", null);
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl$IntercepterLoader", "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "IntercepterLoader", ACC_PRIVATE | ACC_FINAL);
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/xml/bind/JAXBElement$GlobalScope", "javax/xml/bind/JAXBElement", "GlobalScope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/xml/bind/JAXBElement$GlobalScope", "jakarta/xml/bind/JAXBElement", "GlobalScope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/util/QNameMap$Entry", "com/sun/xml/bind/v2/util/QNameMap", "Entry", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "scope", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constructor", "Ljava/lang/reflect/Constructor;", "Ljava/lang/reflect/Constructor<+Ljavax/xml/bind/JAXBElement;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constructor", "Ljava/lang/reflect/Constructor;", "Ljava/lang/reflect/Constructor<+Ljakarta/xml/bind/JAXBElement;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -94,7 +94,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/runtime/RuntimeElementInfo", "getScope", "()Lcom/sun/xml/bind/v2/model/runtime/RuntimeClassInfo;", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement$GlobalScope;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement$GlobalScope;"));
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
@@ -113,7 +113,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Na
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -173,7 +173,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
@@ -202,20 +202,20 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementNamespaceURI", "(Ljavax/xml/bind/JAXBElement;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementNamespaceURI", "(Ljakarta/xml/bind/JAXBElement;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementLocalName", "(Ljavax/xml/bind/JAXBElement;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementLocalName", "(Ljakarta/xml/bind/JAXBElement;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
@@ -273,23 +273,23 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "createInstance", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Ljavax/xml/bind/JAXBElement;", null, new String[] { "java/lang/IllegalAccessException", "java/lang/reflect/InvocationTargetException", "java/lang/InstantiationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "createInstance", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Ljakarta/xml/bind/JAXBElement;", null, new String[] { "java/lang/IllegalAccessException", "java/lang/reflect/InvocationTargetException", "java/lang/InstantiationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "createInstanceFromValue", "(Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "createInstanceFromValue", "(Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "createInstanceFromValue", "(Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", null, new String[] { "java/lang/IllegalAccessException", "java/lang/reflect/InvocationTargetException", "java/lang/InstantiationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "createInstanceFromValue", "(Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", null, new String[] { "java/lang/IllegalAccessException", "java/lang/reflect/InvocationTargetException", "java/lang/InstantiationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "constructor", "Ljava/lang/reflect/Constructor;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "tagName", "Ljavax/xml/namespace/QName;");
@@ -298,7 +298,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/ElementBeanI
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "scope", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -311,27 +311,27 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "setValue", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "setValue", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getId", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getId", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/String");
@@ -348,7 +348,7 @@ methodVisitor.visitMaxs(1, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeBody", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeBody", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -378,32 +378,32 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeRoot", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeRoot", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeBody", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeBody", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeAttributes", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeAttributes", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeURIs", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeURIs", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getTransducer", "()Lcom/sun/xml/bind/v2/runtime/Transducer;", "()Lcom/sun/xml/bind/v2/runtime/Transducer<Ljavax/xml/bind/JAXBElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getTransducer", "()Lcom/sun/xml/bind/v2/runtime/Transducer;", "()Lcom/sun/xml/bind/v2/runtime/Transducer<Ljakarta/xml/bind/JAXBElement;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -442,9 +442,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeURIs", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeURIs", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -454,9 +454,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeRoot", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeRoot", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -466,9 +466,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeAttributes", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeAttributes", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -478,9 +478,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeBody", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "serializeBody", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -490,9 +490,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getId", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getId", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -502,9 +502,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "reset", "(Ljavax/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "reset", "(Ljakarta/xml/bind/JAXBElement;Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -514,7 +514,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "createInstance", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "createInstance", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -524,8 +524,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getElementLocalName", "(Ljavax/xml/bind/JAXBElement;)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getElementLocalName", "(Ljakarta/xml/bind/JAXBElement;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -535,8 +535,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getElementNamespaceURI", "(Ljavax/xml/bind/JAXBElement;)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl", "getElementNamespaceURI", "(Ljakarta/xml/bind/JAXBElement;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider", null, "java/lang/Object", new String[] { "javax/ws/rs/ext/ParamConverterProvider" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider", null, "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ParamConverterProvider" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -39,7 +39,7 @@ classWriter.visitInnerClass("org/apache/cxf/jaxrs/ext/search/DefaultParamConvert
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "converters", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljavax/ws/rs/ext/ParamConverter<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "converters", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljakarta/ws/rs/ext/ParamConverter<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljakarta/ws/rs/ext/ParamConverter;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljakarta/ws/rs/ext/ParamConverter<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider", "converters", "Ljava/util/Map;");
@@ -129,7 +129,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/ext/ParamConverter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/ext/ParamConverter");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/ParameterImpl", null, "javax/faces/flow/Parameter", new String[] { "org/apache/myfaces/flow/Freezable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/ParameterImpl", null, "jakarta/faces/flow/Parameter", new String[] { "org/apache/myfaces/flow/Freezable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_name", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_value", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_value", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,16 +37,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_initialized", "Z", null, nu
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/Parameter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/Parameter", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ParameterImpl", "_name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -61,10 +61,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "()Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "()Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -110,13 +110,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/ParameterImpl", "checkInitialized", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ParameterImpl", "_value", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

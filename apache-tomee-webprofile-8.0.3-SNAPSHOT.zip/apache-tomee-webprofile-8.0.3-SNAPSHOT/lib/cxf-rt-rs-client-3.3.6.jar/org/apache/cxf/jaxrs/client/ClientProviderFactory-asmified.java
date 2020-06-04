@@ -31,11 +31,11 @@ classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/ProviderFactory$Class
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clientRequestFilters", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/client/ClientRequestFilter;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clientRequestFilters", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/client/ClientRequestFilter;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clientResponseFilters", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/client/ClientResponseFilter;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clientResponseFilters", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/client/ClientResponseFilter;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "responseExceptionMappers", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rxInvokerProvider", "Ljavax/ws/rs/client/RxInvokerProvider;", "Ljavax/ws/rs/client/RxInvokerProvider<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rxInvokerProvider", "Ljakarta/ws/rs/client/RxInvokerProvider;", "Ljakarta/ws/rs/client/RxInvokerProvider<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -165,7 +165,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/jaxrs/model/ProviderInfo", "java/lang/Class"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/ClientRequestFilter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/ClientRequestFilter;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "filterContractSupported", "(Lorg/apache/cxf/jaxrs/model/ProviderInfo;Ljava/lang/Class;Ljava/lang/Class;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -178,7 +178,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/ClientResponseFilter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/ClientResponseFilter;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "filterContractSupported", "(Lorg/apache/cxf/jaxrs/model/ProviderInfo;Ljava/lang/Class;Ljava/lang/Class;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
@@ -201,18 +201,18 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "addProviderToList", "(Ljava/util/List;Lorg/apache/cxf/jaxrs/model/ProviderInfo;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/RxInvokerProvider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/RxInvokerProvider;"));
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/RxInvokerProvider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/RxInvokerProvider;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/ProviderInfo", "getProvider", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/RxInvokerProvider");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "rxInvokerProvider", "Ljavax/ws/rs/client/RxInvokerProvider;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/RxInvokerProvider");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "rxInvokerProvider", "Ljakarta/ws/rs/client/RxInvokerProvider;");
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -222,7 +222,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "clientRequestFilters", "Ljava/util/List;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/provider/ProviderFactory$BindingPriorityComparator");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/ClientRequestFilter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/ClientRequestFilter;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderFactory$BindingPriorityComparator", "<init>", "(Ljava/lang/Class;Z)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "sort", "(Ljava/util/List;Ljava/util/Comparator;)V", false);
@@ -230,7 +230,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "clientResponseFilters", "Ljava/util/List;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/provider/ProviderFactory$BindingPriorityComparator");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/client/ClientResponseFilter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/client/ClientResponseFilter;"));
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderFactory$BindingPriorityComparator", "<init>", "(Ljava/lang/Class;Z)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "sort", "(Ljava/util/List;Ljava/util/Comparator;)V", false);
@@ -302,7 +302,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientRequestFilters", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/client/ClientRequestFilter;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientRequestFilters", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/client/ClientRequestFilter;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "clientRequestFilters", "Ljava/util/List;");
@@ -312,7 +312,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientResponseFilters", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/client/ClientResponseFilter;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientResponseFilters", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/client/ClientResponseFilter;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "clientResponseFilters", "Ljava/util/List;");
@@ -322,24 +322,24 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/Configuration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/Configuration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Exchange", "getOutMessage", "()Lorg/apache/cxf/message/Message;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Configuration;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Configuration;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getContextualProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Configuration");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Configuration");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRxInvokerProvider", "()Ljavax/ws/rs/client/RxInvokerProvider;", "()Ljavax/ws/rs/client/RxInvokerProvider<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRxInvokerProvider", "()Ljakarta/ws/rs/client/RxInvokerProvider;", "()Ljakarta/ws/rs/client/RxInvokerProvider<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "rxInvokerProvider", "Ljavax/ws/rs/client/RxInvokerProvider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/ClientProviderFactory", "rxInvokerProvider", "Ljakarta/ws/rs/client/RxInvokerProvider;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

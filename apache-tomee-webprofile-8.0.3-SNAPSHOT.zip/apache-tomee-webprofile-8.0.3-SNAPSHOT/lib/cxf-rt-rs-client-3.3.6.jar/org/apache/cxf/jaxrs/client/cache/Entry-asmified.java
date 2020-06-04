@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialTimestamp", "J", null
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/io/Serializable;Ljavax/ws/rs/core/MultivaluedMap;Ljava/util/Map;J)V", "(Ljava/io/Serializable;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;J)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/io/Serializable;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/util/Map;J)V", "(Ljava/io/Serializable;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;J)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -64,7 +64,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/Entry", "data", "Ljava/io/Serializable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Entry", "initHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Entry", "initHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/Entry", "cacheHeaders", "Ljava/util/Map;");
@@ -155,23 +155,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/MultivaluedHashMap");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/MultivaluedHashMap");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/MultivaluedHashMap", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/MultivaluedHashMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/Entry", "headers", "Ljava/util/Map;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MultivaluedHashMap", "putAll", "(Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MultivaluedHashMap", "putAll", "(Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "initHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
@@ -187,11 +187,11 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Entry", "initHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Entry", "initHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

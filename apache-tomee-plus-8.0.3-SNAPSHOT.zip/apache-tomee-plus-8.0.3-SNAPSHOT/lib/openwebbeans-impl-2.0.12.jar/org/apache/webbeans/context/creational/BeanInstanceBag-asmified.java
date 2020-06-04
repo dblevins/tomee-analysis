@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanCreationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", "Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanCreationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", "Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lock", "Ljava/ut
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -52,16 +52,16 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/locks/Reentra
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "lock", "Ljava/util/concurrent/locks/Lock;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanCreationalContext", "()Ljavax/enterprise/context/spi/CreationalContext;", "()Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanCreationalContext", "()Ljakarta/enterprise/context/spi/CreationalContext;", "()Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/Contextual<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/Contextual<TT;>;)TT;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -92,8 +92,8 @@ methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Contextual", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Contextual", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanInstance", "Ljava/lang/Object;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -127,7 +127,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("Bag:");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/BeanInstanceBag", "beanCreationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(", Instance: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

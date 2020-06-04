@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "limit", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "uri", "Ljavax/ws/rs/core/UriInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "uri", "Ljakarta/ws/rs/core/UriInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,17 +41,17 @@ fieldVisitor = classWriter.visitField(ACC_FINAL, "queryParameters", "Ljava/util/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/ws/rs/core/UriInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/ws/rs/core/UriInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "getQueryParameters", "(Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "getQueryParameters", "(Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/features/paging/AbstractPagingValidator", "queryParameters", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/features/paging/AbstractPagingValidator", "uri", "Ljavax/ws/rs/core/UriInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/features/paging/AbstractPagingValidator", "uri", "Ljakarta/ws/rs/core/UriInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/bval/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -284,88 +284,88 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidationConfig", "(Lorg/apache/openejb/jee/bval/ValidationConfigType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/ValidationConfigType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/ValidationConfigType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidationConfig", "(Lorg/apache/openejb/jee/bval/ValidationConfigType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/ValidationConfigType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/ValidationConfigType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://jboss.org/xml/ns/javax/validation/configuration");
 annotationVisitor0.visit("name", "validation-config");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ValidationConfig_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/bval/ValidationConfigType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConstraintMappings", "(Lorg/apache/openejb/jee/bval/ConstraintMappingsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/ConstraintMappingsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/ConstraintMappingsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConstraintMappings", "(Lorg/apache/openejb/jee/bval/ConstraintMappingsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/ConstraintMappingsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/ConstraintMappingsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://jboss.org/xml/ns/javax/validation/mapping");
 annotationVisitor0.visit("name", "constraint-mappings");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ConstraintMappings_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/bval/ConstraintMappingsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElementTypeAnnotation", "(Lorg/apache/openejb/jee/bval/AnnotationType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/AnnotationType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/AnnotationType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElementTypeAnnotation", "(Lorg/apache/openejb/jee/bval/AnnotationType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/bval/AnnotationType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/bval/AnnotationType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://jboss.org/xml/ns/javax/validation/mapping");
 annotationVisitor0.visit("name", "annotation");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/bval/ElementType;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ElementTypeAnnotation_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/bval/AnnotationType;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/bval/ElementType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElementTypeValue", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljavax/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElementTypeValue", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/lang/String;)Ljakarta/xml/bind/JAXBElement<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://jboss.org/xml/ns/javax/validation/mapping");
 annotationVisitor0.visit("name", "value");
 annotationVisitor0.visit("scope", Type.getType("Lorg/apache/openejb/jee/bval/ElementType;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ElementTypeValue_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/bval/ElementType;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
@@ -375,25 +375,25 @@ methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, nul
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/javax/validation/configuration");
+methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/jakarta/validation/configuration");
 methodVisitor.visitLdcInsn("validation-config");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ValidationConfig_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/javax/validation/mapping");
+methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/jakarta/validation/mapping");
 methodVisitor.visitLdcInsn("constraint-mappings");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ConstraintMappings_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/javax/validation/mapping");
+methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/jakarta/validation/mapping");
 methodVisitor.visitLdcInsn("annotation");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ElementTypeAnnotation_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/javax/validation/mapping");
+methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/jakarta/validation/mapping");
 methodVisitor.visitLdcInsn("value");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/jee/bval/ObjectFactory", "_ElementTypeValue_QNAME", "Ljavax/xml/namespace/QName;");

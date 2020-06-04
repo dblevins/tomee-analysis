@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "classes", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "context", "Ljavax/xml/bind/JAXBContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "context", "Ljakarta/xml/bind/JAXBContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -50,9 +50,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNCHRONIZED, "getContext", "()Ljavax/xml/bind/JAXBContext;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNCHRONIZED, "getContext", "()Ljakarta/xml/bind/JAXBContext;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljakarta/xml/bind/JAXBContext;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "classes", "Ljava/util/Set;");
@@ -81,11 +81,11 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "getClasses", "()Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "classes", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "getContext", "()Ljavax/xml/bind/JAXBContext;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "getContext", "()Ljakarta/xml/bind/JAXBContext;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "context", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
@@ -325,13 +325,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/staxutils/StaxUtils", "createXMLStreamReader", "(Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "getContext", "()Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/configuration/jsse/TLSClientParametersConfig", "getContext", "()Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/configuration/security/TLSClientParametersType;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/jaxb/JAXBUtils", "unmarshall", "(Ljavax/xml/bind/JAXBContext;Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/jaxb/JAXBUtils", "unmarshall", "(Ljakarta/xml/bind/JAXBContext;Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/configuration/security/TLSClientParametersType");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -344,7 +344,7 @@ methodVisitor.visitLabel(label1);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/lang/String", "java/io/StringReader", "javax/xml/stream/XMLStreamReader", "javax/xml/bind/JAXBElement", "org/apache/cxf/configuration/security/TLSClientParametersType", "java/lang/Object"}, 1, new Object[] {"javax/xml/stream/XMLStreamException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"java/lang/String", "java/io/StringReader", "javax/xml/stream/XMLStreamReader", "jakarta/xml/bind/JAXBElement", "org/apache/cxf/configuration/security/TLSClientParametersType", "java/lang/Object"}, 1, new Object[] {"javax/xml/stream/XMLStreamException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "java/lang/RuntimeException");
 methodVisitor.visitInsn(DUP);

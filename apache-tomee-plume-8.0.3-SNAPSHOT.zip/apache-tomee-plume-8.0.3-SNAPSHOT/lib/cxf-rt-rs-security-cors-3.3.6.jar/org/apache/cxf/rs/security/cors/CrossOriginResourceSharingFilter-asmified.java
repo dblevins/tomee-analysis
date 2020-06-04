@@ -22,26 +22,26 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", null, "java/lang/Object", new String[] { "javax/ws/rs/container/ContainerRequestFilter", "javax/ws/rs/container/ContainerResponseFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/ContainerRequestFilter", "jakarta/ws/rs/container/ContainerResponseFilter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/container/PreMatching;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/container/PreMatching;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(999));
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter$CorsInInterceptor", "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "CorsInInterceptor", ACC_PRIVATE);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status", "javax/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status", "jakarta/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SPACE_PATTERN", "Ljava/util/regex/Pattern;", null, null);
@@ -76,9 +76,9 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SIM
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "headers", "Ljavax/ws/rs/core/HttpHeaders;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "headers", "Ljakarta/ws/rs/core/HttpHeaders;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -162,7 +162,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -178,14 +178,14 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "preflightRequest", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "preflightRequest", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljavax/ws/rs/core/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljakarta/ws/rs/core/Response;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/message/Message", "java/lang/String"}, 0, null);
 Label label2 = new Label();
@@ -204,7 +204,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
@@ -223,7 +223,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -295,7 +295,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "preflightRequest", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "preflightRequest", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Origin");
@@ -339,7 +339,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -430,7 +430,7 @@ methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/cors/CrossOriginResourceSharing"}, 0, null);
@@ -448,7 +448,7 @@ methodVisitor.visitJumpInsn(IFNE, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/List"}, 0, null);
@@ -494,13 +494,13 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/Cr
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createPreflightResponse", "(Lorg/apache/cxf/message/Message;Z)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
@@ -534,8 +534,8 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "status", "(I)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "status", "(I)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
@@ -572,7 +572,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label1 = new Label();
@@ -581,7 +581,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/ws/rs/core/MultivaluedMap", "org/apache/cxf/jaxrs/model/OperationResourceInfo"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/ws/rs/core/MultivaluedMap", "org/apache/cxf/jaxrs/model/OperationResourceInfo"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfo", "getAnnotatedMethod", "()Ljava/lang/reflect/Method;", false);
 methodVisitor.visitLabel(label2);
@@ -591,11 +591,11 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", "(Ljava/util/Map<Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;>;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", "(Ljava/util/Map<Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;>;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("*/*");
 methodVisitor.visitVarInsn(ASTORE, 6);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -606,7 +606,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "findTargetMethod", "(Ljava/util/Map;Lorg/apache/cxf/message/Message;Ljava/lang/String;Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;Ljava/util/List;ZZ)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "findTargetMethod", "(Ljava/util/Map;Lorg/apache/cxf/message/Message;Ljava/lang/String;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;Ljava/util/List;ZZ)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 Label label0 = new Label();
@@ -614,7 +614,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "javax/ws/rs/core/MediaType", "org/apache/cxf/jaxrs/model/OperationResourceInfo"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "jakarta/ws/rs/core/MediaType", "org/apache/cxf/jaxrs/model/OperationResourceInfo"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfo", "isSubResourceLocator", "()Z", false);
 Label label1 = new Label();
@@ -642,19 +642,19 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/Metadata
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("FINAL_MATCH_GROUP");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "findPreflightMethod", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/message/Message;)Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -708,7 +708,7 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;Ljavax/ws/rs/container/ContainerResponseContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;Ljakarta/ws/rs/container/ContainerResponseContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -733,9 +733,9 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerResponseContext", "getStatus", "()I", true);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/Response$Status", "UNAUTHORIZED", "Ljavax/ws/rs/core/Response$Status;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$Status", "getStatusCode", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerResponseContext", "getStatus", "()I", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/Response$Status", "UNAUTHORIZED", "Ljakarta/ws/rs/core/Response$Status;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$Status", "getStatusCode", "()I", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -745,21 +745,21 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Origin");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitLdcInsn("Origin");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Exchange", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Credentials");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Credentials");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Exchange", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLdcInsn("simple_request");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
@@ -778,7 +778,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("Access-Control-Expose-Headers");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljavax/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljakarta/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label5 = new Label();
@@ -795,10 +795,10 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitLdcInsn("Access-Control-Max-Age");
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -809,7 +809,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Methods");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "getHeadersFromInput", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljavax/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljakarta/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Headers");
@@ -822,7 +822,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("Access-Control-Allow-Headers");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljavax/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "addHeaders", "(Ljakarta/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -1057,9 +1057,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getHeaderValues", "(Ljava/lang/String;Z)Ljava/util/List;", "(Ljava/lang/String;Z)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "headers", "Ljavax/ws/rs/core/HttpHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "headers", "Ljakarta/ws/rs/core/HttpHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getRequestHeader", "(Ljava/lang/String;)Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getRequestHeader", "(Ljava/lang/String;)Ljava/util/List;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label0 = new Label();
@@ -1134,7 +1134,7 @@ methodVisitor.visitMaxs(2, 13);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addHeaders", "(Ljavax/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", "(Ljavax/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addHeaders", "(Ljakarta/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List;Z)V", "(Ljakarta/ws/rs/container/ContainerResponseContext;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -1142,10 +1142,10 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "concatValues", "(Ljava/util/List;Z)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerResponseContext", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
@@ -1343,12 +1343,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter;Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter;Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "simpleRequest", "(Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

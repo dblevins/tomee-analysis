@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/Validator$ValidateVisitor$1ValidateFunctionMapper", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/Validator$ValidateVisitor$1ValidateFunctionMapper", null, "jakarta/el/FunctionMapper", null);
 
-classWriter.visitOuterClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "getFunctionMapper", "(Lorg/apache/jasper/compiler/ELNode$Nodes;)Ljavax/el/FunctionMapper;");
+classWriter.visitOuterClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "getFunctionMapper", "(Lorg/apache/jasper/compiler/ELNode$Nodes;)Ljakarta/el/FunctionMapper;");
 
 classWriter.visitInnerClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "org/apache/jasper/compiler/Validator", "ValidateVisitor", ACC_PRIVATE | ACC_STATIC);
 
@@ -47,7 +47,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Validator$ValidateVisitor$1ValidateFunctionMapper", "this$0", "Lorg/apache/jasper/compiler/Validator$ValidateVisitor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);

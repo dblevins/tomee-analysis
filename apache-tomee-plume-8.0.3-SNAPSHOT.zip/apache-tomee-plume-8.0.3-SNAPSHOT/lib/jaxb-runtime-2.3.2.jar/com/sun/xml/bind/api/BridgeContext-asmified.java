@@ -34,23 +34,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setErrorHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setErrorHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setAttachmentMarshaller", "(Ljavax/xml/bind/attachment/AttachmentMarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setAttachmentMarshaller", "(Ljakarta/xml/bind/attachment/AttachmentMarshaller;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setAttachmentUnmarshaller", "(Ljavax/xml/bind/attachment/AttachmentUnmarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setAttachmentUnmarshaller", "(Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttachmentMarshaller", "()Ljavax/xml/bind/attachment/AttachmentMarshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttachmentMarshaller", "()Ljakarta/xml/bind/attachment/AttachmentMarshaller;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttachmentUnmarshaller", "()Ljavax/xml/bind/attachment/AttachmentUnmarshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttachmentUnmarshaller", "()Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

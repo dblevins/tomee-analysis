@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DefaultIDResolver", "idmap", "Ljava/util/HashMap;");

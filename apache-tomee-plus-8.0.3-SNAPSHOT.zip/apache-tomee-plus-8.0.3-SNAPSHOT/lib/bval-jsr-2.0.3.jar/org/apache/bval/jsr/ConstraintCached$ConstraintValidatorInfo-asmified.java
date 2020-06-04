@@ -29,19 +29,19 @@ classWriter.visitInnerClass("org/apache/bval/jsr/ConstraintCached$ConstraintVali
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_VALIDATION_TARGETS", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/constraintvalidation/ValidationTarget;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_VALIDATION_TARGETS", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/constraintvalidation/ValidationTarget;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "type", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TT;*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "type", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TT;*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "supportedTargets", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/constraintvalidation/ValidationTarget;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "supportedTargets", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/constraintvalidation/ValidationTarget;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TT;*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TT;*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -51,9 +51,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Validate", "no
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "type", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/constraintvalidation/SupportedValidationTarget;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/constraintvalidation/SupportedValidationTarget;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraintvalidation/SupportedValidationTarget");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraintvalidation/SupportedValidationTarget");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -63,27 +63,27 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/jsr/ConstraintCached$Co
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/lang/Class", "javax/validation/constraintvalidation/SupportedValidationTarget"}, 1, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/lang/Class", "jakarta/validation/constraintvalidation/SupportedValidationTarget"}, 1, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo"});
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraintvalidation/SupportedValidationTarget", "value", "()[Ljavax/validation/constraintvalidation/ValidationTarget;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraintvalidation/SupportedValidationTarget", "value", "()[Ljakarta/validation/constraintvalidation/ValidationTarget;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "copyOf", "(Ljava/util/Collection;)Ljava/util/EnumSet;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/lang/Class", "javax/validation/constraintvalidation/SupportedValidationTarget"}, 2, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/util/Set"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/lang/Class", "jakarta/validation/constraintvalidation/SupportedValidationTarget"}, 2, new Object[] {"org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "java/util/Set"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "supportedTargets", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "supportedTargets", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ConstraintDefinitionException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ConstraintDefinitionException;")});
 methodVisitor.visitLdcInsn("Illegally specified 0-length %s value on %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/constraintvalidation/SupportedValidationTarget;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/constraintvalidation/SupportedValidationTarget;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TT;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TT;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "type", "Ljava/lang/Class;");
@@ -108,7 +108,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSupportedTargets", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/constraintvalidation/ValidationTarget;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSupportedTargets", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/constraintvalidation/ValidationTarget;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "supportedTargets", "Ljava/util/Set;");
@@ -166,7 +166,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/constraintvalidation/ValidationTarget", "ANNOTATED_ELEMENT", "Ljavax/validation/constraintvalidation/ValidationTarget;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/constraintvalidation/ValidationTarget", "ANNOTATED_ELEMENT", "Ljakarta/validation/constraintvalidation/ValidationTarget;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singleton", "(Ljava/lang/Object;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "DEFAULT_VALIDATION_TARGETS", "Ljava/util/Set;");
 methodVisitor.visitInsn(RETURN);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$2", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljavax/servlet/jsp/JspApplicationContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$2", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/servlet/jsp/JspApplicationContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("org/apache/jasper/runtime/JspFactoryImpl", "getJspApplicationContext", "(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;");
+classWriter.visitOuterClass("org/apache/jasper/runtime/JspFactoryImpl", "getJspApplicationContext", "(Ljakarta/servlet/ServletContext;)Ljakarta/servlet/jsp/JspApplicationContext;");
 
 classWriter.visitInnerClass("org/apache/jasper/runtime/JspFactoryImpl$2", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$2", "this$0", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$2", "val$context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$2", "val$context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -52,11 +52,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljavax/servlet/jsp/JspApplicationContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljakarta/servlet/jsp/JspApplicationContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$2", "val$context", "Ljavax/servlet/ServletContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspApplicationContextImpl", "getInstance", "(Ljavax/servlet/ServletContext;)Lorg/apache/jasper/runtime/JspApplicationContextImpl;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$2", "val$context", "Ljakarta/servlet/ServletContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspApplicationContextImpl", "getInstance", "(Ljakarta/servlet/ServletContext;)Lorg/apache/jasper/runtime/JspApplicationContextImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -65,7 +65,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/runtime/JspFactoryImpl$2", "run", "()Ljavax/servlet/jsp/JspApplicationContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/runtime/JspFactoryImpl$2", "run", "()Ljakarta/servlet/jsp/JspApplicationContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

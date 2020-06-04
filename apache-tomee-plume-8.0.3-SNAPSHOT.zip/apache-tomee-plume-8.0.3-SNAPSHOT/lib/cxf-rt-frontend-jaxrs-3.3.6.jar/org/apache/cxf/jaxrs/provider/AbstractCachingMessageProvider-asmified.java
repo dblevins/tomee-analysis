@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/AbstractCachingMessageProvider", "<T:Ljava/lang/Object;>Lorg/apache/cxf/jaxrs/provider/AbstractConfigurableProvider;", "org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -60,7 +60,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMessageContext", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "suppressConversionFor", "Ljavax/json/JsonObject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "suppressConversionFor", "Ljakarta/json/JsonObject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/johnzon/mapper/MappingParserImpl;Ljavax/json/JsonObject;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/johnzon/mapper/MappingParserImpl;Ljakarta/json/JsonObject;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "delegate", "Lorg/apache/johnzon/mapper/MappingParserImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "suppressConversionFor", "Ljavax/json/JsonObject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "suppressConversionFor", "Ljakarta/json/JsonObject;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -61,10 +61,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readObject", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readObject", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "suppressConversionFor", "Ljavax/json/JsonObject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "suppressConversionFor", "Ljakarta/json/JsonObject;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
@@ -73,7 +73,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/MappingParserI
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/mapper/MappingParserImpl", "access$000", "(Lorg/apache/johnzon/mapper/MappingParserImpl;Ljavax/json/JsonValue;Ljava/lang/reflect/Type;Z)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/mapper/MappingParserImpl", "access$000", "(Lorg/apache/johnzon/mapper/MappingParserImpl;Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;Z)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -81,7 +81,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser", "delegate", "Lorg/apache/johnzon/mapper/MappingParserImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/mapper/MappingParserImpl", "readObject", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/mapper/MappingParserImpl", "readObject", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

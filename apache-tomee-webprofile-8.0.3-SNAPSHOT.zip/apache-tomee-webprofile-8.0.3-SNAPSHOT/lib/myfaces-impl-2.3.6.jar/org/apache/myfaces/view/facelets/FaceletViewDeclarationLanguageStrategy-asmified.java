@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_extension", "Ljava/lang/Str
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_language", "Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,37 +45,37 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "loadAcceptPattern", "(Ljavax/faces/context/ExternalContext;)Ljava/util/regex/Pattern;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "loadAcceptPattern", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/regex/Pattern;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_acceptPatterns", "Ljava/util/regex/Pattern;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "loadFaceletExtension", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "loadFaceletExtension", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_extension", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguage");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguage", "<init>", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/view/ViewDeclarationLanguageStrategy;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_language", "Ljavax/faces/view/ViewDeclarationLanguage;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguage", "<init>", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/view/ViewDeclarationLanguageStrategy;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "()Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "()Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_language", "Ljavax/faces/view/ViewDeclarationLanguage;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -123,7 +123,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadAcceptPattern", "(Ljavax/faces/context/ExternalContext;)Ljava/util/regex/Pattern;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadAcceptPattern", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/regex/Pattern;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -137,15 +137,15 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_VIEW_MAPPINGS");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_VIEW_MAPPINGS");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("facelets.VIEW_MAPPINGS");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
@@ -176,7 +176,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadFaceletExtension", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadFaceletExtension", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -190,8 +190,8 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_SUFFIX");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_SUFFIX");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();

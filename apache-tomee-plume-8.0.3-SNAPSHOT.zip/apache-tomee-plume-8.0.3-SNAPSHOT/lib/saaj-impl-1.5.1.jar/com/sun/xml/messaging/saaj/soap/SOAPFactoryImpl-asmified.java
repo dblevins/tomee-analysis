@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", null, "javax/xml/soap/SOAPFactory", null);
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", null, "jakarta/xml/soap/SOAPFactory", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "log", "Ljava/util/logging/Logger;", null, null);
@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -42,7 +42,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createDoc
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljava/lang/String;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljava/lang/String;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -61,24 +61,24 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createElement");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null tagName argument passed to createElement");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "createDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/name/NameImpl", "createFromTagName", "(Ljava/lang/String;)Ljavax/xml/soap/Name;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/name/NameImpl", "createFromTagName", "(Ljava/lang/String;)Ljakarta/xml/soap/Name;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -97,23 +97,23 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createElement");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null name argument passed to createElement");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "createDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -132,23 +132,23 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createElement");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null qname argument passed to createElement");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "createDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -167,10 +167,10 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createElement");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null localName argument passed to createElement");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -179,13 +179,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SO
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/impl/ElementFactory", "createElement", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/soap/Name;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/xml/soap/Name;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -204,10 +204,10 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createName");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null localName argument passed to createName");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createName", "(Ljava/lang/String;)Ljavax/xml/soap/Name;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createName", "(Ljava/lang/String;)Ljakarta/xml/soap/Name;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -239,10 +239,10 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitLdcInsn("SOAPFactory.createName");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/soap/SOAPException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Null localName argument passed to createName");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -253,7 +253,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createElement", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -264,20 +264,20 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/soap/SOAPElement");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/soap/SOAPElement");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/SOAPElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/SOAPElement");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -288,10 +288,10 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "getPrefix", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "getNamespaceURI", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "createElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "createElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/soap/SOAPElement", "getOwnerDocument", "()Lorg/w3c/dom/Document;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/soap/SOAPElement", "getOwnerDocument", "()Lorg/w3c/dom/Document;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "getAttributes", "()Lorg/w3c/dom/NamedNodeMap;", true);
@@ -300,7 +300,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "org/w3c/dom/Element", "javax/xml/soap/SOAPElement", "org/w3c/dom/Document", "org/w3c/dom/NamedNodeMap", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl", "org/w3c/dom/Element", "jakarta/xml/soap/SOAPElement", "org/w3c/dom/Document", "org/w3c/dom/NamedNodeMap", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/NamedNodeMap", "getLength", "()I", true);
@@ -319,7 +319,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/w3c/dom/Attr");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/soap/SOAPElement", "setAttributeNodeNS", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/soap/SOAPElement", "setAttributeNodeNS", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -349,7 +349,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "importNo
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/soap/SOAPElement", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/soap/SOAPElement", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(6, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -361,7 +361,7 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDetail", "()Ljavax/xml/soap/Detail;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDetail", "()Ljakarta/xml/soap/Detail;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -371,7 +371,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPFault;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPFault;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -381,7 +381,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "()Ljavax/xml/soap/SOAPFault;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "()Ljakarta/xml/soap/SOAPFault;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);

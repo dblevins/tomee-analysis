@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/AnyLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljavax/enterprise/inject/Any;>;Ljavax/enterprise/inject/Any;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "javax/enterprise/inject/Any" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/AnyLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljakarta/enterprise/inject/Any;>;Ljakarta/enterprise/inject/Any;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "jakarta/enterprise/inject/Any" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Lorg/apache/webbeans/annotation/AnyLiteral;", null, null);

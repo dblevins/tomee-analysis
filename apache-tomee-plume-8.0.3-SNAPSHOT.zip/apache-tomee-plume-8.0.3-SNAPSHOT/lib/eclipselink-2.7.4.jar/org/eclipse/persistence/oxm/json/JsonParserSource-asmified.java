@@ -27,26 +27,26 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/eclipse/persist
 classWriter.visitInnerClass("org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader", "JsonParserReaderBuilder", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "parser", "Ljavax/json/stream/JsonParser;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "parser", "Ljakarta/json/stream/JsonParser;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/stream/JsonParser;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/stream/JsonParser;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/ExtendedSource", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljavax/json/stream/JsonParser;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljakarta/json/stream/JsonParser;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParser", "()Ljavax/json/stream/JsonParser;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParser", "()Ljakarta/json/stream/JsonParser;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljavax/json/stream/JsonParser;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljakarta/json/stream/JsonParser;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -57,8 +57,8 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljavax/json/stream/JsonParser;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "<init>", "(Ljavax/json/stream/JsonParser;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljakarta/json/stream/JsonParser;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "<init>", "(Ljakarta/json/stream/JsonParser;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "setUnmarshaller", "(Lorg/eclipse/persistence/internal/oxm/Unmarshaller;)Lorg/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "build", "()Lorg/eclipse/persistence/internal/oxm/record/json/JsonParserReader;", false);
@@ -72,8 +72,8 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljavax/json/stream/JsonParser;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "<init>", "(Ljavax/json/stream/JsonParser;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonParserSource", "parser", "Ljakarta/json/stream/JsonParser;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "<init>", "(Ljakarta/json/stream/JsonParser;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder", "setResultClass", "(Ljava/lang/Class;)Lorg/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);

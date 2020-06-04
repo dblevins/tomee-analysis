@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonPropertiesOptimizationEnabled", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonPropertiesOptimizationEnabled", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonEventsOptimizationEnabled", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonEventsOptimizationEnabled", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);

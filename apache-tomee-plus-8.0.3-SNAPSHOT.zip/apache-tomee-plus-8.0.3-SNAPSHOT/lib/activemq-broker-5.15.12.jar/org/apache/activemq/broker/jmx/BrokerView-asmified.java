@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sessionIdCounter
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jmsJobScheduler", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jmsJobScheduler", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -572,21 +572,21 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopics", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopics", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicsNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicsNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueues", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueues", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueuesNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueuesNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -624,7 +624,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "browseQueue", "(Ljava/lang/String;)[Ljavax/management/openmbean/CompositeData;", null, new String[] { "javax/management/openmbean/OpenDataException", "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "browseQueue", "(Ljava/lang/String;)[Ljavax/management/openmbean/CompositeData;", null, new String[] { "javax/management/openmbean/OpenDataException", "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
@@ -636,131 +636,131 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopics", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopics", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicsNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicsNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueues", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueues", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueuesNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueuesNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDurableTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDurableTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getDurableTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getDurableTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueueSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueueSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueueSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueueSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueueSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueueSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInactiveDurableTopicSubscribers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInactiveDurableTopicSubscribers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getInactiveDurableTopicSubscribersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getInactiveDurableTopicSubscribersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTopicProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicProducersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTopicProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueueProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueueProducersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getQueueProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopicProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryTopicProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicProducersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryTopicProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueueProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemporaryQueueProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueueProducersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getTemporaryQueueProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDynamicDestinationProducers", "()[Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDynamicDestinationProducers", "()[Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "safeGetBroker", "()Lorg/apache/activemq/broker/jmx/ManagedRegionBroker;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getDynamicDestinationProducersNonSuppressed", "()[Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagedRegionBroker", "getDynamicDestinationProducersNonSuppressed", "()[Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -991,7 +991,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDurableSubscriber", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDurableSubscriber", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/BrokerView", "getConnectionContext", "()Lorg/apache/activemq/broker/ConnectionContext;", false);
@@ -1053,7 +1053,7 @@ methodVisitor.visitVarInsn(ALOAD, 8);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/Subscription", "getObjectName", "()Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/Subscription", "getObjectName", "()Ljakarta/management/ObjectName;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/activemq/broker/jmx/BrokerView", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/command/ConsumerInfo", "org/apache/activemq/command/ConsumerId", "org/apache/activemq/broker/region/Subscription"}, 0, new Object[] {});
@@ -1226,20 +1226,20 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJMSJobScheduler", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJMSJobScheduler", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/BrokerView", "jmsJobScheduler", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/BrokerView", "jmsJobScheduler", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJMSJobScheduler", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJMSJobScheduler", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/BrokerView", "jmsJobScheduler", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/broker/jmx/BrokerView", "jmsJobScheduler", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

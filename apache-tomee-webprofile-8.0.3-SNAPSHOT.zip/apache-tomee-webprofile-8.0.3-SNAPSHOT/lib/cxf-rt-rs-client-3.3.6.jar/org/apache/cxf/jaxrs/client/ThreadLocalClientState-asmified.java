@@ -136,22 +136,22 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCurrentBuilder", "(Ljavax/ws/rs/core/UriBuilder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCurrentBuilder", "(Ljakarta/ws/rs/core/UriBuilder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setCurrentBuilder", "(Ljavax/ws/rs/core/UriBuilder;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setCurrentBuilder", "(Ljakarta/ws/rs/core/UriBuilder;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentBuilder", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getCurrentBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getCurrentBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -178,64 +178,64 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResponse", "(Ljavax/ws/rs/core/Response;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResponse", "(Ljakarta/ws/rs/core/Response;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setResponse", "(Ljavax/ws/rs/core/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setResponse", "(Ljakarta/ws/rs/core/Response;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponse", "()Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponse", "()Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getResponse", "()Ljavax/ws/rs/core/Response;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getResponse", "()Ljakarta/ws/rs/core/Response;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequestHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequestHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setRequestHeaders", "(Ljavax/ws/rs/core/MultivaluedMap;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setRequestHeaders", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getRequestHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getRequestHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemplates", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTemplates", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getTemplates", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "getTemplates", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTemplates", "(Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTemplates", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setTemplates", "(Ljavax/ws/rs/core/MultivaluedMap;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "setTemplates", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -251,14 +251,14 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newState", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap;Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/ClientState;", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/jaxrs/client/ClientState;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newState", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap;Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/ClientState;", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/jaxrs/client/ClientState;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "newState", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap;Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/ClientState;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "newState", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap;Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/ClientState;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/client/LocalClientState");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/client/ThreadLocalClientState");
@@ -272,7 +272,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newState", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap;Ljavax/ws/rs/core/MultivaluedMap;Ljava/util/Map;)Lorg/apache/cxf/jaxrs/client/ClientState;", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/cxf/jaxrs/client/ClientState;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newState", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/util/Map;)Lorg/apache/cxf/jaxrs/client/ClientState;", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/cxf/jaxrs/client/ClientState;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/ThreadLocalClientState", "getState", "()Lorg/apache/cxf/jaxrs/client/ClientState;", false);
@@ -280,7 +280,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "newState", "(Ljava/net/URI;Ljavax/ws/rs/core/MultivaluedMap;Ljavax/ws/rs/core/MultivaluedMap;Ljava/util/Map;)Lorg/apache/cxf/jaxrs/client/ClientState;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/client/ClientState", "newState", "(Ljava/net/URI;Ljakarta/ws/rs/core/MultivaluedMap;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/util/Map;)Lorg/apache/cxf/jaxrs/client/ClientState;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/client/LocalClientState");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/client/ThreadLocalClientState");

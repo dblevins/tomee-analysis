@@ -745,7 +745,7 @@ methodVisitor.visitLdcInsn("45208");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("Unable to map property {0} from type {1}. The javax.activation and javax.mail packages are required to map properties of type DataHandler. Ensure that both of these are available on the classpath.");
+methodVisitor.visitLdcInsn("Unable to map property {0} from type {1}. The jakarta.activation and jakarta.mail packages are required to map properties of type DataHandler. Ensure that both of these are available on the classpath.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);

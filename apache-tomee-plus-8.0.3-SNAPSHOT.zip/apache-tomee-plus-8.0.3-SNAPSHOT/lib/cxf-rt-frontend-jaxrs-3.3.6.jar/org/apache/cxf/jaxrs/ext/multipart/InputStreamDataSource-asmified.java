@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/multipart/InputStreamDataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/multipart/InputStreamDataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "is", "Ljava/io/InputStream;", null, null);

@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "register");
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_APPLICATION_TYPE", "Ljava/lang/String;", null, "web");
@@ -80,13 +80,13 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;)Ljakarta/ws/rs/core/Response;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/POST;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/POST;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -95,7 +95,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -119,12 +119,12 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/servic
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/oauth2/provider/ClientRegistrationProvider", "setClient", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;)V", true);
 methodVisitor.visitIntInsn(SIPUSH, 201);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "status", "(I)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "status", "(I)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "fromClientToRegistrationResponse", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;)Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistrationResponse;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "entity", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "entity", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -147,7 +147,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -168,18 +168,18 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkSecurityContext", "
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "mc", "Lorg/apache/cxf/jaxrs/ext/MessageContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getSecurityContext", "()Ljavax/ws/rs/core/SecurityContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getSecurityContext", "()Ljakarta/ws/rs/core/SecurityContext;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/SecurityContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/SecurityContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "userRole", "Ljava/lang/String;");
 Label label1 = new Label();
@@ -187,11 +187,11 @@ methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "userRole", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toForbiddenException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toForbiddenException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -236,7 +236,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -247,11 +247,11 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readClientRegistrationWithQuery", "(Ljava/lang/String;)Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -261,7 +261,7 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/QueryParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/QueryParam;", true);
 annotationVisitor0.visit("value", "client_id");
 annotationVisitor0.visitEnd();
 }
@@ -276,16 +276,16 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readClientRegistrationWithPath", "(Ljava/lang/String;)Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{clientId}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -295,7 +295,7 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "clientId");
 annotationVisitor0.visitEnd();
 }
@@ -310,16 +310,16 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateClientRegistration", "(Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;)Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/PUT;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/PUT;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{clientId}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -328,7 +328,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -338,7 +338,7 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "clientId");
 annotationVisitor0.visitEnd();
 }
@@ -363,19 +363,19 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteClientRegistration", "(Ljava/lang/String;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteClientRegistration", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Response;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/DELETE;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/DELETE;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{clientId}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "clientId");
 annotationVisitor0.visitEnd();
 }
@@ -392,8 +392,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/oauth
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "()Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "()Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -430,8 +430,8 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Long", "valueOf", "(J)Lja
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/ClientRegistrationResponse", "setClientIdIssuedAt", "(Ljava/lang/Long;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "getMessageContext", "()Lorg/apache/cxf/jaxrs/ext/MessageContext;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getUriInfo", "()Ljavax/ws/rs/core/UriInfo;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getAbsolutePathBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getUriInfo", "()Ljakarta/ws/rs/core/UriInfo;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getAbsolutePathBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "supportRegistrationAccessTokens", "Z");
@@ -441,10 +441,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/common/Client", "getClientId", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/ClientRegistrationResponse", "setRegistrationClientUri", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -455,7 +455,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/l
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/ClientRegistrationResponse", "setRegistrationAccessToken", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/UriBuilder"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/UriBuilder"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
@@ -621,7 +621,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotAuthorizedException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "org/apache/cxf/rs/security/oauth2/common/Client"}, 0, null);
@@ -797,22 +797,22 @@ methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "fromClientRegistrationToClient", "(Lorg/apache/cxf/rs/security/oauth2/services/ClientRegistration;Lorg/apache/cxf/rs/security/oauth2/common/Client;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "mc", "Lorg/apache/cxf/jaxrs/ext/MessageContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getSecurityContext", "()Ljavax/ws/rs/core/SecurityContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "getSecurityContext", "()Ljakarta/ws/rs/core/SecurityContext;", true);
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitVarInsn(ALOAD, 11);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/security/Principal", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/oauth2/common/UserSubject");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/security/Principal", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/common/UserSubject", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 12);
@@ -820,7 +820,7 @@ methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/common/Client", "setResourceOwnerSubject", "(Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)V", false);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/SecurityContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/SecurityContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/common/Client", "setRegisteredDynamically", "(Z)V", false);
@@ -1086,7 +1086,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMessageContext", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -1131,33 +1131,33 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "reportInvalidRequestError"
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "reportInvalidRequestError", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;Ljavax/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/DynamicRegistrationService", "reportInvalidRequestError", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;Ljakarta/ws/rs/core/MediaType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "reportInvalidRequestError", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "reportInvalidRequestError", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitIntInsn(SIPUSH, 400);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toResponseBuilder", "(I)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toResponseBuilder", "(I)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "type", "(Ljavax/ws/rs/core/MediaType;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "type", "(Ljakarta/ws/rs/core/MediaType;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/Response$ResponseBuilder"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/Response$ResponseBuilder"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "entity", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toBadRequestException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "entity", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toBadRequestException", "(Ljava/lang/Throwable;Ljakarta/ws/rs/core/Response;)Ljakarta/ws/rs/WebApplicationException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

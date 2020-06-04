@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/mdb/MdbInstanceManager$1", null, "java/lang/Object", new String[] { "java/util/concurrent/RejectedExecutionHandler" });
 
-classWriter.visitOuterClass("org/apache/openejb/core/mdb/MdbInstanceManager", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljavax/resource/spi/ResourceAdapter;Lorg/apache/openejb/core/mdb/InboundRecovery;Ljava/lang/Object;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Pool$Builder;ILjava/util/concurrent/ScheduledExecutorService;)V");
+classWriter.visitOuterClass("org/apache/openejb/core/mdb/MdbInstanceManager", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljakarta/resource/spi/ResourceAdapter;Lorg/apache/openejb/core/mdb/InboundRecovery;Ljava/lang/Object;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Pool$Builder;ILjava/util/concurrent/ScheduledExecutorService;)V");
 
 classWriter.visitInnerClass("org/apache/openejb/core/mdb/MdbInstanceManager$1", null, null, 0);
 

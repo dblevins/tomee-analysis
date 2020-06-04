@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/validation/TraversableResolverImpl", null, "java/lang/Object", new String[] { "javax/validation/TraversableResolver" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/validation/TraversableResolverImpl", null, "java/lang/Object", new String[] { "jakarta/validation/TraversableResolver" });
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -36,13 +36,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReachable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class<*>;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReachable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class<*>;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Path$Node", "getName", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistenceUtil", "isLoaded", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/LoadState", "NOT_LOADED", "Ljavax/persistence/spi/LoadState;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Path$Node", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistenceUtil", "isLoaded", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/LoadState", "NOT_LOADED", "Ljakarta/persistence/spi/LoadState;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitInsn(ICONST_0);
@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCascadable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class<*>;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCascadable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class<*>;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);

@@ -35,11 +35,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljavax/enterprise/context/spi/CreationalContext;", "Ljavax/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljakarta/enterprise/context/spi/CreationalContext;", "Ljakarta/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", "(TT;Ljavax/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", "(TT;Ljakarta/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "value", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "context", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "context", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -66,19 +66,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "context", "Ljavax/enterprise/context/spi/CreationalContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/CreationalContext", "release", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "context", "Ljakarta/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/CreationalContext", "release", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;Lorg/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;Lorg/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "<init>", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance", "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

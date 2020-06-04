@@ -35,15 +35,15 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Lorg/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "servletRequest", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "servletRequest", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "servletResponse", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "servletResponse", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/connector/Request;Lorg/apache/catalina/AsyncDispatcher;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/connector/Request;Lorg/apache/catalina/AsyncDispatcher;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -55,10 +55,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "applicationDispatcher", "Lorg/apache/catalina/AsyncDispatcher;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletRequest", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletRequest", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletResponse", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletResponse", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
@@ -80,10 +80,10 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "applicationDispatcher", "Lorg/apache/catalina/AsyncDispatcher;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletRequest", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletRequest", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletResponse", "Ljavax/servlet/ServletResponse;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/AsyncDispatcher", "dispatch", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$AsyncRunnable", "servletResponse", "Ljakarta/servlet/ServletResponse;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/AsyncDispatcher", "dispatch", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);

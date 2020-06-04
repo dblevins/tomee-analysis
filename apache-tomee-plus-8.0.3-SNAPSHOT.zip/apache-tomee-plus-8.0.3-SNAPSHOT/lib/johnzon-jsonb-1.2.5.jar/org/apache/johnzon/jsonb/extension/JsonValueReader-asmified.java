@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jsonb/extension/JsonValueReader", "<T:Ljava/lang/Object;>Ljava/io/Reader;Ljava/util/function/Supplier<Ljavax/json/JsonStructure;>;", "java/io/Reader", new String[] { "java/util/function/Supplier" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jsonb/extension/JsonValueReader", "<T:Ljava/lang/Object;>Ljava/io/Reader;Ljava/util/function/Supplier<Ljakarta/json/JsonStructure;>;", "java/io/Reader", new String[] { "java/util/function/Supplier" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "input", "Ljavax/json/JsonStructure;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "input", "Ljakarta/json/JsonStructure;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "result", "Ljava/lang/Object;
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/JsonStructure;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/JsonStructure;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/Reader", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -59,7 +59,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/ByteArrayInputStream");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/nio/charset/StandardCharsets", "UTF_8", "Ljava/nio/charset/Charset;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "getBytes", "(Ljava/nio/charset/Charset;)[B", false);
@@ -91,23 +91,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljavax/json/JsonStructure;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljakarta/json/JsonStructure;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getInput", "()Ljavax/json/JsonStructure;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getInput", "()Ljakarta/json/JsonStructure;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/extension/JsonValueReader", "input", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -143,7 +143,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "get", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/extension/JsonValueReader", "get", "()Ljavax/json/JsonStructure;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/extension/JsonValueReader", "get", "()Ljakarta/json/JsonStructure;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

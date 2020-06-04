@@ -22,15 +22,15 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/server/DefaultServerEndpointConfigurator", null, "javax/websocket/server/ServerEndpointConfig$Configurator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/server/DefaultServerEndpointConfigurator", null, "jakarta/websocket/server/ServerEndpointConfig$Configurator", null);
 
-classWriter.visitInnerClass("javax/websocket/server/ServerEndpointConfig$Configurator", "javax/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/websocket/server/ServerEndpointConfig$Configurator", "jakarta/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/server/ServerEndpointConfig$Configurator", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/server/ServerEndpointConfig$Configurator", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNegotiatedExtensions", "(Ljava/util/List;Ljava/util/List;)Ljava/util/List;", "(Ljava/util/List<Ljavax/websocket/Extension;>;Ljava/util/List<Ljavax/websocket/Extension;>;)Ljava/util/List<Ljavax/websocket/Extension;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNegotiatedExtensions", "(Ljava/util/List;Ljava/util/List;)Ljava/util/List;", "(Ljava/util/List<Ljakarta/websocket/Extension;>;Ljava/util/List<Ljakarta/websocket/Extension;>;)Ljava/util/List<Ljakarta/websocket/Extension;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
@@ -128,11 +128,11 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Extension");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Extension");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Extension", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Extension", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -154,11 +154,11 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/Extension");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/Extension");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Extension", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Extension", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
@@ -185,7 +185,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "modifyHandshake", "(Ljavax/websocket/server/ServerEndpointConfig;Ljavax/websocket/server/HandshakeRequest;Ljavax/websocket/HandshakeResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "modifyHandshake", "(Ljakarta/websocket/server/ServerEndpointConfig;Ljakarta/websocket/server/HandshakeRequest;Ljakarta/websocket/HandshakeResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);

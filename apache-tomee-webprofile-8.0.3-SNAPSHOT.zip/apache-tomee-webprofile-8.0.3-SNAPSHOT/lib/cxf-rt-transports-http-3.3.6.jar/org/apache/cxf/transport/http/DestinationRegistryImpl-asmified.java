@@ -454,7 +454,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onServletConfigAvailable", "(Ljavax/servlet/ServletConfig;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onServletConfigAvailable", "(Ljakarta/servlet/ServletConfig;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/DestinationRegistryImpl", "getDestinations", "()Ljava/util/Collection;", false);
@@ -478,7 +478,7 @@ methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/transport/servlet/ServletConfigAware");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/transport/servlet/ServletConfigAware", "onServletConfigAvailable", "(Ljavax/servlet/ServletConfig;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/transport/servlet/ServletConfigAware", "onServletConfigAvailable", "(Ljakarta/servlet/ServletConfig;)V", true);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label0);

@@ -51,16 +51,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "extractNonceFromRequest", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "extractNonceFromRequest", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "nonceFromSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getSession", "(Z)Ljavax/servlet/http/HttpSession;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getSession", "(Z)Ljakarta/servlet/http/HttpSession;", true);
 methodVisitor.visitLdcInsn("org.apache.catalina.filters.CSRF_REST_NONCE");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier", "getNonce", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
@@ -83,7 +83,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/filters/RestCs
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/FilterBase", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("restCsrfPreventionFilter.invalidNonce");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "sendError", "(ILjava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "sendError", "(ILjava/lang/String;)V", true);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(5, 3);
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "extractNonceFromRequest", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "extractNonceFromRequest", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "nonceFromRequestHeader", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -146,12 +146,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/filters/RestCs
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "this$0", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/filters/RestCsrfPreventionFilter", "getRequestedPath", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/filters/RestCsrfPreventionFilter", "getRequestedPath", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "extractNonceFromRequestParams", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "extractNonceFromRequestParams", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -161,7 +161,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "extractNonceFromRequestParams", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "extractNonceFromRequestParams", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "nonceFromRequestParams", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -189,7 +189,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 6);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "javax/servlet/http/HttpServletRequest", "[Ljava/lang/String;", "java/lang/String", "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest", "jakarta/servlet/http/HttpServletRequest", "[Ljava/lang/String;", "java/lang/String", "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 5);
 Label label2 = new Label();

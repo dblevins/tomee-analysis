@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBinary", "Lorg/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase<Ljava/nio/ByteBuffer;>;", "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIIJ)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIIJ)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -37,7 +37,7 @@ methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitVarInsn(LLOAD, 9);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIIJ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIIJ)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(11, 11);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/tomcat/websocket/WsRemoteEndpointBase", null, "java/lang/Object", new String[] { "javax/websocket/RemoteEndpoint" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/tomcat/websocket/WsRemoteEndpointBase", null, "java/lang/Object", new String[] { "jakarta/websocket/RemoteEndpoint" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "base", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;", null, null);

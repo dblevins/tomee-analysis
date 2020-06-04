@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "breakpoint", "Lorg/jvnet/s
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPPartImpl;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPPartImpl;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -55,7 +55,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "message", "Lcom/sun/xml/messaging/saaj/soap/MessageImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPPartImpl", "getSOAPNamespace", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter", "<init>", "(Ljavax/xml/soap/SOAPMessage;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter", "<init>", "(Ljakarta/xml/soap/SOAPMessage;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/StaxBridge", "saajWriter", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 2);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", null, "javax/servlet/http/HttpServletResponseWrapper", null);
+classWriter.visit(V1_7, ACC_SUPER, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", null, "jakarta/servlet/http/HttpServletResponseWrapper", null);
 
 classWriter.visitInnerClass("net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "net/shibboleth/utilities/java/support/net/CookieBufferingFilter", "CookieBufferingHttpServletResponseProxy", ACC_PRIVATE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cookieMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/servlet/http/Cookie;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cookieMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/servlet/http/Cookie;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -43,10 +43,10 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lnet
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lnet/shibboleth/utilities/java/support/net/CookieBufferingFilter;Ljavax/servlet/http/HttpServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lnet/shibboleth/utilities/java/support/net/CookieBufferingFilter;Ljakarta/servlet/http/HttpServletResponse;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -55,7 +55,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "this$0", "Lnet/shibboleth/utilities/java/support/net/CookieBufferingFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -66,12 +66,12 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljavax/servlet/http/Cookie;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljakarta/servlet/http/Cookie;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "cookieMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/Cookie", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/Cookie", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -80,9 +80,9 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCookies", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/servlet/http/Cookie;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCookies", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/servlet/http/Cookie;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -101,12 +101,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "dumpCookies", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -117,7 +117,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "dumpCookies", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "getWriter", "()Ljava/io/PrintWriter;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "getWriter", "()Ljava/io/PrintWriter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -130,7 +130,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/supp
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "sendError", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "sendError", "(ILjava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -142,7 +142,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "dumpCookies", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "sendError", "(I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "sendError", "(I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -154,7 +154,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "dumpCookies", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "sendRedirect", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "sendRedirect", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -176,13 +176,13 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/Cookie");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/Cookie");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "getResponse", "()Ljavax/servlet/ServletResponse;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletResponse");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "getResponse", "()Ljakarta/servlet/ServletResponse;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletResponse");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "addCookie", "(Ljavax/servlet/http/Cookie;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "addCookie", "(Ljakarta/servlet/http/Cookie;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

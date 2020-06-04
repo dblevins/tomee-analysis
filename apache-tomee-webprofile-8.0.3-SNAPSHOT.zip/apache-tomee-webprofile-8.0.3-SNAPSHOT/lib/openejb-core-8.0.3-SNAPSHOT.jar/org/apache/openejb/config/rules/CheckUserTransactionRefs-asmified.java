@@ -77,7 +77,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/jee/ResourceEnvRef");
 methodVisitor.visitVarInsn(ASTORE, 8);
-methodVisitor.visitLdcInsn("javax.transaction.UserTransaction");
+methodVisitor.visitLdcInsn("jakarta.transaction.UserTransaction");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ResourceEnvRef", "getResourceEnvRefType", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);

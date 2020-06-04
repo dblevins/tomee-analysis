@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/ext/component/MultiFieldValidationUtils", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "MULTI_FIELD_VALIDATION_CANDIDATES", "Ljava/lang/String;", null, "javax.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "MULTI_FIELD_VALIDATION_CANDIDATES", "Ljava/lang/String;", null, "jakarta.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "FAILED_FIELD_LEVEL_VALIDATION", "Ljava/lang/String;", null, "javax.faces.Bean.FAILED_FIELD_LEVEL_VALIDATION");
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "FAILED_FIELD_LEVEL_VALIDATION", "Ljava/lang/String;", null, "jakarta.faces.Bean.FAILED_FIELD_LEVEL_VALIDATION");
 fieldVisitor.visitEnd();
 }
 {
@@ -42,13 +42,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "getMultiFieldValidationCandidates", "(Ljavax/faces/context/FacesContext;Z)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;Z)Ljava/util/Map<Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getMultiFieldValidationCandidates", "(Ljakarta/faces/context/FacesContext;Z)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;Z)Ljava/util/Map<Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
+methodVisitor.visitLdcInsn("jakarta.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -64,7 +64,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
+methodVisitor.visitLdcInsn("jakarta.faces.Bean.MULTI_FIELD_VALIDATION_CANDIDATES");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -81,18 +81,18 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "wholeBeanValidationEnabled", "(Ljavax/faces/context/FacesContext;[Ljava/lang/Class;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "wholeBeanValidationEnabled", "(Ljakarta/faces/context/FacesContext;[Ljava/lang/Class;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
@@ -109,7 +109,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/groups/Default;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/groups/Default;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);

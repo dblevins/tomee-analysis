@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CircuitBreakerImpl", "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor", "CircuitBreakerImpl", ACC_PUBLIC | ACC_STATIC);
@@ -43,7 +43,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "finder", "Lorg/apache/safeguard/impl/annotation/AnnotationFinder;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -51,7 +51,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mapper", "Lorg/apache/safeguard/impl/config/ConfigurationMapper;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -59,7 +59,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "metrics", "Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -67,7 +67,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "unwrappedCache", "Lorg/apache/safeguard/impl/cache/UnwrappedCache;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -105,7 +105,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CircuitBreakerImpl;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CircuitBreakerImpl;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "mapper", "Lorg/apache/safeguard/impl/config/ConfigurationMapper;");
@@ -113,9 +113,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "finder", "Lorg/apache/safeguard/impl/annotation/AnnotationFinder;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/faulttolerance/CircuitBreaker;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/annotation/AnnotationFinder", "findAnnotation", "(Ljava/lang/Class;Ljavax/interceptor/InvocationContext;)Ljava/lang/annotation/Annotation;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/annotation/AnnotationFinder", "findAnnotation", "(Ljava/lang/Class;Ljakarta/interceptor/InvocationContext;)Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/faulttolerance/CircuitBreaker;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/config/ConfigurationMapper", "map", "(Ljava/lang/annotation/Annotation;Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/faulttolerance/CircuitBreaker");
@@ -194,7 +194,7 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "getBaseMetricsName", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "getBaseMetricsName", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 10);
 Label label5 = new Label();
 methodVisitor.visitLabel(label5);
@@ -203,7 +203,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "mapper", "Lorg/apache/safeguard/impl/config/ConfigurationMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/faulttolerance/CircuitBreaker;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/config/ConfigurationMapper", "isEnabled", "(Ljava/lang/reflect/Method;Ljava/lang/Class;)Z", false);
 Label label6 = new Label();
@@ -212,10 +212,10 @@ methodVisitor.visitInsn(ICONST_1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "javax/interceptor/InvocationContext", "org/eclipse/microprofile/faulttolerance/CircuitBreaker", Opcodes.LONG, "[Ljava/lang/Class;", Opcodes.DOUBLE, Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {label5, label5});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "jakarta/interceptor/InvocationContext", "org/eclipse/microprofile/faulttolerance/CircuitBreaker", Opcodes.LONG, "[Ljava/lang/Class;", Opcodes.DOUBLE, Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {label5, label5});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "javax/interceptor/InvocationContext", "org/eclipse/microprofile/faulttolerance/CircuitBreaker", Opcodes.LONG, "[Ljava/lang/Class;", Opcodes.DOUBLE, Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {label5, label5, Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "jakarta/interceptor/InvocationContext", "org/eclipse/microprofile/faulttolerance/CircuitBreaker", Opcodes.LONG, "[Ljava/lang/Class;", Opcodes.DOUBLE, Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {label5, label5, Opcodes.INTEGER});
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitVarInsn(LLOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 9);
@@ -275,7 +275,7 @@ methodVisitor.visitMaxs(16, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getBaseMetricsName", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getBaseMetricsName", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -283,14 +283,14 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("ft.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getDeclaringClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(".");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(".circuitbreaker.");
@@ -301,11 +301,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "postCreate", "(Lorg/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CircuitBreakerImpl;Ljavax/interceptor/InvocationContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "postCreate", "(Lorg/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CircuitBreakerImpl;Ljakarta/interceptor/InvocationContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "getBaseMetricsName", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "getBaseMetricsName", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache", "metrics", "Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics;");

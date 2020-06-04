@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/EntityTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl<TX;>;Ljavax/persistence/metamodel/EntityType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", new String[] { "javax/persistence/metamodel/EntityType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/EntityTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl<TX;>;Ljakarta/persistence/metamodel/EntityType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", new String[] { "jakarta/persistence/metamodel/EntityType" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Bindable$BindableType", "javax/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Bindable$BindableType", "jakarta/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(7970950485096018114L));
@@ -44,9 +44,9 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljavax/persistence/metamodel/Bindable$BindableType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljakarta/persistence/metamodel/Bindable$BindableType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Bindable$BindableType", "ENTITY_TYPE", "Ljavax/persistence/metamodel/Bindable$BindableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Bindable$BindableType", "ENTITY_TYPE", "Ljakarta/persistence/metamodel/Bindable$BindableType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -71,9 +71,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljavax/persistence/metamodel/Type$PersistenceType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljakarta/persistence/metamodel/Type$PersistenceType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "ENTITY", "Ljavax/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "ENTITY", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/Interceptor;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/Interceptor;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Lorg/apache/safeguard/impl/cdi
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(0));
 annotationVisitor0.visitEnd();
 }
@@ -54,7 +54,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -74,9 +74,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateId", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateId", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -94,7 +94,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/interceptor/Id
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "incrementAndGet", "()J", false);
 methodVisitor.visitVarInsn(LSTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(LLOAD, 2);
@@ -112,7 +112,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "cache", "Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache", "getUnwrappedCache", "()Lorg/apache/safeguard/impl/cache/UnwrappedCache;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/cache/UnwrappedCache", "getUnwrappedCache", "()Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -125,7 +125,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "cache", "Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache", "create", "(Ljava/lang/reflect/Method;)Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -139,13 +139,13 @@ methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "javax/interceptor/InvocationContext", Opcodes.LONG, "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "jakarta/interceptor/InvocationContext", Opcodes.LONG, "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters", "access$000", "(Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters;)Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter", "inc", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/CompletionStage;"));
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -170,7 +170,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "javax/interceptor/InvocationContext", Opcodes.LONG, "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor", "jakarta/interceptor/InvocationContext", Opcodes.LONG, "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters", "access$100", "(Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Counters;)Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;", false);

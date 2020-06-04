@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(ICONST_M1);
@@ -173,7 +173,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createPoolConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createPoolConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/pop3/connection/POP3Connection");
 methodVisitor.visitInsn(DUP);
@@ -208,7 +208,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/connection/POP3ConnectionPool", "availableConnection", "Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;");
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/connection/POP3ConnectionPool", "availableConnection", "Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;");
@@ -249,7 +249,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "close", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "close", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/connection/POP3ConnectionPool", "availableConnection", "Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;");

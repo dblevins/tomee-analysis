@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsPongMessage", null, "java/lang/Object", new String[] { "javax/websocket/PongMessage" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsPongMessage", null, "java/lang/Object", new String[] { "jakarta/websocket/PongMessage" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "applicationData", "Ljava/nio/ByteBuffer;", null, null);

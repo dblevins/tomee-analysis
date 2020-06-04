@@ -37,7 +37,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/jsp/PageContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/jsp/PageContext");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLdcInsn("pageContext");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -53,7 +53,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getPageScopeMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
@@ -63,7 +63,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getRequestScopeMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -73,7 +73,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getSessionScopeMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
@@ -83,7 +83,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getApplicationScopeMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
@@ -93,7 +93,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getParamMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
@@ -103,7 +103,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getParamsMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
@@ -113,7 +113,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getHeaderMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
@@ -123,7 +123,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getHeadersMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
@@ -133,7 +133,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getInitParamMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
@@ -143,13 +143,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label10);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljavax/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getImplicitObjects", "(Ljakarta/servlet/jsp/PageContext;)Lorg/apache/taglibs/standard/lang/jstl/ImplicitObjects;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "getCookieMap", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "findAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "findAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();

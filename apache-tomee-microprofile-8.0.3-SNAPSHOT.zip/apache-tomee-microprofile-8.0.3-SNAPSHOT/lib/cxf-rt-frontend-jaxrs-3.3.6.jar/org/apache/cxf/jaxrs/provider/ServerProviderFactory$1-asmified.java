@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/ServerProviderFactory$1", null, "org/apache/cxf/jaxrs/model/AbstractResourceInfo", null);
 
-classWriter.visitOuterClass("org/apache/cxf/jaxrs/provider/ServerProviderFactory", "injectApplicationIntoFeature", "(Ljavax/ws/rs/core/Feature;)V");
+classWriter.visitOuterClass("org/apache/cxf/jaxrs/provider/ServerProviderFactory", "injectApplicationIntoFeature", "(Ljakarta/ws/rs/core/Feature;)V");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/ServerProviderFactory$1", null, null, 0);
 

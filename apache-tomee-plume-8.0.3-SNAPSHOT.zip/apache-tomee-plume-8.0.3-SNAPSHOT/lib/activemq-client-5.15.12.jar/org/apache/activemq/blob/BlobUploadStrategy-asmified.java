@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/blob/BlobUploadStrategy", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

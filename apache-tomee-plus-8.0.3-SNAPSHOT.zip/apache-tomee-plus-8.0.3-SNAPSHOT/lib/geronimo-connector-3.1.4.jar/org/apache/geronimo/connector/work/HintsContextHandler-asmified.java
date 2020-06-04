@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/work/HintsContextHandler", "Ljava/lang/Object;Lorg/apache/geronimo/connector/work/WorkContextHandler<Ljavax/resource/spi/work/HintsContext;>;", "java/lang/Object", new String[] { "org/apache/geronimo/connector/work/WorkContextHandler" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/work/HintsContextHandler", "Ljava/lang/Object;Lorg/apache/geronimo/connector/work/WorkContextHandler<Ljakarta/resource/spi/work/HintsContext;>;", "java/lang/Object", new String[] { "org/apache/geronimo/connector/work/WorkContextHandler" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,23 +34,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "before", "(Ljavax/resource/spi/work/HintsContext;)V", null, new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "before", "(Ljakarta/resource/spi/work/HintsContext;)V", null, new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "after", "(Ljavax/resource/spi/work/HintsContext;)V", null, new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "after", "(Ljakarta/resource/spi/work/HintsContext;)V", null, new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supports", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/resource/spi/work/WorkContext;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supports", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/resource/spi/work/WorkContext;>;)Z", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/resource/spi/work/HintsContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/resource/spi/work/HintsContext;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitInsn(IRETURN);
@@ -66,23 +66,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "after", "(Ljavax/resource/spi/work/WorkContext;)V", null, new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "after", "(Ljakarta/resource/spi/work/WorkContext;)V", null, new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/work/HintsContext");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/HintsContextHandler", "after", "(Ljavax/resource/spi/work/HintsContext;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/work/HintsContext");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/HintsContextHandler", "after", "(Ljakarta/resource/spi/work/HintsContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "before", "(Ljavax/resource/spi/work/WorkContext;)V", null, new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "before", "(Ljakarta/resource/spi/work/WorkContext;)V", null, new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/work/HintsContext");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/HintsContextHandler", "before", "(Ljavax/resource/spi/work/HintsContext;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/work/HintsContext");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/HintsContextHandler", "before", "(Ljakarta/resource/spi/work/HintsContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

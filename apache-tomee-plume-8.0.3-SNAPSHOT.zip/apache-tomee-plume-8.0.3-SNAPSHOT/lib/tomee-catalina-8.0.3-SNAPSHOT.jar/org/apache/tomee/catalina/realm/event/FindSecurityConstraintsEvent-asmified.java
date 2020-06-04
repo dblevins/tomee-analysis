@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "userConstraint", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletRequest;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletRequest;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -52,7 +52,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "(
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "roles", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "context", "Ljava/lang/String;");
@@ -61,10 +61,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequest", "()Ljavax/servlet/ServletRequest;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequest", "()Ljakarta/servlet/ServletRequest;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

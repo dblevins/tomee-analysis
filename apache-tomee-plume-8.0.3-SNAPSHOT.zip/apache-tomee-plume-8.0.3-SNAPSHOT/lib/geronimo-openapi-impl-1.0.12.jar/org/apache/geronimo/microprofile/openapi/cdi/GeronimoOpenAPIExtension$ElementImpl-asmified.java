@@ -29,17 +29,17 @@ classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/cdi/Geroni
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/enterprise/inject/spi/Annotated;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/enterprise/inject/spi/Annotated;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/enterprise/inject/spi/Annotated;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/enterprise/inject/spi/Annotated;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljavax/enterprise/inject/spi/Annotated;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljakarta/enterprise/inject/spi/Annotated;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -48,9 +48,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", "<T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljavax/enterprise/inject/spi/Annotated;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljakarta/enterprise/inject/spi/Annotated;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -59,8 +59,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotations", "()[Ljava/lang/annotation/Annotation;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljavax/enterprise/inject/spi/Annotated;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljakarta/enterprise/inject/spi/Annotated;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
@@ -73,9 +73,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", "<T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)[TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljavax/enterprise/inject/spi/Annotated;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "delegate", "Ljakarta/enterprise/inject/spi/Annotated;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotations", "(Ljava/lang/Class;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotations", "(Ljava/lang/Class;)Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Array", "newInstance", "(Ljava/lang/Class;I)Ljava/lang/Object;", false);
@@ -97,11 +97,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/enterprise/inject/spi/Annotated;Lorg/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljavax/enterprise/inject/spi/Annotated;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl", "<init>", "(Ljakarta/enterprise/inject/spi/Annotated;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

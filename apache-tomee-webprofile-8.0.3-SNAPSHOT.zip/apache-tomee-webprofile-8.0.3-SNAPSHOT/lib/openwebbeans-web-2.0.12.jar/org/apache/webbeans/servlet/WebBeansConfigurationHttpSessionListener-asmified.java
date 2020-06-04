@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpSessionListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpSessionListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "logger", "Ljava/util/logging/Logger;", null, null);
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionCreated", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionCreated", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -64,17 +64,17 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/servlet/WebBeansCon
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitLdcInsn("Starting a session with session id : [{0}]");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", "lifeCycle", "Lorg/apache/webbeans/spi/ContainerLifecycle;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContainerLifecycle", "getContextService", "()Lorg/apache/webbeans/spi/ContextsService;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/SessionScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/SessionScoped;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "startContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
@@ -90,7 +90,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/logger/WebBeansLoggerFacade", "constructMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;)V", false);
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", "logger", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
@@ -114,24 +114,24 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/servlet/WebBeansCon
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitLdcInsn("Destroying a session with session id : [{0}]");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", "lifeCycle", "Lorg/apache/webbeans/spi/ContainerLifecycle;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContainerLifecycle", "getContextService", "()Lorg/apache/webbeans/spi/ContextsService;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/SessionScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/SessionScoped;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "endContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener", "lifeCycle", "Lorg/apache/webbeans/spi/ContainerLifecycle;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContainerLifecycle", "getContextService", "()Lorg/apache/webbeans/spi/ContextsService;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/ConversationScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/ConversationScoped;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "endContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);

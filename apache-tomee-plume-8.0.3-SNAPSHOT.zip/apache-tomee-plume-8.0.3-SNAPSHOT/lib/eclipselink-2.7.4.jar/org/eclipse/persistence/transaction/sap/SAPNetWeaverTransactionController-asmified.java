@@ -38,12 +38,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "acquireTransactionManager", "()Ljavax/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "acquireTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("TransactionManager");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/sap/SAPNetWeaverTransactionController", "jndiLookup", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionManager");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

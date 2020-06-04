@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "web", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/assembler/classic/AppInfo;Lorg/apache/openejb/assembler/classic/WebAppInfo;Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/assembler/classic/AppInfo;Lorg/apache/openejb/assembler/classic/WebAppInfo;Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -53,7 +53,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/event/AfterApplicationCreated", "web", "Lorg/apache/openejb/assembler/classic/WebAppInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/event/AfterApplicationCreated", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/event/AfterApplicationCreated", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -77,10 +77,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/event/AfterApplicationCreated", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/event/AfterApplicationCreated", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

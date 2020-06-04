@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/cdi/JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/faces/annotation/FlowMap;>;Ljavax/faces/annotation/FlowMap;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/faces/annotation/FlowMap" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/cdi/JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/faces/annotation/FlowMap;>;Ljakarta/faces/annotation/FlowMap;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/faces/annotation/FlowMap" });
 
 classWriter.visitInnerClass("org/apache/myfaces/cdi/JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral", "org/apache/myfaces/cdi/JsfArtifactFlowMapProducer", "FlowMapAnnotationLiteral", 0);
 
@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral", "this$0", "Lorg/apache/myfaces/cdi/JsfArtifactFlowMapProducer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

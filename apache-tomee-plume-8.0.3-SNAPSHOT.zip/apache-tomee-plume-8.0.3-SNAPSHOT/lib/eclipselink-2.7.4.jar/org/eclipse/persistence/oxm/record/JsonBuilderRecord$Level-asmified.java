@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/eclipse/persistence/oxm/record/JsonBuilderRecor
 classWriter.visitInnerClass("org/eclipse/persistence/oxm/record/JsonRecord$Level", "org/eclipse/persistence/oxm/record/JsonRecord", "Level", ACC_PROTECTED | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonObjectBuilder", "Ljavax/json/JsonObjectBuilder;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonObjectBuilder", "Ljakarta/json/JsonObjectBuilder;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonArrayBuilder", "Ljavax/json/JsonArrayBuilder;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonArrayBuilder", "Ljakarta/json/JsonArrayBuilder;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,11 +57,11 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/json/Json", "createArrayBuilder", "()Ljavax/json/JsonArrayBuilder;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/json/Json", "createArrayBuilder", "()Ljakarta/json/JsonArrayBuilder;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -69,58 +69,58 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonObjectBuilder", "()Ljavax/json/JsonObjectBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonObjectBuilder", "()Ljakarta/json/JsonObjectBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljavax/json/JsonObjectBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljakarta/json/JsonObjectBuilder;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJsonObjectBuilder", "(Ljavax/json/JsonObjectBuilder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJsonObjectBuilder", "(Ljakarta/json/JsonObjectBuilder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljavax/json/JsonObjectBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljakarta/json/JsonObjectBuilder;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonArrayBuilder", "()Ljavax/json/JsonArrayBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonArrayBuilder", "()Ljakarta/json/JsonArrayBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJsonArrayBuilder", "(Ljavax/json/JsonArrayBuilder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJsonArrayBuilder", "(Ljakarta/json/JsonArrayBuilder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonArrayBuilder", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$0", "(Lorg/eclipse/persistence/oxm/record/JsonBuilderRecord$Level;)Ljavax/json/JsonObjectBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$0", "(Lorg/eclipse/persistence/oxm/record/JsonBuilderRecord$Level;)Ljakarta/json/JsonObjectBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljavax/json/JsonObjectBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljakarta/json/JsonObjectBuilder;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1", "(Lorg/eclipse/persistence/oxm/record/JsonBuilderRecord$Level;Ljavax/json/JsonObjectBuilder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1", "(Lorg/eclipse/persistence/oxm/record/JsonBuilderRecord$Level;Ljakarta/json/JsonObjectBuilder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljavax/json/JsonObjectBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level", "jsonObjectBuilder", "Ljakarta/json/JsonObjectBuilder;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

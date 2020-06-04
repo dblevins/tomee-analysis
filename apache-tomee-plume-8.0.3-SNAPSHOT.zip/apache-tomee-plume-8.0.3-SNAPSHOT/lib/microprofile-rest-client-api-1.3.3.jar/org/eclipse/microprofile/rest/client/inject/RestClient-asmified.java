@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/microprofile/rest/client/inject/RestClient", null, "java/lang/Object", new String[] { "java/lang/annotation/Annotation" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/inject/Qualifier;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/inject/Qualifier;", true);
 annotationVisitor0.visitEnd();
 }
 {

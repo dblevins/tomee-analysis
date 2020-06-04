@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -104,13 +104,13 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "put", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/spi/ViewScopeProvider;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "put", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/spi/ViewScopeProvider;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "put", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/spi/ViewScopeProvider;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "put", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;Lorg/apache/myfaces/spi/ViewScopeProvider;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -180,7 +180,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfSequentialViewsInSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Integer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfSequentialViewsInSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Integer;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label5 = new Label();
@@ -381,7 +381,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ViewScopeProvider", "destroyViewScopeMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ViewScopeProvider", "destroyViewScopeMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label18);
 methodVisitor.visitLabel(label19);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Integer"}, 0, null);
@@ -405,7 +405,7 @@ methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfViewsInSession", "(Ljavax/faces/context/FacesContext;)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfViewsInSession", "(Ljakarta/faces/context/FacesContext;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 8);
 Label label20 = new Label();
 methodVisitor.visitLabel(label20);
@@ -489,7 +489,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ViewScopeProvider", "destroyViewScopeMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ViewScopeProvider", "destroyViewScopeMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label24);
 methodVisitor.visitLabel(label25);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Integer"}, 0, null);
@@ -509,22 +509,22 @@ methodVisitor.visitMaxs(3, 13);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getNumberOfSequentialViewsInSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Integer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getNumberOfSequentialViewsInSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Integer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/config/MyfacesConfig", "getNumberOfSequentialViewsInSession", "()Ljava/lang/Integer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getNumberOfViewsInSession", "(Ljavax/faces/context/FacesContext;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getNumberOfViewsInSession", "(Ljakarta/faces/context/FacesContext;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/config/MyfacesConfig", "getNumberOfViewsInSession", "()Ljava/lang/Integer;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Integer", "intValue", "()I", false);
 methodVisitor.visitInsn(IRETURN);
@@ -532,7 +532,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "putLastWindowKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "putLastWindowKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Lorg/apache/myfaces/application/viewstate/SerializedViewKey;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "_lastWindowKeys", "Ljava/util/Map;");
@@ -540,11 +540,11 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfSequentialViewsInSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Integer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfSequentialViewsInSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Integer;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfViewsInSession", "(Ljavax/faces/context/FacesContext;)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "getNumberOfViewsInSession", "(Ljakarta/faces/context/FacesContext;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label1 = new Label();
@@ -587,7 +587,7 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLastWindowKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLastWindowKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/SerializedViewCollection", "_lastWindowKeys", "Ljava/util/Map;");

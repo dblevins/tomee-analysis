@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "displayName", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "filter", "Ljavax/servlet/Filter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "filter", "Ljakarta/servlet/Filter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "displayName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljakarta/servlet/Filter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filterClass", "Ljava/lang/String;");
@@ -145,20 +145,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilter", "()Ljavax/servlet/Filter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilter", "()Ljakarta/servlet/Filter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljakarta/servlet/Filter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFilter", "(Ljavax/servlet/Filter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFilter", "(Ljakarta/servlet/Filter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljavax/servlet/Filter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/FilterDef", "filter", "Ljakarta/servlet/Filter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

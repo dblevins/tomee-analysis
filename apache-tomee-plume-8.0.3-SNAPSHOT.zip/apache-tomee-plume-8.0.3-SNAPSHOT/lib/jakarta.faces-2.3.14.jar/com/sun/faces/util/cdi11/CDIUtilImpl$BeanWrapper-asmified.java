@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Bean" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Bean" });
 
 classWriter.visitInnerClass("com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "com/sun/faces/util/cdi11/CDIUtilImpl", "BeanWrapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "beanClass", "Ljava/lang/Clas
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "beanClass", "Ljava/lang/Class;");
@@ -54,11 +54,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setInjectionTarget", "(Ljavax/enterprise/inject/spi/InjectionTarget;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setInjectionTarget", "(Ljakarta/enterprise/inject/spi/InjectionTarget;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -73,11 +73,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "getInjectionPoints", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "getInjectionPoints", "()Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -117,7 +117,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getScope", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -168,50 +168,50 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "produce", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "produce", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "inject", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "inject", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "postConstruct", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "postConstruct", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "preDestroy", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "preDestroy", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "dispose", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "dispose", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/CreationalContext", "release", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/CreationalContext", "release", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper;Ljavax/enterprise/inject/spi/InjectionTarget;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper;Ljakarta/enterprise/inject/spi/InjectionTarget;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "setInjectionTarget", "(Ljavax/enterprise/inject/spi/InjectionTarget;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "setInjectionTarget", "(Ljakarta/enterprise/inject/spi/InjectionTarget;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

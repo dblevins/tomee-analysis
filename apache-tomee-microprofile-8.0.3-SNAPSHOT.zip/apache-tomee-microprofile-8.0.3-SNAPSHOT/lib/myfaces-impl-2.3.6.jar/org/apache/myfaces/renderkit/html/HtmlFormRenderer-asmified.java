@@ -34,18 +34,18 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "afterFormElementsEnd", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "afterFormElementsEnd", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/renderkit/html/HtmlFormRendererBase", "afterFormElementsEnd", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/renderkit/html/HtmlFormRendererBase", "afterFormElementsEnd", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonPropertiesOptimizationEnabled", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonPropertiesOptimizationEnabled", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonEventsOptimizationEnabled", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isCommonEventsOptimizationEnabled", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);

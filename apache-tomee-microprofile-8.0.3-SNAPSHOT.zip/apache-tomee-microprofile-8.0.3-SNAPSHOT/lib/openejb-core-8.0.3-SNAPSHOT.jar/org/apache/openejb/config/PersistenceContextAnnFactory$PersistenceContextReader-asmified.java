@@ -163,7 +163,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visitAnnotation", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/xbean/asm7/AnnotationVisitor;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("Ljavax/persistence/PersistenceContext;");
+methodVisitor.visitLdcInsn("Ljakarta/persistence/PersistenceContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
@@ -180,7 +180,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/Persiste
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn("Ljavax/persistence/PersistenceContexts;");
+methodVisitor.visitLdcInsn("Ljakarta/persistence/PersistenceContexts;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();

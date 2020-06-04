@@ -50,12 +50,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExternalContextResourceLibraryContracts", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExternalContextResourceLibraryContracts", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.WEBAPP_CONTRACTS_DIRECTORY");
+methodVisitor.visitLdcInsn("jakarta.faces.WEBAPP_CONTRACTS_DIRECTORY");
 methodVisitor.visitLdcInsn("contracts");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("/");
@@ -64,7 +64,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("javax.faces.WEBAPP_CONTRACTS_DIRECTORY cannot start with '/");
+methodVisitor.visitLdcInsn("jakarta.faces.WEBAPP_CONTRACTS_DIRECTORY cannot start with '/");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
@@ -101,7 +101,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label2 = new Label();
@@ -146,7 +146,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassloaderResourceLibraryContracts", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassloaderResourceLibraryContracts", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);

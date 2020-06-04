@@ -81,14 +81,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/message/Attachment");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getDataSource", "()Ljavax/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getDataSource", "()Ljakarta/activation/DataSource;", false);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/cxf/attachment/AttachmentDataSource");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getDataSource", "()Ljavax/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getDataSource", "()Ljakarta/activation/DataSource;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/attachment/AttachmentDataSource");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label0);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", null, "java/lang/Object", new String[] { "javax/security/auth/message/MessageInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", null, "java/lang/Object", new String[] { "jakarta/security/auth/message/MessageInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "IS_MANDATORY", "Ljava/lang/String;", null, "javax.security.auth.message.MessagePolicy.isMandatory");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "IS_MANDATORY", "Ljava/lang/String;", null, "jakarta.security.auth.message.MessagePolicy.isMandatory");
 fieldVisitor.visitEnd();
 }
 {
@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "map", "Ljava/uti
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "request", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "request", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljavax/servlet/http/HttpServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljakarta/servlet/http/HttpServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -70,13 +70,13 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "map", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "map", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn("javax.security.auth.message.MessagePolicy.isMandatory");
+methodVisitor.visitLdcInsn("jakarta.security.auth.message.MessagePolicy.isMandatory");
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "toString", "(Z)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -98,7 +98,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestMessage", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -107,7 +107,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponseMessage", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -116,7 +116,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequestMessage", "(Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpServletRequest");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpServletRequest");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
@@ -138,8 +138,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletRequest");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletRequest");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 2);
 methodVisitor.visitEnd();
@@ -148,7 +148,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResponseMessage", "(Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpServletResponse");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpServletResponse");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
@@ -170,8 +170,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletResponse");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletResponse");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/MessageInfoImpl", "response", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 2);
 methodVisitor.visitEnd();

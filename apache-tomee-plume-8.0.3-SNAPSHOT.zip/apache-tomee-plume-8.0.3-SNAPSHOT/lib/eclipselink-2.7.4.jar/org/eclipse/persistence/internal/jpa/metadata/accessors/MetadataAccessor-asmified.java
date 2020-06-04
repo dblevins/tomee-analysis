@@ -932,7 +932,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/met
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.Access");
+methodVisitor.visitLdcInsn("jakarta.persistence.Access");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/MetadataAccessor", "getAnnotation", "(Ljava/lang/String;)Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAnnotation;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

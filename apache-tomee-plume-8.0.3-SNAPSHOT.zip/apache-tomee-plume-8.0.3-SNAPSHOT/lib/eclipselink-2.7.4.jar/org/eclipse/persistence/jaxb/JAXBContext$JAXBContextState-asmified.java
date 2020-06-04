@@ -256,7 +256,7 @@ methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlAdapter");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -266,7 +266,7 @@ methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jaxb/JAXBContext$RootL
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "<init>", "(Ljavax/xml/bind/annotation/adapters/XmlAdapter;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "<init>", "(Ljakarta/xml/bind/annotation/adapters/XmlAdapter;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -755,7 +755,7 @@ methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/transform/Source;"));
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;", false);
-methodVisitor.visitLdcInsn("javax.activation.DataHandler");
+methodVisitor.visitLdcInsn("jakarta.activation.DataHandler");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -1092,7 +1092,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMarshaller", "(Lorg/eclipse/persistence/jaxb/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMarshaller", "(Lorg/eclipse/persistence/jaxb/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jaxb/JAXBMarshaller");
 methodVisitor.visitInsn(DUP);
@@ -1226,7 +1226,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUnmarshaller", "(Lorg/eclipse/persistence/jaxb/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUnmarshaller", "(Lorg/eclipse/persistence/jaxb/JAXBContext;)Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jaxb/JAXBUnmarshaller");
 methodVisitor.visitInsn(DUP);
@@ -1370,7 +1370,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -1390,7 +1390,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState", "org/eclipse/persistence/jaxb/JAXBContext", "org/eclipse/persistence/oxm/XMLMarshaller", "org/eclipse/persistence/oxm/XMLUnmarshaller"}, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState", "org/eclipse/persistence/jaxb/JAXBContext", "org/eclipse/persistence/oxm/XMLMarshaller", "org/eclipse/persistence/oxm/XMLUnmarshaller"}, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "getXMLContext", "()Lorg/eclipse/persistence/oxm/XMLContext;", false);
@@ -1413,7 +1413,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setPropertyOnMarshaller", "(Ljava/lang/String;Lorg/eclipse/persistence/jaxb/JAXBMarshaller;)V", null, new String[] { "javax/xml/bind/PropertyException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setPropertyOnMarshaller", "(Ljava/lang/String;Lorg/eclipse/persistence/jaxb/JAXBMarshaller;)V", null, new String[] { "jakarta/xml/bind/PropertyException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState", "properties", "Ljava/util/Map;");
@@ -1434,7 +1434,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setPropertyOnUnmarshaller", "(Ljava/lang/String;Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;)V", null, new String[] { "javax/xml/bind/PropertyException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setPropertyOnUnmarshaller", "(Ljava/lang/String;Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;)V", null, new String[] { "jakarta/xml/bind/PropertyException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState", "properties", "Ljava/util/Map;");

@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/generics/GProcessInjectionTarget", null, "org/apache/webbeans/portable/events/ProcessInjectionTargetImpl", new String[] { "org/apache/webbeans/portable/events/generics/GenericBeanEvent" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/portable/InjectionTargetImpl;Ljavax/enterprise/inject/spi/AnnotatedType;)V", "(Lorg/apache/webbeans/portable/InjectionTargetImpl<*>;Ljavax/enterprise/inject/spi/AnnotatedType<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/portable/InjectionTargetImpl;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", "(Lorg/apache/webbeans/portable/InjectionTargetImpl<*>;Ljakarta/enterprise/inject/spi/AnnotatedType<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessInjectionTargetImpl", "<init>", "(Ljavax/enterprise/inject/spi/InjectionTarget;Ljavax/enterprise/inject/spi/AnnotatedType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessInjectionTargetImpl", "<init>", "(Ljakarta/enterprise/inject/spi/InjectionTarget;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -39,8 +39,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanClassFor", "(Ljava/lang/Class;)Ljava/lang/Class;", "(Ljava/lang/Class<*>;)Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/generics/GProcessInjectionTarget", "getAnnotatedType", "()Ljavax/enterprise/inject/spi/AnnotatedType;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/generics/GProcessInjectionTarget", "getAnnotatedType", "()Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

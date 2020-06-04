@@ -113,7 +113,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "unlockTimeout", "I", null,
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -190,7 +190,7 @@ methodVisitor.visitIntInsn(SIPUSH, 250);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SocketProperties", "unlockTimeout", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -979,20 +979,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "setObjectName", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "setObjectName", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getObjectName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getObjectName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/SocketProperties", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

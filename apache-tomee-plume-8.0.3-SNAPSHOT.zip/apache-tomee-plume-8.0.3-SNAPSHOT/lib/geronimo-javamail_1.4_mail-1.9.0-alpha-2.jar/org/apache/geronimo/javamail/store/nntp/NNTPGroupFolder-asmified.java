@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", null, "org/apache/geronimo/javamail/store/nntp/NNTPFolder", null);
 
-classWriter.visitInnerClass("javax/mail/FetchProfile$Item", "javax/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/FetchProfile$Item", "jakarta/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "firstArticle", "I", null, null);
@@ -64,7 +64,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "parent", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "parent", "Ljakarta/mail/Folder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "groupInfo", "Lorg/apache/geronimo/javamail/store/nntp/newsrc/NNTPNewsrcGroup;");
@@ -73,7 +73,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "updateGroupStats", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "updateGroupStats", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -105,7 +105,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/trans
 methodVisitor.visitIntInsn(SIPUSH, 411);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPNE, label9);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/FolderNotFoundException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/FolderNotFoundException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -116,7 +116,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/FolderNotFoundException", "<init>", "(Ljavax/mail/Folder;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/FolderNotFoundException", "<init>", "(Ljakarta/mail/Folder;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -124,7 +124,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/trans
 methodVisitor.visitIntInsn(SIPUSH, 211);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPEQ, label10);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -134,7 +134,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitTypeInsn(NEW, "java/util/StringTokenizer");
@@ -199,12 +199,12 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/FolderNotFoundException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/FolderNotFoundException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "updateGroupStats", "()V", false);
@@ -219,7 +219,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNewMessages", "()Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNewMessages", "()Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "lastArticle", "I");
@@ -242,7 +242,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "openFolder", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "openFolder", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "updateGroupStats", "()V", false);
@@ -256,7 +256,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "closeFolder", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "closeFolder", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -266,7 +266,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(I)Ljavax/mail/Message;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(I)Ljakarta/mail/Message;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "checkOpen", "()V", false);
@@ -307,7 +307,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/trans
 methodVisitor.visitIntInsn(SIPUSH, 223);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -317,7 +317,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -335,7 +335,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/nntp/NNTPMe
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/nntp/NNTPStore");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -358,7 +358,7 @@ methodVisitor.visitMaxs(9, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessages", "()[Ljavax/mail/Message;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessages", "()[Ljakarta/mail/Message;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -367,7 +367,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NumberFormat
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/mail/MessagingException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "checkOpen", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -443,7 +443,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "articles", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/mail/Message");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/mail/Message");
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 10);
 Label label9 = new Label();
@@ -452,7 +452,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/nntp/NNTPMe
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/nntp/NNTPStore");
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Integer", "intValue", "()I", false);
@@ -495,7 +495,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "getMessage", "(I)Ljavax/mail/Message;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "getMessage", "(I)Ljakarta/mail/Message;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);
@@ -509,16 +509,16 @@ methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/mail/Message");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/mail/Message");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Message;");
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Message;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Message;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Message;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fetch", "([Ljavax/mail/Message;Ljavax/mail/FetchProfile;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fetch", "([Ljakarta/mail/Message;Ljakarta/mail/FetchProfile;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPGroupFolder", "checkOpen", "()V", false);
@@ -545,13 +545,13 @@ methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "ENVELOPE", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "ENVELOPE", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "CONTENT_INFO", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "CONTENT_INFO", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/nntp/NNTPMessage");
@@ -559,8 +559,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "ENVELOPE", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "ENVELOPE", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -569,8 +569,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "CONTENT_INFO", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "CONTENT_INFO", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/nntp/NNTPMessage");

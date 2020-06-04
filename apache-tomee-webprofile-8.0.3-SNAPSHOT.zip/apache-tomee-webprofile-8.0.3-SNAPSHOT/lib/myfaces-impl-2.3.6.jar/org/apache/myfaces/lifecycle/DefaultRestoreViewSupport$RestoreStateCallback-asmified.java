@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", null, "java/lang/Object", new String[] { "javax/faces/component/visit/VisitCallback" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", null, "java/lang/Object", new String[] { "jakarta/faces/component/visit/VisitCallback" });
 
 classWriter.visitInnerClass("org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport", "RestoreStateCallback", ACC_PRIVATE | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "event", "Ljavax/faces/event/PostRestoreStateEvent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "event", "Ljakarta/faces/event/PostRestoreStateEvent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,33 +42,33 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljavax/faces/component/visit/VisitContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/visit/VisitResult;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljakarta/faces/component/visit/VisitContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/component/visit/VisitResult;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljavax/faces/event/PostRestoreStateEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljakarta/faces/event/PostRestoreStateEvent;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/event/PostRestoreStateEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/event/PostRestoreStateEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/event/PostRestoreStateEvent", "<init>", "(Ljavax/faces/component/UIComponent;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljavax/faces/event/PostRestoreStateEvent;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/event/PostRestoreStateEvent", "<init>", "(Ljakarta/faces/component/UIComponent;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljakarta/faces/event/PostRestoreStateEvent;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljavax/faces/event/PostRestoreStateEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljakarta/faces/event/PostRestoreStateEvent;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/PostRestoreStateEvent", "setComponent", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/PostRestoreStateEvent", "setComponent", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljavax/faces/event/PostRestoreStateEvent;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "processEvent", "(Ljavax/faces/event/ComponentSystemEvent;)V", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "ACCEPT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback", "event", "Ljakarta/faces/event/PostRestoreStateEvent;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "processEvent", "(Ljakarta/faces/event/ComponentSystemEvent;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "ACCEPT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

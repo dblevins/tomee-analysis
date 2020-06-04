@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/EndWebBeansListener", null, "java/lang/Object", new String[] { "javax/servlet/ServletContextListener", "javax/servlet/ServletRequestListener", "javax/servlet/http/HttpSessionListener", "javax/servlet/http/HttpSessionActivationListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/EndWebBeansListener", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContextListener", "jakarta/servlet/ServletRequestListener", "jakarta/servlet/http/HttpSessionListener", "jakarta/servlet/http/HttpSessionActivationListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;", null, null);
@@ -80,28 +80,28 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "requestDestroyed", "(Ljavax/servlet/ServletRequestEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "requestDestroyed", "(Ljakarta/servlet/ServletRequestEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "requestInitialized", "(Ljavax/servlet/ServletRequestEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "requestInitialized", "(Ljakarta/servlet/ServletRequestEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionCreated", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionCreated", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBeansListener", "contextsService", "Lorg/apache/openejb/cdi/CdiAppContextsService;");
@@ -113,13 +113,13 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBeansListener", "contextsService", "Lorg/apache/openejb/cdi/CdiAppContextsService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljavax/servlet/ServletRequestListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljakarta/servlet/ServletRequestListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionWillPassivate", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionWillPassivate", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBeansListener", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -133,35 +133,35 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBe
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitLdcInsn("openWebBeansSessionContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "removeAttribute", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "removeAttribute", "(Ljava/lang/String;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "destroyFakedRequest", "(Ljavax/servlet/ServletRequestListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "destroyFakedRequest", "(Ljakarta/servlet/ServletRequestListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDidActivate", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDidActivate", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "destroyFakedRequest", "(Ljavax/servlet/ServletRequestListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "destroyFakedRequest", "(Ljakarta/servlet/ServletRequestListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBeansListener", "contextsService", "Lorg/apache/openejb/cdi/CdiAppContextsService;");
@@ -173,7 +173,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EndWebBeansListener", "contextsService", "Lorg/apache/openejb/cdi/CdiAppContextsService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljavax/servlet/ServletRequestListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljakarta/servlet/ServletRequestListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

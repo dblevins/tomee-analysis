@@ -22,24 +22,24 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "org/apache/jasper/el/FunctionMapperImpl", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "org/apache/jasper/el/FunctionMapperImpl", null, "jakarta/el/FunctionMapper", null);
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "fnMapper", "Ljavax/servlet/jsp/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "fnMapper", "Ljakarta/servlet/jsp/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/jsp/el/FunctionMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/jsp/el/FunctionMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/el/FunctionMapperImpl", "fnMapper", "Ljavax/servlet/jsp/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/el/FunctionMapperImpl", "fnMapper", "Ljakarta/servlet/jsp/el/FunctionMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -48,10 +48,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveFunction", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Method;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/el/FunctionMapperImpl", "fnMapper", "Ljavax/servlet/jsp/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/el/FunctionMapperImpl", "fnMapper", "Ljakarta/servlet/jsp/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/jsp/el/FunctionMapper", "resolveFunction", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/jsp/el/FunctionMapper", "resolveFunction", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Method;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

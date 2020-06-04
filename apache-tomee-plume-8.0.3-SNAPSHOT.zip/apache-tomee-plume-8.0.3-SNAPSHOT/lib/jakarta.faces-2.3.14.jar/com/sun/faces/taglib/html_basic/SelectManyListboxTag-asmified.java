@@ -22,559 +22,559 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", null, "javax/faces/webapp/UIComponentELTag", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", null, "jakarta/faces/webapp/UIComponentELTag", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converter", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converter", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converterMessage", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converterMessage", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "immediate", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "immediate", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "required", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "required", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "requiredMessage", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "requiredMessage", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validator", "Ljavax/el/MethodExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validator", "Ljakarta/el/MethodExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validatorMessage", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validatorMessage", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "value", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "value", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "valueChangeListener", "Ljavax/el/MethodExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "valueChangeListener", "Ljakarta/el/MethodExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "accesskey", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "accesskey", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "collectionType", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "collectionType", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dir", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dir", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "disabled", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "disabled", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "disabledClass", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "disabledClass", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "enabledClass", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "enabledClass", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "hideNoSelectionOption", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "hideNoSelectionOption", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "label", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "label", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lang", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lang", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onblur", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onblur", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onchange", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onchange", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onclick", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onclick", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ondblclick", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ondblclick", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onfocus", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onfocus", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeydown", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeydown", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeypress", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeypress", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeyup", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onkeyup", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmousedown", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmousedown", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmousemove", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmousemove", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseout", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseout", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseover", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseover", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseup", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onmouseup", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onselect", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onselect", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "readonly", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "readonly", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "role", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "role", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "size", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "size", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "style", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "style", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "styleClass", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "styleClass", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "tabindex", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "tabindex", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "title", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "title", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/UIComponentELTag", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/UIComponentELTag", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConverter", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConverter", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConverterMessage", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConverterMessage", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setImmediate", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setImmediate", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequired", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequired", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequiredMessage", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRequiredMessage", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidator", "(Ljavax/el/MethodExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidator", "(Ljakarta/el/MethodExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidatorMessage", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidatorMessage", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValueChangeListener", "(Ljavax/el/MethodExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValueChangeListener", "(Ljakarta/el/MethodExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAccesskey", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAccesskey", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCollectionType", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCollectionType", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDir", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDir", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisabled", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisabled", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisabledClass", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisabledClass", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEnabledClass", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEnabledClass", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHideNoSelectionOption", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHideNoSelectionOption", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLabel", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLabel", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLang", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLang", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnblur", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnblur", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnchange", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnchange", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnclick", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnclick", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOndblclick", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOndblclick", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnfocus", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnfocus", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeydown", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeydown", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeypress", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeypress", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeyup", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnkeyup", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmousedown", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmousedown", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmousemove", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmousemove", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseout", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseout", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseover", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseover", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseup", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnmouseup", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnselect", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOnselect", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadonly", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadonly", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRole", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRole", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSize", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSize", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStyle", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStyle", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStyleClass", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStyleClass", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTabindex", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTabindex", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTitle", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTitle", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -582,7 +582,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRendererType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.faces.Listbox");
+methodVisitor.visitLdcInsn("jakarta.faces.Listbox");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -590,13 +590,13 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getComponentType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectManyListbox");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectManyListbox");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setProperties", "(Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setProperties", "(Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -604,18 +604,18 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ClassCastException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/UIComponentELTag", "setProperties", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/UIComponentELTag", "setProperties", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UISelectMany");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UISelectMany");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/taglib/html_basic/SelectManyListboxTag", "javax/faces/component/UIComponent", "javax/faces/component/UISelectMany"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/taglib/html_basic/SelectManyListboxTag", "jakarta/faces/component/UIComponent", "jakarta/faces/component/UISelectMany"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -627,7 +627,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-methodVisitor.visitLdcInsn(" not expected type.  Expected: javax.faces.component.UISelectMany.  Perhaps you're missing a tag?");
+methodVisitor.visitLdcInsn(" not expected type.  Expected: jakarta.faces.component.UISelectMany.  Perhaps you're missing a tag?");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -635,454 +635,454 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "isLiteralText", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "isLiteralText", "()Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("converter");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getExpressionString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "createConverter", "(Ljava/lang/String;)Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getExpressionString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createConverter", "(Ljava/lang/String;)Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setConverter", "(Ljavax/faces/convert/Converter;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setConverter", "(Ljakarta/faces/convert/Converter;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljakarta/el/ValueExpression;");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("converterMessage");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljakarta/el/ValueExpression;");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("immediate");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljakarta/el/ValueExpression;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("required");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljakarta/el/ValueExpression;");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label9);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("requiredMessage");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljakarta/el/MethodExpression;");
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/validator/MethodExpressionValidator");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/validator/MethodExpressionValidator");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljavax/el/MethodExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/validator/MethodExpressionValidator", "<init>", "(Ljavax/el/MethodExpression;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "addValidator", "(Ljavax/faces/validator/Validator;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljakarta/el/MethodExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/validator/MethodExpressionValidator", "<init>", "(Ljakarta/el/MethodExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "addValidator", "(Ljakarta/faces/validator/Validator;)V", false);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljakarta/el/ValueExpression;");
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label11);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("validatorMessage");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljakarta/el/ValueExpression;");
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label12);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("value");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljakarta/el/MethodExpression;");
 Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label13);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/event/MethodExpressionValueChangeListener");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/event/MethodExpressionValueChangeListener");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljavax/el/MethodExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/event/MethodExpressionValueChangeListener", "<init>", "(Ljavax/el/MethodExpression;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "addValueChangeListener", "(Ljavax/faces/event/ValueChangeListener;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljakarta/el/MethodExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/event/MethodExpressionValueChangeListener", "<init>", "(Ljakarta/el/MethodExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "addValueChangeListener", "(Ljakarta/faces/event/ValueChangeListener;)V", false);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljakarta/el/ValueExpression;");
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label14);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("accesskey");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljakarta/el/ValueExpression;");
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label15);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("collectionType");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label15);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljakarta/el/ValueExpression;");
 Label label16 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label16);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("dir");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label16);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljakarta/el/ValueExpression;");
 Label label17 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label17);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("disabled");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label17);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljakarta/el/ValueExpression;");
 Label label18 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label18);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("disabledClass");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label18);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljakarta/el/ValueExpression;");
 Label label19 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label19);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("enabledClass");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label19);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljakarta/el/ValueExpression;");
 Label label20 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label20);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("hideNoSelectionOption");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label20);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljakarta/el/ValueExpression;");
 Label label21 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label21);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("label");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label21);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljakarta/el/ValueExpression;");
 Label label22 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label22);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("lang");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label22);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljakarta/el/ValueExpression;");
 Label label23 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label23);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onblur");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label23);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljakarta/el/ValueExpression;");
 Label label24 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label24);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onchange");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label24);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljakarta/el/ValueExpression;");
 Label label25 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label25);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onclick");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label25);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljakarta/el/ValueExpression;");
 Label label26 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label26);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("ondblclick");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label26);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljakarta/el/ValueExpression;");
 Label label27 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label27);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onfocus");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label27);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljakarta/el/ValueExpression;");
 Label label28 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label28);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onkeydown");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label28);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljakarta/el/ValueExpression;");
 Label label29 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label29);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onkeypress");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label29);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljakarta/el/ValueExpression;");
 Label label30 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label30);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onkeyup");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label30);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljakarta/el/ValueExpression;");
 Label label31 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label31);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onmousedown");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label31);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljakarta/el/ValueExpression;");
 Label label32 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label32);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onmousemove");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label32);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljakarta/el/ValueExpression;");
 Label label33 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label33);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onmouseout");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label33);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljakarta/el/ValueExpression;");
 Label label34 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label34);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onmouseover");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label34);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljakarta/el/ValueExpression;");
 Label label35 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label35);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onmouseup");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label35);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljakarta/el/ValueExpression;");
 Label label36 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label36);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("onselect");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label36);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljakarta/el/ValueExpression;");
 Label label37 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label37);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("readonly");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label37);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljakarta/el/ValueExpression;");
 Label label38 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label38);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("role");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label38);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljakarta/el/ValueExpression;");
 Label label39 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label39);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("size");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label39);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljakarta/el/ValueExpression;");
 Label label40 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label40);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("style");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label40);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljakarta/el/ValueExpression;");
 Label label41 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label41);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("styleClass");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label41);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljakarta/el/ValueExpression;");
 Label label42 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label42);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("tabindex");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label42);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljakarta/el/ValueExpression;");
 Label label43 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label43);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("title");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectMany", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label43);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -1090,7 +1090,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1098,7 +1098,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/UIComponentELTag", "doStartTag", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/UIComponentELTag", "doStartTag", "()I", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);
@@ -1119,16 +1119,16 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1136,7 +1136,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/UIComponentELTag", "doEndTag", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/UIComponentELTag", "doEndTag", "()I", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);
@@ -1157,10 +1157,10 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -1169,124 +1169,124 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/UIComponentELTag", "release", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/UIComponentELTag", "release", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converter", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "converterMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "immediate", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "required", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "requiredMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validator", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "validatorMessage", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "value", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljavax/el/MethodExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "valueChangeListener", "Ljakarta/el/MethodExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "accesskey", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "collectionType", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "dir", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabled", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "disabledClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "enabledClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "hideNoSelectionOption", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "label", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "lang", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onblur", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onchange", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onclick", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "ondblclick", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onfocus", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeydown", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeypress", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onkeyup", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousedown", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmousemove", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseout", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseover", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onmouseup", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "onselect", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "readonly", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "role", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "size", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "style", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "styleClass", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "tabindex", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/html_basic/SelectManyListboxTag", "title", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

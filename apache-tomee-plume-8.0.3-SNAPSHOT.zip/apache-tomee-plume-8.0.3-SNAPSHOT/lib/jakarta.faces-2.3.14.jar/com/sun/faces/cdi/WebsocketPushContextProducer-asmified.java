@@ -25,13 +25,13 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/WebsocketPushContextProducer", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/Dependent;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/Dependent;", true);
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -39,7 +39,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "socketSessions", "Lcom/sun/faces/push/WebsocketSessionManager;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -47,7 +47,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "socketUsers", "Lcom/sun/faces/push/WebsocketUserManager;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -62,35 +62,35 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljavax/faces/push/PushContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljakarta/faces/push/PushContext;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/faces/push/Push;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/faces/push/Push;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/push/Push;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/cdi/CdiUtils", "getQualifier", "(Ljavax/enterprise/inject/spi/InjectionPoint;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/push/Push");
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/push/Push;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/cdi/CdiUtils", "getQualifier", "(Ljakarta/enterprise/inject/spi/InjectionPoint;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/push/Push");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/push/Push", "channel", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/push/Push", "channel", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "isEmpty", "()Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Member", "getName", "()Ljava/lang/String;", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/push/Push"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/push/Push"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/push/Push", "channel", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/push/Push", "channel", "()Ljava/lang/String;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
 methodVisitor.visitVarInsn(ASTORE, 3);

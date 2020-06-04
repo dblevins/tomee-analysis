@@ -22,33 +22,33 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", null, "javax/faces/context/ExceptionHandlerFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", null, "jakarta/faces/context/ExceptionHandlerFactory", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parent", "Ljavax/faces/context/ExceptionHandlerFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parent", "Ljakarta/faces/context/ExceptionHandlerFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/ExceptionHandlerFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/ExceptionHandlerFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ExceptionHandlerFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ExceptionHandlerFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", "parent", "Ljavax/faces/context/ExceptionHandlerFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", "parent", "Ljakarta/faces/context/ExceptionHandlerFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljavax/faces/context/ExceptionHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljakarta/faces/context/ExceptionHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/jsf/OwbExceptionHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", "parent", "Ljavax/faces/context/ExceptionHandlerFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExceptionHandlerFactory", "getExceptionHandler", "()Ljavax/faces/context/ExceptionHandler;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbExceptionHandler", "<init>", "(Ljavax/faces/context/ExceptionHandler;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbExceptionHandlerFactory", "parent", "Ljakarta/faces/context/ExceptionHandlerFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExceptionHandlerFactory", "getExceptionHandler", "()Ljakarta/faces/context/ExceptionHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbExceptionHandler", "<init>", "(Ljakarta/faces/context/ExceptionHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

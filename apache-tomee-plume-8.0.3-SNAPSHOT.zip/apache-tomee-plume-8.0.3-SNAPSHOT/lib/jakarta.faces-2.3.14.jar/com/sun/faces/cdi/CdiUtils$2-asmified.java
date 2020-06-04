@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/cdi/CdiUtils$2", "Ljavax/enterprise/util/TypeLiteral<Ljavax/faces/validator/Validator<*>;>;", "javax/enterprise/util/TypeLiteral", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/cdi/CdiUtils$2", "Ljakarta/enterprise/util/TypeLiteral<Ljakarta/faces/validator/Validator<*>;>;", "jakarta/enterprise/util/TypeLiteral", null);
 
 classWriter.visitOuterClass("com/sun/faces/cdi/CdiUtils", null, null);
 
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/TypeLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/TypeLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

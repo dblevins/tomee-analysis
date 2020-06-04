@@ -164,7 +164,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/enterprise/inject/spi/DefinitionException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/enterprise/inject/spi/DefinitionException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Throwable");
 Label label4 = new Label();
@@ -214,7 +214,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClas
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/enterprise/inject/spi/DefinitionException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/enterprise/inject/spi/DefinitionException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ATHROW);

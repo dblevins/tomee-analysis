@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/OpenEJBLifecycle$OpenEJBComponentProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/inject/Provider<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/inject/Provider", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/OpenEJBLifecycle$OpenEJBComponentProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/inject/Provider<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/inject/Provider", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/openejb/cdi/OpenEJBLifecycle$OpenEJBComponentProvider", "org/apache/openejb/cdi/OpenEJBLifecycle", "OpenEJBComponentProvider", ACC_PRIVATE | ACC_STATIC);
 

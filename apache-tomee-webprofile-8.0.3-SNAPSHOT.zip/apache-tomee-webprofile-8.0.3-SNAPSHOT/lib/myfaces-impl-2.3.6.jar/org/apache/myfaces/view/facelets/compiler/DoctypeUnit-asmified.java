@@ -76,10 +76,10 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/view/facelets/FaceletHandler");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/view/facelets/FaceletHandler");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
@@ -114,12 +114,12 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/DoctypeUnit", "getNextFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/DoctypeUnit", "getNextFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/CompositeFaceletHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/CompositeFaceletHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/CompositeFaceletHandler", "<init>", "([Ljavax/faces/view/facelets/FaceletHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/CompositeFaceletHandler", "<init>", "([Ljakarta/faces/view/facelets/FaceletHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(15, 2);
 methodVisitor.visitEnd();

@@ -33,18 +33,18 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_startup", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/ServletExternalContextImplBase", "<init>", "(Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/ServletExternalContextImplBase", "<init>", "(Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/servlet/StartupServletExternalContextImpl", "_servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/servlet/StartupServletExternalContextImpl", "_servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/servlet/StartupServletExternalContextImpl", "_startup", "Z");
@@ -159,8 +159,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestContextPath", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/servlet/StartupServletExternalContextImpl", "_servletContext", "Ljavax/servlet/ServletContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/servlet/StartupServletExternalContextImpl", "_servletContext", "Ljakarta/servlet/ServletContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -1040,7 +1040,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlash", "()Ljavax/faces/context/Flash;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlash", "()Ljakarta/faces/context/Flash;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);

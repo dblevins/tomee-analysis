@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "destination", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/management/JMSSessionStatsImpl;Ljavax/jms/Destination;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/management/JMSSessionStatsImpl;Ljakarta/jms/Destination;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/management/JMSProducerStatsImpl", "destination", "Ljava/lang/String;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/management/JMSProducerStatsImpl", "org/apache/activemq/management/JMSSessionStatsImpl", "javax/jms/Destination"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/management/JMSProducerStatsImpl", "org/apache/activemq/management/JMSSessionStatsImpl", "jakarta/jms/Destination"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/kernel/LocalManagedRuntime", null, "org/apache/openjpa/ee/AbstractManagedRuntime", new String[] { "org/apache/openjpa/ee/ManagedRuntime", "javax/transaction/TransactionManager", "javax/transaction/Transaction" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/kernel/LocalManagedRuntime", null, "org/apache/openjpa/ee/AbstractManagedRuntime", new String[] { "org/apache/openjpa/ee/ManagedRuntime", "jakarta/transaction/TransactionManager", "jakarta/transaction/Transaction" });
 
 classWriter.visitInnerClass("org/apache/openjpa/lib/util/Localizer$Message", "org/apache/openjpa/lib/util/Localizer", "Message", ACC_PUBLIC | ACC_STATIC);
 
@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "_lo
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_broker", "Ljavax/transaction/Synchronization;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_broker", "Ljakarta/transaction/Synchronization;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_factorySync", "Ljavax/transaction/Synchronization;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_factorySync", "Ljakarta/transaction/Synchronization;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,10 +53,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/AbstractManagedRuntime", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_active", "Z");
@@ -65,13 +65,13 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_rollbackOnly", "Ljava/lang/Throwable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -137,14 +137,14 @@ Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label10);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "beforeCompletion", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "beforeCompletion", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "beforeCompletion", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "beforeCompletion", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/RuntimeException"}, 0, null);
 Label label11 = new Label();
@@ -180,9 +180,9 @@ Label label12 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label12);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitInsn(ICONST_3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "afterCompletion", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "afterCompletion", "(I)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/LocalManagedRuntime", "notifyAfterCompletion", "(I)V", false);
@@ -254,9 +254,9 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitInsn(ICONST_4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "afterCompletion", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "afterCompletion", "(I)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -304,12 +304,12 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_active", "Z");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "afterCompletion", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "afterCompletion", "(I)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -317,7 +317,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_rollbackOnly", "Ljava/lang/Throwable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -328,7 +328,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_rollbackOnly", "Ljava/lang/Throwable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
@@ -393,7 +393,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -401,78 +401,78 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljavax/transaction/Transaction;)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljakarta/transaction/Transaction;)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/NotSupportedException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/NotSupportedException;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/NotSupportedException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/NotSupportedException;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljavax/transaction/Transaction;", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljakarta/transaction/Transaction;", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/NotSupportedException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/NotSupportedException;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delistResource", "(Ljavax/transaction/xa/XAResource;I)Z", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delistResource", "(Ljavax/transaction/xa/XAResource;I)Z", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/NotSupportedException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/NotSupportedException;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/NotSupportedException;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/NotSupportedException;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_broker", "Ljakarta/transaction/Synchronization;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InternalException");
@@ -483,7 +483,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljavax/transaction/Synchronization;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/LocalManagedRuntime", "_factorySync", "Ljakarta/transaction/Synchronization;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

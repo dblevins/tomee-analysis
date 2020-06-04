@@ -269,7 +269,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "loadJavaxPackage", "(Ljava/lang/ClassLoader;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.http.Cookie");
+methodVisitor.visitLdcInsn("jakarta.servlet.http.Cookie");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

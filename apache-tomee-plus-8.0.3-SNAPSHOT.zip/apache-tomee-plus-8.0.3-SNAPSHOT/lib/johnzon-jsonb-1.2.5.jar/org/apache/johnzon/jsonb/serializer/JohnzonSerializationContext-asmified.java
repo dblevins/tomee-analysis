@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext", null, "java/lang/Object", new String[] { "javax/json/bind/serializer/SerializationContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext", null, "java/lang/Object", new String[] { "jakarta/json/bind/serializer/SerializationContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "runtime", "Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
@@ -41,27 +41,27 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serialize", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)V", "<T:Ljava/lang/Object;>(Ljava/lang/String;TT;Ljavax/json/stream/JsonGenerator;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serialize", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)V", "<T:Ljava/lang/Object;>(Ljava/lang/String;TT;Ljakarta/json/stream/JsonGenerator;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext", "runtime", "Lorg/apache/johnzon/mapper/MappingGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serialize", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)V", "<T:Ljava/lang/Object;>(TT;Ljavax/json/stream/JsonGenerator;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serialize", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)V", "<T:Ljava/lang/Object;>(TT;Ljakarta/json/stream/JsonGenerator;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext", "runtime", "Lorg/apache/johnzon/mapper/MappingGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);

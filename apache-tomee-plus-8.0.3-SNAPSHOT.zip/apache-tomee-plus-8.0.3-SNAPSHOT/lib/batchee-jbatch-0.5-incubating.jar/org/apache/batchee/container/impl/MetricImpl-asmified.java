@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/impl/MetricImpl", null, "java/lang/Object", new String[] { "javax/batch/runtime/Metric" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/impl/MetricImpl", null, "java/lang/Object", new String[] { "jakarta/batch/runtime/Metric" });
 
-classWriter.visitInnerClass("javax/batch/runtime/Metric$MetricType", "javax/batch/runtime/Metric", "MetricType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/batch/runtime/Metric$MetricType", "jakarta/batch/runtime/Metric", "MetricType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "name", "Ljavax/batch/runtime/Metric$MetricType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "name", "Ljakarta/batch/runtime/Metric$MetricType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "value", "J", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/batch/runtime/Metric$MetricType;J)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/batch/runtime/Metric$MetricType;J)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/MetricImpl", "name", "Ljavax/batch/runtime/Metric$MetricType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/MetricImpl", "name", "Ljakarta/batch/runtime/Metric$MetricType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/MetricImpl", "value", "J");
@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljavax/batch/runtime/Metric$MetricType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljakarta/batch/runtime/Metric$MetricType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/MetricImpl", "name", "Ljavax/batch/runtime/Metric$MetricType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/MetricImpl", "name", "Ljakarta/batch/runtime/Metric$MetricType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

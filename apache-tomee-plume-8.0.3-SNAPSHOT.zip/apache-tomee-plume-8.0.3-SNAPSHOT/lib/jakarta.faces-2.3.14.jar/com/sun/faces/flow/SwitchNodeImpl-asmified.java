@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/SwitchNodeImpl", null, "javax/faces/flow/SwitchNode", new String[] { "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/SwitchNodeImpl", null, "jakarta/faces/flow/SwitchNode", new String[] { "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-9203493858518714933L));
@@ -33,28 +33,28 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "id", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultOutcome", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultOutcome", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_cases", "Ljava/util/concurrent/CopyOnWriteArrayList;", "Ljava/util/concurrent/CopyOnWriteArrayList<Ljavax/faces/flow/SwitchCase;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_cases", "Ljava/util/concurrent/CopyOnWriteArrayList;", "Ljava/util/concurrent/CopyOnWriteArrayList<Ljakarta/faces/flow/SwitchCase;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cases", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cases", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/SwitchNode", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/SwitchNode", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "id", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/CopyOnWriteArrayList");
 methodVisitor.visitInsn(DUP);
@@ -117,20 +117,20 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -193,12 +193,12 @@ methodVisitor.visitIntInsn(BIPUSH, 47);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitInsn(IMUL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "hashCode", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "hashCode", "()I", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -242,7 +242,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "cases", "Ljava/util/List;");
@@ -251,7 +251,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "_getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "_getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "_cases", "Ljava/util/concurrent/CopyOnWriteArrayList;");
@@ -260,20 +260,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultOutcome", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultOutcome", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -305,33 +305,33 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultOutcome", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultOutcome", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/SwitchNodeImpl", "defaultOutcome", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

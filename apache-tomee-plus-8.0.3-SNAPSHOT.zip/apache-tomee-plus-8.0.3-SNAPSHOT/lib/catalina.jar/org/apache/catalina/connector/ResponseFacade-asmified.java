@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/connector/ResponseFacade", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpServletResponse" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/connector/ResponseFacade", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpServletResponse" });
 
 classWriter.visitInnerClass("org/apache/catalina/connector/ResponseFacade$FlushBufferPrivilegedAction", "org/apache/catalina/connector/ResponseFacade", "FlushBufferPrivilegedAction", ACC_PRIVATE | ACC_STATIC);
 
@@ -167,11 +167,11 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/ResponseFacade", "response", "Lorg/apache/catalina/connector/Response;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Response", "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Response", "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/ResponseFacade", "isFinished", "()Z", false);
@@ -182,7 +182,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/ResponseFa
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Response", "setSuspended", "(Z)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/ServletOutputStream"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/ServletOutputStream"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -497,7 +497,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljavax/servlet/http/Cookie;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCookie", "(Ljakarta/servlet/http/Cookie;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/ResponseFacade", "isCommitted", "()Z", false);
@@ -509,7 +509,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/ResponseFacade", "response", "Lorg/apache/catalina/connector/Response;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Response", "addCookie", "(Ljavax/servlet/http/Cookie;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Response", "addCookie", "(Ljakarta/servlet/http/Cookie;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

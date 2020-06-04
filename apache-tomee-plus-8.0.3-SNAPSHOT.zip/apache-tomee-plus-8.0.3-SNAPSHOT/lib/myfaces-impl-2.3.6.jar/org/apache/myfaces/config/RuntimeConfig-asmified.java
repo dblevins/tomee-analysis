@@ -57,39 +57,39 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_facesVersion", "Ljava/lang/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesConfigElResolvers", "Ljava/util/List;", "Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesConfigElResolvers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "applicationElResolvers", "Ljava/util/List;", "Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "applicationElResolvers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableResolver", "Ljavax/faces/el/VariableResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableResolver", "Ljakarta/faces/el/VariableResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_propertyResolver", "Ljavax/faces/el/PropertyResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_propertyResolver", "Ljakarta/faces/el/PropertyResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_expressionFactory", "Ljavax/el/ExpressionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_expressionFactory", "Ljakarta/el/ExpressionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_propertyResolverChainHead", "Ljavax/faces/el/PropertyResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_propertyResolverChainHead", "Ljakarta/faces/el/PropertyResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableResolverChainHead", "Ljavax/faces/el/VariableResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_variableResolverChainHead", "Ljakarta/faces/el/VariableResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolverComparator", "Ljava/util/Comparator;", "Ljava/util/Comparator<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolverComparator", "Ljava/util/Comparator;", "Ljava/util/Comparator<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolverPredicate", "Ljava/util/function/Predicate;", "Ljava/util/function/Predicate<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolverPredicate", "Ljava/util/function/Predicate;", "Ljava/util/function/Predicate<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -153,7 +153,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_faceletsTemplateMappings", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_searchExpressionResolvers", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/component/search/SearchKeywordResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_searchExpressionResolvers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/component/search/SearchKeywordResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -273,10 +273,10 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/RuntimeConfig", "APPLICATION_MAP_PARAM_NAME", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/config/RuntimeConfig");
@@ -289,7 +289,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/RuntimeConfig", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/RuntimeConfig", "APPLICATION_MAP_PARAM_NAME", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -712,7 +712,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFacesConfigElResolver", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFacesConfigElResolver", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "facesConfigElResolvers", "Ljava/util/List;");
@@ -735,7 +735,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesConfigElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesConfigElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "facesConfigElResolvers", "Ljava/util/List;");
@@ -744,7 +744,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addApplicationElResolver", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addApplicationElResolver", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "applicationElResolvers", "Ljava/util/List;");
@@ -767,7 +767,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "applicationElResolvers", "Ljava/util/List;");
@@ -776,96 +776,96 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableResolver", "(Ljavax/faces/el/VariableResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableResolver", "(Ljakarta/faces/el/VariableResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolver", "Ljavax/faces/el/VariableResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolver", "Ljakarta/faces/el/VariableResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableResolver", "()Ljavax/faces/el/VariableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableResolver", "()Ljakarta/faces/el/VariableResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolver", "Ljavax/faces/el/VariableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolver", "Ljakarta/faces/el/VariableResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolver", "(Ljavax/faces/el/PropertyResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolver", "(Ljakarta/faces/el/PropertyResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolver", "Ljavax/faces/el/PropertyResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolver", "Ljakarta/faces/el/PropertyResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyResolver", "()Ljavax/faces/el/PropertyResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyResolver", "()Ljakarta/faces/el/PropertyResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolver", "Ljavax/faces/el/PropertyResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolver", "Ljakarta/faces/el/PropertyResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExpressionFactory", "(Ljavax/el/ExpressionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExpressionFactory", "(Ljakarta/el/ExpressionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolverChainHead", "(Ljavax/faces/el/PropertyResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolverChainHead", "(Ljakarta/faces/el/PropertyResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolverChainHead", "Ljavax/faces/el/PropertyResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolverChainHead", "Ljakarta/faces/el/PropertyResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyResolverChainHead", "()Ljavax/faces/el/PropertyResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyResolverChainHead", "()Ljakarta/faces/el/PropertyResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolverChainHead", "Ljavax/faces/el/PropertyResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_propertyResolverChainHead", "Ljakarta/faces/el/PropertyResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableResolverChainHead", "(Ljavax/faces/el/VariableResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableResolverChainHead", "(Ljakarta/faces/el/VariableResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolverChainHead", "Ljavax/faces/el/VariableResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolverChainHead", "Ljakarta/faces/el/VariableResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableResolverChainHead", "()Ljavax/faces/el/VariableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableResolverChainHead", "()Ljakarta/faces/el/VariableResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolverChainHead", "Ljavax/faces/el/VariableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_variableResolverChainHead", "Ljakarta/faces/el/VariableResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -928,7 +928,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolverComparator", "()Ljava/util/Comparator;", "()Ljava/util/Comparator<Ljavax/el/ELResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolverComparator", "()Ljava/util/Comparator;", "()Ljava/util/Comparator<Ljakarta/el/ELResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_elResolverComparator", "Ljava/util/Comparator;");
@@ -937,7 +937,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setELResolverComparator", "(Ljava/util/Comparator;)V", "(Ljava/util/Comparator<Ljavax/el/ELResolver;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setELResolverComparator", "(Ljava/util/Comparator;)V", "(Ljava/util/Comparator<Ljakarta/el/ELResolver;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -947,7 +947,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolverPredicate", "()Ljava/util/function/Predicate;", "()Ljava/util/function/Predicate<Ljavax/el/ELResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolverPredicate", "()Ljava/util/function/Predicate;", "()Ljava/util/function/Predicate<Ljakarta/el/ELResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_elResolverPredicate", "Ljava/util/function/Predicate;");
@@ -956,7 +956,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setELResolverPredicate", "(Ljava/util/function/Predicate;)V", "(Ljava/util/function/Predicate<Ljavax/el/ELResolver;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setELResolverPredicate", "(Ljava/util/function/Predicate;)V", "(Ljava/util/function/Predicate<Ljakarta/el/ELResolver;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1264,7 +1264,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addApplicationSearchExpressionResolver", "(Ljavax/faces/component/search/SearchKeywordResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addApplicationSearchExpressionResolver", "(Ljakarta/faces/component/search/SearchKeywordResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_searchExpressionResolvers", "Ljava/util/List;");
@@ -1287,7 +1287,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationSearchExpressionResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/component/search/SearchKeywordResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationSearchExpressionResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/component/search/SearchKeywordResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/RuntimeConfig", "_searchExpressionResolvers", "Ljava/util/List;");

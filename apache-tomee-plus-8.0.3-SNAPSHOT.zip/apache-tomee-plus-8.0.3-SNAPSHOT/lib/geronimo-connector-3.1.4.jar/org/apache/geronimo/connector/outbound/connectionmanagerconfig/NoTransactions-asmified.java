@@ -46,7 +46,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransactionInterceptors", "(Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljavax/transaction/TransactionManager;)Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransactionInterceptors", "(Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljakarta/transaction/TransactionManager;)Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);

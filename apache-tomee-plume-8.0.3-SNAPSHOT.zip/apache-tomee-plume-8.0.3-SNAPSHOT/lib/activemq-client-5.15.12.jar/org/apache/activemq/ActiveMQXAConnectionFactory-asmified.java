@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ActiveMQXAConnectionFactory", null, "org/apache/activemq/ActiveMQConnectionFactory", new String[] { "javax/jms/XAConnectionFactory", "javax/jms/XAQueueConnectionFactory", "javax/jms/XATopicConnectionFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ActiveMQXAConnectionFactory", null, "org/apache/activemq/ActiveMQConnectionFactory", new String[] { "jakarta/jms/XAConnectionFactory", "jakarta/jms/XAQueueConnectionFactory", "jakarta/jms/XATopicConnectionFactory" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -78,67 +78,67 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAConnection", "()Ljavax/jms/XAConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAConnection", "()Ljakarta/jms/XAConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "()Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XAConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XAConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/jms/XAConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/jms/XAConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XAConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XAConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAQueueConnection", "()Ljavax/jms/XAQueueConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAQueueConnection", "()Ljakarta/jms/XAQueueConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "()Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XAQueueConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XAQueueConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAQueueConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/jms/XAQueueConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXAQueueConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/jms/XAQueueConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XAQueueConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XAQueueConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXATopicConnection", "()Ljavax/jms/XATopicConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXATopicConnection", "()Ljakarta/jms/XATopicConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "()Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XATopicConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XATopicConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXATopicConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/jms/XATopicConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXATopicConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/jms/XATopicConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ActiveMQXAConnectionFactory", "createActiveMQConnection", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/activemq/ActiveMQConnection;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XATopicConnection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XATopicConnection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

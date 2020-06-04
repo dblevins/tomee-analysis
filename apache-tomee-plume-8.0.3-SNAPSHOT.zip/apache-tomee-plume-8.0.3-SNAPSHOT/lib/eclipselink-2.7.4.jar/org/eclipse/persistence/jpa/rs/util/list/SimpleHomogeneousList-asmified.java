@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/list/SimpleHomogeneousList", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRootElement;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRootElement;", true);
 annotationVisitor0.visit("name", "List");
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "items", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "items", "Ljava/util/List;", "Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,9 +43,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getItems", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getItems", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAnyElement;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAnyElement;", true);
 annotationVisitor0.visit("lax", Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setItems", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setItems", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/bval/jsr/util/AnnotationProxyBuilder$ValidAnnotation", "Lorg/apache/bval/cdi/EmptyAnnotationLiteral<Ljavax/validation/Valid;>;Ljavax/validation/Valid;", "org/apache/bval/cdi/EmptyAnnotationLiteral", new String[] { "javax/validation/Valid" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/bval/jsr/util/AnnotationProxyBuilder$ValidAnnotation", "Lorg/apache/bval/cdi/EmptyAnnotationLiteral<Ljakarta/validation/Valid;>;Ljakarta/validation/Valid;", "org/apache/bval/cdi/EmptyAnnotationLiteral", new String[] { "jakarta/validation/Valid" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/AnnotationProxyBuilder$ValidAnnotation", "org/apache/bval/jsr/util/AnnotationProxyBuilder", "ValidAnnotation", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 

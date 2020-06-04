@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/b
 classWriter.visitInnerClass("org/apache/bval/cdi/BValExtension$AnnotatedTypeFilter", "org/apache/bval/cdi/BValExtension", "AnnotatedTypeFilter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "accept", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Z", "(Ljavax/enterprise/inject/spi/AnnotatedType<*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "accept", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Z", "(Ljakarta/enterprise/inject/spi/AnnotatedType<*>;)Z", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

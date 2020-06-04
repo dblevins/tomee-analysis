@@ -25,27 +25,27 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/webapp/FacesInitializer", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initFaces", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initFaces", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyFaces", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyFaces", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initStartupFacesContext", "(Ljavax/servlet/ServletContext;)Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initStartupFacesContext", "(Ljakarta/servlet/ServletContext;)Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyStartupFacesContext", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyStartupFacesContext", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initShutdownFacesContext", "(Ljavax/servlet/ServletContext;)Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "initShutdownFacesContext", "(Ljakarta/servlet/ServletContext;)Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyShutdownFacesContext", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyShutdownFacesContext", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

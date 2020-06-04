@@ -47,25 +47,25 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DELE
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RUNNING_STATUSES", "Ljava/util/List;", "Ljava/util/List<Ljavax/batch/runtime/BatchStatus;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RUNNING_STATUSES", "Ljava/util/List;", "Ljava/util/List<Ljakarta/batch/runtime/BatchStatus;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_3);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/batch/runtime/BatchStatus");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/batch/runtime/BatchStatus");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STARTED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STARTED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STARTING", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STARTING", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STOPPING", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STOPPING", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity$Queries", "RUNNING_STATUSES", "Ljava/util/List;");

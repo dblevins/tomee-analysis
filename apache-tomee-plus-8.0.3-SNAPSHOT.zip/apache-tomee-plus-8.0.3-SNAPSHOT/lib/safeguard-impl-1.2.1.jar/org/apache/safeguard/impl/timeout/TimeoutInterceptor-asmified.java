@@ -29,11 +29,11 @@ annotationVisitor0 = classWriter.visitAnnotation("Lorg/eclipse/microprofile/faul
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/Interceptor;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/Interceptor;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(4020));
 annotationVisitor0.visitEnd();
 }
@@ -52,7 +52,7 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Lorg/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -60,7 +60,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "executor", "Ljava/util/concurrent/Executor;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -79,9 +79,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "withTimeout", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "withTimeout", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -106,7 +106,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/timeout/TimeoutInterceptor", "cache", "Lorg/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache", "getUnwrappedCache", "()Lorg/apache/safeguard/impl/cache/UnwrappedCache;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/cache/UnwrappedCache", "getUnwrappedCache", "()Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -119,7 +119,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/timeout/TimeoutInterceptor", "cache", "Lorg/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache", "create", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/timeout/TimeoutInterceptor$Model;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/timeout/TimeoutInterceptor$Cache", "create", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/timeout/TimeoutInterceptor$Model;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -133,7 +133,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/timeout/T
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -143,7 +143,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("call", "(Ljavax/interceptor/InvocationContext;)Ljava/util/concurrent/Callable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true), Type.getType("()Ljava/lang/Object;")});
+methodVisitor.visitInvokeDynamicInsn("call", "(Ljakarta/interceptor/InvocationContext;)Ljava/util/concurrent/Callable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true), Type.getType("()Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/FutureTask", "<init>", "(Ljava/util/concurrent/Callable;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime", "()J", false);
@@ -176,7 +176,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/safeguard/impl/metric
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/safeguard/impl/timeout/TimeoutInterceptor", "javax/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/timeout/TimeoutInterceptor$Model", "java/util/concurrent/FutureTask", Opcodes.LONG}, 1, new Object[] {"java/util/concurrent/ExecutionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/safeguard/impl/timeout/TimeoutInterceptor", "jakarta/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/timeout/TimeoutInterceptor$Model", "java/util/concurrent/FutureTask", Opcodes.LONG}, 1, new Object[] {"java/util/concurrent/ExecutionException"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);

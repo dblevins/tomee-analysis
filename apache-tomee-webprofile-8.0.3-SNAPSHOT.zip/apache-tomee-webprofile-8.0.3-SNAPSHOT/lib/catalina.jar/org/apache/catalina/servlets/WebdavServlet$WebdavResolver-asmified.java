@@ -27,17 +27,17 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/servlets/WebdavServlet$W
 classWriter.visitInnerClass("org/apache/catalina/servlets/WebdavServlet$WebdavResolver", "org/apache/catalina/servlets/WebdavServlet", "WebdavResolver", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "context", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "context", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/servlets/WebdavServlet$WebdavResolver", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/servlets/WebdavServlet$WebdavResolver", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -46,7 +46,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/servlets/WebdavServlet$WebdavResolver", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/servlets/WebdavServlet$WebdavResolver", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/servlets/DefaultServlet", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("webdavservlet.enternalEntityIgnored");
 methodVisitor.visitInsn(ICONST_2);
@@ -60,7 +60,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "log", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "log", "(Ljava/lang/String;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/xml/sax/InputSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/io/StringReader");

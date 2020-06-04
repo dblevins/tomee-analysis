@@ -25,49 +25,49 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE | ACC_SYNTHETIC, "org/apache/openejb/jee/oejb2/package-info", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/xml/bind/annotation/adapters/CollapsedStringAdapter;"));
 annotationVisitor0.visit("type", Type.getType("Ljava/lang/String;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchema;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchema;", true);
 annotationVisitor0.visit("namespace", "http://tomee.apache.org/xml/ns/openejb-jar-2.2");
-annotationVisitor0.visitEnum("elementFormDefault", "Ljavax/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
+annotationVisitor0.visitEnum("elementFormDefault", "Ljakarta/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("xmlns");
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "o");
 annotationVisitor2.visit("namespaceURI", "http://tomee.apache.org/xml/ns/openejb-jar-2.2");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "sys");
 annotationVisitor2.visit("namespaceURI", "http://geronimo.apache.org/xml/ns/deployment-1.2");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "pkgen");
 annotationVisitor2.visit("namespaceURI", "http://tomee.apache.org/xml/ns/pkgen-2.1");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "naming");
 annotationVisitor2.visit("namespaceURI", "http://geronimo.apache.org/xml/ns/naming-1.2");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "app");
 annotationVisitor2.visit("namespaceURI", "http://geronimo.apache.org/xml/ns/j2ee/application-1.2");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlNs;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlNs;");
 annotationVisitor2.visit("prefix", "secu");
 annotationVisitor2.visit("namespaceURI", "http://geronimo.apache.org/xml/ns/security-2.0");
 annotationVisitor2.visitEnd();

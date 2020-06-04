@@ -298,7 +298,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/transform/TransformerFactory", "newInstance", "()Ljavax/xml/transform/TransformerFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/TransformerFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);

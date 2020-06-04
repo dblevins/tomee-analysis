@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/NewLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/New;>;Ljavax/enterprise/inject/New;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/New" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/NewLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/New;>;Ljakarta/enterprise/inject/New;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/New" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-2981014729208063412L));
@@ -36,9 +36,9 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/New;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/New;"));
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/annotation/NewLiteral", "clazz", "Ljava/lang/Class;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -48,7 +48,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/annotation/NewLiteral", "clazz", "Ljava/lang/Class;");

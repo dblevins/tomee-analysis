@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CON
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "txMgr", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "txMgr", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -41,10 +41,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/local/ManagedDataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/local/ManagedDataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "txMgr", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "txMgr", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
@@ -79,10 +79,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "getTxConnection", "(Ljavax/sql/CommonDataSource;Ljava/lang/String;Ljava/lang/String;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)Ljava/sql/Connection;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "getTxConnection", "(Ljavax/sql/CommonDataSource;Ljava/lang/String;Ljava/lang/String;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)Ljava/sql/Connection;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -100,12 +100,12 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "delegate", "Ljavax/sql/CommonDataSource;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "txMgr", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "txMgr", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXAConnection", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/ManagedXAConnection", "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Proxy", "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/Connection");

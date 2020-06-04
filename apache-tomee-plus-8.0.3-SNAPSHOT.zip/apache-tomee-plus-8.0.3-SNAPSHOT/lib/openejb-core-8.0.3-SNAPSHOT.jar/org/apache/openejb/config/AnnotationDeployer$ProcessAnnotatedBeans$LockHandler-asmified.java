@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljavax/ejb/Lock;>;", "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljakarta/ejb/Lock;>;", "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans", "org/apache/openejb/config/AnnotationDeployer", "ProcessAnnotatedBeans", ACC_PUBLIC | ACC_STATIC);
 
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljavax/ejb/Lock;Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljakarta/ejb/Lock;Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -68,14 +68,14 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "toLock", "(Ljavax/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "toLock", "(Ljakarta/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ContainerConcurrency", "setLock", "(Lorg/apache/openejb/jee/ConcurrentLockType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljavax/ejb/Lock;Ljava/lang/reflect/Method;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljakarta/ejb/Lock;Ljava/lang/reflect/Method;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -84,29 +84,29 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "toLock", "(Ljavax/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "toLock", "(Ljakarta/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ContainerConcurrency", "setLock", "(Lorg/apache/openejb/jee/ConcurrentLockType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toLock", "(Ljavax/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toLock", "(Ljakarta/ejb/Lock;)Lorg/apache/openejb/jee/ConcurrentLockType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ejb/LockType", "READ", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ejb/LockType", "READ", "Ljakarta/ejb/LockType;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/Lock", "value", "()Ljavax/ejb/LockType;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ejb/LockType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/Lock", "value", "()Ljakarta/ejb/LockType;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ejb/LockType", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/ConcurrentLockType", "READ", "Lorg/apache/openejb/jee/ConcurrentLockType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ejb/LockType", "WRITE", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ejb/LockType", "WRITE", "Ljakarta/ejb/LockType;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/Lock", "value", "()Ljavax/ejb/LockType;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ejb/LockType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/Lock", "value", "()Ljakarta/ejb/LockType;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ejb/LockType", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/ConcurrentLockType", "WRITE", "Lorg/apache/openejb/jee/ConcurrentLockType;");
@@ -121,7 +121,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("Unknown lock annotation: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/Lock", "value", "()Ljavax/ejb/LockType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/Lock", "value", "()Ljakarta/ejb/LockType;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
@@ -130,9 +130,9 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljavax/ejb/Lock;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljakarta/ejb/Lock;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/Lock;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/Lock;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -171,9 +171,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/Lock");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/Lock");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "addMethodLevelDeclaration", "(Ljavax/ejb/Lock;Ljava/lang/reflect/Method;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "addMethodLevelDeclaration", "(Ljakarta/ejb/Lock;Ljava/lang/reflect/Method;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -183,9 +183,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/Lock");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/Lock");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "addClassLevelDeclaration", "(Ljavax/ejb/Lock;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler", "addClassLevelDeclaration", "(Ljakarta/ejb/Lock;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$this$0", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$jsonbSerializer", "Ljavax/json/bind/serializer/JsonbSerializer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$jsonbSerializer", "Ljakarta/json/bind/serializer/JsonbSerializer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$1", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters;Lorg/apache/johnzon/jsonb/JsonbAccessMode;Ljavax/json/bind/serializer/JsonbSerializer;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters;Lorg/apache/johnzon/jsonb/JsonbAccessMode;Ljakarta/json/bind/serializer/JsonbSerializer;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -61,7 +61,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$this$0", "Lorg/apache/johnzon/jsonb/JsonbAccessMode;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$jsonbSerializer", "Ljavax/json/bind/serializer/JsonbSerializer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$jsonbSerializer", "Ljakarta/json/bind/serializer/JsonbSerializer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$global", "Z");
@@ -75,17 +75,17 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeJson", "(Ljava/lang/Object;Lorg/apache/johnzon/mapper/MappingGenerator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "getJsonGenerator", "()Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "getJsonGenerator", "()Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$jsonbSerializer", "Ljavax/json/bind/serializer/JsonbSerializer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1", "val$jsonbSerializer", "Ljakarta/json/bind/serializer/JsonbSerializer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext", "<init>", "(Lorg/apache/johnzon/mapper/MappingGenerator;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/serializer/JsonbSerializer", "serialize", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;Ljavax/json/bind/serializer/SerializationContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/serializer/JsonbSerializer", "serialize", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;Ljakarta/json/bind/serializer/SerializationContext;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();

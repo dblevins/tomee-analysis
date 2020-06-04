@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/intercept/AbstractInvocationContext", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/interceptor/InvocationContext;", "java/lang/Object", new String[] { "javax/interceptor/InvocationContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/intercept/AbstractInvocationContext", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/interceptor/InvocationContext;", "java/lang/Object", new String[] { "jakarta/interceptor/InvocationContext" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "target", "Ljavax/inject/Provider;", "Ljavax/inject/Provider<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "target", "Ljakarta/inject/Provider;", "Ljakarta/inject/Provider<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,13 +45,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "timer", "Ljava/lang/Object;"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/inject/Provider;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", "(Ljavax/inject/Provider<TT;>;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/inject/Provider;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", "(Ljakarta/inject/Provider<TT;>;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljavax/inject/Provider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljakarta/inject/Provider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "member", "Ljava/lang/reflect/AccessibleObject;");
@@ -66,19 +66,19 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/AccessibleObject", "setAccessible", "(Z)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/webbeans/intercept/AbstractInvocationContext", "javax/inject/Provider", "java/lang/reflect/AccessibleObject", "[Ljava/lang/Object;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/webbeans/intercept/AbstractInvocationContext", "jakarta/inject/Provider", "java/lang/reflect/AccessibleObject", "[Ljava/lang/Object;"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/inject/Provider;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)V", "(Ljavax/inject/Provider<TT;>;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/inject/Provider;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)V", "(Ljakarta/inject/Provider<TT;>;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/AbstractInvocationContext", "<init>", "(Ljavax/inject/Provider;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/AbstractInvocationContext", "<init>", "(Ljakarta/inject/Provider;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "timer", "Ljava/lang/Object;");
@@ -90,8 +90,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljava/lang/Object;", "()TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljavax/inject/Provider;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/inject/Provider", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljakarta/inject/Provider;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/inject/Provider", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -186,8 +186,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/AbstractInvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljavax/inject/Provider;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/inject/Provider", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "target", "Ljakarta/inject/Provider;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/inject/Provider", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/AbstractInvocationContext", "parameters", "[Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);

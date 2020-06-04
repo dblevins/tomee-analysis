@@ -287,7 +287,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
@@ -501,7 +501,7 @@ methodVisitor.visitLabel(label1);
 Label label19 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label19);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler", "org/apache/wss4j/policy/model/AbstractTokenWrapper", "org/apache/wss4j/policy/model/AbstractToken", "java/lang/String", "org/apache/cxf/ws/security/tokenstore/SecurityToken", "java/util/List", "java/util/List"}, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler", "org/apache/wss4j/policy/model/AbstractTokenWrapper", "org/apache/wss4j/policy/model/AbstractToken", "java/lang/String", "org/apache/cxf/ws/security/tokenstore/SecurityToken", "java/util/List", "java/util/List"}, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/Fault");
 methodVisitor.visitInsn(DUP);
@@ -1042,7 +1042,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doEncryption", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Ljava/util/List;)V", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;)V", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doEncryption", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Ljava/util/List;)V", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;)V", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1332,7 +1332,7 @@ methodVisitor.visitMaxs(3, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doSignature", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Lorg/apache/wss4j/policy/model/AbstractToken;Ljava/util/List;)V", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Lorg/apache/wss4j/policy/model/AbstractToken;Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;)V", new String[] { "org/apache/wss4j/common/ext/WSSecurityException", "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doSignature", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Lorg/apache/wss4j/policy/model/AbstractToken;Ljava/util/List;)V", "(Lorg/apache/wss4j/policy/model/AbstractTokenWrapper;Lorg/apache/wss4j/policy/model/AbstractToken;Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;)V", new String[] { "org/apache/wss4j/common/ext/WSSecurityException", "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler", "getProperties", "()Lorg/apache/wss4j/stax/ext/WSSSecurityProperties;", false);

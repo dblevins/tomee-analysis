@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/catalina/cdi/ServletContextHandler", null, "java/lang/Object", new String[] { "java/lang/reflect/InvocationHandler" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contexts", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljavax/servlet/ServletContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contexts", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljakarta/servlet/ServletContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -54,7 +54,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -67,7 +67,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/cdi/ServletContextHandler", "contexts", "Ljava/util/concurrent/ConcurrentMap;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContext");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label1 = new Label();
@@ -78,7 +78,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/ClassLoader", "javax/servlet/ServletContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/ClassLoader", "jakarta/servlet/ServletContext"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/catalina/OpenEJBSecurityListener", "requests", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
@@ -121,7 +121,7 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/WebContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/WebContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -149,7 +149,7 @@ methodVisitor.visitMaxs(4, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContexts", "()Ljava/util/concurrent/ConcurrentMap;", "()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljavax/servlet/ServletContext;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContexts", "()Ljava/util/concurrent/ConcurrentMap;", "()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljakarta/servlet/ServletContext;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/cdi/ServletContextHandler", "contexts", "Ljava/util/concurrent/ConcurrentMap;");

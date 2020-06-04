@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl$1", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl$1", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
-classWriter.visitOuterClass("com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "getDataHandler", "()Ljavax/activation/DataHandler;");
+classWriter.visitOuterClass("com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "getDataHandler", "()Ljakarta/activation/DataHandler;");
 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/soap/AttachmentPartImpl$1", null, null, 0);
 

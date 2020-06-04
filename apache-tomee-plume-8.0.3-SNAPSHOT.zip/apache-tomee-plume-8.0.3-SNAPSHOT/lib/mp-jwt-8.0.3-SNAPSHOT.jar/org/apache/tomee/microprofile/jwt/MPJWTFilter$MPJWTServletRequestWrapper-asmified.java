@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", null, "javax/servlet/http/HttpServletRequestWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", null, "jakarta/servlet/http/HttpServletRequestWrapper", null);
 
 classWriter.visitInnerClass("org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "org/apache/tomee/microprofile/jwt/MPJWTFilter", "MPJWTServletRequestWrapper", ACC_PUBLIC | ACC_STATIC);
 
@@ -31,49 +31,49 @@ classWriter.visitInnerClass("org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWT
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tokenFunction", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljavax/servlet/http/HttpServletRequest;Lorg/eclipse/microprofile/jwt/JsonWebToken;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tokenFunction", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljakarta/servlet/http/HttpServletRequest;Lorg/eclipse/microprofile/jwt/JsonWebToken;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Lorg/apache/tomee/microprofile/jwt/config/JWTAuthConfiguration;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/tomee/microprofile/jwt/config/JWTAuthConfiguration;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomee/microprofile/jwt/MPJWTFilter", "access$000", "(Ljavax/servlet/http/HttpServletRequest;Lorg/apache/tomee/microprofile/jwt/config/JWTAuthConfiguration;)Ljava/util/function/Function;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomee/microprofile/jwt/MPJWTFilter", "access$000", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/tomee/microprofile/jwt/config/JWTAuthConfiguration;)Ljava/util/function/Function;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "tokenFunction", "Ljava/util/function/Function;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("get", "(Lorg/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "lambda$new$0", "(Ljavax/servlet/http/HttpServletRequest;)Lorg/eclipse/microprofile/jwt/JsonWebToken;", false), Type.getType("()Lorg/eclipse/microprofile/jwt/JsonWebToken;")});
+methodVisitor.visitInvokeDynamicInsn("get", "(Lorg/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper;Ljakarta/servlet/http/HttpServletRequest;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "lambda$new$0", "(Ljakarta/servlet/http/HttpServletRequest;)Lorg/eclipse/microprofile/jwt/JsonWebToken;", false), Type.getType("()Lorg/eclipse/microprofile/jwt/JsonWebToken;")});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/jwt/JsonWebToken;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "tokenFunction", "Ljava/util/function/Function;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "JWT_SUPPLIER", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("javax.security.auth.subject.callable");
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper$1", "<init>", "(Lorg/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper;Ljavax/servlet/http/HttpServletRequest;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper$1", "<init>", "(Lorg/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper;Ljakarta/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
@@ -84,7 +84,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "tokenFunction", "Ljava/util/function/Function;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/security/Principal");
 methodVisitor.visitInsn(ARETURN);
@@ -97,7 +97,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "tokenFunction", "Ljava/util/function/Function;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/jwt/JsonWebToken");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/servlet/http/HttpServletRequest;)Lorg/eclipse/microprofile/jwt/JsonWebToken;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/servlet/http/HttpServletRequest;)Lorg/eclipse/microprofile/jwt/JsonWebToken;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper", "tokenFunction", "Ljava/util/function/Function;");

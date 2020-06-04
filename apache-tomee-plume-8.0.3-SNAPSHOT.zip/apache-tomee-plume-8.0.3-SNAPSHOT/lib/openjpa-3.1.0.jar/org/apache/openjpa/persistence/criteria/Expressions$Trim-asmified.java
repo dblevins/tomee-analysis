@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "Lorg/apache/openjpa/persistence/criteria/Expressions$BinarayFunctionalExpression<Ljava/lang/String;>;", "org/apache/openjpa/persistence/criteria/Expressions$BinarayFunctionalExpression", null);
 
-classWriter.visitInnerClass("javax/persistence/criteria/CriteriaBuilder$Trimspec", "javax/persistence/criteria/CriteriaBuilder", "Trimspec", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "jakarta/persistence/criteria/CriteriaBuilder", "Trimspec", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$Trim", "org/apache/openjpa/persistence/criteria/Expressions", "Trim", ACC_PUBLIC | ACC_STATIC);
 
@@ -35,58 +35,58 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_STATIC, "defaultTrim", "Ljavax/persistence/criteria/Expression;", "Ljavax/persistence/criteria/Expression<Ljava/lang/Character;>;", null);
+fieldVisitor = classWriter.visitField(ACC_STATIC, "defaultTrim", "Ljakarta/persistence/criteria/Expression;", "Ljakarta/persistence/criteria/Expression<Ljava/lang/Character;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_STATIC, "defaultSpec", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;", null, null);
+fieldVisitor = classWriter.visitField(ACC_STATIC, "defaultSpec", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ts", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ts", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;Ljavax/persistence/criteria/Expression<Ljava/lang/Character;>;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;Ljakarta/persistence/criteria/Expression<Ljava/lang/Character;>;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$BinarayFunctionalExpression", "<init>", "(Ljava/lang/Class;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$BinarayFunctionalExpression", "<init>", "(Ljava/lang/Class;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;Ljavax/persistence/criteria/Expression<Ljava/lang/Character;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;Ljakarta/persistence/criteria/Expression<Ljava/lang/Character;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljavax/persistence/criteria/Expression;");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljakarta/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Ljava/lang/Character;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;Ljava/lang/Character;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Ljava/lang/Character;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;Ljava/lang/Character;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -95,14 +95,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Character;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Ljava/lang/Character;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;Ljava/lang/Character;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Ljava/lang/Character;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;Ljava/lang/Character;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -112,19 +112,19 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Character;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljavax/persistence/criteria/Expression<Ljava/lang/String;>;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/String;>;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -135,13 +135,13 @@ methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$1", "$SwitchMap$javax$persistence$criteria$CriteriaBuilder$Trimspec", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "ts", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label1 = new Label();
 Label label2 = new Label();
@@ -240,9 +240,9 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Character;"));
 methodVisitor.visitIntInsn(BIPUSH, 32);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Character", "valueOf", "(C)Ljava/lang/Character;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljavax/persistence/criteria/Expression;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "BOTH", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultTrim", "Ljakarta/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "BOTH", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$Trim", "defaultSpec", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 0);
 methodVisitor.visitEnd();

@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "useJpaLockForExistingRefresh
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "entityManager", "Ljavax/persistence/EntityManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "entityManager", "Ljakarta/persistence/EntityManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -60,26 +60,26 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getEntityManager", "()Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getEntityManager", "()Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "entityManager", "Ljavax/persistence/EntityManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "entityManager", "Ljakarta/persistence/EntityManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntityManager", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntityManager", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "entityManager", "Ljavax/persistence/EntityManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "entityManager", "Ljakarta/persistence/EntityManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "beginIfNeeded", "(Ljavax/persistence/EntityManager;)Ljavax/persistence/EntityTransaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "beginIfNeeded", "(Ljakarta/persistence/EntityManager;)Ljakarta/persistence/EntityTransaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -87,14 +87,14 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "commitIfNeeded", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "commitIfNeeded", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "closeIfNeeded", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "closeIfNeeded", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

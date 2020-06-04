@@ -46,9 +46,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobContext", "()Ljavax/batch/runtime/context/JobContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobContext", "()Ljakarta/batch/runtime/context/JobContext;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -66,9 +66,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStepContext", "()Ljavax/batch/runtime/context/StepContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStepContext", "()Ljakarta/batch/runtime/context/StepContext;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -86,13 +86,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -102,27 +102,27 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "getInjectionReferences", "()Lorg/apache/batchee/container/proxy/InjectionReferences;", false);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getAnnotated", "()Ljavax/enterprise/inject/spi/Annotated;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/batch/api/BatchProperty;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/BatchProperty");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getAnnotated", "()Ljakarta/enterprise/inject/spi/Annotated;", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/batch/api/BatchProperty;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Annotated", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/batch/api/BatchProperty");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/BatchProperty", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/BatchProperty", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getMember", "()Ljava/lang/reflect/Member;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Member", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/batch/api/BatchProperty"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/batch/api/BatchProperty"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/BatchProperty", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/BatchProperty", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
@@ -139,19 +139,19 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIntProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Integer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIntProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Integer;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -171,19 +171,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDoubleProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Double;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDoubleProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Double;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -203,19 +203,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceFloatProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Float;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceFloatProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Float;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -235,19 +235,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceShortProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Short;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceShortProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Short;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -267,19 +267,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceBooleanProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Boolean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceBooleanProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Boolean;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -299,19 +299,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceLongProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Long;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceLongProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Long;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -331,19 +331,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceByteProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Byte;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceByteProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Byte;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -363,19 +363,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceCharProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Character;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceCharProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Character;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -395,19 +395,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIntArrayProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)[I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIntArrayProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)[I", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -427,19 +427,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDoubleArrayProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)[D", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDoubleArrayProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)[D", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -459,19 +459,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceStringArrayProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)[Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceStringArrayProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)[Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -491,19 +491,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDateProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/util/Date;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceDateProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/util/Date;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -522,19 +522,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIp4Property", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/net/Inet4Address;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIp4Property", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/net/Inet4Address;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -553,19 +553,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIp6Property", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/net/Inet6Address;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceIp6Property", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/net/Inet6Address;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -584,19 +584,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceUriProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/net/URI;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceUriProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/net/URI;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -615,19 +615,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceUrlProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/net/URL;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceUrlProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/net/URL;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -646,19 +646,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceLoggerProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/util/logging/Logger;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceLoggerProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/util/logging/Logger;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -677,19 +677,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "producePropertiesProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/util/Properties;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "producePropertiesProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/util/Properties;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -708,19 +708,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceClassProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceClassProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -739,19 +739,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "producePatternProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/util/regex/Pattern;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "producePatternProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/util/regex/Pattern;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -770,28 +770,28 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceObjectNameProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceObjectNameProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljakarta/management/ObjectName;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/ObjectName;"));
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/ObjectName;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/ObjectName;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/ObjectName;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/util/DependencyInjections", "convertTo", "(Ljava/lang/String;Ljava/lang/reflect/Type;Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
@@ -801,19 +801,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceFileProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/io/File;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceFileProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/io/File;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/batch/api/BatchProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/batch/api/BatchProperty;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/cdi/BatchProducerBean", "produceProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();

@@ -22,28 +22,28 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tei/DeclareTEI", null, "javax/servlet/jsp/tagext/TagExtraInfo", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tei/DeclareTEI", null, "jakarta/servlet/jsp/tagext/TagExtraInfo", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagExtraInfo", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagExtraInfo", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableInfo", "(Ljavax/servlet/jsp/tagext/TagData;)[Ljavax/servlet/jsp/tagext/VariableInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableInfo", "(Ljakarta/servlet/jsp/tagext/TagData;)[Ljakarta/servlet/jsp/tagext/VariableInfo;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/tagext/VariableInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/tagext/VariableInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("id");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("type");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitLdcInsn("java.lang.Object");
@@ -52,14 +52,14 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("type");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagData", "getAttributeString", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/VariableInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;ZI)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/VariableInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;ZI)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/tagext/VariableInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/tagext/VariableInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);

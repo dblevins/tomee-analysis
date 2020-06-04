@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/SchemaImpl", null, "java/lang/Object", new String[] { "org/eclipse/microprofile/openapi/models/media/Schema" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/eclipse/microprofile/openapi/models/media/Schema$SchemaType", "org/eclipse/microprofile/openapi/models/media/Schema", "SchemaType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
@@ -199,7 +199,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensions", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -258,7 +258,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAdditionalPropertiesSchema", "()Lorg/eclipse/microprofile/openapi/models/media/Schema;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -287,7 +287,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAdditionalPropertiesBoolean", "()Ljava/lang/Boolean;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -326,7 +326,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAdditionalProperties", "(Ljava/lang/Boolean;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -340,7 +340,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAdditionalPropertiesBoolean", "(Ljava/lang/Boolean;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -354,7 +354,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAdditionalProperties", "(Lorg/eclipse/microprofile/openapi/models/media/Schema;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -368,7 +368,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAdditionalPropertiesSchema", "(Lorg/eclipse/microprofile/openapi/models/media/Schema;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -556,7 +556,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValue", "()Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "default");
 annotationVisitor0.visitEnd();
 }
@@ -570,7 +570,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultValue", "(Ljava/lang/Object;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "default");
 annotationVisitor0.visitEnd();
 }
@@ -686,7 +686,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnumeration", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Object;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "enum");
 annotationVisitor0.visitEnd();
 }
@@ -700,7 +700,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEnumeration", "(Ljava/util/List;)V", "(Ljava/util/List<Ljava/lang/Object;>;)V", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "enum");
 annotationVisitor0.visitEnd();
 }
@@ -1042,7 +1042,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaximum", "()Ljava/math/BigDecimal;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeAdapter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -1167,7 +1167,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMinimum", "()Ljava/math/BigDecimal;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeAdapter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -1202,7 +1202,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMultipleOf", "()Ljava/math/BigDecimal;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeAdapter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$BigDecimalSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -1510,7 +1510,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRef", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "$ref");
 annotationVisitor0.visitEnd();
 }
@@ -1524,7 +1524,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRef", "(Ljava/lang/String;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "$ref");
 annotationVisitor0.visitEnd();
 }
@@ -1675,7 +1675,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Lorg/eclipse/microprofile/openapi/models/media/Schema$SchemaType;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeAdapter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$SchemaTypeSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -1689,7 +1689,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Lorg/eclipse/microprofile/openapi/models/media/Schema$SchemaType;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeAdapter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$SchemaTypeSerializer;"));
 annotationVisitor0.visitEnd();
 }

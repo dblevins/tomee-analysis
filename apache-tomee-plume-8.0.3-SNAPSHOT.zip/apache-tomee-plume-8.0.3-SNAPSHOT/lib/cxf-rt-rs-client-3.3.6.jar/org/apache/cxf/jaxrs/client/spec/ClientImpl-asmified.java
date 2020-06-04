@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientImpl", null, "java/lang/Object", new String[] { "javax/ws/rs/client/Client" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientImpl", null, "java/lang/Object", new String[] { "jakarta/ws/rs/client/Client" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/client/spec/ClientImpl$WebTargetImpl", "org/apache/cxf/jaxrs/client/spec/ClientImpl", "WebTargetImpl", ACC_PUBLIC);
 
-classWriter.visitInnerClass("javax/ws/rs/client/Invocation$Builder", "javax/ws/rs/client/Invocation", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/client/Invocation$Builder", "jakarta/ws/rs/client/Invocation", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "configImpl", "Ljavax/ws/rs/core/Configurable;", "Ljavax/ws/rs/core/Configurable<Ljavax/ws/rs/client/Client;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "configImpl", "Ljakarta/ws/rs/core/Configurable;", "Ljakarta/ws/rs/core/Configurable<Ljakarta/ws/rs/client/Client;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "baseClients", "Ljava/util/Se
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Configuration;Lorg/apache/cxf/jaxrs/client/spec/TLSConfiguration;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Configuration;Lorg/apache/cxf/jaxrs/client/spec/TLSConfiguration;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -61,8 +61,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/client/spec/ClientConfigu
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<init>", "(Ljavax/ws/rs/core/Configurable;Ljavax/ws/rs/core/Configuration;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<init>", "(Ljakarta/ws/rs/core/Configurable;Ljakarta/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "secConfig", "Lorg/apache/cxf/jaxrs/client/spec/TLSConfiguration;");
@@ -137,7 +137,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invocation", "(Ljavax/ws/rs/core/Link;)Ljavax/ws/rs/client/Invocation$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invocation", "(Ljakarta/ws/rs/core/Link;)Ljakarta/ws/rs/client/Invocation$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -151,12 +151,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Link", "getUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/client/WebTarget;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/client/WebTarget", "request", "()Ljavax/ws/rs/client/Invocation$Builder;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Link", "getUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/client/WebTarget;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/client/WebTarget", "request", "()Ljakarta/ws/rs/client/Invocation$Builder;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Link", "getType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Link", "getType", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -168,17 +168,17 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/client/Invocation$Builder", "accept", "([Ljava/lang/String;)Ljavax/ws/rs/client/Invocation$Builder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/client/Invocation$Builder", "accept", "([Ljava/lang/String;)Ljakarta/ws/rs/client/Invocation$Builder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/ws/rs/client/Invocation$Builder", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/ws/rs/client/Invocation$Builder", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/client/WebTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/client/WebTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -195,14 +195,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl$WebTargetImpl", "<init>", "(Lorg/apache/cxf/jaxrs/client/spec/ClientImpl;Ljavax/ws/rs/core/UriBuilder;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl$WebTargetImpl", "<init>", "(Lorg/apache/cxf/jaxrs/client/spec/ClientImpl;Ljakarta/ws/rs/core/UriBuilder;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljava/lang/String;)Ljavax/ws/rs/client/WebTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljava/lang/String;)Ljakarta/ws/rs/client/WebTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -222,14 +222,14 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/client/WebTarget;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/client/WebTarget;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljavax/ws/rs/core/Link;)Ljavax/ws/rs/client/WebTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljakarta/ws/rs/core/Link;)Ljakarta/ws/rs/client/WebTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -241,14 +241,14 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkNull", "([Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Link", "getUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/client/WebTarget;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Link", "getUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/client/WebTarget;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljava/net/URI;)Ljavax/ws/rs/client/WebTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "target", "(Ljava/net/URI;)Ljakarta/ws/rs/client/WebTarget;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -260,8 +260,8 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkNull", "([Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/client/WebTarget;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "target", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/client/WebTarget;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
@@ -354,10 +354,10 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/ProcessingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/ProcessingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/ProcessingException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/ProcessingException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -385,146 +385,146 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/client/Client;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Class<*>;)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Class<*>;)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;)Ljavax/ws/rs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;)Ljakarta/ws/rs/client/Client;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;I)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Class<*>;I)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;I)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Class<*>;I)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;I)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;I)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Integer;>;)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Integer;>;)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;I)Ljavax/ws/rs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;I)Ljakarta/ws/rs/client/Client;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;I)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;I)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Object;[Ljava/lang/Class<*>;)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Object;[Ljava/lang/Class<*>;)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljavax/ws/rs/client/Client;", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Integer;>;)Ljavax/ws/rs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljakarta/ws/rs/client/Client;", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Integer;>;)Ljakarta/ws/rs/client/Client;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "checkClosed", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljavax/ws/rs/core/Configurable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "configImpl", "Ljakarta/ws/rs/core/Configurable;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljavax/ws/rs/core/Configurable;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/client/Client");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configurable", "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljakarta/ws/rs/core/Configurable;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/client/Client");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -631,98 +631,98 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;Ljava/util/Map;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;I)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;I)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;I)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;I)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Object;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;Ljava/util/Map;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;I)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;I)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;I)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;I)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "register", "(Ljava/lang/Class;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "register", "(Ljava/lang/Class;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/Configurable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/client/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/spec/ClientImpl", "property", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/client/Client;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

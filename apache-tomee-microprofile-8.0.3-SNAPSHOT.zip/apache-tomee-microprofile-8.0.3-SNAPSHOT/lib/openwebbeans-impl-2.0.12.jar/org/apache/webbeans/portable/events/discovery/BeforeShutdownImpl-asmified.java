@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/discovery/BeforeShutdownImpl", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/BeforeShutdown" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/discovery/BeforeShutdownImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/BeforeShutdown" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

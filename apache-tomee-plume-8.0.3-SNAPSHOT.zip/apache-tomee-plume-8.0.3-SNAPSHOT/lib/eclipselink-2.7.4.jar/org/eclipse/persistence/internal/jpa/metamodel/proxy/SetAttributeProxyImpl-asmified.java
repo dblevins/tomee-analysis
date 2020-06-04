@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/proxy/SetAttributeProxyImpl", "<X:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl<TX;Ljava/util/Set<TV;>;TV;>;Ljavax/persistence/metamodel/SetAttribute<TX;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl", new String[] { "javax/persistence/metamodel/SetAttribute" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/proxy/SetAttributeProxyImpl", "<X:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl<TX;Ljava/util/Set<TV;>;TV;>;Ljakarta/persistence/metamodel/SetAttribute<TX;TV;>;", "org/eclipse/persistence/internal/jpa/metamodel/proxy/PluralAttributeProxyImpl", new String[] { "jakarta/persistence/metamodel/SetAttribute" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

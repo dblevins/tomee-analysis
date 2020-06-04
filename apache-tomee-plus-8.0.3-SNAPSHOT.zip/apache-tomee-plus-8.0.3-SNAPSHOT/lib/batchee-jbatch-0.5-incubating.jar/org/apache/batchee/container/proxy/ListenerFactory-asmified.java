@@ -350,7 +350,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobListeners", "(Lorg/apache/batchee/container/proxy/InjectionReferences;)Ljava/util/List;", "(Lorg/apache/batchee/container/proxy/InjectionReferences;)Ljava/util/List<Ljavax/batch/api/listener/JobListener;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobListeners", "(Lorg/apache/batchee/container/proxy/InjectionReferences;)Ljava/util/List;", "(Lorg/apache/batchee/container/proxy/InjectionReferences;)Ljava/util/List<Ljakarta/batch/api/listener/JobListener;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -371,7 +371,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/container/proxy/ListenerFactory$ListenerInfo");
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/batch/api/listener/JobListener;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/batch/api/listener/JobListener;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/proxy/ListenerFactory$ListenerInfo", "getArtifact", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
@@ -381,7 +381,7 @@ methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/proxy/ListenerFactory$ListenerInfo", "getArtifact", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/listener/JobListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/batch/api/listener/JobListener");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");

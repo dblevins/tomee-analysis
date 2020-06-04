@@ -27,15 +27,15 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/util/Execut
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ALL_TYPES", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ALL_TYPES", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "IMPLICIT_TYPES", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "IMPLICIT_TYPES", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "interpret", "(Ljava/util/Collection;)Ljava/util/Set;", "(Ljava/util/Collection<Ljavax/validation/executable/ExecutableType;>;)Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "interpret", "(Ljava/util/Collection;)Ljava/util/Set;", "(Ljava/util/Collection<Ljakarta/validation/executable/ExecutableType;>;)Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Validate", "notNull", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -52,7 +52,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "copyOf", "(Ljava/util/Collection;)Ljava/util/EnumSet;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "ALL", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "ALL", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
@@ -61,7 +61,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Set"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "IMPLICIT", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "IMPLICIT", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "remove", "(Ljava/lang/Object;)Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -75,11 +75,11 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "IMPLICIT", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "IMPLICIT", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/executable/ExecutableType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/executable/ExecutableType;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Exceptions", "raise", "(Ljava/util/function/Function;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -91,7 +91,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "NONE", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "NONE", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "remove", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -112,7 +112,7 @@ methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "interpret", "([Ljavax/validation/executable/ExecutableType;)Ljava/util/Set;", "([Ljavax/validation/executable/ExecutableType;)Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "interpret", "([Ljakarta/validation/executable/ExecutableType;)Ljava/util/Set;", "([Ljakarta/validation/executable/ExecutableType;)Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
@@ -133,14 +133,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "CONSTRUCTORS", "Ljavax/validation/executable/ExecutableType;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "NON_GETTER_METHODS", "Ljavax/validation/executable/ExecutableType;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "GETTER_METHODS", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "CONSTRUCTORS", "Ljakarta/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "NON_GETTER_METHODS", "Ljakarta/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "GETTER_METHODS", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "of", "(Ljava/lang/Enum;Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/util/ExecutableTypes", "ALL_TYPES", "Ljava/util/Set;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "CONSTRUCTORS", "Ljavax/validation/executable/ExecutableType;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/executable/ExecutableType", "NON_GETTER_METHODS", "Ljavax/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "CONSTRUCTORS", "Ljakarta/validation/executable/ExecutableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/executable/ExecutableType", "NON_GETTER_METHODS", "Ljakarta/validation/executable/ExecutableType;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "of", "(Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/util/ExecutableTypes", "IMPLICIT_TYPES", "Ljava/util/Set;");

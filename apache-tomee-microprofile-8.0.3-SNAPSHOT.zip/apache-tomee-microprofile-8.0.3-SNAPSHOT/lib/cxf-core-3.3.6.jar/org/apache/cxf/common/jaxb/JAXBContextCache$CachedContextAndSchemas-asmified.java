@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/cxf/common/jaxb/JAXBContextCache$CachedC
 classWriter.visitInnerClass("org/apache/cxf/common/jaxb/JAXBContextCache$1", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljavax/xml/bind/JAXBContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljakarta/xml/bind/JAXBContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,13 +43,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ccas", "Ljava/la
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set<Ljava/lang/Class<*>;>;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set<Ljava/lang/Class<*>;>;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "context", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "context", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "classes", "Ljava/util/Set;");
@@ -64,10 +64,10 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljavax/xml/bind/JAXBContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljakarta/xml/bind/JAXBContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "context", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "context", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -123,13 +123,13 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;Lorg/apache/cxf/common/jaxb/JAXBContextCache$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;Lorg/apache/cxf/common/jaxb/JAXBContextCache$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "<init>", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas", "<init>", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set;Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();

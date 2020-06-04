@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/config/cdi/ConfigInjectionProducer", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -44,7 +44,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(0, "init", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PostConstruct;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PostConstruct;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -58,11 +58,11 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConfig", "()Lorg/eclipse/microprofile/config/Config;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

@@ -91,7 +91,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isRa", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/resource/spi/ResourceAdapter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/resource/spi/ResourceAdapter;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();

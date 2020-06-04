@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/view/ViewScopeEventListener", null, "java/lang/Object", new String[] { "javax/faces/event/ViewMapListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/view/ViewScopeEventListener", null, "java/lang/Object", new String[] { "jakarta/faces/event/ViewMapListener" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,12 +34,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljavax/faces/event/SystemEvent;)V", null, new String[] { "javax/faces/event/AbortProcessingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljakarta/faces/event/SystemEvent;)V", null, new String[] { "jakarta/faces/event/AbortProcessingException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/ViewScopeManager", "getInstance", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/application/view/ViewScopeManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/view/ViewScopeManager", "getInstance", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/application/view/ViewScopeManager;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/ViewScopeManager", "processEvent", "(Ljavax/faces/event/SystemEvent;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/ViewScopeManager", "processEvent", "(Ljakarta/faces/event/SystemEvent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -48,7 +48,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isListenerForSource", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/component/UIViewRoot");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/component/UIViewRoot");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

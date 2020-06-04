@@ -52,10 +52,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/spi/SerializationProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/spi/SerializationProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/spi/SerializationProviderFactory", "findProviderClass", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/spi/SerializationProviderFactory", "findProviderClass", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/spi/SerializationProviderFactory", "getProviderInstance", "(Ljava/lang/String;)Lcom/sun/faces/spi/SerializationProvider;", false);
@@ -197,10 +197,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findProviderClass", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findProviderClass", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/config/WebConfiguration$WebContextInitParameter", "SerializationProviderClass", "Lcom/sun/faces/config/WebConfiguration$WebContextInitParameter;");

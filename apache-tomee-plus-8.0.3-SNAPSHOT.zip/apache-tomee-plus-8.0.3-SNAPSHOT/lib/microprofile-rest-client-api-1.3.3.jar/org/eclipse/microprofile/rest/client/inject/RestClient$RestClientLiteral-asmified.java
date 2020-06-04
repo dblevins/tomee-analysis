@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/rest/client/inject/RestClient;>;Lorg/eclipse/microprofile/rest/client/inject/RestClient;", "javax/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/rest/client/inject/RestClient" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/rest/client/inject/RestClient;>;Lorg/eclipse/microprofile/rest/client/inject/RestClient;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/rest/client/inject/RestClient" });
 
 classWriter.visitInnerClass("org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral", "org/eclipse/microprofile/rest/client/inject/RestClient", "RestClientLiteral", ACC_PUBLIC | ACC_STATIC);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("org/eclipse/microprofile/rest/client/inject/RestCli
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

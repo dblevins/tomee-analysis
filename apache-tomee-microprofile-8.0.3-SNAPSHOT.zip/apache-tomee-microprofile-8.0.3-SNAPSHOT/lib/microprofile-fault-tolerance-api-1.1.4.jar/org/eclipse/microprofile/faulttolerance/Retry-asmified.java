@@ -48,7 +48,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/InterceptorBinding;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/InterceptorBinding;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ annotationVisitor0.visit(null, new Integer(3));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -72,7 +72,7 @@ annotationVisitor0.visit(null, new Long(0L));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -85,7 +85,7 @@ annotationVisitor0.visitEnum(null, "Ljava/time/temporal/ChronoUnit;", "MILLIS");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -98,7 +98,7 @@ annotationVisitor0.visit(null, new Long(180000L));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -111,7 +111,7 @@ annotationVisitor0.visitEnum(null, "Ljava/time/temporal/ChronoUnit;", "MILLIS");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -124,7 +124,7 @@ annotationVisitor0.visit(null, new Long(200L));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -137,7 +137,7 @@ annotationVisitor0.visitEnum(null, "Ljava/time/temporal/ChronoUnit;", "MILLIS");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -154,7 +154,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -170,7 +170,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

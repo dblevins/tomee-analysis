@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/tomcat/util/modeler/RegistryMBean", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "invoke", "(Ljava/util/List;Ljava/lang/String;Z)V", "(Ljava/util/List<Ljavax/management/ObjectName;>;Ljava/lang/String;Z)V", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "invoke", "(Ljava/util/List;Ljava/lang/String;Z)V", "(Ljava/util/List<Ljakarta/management/ObjectName;>;Ljava/lang/String;Z)V", new String[] { "java/lang/Exception" });
 methodVisitor.visitEnd();
 }
 {

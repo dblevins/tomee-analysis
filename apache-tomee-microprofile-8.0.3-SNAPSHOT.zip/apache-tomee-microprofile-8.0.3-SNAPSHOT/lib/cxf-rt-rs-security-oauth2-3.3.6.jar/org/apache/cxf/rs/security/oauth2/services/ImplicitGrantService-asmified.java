@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/services/ImplicitGrantService", null, "org/apache/cxf/rs/security/oauth2/services/AbstractImplicitGrantService", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "/authorize-implicit");
 annotationVisitor0.visitEnd();
 }
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createAuthorizationData", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List;Ljava/util/List;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/common/OAuthPermission;>;Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/common/OAuthPermission;>;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createAuthorizationData", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List;Ljava/util/List;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/common/OAuthPermission;>;Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/common/OAuthPermission;>;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -73,7 +73,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/AbstractImplicitGrantService", "createAuthorizationData", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List;Ljava/util/List;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/AbstractImplicitGrantService", "createAuthorizationData", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/util/List;Ljava/util/List;Z)Lorg/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitInsn(ICONST_1);

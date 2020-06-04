@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "metrics");
 annotationVisitor0.visitEnd();
 }
@@ -39,7 +39,7 @@ classWriter.visitInnerClass("org/eclipse/microprofile/metrics/MetricRegistry$Typ
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status", "javax/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status", "jakarta/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -135,13 +135,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -151,11 +151,11 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -163,7 +163,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/microprofile/metrics/MetricRegistry$Type", "values", "()[Lorg/eclipse/microprofile/metrics/MetricRegistry$Type;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Stream", "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/eclipse/microprofile/metrics/MetricRegistry$Type", "getName", "()Ljava/lang/String;", false), Type.getType("(Lorg/eclipse/microprofile/metrics/MetricRegistry$Type;)Ljava/lang/String;")});
@@ -176,13 +176,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "text/plain");
@@ -192,11 +192,11 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -204,7 +204,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/microprofile/metrics/MetricRegistry$Type", "values", "()[Lorg/eclipse/microprofile/metrics/MetricRegistry$Type;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Stream", "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -221,18 +221,18 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -242,16 +242,16 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(3, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -259,7 +259,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "findRegistry", "(Ljava/lang/String;)Lorg/eclipse/microprofile/metrics/MetricRegistry;", false);
@@ -276,18 +276,18 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "text/plain");
@@ -297,16 +297,16 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(3, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -314,7 +314,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "findRegistry", "(Ljava/lang/String;)Lorg/eclipse/microprofile/metrics/MetricRegistry;", false);
@@ -332,18 +332,18 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJson", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}/{metric}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -353,21 +353,21 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(4, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "metric");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -375,7 +375,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -389,18 +389,18 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getText", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}/{metric}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "text/plain");
@@ -410,21 +410,21 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(4, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "metric");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -432,7 +432,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "findRegistry", "(Ljava/lang/String;)Lorg/eclipse/microprofile/metrics/MetricRegistry;", false);
@@ -453,18 +453,18 @@ methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/OPTIONS;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/OPTIONS;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}/{metric}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -474,21 +474,21 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(4, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "metric");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -496,7 +496,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "findRegistry", "(Ljava/lang/String;)Lorg/eclipse/microprofile/metrics/MetricRegistry;", false);
@@ -515,18 +515,18 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "(Ljava/lang/String;Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "(Ljava/lang/String;Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/OPTIONS;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/OPTIONS;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "{registry}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -536,16 +536,16 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(3, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "registry");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -553,7 +553,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "securityValidator", "Lorg/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljavax/ws/rs/core/SecurityContext;Ljavax/ws/rs/core/UriInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator", "checkSecurity", "(Ljakarta/ws/rs/core/SecurityContext;Ljakarta/ws/rs/core/UriInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "findRegistry", "(Ljava/lang/String;)Lorg/eclipse/microprofile/metrics/MetricRegistry;", false);
@@ -647,7 +647,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/lang/String;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "lambda$findRegistry$8", "(Ljava/lang/String;Lorg/eclipse/microprofile/metrics/MetricRegistry$Type;)Z", false), Type.getType("(Lorg/eclipse/microprofile/metrics/MetricRegistry$Type;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "findFirst", "()Ljava/util/Optional;", true);
-methodVisitor.visitInvokeDynamicInsn("get", "()Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "lambda$findRegistry$9", "()Ljavax/ws/rs/WebApplicationException;", false), Type.getType("()Ljavax/ws/rs/WebApplicationException;")});
+methodVisitor.visitInvokeDynamicInsn("get", "()Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints", "lambda$findRegistry$9", "()Ljakarta/ws/rs/WebApplicationException;", false), Type.getType("()Ljakarta/ws/rs/WebApplicationException;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElseThrow", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/metrics/MetricRegistry$Type");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/microprofile/metrics/MetricRegistry$Type", "ordinal", "()I", false);
@@ -675,12 +675,12 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findRegistry$9", "()Ljavax/ws/rs/WebApplicationException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findRegistry$9", "()Ljakarta/ws/rs/WebApplicationException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/WebApplicationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/WebApplicationException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/Response$Status", "NOT_FOUND", "Ljavax/ws/rs/core/Response$Status;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/WebApplicationException", "<init>", "(Ljavax/ws/rs/core/Response$Status;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/Response$Status", "NOT_FOUND", "Ljakarta/ws/rs/core/Response$Status;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/WebApplicationException", "<init>", "(Ljakarta/ws/rs/core/Response$Status;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "Ljava/lang/Object;Lcom/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator<Ljavax/faces/model/SelectItem;>;", "java/lang/Object", new String[] { "com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "Ljava/lang/Object;Lcom/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator<Ljakarta/faces/model/SelectItem;>;", "java/lang/Object", new String[] { "com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator" });
 
 classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "com/sun/faces/renderkit/SelectItemsIterator", "SingleElementIterator", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -31,11 +31,11 @@ classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$1", nul
 classWriter.visitInnerClass("com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator", "com/sun/faces/renderkit/SelectItemsIterator", "ComponentAwareSelectItemIterator", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "item", "Ljavax/faces/model/SelectItem;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "item", "Ljakarta/faces/model/SelectItem;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "selectComponent", "Ljavax/faces/component/UIComponent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "selectComponent", "Ljakarta/faces/component/UIComponent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,10 +52,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "currentSelectComponent", "()Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "currentSelectComponent", "()Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "selectComponent", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "selectComponent", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/faces/model/SelectItem;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/faces/model/SelectItem;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "nextCalled", "Z");
@@ -96,7 +96,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "nextCalled", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -112,14 +112,14 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "updateItem", "(Ljavax/faces/component/UIComponent;Ljavax/faces/model/SelectItem;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "updateItem", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/model/SelectItem;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "item", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "item", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "selectComponent", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "selectComponent", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "nextCalled", "Z");
@@ -131,7 +131,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "next", "()Ljavax/faces/model/SelectItem;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "next", "()Ljakarta/faces/model/SelectItem;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -146,12 +146,12 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "(Lcom/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator;Ljavax/faces/component/UIComponent;Ljavax/faces/model/SelectItem;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "(Lcom/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator;Ljakarta/faces/component/UIComponent;Ljakarta/faces/model/SelectItem;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "updateItem", "(Ljavax/faces/component/UIComponent;Ljavax/faces/model/SelectItem;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator", "updateItem", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/model/SelectItem;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

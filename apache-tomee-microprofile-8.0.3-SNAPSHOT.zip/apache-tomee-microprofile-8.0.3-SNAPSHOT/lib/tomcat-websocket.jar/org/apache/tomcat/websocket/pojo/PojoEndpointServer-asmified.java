@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/pojo/PojoEndpointServer", null, "org/apache/tomcat/websocket/pojo/PojoEndpointBase", null);
 
-classWriter.visitInnerClass("javax/websocket/server/ServerEndpointConfig$Configurator", "javax/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/websocket/server/ServerEndpointConfig$Configurator", "jakarta/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
@@ -40,27 +40,27 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onOpen", "(Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onOpen", "(Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/InstantiationException");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/server/ServerEndpointConfig");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/server/ServerEndpointConfig");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getConfigurator", "()Ljavax/websocket/server/ServerEndpointConfig$Configurator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getConfigurator", "()Ljakarta/websocket/server/ServerEndpointConfig$Configurator;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/server/ServerEndpointConfig$Configurator", "getEndpointInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/server/ServerEndpointConfig$Configurator", "getEndpointInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/tomcat/websocket/pojo/PojoEndpointServer", "javax/websocket/Session", "javax/websocket/EndpointConfig", "javax/websocket/server/ServerEndpointConfig"}, 1, new Object[] {"java/lang/InstantiationException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/tomcat/websocket/pojo/PojoEndpointServer", "jakarta/websocket/Session", "jakarta/websocket/EndpointConfig", "jakarta/websocket/server/ServerEndpointConfig"}, 1, new Object[] {"java/lang/InstantiationException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -71,7 +71,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
@@ -84,7 +84,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointServer", "setPojo", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitLdcInsn("org.apache.tomcat.websocket.pojo.PojoEndpoint.pathParams");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
@@ -93,7 +93,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointServer", "setPathParameters", "(Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitLdcInsn("org.apache.tomcat.websocket.pojo.PojoEndpoint.methodMapping");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/websocket/pojo/PojoMethodMapping");
@@ -104,7 +104,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/P
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointServer", "doOnOpen", "(Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointServer", "doOnOpen", "(Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 7);
 methodVisitor.visitEnd();

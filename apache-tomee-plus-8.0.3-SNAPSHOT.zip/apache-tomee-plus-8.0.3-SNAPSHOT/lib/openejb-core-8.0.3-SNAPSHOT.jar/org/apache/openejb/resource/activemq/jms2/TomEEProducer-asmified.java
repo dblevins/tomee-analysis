@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "deliveryDelay", "J", null, n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ProducerId;Lorg/apache/activemq/command/ActiveMQDestination;I)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/ActiveMQSession;Lorg/apache/activemq/command/ProducerId;Lorg/apache/activemq/command/ActiveMQDestination;I)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -64,14 +64,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;Lorg/apache/activemq/AsyncCallback;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;Lorg/apache/activemq/AsyncCallback;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;Ljavax/jms/CompletionListener;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -81,14 +81,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;Lorg/apache/activemq/AsyncCallback;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;Lorg/apache/activemq/AsyncCallback;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljavax/jms/Message;IIJLjavax/jms/CompletionListener;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljakarta/jms/Message;IIJLjakarta/jms/CompletionListener;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -102,14 +102,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;IIJLorg/apache/activemq/AsyncCallback;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;IIJLorg/apache/activemq/AsyncCallback;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(12, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;IIJLjavax/jms/CompletionListener;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;IIJLjakarta/jms/CompletionListener;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -122,14 +122,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljavax/jms/Destination;Ljavax/jms/Message;IIJLorg/apache/activemq/AsyncCallback;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ActiveMQMessageProducer", "send", "(Ljakarta/jms/Destination;Ljakarta/jms/Message;IIJLorg/apache/activemq/AsyncCallback;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(12, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeliveryDelay", "()J", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeliveryDelay", "()J", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer", "deliveryDelay", "J");
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDeliveryDelay", "(J)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDeliveryDelay", "(J)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);

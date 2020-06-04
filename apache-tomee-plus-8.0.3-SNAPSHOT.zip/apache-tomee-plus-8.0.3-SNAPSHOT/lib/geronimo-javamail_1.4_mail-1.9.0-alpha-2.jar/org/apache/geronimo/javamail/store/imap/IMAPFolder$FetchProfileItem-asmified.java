@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", null, "javax/mail/FetchProfile$Item", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", null, "jakarta/mail/FetchProfile$Item", null);
 
 classWriter.visitInnerClass("org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", "org/apache/geronimo/javamail/store/imap/IMAPFolder", "FetchProfileItem", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/mail/FetchProfile$Item", "javax/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/FetchProfile$Item", "jakarta/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "HEADERS", "Lorg/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem;", null, null);
@@ -41,7 +41,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljava/lang/St
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/FetchProfile$Item", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/FetchProfile$Item", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

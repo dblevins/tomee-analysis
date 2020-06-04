@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "curr
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "jaxbContexts", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljavax/xml/bind/JAXBContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "jaxbContexts", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljakarta/xml/bind/JAXBContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "marshal", "(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Object;)Ljava/lang/String;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "marshal", "(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Object;)Ljava/lang/String;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/io/ByteArrayOutputStream");
 methodVisitor.visitInsn(DUP);
@@ -82,34 +82,34 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "marshal", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/io/OutputStream;)V", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Object;Ljava/io/OutputStream;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "marshal", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/io/OutputStream;)V", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Object;Ljava/io/OutputStream;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBContext", "createMarshaller", "()Ljavax/xml/bind/Marshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBContext", "createMarshaller", "()Ljakarta/xml/bind/Marshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("jaxb.formatted.output");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Marshaller", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Marshaller", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Marshaller", "marshal", "(Ljava/lang/Object;Ljava/io/OutputStream;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Marshaller", "marshal", "(Ljava/lang/Object;Ljava/io/OutputStream;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljavax/xml/bind/JAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "jaxbContexts", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBContext");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -120,7 +120,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JAXBContextFactory", "newInstance", "([Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JAXBContextFactory", "newInstance", "([Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "jaxbContexts", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -128,14 +128,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/bind/JAXBContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/bind/JAXBContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "unmarshalJavaee", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;Z)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "unmarshalJavaee", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;Z)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -155,16 +155,16 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "newSAXParser", "()Ljavax/xml/parsers/SAXParser;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBContext", "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBContext", "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$1", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", true);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ILOAD, 2);
@@ -178,7 +178,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljavax/xml/bind/UnmarshallerHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljakarta/xml/bind/UnmarshallerHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/JaxbJavaee$JavaeeNamespaceFilter", "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", false);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
 methodVisitor.visitInsn(DUP);
@@ -192,7 +192,7 @@ methodVisitor.visitVarInsn(ASTORE, 7);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"java/lang/Class", "java/io/InputStream", Opcodes.INTEGER, "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "javax/xml/bind/JAXBContext", "javax/xml/bind/Unmarshaller", "javax/xml/transform/sax/SAXSource"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"java/lang/Class", "java/io/InputStream", Opcodes.INTEGER, "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "jakarta/xml/bind/JAXBContext", "jakarta/xml/bind/Unmarshaller", "javax/xml/transform/sax/SAXSource"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/xml/sax/InputSource");
@@ -212,10 +212,10 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;Ljava/lang/Class;)Ljavax/xml/bind/JAXBElement;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;Ljava/lang/Class;)Ljakarta/xml/bind/JAXBElement;", true);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -236,7 +236,7 @@ methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -247,7 +247,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalJavaee", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalJavaee", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -258,7 +258,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;Z)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;Z)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -283,16 +283,16 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "newSAXParser", "()Ljavax/xml/parsers/SAXParser;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBContext", "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBContext", "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$2");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$2", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$NoSourceFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -301,7 +301,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljavax/xml/bind/UnmarshallerHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljakarta/xml/bind/UnmarshallerHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/JaxbJavaee$NoSourceFilter", "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", false);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
 methodVisitor.visitInsn(DUP);
@@ -317,7 +317,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -326,7 +326,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"java/lang/Class", "java/io/InputStream", Opcodes.INTEGER, "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "javax/xml/bind/JAXBContext", "javax/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$NoSourceFilter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"java/lang/Class", "java/io/InputStream", Opcodes.INTEGER, "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "jakarta/xml/bind/JAXBContext", "jakarta/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$NoSourceFilter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -338,7 +338,7 @@ methodVisitor.visitMaxs(4, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalTaglib", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalTaglib", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -363,16 +363,16 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "newSAXParser", "()Ljavax/xml/parsers/SAXParser;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBContext", "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBContext", "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$3");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$3", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$TaglibNamespaceFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -381,7 +381,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljavax/xml/bind/UnmarshallerHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljakarta/xml/bind/UnmarshallerHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/JaxbJavaee$TaglibNamespaceFilter", "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", false);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
 methodVisitor.visitInsn(DUP);
@@ -397,7 +397,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -406,7 +406,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"java/lang/Class", "java/io/InputStream", "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "javax/xml/bind/JAXBContext", "javax/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$TaglibNamespaceFilter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"java/lang/Class", "java/io/InputStream", "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "jakarta/xml/bind/JAXBContext", "jakarta/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$TaglibNamespaceFilter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -418,7 +418,7 @@ methodVisitor.visitMaxs(4, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalHandlerChains", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unmarshalHandlerChains", "(Ljava/lang/Class;Ljava/io/InputStream;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/InputStream;)Ljava/lang/Object;", new String[] { "javax/xml/parsers/ParserConfigurationException", "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -443,16 +443,16 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "newSAXParser", "()Ljavax/xml/parsers/SAXParser;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/JaxbJavaee", "getContext", "(Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBContext", "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBContext", "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$4");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$4", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -461,7 +461,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/JaxbJavaee$
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljavax/xml/bind/UnmarshallerHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "getUnmarshallerHandler", "()Ljakarta/xml/bind/UnmarshallerHandler;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter", "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/HandlerChainsStringQNameAdapter");
 methodVisitor.visitInsn(DUP);
@@ -473,7 +473,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/HandlerChai
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/HandlerChainsStringQNameAdapter;"));
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "setAdapter", "(Ljava/lang/Class;Ljavax/xml/bind/annotation/adapters/XmlAdapter;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "setAdapter", "(Ljava/lang/Class;Ljakarta/xml/bind/annotation/adapters/XmlAdapter;)V", true);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -488,7 +488,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Unmarshaller", "unmarshal", "(Ljavax/xml/transform/Source;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");
@@ -497,7 +497,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(L
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"java/lang/Class", "java/io/InputStream", "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "javax/xml/bind/JAXBContext", "javax/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter", "org/apache/openejb/jee/HandlerChainsStringQNameAdapter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"java/lang/Class", "java/io/InputStream", "org/xml/sax/InputSource", "javax/xml/parsers/SAXParserFactory", "javax/xml/parsers/SAXParser", "jakarta/xml/bind/JAXBContext", "jakarta/xml/bind/Unmarshaller", "org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter", "org/apache/openejb/jee/HandlerChainsStringQNameAdapter", "javax/xml/transform/sax/SAXSource"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/JaxbJavaee", "currentPublicId", "Ljava/lang/ThreadLocal;");

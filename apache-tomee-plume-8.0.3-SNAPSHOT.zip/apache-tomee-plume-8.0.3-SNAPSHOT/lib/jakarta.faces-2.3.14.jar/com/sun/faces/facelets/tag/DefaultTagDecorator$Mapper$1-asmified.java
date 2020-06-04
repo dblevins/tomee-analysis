@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "decorate", "(Ljavax/faces/view/facelets/Tag;)Ljavax/faces/view/facelets/Tag;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "decorate", "(Ljakarta/faces/view/facelets/Tag;)Ljakarta/faces/view/facelets/Tag;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/tag/DefaultTagDecorator$Mapper$1", "val$elementConverters", "[Lcom/sun/faces/facelets/tag/DefaultTagDecorator$ElementConverter;");
@@ -82,7 +82,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/DefaultTagDecorator$ElementConverter", "decorate", "(Ljavax/faces/view/facelets/Tag;)Ljavax/faces/view/facelets/Tag;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/DefaultTagDecorator$ElementConverter", "decorate", "(Ljakarta/faces/view/facelets/Tag;)Ljakarta/faces/view/facelets/Tag;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label2 = new Label();

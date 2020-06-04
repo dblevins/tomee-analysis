@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/PageDataImpl", null, "javax/servlet/jsp/tagext/PageData", new String[] { "org/apache/jasper/compiler/TagConstants" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/PageDataImpl", null, "jakarta/servlet/jsp/tagext/PageData", new String[] { "org/apache/jasper/compiler/TagConstants" });
 
 classWriter.visitInnerClass("org/apache/jasper/compiler/PageDataImpl$SecondPassVisitor", "org/apache/jasper/compiler/PageDataImpl", "SecondPassVisitor", ACC_PRIVATE | ACC_STATIC);
 
@@ -54,7 +54,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/jasper/compiler/Node$Nodes;Lorg/apache/jasper/compiler/Compiler;)V", null, new String[] { "org/apache/jasper/JasperException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/PageData", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/PageData", "<init>", "()V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/compiler/PageDataImpl$FirstPassVisitor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);

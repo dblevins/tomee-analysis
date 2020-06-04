@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/io/InputStream;", null, new String[] { "java/io/IOException", "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/io/InputStream;", null, new String[] { "java/io/IOException", "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/blob/BlobDownloader", "getStrategy", "()Lorg/apache/activemq/blob/BlobDownloadStrategy;", false);
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)V", null, new String[] { "java/io/IOException", "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)V", null, new String[] { "java/io/IOException", "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/blob/BlobDownloader", "getStrategy", "()Lorg/apache/activemq/blob/BlobDownloadStrategy;", false);

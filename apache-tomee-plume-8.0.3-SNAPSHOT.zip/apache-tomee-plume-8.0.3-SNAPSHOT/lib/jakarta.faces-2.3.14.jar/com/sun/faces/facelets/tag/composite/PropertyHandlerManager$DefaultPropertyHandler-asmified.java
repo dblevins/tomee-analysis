@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/String;Ljava/beans/FeatureDescriptor;Ljavax/faces/view/facelets/TagAttribute;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/String;Ljava/beans/FeatureDescriptor;Ljakarta/faces/view/facelets/TagAttribute;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -62,7 +62,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/facelets/el/TagValueExpres
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/el/TagValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/el/TagValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/Class");
@@ -74,7 +74,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/facelets/tag/composite/PropertyHandlerManager$DefaultPropertyHandler", "javax/faces/view/facelets/FaceletContext", "java/lang/String", "java/beans/FeatureDescriptor", "javax/faces/view/facelets/TagAttribute", "java/lang/Class", "java/lang/Object", "com/sun/faces/facelets/el/TagValueExpression", "java/lang/Object"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"com/sun/faces/facelets/tag/composite/PropertyHandlerManager$DefaultPropertyHandler", "jakarta/faces/view/facelets/FaceletContext", "java/lang/String", "java/beans/FeatureDescriptor", "jakarta/faces/view/facelets/TagAttribute", "java/lang/Class", "java/lang/Object", "com/sun/faces/facelets/el/TagValueExpression", "java/lang/Object"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitLabel(label0);
@@ -120,7 +120,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/TagAttribute", "getValueExpression", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/FeatureDescriptor", "setValue", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 10);

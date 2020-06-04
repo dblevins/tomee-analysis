@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", null, "java/lang/Object", new String[] { "javax/management/NotificationBroadcaster" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", null, "java/lang/Object", new String[] { "jakarta/management/NotificationBroadcaster" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "entries", "Ljava/util/ArrayList;", "Ljava/util/ArrayList<Lorg/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry;>;", null);
@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -82,14 +82,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljavax/management/NotificationListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljakarta/management/NotificationListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomcat/util/modeler/BaseAttributeFilter");
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -97,7 +97,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotif
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/modeler/BaseAttributeFilter");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -115,7 +115,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Bas
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", "javax/management/NotificationListener", "javax/management/NotificationFilter", "java/lang/Object", "java/lang/Object", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "java/util/Iterator", "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "[Ljava/lang/String;", "[Ljava/lang/String;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", "jakarta/management/NotificationListener", "jakarta/management/NotificationFilter", "java/lang/Object", "java/lang/Object", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "java/util/Iterator", "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "[Ljava/lang/String;", "[Ljava/lang/String;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitJumpInsn(IFEQ, label9);
@@ -148,7 +148,7 @@ methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", "javax/management/NotificationListener", "javax/management/NotificationFilter", "java/lang/Object", "java/lang/Object", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/tomcat/util/modeler/BaseNotificationBroadcaster", "jakarta/management/NotificationListener", "jakarta/management/NotificationFilter", "java/lang/Object", "java/lang/Object", "org/apache/tomcat/util/modeler/BaseAttributeFilter", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -159,7 +159,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "<init>", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "<init>", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/ArrayList", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -182,16 +182,16 @@ methodVisitor.visitMaxs(6, 16);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanNotificationInfo");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/NotificationListener;)V", null, new String[] { "javax/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/NotificationListener;)V", null, new String[] { "jakarta/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -221,7 +221,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljavax/management/NotificationListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljakarta/management/NotificationListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label6);
@@ -252,7 +252,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendNotification", "(Ljavax/management/Notification;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendNotification", "(Ljakarta/management/Notification;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -282,23 +282,23 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/NotificationFilter", "isNotificationEnabled", "(Ljavax/management/Notification;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/NotificationFilter", "isNotificationEnabled", "(Ljakarta/management/Notification;)Z", true);
 methodVisitor.visitJumpInsn(IFNE, label6);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljavax/management/NotificationListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljakarta/management/NotificationListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "handback", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/NotificationListener", "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/NotificationListener", "handleNotification", "(Ljakarta/management/Notification;Ljava/lang/Object;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);

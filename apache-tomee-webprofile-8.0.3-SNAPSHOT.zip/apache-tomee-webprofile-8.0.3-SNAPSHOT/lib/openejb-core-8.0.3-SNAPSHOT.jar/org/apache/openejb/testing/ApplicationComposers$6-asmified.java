@@ -88,7 +88,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/finder/ClassFinder");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/annotation/PreDestroy;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/annotation/PreDestroy;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/finder/ClassFinder", "findAnnotatedMethods", "(Ljava/lang/Class;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPSSLStore", null, "org/apache/geronimo/javamail/store/imap/IMAPStore", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/mail/Session;Ljavax/mail/URLName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/mail/Session;Ljakarta/mail/URLName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -33,7 +33,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("imaps");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitIntInsn(SIPUSH, 993);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/imap/IMAPStore", "<init>", "(Ljavax/mail/Session;Ljavax/mail/URLName;Ljava/lang/String;ZI)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/imap/IMAPStore", "<init>", "(Ljakarta/mail/Session;Ljakarta/mail/URLName;Ljava/lang/String;ZI)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/runtime/JspWriterImpl", null, "javax/servlet/jsp/JspWriter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/runtime/JspWriterImpl", null, "jakarta/servlet/jsp/JspWriter", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "out", "Ljava/io/Writer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -54,7 +54,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(SIPUSH, 8192);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspWriter", "<init>", "(IZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspWriter", "<init>", "(IZ)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "flushed", "Z");
@@ -66,12 +66,12 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletResponse;IZ)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletResponse;IZ)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspWriter", "<init>", "(IZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspWriter", "<init>", "(IZ)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "flushed", "Z");
@@ -88,10 +88,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/compiler/Localize
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "javax/servlet/ServletResponse", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "jakarta/servlet/ServletResponse", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label1 = new Label();
@@ -104,7 +104,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitIntInsn(NEWARRAY, T_CHAR);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "javax/servlet/ServletResponse", Opcodes.INTEGER, Opcodes.INTEGER}, 2, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "[C"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "jakarta/servlet/ServletResponse", Opcodes.INTEGER, Opcodes.INTEGER}, 2, new Object[] {"org/apache/jasper/runtime/JspWriterImpl", "[C"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "cb", "[C");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -114,11 +114,11 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "init", "(Ljavax/servlet/ServletResponse;IZ)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "init", "(Ljakarta/servlet/ServletResponse;IZ)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label0);
@@ -169,7 +169,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "nextChar", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -222,8 +222,8 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletResponse", "getWriter", "()Ljava/io/PrintWriter;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "getWriter", "()Ljava/io/PrintWriter;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspWriterImpl", "out", "Ljava/io/Writer;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -328,7 +328,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "()V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -377,7 +377,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "ensureOpen", "()V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspWriterImpl", "response", "Ljakarta/servlet/ServletResponse;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);

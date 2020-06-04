@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "VALIDATOR_ID", "Ljava/lang/String;", null, "javax.faces.LongRange");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "VALIDATOR_ID", "Ljava/lang/String;", null, "jakarta.faces.LongRange");
 fieldVisitor.visitEnd();
 }
 {
@@ -42,14 +42,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createValidator", "()Ljavax/faces/validator/Validator;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createValidator", "()Ljakarta/faces/validator/Validator;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.LongRange");
+methodVisitor.visitLdcInsn("jakarta.faces.LongRange");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ValidateLongRangeTag", "setValidatorIdString", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericMinMaxValidatorTag", "createValidator", "()Ljavax/faces/validator/Validator;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/validator/LongRangeValidator");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericMinMaxValidatorTag", "createValidator", "()Ljakarta/faces/validator/Validator;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/validator/LongRangeValidator");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -61,9 +61,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ValidateLongRangeTag", "_min", "Ljava/lang/Object;");
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Long");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/validator/LongRangeValidator", "setMinimum", "(J)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/validator/LongRangeValidator", "setMinimum", "(J)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/validator/LongRangeValidator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/validator/LongRangeValidator"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ValidateLongRangeTag", "_max", "Ljava/lang/Object;");
@@ -74,7 +74,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ValidateLongRangeTag", "_max", "Ljava/lang/Object;");
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Long");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/validator/LongRangeValidator", "setMaximum", "(J)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/validator/LongRangeValidator", "setMaximum", "(J)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);

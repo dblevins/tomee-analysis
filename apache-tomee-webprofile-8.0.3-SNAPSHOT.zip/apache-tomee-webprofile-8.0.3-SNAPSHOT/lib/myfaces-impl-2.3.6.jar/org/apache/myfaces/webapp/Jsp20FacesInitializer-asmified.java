@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initContainerIntegration", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initContainerIntegration", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "INFO", "Ljava/util/logging/Level;");
@@ -67,7 +67,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "info",
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "getUserDefinedExpressionFactory", "(Ljavax/faces/context/ExternalContext;)Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "getUserDefinedExpressionFactory", "(Ljakarta/faces/context/ExternalContext;)Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -81,9 +81,9 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/Jsp20FacesIni
 methodVisitor.visitLdcInsn("Either you haven't specified the ExpressionFactory implementation, or an error occured while instantiating the implementation you've specified. However, attempting to load a known implementation.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "info", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/el/ExpressionFactory"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/el/ExpressionFactory"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "KNOWN_EXPRESSION_FACTORIES", "[Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "findExpressionFactory", "([Ljava/lang/String;)Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "findExpressionFactory", "([Ljava/lang/String;)Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -128,14 +128,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "buildConfiguration", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/ExternalContext;Ljavax/el/ExpressionFactory;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "buildConfiguration", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/ExternalContext;Ljakarta/el/ExpressionFactory;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findExpressionFactory", "([Ljava/lang/String;)Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findExpressionFactory", "([Ljava/lang/String;)Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -156,7 +156,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "loadExpressionFactory", "(Ljava/lang/String;)Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp20FacesInitializer", "loadExpressionFactory", "(Ljava/lang/String;)Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label2 = new Label();

@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/cxf/transport/http/AbstractHTTPDestinati
 classWriter.visitInnerClass("org/apache/cxf/transport/AbstractDestination$AbstractBackChannelConduit", "org/apache/cxf/transport/AbstractDestination", "AbstractBackChannelConduit", ACC_PROTECTED | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "response", "Ljavax/servlet/http/HttpServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "response", "Ljakarta/servlet/http/HttpServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/http/AbstractHTTPDestination;Ljavax/servlet/http/HttpServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/http/AbstractHTTPDestination;Ljakarta/servlet/http/HttpServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -49,7 +49,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/AbstractDestination$AbstractBackChannelConduit", "<init>", "(Lorg/apache/cxf/transport/AbstractDestination;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$BackChannelConduit", "response", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$BackChannelConduit", "response", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -60,7 +60,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("HTTP.RESPONSE");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$BackChannelConduit", "response", "Ljavax/servlet/http/HttpServletResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$BackChannelConduit", "response", "Ljakarta/servlet/http/HttpServletResponse;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);

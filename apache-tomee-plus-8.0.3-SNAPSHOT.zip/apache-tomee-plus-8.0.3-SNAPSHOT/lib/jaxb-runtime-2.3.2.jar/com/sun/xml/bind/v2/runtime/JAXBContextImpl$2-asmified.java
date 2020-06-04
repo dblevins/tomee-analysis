@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$2", "Lcom/sun/istack/Pool$Impl<Ljavax/xml/bind/Unmarshaller;>;", "com/sun/istack/Pool$Impl", null);
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$2", "Lcom/sun/istack/Pool$Impl<Ljakarta/xml/bind/Unmarshaller;>;", "com/sun/istack/Pool$Impl", null);
 
 classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl", null, null);
 
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "create", "()Ljavax/xml/bind/Unmarshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "create", "()Ljakarta/xml/bind/Unmarshaller;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lcom/sun/istack/NotNull;", false);
 annotationVisitor0.visitEnd();
@@ -68,7 +68,7 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$2", "create", "()Ljavax/xml/bind/Unmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$2", "create", "()Ljakarta/xml/bind/Unmarshaller;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

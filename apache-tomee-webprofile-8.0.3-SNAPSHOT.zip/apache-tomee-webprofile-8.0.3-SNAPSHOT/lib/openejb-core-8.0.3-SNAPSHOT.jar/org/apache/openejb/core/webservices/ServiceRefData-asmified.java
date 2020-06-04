@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "serviceQName", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "serviceClass", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/xml/ws/Service;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "serviceClass", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/xml/ws/Service;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/net/URL;Ljava/util/List;Ljava/util/List;)V", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class<+Ljavax/xml/ws/Service;>;Ljavax/xml/namespace/QName;Ljava/lang/Class<*>;Ljava/net/URL;Ljava/util/List<Lorg/apache/openejb/core/webservices/HandlerChainData;>;Ljava/util/List<Lorg/apache/openejb/core/webservices/PortRefData;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/net/URL;Ljava/util/List;Ljava/util/List;)V", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class<+Ljakarta/xml/ws/Service;>;Ljavax/xml/namespace/QName;Ljava/lang/Class<*>;Ljava/net/URL;Ljava/util/List<Lorg/apache/openejb/core/webservices/HandlerChainData;>;Ljava/util/List<Lorg/apache/openejb/core/webservices/PortRefData;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -159,7 +159,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServiceClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/xml/ws/Service;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServiceClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/xml/ws/Service;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/webservices/ServiceRefData", "serviceClass", "Ljava/lang/Class;");

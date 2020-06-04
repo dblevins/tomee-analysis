@@ -25,20 +25,20 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/cdi/transactional/SupportsInterceptor", null, "org/apache/openejb/cdi/transactional/InterceptorBase", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/Interceptor;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/Interceptor;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/transaction/Transactional;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/transaction/Transactional$TxType;", "SUPPORTS");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/transaction/Transactional;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/transaction/Transactional$TxType;", "SUPPORTS");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(200));
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/transaction/Transactional$TxType", "javax/transaction/Transactional", "TxType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/transaction/Transactional$TxType", "jakarta/transaction/Transactional", "TxType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -50,15 +50,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "intercept", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "intercept", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/transactional/InterceptorBase", "intercept", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/transactional/InterceptorBase", "intercept", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -68,8 +68,8 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getPolicy", "()Lorg/apac
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/transaction/TxSupports");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/transactional/SupportsInterceptor", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/TxSupports", "<init>", "(Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/transactional/SupportsInterceptor", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/TxSupports", "<init>", "(Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

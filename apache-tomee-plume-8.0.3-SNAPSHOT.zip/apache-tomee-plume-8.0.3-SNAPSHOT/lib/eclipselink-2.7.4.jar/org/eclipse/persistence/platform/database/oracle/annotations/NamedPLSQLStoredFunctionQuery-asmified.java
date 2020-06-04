@@ -43,7 +43,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "name", "()Lj
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "hints", "()[Ljavax/persistence/QueryHint;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "hints", "()[Ljakarta/persistence/QueryHint;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

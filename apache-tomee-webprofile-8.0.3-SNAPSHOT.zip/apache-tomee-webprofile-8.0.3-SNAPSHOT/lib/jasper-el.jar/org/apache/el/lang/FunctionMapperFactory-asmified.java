@@ -22,21 +22,21 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/lang/FunctionMapperFactory", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/lang/FunctionMapperFactory", null, "jakarta/el/FunctionMapper", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "memento", "Lorg/apache/el/lang/FunctionMapperImpl;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "target", "Ljavax/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "target", "Ljakarta/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/FunctionMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/FunctionMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/lang/FunctionMapperFactory", "memento", "Lorg/apache/el/lang/FunctionMapperImpl;");
@@ -50,10 +50,10 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/util/MessageFactory",
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/el/lang/FunctionMapperFactory", "javax/el/FunctionMapper"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/el/lang/FunctionMapperFactory", "jakarta/el/FunctionMapper"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/lang/FunctionMapperFactory", "target", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/lang/FunctionMapperFactory", "target", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -73,10 +73,10 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/lang/FunctionMapperFactory
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/FunctionMapperFactory", "target", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/FunctionMapperFactory", "target", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/FunctionMapper", "resolveFunction", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/FunctionMapper", "resolveFunction", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -119,7 +119,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljavax/el/FunctionMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljakarta/el/FunctionMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/lang/FunctionMapperFactory", "memento", "Lorg/apache/el/lang/FunctionMapperImpl;");

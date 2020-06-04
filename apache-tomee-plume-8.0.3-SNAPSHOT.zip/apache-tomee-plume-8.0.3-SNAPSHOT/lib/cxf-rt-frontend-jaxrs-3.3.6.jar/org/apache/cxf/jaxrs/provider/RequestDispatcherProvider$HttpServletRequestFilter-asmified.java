@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/RequestDispatcherProvider$HttpServletRequestFilter", null, "javax/servlet/http/HttpServletRequestWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/RequestDispatcherProvider$HttpServletRequestFilter", null, "jakarta/servlet/http/HttpServletRequestWrapper", null);
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/RequestDispatcherProvider$HttpServletRequestFilter", "org/apache/cxf/jaxrs/provider/RequestDispatcherProvider", "HttpServletRequestFilter", ACC_PROTECTED | ACC_STATIC);
 
@@ -43,11 +43,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "saveParamsAsAttributes", "Z"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/RequestDispatcherProvider$HttpServletRequestFilter", "path", "Ljava/lang/String;");
@@ -61,7 +61,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameterMap", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameterMap", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "(Ljava/util/Map;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/RequestDispatcherProvider$HttpServletRequestFilter", "params", "Ljava/util/Map;");
 methodVisitor.visitInsn(RETURN);
@@ -127,7 +127,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);

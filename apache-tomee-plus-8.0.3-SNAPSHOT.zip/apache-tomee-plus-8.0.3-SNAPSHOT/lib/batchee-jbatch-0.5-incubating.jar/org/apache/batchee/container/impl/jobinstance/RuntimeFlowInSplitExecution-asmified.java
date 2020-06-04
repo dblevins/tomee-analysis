@@ -29,13 +29,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "flowStatus", "Lorg/apache/ba
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/batch/runtime/JobInstance;JLorg/apache/batchee/spi/PersistenceManagerService;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/batch/runtime/JobInstance;JLorg/apache/batchee/spi/PersistenceManagerService;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "<init>", "(Ljavax/batch/runtime/JobInstance;JLorg/apache/batchee/spi/PersistenceManagerService;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "<init>", "(Ljakarta/batch/runtime/JobInstance;JLorg/apache/batchee/spi/PersistenceManagerService;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();

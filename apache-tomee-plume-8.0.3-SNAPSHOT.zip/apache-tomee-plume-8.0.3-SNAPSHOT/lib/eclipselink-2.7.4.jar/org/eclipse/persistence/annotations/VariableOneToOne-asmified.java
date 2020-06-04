@@ -49,7 +49,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cascade", "()[Ljavax/persistence/CascadeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cascade", "()[Ljakarta/persistence/CascadeType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
@@ -61,10 +61,10 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljavax/persistence/FetchType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljakarta/persistence/FetchType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -88,11 +88,11 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "discriminatorColumn", "()Ljavax/persistence/DiscriminatorColumn;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "discriminatorColumn", "()Ljakarta/persistence/DiscriminatorColumn;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
-AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljavax/persistence/DiscriminatorColumn;");
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljakarta/persistence/DiscriminatorColumn;");
 annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();

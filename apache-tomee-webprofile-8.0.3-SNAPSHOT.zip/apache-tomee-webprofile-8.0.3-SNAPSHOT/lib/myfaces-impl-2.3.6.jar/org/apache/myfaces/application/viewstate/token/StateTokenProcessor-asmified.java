@@ -38,15 +38,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "decode", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "decode", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "encode", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "encode", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isStateless", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isStateless", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("stateless");
 methodVisitor.visitVarInsn(ALOAD, 2);

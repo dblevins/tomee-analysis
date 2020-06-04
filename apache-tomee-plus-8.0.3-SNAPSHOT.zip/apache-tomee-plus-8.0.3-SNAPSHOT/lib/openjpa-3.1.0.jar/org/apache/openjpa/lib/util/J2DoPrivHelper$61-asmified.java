@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/util/Set<Ljavax/validation/ConstraintViolation<TT;>;>;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/util/Set<Ljakarta/validation/ConstraintViolation<TT;>;>;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("org/apache/openjpa/lib/util/J2DoPrivHelper", "validateAction", "(Ljavax/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/security/PrivilegedAction;");
+classWriter.visitOuterClass("org/apache/openjpa/lib/util/J2DoPrivHelper", "validateAction", "(Ljakarta/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/security/PrivilegedAction;");
 
 classWriter.visitInnerClass("org/apache/openjpa/lib/util/J2DoPrivHelper$61", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljavax/validation/Validator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljakarta/validation/Validator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,11 +41,11 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$groups", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/validation/Validator;Ljava/lang/Object;[Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$arg0", "Ljava/lang/Object;");
@@ -59,15 +59,15 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/ConstraintViolation<TT;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/ConstraintViolation<TT;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$arg0", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/util/J2DoPrivHelper$61", "val$groups", "[Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Validator", "validate", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Validator", "validate", "(Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

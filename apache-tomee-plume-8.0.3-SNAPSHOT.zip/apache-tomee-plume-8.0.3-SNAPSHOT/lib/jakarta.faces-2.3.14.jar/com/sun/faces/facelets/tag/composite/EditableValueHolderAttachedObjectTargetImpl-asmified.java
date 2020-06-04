@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", null, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "javax/faces/view/EditableValueHolderAttachedObjectTarget" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", null, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "jakarta/faces/view/EditableValueHolderAttachedObjectTarget" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

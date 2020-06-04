@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/part/CommonsFileUploadPart", null, "java/lang/Object", new String[] { "javax/servlet/http/Part" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd/part/CommonsFileUploadPart", null, "java/lang/Object", new String[] { "jakarta/servlet/http/Part" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "fileItem", "Lorg/apache/commons/fileupload/FileItem;", null, null);

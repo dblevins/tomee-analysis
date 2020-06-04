@@ -134,7 +134,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/AnnotationProxyBuilder", "size", "()I", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPEQ, label5);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/Valid;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/Valid;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/util/AnnotationProxy", "annotationType", "Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "convert", "(Ljavax/jms/Message;)Ljavax/jms/Message;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "convert", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
@@ -42,25 +42,25 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "convert", "(Ljavax/jms/Message;Ljavax/jms/Destination;)Ljavax/jms/Message;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "convert", "(Ljakarta/jms/Message;Ljakarta/jms/Destination;)Ljakarta/jms/Message;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/SimpleJmsMessageConvertor", "convert", "(Ljavax/jms/Message;)Ljavax/jms/Message;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/SimpleJmsMessageConvertor", "convert", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "setJMSReplyTo", "(Ljavax/jms/Destination;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "setJMSReplyTo", "(Ljakarta/jms/Destination;)V", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/jms/Message"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/jms/Message"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "setJMSReplyTo", "(Ljavax/jms/Destination;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "setJMSReplyTo", "(Ljakarta/jms/Destination;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnection", "(Ljavax/jms/Connection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnection", "(Ljakarta/jms/Connection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

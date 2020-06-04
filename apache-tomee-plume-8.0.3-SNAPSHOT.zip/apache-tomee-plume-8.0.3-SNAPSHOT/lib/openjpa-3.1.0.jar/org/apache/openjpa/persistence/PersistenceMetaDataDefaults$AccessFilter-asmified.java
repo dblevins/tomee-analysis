@@ -29,17 +29,17 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/PersistenceMetaDataD
 classWriter.visitInnerClass("org/apache/openjpa/persistence/PersistenceMetaDataDefaults$InclusiveFilter", "org/apache/openjpa/persistence/PersistenceMetaDataDefaults", "InclusiveFilter", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL, "target", "Ljavax/persistence/AccessType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL, "target", "Ljakarta/persistence/AccessType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/AccessType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/AccessType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AccessFilter", "target", "Ljavax/persistence/AccessType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AccessFilter", "target", "Ljakarta/persistence/AccessType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -48,24 +48,24 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includes", "(Ljava/lang/reflect/AnnotatedElement;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/Access;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/Access;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/AnnotatedElement", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/Access");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/Access");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/Access", "value", "()Ljavax/persistence/AccessType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/Access", "value", "()Ljakarta/persistence/AccessType;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AccessFilter", "target", "Ljavax/persistence/AccessType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/AccessType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AccessFilter", "target", "Ljakarta/persistence/AccessType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/AccessType", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/Access"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/Access"}, 0, null);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});

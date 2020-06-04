@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/webbeans/plugins/OpenWebBeansJmsPlugin", null, "java/lang/Object", new String[] { "org/apache/webbeans/spi/plugins/OpenWebBeansPlugin" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJmsBean", "(Lorg/apache/webbeans/jms/JMSModel;)Ljavax/enterprise/inject/spi/Bean;", "(Lorg/apache/webbeans/jms/JMSModel;)Ljavax/enterprise/inject/spi/Bean<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJmsBean", "(Lorg/apache/webbeans/jms/JMSModel;)Ljakarta/enterprise/inject/spi/Bean;", "(Lorg/apache/webbeans/jms/JMSModel;)Ljakarta/enterprise/inject/spi/Bean<*>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJmsBeanProxy", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/Class;)Ljava/lang/Object;", "(Ljavax/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJmsBeanProxy", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/Class;)Ljava/lang/Object;", "(Ljakarta/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

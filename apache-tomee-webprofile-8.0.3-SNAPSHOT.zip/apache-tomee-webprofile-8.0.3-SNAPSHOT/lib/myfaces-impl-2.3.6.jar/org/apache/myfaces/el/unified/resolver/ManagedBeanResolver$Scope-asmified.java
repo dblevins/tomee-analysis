@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/el/uni
 classWriter.visitInnerClass("org/apache/myfaces/el/unified/resolver/ManagedBeanResolver$Scope", "org/apache/myfaces/el/unified/resolver/ManagedBeanResolver", "Scope", ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "put", "(Ljavax/faces/context/FacesContext;Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "put", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

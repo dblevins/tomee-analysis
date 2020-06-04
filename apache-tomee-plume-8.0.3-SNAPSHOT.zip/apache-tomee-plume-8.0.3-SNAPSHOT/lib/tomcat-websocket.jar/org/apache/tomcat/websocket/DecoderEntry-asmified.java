@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clazz", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "decoderClazz", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/websocket/Decoder;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "decoderClazz", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;Ljava/lang/Class<+Ljavax/websocket/Decoder;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecoderClazz", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/websocket/Decoder;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecoderClazz", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/DecoderEntry", "decoderClazz", "Ljava/lang/Class;");

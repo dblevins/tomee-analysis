@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", null, "java/lang/Object", new String[] { "javax/enterprise/deploy/spi/TargetModuleID", "java/lang/Comparable", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/deploy/spi/TargetModuleID", "java/lang/Comparable", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "org/apache/openejb/config/OpenEJBDeploymentManager", "TargetModuleIDImpl", ACC_PUBLIC | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "target", "Ljavax/enterprise/deploy/spi/Target;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "target", "Ljakarta/enterprise/deploy/spi/Target;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,27 +43,27 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webUrl", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parentTargetModuleId", "Ljavax/enterprise/deploy/spi/TargetModuleID;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parentTargetModuleId", "Ljakarta/enterprise/deploy/spi/TargetModuleID;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "children", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/enterprise/deploy/spi/TargetModuleID;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "children", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/enterprise/deploy/spi/TargetModuleID;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/deploy/spi/Target;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/deploy/spi/Target;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "<init>", "(Ljavax/enterprise/deploy/spi/Target;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "<init>", "(Ljakarta/enterprise/deploy/spi/Target;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/deploy/spi/Target;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/deploy/spi/Target;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -81,7 +81,7 @@ methodVisitor.visitLdcInsn("target is null");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "javax/enterprise/deploy/spi/Target", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "jakarta/enterprise/deploy/spi/Target", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -94,7 +94,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "moduleId", "Ljava/lang/String;");
@@ -106,10 +106,10 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljavax/enterprise/deploy/spi/Target;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljakarta/enterprise/deploy/spi/Target;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -124,10 +124,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentTargetModuleID", "()Ljavax/enterprise/deploy/spi/TargetModuleID;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentTargetModuleID", "()Ljakarta/enterprise/deploy/spi/TargetModuleID;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "parentTargetModuleId", "Ljavax/enterprise/deploy/spi/TargetModuleID;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "parentTargetModuleId", "Ljakarta/enterprise/deploy/spi/TargetModuleID;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -137,7 +137,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParentTargetModuleID", "
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "parentTargetModuleId", "Ljavax/enterprise/deploy/spi/TargetModuleID;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "parentTargetModuleId", "Ljakarta/enterprise/deploy/spi/TargetModuleID;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "children", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -148,16 +148,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getChildTargetModuleID", "()[Ljavax/enterprise/deploy/spi/TargetModuleID;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getChildTargetModuleID", "()[Ljakarta/enterprise/deploy/spi/TargetModuleID;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "children", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "children", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/enterprise/deploy/spi/TargetModuleID");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/enterprise/deploy/spi/TargetModuleID");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/enterprise/deploy/spi/TargetModuleID;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/enterprise/deploy/spi/TargetModuleID;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -178,7 +178,7 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("/");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -227,9 +227,9 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -255,7 +255,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
 methodVisitor.visitVarInsn(ISTORE, 1);
 methodVisitor.visitIntInsn(BIPUSH, 29);
@@ -278,11 +278,11 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/deploy/spi/Target", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/deploy/spi/Target", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljavax/enterprise/deploy/spi/Target;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/deploy/spi/Target", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl", "target", "Ljakarta/enterprise/deploy/spi/Target;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/deploy/spi/Target", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "compareTo", "(Ljava/lang/String;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 3);

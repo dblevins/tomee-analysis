@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/NumberSignValidator$ForNegative$OrZero", "Lorg/apache/bval/constraints/NumberSignValidator<Ljavax/validation/constraints/NegativeOrZero;>;", "org/apache/bval/constraints/NumberSignValidator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/NumberSignValidator$ForNegative$OrZero", "Lorg/apache/bval/constraints/NumberSignValidator<Ljakarta/validation/constraints/NegativeOrZero;>;", "org/apache/bval/constraints/NumberSignValidator", null);
 
 classWriter.visitInnerClass("org/apache/bval/constraints/NumberSignValidator$ForNegative", "org/apache/bval/constraints/NumberSignValidator", "ForNegative", ACC_PUBLIC | ACC_STATIC);
 
@@ -41,13 +41,13 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Number");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/NumberSignValidator", "isValid", "(Ljava/lang/Number;Ljavax/validation/ConstraintValidatorContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/NumberSignValidator", "isValid", "(Ljava/lang/Number;Ljakarta/validation/ConstraintValidatorContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

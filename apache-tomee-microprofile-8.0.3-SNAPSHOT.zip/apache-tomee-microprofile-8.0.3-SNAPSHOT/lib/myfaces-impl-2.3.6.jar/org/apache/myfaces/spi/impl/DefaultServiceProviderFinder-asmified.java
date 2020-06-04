@@ -330,7 +330,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initKnownServiceProviderMapInfo", "(Ljavax/faces/context/ExternalContext;Ljava/util/Map;)V", "(Ljavax/faces/context/ExternalContext;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initKnownServiceProviderMapInfo", "(Ljakarta/faces/context/ExternalContext;Ljava/util/Map;)V", "(Ljakarta/faces/context/ExternalContext;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);

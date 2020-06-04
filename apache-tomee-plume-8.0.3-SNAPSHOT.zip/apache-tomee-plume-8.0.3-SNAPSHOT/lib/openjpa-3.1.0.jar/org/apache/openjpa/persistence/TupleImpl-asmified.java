@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TupleImpl", null, "java/lang/Object", new String[] { "javax/persistence/Tuple" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TupleImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/Tuple" });
 
 classWriter.visitInnerClass("org/apache/openjpa/lib/util/Localizer$Message", "org/apache/openjpa/lib/util/Localizer", "Message", ACC_PUBLIC | ACC_STATIC);
 
@@ -61,12 +61,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/persistence/TupleElement;)Ljava/lang/Object;", "<X:Ljava/lang/Object;>(Ljavax/persistence/TupleElement<TX;>;)TX;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/persistence/TupleElement;)Ljava/lang/Object;", "<X:Ljava/lang/Object;>(Ljakarta/persistence/TupleElement<TX;>;)TX;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleImpl", "factory", "Lorg/apache/openjpa/persistence/TupleFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/TupleFactory", "getIndex", "(Ljavax/persistence/TupleElement;)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/TupleFactory", "getIndex", "(Ljakarta/persistence/TupleElement;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -82,7 +82,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleImpl
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TupleElement", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TupleElement", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/TupleImpl", "assertAndConvertType", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -191,7 +191,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/TupleElement<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/TupleElement<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleImpl", "factory", "Lorg/apache/openjpa/persistence/TupleFactory;");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter", null, "java/lang/Object", new String[] { "javax/servlet/Filter" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter", null, "java/lang/Object", new String[] { "jakarta/servlet/Filter" });
 
 classWriter.visitInnerClass("net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "net/shibboleth/utilities/java/support/net/CookieBufferingFilter", "CookieBufferingHttpServletResponseProxy", ACC_PRIVATE);
 
@@ -36,7 +36,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljavax/servlet/FilterConfig;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljakarta/servlet/FilterConfig;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
@@ -50,27 +50,27 @@ methodVisitor.visitMaxs(0, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doFilter", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doFilter", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljakarta/servlet/FilterChain;)V", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpServletRequest");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpServletRequest");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Request is not an instance of HttpServletRequest");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpServletResponse");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpServletResponse");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Response is not an instance of HttpServletResponse");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -80,9 +80,9 @@ methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/net/Cook
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpServletResponse");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "<init>", "(Lnet/shibboleth/utilities/java/support/net/CookieBufferingFilter;Ljavax/servlet/http/HttpServletResponse;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterChain", "doFilter", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpServletResponse");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy", "<init>", "(Lnet/shibboleth/utilities/java/support/net/CookieBufferingFilter;Ljakarta/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterChain", "doFilter", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();

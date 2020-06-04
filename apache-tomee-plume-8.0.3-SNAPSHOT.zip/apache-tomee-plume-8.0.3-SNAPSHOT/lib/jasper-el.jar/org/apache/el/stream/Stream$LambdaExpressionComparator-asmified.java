@@ -27,17 +27,17 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/el/stream/Stream$LambdaExpression
 classWriter.visitInnerClass("org/apache/el/stream/Stream$LambdaExpressionComparator", "org/apache/el/stream/Stream", "LambdaExpressionComparator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "le", "Ljavax/el/LambdaExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "le", "Ljakarta/el/LambdaExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/LambdaExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/LambdaExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$LambdaExpressionComparator", "le", "Ljavax/el/LambdaExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$LambdaExpressionComparator", "le", "Ljakarta/el/LambdaExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -47,7 +47,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljava/lang/Obje
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$LambdaExpressionComparator", "le", "Ljavax/el/LambdaExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$LambdaExpressionComparator", "le", "Ljakarta/el/LambdaExpression;");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -58,9 +58,9 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Integer;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToNumber", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Number;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToNumber", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Number;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Number", "intValue", "()I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(6, 3);

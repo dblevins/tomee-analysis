@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/cdi/SafeguardExtension$1", null, "java/lang/Object", new String[] { "java/util/concurrent/ThreadFactory" });
 
-classWriter.visitOuterClass("org/apache/safeguard/impl/cdi/SafeguardExtension", "lambda$addMissingBeans$8", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/apache/safeguard/impl/cdi/SafeguardExtension", "lambda$addMissingBeans$8", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/cdi/SafeguardExtension$1", null, null, 0);
 

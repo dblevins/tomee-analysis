@@ -22,41 +22,41 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", null, "java/lang/Object", new String[] { "javax/faces/convert/Converter" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", null, "java/lang/Object", new String[] { "jakarta/faces/convert/Converter" });
 
 classWriter.visitInnerClass("org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", "org/apache/myfaces/shared/renderkit/RendererUtils", "PassThroughAsStringConverter", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "converter", "Ljavax/faces/convert/Converter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "converter", "Ljakarta/faces/convert/Converter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/convert/Converter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/convert/Converter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", "converter", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", "converter", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsObject", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/faces/convert/ConverterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsObject", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/faces/convert/ConverterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", "converter", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter", "converter", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/convert/Converter", "getAsObject", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/convert/Converter", "getAsObject", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsString", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", null, new String[] { "javax/faces/convert/ConverterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsString", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", null, new String[] { "jakarta/faces/convert/ConverterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");

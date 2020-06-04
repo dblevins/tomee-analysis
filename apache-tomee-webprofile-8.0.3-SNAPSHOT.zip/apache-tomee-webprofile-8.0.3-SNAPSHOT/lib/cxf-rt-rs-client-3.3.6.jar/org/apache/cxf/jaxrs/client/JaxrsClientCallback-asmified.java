@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/Jax
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/client/JaxrsClientCallback$JaxrsResponseFuture", "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "JaxrsResponseFuture", ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljavax/ws/rs/client/InvocationCallback;", "Ljavax/ws/rs/client/InvocationCallback<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handler", "Ljakarta/ws/rs/client/InvocationCallback;", "Ljakarta/ws/rs/client/InvocationCallback<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,13 +39,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "responseClass", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/client/InvocationCallback;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", "(Ljavax/ws/rs/client/InvocationCallback<TT;>;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/client/InvocationCallback;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", "(Ljakarta/ws/rs/client/InvocationCallback<TT;>;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/endpoint/ClientCallback", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "outType", "Ljava/lang/reflect/Type;");
@@ -57,10 +57,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandler", "()Ljavax/ws/rs/client/InvocationCallback;", "()Ljavax/ws/rs/client/InvocationCallback<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandler", "()Ljakarta/ws/rs/client/InvocationCallback;", "()Ljakarta/ws/rs/client/InvocationCallback<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -94,14 +94,14 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/CancellationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/CancellationException", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/client/InvocationCallback", "failed", "(Ljava/lang/Throwable;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/client/InvocationCallback", "failed", "(Ljava/lang/Throwable;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 2);
@@ -136,15 +136,15 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "result", "[Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/client/InvocationCallback", "completed", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/client/InvocationCallback", "completed", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -192,14 +192,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "exception", "Ljava/lang/Throwable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "exception", "Ljava/lang/Throwable;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/client/InvocationCallback", "failed", "(Ljava/lang/Throwable;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/client/InvocationCallback", "failed", "(Ljava/lang/Throwable;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -232,10 +232,10 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)Ljavax/ws/rs/client/InvocationCallback;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)Ljakarta/ws/rs/client/InvocationCallback;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljavax/ws/rs/client/InvocationCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handler", "Ljakarta/ws/rs/client/InvocationCallback;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

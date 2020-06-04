@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/bval/jsr/ApacheValidatorConfiguration", "Ljava/lang/Object;Ljavax/validation/Configuration<Lorg/apache/bval/jsr/ApacheValidatorConfiguration;>;", "java/lang/Object", new String[] { "javax/validation/Configuration" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/bval/jsr/ApacheValidatorConfiguration", "Ljava/lang/Object;Ljakarta/validation/Configuration<Lorg/apache/bval/jsr/ApacheValidatorConfiguration;>;", "java/lang/Object", new String[] { "jakarta/validation/Configuration" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/ApacheValidatorConfiguration$Properties", "org/apache/bval/jsr/ApacheValidatorConfiguration", "Properties", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 

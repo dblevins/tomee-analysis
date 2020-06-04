@@ -52,7 +52,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/wss4j/commo
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "javax/xml/stream/XMLStreamException");
 Label label4 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label4, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label4, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/policy/AssertionInfoMap;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "get", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
@@ -181,7 +181,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/binding/soap/Soap
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/binding/soap/SoapFault", "<init>", "(Lorg/apache/cxf/common/i18n/Message;Ljava/lang/Throwable;Ljavax/xml/namespace/QName;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/binding/soap/SoapFault");
 methodVisitor.visitInsn(DUP);
@@ -1514,7 +1514,7 @@ methodVisitor.visitMaxs(5, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doResults", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Lorg/w3c/dom/Element;Lorg/w3c/dom/Element;Lorg/apache/wss4j/dom/handler/WSHandlerResult;Z)V", null, new String[] { "javax/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException", "org/apache/wss4j/common/ext/WSSecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doResults", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Lorg/w3c/dom/Element;Lorg/w3c/dom/Element;Lorg/apache/wss4j/dom/handler/WSHandlerResult;Z)V", null, new String[] { "jakarta/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException", "org/apache/wss4j/common/ext/WSSecurityException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);

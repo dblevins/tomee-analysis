@@ -109,7 +109,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "wasFailureCo
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNewTempClassLoader", "(Ljavax/persistence/spi/PersistenceUnitInfo;)Lorg/eclipse/persistence/internal/helper/JPAClassLoaderHolder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNewTempClassLoader", "(Ljakarta/persistence/spi/PersistenceUnitInfo;)Lorg/eclipse/persistence/internal/helper/JPAClassLoaderHolder;", null, null);
 methodVisitor.visitEnd();
 }
 {

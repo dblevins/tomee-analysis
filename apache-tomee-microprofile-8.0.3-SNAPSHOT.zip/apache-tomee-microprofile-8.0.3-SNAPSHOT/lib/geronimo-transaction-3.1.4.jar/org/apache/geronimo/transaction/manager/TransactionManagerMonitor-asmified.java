@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/transaction/manager/TransactionManagerMonitor", null, "java/lang/Object", new String[] { "java/util/EventListener" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "threadAssociated", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "threadAssociated", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "threadUnassociated", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "threadUnassociated", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

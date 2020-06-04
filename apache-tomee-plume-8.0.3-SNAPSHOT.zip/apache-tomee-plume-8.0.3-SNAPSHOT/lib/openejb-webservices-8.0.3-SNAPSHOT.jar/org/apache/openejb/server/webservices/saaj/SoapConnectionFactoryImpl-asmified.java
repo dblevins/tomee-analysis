@@ -22,23 +22,23 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl", null, "javax/xml/soap/SOAPConnectionFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl", null, "jakarta/xml/soap/SOAPConnectionFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/SOAPConnectionFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/SOAPConnectionFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getSOAPConnectionFactory", "()Ljavax/xml/soap/SOAPConnectionFactory;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getSOAPConnectionFactory", "()Ljakarta/xml/soap/SOAPConnectionFactory;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.xml.soap.SOAPConnectionFactory");
+methodVisitor.visitLdcInsn("jakarta.xml.soap.SOAPConnectionFactory");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/saaj/SaajFactoryFinder", "find", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/SOAPConnectionFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/SOAPConnectionFactory");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
@@ -46,11 +46,11 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConnection", "()Ljavax/xml/soap/SOAPConnection;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConnection", "()Ljakarta/xml/soap/SOAPConnection;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl", "getSOAPConnectionFactory", "()Ljavax/xml/soap/SOAPConnectionFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPConnectionFactory", "createConnection", "()Ljavax/xml/soap/SOAPConnection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl", "getSOAPConnectionFactory", "()Ljakarta/xml/soap/SOAPConnectionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPConnectionFactory", "createConnection", "()Ljakarta/xml/soap/SOAPConnection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

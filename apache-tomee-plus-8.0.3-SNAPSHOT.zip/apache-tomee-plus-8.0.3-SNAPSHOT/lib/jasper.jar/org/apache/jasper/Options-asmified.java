@@ -137,7 +137,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isCaching", 
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCache", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCache", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;>;", null);
 methodVisitor.visitEnd();
 }
 {

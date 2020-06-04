@@ -697,13 +697,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventLocatorImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventLocatorImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/unmarshaller/DOMScanner", "getCurrentLocation", "()Lorg/w3c/dom/Node;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventLocatorImpl", "<init>", "(Lorg/w3c/dom/Node;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventLocatorImpl", "<init>", "(Lorg/w3c/dom/Node;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

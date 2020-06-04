@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/common/sql/ResultImpl", null, "java/lang/Object", new String[] { "javax/servlet/jsp/jstl/sql/Result" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tag/common/sql/ResultImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/jsp/jstl/sql/Result" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rowMap", "Ljava/util/List;", null, null);

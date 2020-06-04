@@ -189,7 +189,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "J
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "JAVAX_WS_PKG", "Ljava/lang/String;", null, "javax.xml.ws.");
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "JAVAX_WS_PKG", "Ljava/lang/String;", null, "jakarta.xml.ws.");
 fieldVisitor.visitEnd();
 }
 {
@@ -254,7 +254,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javam
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/javamodel/Helper", "mapClass", "Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/javamodel/Helper", "getJavaClass", "(Ljava/lang/Class;)Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/javamodel/Helper", "jaxbElementClass", "Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -696,7 +696,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.xml.ws.");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label2);

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/eis/EISDOMRecord", null, "org/eclipse/persistence/oxm/record/DOMRecord", new String[] { "org/eclipse/persistence/eis/DOMRecord", "javax/resource/cci/MappedRecord" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/eis/EISDOMRecord", null, "org/eclipse/persistence/oxm/record/DOMRecord", new String[] { "org/eclipse/persistence/eis/DOMRecord", "jakarta/resource/cci/MappedRecord" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "record", "Ljavax/resource/cci/Record;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "record", "Ljakarta/resource/cci/Record;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -56,21 +56,21 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/cci/Record;Lorg/w3c/dom/Element;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/cci/Record;Lorg/w3c/dom/Element;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/oxm/record/DOMRecord", "<init>", "(Lorg/w3c/dom/Element;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljavax/resource/cci/Record;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljakarta/resource/cci/Record;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordShortDescription", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/oxm/record/XMLRecord");
@@ -82,7 +82,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/oxm/record/XMLRe
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/record/XMLRecord", "getSession", "()Lorg/eclipse/persistence/internal/sessions/AbstractSession;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "session", "Lorg/eclipse/persistence/internal/sessions/AbstractSession;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "javax/resource/cci/Record", "org/w3c/dom/Element"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "jakarta/resource/cci/Record", "org/w3c/dom/Element"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -104,7 +104,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/cci/Record;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/cci/Record;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -134,14 +134,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/oxm/record/DOMRecord", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljavax/resource/cci/Record;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljakarta/resource/cci/Record;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordShortDescription", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/oxm/record/XMLRecord");
@@ -153,7 +153,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/oxm/record/XMLRe
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/record/XMLRecord", "getSession", "()Lorg/eclipse/persistence/internal/sessions/AbstractSession;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "session", "Lorg/eclipse/persistence/internal/sessions/AbstractSession;");
 methodVisitor.visitLabel(label18);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "javax/resource/cci/Record"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "jakarta/resource/cci/Record"}, 0, new Object[] {});
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/eis/EISDOMRecord", "domMethod", "Ljava/lang/reflect/Method;");
 methodVisitor.visitJumpInsn(IFNONNULL, label15);
 methodVisitor.visitLabel(label3);
@@ -214,7 +214,7 @@ methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/eis/EISDOMRecor
 methodVisitor.visitLabel(label7);
 methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "javax/resource/cci/Record", "java/lang/Exception"}, 1, new Object[] {"java/security/PrivilegedActionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/eclipse/persistence/eis/EISDOMRecord", "jakarta/resource/cci/Record", "java/lang/Exception"}, 1, new Object[] {"java/security/PrivilegedActionException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/PrivilegedActionException", "getCause", "()Ljava/lang/Throwable;", false);
@@ -291,27 +291,27 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRecord", "()Ljavax/resource/cci/Record;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRecord", "()Ljakarta/resource/cci/Record;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljavax/resource/cci/Record;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljakarta/resource/cci/Record;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecord", "(Ljavax/resource/cci/Record;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecord", "(Ljakarta/resource/cci/Record;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljavax/resource/cci/Record;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "record", "Ljakarta/resource/cci/Record;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordName", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/Record", "getRecordShortDescription", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISDOMRecord", "recordShortDescription", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/oxm/record/XMLRecord");
@@ -370,15 +370,15 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildNestedRow", "(Lorg/w3c/dom/Element;)Lorg/eclipse/persistence/oxm/record/XMLRecord;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISDOMRecord", "getRecord", "()Ljavax/resource/cci/Record;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISDOMRecord", "getRecord", "()Ljakarta/resource/cci/Record;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/eis/EISDOMRecord");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISDOMRecord", "getRecord", "()Ljavax/resource/cci/Record;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISDOMRecord", "getRecord", "()Ljakarta/resource/cci/Record;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/eis/EISDOMRecord", "<init>", "(Ljavax/resource/cci/Record;Lorg/w3c/dom/Element;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/eis/EISDOMRecord", "<init>", "(Ljakarta/resource/cci/Record;Lorg/w3c/dom/Element;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

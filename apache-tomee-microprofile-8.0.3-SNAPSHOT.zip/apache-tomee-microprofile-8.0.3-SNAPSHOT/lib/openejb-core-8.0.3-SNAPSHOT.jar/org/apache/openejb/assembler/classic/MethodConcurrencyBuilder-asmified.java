@@ -186,8 +186,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toUpperCase", 
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ejb/LockType", "valueOf", "(Ljava/lang/String;)Ljavax/ejb/LockType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/MethodContext", "setLockType", "(Ljavax/ejb/LockType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ejb/LockType", "valueOf", "(Ljava/lang/String;)Ljakarta/ejb/LockType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/MethodContext", "setLockType", "(Ljakarta/ejb/LockType;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

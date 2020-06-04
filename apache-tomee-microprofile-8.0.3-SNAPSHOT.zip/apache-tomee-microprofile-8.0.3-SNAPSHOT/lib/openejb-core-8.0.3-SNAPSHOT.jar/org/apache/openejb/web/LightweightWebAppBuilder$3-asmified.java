@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$info", "Lo
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$sce", "Ljavax/servlet/ServletContextEvent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$sce", "Ljakarta/servlet/ServletContextEvent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;Lorg/apache/openejb/assembler/classic/FilterInfo;Ljavax/servlet/ServletContextEvent;Lorg/apache/openejb/core/WebContext;Lorg/apache/openejb/web/LightweightWebAppBuilder$DeployedWebObjects;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;Lorg/apache/openejb/assembler/classic/FilterInfo;Ljakarta/servlet/ServletContextEvent;Lorg/apache/openejb/core/WebContext;Lorg/apache/openejb/web/LightweightWebAppBuilder$DeployedWebObjects;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -63,7 +63,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$info", "Lorg/apache/openejb/assembler/classic/FilterInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$sce", "Ljavax/servlet/ServletContextEvent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$sce", "Ljakarta/servlet/ServletContextEvent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$webContext", "Lorg/apache/openejb/core/WebContext;");
@@ -102,15 +102,15 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/web/LightweightWebAppBuilder$SimpleFilterConfig");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$sce", "Ljavax/servlet/ServletContextEvent;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletContextEvent", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$sce", "Ljakarta/servlet/ServletContextEvent;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletContextEvent", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$info", "Lorg/apache/openejb/assembler/classic/FilterInfo;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/FilterInfo", "name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$3", "val$info", "Lorg/apache/openejb/assembler/classic/FilterInfo;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/FilterInfo", "initParams", "Ljava/util/Properties;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/web/LightweightWebAppBuilder$SimpleFilterConfig", "<init>", "(Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/util/Properties;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/web/LightweightWebAppBuilder$SimpleFilterConfig", "<init>", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;Ljava/util/Properties;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/web/LightweightWebAppBuilder", "access$100", "()Ljava/lang/reflect/Method;", false);
@@ -148,7 +148,7 @@ methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/web/LightweightWebAppBuilder$3", "java/util/Iterator", "java/lang/String", "javax/servlet/FilterConfig"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/web/LightweightWebAppBuilder$3", "java/util/Iterator", "java/lang/String", "jakarta/servlet/FilterConfig"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/web/LightweightWebAppBuilder", "access$200", "()Lorg/apache/openejb/util/Logger;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);

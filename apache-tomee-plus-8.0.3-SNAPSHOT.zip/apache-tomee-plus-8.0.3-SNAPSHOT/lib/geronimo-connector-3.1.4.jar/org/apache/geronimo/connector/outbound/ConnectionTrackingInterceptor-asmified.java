@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnection", "(Lorg/apache/geronimo/connector/outbound/ConnectionInfo;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnection", "(Lorg/apache/geronimo/connector/outbound/ConnectionInfo;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor", "connectionTracker", "Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;");
@@ -78,7 +78,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reassociateConnection", "(Lorg/apache/geronimo/connector/outbound/ConnectionInfo;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reassociateConnection", "(Lorg/apache/geronimo/connector/outbound/ConnectionInfo;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor", "connectionTracker", "Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;");
@@ -129,7 +129,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enter", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Lorg/apache/geronimo/connector/outbound/ConnectionInfo;>;)V", new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enter", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Lorg/apache/geronimo/connector/outbound/ConnectionInfo;>;)V", new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
@@ -157,7 +157,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exit", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Lorg/apache/geronimo/connector/outbound/ConnectionInfo;>;)V", new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exit", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Lorg/apache/geronimo/connector/outbound/ConnectionInfo;>;)V", new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
@@ -184,10 +184,10 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/ConnectionInfo", "getManagedConnectionInfo", "()Lorg/apache/geronimo/connector/outbound/ManagedConnectionInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "getManagedConnection", "()Ljavax/resource/spi/ManagedConnection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "getManagedConnection", "()Ljakarta/resource/spi/ManagedConnection;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/resource/spi/DissociatableManagedConnection");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/resource/spi/DissociatableManagedConnection");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -197,8 +197,8 @@ methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "remove", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/DissociatableManagedConnection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/DissociatableManagedConnection", "dissociateConnections", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/DissociatableManagedConnection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/DissociatableManagedConnection", "dissociateConnections", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "clearConnectionHandles", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

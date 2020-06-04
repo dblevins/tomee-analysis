@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/ee/WASManagedRuntime$WASTransaction", null, "java/lang/Object", new String[] { "javax/transaction/TransactionManager", "javax/transaction/Transaction" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/ee/WASManagedRuntime$WASTransaction", null, "java/lang/Object", new String[] { "jakarta/transaction/TransactionManager", "jakarta/transaction/Transaction" });
 
 classWriter.visitInnerClass("org/apache/openjpa/ee/WASManagedRuntime$WASTransaction", "org/apache/openjpa/ee/WASManagedRuntime", "WASTransaction", 0);
 
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -89,7 +89,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljavax/transaction/Transaction;", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransaction", "()Ljakarta/transaction/Transaction;", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/RollbackException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/RollbackException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -122,7 +122,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/ee/WASManagedRuntime$WASSynchronization");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/WASManagedRuntime$WASSynchronization", "<init>", "(Ljavax/transaction/Synchronization;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/WASManagedRuntime$WASSynchronization", "<init>", "(Ljakarta/transaction/Synchronization;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
@@ -192,7 +192,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "javax/transaction/NotSupportedException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "jakarta/transaction/NotSupportedException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/transaction/HeuristicMixedException", "javax/transaction/HeuristicRollbackException", "java/lang/IllegalStateException", "javax/transaction/RollbackException", "java/lang/SecurityException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/transaction/HeuristicMixedException", "jakarta/transaction/HeuristicRollbackException", "java/lang/IllegalStateException", "jakarta/transaction/RollbackException", "java/lang/SecurityException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljavax/transaction/Transaction;)V", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/InvalidTransactionException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resume", "(Ljakarta/transaction/Transaction;)V", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/InvalidTransactionException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -234,7 +234,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/ee/WASManagedRuntime$WASTransaction", "this$0", "Lorg/apache/openjpa/ee/WASManagedRuntime;");
@@ -257,7 +257,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/ee/WASManagedRuntime$WASTransaction", "this$0", "Lorg/apache/openjpa/ee/WASManagedRuntime;");
@@ -280,7 +280,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -294,7 +294,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljavax/transaction/Transaction;", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "suspend", "()Ljakarta/transaction/Transaction;", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -308,7 +308,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delistResource", "(Ljavax/transaction/xa/XAResource;I)Z", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delistResource", "(Ljavax/transaction/xa/XAResource;I)Z", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);
@@ -322,7 +322,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/RollbackException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/RollbackException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InvalidStateException");
 methodVisitor.visitInsn(DUP);

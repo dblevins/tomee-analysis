@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/facelets/tag/composite/PropertyHandler", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/String;Ljava/beans/FeatureDescriptor;Ljavax/faces/view/facelets/TagAttribute;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/String;Ljava/beans/FeatureDescriptor;Ljakarta/faces/view/facelets/TagAttribute;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -61,12 +61,12 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addVaryFieldName", "(Ljavax/servlet/http/HttpServletResponse;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addVaryFieldName", "(Ljakarta/servlet/http/HttpServletResponse;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/http/ResponseUtil$ResponseAdapter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/ResponseUtil$ResponseAdapter", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/ResponseUtil$ResponseAdapter", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/http/ResponseUtil", "addVaryFieldName", "(Lorg/apache/tomcat/util/http/ResponseUtil$Adapter;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);

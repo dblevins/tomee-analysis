@@ -113,7 +113,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBus", "(Lorg/apache/cxf/Bus;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Resource;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Resource;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -227,7 +227,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "shutdown", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

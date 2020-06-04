@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean$2", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Any;>;", "javax/enterprise/util/AnnotationLiteral", null);
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean$2", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Any;>;", "jakarta/enterprise/util/AnnotationLiteral", null);
 
-classWriter.visitOuterClass("org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/InjectionTarget;Ljava/lang/String;)V");
+classWriter.visitOuterClass("org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/InjectionTarget;Ljava/lang/String;)V");
 
 classWriter.visitInnerClass("org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean", "org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly", "HelperBean", ACC_PUBLIC | ACC_STATIC);
 
@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean$2", "this$0", "Lorg/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

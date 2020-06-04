@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/transaction/JTASynchronizationListener", null, "org/eclipse/persistence/transaction/AbstractSynchronizationListener", new String[] { "javax/transaction/Synchronization", "org/eclipse/persistence/transaction/SynchronizationListenerFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/transaction/JTASynchronizationListener", null, "org/eclipse/persistence/transaction/AbstractSynchronizationListener", new String[] { "jakarta/transaction/Synchronization", "org/eclipse/persistence/transaction/SynchronizationListenerFactory" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

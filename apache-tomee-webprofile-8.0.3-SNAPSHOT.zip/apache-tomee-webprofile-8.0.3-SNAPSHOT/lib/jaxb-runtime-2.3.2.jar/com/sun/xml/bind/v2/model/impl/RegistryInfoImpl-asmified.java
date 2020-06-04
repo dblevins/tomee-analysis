@@ -114,11 +114,11 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ModelBuilder", "reader", "Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl;"));
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlElementDecl");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlElementDecl");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
@@ -148,7 +148,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "javax/xml/bind/annotation/XmlElementDecl"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "jakarta/xml/bind/annotation/XmlElementDecl"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);

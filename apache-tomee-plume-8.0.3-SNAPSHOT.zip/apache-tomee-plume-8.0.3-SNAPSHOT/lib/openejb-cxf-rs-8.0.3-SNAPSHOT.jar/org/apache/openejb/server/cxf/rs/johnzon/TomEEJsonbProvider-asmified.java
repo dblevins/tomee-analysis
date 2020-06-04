@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "<T:Ljava/lang/Object;>Lorg/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider<TT;>;", "org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -39,7 +39,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -54,11 +54,11 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljavax/json/bind/JsonbConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljakarta/json/bind/JsonbConfig;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/bind/JsonbConfig", "withPropertyVisibilityStrategy", "(Ljavax/json/bind/config/PropertyVisibilityStrategy;)Ljavax/json/bind/JsonbConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/bind/JsonbConfig", "withPropertyVisibilityStrategy", "(Ljakarta/json/bind/config/PropertyVisibilityStrategy;)Ljakarta/json/bind/JsonbConfig;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
@@ -68,10 +68,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDateFormat", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljavax/json/bind/JsonbConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljakarta/json/bind/JsonbConfig;");
 methodVisitor.visitLdcInsn("jsonb.date-format");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/json/bind/JsonbConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/json/bind/JsonbConfig;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -81,10 +81,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLocale", "(Ljava/util/Locale;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljavax/json/bind/JsonbConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljakarta/json/bind/JsonbConfig;");
 methodVisitor.visitLdcInsn("jsonb.locale");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/json/bind/JsonbConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/json/bind/JsonbConfig;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -94,10 +94,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAccessMode", "(Lorg/apache/johnzon/mapper/access/AccessMode;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljavax/json/bind/JsonbConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider", "config", "Ljakarta/json/bind/JsonbConfig;");
 methodVisitor.visitLdcInsn("johnzon.accessMode");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/json/bind/JsonbConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/bind/JsonbConfig", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/json/bind/JsonbConfig;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);

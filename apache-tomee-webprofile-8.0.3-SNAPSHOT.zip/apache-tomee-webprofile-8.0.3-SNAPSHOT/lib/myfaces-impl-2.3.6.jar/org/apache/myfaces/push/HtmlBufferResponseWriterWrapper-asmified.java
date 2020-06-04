@@ -33,20 +33,20 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "wrapperWriter", "Ljava/io/Pr
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialWriter", "Ljavax/faces/context/ResponseWriter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialWriter", "Ljakarta/faces/context/ResponseWriter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInitialWriter", "()Ljavax/faces/context/ResponseWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInitialWriter", "()Ljakarta/faces/context/ResponseWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "initialWriter", "Ljavax/faces/context/ResponseWriter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "initialWriter", "Ljakarta/faces/context/ResponseWriter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getInstance", "(Ljavax/faces/context/ResponseWriter;)Lorg/apache/myfaces/push/HtmlBufferResponseWriterWrapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getInstance", "(Ljakarta/faces/context/ResponseWriter;)Lorg/apache/myfaces/push/HtmlBufferResponseWriterWrapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/io/StringWriter");
 methodVisitor.visitInsn(DUP);
@@ -63,13 +63,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "<init>", "(Ljavax/faces/context/ResponseWriter;Ljava/io/StringWriter;Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "<init>", "(Ljakarta/faces/context/ResponseWriter;Ljava/io/StringWriter;Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/faces/context/ResponseWriter;Ljava/io/StringWriter;Ljava/io/PrintWriter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/faces/context/ResponseWriter;Ljava/io/StringWriter;Ljava/io/PrintWriter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -80,11 +80,11 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter"});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ResponseWriter", "getContentType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ResponseWriter", "getContentType", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String"});
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
@@ -92,11 +92,11 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String"});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ResponseWriter", "getCharacterEncoding", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ResponseWriter", "getCharacterEncoding", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/faces/context/ResponseWriter", "java/io/StringWriter", "java/io/PrintWriter"}, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/io/PrintWriter", "java/lang/String", "java/lang/String"});
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/renderkit/html/HtmlResponseWriterImpl", "<init>", "(Ljava/io/Writer;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -106,7 +106,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "wrapperWriter", "Ljava/io/PrintWriter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "initialWriter", "Ljavax/faces/context/ResponseWriter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/push/HtmlBufferResponseWriterWrapper", "initialWriter", "Ljakarta/faces/context/ResponseWriter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

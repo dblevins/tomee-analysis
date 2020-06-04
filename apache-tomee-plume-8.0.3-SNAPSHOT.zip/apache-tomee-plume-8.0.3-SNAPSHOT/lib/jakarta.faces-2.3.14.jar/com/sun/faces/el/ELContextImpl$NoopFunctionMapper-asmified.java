@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/el/ELContextImpl$NoopFunctionMapper", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/el/ELContextImpl$NoopFunctionMapper", null, "jakarta/el/FunctionMapper", null);
 
 classWriter.visitInnerClass("com/sun/faces/el/ELContextImpl$NoopFunctionMapper", "com/sun/faces/el/ELContextImpl", "NoopFunctionMapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("com/sun/faces/el/ELContextImpl$1", null, null, ACC_
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

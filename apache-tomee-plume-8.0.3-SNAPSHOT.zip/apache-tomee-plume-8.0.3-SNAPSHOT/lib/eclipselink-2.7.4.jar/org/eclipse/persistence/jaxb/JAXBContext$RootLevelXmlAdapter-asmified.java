@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBContext$Roo
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "org/eclipse/persistence/jaxb/JAXBContext", "RootLevelXmlAdapter", ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "xmlAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "xmlAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "boundType", "Ljava/lang/Clas
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/bind/annotation/adapters/XmlAdapter;Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/bind/annotation/adapters/XmlAdapter;Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "boundType", "Ljava/lang/Class;");
@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXmlAdapter", "()Ljavax/xml/bind/annotation/adapters/XmlAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXmlAdapter", "()Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -68,11 +68,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXmlAdapter", "(Ljavax/xml/bind/annotation/adapters/XmlAdapter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXmlAdapter", "(Ljakarta/xml/bind/annotation/adapters/XmlAdapter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter", "xmlAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/jee/JaxbJavaee$1", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/jee/JaxbJavaee$1", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventHandler" });
 
 classWriter.visitOuterClass("org/apache/openejb/jee/JaxbJavaee", "unmarshalJavaee", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;");
 
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("openejb.validation.output.level");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/webservices/WsServlet$DefaultContext", null, "java/lang/Object", new String[] { "javax/xml/rpc/server/ServletEndpointContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/webservices/WsServlet$DefaultContext", null, "java/lang/Object", new String[] { "jakarta/xml/rpc/server/ServletEndpointContext" });
 
 classWriter.visitInnerClass("org/apache/openejb/server/webservices/WsServlet$DefaultContext", "org/apache/openejb/server/webservices/WsServlet", "DefaultContext", ACC_PRIVATE | ACC_STATIC);
 
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljavax/xml/rpc/handler/MessageContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljakarta/xml/rpc/handler/MessageContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -60,18 +60,18 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHttpSession", "()Ljavax/servlet/http/HttpSession;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHttpSession", "()Ljakarta/servlet/http/HttpSession;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/rpc/JAXRPCException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/rpc/JAXRPCException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Method cannot be called outside an http request context");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/rpc/JAXRPCException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/rpc/JAXRPCException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalAccessError");
 methodVisitor.visitInsn(DUP);

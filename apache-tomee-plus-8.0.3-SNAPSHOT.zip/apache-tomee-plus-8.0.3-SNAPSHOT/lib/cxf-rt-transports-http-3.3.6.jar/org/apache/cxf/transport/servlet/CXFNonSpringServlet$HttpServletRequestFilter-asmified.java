@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", null, "javax/servlet/http/HttpServletRequestWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", null, "jakarta/servlet/http/HttpServletRequestWrapper", null);
 
 classWriter.visitInnerClass("org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", "org/apache/cxf/transport/servlet/CXFNonSpringServlet", "HttpServletRequestFilter", ACC_PRIVATE | ACC_STATIC);
 
@@ -39,11 +39,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "pathInfo", "Ljava/lang/Strin
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", "filterName", "Ljava/lang/String;");
@@ -63,7 +63,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/CXFNonS
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletContext;"));
 methodVisitor.visitLdcInsn("getFilterRegistration");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
@@ -75,7 +75,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getMethod", "(L
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -155,7 +155,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "getPathInfo", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "getPathInfo", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", "pathInfo", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", "pathInfo", "Ljava/lang/String;");
@@ -171,7 +171,7 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "getContextPath", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "getContextPath", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter", "getServletPath", "()Ljava/lang/String;", false);

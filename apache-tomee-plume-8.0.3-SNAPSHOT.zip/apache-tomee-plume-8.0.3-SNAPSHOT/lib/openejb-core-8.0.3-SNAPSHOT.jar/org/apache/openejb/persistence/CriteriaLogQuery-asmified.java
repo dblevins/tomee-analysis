@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/CriteriaLogQuery", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/TypedQuery<TT;>;", "java/lang/Object", new String[] { "javax/persistence/TypedQuery" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/CriteriaLogQuery", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/TypedQuery<TT;>;", "java/lang/Object", new String[] { "jakarta/persistence/TypedQuery" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOGGER", "Lorg/apache/openejb/util/Logger;", null, null);
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "GET
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/persistence/TypedQuery;", "Ljavax/persistence/TypedQuery<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/persistence/TypedQuery;", "Ljakarta/persistence/TypedQuery<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,13 +49,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "logLevel", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/TypedQuery;Ljava/lang/String;)V", "(Ljavax/persistence/TypedQuery<TT;>;Ljava/lang/String;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/TypedQuery;Ljava/lang/String;)V", "(Ljakarta/persistence/TypedQuery<TT;>;Ljava/lang/String;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "()Ljava/lang/String;", false);
@@ -80,7 +80,7 @@ Label label7 = new Label();
 Label label8 = new Label();
 methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/NoSuchMethodException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/persistence/CriteriaLogQuery", "methodsCache", "Ljava/util/Map;");
@@ -168,14 +168,14 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" doesn't support getQueryString() method: '");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("'");
@@ -199,14 +199,14 @@ methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/Exception");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Object"}, 0, null);
@@ -397,8 +397,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/CriteriaLogQuery", "logJPQLQuery", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getResultList", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getResultList", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -409,8 +409,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/CriteriaLogQuery", "logJPQLQuery", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getSingleResult", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getSingleResult", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -421,19 +421,19 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/CriteriaLogQuery", "logJPQLQuery", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "executeUpdate", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "executeUpdate", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMaxResults", "(I)Ljavax/persistence/TypedQuery;", "(I)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMaxResults", "(I)Ljakarta/persistence/TypedQuery;", "(I)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setMaxResults", "(I)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setMaxResults", "(I)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -444,19 +444,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxResults", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getMaxResults", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getMaxResults", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFirstResult", "(I)Ljavax/persistence/TypedQuery;", "(I)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFirstResult", "(I)Ljakarta/persistence/TypedQuery;", "(I)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setFirstResult", "(I)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setFirstResult", "(I)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -467,20 +467,20 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFirstResult", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getFirstResult", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getFirstResult", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -488,13 +488,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", "<E:Ljava/lang/Object;>(Ljavax/persistence/Parameter<TE;>;TE;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", "<E:Ljava/lang/Object;>(Ljakarta/persistence/Parameter<TE;>;TE;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -505,21 +505,21 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHints", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getHints", "()Ljava/util/Map;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getHints", "()Ljava/util/Map;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(Ljavax/persistence/Parameter<Ljava/util/Calendar;>;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(Ljakarta/persistence/Parameter<Ljava/util/Calendar;>;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -527,14 +527,14 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(Ljavax/persistence/Parameter<Ljava/util/Date;>;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(Ljakarta/persistence/Parameter<Ljava/util/Date;>;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -542,13 +542,13 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -556,14 +556,14 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -571,14 +571,14 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(Ljava/lang/String;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -586,13 +586,13 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/TypedQuery;", "(ILjava/lang/Object;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/TypedQuery;", "(ILjava/lang/Object;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -600,14 +600,14 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(ILjava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(ILjava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(ILjava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(ILjava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -615,14 +615,14 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", "(ILjava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameter", "(ILjava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", "(ILjava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setParameter", "(ILjava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setParameter", "(ILjava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -630,79 +630,79 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/Parameter<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/Parameter<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameters", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameters", "()Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(Ljava/lang/String;)Ljavax/persistence/Parameter;", "(Ljava/lang/String;)Ljavax/persistence/Parameter<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(Ljava/lang/String;)Ljakarta/persistence/Parameter;", "(Ljava/lang/String;)Ljakarta/persistence/Parameter<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameter", "(Ljava/lang/String;)Ljavax/persistence/Parameter;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameter", "(Ljava/lang/String;)Ljakarta/persistence/Parameter;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Parameter;", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljavax/persistence/Parameter<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Parameter;", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljakarta/persistence/Parameter<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameter", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Parameter;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameter", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Parameter;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(I)Ljavax/persistence/Parameter;", "(I)Ljavax/persistence/Parameter<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(I)Ljakarta/persistence/Parameter;", "(I)Ljakarta/persistence/Parameter<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameter", "(I)Ljavax/persistence/Parameter;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameter", "(I)Ljakarta/persistence/Parameter;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(ILjava/lang/Class;)Ljavax/persistence/Parameter;", "<T:Ljava/lang/Object;>(ILjava/lang/Class<TT;>;)Ljavax/persistence/Parameter<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameter", "(ILjava/lang/Class;)Ljakarta/persistence/Parameter;", "<T:Ljava/lang/Object;>(ILjava/lang/Class<TT;>;)Ljakarta/persistence/Parameter<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameter", "(ILjava/lang/Class;)Ljavax/persistence/Parameter;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameter", "(ILjava/lang/Class;)Ljakarta/persistence/Parameter;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBound", "(Ljavax/persistence/Parameter;)Z", "(Ljavax/persistence/Parameter<*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBound", "(Ljakarta/persistence/Parameter;)Z", "(Ljakarta/persistence/Parameter<*>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "isBound", "(Ljavax/persistence/Parameter;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "isBound", "(Ljakarta/persistence/Parameter;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterValue", "(Ljavax/persistence/Parameter;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/persistence/Parameter<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterValue", "(Ljakarta/persistence/Parameter;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/Parameter<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameterValue", "(Ljavax/persistence/Parameter;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameterValue", "(Ljakarta/persistence/Parameter;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -711,9 +711,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterValue", "(Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameterValue", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameterValue", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -722,51 +722,51 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterValue", "(I)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getParameterValue", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getParameterValue", "(I)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/TypedQuery;", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/TypedQuery;", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlushMode", "()Ljavax/persistence/FlushModeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlushMode", "()Ljakarta/persistence/FlushModeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getFlushMode", "()Ljavax/persistence/FlushModeType;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getFlushMode", "()Ljakarta/persistence/FlushModeType;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/TypedQuery;", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/TypedQuery;", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/TypedQuery;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/TypedQuery;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockMode", "()Ljavax/persistence/LockModeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockMode", "()Ljakarta/persistence/LockModeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "getLockMode", "()Ljavax/persistence/LockModeType;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "getLockMode", "()Ljakarta/persistence/LockModeType;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -775,165 +775,165 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljavax/persistence/TypedQuery;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/CriteriaLogQuery", "delegate", "Ljakarta/persistence/TypedQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TypedQuery", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TypedQuery", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setFlushMode", "(Ljavax/persistence/FlushModeType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setFlushMode", "(Ljakarta/persistence/FlushModeType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/lang/Object;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(ILjava/lang/Object;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Date;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Date;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/util/Calendar;Ljavax/persistence/TemporalType;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/util/Calendar;Ljakarta/persistence/TemporalType;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljavax/persistence/Parameter;Ljava/lang/Object;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setParameter", "(Ljakarta/persistence/Parameter;Ljava/lang/Object;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljavax/persistence/Parameter;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setParameter", "(Ljakarta/persistence/Parameter;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setHint", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setFirstResult", "(I)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setFirstResult", "(I)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setFirstResult", "(I)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setFirstResult", "(I)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setMaxResults", "(I)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setMaxResults", "(I)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setMaxResults", "(I)Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/CriteriaLogQuery", "setMaxResults", "(I)Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

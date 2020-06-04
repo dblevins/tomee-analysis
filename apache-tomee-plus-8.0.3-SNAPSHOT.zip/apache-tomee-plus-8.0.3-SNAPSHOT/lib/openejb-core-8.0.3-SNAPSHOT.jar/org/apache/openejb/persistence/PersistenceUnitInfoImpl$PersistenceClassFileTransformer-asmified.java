@@ -27,17 +27,17 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/
 classWriter.visitInnerClass("org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "PersistenceClassFileTransformer", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "classTransformer", "Ljavax/persistence/spi/ClassTransformer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "classTransformer", "Ljakarta/persistence/spi/ClassTransformer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/spi/ClassTransformer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/spi/ClassTransformer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "classTransformer", "Ljavax/persistence/spi/ClassTransformer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "classTransformer", "Ljakarta/persistence/spi/ClassTransformer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -66,13 +66,13 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "classTransformer", "Ljavax/persistence/spi/ClassTransformer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "classTransformer", "Ljakarta/persistence/spi/ClassTransformer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/ClassTransformer", "transform", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/ClassTransformer", "transform", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();

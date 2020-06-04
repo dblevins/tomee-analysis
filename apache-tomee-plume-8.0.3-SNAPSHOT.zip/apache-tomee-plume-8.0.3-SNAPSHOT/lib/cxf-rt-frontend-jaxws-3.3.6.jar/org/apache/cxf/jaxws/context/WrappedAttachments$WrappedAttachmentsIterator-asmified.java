@@ -29,7 +29,7 @@ classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC
 classWriter.visitInnerClass("org/apache/cxf/jaxws/context/WrappedAttachments$WrappedAttachmentsIterator", "org/apache/cxf/jaxws/context/WrappedAttachments", "WrappedAttachmentsIterator", 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "iterator", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljavax/activation/DataHandler;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "iterator", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljakarta/activation/DataHandler;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/context/WrappedAttachments;Ljava/util/Iterator;)V", "(Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljavax/activation/DataHandler;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/context/WrappedAttachments;Ljava/util/Iterator;)V", "(Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljakarta/activation/DataHandler;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -95,8 +95,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAttachments$WrappedAttachmentsIterator", "key", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/activation/DataHandler");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/activation/DataHandler");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/context/WrappedAttachments$WrappedAttachmentsIterator", "this$0", "Lorg/apache/cxf/jaxws/context/WrappedAttachments;");

@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljavax/faces/validator/Validator;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljakarta/faces/validator/Validator;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Typed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/validator/FacesValidatorInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/validator/FacesValidatorInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "getValidatorId", "()Ljava/lang/String;", false);
 Label label0 = new Label();
@@ -44,7 +44,7 @@ methodVisitor.visitLdcInsn("");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "getValidatorId", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
@@ -76,11 +76,11 @@ methodVisitor.visitLdcInsn("");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "java/lang/String", "java/lang/String"}, 2, new Object[] {label2, label2});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "java/lang/String", "java/lang/String"}, 2, new Object[] {label2, label2});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "getValidatorId", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "java/lang/String", "java/lang/String"}, 3, new Object[] {label2, label2, "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/validator/FacesValidatorInfo", "java/lang/String", "java/lang/String"}, 3, new Object[] {label2, label2, "java/lang/String"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/validator/FacesValidatorAnnotationLiteral", "<init>", "(Ljava/lang/String;ZZ)V", false);
@@ -88,7 +88,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "id", "(Ljava/lang/String;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "scope", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -115,7 +115,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Type", "getTyp
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "simpleClassForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "beanClass", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/validator/FacesValidatorProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/validator/Validator;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/validator/Validator;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/validator/FacesValidatorProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/validator/Validator;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/validator/Validator;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "create", "(Ljava/util/function/Function;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -123,7 +123,7 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createValidator", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/validator/Validator;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljavax/faces/validator/Validator;>;)Ljavax/faces/validator/Validator;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createValidator", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/validator/Validator;", "(Ljakarta/enterprise/context/spi/CreationalContext<Ljakarta/faces/validator/Validator;>;)Ljakarta/faces/validator/Validator;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -137,13 +137,13 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/validator/Validator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/validator/Validator");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "javax/enterprise/context/spi/CreationalContext", "java/lang/Class", "javax/faces/validator/Validator"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/cdi/validator/FacesValidatorProducer", "jakarta/enterprise/context/spi/CreationalContext", "java/lang/Class", "jakarta/faces/validator/Validator"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/cdi/validator/FacesValidatorProducer;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
@@ -160,7 +160,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -172,7 +172,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -182,11 +182,11 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/validator/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/validator/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "createValidator", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/validator/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/validator/FacesValidatorProducer", "createValidator", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/validator/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

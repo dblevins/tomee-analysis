@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/ManagedPropertyLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/faces/annotation/ManagedProperty;>;Ljavax/faces/annotation/ManagedProperty;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/faces/annotation/ManagedProperty" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/ManagedPropertyLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/faces/annotation/ManagedProperty;>;Ljakarta/faces/annotation/ManagedProperty;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/faces/annotation/ManagedProperty" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -46,7 +46,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/ManagedPropertyLiteral", "value", "Ljava/lang/String;");

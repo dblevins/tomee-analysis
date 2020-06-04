@@ -22,19 +22,19 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/shared/util/servlet/SourceCodeServlet", null, "javax/servlet/http/HttpServlet", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/shared/util/servlet/SourceCodeServlet", null, "jakarta/servlet/http/HttpServlet", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServlet", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServlet", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doGet", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doGet", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -43,7 +43,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getServletPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getServletPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn(".source");
@@ -66,16 +66,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/util/servlet/SourceCodeServlet", "getServletConfig", "()Ljavax/servlet/ServletConfig;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletConfig", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/util/servlet/SourceCodeServlet", "getServletConfig", "()Ljakarta/servlet/ServletConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("text/plain");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "setContentType", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "setContentType", "(Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -90,7 +90,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/BufferedInputStream", "<in
 methodVisitor.visitVarInsn(ASTORE, 7);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/myfaces/shared/util/servlet/SourceCodeServlet", "javax/servlet/http/HttpServletRequest", "javax/servlet/http/HttpServletResponse", "java/lang/String", Opcodes.INTEGER, "java/lang/String", "javax/servlet/ServletOutputStream", "java/io/InputStream"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/myfaces/shared/util/servlet/SourceCodeServlet", "jakarta/servlet/http/HttpServletRequest", "jakarta/servlet/http/HttpServletResponse", "java/lang/String", Opcodes.INTEGER, "java/lang/String", "jakarta/servlet/ServletOutputStream", "java/io/InputStream"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/InputStream", "read", "()I", false);
 methodVisitor.visitInsn(DUP);
@@ -100,7 +100,7 @@ methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitInsn(I2C);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "print", "(C)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "print", "(C)V", false);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

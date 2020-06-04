@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/PathItemImpl", null, "java/lang/Object", new String[] { "org/eclipse/microprofile/openapi/models/PathItem" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers", "ExtensionSerializer", ACC_PUBLIC | ACC_STATIC);
@@ -107,7 +107,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensions", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -157,12 +157,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDELETE", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "delete");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -176,7 +176,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDELETE", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "delete");
 annotationVisitor0.visitEnd();
 }
@@ -232,12 +232,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getGET", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "get");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -251,7 +251,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setGET", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "get");
 annotationVisitor0.visitEnd();
 }
@@ -277,12 +277,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHEAD", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "head");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -296,7 +296,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHEAD", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "head");
 annotationVisitor0.visitEnd();
 }
@@ -322,12 +322,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOPTIONS", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "options");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -341,7 +341,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOPTIONS", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "options");
 annotationVisitor0.visitEnd();
 }
@@ -367,12 +367,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPATCH", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "patch");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -386,7 +386,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPATCH", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "patch");
 annotationVisitor0.visitEnd();
 }
@@ -412,12 +412,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPOST", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "post");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -431,7 +431,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPOST", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "post");
 annotationVisitor0.visitEnd();
 }
@@ -457,12 +457,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPUT", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "put");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -476,7 +476,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPUT", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "put");
 annotationVisitor0.visitEnd();
 }
@@ -578,7 +578,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRef", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "$ref");
 annotationVisitor0.visitEnd();
 }
@@ -592,7 +592,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRef", "(Ljava/lang/String;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "$ref");
 annotationVisitor0.visitEnd();
 }
@@ -724,12 +724,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTRACE", "()Lorg/eclipse/microprofile/openapi/models/Operation;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "trace");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTypeSerializer;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTypeSerializer;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer;"));
 annotationVisitor0.visitEnd();
 }
@@ -743,7 +743,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTRACE", "(Lorg/eclipse/microprofile/openapi/models/Operation;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "trace");
 annotationVisitor0.visitEnd();
 }
@@ -824,7 +824,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOperations", "()Ljava/util/Map;", "()Ljava/util/Map<Lorg/eclipse/microprofile/openapi/models/PathItem$HttpMethod;Lorg/eclipse/microprofile/openapi/models/Operation;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

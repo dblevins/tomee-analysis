@@ -44,7 +44,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlAttrib
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlAttributeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlAttribute;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlAttributeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlAttribute;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -52,7 +52,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlElemen
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlElement;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlElement;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
@@ -60,7 +60,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlElemen
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementDeclQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlElementDecl;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementDeclQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlElementDecl;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
@@ -68,7 +68,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlElemen
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementRefQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlElementRef;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementRefQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlElementRef;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_4);
@@ -76,7 +76,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlElemen
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementRefsQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlElementRefs;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlElementRefsQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlElementRefs;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_5);
@@ -84,7 +84,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlEnumQu
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlEnumQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlEnum;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlEnumQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlEnum;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 6);
@@ -92,7 +92,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlRootEl
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlRootElementQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlRootElement;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlRootElementQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlRootElement;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 7);
@@ -100,7 +100,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlSchema
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlSchema;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlSchema;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 8);
@@ -108,7 +108,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlSchema
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaTypeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlSchemaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaTypeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlSchemaType;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 9);
@@ -116,7 +116,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlTransi
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlTransientQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlTransient;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlTransientQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlTransient;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 10);
@@ -124,7 +124,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlTypeQu
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlTypeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlTypeQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlType;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 11);
@@ -132,7 +132,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlValueQ
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlValueQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlValue;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlValueQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlValue;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 0);

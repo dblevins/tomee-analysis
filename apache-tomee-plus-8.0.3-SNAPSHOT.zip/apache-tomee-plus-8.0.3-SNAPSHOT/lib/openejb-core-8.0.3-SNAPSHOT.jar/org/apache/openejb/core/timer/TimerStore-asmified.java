@@ -41,15 +41,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addTimerData
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSingleActionTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljavax/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSingleActionTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljakarta/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createIntervalTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjavax/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createIntervalTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjakarta/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createCalendarTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/ScheduleExpression;Ljavax/ejb/TimerConfig;Z)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createCalendarTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/ScheduleExpression;Ljakarta/ejb/TimerConfig;Z)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitEnd();
 }
 {

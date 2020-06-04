@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/rest/InternalApplication", null, "javax/ws/rs/core/Application", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/rest/InternalApplication", null, "jakarta/ws/rs/core/Application", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "classes", "Ljava/util/Set;", "Ljava/util/Set<Ljava/lang/Class<*>;>;", null);
@@ -33,14 +33,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "singletons", "Lj
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "original", "Ljavax/ws/rs/core/Application;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "original", "Ljakarta/ws/rs/core/Application;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Application;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Application;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Application", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Application", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
@@ -53,24 +53,24 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/rest/InternalApplication", "singletons", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljavax/ws/rs/core/Application;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljakarta/ws/rs/core/Application;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "singletons", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getSingletons", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "classes", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getClasses", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/server/rest/InternalApplication", "javax/ws/rs/core/Application"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/server/rest/InternalApplication", "jakarta/ws/rs/core/Application"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -97,7 +97,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperties", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljavax/ws/rs/core/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljakarta/ws/rs/core/Application;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
@@ -106,8 +106,8 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljavax/ws/rs/core/Application;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getProperties", "()Ljava/util/Map;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljakarta/ws/rs/core/Application;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getProperties", "()Ljava/util/Map;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/Map"});
 methodVisitor.visitInsn(ARETURN);
@@ -115,10 +115,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOriginal", "()Ljavax/ws/rs/core/Application;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOriginal", "()Ljakarta/ws/rs/core/Application;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljavax/ws/rs/core/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/rest/InternalApplication", "original", "Ljakarta/ws/rs/core/Application;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

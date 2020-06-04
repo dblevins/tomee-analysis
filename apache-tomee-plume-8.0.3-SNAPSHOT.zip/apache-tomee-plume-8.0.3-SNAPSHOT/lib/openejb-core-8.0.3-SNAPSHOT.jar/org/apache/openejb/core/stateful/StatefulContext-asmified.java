@@ -29,12 +29,12 @@ classWriter.visitInnerClass("org/apache/openejb/core/stateful/StatefulContext$1"
 classWriter.visitInnerClass("org/apache/openejb/core/BaseContext$Call", "org/apache/openejb/core/BaseContext", "Call", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljavax/transaction/UserTransaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljakarta/transaction/UserTransaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseSessionContext", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljavax/transaction/UserTransaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseSessionContext", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljakarta/transaction/UserTransaction;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljavax/xml/rpc/handler/MessageContext;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljakarta/xml/rpc/handler/MessageContext;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);

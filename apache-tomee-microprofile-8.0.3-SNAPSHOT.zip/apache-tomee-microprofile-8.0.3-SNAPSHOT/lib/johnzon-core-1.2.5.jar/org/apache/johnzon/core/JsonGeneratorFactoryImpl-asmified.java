@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/core/JsonGeneratorFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "javax/json/stream/JsonGeneratorFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/core/JsonGeneratorFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "jakarta/json/stream/JsonGeneratorFactory" });
 
 classWriter.visitInnerClass("org/apache/johnzon/core/BufferStrategy$BufferProvider", "org/apache/johnzon/core/BufferStrategy", "BufferProvider", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -56,7 +56,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/AbstractJsonFactory", "<init>", "(Ljava/util/Map;Ljava/util/Collection;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.json.stream.JsonGenerator.prettyPrinting");
+methodVisitor.visitLdcInsn("jakarta.json.stream.JsonGenerator.prettyPrinting");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonGeneratorFactoryImpl", "getBool", "(Ljava/lang/String;Z)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonGeneratorFactoryImpl", "pretty", "Z");
@@ -86,7 +86,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/Writer;)Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/Writer;)Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonGeneratorImpl");
 methodVisitor.visitInsn(DUP);
@@ -101,7 +101,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/OutputStream;)Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/OutputStream;)Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonGeneratorImpl");
 methodVisitor.visitInsn(DUP);
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGenerator", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonGeneratorImpl");
 methodVisitor.visitInsn(DUP);
@@ -153,7 +153,7 @@ methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax.json.stream.JsonGenerator.prettyPrinting");
+methodVisitor.visitLdcInsn("jakarta.json.stream.JsonGenerator.prettyPrinting");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);

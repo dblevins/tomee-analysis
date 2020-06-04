@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/context/flash/SessionHelper", null, "java/lang/Object", new String[] { "java/io/Serializable", "javax/servlet/http/HttpSessionActivationListener" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/context/flash/SessionHelper", null, "java/lang/Object", new String[] { "java/io/Serializable", "jakarta/servlet/http/HttpSessionActivationListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-4146679754778263071L));
@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "getInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/context/flash/SessionHelper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/context/flash/SessionHelper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("csfcffFSAL");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/context/flash/SessionHelper");
@@ -62,10 +62,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "update", "(Ljavax/faces/context/ExternalContext;Lcom/sun/faces/context/flash/ELFlash;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "update", "(Ljakarta/faces/context/ExternalContext;Lcom/sun/faces/context/flash/ELFlash;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/flash/SessionHelper", "didPassivate", "Z");
@@ -104,10 +104,10 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "remove", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "remove", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("csfcffFSAL");
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDidActivate", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionDidActivate", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -132,7 +132,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionWillPassivate", "(Ljavax/servlet/http/HttpSessionEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sessionWillPassivate", "(Ljakarta/servlet/http/HttpSessionEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);

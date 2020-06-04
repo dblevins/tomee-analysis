@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/catalina/ha/ClusterSession", null, "java/lang/Object", new String[] { "org/apache/catalina/Session", "javax/servlet/http/HttpSession" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/catalina/ha/ClusterSession", null, "java/lang/Object", new String[] { "org/apache/catalina/Session", "jakarta/servlet/http/HttpSession" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isPrimarySession", "()Z", null, null);

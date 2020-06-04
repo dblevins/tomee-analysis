@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registeredProvid
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "configuration", "Ljavax/ws/rs/core/Configuration;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "configuration", "Ljakarta/ws/rs/core/Configuration;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -62,8 +62,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/JAXRSClientFactoryBean", "<init>", "(Lorg/apache/cxf/jaxrs/JAXRSServiceFactoryBean;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/MicroProfileClientConfigurableImpl", "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/MicroProfileClientConfigurableImpl", "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory", "createComparator", "(Lorg/apache/cxf/microprofile/client/MicroProfileClientFactoryBean;)Ljava/util/Comparator;", false);
@@ -245,7 +245,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/Micro
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "executorService", "Ljava/util/concurrent/ExecutorService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -258,7 +258,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "<init>", "(Ljava/net/URI;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "<init>", "(Ljava/net/URI;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper"}, 0, null);
@@ -274,7 +274,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/Micro
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "executorService", "Ljava/util/concurrent/ExecutorService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -287,16 +287,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "<init>", "(Lorg/apache/cxf/jaxrs/client/ClientState;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljavax/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", "<init>", "(Lorg/apache/cxf/jaxrs/client/ClientState;Ljava/lang/ClassLoader;Lorg/apache/cxf/jaxrs/model/ClassResourceInfo;ZZLjava/util/concurrent/ExecutorService;Ljakarta/ws/rs/core/Configuration;Lorg/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper;[Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(14, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -309,8 +309,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedHashSet", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getInstances", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getInstances", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label0 = new Label();
@@ -329,11 +329,11 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/util/ClassHelper", "getRealClass", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/client/ClientRequestFilter");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/client/ClientRequestFilter");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/client/ClientResponseFilter");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/client/ClientResponseFilter");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitLabel(label2);
@@ -346,9 +346,9 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "getBus", "()Lorg/apache/cxf/Bus;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljavax/ws/rs/core/Configuration;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "configuration", "Ljakarta/ws/rs/core/Configuration;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/FilterProviderInfo", "<init>", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Lorg/apache/cxf/Bus;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);

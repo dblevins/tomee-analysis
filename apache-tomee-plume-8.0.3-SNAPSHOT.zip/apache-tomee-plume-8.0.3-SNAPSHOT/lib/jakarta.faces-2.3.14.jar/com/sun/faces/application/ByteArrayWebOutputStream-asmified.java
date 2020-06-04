@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/ByteArrayWebOutputStream", null, "javax/servlet/ServletOutputStream", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/ByteArrayWebOutputStream", null, "jakarta/servlet/ServletOutputStream", null);
 
 classWriter.visitInnerClass("com/sun/faces/application/ByteArrayWebOutputStream$NoOpOutputStream", "com/sun/faces/application/ByteArrayWebOutputStream", "NoOpOutputStream", ACC_PRIVATE | ACC_STATIC);
 
 classWriter.visitInnerClass("com/sun/faces/application/ByteArrayWebOutputStream$DirectByteArrayOutputStream", "com/sun/faces/application/ByteArrayWebOutputStream", "DirectByteArrayOutputStream", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NOOP_STREAM", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NOOP_STREAM", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -48,7 +48,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletOutputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletOutputStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/ByteArrayWebOutputStream$DirectByteArrayOutputStream");
 methodVisitor.visitInsn(DUP);
@@ -137,10 +137,10 @@ methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"com/sun/faces/application/ByteArrayWebOutputStream", "java/io/Writer", "java/lang/String", "java/nio/ByteBuffer", "java/nio/charset/CharsetDecoder"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -197,10 +197,10 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljavax/servlet/WriteListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -236,7 +236,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/ByteArrayWebOutputStream$NoOpOutputStream");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/ByteArrayWebOutputStream$NoOpOutputStream", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/application/ByteArrayWebOutputStream", "NOOP_STREAM", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/application/ByteArrayWebOutputStream", "NOOP_STREAM", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/util/FacesLogger", "APPLICATION", "Lcom/sun/faces/util/FacesLogger;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/util/FacesLogger", "getLogger", "()Ljava/util/logging/Logger;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/application/ByteArrayWebOutputStream", "LOGGER", "Ljava/util/logging/Logger;");

@@ -65,7 +65,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setServletCl
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServletMethods", "()[Ljava/lang/String;", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServletMethods", "()[Ljava/lang/String;", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {
@@ -73,11 +73,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isUnavailabl
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServlet", "()Ljavax/servlet/Servlet;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServlet", "()Ljakarta/servlet/Servlet;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setServlet", "(Ljavax/servlet/Servlet;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setServlet", "(Ljakarta/servlet/Servlet;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -93,11 +93,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addSecurityR
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "allocate", "()Ljavax/servlet/Servlet;", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "allocate", "()Ljakarta/servlet/Servlet;", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deallocate", "(Ljavax/servlet/Servlet;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deallocate", "(Ljakarta/servlet/Servlet;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {
@@ -125,7 +125,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "incrementErr
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "load", "()V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "load", "()V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {
@@ -141,19 +141,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "removeSecuri
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unavailable", "(Ljavax/servlet/UnavailableException;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unavailable", "(Ljakarta/servlet/UnavailableException;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unload", "()V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unload", "()V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMultipartConfigElement", "()Ljavax/servlet/MultipartConfigElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMultipartConfigElement", "()Ljakarta/servlet/MultipartConfigElement;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setMultipartConfigElement", "(Ljavax/servlet/MultipartConfigElement;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setMultipartConfigElement", "(Ljakarta/servlet/MultipartConfigElement;)V", null, null);
 methodVisitor.visitEnd();
 }
 {

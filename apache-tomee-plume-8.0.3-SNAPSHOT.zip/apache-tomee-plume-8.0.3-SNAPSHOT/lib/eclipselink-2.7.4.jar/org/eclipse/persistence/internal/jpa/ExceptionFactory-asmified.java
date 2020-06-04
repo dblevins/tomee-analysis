@@ -58,20 +58,20 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newSystemException", "(Ljava/lang/String;)Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newSystemException", "(Ljava/lang/String;)Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newSystemException", "(Ljava/lang/Exception;)Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newSystemException", "(Ljava/lang/Exception;)Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/SystemException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -82,55 +82,55 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "stackTraceString", "(Ljava/lang/Exception;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/SystemException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollbackException", "(Ljava/sql/SQLException;)Ljavax/transaction/RollbackException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollbackException", "(Ljava/sql/SQLException;)Ljakarta/transaction/RollbackException;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/RollbackException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/RollbackException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/sql/SQLException", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/RollbackException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/RollbackException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txMarkedForRollbackException", "()Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txMarkedForRollbackException", "()Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Transaction marked for rollback");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljavax/transaction/SystemException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljakarta/transaction/SystemException;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txActiveException", "()Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txActiveException", "()Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Transaction is already active");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljavax/transaction/SystemException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljakarta/transaction/SystemException;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txNotActiveException", "()Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "txNotActiveException", "()Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("No transaction is active");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljavax/transaction/SystemException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljakarta/transaction/SystemException;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invalidStateException", "(I)Ljavax/transaction/SystemException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invalidStateException", "(I)Ljakarta/transaction/SystemException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -140,7 +140,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljavax/transaction/SystemException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/ExceptionFactory", "newSystemException", "(Ljava/lang/String;)Ljakarta/transaction/SystemException;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

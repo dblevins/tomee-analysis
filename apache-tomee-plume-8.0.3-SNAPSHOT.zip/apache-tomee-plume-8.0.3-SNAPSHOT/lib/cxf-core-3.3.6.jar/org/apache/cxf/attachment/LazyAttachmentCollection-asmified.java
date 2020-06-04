@@ -339,7 +339,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDataHandlerMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/activation/DataHandler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDataHandlerMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/activation/DataHandler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap");
 methodVisitor.visitInsn(DUP);

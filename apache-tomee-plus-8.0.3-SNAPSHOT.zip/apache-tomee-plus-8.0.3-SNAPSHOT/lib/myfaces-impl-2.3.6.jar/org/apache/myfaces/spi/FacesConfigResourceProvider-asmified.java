@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetaInfConfigurationResources", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetaInfConfigurationResources", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

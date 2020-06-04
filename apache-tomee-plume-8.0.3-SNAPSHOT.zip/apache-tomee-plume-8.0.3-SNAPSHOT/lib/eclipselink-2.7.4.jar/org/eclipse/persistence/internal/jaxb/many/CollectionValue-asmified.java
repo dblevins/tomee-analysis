@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jaxb/many/CollectionValue", "<T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jaxb/many/ManyValue<TT;Ljava/lang/Object;>;", "org/eclipse/persistence/internal/jaxb/many/ManyValue", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlTransient;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlTransient;", true);
 annotationVisitor0.visitEnd();
 }
 {

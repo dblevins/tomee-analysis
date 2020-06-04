@@ -25,17 +25,17 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", null, "java/lang/Object", new String[] { "org/eclipse/persistence/internal/oxm/schema/SchemaModelOutputResolver" });
 
 {
-fieldVisitor = classWriter.visitField(0, "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;", null, null);
+fieldVisitor = classWriter.visitField(0, "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/bind/SchemaOutputResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/bind/SchemaOutputResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -44,10 +44,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "outputResolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "outputResolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

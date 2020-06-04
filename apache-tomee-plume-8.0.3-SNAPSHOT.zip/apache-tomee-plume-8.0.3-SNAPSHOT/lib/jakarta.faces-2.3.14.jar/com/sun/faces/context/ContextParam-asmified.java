@@ -158,7 +158,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/ContextParam");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("WebsocketEndpointPort");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitLdcInsn("javax.faces.WEBSOCKET_ENDPOINT_PORT");
+methodVisitor.visitLdcInsn("jakarta.faces.WEBSOCKET_ENDPOINT_PORT");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Integer;"));
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);

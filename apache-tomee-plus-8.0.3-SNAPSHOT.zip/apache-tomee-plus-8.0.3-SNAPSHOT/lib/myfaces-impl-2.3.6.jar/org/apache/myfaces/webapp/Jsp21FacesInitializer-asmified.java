@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jspFactory", "Ljavax/servlet/jsp/JspFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jspFactory", "Ljakarta/servlet/jsp/JspFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -44,45 +44,45 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initContainerIntegration", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initContainerIntegration", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "getJspFactory", "()Ljavax/servlet/jsp/JspFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "getJspFactory", "()Ljakarta/servlet/jsp/JspFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/JspFactory", "getJspApplicationContext", "(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/JspFactory", "getJspApplicationContext", "(Ljakarta/servlet/ServletContext;)Ljakarta/servlet/jsp/JspApplicationContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/webapp/FacesELContextListener");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/webapp/FacesELContextListener", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/jsp/JspApplicationContext", "addELContextListener", "(Ljavax/el/ELContextListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/jsp/JspApplicationContext", "addELContextListener", "(Ljakarta/el/ELContextListener;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "getUserDefinedExpressionFactory", "(Ljavax/faces/context/ExternalContext;)Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "getUserDefinedExpressionFactory", "(Ljakarta/faces/context/ExternalContext;)Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/jsp/JspApplicationContext", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/jsp/JspApplicationContext", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/servlet/jsp/JspApplicationContext", "javax/el/ExpressionFactory"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/servlet/jsp/JspApplicationContext", "jakarta/el/ExpressionFactory"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "buildConfiguration", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/ExternalContext;Ljavax/el/ExpressionFactory;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "buildConfiguration", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/ExternalContext;Ljakarta/el/ExpressionFactory;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "configureResolverForJSP", "(Ljavax/servlet/jsp/JspApplicationContext;Lorg/apache/myfaces/config/RuntimeConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "configureResolverForJSP", "(Ljakarta/servlet/jsp/JspApplicationContext;Lorg/apache/myfaces/config/RuntimeConfig;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getJspFactory", "()Ljavax/servlet/jsp/JspFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getJspFactory", "()Ljakarta/servlet/jsp/JspFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -91,7 +91,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ClassNotFoun
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljavax/servlet/jsp/JspFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljakarta/servlet/jsp/JspFactory;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitLabel(label0);
@@ -116,28 +116,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", 
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/servlet/jsp/JspFactory", "getDefaultFactory", "()Ljavax/servlet/jsp/JspFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljavax/servlet/jsp/JspFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/JspFactory", "getDefaultFactory", "()Ljakarta/servlet/jsp/JspFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljakarta/servlet/jsp/JspFactory;");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljavax/servlet/jsp/JspFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljakarta/servlet/jsp/JspFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setJspFactory", "(Ljavax/servlet/jsp/JspFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setJspFactory", "(Ljakarta/servlet/jsp/JspFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljavax/servlet/jsp/JspFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "jspFactory", "Ljakarta/servlet/jsp/JspFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "configureResolverForJSP", "(Ljavax/servlet/jsp/JspApplicationContext;Lorg/apache/myfaces/config/RuntimeConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "configureResolverForJSP", "(Ljakarta/servlet/jsp/JspApplicationContext;Lorg/apache/myfaces/config/RuntimeConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/el/unified/resolver/FacesCompositeELResolver");
 methodVisitor.visitInsn(DUP);
@@ -146,25 +146,25 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/unified/reso
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/jsp/JspApplicationContext", "addELResolver", "(Ljavax/el/ELResolver;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/jsp/JspApplicationContext", "addELResolver", "(Ljakarta/el/ELResolver;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/el/ResolverForJSPInitializer");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/webapp/Jsp21FacesInitializer", "createResolverBuilderForJSP", "(Lorg/apache/myfaces/config/RuntimeConfig;)Lorg/apache/myfaces/el/unified/ELResolverBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/ResolverForJSPInitializer", "<init>", "(Lorg/apache/myfaces/el/unified/ELResolverBuilder;Ljavax/el/CompositeELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/ResolverForJSPInitializer", "<init>", "(Lorg/apache/myfaces/el/unified/ELResolverBuilder;Ljakarta/el/CompositeELResolver;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitLdcInsn("javax.faces.lifecycle.LifecycleFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/lifecycle/LifecycleFactory");
+methodVisitor.visitLdcInsn("jakarta.faces.lifecycle.LifecycleFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/lifecycle/LifecycleFactory");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/lifecycle/LifecycleFactory", "getLifecycleIds", "()Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/lifecycle/LifecycleFactory", "getLifecycleIds", "()Ljava/util/Iterator;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/webapp/Jsp21FacesInitializer", "javax/servlet/jsp/JspApplicationContext", "org/apache/myfaces/config/RuntimeConfig", "org/apache/myfaces/el/unified/resolver/FacesCompositeELResolver", "javax/faces/event/PhaseListener", "javax/faces/lifecycle/LifecycleFactory", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/webapp/Jsp21FacesInitializer", "jakarta/servlet/jsp/JspApplicationContext", "org/apache/myfaces/config/RuntimeConfig", "org/apache/myfaces/el/unified/resolver/FacesCompositeELResolver", "jakarta/faces/event/PhaseListener", "jakarta/faces/lifecycle/LifecycleFactory", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label1 = new Label();
@@ -173,9 +173,9 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/lifecycle/LifecycleFactory", "getLifecycle", "(Ljava/lang/String;)Ljavax/faces/lifecycle/Lifecycle;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/lifecycle/LifecycleFactory", "getLifecycle", "(Ljava/lang/String;)Ljakarta/faces/lifecycle/Lifecycle;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/lifecycle/Lifecycle", "addPhaseListener", "(Ljavax/faces/event/PhaseListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/lifecycle/Lifecycle", "addPhaseListener", "(Ljakarta/faces/event/PhaseListener;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

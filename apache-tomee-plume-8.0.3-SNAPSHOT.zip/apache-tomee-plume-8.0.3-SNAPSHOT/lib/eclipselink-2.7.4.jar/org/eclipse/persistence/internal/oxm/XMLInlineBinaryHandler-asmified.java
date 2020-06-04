@@ -223,7 +223,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/Unmarshaller", "getAttachmentUnmarshaller", "()Lorg/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller", "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljavax/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller", "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljakarta/activation/DataHandler;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);

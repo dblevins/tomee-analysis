@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "expectedType", "Ljava/lang/C
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ve", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ve", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -205,7 +205,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljavax/el/ELContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "expressionString", "Ljava/lang/String;");
@@ -232,7 +232,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/mgbean/BeanBuilder$E
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljakarta/el/ValueExpression;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -245,7 +245,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "expressionString", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "expectedType", "Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/el/ELUtils", "createValueExpression", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/el/ELUtils", "createValueExpression", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
@@ -253,10 +253,10 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"com/sun/fac
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "expressionString", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/el/ELUtils", "createValueExpression", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/el/ELUtils", "createValueExpression", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/mgbean/BeanBuilder$Expression", "javax/el/ELContext"}, 2, new Object[] {"com/sun/faces/mgbean/BeanBuilder$Expression", "javax/el/ValueExpression"});
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/mgbean/BeanBuilder$Expression", "jakarta/el/ELContext"}, 2, new Object[] {"com/sun/faces/mgbean/BeanBuilder$Expression", "jakarta/el/ValueExpression"});
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -265,16 +265,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isPrimitive", "
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/BeanBuilder$Expression", "ve", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label6 = new Label();

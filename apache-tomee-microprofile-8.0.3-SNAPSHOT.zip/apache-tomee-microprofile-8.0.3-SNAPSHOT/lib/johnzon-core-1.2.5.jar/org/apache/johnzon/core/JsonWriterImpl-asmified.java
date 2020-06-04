@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonWriterImpl", null, "java/lang/Object", new String[] { "javax/json/JsonWriter", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonWriterImpl", null, "java/lang/Object", new String[] { "jakarta/json/JsonWriter", "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "generator", "Ljavax/json/stream/JsonGenerator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "generator", "Ljakarta/json/stream/JsonGenerator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "closed", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/json/stream/JsonGenerator;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/json/stream/JsonGenerator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -49,20 +49,20 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterImpl", "closed", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeArray", "(Ljavax/json/JsonArray;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeArray", "(Ljakarta/json/JsonArray;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "write", "(Ljavax/json/JsonValue;)Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "write", "(Ljakarta/json/JsonValue;)Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "markCalled", "()V", false);
@@ -71,14 +71,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljavax/json/JsonObject;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljakarta/json/JsonObject;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "write", "(Ljavax/json/JsonValue;)Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "write", "(Ljakarta/json/JsonValue;)Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "markCalled", "()V", false);
@@ -87,14 +87,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljavax/json/JsonValue;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljakarta/json/JsonValue;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "write", "(Ljavax/json/JsonValue;)Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "write", "(Ljakarta/json/JsonValue;)Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "markCalled", "()V", false);
@@ -103,14 +103,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljavax/json/JsonStructure;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljakarta/json/JsonStructure;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "write", "(Ljavax/json/JsonValue;)Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "write", "(Ljakarta/json/JsonValue;)Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "markCalled", "()V", false);
@@ -129,8 +129,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterImpl", "closed", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "close", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "close", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -141,8 +141,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "markCalled", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljavax/json/stream/JsonGenerator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGenerator", "flush", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterImpl", "generator", "Ljakarta/json/stream/JsonGenerator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGenerator", "flush", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterImpl", "called", "Z");

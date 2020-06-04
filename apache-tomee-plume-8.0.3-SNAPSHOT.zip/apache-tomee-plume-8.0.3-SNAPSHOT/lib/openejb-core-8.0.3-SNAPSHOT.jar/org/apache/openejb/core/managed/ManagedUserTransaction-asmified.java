@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/managed/ManagedUserTransaction", null, "java/lang/Object", new String[] { "javax/transaction/UserTransaction" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/managed/ManagedUserTransaction", null, "java/lang/Object", new String[] { "jakarta/transaction/UserTransaction" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "userTransaction", "Ljavax/transaction/UserTransaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "userTransaction", "Ljakarta/transaction/UserTransaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jtaEntityManager
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/UserTransaction;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/UserTransaction;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "jtaEntityManagerRegistry", "Lorg/apache/openejb/persistence/JtaEntityManagerRegistry;");
@@ -48,11 +48,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "javax/transaction/NotSupportedException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "jakarta/transaction/NotSupportedException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "begin", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "begin", "()V", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -93,52 +93,52 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/transaction/HeuristicMixedException", "javax/transaction/HeuristicRollbackException", "java/lang/IllegalStateException", "javax/transaction/RollbackException", "java/lang/SecurityException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/transaction/HeuristicMixedException", "jakarta/transaction/HeuristicRollbackException", "java/lang/IllegalStateException", "jakarta/transaction/RollbackException", "java/lang/SecurityException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "commit", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "commit", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "getStatus", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "getStatus", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "rollback", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "rollback", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "setRollbackOnly", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/ManagedUserTransaction", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "setTransactionTimeout", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "setTransactionTimeout", "(I)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

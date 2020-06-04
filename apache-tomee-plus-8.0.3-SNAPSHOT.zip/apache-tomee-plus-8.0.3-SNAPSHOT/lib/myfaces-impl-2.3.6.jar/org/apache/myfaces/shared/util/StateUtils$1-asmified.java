@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/shared/util/StateUtils$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/myfaces/shared/util/StateUtils", "getAsObject", "([BLjavax/faces/context/ExternalContext;)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/apache/myfaces/shared/util/StateUtils", "getAsObject", "([BLjakarta/faces/context/ExternalContext;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/apache/myfaces/shared/util/StateUtils$1", null, null, ACC_STATIC);
 

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", null, "java/lang/Object", new String[] { "javax/persistence/criteria/Order", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/criteria/Order", "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "expression", "Ljavax/persistence/criteria/Expression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "expression", "Ljakarta/persistence/criteria/Expression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,24 +33,24 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "isAscending", "Z", null, n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "<init>", "(Ljavax/persistence/criteria/Expression;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "<init>", "(Ljakarta/persistence/criteria/Expression;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "isAscending", "Z");
@@ -59,10 +59,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljavax/persistence/criteria/Expression;", "()Ljavax/persistence/criteria/Expression<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljakarta/persistence/criteria/Expression;", "()Ljakarta/persistence/criteria/Expression<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -77,14 +77,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reverse", "()Ljavax/persistence/criteria/Order;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reverse", "()Ljakarta/persistence/criteria/Order;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "expression", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "<init>", "(Ljavax/persistence/criteria/Expression;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/OrderImpl", "<init>", "(Ljakarta/persistence/criteria/Expression;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/impl/JobContextImpl", null, "java/lang/Object", new String[] { "javax/batch/runtime/context/JobContext" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/impl/JobContextImpl", null, "java/lang/Object", new String[] { "jakarta/batch/runtime/context/JobContext" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljavax/batch/runtime/BatchStatus;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljakarta/batch/runtime/BatchStatus;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "exitStatus", "Ljava/lang/String;");
@@ -92,8 +92,8 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/jaxb/JSLJob");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/JSLJob", "getId", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "jobName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STARTING", "Ljavax/batch/runtime/BatchStatus;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STARTING", "Ljakarta/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -190,20 +190,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljavax/batch/runtime/BatchStatus;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljakarta/batch/runtime/BatchStatus;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -302,7 +302,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("batchStatus = ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/JobContextImpl", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" , exitStatus = ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "caches", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/transaction/Transaction;Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "caches", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/transaction/Transaction;Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaResources", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -57,21 +57,21 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/WeakHashMap", "<init>", 
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "xaResources", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "<init>", "(Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "<init>", "(Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -142,7 +142,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/SystemException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
@@ -153,8 +153,8 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljavax/transaction/TransactionManager;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionManager", "Ljakarta/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label7 = new Label();
@@ -163,11 +163,11 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/transaction/Transaction"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/transaction/Transaction"}, 0, null);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/sql/SQLException");
 methodVisitor.visitInsn(DUP);
@@ -196,8 +196,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext", "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry;Ljavax/transaction/Transaction;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext", "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry;Ljakarta/transaction/Transaction;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "caches", "Ljava/util/Map;");
@@ -213,7 +213,7 @@ methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "javax/transaction/Transaction", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry", "jakarta/transaction/Transaction", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(MONITOREXIT);

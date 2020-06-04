@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization", "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "ClosingSynchronization", ACC_PRIVATE);
 

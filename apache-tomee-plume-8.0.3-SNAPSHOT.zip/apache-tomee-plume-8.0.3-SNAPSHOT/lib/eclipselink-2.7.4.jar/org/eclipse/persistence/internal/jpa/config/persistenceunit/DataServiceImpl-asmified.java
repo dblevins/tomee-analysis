@@ -54,8 +54,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getName", "()Ljava/lang/Str
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/DataServiceImpl", "getUnit", "()Lorg/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "getPersistenceUnitInfo", "()Ljavax/persistence/spi/PersistenceUnitInfo;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "getPersistenceUnitInfo", "()Ljakarta/persistence/spi/PersistenceUnitInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitName", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

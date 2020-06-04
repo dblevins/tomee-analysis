@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljavax/servlet/http/HttpSession;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/servlet/http/HttpSession;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
 classWriter.visitInnerClass("org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "org/apache/catalina/connector/RequestFacade", "GetSessionPrivilegedAction", ACC_PRIVATE | ACC_FINAL);
 
@@ -50,14 +50,14 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljavax/servlet/http/HttpSession;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljakarta/servlet/http/HttpSession;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "this$0", "Lorg/apache/catalina/connector/RequestFacade;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/RequestFacade", "request", "Lorg/apache/catalina/connector/Request;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "create", "Z");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getSession", "(Z)Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getSession", "(Z)Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -66,7 +66,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "run", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction", "run", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

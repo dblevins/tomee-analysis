@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", null, "java/lang/Object", new String[] { "javax/xml/ws/handler/HandlerResolver" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", null, "java/lang/Object", new String[] { "jakarta/xml/ws/handler/HandlerResolver" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handlerMap", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/xml/ws/handler/PortInfo;Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handlerMap", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/xml/ws/handler/PortInfo;Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "handlerMap", "Ljava/util/Map;");
@@ -82,7 +82,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "createHandlerChain", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "createHandlerChain", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "handlerMap", "Ljava/util/Map;");
@@ -98,7 +98,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createHandlerChain", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createHandlerChain", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -113,7 +113,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "annotationClass", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "getHandlersFromAnnotation", "(Ljava/lang/Class;Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "getHandlersFromAnnotation", "(Ljava/lang/Class;Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -130,11 +130,11 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/Handler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/Handler");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "configHandler", "(Ljavax/xml/ws/handler/Handler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/HandlerResolverImpl", "configHandler", "(Ljakarta/xml/ws/handler/Handler;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getHandlersFromAnnotation", "(Ljava/lang/Class;Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljavax/xml/ws/handler/PortInfo;)Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getHandlersFromAnnotation", "(Ljava/lang/Class;Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljakarta/xml/ws/handler/PortInfo;)Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder");
 methodVisitor.visitInsn(DUP);
@@ -156,45 +156,45 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getPortName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getPortName", "()Ljavax/xml/namespace/QName;", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 2, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 2, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 3, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 3, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getServiceName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getServiceName", "()Ljavax/xml/namespace/QName;", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 3, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 3, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 4, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 4, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/handler/PortInfo", "getBindingID", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/PortInfo", "getBindingID", "()Ljava/lang/String;", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 4, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 4, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "javax/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 5, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/handler/HandlerResolverImpl", "java/lang/Class", "jakarta/xml/ws/handler/PortInfo", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder"}, 5, new Object[] {"org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "java/lang/Class", "javax/xml/namespace/QName", "javax/xml/namespace/QName", "java/lang/String"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "buildHandlerChainFromClass", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljavax/xml/namespace/QName;Ljava/lang/String;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "configHandler", "(Ljavax/xml/ws/handler/Handler;)V", "(Ljavax/xml/ws/handler/Handler<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "configHandler", "(Ljakarta/xml/ws/handler/Handler;)V", "(Ljakarta/xml/ws/handler/Handler<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();

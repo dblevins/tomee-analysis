@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractInterceptorContextImpl", new String[] { "javax/ws/rs/ext/WriterInterceptorContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", null, "org/apache/cxf/jaxrs/impl/AbstractInterceptorContextImpl", new String[] { "jakarta/ws/rs/ext/WriterInterceptorContext" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "writers", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/ext/WriterInterceptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "writers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/ext/WriterInterceptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "entity", "Ljava/lang/Object;
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljava/io/OutputStream;Lorg/apache/cxf/message/Message;Ljava/util/List;)V", "(Ljava/lang/Object;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljava/io/OutputStream;Lorg/apache/cxf/message/Message;Ljava/util/List<Ljavax/ws/rs/ext/WriterInterceptor;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljava/io/OutputStream;Lorg/apache/cxf/message/Message;Ljava/util/List;)V", "(Ljava/lang/Object;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljava/io/OutputStream;Lorg/apache/cxf/message/Message;Ljava/util/List<Ljakarta/ws/rs/ext/WriterInterceptor;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -68,11 +68,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "m", "Lorg/apache/cxf/message/Message;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableHeaders", "(Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "getModifiableHeaders", "(Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -111,17 +111,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "writers", "Ljava/util/List;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "remove", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/ext/WriterInterceptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/ext/WriterInterceptor");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/WriterInterceptor", "aroundWriteTo", "(Ljavax/ws/rs/ext/WriterInterceptorContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/WriterInterceptor", "aroundWriteTo", "(Ljakarta/ws/rs/ext/WriterInterceptorContext;)V", true);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "javax/ws/rs/ext/WriterInterceptor"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "jakarta/ws/rs/ext/WriterInterceptor"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ATHROW);
@@ -173,39 +173,39 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMediaType", "()Ljavax/ws/rs/core/MediaType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitLdcInsn("Content-Type");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/core/MediaType");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/core/MediaType");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/MediaType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/MediaType");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/ws/rs/core/MediaType"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/ws/rs/core/MediaType"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMediaType", "(Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMediaType", "(Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getMediaType", "()Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "isCompatible", "(Ljavax/ws/rs/core/MediaType;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "isCompatible", "(Ljakarta/ws/rs/core/MediaType;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -218,14 +218,14 @@ methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "mediaTypeToString", "(Ljavax/ws/rs/core/MediaType;[Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "mediaTypeToString", "(Ljakarta/ws/rs/core/MediaType;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

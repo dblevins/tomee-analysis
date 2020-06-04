@@ -45,12 +45,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildNewInstance", "()Ljava/lang/Object;", null, new String[] { "org/eclipse/persistence/exceptions/DescriptorException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/xr/QueryOperation$DataHandlerInstantiationPolicy", "mimeType", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

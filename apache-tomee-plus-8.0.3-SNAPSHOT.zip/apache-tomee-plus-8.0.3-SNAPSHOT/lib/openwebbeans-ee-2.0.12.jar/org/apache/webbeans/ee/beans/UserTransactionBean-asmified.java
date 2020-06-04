@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/ee/beans/UserTransactionBean", "Lorg/apache/webbeans/component/BuiltInOwbBean<Ljavax/transaction/UserTransaction;>;", "org/apache/webbeans/component/BuiltInOwbBean", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/ee/beans/UserTransactionBean", "Lorg/apache/webbeans/component/BuiltInOwbBean<Ljakarta/transaction/UserTransaction;>;", "org/apache/webbeans/component/BuiltInOwbBean", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;)V", null, null);
@@ -30,21 +30,21 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/component/WebBeansType", "USERTRANSACTION", "Lorg/apache/webbeans/component/WebBeansType;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/UserTransaction;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/UserTransaction;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/component/SimpleProducerFactory");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/portable/ProviderBasedProducer");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/UserTransaction;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/UserTransaction;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/ee/beans/UserTransactionProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ee/beans/UserTransactionProvider", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducer", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/inject/Provider;Z)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/SimpleProducerFactory", "<init>", "(Ljavax/enterprise/inject/spi/Producer;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/BuiltInOwbBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljava/lang/Class;Ljavax/enterprise/inject/spi/ProducerFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducer", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/inject/Provider;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/SimpleProducerFactory", "<init>", "(Ljakarta/enterprise/inject/spi/Producer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/BuiltInOwbBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/ProducerFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(13, 2);
 methodVisitor.visitEnd();

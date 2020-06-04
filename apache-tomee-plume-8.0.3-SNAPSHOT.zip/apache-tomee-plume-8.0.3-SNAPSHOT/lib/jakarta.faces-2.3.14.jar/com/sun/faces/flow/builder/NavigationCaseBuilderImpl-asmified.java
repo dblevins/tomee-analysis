@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/NavigationCaseBuilderImpl", null, "javax/faces/flow/builder/NavigationCaseBuilder", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/NavigationCaseBuilderImpl", null, "jakarta/faces/flow/builder/NavigationCaseBuilder", null);
 
 classWriter.visitInnerClass("com/sun/faces/flow/builder/NavigationCaseBuilderImpl$RedirectBuilderImpl", "com/sun/faces/flow/builder/NavigationCaseBuilderImpl", "RedirectBuilderImpl", ACC_PRIVATE);
 
-classWriter.visitInnerClass("javax/faces/flow/builder/NavigationCaseBuilder$RedirectBuilder", "javax/faces/flow/builder/NavigationCaseBuilder", "RedirectBuilder", ACC_PUBLIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/faces/flow/builder/NavigationCaseBuilder$RedirectBuilder", "jakarta/faces/flow/builder/NavigationCaseBuilder", "RedirectBuilder", ACC_PUBLIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;", null, null);
@@ -40,7 +40,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/flow/builder/FlowBuilderImpl;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/builder/NavigationCaseBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/builder/NavigationCaseBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/flow/builder/MutableNavigationCase");
 methodVisitor.visitInsn(DUP);
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toFlowDocumentId", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toFlowDocumentId", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("toFlowDocumentId");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromAction", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromAction", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("fromAction");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromOutcome", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("fromOutcome");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromViewId", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromViewId", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("fromViewId");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toViewId", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toViewId", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("toViewId");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -159,7 +159,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "condition", "(Ljava/lang/String;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "condition", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("condition");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -174,7 +174,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "condition", "(Ljavax/el/ValueExpression;)Ljavax/faces/flow/builder/NavigationCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "condition", "(Ljakarta/el/ValueExpression;)Ljakarta/faces/flow/builder/NavigationCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("condition");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -182,14 +182,14 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/NavigationCaseBuilderImpl", "navCase", "Lcom/sun/faces/flow/builder/MutableNavigationCase;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/MutableNavigationCase", "setConditionExpression", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/MutableNavigationCase", "setConditionExpression", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "redirect", "()Ljavax/faces/flow/builder/NavigationCaseBuilder$RedirectBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "redirect", "()Ljakarta/faces/flow/builder/NavigationCaseBuilder$RedirectBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/NavigationCaseBuilderImpl", "navCase", "Lcom/sun/faces/flow/builder/MutableNavigationCase;");

@@ -37,7 +37,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "stopApplicat
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitEnd();
 }
 {

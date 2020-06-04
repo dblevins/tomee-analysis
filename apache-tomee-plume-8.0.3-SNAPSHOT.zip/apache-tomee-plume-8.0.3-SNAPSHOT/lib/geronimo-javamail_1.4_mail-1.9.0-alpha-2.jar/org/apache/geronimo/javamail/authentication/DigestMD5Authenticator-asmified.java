@@ -142,7 +142,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluateChallenge", "([B)[B", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluateChallenge", "([B)[B", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/authentication/DigestMD5Authenticator", "stage", "I");
@@ -171,16 +171,16 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/authenticat
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Invalid LOGIN challenge");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "authenticateServer", "([B)[B", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "authenticateServer", "([B)[B", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -251,23 +251,23 @@ methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/AuthenticationFailedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/AuthenticationFailedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Invalid DIGEST-MD5 response from server");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/AuthenticationFailedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/AuthenticationFailedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Invalid character encodings");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "authenticateClient", "([B)[B", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "authenticateClient", "([B)[B", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -297,10 +297,10 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Unable to access cryptography libraries");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -553,16 +553,16 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Invalid character encodings");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "parseChallenge", "([B)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "parseChallenge", "([B)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

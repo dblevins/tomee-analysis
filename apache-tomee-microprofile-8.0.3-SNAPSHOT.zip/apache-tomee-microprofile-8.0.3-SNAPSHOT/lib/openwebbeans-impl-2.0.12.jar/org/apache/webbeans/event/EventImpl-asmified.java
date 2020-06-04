@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/event/EventImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/event/Event<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/enterprise/event/Event", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/event/EventImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/event/Event<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/enterprise/event/Event", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(393021493190378023L));
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "webBeansCont
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -47,7 +47,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/Asserts", 
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "wrapMetadata", "(Ljavax/enterprise/inject/spi/EventMetadata;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "wrapMetadata", "(Ljakarta/enterprise/inject/spi/EventMetadata;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/EventImpl", "metadata", "Lorg/apache/webbeans/event/EventMetadataImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "wrapMetadata", "(Ljavax/enterprise/inject/spi/EventMetadata;)Lorg/apache/webbeans/event/EventMetadataImpl;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "wrapMetadata", "(Ljakarta/enterprise/inject/spi/EventMetadata;)Lorg/apache/webbeans/event/EventMetadataImpl;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/webbeans/event/EventMetadataImpl");
@@ -69,15 +69,15 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/EventMetadata", "getQualifiers", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/EventMetadata", "getQualifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventMetadataImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/EventMetadata", "getType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/EventMetadata", "getType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/EventMetadata", "getInjectionPoint", "()Ljavax/enterprise/inject/spi/InjectionPoint;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/EventMetadata", "getInjectionPoint", "()Ljakarta/enterprise/inject/spi/InjectionPoint;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
@@ -86,7 +86,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Lj
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/annotation/Annotation;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventMetadataImpl", "<init>", "(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljavax/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventMetadataImpl", "<init>", "(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljakarta/enterprise/inject/spi/InjectionPoint;[Ljava/lang/annotation/Annotation;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
@@ -130,14 +130,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getNotificationManager", "()Lorg/apache/webbeans/event/NotificationManager;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager", "getDefaultNotificationOptions", "()Ljavax/enterprise/event/NotificationOptions;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventImpl", "fireAsync", "(Ljava/lang/Object;Ljavax/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager", "getDefaultNotificationOptions", "()Ljakarta/enterprise/event/NotificationOptions;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventImpl", "fireAsync", "(Ljava/lang/Object;Ljakarta/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireAsync", "(Ljava/lang/Object;Ljavax/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", "<U:TT;>(TU;Ljavax/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage<TU;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireAsync", "(Ljava/lang/Object;Ljakarta/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", "<U:TT;>(TU;Ljakarta/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage<TU;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
@@ -163,13 +163,13 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventMetadataImpl", "select", "(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager", "fireEvent", "(Ljava/lang/Object;Lorg/apache/webbeans/event/EventMetadataImpl;ZLjavax/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager", "fireEvent", "(Ljava/lang/Object;Lorg/apache/webbeans/event/EventMetadataImpl;ZLjakarta/enterprise/event/NotificationOptions;)Ljava/util/concurrent/CompletionStage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "([Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event;", "([Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "([Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event;", "([Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventImpl");
 methodVisitor.visitInsn(DUP);
@@ -179,13 +179,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventMetadataImpl", "select", "([Ljava/lang/annotation/Annotation;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljavax/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljakarta/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event;", "<U:TT;>(Ljava/lang/Class<TU;>;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event<TU;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event;", "<U:TT;>(Ljava/lang/Class<TU;>;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event<TU;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventImpl");
 methodVisitor.visitInsn(DUP);
@@ -196,13 +196,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventMetadataImpl", "select", "(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljavax/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljakarta/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljavax/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event;", "<U:TT;>(Ljavax/enterprise/util/TypeLiteral<TU;>;[Ljava/lang/annotation/Annotation;)Ljavax/enterprise/event/Event<TU;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "select", "(Ljakarta/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event;", "<U:TT;>(Ljakarta/enterprise/util/TypeLiteral<TU;>;[Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/event/Event<TU;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventImpl");
 methodVisitor.visitInsn(DUP);
@@ -210,10 +210,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "metadata", "Lorg/apache/webbeans/event/EventMetadataImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventMetadataImpl", "select", "(Ljavax/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/EventMetadataImpl", "select", "(Ljakarta/enterprise/util/TypeLiteral;[Ljava/lang/annotation/Annotation;)Lorg/apache/webbeans/event/EventMetadataImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventImpl", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljavax/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventImpl", "<init>", "(Ljakarta/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/OpenEjbContainer", null, "javax/ejb/embeddable/EJBContainer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/OpenEjbContainer", null, "jakarta/ejb/embeddable/EJBContainer", null);
 
 classWriter.visitInnerClass("org/apache/openejb/OpenEjbContainer$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -85,11 +85,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webBeanContext",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "session", "Ljavax/servlet/http/HttpSession;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "session", "Ljakarta/servlet/http/HttpSession;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -100,7 +100,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/embeddable/EJBContainer", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/embeddable/EJBContainer", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/AppContext", "getWebBeansContext", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
@@ -136,21 +136,21 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/web/lifecycle/test/MockServletContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/web/lifecycle/test/MockServletContext", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/web/lifecycle/test/MockHttpSession");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/web/lifecycle/test/MockHttpSession", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljavax/servlet/http/HttpSession;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljakarta/servlet/http/HttpSession;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "webBeanContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getContextsService", "()Lorg/apache/webbeans/spi/ContextsService;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljavax/servlet/http/HttpSession;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/ScopeHelper", "startContexts", "(Lorg/apache/webbeans/spi/ContextsService;Ljavax/servlet/ServletContext;Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljakarta/servlet/http/HttpSession;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/ScopeHelper", "startContexts", "(Lorg/apache/webbeans/spi/ContextsService;Ljakarta/servlet/ServletContext;Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -292,10 +292,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "webBeanContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getContextsService", "()Lorg/apache/webbeans/spi/ContextsService;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljavax/servlet/http/HttpSession;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/ScopeHelper", "stopContexts", "(Lorg/apache/webbeans/spi/ContextsService;Ljavax/servlet/ServletContext;Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/OpenEjbContainer", "session", "Ljakarta/servlet/http/HttpSession;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cdi/ScopeHelper", "stopContexts", "(Lorg/apache/webbeans/spi/ContextsService;Ljakarta/servlet/ServletContext;Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitJumpInsn(GOTO, label14);
 methodVisitor.visitLabel(label8);

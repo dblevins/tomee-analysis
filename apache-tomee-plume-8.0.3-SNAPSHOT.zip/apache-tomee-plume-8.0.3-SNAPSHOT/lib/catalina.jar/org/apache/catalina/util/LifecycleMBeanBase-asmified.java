@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "domain", "Ljava/lang/String;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_DEPRECATED, "mserver", "Ljavax/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_DEPRECATED, "mserver", "Ljakarta/management/MBeanServer;", null, null);
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -58,10 +58,10 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "domain", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -70,22 +70,22 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initInternal", "()V", null, new String[] { "org/apache/catalina/LifecycleException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/modeler/Registry", "getRegistry", "(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/tomcat/util/modeler/Registry;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "getMBeanServer", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljavax/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "getMBeanServer", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/util/LifecycleMBeanBase", "getObjectNameKeyProperties", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/util/LifecycleMBeanBase", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/util/LifecycleMBeanBase", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -97,8 +97,8 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "destroyInternal", "()V",
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/util/LifecycleMBeanBase", "unregister", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/util/LifecycleMBeanBase", "unregister", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -146,10 +146,10 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getDomain
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getObjectName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getObjectName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -159,12 +159,12 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getObject
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/MalformedObjectNameException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/MalformedObjectNameException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -184,11 +184,11 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -196,12 +196,12 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/modeler/Regi
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "registerComponent", "(Ljava/lang/Object;Ljavax/management/ObjectName;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "registerComponent", "(Ljava/lang/Object;Ljakarta/management/ObjectName;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/catalina/util/LifecycleMBeanBase", "java/lang/Object", "java/lang/String", "java/lang/StringBuilder", "javax/management/ObjectName"}, 1, new Object[] {"javax/management/MalformedObjectNameException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/catalina/util/LifecycleMBeanBase", "java/lang/Object", "java/lang/String", "java/lang/StringBuilder", "jakarta/management/ObjectName"}, 1, new Object[] {"jakarta/management/MalformedObjectNameException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/util/LifecycleMBeanBase", "log", "Lorg/apache/juli/logging/Log;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/util/LifecycleMBeanBase", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
@@ -274,13 +274,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "unregister", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "unregister", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/modeler/Registry", "getRegistry", "(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/tomcat/util/modeler/Registry;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "unregisterComponent", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Registry", "unregisterComponent", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -307,21 +307,21 @@ methodVisitor.visitMaxs(0, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "preRegister", "(Ljakarta/management/MBeanServer;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectName;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "mserver", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "getDomain", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "getDomain", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "intern", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "domain", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/util/LifecycleMBeanBase", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

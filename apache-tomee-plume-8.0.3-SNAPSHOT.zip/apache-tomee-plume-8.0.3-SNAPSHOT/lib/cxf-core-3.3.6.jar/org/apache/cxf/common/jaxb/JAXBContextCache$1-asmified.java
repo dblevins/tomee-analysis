@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/common/jaxb/JAXBContextCache$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljavax/xml/bind/JAXBContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/common/jaxb/JAXBContextCache$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljakarta/xml/bind/JAXBContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
 classWriter.visitOuterClass("org/apache/cxf/common/jaxb/JAXBContextCache", "getCachedContextAndSchemas", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Map;Ljava/util/Collection;Z)Lorg/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas;");
 
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljavax/xml/bind/JAXBContext;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljakarta/xml/bind/JAXBContext;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$1", "val$classes", "Ljava/util/Set;");
@@ -56,7 +56,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Class;");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/bind/JAXBContext", "newInstance", "([Ljava/lang/Class;Ljava/util/Map;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/JAXBContext", "newInstance", "([Ljava/lang/Class;Ljava/util/Map;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -65,7 +65,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/jaxb/JAXBContextCache$1", "run", "()Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/jaxb/JAXBContextCache$1", "run", "()Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

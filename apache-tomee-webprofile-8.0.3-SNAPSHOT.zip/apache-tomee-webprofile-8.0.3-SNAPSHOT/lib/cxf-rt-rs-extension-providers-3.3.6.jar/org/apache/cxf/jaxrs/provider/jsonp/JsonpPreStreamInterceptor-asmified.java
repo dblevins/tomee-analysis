@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor", null, "org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor", new String[] { "javax/ws/rs/ext/WriterInterceptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor", null, "org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor", new String[] { "jakarta/ws/rs/ext/WriterInterceptor" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mediaType", "Ljava/lang/String;", null, null);
@@ -152,21 +152,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "aroundWriteTo", "(Ljavax/ws/rs/ext/WriterInterceptorContext;)V", null, new String[] { "java/io/IOException", "javax/ws/rs/WebApplicationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "aroundWriteTo", "(Ljakarta/ws/rs/ext/WriterInterceptorContext;)V", null, new String[] { "java/io/IOException", "jakarta/ws/rs/WebApplicationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/phase/PhaseInterceptorChain", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor", "handleMessage", "(Lorg/apache/cxf/message/Message;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/WriterInterceptorContext", "setMediaType", "(Ljavax/ws/rs/core/MediaType;)V", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "APPLICATION_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/WriterInterceptorContext", "setMediaType", "(Ljakarta/ws/rs/core/MediaType;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/WriterInterceptorContext", "proceed", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/WriterInterceptorContext", "proceed", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor", "getMediaType", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/WriterInterceptorContext", "setMediaType", "(Ljavax/ws/rs/core/MediaType;)V", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/WriterInterceptorContext", "setMediaType", "(Ljakarta/ws/rs/core/MediaType;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

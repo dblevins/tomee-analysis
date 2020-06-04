@@ -33,13 +33,13 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Joins$Set",
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Members$SetAttributeImpl", "org/apache/openjpa/persistence/meta/Members", "SetAttributeImpl", ACC_PUBLIC | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl;Ljavax/persistence/criteria/JoinType;)V", "(Lorg/apache/openjpa/persistence/criteria/FromImpl<*Ljava/util/Map<TK;TV;>;>;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl<-Ljava/util/Map<TK;TV;>;TK;>;Ljavax/persistence/criteria/JoinType;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl;Ljakarta/persistence/criteria/JoinType;)V", "(Lorg/apache/openjpa/persistence/criteria/FromImpl<*Ljava/util/Map<TK;TV;>;>;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl<-Ljava/util/Map<TK;TV;>;TK;>;Ljakarta/persistence/criteria/JoinType;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$Set", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$SetAttributeImpl;Ljavax/persistence/criteria/JoinType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$Set", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$SetAttributeImpl;Ljakarta/persistence/criteria/JoinType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

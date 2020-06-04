@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jstl/core/JstlIterationStatus", null, "com/sun/faces/facelets/tag/IterationStatus", new String[] { "javax/servlet/jsp/jstl/core/LoopTagStatus" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jstl/core/JstlIterationStatus", null, "com/sun/faces/facelets/tag/IterationStatus", new String[] { "jakarta/servlet/jsp/jstl/core/LoopTagStatus" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(5417430073472479654L));

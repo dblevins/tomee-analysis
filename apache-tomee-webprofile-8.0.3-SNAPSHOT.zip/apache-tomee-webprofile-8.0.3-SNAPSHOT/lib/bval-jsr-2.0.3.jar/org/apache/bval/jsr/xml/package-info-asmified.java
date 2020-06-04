@@ -25,9 +25,9 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE | ACC_SYNTHETIC, "org/apache/bval/jsr/xml/package-info", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchema;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchema;", true);
 annotationVisitor0.visit("namespace", "http://xmlns.jcp.org/xml/ns/validation/mapping");
-annotationVisitor0.visitEnum("elementFormDefault", "Ljavax/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
+annotationVisitor0.visitEnum("elementFormDefault", "Ljakarta/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
 annotationVisitor0.visitEnd();
 }
 classWriter.visitEnd();

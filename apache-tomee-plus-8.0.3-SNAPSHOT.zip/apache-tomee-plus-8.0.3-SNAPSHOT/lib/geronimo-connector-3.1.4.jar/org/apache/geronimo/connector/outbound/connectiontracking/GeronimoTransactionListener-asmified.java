@@ -45,12 +45,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "threadAssociated", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "threadAssociated", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/ResourceException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/connectiontracking/GeronimoTransactionListener", "trackedConnectionAssociator", "Lorg/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator;");
@@ -59,7 +59,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/connector/outbound/connectiontracking/GeronimoTransactionListener", "log", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Error notifying connection tranker of transaction association");
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "threadUnassociated", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "threadUnassociated", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

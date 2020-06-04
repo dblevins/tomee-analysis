@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", null, "org/eclipse/persistence/internal/oxm/record/ExtendedResult", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "generator", "Ljavax/json/stream/JsonGenerator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "generator", "Ljakarta/json/stream/JsonGenerator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rootKeyName", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/stream/JsonGenerator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/stream/JsonGenerator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/ExtendedResult", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "rootKeyName", "Ljava/lang/String;");
@@ -48,13 +48,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/stream/JsonGenerator;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/stream/JsonGenerator;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/ExtendedResult", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "rootKeyName", "Ljava/lang/String;");
@@ -68,10 +68,10 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/oxm/record/JsonGeneratorRecord");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljavax/json/stream/JsonGenerator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "generator", "Ljakarta/json/stream/JsonGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonGeneratorResult", "rootKeyName", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/oxm/record/JsonGeneratorRecord", "<init>", "(Ljavax/json/stream/JsonGenerator;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/oxm/record/JsonGeneratorRecord", "<init>", "(Ljakarta/json/stream/JsonGenerator;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);

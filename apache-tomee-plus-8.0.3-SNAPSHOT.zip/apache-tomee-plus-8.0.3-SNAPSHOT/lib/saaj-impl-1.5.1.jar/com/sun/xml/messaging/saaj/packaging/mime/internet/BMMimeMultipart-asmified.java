@@ -160,12 +160,12 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", null, new String[] { "com/sun/xml/messaging/saaj/packaging/mime/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", null, new String[] { "com/sun/xml/messaging/saaj/packaging/mime/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart", "<init>", "(Ljavax/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart", "<init>", "(Ljakarta/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart", "begining", "Z");
@@ -225,8 +225,8 @@ methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart", "ds", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart", "ds", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart", "in", "Ljava/io/InputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart", "in", "Ljava/io/InputStream;");

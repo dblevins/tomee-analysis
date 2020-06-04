@@ -33,53 +33,53 @@ classWriter.visitInnerClass("org/apache/catalina/filters/RestCsrfPreventionFilte
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromRequestHeader", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromRequestHeader", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromRequestParams", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljavax/servlet/http/HttpServletRequest;[Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromRequestParams", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljakarta/servlet/http/HttpServletRequest;[Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljavax/servlet/http/HttpSession;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceFromSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier<Ljakarta/servlet/http/HttpSession;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceToResponse", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer<Ljavax/servlet/http/HttpServletResponse;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceToResponse", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer<Ljakarta/servlet/http/HttpServletResponse;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceToSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer<Ljavax/servlet/http/HttpSession;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "nonceToSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer<Ljakarta/servlet/http/HttpSession;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "apply", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$4", "(Ljavax/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$4", "(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$3", "(Ljavax/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$3", "(Ljakarta/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$2", "(Ljavax/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$2", "(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "isNull", "(Ljava/lang/Object;)Z", false);
@@ -92,7 +92,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
@@ -101,21 +101,21 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$1", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$1", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getHeader", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getHeader", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -123,15 +123,15 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$0", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;", true), Type.getType("(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;")});
+methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$0", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;", true), Type.getType("(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "nonceFromRequestHeader", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
-methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$1", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;", true), Type.getType("(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;")});
+methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$1", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;", true), Type.getType("(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)[Ljava/lang/String;")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "nonceFromRequestParams", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
-methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$2", "(Ljavax/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;", true), Type.getType("(Ljavax/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;")});
+methodVisitor.visitInvokeDynamicInsn("getNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$2", "(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;", true), Type.getType("(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;)Ljava/lang/String;")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "nonceFromSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
-methodVisitor.visitInvokeDynamicInsn("setNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$3", "(Ljavax/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V", true), Type.getType("(Ljavax/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V")});
+methodVisitor.visitInvokeDynamicInsn("setNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$3", "(Ljakarta/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V", true), Type.getType("(Ljakarta/servlet/http/HttpServletResponse;Ljava/lang/String;Ljava/lang/String;)V")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "nonceToResponse", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;");
-methodVisitor.visitInvokeDynamicInsn("setNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$4", "(Ljavax/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V", true), Type.getType("(Ljavax/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V")});
+methodVisitor.visitInvokeDynamicInsn("setNonce", "()Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "lambda$static$4", "(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V", true), Type.getType("(Ljakarta/servlet/http/HttpSession;Ljava/lang/String;Ljava/lang/String;)V")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy", "nonceToSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);

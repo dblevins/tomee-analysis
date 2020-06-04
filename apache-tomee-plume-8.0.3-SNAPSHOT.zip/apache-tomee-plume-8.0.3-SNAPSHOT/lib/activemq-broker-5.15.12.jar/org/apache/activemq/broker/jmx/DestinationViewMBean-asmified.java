@@ -151,7 +151,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browse", "(Ljava/lang/String;)[Ljavax/management/openmbean/CompositeData;", null, new String[] { "javax/management/openmbean/OpenDataException", "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browse", "(Ljava/lang/String;)[Ljavax/management/openmbean/CompositeData;", null, new String[] { "javax/management/openmbean/OpenDataException", "jakarta/jms/InvalidSelectorException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "An array of all messages in the destination based on an SQL-92 selection on the message headers or XPATH on the body. Not HTML friendly.");
@@ -166,7 +166,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseAsTable", "(Ljava/lang/String;)Ljavax/management/openmbean/TabularData;", null, new String[] { "javax/management/openmbean/OpenDataException", "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseAsTable", "(Ljava/lang/String;)Ljavax/management/openmbean/TabularData;", null, new String[] { "javax/management/openmbean/OpenDataException", "jakarta/jms/InvalidSelectorException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "A list of all messages in the destination based on an SQL-92 selection on the message headers or XPATH on the body. Not HTML friendly.");
@@ -352,7 +352,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseMessages", "()Ljava/util/List;", "()Ljava/util/List<*>;", new String[] { "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseMessages", "()Ljava/util/List;", "()Ljava/util/List<*>;", new String[] { "jakarta/jms/InvalidSelectorException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "A list of all messages in the destination. Not HTML friendly.");
@@ -361,7 +361,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseMessages", "(Ljava/lang/String;)Ljava/util/List;", "(Ljava/lang/String;)Ljava/util/List<*>;", new String[] { "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "browseMessages", "(Ljava/lang/String;)Ljava/util/List;", "(Ljava/lang/String;)Ljava/util/List<*>;", new String[] { "jakarta/jms/InvalidSelectorException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "A list of all messages in the destination based on an SQL-92 selection on the message headers or XPATH on the body. Not HTML friendly.");
@@ -566,7 +566,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubscriptions", "()[Ljavax/management/ObjectName;", null, new String[] { "java/io/IOException", "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubscriptions", "()[Ljakarta/management/ObjectName;", null, new String[] { "java/io/IOException", "jakarta/management/MalformedObjectNameException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "Subscription MBeans matching this destination");
@@ -575,7 +575,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSlowConsumerStrategy", "()Ljavax/management/ObjectName;", null, new String[] { "java/io/IOException", "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSlowConsumerStrategy", "()Ljakarta/management/ObjectName;", null, new String[] { "java/io/IOException", "jakarta/management/MalformedObjectNameException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "Optional slowConsumer handler MBean for this destination");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/ConstraintAdapter", "<A::Ljava/lang/annotation/Annotation;T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/validation/ConstraintValidator<TA;TT;>;", "java/lang/Object", new String[] { "javax/validation/ConstraintValidator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/ConstraintAdapter", "<A::Ljava/lang/annotation/Annotation;T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/validation/ConstraintValidator<TA;TT;>;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidator" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -41,7 +41,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", "(TT;Ljavax/validation/ConstraintValidatorContext;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", "(TT;Ljakarta/validation/ConstraintValidatorContext;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

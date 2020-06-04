@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/activemq/ActiveMQConnectionMetaData", null, "java/lang/Object", new String[] { "javax/jms/ConnectionMetaData" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/activemq/ActiveMQConnectionMetaData", null, "java/lang/Object", new String[] { "jakarta/jms/ConnectionMetaData" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER_VERSION", "Ljava/lang/String;", null, null);

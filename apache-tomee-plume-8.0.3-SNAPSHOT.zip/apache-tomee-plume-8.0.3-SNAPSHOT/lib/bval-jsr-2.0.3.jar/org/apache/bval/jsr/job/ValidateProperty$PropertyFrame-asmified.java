@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ValidateProperty$PropertyFrame", "<D:Lorg/apache/bval/jsr/descriptor/ElementD<**>;:Ljavax/validation/metadata/CascadableDescriptor;:Ljavax/validation/metadata/ContainerDescriptor;>Lorg/apache/bval/jsr/job/ValidationJob<TT;>.SproutFrame<TD;>;", "org/apache/bval/jsr/job/ValidationJob$SproutFrame", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ValidateProperty$PropertyFrame", "<D:Lorg/apache/bval/jsr/descriptor/ElementD<**>;:Ljakarta/validation/metadata/CascadableDescriptor;:Ljakarta/validation/metadata/ContainerDescriptor;>Lorg/apache/bval/jsr/job/ValidationJob<TT;>.SproutFrame<TD;>;", "org/apache/bval/jsr/job/ValidationJob$SproutFrame", null);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidationJob$Frame", "org/apache/bval/jsr/job/ValidationJob", "Frame", ACC_PUBLIC | ACC_ABSTRACT);
 
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "recurse", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljavax/validation/ConstraintViolation<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "recurse", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljakarta/validation/ConstraintViolation<TT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateProperty$PropertyFrame", "this$0", "Lorg/apache/bval/jsr/job/ValidateProperty;");

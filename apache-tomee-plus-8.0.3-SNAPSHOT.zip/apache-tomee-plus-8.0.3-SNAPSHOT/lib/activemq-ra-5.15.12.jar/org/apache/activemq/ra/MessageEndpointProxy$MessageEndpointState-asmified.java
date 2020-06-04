@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljava/lang/reflect/Method;)V", null, new String[] { "java/lang/NoSuchMethodException", "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljava/lang/reflect/Method;)V", null, new String[] { "java/lang/NoSuchMethodException", "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Lorg/apache/activemq/ra/MessageEndpointProxy;Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "(Lorg/apache/activemq/ra/MessageEndpointProxy;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);

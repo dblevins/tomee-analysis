@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "Ljava/lang/Object;Ljavax/faces/component/PartialStateHolder;Ljavax/faces/convert/Converter;Ljavax/faces/FacesWrapper<Ljavax/faces/convert/Converter;>;", "java/lang/Object", new String[] { "javax/faces/component/PartialStateHolder", "javax/faces/convert/Converter", "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "Ljava/lang/Object;Ljakarta/faces/component/PartialStateHolder;Ljakarta/faces/convert/Converter;Ljakarta/faces/FacesWrapper<Ljakarta/faces/convert/Converter;>;", "java/lang/Object", new String[] { "jakarta/faces/component/PartialStateHolder", "jakarta/faces/convert/Converter", "jakarta/faces/FacesWrapper" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljavax/faces/convert/Converter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljakarta/faces/convert/Converter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V", "(Ljava/lang/Class<+Ljavax/faces/convert/Converter;>;Ljava/lang/Class<*>;Ljava/lang/String;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V", "(Ljava/lang/Class<+Ljakarta/faces/convert/Converter;>;Ljava/lang/Class<*>;Ljava/lang/String;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -75,36 +75,36 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsObject", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/faces/convert/ConverterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsObject", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/faces/convert/ConverterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/convert/Converter", "getAsObject", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/convert/Converter", "getAsObject", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsString", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", null, new String[] { "javax/faces/convert/ConverterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAsString", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", null, new String[] { "jakarta/faces/convert/ConverterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/convert/Converter", "getAsString", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/convert/Converter", "getAsString", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/Object;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/convert/Converter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/convert/Converter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljakarta/faces/convert/Converter;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -112,10 +112,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesCo
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getBeanManager", "(Ljavax/faces/context/ExternalContext;)Ljavax/enterprise/inject/spi/BeanManager;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/convert/Converter;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getBeanManager", "(Ljakarta/faces/context/ExternalContext;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/convert/Converter;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -129,9 +129,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesCo
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/converter/FacesConverterAnnotationLiteral", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getInstance", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;Z[Ljava/lang/annotation/Annotation;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/convert/Converter");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getInstance", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;Z[Ljava/lang/annotation/Annotation;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/convert/Converter");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -139,10 +139,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "forClass", "Ljava/lang/Class;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getBeanManager", "(Ljavax/faces/context/ExternalContext;)Ljavax/enterprise/inject/spi/BeanManager;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/convert/Converter;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getBeanManager", "(Ljakarta/faces/context/ExternalContext;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/convert/Converter;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -156,19 +156,19 @@ methodVisitor.visitLdcInsn("");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/converter/FacesConverterAnnotationLiteral", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getInstance", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;Z[Ljava/lang/annotation/Annotation;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/convert/Converter");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "getInstance", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;Z[Ljava/lang/annotation/Annotation;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/convert/Converter");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "delegate", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(12, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "initialStateMarked", "()Z", false);
@@ -197,7 +197,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -276,7 +276,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper", "getWrapped", "()Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

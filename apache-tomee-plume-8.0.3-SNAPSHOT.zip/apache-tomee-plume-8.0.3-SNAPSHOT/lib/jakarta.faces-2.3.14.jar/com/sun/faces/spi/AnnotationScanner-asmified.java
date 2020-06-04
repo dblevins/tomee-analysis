@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/face
 classWriter.visitInnerClass("com/sun/faces/spi/AnnotationScanner$ScannedAnnotation", "com/sun/faces/spi/AnnotationScanner", "ScannedAnnotation", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotatedClassesInCurrentModule", "(Ljavax/servlet/ServletContext;)Ljava/util/Map;", "(Ljavax/servlet/ServletContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/sun/faces/spi/AnnotationScanner$ScannedAnnotation;>;>;", new String[] { "com/sun/faces/spi/InjectionProviderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotatedClassesInCurrentModule", "(Ljakarta/servlet/ServletContext;)Ljava/util/Map;", "(Ljakarta/servlet/ServletContext;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/sun/faces/spi/AnnotationScanner$ScannedAnnotation;>;>;", new String[] { "com/sun/faces/spi/InjectionProviderException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

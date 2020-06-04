@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/lifecycle/LifecycleImpl", null, "javax/faces/lifecycle/Lifecycle", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/lifecycle/LifecycleImpl", null, "jakarta/faces/lifecycle/Lifecycle", null);
 
 classWriter.visitInnerClass("com/sun/faces/lifecycle/LifecycleImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "phases", "[Lcom/sun/faces/li
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/event/PhaseListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/event/PhaseListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -58,7 +58,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/lifecycle/Lifecycle", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/lifecycle/Lifecycle", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/lifecycle/RenderResponsePhase");
 methodVisitor.visitInsn(DUP);
@@ -120,10 +120,10 @@ methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/lifecycle/Lifecycle", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/lifecycle/Lifecycle", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/lifecycle/RenderResponsePhase");
 methodVisitor.visitInsn(DUP);
@@ -181,22 +181,22 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "isClientWindowEnabled", "Z");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "config", "Lcom/sun/faces/config/WebConfiguration;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostConstructApplicationEvent;"));
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/application/Application;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostConstructApplicationEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/application/Application;"));
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener", "<init>", "(Lcom/sun/faces/lifecycle/LifecycleImpl;Lcom/sun/faces/lifecycle/LifecycleImpl$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
@@ -233,7 +233,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "attachWindow", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "attachWindow", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "isClientWindowEnabled", "Z");
@@ -260,10 +260,10 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getClientWindow", "()Ljavax/faces/lifecycle/ClientWindow;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getClientWindow", "()Ljakarta/faces/lifecycle/ClientWindow;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -271,25 +271,25 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/lifecycle/LifecycleImpl", "createClientWindow", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/lifecycle/ClientWindow;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/lifecycle/LifecycleImpl", "createClientWindow", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/lifecycle/ClientWindow;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/lifecycle/ClientWindow", "decode", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/lifecycle/ClientWindow", "decode", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "setClientWindow", "(Ljavax/faces/lifecycle/ClientWindow;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "setClientWindow", "(Ljakarta/faces/lifecycle/ClientWindow;)V", false);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/context/ExternalContext", "javax/faces/lifecycle/ClientWindow"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/context/ExternalContext", "jakarta/faces/lifecycle/ClientWindow"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createClientWindow", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/lifecycle/ClientWindow;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createClientWindow", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/lifecycle/ClientWindow;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -304,22 +304,22 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/lifecycle/ClientWindowFactory"}, 0, null);
-methodVisitor.visitLdcInsn("javax.faces.lifecycle.ClientWindowFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/lifecycle/ClientWindowFactory");
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/lifecycle/ClientWindowFactory"}, 0, null);
+methodVisitor.visitLdcInsn("jakarta.faces.lifecycle.ClientWindowFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/lifecycle/ClientWindowFactory");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/lifecycle/ClientWindowFactory", "getClientWindow", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/lifecycle/ClientWindow;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/lifecycle/ClientWindowFactory", "getClientWindow", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/lifecycle/ClientWindow;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljavax/faces/context/FacesContext;)V", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljakarta/faces/context/FacesContext;)V", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -373,10 +373,10 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getRenderResponse", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getRenderResponse", "()Z", false);
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getResponseComplete", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getResponseComplete", "()Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -391,7 +391,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "listeners", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "listIterator", "()Ljava/util/ListIterator;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/lifecycle/Phase", "doPhase", "(Ljavax/faces/context/FacesContext;Ljavax/faces/lifecycle/Lifecycle;Ljava/util/ListIterator;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/lifecycle/Phase", "doPhase", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/lifecycle/Lifecycle;Ljava/util/ListIterator;)V", false);
 methodVisitor.visitIincInsn(2, 1);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
@@ -401,7 +401,7 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "render", "(Ljavax/faces/context/FacesContext;)V", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "render", "(Ljakarta/faces/context/FacesContext;)V", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -440,7 +440,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine",
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getResponseComplete", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getResponseComplete", "()Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -450,7 +450,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "listeners", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "listIterator", "()Ljava/util/ListIterator;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/lifecycle/Phase", "doPhase", "(Ljavax/faces/context/FacesContext;Ljavax/faces/lifecycle/Lifecycle;Ljava/util/ListIterator;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/lifecycle/Phase", "doPhase", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/lifecycle/Lifecycle;Ljava/util/ListIterator;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -458,7 +458,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPhaseListener", "(Ljavax/faces/event/PhaseListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPhaseListener", "(Ljakarta/faces/event/PhaseListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -522,8 +522,8 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/event/PhaseListener", "getPhaseId", "()Ljavax/faces/event/PhaseId;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/PhaseId", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/event/PhaseListener", "getPhaseId", "()Ljakarta/faces/event/PhaseId;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/PhaseId", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -546,22 +546,22 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseListeners", "()[Ljavax/faces/event/PhaseListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseListeners", "()[Ljakarta/faces/event/PhaseListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "listeners", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl", "listeners", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/faces/event/PhaseListener");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/faces/event/PhaseListener");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/faces/event/PhaseListener;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/faces/event/PhaseListener;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePhaseListener", "(Ljavax/faces/event/PhaseListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePhaseListener", "(Ljakarta/faces/event/PhaseListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();

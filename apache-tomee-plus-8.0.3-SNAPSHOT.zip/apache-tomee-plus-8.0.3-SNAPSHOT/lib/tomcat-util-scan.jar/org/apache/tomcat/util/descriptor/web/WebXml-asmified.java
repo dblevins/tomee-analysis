@@ -1913,7 +1913,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljavax/servlet/descriptor/JspConfigDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljakarta/servlet/descriptor/JspConfigDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/web/WebXml", "jspPropertyGroups", "Ljava/util/Set;");
@@ -2735,8 +2735,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/
 methodVisitor.visitInsn(ICONST_2);
 Label label31 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPNE, label31);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/DispatcherType", "ASYNC", "Ljavax/servlet/DispatcherType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/DispatcherType", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/DispatcherType", "ASYNC", "Ljakarta/servlet/DispatcherType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/DispatcherType", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label31);
@@ -3199,13 +3199,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label50);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/SessionTrackingMode");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/SessionTrackingMode");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("    ");
 methodVisitor.visitLdcInsn("tracking-mode");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/SessionTrackingMode", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/SessionTrackingMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/descriptor/web/WebXml", "appendElement", "(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label51);
 methodVisitor.visitLabel(label50);
@@ -8302,18 +8302,18 @@ methodVisitor.visitMaxs(7, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "orderWebFragments", "(Lorg/apache/tomcat/util/descriptor/web/WebXml;Ljava/util/Map;Ljavax/servlet/ServletContext;)Ljava/util/Set;", "(Lorg/apache/tomcat/util/descriptor/web/WebXml;Ljava/util/Map<Ljava/lang/String;Lorg/apache/tomcat/util/descriptor/web/WebXml;>;Ljavax/servlet/ServletContext;)Ljava/util/Set<Lorg/apache/tomcat/util/descriptor/web/WebXml;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "orderWebFragments", "(Lorg/apache/tomcat/util/descriptor/web/WebXml;Ljava/util/Map;Ljakarta/servlet/ServletContext;)Ljava/util/Set;", "(Lorg/apache/tomcat/util/descriptor/web/WebXml;Ljava/util/Map<Ljava/lang/String;Lorg/apache/tomcat/util/descriptor/web/WebXml;>;Ljakarta/servlet/ServletContext;)Ljava/util/Set<Lorg/apache/tomcat/util/descriptor/web/WebXml;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/descriptor/web/WebXml", "orderWebFragments", "(Ljava/util/Map;Ljavax/servlet/ServletContext;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/descriptor/web/WebXml", "orderWebFragments", "(Ljava/util/Map;Ljakarta/servlet/ServletContext;)Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "orderWebFragments", "(Ljava/util/Map;Ljavax/servlet/ServletContext;)Ljava/util/Set;", "(Ljava/util/Map<Ljava/lang/String;Lorg/apache/tomcat/util/descriptor/web/WebXml;>;Ljavax/servlet/ServletContext;)Ljava/util/Set<Lorg/apache/tomcat/util/descriptor/web/WebXml;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "orderWebFragments", "(Ljava/util/Map;Ljakarta/servlet/ServletContext;)Ljava/util/Set;", "(Ljava/util/Map<Ljava/lang/String;Lorg/apache/tomcat/util/descriptor/web/WebXml;>;Ljakarta/servlet/ServletContext;)Ljava/util/Set<Lorg/apache/tomcat/util/descriptor/web/WebXml;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/LinkedHashSet");
 methodVisitor.visitInsn(DUP);
@@ -8347,7 +8347,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitVarInsn(ASTORE, 7);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/tomcat/util/descriptor/web/WebXml", "java/util/Map", "javax/servlet/ServletContext", "java/util/Set", Opcodes.INTEGER, Opcodes.INTEGER, "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/tomcat/util/descriptor/web/WebXml", "java/util/Map", "jakarta/servlet/ServletContext", "java/util/Set", Opcodes.INTEGER, Opcodes.INTEGER, "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label4 = new Label();
@@ -8641,7 +8641,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator
 methodVisitor.visitVarInsn(ASTORE, 9);
 Label label29 = new Label();
 methodVisitor.visitLabel(label29);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/tomcat/util/descriptor/web/WebXml", "java/util/Map", "javax/servlet/ServletContext", "java/util/Set", Opcodes.INTEGER, Opcodes.INTEGER, "java/util/Set", "java/util/Set", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/tomcat/util/descriptor/web/WebXml", "java/util/Map", "jakarta/servlet/ServletContext", "java/util/Set", Opcodes.INTEGER, Opcodes.INTEGER, "java/util/Set", "java/util/Set", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label30 = new Label();
@@ -8785,7 +8785,7 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("javax.servlet.context.orderedLibs");
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label37);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);

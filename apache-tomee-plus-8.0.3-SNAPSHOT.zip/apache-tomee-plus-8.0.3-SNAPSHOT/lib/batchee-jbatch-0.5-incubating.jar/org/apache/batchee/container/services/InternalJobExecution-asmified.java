@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/batchee/container/services/InternalJobExecution", null, "java/lang/Object", new String[] { "javax/batch/runtime/JobExecution" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/batchee/container/services/InternalJobExecution", null, "java/lang/Object", new String[] { "jakarta/batch/runtime/JobExecution" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setBatchStatus", "(Ljava/lang/String;)V", null, null);

@@ -34,13 +34,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljavax/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/wsdl/extensions/ExtensibilityElement;", new String[] { "javax/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljakarta/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/wsdl/extensions/ExtensibilityElement;", new String[] { "jakarta/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/xml/wsdl11/XmlBindingPlugin", "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/wsdl/Binding;"));
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/xml/wsdl11/XmlBindingPlugin", "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/wsdl/Binding;"));
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/tools/common/ToolConstants", "XML_BINDING_FORMAT", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljavax/wsdl/extensions/ExtensibilityElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljakarta/wsdl/extensions/ExtensibilityElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

@@ -63,19 +63,19 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$1", "this$0", "Lorg/apache/myfaces/el/PropertyResolverImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELResolver", "()Ljavax/el/ELResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELResolver", "()Ljakarta/el/ELResolver;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$1", "this$0", "Lorg/apache/myfaces/el/PropertyResolverImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/PropertyResolverImpl", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$1", "val$base", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/PropertyResolverImpl$1", "val$property", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELResolver", "getValue", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELResolver", "getValue", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

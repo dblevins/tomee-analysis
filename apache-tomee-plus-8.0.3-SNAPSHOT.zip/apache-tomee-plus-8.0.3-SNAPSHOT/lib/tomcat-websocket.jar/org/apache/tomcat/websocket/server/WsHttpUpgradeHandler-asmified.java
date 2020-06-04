@@ -30,9 +30,9 @@ classWriter.visitInnerClass("org/apache/tomcat/util/net/AbstractEndpoint$Handler
 
 classWriter.visitInnerClass("org/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState", "org/apache/tomcat/util/net/AbstractEndpoint$Handler", "SocketState", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/websocket/CloseReason$CloseCodes", "javax/websocket/CloseReason", "CloseCodes", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/websocket/CloseReason$CloseCodes", "jakarta/websocket/CloseReason", "CloseCodes", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
-classWriter.visitInnerClass("javax/websocket/CloseReason$CloseCode", "javax/websocket/CloseReason", "CloseCode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/CloseReason$CloseCode", "jakarta/websocket/CloseReason", "CloseCode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/apache/juli/logging/Log;", null, null);
@@ -51,11 +51,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "socketWrapper", "Lorg/apache
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ep", "Ljavax/websocket/Endpoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ep", "Ljakarta/websocket/Endpoint;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "serverEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "serverEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handshakeRequest", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "negotiatedExtensions", "Ljava/util/List;", "Ljava/util/List<Ljavax/websocket/Extension;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "negotiatedExtensions", "Ljava/util/List;", "Ljava/util/List<Ljakarta/websocket/Extension;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,7 +87,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "secure", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "connection", "Ljavax/servlet/http/WebConnection;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "connection", "Ljakarta/servlet/http/WebConnection;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -130,14 +130,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "preInit", "(Ljavax/websocket/Endpoint;Ljavax/websocket/server/ServerEndpointConfig;Lorg/apache/tomcat/websocket/server/WsServerContainer;Lorg/apache/tomcat/websocket/server/WsHandshakeRequest;Ljava/util/List;Ljava/lang/String;Lorg/apache/tomcat/websocket/Transformation;Ljava/util/Map;Z)V", "(Ljavax/websocket/Endpoint;Ljavax/websocket/server/ServerEndpointConfig;Lorg/apache/tomcat/websocket/server/WsServerContainer;Lorg/apache/tomcat/websocket/server/WsHandshakeRequest;Ljava/util/List<Ljavax/websocket/Extension;>;Ljava/lang/String;Lorg/apache/tomcat/websocket/Transformation;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "preInit", "(Ljakarta/websocket/Endpoint;Ljakarta/websocket/server/ServerEndpointConfig;Lorg/apache/tomcat/websocket/server/WsServerContainer;Lorg/apache/tomcat/websocket/server/WsHandshakeRequest;Ljava/util/List;Ljava/lang/String;Lorg/apache/tomcat/websocket/Transformation;Ljava/util/Map;Z)V", "(Ljakarta/websocket/Endpoint;Ljakarta/websocket/server/ServerEndpointConfig;Lorg/apache/tomcat/websocket/server/WsServerContainer;Lorg/apache/tomcat/websocket/server/WsHandshakeRequest;Ljava/util/List<Ljakarta/websocket/Extension;>;Ljava/lang/String;Lorg/apache/tomcat/websocket/Transformation;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljavax/websocket/Endpoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljakarta/websocket/Endpoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "webSocketContainer", "Lorg/apache/tomcat/websocket/server/WsServerContainer;");
@@ -164,18 +164,18 @@ methodVisitor.visitMaxs(2, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljavax/servlet/http/WebConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljakarta/servlet/http/WebConnection;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/websocket/DeploymentException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/websocket/DeploymentException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, null);
 Label label4 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label4, label3, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljavax/websocket/Endpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljakarta/websocket/Endpoint;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -197,8 +197,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSession");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSession");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Object"}, 0, null);
@@ -225,7 +225,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/websocket/WsSession");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljavax/websocket/Endpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljakarta/websocket/Endpoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsRemoteEndpointServer", "Lorg/apache/tomcat/websocket/server/WsRemoteEndpointImplServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -252,8 +252,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHtt
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "secure", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/WsSession", "<init>", "(Ljavax/websocket/Endpoint;Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;Lorg/apache/tomcat/websocket/WsWebSocketContainer;Ljava/net/URI;Ljava/util/Map;Ljava/lang/String;Ljava/security/Principal;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;ZLjavax/websocket/EndpointConfig;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/WsSession", "<init>", "(Ljakarta/websocket/Endpoint;Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;Lorg/apache/tomcat/websocket/WsWebSocketContainer;Ljava/net/URI;Ljava/util/Map;Ljava/lang/String;Ljava/security/Principal;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;ZLjakarta/websocket/EndpointConfig;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/websocket/server/WsFrameServer");
@@ -275,17 +275,17 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHtt
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/server/WsFrameServer", "getTransformation", "()Lorg/apache/tomcat/websocket/Transformation;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/server/WsRemoteEndpointImplServer", "setTransformation", "(Lorg/apache/tomcat/websocket/Transformation;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljavax/websocket/Endpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljakarta/websocket/Endpoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/Endpoint", "onOpen", "(Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/Endpoint", "onOpen", "(Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "webSocketContainer", "Lorg/apache/tomcat/websocket/server/WsServerContainer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getPath", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "serverEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/server/WsServerContainer", "registerSession", "(Ljava/lang/Object;Lorg/apache/tomcat/websocket/WsSession;)V", false);
@@ -296,7 +296,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClas
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "javax/servlet/http/WebConnection", "java/lang/String", "java/lang/Object", "java/lang/Thread", "java/lang/ClassLoader"}, 1, new Object[] {"javax/websocket/DeploymentException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "jakarta/servlet/http/WebConnection", "java/lang/String", "java/lang/Object", "java/lang/Thread", "java/lang/ClassLoader"}, 1, new Object[] {"jakarta/websocket/DeploymentException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -353,8 +353,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsIOException", "getCloseReason", "()Ljavax/websocket/CloseReason;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsIOException", "getCloseReason", "()Ljakarta/websocket/CloseReason;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljakarta/websocket/CloseReason;)V", false);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label3);
@@ -363,16 +363,16 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "onError", "(Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/CloseReason");
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/CloseReason");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljavax/websocket/CloseReason$CloseCodes;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljakarta/websocket/CloseReason$CloseCodes;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/IOException", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/CloseReason", "<init>", "(Ljavax/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/CloseReason", "<init>", "(Ljakarta/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljakarta/websocket/CloseReason;)V", false);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState", "CLOSED", "Lorg/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState;");
@@ -386,37 +386,37 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/server
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/CloseReason");
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/CloseReason");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/websocket/CloseReason$CloseCodes", "GOING_AWAY", "Ljavax/websocket/CloseReason$CloseCodes;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/websocket/CloseReason$CloseCodes", "GOING_AWAY", "Ljakarta/websocket/CloseReason$CloseCodes;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("wsHttpUpgradeHandler.serverStop");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/CloseReason", "<init>", "(Ljavax/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/CloseReason", "<init>", "(Ljakarta/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "close", "(Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "close", "(Ljakarta/websocket/CloseReason;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "org/apache/tomcat/util/net/SocketEvent", "javax/websocket/CloseReason"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "org/apache/tomcat/util/net/SocketEvent", "jakarta/websocket/CloseReason"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "onError", "(Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/CloseReason");
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/CloseReason");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljavax/websocket/CloseReason$CloseCodes;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljakarta/websocket/CloseReason$CloseCodes;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/IOException", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/CloseReason", "<init>", "(Ljavax/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/CloseReason", "<init>", "(Ljakarta/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "close", "(Ljakarta/websocket/CloseReason;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState", "CLOSED", "Lorg/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
@@ -427,17 +427,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringM
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/CloseReason");
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/CloseReason");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/websocket/CloseReason$CloseCodes", "GOING_AWAY", "Ljavax/websocket/CloseReason$CloseCodes;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/websocket/CloseReason$CloseCodes", "GOING_AWAY", "Ljakarta/websocket/CloseReason$CloseCodes;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/CloseReason", "<init>", "(Ljavax/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/websocket/CloseReason");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/CloseReason", "<init>", "(Ljakarta/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "jakarta/websocket/CloseReason");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljavax/websocket/CloseReason$CloseCodes;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/websocket/CloseReason$CloseCodes", "CLOSED_ABNORMALLY", "Ljakarta/websocket/CloseReason$CloseCodes;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/CloseReason", "<init>", "(Ljavax/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "doClose", "(Ljavax/websocket/CloseReason;Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/CloseReason", "<init>", "(Ljakarta/websocket/CloseReason$CloseCode;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "doClose", "(Ljakarta/websocket/CloseReason;Ljakarta/websocket/CloseReason;)V", false);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState", "CLOSED", "Lorg/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState;");
@@ -480,13 +480,13 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "connection", "Ljavax/servlet/http/WebConnection;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "connection", "Ljakarta/servlet/http/WebConnection;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "connection", "Ljavax/servlet/http/WebConnection;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/WebConnection", "close", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "connection", "Ljakarta/servlet/http/WebConnection;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/WebConnection", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -525,11 +525,11 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHtt
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClassLoader", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljavax/websocket/Endpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "ep", "Ljakarta/websocket/Endpoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/Endpoint", "onError", "(Ljavax/websocket/Session;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/Endpoint", "onError", "(Ljakarta/websocket/Session;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -552,12 +552,12 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "close", "(Ljavax/websocket/CloseReason;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "close", "(Ljakarta/websocket/CloseReason;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsHttpUpgradeHandler", "wsSession", "Lorg/apache/tomcat/websocket/WsSession;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "onClose", "(Ljavax/websocket/CloseReason;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "onClose", "(Ljakarta/websocket/CloseReason;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

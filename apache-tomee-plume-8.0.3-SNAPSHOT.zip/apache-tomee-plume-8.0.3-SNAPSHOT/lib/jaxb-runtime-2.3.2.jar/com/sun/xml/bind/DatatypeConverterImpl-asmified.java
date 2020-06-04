@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "com/sun/xml/bind/DatatypeConverterImpl", null, "java/lang/Object", new String[] { "javax/xml/bind/DatatypeConverterInterface" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "com/sun/xml/bind/DatatypeConverterImpl", null, "java/lang/Object", new String[] { "jakarta/xml/bind/DatatypeConverterInterface" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/Deprecated;", true);
@@ -33,7 +33,7 @@ classWriter.visitInnerClass("com/sun/xml/bind/DatatypeConverterImpl$CalendarForm
 classWriter.visitInnerClass("com/sun/xml/bind/DatatypeConverterImpl$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "theInstance", "Ljavax/xml/bind/DatatypeConverterInterface;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "theInstance", "Ljakarta/xml/bind/DatatypeConverterInterface;", null, null);
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -2872,7 +2872,7 @@ methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/DatatypeConverterImpl"
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/DatatypeConverterImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/DatatypeConverterImpl", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/DatatypeConverterImpl", "theInstance", "Ljavax/xml/bind/DatatypeConverterInterface;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/DatatypeConverterImpl", "theInstance", "Ljakarta/xml/bind/DatatypeConverterInterface;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/DatatypeConverterImpl", "initDecodeMap", "()[B", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/DatatypeConverterImpl", "decodeMap", "[B");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/DatatypeConverterImpl", "initEncodeMap", "()[C", false);

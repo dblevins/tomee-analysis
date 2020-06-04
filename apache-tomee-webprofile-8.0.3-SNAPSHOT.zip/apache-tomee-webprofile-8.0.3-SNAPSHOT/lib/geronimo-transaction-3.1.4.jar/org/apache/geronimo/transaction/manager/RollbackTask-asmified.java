@@ -104,7 +104,7 @@ methodVisitor.visitTryCatchBlock(label4, label5, label6, "javax/transaction/xa/X
 Label label7 = new Label();
 Label label8 = new Label();
 Label label9 = new Label();
-methodVisitor.visitTryCatchBlock(label7, label8, label9, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label7, label8, label9, "jakarta/transaction/SystemException");
 Label label10 = new Label();
 Label label11 = new Label();
 methodVisitor.visitTryCatchBlock(label4, label10, label11, "javax/transaction/xa/XAException");
@@ -349,7 +349,7 @@ methodVisitor.visitLabel(label8);
 Label label37 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label37);
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/geronimo/transaction/manager/RollbackTask", Opcodes.INTEGER, "org/apache/geronimo/transaction/manager/TransactionImpl$TransactionBranch", "javax/transaction/xa/XAException", "java/lang/String", "org/apache/geronimo/transaction/manager/NamedXAResourceFactory"}, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/geronimo/transaction/manager/RollbackTask", Opcodes.INTEGER, "org/apache/geronimo/transaction/manager/TransactionImpl$TransactionBranch", "javax/transaction/xa/XAException", "java/lang/String", "org/apache/geronimo/transaction/manager/NamedXAResourceFactory"}, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitIincInsn(1, 1);
 methodVisitor.visitJumpInsn(GOTO, label37);

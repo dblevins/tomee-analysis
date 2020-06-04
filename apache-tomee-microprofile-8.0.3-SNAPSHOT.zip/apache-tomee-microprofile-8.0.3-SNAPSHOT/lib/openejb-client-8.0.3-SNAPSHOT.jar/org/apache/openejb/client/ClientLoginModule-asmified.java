@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljavax/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljakarta/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -74,11 +74,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljavax/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;Ljava/util/Map;Ljava/util/Map;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljakarta/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;Ljava/util/Map;Ljava/util/Map;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/ClientLoginModule", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
@@ -401,8 +401,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginMod
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/ClientIdentityPrincipal", "<init>", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/ClientLoginModule", "principal", "Lorg/apache/openejb/client/ClientIdentityPrincipal;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "principal", "Lorg/apache/openejb/client/ClientIdentityPrincipal;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
@@ -444,8 +444,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "logout", "()Z", null, new String[] { "javax/security/auth/login/LoginException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/ClientLoginModule", "principal", "Lorg/apache/openejb/client/ClientIdentityPrincipal;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "remove", "(Ljava/lang/Object;)Z", true);

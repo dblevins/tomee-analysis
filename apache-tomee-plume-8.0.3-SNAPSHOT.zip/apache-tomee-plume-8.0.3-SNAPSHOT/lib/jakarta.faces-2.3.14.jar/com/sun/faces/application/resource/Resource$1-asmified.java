@@ -24,22 +24,22 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/application/resource/Resource$1", null, "java/net/URLStreamHandler", null);
 
-classWriter.visitOuterClass("com/sun/faces/application/resource/Resource", "getUrlForResourceAsStream", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljava/net/URL;");
+classWriter.visitOuterClass("com/sun/faces/application/resource/Resource", "getUrlForResourceAsStream", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljava/net/URL;");
 
 classWriter.visitInnerClass("com/sun/faces/application/resource/Resource$1", null, null, ACC_STATIC);
 
 classWriter.visitInnerClass("com/sun/faces/application/resource/Resource$1$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$externalContext", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$externalContext", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/Resource$1", "val$externalContext", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/Resource$1", "val$externalContext", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/net/URLStreamHandler", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);

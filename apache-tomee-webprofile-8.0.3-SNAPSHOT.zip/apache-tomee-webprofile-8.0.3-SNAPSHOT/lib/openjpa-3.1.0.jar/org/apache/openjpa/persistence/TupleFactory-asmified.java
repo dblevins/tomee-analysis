@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TupleFactory", "Ljava/lang/Object;Lorg/apache/openjpa/kernel/ObjectFactory<Ljavax/persistence/Tuple;>;", "java/lang/Object", new String[] { "org/apache/openjpa/kernel/ObjectFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TupleFactory", "Ljava/lang/Object;Lorg/apache/openjpa/kernel/ObjectFactory<Ljakarta/persistence/Tuple;>;", "java/lang/Object", new String[] { "org/apache/openjpa/kernel/ObjectFactory" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "elements", "Ljava/util/List;", "Ljava/util/List<Ljavax/persistence/TupleElement<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "elements", "Ljava/util/List;", "Ljava/util/List<Ljakarta/persistence/TupleElement<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/persistence/TupleElement<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/persistence/TupleElement<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "([Ljavax/persistence/TupleElement;)V", "([Ljavax/persistence/TupleElement<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "([Ljakarta/persistence/TupleElement;)V", "([Ljakarta/persistence/TupleElement<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "([Ljavax/persistence/criteria/Selection;)V", "([Ljavax/persistence/criteria/Selection<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "([Ljakarta/persistence/criteria/Selection;)V", "([Ljakarta/persistence/criteria/Selection<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -70,7 +70,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openjpa/persistence/TupleFactory", "[Ljavax/persistence/criteria/Selection;", "java/util/List", "[Ljavax/persistence/criteria/Selection;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openjpa/persistence/TupleFactory", "[Ljakarta/persistence/criteria/Selection;", "java/util/List", "[Ljakarta/persistence/criteria/Selection;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label1 = new Label();
@@ -96,7 +96,7 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/TupleElement<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/TupleElement<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleFactory", "elements", "Ljava/util/List;");
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndex", "(Ljavax/persistence/TupleElement;)I", "(Ljavax/persistence/TupleElement<*>;)I", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndex", "(Ljakarta/persistence/TupleElement;)I", "(Ljakarta/persistence/TupleElement<*>;)I", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleFactory", "elements", "Ljava/util/List;");
@@ -178,11 +178,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/TupleFactory", "elements", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/TupleElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/TupleElement");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/TupleElement", "getAlias", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/TupleElement", "getAlias", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/DispatchImpl$1", "Lorg/apache/cxf/jaxws/JaxwsClientCallback<TT;>;", "org/apache/cxf/jaxws/JaxwsClientCallback", null);
 
-classWriter.visitOuterClass("org/apache/cxf/jaxws/DispatchImpl", "invokeAsync", "(Ljava/lang/Object;Ljavax/xml/ws/AsyncHandler;)Ljava/util/concurrent/Future;");
+classWriter.visitOuterClass("org/apache/cxf/jaxws/DispatchImpl", "invokeAsync", "(Ljava/lang/Object;Ljakarta/xml/ws/AsyncHandler;)Ljava/util/concurrent/Future;");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/DispatchImpl$1", null, null, 0);
 
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/DispatchImpl;Ljavax/xml/ws/AsyncHandler;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/DispatchImpl;Ljakarta/xml/ws/AsyncHandler;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -41,7 +41,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/DispatchImpl$1", "t
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback", "<init>", "(Ljavax/xml/ws/AsyncHandler;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback", "<init>", "(Ljakarta/xml/ws/AsyncHandler;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

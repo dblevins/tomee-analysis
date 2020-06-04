@@ -33,7 +33,7 @@ classWriter.visitInnerClass("org/apache/openejb/core/transaction/TransactionPoli
 classWriter.visitInnerClass("org/apache/openejb/core/transaction/TransactionPolicy$TransactionSynchronization$Status", "org/apache/openejb/core/transaction/TransactionPolicy$TransactionSynchronization", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljavax/ejb/EntityBean;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljakarta/ejb/EntityBean;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/entity/EntityInstanceManager;Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljavax/ejb/EntityBean;ZLorg/apache/openejb/core/entity/EntityInstanceManager$Key;Lorg/apache/openejb/core/transaction/TransactionPolicy;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/entity/EntityInstanceManager;Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljakarta/ejb/EntityBean;ZLorg/apache/openejb/core/entity/EntityInstanceManager$Key;Lorg/apache/openejb/core/transaction/TransactionPolicy;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -81,7 +81,7 @@ methodVisitor.visitLdcInsn("bean is null");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "org/apache/openejb/core/entity/EntityInstanceManager", "org/apache/openejb/BeanContext", "java/lang/Object", "javax/ejb/EntityBean", Opcodes.INTEGER, "org/apache/openejb/core/entity/EntityInstanceManager$Key", "org/apache/openejb/core/transaction/TransactionPolicy"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "org/apache/openejb/core/entity/EntityInstanceManager", "org/apache/openejb/BeanContext", "java/lang/Object", "jakarta/ejb/EntityBean", Opcodes.INTEGER, "org/apache/openejb/core/entity/EntityInstanceManager$Key", "org/apache/openejb/core/transaction/TransactionPolicy"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -127,7 +127,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "beanContext", "Lorg/apache/openejb/BeanContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "primaryKey", "Ljava/lang/Object;");
@@ -186,26 +186,26 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setEntityBean", "(Ljavax/ejb/EntityBean;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setEntityBean", "(Ljakarta/ejb/EntityBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "available", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getEntityBean", "()Ljavax/ejb/EntityBean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getEntityBean", "()Ljakarta/ejb/EntityBean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "available", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -239,7 +239,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "bean", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(MONITOREXIT);
@@ -255,7 +255,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "javax/ejb/EntityBean"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "jakarta/ejb/EntityBean"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/ThreadContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -272,13 +272,13 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadConte
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/EntityBean", "ejbStore", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/EntityBean", "ejbStore", "()V", true);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "exit", "(Lorg/apache/openejb/core/ThreadContext;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "javax/ejb/EntityBean", "org/apache/openejb/core/ThreadContext", "org/apache/openejb/core/ThreadContext"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper", "jakarta/ejb/EntityBean", "org/apache/openejb/core/ThreadContext", "org/apache/openejb/core/ThreadContext"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/entity/EntityInstanceManager", "access$100", "()Lorg/apache/openejb/util/Logger;", false);
 methodVisitor.visitLdcInsn("Exception occured during ejbStore()");

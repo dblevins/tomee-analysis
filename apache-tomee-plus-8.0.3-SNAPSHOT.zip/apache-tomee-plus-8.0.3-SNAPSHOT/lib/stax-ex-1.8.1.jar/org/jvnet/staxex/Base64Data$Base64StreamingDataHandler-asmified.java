@@ -31,14 +31,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/jvnet/staxex/Base64Data;Ljavax/activation/DataSource;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/jvnet/staxex/Base64Data;Ljakarta/activation/DataSource;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/jvnet/staxex/Base64Data$Base64StreamingDataHandler", "this$0", "Lorg/jvnet/staxex/Base64Data;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/jvnet/staxex/StreamingDataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/jvnet/staxex/StreamingDataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -47,8 +47,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readOnce", "()Ljava/io/InputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data$Base64StreamingDataHandler", "getDataSource", "()Ljavax/activation/DataSource;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data$Base64StreamingDataHandler", "getDataSource", "()Ljakarta/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

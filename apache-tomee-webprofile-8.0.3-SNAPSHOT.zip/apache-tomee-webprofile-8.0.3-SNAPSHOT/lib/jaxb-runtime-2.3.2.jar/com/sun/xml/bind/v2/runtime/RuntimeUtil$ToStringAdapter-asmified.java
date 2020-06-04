@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/RuntimeUtil$ToStringAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljava/lang/Object;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/RuntimeUtil$ToStringAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljava/lang/Object;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/RuntimeUtil$ToStringAdapter", "com/sun/xml/bind/v2/runtime/RuntimeUtil", "ToStringAdapter", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/RuntimeUtil$ToStringAda
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

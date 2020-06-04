@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "com/sun/faces/facelets/tag/composite/RelocateListener", null, "java/lang/Object", new String[] { "javax/faces/event/ComponentSystemEventListener", "javax/faces/component/StateHolder" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "com/sun/faces/facelets/tag/composite/RelocateListener", null, "java/lang/Object", new String[] { "jakarta/faces/event/ComponentSystemEventListener", "jakarta/faces/component/StateHolder" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$assertionsDisabled", "Z", null, null);
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -86,13 +86,13 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBackingResource", "(Ljavax/faces/component/UIComponent;)Ljavax/faces/application/Resource;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBackingResource", "(Ljakarta/faces/component/UIComponent;)Ljakarta/faces/application/Resource;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/facelets/tag/composite/RelocateListener", "$assertionsDisabled", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponent", "isCompositeComponent", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponent", "isCompositeComponent", "(Ljakarta/faces/component/UIComponent;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/AssertionError");
 methodVisitor.visitInsn(DUP);
@@ -101,10 +101,10 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.application.Resource.ComponentResource");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitLdcInsn("jakarta.faces.application.Resource.ComponentResource");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/Resource");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/Resource");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
@@ -115,20 +115,20 @@ methodVisitor.visitLdcInsn("Backing resource information not found in composite 
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/application/Resource"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/application/Resource"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "resourcesMatch", "(Ljavax/faces/application/Resource;Ljavax/faces/view/Location;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "resourcesMatch", "(Ljakarta/faces/application/Resource;Ljakarta/faces/view/Location;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Resource", "getResourceName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Resource", "getResourceName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/Location", "getPath", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/Location", "getPath", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "contains", "(Ljava/lang/CharSequence;)Z", false);
 methodVisitor.visitInsn(IRETURN);

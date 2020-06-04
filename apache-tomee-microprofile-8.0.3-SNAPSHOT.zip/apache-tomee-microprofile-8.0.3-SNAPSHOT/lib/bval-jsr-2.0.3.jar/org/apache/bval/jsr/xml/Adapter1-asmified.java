@@ -22,28 +22,28 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/xml/Adapter1", "Ljavax/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljavax/validation/executable/ExecutableType;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/xml/Adapter1", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljakarta/validation/executable/ExecutableType;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljava/lang/String;)Ljavax/validation/executable/ExecutableType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljava/lang/String;)Ljakarta/validation/executable/ExecutableType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/validation/executable/ExecutableType", "valueOf", "(Ljava/lang/String;)Ljavax/validation/executable/ExecutableType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/validation/executable/ExecutableType", "valueOf", "(Ljava/lang/String;)Ljakarta/validation/executable/ExecutableType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/validation/executable/ExecutableType;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/validation/executable/ExecutableType;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -53,7 +53,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/validation/executable/ExecutableType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/validation/executable/ExecutableType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -63,8 +63,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/executable/ExecutableType");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/xml/Adapter1", "marshal", "(Ljavax/validation/executable/ExecutableType;)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/executable/ExecutableType");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/xml/Adapter1", "marshal", "(Ljakarta/validation/executable/ExecutableType;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -75,7 +75,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/xml/Adapter1", "unmarshal", "(Ljava/lang/String;)Ljavax/validation/executable/ExecutableType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/xml/Adapter1", "unmarshal", "(Ljava/lang/String;)Ljakarta/validation/executable/ExecutableType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

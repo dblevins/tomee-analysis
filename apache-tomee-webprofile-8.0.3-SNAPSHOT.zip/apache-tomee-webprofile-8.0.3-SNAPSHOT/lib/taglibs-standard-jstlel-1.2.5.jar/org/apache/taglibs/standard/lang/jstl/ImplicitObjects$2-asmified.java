@@ -24,20 +24,20 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", null, "org/apache/taglibs/standard/lang/jstl/EnumeratedMap", null);
 
-classWriter.visitOuterClass("org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "createRequestScopeMap", "(Ljavax/servlet/jsp/PageContext;)Ljava/util/Map;");
+classWriter.visitOuterClass("org/apache/taglibs/standard/lang/jstl/ImplicitObjects", "createRequestScopeMap", "(Ljakarta/servlet/jsp/PageContext;)Ljava/util/Map;");
 
 classWriter.visitInnerClass("org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljavax/servlet/jsp/PageContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljakarta/servlet/jsp/PageContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/jsp/PageContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/jsp/PageContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/lang/jstl/EnumeratedMap", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -48,9 +48,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "enumerateKeys", "()Ljava/util/Enumeration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "getAttributeNamesInScope", "(I)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getAttributeNamesInScope", "(I)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -63,11 +63,11 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/String");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2", "val$context", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "getAttribute", "(Ljava/lang/String;I)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getAttribute", "(Ljava/lang/String;I)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(ACONST_NULL);

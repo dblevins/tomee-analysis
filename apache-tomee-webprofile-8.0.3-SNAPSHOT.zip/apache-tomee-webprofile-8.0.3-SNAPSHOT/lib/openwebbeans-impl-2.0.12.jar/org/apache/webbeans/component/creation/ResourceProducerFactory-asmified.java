@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/creation/ResourceProducerFactory", "<P:Ljava/lang/Object;>Lorg/apache/webbeans/portable/ProviderBasedProducerFactory<TP;>;", "org/apache/webbeans/portable/ProviderBasedProducerFactory", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "member", "Ljavax/enterprise/inject/spi/AnnotatedField;", "Ljavax/enterprise/inject/spi/AnnotatedField<-TP;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "member", "Ljakarta/enterprise/inject/spi/AnnotatedField;", "Ljakarta/enterprise/inject/spi/AnnotatedField<-TP;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "owner", "Ljavax/enterprise/inject/spi/Bean;", "Ljavax/enterprise/inject/spi/Bean<TP;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "owner", "Ljakarta/enterprise/inject/spi/Bean;", "Ljakarta/enterprise/inject/spi/Bean<TP;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,20 +37,20 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ref", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ZLjavax/enterprise/inject/spi/Bean;Lorg/apache/webbeans/component/ResourceProvider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/spi/api/ResourceReference;)V", "(ZLjavax/enterprise/inject/spi/Bean<TP;>;Lorg/apache/webbeans/component/ResourceProvider<TP;>;Ljava/lang/Class<TP;>;Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedField<-TP;>;Lorg/apache/webbeans/spi/api/ResourceReference<**>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ZLjakarta/enterprise/inject/spi/Bean;Lorg/apache/webbeans/component/ResourceProvider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/spi/api/ResourceReference;)V", "(ZLjakarta/enterprise/inject/spi/Bean<TP;>;Lorg/apache/webbeans/component/ResourceProvider<TP;>;Ljava/lang/Class<TP;>;Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedField<-TP;>;Lorg/apache/webbeans/spi/api/ResourceReference<**>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "<init>", "(ZLjavax/inject/Provider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ProviderBasedProducerFactory", "<init>", "(ZLjakarta/inject/Provider;Ljava/lang/Class;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljavax/enterprise/inject/spi/AnnotatedField;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljakarta/enterprise/inject/spi/AnnotatedField;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "owner", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "owner", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "ref", "Lorg/apache/webbeans/spi/api/ResourceReference;");
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(5, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;)Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;)Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -67,17 +67,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBean
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/portable/ResourceProducer");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "owner", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "owner", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljavax/enterprise/inject/spi/AnnotatedField;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljakarta/enterprise/inject/spi/AnnotatedField;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "ref", "Lorg/apache/webbeans/spi/api/ResourceReference;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ResourceProducer", "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/ResourceProducer", "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/AnnotatedField;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/spi/api/ResourceReference;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljavax/enterprise/inject/spi/AnnotatedField;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/WebBeansUtil", "fireProcessProducerEvent", "(Ljavax/enterprise/inject/spi/Producer;Ljavax/enterprise/inject/spi/AnnotatedMember;)Ljavax/enterprise/inject/spi/Producer;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/ResourceProducerFactory", "member", "Ljakarta/enterprise/inject/spi/AnnotatedField;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/WebBeansUtil", "fireProcessProducerEvent", "(Ljakarta/enterprise/inject/spi/Producer;Ljakarta/enterprise/inject/spi/AnnotatedMember;)Ljakarta/enterprise/inject/spi/Producer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();

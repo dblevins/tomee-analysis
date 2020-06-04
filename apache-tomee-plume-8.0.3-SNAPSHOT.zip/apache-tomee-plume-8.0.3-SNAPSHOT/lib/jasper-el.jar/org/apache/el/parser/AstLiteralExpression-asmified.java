@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitInsn(ARETURN);
@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstLiteralExpression", "image", "Ljava/lang/String;");

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", null, "javax/faces/view/ViewDeclarationLanguageFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", null, "jakarta/faces/view/ViewDeclarationLanguageFactory", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARAM_DISABLE_JSF_FACELET", "Ljava/lang/String;", null, "javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARAM_DISABLE_JSF_FACELET", "Ljava/lang/String;", null, "jakarta.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
 fieldVisitor.visitEnd();
 }
 {
@@ -45,14 +45,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "_supportedLan
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "_supportedVDLs", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/view/ViewDeclarationLanguage;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "_supportedVDLs", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/view/ViewDeclarationLanguage;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/ViewDeclarationLanguageFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/ViewDeclarationLanguageFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "_supportedVDLs", "Ljava/util/List;");
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "(Ljava/lang/String;)Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "(Ljava/lang/String;)Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "_initialized", "Z");
@@ -99,7 +99,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/ViewDecl
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy", "getViewDeclarationLanguage", "()Ljavax/faces/view/ViewDeclarationLanguage;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy", "getViewDeclarationLanguage", "()Ljakarta/faces/view/ViewDeclarationLanguage;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -113,7 +113,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllViewDeclarationLanguages", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/view/ViewDeclarationLanguage;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllViewDeclarationLanguages", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/view/ViewDeclarationLanguage;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "_initialized", "Z");
@@ -152,7 +152,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy", "getViewDeclarationLanguage", "()Ljavax/faces/view/ViewDeclarationLanguage;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy", "getViewDeclarationLanguage", "()Ljakarta/faces/view/ViewDeclarationLanguage;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(4, 1);
@@ -178,19 +178,19 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "_initialized", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "isFacelets2Enabled", "(Ljavax/faces/context/FacesContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "isFacelets2Enabled", "(Ljakarta/faces/context/FacesContext;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "logWarningIfLegacyFaceletViewHandlerIsPresent", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "logWarningIfLegacyFaceletViewHandlerIsPresent", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/config/MyfacesConfig", "isSupportJSPAndFacesEL", "()Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -215,7 +215,7 @@ methodVisitor.visitInsn(AASTORE);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/FacesContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy");
@@ -253,12 +253,12 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isFacelets2Enabled", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isFacelets2Enabled", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitLdcInsn("javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitLdcInsn("jakarta.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -292,11 +292,11 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "logWarningIfLegacyFaceletViewHandlerIsPresent", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "logWarningIfLegacyFaceletViewHandlerIsPresent", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getViewHandler", "()Ljavax/faces/application/ViewHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("com.sun.facelets.FaceletViewHandler");
@@ -311,7 +311,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLogg
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "WARNING", "Ljava/util/logging/Level;");
-methodVisitor.visitLdcInsn("Your faces-config.xml contains the com.sun.facelets.FaceletViewHandler class.\nYou need to remove it since you have not disabled the \"new\" Facelets-2 version with the javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER context parameter");
+methodVisitor.visitLdcInsn("Your faces-config.xml contains the com.sun.facelets.FaceletViewHandler class.\nYou need to remove it since you have not disabled the \"new\" Facelets-2 version with the jakarta.faces.DISABLE_FACELET_JSF_VIEWHANDLER context parameter");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);

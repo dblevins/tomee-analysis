@@ -42,20 +42,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isJsp21", "(Ljavax/servlet/ServletContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isJsp21", "(Ljakarta/servlet/ServletContext;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ClassNotFoundException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isRunningOnGoogleAppEngine", "(Ljavax/servlet/ServletContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isRunningOnGoogleAppEngine", "(Ljakarta/servlet/ServletContext;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.JspApplicationContext");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.JspApplicationContext");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(ICONST_1);
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isRunningOnGoogleAppEngine", "(Ljavax/servlet/ServletContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isRunningOnGoogleAppEngine", "(Ljakarta/servlet/ServletContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ContainerUtils", "runningOnGoogleAppEngine", "Ljava/lang/Boolean;");
 Label label0 = new Label();
@@ -127,14 +127,14 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getServerInfo", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getServerInfo", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isServerGoogleAppEngine", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isRunningOnGoogleAppEngine", "(Ljavax/faces/context/ExternalContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isRunningOnGoogleAppEngine", "(Ljakarta/faces/context/ExternalContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/util/ContainerUtils", "runningOnGoogleAppEngine", "Ljava/lang/Boolean;");
 Label label0 = new Label();
@@ -145,7 +145,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ExternalContextUtils", "getServerInfo", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ExternalContextUtils", "getServerInfo", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isServerGoogleAppEngine", "(Ljava/lang/String;)Z", false);

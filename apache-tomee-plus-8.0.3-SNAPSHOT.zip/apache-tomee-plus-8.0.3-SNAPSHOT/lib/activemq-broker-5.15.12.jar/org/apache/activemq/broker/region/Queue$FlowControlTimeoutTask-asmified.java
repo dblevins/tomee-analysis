@@ -84,7 +84,7 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/command/ExceptionResponse");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/ResourceAllocationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/ResourceAllocationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -105,7 +105,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(". See http://activemq.apache.org/producer-flow-control.html for more info");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/command/ExceptionResponse", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);

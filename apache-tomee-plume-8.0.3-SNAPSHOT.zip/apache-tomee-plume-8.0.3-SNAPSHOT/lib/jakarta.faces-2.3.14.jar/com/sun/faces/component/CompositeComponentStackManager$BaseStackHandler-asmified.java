@@ -31,7 +31,7 @@ classWriter.visitInnerClass("com/sun/faces/component/CompositeComponentStackMana
 classWriter.visitInnerClass("com/sun/faces/component/CompositeComponentStackManager$StackHandler", "com/sun/faces/component/CompositeComponentStackManager", "StackHandler", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "stack", "Ljava/util/Stack;", "Ljava/util/Stack<Ljavax/faces/component/UIComponent;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "stack", "Ljava/util/Stack;", "Ljava/util/Stack<Ljakarta/faces/component/UIComponent;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,7 +61,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStack", "(Z)Ljava/util/Stack;", "(Z)Ljava/util/Stack<Ljavax/faces/component/UIComponent;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStack", "(Z)Ljava/util/Stack;", "(Z)Ljava/util/Stack<Ljakarta/faces/component/UIComponent;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/CompositeComponentStackManager$BaseStackHandler", "stack", "Ljava/util/Stack;");
@@ -83,7 +83,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "peek", "()Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "peek", "()Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/CompositeComponentStackManager$BaseStackHandler", "stack", "Ljava/util/Stack;");
@@ -96,7 +96,7 @@ methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/CompositeComponentStackManager$BaseStackHandler", "stack", "Ljava/util/Stack;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Stack", "peek", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIComponent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIComponent");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/ee/beans/ValidatorProvider", "Ljava/lang/Object;Ljavax/inject/Provider<Ljavax/validation/Validator;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/inject/Provider", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/ee/beans/ValidatorProvider", "Ljava/lang/Object;Ljakarta/inject/Provider<Ljakarta/validation/Validator;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/inject/Provider", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;", null, null);
@@ -41,7 +41,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljavax/validation/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljakarta/validation/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/beans/ValidatorProvider", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -62,7 +62,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ValidatorService", "getDefaultValidator", "()Ljavax/validation/Validator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ValidatorService", "getDefaultValidator", "()Ljakarta/validation/Validator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/webbeans/spi/ValidatorService"}, 0, null);
@@ -75,7 +75,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "readResolve", "()Ljava/lang/Object;", null, new String[] { "java/io/ObjectStreamException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ee/beans/ValidatorProvider", "get", "()Ljavax/validation/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ee/beans/ValidatorProvider", "get", "()Ljakarta/validation/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,7 +84,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "get", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ee/beans/ValidatorProvider", "get", "()Ljavax/validation/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ee/beans/ValidatorProvider", "get", "()Ljakarta/validation/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

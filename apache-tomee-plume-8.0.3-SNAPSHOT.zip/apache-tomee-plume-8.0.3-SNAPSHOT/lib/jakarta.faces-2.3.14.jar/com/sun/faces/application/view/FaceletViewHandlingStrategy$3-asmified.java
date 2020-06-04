@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/view/FaceletViewHandlingStrategy$3", null, "java/lang/Object", new String[] { "javax/faces/component/ContextCallback" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/view/FaceletViewHandlingStrategy$3", null, "java/lang/Object", new String[] { "jakarta/faces/component/ContextCallback" });
 
-classWriter.visitOuterClass("com/sun/faces/application/view/FaceletViewHandlingStrategy", "locateComponentByClientId", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Ljavax/faces/component/UIComponent;");
+classWriter.visitOuterClass("com/sun/faces/application/view/FaceletViewHandlingStrategy", "locateComponentByClientId", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;");
 
 classWriter.visitInnerClass("com/sun/faces/application/view/FaceletViewHandlingStrategy$3", null, null, 0);
 
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/FaceletViewHandlingStrategy$3", "val$found", "Ljava/util/List;");

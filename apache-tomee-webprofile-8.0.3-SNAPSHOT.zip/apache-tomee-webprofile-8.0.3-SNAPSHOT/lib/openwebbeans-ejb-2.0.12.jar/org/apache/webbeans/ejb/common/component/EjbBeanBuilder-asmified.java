@@ -31,15 +31,15 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "webBeansContex
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;", "Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;", "Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;", "Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;", "Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -57,16 +57,16 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildInjectionTarget", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)Ljavax/enterprise/inject/spi/InjectionTarget;", "(Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;)Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildInjectionTarget", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List;Ljava/util/List;)Ljakarta/enterprise/inject/spi/InjectionTarget;", "(Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;)Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder$1");
 methodVisitor.visitInsn(DUP);
@@ -74,7 +74,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder$1", "<init>", "(Lorg/apache/webbeans/ejb/common/component/EjbBeanBuilder;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder$1", "<init>", "(Lorg/apache/webbeans/ejb/common/component/EjbBeanBuilder;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
@@ -88,11 +88,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getWebBeansUtil", "()Lorg/apache/webbeans/util/WebBeansUtil;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanAttributes", "getStereotypes", "()Ljava/util/Set;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/WebBeansUtil", "isBeanEnabled", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;)Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanAttributes", "getStereotypes", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/WebBeansUtil", "isBeanEnabled", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;)Z", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "createBean", "(Ljava/lang/Class;Z)Lorg/apache/webbeans/ejb/common/component/BaseEjbBean;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
@@ -107,8 +107,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBean", "()Lorg/apache/we
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/ejb/common/component/EjbBeanBuilder", "createBean", "(Ljava/lang/Class;)Lorg/apache/webbeans/ejb/common/component/BaseEjbBean;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -127,7 +127,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getInstance", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getInstance", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

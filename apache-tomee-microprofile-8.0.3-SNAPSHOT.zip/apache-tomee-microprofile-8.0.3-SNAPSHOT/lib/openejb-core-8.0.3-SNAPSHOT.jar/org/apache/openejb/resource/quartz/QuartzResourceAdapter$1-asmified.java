@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/resource/quartz/QuartzResourceAdapter$1", null, "java/lang/Thread", null);
 
-classWriter.visitOuterClass("org/apache/openejb/resource/quartz/QuartzResourceAdapter", "start", "(Ljavax/resource/spi/BootstrapContext;)V");
+classWriter.visitOuterClass("org/apache/openejb/resource/quartz/QuartzResourceAdapter", "start", "(Ljakarta/resource/spi/BootstrapContext;)V");
 
 classWriter.visitInnerClass("org/apache/openejb/resource/quartz/QuartzResourceAdapter$1", null, null, 0);
 

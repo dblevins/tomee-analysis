@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", null, "javax/mail/internet/MimeMessage", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", null, "jakarta/mail/internet/MimeMessage", null);
 
-classWriter.visitInnerClass("javax/mail/Flags$Flag", "javax/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/Flags$Flag", "jakarta/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(0, "messageID", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljavax/mail/Session;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljakarta/mail/Session;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,12 +51,12 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "contentLoaded", "Z", null,
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/geronimo/javamail/store/nntp/NNTPFolder;Lorg/apache/geronimo/javamail/store/nntp/NNTPStore;ILjava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/geronimo/javamail/store/nntp/NNTPFolder;Lorg/apache/geronimo/javamail/store/nntp/NNTPStore;ILjava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "<init>", "(Ljavax/mail/Folder;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "<init>", "(Ljakarta/mail/Folder;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "messageID", "Ljava/lang/String;");
@@ -74,50 +74,50 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "store", "Lorg/apache/geronimo/javamail/store/nntp/NNTPStore;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPStore", "getSession", "()Ljavax/mail/Session;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "session", "Ljavax/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPStore", "getSession", "()Ljakarta/mail/Session;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPStore", "getConnection", "()Lorg/apache/geronimo/javamail/transport/nntp/NNTPConnection;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "connection", "Lorg/apache/geronimo/javamail/transport/nntp/NNTPConnection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPFolder", "getPermanentFlags", "()Ljavax/mail/Flags;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPFolder", "getPermanentFlags", "()Ljakarta/mail/Flags;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljakarta/mail/Flags;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPFolder", "isSeen", "(I)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljavax/mail/Flags;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Flags$Flag", "SEEN", "Ljavax/mail/Flags$Flag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Flags", "add", "(Ljavax/mail/Flags$Flag;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljakarta/mail/Flags;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Flags$Flag", "SEEN", "Ljakarta/mail/Flags$Flag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Flags", "add", "(Ljakarta/mail/Flags$Flag;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljavax/mail/Flags;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Flags$Flag", "SEEN", "Ljavax/mail/Flags$Flag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Flags", "remove", "(Ljavax/mail/Flags$Flag;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "flags", "Ljakarta/mail/Flags;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Flags$Flag", "SEEN", "Ljakarta/mail/Flags$Flag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Flags", "remove", "(Ljakarta/mail/Flags$Flag;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadContent", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getSize", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getSize", "()I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLineCount", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLineCount", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -149,176 +149,176 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentStream", "()Ljava/io/InputStream;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentStream", "()Ljava/io/InputStream;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadArticle", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getContentStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getContentStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaders", "()Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaders", "()Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaderLines", "()Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaderLines", "()Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("NNTP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("NNTP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeHeader", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeHeader", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("NNTP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeaderLine", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeaderLine", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveChanges", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveChanges", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("NNTP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadHeaders", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadHeaders", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -362,14 +362,14 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Error retrieving article headers from server");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -379,7 +379,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitInsn(RETURN);
@@ -387,14 +387,14 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateHeaders", "(Ljava/io/InputStream;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateHeaders", "(Ljava/io/InputStream;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/internet/InternetHeaders");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/internet/InternetHeaders");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/InternetHeaders", "<init>", "(Ljava/io/InputStream;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/InternetHeaders", "<init>", "(Ljava/io/InputStream;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "headersLoaded", "Z");
@@ -403,7 +403,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadContent", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadContent", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -449,14 +449,14 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Error retrieving article body from server");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -466,7 +466,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitInsn(RETURN);
@@ -474,7 +474,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadArticle", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadArticle", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -525,14 +525,14 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Error retrieving article from server");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -542,7 +542,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitInsn(RETURN);
@@ -550,7 +550,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateContent", "(Ljava/io/InputStream;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateContent", "(Ljava/io/InputStream;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -596,11 +596,11 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Error retrieving message body from server");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitInsn(RETURN);
@@ -617,15 +617,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlags", "(Ljavax/mail/Flags;Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlags", "(Ljakarta/mail/Flags;Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Flags$Flag", "SEEN", "Ljavax/mail/Flags$Flag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Flags", "contains", "(Ljavax/mail/Flags$Flag;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Flags$Flag", "SEEN", "Ljakarta/mail/Flags$Flag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Flags", "contains", "(Ljakarta/mail/Flags$Flag;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/nntp/NNTPFolder");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/nntp/NNTPMessage", "msgnum", "I");
@@ -635,7 +635,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "setFlags", "(Ljavax/mail/Flags;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "setFlags", "(Ljakarta/mail/Flags;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

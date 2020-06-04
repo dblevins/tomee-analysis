@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_SUPER, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper$1", null, "javax/servlet/ServletOutputStream", null);
+classWriter.visit(V1_5, ACC_SUPER, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper$1", null, "jakarta/servlet/ServletOutputStream", null);
 
 classWriter.visitOuterClass("org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", null, null);
 
@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper$1", "this$1", "Lorg/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletOutputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletOutputStream", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/jasper/runtime/JspFac
 classWriter.visitInnerClass("org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "org/apache/jasper/runtime/JspFactoryImpl", "PageContextPool", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pool", "[Ljavax/servlet/jsp/PageContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pool", "[Ljakarta/servlet/jsp/PageContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -44,14 +44,14 @@ methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspFactoryImpl", "access$200", "()I", false);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/PageContext");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/PageContext");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljavax/servlet/jsp/PageContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljakarta/servlet/jsp/PageContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
@@ -67,7 +67,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IADD);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -79,7 +79,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljavax/servlet/jsp/PageContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljakarta/servlet/jsp/PageContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -88,7 +88,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFLT, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "pool", "[Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
 methodVisitor.visitInsn(AALOAD);
@@ -100,7 +100,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PageContextPool", "current", "I");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/jsp/PageContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/jsp/PageContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);

@@ -41,13 +41,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "filter", "Lorg/eclipse/persi
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/UriInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/UriInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "getQueryParameters", "(Ljavax/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "getQueryParameters", "(Ljakarta/ws/rs/core/UriInfo;)Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/features/fieldsfiltering/FieldsFilteringValidator", "queryParameters", "Ljava/util/Map;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/cdi/transactional/TransactionContext", null, "org/apache/webbeans/context/AbstractContext", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/cdi/transactional/TransactionContext", null, "org/apache/webbeans/context/AbstractContext", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/openejb/cdi/transactional/TransactionContext$TransactionalMapHandler", "org/apache/openejb/cdi/transactional/TransactionContext", "TransactionalMapHandler", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAP
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,14 +42,14 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/TransactionScoped;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/AbstractContext", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/geronimo/transaction/manager/GeronimoTransactionManager;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "geronimoTxMgr", "Z");
 methodVisitor.visitInsn(RETURN);
@@ -65,9 +65,9 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljavax/transaction/TransactionManager;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljakarta/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 1);
 methodVisitor.visitVarInsn(ILOAD, 1);
 Label label3 = new Label();
@@ -116,7 +116,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/transactional/TransactionContext", "isActive", "()Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/enterprise/context/ContextNotActiveException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/context/ContextNotActiveException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -130,7 +130,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" is not active");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/context/ContextNotActiveException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/context/ContextNotActiveException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -150,10 +150,10 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/cdi/transactional/Transacti
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionSynchronizationRegistry;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/TransactionSynchronizationRegistry;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/transactional/TransactionContext$TransactionalMapHandler", "<init>", "(Lorg/apache/openejb/cdi/transactional/TransactionContext;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/transactional/TransactionContext$TransactionalMapHandler", "<init>", "(Lorg/apache/openejb/cdi/transactional/TransactionContext;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Proxy", "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
@@ -202,10 +202,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/openejb/cdi/transactional/TransactionContext;)Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/openejb/cdi/transactional/TransactionContext;)Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/transactional/TransactionContext", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

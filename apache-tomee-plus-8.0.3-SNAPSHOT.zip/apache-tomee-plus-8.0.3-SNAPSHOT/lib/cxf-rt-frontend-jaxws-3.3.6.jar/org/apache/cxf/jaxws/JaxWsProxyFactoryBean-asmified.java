@@ -31,7 +31,7 @@ annotationVisitor0.visitEnd();
 classWriter.visitInnerClass("org/apache/cxf/common/classloader/ClassLoaderUtils$ClassLoaderHolder", "org/apache/cxf/common/classloader/ClassLoaderUtils", "ClassLoaderHolder", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(0, "handlers", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+fieldVisitor = classWriter.visitField(0, "handlers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -109,7 +109,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlers", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlers", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxWsProxyFactoryBean", "handlers", "Ljava/util/List;");
@@ -124,7 +124,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxWsProxyFactoryBean", "handlers", "Ljava/util/List;");
@@ -160,8 +160,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/endpoint/Client", "getEndpoint", "()Lorg/apache/cxf/endpoint/Endpoint;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl", "getJaxwsBinding", "()Ljavax/xml/ws/Binding;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxWsClientProxy", "<init>", "(Lorg/apache/cxf/endpoint/Client;Ljavax/xml/ws/Binding;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl", "getJaxwsBinding", "()Ljakarta/xml/ws/Binding;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxWsClientProxy", "<init>", "(Lorg/apache/cxf/endpoint/Client;Ljakarta/xml/ws/Binding;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/JaxWsClientProxy", "getRequestContext", "()Ljava/util/Map;", false);
@@ -191,7 +191,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/BindingProvider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/BindingProvider;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
@@ -432,7 +432,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/Handler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/Handler");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
@@ -455,7 +455,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/injection/Re
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/ws/handler/Handler"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/ws/handler/Handler"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/injection/ResourceInjector", "inject", "(Ljava/lang/Object;)V", false);
@@ -468,9 +468,9 @@ methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/jaxws/JaxWsProxyFactoryBean", "org/apache/cxf/jaxws/JaxWsClientProxy", "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean", "java/util/List"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/JaxWsClientProxy", "getBinding", "()Ljavax/xml/ws/Binding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/JaxWsClientProxy", "getBinding", "()Ljakarta/xml/ws/Binding;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/Binding", "setHandlerChain", "(Ljava/util/List;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/Binding", "setHandlerChain", "(Ljava/util/List;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();

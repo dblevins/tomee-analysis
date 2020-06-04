@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/weaving/PersistenceWeaver", null, "java/lang/Object", new String[] { "javax/persistence/spi/ClassTransformer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/weaving/PersistenceWeaver", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/ClassTransformer" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "classDetailsMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/weaving/ClassDetails;>;", null);

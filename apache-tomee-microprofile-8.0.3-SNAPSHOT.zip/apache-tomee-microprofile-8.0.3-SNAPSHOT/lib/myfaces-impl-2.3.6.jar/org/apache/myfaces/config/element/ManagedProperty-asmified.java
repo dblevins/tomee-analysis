@@ -74,7 +74,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getListEntri
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRuntimeValue", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRuntimeValue", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -82,7 +82,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isValueRefer
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValueBinding", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/el/ValueBinding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValueBinding", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/el/ValueBinding;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

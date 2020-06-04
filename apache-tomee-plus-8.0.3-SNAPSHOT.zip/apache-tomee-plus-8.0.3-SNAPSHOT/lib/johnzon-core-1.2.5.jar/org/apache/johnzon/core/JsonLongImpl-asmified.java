@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/johnzon/core/JsonLongImpl", null, "java/lang/Object", new String[] { "javax/json/JsonNumber", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/johnzon/core/JsonLongImpl", null, "java/lang/Object", new String[] { "jakarta/json/JsonNumber", "java/io/Serializable" });
 
-classWriter.visitInnerClass("javax/json/JsonValue$ValueType", "javax/json/JsonValue", "ValueType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/JsonValue$ValueType", "jakarta/json/JsonValue", "ValueType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "J", null, null);
@@ -164,9 +164,9 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueType", "()Ljavax/json/JsonValue$ValueType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueType", "()Ljakarta/json/JsonValue$ValueType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/JsonValue$ValueType", "NUMBER", "Ljavax/json/JsonValue$ValueType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/JsonValue$ValueType", "NUMBER", "Ljakarta/json/JsonValue$ValueType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -232,16 +232,16 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTE
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonNumber");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonNumber", "bigDecimalValue", "()Ljava/math/BigDecimal;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonNumber");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonNumber", "bigDecimalValue", "()Ljava/math/BigDecimal;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonLongImpl", "bigDecimalValue", "()Ljava/math/BigDecimal;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/math/BigDecimal", "equals", "(Ljava/lang/Object;)Z", false);

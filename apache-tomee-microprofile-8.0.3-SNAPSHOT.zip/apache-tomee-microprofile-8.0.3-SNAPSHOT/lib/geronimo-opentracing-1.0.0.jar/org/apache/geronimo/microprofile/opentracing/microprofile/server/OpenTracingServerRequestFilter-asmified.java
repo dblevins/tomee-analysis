@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter", null, "java/lang/Object", new String[] { "javax/ws/rs/container/ContainerRequestFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/ContainerRequestFilter" });
 
 classWriter.visitInnerClass("io/opentracing/Tracer$SpanBuilder", "io/opentracing/Tracer", "SpanBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -68,12 +68,12 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/geronimo/microprofile/opentracing/microprofile/client/OpenTracingClientRequestFilter;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -110,7 +110,7 @@ methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;",
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("get", "(Lorg/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter;Ljavax/ws/rs/container/ContainerRequestContext;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter", "lambda$filter$0", "(Ljavax/ws/rs/container/ContainerRequestContext;)Lio/opentracing/SpanContext;", false), Type.getType("()Lio/opentracing/SpanContext;")});
+methodVisitor.visitInvokeDynamicInsn("get", "(Lorg/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter;Ljakarta/ws/rs/container/ContainerRequestContext;)Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter", "lambda$filter$0", "(Ljakarta/ws/rs/container/ContainerRequestContext;)Lio/opentracing/SpanContext;", false), Type.getType("()Lio/opentracing/SpanContext;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -133,13 +133,13 @@ methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitFieldInsn(GETSTATIC, "io/opentracing/tag/Tags", "HTTP_METHOD", "Lio/opentracing/tag/StringTag;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getMethod", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getMethod", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "io/opentracing/tag/StringTag", "set", "(Lio/opentracing/Span;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "io/opentracing/tag/Tags", "HTTP_URL", "Lio/opentracing/tag/StringTag;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getUriInfo", "()Ljavax/ws/rs/core/UriInfo;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getUriInfo", "()Ljakarta/ws/rs/core/UriInfo;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "io/opentracing/tag/StringTag", "set", "(Lio/opentracing/Span;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label2);
@@ -148,13 +148,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$filter$0", "(Ljavax/ws/rs/container/ContainerRequestContext;)Lio/opentracing/SpanContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$filter$0", "(Ljakarta/ws/rs/container/ContainerRequestContext;)Lio/opentracing/SpanContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter", "tracer", "Lio/opentracing/Tracer;");
@@ -162,8 +162,8 @@ methodVisitor.visitFieldInsn(GETSTATIC, "io/opentracing/propagation/Format$Built
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/opentracing/impl/JaxRsHeaderTextMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/opentracing/impl/JaxRsHeaderTextMap", "<init>", "(Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/opentracing/impl/JaxRsHeaderTextMap", "<init>", "(Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "io/opentracing/Tracer", "extract", "(Lio/opentracing/propagation/Format;Ljava/lang/Object;)Lio/opentracing/SpanContext;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);

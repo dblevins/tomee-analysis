@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/AnyAnnotationLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Any;>;Ljavax/enterprise/inject/Any;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/Any" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/AnyAnnotationLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Any;>;Ljakarta/enterprise/inject/Any;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/Any" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

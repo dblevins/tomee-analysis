@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB_APP_2_2_RESOURCE", "Ljava/lang/String;", null, "javax/servlet/resources/web-app_2_2.dtd");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB_APP_2_2_RESOURCE", "Ljava/lang/String;", null, "jakarta/servlet/resources/web-app_2_2.dtd");
 fieldVisitor.visitEnd();
 }
 {
@@ -53,11 +53,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB_APP_2_3_RESOURCE", "Ljava/lang/String;", null, "javax/servlet/resources/web-app_2_3.dtd");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB_APP_2_3_RESOURCE", "Ljava/lang/String;", null, "jakarta/servlet/resources/web-app_2_3.dtd");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_context", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_context", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,13 +65,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_webXml", "Lorg/apache/myfac
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -130,9 +130,9 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitLdcInsn("/WEB-INF/web.xml");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -179,10 +179,10 @@ Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/w3c/dom/Document", "org/w3c/dom/Element"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("No valid web-app root element found!");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -201,16 +201,16 @@ methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "SEVERE", "Lj
 methodVisitor.visitLdcInsn("Unable to parse web.xml");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getWebXmlLastModified", "(Ljavax/faces/context/ExternalContext;)J", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getWebXmlLastModified", "(Ljakarta/faces/context/ExternalContext;)J", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -219,7 +219,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("/WEB-INF/web.xml");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label3 = new Label();
@@ -251,9 +251,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createContextInputSource", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser", "_context", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();

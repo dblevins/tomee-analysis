@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", null, "java/lang/Object", new String[] { "javax/faces/event/PhaseListener", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", null, "java/lang/Object", new String[] { "jakarta/faces/event/PhaseListener", "java/io/Serializable" });
 
 classWriter.visitInnerClass("com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "com/sun/faces/taglib/jsf_core/PhaseListenerTag", "BindingPhaseListener", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,92 +31,92 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "type", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "type", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "binding", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "binding", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "type", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "type", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "binding", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "binding", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterPhase", "(Ljavax/faces/event/PhaseEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterPhase", "(Ljakarta/faces/event/PhaseEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljavax/faces/event/PhaseListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljakarta/faces/event/PhaseListener;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/event/PhaseListener", "afterPhase", "(Ljavax/faces/event/PhaseEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/event/PhaseListener", "afterPhase", "(Ljakarta/faces/event/PhaseEvent;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/event/PhaseListener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/event/PhaseListener"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforePhase", "(Ljavax/faces/event/PhaseEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforePhase", "(Ljakarta/faces/event/PhaseEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljavax/faces/event/PhaseListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljakarta/faces/event/PhaseListener;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/event/PhaseListener", "beforePhase", "(Ljavax/faces/event/PhaseEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/event/PhaseListener", "beforePhase", "(Ljakarta/faces/event/PhaseEvent;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/event/PhaseListener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/event/PhaseListener"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseId", "()Ljavax/faces/event/PhaseId;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseId", "()Ljakarta/faces/event/PhaseId;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljavax/faces/event/PhaseListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "getPhaseListener", "()Ljakarta/faces/event/PhaseListener;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/event/PhaseListener", "getPhaseId", "()Ljavax/faces/event/PhaseId;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/event/PhaseListener", "getPhaseId", "()Ljakarta/faces/event/PhaseId;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/event/PhaseListener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/event/PhaseListener"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseListener", "()Ljavax/faces/event/PhaseListener;", null, new String[] { "javax/faces/event/AbortProcessingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseListener", "()Ljakarta/faces/event/PhaseListener;", null, new String[] { "jakarta/faces/event/AbortProcessingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "type", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "type", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "binding", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "getListenerInstance", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/PhaseListener");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/taglib/jsf_core/PhaseListenerTag$BindingPhaseListener", "binding", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "getListenerInstance", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/PhaseListener");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -124,7 +124,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/event/PhaseListener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/event/PhaseListener"}, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/taglib/jsf_core/PhaseListenerTag", "access$000", "()Ljava/util/logging/Logger;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "WARNING", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);

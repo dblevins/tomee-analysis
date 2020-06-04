@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAX
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "readerProviderCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyReader<*>;>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "readerProviderCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyReader<*>;>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "writerProviderCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyWriter<*>;>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "writerProviderCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyWriter<*>;>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReaders", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljavax/ws/rs/core/MediaType;)Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyReader<*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReaders", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljakarta/ws/rs/core/MediaType;)Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyReader<*>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "readerProviderCache", "Ljava/util/Map;");
@@ -79,7 +79,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "readerProviderCache", "Ljava/util/Map;");
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriters", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljavax/ws/rs/core/MediaType;)Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyWriter<*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriters", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/util/List;", "(Ljava/lang/Class<*>;Ljakarta/ws/rs/core/MediaType;)Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyWriter<*>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "writerProviderCache", "Ljava/util/Map;");
@@ -117,7 +117,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "writerProviderCache", "Ljava/util/Map;");
@@ -141,7 +141,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putReaders", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;Ljava/util/List;)V", "(Ljava/lang/Class<*>;Ljavax/ws/rs/core/MediaType;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyReader<*>;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putReaders", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;Ljava/util/List;)V", "(Ljava/lang/Class<*>;Ljakarta/ws/rs/core/MediaType;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyReader<*>;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -161,7 +161,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/Provi
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "readerProviderCache", "Ljava/util/Map;");
@@ -174,7 +174,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putWriters", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;Ljava/util/List;)V", "(Ljava/lang/Class<*>;Ljavax/ws/rs/core/MediaType;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/ext/MessageBodyWriter<*>;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putWriters", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;Ljava/util/List;)V", "(Ljava/lang/Class<*>;Ljakarta/ws/rs/core/MediaType;Ljava/util/List<Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/ext/MessageBodyWriter<*>;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -194,7 +194,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/provider/Provi
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/provider/ProviderCache", "getKey", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderCache", "writerProviderCache", "Ljava/util/Map;");
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getKey", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", "(Ljava/lang/Class<*>;Ljavax/ws/rs/core/MediaType;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getKey", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", "(Ljava/lang/Class<*>;Ljakarta/ws/rs/core/MediaType;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -231,7 +231,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn("-");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);

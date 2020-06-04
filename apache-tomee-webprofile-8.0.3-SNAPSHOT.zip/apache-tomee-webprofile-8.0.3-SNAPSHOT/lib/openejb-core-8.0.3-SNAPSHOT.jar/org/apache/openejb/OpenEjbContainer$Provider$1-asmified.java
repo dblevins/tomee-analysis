@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/OpenEjbContainer$Provider$1", null, "java/lang/Thread", null);
 
-classWriter.visitOuterClass("org/apache/openejb/OpenEjbContainer$Provider", "createEJBContainer", "(Ljava/util/Map;)Ljavax/ejb/embeddable/EJBContainer;");
+classWriter.visitOuterClass("org/apache/openejb/OpenEjbContainer$Provider", "createEJBContainer", "(Ljava/util/Map;)Ljakarta/ejb/embeddable/EJBContainer;");
 
 classWriter.visitInnerClass("org/apache/openejb/OpenEjbContainer$Provider", "org/apache/openejb/OpenEjbContainer", "Provider", ACC_PUBLIC | ACC_STATIC);
 

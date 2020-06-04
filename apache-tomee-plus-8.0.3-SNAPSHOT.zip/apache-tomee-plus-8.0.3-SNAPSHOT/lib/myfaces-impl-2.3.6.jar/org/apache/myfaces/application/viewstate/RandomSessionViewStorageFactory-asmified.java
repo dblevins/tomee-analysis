@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSerializedViewCollection", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/SerializedViewCollection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSerializedViewCollection", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/SerializedViewCollection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/viewstate/SerializedViewCollection");
 methodVisitor.visitInsn(DUP);
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSerializedViewKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[B)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSerializedViewKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[B)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
@@ -58,11 +58,11 @@ methodVisitor.visitInsn(ICONST_0);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "javax/faces/context/FacesContext", "java/lang/String", "[B"}, 2, new Object[] {label0, label0});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "jakarta/faces/context/FacesContext", "java/lang/String", "[B"}, 2, new Object[] {label0, label0});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "hashCode", "()I", false);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "javax/faces/context/FacesContext", "java/lang/String", "[B"}, 3, new Object[] {label0, label0, Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "jakarta/faces/context/FacesContext", "java/lang/String", "[B"}, 3, new Object[] {label0, label0, Opcodes.INTEGER});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/IntByteArraySerializedViewKey", "<init>", "(I[B)V", false);
 methodVisitor.visitInsn(ARETURN);
@@ -70,14 +70,14 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createSerializedViewKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createSerializedViewKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "[B");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "createSerializedViewKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[B)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/RandomSessionViewStorageFactory", "createSerializedViewKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[B)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

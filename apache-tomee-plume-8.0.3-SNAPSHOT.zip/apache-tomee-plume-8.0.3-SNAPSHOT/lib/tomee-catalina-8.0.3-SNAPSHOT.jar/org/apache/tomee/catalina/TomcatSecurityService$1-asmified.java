@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/tomee/catalina/TomcatSecurityService$1", "Ljava/lang/ThreadLocal<Ljava/util/LinkedList<Ljavax/security/auth/Subject;>;>;", "java/lang/ThreadLocal", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/tomee/catalina/TomcatSecurityService$1", "Ljava/lang/ThreadLocal<Ljava/util/LinkedList<Ljakarta/security/auth/Subject;>;>;", "java/lang/ThreadLocal", null);
 
 classWriter.visitOuterClass("org/apache/tomee/catalina/TomcatSecurityService", null, null);
 
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initialValue", "()Ljava/util/LinkedList;", "()Ljava/util/LinkedList<Ljavax/security/auth/Subject;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initialValue", "()Ljava/util/LinkedList;", "()Ljava/util/LinkedList<Ljakarta/security/auth/Subject;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/LinkedList");
 methodVisitor.visitInsn(DUP);

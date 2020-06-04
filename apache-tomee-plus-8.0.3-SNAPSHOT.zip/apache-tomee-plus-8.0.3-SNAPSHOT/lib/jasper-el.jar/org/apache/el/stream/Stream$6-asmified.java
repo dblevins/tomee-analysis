@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/el/stream/Stream$6", null, "org/apache/el/stream/Stream$OpIterator", null);
 
-classWriter.visitOuterClass("org/apache/el/stream/Stream", "sorted", "(Ljavax/el/LambdaExpression;)Lorg/apache/el/stream/Stream;");
+classWriter.visitOuterClass("org/apache/el/stream/Stream", "sorted", "(Ljakarta/el/LambdaExpression;)Lorg/apache/el/stream/Stream;");
 
 classWriter.visitInnerClass("org/apache/el/stream/Stream$6", null, null, 0);
 
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sorted", "Ljava/util/Iterato
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$le", "Ljavax/el/LambdaExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$le", "Ljakarta/el/LambdaExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,14 +47,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/el/stream/Stream;Ljavax/el/LambdaExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/el/stream/Stream;Ljakarta/el/LambdaExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$6", "this$0", "Lorg/apache/el/stream/Stream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$6", "val$le", "Ljavax/el/LambdaExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$6", "val$le", "Ljakarta/el/LambdaExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$OpIterator", "<init>", "(Lorg/apache/el/stream/Stream$1;)V", false);
@@ -74,8 +74,8 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$6", "val$le", "Ljavax/el/LambdaExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$6", "sort", "(Ljavax/el/LambdaExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$6", "val$le", "Ljakarta/el/LambdaExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$6", "sort", "(Ljakarta/el/LambdaExpression;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -98,7 +98,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_FINAL, "sort", "(Ljavax/el/LambdaExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_FINAL, "sort", "(Ljakarta/el/LambdaExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -107,7 +107,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/el/stream/Stream$LambdaExpressionComparator");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$LambdaExpressionComparator", "<init>", "(Ljavax/el/LambdaExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$LambdaExpressionComparator", "<init>", "(Ljakarta/el/LambdaExpression;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);

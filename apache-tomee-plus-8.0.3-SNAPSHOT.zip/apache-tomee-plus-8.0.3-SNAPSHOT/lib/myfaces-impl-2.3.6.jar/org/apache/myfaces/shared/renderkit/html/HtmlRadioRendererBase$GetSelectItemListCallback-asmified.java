@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", null, "java/lang/Object", new String[] { "javax/faces/component/visit/VisitCallback" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", null, "java/lang/Object", new String[] { "jakarta/faces/component/visit/VisitCallback" });
 
 classWriter.visitInnerClass("org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase", "GetSelectItemListCallback", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "selectOneRadio", "Ljavax/faces/component/UISelectOne;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "selectOneRadio", "Ljakarta/faces/component/UISelectOne;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "group", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "selectOneRadios", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/component/UISelectOne;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "selectOneRadios", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/component/UISelectOne;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,11 +43,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "index", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "selectItem", "Ljavax/faces/model/SelectItem;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "selectItem", "Ljakarta/faces/model/SelectItem;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converter", "Ljavax/faces/convert/Converter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converter", "Ljakarta/faces/convert/Converter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,13 +55,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentValue", "Ljava/lang/O
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/UISelectOne;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/UISelectOne;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadio", "Ljavax/faces/component/UISelectOne;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadio", "Ljakarta/faces/component/UISelectOne;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "group", "Ljava/lang/String;");
@@ -75,17 +75,17 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljavax/faces/component/visit/VisitContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/visit/VisitResult;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(Ljakarta/faces/component/visit/VisitContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/component/visit/VisitResult;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/component/UISelectOne");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/component/UISelectOne");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UISelectOne");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UISelectOne");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getGroup", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getGroup", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "group", "Ljava/lang/String;");
@@ -102,7 +102,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadios", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadio", "Ljavax/faces/component/UISelectOne;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadio", "Ljakarta/faces/component/UISelectOne;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "indexOf", "(Ljava/lang/Object;)I", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "index", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -114,12 +114,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectOneRadios", "Ljava/util/List;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UISelectOne");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UISelectOne");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/visit/VisitContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "getSelectItemList", "(Ljavax/faces/component/UISelectOne;Ljavax/faces/context/FacesContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/visit/VisitContext", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "getSelectItemList", "(Ljakarta/faces/component/UISelectOne;Ljakarta/faces/context/FacesContext;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label3 = new Label();
@@ -129,8 +129,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "javax/faces/component/visit/VisitContext", "javax/faces/component/UIComponent", "javax/faces/component/UISelectOne", "java/lang/String", "javax/faces/component/UISelectOne", "java/util/List"}, 0, new Object[] {});
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "jakarta/faces/component/visit/VisitContext", "jakarta/faces/component/UIComponent", "jakarta/faces/component/UISelectOne", "java/lang/String", "jakarta/faces/component/UISelectOne", "java/util/List"}, 0, new Object[] {});
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -138,7 +138,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("UISelectOne with id=\"");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getId", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("\" and group=\"");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -148,7 +148,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn("\" does not have any UISelectItems!");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -157,33 +157,33 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "index", "I");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/model/SelectItem");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectItem", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/model/SelectItem");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectItem", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/visit/VisitContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/visit/VisitContext", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils", "findUIOutputConverterFailSafe", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/convert/Converter;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "converter", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils", "findUIOutputConverterFailSafe", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/convert/Converter;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "converter", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/visit/VisitContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/visit/VisitContext", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "getStringFromSubmittedValueOrLocalValueReturnNull", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "getStringFromSubmittedValueOrLocalValueReturnNull", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "currentValue", "Ljava/lang/Object;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "COMPLETE", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "COMPLETE", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "REJECT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "REJECT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "REJECT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "REJECT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/component/visit/VisitResult", "ACCEPT", "Ljavax/faces/component/visit/VisitResult;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/component/visit/VisitResult", "ACCEPT", "Ljakarta/faces/component/visit/VisitResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
@@ -198,19 +198,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSelectItem", "()Ljavax/faces/model/SelectItem;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSelectItem", "()Ljakarta/faces/model/SelectItem;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectItem", "Ljavax/faces/model/SelectItem;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "selectItem", "Ljakarta/faces/model/SelectItem;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "()Ljavax/faces/convert/Converter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "()Ljakarta/faces/convert/Converter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "converter", "Ljavax/faces/convert/Converter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback", "converter", "Ljakarta/faces/convert/Converter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

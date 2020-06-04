@@ -45,11 +45,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "closeTimeout", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljavax/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljakarta/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sessionContext", "Ljavax/ejb/SessionContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sessionContext", "Ljakarta/ejb/SessionContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -89,7 +89,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data$1", "<init>", "(Lorg/apache/openejb/core/stateless/StatelessInstanceManager$Data;Lorg/apache/openejb/core/stateless/StatelessInstanceManager;)V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/stateless/StatelessContext", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljava/io/Flushable;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data", "sessionContext", "Ljavax/ejb/SessionContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data", "sessionContext", "Ljakarta/ejb/SessionContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
@@ -145,7 +145,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljakarta/management/ObjectName;)Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data", "jmxNames", "Ljava/util/List;");
@@ -180,10 +180,10 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lorg/apache/openejb/core/stateless/StatelessInstanceManager$Data;)Ljavax/ejb/SessionContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lorg/apache/openejb/core/stateless/StatelessInstanceManager$Data;)Ljakarta/ejb/SessionContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data", "sessionContext", "Ljavax/ejb/SessionContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/stateless/StatelessInstanceManager$Data", "sessionContext", "Ljakarta/ejb/SessionContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

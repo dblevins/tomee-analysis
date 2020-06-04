@@ -37,7 +37,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/jaxb/dynamic/DynamicJAXBCon
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$SessionsXmlContextInput", "org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext", "SessionsXmlContextInput", ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -155,7 +155,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnumConstant", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "java/lang/ClassNotFoundException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnumConstant", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "java/lang/ClassNotFoundException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -206,7 +206,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext", "java/lang/String", "java/lang/String", "java/lang/Object", "java/lang/Class", "[Ljava/lang/Object;"}, 0, new Object[] {});
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -219,7 +219,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "enumConstantNotFound", "(Ljava/lang/String;)Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 10);
 methodVisitor.visitEnd();

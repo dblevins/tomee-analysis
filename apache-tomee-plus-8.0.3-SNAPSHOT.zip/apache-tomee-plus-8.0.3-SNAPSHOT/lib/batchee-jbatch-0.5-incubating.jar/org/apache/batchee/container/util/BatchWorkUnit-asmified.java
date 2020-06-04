@@ -172,12 +172,12 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/util/BatchWorkUnit", "jobExecutionImpl", "Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "getJobContext", "()Lorg/apache/batchee/container/impl/JobContextImpl;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/JobContextImpl", "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/JobContextImpl", "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

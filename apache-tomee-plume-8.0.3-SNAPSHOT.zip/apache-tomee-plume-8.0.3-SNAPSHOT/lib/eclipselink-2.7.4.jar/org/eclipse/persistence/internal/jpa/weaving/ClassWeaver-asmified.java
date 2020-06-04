@@ -149,11 +149,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CLON
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TRANSIENT_DESCRIPTION", "Ljava/lang/String;", null, "Ljavax/persistence/Transient;");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TRANSIENT_DESCRIPTION", "Ljava/lang/String;", null, "Ljakarta/persistence/Transient;");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "XML_TRANSIENT_DESCRIPTION", "Ljava/lang/String;", null, "Ljavax/xml/bind/annotation/XmlTransient;");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "XML_TRANSIENT_DESCRIPTION", "Ljava/lang/String;", null, "Ljakarta/xml/bind/annotation/XmlTransient;");
 fieldVisitor.visitEnd();
 }
 {
@@ -495,14 +495,14 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "org/eclipse/persistence/internal/libraries/asm/FieldVisitor"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("Ljavax/persistence/Transient;");
+methodVisitor.visitLdcInsn("Ljakarta/persistence/Transient;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/FieldVisitor", "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/AnnotationVisitor", "visitEnd", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/weaving/ClassWeaver", "isJAXBOnPath", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("Ljavax/xml/bind/annotation/XmlTransient;");
+methodVisitor.visitLdcInsn("Ljakarta/xml/bind/annotation/XmlTransient;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/FieldVisitor", "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/AnnotationVisitor", "visitEnd", "()V", false);
@@ -3109,7 +3109,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("Ljavax/persistence/Transient;");
+methodVisitor.visitLdcInsn("Ljakarta/persistence/Transient;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/FieldVisitor", "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/AnnotationVisitor", "visitEnd", "()V", false);
@@ -3119,7 +3119,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jp
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("Ljavax/xml/bind/annotation/XmlTransient;");
+methodVisitor.visitLdcInsn("Ljakarta/xml/bind/annotation/XmlTransient;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/FieldVisitor", "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/asm/AnnotationVisitor", "visitEnd", "()V", false);

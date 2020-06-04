@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", null, "javax/faces/event/FacesEvent", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", null, "jakarta/faces/event/FacesEvent", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "org/apache/myfaces/view/facelets/component/UIRepeat", "IndexedEvent", ACC_PRIVATE | ACC_FINAL);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_target", "Ljavax/faces/event/FacesEvent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_target", "Ljakarta/faces/event/FacesEvent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,17 +39,17 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/myfaces/view/facelets/component/UIRepeat;Lorg/apache/myfaces/view/facelets/component/UIRepeat;Ljavax/faces/event/FacesEvent;I)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/myfaces/view/facelets/component/UIRepeat;Lorg/apache/myfaces/view/facelets/component/UIRepeat;Ljakarta/faces/event/FacesEvent;I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "this$0", "Lorg/apache/myfaces/view/facelets/component/UIRepeat;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/event/FacesEvent", "<init>", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/event/FacesEvent", "<init>", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_index", "I");
@@ -58,39 +58,39 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseId", "()Ljavax/faces/event/PhaseId;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhaseId", "()Ljakarta/faces/event/PhaseId;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/FacesEvent", "getPhaseId", "()Ljavax/faces/event/PhaseId;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/FacesEvent", "getPhaseId", "()Ljakarta/faces/event/PhaseId;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPhaseId", "(Ljavax/faces/event/PhaseId;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPhaseId", "(Ljakarta/faces/event/PhaseId;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/FacesEvent", "setPhaseId", "(Ljavax/faces/event/PhaseId;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/FacesEvent", "setPhaseId", "(Ljakarta/faces/event/PhaseId;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAppropriateListener", "(Ljavax/faces/event/FacesListener;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAppropriateListener", "(Ljakarta/faces/event/FacesListener;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/FacesEvent", "isAppropriateListener", "(Ljavax/faces/event/FacesListener;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/FacesEvent", "isAppropriateListener", "(Ljakarta/faces/event/FacesListener;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processListener", "(Ljavax/faces/event/FacesListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processListener", "(Ljakarta/faces/event/FacesListener;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -99,7 +99,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "getComponent", "()Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "getComponent", "()Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/view/facelets/component/UIRepeat");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -135,9 +135,9 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/component/UIRepeat", "access$500", "(Lorg/apache/myfaces/view/facelets/component/UIRepeat;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/FacesEvent", "processListener", "(Ljavax/faces/event/FacesListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/FacesEvent", "processListener", "(Ljakarta/faces/event/FacesListener;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -182,10 +182,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljavax/faces/event/FacesEvent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljakarta/faces/event/FacesEvent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljavax/faces/event/FacesEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent", "_target", "Ljakarta/faces/event/FacesEvent;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

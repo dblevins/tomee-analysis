@@ -25,14 +25,14 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/generics/GProcessSessionBean", null, "org/apache/webbeans/portable/events/ProcessSessionBeanImpl", new String[] { "org/apache/webbeans/portable/events/generics/GenericBeanEvent" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/String;Ljavax/enterprise/inject/spi/SessionBeanType;)V", "(Ljavax/enterprise/inject/spi/Bean<Ljava/lang/Object;>;Ljavax/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/String;Ljavax/enterprise/inject/spi/SessionBeanType;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/String;Ljakarta/enterprise/inject/spi/SessionBeanType;)V", "(Ljakarta/enterprise/inject/spi/Bean<Ljava/lang/Object;>;Ljakarta/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/String;Ljakarta/enterprise/inject/spi/SessionBeanType;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessSessionBeanImpl", "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/String;Ljavax/enterprise/inject/spi/SessionBeanType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessSessionBeanImpl", "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/String;Ljakarta/enterprise/inject/spi/SessionBeanType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
@@ -40,14 +40,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanClassFor", "(Ljava/lang/Class;)Ljava/lang/Class;", "(Ljava/lang/Class<*>;)Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/ProcessSessionBean;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/ProcessSessionBean;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/generics/GProcessSessionBean", "getBean", "()Ljavax/enterprise/inject/spi/Bean;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/generics/GProcessSessionBean", "getBean", "()Ljakarta/enterprise/inject/spi/Bean;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/network/jms/SimpleJmsQueueConnector$3", null, "org/apache/activemq/network/jms/InboundQueueBridge", null);
 
-classWriter.visitOuterClass("org/apache/activemq/network/jms/SimpleJmsQueueConnector", "createReplyToBridge", "(Ljavax/jms/Destination;Ljavax/jms/Connection;Ljavax/jms/Connection;)Ljavax/jms/Destination;");
+classWriter.visitOuterClass("org/apache/activemq/network/jms/SimpleJmsQueueConnector", "createReplyToBridge", "(Ljakarta/jms/Destination;Ljakarta/jms/Connection;Ljakarta/jms/Connection;)Ljakarta/jms/Destination;");
 
 classWriter.visitInnerClass("org/apache/activemq/network/jms/SimpleJmsQueueConnector$3", null, null, 0);
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processReplyToDestination", "(Ljavax/jms/Destination;)Ljavax/jms/Destination;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processReplyToDestination", "(Ljakarta/jms/Destination;)Ljakarta/jms/Destination;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ActiveMQEndpointWorker$1$1", null, "java/lang/Object", new String[] { "javax/jms/ExceptionListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ActiveMQEndpointWorker$1$1", null, "java/lang/Object", new String[] { "jakarta/jms/ExceptionListener" });
 
 classWriter.visitOuterClass("org/apache/activemq/ra/ActiveMQEndpointWorker$1", "run", "()V");
 
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljavax/jms/JMSException;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljakarta/jms/JMSException;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -69,7 +69,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("Connection to broker failed: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/jms/JMSException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/jms/JMSException", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -86,7 +86,7 @@ methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker$1$1", "this$1", "Lorg/apache/activemq/ra/ActiveMQEndpointWorker$1;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker$1", "this$0", "Lorg/apache/activemq/ra/ActiveMQEndpointWorker;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "access$500", "(Lorg/apache/activemq/ra/ActiveMQEndpointWorker;)Ljavax/resource/spi/work/Work;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "access$500", "(Lorg/apache/activemq/ra/ActiveMQEndpointWorker;)Ljakarta/resource/spi/work/Work;", false);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(MONITORENTER);
@@ -111,7 +111,7 @@ methodVisitor.visitLabel(label1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/ra/ActiveMQEndpointWorker$1$1", "javax/jms/JMSException", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/ra/ActiveMQEndpointWorker$1$1", "jakarta/jms/JMSException", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(MONITOREXIT);

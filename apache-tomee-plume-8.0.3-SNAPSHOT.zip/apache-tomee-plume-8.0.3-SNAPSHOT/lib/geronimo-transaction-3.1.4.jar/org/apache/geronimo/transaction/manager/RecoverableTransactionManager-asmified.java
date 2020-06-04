@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", null, "java/lang/Object", new String[] { "javax/transaction/TransactionManager" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", null, "java/lang/Object", new String[] { "jakarta/transaction/TransactionManager" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "recoveryError", "(Ljava/lang/Exception;)V", null, null);

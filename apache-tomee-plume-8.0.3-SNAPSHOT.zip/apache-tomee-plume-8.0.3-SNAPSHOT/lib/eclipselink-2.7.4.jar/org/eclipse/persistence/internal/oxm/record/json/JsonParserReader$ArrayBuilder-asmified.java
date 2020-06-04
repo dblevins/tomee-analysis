@@ -29,38 +29,38 @@ classWriter.visitInnerClass("org/eclipse/persistence/internal/oxm/record/json/Js
 classWriter.visitInnerClass("org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonStructureBuilder", "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader", "JsonStructureBuilder", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "b", "Ljavax/json/JsonArrayBuilder;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "b", "Ljakarta/json/JsonArrayBuilder;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/JsonArrayBuilder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/JsonArrayBuilder;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Ljavax/json/JsonStructure;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Ljakarta/json/JsonStructure;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "build", "()Ljavax/json/JsonArray;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "build", "()Ljakarta/json/JsonArray;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljavax/json/JsonValue;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljakarta/json/JsonValue;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "add", "(Ljavax/json/JsonValue;)Ljavax/json/JsonArrayBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "add", "(Ljakarta/json/JsonValue;)Ljakarta/json/JsonArrayBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -70,9 +70,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "add", "(Ljava/lang/String;)Ljavax/json/JsonArrayBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "add", "(Ljava/lang/String;)Ljakarta/json/JsonArrayBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -82,9 +82,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/math/BigDecimal;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "add", "(Ljava/math/BigDecimal;)Ljavax/json/JsonArrayBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "add", "(Ljava/math/BigDecimal;)Ljakarta/json/JsonArrayBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -94,9 +94,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "add", "(Z)Ljavax/json/JsonArrayBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "add", "(Z)Ljakarta/json/JsonArrayBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -106,8 +106,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNull", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljavax/json/JsonArrayBuilder;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonArrayBuilder", "addNull", "()Ljavax/json/JsonArrayBuilder;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$ArrayBuilder", "b", "Ljakarta/json/JsonArrayBuilder;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonArrayBuilder", "addNull", "()Ljakarta/json/JsonArrayBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);

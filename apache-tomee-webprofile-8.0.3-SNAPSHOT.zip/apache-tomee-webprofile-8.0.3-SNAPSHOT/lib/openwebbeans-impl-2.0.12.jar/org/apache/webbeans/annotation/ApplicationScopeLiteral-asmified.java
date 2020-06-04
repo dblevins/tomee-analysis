@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/ApplicationScopeLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljavax/enterprise/context/ApplicationScoped;>;Ljavax/enterprise/context/ApplicationScoped;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "javax/enterprise/context/ApplicationScoped" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/annotation/ApplicationScopeLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljakarta/enterprise/context/ApplicationScoped;>;Ljakarta/enterprise/context/ApplicationScoped;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "jakarta/enterprise/context/ApplicationScoped" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Lorg/apache/webbeans/annotation/ApplicationScopeLiteral;", null, null);

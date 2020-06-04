@@ -344,7 +344,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "length", "(Ljava/lang/Object;)I", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "length", "(Ljava/lang/Object;)I", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -436,11 +436,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Array", "getLength", "(Ljava/lang/Object;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspTagException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/JspTagException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("PARAM_BAD_VALUE");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

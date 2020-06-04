@@ -1095,12 +1095,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljavax/servlet/WriteListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/OutputBuffer", "coyoteResponse", "Lorg/apache/coyote/Response;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "setWriteListener", "(Ljavax/servlet/WriteListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -1110,7 +1110,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBlocking", "()Z", null, n
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/OutputBuffer", "coyoteResponse", "Lorg/apache/coyote/Response;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljavax/servlet/WriteListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljakarta/servlet/WriteListener;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ICONST_1);

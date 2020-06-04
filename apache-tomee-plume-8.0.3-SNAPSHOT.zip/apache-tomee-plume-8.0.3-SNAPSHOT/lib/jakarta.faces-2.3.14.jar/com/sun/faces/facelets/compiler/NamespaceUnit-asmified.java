@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/compiler/NamespaceUnit", "getNextFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/compiler/NamespaceUnit", "getNextFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/compiler/NamespaceHandler");
 methodVisitor.visitInsn(DUP);
@@ -62,7 +62,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/NamespaceUnit", "library", "Lcom/sun/faces/facelets/tag/TagLibrary;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/NamespaceUnit", "ns", "Ljava/util/Map;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/NamespaceHandler", "<init>", "(Ljavax/faces/view/facelets/FaceletHandler;Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/NamespaceHandler", "<init>", "(Ljakarta/faces/view/facelets/FaceletHandler;Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/util/Map;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();

@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/microprofile/client/DefaultResponseExceptionMapper", "Ljava/lang/Object;Lorg/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper<Ljava/lang/Throwable;>;", "java/lang/Object", new String[] { "org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(2147483647));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -43,12 +43,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toThrowable", "(Ljavax/ws/rs/core/Response;)Ljava/lang/Throwable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toThrowable", "(Ljakarta/ws/rs/core/Response;)Ljava/lang/Throwable;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/WebApplicationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/WebApplicationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/WebApplicationException", "<init>", "(Ljavax/ws/rs/core/Response;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/WebApplicationException", "<init>", "(Ljakarta/ws/rs/core/Response;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

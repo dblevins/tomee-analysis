@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/ws/policy/v200409/OperatorContentType", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "OperatorContentType");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -40,7 +40,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlSeeAlso;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSeeAlso;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, Type.getType("Lorg/apache/cxf/ws/policy/v200409/Policy;"));
@@ -51,11 +51,11 @@ annotationVisitor0.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "policyOrAllOrExactlyOne", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Object;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementRefs;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementRefs;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "Policy");
 annotationVisitor2.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/cxf/ws/policy/v200409/Policy;"));
@@ -63,23 +63,23 @@ annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "All");
 annotationVisitor2.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "ExactlyOne");
 annotationVisitor2.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
-annotationVisitor2.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor2.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor2.visit("required", Boolean.FALSE);
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElementRef;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElementRef;");
 annotationVisitor2.visit("name", "PolicyReference");
 annotationVisitor2.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/cxf/ws/policy/v200409/PolicyReference;"));
@@ -91,7 +91,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlAnyElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAnyElement;", true);
 annotationVisitor0.visit("lax", Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }

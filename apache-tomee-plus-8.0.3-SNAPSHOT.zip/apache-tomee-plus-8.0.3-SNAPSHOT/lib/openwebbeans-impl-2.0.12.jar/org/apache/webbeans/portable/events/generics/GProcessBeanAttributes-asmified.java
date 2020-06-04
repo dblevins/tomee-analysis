@@ -29,13 +29,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "type", "Ljava/la
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/enterprise/inject/spi/Annotated;Ljavax/enterprise/inject/spi/BeanAttributes;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<*>;Ljavax/enterprise/inject/spi/Annotated;Ljavax/enterprise/inject/spi/BeanAttributes;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/Annotated;Ljakarta/enterprise/inject/spi/BeanAttributes;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<*>;Ljakarta/enterprise/inject/spi/Annotated;Ljakarta/enterprise/inject/spi/BeanAttributes;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessBeanAttributesImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/Annotated;Ljavax/enterprise/inject/spi/BeanAttributes;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessBeanAttributesImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/Annotated;Ljakarta/enterprise/inject/spi/BeanAttributes;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/generics/GProcessBeanAttributes", "type", "Ljava/lang/Class;");

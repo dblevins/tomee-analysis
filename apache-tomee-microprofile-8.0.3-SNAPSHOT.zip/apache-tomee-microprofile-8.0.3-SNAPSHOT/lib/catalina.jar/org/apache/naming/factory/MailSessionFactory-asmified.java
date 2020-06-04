@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/naming/factory/MailS
 classWriter.visitInnerClass("org/apache/naming/factory/MailSessionFactory$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "factoryType", "Ljava/lang/String;", null, "javax.mail.Session");
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "factoryType", "Ljava/lang/String;", null, "jakarta.mail.Session");
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "javax/naming/Reference");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/naming/Reference", "getClassName", "()Ljava/lang/String;", false);
-methodVisitor.visitLdcInsn("javax.mail.Session");
+methodVisitor.visitLdcInsn("jakarta.mail.Session");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);

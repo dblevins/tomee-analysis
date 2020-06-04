@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", null, "java/lang/Object", new String[] { "org/apache/openejb/core/cmp/CmpEngineFactory" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,39 +46,39 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionSynchronizationRegistry", "(Ljavax/transaction/TransactionSynchronizationRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionSynchronizationRegistry", "(Ljakarta/transaction/TransactionSynchronizationRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/jpa/JpaCmpEngineFactory", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

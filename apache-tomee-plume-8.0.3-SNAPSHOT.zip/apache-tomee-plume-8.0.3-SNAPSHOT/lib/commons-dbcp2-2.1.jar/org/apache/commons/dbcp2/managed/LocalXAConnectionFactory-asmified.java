@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectionFactor
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;Lorg/apache/commons/dbcp2/ConnectionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;Lorg/apache/commons/dbcp2/ConnectionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitLdcInsn("transactionManager is null");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/commons/dbcp2/managed/LocalXAConnectionFactory", "javax/transaction/TransactionManager", "org/apache/commons/dbcp2/ConnectionFactory"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/commons/dbcp2/managed/LocalXAConnectionFactory", "jakarta/transaction/TransactionManager", "org/apache/commons/dbcp2/ConnectionFactory"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -63,7 +63,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/dbcp2/managed/TransactionRegistry");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionRegistry", "<init>", "(Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionRegistry", "<init>", "(Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/LocalXAConnectionFactory", "transactionRegistry", "Lorg/apache/commons/dbcp2/managed/TransactionRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);

@@ -24,24 +24,24 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/constraints/EmailValidator$1", null, "java/lang/Object", new String[] { "org/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor" });
 
-classWriter.visitOuterClass("org/apache/bval/constraints/EmailValidator", "lambda$new$0", "(Ljavax/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;");
+classWriter.visitOuterClass("org/apache/bval/constraints/EmailValidator", "lambda$new$0", "(Ljakarta/validation/constraints/Email;)Lorg/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor;");
 
 classWriter.visitInnerClass("org/apache/bval/constraints/EmailValidator$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/validation/constraints/Pattern$Flag", "javax/validation/constraints/Pattern", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/validation/constraints/Pattern$Flag", "jakarta/validation/constraints/Pattern", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor", "org/apache/bval/constraints/AbstractPatternValidator", "PatternDescriptor", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$email", "Ljavax/validation/constraints/Email;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$email", "Ljakarta/validation/constraints/Email;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/validation/constraints/Email;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/validation/constraints/Email;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljavax/validation/constraints/Email;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljakarta/validation/constraints/Email;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -52,18 +52,18 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "regexp", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljavax/validation/constraints/Email;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/Email", "regexp", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljakarta/validation/constraints/Email;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/Email", "regexp", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "flags", "()[Ljavax/validation/constraints/Pattern$Flag;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "flags", "()[Ljakarta/validation/constraints/Pattern$Flag;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljavax/validation/constraints/Email;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/Email", "flags", "()[Ljavax/validation/constraints/Pattern$Flag;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/EmailValidator$1", "val$email", "Ljakarta/validation/constraints/Email;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/Email", "flags", "()[Ljakarta/validation/constraints/Pattern$Flag;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

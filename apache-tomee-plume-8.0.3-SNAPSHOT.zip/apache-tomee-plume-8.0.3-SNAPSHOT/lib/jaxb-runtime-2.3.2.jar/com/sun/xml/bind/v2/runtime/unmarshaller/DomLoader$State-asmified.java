@@ -68,9 +68,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/JAXBCon
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State", "handler", "Ljavax/xml/transform/sax/TransformerHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "access$000", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;)Ljavax/xml/bind/annotation/DomHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "access$000", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;)Ljakarta/xml/bind/annotation/DomHandler;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/DomHandler", "createUnmarshaller", "(Ljavax/xml/bind/ValidationEventHandler;)Ljavax/xml/transform/Result;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/DomHandler", "createUnmarshaller", "(Ljakarta/xml/bind/ValidationEventHandler;)Ljavax/xml/transform/Result;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State", "result", "Ljavax/xml/transform/Result;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State", "handler", "Ljavax/xml/transform/sax/TransformerHandler;");
@@ -113,10 +113,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElement", "()Ljava/lang/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State", "this$0", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "access$000", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;)Ljavax/xml/bind/annotation/DomHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "access$000", "(Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;)Ljakarta/xml/bind/annotation/DomHandler;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State", "result", "Ljavax/xml/transform/Result;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/DomHandler", "getElement", "(Ljavax/xml/transform/Result;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/DomHandler", "getElement", "(Ljavax/xml/transform/Result;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

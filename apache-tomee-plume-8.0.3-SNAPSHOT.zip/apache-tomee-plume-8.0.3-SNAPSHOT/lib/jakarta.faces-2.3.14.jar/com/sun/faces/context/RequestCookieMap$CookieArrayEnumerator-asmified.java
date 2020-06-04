@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/context/RequestCookieMap$Cooki
 classWriter.visitInnerClass("com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "com/sun/faces/context/RequestCookieMap", "CookieArrayEnumerator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(0, "cookies", "[Ljavax/servlet/http/Cookie;", null, null);
+fieldVisitor = classWriter.visitField(0, "cookies", "[Ljakarta/servlet/http/Cookie;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(0, "upperBound", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "([Ljavax/servlet/http/Cookie;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "([Ljakarta/servlet/http/Cookie;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,22 +48,22 @@ methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "curIndex", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljakarta/servlet/http/Cookie;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljakarta/servlet/http/Cookie;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljakarta/servlet/http/Cookie;");
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "[Ljavax/servlet/http/Cookie;"}, 1, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "[Ljakarta/servlet/http/Cookie;"}, 1, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator"});
 methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "[Ljavax/servlet/http/Cookie;"}, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "[Ljakarta/servlet/http/Cookie;"}, 2, new Object[] {"com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", Opcodes.INTEGER});
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "upperBound", "I");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -108,11 +108,11 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$C
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "cookies", "[Ljakarta/servlet/http/Cookie;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestCookieMap$CookieArrayEnumerator", "curIndex", "I");
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/Cookie", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/Cookie", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL, "name", "Ljava/lang/String;", n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL, "localTransaction", "Ljavax/resource/spi/LocalTransaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL, "localTransaction", "Ljakarta/resource/spi/LocalTransaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "xid", "Ljavax/transaction/xa
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/LocalTransaction;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/LocalTransaction;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljavax/resource/spi/LocalTransaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljakarta/resource/spi/LocalTransaction;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "name", "Ljava/lang/String;");
@@ -122,7 +122,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/ResourceException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, null);
 Label label4 = new Label();
@@ -146,8 +146,8 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljavax/resource/spi/LocalTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/LocalTransaction", "rollback", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljakarta/resource/spi/LocalTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/LocalTransaction", "rollback", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -155,7 +155,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/t
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "javax/transaction/xa/XAException");
 methodVisitor.visitInsn(DUP);
@@ -193,7 +193,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/ResourceException");
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
@@ -213,13 +213,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "xid", "Ljavax/transaction/xa/Xid;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljavax/resource/spi/LocalTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/LocalTransaction", "begin", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/transactionlog/LogXAResource", "localTransaction", "Ljakarta/resource/spi/LocalTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/LocalTransaction", "begin", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "javax/transaction/xa/XAException");
 methodVisitor.visitInsn(DUP);

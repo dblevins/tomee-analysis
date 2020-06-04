@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljavax/persistence/EntityManagerFactory;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/OpenJPAEntityManagerFactory");
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/persistence/OpenJPAEntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/persistence/OpenJPAEntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/persistence/OpenJPAEntityManager");
@@ -79,14 +79,14 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/OpenJPAEntityManager");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljavax/persistence/Query;)Lorg/apache/openjpa/persistence/OpenJPAQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cast", "(Ljakarta/persistence/Query;)Lorg/apache/openjpa/persistence/OpenJPAQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/OpenJPAQuery");
@@ -279,7 +279,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isManagedType", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isManagedType", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -287,7 +287,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBroker", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBroker", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getConfiguration", "()Lorg/apache/openjpa/conf/OpenJPAConfiguration;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/ImplHelper", "isManagedType", "(Lorg/apache/openjpa/conf/OpenJPAConfiguration;Ljava/lang/Class;)Z", false);
@@ -316,14 +316,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "toBrokerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "toBrokerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBrokerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBrokerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -342,14 +342,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "toBroker", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "toBroker", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBroker", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "toBroker", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -368,7 +368,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "getMetaData", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "getMetaData", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -376,13 +376,13 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "getMetaData", "(Ljavax/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_DEPRECATED, "getMetaData", "(Ljakarta/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -390,7 +390,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljavax/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljakarta/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

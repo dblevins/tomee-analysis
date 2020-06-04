@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", null, "javax/xml/bind/attachment/AttachmentMarshaller", null);
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", null, "jakarta/xml/bind/attachment/AttachmentMarshaller", null);
 
-classWriter.visitOuterClass("com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "getAttachmentMarshaller", "()Ljavax/xml/bind/attachment/AttachmentMarshaller;");
+classWriter.visitOuterClass("com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "getAttachmentMarshaller", "()Ljakarta/xml/bind/attachment/AttachmentMarshaller;");
 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", null, null, 0);
 
@@ -39,18 +39,18 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/attachment/AttachmentMarshaller", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/attachment/AttachmentMarshaller", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljavax/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljakarta/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "access$000", "(Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;Ljavax/activation/DataHandler;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "access$000", "(Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;Ljakarta/activation/DataHandler;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
@@ -83,7 +83,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[B"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/jvnet/staxex/MtomEnabled");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -91,7 +91,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/jvnet/staxex/MtomEnabled");
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/MtomEnabled", "addBinaryText", "([B)Lorg/jvnet/staxex/BinaryText;", true);
@@ -110,7 +110,7 @@ methodVisitor.visitLdcInsn("The currentElement is not MtomEnabled ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$2", "this$0", "Lcom/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx;");
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx", "currentElement", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljavax/activation/DataHandler;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljakarta/activation/DataHandler;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "Lorg/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy<Ljavax/ws/rs/core/UriInfo;>;Ljavax/ws/rs/core/UriInfo;", "org/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy", new String[] { "javax/ws/rs/core/UriInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "Lorg/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy<Ljakarta/ws/rs/core/UriInfo;>;Ljakarta/ws/rs/core/UriInfo;", "org/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy", new String[] { "jakarta/ws/rs/core/UriInfo" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -38,19 +38,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAbsolutePath", "()Ljava/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getAbsolutePath", "()Ljava/net/URI;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getAbsolutePath", "()Ljava/net/URI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAbsolutePathBuilder", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAbsolutePathBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getAbsolutePathBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getAbsolutePathBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -60,19 +60,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseUri", "()Ljava/net/U
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -82,8 +82,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPath", "()Ljava/lang/Str
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPath", "()Ljava/lang/String;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPath", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -93,55 +93,55 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPath", "(Z)Ljava/lang/St
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPath", "(Z)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPath", "(Z)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathSegments", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/ws/rs/core/PathSegment;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathSegments", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/ws/rs/core/PathSegment;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPathSegments", "()Ljava/util/List;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPathSegments", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathSegments", "(Z)Ljava/util/List;", "(Z)Ljava/util/List<Ljavax/ws/rs/core/PathSegment;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathSegments", "(Z)Ljava/util/List;", "(Z)Ljava/util/List<Ljakarta/ws/rs/core/PathSegment;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPathSegments", "(Z)Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPathSegments", "(Z)Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getQueryParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getQueryParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryParameters", "(Z)Ljavax/ws/rs/core/MultivaluedMap;", "(Z)Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryParameters", "(Z)Ljakarta/ws/rs/core/MultivaluedMap;", "(Z)Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getQueryParameters", "(Z)Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getQueryParameters", "(Z)Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -151,42 +151,42 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestUri", "()Ljava/ne
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPathParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPathParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathParameters", "(Z)Ljavax/ws/rs/core/MultivaluedMap;", "(Z)Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPathParameters", "(Z)Ljakarta/ws/rs/core/MultivaluedMap;", "(Z)Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getPathParameters", "(Z)Ljavax/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getPathParameters", "(Z)Ljakarta/ws/rs/core/MultivaluedMap;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -196,8 +196,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchedResources", "()Lj
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getMatchedResources", "()Ljava/util/List;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getMatchedResources", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -207,8 +207,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchedURIs", "()Ljava/u
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getMatchedURIs", "()Ljava/util/List;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getMatchedURIs", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -218,9 +218,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchedURIs", "(Z)Ljava/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getMatchedURIs", "(Z)Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getMatchedURIs", "(Z)Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -230,9 +230,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "relativize", "(Ljava/net/UR
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "relativize", "(Ljava/net/URI;)Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "relativize", "(Ljava/net/URI;)Ljava/net/URI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -242,9 +242,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolve", "(Ljava/net/URI;)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/UriInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/UriInfo");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "resolve", "(Ljava/net/URI;)Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "resolve", "(Ljava/net/URI;)Ljava/net/URI;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

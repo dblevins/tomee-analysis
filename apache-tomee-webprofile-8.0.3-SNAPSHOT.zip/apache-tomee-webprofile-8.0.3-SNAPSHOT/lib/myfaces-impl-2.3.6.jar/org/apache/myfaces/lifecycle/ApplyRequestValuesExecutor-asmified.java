@@ -45,10 +45,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/lifecycle/ViewNotFoundException");
@@ -59,7 +59,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("A view is required to execute ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getCurrentPhaseId", "()Ljavax/faces/event/PhaseId;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getCurrentPhaseId", "()Ljakarta/faces/event/PhaseId;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/lifecycle/ViewNotFoundException", "<init>", "(Ljava/lang/String;)V", false);
@@ -67,19 +67,19 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "processDecodes", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "processDecodes", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/lifecycle/ApplyRequestValuesExecutor", "getViewPoolProcessor", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/lifecycle/ApplyRequestValuesExecutor", "getViewPoolProcessor", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/ViewPoolProcessor", "processDeferredNavigation", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/ViewPoolProcessor", "processDeferredNavigation", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/view/facelets/ViewPoolProcessor"}, 0, null);
 methodVisitor.visitInsn(ICONST_0);
@@ -88,15 +88,15 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhase", "()Ljavax/faces/event/PhaseId;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPhase", "()Ljakarta/faces/event/PhaseId;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/event/PhaseId", "APPLY_REQUEST_VALUES", "Ljavax/faces/event/PhaseId;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/event/PhaseId", "APPLY_REQUEST_VALUES", "Ljakarta/faces/event/PhaseId;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getViewPoolProcessor", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getViewPoolProcessor", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/lifecycle/ApplyRequestValuesExecutor", "initialized", "Z");
@@ -104,7 +104,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/ViewPoolProcessor", "getInstance", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/ViewPoolProcessor", "getInstance", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/lifecycle/ApplyRequestValuesExecutor", "viewPoolProcessor", "Lorg/apache/myfaces/view/facelets/ViewPoolProcessor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);

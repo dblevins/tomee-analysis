@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/network/jms/SimpleJmsQueueConnector$1", null, "java/lang/Object", new String[] { "javax/jms/ExceptionListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/network/jms/SimpleJmsQueueConnector$1", null, "java/lang/Object", new String[] { "jakarta/jms/ExceptionListener" });
 
 classWriter.visitOuterClass("org/apache/activemq/network/jms/SimpleJmsQueueConnector", "initializeForeignConnection", "()V");
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljavax/jms/JMSException;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljakarta/jms/JMSException;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/SimpleJmsQueueConnector$1", "this$0", "Lorg/apache/activemq/network/jms/SimpleJmsQueueConnector;");
@@ -53,8 +53,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/SimpleJmsQueueConnector$1", "this$0", "Lorg/apache/activemq/network/jms/SimpleJmsQueueConnector;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/SimpleJmsQueueConnector", "foreignConnection", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Connection");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/SimpleJmsQueueConnector", "handleConnectionFailure", "(Ljavax/jms/Connection;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Connection");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/SimpleJmsQueueConnector", "handleConnectionFailure", "(Ljakarta/jms/Connection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

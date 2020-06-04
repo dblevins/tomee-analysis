@@ -37,7 +37,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/metadata/CompositeBuilder$Deleg
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "getParameterNames", "Ljava/util/function/BiFunction;", "Ljava/util/function/BiFunction<Ljavax/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "getParameterNames", "Ljava/util/function/BiFunction;", "Ljava/util/function/BiFunction<Ljakarta/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/CompositeBuilder;Ljava/util/List;Ljava/util/function/BiFunction;)V", "(Ljava/util/List<TDELEGATE;>;Ljava/util/function/BiFunction<Ljavax/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/CompositeBuilder;Ljava/util/List;Ljava/util/function/BiFunction;)V", "(Ljava/util/List<TDELEGATE;>;Ljava/util/function/BiFunction<Ljakarta/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -81,8 +81,8 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Collectors", "toLi
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ElementKind", "RETURN_VALUE", "Ljavax/validation/ElementKind;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ElementKind", "RETURN_VALUE", "Ljakarta/validation/ElementKind;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -204,8 +204,8 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/metadata/Meta");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ElementKind", "PARAMETER", "Ljavax/validation/ElementKind;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ElementKind", "PARAMETER", "Ljakarta/validation/ElementKind;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/intercept/InterceptorComparator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Comparator<Ljavax/enterprise/inject/spi/Interceptor<TT;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/intercept/InterceptorComparator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/enterprise/inject/spi/Interceptor<TT;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptorsManager", "Lorg/apache/webbeans/intercept/InterceptorsManager;", null, null);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/enterprise/inject/spi/Interceptor;Ljavax/enterprise/inject/spi/Interceptor;)I", "(Ljavax/enterprise/inject/spi/Interceptor<TT;>;Ljavax/enterprise/inject/spi/Interceptor<TT;>;)I", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/enterprise/inject/spi/Interceptor;Ljakarta/enterprise/inject/spi/Interceptor;)I", "(Ljakarta/enterprise/inject/spi/Interceptor<TT;>;Ljakarta/enterprise/inject/spi/Interceptor<TT;>;)I", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -54,10 +54,10 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorComparator", "interceptorsManager", "Lorg/apache/webbeans/intercept/InterceptorsManager;");
@@ -73,10 +73,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Interceptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Interceptor");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Interceptor");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorComparator", "compare", "(Ljavax/enterprise/inject/spi/Interceptor;Ljavax/enterprise/inject/spi/Interceptor;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Interceptor");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorComparator", "compare", "(Ljakarta/enterprise/inject/spi/Interceptor;Ljakarta/enterprise/inject/spi/Interceptor;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

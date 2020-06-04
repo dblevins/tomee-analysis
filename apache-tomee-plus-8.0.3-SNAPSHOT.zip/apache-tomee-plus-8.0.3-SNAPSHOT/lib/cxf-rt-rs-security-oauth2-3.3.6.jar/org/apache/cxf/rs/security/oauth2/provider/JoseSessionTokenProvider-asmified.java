@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/OAuthRedirectionState;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/OAuthRedirectionState;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/OAuthRedirectionState;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/OAuthRedirectionState;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -82,7 +82,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/oauth2/utils/OAuthUtils", "getSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/lang/String;", false);
@@ -91,13 +91,13 @@ methodVisitor.visitMaxs(1, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/provider/JoseSessionTokenProvider", "getSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/provider/JoseSessionTokenProvider", "getSessionToken", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljakarta/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

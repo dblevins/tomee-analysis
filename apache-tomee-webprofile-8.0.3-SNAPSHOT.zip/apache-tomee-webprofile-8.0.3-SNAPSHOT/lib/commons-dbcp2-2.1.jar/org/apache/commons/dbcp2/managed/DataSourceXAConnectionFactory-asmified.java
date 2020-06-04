@@ -43,20 +43,20 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "password", "Ljava/lang/Strin
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;Ljavax/sql/XADataSource;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;Ljavax/sql/XADataSource;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory", "<init>", "(Ljavax/transaction/TransactionManager;Ljavax/sql/XADataSource;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory", "<init>", "(Ljakarta/transaction/TransactionManager;Ljavax/sql/XADataSource;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;Ljavax/sql/XADataSource;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;Ljavax/sql/XADataSource;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -69,7 +69,7 @@ methodVisitor.visitLdcInsn("transactionManager is null");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory", "javax/transaction/TransactionManager", "javax/sql/XADataSource", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory", "jakarta/transaction/TransactionManager", "javax/sql/XADataSource", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -84,7 +84,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/dbcp2/managed/TransactionRegistry");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionRegistry", "<init>", "(Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/managed/TransactionRegistry", "<init>", "(Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory", "transactionRegistry", "Lorg/apache/commons/dbcp2/managed/TransactionRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);

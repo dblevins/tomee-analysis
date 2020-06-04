@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/spi/StateCacheProviderWrapper", "Lorg/apache/myfaces/spi/StateCacheProvider;Ljavax/faces/FacesWrapper<Lorg/apache/myfaces/spi/StateCacheProvider;>;", "org/apache/myfaces/spi/StateCacheProvider", new String[] { "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/spi/StateCacheProviderWrapper", "Lorg/apache/myfaces/spi/StateCacheProvider;Ljakarta/faces/FacesWrapper<Lorg/apache/myfaces/spi/StateCacheProvider;>;", "org/apache/myfaces/spi/StateCacheProvider", new String[] { "jakarta/faces/FacesWrapper" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Lorg/apache/myfaces/spi/StateCacheProvider;", null, null);
@@ -50,12 +50,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateCache", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateCache", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/StateCacheProviderWrapper", "getWrapped", "()Lorg/apache/myfaces/spi/StateCacheProvider;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/StateCacheProvider", "getStateCache", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/StateCacheProvider", "getStateCache", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -158,14 +158,14 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInputRecord", "(Lorg/eclipse/persistence/eis/EISAccessor;)Ljavax/resource/cci/Record;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInputRecord", "(Lorg/eclipse/persistence/eis/EISAccessor;)Ljakarta/resource/cci/Record;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISAccessor", "getEISPlatform", "()Lorg/eclipse/persistence/eis/EISPlatform;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/XMLInteraction", "getInputRecordName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDOMRecord", "(Ljava/lang/String;Lorg/eclipse/persistence/eis/EISAccessor;)Ljavax/resource/cci/Record;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDOMRecord", "(Ljava/lang/String;Lorg/eclipse/persistence/eis/EISAccessor;)Ljakarta/resource/cci/Record;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -177,7 +177,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "setDOMInRecord", "(Lorg/w3c/dom/Element;Ljavax/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "setDOMInRecord", "(Lorg/w3c/dom/Element;Ljakarta/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/oxm/record/XMLRecord");
 Label label0 = new Label();
@@ -189,7 +189,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/intera
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/DatabaseQuery", "getSession", "()Lorg/eclipse/persistence/internal/sessions/AbstractSession;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/record/XMLRecord", "setSession", "(Lorg/eclipse/persistence/internal/sessions/AbstractSession;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/resource/cci/Record", "org/w3c/dom/Element"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/resource/cci/Record", "org/w3c/dom/Element"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
@@ -376,7 +376,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildRow", "(Ljavax/resource/cci/Record;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildRow", "(Ljakarta/resource/cci/Record;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -390,7 +390,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISAcc
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDatabaseRowFromDOMRecord", "(Ljavax/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDatabaseRowFromDOMRecord", "(Ljakarta/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -461,7 +461,7 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildRows", "(Ljavax/resource/cci/Record;Lorg/eclipse/persistence/eis/EISAccessor;)Ljava/util/Vector;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildRows", "(Ljakarta/resource/cci/Record;Lorg/eclipse/persistence/eis/EISAccessor;)Ljava/util/Vector;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -480,7 +480,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISAcc
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDatabaseRowFromDOMRecord", "(Ljavax/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISPlatform", "createDatabaseRowFromDOMRecord", "(Ljakarta/resource/cci/Record;Lorg/eclipse/persistence/eis/interactions/EISInteraction;Lorg/eclipse/persistence/eis/EISAccessor;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/XMLInteraction", "getOutputResultPath", "()Ljava/lang/String;", false);
@@ -547,7 +547,7 @@ methodVisitor.visitLdcInsn("\u0009spec => ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/StringWriter", "write", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/XMLInteraction", "getInteractionSpec", "()Ljavax/resource/cci/InteractionSpec;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/interactions/XMLInteraction", "getInteractionSpec", "()Ljakarta/resource/cci/InteractionSpec;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "valueOf", "(Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/StringWriter", "write", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);

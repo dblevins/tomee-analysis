@@ -22,25 +22,25 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/CompositeELResolver", null, "javax/el/CompositeELResolver", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/CompositeELResolver", null, "jakarta/el/CompositeELResolver", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "org/apache/myfaces/el/CompositeELResolver", "CompositeIterator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolvers", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_elResolvers", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/CompositeELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/CompositeELResolver", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFeatureDescriptors", "(Ljavax/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", "(Ljavax/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator<Ljava/beans/FeatureDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFeatureDescriptors", "(Ljakarta/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", "(Ljakarta/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator<Ljava/beans/FeatureDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver", "_elResolvers", "Ljava/util/Collection;");
@@ -58,17 +58,17 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "<init>", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "<init>", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL | ACC_SYNCHRONIZED, "add", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL | ACC_SYNCHRONIZED, "add", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver", "_elResolvers", "Ljava/util/Collection;");
 Label label0 = new Label();

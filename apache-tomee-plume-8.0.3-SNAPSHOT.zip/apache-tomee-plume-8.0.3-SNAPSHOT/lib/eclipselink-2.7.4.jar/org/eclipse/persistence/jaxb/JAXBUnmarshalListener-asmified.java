@@ -24,10 +24,10 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", null, "java/lang/Object", new String[] { "org/eclipse/persistence/oxm/XMLUnmarshalListener" });
 
-classWriter.visitInnerClass("javax/xml/bind/Unmarshaller$Listener", "javax/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/xml/bind/Unmarshaller$Listener", "jakarta/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listener", "Ljavax/xml/bind/Unmarshaller$Listener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,36 +35,36 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "classBasedUnmarshalEvents", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "unmarshaller", "Ljavax/xml/bind/Unmarshaller;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/bind/Unmarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/bind/Unmarshaller;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setListener", "(Ljavax/xml/bind/Unmarshaller$Listener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setListener", "(Ljakarta/xml/bind/Unmarshaller$Listener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getListener", "()Ljavax/xml/bind/Unmarshaller$Listener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getListener", "()Ljakarta/xml/bind/Unmarshaller$Listener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -112,7 +112,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -162,7 +162,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -181,14 +181,14 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -238,7 +238,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -288,7 +288,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "unmarshaller", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -307,14 +307,14 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label10);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljavax/xml/bind/Unmarshaller$Listener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBUnmarshalListener", "listener", "Ljakarta/xml/bind/Unmarshaller$Listener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

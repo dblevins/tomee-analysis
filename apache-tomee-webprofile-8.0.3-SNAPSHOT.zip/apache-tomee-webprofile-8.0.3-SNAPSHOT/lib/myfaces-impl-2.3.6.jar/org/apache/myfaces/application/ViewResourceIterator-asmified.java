@@ -49,11 +49,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "maxDepth", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljavax/faces/application/ResourceVisitOption;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljakarta/faces/application/ResourceVisitOption;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "pathSet", "Ljava/util/Set;",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceHandlerSupport;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceHandlerSupport;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Ljava/lang/String;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceHandlerSupport;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceHandlerSupport;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Ljava/lang/String;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -89,10 +89,10 @@ methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "options", "[Ljavax/faces/application/ResourceVisitOption;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "options", "[Ljakarta/faces/application/ResourceVisitOption;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "origBasePath", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("/");
@@ -104,7 +104,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResou
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
@@ -130,7 +130,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 12);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/lang/String", "[Lorg/apache/myfaces/shared/resource/ContractResourceLoader;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/lang/String", "[Lorg/apache/myfaces/shared/resource/ContractResourceLoader;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 12);
 methodVisitor.visitVarInsn(ILOAD, 11);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
@@ -186,7 +186,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(12, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
 Label label5 = new Label();
@@ -327,7 +327,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(12, 1);
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/application/ViewResourceIterator", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/resource/ResourceHandlerSupport", "java/lang/String", "java/util/List", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 16);
 methodVisitor.visitEnd();
@@ -367,13 +367,13 @@ methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "options", "[Ljavax/faces/application/ResourceVisitOption;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/resource/ResourceLoader", "iterator", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)Ljava/util/Iterator;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ViewResourceIterator", "options", "[Ljakarta/faces/application/ResourceVisitOption;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/resource/ResourceLoader", "iterator", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ViewResourceIterator", "currentIterator", "Ljava/util/Iterator;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

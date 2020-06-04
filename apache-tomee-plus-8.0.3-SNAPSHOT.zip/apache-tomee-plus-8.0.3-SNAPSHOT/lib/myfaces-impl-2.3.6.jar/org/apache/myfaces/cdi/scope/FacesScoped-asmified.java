@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/cdi/scope/FacesScoped", null, "java/lang/Object", new String[] { "java/lang/annotation/Annotation" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/NormalScope;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/NormalScope;", true);
 annotationVisitor0.visitEnd();
 }
 {

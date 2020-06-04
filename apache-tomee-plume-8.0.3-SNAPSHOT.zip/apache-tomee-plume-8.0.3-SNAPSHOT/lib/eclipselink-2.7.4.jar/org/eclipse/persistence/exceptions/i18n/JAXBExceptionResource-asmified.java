@@ -862,7 +862,7 @@ methodVisitor.visitLdcInsn("50064");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("XmlAdapterClass [{0}] does not extend \"javax.xml.bind.annotation.adapters.XmlAdapter\" as expected.  It is required that the adapter class extend \"javax.xml.bind.annotation.adapters.XmlAdapter\", and declare methods \"public abstract BoundType unmarshal(ValueType v)\" and \"public abstract ValueType marshal(BoundType v)\".");
+methodVisitor.visitLdcInsn("XmlAdapterClass [{0}] does not extend \"jakarta.xml.bind.annotation.adapters.XmlAdapter\" as expected.  It is required that the adapter class extend \"jakarta.xml.bind.annotation.adapters.XmlAdapter\", and declare methods \"public abstract BoundType unmarshal(ValueType v)\" and \"public abstract ValueType marshal(BoundType v)\".");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);

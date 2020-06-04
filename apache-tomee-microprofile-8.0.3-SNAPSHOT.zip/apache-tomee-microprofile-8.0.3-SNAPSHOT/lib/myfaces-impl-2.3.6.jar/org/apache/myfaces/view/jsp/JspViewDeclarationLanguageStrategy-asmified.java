@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", null, "java/lang/Object", new String[] { "org/apache/myfaces/view/ViewDeclarationLanguageStrategy" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_language", "Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,12 +45,12 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "loadSuffixes", "(Ljavax/faces/context/ExternalContext;)Ljava/util/LinkedList;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "loadSuffixes", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/LinkedList;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_suffixes", "Ljava/util/LinkedList;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguage");
@@ -59,17 +59,17 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_suffixes", "Ljava/util/LinkedList;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguage", "<init>", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/view/ViewDeclarationLanguageStrategy;Ljava/util/LinkedList;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_language", "Ljavax/faces/view/ViewDeclarationLanguage;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguage", "<init>", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/view/ViewDeclarationLanguageStrategy;Ljava/util/LinkedList;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "()Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "()Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_language", "Ljavax/faces/view/ViewDeclarationLanguage;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy", "_language", "Ljakarta/faces/view/ViewDeclarationLanguage;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -83,7 +83,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "loadSuffixes", "(Ljavax/faces/context/ExternalContext;)Ljava/util/LinkedList;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/LinkedList<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "loadSuffixes", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/LinkedList;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/LinkedList<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/LinkedList");
 methodVisitor.visitInsn(DUP);
@@ -91,7 +91,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedList", "<init>", "
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("org.apache.myfaces.JSP_SUFFIX");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "<D:Lorg/apache/bval/jsr/descriptor/ElementD<**>;:Ljavax/validation/metadata/CascadableDescriptor;:Ljavax/validation/metadata/ContainerDescriptor;>Lorg/apache/bval/jsr/job/ValidationJob<TT;>.Frame<TD;>;", "org/apache/bval/jsr/job/ValidationJob$Frame", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "<D:Lorg/apache/bval/jsr/descriptor/ElementD<**>;:Ljakarta/validation/metadata/CascadableDescriptor;:Ljakarta/validation/metadata/ContainerDescriptor;>Lorg/apache/bval/jsr/job/ValidationJob<TT;>.Frame<TD;>;", "org/apache/bval/jsr/job/ValidationJob$Frame", null);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidationJob$SproutFrame", "org/apache/bval/jsr/job/ValidationJob", "SproutFrame", ACC_PUBLIC);
 
@@ -38,7 +38,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidationJob$ContainerElem
 
 classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidationJob$ContainerElementConstraintsFrame", "org/apache/bval/jsr/job/ValidationJob", "ContainerElementConstraintsFrame", ACC_PRIVATE);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "validateDescriptorConstraints", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljavax/validation/ConstraintViolation<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "validateDescriptorConstraints", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljakarta/validation/ConstraintViolation<TT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -89,10 +89,10 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/ContainerDescriptor");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ContainerDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/ContainerDescriptor");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ContainerDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$validateDescriptorConstraints$0", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", false), Type.getType("(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$validateDescriptorConstraints$0", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", false), Type.getType("(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "flatMap", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -106,7 +106,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "recurse", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljavax/validation/ConstraintViolation<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "recurse", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljakarta/validation/ConstraintViolation<TT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "context", "Lorg/apache/bval/jsr/GraphContext;");
@@ -115,7 +115,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isCascaded", "(Ljavax/validation/metadata/ElementDescriptor;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isCascaded", "(Ljakarta/validation/metadata/ElementDescriptor;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
@@ -125,12 +125,12 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/CascadableDescriptor");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/CascadableDescriptor", "getGroupConversions", "()Ljava/util/Set;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/CascadableDescriptor");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/CascadableDescriptor", "getGroupConversions", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$recurse$5", "(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;", false), Type.getType("(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$recurse$5", "(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;", false), Type.getType("(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;")});
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/bval/jsr/job/ValidationJob$SproutFrame;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$recurse$6", "(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;", false), Type.getType("(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/bval/jsr/job/ValidationJob$SproutFrame;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$recurse$6", "(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;", false), Type.getType("(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;")});
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Collectors", "toMap", "(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
@@ -151,22 +151,22 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "cascade", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljavax/validation/ConstraintViolation<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "cascade", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer;)V", "(Lorg/apache/bval/jsr/groups/GroupStrategy;Ljava/util/function/Consumer<Ljakarta/validation/ConstraintViolation<TT;>;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/validation/ValidationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/validation/ValidationException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/ContainerDescriptor");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ContainerDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/ContainerDescriptor");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ContainerDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$cascade$8", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Z", false), Type.getType("(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$cascade$8", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Z", false), Type.getType("(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$cascade$9", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", false), Type.getType("(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$cascade$9", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", false), Type.getType("(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "flatMap", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -175,8 +175,8 @@ methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/job/Valida
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "forEach", "(Ljava/util/function/Consumer;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/CascadableDescriptor");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/CascadableDescriptor", "isCascaded", "()Z", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/CascadableDescriptor");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/CascadableDescriptor", "isCascaded", "()Z", true);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitInsn(RETURN);
@@ -184,13 +184,13 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/validation/metadata/PropertyDescriptor");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/validation/metadata/PropertyDescriptor");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "this$0", "Lorg/apache/bval/jsr/job/ValidationJob;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob", "validatorContext", "Lorg/apache/bval/jsr/ApacheFactoryContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getTraversableResolver", "()Ljavax/validation/TraversableResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getTraversableResolver", "()Ljakarta/validation/TraversableResolver;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "context", "Lorg/apache/bval/jsr/GraphContext;");
@@ -220,26 +220,26 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "descriptor", "Lorg/apache/bval/jsr/descriptor/ElementD;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/descriptor/PropertyD");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/PropertyD", "getElementType", "()Ljava/lang/annotation/ElementType;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label6);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/bval/jsr/job/ValidationJob$SproutFrame", "org/apache/bval/jsr/groups/GroupStrategy", "java/util/function/Consumer", "javax/validation/TraversableResolver", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl", "org/apache/bval/jsr/util/NodeImpl"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/bval/jsr/job/ValidationJob$SproutFrame", "org/apache/bval/jsr/groups/GroupStrategy", "java/util/function/Consumer", "jakarta/validation/TraversableResolver", "java/lang/Object", "org/apache/bval/jsr/util/PathImpl", "org/apache/bval/jsr/util/NodeImpl"}, 0, new Object[] {});
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/validation/ValidationException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/validation/ValidationException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 7);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/bval/jsr/job/ValidationJob$SproutFrame", "org/apache/bval/jsr/groups/GroupStrategy", "java/util/function/Consumer"}, 0, new Object[] {});
@@ -600,14 +600,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$Sp
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "getKey", "()Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/GraphContext", "runtimeKey", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljavax/validation/valueextraction/ValueExtractor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljakarta/validation/valueextraction/ValueExtractor;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "context", "Lorg/apache/bval/jsr/GraphContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "getKey", "()Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ExtractValues", "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ExtractValues", "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$null$10", "(Lorg/apache/bval/jsr/GraphContext;)Z", false), Type.getType("(Lorg/apache/bval/jsr/GraphContext;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
@@ -669,24 +669,24 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$cascade$9", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$cascade$9", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/descriptor/ContainerElementTypeD;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/ComposedD", "unwrap", "(Ljavax/validation/metadata/ElementDescriptor;Ljava/lang/Class;)Ljava/util/stream/Stream;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/ComposedD", "unwrap", "(Ljakarta/validation/metadata/ElementDescriptor;Ljava/lang/Class;)Ljava/util/stream/Stream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$cascade$8", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$cascade$8", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ContainerElementTypeDescriptor", "isCascaded", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ContainerElementTypeDescriptor", "isCascaded", "()Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ContainerElementTypeDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ContainerElementTypeDescriptor", "getConstrainedContainerElementTypes", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
@@ -716,7 +716,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$recurse$6", "(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$recurse$6", "(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/GroupStrategy;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "this$0", "Lorg/apache/bval/jsr/job/ValidationJob;");
@@ -727,7 +727,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/GroupConversionDescriptor", "getTo", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/GroupConversionDescriptor", "getTo", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/groups/GroupsComputer", "computeGroups", "([Ljava/lang/Class;)Lorg/apache/bval/jsr/groups/Groups;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/groups/Groups", "asStrategy", "()Lorg/apache/bval/jsr/groups/GroupStrategy;", false);
@@ -736,10 +736,10 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$recurse$5", "(Ljavax/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$recurse$5", "(Ljakarta/validation/metadata/GroupConversionDescriptor;)Lorg/apache/bval/jsr/groups/Group;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/GroupConversionDescriptor", "getFrom", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/GroupConversionDescriptor", "getFrom", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/groups/Group", "of", "(Ljava/lang/Class;)Lorg/apache/bval/jsr/groups/Group;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
@@ -768,14 +768,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/GraphContext",
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getValueExtractors", "()Lorg/apache/bval/jsr/valueextraction/ValueExtractors;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "getKey", "()Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljavax/validation/valueextraction/ValueExtractor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljakarta/validation/valueextraction/ValueExtractor;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "context", "Lorg/apache/bval/jsr/GraphContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "getKey", "()Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ExtractValues", "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ExtractValues", "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidationJob$SproutFrame", "lambda$null$1", "(Lorg/apache/bval/jsr/GraphContext;)Z", false), Type.getType("(Lorg/apache/bval/jsr/GraphContext;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
@@ -839,11 +839,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$validateDescriptorConstraints$0", "(Ljavax/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$validateDescriptorConstraints$0", "(Ljakarta/validation/metadata/ContainerElementTypeDescriptor;)Ljava/util/stream/Stream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/descriptor/ContainerElementTypeD;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/ComposedD", "unwrap", "(Ljavax/validation/metadata/ElementDescriptor;Ljava/lang/Class;)Ljava/util/stream/Stream;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/ComposedD", "unwrap", "(Ljakarta/validation/metadata/ElementDescriptor;Ljava/lang/Class;)Ljava/util/stream/Stream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

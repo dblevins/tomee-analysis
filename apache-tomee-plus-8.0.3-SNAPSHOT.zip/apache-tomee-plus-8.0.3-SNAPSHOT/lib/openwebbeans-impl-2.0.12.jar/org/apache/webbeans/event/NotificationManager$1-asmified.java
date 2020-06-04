@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/event/NotificationManager$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/event/NotificationManager$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 classWriter.visitOuterClass("org/apache/webbeans/event/NotificationManager", null, null);
 
@@ -45,12 +45,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljavax/enterprise/inject/spi/ObserverMethod;)I", "(Ljavax/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;Ljavax/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;)I", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljakarta/enterprise/inject/spi/ObserverMethod;)I", "(Ljakarta/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;Ljakarta/enterprise/inject/spi/ObserverMethod<-Ljava/lang/Object;>;)I", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ObserverMethod", "getPriority", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ObserverMethod", "getPriority", "()I", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ObserverMethod", "getPriority", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ObserverMethod", "getPriority", "()I", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "compare", "(II)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 3);
@@ -61,10 +61,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/ObserverMethod");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/ObserverMethod");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/ObserverMethod");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager$1", "compare", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljavax/enterprise/inject/spi/ObserverMethod;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/ObserverMethod");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/event/NotificationManager$1", "compare", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljakarta/enterprise/inject/spi/ObserverMethod;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

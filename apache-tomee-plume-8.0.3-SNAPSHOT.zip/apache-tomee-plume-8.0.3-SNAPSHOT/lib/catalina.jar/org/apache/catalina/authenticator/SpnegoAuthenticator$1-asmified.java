@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/authenticator/SpnegoAuthenticator$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Lorg/ietf/jgss/GSSCredential;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/catalina/authenticator/SpnegoAuthenticator", "doAuthenticate", "(Lorg/apache/catalina/connector/Request;Ljavax/servlet/http/HttpServletResponse;)Z");
+classWriter.visitOuterClass("org/apache/catalina/authenticator/SpnegoAuthenticator", "doAuthenticate", "(Lorg/apache/catalina/connector/Request;Ljakarta/servlet/http/HttpServletResponse;)Z");
 
 classWriter.visitInnerClass("org/apache/catalina/authenticator/SpnegoAuthenticator$1", null, null, 0);
 

@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildFlowInSplitSubJob", "(Ljava/lang/Long;Ljavax/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Split;Lorg/apache/batchee/jaxb/Flow;)Lorg/apache/batchee/jaxb/JSLJob;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildFlowInSplitSubJob", "(Ljava/lang/Long;Ljakarta/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Split;Lorg/apache/batchee/jaxb/Flow;)Lorg/apache/batchee/jaxb/JSLJob;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/jaxb/ObjectFactory");
 methodVisitor.visitInsn(DUP);
@@ -59,7 +59,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/JSLJob", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/runtime/context/JobContext", "getProperties", "()Ljava/util/Properties;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/runtime/context/JobContext", "getProperties", "()Ljava/util/Properties;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/jsl/CloneUtility", "javaPropsTojslProperties", "(Ljava/util/Properties;)Lorg/apache/batchee/jaxb/JSLProperties;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/JSLJob", "setProperties", "(Lorg/apache/batchee/jaxb/JSLProperties;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -73,7 +73,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildPartitionSubJob", "(Ljava/lang/Long;Ljavax/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Step;I)Lorg/apache/batchee/jaxb/JSLJob;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "buildPartitionSubJob", "(Ljava/lang/Long;Ljakarta/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Step;I)Lorg/apache/batchee/jaxb/JSLJob;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/jaxb/ObjectFactory");
 methodVisitor.visitInsn(DUP);
@@ -93,7 +93,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/JSLJob", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/runtime/context/JobContext", "getProperties", "()Ljava/util/Properties;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/runtime/context/JobContext", "getProperties", "()Ljava/util/Properties;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/jsl/CloneUtility", "javaPropsTojslProperties", "(Ljava/util/Properties;)Lorg/apache/batchee/jaxb/JSLProperties;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/JSLJob", "setProperties", "(Lorg/apache/batchee/jaxb/JSLProperties;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -117,7 +117,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/Step", "ge
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/jsl/CloneUtility", "cloneBatchlet", "(Lorg/apache/batchee/jaxb/Batchlet;)Lorg/apache/batchee/jaxb/Batchlet;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/Step", "setBatchlet", "(Lorg/apache/batchee/jaxb/Batchlet;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"java/lang/Long", "javax/batch/runtime/context/JobContext", "org/apache/batchee/jaxb/Step", Opcodes.INTEGER, "org/apache/batchee/jaxb/ObjectFactory", "org/apache/batchee/jaxb/JSLJob", "java/lang/String", "org/apache/batchee/jaxb/Step"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"java/lang/Long", "jakarta/batch/runtime/context/JobContext", "org/apache/batchee/jaxb/Step", Opcodes.INTEGER, "org/apache/batchee/jaxb/ObjectFactory", "org/apache/batchee/jaxb/JSLJob", "java/lang/String", "org/apache/batchee/jaxb/Step"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/jaxb/Step", "getChunk", "()Lorg/apache/batchee/jaxb/Chunk;", false);
 Label label1 = new Label();

@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "monitors", "Ljava/util/List;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sc", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sc", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/config/ConfigureListener;Ljavax/servlet/ServletContext;Ljava/util/Collection;)V", "(Ljavax/servlet/ServletContext;Ljava/util/Collection<Ljava/net/URI;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/config/ConfigureListener;Ljakarta/servlet/ServletContext;Ljava/util/Collection;)V", "(Ljakarta/servlet/ServletContext;Ljava/util/Collection<Ljava/net/URI;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -66,10 +66,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/AssertionError", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "com/sun/faces/config/ConfigureListener", "javax/servlet/ServletContext", "java/util/Collection"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "com/sun/faces/config/ConfigureListener", "jakarta/servlet/ServletContext", "java/util/Collection"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "sc", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "sc", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -250,8 +250,8 @@ methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "this$0", "Lcom/sun/faces/config/ConfigureListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "sc", "Ljavax/servlet/ServletContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/ConfigureListener", "access$700", "(Lcom/sun/faces/config/ConfigureListener;Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor", "sc", "Ljakarta/servlet/ServletContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/ConfigureListener", "access$700", "(Lcom/sun/faces/config/ConfigureListener;Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

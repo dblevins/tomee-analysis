@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "projectStage", "Ljavax/faces/application/ProjectStage;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "projectStage", "Ljakarta/faces/application/ProjectStage;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,10 +46,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProjectStage", "(Ljavax/faces/application/Application;)Ljavax/faces/application/ProjectStage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProjectStage", "(Ljakarta/faces/application/Application;)Ljakarta/faces/application/ProjectStage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -57,22 +57,22 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicat
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ProjectStage", "Production", "Ljavax/faces/application/ProjectStage;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Stage", "setProjectStageFromValue", "(Ljava/lang/String;Ljavax/faces/application/ProjectStage;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage", "Production", "Ljakarta/faces/application/ProjectStage;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Stage", "setProjectStageFromValue", "(Ljava/lang/String;Ljakarta/faces/application/ProjectStage;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ProjectStage", "Development", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage", "Development", "Ljakarta/faces/application/ProjectStage;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostAddToViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostAddToViewEvent;"));
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/ValidateComponentNesting");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/ValidateComponentNesting", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "subscribeToEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "subscribeToEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -80,9 +80,9 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "fetchProjectStageFromConfig", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/config/WebConfiguration;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/config/WebConfiguration$WebEnvironmentEntry", "ProjectStage", "Lcom/sun/faces/config/WebConfiguration$WebEnvironmentEntry;");
@@ -127,7 +127,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setProjectStageFromValue", "(Ljava/lang/String;Ljavax/faces/application/ProjectStage;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setProjectStageFromValue", "(Ljava/lang/String;Ljakarta/faces/application/ProjectStage;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -139,8 +139,8 @@ methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/application/ProjectStage", "valueOf", "(Ljava/lang/String;)Ljavax/faces/application/ProjectStage;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/application/ProjectStage", "valueOf", "(Ljava/lang/String;)Ljakarta/faces/application/ProjectStage;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -158,12 +158,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", 
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljavax/faces/application/ProjectStage;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Stage", "projectStage", "Ljakarta/faces/application/ProjectStage;");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

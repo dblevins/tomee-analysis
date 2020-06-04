@@ -25,13 +25,13 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER | ACC_ENUM, "org/apache/xml/security/configuration/InOutAttrType", "Ljava/lang/Enum<Lorg/apache/xml/security/configuration/InOutAttrType;>;", "java/lang/Enum", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "inOutAttrType");
 annotationVisitor0.visit("namespace", "http://www.xmlsecurity.org/NS/configuration");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlEnum;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlEnum;", true);
 annotationVisitor0.visitEnd();
 }
 {

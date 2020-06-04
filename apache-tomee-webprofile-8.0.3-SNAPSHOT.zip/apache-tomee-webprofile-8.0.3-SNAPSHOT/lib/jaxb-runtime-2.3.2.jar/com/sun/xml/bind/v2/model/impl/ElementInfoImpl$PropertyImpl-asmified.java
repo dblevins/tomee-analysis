@@ -121,8 +121,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValue", "()Ljava/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl", "this$0", "Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "access$200", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljavax/xml/bind/annotation/XmlElementDecl;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "defaultValue", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "access$200", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljakarta/xml/bind/annotation/XmlElementDecl;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "defaultValue", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("\u0000");
@@ -220,11 +220,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpectedMimeType", "()Ljavax/activation/MimeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpectedMimeType", "()Ljakarta/activation/MimeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl", "this$0", "Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "access$600", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljavax/activation/MimeType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "access$600", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljakarta/activation/MimeType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

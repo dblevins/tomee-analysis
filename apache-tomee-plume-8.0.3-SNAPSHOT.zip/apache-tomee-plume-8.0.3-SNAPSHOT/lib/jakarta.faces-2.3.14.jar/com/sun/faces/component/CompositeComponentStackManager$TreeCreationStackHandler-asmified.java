@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "push", "(Ljavax/faces/component/UIComponent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "push", "(Ljakarta/faces/component/UIComponent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -100,7 +100,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/component/CompositeCompon
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/component/UIComponent", "isCompositeComponent", "(Ljavax/faces/component/UIComponent;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/UIComponent", "isCompositeComponent", "(Ljakarta/faces/component/UIComponent;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitTypeInsn(NEW, "java/lang/AssertionError");
 methodVisitor.visitInsn(DUP);
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentCompositeComponent", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParentCompositeComponent", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -155,7 +155,7 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Stack", "get", "(I)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIComponent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIComponent");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();

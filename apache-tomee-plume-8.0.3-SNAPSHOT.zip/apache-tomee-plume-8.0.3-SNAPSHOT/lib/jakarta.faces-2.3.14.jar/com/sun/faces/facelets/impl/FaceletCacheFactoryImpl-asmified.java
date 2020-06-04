@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/impl/FaceletCacheFactoryImpl", null, "javax/faces/view/facelets/FaceletCacheFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/impl/FaceletCacheFactoryImpl", null, "jakarta/faces/view/facelets/FaceletCacheFactory", null);
 
 classWriter.visitInnerClass("com/sun/faces/config/WebConfiguration$WebContextInitParameter", "com/sun/faces/config/WebConfiguration", "WebContextInitParameter", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
@@ -31,13 +31,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/FaceletCacheFactory", "<init>", "(Ljavax/faces/view/facelets/FaceletCacheFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/FaceletCacheFactory", "<init>", "(Ljakarta/faces/view/facelets/FaceletCacheFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletCache", "()Ljavax/faces/view/facelets/FaceletCache;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletCache", "()Ljakarta/faces/view/facelets/FaceletCache;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/WebConfiguration", "getInstance", "()Lcom/sun/faces/config/WebConfiguration;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);

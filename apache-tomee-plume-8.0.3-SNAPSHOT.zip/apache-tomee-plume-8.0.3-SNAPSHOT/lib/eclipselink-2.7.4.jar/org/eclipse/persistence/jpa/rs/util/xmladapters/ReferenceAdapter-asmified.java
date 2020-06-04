@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter", "<T::Lorg/eclipse/persistence/internal/weaving/PersistenceWeavedRest;>Ljavax/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/Object;Ljava/lang/Object;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter", "<T::Lorg/eclipse/persistence/internal/weaving/PersistenceWeavedRest;>Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/Object;Ljava/lang/Object;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "baseURI", "Ljava/lang/String;", null, null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter", "baseURI", "Ljava/lang/String;");
@@ -51,7 +51,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter", "baseURI", "Ljava/lang/String;");
@@ -241,8 +241,8 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter", "context", "Lorg/eclipse/persistence/jpa/rs/PersistenceContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/PersistenceContext", "getEmf", "()Ljavax/persistence/EntityManagerFactory;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseSession", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/DatabaseSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/PersistenceContext", "getEmf", "()Ljakarta/persistence/EntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseSession", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/DatabaseSession;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/sessions/DatabaseSession", "doesObjectExist", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label6);

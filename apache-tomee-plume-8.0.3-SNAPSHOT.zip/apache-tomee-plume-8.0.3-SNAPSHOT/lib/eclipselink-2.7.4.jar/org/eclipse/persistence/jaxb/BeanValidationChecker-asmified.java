@@ -41,7 +41,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ReflectiveOperationException");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.validation.Validation");
+methodVisitor.visitLdcInsn("jakarta.validation.Validation");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

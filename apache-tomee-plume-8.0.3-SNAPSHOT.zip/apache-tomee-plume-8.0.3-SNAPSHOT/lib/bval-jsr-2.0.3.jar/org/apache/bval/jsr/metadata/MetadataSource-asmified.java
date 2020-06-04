@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "process", "(Ljavax/validation/spi/ConfigurationState;Ljava/util/function/Consumer;Ljava/util/function/BiConsumer;)V", "(Ljavax/validation/spi/ConfigurationState;Ljava/util/function/Consumer<Lorg/apache/bval/jsr/metadata/ValidatorMappingProvider;>;Ljava/util/function/BiConsumer<Ljava/lang/Class<*>;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForBean<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "process", "(Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/Consumer;Ljava/util/function/BiConsumer;)V", "(Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/Consumer<Lorg/apache/bval/jsr/metadata/ValidatorMappingProvider;>;Ljava/util/function/BiConsumer<Ljava/lang/Class<*>;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForBean<*>;>;)V", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

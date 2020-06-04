@@ -38,7 +38,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_TRANSIENT, "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "objectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "objectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -56,17 +56,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("datasources");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/ObjectNameBuilder", "uniqueName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/ObjectNameBuilder", "uniqueName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/monitoring/DynamicMBeanWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/DynamicMBeanWrapper", "<init>", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "java/lang/String", "org/apache/commons/dbcp2/BasicDataSource"}, 0, new Object[] {});
@@ -82,14 +82,14 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljakarta/management/ObjectName;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);

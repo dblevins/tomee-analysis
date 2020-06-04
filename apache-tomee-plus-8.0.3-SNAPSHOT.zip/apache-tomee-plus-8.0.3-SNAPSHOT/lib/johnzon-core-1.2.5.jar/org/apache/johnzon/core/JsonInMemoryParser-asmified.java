@@ -30,14 +30,14 @@ classWriter.visitInnerClass("org/apache/johnzon/core/JsonInMemoryParser$ObjectIt
 
 classWriter.visitInnerClass("org/apache/johnzon/core/JsonInMemoryParser$ArrayIterator", "org/apache/johnzon/core/JsonInMemoryParser", "ArrayIterator", ACC_PRIVATE);
 
-classWriter.visitInnerClass("javax/json/stream/JsonParser$Event", "javax/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/stream/JsonParser$Event", "jakarta/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/johnzon/core/BufferStrategy$BufferProvider", "org/apache/johnzon/core/BufferStrategy", "BufferProvider", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/json/JsonValue$ValueType", "javax/json/JsonValue", "ValueType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/JsonValue$ValueType", "jakarta/json/JsonValue", "ValueType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "stack", "Lorg/apache/johnzon/core/SimpleStack;", "Lorg/apache/johnzon/core/SimpleStack<Ljava/util/Iterator<Ljavax/json/stream/JsonParser$Event;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "stack", "Lorg/apache/johnzon/core/SimpleStack;", "Lorg/apache/johnzon/core/SimpleStack<Ljava/util/Iterator<Ljakarta/json/stream/JsonParser$Event;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,11 +45,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bufferProvider",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentEvent", "Ljavax/json/stream/JsonParser$Event;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentEvent", "Ljakarta/json/stream/JsonParser$Event;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentValue", "Ljavax/json/JsonValue;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentValue", "Ljakarta/json/JsonValue;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,22 +61,22 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectDepth", "I", null, nul
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "current", "()Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "current", "()Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonInMemoryParser", "hasNext", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonInMemoryParser", "internalNext", "()Ljavax/json/stream/JsonParser$Event;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonInMemoryParser", "internalNext", "()Ljakarta/json/stream/JsonParser$Event;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -129,11 +129,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getEvent", "(Ljavax/json/JsonValue$ValueType;)Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getEvent", "(Ljakarta/json/JsonValue$ValueType;)Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/johnzon/core/JsonInMemoryParser$1", "$SwitchMap$javax$json$JsonValue$ValueType", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/JsonValue$ValueType", "ordinal", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/JsonValue$ValueType", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -144,23 +144,23 @@ Label label5 = new Label();
 methodVisitor.visitTableSwitchInsn(1, 5, label5, new Label[] { label0, label1, label2, label3, label4 });
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_STRING", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_STRING", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_FALSE", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_FALSE", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NULL", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NULL", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_TRUE", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_TRUE", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -180,7 +180,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/json/JsonObject;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", "(Ljavax/json/JsonObject;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/json/JsonObject;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", "(Ljakarta/json/JsonObject;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JohnzonJsonParserImpl", "<init>", "()V", false);
@@ -201,7 +201,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonInMemoryParser$Obj
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonInMemoryParser$ObjectIterator", "<init>", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljavax/json/JsonObject;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonInMemoryParser$ObjectIterator", "<init>", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljakarta/json/JsonObject;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/SimpleStack", "push", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -211,7 +211,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/json/JsonArray;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", "(Ljavax/json/JsonArray;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/json/JsonArray;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", "(Ljakarta/json/JsonArray;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JohnzonJsonParserImpl", "<init>", "()V", false);
@@ -232,7 +232,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonInMemoryParser$Arr
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonInMemoryParser$ArrayIterator", "<init>", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljavax/json/JsonArray;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonInMemoryParser$ArrayIterator", "<init>", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljakarta/json/JsonArray;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/SimpleStack", "push", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -262,7 +262,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "internalNext", "()Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "internalNext", "()Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonInMemoryParser", "hasNext", "()Z", false);
@@ -280,11 +280,11 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryPars
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/SimpleStack", "peek", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Iterator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/stream/JsonParser$Event");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/stream/JsonParser$Event");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "START_ARRAY", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "START_ARRAY", "Ljakarta/json/stream/JsonParser$Event;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -298,8 +298,8 @@ methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "END_ARRAY", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "END_ARRAY", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);
@@ -310,8 +310,8 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryPars
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "START_OBJECT", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "START_OBJECT", "Ljakarta/json/stream/JsonParser$Event;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -325,8 +325,8 @@ methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "END_OBJECT", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "END_OBJECT", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);
@@ -337,7 +337,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryPars
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -346,13 +346,13 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getString", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "KEY_NAME", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "KEY_NAME", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_STRING", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_STRING", "Ljakarta/json/stream/JsonParser$Event;");
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -361,12 +361,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", 
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonString;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonString;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonString");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonString", "getString", "()Ljava/lang/String;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonString");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonString", "getString", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -375,8 +375,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isIntegralNumber", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -386,12 +386,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", 
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonNumber");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonNumber", "isIntegral", "()Z", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonNumber");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonNumber", "isIntegral", "()Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -408,8 +408,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInt", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -419,12 +419,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", 
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonNumber");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonNumber", "intValue", "()I", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonNumber");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonNumber", "intValue", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -433,8 +433,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLong", "()J", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -444,12 +444,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", 
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonNumber");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonNumber", "longValue", "()J", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonNumber");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonNumber", "longValue", "()J", true);
 methodVisitor.visitInsn(LRETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -459,7 +459,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isFitLong", "()Z", null, nu
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/johnzon/core/JsonLongImpl;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -469,8 +469,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBigDecimal", "()Ljava/math/BigDecimal;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljavax/json/stream/JsonParser$Event;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljavax/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentEvent", "Ljakarta/json/stream/JsonParser$Event;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/stream/JsonParser$Event", "VALUE_NUMBER", "Ljakarta/json/stream/JsonParser$Event;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -480,20 +480,20 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", 
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonNumber");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonNumber", "bigDecimalValue", "()Ljava/math/BigDecimal;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonNumber");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonNumber", "bigDecimalValue", "()Ljava/math/BigDecimal;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljavax/json/stream/JsonLocation;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljakarta/json/stream/JsonLocation;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/johnzon/core/JsonLocationImpl", "UNKNOWN_LOCATION", "Ljavax/json/stream/JsonLocation;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/johnzon/core/JsonLocationImpl", "UNKNOWN_LOCATION", "Ljakarta/json/stream/JsonLocation;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -515,21 +515,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljavax/json/JsonValue;)Ljavax/json/JsonValue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Lorg/apache/johnzon/core/JsonInMemoryParser;Ljakarta/json/JsonValue;)Ljakarta/json/JsonValue;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonInMemoryParser", "currentValue", "Ljakarta/json/JsonValue;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Ljavax/json/JsonValue$ValueType;)Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Ljakarta/json/JsonValue$ValueType;)Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/core/JsonInMemoryParser", "getEvent", "(Ljavax/json/JsonValue$ValueType;)Ljavax/json/stream/JsonParser$Event;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/core/JsonInMemoryParser", "getEvent", "(Ljakarta/json/JsonValue$ValueType;)Ljakarta/json/stream/JsonParser$Event;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

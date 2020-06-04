@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", null, "java/lang/Object", new String[] { "javax/xml/bind/Marshaller" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", null, "java/lang/Object", new String[] { "jakarta/xml/bind/Marshaller" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "write", "(Ljava/lang/Object;Lorg/metatype/sxc/util/XoXMLStreamWriter;Lorg/metatype/sxc/jaxb/RuntimeContext;ZZ)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "write", "(Ljava/lang/Object;Lorg/metatype/sxc/util/XoXMLStreamWriter;Lorg/metatype/sxc/jaxb/RuntimeContext;ZZ)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

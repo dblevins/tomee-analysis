@@ -194,7 +194,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getSecurityMana
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/security/jacc/PolicyContext", "setContextID", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/security/jacc/PolicyContext", "setContextID", "(Ljava/lang/String;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);

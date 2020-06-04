@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/AbstractManagedType", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/Types$BaseType<TX;>;Ljavax/persistence/metamodel/ManagedType<TX;>;", "org/apache/openjpa/persistence/meta/Types$BaseType", new String[] { "javax/persistence/metamodel/ManagedType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/AbstractManagedType", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/Types$BaseType<TX;>;Ljakarta/persistence/metamodel/ManagedType<TX;>;", "org/apache/openjpa/persistence/meta/Types$BaseType", new String[] { "jakarta/persistence/metamodel/ManagedType" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -58,7 +58,7 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Members$SetAttr
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Members$MapAttributeImpl", "org/apache/openjpa/persistence/meta/Members", "MapAttributeImpl", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/PluralAttribute$CollectionType", "javax/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/PluralAttribute$CollectionType", "jakarta/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/lib/util/Localizer$Message", "org/apache/openjpa/lib/util/Localizer", "Message", ACC_PUBLIC | ACC_STATIC);
 
@@ -75,7 +75,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "meta", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attrs", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/persistence/metamodel/Attribute<-TX;*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "attrs", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/persistence/metamodel/Attribute<-TX;*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -487,8 +487,8 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType$1", "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I");
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getDeclaredType", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl", "categorizeCollection", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/PluralAttribute$CollectionType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl", "categorizeCollection", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label31 = new Label();
 Label label32 = new Label();
@@ -582,7 +582,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljavax/persistence/metamodel/ManagedType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljakarta/persistence/metamodel/ManagedType;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "declaredAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$SingularAttributeFilter");
@@ -600,7 +600,7 @@ methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/Attribute<-TX;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/Attribute<-TX;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -610,7 +610,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/Attribute<TX;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/Attribute<TX;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -626,7 +626,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/SingularAttribute<-TX;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/SingularAttribute<-TX;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -642,7 +642,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/SingularAttribute<TX;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/SingularAttribute<TX;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -660,7 +660,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/Attribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/Attribute<-TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/Attribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/Attribute<-TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -673,7 +673,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeTypeFilter", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -684,14 +684,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -706,7 +706,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/met
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "singularAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$SingularAttributeFilter;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -717,15 +717,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/Attribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/Attribute<TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/Attribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/Attribute<TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -740,7 +740,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/met
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "declaredAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -751,14 +751,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -775,7 +775,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Abst
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "singularAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$SingularAttributeFilter;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -786,15 +786,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPluralAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/PluralAttribute<-TX;**>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPluralAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/PluralAttribute<-TX;**>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -810,7 +810,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredPluralAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/PluralAttribute<TX;**>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredPluralAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/PluralAttribute<TX;**>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -828,14 +828,14 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/CollectionAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/CollectionAttribute<-TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/CollectionAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/CollectionAttribute<-TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -845,7 +845,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -856,22 +856,22 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/CollectionAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/CollectionAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SetAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/SetAttribute<-TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SetAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/SetAttribute<-TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -881,7 +881,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -892,22 +892,22 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SetAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SetAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getList", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/ListAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/ListAttribute<-TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getList", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/ListAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/ListAttribute<-TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -917,7 +917,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -928,15 +928,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/ListAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/ListAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljavax/persistence/metamodel/MapAttribute;", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Ljavax/persistence/metamodel/MapAttribute<-TX;TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljakarta/persistence/metamodel/MapAttribute;", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Ljakarta/persistence/metamodel/MapAttribute<-TX;TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -946,15 +946,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "MAP", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "MAP", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$EntryTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$EntryTypeFilter", "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -966,15 +966,15 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/MapAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/MapAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/CollectionAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/CollectionAttribute<TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/CollectionAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/CollectionAttribute<TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -982,8 +982,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "declaredAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -993,7 +993,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -1004,15 +1004,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/CollectionAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/CollectionAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SetAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/SetAttribute<TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SetAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/SetAttribute<TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1020,14 +1020,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "declaredAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -1038,15 +1038,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SetAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SetAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredList", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/ListAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljavax/persistence/metamodel/ListAttribute<TX;TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredList", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/ListAttribute;", "<E:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)Ljakarta/persistence/metamodel/ListAttribute<TX;TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1054,8 +1054,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "declaredAttributeFilter", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -1065,7 +1065,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -1076,15 +1076,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/ListAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/ListAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljavax/persistence/metamodel/MapAttribute;", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Ljavax/persistence/metamodel/MapAttribute<TX;TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljakarta/persistence/metamodel/MapAttribute;", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Ljakarta/persistence/metamodel/MapAttribute<TX;TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1096,15 +1096,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeNameFilter", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "MAP", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljavax/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "MAP", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter", "<init>", "(Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$EntryTypeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$EntryTypeFilter", "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -1116,149 +1116,149 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/MapAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/MapAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljavax/persistence/metamodel/Attribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/Attribute<-TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/Attribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/Attribute<-TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/Attribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/Attribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttribute", "(Ljava/lang/String;)Ljavax/persistence/metamodel/Attribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/Attribute<TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredAttribute", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/Attribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/Attribute<TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/Attribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/Attribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttribute", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SingularAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SingularAttribute<-TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSingularAttribute", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SingularAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SingularAttribute<-TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttribute", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SingularAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SingularAttribute<TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSingularAttribute", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SingularAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SingularAttribute<TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredSingularAttribute", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCollection", "(Ljava/lang/String;)Ljavax/persistence/metamodel/CollectionAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/CollectionAttribute<-TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCollection", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/CollectionAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/CollectionAttribute<-TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/CollectionAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/CollectionAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSet", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SetAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SetAttribute<-TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSet", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SetAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SetAttribute<-TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SetAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SetAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getList", "(Ljava/lang/String;)Ljavax/persistence/metamodel/ListAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/ListAttribute<-TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getList", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/ListAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/ListAttribute<-TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getList", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/ListAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getList", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/ListAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMap", "(Ljava/lang/String;)Ljavax/persistence/metamodel/MapAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/MapAttribute<-TX;**>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMap", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/MapAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/MapAttribute<-TX;**>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljavax/persistence/metamodel/MapAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljakarta/persistence/metamodel/MapAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredCollection", "(Ljava/lang/String;)Ljavax/persistence/metamodel/CollectionAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/CollectionAttribute<TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredCollection", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/CollectionAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/CollectionAttribute<TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/CollectionAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredCollection", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/CollectionAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSet", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SetAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/SetAttribute<TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredSet", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SetAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/SetAttribute<TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/SetAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredSet", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/SetAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredList", "(Ljava/lang/String;)Ljavax/persistence/metamodel/ListAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/ListAttribute<TX;*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredList", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/ListAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/ListAttribute<TX;*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredList", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/metamodel/ListAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredList", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/metamodel/ListAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredMap", "(Ljava/lang/String;)Ljavax/persistence/metamodel/MapAttribute;", "(Ljava/lang/String;)Ljavax/persistence/metamodel/MapAttribute<TX;**>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredMap", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/MapAttribute;", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/MapAttribute<TX;**>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljavax/persistence/metamodel/MapAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "getDeclaredMap", "(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljakarta/persistence/metamodel/MapAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getIdClassAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/persistence/metamodel/SingularAttribute<-TX;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getIdClassAttributes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/persistence/metamodel/SingularAttribute<-TX;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "meta", "Lorg/apache/openjpa/meta/ClassMetaData;");
@@ -1305,7 +1305,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getId", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getId", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1317,16 +1317,16 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractMa
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$IdAttributeFilter", "<init>", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "()V", false);
@@ -1335,7 +1335,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getDeclaredId", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getDeclaredId", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1349,16 +1349,16 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractMa
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$IdAttributeFilter", "<init>", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "()V", false);
@@ -1367,7 +1367,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVersion", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVersion", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<-TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1379,7 +1379,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeTypeFilter", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -1390,15 +1390,15 @@ methodVisitor.visitLdcInsn("");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredVersion", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljavax/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredVersion", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/SingularAttribute;", "<Y:Ljava/lang/Object;>(Ljava/lang/Class<TY;>;)Ljakarta/persistence/metamodel/SingularAttribute<TX;TY;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "attrs", "Ljava/util/Set;");
@@ -1412,7 +1412,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$AttributeTypeFilter", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType", "pick", "(Ljava/util/Collection;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -1423,9 +1423,9 @@ methodVisitor.visitLdcInsn("");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType", "notFoundException", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/metamodel/Attribute"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/metamodel/Attribute"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/SingularAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/SingularAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();

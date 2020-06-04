@@ -157,8 +157,8 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/ws/rs/WebApplicationException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/ws/rs/ProcessingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/ws/rs/WebApplicationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/ws/rs/ProcessingException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -184,10 +184,10 @@ methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Response");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Response");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/jaxrs/client/JaxrsClientCallback", "javax/ws/rs/core/Response"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/jaxrs/client/JaxrsClientCallback", "jakarta/ws/rs/core/Response"}, 0, null);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
@@ -203,10 +203,10 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/E
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/ProcessingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/ProcessingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/ProcessingException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/ProcessingException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "handleException", "(Ljava/util/Map;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label4);
@@ -215,17 +215,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/AbstractClient$AbstractClientAsyncResponseInterceptor", "doHandleAsyncResponse", "(Lorg/apache/cxf/message/Message;Ljavax/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/AbstractClient$AbstractClientAsyncResponseInterceptor", "doHandleAsyncResponse", "(Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "doHandleAsyncResponse", "(Lorg/apache/cxf/message/Message;Ljavax/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", "(Lorg/apache/cxf/message/Message;Ljavax/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "doHandleAsyncResponse", "(Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", "(Lorg/apache/cxf/message/Message;Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;)V", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "closeAsyncResponseIfPossible", "(Ljavax/ws/rs/core/Response;Lorg/apache/cxf/message/Message;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", "(Ljavax/ws/rs/core/Response;Lorg/apache/cxf/message/Message;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "closeAsyncResponseIfPossible", "(Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/message/Message;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback;)V", "(Ljakarta/ws/rs/core/Response;Lorg/apache/cxf/message/Message;Lorg/apache/cxf/jaxrs/client/JaxrsClientCallback<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/AbstractClient$AbstractClientAsyncResponseInterceptor", "this$0", "Lorg/apache/cxf/jaxrs/client/AbstractClient;");
@@ -236,7 +236,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/client/Abstra
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response", "close", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response", "close", "()V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

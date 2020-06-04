@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "interceptors", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "poolEntry", "Lorg/apache/ope
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljavax/enterprise/context/spi/CreationalContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljakarta/enterprise/context/spi/CreationalContext;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -55,7 +55,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/Instance", "interceptors", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/Instance", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/Instance", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();

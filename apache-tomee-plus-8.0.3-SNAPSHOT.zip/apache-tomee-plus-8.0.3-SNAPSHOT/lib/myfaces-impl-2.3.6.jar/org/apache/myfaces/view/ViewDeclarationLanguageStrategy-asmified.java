@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/ViewDeclarationLanguageStrategy", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewDeclarationLanguage", "()Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewDeclarationLanguage", "()Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 methodVisitor.visitEnd();
 }
 {

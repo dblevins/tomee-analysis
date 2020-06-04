@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "findThreadFactory", "(Ljava/lang/String;)Ljavax/enterprise/concurrent/ManagedThreadFactory;", null, new String[] { "java/lang/InstantiationException", "java/lang/IllegalAccessException", "javax/naming/NamingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "findThreadFactory", "(Ljava/lang/String;)Ljakarta/enterprise/concurrent/ManagedThreadFactory;", null, new String[] { "java/lang/InstantiationException", "java/lang/IllegalAccessException", "javax/naming/NamingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -53,7 +53,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClas
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/concurrent/ManagedThreadFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/concurrent/ManagedThreadFactory;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label3);
@@ -74,17 +74,17 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/concurrent/ManagedThreadFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/concurrent/ManagedThreadFactory;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/concurrent/ManagedThreadFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/concurrent/ManagedThreadFactory");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"java/lang/String"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/concurrent/ManagedThreadFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/concurrent/ManagedThreadFactory;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/spi/ContainerSystem;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
@@ -100,7 +100,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/concurrent/ManagedThreadFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/concurrent/ManagedThreadFactory");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

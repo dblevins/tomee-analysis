@@ -1356,12 +1356,12 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getRawTypeForInjectionPoint", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class;", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getRawTypeForInjectionPoint", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class;", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "getType", "()Ljava/lang/reflect/Type;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/Class");

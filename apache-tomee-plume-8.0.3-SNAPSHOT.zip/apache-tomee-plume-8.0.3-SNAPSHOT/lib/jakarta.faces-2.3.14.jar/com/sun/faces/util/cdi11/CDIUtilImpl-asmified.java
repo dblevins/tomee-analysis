@@ -40,17 +40,17 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHelperBean", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljavax/enterprise/inject/spi/Bean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHelperBean", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/Bean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "getInjectionTargetFactory", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Ljavax/enterprise/inject/spi/InjectionTargetFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "getInjectionTargetFactory", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljakarta/enterprise/inject/spi/InjectionTargetFactory;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper");
 methodVisitor.visitInsn(DUP);
@@ -59,11 +59,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/util/cdi11/CDIUtilIm
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTargetFactory", "createInjectionTarget", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/InjectionTarget;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTargetFactory", "createInjectionTarget", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/InjectionTarget;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "access$000", "(Lcom/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper;Ljavax/enterprise/inject/spi/InjectionTarget;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "access$000", "(Lcom/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper;Ljakarta/enterprise/inject/spi/InjectionTarget;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 7);

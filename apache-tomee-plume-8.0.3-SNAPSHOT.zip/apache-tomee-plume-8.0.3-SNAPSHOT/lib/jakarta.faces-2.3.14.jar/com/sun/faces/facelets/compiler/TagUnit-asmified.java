@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/compiler/TagUnit", null, "com/sun/faces/facelets/compiler/CompilationUnit", new String[] { "javax/faces/view/facelets/TagConfig" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/compiler/TagUnit", null, "com/sun/faces/facelets/compiler/CompilationUnit", new String[] { "jakarta/faces/view/facelets/TagConfig" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "library", "Lcom/sun/faces/facelets/tag/TagLibrary;", null, null);
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "id", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tag", "Ljavax/faces/view/facelets/Tag;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tag", "Ljakarta/faces/view/facelets/Tag;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "name", "Ljava/la
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/CompilationUnit", "<init>", "()V", false);
@@ -54,7 +54,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/compiler/TagUnit", "library", "Lcom/sun/faces/facelets/tag/TagLibrary;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljavax/faces/view/facelets/Tag;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljakarta/faces/view/facelets/Tag;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/compiler/TagUnit", "namespace", "Ljava/lang/String;");
@@ -103,10 +103,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Lja
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitLdcInsn("Because the definition of ui:composition causes any parent content to be ignored, it is invalid to use ui:composition directly inside of a composite component. Consider ui:decorate instead.");
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/FaceletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/FaceletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/FaceletException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/FaceletException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -115,7 +115,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "library", "Lcom/sun/faces/facelets/tag/TagLibrary;");
@@ -124,25 +124,25 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/facelets/tag/TagLibrary", "createTagHandler", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/TagConfig;)Ljavax/faces/view/facelets/TagHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/facelets/tag/TagLibrary", "createTagHandler", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/TagConfig;)Ljakarta/faces/view/facelets/TagHandler;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNextHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNextHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/compiler/TagUnit", "getNextFaceletHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/compiler/TagUnit", "getNextFaceletHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTag", "()Ljavax/faces/view/facelets/Tag;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTag", "()Ljakarta/faces/view/facelets/Tag;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljavax/faces/view/facelets/Tag;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljakarta/faces/view/facelets/Tag;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -160,8 +160,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljavax/faces/view/facelets/Tag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/Tag", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/compiler/TagUnit", "tag", "Ljakarta/faces/view/facelets/Tag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/Tag", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

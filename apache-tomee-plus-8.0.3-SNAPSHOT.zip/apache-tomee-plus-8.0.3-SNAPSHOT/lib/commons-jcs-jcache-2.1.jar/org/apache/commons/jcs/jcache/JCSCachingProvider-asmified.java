@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCachingProvider", null, "java/lang/Object", new String[] { "javax/cache/spi/CachingProvider" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCachingProvider", null, "java/lang/Object", new String[] { "jakarta/cache/spi/CachingProvider" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DEFAULT_URI", "Ljava/net/URI;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cacheManagersByLoader", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljava/util/concurrent/ConcurrentMap<Ljava/net/URI;Ljavax/cache/CacheManager;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cacheManagersByLoader", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/ClassLoader;Ljava/util/concurrent/ConcurrentMap<Ljava/net/URI;Ljakarta/cache/CacheManager;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)Ljavax/cache/CacheManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)Ljakarta/cache/CacheManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -104,7 +104,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/ClassLoade
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/CacheManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/CacheManager");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label5 = new Label();
@@ -115,20 +115,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/JCSCachingManager", "<init>", "(Ljavax/cache/spi/CachingProvider;Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/JCSCachingManager", "<init>", "(Ljakarta/cache/spi/CachingProvider;Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/CacheManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/CacheManager");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/cache/CacheManager"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/cache/CacheManager"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 9);
@@ -174,10 +174,10 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/CacheManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/CacheManager");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/CacheManager", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/CacheManager", "close", "()V", true);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -218,10 +218,10 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/CacheManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/CacheManager");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/CacheManager", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/CacheManager", "close", "()V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -248,12 +248,12 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/CacheManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/CacheManager");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/CacheManager", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/CacheManager", "close", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -261,36 +261,36 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;)Ljavax/cache/CacheManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;)Ljakarta/cache/CacheManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getDefaultProperties", "()Ljava/util/Properties;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)Ljavax/cache/CacheManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;Ljava/util/Properties;)Ljakarta/cache/CacheManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "()Ljavax/cache/CacheManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "()Ljakarta/cache/CacheManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getDefaultURI", "()Ljava/net/URI;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getDefaultClassLoader", "()Ljava/lang/ClassLoader;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;)Ljavax/cache/CacheManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCachingProvider", "getCacheManager", "(Ljava/net/URI;Ljava/lang/ClassLoader;)Ljakarta/cache/CacheManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSupported", "(Ljavax/cache/configuration/OptionalFeature;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSupported", "(Ljakarta/cache/configuration/OptionalFeature;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/cache/configuration/OptionalFeature", "STORE_BY_REFERENCE", "Ljavax/cache/configuration/OptionalFeature;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/cache/configuration/OptionalFeature", "STORE_BY_REFERENCE", "Ljakarta/cache/configuration/OptionalFeature;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -325,10 +325,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "remove", "(Ljavax/cache/CacheManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "remove", "(Ljakarta/cache/CacheManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/CacheManager", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/CacheManager", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCachingProvider", "cacheManagersByLoader", "Ljava/util/concurrent/ConcurrentMap;");
@@ -341,7 +341,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/CacheManager", "getURI", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/CacheManager", "getURI", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);

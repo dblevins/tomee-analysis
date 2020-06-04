@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ignoreWildcardSelectors", "Z
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -146,11 +146,11 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getBrokerObjectName", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getBrokerObjectName", "()Ljakarta/management/ObjectName;", false);
 methodVisitor.visitLdcInsn("plugin");
 methodVisitor.visitLdcInsn("virtualDestinationCache");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createVirtualDestinationSelectorCacheName", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createVirtualDestinationSelectorCacheName", "(Ljakarta/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -158,8 +158,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("virtualDestinationCacheSelector mbean name; ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "trace", "(Ljava/lang/String;)V", true);
@@ -167,8 +167,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getManagementContext", "()Lorg/apache/activemq/broker/jmx/ManagementContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -213,7 +213,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/JMException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/JMException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "getBrokerService", "()Lorg/apache/activemq/broker/BrokerService;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -222,18 +222,18 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerS
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getManagementContext", "()Lorg/apache/activemq/broker/jmx/ManagementContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "org/apache/activemq/broker/BrokerService"}, 1, new Object[] {"javax/management/JMException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "org/apache/activemq/broker/BrokerService"}, 1, new Object[] {"jakarta/management/JMException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/plugin/SubQueueSelectorCacheBroker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Trying uninstall VirtualDestinationSelectorCache; couldn't uninstall mbeans, continuting...");

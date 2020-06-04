@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxb/io/DataWriterImpl$1", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxb/io/DataWriterImpl$1", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventHandler" });
 
-classWriter.visitOuterClass("org/apache/cxf/jaxb/io/DataWriterImpl", "createMarshaller", "(Ljava/lang/Object;Lorg/apache/cxf/service/model/MessagePartInfo;)Ljavax/xml/bind/Marshaller;");
+classWriter.visitOuterClass("org/apache/cxf/jaxb/io/DataWriterImpl", "createMarshaller", "(Ljava/lang/Object;Lorg/apache/cxf/service/model/MessagePartInfo;)Ljakarta/xml/bind/Marshaller;");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxb/io/DataWriterImpl$1", null, null, 0);
 
@@ -45,10 +45,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEvent", "getSeverity", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEvent", "getSeverity", "()I", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitInsn(ICONST_1);

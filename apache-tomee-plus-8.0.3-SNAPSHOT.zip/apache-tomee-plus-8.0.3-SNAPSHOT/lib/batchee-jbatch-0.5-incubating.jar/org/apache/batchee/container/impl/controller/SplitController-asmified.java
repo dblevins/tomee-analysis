@@ -179,7 +179,7 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "()Lorg/apache/batchee/container/status/SplitExecutionStatus;", null, new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobStartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException", "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "()Lorg/apache/batchee/container/status/SplitExecutionStatus;", null, new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobStartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException", "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/impl/controller/SplitController", "buildSubJobBatchWorkUnits", "()V", false);
@@ -240,7 +240,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/contro
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/SplitController", "split", "Lorg/apache/batchee/jaxb/Split;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/controller/PartitionedStepBuilder", "buildFlowInSplitSubJob", "(Ljava/lang/Long;Ljavax/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Split;Lorg/apache/batchee/jaxb/Flow;)Lorg/apache/batchee/jaxb/JSLJob;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/controller/PartitionedStepBuilder", "buildFlowInSplitSubJob", "(Ljava/lang/Long;Ljakarta/batch/runtime/context/JobContext;Lorg/apache/batchee/jaxb/Split;Lorg/apache/batchee/jaxb/Flow;)Lorg/apache/batchee/jaxb/JSLJob;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label4);
@@ -363,8 +363,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/SplitController", "batchKernel", "Lorg/apache/batchee/container/services/BatchKernelService;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/util/BatchParallelWorkUnit", "getJobExecutionImpl", "()Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "getJobInstance", "()Ljavax/batch/runtime/JobInstance;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/runtime/JobInstance", "getJobName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "getJobInstance", "()Ljakarta/batch/runtime/JobInstance;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/runtime/JobInstance", "getJobName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/batchee/container/services/BatchKernelService", "getJobInstanceCount", "(Ljava/lang/String;)I", true);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/impl/controller/SplitController", "$assertionsDisabled", "Z");

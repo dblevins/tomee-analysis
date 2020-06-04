@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/attachment/AttachmentUtil$DHMap$1", "Ljava/util/AbstractSet<Ljava/util/Map$Entry<Ljava/lang/String;Ljavax/activation/DataHandler;>;>;", "java/util/AbstractSet", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/attachment/AttachmentUtil$DHMap$1", "Ljava/util/AbstractSet<Ljava/util/Map$Entry<Ljava/lang/String;Ljakarta/activation/DataHandler;>;>;", "java/util/AbstractSet", null);
 
 classWriter.visitOuterClass("org/apache/cxf/attachment/AttachmentUtil$DHMap", "entrySet", "()Ljava/util/Set;");
 
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljavax/activation/DataHandler;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljakarta/activation/DataHandler;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentUtil$DHMap$1", "this$0", "Lorg/apache/cxf/attachment/AttachmentUtil$DHMap;");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljavax/json/JsonValue;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/json/JsonValue;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitInnerClass("org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator", "org/apache/johnzon/core/JsonArrayImpl", "JsonArrayIterator", ACC_PRIVATE);
 
@@ -75,7 +75,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/json/JsonValue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/json/JsonValue;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -90,7 +90,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonArrayImpl$Js
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/core/JsonArrayImpl", "access$100", "(Lorg/apache/johnzon/core/JsonArrayImpl;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonValue");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonValue");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
@@ -114,7 +114,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator", "next", "()Ljavax/json/JsonValue;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator", "next", "()Ljakarta/json/JsonValue;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "digester", "Lorg/apache/comm
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -55,7 +55,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/config/impl/FacesConfigEntityResolver");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/FacesConfigEntityResolver", "<init>", "(Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/FacesConfigEntityResolver", "<init>", "(Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/digester/Digester", "setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
@@ -1294,13 +1294,13 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/digester/Digester", "addCallMethod", "(Ljava/lang/String;Ljava/lang/String;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addFacesFlowRules", "(Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addFacesFlowRules", "(Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addNavigationRules", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addNavigationRules", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
@@ -1336,13 +1336,13 @@ methodVisitor.visitLdcInsn("/navigation-case");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("addNavigationCase");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationCases", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationCases", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addNavigationCases", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addNavigationCases", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
@@ -1548,7 +1548,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addFacesFlowRules", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addFacesFlowRules", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
@@ -1642,7 +1642,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("faces-config/flow-definition/switch/case");
 methodVisitor.visitLdcInsn("addNavigationCase");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationCases", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationCases", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
 methodVisitor.visitLdcInsn("faces-config/flow-definition/flow-return");
@@ -1679,7 +1679,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("faces-config/flow-definition/navigation-rule");
 methodVisitor.visitLdcInsn("addNavigationRule");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationRules", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "addNavigationRules", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl", "digester", "Lorg/apache/commons/digester/Digester;");
 methodVisitor.visitLdcInsn("faces-config/flow-definition/flow-call");

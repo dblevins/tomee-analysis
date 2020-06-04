@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/resource/AutoConnectionTracker$1", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/resource/AutoConnectionTracker$1", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitOuterClass("org/apache/openejb/resource/AutoConnectionTracker", "handleObtained", "(Lorg/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor;Lorg/apache/geronimo/connector/outbound/ConnectionInfo;Z)V");
 

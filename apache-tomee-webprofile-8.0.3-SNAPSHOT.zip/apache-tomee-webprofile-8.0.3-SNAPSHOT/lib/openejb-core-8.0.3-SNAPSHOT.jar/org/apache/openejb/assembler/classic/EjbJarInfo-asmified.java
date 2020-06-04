@@ -51,41 +51,41 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "enterpriseBeans", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/openejb/assembler/classic/EnterpriseBeanInfo;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElements;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElements;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "stateless");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/StatelessBeanInfo;"));
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "entity");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/EntityBeanInfo;"));
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "stateful");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/StatefulBeanInfo;"));
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "singleton");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/SingletonBeanInfo;"));
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "message-driven");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/MessageDrivenBeanInfo;"));
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/xml/bind/annotation/XmlElement;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/xml/bind/annotation/XmlElement;");
 annotationVisitor2.visit("name", "managed-bean");
 annotationVisitor2.visit("type", Type.getType("Lorg/apache/openejb/assembler/classic/ManagedBeanInfo;"));
 annotationVisitor2.visitEnd();

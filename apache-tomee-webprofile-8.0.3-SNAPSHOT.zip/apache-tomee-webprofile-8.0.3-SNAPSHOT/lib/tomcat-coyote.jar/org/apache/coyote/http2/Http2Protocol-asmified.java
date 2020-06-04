@@ -287,7 +287,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/http2/Http2Protocol", "getInternalUpgradeHandler", "(Lorg/apache/tomcat/util/net/SocketWrapperBase;Lorg/apache/coyote/Adapter;Lorg/apache/coyote/Request;)Lorg/apache/coyote/http11/upgrade/InternalHttpUpgradeHandler;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/UpgradeToken", "<init>", "(Ljavax/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/UpgradeToken", "<init>", "(Ljakarta/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http11/upgrade/UpgradeProcessorInternal", "<init>", "(Lorg/apache/tomcat/util/net/SocketWrapperBase;Lorg/apache/coyote/UpgradeToken;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);

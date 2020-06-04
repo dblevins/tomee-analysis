@@ -42,14 +42,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletTagLibConfigurationResources", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletTagLibConfigurationResources", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/config/MyfacesConfig", "getGaeJsfJarFiles", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -66,7 +66,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isRunningOnGoogleAppEngine", "(Ljavax/faces/context/ExternalContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ContainerUtils", "isRunningOnGoogleAppEngine", "(Ljakarta/faces/context/ExternalContext;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -80,7 +80,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/c
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("META-INF/");
 methodVisitor.visitLdcInsn(".taglib.xml");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/util/GAEUtils", "searchInWebLib", "(Ljavax/faces/context/ExternalContext;Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Collection;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/util/GAEUtils", "searchInWebLib", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Collection;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label3 = new Label();

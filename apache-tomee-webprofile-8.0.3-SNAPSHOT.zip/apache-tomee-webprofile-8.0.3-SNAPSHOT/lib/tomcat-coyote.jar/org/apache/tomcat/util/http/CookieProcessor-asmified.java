@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "parseCookieH
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT | ACC_DEPRECATED, "generateHeader", "(Ljavax/servlet/http/Cookie;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT | ACC_DEPRECATED, "generateHeader", "(Ljakarta/servlet/http/Cookie;)Ljava/lang/String;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -37,11 +37,11 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateHeader", "(Ljavax/servlet/http/Cookie;Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateHeader", "(Ljakarta/servlet/http/Cookie;Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/util/http/CookieProcessor", "generateHeader", "(Ljavax/servlet/http/Cookie;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/util/http/CookieProcessor", "generateHeader", "(Ljakarta/servlet/http/Cookie;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

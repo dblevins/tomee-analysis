@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/threads/impl/ManagedThreadFactoryImpl$ManagedThread", null, "java/lang/Thread", new String[] { "javax/enterprise/concurrent/ManageableThread" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/threads/impl/ManagedThreadFactoryImpl$ManagedThread", null, "java/lang/Thread", new String[] { "jakarta/enterprise/concurrent/ManageableThread" });
 
 classWriter.visitInnerClass("org/apache/openejb/threads/impl/ManagedThreadFactoryImpl$ManagedThread", "org/apache/openejb/threads/impl/ManagedThreadFactoryImpl", "ManagedThread", ACC_PUBLIC | ACC_STATIC);
 

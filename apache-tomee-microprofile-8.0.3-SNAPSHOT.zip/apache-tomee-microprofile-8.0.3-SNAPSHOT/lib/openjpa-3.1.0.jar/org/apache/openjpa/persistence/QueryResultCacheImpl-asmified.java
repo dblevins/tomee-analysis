@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pin", "(Ljavax/persistence/Query;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pin", "(Ljakarta/persistence/Query;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
@@ -66,7 +66,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljavax/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljakarta/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/datacache/DelegatingQueryCache", "pin", "(Lorg/apache/openjpa/datacache/QueryKey;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unpin", "(Ljavax/persistence/Query;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unpin", "(Ljakarta/persistence/Query;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljavax/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljakarta/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/datacache/DelegatingQueryCache", "unpin", "(Lorg/apache/openjpa/datacache/QueryKey;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evict", "(Ljavax/persistence/Query;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evict", "(Ljakarta/persistence/Query;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
@@ -108,7 +108,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/QueryResultCacheImpl", "_cache", "Lorg/apache/openjpa/datacache/DelegatingQueryCache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljavax/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/QueryResultCacheImpl", "toQueryKey", "(Ljakarta/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/datacache/DelegatingQueryCache", "remove", "(Lorg/apache/openjpa/datacache/QueryKey;)Lorg/apache/openjpa/datacache/QueryResult;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toQueryKey", "(Ljavax/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toQueryKey", "(Ljakarta/persistence/Query;)Lorg/apache/openjpa/datacache/QueryKey;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/QueryImpl");

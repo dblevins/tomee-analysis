@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", null, "org/apache/cxf/rs/security/oauth2/services/AbstractTokenService", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "/token");
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "grantHandlers", "Ljava/util/List;", "Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;>;", null);
@@ -133,13 +133,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleTokenRequest", "(Ljavax/ws/rs/core/MultivaluedMap;)Ljavax/ws/rs/core/Response;", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Ljavax/ws/rs/core/Response;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleTokenRequest", "(Ljakarta/ws/rs/core/MultivaluedMap;)Ljakarta/ws/rs/core/Response;", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Ljakarta/ws/rs/core/Response;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/POST;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/POST;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/x-www-form-urlencoded");
@@ -148,7 +148,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -164,19 +164,19 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/cxf/rs/secu
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/ws/rs/WebApplicationException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/ws/rs/WebApplicationException");
 Label label6 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label6, "java/lang/RuntimeException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "authenticateClientIfNeeded", "(Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/common/Client;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "authenticateClientIfNeeded", "(Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/common/Client;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "isCanSupportPublicClients", "()Z", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("grant_type");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/oauth2/utils/OAuthUtils", "isGrantSupportedForClient", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;ZLjava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -185,19 +185,19 @@ methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljav
 methodVisitor.visitLdcInsn("The grant type {} is not supported for the client");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("grant_type");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("unauthorized_client");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/oauth2/common/Client"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "checkAudience", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "checkAudience", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
@@ -207,13 +207,13 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/provider/OAuthServiceException", "getError", "()Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/AbstractTokenService", "createErrorResponseFromBean", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/oauth2/services/AbstractTokenService", "createErrorResponseFromBean", "(Lorg/apache/cxf/rs/security/oauth2/common/OAuthError;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "findGrantHandler", "(Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "findGrantHandler", "(Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label8 = new Label();
@@ -224,7 +224,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine",
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("unsupported_grant_type");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler"}, 0, null);
@@ -234,13 +234,13 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler", "createAccessToken", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/common/ServerAccessToken;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler", "createAccessToken", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/common/ServerAccessToken;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label4);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "javax/ws/rs/core/MultivaluedMap", "org/apache/cxf/rs/security/oauth2/common/Client", "org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler", "org/apache/cxf/rs/security/oauth2/common/ServerAccessToken"}, 1, new Object[] {"javax/ws/rs/WebApplicationException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "jakarta/ws/rs/core/MultivaluedMap", "org/apache/cxf/rs/security/oauth2/common/Client", "org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler", "org/apache/cxf/rs/security/oauth2/common/ServerAccessToken"}, 1, new Object[] {"jakarta/ws/rs/WebApplicationException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ATHROW);
@@ -272,7 +272,7 @@ methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitLdcInsn("invalid_grant");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "handleException", "(Lorg/apache/cxf/rs/security/oauth2/provider/OAuthServiceException;Ljava/lang/String;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "handleException", "(Lorg/apache/cxf/rs/security/oauth2/provider/OAuthServiceException;Ljava/lang/String;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -285,7 +285,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine",
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("invalid_grant");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "createErrorResponse", "(Ljakarta/ws/rs/core/MultivaluedMap;Ljava/lang/String;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -299,14 +299,14 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/services/AccessTokenService", "processClientAccessToken", "(Lorg/apache/cxf/rs/security/oauth2/common/ClientAccessToken;Lorg/apache/cxf/rs/security/oauth2/common/ServerAccessToken;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
 methodVisitor.visitLdcInsn("Cache-Control");
 methodVisitor.visitLdcInsn("no-store");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "header", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "header", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
 methodVisitor.visitLdcInsn("Pragma");
 methodVisitor.visitLdcInsn("no-cache");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "header", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "header", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
@@ -341,11 +341,11 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkAudience", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap;)V", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkAudience", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Lorg/apache/cxf/rs/security/oauth2/common/Client;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("audience");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -384,11 +384,11 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "findGrantHandler", "(Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "findGrantHandler", "(Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("grant_type");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "getFirst", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);

@@ -22,45 +22,45 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", null, "javax/xml/soap/MessageFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", null, "jakarta/xml/soap/MessageFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/soap/MessageFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/soap/MessageFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMessageFactory", "()Ljavax/xml/soap/MessageFactory;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMessageFactory", "()Ljakarta/xml/soap/MessageFactory;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.xml.soap.MessageFactory");
+methodVisitor.visitLdcInsn("jakarta.xml.soap.MessageFactory");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/saaj/SaajFactoryFinder", "find", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/MessageFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/MessageFactory");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljavax/xml/soap/SOAPMessage;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljakarta/xml/soap/SOAPMessage;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", "getMessageFactory", "()Ljavax/xml/soap/MessageFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MessageFactory", "createMessage", "()Ljavax/xml/soap/SOAPMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", "getMessageFactory", "()Ljakarta/xml/soap/MessageFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MessageFactory", "createMessage", "()Ljakarta/xml/soap/SOAPMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "(Ljavax/xml/soap/MimeHeaders;Ljava/io/InputStream;)Ljavax/xml/soap/SOAPMessage;", null, new String[] { "java/io/IOException", "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "(Ljakarta/xml/soap/MimeHeaders;Ljava/io/InputStream;)Ljakarta/xml/soap/SOAPMessage;", null, new String[] { "java/io/IOException", "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", "getMessageFactory", "()Ljavax/xml/soap/MessageFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/saaj/MessageFactoryImpl", "getMessageFactory", "()Ljakarta/xml/soap/MessageFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MessageFactory", "createMessage", "(Ljavax/xml/soap/MimeHeaders;Ljava/io/InputStream;)Ljavax/xml/soap/SOAPMessage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MessageFactory", "createMessage", "(Ljakarta/xml/soap/MimeHeaders;Ljava/io/InputStream;)Ljakarta/xml/soap/SOAPMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

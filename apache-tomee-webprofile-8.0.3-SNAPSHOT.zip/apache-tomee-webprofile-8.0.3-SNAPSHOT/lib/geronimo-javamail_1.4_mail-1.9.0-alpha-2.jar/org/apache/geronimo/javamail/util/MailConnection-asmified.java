@@ -167,7 +167,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "A
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljavax/mail/Session;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljakarta/mail/Session;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -272,8 +272,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "protocol", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getSession", "()Ljavax/mail/Session;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljavax/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getSession", "()Ljakarta/mail/Session;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getSSLConnection", "()Z", false);
@@ -284,13 +284,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "defaultPort", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljavax/mail/Session;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getDebug", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljakarta/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getDebug", "()Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "debug", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljavax/mail/Session;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getDebugOut", "()Ljava/io/PrintStream;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljakarta/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getDebugOut", "()Ljava/io/PrintStream;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/MailConnection", "debugStream", "Ljava/io/PrintStream;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("ssl.enable");
@@ -310,7 +310,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(ICONST_M1);
@@ -379,7 +379,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()V", null, new String[] { "java/io/IOException", "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()V", null, new String[] { "java/io/IOException", "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "socket", "Ljava/net/Socket;");
@@ -1353,7 +1353,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectedTLSSocket", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectedTLSSocket", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1461,11 +1461,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Failure attempting to convert connection to TLS");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/MailConnection", "debugOut", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Unable to convert connection to SSL");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitInsn(RETURN);
@@ -1473,7 +1473,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectionStreams", "()V", null, new String[] { "javax/mail/MessagingException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectionStreams", "()V", null, new String[] { "jakarta/mail/MessagingException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/util/TraceInputStream");
@@ -1544,7 +1544,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkConnected", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkConnected", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "socket", "Ljava/net/Socket;");
@@ -1556,10 +1556,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/Socket", "isConnected", "
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("no connection");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
@@ -1705,7 +1705,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getLoginAuthenticator", "()Lorg/apache/geronimo/javamail/authentication/ClientAuthenticator;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getLoginAuthenticator", "()Lorg/apache/geronimo/javamail/authentication/ClientAuthenticator;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1726,8 +1726,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/authentication/SA
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljavax/mail/Session;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "session", "Ljakarta/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "protocol", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1916,7 +1916,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocalHost", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocalHost", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1965,10 +1965,10 @@ methodVisitor.visitLabel(label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/MailConnection", "localHost", "Ljava/lang/String;");
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Can't get local hostname.  Please correctly configure JDK/DNS or set mail.smtp.localhost");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);

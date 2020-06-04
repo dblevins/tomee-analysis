@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;)V", "(Ljavax/xml/bind/Marshaller;TT;Ljavax/xml/stream/XMLStreamWriter;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;)V", "(Ljakarta/xml/bind/Marshaller;TT;Ljavax/xml/stream/XMLStreamWriter;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/v2/runtime/MarshallerImpl");
@@ -85,7 +85,7 @@ methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Object;Ljava/io/OutputStream;Ljavax/xml/namespace/NamespaceContext;)V", "(Ljavax/xml/bind/Marshaller;TT;Ljava/io/OutputStream;Ljavax/xml/namespace/NamespaceContext;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Object;Ljava/io/OutputStream;Ljavax/xml/namespace/NamespaceContext;)V", "(Ljakarta/xml/bind/Marshaller;TT;Ljava/io/OutputStream;Ljavax/xml/namespace/NamespaceContext;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/v2/runtime/MarshallerImpl");
@@ -120,7 +120,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Object;Lorg/w3c/dom/Node;)V", "(Ljavax/xml/bind/Marshaller;TT;Lorg/w3c/dom/Node;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Object;Lorg/w3c/dom/Node;)V", "(Ljakarta/xml/bind/Marshaller;TT;Lorg/w3c/dom/Node;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/v2/runtime/MarshallerImpl");
@@ -150,7 +150,7 @@ methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Object;Lorg/xml/sax/ContentHandler;)V", "(Ljavax/xml/bind/Marshaller;TT;Lorg/xml/sax/ContentHandler;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Object;Lorg/xml/sax/ContentHandler;)V", "(Ljakarta/xml/bind/Marshaller;TT;Lorg/xml/sax/ContentHandler;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/v2/runtime/MarshallerImpl");
@@ -172,7 +172,7 @@ methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljavax/xml/bind/Marshaller;Ljava/lang/Object;Ljavax/xml/transform/Result;)V", "(Ljavax/xml/bind/Marshaller;TT;Ljavax/xml/transform/Result;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshal", "(Ljakarta/xml/bind/Marshaller;Ljava/lang/Object;Ljavax/xml/transform/Result;)V", "(Ljakarta/xml/bind/Marshaller;TT;Ljavax/xml/transform/Result;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/v2/runtime/MarshallerImpl");
@@ -195,7 +195,7 @@ methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljavax/xml/bind/Unmarshaller;Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;", "(Ljavax/xml/bind/Unmarshaller;Ljavax/xml/stream/XMLStreamReader;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljakarta/xml/bind/Unmarshaller;Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;", "(Ljakarta/xml/bind/Unmarshaller;Ljavax/xml/stream/XMLStreamReader;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lcom/sun/istack/NotNull;", false);
 annotationVisitor0.visitEnd();
@@ -209,14 +209,14 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeImpl", "bi", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "unmarshal0", "(Ljavax/xml/stream/XMLStreamReader;Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;", "(Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljakarta/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;", "(Ljakarta/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lcom/sun/istack/NotNull;", false);
 annotationVisitor0.visitEnd();
@@ -230,14 +230,14 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeImpl", "bi", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "unmarshal0", "(Ljavax/xml/transform/Source;Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljavax/xml/bind/Unmarshaller;Ljava/io/InputStream;)Ljava/lang/Object;", "(Ljavax/xml/bind/Unmarshaller;Ljava/io/InputStream;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljakarta/xml/bind/Unmarshaller;Ljava/io/InputStream;)Ljava/lang/Object;", "(Ljakarta/xml/bind/Unmarshaller;Ljava/io/InputStream;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lcom/sun/istack/NotNull;", false);
 annotationVisitor0.visitEnd();
@@ -251,14 +251,14 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeImpl", "bi", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "unmarshal0", "(Ljava/io/InputStream;Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljavax/xml/bind/Unmarshaller;Lorg/w3c/dom/Node;)Ljava/lang/Object;", "(Ljavax/xml/bind/Unmarshaller;Lorg/w3c/dom/Node;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshal", "(Ljakarta/xml/bind/Unmarshaller;Lorg/w3c/dom/Node;)Ljava/lang/Object;", "(Ljakarta/xml/bind/Unmarshaller;Lorg/w3c/dom/Node;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lcom/sun/istack/NotNull;", false);
 annotationVisitor0.visitEnd();
@@ -272,8 +272,8 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeImpl", "bi", "Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "unmarshal0", "(Lorg/w3c/dom/Node;Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "domain", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "outer", "Ljavax/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "outer", "Ljakarta/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljavax/management/MBeanServer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljakarta/management/MBeanServer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,7 +46,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "domain", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -103,13 +103,13 @@ methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
@@ -117,7 +117,7 @@ methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -155,11 +155,11 @@ methodVisitor.visitIntInsn(BIPUSH, 31);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitInsn(IMUL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "outer", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -176,12 +176,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljavax/management/MBeanServer;Lorg/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljakarta/management/MBeanServer;Lorg/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "<init>", "(Ljava/lang/String;Ljavax/management/MBeanServer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$Key", "<init>", "(Ljava/lang/String;Ljakarta/management/MBeanServer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

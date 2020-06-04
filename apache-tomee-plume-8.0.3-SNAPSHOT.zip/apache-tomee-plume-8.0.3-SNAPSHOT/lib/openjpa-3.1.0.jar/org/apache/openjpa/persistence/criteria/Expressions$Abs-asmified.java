@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression", "org/apache/openjpa/persistence/criteria/Expressions", "UnaryFunctionalExpression", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Expression;)V", "(Ljavax/persistence/criteria/Expression<TX;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Expression;)V", "(Ljakarta/persistence/criteria/Expression<TX;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression", "<init>", "(Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression", "<init>", "(Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

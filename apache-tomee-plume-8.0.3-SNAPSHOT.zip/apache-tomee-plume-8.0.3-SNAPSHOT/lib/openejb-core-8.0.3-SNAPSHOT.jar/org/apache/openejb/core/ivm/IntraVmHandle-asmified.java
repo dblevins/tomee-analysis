@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/ivm/IntraVmHandle", null, "java/lang/Object", new String[] { "java/io/Serializable", "javax/ejb/HomeHandle", "javax/ejb/Handle" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/ivm/IntraVmHandle", null, "java/lang/Object", new String[] { "java/io/Serializable", "jakarta/ejb/HomeHandle", "jakarta/ejb/Handle" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "theProxy", "Ljava/lang/Object;", null, null);
@@ -41,21 +41,21 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/IntraVmHandle", "theProxy", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBHome");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBHome");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "()Ljavax/ejb/EJBObject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBObject", "()Ljakarta/ejb/EJBObject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/IntraVmHandle", "theProxy", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBObject");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBObject");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -106,7 +106,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/core/ivm/BaseEjbProxy
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/IntraVmHandle", "theProxy", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ejb/EJBObject");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ejb/EJBObject");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ServerFederation", "getApplicationServer", "()Lorg/apache/openejb/spi/ApplicationServer;", false);
@@ -114,13 +114,13 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ivm/BaseEjbProxyHandler", "getProxyInfo", "()Lorg/apache/openejb/ProxyInfo;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/spi/ApplicationServer", "getHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/Handle;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/spi/ApplicationServer", "getHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/Handle;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/core/ivm/BaseEjbProxyHandler"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/IntraVmHandle", "theProxy", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ejb/EJBHome");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ejb/EJBHome");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ServerFederation", "getApplicationServer", "()Lorg/apache/openejb/spi/ApplicationServer;", false);
@@ -128,7 +128,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ivm/BaseEjbProxyHandler", "getProxyInfo", "()Lorg/apache/openejb/ProxyInfo;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/spi/ApplicationServer", "getHomeHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljavax/ejb/HomeHandle;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/spi/ApplicationServer", "getHomeHandle", "(Lorg/apache/openejb/ProxyInfo;)Ljakarta/ejb/HomeHandle;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/batchee/container/services/persistence/M
 classWriter.visitInnerClass("org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures$ExecutionInstanceData", "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures", "ExecutionInstanceData", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "stepExecutions", "Ljava/util/List;", "Ljava/util/List<Ljavax/batch/runtime/StepExecution;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "stepExecutions", "Ljava/util/List;", "Ljava/util/List<Ljakarta/batch/runtime/StepExecution;>;", null);
 fieldVisitor.visitEnd();
 }
 {

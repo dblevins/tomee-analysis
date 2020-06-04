@@ -52,13 +52,13 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateCache", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateCache", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/StateCache;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getStateManager", "()Ljavax/faces/application/StateManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getStateManager", "()Ljakarta/faces/application/StateManager;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/StateManager", "isSavingStateInClient", "(Ljavax/faces/context/FacesContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/StateManager", "isSavingStateInClient", "(Ljakarta/faces/context/FacesContext;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);

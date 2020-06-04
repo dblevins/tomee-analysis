@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/cdi/CurrentCreationalContext", "<T:Ljava/lang/Object;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "creationalContext", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljavax/enterprise/context/spi/CreationalContext<TT;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "creationalContext", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljakarta/enterprise/context/spi/CreationalContext<TT;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,18 +43,18 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljavax/enterprise/context/spi/CreationalContext;", "()Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljakarta/enterprise/context/spi/CreationalContext;", "()Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CurrentCreationalContext", "creationalContext", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/context/spi/CreationalContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/context/spi/CreationalContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CurrentCreationalContext", "creationalContext", "Ljava/lang/ThreadLocal;");

@@ -33,12 +33,12 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "instance", "Ljava/lang/Obj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljavax/enterprise/inject/spi/InjectionTarget;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", "(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/InjectionTarget;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", "(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/inject/AbstractInjectable", "<init>", "(Ljavax/enterprise/inject/spi/Producer;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/inject/AbstractInjectable", "<init>", "(Ljakarta/enterprise/inject/spi/Producer;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/inject/InjectableField", "field", "Ljava/lang/reflect/Field;");
@@ -65,7 +65,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/InjectableFie
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/inject/InjectableField", "getInjectionPoints", "(Ljava/lang/reflect/Member;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/InjectionPoint");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/InjectionPoint");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/InjectableField", "field", "Ljava/lang/reflect/Field;");
@@ -80,9 +80,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/InjectableFie
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/SecurityService", "doPrivilegedSetAccessible", "(Ljava/lang/reflect/AccessibleObject;Z)V", true);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/enterprise/inject/spi/InjectionPoint"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/enterprise/inject/spi/InjectionPoint"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionPoint", "isDelegate", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionPoint", "isDelegate", "()Z", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -95,7 +95,7 @@ methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/inject/InjectableField", "inject", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/inject/InjectableField", "inject", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);

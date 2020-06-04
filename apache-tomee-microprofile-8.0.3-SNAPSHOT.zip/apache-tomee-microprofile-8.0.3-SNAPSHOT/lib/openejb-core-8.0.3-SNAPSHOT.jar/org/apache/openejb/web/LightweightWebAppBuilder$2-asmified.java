@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$instance",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$sce", "Ljavax/servlet/ServletContextEvent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$sce", "Ljakarta/servlet/ServletContextEvent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;Ljava/lang/Object;Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;Ljava/lang/Object;Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -51,7 +51,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$instance", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$sce", "Ljavax/servlet/ServletContextEvent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$sce", "Ljakarta/servlet/ServletContextEvent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -63,10 +63,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$instance", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContextListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContextListener");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$sce", "Ljavax/servlet/ServletContextEvent;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContextListener", "contextInitialized", "(Ljavax/servlet/ServletContextEvent;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$2", "val$sce", "Ljakarta/servlet/ServletContextEvent;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContextListener", "contextInitialized", "(Ljakarta/servlet/ServletContextEvent;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

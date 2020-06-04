@@ -53,31 +53,31 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEF
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_dateStyle", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_dateStyle", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_locale", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_locale", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_pattern", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_pattern", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_timeStyle", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_timeStyle", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_timeZone", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_timeZone", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_type", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_type", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONVERTER_ID", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONVERTER_ID", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -96,92 +96,92 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "release", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDateStyle", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDateStyle", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLocale", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLocale", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPattern", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPattern", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeStyle", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeStyle", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeZone", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeZone", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "setConverterId", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "setConverterId", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "doStartTag", "()I", false);
 methodVisitor.visitInsn(IRETURN);
@@ -189,58 +189,58 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConverter", "()Ljavax/faces/convert/Converter;", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConverter", "()Ljakarta/faces/convert/Converter;", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "createConverter", "()Ljavax/faces/convert/Converter;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/convert/DateTimeConverter");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConverterTag", "createConverter", "()Ljakarta/faces/convert/Converter;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/convert/DateTimeConverter");
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterDateStyle", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterDateStyle", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterLocale", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_locale", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterLocale", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterPattern", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_pattern", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterPattern", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterTimeStyle", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterTimeStyle", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterTimeZone", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeZone", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterTimeZone", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterType", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_type", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "setConverterType", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterLocale", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterLocale", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -250,7 +250,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label1 = new Label();
@@ -277,13 +277,13 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Locale"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setLocale", "(Ljava/util/Locale;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setLocale", "(Ljava/util/Locale;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterDateStyle", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterDateStyle", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -293,7 +293,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -305,13 +305,13 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setDateStyle", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setDateStyle", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterPattern", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterPattern", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -321,18 +321,18 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setPattern", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setPattern", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterTimeStyle", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterTimeStyle", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -342,7 +342,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -354,13 +354,13 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setTimeStyle", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setTimeStyle", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterTimeZone", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterTimeZone", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -370,7 +370,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label1 = new Label();
@@ -397,13 +397,13 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/TimeZone"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setTimeZone", "(Ljava/util/TimeZone;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setTimeZone", "(Ljava/util/TimeZone;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterType", "(Ljavax/el/ELContext;Ljavax/faces/convert/DateTimeConverter;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setConverterType", "(Ljakarta/el/ELContext;Ljakarta/faces/convert/DateTimeConverter;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -416,7 +416,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
@@ -425,7 +425,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljakarta/el/ValueExpression;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -435,14 +435,14 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_timeStyle", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljakarta/el/ValueExpression;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -452,8 +452,8 @@ methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljavax/el/ELContext;Ljavax/el/ValueExpression;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "_dateStyle", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/taglib/UIComponentELTagUtils", "evaluateValueExpression", "(Ljakarta/el/ELContext;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
@@ -509,7 +509,7 @@ methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/convert/DateTimeConverter", "setType", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/convert/DateTimeConverter", "setType", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
@@ -517,26 +517,26 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitLdcInsn("javax.faces.DateTime");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitLdcInsn("jakarta.faces.DateTime");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljavax/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljakarta/el/ValueExpression;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/FacesContext"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/taglib/core/ConvertDateTimeTag", "CONVERTER_ID", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitInsn(RETURN);

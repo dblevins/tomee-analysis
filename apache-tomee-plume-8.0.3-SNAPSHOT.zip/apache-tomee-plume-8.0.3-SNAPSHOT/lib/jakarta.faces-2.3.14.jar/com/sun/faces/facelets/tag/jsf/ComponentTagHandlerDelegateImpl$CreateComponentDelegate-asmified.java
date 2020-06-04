@@ -27,15 +27,15 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/facelets/ta
 classWriter.visitInnerClass("com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl$CreateComponentDelegate", "com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl", "CreateComponentDelegate", ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createComponent", "(Ljavax/faces/view/facelets/FaceletContext;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createComponent", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setCompositeComponent", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setCompositeComponent", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponent", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponent", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

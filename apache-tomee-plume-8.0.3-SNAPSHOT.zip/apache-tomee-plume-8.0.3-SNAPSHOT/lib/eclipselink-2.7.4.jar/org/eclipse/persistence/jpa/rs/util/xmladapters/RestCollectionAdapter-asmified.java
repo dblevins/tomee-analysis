@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/xmladapters/RestCollectionAdapter", "<T::Lorg/eclipse/persistence/internal/weaving/PersistenceWeavedRest;>Ljavax/xml/bind/annotation/adapters/XmlAdapter<Lorg/eclipse/persistence/internal/jpa/rs/metadata/model/CollectionWrapper<TT;>;Ljava/util/Collection<TT;>;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/xmladapters/RestCollectionAdapter", "<T::Lorg/eclipse/persistence/internal/weaving/PersistenceWeavedRest;>Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Lorg/eclipse/persistence/internal/jpa/rs/metadata/model/CollectionWrapper<TT;>;Ljava/util/Collection<TT;>;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "context", "Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", null, null);
@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -41,7 +41,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/jpa/rs/util/xmladapters/RestCollectionAdapter", "context", "Lorg/eclipse/persistence/jpa/rs/PersistenceContext;");

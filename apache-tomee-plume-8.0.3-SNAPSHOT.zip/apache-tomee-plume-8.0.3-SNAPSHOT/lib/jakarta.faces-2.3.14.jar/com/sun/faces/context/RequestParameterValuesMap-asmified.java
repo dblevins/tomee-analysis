@@ -33,17 +33,17 @@ classWriter.visitInnerClass("com/sun/faces/context/BaseContextMap$KeyIterator", 
 classWriter.visitInnerClass("com/sun/faces/context/BaseContextMap$ValueIterator", "com/sun/faces/context/BaseContextMap", "ValueIterator", 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletRequest;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StringArrayValuesMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -55,10 +55,10 @@ methodVisitor.visitLdcInsn("key");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -67,10 +67,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsKey", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getParameterValues", "(Ljava/lang/String;)[Ljava/lang/String;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -120,7 +120,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, nul
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/context/RequestParameterValuesMap", "hashCode", "(Ljava/lang/Object;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -159,8 +159,8 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/BaseContextMap$EntryIter
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/BaseContextMap$EntryIterator", "<init>", "(Lcom/sun/faces/context/BaseContextMap;Ljava/util/Enumeration;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
@@ -173,8 +173,8 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/BaseContextMap$KeyIterat
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/BaseContextMap$KeyIterator", "<init>", "(Lcom/sun/faces/context/BaseContextMap;Ljava/util/Enumeration;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
@@ -187,8 +187,8 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/BaseContextMap$ValueIter
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljavax/servlet/ServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/RequestParameterValuesMap", "request", "Ljakarta/servlet/ServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getParameterNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/BaseContextMap$ValueIterator", "<init>", "(Lcom/sun/faces/context/BaseContextMap;Ljava/util/Enumeration;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);

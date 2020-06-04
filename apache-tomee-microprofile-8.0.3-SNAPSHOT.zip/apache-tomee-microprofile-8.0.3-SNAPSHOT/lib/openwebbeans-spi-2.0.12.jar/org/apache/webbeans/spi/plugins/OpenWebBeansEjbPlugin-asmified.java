@@ -33,11 +33,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isNewSession
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "defineSessionBean", "(Ljava/lang/Class;Ljavax/enterprise/inject/spi/BeanAttributes;Ljavax/enterprise/inject/spi/AnnotatedType;)Ljavax/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;)Ljavax/enterprise/inject/spi/Bean<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "defineSessionBean", "(Ljava/lang/Class;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljakarta/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;)Ljakarta/enterprise/inject/spi/Bean<TT;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "defineNewSessionBean", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljavax/enterprise/inject/spi/Bean<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "defineNewSessionBean", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljakarta/enterprise/inject/spi/Bean<TT;>;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -53,15 +53,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isStatefulBe
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSessionBeanProxy", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/Class;Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;Ljavax/enterprise/context/spi/CreationalContext<*>;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSessionBeanProxy", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/Class;Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/inject/spi/Bean<*>;Ljava/lang/Class<*>;Ljakarta/enterprise/context/spi/CreationalContext<*>;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "resolveViewMethod", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", "(Ljavax/enterprise/inject/spi/Bean<*>;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "resolveViewMethod", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", "(Ljakarta/enterprise/inject/spi/Bean<*>;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBeanAttributes", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Ljavax/enterprise/inject/spi/BeanAttributes;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;)Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBeanAttributes", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljakarta/enterprise/inject/spi/BeanAttributes;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;)Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

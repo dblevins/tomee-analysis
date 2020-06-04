@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "stateInfo", "Lcom/sun/faces/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRootRef", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljavax/faces/component/UIViewRoot;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRootRef", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljakarta/faces/component/UIViewRoot;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -86,16 +86,16 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "release", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "release", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/context/StateContext", "KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/context/StateContext");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -104,19 +104,19 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostAddToViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostAddToViewEvent;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "unsubscribeFromViewEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "unsubscribeFromViewEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PreRemoveFromViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PreRemoveFromViewEvent;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "unsubscribeFromViewEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "unsubscribeFromViewEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/faces/context/StateContext", "javax/faces/component/UIViewRoot"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/faces/context/StateContext", "jakarta/faces/component/UIViewRoot"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/context/StateContext", "KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -125,10 +125,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStateContext", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/context/StateContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStateContext", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/context/StateContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/context/StateContext", "KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/context/StateContext");
@@ -147,7 +147,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "<init>", "(Lcom/sun/faces/application/ApplicationStateInfo;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/context/StateContext", "KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -160,15 +160,15 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPartialStateSaving", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPartialStateSaving", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "viewRootRef", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ref/WeakReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIViewRoot");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIViewRoot");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -189,7 +189,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/StateContext", "partialLocked", "Z");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/component/UIViewRoot", "javax/faces/component/UIViewRoot"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/component/UIViewRoot", "jakarta/faces/component/UIViewRoot"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "partialLocked", "Z");
 Label label1 = new Label();
@@ -201,13 +201,13 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("com.sun.faces.viewId");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
@@ -241,7 +241,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startTrackViewModifications", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startTrackViewModifications", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
@@ -254,18 +254,18 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "createAddRemoveListener", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lcom/sun/faces/context/StateContext$AddRemoveListener;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "createAddRemoveListener", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lcom/sun/faces/context/StateContext$AddRemoveListener;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostAddToViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostAddToViewEvent;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "subscribeToViewEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "subscribeToViewEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PreRemoveFromViewEvent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PreRemoveFromViewEvent;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "subscribeToViewEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "subscribeToViewEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -292,10 +292,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "componentAddedDynamically", "(Ljavax/faces/component/UIComponent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "componentAddedDynamically", "(Ljakarta/faces/component/UIComponent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicComponent");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
@@ -303,12 +303,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndexOfDynamicallyAddedChildInParent", "(Ljavax/faces/component/UIComponent;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndexOfDynamicallyAddedChildInParent", "(Ljakarta/faces/component/UIComponent;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicComponent");
@@ -329,10 +329,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasOneOrMoreDynamicChild", "(Ljavax/faces/component/UIComponent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasOneOrMoreDynamicChild", "(Ljakarta/faces/component/UIComponent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicChildCount");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
@@ -340,10 +340,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "incrementDynamicChildCount", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "incrementDynamicChildCount", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicChildCount");
@@ -374,7 +374,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {Opcodes.TOP, "java/ut
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/context/StateContext", "javax/faces/context/FacesContext", "javax/faces/component/UIComponent", Opcodes.INTEGER, "java/util/Map", "java/lang/Integer"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/context/StateContext", "jakarta/faces/context/FacesContext", "jakarta/faces/component/UIComponent", Opcodes.INTEGER, "java/util/Map", "java/lang/Integer"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicChildCount");
 methodVisitor.visitVarInsn(ILOAD, 3);
@@ -382,8 +382,8 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("com.sun.faces.TreeHasDynamicComponents");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -394,12 +394,12 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "decrementDynamicChildCount", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "decrementDynamicChildCount", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("com.sun.faces.DynamicChildCount");
@@ -451,8 +451,8 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("com.sun.faces.TreeHasDynamicComponents");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -484,7 +484,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDynamicComponents", "()Ljava/util/HashMap;", "()Ljava/util/HashMap<Ljava/lang/String;Ljavax/faces/component/UIComponent;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDynamicComponents", "()Ljava/util/HashMap;", "()Ljava/util/HashMap<Ljava/lang/String;Ljakarta/faces/component/UIComponent;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/StateContext", "modListener", "Lcom/sun/faces/context/StateContext$AddRemoveListener;");
@@ -505,20 +505,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createAddRemoveListener", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lcom/sun/faces/context/StateContext$AddRemoveListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createAddRemoveListener", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lcom/sun/faces/context/StateContext$AddRemoveListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/context/StateContext", "isPartialStateSaving", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/context/StateContext", "isPartialStateSaving", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/StateContext$DynamicAddRemoveListener");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext$DynamicAddRemoveListener", "<init>", "(Lcom/sun/faces/context/StateContext;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext$DynamicAddRemoveListener", "<init>", "(Lcom/sun/faces/context/StateContext;Ljakarta/faces/context/FacesContext;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -527,7 +527,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/StateContext$StatelessAd
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext$StatelessAddRemoveListener", "<init>", "(Lcom/sun/faces/context/StateContext;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext$StatelessAddRemoveListener", "<init>", "(Lcom/sun/faces/context/StateContext;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"com/sun/faces/context/StateContext$AddRemoveListener"});
 methodVisitor.visitInsn(ARETURN);
@@ -535,23 +535,23 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/context/StateContext;Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/context/StateContext;Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "decrementDynamicChildCount", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "decrementDynamicChildCount", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lcom/sun/faces/context/StateContext;Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lcom/sun/faces/context/StateContext;Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "incrementDynamicChildCount", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/StateContext", "incrementDynamicChildCount", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

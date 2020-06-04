@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", null, "org/apache/openejb/resource/jdbc/dbcp/BasicManagedDataSource", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "suppliedTransactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "suppliedTransactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,11 +46,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -59,20 +59,20 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "wrapTransactionManager", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljakarta/transaction/TransactionManager;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/TransactionManagerWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "suppliedTransactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "getUrl", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/dbcp/ManagedDataSourceWithRecovery", "xaResourceWrapper", "Lorg/apache/openejb/resource/XAResourceWrapper;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/TransactionManagerWrapper", "<init>", "(Ljavax/transaction/TransactionManager;Ljava/lang/String;Lorg/apache/openejb/resource/XAResourceWrapper;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/dbcp/BasicManagedDataSource", "setTransactionManager", "(Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/TransactionManagerWrapper", "<init>", "(Ljakarta/transaction/TransactionManager;Ljava/lang/String;Lorg/apache/openejb/resource/XAResourceWrapper;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/dbcp/BasicManagedDataSource", "setTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);

@@ -26,7 +26,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/
 
 classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidateExecutable$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$ConstructorNodeImpl", "org/apache/bval/jsr/util/NodeImpl", "ConstructorNodeImpl", ACC_PUBLIC | ACC_STATIC);
 
@@ -35,11 +35,11 @@ classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$MethodNodeImpl", 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "METHOD_NODE", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/reflect/Method;Ljavax/validation/Path$Node;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "METHOD_NODE", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/reflect/Method;Ljakarta/validation/Path$Node;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONSTRUCTOR_NODE", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/reflect/Constructor<*>;Ljavax/validation/Path$Node;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONSTRUCTOR_NODE", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/reflect/Constructor<*>;Ljakarta/validation/Path$Node;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "executable", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executableNode", "Ljava/util/function/Function;", "Ljava/util/function/Function<TE;Ljavax/validation/Path$Node;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executableNode", "Ljava/util/function/Function;", "Ljava/util/function/Function<TE;Ljakarta/validation/Path$Node;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -125,8 +125,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateExecutab
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateExecutable", "executable", "Ljava/lang/reflect/Executable;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/Path$Node");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljavax/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/Path$Node");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/PathImpl", "addNode", "(Ljakarta/validation/Path$Node;)Lorg/apache/bval/jsr/util/PathImpl;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
@@ -134,7 +134,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$1", "(Ljava/lang/reflect/Constructor;)Ljavax/validation/Path$Node;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$1", "(Ljava/lang/reflect/Constructor;)Ljakarta/validation/Path$Node;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/util/NodeImpl$ConstructorNodeImpl");
 methodVisitor.visitInsn(DUP);
@@ -150,7 +150,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljava/lang/reflect/Method;)Ljavax/validation/Path$Node;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljava/lang/reflect/Method;)Ljakarta/validation/Path$Node;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/util/NodeImpl$MethodNodeImpl");
 methodVisitor.visitInsn(DUP);
@@ -167,9 +167,9 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "lambda$static$0", "(Ljava/lang/reflect/Method;)Ljavax/validation/Path$Node;", false), Type.getType("(Ljava/lang/reflect/Method;)Ljavax/validation/Path$Node;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "lambda$static$0", "(Ljava/lang/reflect/Method;)Ljakarta/validation/Path$Node;", false), Type.getType("(Ljava/lang/reflect/Method;)Ljakarta/validation/Path$Node;")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "METHOD_NODE", "Ljava/util/function/Function;");
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "lambda$static$1", "(Ljava/lang/reflect/Constructor;)Ljavax/validation/Path$Node;", false), Type.getType("(Ljava/lang/reflect/Constructor;)Ljavax/validation/Path$Node;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "lambda$static$1", "(Ljava/lang/reflect/Constructor;)Ljakarta/validation/Path$Node;", false), Type.getType("(Ljava/lang/reflect/Constructor;)Ljakarta/validation/Path$Node;")});
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/job/ValidateExecutable", "CONSTRUCTOR_NODE", "Ljava/util/function/Function;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);

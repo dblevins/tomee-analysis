@@ -287,7 +287,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/JAXRSServiceFactoryBean", "classResourceInfos", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "clear", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/Path;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/Path;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/AnnotationUtils", "getClassAnnotation", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$1", "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;", "java/util/HashMap", null);
 
-classWriter.visitOuterClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter", "lambda$doFilter$12", "(Ljavax/servlet/ServletResponse;Ljava/lang/Exception;Lio/opentracing/Scope;)V");
+classWriter.visitOuterClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter", "lambda$doFilter$12", "(Ljakarta/servlet/ServletResponse;Ljava/lang/Exception;Lio/opentracing/Scope;)V");
 
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter$1", null, null, 0);
 

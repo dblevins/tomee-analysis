@@ -197,7 +197,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "protocolConnect", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -311,7 +311,7 @@ methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createPoolConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createPoolConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -358,12 +358,12 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "close", "()V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/StoreClosedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/StoreClosedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitLdcInsn("No Store connections available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/StoreClosedException", "<init>", "(Ljavax/mail/Store;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/StoreClosedException", "<init>", "(Ljakarta/mail/Store;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -390,7 +390,7 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 1);
@@ -421,16 +421,16 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitIincInsn(1, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Unable to get connection to IMAP server");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "getPoolConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "getPoolConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -440,12 +440,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "closed", "Z");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/StoreClosedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/StoreClosedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitLdcInsn("No Store connections available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/StoreClosedException", "<init>", "(Ljavax/mail/Store;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/StoreClosedException", "<init>", "(Ljakarta/mail/Store;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitInsn(ICONST_0);
@@ -500,12 +500,12 @@ methodVisitor.visitJumpInsn(IF_ICMPLT, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "closed", "Z");
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/StoreClosedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/StoreClosedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitLdcInsn("No Store connections available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/StoreClosedException", "<init>", "(Ljavax/mail/Store;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/StoreClosedException", "<init>", "(Ljakarta/mail/Store;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -521,12 +521,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "closed", "Z");
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label11);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/StoreClosedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/StoreClosedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitLdcInsn("No Store connections available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/StoreClosedException", "<init>", "(Ljavax/mail/Store;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/StoreClosedException", "<init>", "(Ljakarta/mail/Store;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -541,7 +541,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "returnPoolConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "returnPoolConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -600,7 +600,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releasePoolConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releasePoolConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -638,18 +638,18 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getStoreConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getStoreConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "closed", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/StoreClosedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/StoreClosedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitLdcInsn("No Store connections available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/StoreClosedException", "<init>", "(Ljavax/mail/Store;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/StoreClosedException", "<init>", "(Ljakarta/mail/Store;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -673,7 +673,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "releaseStoreConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "releaseStoreConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "isClosed", "()Z", false);
@@ -704,7 +704,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolderConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolderConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "getConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", false);
@@ -713,7 +713,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "releaseFolderConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "releaseFolderConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "isClosed", "()Z", false);
@@ -734,7 +734,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "close", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "close", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 1);
@@ -779,7 +779,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/MessagingException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "poolConnections", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
@@ -822,7 +822,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/MessagingException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool", "closeStaleConnections", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -860,11 +860,11 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/MessagingException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 1);
 Label label6 = new Label();

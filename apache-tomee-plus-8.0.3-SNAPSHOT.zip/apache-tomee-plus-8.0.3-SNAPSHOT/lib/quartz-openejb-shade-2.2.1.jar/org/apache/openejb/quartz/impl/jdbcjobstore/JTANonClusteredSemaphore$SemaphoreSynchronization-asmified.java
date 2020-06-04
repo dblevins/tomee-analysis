@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization", "org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore", "SemaphoreSynchronization", ACC_PRIVATE);
 

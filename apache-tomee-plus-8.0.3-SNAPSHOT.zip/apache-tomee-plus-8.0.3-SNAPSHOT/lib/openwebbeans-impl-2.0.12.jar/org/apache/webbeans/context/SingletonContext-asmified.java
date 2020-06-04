@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/inject/Singleton;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/inject/Singleton;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/AbstractContext", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);

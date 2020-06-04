@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getPrimaryKey", "(Lorg/apache/openejb/BeanContext;Ljavax/ejb/EntityBean;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getPrimaryKey", "(Lorg/apache/openejb/BeanContext;Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -48,7 +48,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljavax/ejb/EntityBean;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityBean", "(Ljavax/ejb/EJBLocalObject;)Ljavax/ejb/EntityBean;", "<Bean::Ljavax/ejb/EntityBean;>(Ljavax/ejb/EJBLocalObject;)TBean;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityBean", "(Ljakarta/ejb/EJBLocalObject;)Ljakarta/ejb/EntityBean;", "<Bean::Ljakarta/ejb/EntityBean;>(Ljakarta/ejb/EJBLocalObject;)TBean;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -109,7 +109,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ivm/EjbObj
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/EjbObjectProxyHandler", "primaryKey", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/CmpContainer", "getEjbInstance", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EntityBean");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EntityBean");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -117,7 +117,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityBean", "(Ljavax/ejb/EJBObject;)Ljavax/ejb/EntityBean;", "<Bean::Ljavax/ejb/EntityBean;>(Ljavax/ejb/EJBObject;)TBean;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityBean", "(Ljakarta/ejb/EJBObject;)Ljakarta/ejb/EntityBean;", "<Bean::Ljakarta/ejb/EntityBean;>(Ljakarta/ejb/EJBObject;)TBean;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -170,7 +170,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ivm/EjbObj
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/EjbObjectProxyHandler", "primaryKey", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/CmpContainer", "getEjbInstance", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EntityBean");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EntityBean");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -178,7 +178,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEjbProxy", "(Lorg/apache/openejb/BeanContext;Ljavax/ejb/EntityBean;)Ljavax/ejb/EJBLocalObject;", "<Proxy::Ljavax/ejb/EJBLocalObject;>(Lorg/apache/openejb/BeanContext;Ljavax/ejb/EntityBean;)TProxy;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEjbProxy", "(Lorg/apache/openejb/BeanContext;Ljakarta/ejb/EntityBean;)Ljakarta/ejb/EJBLocalObject;", "<Proxy::Ljakarta/ejb/EJBLocalObject;>(Lorg/apache/openejb/BeanContext;Ljakarta/ejb/EntityBean;)TProxy;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -189,7 +189,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/Cmp2Util", "getPrimaryKey", "(Lorg/apache/openejb/BeanContext;Ljavax/ejb/EntityBean;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/Cmp2Util", "getPrimaryKey", "(Lorg/apache/openejb/BeanContext;Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getContainer", "()Lorg/apache/openejb/Container;", false);
@@ -219,7 +219,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/InterfaceType", "EJB
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getLocalInterface", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ivm/EjbObjectProxyHandler", "createProxy", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Lorg/apache/openejb/InterfaceType;Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBLocalObject");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBLocalObject");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);

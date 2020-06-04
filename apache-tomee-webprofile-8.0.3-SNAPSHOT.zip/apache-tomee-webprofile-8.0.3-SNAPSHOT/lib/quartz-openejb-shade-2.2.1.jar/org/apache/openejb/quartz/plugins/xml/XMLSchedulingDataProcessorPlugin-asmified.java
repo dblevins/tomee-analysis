@@ -212,7 +212,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljavax/transaction/UserTransaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljakarta/transaction/UserTransaction;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

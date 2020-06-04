@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "<T:Ljava/lang/Object;>Lorg/apache/tomcat/websocket/pojo/PojoMessageHandlerBase<TT;>;Ljavax/websocket/MessageHandler$Partial<TT;>;", "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", new String[] { "javax/websocket/MessageHandler$Partial" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "<T:Ljava/lang/Object;>Lorg/apache/tomcat/websocket/pojo/PojoMessageHandlerBase<TT;>;Ljakarta/websocket/MessageHandler$Partial<TT;>;", "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", new String[] { "jakarta/websocket/MessageHandler$Partial" });
 
-classWriter.visitInnerClass("javax/websocket/MessageHandler$Partial", "javax/websocket/MessageHandler", "Partial", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/MessageHandler$Partial", "jakarta/websocket/MessageHandler", "Partial", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "indexBoolean", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIIJ)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIIJ)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 8);
 methodVisitor.visitVarInsn(LLOAD, 9);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIJ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIJ)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "indexBoolean", "I");
@@ -68,20 +68,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "params", "[Ljava/lang/Object;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/websocket/DecodeException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/websocket/DecodeException");
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljavax/websocket/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljakarta/websocket/Session;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/websocket/WsSession");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "getLocal", "()Ljavax/websocket/Endpoint;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/WsSession", "getLocal", "()Ljakarta/websocket/Endpoint;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljavax/websocket/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljakarta/websocket/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "params", "[Ljava/lang/Object;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/DecodeException");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/Endpoint", "onError", "(Ljavax/websocket/Session;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/DecodeException");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/Endpoint", "onError", "(Ljakarta/websocket/Session;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -112,7 +112,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "indexSession", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljavax/websocket/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase", "session", "Ljakarta/websocket/Session;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

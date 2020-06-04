@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "view", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "objectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "objectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,18 +46,18 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "view", "Lorg/apache/activemq/broker/jmx/NetworkDestinationView;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljavax/management/ObjectName;Lorg/apache/activemq/network/MBeanBridgeDestination$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljakarta/management/ObjectName;Lorg/apache/activemq/network/MBeanBridgeDestination$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "<init>", "(Lorg/apache/activemq/broker/jmx/NetworkDestinationView;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
@@ -72,10 +72,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$300", "(Lorg/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer;)Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$300", "(Lorg/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer;)Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

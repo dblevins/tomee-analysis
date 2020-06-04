@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljavax/faces/convert/Converter;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljakarta/faces/convert/Converter;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Typed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/converter/FacesConverterInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/converter/FacesConverterInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterInfo", "getForClass", "()Ljava/lang/Class;", false);
 Label label0 = new Label();
@@ -44,7 +44,7 @@ methodVisitor.visitLdcInsn("");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterInfo", "getForClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
@@ -104,11 +104,11 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 2, new Object[] {label5, label5});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 2, new Object[] {label5, label5});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterInfo", "getForClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 3, new Object[] {label5, label5, "java/lang/Class"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 3, new Object[] {label5, label5, "java/lang/Class"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterInfo", "getConverterId", "()Ljava/lang/String;", false);
 Label label8 = new Label();
@@ -117,18 +117,18 @@ methodVisitor.visitLdcInsn("");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 3, new Object[] {label5, label5, "java/lang/Class"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 3, new Object[] {label5, label5, "java/lang/Class"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterInfo", "getConverterId", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 4, new Object[] {label5, label5, "java/lang/Class", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/converter/FacesConverterInfo", "java/lang/String", "java/lang/String", "java/lang/String"}, 4, new Object[] {label5, label5, "java/lang/Class", "java/lang/String"});
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/converter/FacesConverterAnnotationLiteral", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Z)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "id", "(Ljava/lang/String;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "scope", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
@@ -155,7 +155,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Type", "getTyp
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "simpleClassForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "beanClass", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/converter/FacesConverterProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/convert/Converter;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/convert/Converter;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/converter/FacesConverterProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/convert/Converter;", false), Type.getType("(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/convert/Converter;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "create", "(Ljava/util/function/Function;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConverter", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/convert/Converter;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljavax/faces/convert/Converter;>;)Ljavax/faces/convert/Converter;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createConverter", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/convert/Converter;", "(Ljakarta/enterprise/context/spi/CreationalContext<Ljakarta/faces/convert/Converter;>;)Ljakarta/faces/convert/Converter;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -177,13 +177,13 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/convert/Converter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/convert/Converter");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "javax/enterprise/context/spi/CreationalContext", "java/lang/Class", "javax/faces/convert/Converter"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/cdi/converter/FacesConverterProducer", "jakarta/enterprise/context/spi/CreationalContext", "java/lang/Class", "jakarta/faces/convert/Converter"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/cdi/converter/FacesConverterProducer;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
@@ -200,7 +200,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -212,7 +212,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -222,11 +222,11 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/convert/Converter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/convert/Converter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "createConverter", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/converter/FacesConverterProducer", "createConverter", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

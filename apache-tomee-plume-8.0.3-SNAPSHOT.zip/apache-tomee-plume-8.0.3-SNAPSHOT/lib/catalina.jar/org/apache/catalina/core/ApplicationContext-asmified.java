@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/core/ApplicationContext", null, "java/lang/Object", new String[] { "javax/servlet/ServletContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/core/ApplicationContext", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContext" });
 
 classWriter.visitInnerClass("org/apache/catalina/core/ApplicationContext$DispatchData", "org/apache/catalina/core/ApplicationContext", "DispatchData", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/servlet/FilterRegistration$Dynamic", "javax/servlet/FilterRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/FilterRegistration$Dynamic", "jakarta/servlet/FilterRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/servlet/ServletRegistration$Dynamic", "javax/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/ServletRegistration$Dynamic", "jakarta/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -61,11 +61,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "emp
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "emptyServlet", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/Servlet;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "emptyServlet", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/Servlet;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "facade", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "facade", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -81,19 +81,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "dis
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sessionCookieConfig", "Ljavax/servlet/SessionCookieConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sessionCookieConfig", "Ljakarta/servlet/SessionCookieConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultSessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "defaultSessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "supportedSessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "supportedSessionTrackingModes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -120,7 +120,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/core/ApplicationContextFac
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContextFacade", "<init>", "(Lorg/apache/catalina/core/ApplicationContext;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "facade", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "facade", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ConcurrentHashMap");
 methodVisitor.visitInsn(DUP);
@@ -153,7 +153,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/core/ApplicationSessionCoo
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationSessionCookieConfig", "<init>", "(Lorg/apache/catalina/core/StandardContext;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "sessionCookieConfig", "Ljavax/servlet/SessionCookieConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "sessionCookieConfig", "Ljakarta/servlet/SessionCookieConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "populateSessionTrackingModes", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -188,7 +188,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "(Ljava/lang/String;)Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "(Ljava/lang/String;)Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -300,7 +300,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardC
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -311,7 +311,7 @@ Label label10 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label10);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -467,7 +467,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamedDispatcher", "(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamedDispatcher", "(Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -498,7 +498,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationDispatcher", "<init>", "(Lorg/apache/catalina/Wrapper;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletMapping;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationDispatcher", "<init>", "(Lorg/apache/catalina/Wrapper;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/http/HttpServletMapping;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(9, 3);
 methodVisitor.visitEnd();
@@ -520,7 +520,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestDispatcher", "(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRequestDispatcher", "(Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -767,7 +767,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/core/ApplicationMapping");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationMapping", "<init>", "(Lorg/apache/catalina/mapper/MappingData;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationMapping", "getHttpServletMapping", "()Ljavax/servlet/http/HttpServletMapping;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/ApplicationMapping", "getHttpServletMapping", "()Ljakarta/servlet/http/HttpServletMapping;", false);
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/core/ApplicationDispatcher");
 methodVisitor.visitInsn(DUP);
@@ -778,7 +778,7 @@ methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationDispatcher", "<init>", "(Lorg/apache/catalina/Wrapper;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletMapping;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationDispatcher", "<init>", "(Lorg/apache/catalina/Wrapper;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/http/HttpServletMapping;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitVarInsn(ALOAD, 8);
@@ -1060,7 +1060,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getServlet", "(Ljava/lang/String;)Ljavax/servlet/Servlet;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getServlet", "(Ljava/lang/String;)Ljakarta/servlet/Servlet;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -1095,7 +1095,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getServlets", "()Ljava/util/Enumeration;", "()Ljava/util/Enumeration<Ljavax/servlet/Servlet;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getServlets", "()Ljava/util/Enumeration;", "()Ljava/util/Enumeration<Ljakarta/servlet/Servlet;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -1194,14 +1194,14 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"[Ljava/lang/Object;"
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletContextAttributeEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletContextAttributeEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletContextAttributeEvent", "<init>", "(Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletContextAttributeEvent", "<init>", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -1212,7 +1212,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 7);
 Label label7 = new Label();
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/core/ApplicationContext", "java/lang/String", "java/lang/Object", "[Ljava/lang/Object;", "javax/servlet/ServletContextAttributeEvent", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/core/ApplicationContext", "java/lang/String", "java/lang/Object", "[Ljava/lang/Object;", "jakarta/servlet/ServletContextAttributeEvent", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ILOAD, 6);
 Label label8 = new Label();
@@ -1222,7 +1222,7 @@ methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextAttributeListener");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label9);
 Label label10 = new Label();
@@ -1230,7 +1230,7 @@ methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContextAttributeListener");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1240,7 +1240,7 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "fireContainerEvent", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContextAttributeListener", "attributeRemoved", "(Ljavax/servlet/ServletContextAttributeEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContextAttributeListener", "attributeRemoved", "(Ljakarta/servlet/ServletContextAttributeEvent;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitLdcInsn("afterContextAttributeRemoved");
@@ -1249,7 +1249,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardC
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/catalina/core/ApplicationContext", "java/lang/String", "java/lang/Object", "[Ljava/lang/Object;", "javax/servlet/ServletContextAttributeEvent", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/Object", "javax/servlet/ServletContextAttributeListener"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/catalina/core/ApplicationContext", "java/lang/String", "java/lang/Object", "[Ljava/lang/Object;", "jakarta/servlet/ServletContextAttributeEvent", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/Object", "jakarta/servlet/ServletContextAttributeListener"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/ExceptionUtils", "handleThrowable", "(Ljava/lang/Throwable;)V", false);
@@ -1350,27 +1350,27 @@ methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label10);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletContextAttributeEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletContextAttributeEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletContextAttributeEvent", "<init>", "(Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletContextAttributeEvent", "<init>", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/ServletContextAttributeEvent"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletContextAttributeEvent");
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/ServletContextAttributeEvent"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletContextAttributeEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletContextAttributeEvent", "<init>", "(Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletContextAttributeEvent", "<init>", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1393,7 +1393,7 @@ methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextAttributeListener");
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label14);
 Label label15 = new Label();
@@ -1401,7 +1401,7 @@ methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContextAttributeListener");
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ILOAD, 4);
@@ -1414,7 +1414,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "fireContainerEvent", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContextAttributeListener", "attributeReplaced", "(Ljavax/servlet/ServletContextAttributeEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContextAttributeListener", "attributeReplaced", "(Ljakarta/servlet/ServletContextAttributeEvent;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitLdcInsn("afterContextAttributeReplaced");
@@ -1422,7 +1422,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "fireContainerEvent", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label16);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/ServletContextAttributeListener"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/ServletContextAttributeListener"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitLdcInsn("beforeContextAttributeAdded");
@@ -1430,7 +1430,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "fireContainerEvent", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContextAttributeListener", "attributeAdded", "(Ljavax/servlet/ServletContextAttributeEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContextAttributeListener", "attributeAdded", "(Ljakarta/servlet/ServletContextAttributeEvent;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitLdcInsn("afterContextAttributeAdded");
@@ -1480,44 +1480,44 @@ methodVisitor.visitMaxs(5, 13);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/servlet/FilterRegistration$Dynamic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/FilterRegistration$Dynamic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/servlet/FilterRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/Class<+Ljavax/servlet/Filter;>;)Ljavax/servlet/FilterRegistration$Dynamic;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFilter", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/servlet/FilterRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)Ljakarta/servlet/FilterRegistration$Dynamic;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addFilter", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1617,7 +1617,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/web/FilterDef", "setFilterClass", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/web/FilterDef", "setFilter", "(Ljavax/servlet/Filter;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/web/FilterDef", "setFilter", "(Ljakarta/servlet/Filter;)V", false);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/core/ApplicationFilterRegistration");
@@ -1631,7 +1631,7 @@ methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFilter", "(Ljava/lang/Class;)Ljavax/servlet/Filter;", "<T::Ljavax/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFilter", "(Ljava/lang/Class;)Ljakarta/servlet/Filter;", "<T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1647,7 +1647,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardC
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/InstanceManager", "newInstance", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/Filter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/Filter");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label1);
@@ -1658,24 +1658,24 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/ExceptionUtils", "handleThrowable", "(Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilterRegistration", "(Ljava/lang/String;)Ljavax/servlet/FilterRegistration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilterRegistration", "(Ljava/lang/String;)Ljakarta/servlet/FilterRegistration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
@@ -1700,33 +1700,33 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/servlet/ServletRegistration$Dynamic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map;)Ljavax/servlet/ServletRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map;)Ljakarta/servlet/ServletRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljavax/servlet/Servlet;)Ljavax/servlet/ServletRegistration$Dynamic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map;)Ljavax/servlet/ServletRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map;)Ljakarta/servlet/ServletRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/servlet/ServletRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/Class<+Ljavax/servlet/Servlet;>;)Ljavax/servlet/ServletRegistration$Dynamic;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/servlet/ServletRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1734,13 +1734,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map;)Ljavax/servlet/ServletRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map;)Ljakarta/servlet/ServletRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addJspFile", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/servlet/ServletRegistration$Dynamic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addJspFile", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -1832,13 +1832,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map;)Ljavax/servlet/ServletRegistration$Dynamic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map;)Ljakarta/servlet/ServletRegistration$Dynamic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map;)Ljavax/servlet/ServletRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljavax/servlet/ServletRegistration$Dynamic;", new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map;)Ljakarta/servlet/ServletRegistration$Dynamic;", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljakarta/servlet/ServletRegistration$Dynamic;", new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1949,12 +1949,12 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/annotation/ServletSecurity;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/annotation/ServletSecurity;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/annotation/ServletSecurity");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/annotation/ServletSecurity");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/annotation/ServletSecurity"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/annotation/ServletSecurity"}, 0, null);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label6);
@@ -1966,17 +1966,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Wrapper", "setServletClass", "(Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Wrapper", "setServlet", "(Ljavax/servlet/Servlet;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Wrapper", "setServlet", "(Ljakarta/servlet/Servlet;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "wasCreatedDynamicServlet", "(Ljavax/servlet/Servlet;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "wasCreatedDynamicServlet", "(Ljakarta/servlet/Servlet;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/annotation/ServletSecurity;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/annotation/ServletSecurity;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/annotation/ServletSecurity");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/annotation/ServletSecurity");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -2019,21 +2019,21 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label11);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletSecurityElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletSecurityElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletSecurityElement", "<init>", "(Ljavax/servlet/annotation/ServletSecurity;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRegistration$Dynamic", "setServletSecurity", "(Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletSecurityElement", "<init>", "(Ljakarta/servlet/annotation/ServletSecurity;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRegistration$Dynamic", "setServletSecurity", "(Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/ServletRegistration$Dynamic"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/ServletRegistration$Dynamic"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServlet", "(Ljava/lang/Class;)Ljavax/servlet/Servlet;", "<T::Ljavax/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServlet", "(Ljava/lang/Class;)Ljakarta/servlet/Servlet;", "<T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -2049,12 +2049,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardC
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/InstanceManager", "newInstance", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/Servlet");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/Servlet");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "dynamicServletCreated", "(Ljavax/servlet/Servlet;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "dynamicServletCreated", "(Ljakarta/servlet/Servlet;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
@@ -2064,24 +2064,24 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/ExceptionUtils", "handleThrowable", "(Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletRegistration", "(Ljava/lang/String;)Ljavax/servlet/ServletRegistration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletRegistration", "(Ljava/lang/String;)Ljakarta/servlet/ServletRegistration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
@@ -2107,7 +2107,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultSessionTrackingModes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultSessionTrackingModes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "defaultSessionTrackingModes", "Ljava/util/Set;");
@@ -2119,11 +2119,11 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "populateSessionTrackingModes", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "URL", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "URL", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "of", "(Ljava/lang/Enum;)Ljava/util/EnumSet;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "defaultSessionTrackingModes", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "URL", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "URL", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "of", "(Ljava/lang/Enum;)Ljava/util/EnumSet;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationContext", "supportedSessionTrackingModes", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2133,12 +2133,12 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "defaultSessionTrackingModes", "Ljava/util/Set;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "COOKIE", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "COOKIE", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "supportedSessionTrackingModes", "Ljava/util/Set;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "COOKIE", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "COOKIE", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -2174,7 +2174,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "supportedSessionTrackingModes", "Ljava/util/Set;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "SSL", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "SSL", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -2189,7 +2189,7 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEffectiveSessionTrackingModes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEffectiveSessionTrackingModes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "sessionTrackingModes", "Ljava/util/Set;");
@@ -2207,16 +2207,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionCookieConfig", "()Ljavax/servlet/SessionCookieConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionCookieConfig", "()Ljakarta/servlet/SessionCookieConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "sessionCookieConfig", "Ljavax/servlet/SessionCookieConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "sessionCookieConfig", "Ljakarta/servlet/SessionCookieConfig;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSessionTrackingModes", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljavax/servlet/SessionTrackingMode;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSessionTrackingModes", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
@@ -2253,7 +2253,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/SessionTrackingMode");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/SessionTrackingMode");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "supportedSessionTrackingModes", "Ljava/util/Set;");
@@ -2270,7 +2270,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/SessionTrackingMode", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/SessionTrackingMode", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -2286,7 +2286,7 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/SessionTrackingMode", "SSL", "Ljavax/servlet/SessionTrackingMode;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/SessionTrackingMode", "SSL", "Ljakarta/servlet/SessionTrackingMode;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
@@ -2380,7 +2380,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/servlet/ServletException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/servlet/ServletException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2390,7 +2390,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/servlet/ServletException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/servlet/ServletException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -2538,20 +2538,20 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextAttributeListener");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletRequestListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletRequestListener");
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletRequestAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletRequestAttributeListener");
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionIdListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionIdListener");
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionAttributeListener");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitLabel(label1);
@@ -2565,11 +2565,11 @@ methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionListener");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextListener");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2592,7 +2592,7 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextListener");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
@@ -2631,7 +2631,7 @@ methodVisitor.visitMaxs(8, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createListener", "(Ljava/lang/Class;)Ljava/util/EventListener;", "<T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createListener", "(Ljava/lang/Class;)Ljava/util/EventListener;", "<T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -2653,26 +2653,26 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/InstanceManage
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/EventListener");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextListener");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletContextAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletContextAttributeListener");
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletRequestListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletRequestListener");
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletRequestAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletRequestAttributeListener");
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionListener");
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionIdListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionIdListener");
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/http/HttpSessionAttributeListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/http/HttpSessionAttributeListener");
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/EventListener"}, 0, null);
@@ -2702,18 +2702,18 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/ExceptionUtils", "handleThrowable", "(Ljava/lang/Throwable;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/ServletException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(8, 3);
 methodVisitor.visitEnd();
@@ -2890,7 +2890,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilterRegistrations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;+Ljavax/servlet/FilterRegistration;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFilterRegistrations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;+Ljakarta/servlet/FilterRegistration;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -2939,17 +2939,17 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljavax/servlet/descriptor/JspConfigDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspConfigDescriptor", "()Ljakarta/servlet/descriptor/JspConfigDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "context", "Lorg/apache/catalina/core/StandardContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getJspConfigDescriptor", "()Ljavax/servlet/descriptor/JspConfigDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getJspConfigDescriptor", "()Ljakarta/servlet/descriptor/JspConfigDescriptor;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletRegistrations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;+Ljavax/servlet/ServletRegistration;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletRegistrations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;+Ljakarta/servlet/ServletRegistration;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -3200,10 +3200,10 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getFacade", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getFacade", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "facade", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationContext", "facade", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

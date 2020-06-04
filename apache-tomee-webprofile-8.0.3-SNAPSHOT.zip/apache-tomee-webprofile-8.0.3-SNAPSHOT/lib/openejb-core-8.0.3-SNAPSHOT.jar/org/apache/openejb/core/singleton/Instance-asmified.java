@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "lock", "Ljava/uti
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljavax/enterprise/context/spi/CreationalContext;Ljava/util/concurrent/locks/ReadWriteLock;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljavax/enterprise/context/spi/CreationalContext;Ljava/util/concurrent/locks/ReadWriteLock;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/Map;Ljakarta/enterprise/context/spi/CreationalContext;Ljava/util/concurrent/locks/ReadWriteLock;)V", "(Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljakarta/enterprise/context/spi/CreationalContext;Ljava/util/concurrent/locks/ReadWriteLock;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -56,7 +56,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/singleton/Instance", "lock", "Ljava/util/concurrent/locks/ReadWriteLock;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/singleton/Instance", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/singleton/Instance", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/jee/oejb2/JaxbOpenejbJar2$1", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/jee/oejb2/JaxbOpenejbJar2$1", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventHandler" });
 
 classWriter.visitOuterClass("org/apache/openejb/jee/oejb2/JaxbOpenejbJar2", "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;Z)Ljava/lang/Object;");
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/jee/oejb2/JaxbOpenejbJar2$1", "val$logErrors", "Z");

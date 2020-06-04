@@ -25,13 +25,13 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/InjectionPointGenerator", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/Dependent;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/Dependent;", true);
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -46,10 +46,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoint", "()Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoint", "()Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/InjectionPointGenerator", "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/InjectionPointGenerator", "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

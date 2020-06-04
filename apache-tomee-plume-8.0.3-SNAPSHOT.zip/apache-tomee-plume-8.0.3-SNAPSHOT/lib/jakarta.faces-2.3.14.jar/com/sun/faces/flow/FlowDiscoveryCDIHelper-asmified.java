@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/FlowDiscoveryCDIHelper", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/inject/Named;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/inject/Named;", true);
 annotationVisitor0.visit("value", "csfFLOWDISCOVERYCDIHELPER");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/Dependent;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/Dependent;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -47,22 +47,22 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "createFlowBuilder", "()Ljavax/faces/flow/builder/FlowBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(0, "createFlowBuilder", "()Ljakarta/faces/flow/builder/FlowBuilder;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/faces/flow/builder/FlowBuilderParameter;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/faces/flow/builder/FlowBuilderParameter;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/flow/builder/FlowBuilderImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/builder/FlowBuilderImpl", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/builder/FlowBuilderImpl", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);

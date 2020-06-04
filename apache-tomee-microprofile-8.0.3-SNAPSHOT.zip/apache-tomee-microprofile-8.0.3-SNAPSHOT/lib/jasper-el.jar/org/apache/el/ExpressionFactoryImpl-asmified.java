@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/ExpressionFactoryImpl", null, "javax/el/ExpressionFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/el/ExpressionFactoryImpl", null, "jakarta/el/ExpressionFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ExpressionFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ExpressionFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -39,30 +39,30 @@ methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToType", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToType", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMethodExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/el/MethodExpression;", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)Ljavax/el/MethodExpression;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMethodExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/el/MethodExpression;", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)Ljakarta/el/MethodExpression;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/el/lang/ExpressionBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/ExpressionBuilder", "<init>", "(Ljava/lang/String;Ljavax/el/ELContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/ExpressionBuilder", "<init>", "(Ljava/lang/String;Ljakarta/el/ELContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/el/lang/ExpressionBuilder", "createMethodExpression", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/el/MethodExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/el/lang/ExpressionBuilder", "createMethodExpression", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljakarta/el/MethodExpression;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class<*>;)Ljavax/el/ValueExpression;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class<*>;)Ljakarta/el/ValueExpression;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -79,17 +79,17 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/el/lang/ExpressionBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/ExpressionBuilder", "<init>", "(Ljava/lang/String;Ljavax/el/ELContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/ExpressionBuilder", "<init>", "(Ljava/lang/String;Ljakarta/el/ELContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/el/lang/ExpressionBuilder", "createValueExpression", "(Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/el/lang/ExpressionBuilder", "createValueExpression", "(Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/el/ValueExpression;", "(Ljava/lang/Object;Ljava/lang/Class<*>;)Ljavax/el/ValueExpression;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", "(Ljava/lang/Object;Ljava/lang/Class<*>;)Ljakarta/el/ValueExpression;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -112,7 +112,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStreamELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStreamELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/el/stream/StreamELResolverImpl");
 methodVisitor.visitInsn(DUP);

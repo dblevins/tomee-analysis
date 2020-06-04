@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsExtensionParameter", null, "java/lang/Object", new String[] { "javax/websocket/Extension$Parameter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsExtensionParameter", null, "java/lang/Object", new String[] { "jakarta/websocket/Extension$Parameter" });
 
-classWriter.visitInnerClass("javax/websocket/Extension$Parameter", "javax/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Extension$Parameter", "jakarta/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "name", "Ljava/lang/String;", null, null);

@@ -79,7 +79,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setSelector", "(Ljava/lang/String;)V", null, new String[] { "javax/jms/InvalidSelectorException", "java/lang/UnsupportedOperationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setSelector", "(Ljava/lang/String;)V", null, new String[] { "jakarta/jms/InvalidSelectorException", "java/lang/UnsupportedOperationException" });
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
 annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
@@ -305,7 +305,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getConnection", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getConnection", "()Ljakarta/management/ObjectName;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "ObjectName of the Connection that created this Subscription");

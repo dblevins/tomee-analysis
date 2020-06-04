@@ -22,39 +22,39 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;", "Ljavax/enterprise/inject/spi/AnnotatedParameter<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;", "Ljakarta/enterprise/inject/spi/AnnotatedParameter<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedParameter;)V", "(Ljavax/enterprise/inject/spi/AnnotatedParameter<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedParameter;)V", "(Ljakarta/enterprise/inject/spi/AnnotatedParameter<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljavax/enterprise/inject/spi/AnnotatedParameter;", "()Ljavax/enterprise/inject/spi/AnnotatedParameter<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotated", "()Ljakarta/enterprise/inject/spi/AnnotatedParameter;", "()Ljakarta/enterprise/inject/spi/AnnotatedParameter<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "(Ljava/lang/annotation/Annotation;)Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "(Ljava/lang/annotation/Annotation;)Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
@@ -64,11 +64,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "(Ljava/util/function/Predicate;)Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "(Ljava/util/function/Predicate;)Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "(Ljava/util/function/Predicate;)Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "(Ljava/util/function/Predicate;)Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "removeIf", "(Ljava/util/function/Predicate;)Z", true);
 methodVisitor.visitInsn(POP);
@@ -78,11 +78,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeAll", "()Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "()Ljavax/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeAll", "()Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator;", "()Ljakarta/enterprise/inject/spi/configurator/AnnotatedParameterConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedParameter", "getAnnotations", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "clear", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);

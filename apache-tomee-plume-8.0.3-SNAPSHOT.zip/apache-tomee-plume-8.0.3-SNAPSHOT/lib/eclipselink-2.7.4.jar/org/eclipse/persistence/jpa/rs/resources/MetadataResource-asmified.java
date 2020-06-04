@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", null, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -34,7 +34,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -43,13 +43,13 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "/{version : v\\d\\.\\d|latest}/{context}/metadata-catalog/");
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CLASS_NAME", "Ljava/lang/String;", null, null);
@@ -128,28 +128,28 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataCatalog", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataCatalog", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(4, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "version");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "context");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -160,19 +160,19 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildMetadataCatalogResponse", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildMetadataCatalogResponse", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -182,7 +182,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -192,44 +192,44 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "entity/{entityName}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(5, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "version");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "context");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "entityName");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(4, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(4, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "setRequestUniqueId", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -237,29 +237,29 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildEntitySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildEntitySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/MediaType"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/MediaType"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildEntityMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildEntityMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -269,7 +269,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -279,44 +279,44 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "query/{queryName}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(5, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "version");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "context");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "queryName");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(3, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(4, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(4, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "setRequestUniqueId", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -324,28 +324,28 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildQuerySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildQuerySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/MediaType"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/MediaType"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildQueryMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildQueryMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildMetadataCatalogResponse", "(Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildMetadataCatalogResponse", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "CLASS_NAME", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("buildMetadataCatalogResponse");
 methodVisitor.visitInsn(ICONST_4);
@@ -365,7 +365,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
@@ -374,7 +374,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "getPersistenceContext", "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", false);
@@ -384,9 +384,9 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "buildMetadataCatalog", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;)Lorg/eclipse/persistence/internal/jpa/rs/metadata/model/v2/MetadataCatalog;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -397,7 +397,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "exceptionOccurred", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
@@ -409,21 +409,21 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljava/util/List;)V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildEntityMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildEntityMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "CLASS_NAME", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("buildEntityMetadataResponse");
 methodVisitor.visitInsn(ICONST_5);
@@ -447,7 +447,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
@@ -456,7 +456,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "getPersistenceContext", "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", false);
@@ -488,11 +488,11 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "classOrClassDescriptorCouldNotBeFoundForEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/HttpHeaders", "javax/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/HttpHeaders", "jakarta/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -508,7 +508,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/HttpHeaders", "javax/ws/rs/core/UriInfo"}, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/HttpHeaders", "jakarta/ws/rs/core/UriInfo"}, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "exceptionOccurred", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
@@ -520,21 +520,21 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljava/util/List;)V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildQueryMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildQueryMetadataResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "CLASS_NAME", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("buildQueryMetadataResponse");
 methodVisitor.visitInsn(ICONST_5);
@@ -558,7 +558,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
@@ -567,7 +567,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "getPersistenceContext", "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", false);
@@ -600,11 +600,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/Per
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "responseCouldNotBeBuiltForNamedQueryRequest", "(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/HttpHeaders", "javax/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/queries/DatabaseQuery"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/HttpHeaders", "jakarta/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/queries/DatabaseQuery"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "mediaType", "(Ljava/util/List;)Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -620,7 +620,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/HttpHeaders", "javax/ws/rs/core/UriInfo"}, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/HttpHeaders", "jakarta/ws/rs/core/UriInfo"}, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "exceptionOccurred", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
@@ -632,21 +632,21 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getAcceptableMediaTypes", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljava/util/List;)V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildEntitySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildEntitySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "CLASS_NAME", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("buildEntitySchemaResponse");
 methodVisitor.visitInsn(ICONST_4);
@@ -666,7 +666,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
@@ -675,7 +675,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "getPersistenceContext", "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", false);
@@ -707,7 +707,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "classOrClassDescriptorCouldNotBeFoundForEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema", "<init>", "()V", false);
@@ -744,7 +744,7 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 Label label5 = new Label();
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor", "org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/descriptors/ClassDescriptor", "org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/mappings/DatabaseMapping");
@@ -809,7 +809,7 @@ methodVisitor.visitLabel(label1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/UriInfo"}, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/UriInfo"}, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "exceptionOccurred", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
@@ -820,21 +820,21 @@ methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/StreamingO
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;)V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildQuerySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildQuerySchemaResponse", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "CLASS_NAME", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn("buildQuerySchemaResponse");
 methodVisitor.visitInsn(ICONST_4);
@@ -854,7 +854,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getRequestUri", "()Ljava/net/URI;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
@@ -863,7 +863,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUri", "()Ljava/net/URI;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/MetadataResource", "getPersistenceContext", "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Lorg/eclipse/persistence/jpa/rs/PersistenceContext;", false);
@@ -896,7 +896,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/Per
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "responseCouldNotBeBuiltForNamedQueryRequest", "(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/queries/DatabaseQuery"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/UriInfo", Opcodes.TOP, "org/eclipse/persistence/jpa/rs/PersistenceContext", "org/eclipse/persistence/queries/DatabaseQuery"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -911,7 +911,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "javax/ws/rs/core/UriInfo"}, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jpa/rs/resources/MetadataResource", "java/lang/String", "java/lang/String", "java/lang/String", "jakarta/ws/rs/core/UriInfo"}, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "exceptionOccurred", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;", false);
@@ -922,10 +922,10 @@ methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/StreamingO
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;)V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/resources/common/AbstractResource", "APPLICATION_SCHEMA_JSON_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller", "<init>", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "ok", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();

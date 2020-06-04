@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/securit
 classWriter.visitInnerClass("org/apache/openejb/core/security/JaccProvider$Policy", "org/apache/openejb/core/security/JaccProvider", "Policy", ACC_PUBLIC | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, new String[] { "javax/security/jacc/PolicyContextException", "java/lang/ClassNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, new String[] { "jakarta/security/jacc/PolicyContextException", "java/lang/ClassNotFoundException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/Policy", "<init>", "()V", false);

@@ -69,7 +69,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBHome", "()Ljavax/ejb/EJBHome;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBHome", "()Ljakarta/ejb/EJBHome;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -94,7 +94,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBLocalHome", "()Ljavax/ejb/EJBLocalHome;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBLocalHome", "()Ljakarta/ejb/EJBLocalHome;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -115,12 +115,12 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createRemoteProxy", "(Ljavax/ejb/EntityBean;Lorg/apache/openejb/RpcContainer;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createRemoteProxy", "(Ljakarta/ejb/EntityBean;Lorg/apache/openejb/RpcContainer;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory", "keyGenerator", "Lorg/apache/openejb/core/cmp/KeyGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljavax/ejb/EntityBean;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory", "remoteHandler", "Lorg/apache/openejb/core/entity/EntityEjbHomeHandler;");
@@ -136,12 +136,12 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createLocalProxy", "(Ljavax/ejb/EntityBean;Lorg/apache/openejb/RpcContainer;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createLocalProxy", "(Ljakarta/ejb/EntityBean;Lorg/apache/openejb/RpcContainer;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory", "keyGenerator", "Lorg/apache/openejb/core/cmp/KeyGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljavax/ejb/EntityBean;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/KeyGenerator", "getPrimaryKey", "(Ljakarta/ejb/EntityBean;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ProxyFactory", "localHandler", "Lorg/apache/openejb/core/entity/EntityEjbHomeHandler;");

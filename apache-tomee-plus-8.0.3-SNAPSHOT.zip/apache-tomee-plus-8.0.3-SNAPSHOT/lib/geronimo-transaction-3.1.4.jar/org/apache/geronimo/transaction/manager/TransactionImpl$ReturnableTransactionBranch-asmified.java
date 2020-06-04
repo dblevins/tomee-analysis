@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "namedXAResourceF
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/transaction/xa/Xid;Lorg/apache/geronimo/transaction/manager/NamedXAResourceFactory;)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/transaction/xa/Xid;Lorg/apache/geronimo/transaction/manager/NamedXAResourceFactory;)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_2, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/logging/impl/ServletContextCleaner", null, "java/lang/Object", new String[] { "javax/servlet/ServletContextListener" });
+classWriter.visit(V1_2, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/logging/impl/ServletContextCleaner", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContextListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RELEASE_SIGNATURE", "[Ljava/lang/Class;", null, null);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -129,7 +129,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

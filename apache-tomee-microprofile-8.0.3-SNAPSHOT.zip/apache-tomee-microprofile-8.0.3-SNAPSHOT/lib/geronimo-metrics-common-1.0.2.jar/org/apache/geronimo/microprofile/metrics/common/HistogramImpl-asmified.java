@@ -145,7 +145,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSnapshot", "()Lorg/eclipse/microprofile/metrics/Snapshot;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbTransient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbTransient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

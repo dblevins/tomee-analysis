@@ -34,10 +34,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAnnotationProvider", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAnnotationProvider", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "ANNOTATION_PROVIDER_INSTANCE", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/AnnotationProvider");
@@ -50,7 +50,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/myfaces/TomEEAnnotationProvider", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "ANNOTATION_PROVIDER_INSTANCE", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);

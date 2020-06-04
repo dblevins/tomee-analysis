@@ -134,7 +134,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/spi/PersistenceProvider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/spi/PersistenceProvider;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/osgi/PersistenceActivator", "PERSISTENCE_PROVIDER", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openjpa/persistence/PersistenceProviderImpl;"));

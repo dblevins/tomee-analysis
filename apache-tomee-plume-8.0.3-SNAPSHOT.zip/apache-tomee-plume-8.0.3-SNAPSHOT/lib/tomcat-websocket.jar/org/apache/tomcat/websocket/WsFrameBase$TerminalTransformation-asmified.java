@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensionResponse", "()Ljavax/websocket/Extension;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensionResponse", "()Ljakarta/websocket/Extension;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/BindingFaultImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "javax/wsdl/BindingFault" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/BindingFaultImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "jakarta/wsdl/BindingFault" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "name", "Ljava/lang/String;", null, null);

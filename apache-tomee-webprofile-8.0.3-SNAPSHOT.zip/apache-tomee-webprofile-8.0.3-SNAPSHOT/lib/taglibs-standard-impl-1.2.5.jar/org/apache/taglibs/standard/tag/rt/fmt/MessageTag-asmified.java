@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setKey", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setKey", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -47,11 +47,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBundle", "(Ljavax/servlet/jsp/jstl/fmt/LocalizationContext;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBundle", "(Ljakarta/servlet/jsp/jstl/fmt/LocalizationContext;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/rt/fmt/MessageTag", "bundleAttrValue", "Ljavax/servlet/jsp/jstl/fmt/LocalizationContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/rt/fmt/MessageTag", "bundleAttrValue", "Ljakarta/servlet/jsp/jstl/fmt/LocalizationContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/rt/fmt/MessageTag", "bundleSpecified", "Z");

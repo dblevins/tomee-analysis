@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljavax/persistence/EntityManager;)Ljava/lang/Void;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljakarta/persistence/EntityManager;)Ljava/lang/Void;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -81,20 +81,20 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider$1", "val$refreshToken", "Lorg/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/LockModeType", "PESSIMISTIC_WRITE", "Ljavax/persistence/LockModeType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/LockModeType", "PESSIMISTIC_WRITE", "Ljakarta/persistence/LockModeType;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "refresh", "(Ljava/lang/Object;Ljavax/persistence/LockModeType;Ljava/util/Map;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "refresh", "(Ljava/lang/Object;Ljakarta/persistence/LockModeType;Ljava/util/Map;)V", true);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "execute", "(Ljavax/persistence/EntityManager;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "execute", "(Ljakarta/persistence/EntityManager;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider$1", "execute", "(Ljavax/persistence/EntityManager;)Ljava/lang/Void;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider$1", "execute", "(Ljakarta/persistence/EntityManager;)Ljava/lang/Void;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

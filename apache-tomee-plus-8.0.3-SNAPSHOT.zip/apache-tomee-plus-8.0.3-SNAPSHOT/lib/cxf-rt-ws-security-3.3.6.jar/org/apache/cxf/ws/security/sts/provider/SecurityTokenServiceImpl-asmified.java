@@ -53,9 +53,9 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validateOperation", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "context", "Ljavax/xml/ws/WebServiceContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "context", "Ljakarta/xml/ws/WebServiceContext;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Resource;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Resource;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -311,8 +311,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getPrincipal", "()Ljava/security/Principal;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceImpl", "context", "Ljavax/xml/ws/WebServiceContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/WebServiceContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceImpl", "context", "Ljakarta/xml/ws/WebServiceContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/WebServiceContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -321,8 +321,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMessageContext", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceImpl", "context", "Ljavax/xml/ws/WebServiceContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/WebServiceContext", "getMessageContext", "()Ljavax/xml/ws/handler/MessageContext;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceImpl", "context", "Ljakarta/xml/ws/WebServiceContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/WebServiceContext", "getMessageContext", "()Ljakarta/xml/ws/handler/MessageContext;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -332,11 +332,11 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "throwUnsupportedOperation"
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label1, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label1, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createSOAPFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljavax/xml/soap/SOAPFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPFactory", "createFault", "()Ljavax/xml/soap/SOAPFault;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createSOAPFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljakarta/xml/soap/SOAPFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPFactory", "createFault", "()Ljakarta/xml/soap/SOAPFault;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -347,14 +347,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/soap/SOAPFault", "setFaultString", "(Ljava/lang/String;)V", true);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/soap/SOAPFaultException");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/soap/SOAPFault", "setFaultString", "(Ljava/lang/String;)V", true);
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/soap/SOAPFaultException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/soap/SOAPFaultException", "<init>", "(Ljavax/xml/soap/SOAPFault;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/soap/SOAPFaultException", "<init>", "(Ljakarta/xml/soap/SOAPFault;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/Fault");
 methodVisitor.visitInsn(DUP);

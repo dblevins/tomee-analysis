@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/Class;Ljavax/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljavax/annotation/Priority;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljava/lang/Class;Ljakarta/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljakarta/annotation/Priority;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/util/PriorityClasses", "raw", "Ljava/util/List;");
@@ -73,7 +73,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/util/PriorityClass");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/annotation/Priority", "value", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/annotation/Priority", "value", "()I", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/util/PriorityClass", "<init>", "(Ljava/lang/Class;I)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);

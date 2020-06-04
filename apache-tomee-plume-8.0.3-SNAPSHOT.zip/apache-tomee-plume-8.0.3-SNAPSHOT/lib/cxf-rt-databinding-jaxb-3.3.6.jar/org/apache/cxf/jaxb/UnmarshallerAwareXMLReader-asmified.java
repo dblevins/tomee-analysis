@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxb/UnmarshallerAwareXMLReader", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setUnmarshaller", "(Ljavax/xml/bind/Unmarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setUnmarshaller", "(Ljakarta/xml/bind/Unmarshaller;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXml", "(Ljava/lang/Object;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXml", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDoc", "(Ljava/lang/Object;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDoc", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXmlSystemId", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXmlSystemId", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDocSystemId", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDocSystemId", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -77,7 +77,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXslt", "(Ljava/lang/Object;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXslt", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -87,7 +87,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXsltSystemId", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setXsltSystemId", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResult", "(Ljavax/xml/transform/Result;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResult", "(Ljavax/xml/transform/Result;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

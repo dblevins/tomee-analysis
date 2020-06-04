@@ -40,20 +40,20 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljavax/persistence/FetchType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljakarta/persistence/FetchType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/FetchType;", "LAZY");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/FetchType;", "LAZY");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "keyColumn", "()Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "keyColumn", "()Ljakarta/persistence/Column;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
-AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljavax/persistence/Column;");
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljakarta/persistence/Column;");
 annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();
@@ -73,11 +73,11 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "valueColumn", "()Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "valueColumn", "()Ljakarta/persistence/Column;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
-AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljavax/persistence/Column;");
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljakarta/persistence/Column;");
 annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();

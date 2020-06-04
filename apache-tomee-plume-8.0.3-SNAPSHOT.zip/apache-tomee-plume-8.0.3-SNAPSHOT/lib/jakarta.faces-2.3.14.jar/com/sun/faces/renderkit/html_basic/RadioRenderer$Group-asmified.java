@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clientIds", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "value", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "value", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -67,11 +67,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRadio", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UISelectOne;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRadio", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UISelectOne;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getClientId", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getClientId", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/html_basic/RadioRenderer$Group", "clientIds", "Ljava/util/List;");
@@ -87,31 +87,31 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("value");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/html_basic/RadioRenderer$Group", "value", "Ljavax/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/renderkit/html_basic/RadioRenderer$Group", "value", "Ljakarta/el/ValueExpression;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("value");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("value");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/html_basic/RadioRenderer$Group", "value", "Ljavax/el/ValueExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "setValueExpression", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/html_basic/RadioRenderer$Group", "value", "Ljakarta/el/ValueExpression;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "setValueExpression", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/RenderKitUtils", "getSelectItems", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)Lcom/sun/faces/renderkit/SelectItemsIterator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/RenderKitUtils", "getSelectItems", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)Lcom/sun/faces/renderkit/SelectItemsIterator;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/SelectItemsIterator", "hasNext", "()Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getChildren", "()Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getChildren", "()Ljava/util/List;", false);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/html_basic/RadioRenderer$GroupSelectItem");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/html_basic/RadioRenderer$GroupSelectItem", "<init>", "()V", false);
@@ -125,7 +125,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UISelectOne", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UISelectOne", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/faces/renderkit/html_basic/RadioRenderer$GroupSelectItem;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

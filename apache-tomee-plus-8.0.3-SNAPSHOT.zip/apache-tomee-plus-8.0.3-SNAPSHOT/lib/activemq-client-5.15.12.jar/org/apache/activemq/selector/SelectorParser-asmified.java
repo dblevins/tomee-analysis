@@ -81,12 +81,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jj_ls", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parse", "(Ljava/lang/String;)Lorg/apache/activemq/filter/BooleanExpression;", null, new String[] { "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parse", "(Ljava/lang/String;)Lorg/apache/activemq/filter/BooleanExpression;", null, new String[] { "jakarta/jms/InvalidSelectorException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/InvalidSelectorException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/InvalidSelectorException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, null);
 Label label4 = new Label();
@@ -96,11 +96,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/jms/InvalidSelectorException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/jms/InvalidSelectorException");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/InvalidSelectorException");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/InvalidSelectorException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
@@ -161,7 +161,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/activemq/
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"java/lang/String", "java/lang/Object", Opcodes.INTEGER}, 1, new Object[] {"javax/jms/InvalidSelectorException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"java/lang/String", "java/lang/Object", Opcodes.INTEGER}, 1, new Object[] {"jakarta/jms/InvalidSelectorException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/selector/SelectorParser", "cache", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -212,7 +212,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "parse", "()Lorg/apache/activemq/filter/BooleanExpression;", null, new String[] { "javax/jms/InvalidSelectorException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "parse", "()Lorg/apache/activemq/filter/BooleanExpression;", null, new String[] { "jakarta/jms/InvalidSelectorException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -226,14 +226,14 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/InvalidSelectorException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/InvalidSelectorException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/selector/SelectorParser", "sql", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/InvalidSelectorException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/InvalidSelectorException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/jms/InvalidSelectorException", "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/InvalidSelectorException");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/jms/InvalidSelectorException", "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/InvalidSelectorException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

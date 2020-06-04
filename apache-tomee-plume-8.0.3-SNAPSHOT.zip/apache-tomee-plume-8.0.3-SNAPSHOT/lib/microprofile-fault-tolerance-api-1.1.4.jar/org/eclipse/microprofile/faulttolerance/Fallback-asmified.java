@@ -47,7 +47,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Inherite
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/InterceptorBinding;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/InterceptorBinding;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/eclipse/microprofile/faulttolerance/Fallback$DEFAULT", "org/eclipse/microprofile/faulttolerance/Fallback", "DEFAULT", ACC_PUBLIC | ACC_STATIC);
@@ -60,7 +60,7 @@ annotationVisitor0.visit(null, Type.getType("Lorg/eclipse/microprofile/faulttole
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -73,7 +73,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

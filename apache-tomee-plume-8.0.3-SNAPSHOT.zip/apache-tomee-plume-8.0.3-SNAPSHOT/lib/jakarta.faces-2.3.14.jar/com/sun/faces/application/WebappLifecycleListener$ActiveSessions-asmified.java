@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/WebappLifecycleLis
 classWriter.visitInnerClass("com/sun/faces/application/WebappLifecycleListener$ActiveSessions", "com/sun/faces/application/WebappLifecycleListener", "ActiveSessions", 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "activeSessions", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/http/HttpSession;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "activeSessions", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/http/HttpSession;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "add", "(Ljavax/servlet/http/HttpSession;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "add", "(Ljakarta/servlet/http/HttpSession;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/WebappLifecycleListener$ActiveSessions", "activeSessions", "Ljava/util/List;");
@@ -75,7 +75,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "remove", "(Ljavax/servlet/http/HttpSession;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "remove", "(Ljakarta/servlet/http/HttpSession;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/WebappLifecycleListener$ActiveSessions", "activeSessions", "Ljava/util/List;");
@@ -93,7 +93,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "get", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/servlet/http/HttpSession;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "get", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/servlet/http/HttpSession;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);

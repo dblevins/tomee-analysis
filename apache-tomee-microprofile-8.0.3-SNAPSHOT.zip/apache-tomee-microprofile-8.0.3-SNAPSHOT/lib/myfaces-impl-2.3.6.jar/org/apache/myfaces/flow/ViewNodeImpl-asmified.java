@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/ViewNodeImpl", null, "javax/faces/flow/ViewNode", new String[] { "org/apache/myfaces/flow/Freezable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/ViewNodeImpl", null, "jakarta/faces/flow/ViewNode", new String[] { "org/apache/myfaces/flow/Freezable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_vdlDocumentId", "Ljava/lang/String;", null, null);
@@ -40,7 +40,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/ViewNode", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/ViewNode", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/ViewNodeImpl", "_vdlDocumentId", "Ljava/lang/String;");

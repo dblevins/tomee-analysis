@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/PessimisticLockException", null, "javax/persistence/PessimisticLockException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/PessimisticLockException", null, "jakarta/persistence/PessimisticLockException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -59,7 +59,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "[Ljava/lang/Throwable;", "java/lang/Object"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "java/lang/Throwable"});
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/PessimisticLockException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/PessimisticLockException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/PessimisticLockException", "_fatal", "Z");
@@ -167,7 +167,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/PessimisticLockException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/PessimisticLockException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintStream;)V", false);
@@ -180,7 +180,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/PessimisticLockException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/PessimisticLockException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintWriter;)V", false);

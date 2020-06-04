@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider$1", "Ljava/lang/Object;Ljava/util/concurrent/Callable<Ljava/util/Set<Ljava/net/URL;>;>;", "java/lang/Object", new String[] { "java/util/concurrent/Callable" });
 
-classWriter.visitOuterClass("org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "getMetaInfConfigurationResources", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection;");
+classWriter.visitOuterClass("org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "getMetaInfConfigurationResources", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection;");
 
 classWriter.visitInnerClass("org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider$1", null, null, 0);
 

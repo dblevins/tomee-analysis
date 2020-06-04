@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "Ljava/lang/Object;Ljavax/faces/el/CompositeComponentExpressionHolder;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", "java/lang/Object", new String[] { "javax/faces/el/CompositeComponentExpressionHolder", "java/util/Map" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "Ljava/lang/Object;Ljakarta/faces/el/CompositeComponentExpressionHolder;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", "java/lang/Object", new String[] { "jakarta/faces/el/CompositeComponentExpressionHolder", "java/util/Map" });
 
 classWriter.visitInnerClass("org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver", "CompositeComponentAttributesMapWrapper", ACC_PRIVATE | ACC_FINAL);
 
@@ -31,7 +31,7 @@ classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC
 classWriter.visitInnerClass("org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_component", "Ljavax/faces/component/UIComponent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_component", "Ljakarta/faces/component/UIComponent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -64,15 +64,15 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_originalMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_originalMap", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn("javax.faces.component.BEANINFO_KEY");
+methodVisitor.visitLdcInsn("jakarta.faces.component.BEANINFO_KEY");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/beans/BeanInfo");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_beanInfo", "Ljava/beans/BeanInfo;");
@@ -93,22 +93,22 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/view/facelets/tag/com
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver", "javax/faces/component/UIComponent"}, 1, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver", "jakarta/faces/component/UIComponent"}, 1, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver", "javax/faces/component/UIComponent"}, 2, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/view/facelets/tag/composite/CompositeComponentBeanInfo"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver", "jakarta/faces/component/UIComponent"}, 2, new Object[] {"org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "org/apache/myfaces/view/facelets/tag/composite/CompositeComponentBeanInfo"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_ccBeanInfo", "Lorg/apache/myfaces/view/facelets/tag/composite/CompositeComponentBeanInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
@@ -322,13 +322,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/el/ValueExpression");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/el/ValueExpression");
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ValueExpression");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ValueExpression");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -361,22 +361,22 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljavax/faces/component/UIComponent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_component", "Ljakarta/faces/component/UIComponent;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "setValue", "(Ljavax/el/ELContext;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "setValue", "(Ljakarta/el/ELContext;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/el/ValueExpression"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/el/ValueExpression"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "_originalMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -471,12 +471,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljavax/faces/component/UIComponent;Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljakarta/faces/component/UIComponent;Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper", "<init>", "(Lorg/apache/myfaces/el/unified/resolver/CompositeComponentELResolver;Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/el/CompositeELResolver$Co
 classWriter.visitInnerClass("org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "org/apache/myfaces/el/CompositeELResolver", "CompositeIterator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_context", "Ljavax/el/ELContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_context", "Ljakarta/el/ELContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_base", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_elResolvers", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_elResolvers", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,13 +47,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_currentFDIter", "Ljava/util
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator;)V", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator<Ljavax/el/ELResolver;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator;)V", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/el/ELResolver;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_base", "Ljava/lang/Object;");
@@ -111,12 +111,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_elResolvers", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ELResolver");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ELResolver");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_base", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELResolver", "getFeatureDescriptors", "(Ljavax/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELResolver", "getFeatureDescriptors", "(Ljakarta/el/ELContext;Ljava/lang/Object;)Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/CompositeELResolver$CompositeIterator", "_currentFDIter", "Ljava/util/Iterator;");
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);

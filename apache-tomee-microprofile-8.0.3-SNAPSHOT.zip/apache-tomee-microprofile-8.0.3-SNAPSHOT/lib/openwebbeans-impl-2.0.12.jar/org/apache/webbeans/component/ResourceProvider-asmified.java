@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/ResourceProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/inject/Provider<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/inject/Provider", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/ResourceProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/inject/Provider<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/inject/Provider", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "resourceReference", "Lorg/apache/webbeans/spi/api/ResourceReference;", "Lorg/apache/webbeans/spi/api/ResourceReference<TT;*>;", null);

@@ -61,7 +61,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setBus", "(Lorg/apache/cxf/Bus;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Resource;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/Resource;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -101,7 +101,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "resolve", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/WebServiceContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/WebServiceContext;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();

@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "collectorData", "Ljava/io/Se
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljavax/batch/runtime/BatchStatus;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljakarta/batch/runtime/BatchStatus;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,20 +52,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchstatus", "()Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchstatus", "()Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/util/PartitionDataWrapper", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/util/PartitionDataWrapper", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljavax/batch/runtime/BatchStatus;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljakarta/batch/runtime/BatchStatus;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/util/PartitionDataWrapper", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/util/PartitionDataWrapper", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/Boolean;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener", "isBeanConstrained", "(Ljava/lang/Object;Ljavax/validation/Validator;)Z");
+classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener", "isBeanConstrained", "(Ljava/lang/Object;Ljakarta/validation/Validator;)Z");
 
 classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", null, null, 0);
 
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljavax/validation/Validator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljakarta/validation/Validator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,14 +41,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_SYNTHETIC, "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener;Ljavax/validation/Validator;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener;Ljakarta/validation/Validator;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$source", "Ljava/lang/Object;");
@@ -62,12 +62,12 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Boolean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$1", "val$source", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Validator", "getConstraintsForClass", "(Ljava/lang/Class;)Ljavax/validation/metadata/BeanDescriptor;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/BeanDescriptor", "isBeanConstrained", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Validator", "getConstraintsForClass", "(Ljava/lang/Class;)Ljakarta/validation/metadata/BeanDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/BeanDescriptor", "isBeanConstrained", "()Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);

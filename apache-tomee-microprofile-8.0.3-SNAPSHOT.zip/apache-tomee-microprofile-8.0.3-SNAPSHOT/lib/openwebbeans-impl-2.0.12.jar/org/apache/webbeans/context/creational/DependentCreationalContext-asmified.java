@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contextual", "Ljavax/enterprise/context/spi/Contextual;", "Ljavax/enterprise/context/spi/Contextual<TS;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contextual", "Ljakarta/enterprise/context/spi/Contextual;", "Ljakarta/enterprise/context/spi/Contextual<TS;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -56,22 +56,22 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/context/spi/Contextual;)V", "(Ljavax/enterprise/context/spi/Contextual<TS;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/context/spi/Contextual;)V", "(Ljakarta/enterprise/context/spi/Contextual<TS;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextual", "()Ljavax/enterprise/context/spi/Contextual;", "()Ljavax/enterprise/context/spi/Contextual<TS;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextual", "()Ljakarta/enterprise/context/spi/Contextual;", "()Ljakarta/enterprise/context/spi/Contextual<TS;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,12 +84,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "instance", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectOutputStream", "writeObject", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/WebBeansUtil", "getPassivationId", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/WebBeansUtil", "getPassivationId", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
@@ -109,7 +109,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("cannot serialize ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
@@ -150,8 +150,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getBeanManagerImpl", "()Lorg/apache/webbeans/container/BeanManagerImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "getPassivationCapableBean", "(Ljava/lang/String;)Ljavax/enterprise/inject/spi/Bean;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljavax/enterprise/context/spi/Contextual;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "getPassivationCapableBean", "(Ljava/lang/String;)Ljakarta/enterprise/inject/spi/Bean;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/context/creational/DependentCreationalContext", "contextual", "Ljakarta/enterprise/context/spi/Contextual;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitInsn(RETURN);

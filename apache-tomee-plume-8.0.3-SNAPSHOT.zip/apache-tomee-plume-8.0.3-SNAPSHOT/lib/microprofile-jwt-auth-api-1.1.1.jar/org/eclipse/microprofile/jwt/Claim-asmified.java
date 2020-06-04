@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/microprofile/jwt/Claim", null, "java/lang/Object", new String[] { "java/lang/annotation/Annotation" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/inject/Qualifier;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/inject/Qualifier;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -66,7 +66,7 @@ annotationVisitor0.visitEnum(null, "Lorg/eclipse/microprofile/jwt/Claims;", "UNK
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

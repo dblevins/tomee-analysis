@@ -25,28 +25,28 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/common/UserSubject_", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/metamodel/StaticMetamodel;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/metamodel/StaticMetamodel;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;"));
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "authenticationMethod", "Ljavax/persistence/metamodel/SingularAttribute;", "Ljavax/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/AuthenticationMethod;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "authenticationMethod", "Ljakarta/persistence/metamodel/SingularAttribute;", "Ljakarta/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Lorg/apache/cxf/rs/security/oauth2/common/AuthenticationMethod;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "id", "Ljavax/persistence/metamodel/SingularAttribute;", "Ljavax/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "id", "Ljakarta/persistence/metamodel/SingularAttribute;", "Ljakarta/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "login", "Ljavax/persistence/metamodel/SingularAttribute;", "Ljavax/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "login", "Ljakarta/persistence/metamodel/SingularAttribute;", "Ljakarta/persistence/metamodel/SingularAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "properties", "Ljavax/persistence/metamodel/MapAttribute;", "Ljavax/persistence/metamodel/MapAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "properties", "Ljakarta/persistence/metamodel/MapAttribute;", "Ljakarta/persistence/metamodel/MapAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "roles", "Ljavax/persistence/metamodel/ListAttribute;", "Ljavax/persistence/metamodel/ListAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "roles", "Ljakarta/persistence/metamodel/ListAttribute;", "Ljakarta/persistence/metamodel/ListAttribute<Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", null, "javax/management/NotificationBroadcasterSupport", new String[] { "org/apache/tomcat/jdbc/pool/jmx/ConnectionPoolMBean", "javax/management/MBeanRegistration" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", null, "jakarta/management/NotificationBroadcasterSupport", new String[] { "org/apache/tomcat/jdbc/pool/jmx/ConnectionPoolMBean", "jakarta/management/MBeanRegistration" });
 
 classWriter.visitInnerClass("org/apache/tomcat/jdbc/pool/PoolProperties$InterceptorDefinition", "org/apache/tomcat/jdbc/pool/PoolProperties", "InterceptorDefinition", ACC_PUBLIC | ACC_STATIC);
 
@@ -39,11 +39,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "sequence", "Ljava/util/con
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;", "Ljava/util/concurrent/ConcurrentLinkedQueue<Ljavax/management/NotificationListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;", "Ljava/util/concurrent/ConcurrentLinkedQueue<Ljakarta/management/NotificationListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -82,7 +82,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/tomcat/jdbc/pool/ConnectionPool;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/NotificationBroadcasterSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/NotificationBroadcasterSupport", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "pool", "Lorg/apache/tomcat/jdbc/pool/ConnectionPool;");
@@ -99,7 +99,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ConcurrentLin
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "pool", "Lorg/apache/tomcat/jdbc/pool/ConnectionPool;");
@@ -127,20 +127,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "preRegister", "(Ljakarta/management/MBeanServer;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectName;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "oname", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
@@ -168,19 +168,19 @@ methodVisitor.visitMaxs(0, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/NotificationBroadcasterSupport", "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/NotificationBroadcasterSupport", "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "getDefaultNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "getDefaultNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitInsn(IADD);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanNotificationInfo");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -194,7 +194,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljavax/management/MBeanNotificationInfo;", "[Ljavax/management/MBeanNotificationInfo;", "[Ljavax/management/MBeanNotificationInfo;"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljakarta/management/MBeanNotificationInfo;", "[Ljakarta/management/MBeanNotificationInfo;", "[Ljakarta/management/MBeanNotificationInfo;"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label1 = new Label();
@@ -215,7 +215,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDefaultNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDefaultNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitIntInsn(BIPUSH, 8);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
@@ -252,20 +252,20 @@ methodVisitor.visitIntInsn(BIPUSH, 7);
 methodVisitor.visitLdcInsn("SUSPECT CONNECTION RETURNED");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ASTORE, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/Notification;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/Notification;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLdcInsn("A connection pool error condition was met.");
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanNotificationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanNotificationInfo", "<init>", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanNotificationInfo", "<init>", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanNotificationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -282,7 +282,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/Notification");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/Notification");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -303,30 +303,30 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/Notification", "<init>", "(Ljava/lang/String;Ljava/lang/Object;JJLjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/Notification", "<init>", "(Ljava/lang/String;Ljava/lang/Object;JJLjava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "sendNotification", "(Ljavax/management/Notification;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "sendNotification", "(Ljakarta/management/Notification;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/ConcurrentLinkedQueue", "iterator", "()Ljava/util/Iterator;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/management/Notification", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/management/Notification", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/NotificationListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/NotificationListener");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/NotificationListener", "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/NotificationListener", "handleNotification", "(Ljakarta/management/Notification;Ljava/lang/Object;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -363,7 +363,7 @@ methodVisitor.visitMaxs(10, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljavax/management/NotificationListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljakarta/management/NotificationListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;");
@@ -375,7 +375,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljavax/management/NotificationListener;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljakarta/management/NotificationListener;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/jdbc/pool/jmx/ConnectionPool", "listeners", "Ljava/util/concurrent/ConcurrentLinkedQueue;");

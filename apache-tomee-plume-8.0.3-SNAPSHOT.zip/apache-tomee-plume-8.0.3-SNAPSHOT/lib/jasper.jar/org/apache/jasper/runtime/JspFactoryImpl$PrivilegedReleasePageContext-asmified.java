@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory", "Lorg/apache/jaspe
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "pageContext", "Ljavax/servlet/jsp/PageContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "pageContext", "Ljakarta/servlet/jsp/PageContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljavax/servlet/jsp/PageContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljakarta/servlet/jsp/PageContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "factory", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -55,8 +55,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "factory", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspFactoryImpl", "access$100", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljavax/servlet/jsp/PageContext;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedReleasePageContext", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspFactoryImpl", "access$100", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljakarta/servlet/jsp/PageContext;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);

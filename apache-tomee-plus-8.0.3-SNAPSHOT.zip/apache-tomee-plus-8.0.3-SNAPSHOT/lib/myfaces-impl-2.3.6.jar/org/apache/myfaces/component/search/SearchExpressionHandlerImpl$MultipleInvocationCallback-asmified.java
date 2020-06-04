@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", null, "java/lang/Object", new String[] { "javax/faces/component/ContextCallback" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", null, "java/lang/Object", new String[] { "jakarta/faces/component/ContextCallback" });
 
 classWriter.visitInnerClass("org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "org/apache/myfaces/component/search/SearchExpressionHandlerImpl", "MultipleInvocationCallback", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,17 +31,17 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "invoked", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "innerCallback", "Ljavax/faces/component/ContextCallback;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "innerCallback", "Ljakarta/faces/component/ContextCallback;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/ContextCallback;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/ContextCallback;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "innerCallback", "Ljavax/faces/component/ContextCallback;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "innerCallback", "Ljakarta/faces/component/ContextCallback;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "invoked", "Z");
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeContextCallback", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -58,10 +58,10 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "innerCallback", "Ljavax/faces/component/ContextCallback;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/component/search/SearchExpressionHandlerImpl$MultipleInvocationCallback", "innerCallback", "Ljakarta/faces/component/ContextCallback;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/component/ContextCallback", "invokeContextCallback", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/component/ContextCallback", "invokeContextCallback", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);

@@ -22,19 +22,19 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsContainerProvider", null, "javax/websocket/ContainerProvider", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsContainerProvider", null, "jakarta/websocket/ContainerProvider", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/websocket/ContainerProvider", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/websocket/ContainerProvider", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContainer", "()Ljavax/websocket/WebSocketContainer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContainer", "()Ljakarta/websocket/WebSocketContainer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/websocket/WsWebSocketContainer");
 methodVisitor.visitInsn(DUP);

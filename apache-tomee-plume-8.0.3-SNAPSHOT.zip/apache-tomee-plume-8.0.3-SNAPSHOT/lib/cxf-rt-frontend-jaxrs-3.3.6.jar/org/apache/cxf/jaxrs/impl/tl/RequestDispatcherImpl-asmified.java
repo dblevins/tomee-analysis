@@ -22,32 +22,32 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", null, "java/lang/Object", new String[] { "javax/servlet/RequestDispatcher" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/RequestDispatcher" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rd", "Ljavax/servlet/RequestDispatcher;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rd", "Ljakarta/servlet/RequestDispatcher;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/RequestDispatcher;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/RequestDispatcher;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljavax/servlet/RequestDispatcher;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljakarta/servlet/RequestDispatcher;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "forward", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", null, new String[] { "javax/servlet/ServletException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "forward", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", null, new String[] { "jakarta/servlet/ServletException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljavax/servlet/RequestDispatcher;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljakarta/servlet/RequestDispatcher;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/RequestDispatcher", "forward", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/RequestDispatcher", "forward", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitLdcInsn("http.request.redirected");
@@ -59,13 +59,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "include", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", null, new String[] { "javax/servlet/ServletException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "include", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", null, new String[] { "jakarta/servlet/ServletException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljavax/servlet/RequestDispatcher;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl", "rd", "Ljakarta/servlet/RequestDispatcher;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/RequestDispatcher", "include", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/RequestDispatcher", "include", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

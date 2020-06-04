@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventHandler" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "org/apache/cxf/jaxb/io/DataWriterImpl", "MtomValidationHandler", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(0, "origHandler", "Ljavax/xml/bind/ValidationEventHandler;", null, null);
+fieldVisitor = classWriter.visitField(0, "origHandler", "Ljakarta/xml/bind/ValidationEventHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(0, "marshaller", "Lorg/apache/cxf/jaxb/att
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/xml/bind/ValidationEventHandler;Lorg/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/xml/bind/ValidationEventHandler;Lorg/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljavax/xml/bind/ValidationEventHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljakarta/xml/bind/ValidationEventHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "marshaller", "Lorg/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller;");
@@ -50,10 +50,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEvent", "getMessage", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEvent", "getMessage", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("cvc-type.3.1.2");
@@ -79,13 +79,13 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljavax/xml/bind/ValidationEventHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljakarta/xml/bind/ValidationEventHandler;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljavax/xml/bind/ValidationEventHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler", "origHandler", "Ljakarta/xml/bind/ValidationEventHandler;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventHandler", "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventHandler", "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

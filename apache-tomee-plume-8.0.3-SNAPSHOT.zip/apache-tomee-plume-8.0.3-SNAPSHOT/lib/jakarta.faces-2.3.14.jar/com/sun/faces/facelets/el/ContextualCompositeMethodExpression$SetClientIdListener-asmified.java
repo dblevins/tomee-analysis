@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/el/ContextualCompositeMethodExpression$SetClientIdListener", null, "java/lang/Object", new String[] { "javax/faces/event/ComponentSystemEventListener" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/el/ContextualCompositeMethodExpression$SetClientIdListener", null, "java/lang/Object", new String[] { "jakarta/faces/event/ComponentSystemEventListener" });
 
 classWriter.visitInnerClass("com/sun/faces/facelets/el/ContextualCompositeMethodExpression$SetClientIdListener", "com/sun/faces/facelets/el/ContextualCompositeMethodExpression", "SetClientIdListener", ACC_PRIVATE);
 
@@ -62,20 +62,20 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljavax/faces/event/ComponentSystemEvent;)V", null, new String[] { "javax/faces/event/AbortProcessingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljakarta/faces/event/ComponentSystemEvent;)V", null, new String[] { "jakarta/faces/event/AbortProcessingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/el/ContextualCompositeMethodExpression$SetClientIdListener", "ccME", "Lcom/sun/faces/facelets/el/ContextualCompositeMethodExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/ComponentSystemEvent", "getComponent", "()Ljavax/faces/component/UIComponent;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getClientId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/ComponentSystemEvent", "getComponent", "()Ljakarta/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getClientId", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/el/ContextualCompositeMethodExpression", "access$002", "(Lcom/sun/faces/facelets/el/ContextualCompositeMethodExpression;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/ComponentSystemEvent", "getComponent", "()Ljavax/faces/component/UIComponent;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PostAddToViewEvent;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/ComponentSystemEvent", "getComponent", "()Ljakarta/faces/component/UIComponent;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/event/PostAddToViewEvent;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljavax/faces/event/ComponentSystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljakarta/faces/event/ComponentSystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

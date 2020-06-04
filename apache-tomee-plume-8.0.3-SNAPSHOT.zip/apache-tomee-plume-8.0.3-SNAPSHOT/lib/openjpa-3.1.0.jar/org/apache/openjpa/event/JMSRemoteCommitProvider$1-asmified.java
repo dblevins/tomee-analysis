@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/event/JMSRemoteCommitProvider$1", null, "java/lang/Object", new String[] { "javax/jms/MessageListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/event/JMSRemoteCommitProvider$1", null, "java/lang/Object", new String[] { "jakarta/jms/MessageListener" });
 
-classWriter.visitOuterClass("org/apache/openjpa/event/JMSRemoteCommitProvider", "getMessageListener", "()Ljavax/jms/MessageListener;");
+classWriter.visitOuterClass("org/apache/openjpa/event/JMSRemoteCommitProvider", "getMessageListener", "()Ljakarta/jms/MessageListener;");
 
 classWriter.visitInnerClass("org/apache/openjpa/event/JMSRemoteCommitProvider$1", null, null, 0);
 
@@ -47,12 +47,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/JMSException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/JMSException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, null);
 Label label4 = new Label();
@@ -60,7 +60,7 @@ methodVisitor.visitTryCatchBlock(label2, label4, label3, null);
 Label label5 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label5, label3, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/jms/ObjectMessage");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/jms/ObjectMessage");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -105,10 +105,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClas
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/ClassLoader"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/ObjectMessage");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/ObjectMessage");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/ObjectMessage", "getObject", "()Ljava/io/Serializable;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/ObjectMessage", "getObject", "()Ljava/io/Serializable;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/event/RemoteCommitEvent");
@@ -131,7 +131,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/event/JMSRemoteC
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/Localizer", "get", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/openjpa/lib/util/Localizer$Message;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/lib/log/Log", "trace", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/jms/ObjectMessage", "java/lang/Object"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/jms/ObjectMessage", "java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/event/RemoteCommitEvent");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -173,7 +173,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClassLoader", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/jms/JMSException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/jms/JMSException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/event/JMSRemoteCommitProvider$1", "this$0", "Lorg/apache/openjpa/event/JMSRemoteCommitProvider;");
@@ -213,11 +213,11 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread",
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClassLoader", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitLabel(label12);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openjpa/event/JMSRemoteCommitProvider$1", "javax/jms/Message", "java/lang/ClassLoader", Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openjpa/event/JMSRemoteCommitProvider$1", "jakarta/jms/Message", "java/lang/ClassLoader", Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/event/JMSRemoteCommitProvider$1", "javax/jms/Message", "java/lang/ClassLoader"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/event/JMSRemoteCommitProvider$1", "jakarta/jms/Message", "java/lang/ClassLoader"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();

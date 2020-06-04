@@ -45,17 +45,17 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHandler", "(Ljavax/faces/view/facelets/TagConfig;)Ljavax/faces/view/facelets/TagHandler;", null, new String[] { "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHandler", "(Ljakarta/faces/view/facelets/TagConfig;)Ljakarta/faces/view/facelets/TagHandler;", null, new String[] { "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/faces/view/facelets/ConverterHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/view/facelets/ConverterHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$ConverterConfigWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$ConverterHandlerFactory", "converterId", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$ConverterConfigWrapper", "<init>", "(Ljavax/faces/view/facelets/TagConfig;Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/ConverterHandler", "<init>", "(Ljavax/faces/view/facelets/ConverterConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$ConverterConfigWrapper", "<init>", "(Ljakarta/faces/view/facelets/TagConfig;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/ConverterHandler", "<init>", "(Ljakarta/faces/view/facelets/ConverterConfig;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

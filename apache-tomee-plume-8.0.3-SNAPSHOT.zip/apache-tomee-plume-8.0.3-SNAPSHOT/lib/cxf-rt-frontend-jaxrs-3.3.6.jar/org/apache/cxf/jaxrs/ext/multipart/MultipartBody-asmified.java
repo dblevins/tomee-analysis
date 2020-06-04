@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OUTB
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MULTIPART_RELATED_TYPE", "Ljavax/ws/rs/core/MediaType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MULTIPART_RELATED_TYPE", "Ljakarta/ws/rs/core/MediaType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "atts", "Ljava/util/List;", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mt", "Ljavax/ws/rs/core/MediaType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mt", "Ljakarta/ws/rs/core/MediaType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,9 +71,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "<init>", "(Ljava/util/List;Ljavax/ws/rs/core/MediaType;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "<init>", "(Ljava/util/List;Ljakarta/ws/rs/core/MediaType;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -85,15 +85,15 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "<init>", "(Ljava/util/List;Ljavax/ws/rs/core/MediaType;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "<init>", "(Ljava/util/List;Ljakarta/ws/rs/core/MediaType;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Ljavax/ws/rs/core/MediaType;Z)V", "(Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;Ljavax/ws/rs/core/MediaType;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Ljakarta/ws/rs/core/MediaType;Z)V", "(Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;Ljakarta/ws/rs/core/MediaType;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -104,24 +104,24 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "java/util/List", "javax/ws/rs/core/MediaType", Opcodes.INTEGER}, 1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "java/util/List", "jakarta/ws/rs/core/MediaType", Opcodes.INTEGER}, 1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "java/util/List", "javax/ws/rs/core/MediaType", Opcodes.INTEGER}, 2, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "javax/ws/rs/core/MediaType"});
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "mt", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "java/util/List", "jakarta/ws/rs/core/MediaType", Opcodes.INTEGER}, 2, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "jakarta/ws/rs/core/MediaType"});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "mt", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljavax/ws/rs/core/MediaType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljakarta/ws/rs/core/MediaType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "mt", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "mt", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -250,8 +250,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("multipart/related");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljavax/ws/rs/core/MediaType;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljakarta/ws/rs/core/MediaType;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "MULTIPART_RELATED_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();

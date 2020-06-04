@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/TaglibDescriptorImpl", null, "java/lang/Object", new String[] { "javax/servlet/descriptor/TaglibDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/TaglibDescriptorImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/descriptor/TaglibDescriptor" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "location", "Ljava/lang/String;", null, null);

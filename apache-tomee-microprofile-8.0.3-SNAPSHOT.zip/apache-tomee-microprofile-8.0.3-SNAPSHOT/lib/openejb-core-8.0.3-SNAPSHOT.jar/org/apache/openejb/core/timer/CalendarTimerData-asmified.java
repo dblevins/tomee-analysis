@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scheduleExpression", "Ljavax/ejb/ScheduleExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "autoCreated", "Z", null, nul
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/TimerConfig;Ljavax/ejb/ScheduleExpression;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/TimerConfig;Ljakarta/ejb/ScheduleExpression;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
@@ -48,10 +48,10 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/TimerConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/TimerConfig;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "autoCreated", "Z");
@@ -68,10 +68,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchedule", "()Ljavax/ejb/ScheduleExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchedule", "()Ljakarta/ejb/ScheduleExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -96,8 +96,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/timer/EJBCronTrigger");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/EJBCronTrigger", "<init>", "(Ljavax/ejb/ScheduleExpression;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/EJBCronTrigger", "<init>", "(Ljakarta/ejb/ScheduleExpression;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -111,7 +111,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("Fail to parse schedule expression ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -132,7 +132,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTi
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectOutputStream", "writeBoolean", "(Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectOutputStream", "writeObject", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -154,12 +154,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectInputStream", "readB
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "autoCreated", "Z");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/ScheduleExpression;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/ScheduleExpression;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ObjectInputStream", "readObject", "()Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/ScheduleExpression");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/ScheduleExpression");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -189,7 +189,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" scheduleExpression = [");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/CalendarTimerData", "scheduleExpression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("]");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

@@ -24,9 +24,9 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Link$Builder", "javax/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Link$Builder", "jakarta/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$StatusType", "javax/ws/rs/core/Response", "StatusType", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$StatusType", "jakarta/ws/rs/core/Response", "StatusType", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "m", "Lorg/apache/cxf/message/Message;", null, null);
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCookies", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/ws/rs/core/NewCookie;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCookies", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/ws/rs/core/NewCookie;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
@@ -92,11 +92,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityTag", "()Ljavax/ws/rs/core/EntityTag;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEntityTag", "()Ljakarta/ws/rs/core/EntityTag;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getEntityTag", "()Ljavax/ws/rs/core/EntityTag;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getEntityTag", "()Ljakarta/ws/rs/core/EntityTag;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -143,29 +143,29 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLink", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLink", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getLink", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getLink", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLinkBuilder", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLinkBuilder", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getLinkBuilder", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getLinkBuilder", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLinks", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/ws/rs/core/Link;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLinks", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/ws/rs/core/Link;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
@@ -185,11 +185,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMediaType", "()Ljavax/ws/rs/core/MediaType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getMediaType", "()Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -205,21 +205,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatusInfo", "()Ljavax/ws/rs/core/Response$StatusType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatusInfo", "()Ljakarta/ws/rs/core/Response$StatusType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getStatusInfo", "()Ljavax/ws/rs/core/Response$StatusType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getStatusInfo", "()Ljakarta/ws/rs/core/Response$StatusType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStringHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStringHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getStringHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getStringHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -246,7 +246,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntity", "(Ljava/lang/Object;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEntity", "(Ljava/lang/Object;[Ljava/lang/annotation/Annotation;Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
@@ -258,15 +258,15 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "r", "Lorg/apache/cxf/jaxrs/impl/ResponseImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getMetadata", "()Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/ResponseImpl", "getMetadata", "()Ljakarta/ws/rs/core/MultivaluedMap;", false);
 methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "putSingle", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "m", "Lorg/apache/cxf/message/Message;");
 methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -325,11 +325,11 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStatusInfo", "(Ljavax/ws/rs/core/Response$StatusType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStatusInfo", "(Ljakarta/ws/rs/core/Response$StatusType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Response$StatusType", "getStatusCode", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Response$StatusType", "getStatusCode", "()I", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl", "setStatus", "(I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);

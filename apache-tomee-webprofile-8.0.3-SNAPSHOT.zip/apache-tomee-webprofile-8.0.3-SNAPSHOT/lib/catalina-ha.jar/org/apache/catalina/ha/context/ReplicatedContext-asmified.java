@@ -234,7 +234,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/context/ReplicatedContext", "context", "Lorg/apache/catalina/core/ApplicationContext;");
@@ -260,7 +260,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/context/ReplicatedContext", "context", "Lorg/apache/catalina/core/ApplicationContext;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/ha/context/ReplicatedContext$ReplApplContext");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/context/ReplicatedContext$ReplApplContext", "getFacade", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/context/ReplicatedContext$ReplApplContext", "getFacade", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

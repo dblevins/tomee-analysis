@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/push/cdi/WebsocketSessionBean", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/SessionScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/SessionScoped;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
@@ -271,7 +271,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "evaluateExpressions", "()V", false);
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "evaluateExpressions", "()V", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "evaluateExpressions", "()V", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("value");
@@ -108,8 +108,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/S
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "value", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "variant_", "Ljava/lang/String;");
@@ -122,8 +122,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/S
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager", "evaluate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/el/fmt/SetLocaleTag", "variant", "Ljava/lang/String;");
 methodVisitor.visitLabel(label0);

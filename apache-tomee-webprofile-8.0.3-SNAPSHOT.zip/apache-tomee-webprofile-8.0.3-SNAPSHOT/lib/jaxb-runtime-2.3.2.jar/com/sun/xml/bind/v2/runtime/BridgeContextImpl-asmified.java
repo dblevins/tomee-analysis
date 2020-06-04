@@ -50,26 +50,26 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setErrorHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setErrorHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "unmarshaller", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "marshaller", "Lcom/sun/xml/bind/v2/runtime/MarshallerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "setEventHandler", "(Ljavax/xml/bind/ValidationEventHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "setEventHandler", "(Ljakarta/xml/bind/ValidationEventHandler;)V", false);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/Error");
 methodVisitor.visitInsn(DUP);
@@ -83,43 +83,43 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachmentMarshaller", "(Ljavax/xml/bind/attachment/AttachmentMarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachmentMarshaller", "(Ljakarta/xml/bind/attachment/AttachmentMarshaller;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "marshaller", "Lcom/sun/xml/bind/v2/runtime/MarshallerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "setAttachmentMarshaller", "(Ljavax/xml/bind/attachment/AttachmentMarshaller;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "setAttachmentMarshaller", "(Ljakarta/xml/bind/attachment/AttachmentMarshaller;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachmentUnmarshaller", "(Ljavax/xml/bind/attachment/AttachmentUnmarshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttachmentUnmarshaller", "(Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "unmarshaller", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "setAttachmentUnmarshaller", "(Ljavax/xml/bind/attachment/AttachmentUnmarshaller;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "setAttachmentUnmarshaller", "(Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentMarshaller", "()Ljavax/xml/bind/attachment/AttachmentMarshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentMarshaller", "()Ljakarta/xml/bind/attachment/AttachmentMarshaller;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "marshaller", "Lcom/sun/xml/bind/v2/runtime/MarshallerImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "getAttachmentMarshaller", "()Ljavax/xml/bind/attachment/AttachmentMarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/MarshallerImpl", "getAttachmentMarshaller", "()Ljakarta/xml/bind/attachment/AttachmentMarshaller;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentUnmarshaller", "()Ljavax/xml/bind/attachment/AttachmentUnmarshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentUnmarshaller", "()Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/BridgeContextImpl", "unmarshaller", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getAttachmentUnmarshaller", "()Ljavax/xml/bind/attachment/AttachmentUnmarshaller;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl", "getAttachmentUnmarshaller", "()Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

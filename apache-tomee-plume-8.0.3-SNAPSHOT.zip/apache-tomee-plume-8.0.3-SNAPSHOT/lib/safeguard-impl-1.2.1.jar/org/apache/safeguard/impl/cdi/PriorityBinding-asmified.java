@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/cdi/PriorityBinding", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/annotation/Priority;>;Ljavax/annotation/Priority;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/annotation/Priority" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/cdi/PriorityBinding", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/annotation/Priority;>;Ljakarta/annotation/Priority;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/annotation/Priority" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "I", null, null);
@@ -32,7 +32,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/safeguard/impl/cdi/PriorityBinding", "value", "I");

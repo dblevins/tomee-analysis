@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "calculateViewId", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "calculateViewId", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

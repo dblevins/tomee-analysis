@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ParameterD", "<P:Lorg/apache/bval/jsr/descriptor/ExecutableD<**TP;>;>Lorg/apache/bval/jsr/descriptor/CascadableContainerD<TP;Ljava/lang/reflect/Parameter;>;Ljavax/validation/metadata/ParameterDescriptor;", "org/apache/bval/jsr/descriptor/CascadableContainerD", new String[] { "javax/validation/metadata/ParameterDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ParameterD", "<P:Lorg/apache/bval/jsr/descriptor/ExecutableD<**TP;>;>Lorg/apache/bval/jsr/descriptor/CascadableContainerD<TP;Ljava/lang/reflect/Parameter;>;Ljakarta/validation/metadata/ParameterDescriptor;", "org/apache/bval/jsr/descriptor/CascadableContainerD", new String[] { "jakarta/validation/metadata/ParameterDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/metadata/Meta$ForParameter", "org/apache/bval/jsr/metadata/Meta", "ForParameter", ACC_PUBLIC | ACC_STATIC);
 

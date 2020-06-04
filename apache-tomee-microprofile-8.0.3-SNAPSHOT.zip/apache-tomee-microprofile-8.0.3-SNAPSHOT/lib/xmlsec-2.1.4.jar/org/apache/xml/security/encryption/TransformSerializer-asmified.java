@@ -199,7 +199,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/transform/TransformerFact
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xml/security/encryption/TransformSerializer", "transformerFactory", "Ljavax/xml/transform/TransformerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xml/security/encryption/TransformSerializer", "transformerFactory", "Ljavax/xml/transform/TransformerFactory;");
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/TransformerFactory", "setFeature", "(Ljava/lang/String;Z)V", false);

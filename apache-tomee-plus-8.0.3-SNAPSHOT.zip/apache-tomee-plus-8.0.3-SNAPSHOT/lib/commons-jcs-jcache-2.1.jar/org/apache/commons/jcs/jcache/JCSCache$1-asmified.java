@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCache$1", null, "java/lang/Object", new String[] { "java/lang/Runnable" });
 
-classWriter.visitOuterClass("org/apache/commons/jcs/jcache/JCSCache", "loadAll", "(Ljava/util/Set;ZLjavax/cache/integration/CompletionListener;)V");
+classWriter.visitOuterClass("org/apache/commons/jcs/jcache/JCSCache", "loadAll", "(Ljava/util/Set;ZLjakarta/cache/integration/CompletionListener;)V");
 
 classWriter.visitInnerClass("org/apache/commons/jcs/jcache/JCSCache$1", null, null, 0);
 
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$replaceExi
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$completionListener", "Ljavax/cache/integration/CompletionListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$completionListener", "Ljakarta/cache/integration/CompletionListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/commons/jcs/jcache/JCSCache;Ljava/util/Set;ZLjavax/cache/integration/CompletionListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/commons/jcs/jcache/JCSCache;Ljava/util/Set;ZLjakarta/cache/integration/CompletionListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -58,7 +58,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$replaceExistingValues", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$completionListener", "Ljavax/cache/integration/CompletionListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$completionListener", "Ljakarta/cache/integration/CompletionListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -75,8 +75,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCache$1
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$replaceExistingValues", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$completionListener", "Ljavax/cache/integration/CompletionListener;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/commons/jcs/jcache/JCSCache", "access$000", "(Lorg/apache/commons/jcs/jcache/JCSCache;Ljava/util/Set;ZLjavax/cache/integration/CompletionListener;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCache$1", "val$completionListener", "Ljakarta/cache/integration/CompletionListener;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/commons/jcs/jcache/JCSCache", "access$000", "(Lorg/apache/commons/jcs/jcache/JCSCache;Ljava/util/Set;ZLjakarta/cache/integration/CompletionListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

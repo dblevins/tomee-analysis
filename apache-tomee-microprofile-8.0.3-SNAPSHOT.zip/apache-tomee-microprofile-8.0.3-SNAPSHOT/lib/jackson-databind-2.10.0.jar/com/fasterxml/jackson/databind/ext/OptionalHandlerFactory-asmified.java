@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PACKAGE_PREFIX_JAVAX_XML", "Ljava/lang/String;", null, "javax.xml.");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PACKAGE_PREFIX_JAVAX_XML", "Ljava/lang/String;", null, "jakarta.xml.");
 fieldVisitor.visitEnd();
 }
 {
@@ -114,13 +114,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("javax.xml.");
+methodVisitor.visitLdcInsn("jakarta.xml.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.xml.");
+methodVisitor.visitLdcInsn("jakarta.xml.");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/fasterxml/jackson/databind/ext/OptionalHandlerFactory", "hasSuperClassStartingWith", "(Ljava/lang/Class;Ljava/lang/String;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -208,13 +208,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("javax.xml.");
+methodVisitor.visitLdcInsn("jakarta.xml.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.xml.");
+methodVisitor.visitLdcInsn("jakarta.xml.");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/fasterxml/jackson/databind/ext/OptionalHandlerFactory", "hasSuperClassStartingWith", "(Ljava/lang/Class;Ljava/lang/String;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);

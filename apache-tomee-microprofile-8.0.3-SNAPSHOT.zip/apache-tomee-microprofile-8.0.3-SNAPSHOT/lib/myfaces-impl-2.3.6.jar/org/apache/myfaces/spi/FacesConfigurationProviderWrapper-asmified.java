@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "Lorg/apache/myfaces/spi/FacesConfigurationProvider;Ljavax/faces/FacesWrapper<Lorg/apache/myfaces/spi/FacesConfigurationProvider;>;", "org/apache/myfaces/spi/FacesConfigurationProvider", new String[] { "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "Lorg/apache/myfaces/spi/FacesConfigurationProvider;Ljakarta/faces/FacesWrapper<Lorg/apache/myfaces/spi/FacesConfigurationProvider;>;", "org/apache/myfaces/spi/FacesConfigurationProvider", new String[] { "jakarta/faces/FacesWrapper" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,110 +34,110 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStandardFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStandardFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getStandardFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getStandardFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaInfServicesFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaInfServicesFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getMetaInfServicesFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getMetaInfServicesFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationsFacesConfig", "(Ljavax/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationsFacesConfig", "(Ljakarta/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getAnnotationsFacesConfig", "(Ljavax/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getAnnotationsFacesConfig", "(Ljakarta/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassloaderFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassloaderFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getClassloaderFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getClassloaderFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextSpecifiedFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextSpecifiedFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getContextSpecifiedFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getContextSpecifiedFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWebAppFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWebAppFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getWebAppFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getWebAppFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesFlowFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesFlowFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getFacesFlowFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getFacesFlowFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletTaglibFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFaceletTaglibFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProviderWrapper", "getWrapped", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getFaceletTaglibFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/FacesConfigurationProvider", "getFaceletTaglibFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

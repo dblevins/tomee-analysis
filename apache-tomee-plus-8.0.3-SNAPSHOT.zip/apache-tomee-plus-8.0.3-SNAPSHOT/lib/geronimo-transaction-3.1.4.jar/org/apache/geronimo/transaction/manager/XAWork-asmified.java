@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/transaction/manager/XAWork", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "begin", "(Ljavax/transaction/xa/Xid;J)V", null, new String[] { "javax/transaction/xa/XAException", "javax/transaction/InvalidTransactionException", "javax/transaction/SystemException", "org/apache/geronimo/transaction/manager/ImportedTransactionActiveException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "begin", "(Ljavax/transaction/xa/Xid;J)V", null, new String[] { "javax/transaction/xa/XAException", "jakarta/transaction/InvalidTransactionException", "jakarta/transaction/SystemException", "org/apache/geronimo/transaction/manager/ImportedTransactionActiveException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "end", "(Ljavax/transaction/xa/Xid;)V", null, new String[] { "javax/transaction/xa/XAException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "end", "(Ljavax/transaction/xa/Xid;)V", null, new String[] { "javax/transaction/xa/XAException", "jakarta/transaction/SystemException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

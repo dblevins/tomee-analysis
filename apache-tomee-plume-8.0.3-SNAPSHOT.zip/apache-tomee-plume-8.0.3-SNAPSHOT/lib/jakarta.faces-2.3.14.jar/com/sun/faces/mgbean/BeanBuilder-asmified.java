@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "(Lcom/sun/faces/spi/InjectionProvider;Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "(Lcom/sun/faces/spi/InjectionProvider;Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "newBeanInstance", "()Ljava/lang/Object;", false);
@@ -81,7 +81,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder",
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "buildBean", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder", "buildBean", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -207,7 +207,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "buildBean", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "buildBean", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -663,7 +663,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initMap", "(Ljava/util/Map;Ljava/util/Map;Ljavax/faces/context/FacesContext;)V", "(Ljava/util/Map<Lcom/sun/faces/mgbean/BeanBuilder$Expression;Lcom/sun/faces/mgbean/BeanBuilder$Expression;>;Ljava/util/Map;Ljavax/faces/context/FacesContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initMap", "(Ljava/util/Map;Ljava/util/Map;Ljakarta/faces/context/FacesContext;)V", "(Ljava/util/Map<Lcom/sun/faces/mgbean/BeanBuilder$Expression;Lcom/sun/faces/mgbean/BeanBuilder$Expression;>;Ljava/util/Map;Ljakarta/faces/context/FacesContext;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
@@ -691,33 +691,33 @@ methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "javax/faces/context/FacesContext", "java/util/Iterator", "java/util/Map$Entry", "com/sun/faces/mgbean/BeanBuilder$Expression", "com/sun/faces/mgbean/BeanBuilder$Expression"}, 2, new Object[] {"java/util/Map", "java/lang/Object"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "jakarta/faces/context/FacesContext", "java/util/Iterator", "java/util/Map$Entry", "com/sun/faces/mgbean/BeanBuilder$Expression", "com/sun/faces/mgbean/BeanBuilder$Expression"}, 2, new Object[] {"java/util/Map", "java/lang/Object"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "javax/faces/context/FacesContext", "java/util/Iterator", "java/util/Map$Entry", "com/sun/faces/mgbean/BeanBuilder$Expression", "com/sun/faces/mgbean/BeanBuilder$Expression"}, 3, new Object[] {"java/util/Map", "java/lang/Object", "java/lang/Object"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "jakarta/faces/context/FacesContext", "java/util/Iterator", "java/util/Map$Entry", "com/sun/faces/mgbean/BeanBuilder$Expression", "com/sun/faces/mgbean/BeanBuilder$Expression"}, 3, new Object[] {"java/util/Map", "java/lang/Object", "java/lang/Object"});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "javax/faces/context/FacesContext"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/Map", "java/util/Map", "jakarta/faces/context/FacesContext"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initList", "(Ljava/util/List;Ljava/util/List;Ljavax/faces/context/FacesContext;)V", "(Ljava/util/List<Lcom/sun/faces/mgbean/BeanBuilder$Expression;>;Ljava/util/List;Ljavax/faces/context/FacesContext;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initList", "(Ljava/util/List;Ljava/util/List;Ljakarta/faces/context/FacesContext;)V", "(Ljava/util/List<Lcom/sun/faces/mgbean/BeanBuilder$Expression;>;Ljava/util/List;Ljakarta/faces/context/FacesContext;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
@@ -742,15 +742,15 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/BeanBuilder$Expression", "evaluate", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/List", "java/util/List", "javax/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "com/sun/faces/mgbean/BeanBuilder$Expression"}, 1, new Object[] {"java/util/List"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/List", "java/util/List", "jakarta/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "com/sun/faces/mgbean/BeanBuilder$Expression"}, 1, new Object[] {"java/util/List"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/List", "java/util/List", "javax/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "com/sun/faces/mgbean/BeanBuilder$Expression"}, 2, new Object[] {"java/util/List", "java/lang/Object"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/BeanBuilder", "java/util/List", "java/util/List", "jakarta/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "com/sun/faces/mgbean/BeanBuilder$Expression"}, 2, new Object[] {"java/util/List", "java/lang/Object"});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(4, 1);

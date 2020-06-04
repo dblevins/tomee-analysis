@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/catalina/Context", null, "java/lang/Object", new String[] { "org/apache/catalina/Container", "org/apache/tomcat/ContextBind" });
 
-classWriter.visitInnerClass("javax/servlet/ServletRegistration$Dynamic", "javax/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/servlet/ServletRegistration$Dynamic", "jakarta/servlet/ServletRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADD_WELCOME_FILE_EVENT", "Ljava/lang/String;", null, "addWelcomeFile");
@@ -251,7 +251,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setPrivilege
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -567,11 +567,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "findWrapperL
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fireRequestInitEvent", "(Ljavax/servlet/ServletRequest;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fireRequestInitEvent", "(Ljakarta/servlet/ServletRequest;)Z", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fireRequestDestroyEvent", "(Ljavax/servlet/ServletRequest;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fireRequestDestroyEvent", "(Ljakarta/servlet/ServletRequest;)Z", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -659,15 +659,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setEffective
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJspConfigDescriptor", "()Ljavax/servlet/descriptor/JspConfigDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJspConfigDescriptor", "()Ljakarta/servlet/descriptor/JspConfigDescriptor;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setJspConfigDescriptor", "(Ljavax/servlet/descriptor/JspConfigDescriptor;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setJspConfigDescriptor", "(Ljakarta/servlet/descriptor/JspConfigDescriptor;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addServletContainerInitializer", "(Ljavax/servlet/ServletContainerInitializer;Ljava/util/Set;)V", "(Ljavax/servlet/ServletContainerInitializer;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addServletContainerInitializer", "(Ljakarta/servlet/ServletContainerInitializer;Ljava/util/Set;)V", "(Ljakarta/servlet/ServletContainerInitializer;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
 methodVisitor.visitEnd();
 }
 {
@@ -679,7 +679,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isServlet22"
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addServletSecurity", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljavax/servlet/ServletRegistration$Dynamic;Ljavax/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addServletSecurity", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set;", "(Ljakarta/servlet/ServletRegistration$Dynamic;Ljakarta/servlet/ServletSecurityElement;)Ljava/util/Set<Ljava/lang/String;>;", null);
 methodVisitor.visitEnd();
 }
 {

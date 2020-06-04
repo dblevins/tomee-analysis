@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TransactionRequiredException", null, "javax/persistence/TransactionRequiredException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/TransactionRequiredException", null, "jakarta/persistence/TransactionRequiredException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
 
 classWriter.visitInnerClass("org/apache/openjpa/lib/util/Localizer$Message", "org/apache/openjpa/lib/util/Localizer", "Message", ACC_PUBLIC | ACC_STATIC);
 
@@ -61,7 +61,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Strin
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/TransactionRequiredException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/TransactionRequiredException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/TransactionRequiredException", "_fatal", "Z");
@@ -172,7 +172,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/TransactionRequiredException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/TransactionRequiredException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintStream;)V", false);
@@ -185,7 +185,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/TransactionRequiredException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/TransactionRequiredException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintWriter;)V", false);

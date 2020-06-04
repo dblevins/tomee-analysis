@@ -22,23 +22,23 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/PostBuildComponentTreeOnRestoreViewEvent", null, "javax/faces/event/ComponentSystemEvent", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/PostBuildComponentTreeOnRestoreViewEvent", null, "jakarta/faces/event/ComponentSystemEvent", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/event/ComponentSystemEvent", "<init>", "(Ljavax/faces/component/UIComponent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/event/ComponentSystemEvent", "<init>", "(Ljakarta/faces/component/UIComponent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAppropriateListener", "(Ljavax/faces/event/FacesListener;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAppropriateListener", "(Ljakarta/faces/event/FacesListener;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/event/SystemEventListener");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/event/SystemEventListener");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

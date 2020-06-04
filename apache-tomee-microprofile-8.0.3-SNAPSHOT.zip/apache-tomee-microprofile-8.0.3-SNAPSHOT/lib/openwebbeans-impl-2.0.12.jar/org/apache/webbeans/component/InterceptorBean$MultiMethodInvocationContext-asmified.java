@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", null, "java/lang/Object", new String[] { "javax/interceptor/InvocationContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", null, "java/lang/Object", new String[] { "jakarta/interceptor/InvocationContext" });
 
 classWriter.visitInnerClass("org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "org/apache/webbeans/component/InterceptorBean", "MultiMethodInvocationContext", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wrapped", "Ljavax/interceptor/InvocationContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wrapped", "Ljakarta/interceptor/InvocationContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptionType", "Ljavax/enterprise/inject/spi/InterceptionType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptionType", "Ljakarta/enterprise/inject/spi/InterceptionType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,19 +47,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentInterceptorIdx", "I",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/interceptor/InvocationContext;Ljavax/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljavax/enterprise/inject/spi/Interceptor;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/interceptor/InvocationContext;Ljakarta/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/Interceptor;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptionType", "Ljavax/enterprise/inject/spi/InterceptionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptionType", "Ljakarta/enterprise/inject/spi/InterceptionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "instance", "Ljava/lang/Object;");
@@ -82,10 +82,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/interceptor/InvocationContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/interceptor/InvocationContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -100,13 +100,13 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IADD);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "currentInterceptorIdx", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptionType", "Ljavax/enterprise/inject/spi/InterceptionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "interceptionType", "Ljakarta/enterprise/inject/spi/InterceptionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "instance", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "intercept", "(Ljavax/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "intercept", "(Ljakarta/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -115,8 +115,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextData", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -125,8 +125,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethod", "()Ljava/lang/reflect/Method;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -135,8 +135,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTarget", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getTarget", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -145,8 +145,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimer", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getTimer", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getTimer", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -155,8 +155,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()[Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getParameters", "()[Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getParameters", "()[Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -165,9 +165,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameters", "([Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext", "wrapped", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "setParameters", "([Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "setParameters", "([Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

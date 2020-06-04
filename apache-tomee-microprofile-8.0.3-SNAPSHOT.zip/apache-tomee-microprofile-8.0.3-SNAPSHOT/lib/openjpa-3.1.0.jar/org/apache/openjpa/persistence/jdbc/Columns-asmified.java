@@ -40,7 +40,7 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljakarta/persistence/Column;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

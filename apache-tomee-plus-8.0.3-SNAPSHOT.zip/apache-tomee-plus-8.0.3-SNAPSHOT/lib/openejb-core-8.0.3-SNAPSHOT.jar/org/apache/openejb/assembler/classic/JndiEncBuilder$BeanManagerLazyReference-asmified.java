@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference", "Ljava/lang/Object;Ljava/util/concurrent/Callable<Ljavax/enterprise/inject/spi/BeanManager;>;", "java/lang/Object", new String[] { "java/util/concurrent/Callable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference", "Ljava/lang/Object;Ljava/util/concurrent/Callable<Ljakarta/enterprise/inject/spi/BeanManager;>;", "java/lang/Object", new String[] { "java/util/concurrent/Callable" });
 
 classWriter.visitInnerClass("org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference", "org/apache/openejb/assembler/classic/JndiEncBuilder", "BeanManagerLazyReference", ACC_PUBLIC | ACC_STATIC);
 
@@ -36,7 +36,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "call", "()Ljavax/enterprise/inject/spi/BeanManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "call", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/container/InjectableBeanManager");
 methodVisitor.visitInsn(DUP);
@@ -51,7 +51,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "call", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference", "call", "()Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference", "call", "()Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

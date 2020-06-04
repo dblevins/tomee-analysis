@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/persistence/JtaQuery$11", null, "java/lang/Object", new String[] { "org/apache/openejb/persistence/QueryOperation" });
 
-classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/Query;");
+classWriter.visitOuterClass("org/apache/openejb/persistence/JtaQuery", "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/Query;");
 
 classWriter.visitInnerClass("org/apache/openejb/persistence/JtaQuery$11", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$lockMode", "Ljavax/persistence/LockModeType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$lockMode", "Ljakarta/persistence/LockModeType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/persistence/JtaQuery;Ljavax/persistence/LockModeType;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/persistence/JtaQuery;Ljakarta/persistence/LockModeType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$11", "this$0", "Lorg/apache/openejb/persistence/JtaQuery;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$11", "val$lockMode", "Ljavax/persistence/LockModeType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/JtaQuery$11", "val$lockMode", "Ljakarta/persistence/LockModeType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -52,12 +52,12 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/persistence/Query;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/persistence/Query;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$11", "val$lockMode", "Ljavax/persistence/LockModeType;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/Query", "setLockMode", "(Ljavax/persistence/LockModeType;)Ljavax/persistence/Query;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/JtaQuery$11", "val$lockMode", "Ljakarta/persistence/LockModeType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/Query", "setLockMode", "(Ljakarta/persistence/LockModeType;)Ljakarta/persistence/Query;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

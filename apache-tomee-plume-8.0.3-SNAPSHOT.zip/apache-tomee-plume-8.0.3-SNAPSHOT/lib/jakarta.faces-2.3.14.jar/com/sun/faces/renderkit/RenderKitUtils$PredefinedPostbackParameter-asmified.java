@@ -106,14 +106,14 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getRequestParameterMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequestParameterMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "getName", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "getName", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitInsn(ARETURN);
@@ -121,12 +121,12 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getName", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getName", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "name", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/RenderKitUtils", "getParameterName", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/renderkit/RenderKitUtils", "getParameterName", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -138,21 +138,21 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/RenderKitUtils$Predefi
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("VIEW_STATE_PARAM");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax.faces.ViewState");
+methodVisitor.visitLdcInsn("jakarta.faces.ViewState");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "VIEW_STATE_PARAM", "Lcom/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("CLIENT_WINDOW_PARAM");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.faces.ClientWindow");
+methodVisitor.visitLdcInsn("jakarta.faces.ClientWindow");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "CLIENT_WINDOW_PARAM", "Lcom/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("RENDER_KIT_ID_PARAM");
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitLdcInsn("javax.faces.RenderKitId");
+methodVisitor.visitLdcInsn("jakarta.faces.RenderKitId");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter", "RENDER_KIT_ID_PARAM", "Lcom/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/RenderKitUtils$PredefinedPostbackParameter");

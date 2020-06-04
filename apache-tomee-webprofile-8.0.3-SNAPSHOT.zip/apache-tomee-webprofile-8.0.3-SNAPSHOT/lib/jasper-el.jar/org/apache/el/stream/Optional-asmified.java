@@ -45,17 +45,17 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Optional", "obj", "Ljava/lang/Object;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/ELException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/ELException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("stream.optional.empty");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/util/MessageFactory", "get", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ELException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ELException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ifPresent", "(Ljavax/el/LambdaExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ifPresent", "(Ljakarta/el/LambdaExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Optional", "obj", "Ljava/lang/Object;");
@@ -80,7 +80,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Optional", "obj", "Ljava/lang/Object;");
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -113,14 +113,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Optional", "obj", "
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/el/LambdaExpression");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/el/LambdaExpression");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/LambdaExpression");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/LambdaExpression");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

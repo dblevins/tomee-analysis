@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/taglib/core/ActionListenerTag", "Lorg/apache/myfaces/taglib/core/GenericListenerTag<Ljavax/faces/component/ActionSource;Ljavax/faces/event/ActionListener;>;", "org/apache/myfaces/taglib/core/GenericListenerTag", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/taglib/core/ActionListenerTag", "Lorg/apache/myfaces/taglib/core/GenericListenerTag<Ljakarta/faces/component/ActionSource;Ljakarta/faces/event/ActionListener;>;", "org/apache/myfaces/taglib/core/GenericListenerTag", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-2021978765020549175L));
@@ -32,61 +32,61 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/component/ActionSource;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/component/ActionSource;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericListenerTag", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addListener", "(Ljavax/faces/component/ActionSource;Ljavax/faces/event/ActionListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addListener", "(Ljakarta/faces/component/ActionSource;Ljakarta/faces/event/ActionListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/component/ActionSource", "addActionListener", "(Ljavax/faces/event/ActionListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/component/ActionSource", "addActionListener", "(Ljakarta/faces/event/ActionListener;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDelegateListener", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)Ljavax/faces/event/ActionListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDelegateListener", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)Ljakarta/faces/event/ActionListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/taglib/core/DelegateActionListener");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/DelegateActionListener", "<init>", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/DelegateActionListener", "<init>", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericListenerTag", "setType", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericListenerTag", "setType", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinding", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinding", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericListenerTag", "setBinding", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/taglib/core/GenericListenerTag", "setBinding", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "createDelegateListener", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "createDelegateListener", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ActionListenerTag", "createDelegateListener", "(Ljavax/el/ValueExpression;Ljavax/el/ValueExpression;)Ljavax/faces/event/ActionListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ActionListenerTag", "createDelegateListener", "(Ljakarta/el/ValueExpression;Ljakarta/el/ValueExpression;)Ljakarta/faces/event/ActionListener;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -96,10 +96,10 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHET
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/ActionSource");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/ActionSource");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/ActionListener");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ActionListenerTag", "addListener", "(Ljavax/faces/component/ActionSource;Ljavax/faces/event/ActionListener;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/ActionListener");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/taglib/core/ActionListenerTag", "addListener", "(Ljakarta/faces/component/ActionSource;Ljakarta/faces/event/ActionListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

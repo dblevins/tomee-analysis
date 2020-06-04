@@ -153,7 +153,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFifteenMinuteRate", "()D", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "fifteenMinRate");
 annotationVisitor0.visitEnd();
 }
@@ -170,7 +170,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFiveMinuteRate", "()D", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "fiveMinRate");
 annotationVisitor0.visitEnd();
 }
@@ -187,7 +187,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOneMinuteRate", "()D", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/json/bind/annotation/JsonbProperty;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/json/bind/annotation/JsonbProperty;", true);
 annotationVisitor0.visit("value", "oneMinRate");
 annotationVisitor0.visitEnd();
 }

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext$1", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext$1", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitOuterClass("org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext", "addTransactionContextListener", "(Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionContextListener;)V");
 

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/validation/JAXRSParameterNameProvider", null, "java/lang/Object", new String[] { "javax/validation/ParameterNameProvider" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/validation/JAXRSParameterNameProvider", null, "java/lang/Object", new String[] { "jakarta/validation/ParameterNameProvider" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

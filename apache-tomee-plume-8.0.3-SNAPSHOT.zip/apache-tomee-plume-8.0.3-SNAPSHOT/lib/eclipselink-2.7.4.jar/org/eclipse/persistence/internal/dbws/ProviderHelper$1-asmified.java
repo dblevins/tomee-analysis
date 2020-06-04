@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/dbws/ProviderHelper$1", null, "org/eclipse/persistence/mappings/AttributeAccessor", null);
 
-classWriter.visitOuterClass("org/eclipse/persistence/internal/dbws/ProviderHelper", "init", "(Ljava/lang/ClassLoader;Ljavax/servlet/ServletContext;Z)V");
+classWriter.visitOuterClass("org/eclipse/persistence/internal/dbws/ProviderHelper", "init", "(Ljava/lang/ClassLoader;Ljakarta/servlet/ServletContext;Z)V");
 
 classWriter.visitInnerClass("org/eclipse/persistence/internal/dbws/ProviderHelper$1", null, null, 0);
 
@@ -151,10 +151,10 @@ methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/eclipse/persistence/internal/dbws/ProviderHelper$1", "java/lang/Object", "java/lang/Object", "org/eclipse/persistence/internal/xr/Invocation", "java/util/Vector", "java/util/Iterator", "java/lang/Object", "org/w3c/dom/Element", "java/lang/String", "org/w3c/dom/NodeList", Opcodes.INTEGER, "org/w3c/dom/Node"}, 1, new Object[] {"org/eclipse/persistence/exceptions/XMLMarshalException"});
 methodVisitor.visitVarInsn(ASTORE, 12);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 12);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -249,10 +249,10 @@ methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/eclipse/persistence/internal/dbws/ProviderHelper$1", "java/lang/Object", "java/lang/Object", "org/eclipse/persistence/internal/xr/Invocation", "java/util/Vector", "java/util/Iterator", "java/lang/Object", "org/w3c/dom/Element", "java/lang/String", "org/eclipse/persistence/descriptors/ClassDescriptor"}, 1, new Object[] {"org/eclipse/persistence/exceptions/XMLMarshalException"});
 methodVisitor.visitVarInsn(ASTORE, 10);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label19);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

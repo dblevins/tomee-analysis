@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/SecurityContextImpl", null, "java/lang/Object", new String[] { "javax/ws/rs/core/SecurityContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/SecurityContextImpl", null, "java/lang/Object", new String[] { "jakarta/ws/rs/core/SecurityContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "m", "Lorg/apache/cxf/message/Message;", null, null);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl", "Ljavax/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/metrics/annotation/Metric;>;Lorg/eclipse/microprofile/metrics/annotation/Metric;", "javax/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/metrics/annotation/Metric" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl", "Ljakarta/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/metrics/annotation/Metric;>;Lorg/eclipse/microprofile/metrics/annotation/Metric;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/metrics/annotation/Metric" });
 
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl", "org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension", "MetricImpl", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -40,7 +40,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/eclipse/microprofile/metrics/Metadata;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl", "metadata", "Lorg/eclipse/microprofile/metrics/Metadata;");

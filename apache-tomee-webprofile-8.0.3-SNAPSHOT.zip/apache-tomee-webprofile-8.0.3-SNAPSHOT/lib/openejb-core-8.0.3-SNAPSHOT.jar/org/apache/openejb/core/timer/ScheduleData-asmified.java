@@ -25,42 +25,42 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/timer/ScheduleData", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expression", "Ljavax/ejb/ScheduleExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expression", "Ljakarta/ejb/ScheduleExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "config", "Ljavax/ejb/TimerConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "config", "Ljakarta/ejb/TimerConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ejb/TimerConfig;Ljavax/ejb/ScheduleExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ejb/TimerConfig;Ljakarta/ejb/ScheduleExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/ScheduleData", "config", "Ljavax/ejb/TimerConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/ScheduleData", "config", "Ljakarta/ejb/TimerConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/ScheduleData", "expression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/ScheduleData", "expression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfig", "()Ljavax/ejb/TimerConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfig", "()Ljakarta/ejb/TimerConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/ScheduleData", "config", "Ljavax/ejb/TimerConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/ScheduleData", "config", "Ljakarta/ejb/TimerConfig;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljavax/ejb/ScheduleExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljakarta/ejb/ScheduleExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/ScheduleData", "expression", "Ljavax/ejb/ScheduleExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/ScheduleData", "expression", "Ljakarta/ejb/ScheduleExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

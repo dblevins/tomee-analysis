@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/tomee/catalina/WebSockets", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/websocket/server/ServerEndpointConfig$Configurator", "javax/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/websocket/server/ServerEndpointConfig$Configurator", "jakarta/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
@@ -41,7 +41,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setConfigurator", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/server/ServerEndpointConfig$Configurator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/server/ServerEndpointConfig$Configurator;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLdcInsn("defaultImpl");
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/catalina/websocket/JavaEEDefaultServerEnpointConfigurator");

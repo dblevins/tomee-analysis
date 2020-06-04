@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/bind/util/ValidationEventLocatorExImpl", null, "javax/xml/bind/helpers/ValidationEventLocatorImpl", new String[] { "com/sun/xml/bind/ValidationEventLocatorEx" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/bind/util/ValidationEventLocatorExImpl", null, "jakarta/xml/bind/helpers/ValidationEventLocatorImpl", new String[] { "com/sun/xml/bind/ValidationEventLocatorEx" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "fieldName", "Ljava/lang/String;", null, null);
@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Objec
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventLocatorImpl", "<init>", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventLocatorImpl", "<init>", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/util/ValidationEventLocatorExImpl", "fieldName", "Ljava/lang/String;");

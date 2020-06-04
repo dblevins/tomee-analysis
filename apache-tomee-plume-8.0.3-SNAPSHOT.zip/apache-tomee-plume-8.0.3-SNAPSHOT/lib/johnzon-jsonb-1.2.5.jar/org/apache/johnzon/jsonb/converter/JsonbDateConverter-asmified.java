@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "isIso", "Z", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/bind/annotation/JsonbDateFormat;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/bind/annotation/JsonbDateFormat;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "<init>", "(Ljavax/json/bind/annotation/JsonbDateFormat;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "<init>", "(Ljakarta/json/bind/annotation/JsonbDateFormat;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JsonbDateConverter", "hasTimezone", "Z");

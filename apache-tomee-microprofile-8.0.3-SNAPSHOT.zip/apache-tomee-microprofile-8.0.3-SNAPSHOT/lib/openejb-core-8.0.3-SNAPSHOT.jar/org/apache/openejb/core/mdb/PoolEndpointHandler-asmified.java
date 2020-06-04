@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "callContext", "Lorg/apache/o
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceManager;Ljavax/transaction/xa/XAResource;)V", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceManager;Ljavax/transaction/xa/XAResource;)V", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "javax/resource/spi/ApplicationServerInternalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "jakarta/resource/spi/ApplicationServerInternalException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -150,18 +150,18 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/ApplicationServerInternalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/ApplicationServerInternalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/mdb/PoolEndpointHandler", "java/lang/reflect/Method"}, 1, new Object[] {"org/apache/openejb/OpenEJBException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/ApplicationServerInternalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/ApplicationServerInternalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -173,14 +173,14 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "recreateInstance", "(Z)V", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "recreateInstance", "(Z)V", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "()V", null, new String[] { "javax/resource/spi/ApplicationServerInternalException", "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "afterDelivery", "()V", null, new String[] { "jakarta/resource/spi/ApplicationServerInternalException", "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -245,10 +245,10 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/ApplicationServerInternalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/ApplicationServerInternalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openejb/core/mdb/PoolEndpointHandler"}, 1, new Object[] {"java/lang/Throwable"});

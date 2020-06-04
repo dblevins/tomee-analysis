@@ -70,27 +70,27 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "saveSerializedView", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljavax/faces/context/FacesContext;TV;)TK;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "saveSerializedView", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljakarta/faces/context/FacesContext;TV;)TK;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restoreSerializedView", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;TK;)TV;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restoreSerializedView", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;TK;)TV;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "encodeSerializedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)TK;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "encodeSerializedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)TK;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isWriteStateAfterRenderViewRequired", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isWriteStateAfterRenderViewRequired", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createCryptographicallyStrongTokenFromSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createCryptographicallyStrongTokenFromSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStateTokenProcessor", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/token/StateTokenProcessor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStateTokenProcessor", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/token/StateTokenProcessor;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

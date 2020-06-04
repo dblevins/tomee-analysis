@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/AttributeImpl<TX;TT;>;Ljavax/persistence/metamodel/SingularAttribute<TX;TT;>;", "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", new String[] { "javax/persistence/metamodel/SingularAttribute" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/AttributeImpl<TX;TT;>;Ljakarta/persistence/metamodel/SingularAttribute<TX;TT;>;", "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl", new String[] { "jakarta/persistence/metamodel/SingularAttribute" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Bindable$BindableType", "javax/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Bindable$BindableType", "jakarta/persistence/metamodel/Bindable", "BindableType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(3928292425281232234L));
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "elementType", "Ljavax/persistence/metamodel/Type;", "Ljavax/persistence/metamodel/Type<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "elementType", "Ljakarta/persistence/metamodel/Type;", "Ljakarta/persistence/metamodel/Type<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -184,7 +184,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "getMetamodel", "()Lorg/eclipse/persistence/internal/jpa/metamodel/MetamodelImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/MetamodelImpl", "getType", "(Ljava/lang/Class;)Lorg/eclipse/persistence/internal/jpa/metamodel/TypeImpl;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
@@ -193,8 +193,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableJavaType", "()Ljava/lang/Class;", "()Ljava/lang/Class<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -285,9 +285,9 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljavax/persistence/metamodel/Bindable$BindableType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBindableType", "()Ljakarta/persistence/metamodel/Bindable$BindableType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Bindable$BindableType", "SINGULAR_ATTRIBUTE", "Ljavax/persistence/metamodel/Bindable$BindableType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Bindable$BindableType", "SINGULAR_ATTRIBUTE", "Ljakarta/persistence/metamodel/Bindable$BindableType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -300,7 +300,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NoSuchFieldException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -357,17 +357,17 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Type", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljavax/persistence/metamodel/Type;", "()Ljavax/persistence/metamodel/Type<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljakarta/persistence/metamodel/Type;", "()Ljakarta/persistence/metamodel/Type<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljavax/persistence/metamodel/Type;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "elementType", "Ljakarta/persistence/metamodel/Type;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -382,7 +382,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuffer", "<init>",
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "getType", "()Ljavax/persistence/metamodel/Type;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/SingularAttributeImpl", "getType", "()Ljakarta/persistence/metamodel/Type;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuffer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);

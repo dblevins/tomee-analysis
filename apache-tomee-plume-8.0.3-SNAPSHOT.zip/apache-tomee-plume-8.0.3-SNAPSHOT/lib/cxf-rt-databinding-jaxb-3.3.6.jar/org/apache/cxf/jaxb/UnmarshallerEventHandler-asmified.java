@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxb/UnmarshallerEventHandler", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "onUnmarshalComplete", "()V", null, new String[] { "javax/xml/bind/UnmarshalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "onUnmarshalComplete", "()V", null, new String[] { "jakarta/xml/bind/UnmarshalException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

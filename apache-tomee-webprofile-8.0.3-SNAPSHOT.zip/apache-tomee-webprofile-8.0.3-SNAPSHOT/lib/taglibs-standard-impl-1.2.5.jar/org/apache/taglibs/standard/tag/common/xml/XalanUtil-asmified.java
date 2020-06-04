@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContext", "(Ljavax/servlet/jsp/tagext/Tag;Ljavax/servlet/jsp/PageContext;)Lorg/apache/xpath/XPathContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContext", "(Ljakarta/servlet/jsp/tagext/Tag;Ljakarta/servlet/jsp/PageContext;)Lorg/apache/xpath/XPathContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/taglibs/standard/tag/common/xml/ForEachTag;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/servlet/jsp/tagext/TagSupport", "findAncestorWithClass", "(Ljavax/servlet/jsp/tagext/Tag;Ljava/lang/Class;)Ljavax/servlet/jsp/tagext/Tag;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/tagext/TagSupport", "findAncestorWithClass", "(Ljakarta/servlet/jsp/tagext/Tag;Ljava/lang/Class;)Ljakarta/servlet/jsp/tagext/Tag;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/tag/common/xml/ForEachTag");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -56,7 +56,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack", "<init>", "(Ljavax/servlet/jsp/PageContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack", "<init>", "(Ljakarta/servlet/jsp/PageContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);

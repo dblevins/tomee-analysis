@@ -38,10 +38,10 @@ annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/ws/rs/core/Response$Status", "javax/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$Status", "jakarta/ws/rs/core/Response", "Status", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljavax/ws/rs/core/Response$Status;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljakarta/ws/rs/core/Response$Status;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

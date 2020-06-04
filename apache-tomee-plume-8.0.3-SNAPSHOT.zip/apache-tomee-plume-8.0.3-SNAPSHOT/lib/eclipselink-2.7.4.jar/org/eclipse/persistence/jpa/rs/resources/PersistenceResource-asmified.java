@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/resources/PersistenceResource", null, "org/eclipse/persistence/jpa/rs/resources/common/AbstractPersistenceResource", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -35,7 +35,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "application/json");
@@ -45,7 +45,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Path;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Path;", true);
 annotationVisitor0.visit("value", "/{version : v\\d\\.\\d|latest}/");
 annotationVisitor0.visitEnd();
 }
@@ -59,23 +59,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContexts", "(Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContexts", "(Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/GET;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/GET;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(3, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "version");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -85,19 +85,19 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/PersistenceResource", "getContextsInternal", "(Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/PersistenceResource", "getContextsInternal", "(Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "callSessionBean", "(Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;Ljava/io/InputStream;)Ljavax/ws/rs/core/Response;", null, new String[] { "javax/xml/bind/JAXBException", "java/lang/ClassNotFoundException", "javax/naming/NamingException", "java/lang/NoSuchMethodException", "java/lang/reflect/InvocationTargetException", "java/lang/IllegalAccessException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "callSessionBean", "(Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;Ljava/io/InputStream;)Ljakarta/ws/rs/core/Response;", null, new String[] { "jakarta/xml/bind/JAXBException", "java/lang/ClassNotFoundException", "javax/naming/NamingException", "java/lang/NoSuchMethodException", "java/lang/reflect/InvocationTargetException", "java/lang/IllegalAccessException" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/POST;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/POST;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "*/*");
@@ -107,16 +107,16 @@ annotationVisitor0.visitEnd();
 }
 methodVisitor.visitAnnotableParameterCount(4, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/ws/rs/PathParam;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/ws/rs/PathParam;", true);
 annotationVisitor0.visit("value", "version");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljavax/ws/rs/core/Context;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(2, "Ljakarta/ws/rs/core/Context;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -127,7 +127,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/PersistenceResource", "callSessionBeanInternal", "(Ljava/lang/String;Ljavax/ws/rs/core/HttpHeaders;Ljavax/ws/rs/core/UriInfo;Ljava/io/InputStream;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/resources/PersistenceResource", "callSessionBeanInternal", "(Ljava/lang/String;Ljakarta/ws/rs/core/HttpHeaders;Ljakarta/ws/rs/core/UriInfo;Ljava/io/InputStream;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();

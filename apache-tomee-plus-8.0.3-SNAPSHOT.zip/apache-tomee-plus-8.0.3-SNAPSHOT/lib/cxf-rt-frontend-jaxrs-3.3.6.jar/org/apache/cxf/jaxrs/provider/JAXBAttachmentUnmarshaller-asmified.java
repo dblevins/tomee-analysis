@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller", null, "javax/xml/bind/attachment/AttachmentUnmarshaller", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller", null, "jakarta/xml/bind/attachment/AttachmentUnmarshaller", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Ljava/util/logging/Logger;", null, null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Lorg/apache/cxf/message/Attachment;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/attachment/AttachmentUnmarshaller", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/attachment/AttachmentUnmarshaller", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller", "attachments", "Ljava/util/Collection;");
@@ -45,15 +45,15 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljavax/activation/DataHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttachmentAsDataHandler", "(Ljava/lang/String;)Ljakarta/activation/DataHandler;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller", "attachments", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getAttachmentDataSource", "(Ljava/lang/String;Ljava/util/Collection;)Ljavax/activation/DataSource;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getAttachmentDataSource", "(Ljava/lang/String;Ljava/util/Collection;)Ljakarta/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -73,8 +73,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller", "attachments", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getAttachmentDataSource", "(Ljava/lang/String;Ljava/util/Collection;)Ljavax/activation/DataSource;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getAttachmentDataSource", "(Ljava/lang/String;Ljava/util/Collection;)Ljakarta/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);

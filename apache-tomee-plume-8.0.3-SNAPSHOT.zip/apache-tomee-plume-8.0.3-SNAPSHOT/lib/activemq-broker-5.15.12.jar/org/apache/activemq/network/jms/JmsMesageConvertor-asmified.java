@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "convert", "(Ljavax/jms/Message;)Ljavax/jms/Message;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "convert", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "convert", "(Ljavax/jms/Message;Ljavax/jms/Destination;)Ljavax/jms/Message;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "convert", "(Ljakarta/jms/Message;Ljakarta/jms/Destination;)Ljakarta/jms/Message;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setConnection", "(Ljavax/jms/Connection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setConnection", "(Ljakarta/jms/Connection;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

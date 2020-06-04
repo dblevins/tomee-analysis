@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/naming/factory/MailSessionFactory$1$1", null, "javax/mail/Authenticator", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/naming/factory/MailSessionFactory$1$1", null, "jakarta/mail/Authenticator", null);
 
-classWriter.visitOuterClass("org/apache/naming/factory/MailSessionFactory$1", "run", "()Ljavax/mail/Session;");
+classWriter.visitOuterClass("org/apache/naming/factory/MailSessionFactory$1", "run", "()Ljakarta/mail/Session;");
 
 classWriter.visitInnerClass("org/apache/naming/factory/MailSessionFactory$1", null, null, 0);
 
 classWriter.visitInnerClass("org/apache/naming/factory/MailSessionFactory$1$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$pa", "Ljavax/mail/PasswordAuthentication;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$pa", "Ljakarta/mail/PasswordAuthentication;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,25 +39,25 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$1", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/naming/factory/MailSessionFactory$1;Ljavax/mail/PasswordAuthentication;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/naming/factory/MailSessionFactory$1;Ljakarta/mail/PasswordAuthentication;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/naming/factory/MailSessionFactory$1$1", "this$1", "Lorg/apache/naming/factory/MailSessionFactory$1;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/naming/factory/MailSessionFactory$1$1", "val$pa", "Ljavax/mail/PasswordAuthentication;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/naming/factory/MailSessionFactory$1$1", "val$pa", "Ljakarta/mail/PasswordAuthentication;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/Authenticator", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/Authenticator", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getPasswordAuthentication", "()Ljavax/mail/PasswordAuthentication;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getPasswordAuthentication", "()Ljakarta/mail/PasswordAuthentication;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/naming/factory/MailSessionFactory$1$1", "val$pa", "Ljavax/mail/PasswordAuthentication;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/naming/factory/MailSessionFactory$1$1", "val$pa", "Ljakarta/mail/PasswordAuthentication;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

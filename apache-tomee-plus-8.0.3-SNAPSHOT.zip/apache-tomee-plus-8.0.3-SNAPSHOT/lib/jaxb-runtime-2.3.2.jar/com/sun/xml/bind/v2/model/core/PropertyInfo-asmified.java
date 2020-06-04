@@ -57,7 +57,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "id", "()Lcom
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExpectedMimeType", "()Ljavax/activation/MimeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExpectedMimeType", "()Ljakarta/activation/MimeType;", null, null);
 methodVisitor.visitEnd();
 }
 {

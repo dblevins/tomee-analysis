@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "destination", "Ljavax/jms/Destination;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "destination", "Ljakarta/jms/Destination;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,14 +41,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "consumerCount", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljavax/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljakarta/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/EventObject", "<init>", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEvent", "destination", "Ljavax/jms/Destination;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEvent", "destination", "Ljakarta/jms/Destination;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerEvent", "consumerId", "Lorg/apache/activemq/command/ConsumerId;");
@@ -70,10 +70,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDestination", "()Ljavax/jms/Destination;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDestination", "()Ljakarta/jms/Destination;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEvent", "destination", "Ljavax/jms/Destination;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/advisory/ConsumerEvent", "destination", "Ljakarta/jms/Destination;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

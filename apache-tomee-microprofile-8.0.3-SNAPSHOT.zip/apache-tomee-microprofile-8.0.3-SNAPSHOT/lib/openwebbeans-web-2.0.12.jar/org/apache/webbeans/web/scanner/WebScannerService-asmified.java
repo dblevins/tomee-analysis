@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,8 +53,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/corespi/scanner/AbstractMetaDataDiscovery", "init", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContext");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContext");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -90,7 +90,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/net/MalformedURLException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljakarta/servlet/ServletContext;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitInsn(RETURN);
@@ -100,9 +100,9 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/web/scanner/WebScannerService", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitLdcInsn("/WEB-INF/beans.xml");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();

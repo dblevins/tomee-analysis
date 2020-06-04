@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", null, "java/lang/Object", new String[] { "javax/ws/rs/container/ContainerRequestFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/ContainerRequestFilter" });
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,13 +43,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "permitAll", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/container/ResourceInfo;Ljava/util/concurrent/ConcurrentMap;Ljava/util/Set;Ljava/util/Set;)V", "(Ljavax/ws/rs/container/ResourceInfo;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/reflect/Method;Ljava/util/Set<Ljava/lang/String;>;>;Ljava/util/Set<Ljava/lang/reflect/Method;>;Ljava/util/Set<Ljava/lang/reflect/Method;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/container/ResourceInfo;Ljava/util/concurrent/ConcurrentMap;Ljava/util/Set;Ljava/util/Set;)V", "(Ljakarta/ws/rs/container/ResourceInfo;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/reflect/Method;Ljava/util/Set<Ljava/lang/String;>;>;Ljava/util/Set<Ljava/lang/reflect/Method;>;Ljava/util/Set<Ljava/lang/reflect/Method;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "rolesAllowed", "Ljava/util/concurrent/ConcurrentMap;");
@@ -64,13 +64,13 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "permitAll", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
@@ -80,22 +80,22 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "denyAll", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "forbidden", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "forbidden", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "rolesAllowed", "Ljava/util/concurrent/ConcurrentMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -106,7 +106,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getSecurityContext", "()Ljavax/ws/rs/core/SecurityContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getSecurityContext", "()Ljakarta/ws/rs/core/SecurityContext;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
@@ -115,7 +115,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()L
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "javax/ws/rs/container/ContainerRequestContext", "java/util/Set", "javax/ws/rs/core/SecurityContext", Opcodes.INTEGER, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "jakarta/ws/rs/container/ContainerRequestContext", "java/util/Set", "jakarta/ws/rs/core/SecurityContext", Opcodes.INTEGER, "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label4 = new Label();
@@ -126,7 +126,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/SecurityContext", "isUserInRole", "(Ljava/lang/String;)Z", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitInsn(ICONST_1);
@@ -141,7 +141,7 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "forbidden", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptor", "forbidden", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -149,13 +149,13 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "forbidden", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "forbidden", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitIntInsn(SIPUSH, 403);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "status", "(I)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljavax/ws/rs/core/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "status", "(I)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljakarta/ws/rs/core/Response;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

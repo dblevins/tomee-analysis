@@ -80,7 +80,7 @@ Label label4 = new Label();
 Label label5 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/transaction/xa/XAException");
 Label label6 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label6, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label3, label4, label6, "jakarta/transaction/SystemException");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/transaction/manager/RecoverTask", "namedXAResourceFactory", "Lorg/apache/geronimo/transaction/manager/NamedXAResourceFactory;");
@@ -121,7 +121,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/geronimo/transaction/
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/transaction/manager/RecoverTask", "recoverableTransactionManager", "Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;");

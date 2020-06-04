@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/ConstraintViolationImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/validation/ConstraintViolation<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/validation/ConstraintViolation", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/ConstraintViolationImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/validation/ConstraintViolation<TT;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintViolation", "java/io/Serializable" });
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertyPath", "Ljavax/validation/Path;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertyPath", "Ljakarta/validation/Path;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -63,7 +63,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "elementType", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constraintDescriptor", "Ljavax/validation/metadata/ConstraintDescriptor;", "Ljavax/validation/metadata/ConstraintDescriptor<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constraintDescriptor", "Ljakarta/validation/metadata/ConstraintDescriptor;", "Ljakarta/validation/metadata/ConstraintDescriptor<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -79,7 +79,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "hashCode", "I", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljavax/validation/Path;Ljava/lang/Object;Ljavax/validation/metadata/ConstraintDescriptor;Ljava/lang/Class;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", "(Ljava/lang/String;Ljava/lang/String;TT;Ljava/lang/Object;Ljavax/validation/Path;Ljava/lang/Object;Ljavax/validation/metadata/ConstraintDescriptor<*>;Ljava/lang/Class<TT;>;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljakarta/validation/Path;Ljava/lang/Object;Ljakarta/validation/metadata/ConstraintDescriptor;Ljava/lang/Class;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", "(Ljava/lang/String;Ljava/lang/String;TT;Ljava/lang/Object;Ljakarta/validation/Path;Ljava/lang/Object;Ljakarta/validation/metadata/ConstraintDescriptor<*>;Ljava/lang/Class<TT;>;Ljava/lang/annotation/ElementType;Ljava/lang/Object;[Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -97,7 +97,7 @@ methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "rootBeanClass", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "leafBean", "Ljava/lang/Object;");
@@ -106,7 +106,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "value", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljavax/validation/metadata/ConstraintDescriptor;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljakarta/validation/metadata/ConstraintDescriptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "elementType", "Ljava/lang/annotation/ElementType;");
@@ -242,19 +242,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyPath", "()Ljavax/validation/Path;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPropertyPath", "()Ljakarta/validation/Path;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", "()Ljavax/validation/metadata/ConstraintDescriptor<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", "()Ljakarta/validation/metadata/ConstraintDescriptor<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljavax/validation/metadata/ConstraintDescriptor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljakarta/validation/metadata/ConstraintDescriptor;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -267,7 +267,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ValidationException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ValidationException;")});
 methodVisitor.visitLdcInsn("Type %s is not supported");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -305,7 +305,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
@@ -358,9 +358,9 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/ConstraintViolationImpl");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljavax/validation/metadata/ConstraintDescriptor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljakarta/validation/metadata/ConstraintDescriptor;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljavax/validation/metadata/ConstraintDescriptor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "constraintDescriptor", "Ljakarta/validation/metadata/ConstraintDescriptor;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -394,9 +394,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationI
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "equals", "([Ljava/lang/Object;[Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljavax/validation/Path;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintViolationImpl", "propertyPath", "Ljakarta/validation/Path;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newTldScanner", "(Ljavax/servlet/ServletContext;ZZZ)Lorg/apache/jasper/servlet/TldScanner;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newTldScanner", "(Ljakarta/servlet/ServletContext;ZZZ)Lorg/apache/jasper/servlet/TldScanner;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/jasper/TomEETldScanner");
 methodVisitor.visitInsn(DUP);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jasper/TomEETldScanner", "<init>", "(Ljavax/servlet/ServletContext;ZZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jasper/TomEETldScanner", "<init>", "(Ljakarta/servlet/ServletContext;ZZZ)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();

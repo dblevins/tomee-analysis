@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "Ljava/lang/Object;Ljava/util/Iterator<Ljavax/xml/soap/DetailEntry;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/xml/soap/DetailEntry;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitOuterClass("com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "getDetailEntries", "()Ljava/util/Iterator;");
 
@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(0, "eachNode", "Ljava/util/Iterator;", "Lj
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "next", "Ljavax/xml/soap/SOAPElement;", null, null);
+fieldVisitor = classWriter.visitField(0, "next", "Ljakarta/xml/soap/SOAPElement;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "last", "Ljavax/xml/soap/SOAPElement;", null, null);
+fieldVisitor = classWriter.visitField(0, "last", "Ljakarta/xml/soap/SOAPElement;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,10 +59,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/im
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "eachNode", "Ljava/util/Iterator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -71,7 +71,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNext", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 Label label1 = new Label();
@@ -85,11 +85,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "eachNode", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/SOAPElement");
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/SOAPElement");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/soap/DetailEntry");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/soap/DetailEntry");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -97,12 +97,12 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitInsn(ICONST_1);
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/xml/soap/DetailEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/xml/soap/DetailEntry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "hasNext", "()Z", false);
@@ -132,14 +132,14 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/DetailEntry");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/DetailEntry");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -148,7 +148,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -158,7 +158,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "this$0", "Lcom/sun/xml/messaging/saaj/soap/impl/DetailImpl;");
@@ -167,7 +167,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/im
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljavax/xml/soap/SOAPElement;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "last", "Ljakarta/xml/soap/SOAPElement;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -176,7 +176,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "()Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", "next", "()Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

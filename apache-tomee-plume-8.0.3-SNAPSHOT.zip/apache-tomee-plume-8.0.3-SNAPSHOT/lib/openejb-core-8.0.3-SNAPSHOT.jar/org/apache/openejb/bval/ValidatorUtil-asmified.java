@@ -36,50 +36,50 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validatorFactory", "()Ljavax/validation/ValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validatorFactory", "()Ljakarta/validation/ValidatorFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/naming/NamingException");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "lookupFactory", "()Ljavax/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "lookupFactory", "()Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/naming/NamingException"});
 methodVisitor.visitVarInsn(ASTORE, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "tryJndiLaterFactory", "()Ljavax/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "tryJndiLaterFactory", "()Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "lookupFactory", "()Ljavax/validation/ValidatorFactory;", null, new String[] { "javax/naming/NamingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "lookupFactory", "()Ljakarta/validation/ValidatorFactory;", null, new String[] { "javax/naming/NamingException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "javax/naming/InitialContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/naming/InitialContext", "<init>", "()V", false);
 methodVisitor.visitLdcInsn("java:comp/ValidatorFactory");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/naming/InitialContext", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ValidatorFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ValidatorFactory");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "tryJndiLaterFactory", "()Ljavax/validation/ValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "tryJndiLaterFactory", "()Ljakarta/validation/ValidatorFactory;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/ValidatorFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/ValidatorFactory;"));
 methodVisitor.visitLdcInsn("java:comp/ValidatorFactory");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "proxy", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ValidatorFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ValidatorFactory");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validator", "()Ljavax/validation/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validator", "()Ljakarta/validation/Validator;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -91,16 +91,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/naming/InitialContext", "<init>", "()V", false);
 methodVisitor.visitLdcInsn("java:comp/Validator");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/naming/InitialContext", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/Validator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/Validator");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/naming/NamingException"});
 methodVisitor.visitVarInsn(ASTORE, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/Validator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/Validator;"));
 methodVisitor.visitLdcInsn("java:comp/Validator");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "proxy", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/Validator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/Validator");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

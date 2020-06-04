@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "Snapshot", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

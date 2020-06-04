@@ -34,10 +34,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "build", "(Ljavax/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "build", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/ServiceProviderFinderFactory", "getServiceProviderFinder", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ServiceProviderFinder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/ServiceProviderFinderFactory", "getServiceProviderFinder", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ServiceProviderFinder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ServiceProviderFinder", "getServiceProviderList", "(Ljava/lang/String;)Ljava/util/List;", false);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/cdi/SafeguardEnabled$Literal", "Ljavax/enterprise/util/AnnotationLiteral<Lorg/apache/safeguard/impl/cdi/SafeguardEnabled;>;Lorg/apache/safeguard/impl/cdi/SafeguardEnabled;", "javax/enterprise/util/AnnotationLiteral", new String[] { "org/apache/safeguard/impl/cdi/SafeguardEnabled" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/safeguard/impl/cdi/SafeguardEnabled$Literal", "Ljakarta/enterprise/util/AnnotationLiteral<Lorg/apache/safeguard/impl/cdi/SafeguardEnabled;>;Lorg/apache/safeguard/impl/cdi/SafeguardEnabled;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "org/apache/safeguard/impl/cdi/SafeguardEnabled" });
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/cdi/SafeguardEnabled$Literal", "org/apache/safeguard/impl/cdi/SafeguardEnabled", "Literal", ACC_PUBLIC | ACC_STATIC);
 
@@ -38,7 +38,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

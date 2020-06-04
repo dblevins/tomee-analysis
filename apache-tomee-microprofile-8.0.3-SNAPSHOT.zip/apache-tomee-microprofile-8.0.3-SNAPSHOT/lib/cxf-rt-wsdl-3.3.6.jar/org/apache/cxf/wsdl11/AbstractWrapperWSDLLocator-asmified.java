@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", null, "java/lang/Object", new String[] { "javax/wsdl/xml/WSDLLocator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", null, "java/lang/Object", new String[] { "jakarta/wsdl/xml/WSDLLocator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ALLOWED_SCHEMES", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parent", "Ljavax/wsdl/xml/WSDLLocator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parent", "Ljakarta/wsdl/xml/WSDLLocator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(0, "fromParent", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/wsdl/xml/WSDLLocator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/wsdl/xml/WSDLLocator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -62,7 +62,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "wsdlUrl", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljavax/wsdl/xml/WSDLLocator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljakarta/wsdl/xml/WSDLLocator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -96,8 +96,8 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljavax/wsdl/xml/WSDLLocator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/xml/WSDLLocator", "close", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljakarta/wsdl/xml/WSDLLocator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/xml/WSDLLocator", "close", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -114,8 +114,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBaseInputSource", "()Lorg/xml/sax/InputSource;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljavax/wsdl/xml/WSDLLocator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/xml/WSDLLocator", "getBaseInputSource", "()Lorg/xml/sax/InputSource;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljakarta/wsdl/xml/WSDLLocator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/xml/WSDLLocator", "getBaseInputSource", "()Lorg/xml/sax/InputSource;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -230,10 +230,10 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljavax/wsdl/xml/WSDLLocator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljakarta/wsdl/xml/WSDLLocator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/xml/WSDLLocator", "getImportInputSource", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/xml/WSDLLocator", "getImportInputSource", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -281,8 +281,8 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljavax/wsdl/xml/WSDLLocator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/xml/WSDLLocator", "getLatestImportURI", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "parent", "Ljakarta/wsdl/xml/WSDLLocator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/xml/WSDLLocator", "getLatestImportURI", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

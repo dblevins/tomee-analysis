@@ -70,7 +70,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/eis/EISAccessor");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISLogin", "getProperties", "()Ljava/util/Properties;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "connectToDataSource", "(Lorg/eclipse/persistence/eis/EISAccessor;Ljava/util/Properties;)Ljavax/resource/cci/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "connectToDataSource", "(Lorg/eclipse/persistence/eis/EISAccessor;Ljava/util/Properties;)Ljakarta/resource/cci/Connection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -185,7 +185,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljavax/resource/cci/ConnectionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljakarta/resource/cci/ConnectionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/eis/EISConnectionSpec");
 methodVisitor.visitInsn(DUP);
@@ -193,7 +193,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/eis/EISCon
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljavax/resource/cci/ConnectionFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljakarta/resource/cci/ConnectionFactory;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISLogin", "setConnectionSpec", "(Lorg/eclipse/persistence/eis/EISConnectionSpec;)V", false);
@@ -202,7 +202,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljava/lang/String;Ljavax/resource/cci/ConnectionSpec;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljava/lang/String;Ljakarta/resource/cci/ConnectionSpec;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/eis/EISConnectionSpec");
 methodVisitor.visitInsn(DUP);
@@ -211,7 +211,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/eis/EISCon
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljavax/resource/cci/ConnectionSpec;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljakarta/resource/cci/ConnectionSpec;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISLogin", "setConnectionSpec", "(Lorg/eclipse/persistence/eis/EISConnectionSpec;)V", false);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljavax/resource/cci/ConnectionFactory;Ljavax/resource/cci/ConnectionSpec;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureConnectionSpec", "(Ljakarta/resource/cci/ConnectionFactory;Ljakarta/resource/cci/ConnectionSpec;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/eis/EISConnectionSpec");
 methodVisitor.visitInsn(DUP);
@@ -228,10 +228,10 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/eis/EISCon
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljavax/resource/cci/ConnectionFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljakarta/resource/cci/ConnectionFactory;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljavax/resource/cci/ConnectionSpec;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljakarta/resource/cci/ConnectionSpec;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISLogin", "setConnectionSpec", "(Lorg/eclipse/persistence/eis/EISConnectionSpec;)V", false);

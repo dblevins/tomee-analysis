@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "brokerService", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectorName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectorName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "destinationObjectNameMap", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/network/NetworkBridgeConfiguration;Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/broker/BrokerService;Lorg/apache/activemq/network/NetworkBridgeConfiguration;Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -69,7 +69,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanNetworkListener", "networkBridgeConfiguration", "Lorg/apache/activemq/network/NetworkBridgeConfiguration;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanNetworkListener", "connectorName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/MBeanNetworkListener", "connectorName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
@@ -108,17 +108,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/Net
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/MBeanNetworkListener", "createNetworkBridgeObjectName", "(Lorg/apache/activemq/network/NetworkBridge;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/MBeanNetworkListener", "createNetworkBridgeObjectName", "(Lorg/apache/activemq/network/NetworkBridge;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanNetworkListener", "brokerService", "Lorg/apache/activemq/broker/BrokerService;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getManagementContext", "()Lorg/apache/activemq/broker/jmx/ManagementContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/NetworkBridge", "setMbeanObjectName", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/NetworkBridge", "setMbeanObjectName", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/network/MBeanBridgeDestination");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -175,7 +175,7 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/NetworkBridge", "getMbeanObjectName", "()Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/NetworkBridge", "getMbeanObjectName", "()Ljakarta/management/ObjectName;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label3 = new Label();
@@ -184,9 +184,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanNetworkListener", "brokerService", "Lorg/apache/activemq/broker/BrokerService;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getManagementContext", "()Lorg/apache/activemq/broker/jmx/ManagementContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanNetworkListener", "destinationObjectNameMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -217,13 +217,13 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createNetworkBridgeObjectName", "(Lorg/apache/activemq/network/NetworkBridge;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createNetworkBridgeObjectName", "(Lorg/apache/activemq/network/NetworkBridge;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/MalformedObjectNameException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanNetworkListener", "connectorName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/MBeanNetworkListener", "connectorName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/NetworkBridge", "getRemoteAddress", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createNetworkBridgeObjectName", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/BrokerMBeanSupport", "createNetworkBridgeObjectName", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/compiler/TrimmedTagUnit", null, "org/apache/myfaces/view/facelets/compiler/TagUnit", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/myfaces/view/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/myfaces/view/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -33,7 +33,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/compiler/TagUnit", "<init>", "(Lorg/apache/myfaces/view/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/compiler/TagUnit", "<init>", "(Lorg/apache/myfaces/view/facelets/tag/TagLibrary;Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();

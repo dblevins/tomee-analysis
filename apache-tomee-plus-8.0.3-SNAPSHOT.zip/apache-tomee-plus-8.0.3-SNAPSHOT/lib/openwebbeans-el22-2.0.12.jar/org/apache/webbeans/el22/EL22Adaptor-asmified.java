@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOwbELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOwbELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/el22/WebBeansELResolver");
 methodVisitor.visitInsn(DUP);
@@ -44,12 +44,12 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOwbWrappedExpressionFactory", "(Ljavax/el/ExpressionFactory;)Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOwbWrappedExpressionFactory", "(Ljakarta/el/ExpressionFactory;)Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/el22/WrappedExpressionFactory");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/el22/WrappedExpressionFactory", "<init>", "(Ljavax/el/ExpressionFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/el22/WrappedExpressionFactory", "<init>", "(Ljakarta/el/ExpressionFactory;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

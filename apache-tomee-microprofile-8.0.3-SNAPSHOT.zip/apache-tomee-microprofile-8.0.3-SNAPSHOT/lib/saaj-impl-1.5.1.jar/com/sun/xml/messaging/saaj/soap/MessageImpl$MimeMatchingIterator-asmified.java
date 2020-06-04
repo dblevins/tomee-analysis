@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljavax/xml/soap/AttachmentPart;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/xml/soap/AttachmentPart;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "com/sun/xml/messaging/saaj/soap/MessageImpl", "MimeMatchingIterator", ACC_PRIVATE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "iter", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljavax/xml/soap/AttachmentPart;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "iter", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljakarta/xml/soap/AttachmentPart;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "headers", "Ljavax/xml/soap/MimeHeaders;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "headers", "Ljakarta/xml/soap/MimeHeaders;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nextAttachment", "Ljavax/xml/soap/AttachmentPart;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/MessageImpl;Ljavax/xml/soap/MimeHeaders;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/MessageImpl;Ljakarta/xml/soap/MimeHeaders;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -52,7 +52,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "headers", "Ljavax/xml/soap/MimeHeaders;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "headers", "Ljakarta/xml/soap/MimeHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl", "attachments", "Lcom/sun/xml/messaging/saaj/util/FinalArrayList;");
@@ -66,17 +66,17 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNext", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextMatch", "()Ljavax/xml/soap/AttachmentPart;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextMatch", "()Ljakarta/xml/soap/AttachmentPart;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitInsn(ICONST_1);
@@ -92,18 +92,18 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/xml/soap/AttachmentPart;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/xml/soap/AttachmentPart;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
@@ -113,7 +113,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/Me
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljavax/xml/soap/AttachmentPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "nextAttachment", "Ljakarta/xml/soap/AttachmentPart;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -123,7 +123,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "nextMatch", "()Ljavax/xml/soap/AttachmentPart;", null, null);
+methodVisitor = classWriter.visitMethod(0, "nextMatch", "()Ljakarta/xml/soap/AttachmentPart;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
@@ -140,8 +140,8 @@ methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/Attachme
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "headers", "Ljavax/xml/soap/MimeHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "hasAllHeaders", "(Ljavax/xml/soap/MimeHeaders;)Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "headers", "Ljakarta/xml/soap/MimeHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/AttachmentPartImpl", "hasAllHeaders", "(Ljakarta/xml/soap/MimeHeaders;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -170,7 +170,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "next", "()Ljavax/xml/soap/AttachmentPart;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator", "next", "()Ljakarta/xml/soap/AttachmentPart;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

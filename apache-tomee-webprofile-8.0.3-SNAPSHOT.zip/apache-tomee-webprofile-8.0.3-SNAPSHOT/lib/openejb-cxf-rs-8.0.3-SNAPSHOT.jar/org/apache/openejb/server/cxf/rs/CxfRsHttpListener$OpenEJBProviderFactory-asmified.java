@@ -106,7 +106,7 @@ methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitVarInsn(ILOAD, 15);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 16);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Context;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Context;"));
 methodVisitor.visitVarInsn(ALOAD, 16);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);

@@ -114,19 +114,19 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "validationMode", "()Ljavax/persistence/ValidationMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "validationMode", "()Ljakarta/persistence/ValidationMode;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/ValidationMode;", "AUTO");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/ValidationMode;", "AUTO");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cacheMode", "()Ljavax/persistence/SharedCacheMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cacheMode", "()Ljakarta/persistence/SharedCacheMode;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/SharedCacheMode;", "UNSPECIFIED");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/SharedCacheMode;", "UNSPECIFIED");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

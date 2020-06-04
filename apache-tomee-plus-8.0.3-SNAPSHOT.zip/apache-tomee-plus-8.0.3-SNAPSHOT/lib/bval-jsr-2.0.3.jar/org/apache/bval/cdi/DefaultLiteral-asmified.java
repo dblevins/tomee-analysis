@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/cdi/DefaultLiteral", "Lorg/apache/bval/cdi/EmptyAnnotationLiteral<Ljavax/enterprise/inject/Default;>;Ljavax/enterprise/inject/Default;", "org/apache/bval/cdi/EmptyAnnotationLiteral", new String[] { "javax/enterprise/inject/Default" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/cdi/DefaultLiteral", "Lorg/apache/bval/cdi/EmptyAnnotationLiteral<Ljakarta/enterprise/inject/Default;>;Ljakarta/enterprise/inject/Default;", "org/apache/bval/cdi/EmptyAnnotationLiteral", new String[] { "jakarta/enterprise/inject/Default" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -49,7 +49,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/Default;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/Default;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);

@@ -33,23 +33,23 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "roles", "Ljava/util/Set;", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "theSubject", "Ljavax/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "theSubject", "Ljakarta/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/security/auth/Subject;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/security/auth/Subject;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("prefix");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "<init>", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "<init>", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -57,17 +57,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "findPrincipal", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/security/Principal;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "findPrincipal", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/security/Principal;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "p", "Ljava/security/Principal;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "findRoles", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "findRoles", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "roles", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "theSubject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "theSubject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -118,10 +118,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findPrincipal", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/security/Principal;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findPrincipal", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/security/Principal;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label0 = new Label();
@@ -154,14 +154,14 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findRoles", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;", "(Ljavax/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set<Ljava/security/Principal;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "findRoles", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;", "(Ljakarta/security/auth/Subject;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set<Ljava/security/Principal;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label0 = new Label();
@@ -221,10 +221,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljavax/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljakarta/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "theSubject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl", "theSubject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

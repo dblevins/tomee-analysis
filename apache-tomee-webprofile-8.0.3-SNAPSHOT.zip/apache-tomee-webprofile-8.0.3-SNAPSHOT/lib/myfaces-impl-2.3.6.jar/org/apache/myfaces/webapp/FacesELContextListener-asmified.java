@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/webapp/FacesELContextListener", null, "java/lang/Object", new String[] { "javax/el/ELContextListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/webapp/FacesELContextListener", null, "java/lang/Object", new String[] { "jakarta/el/ELContextListener" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,21 +34,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextCreated", "(Ljavax/el/ELContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextCreated", "(Ljakarta/el/ELContextEvent;)V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContextEvent", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/context/FacesContext;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContextEvent", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/context/FacesContext;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getELContextListeners", "()[Ljavax/el/ELContextListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getELContextListeners", "()[Ljakarta/el/ELContextListener;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -57,7 +57,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/webapp/FacesELContextListener", "javax/el/ELContextEvent", "javax/faces/context/FacesContext", "[Ljavax/el/ELContextListener;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/webapp/FacesELContextListener", "jakarta/el/ELContextEvent", "jakarta/faces/context/FacesContext", "[Ljakarta/el/ELContextListener;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
@@ -67,7 +67,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/el/ELContextListener", "contextCreated", "(Ljavax/el/ELContextEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/el/ELContextListener", "contextCreated", "(Ljakarta/el/ELContextEvent;)V", true);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);

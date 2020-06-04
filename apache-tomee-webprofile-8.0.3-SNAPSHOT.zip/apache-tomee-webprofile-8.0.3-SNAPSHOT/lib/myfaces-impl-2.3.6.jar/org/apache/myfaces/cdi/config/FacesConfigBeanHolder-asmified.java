@@ -25,13 +25,13 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/faces/annotation/FacesConfig$Version", "javax/faces/annotation/FacesConfig", "Version", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/faces/annotation/FacesConfig$Version", "jakarta/faces/annotation/FacesConfig", "Version", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesConfigVersion", "Ljavax/faces/annotation/FacesConfig$Version;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesConfigVersion", "Ljakarta/faces/annotation/FacesConfig$Version;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,26 +41,26 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljavax/faces/annotation/FacesConfig$Version;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljakarta/faces/annotation/FacesConfig$Version;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesConfigVersion", "()Ljavax/faces/annotation/FacesConfig$Version;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesConfigVersion", "()Ljakarta/faces/annotation/FacesConfig$Version;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljavax/faces/annotation/FacesConfig$Version;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljakarta/faces/annotation/FacesConfig$Version;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFacesConfigVersion", "(Ljavax/faces/annotation/FacesConfig$Version;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFacesConfigVersion", "(Ljakarta/faces/annotation/FacesConfig$Version;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljavax/faces/annotation/FacesConfig$Version;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/cdi/config/FacesConfigBeanHolder", "facesConfigVersion", "Ljakarta/faces/annotation/FacesConfig$Version;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

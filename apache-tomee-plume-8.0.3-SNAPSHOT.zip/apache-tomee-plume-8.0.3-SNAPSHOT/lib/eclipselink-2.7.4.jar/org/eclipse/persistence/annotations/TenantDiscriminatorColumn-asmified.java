@@ -62,10 +62,10 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "discriminatorType", "()Ljavax/persistence/DiscriminatorType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "discriminatorType", "()Ljakarta/persistence/DiscriminatorType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/DiscriminatorType;", "STRING");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/DiscriminatorType;", "STRING");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

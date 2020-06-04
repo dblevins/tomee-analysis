@@ -33,12 +33,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "cachedInstan
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean;)V", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean;)V", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/enterprise/inject/spi/Bean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/enterprise/inject/spi/Bean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

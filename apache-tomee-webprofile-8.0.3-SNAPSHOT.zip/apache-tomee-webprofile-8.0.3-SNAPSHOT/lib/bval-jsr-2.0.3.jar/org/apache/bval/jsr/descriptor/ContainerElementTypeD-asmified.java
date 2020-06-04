@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "Lorg/apache/bval/jsr/descriptor/CascadableContainerD<Lorg/apache/bval/jsr/descriptor/CascadableContainerD<**>;Ljava/lang/reflect/AnnotatedType;>;Ljavax/validation/metadata/ContainerElementTypeDescriptor;", "org/apache/bval/jsr/descriptor/CascadableContainerD", new String[] { "javax/validation/metadata/ContainerElementTypeDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ContainerElementTypeD", "Lorg/apache/bval/jsr/descriptor/CascadableContainerD<Lorg/apache/bval/jsr/descriptor/CascadableContainerD<**>;Ljava/lang/reflect/AnnotatedType;>;Ljakarta/validation/metadata/ContainerElementTypeDescriptor;", "org/apache/bval/jsr/descriptor/CascadableContainerD", new String[] { "jakarta/validation/metadata/ContainerElementTypeDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForContainer", "org/apache/bval/jsr/descriptor/MetadataReader", "ForContainer", 0);
 

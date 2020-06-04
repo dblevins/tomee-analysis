@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "key", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "xaConnection", "Ljavax/sql
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentTransaction", "Ljavax/transaction/Transaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentTransaction", "Ljakarta/transaction/Transaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -69,16 +69,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "createdAt", "[Ljava/lang/Sta
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/sql/CommonDataSource;Ljakarta/transaction/TransactionManager;Ljakarta/transaction/TransactionSynchronizationRegistry;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "closed", "Z");
@@ -101,7 +101,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Throwable", "<init>", "(
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getStackTrace", "()[Ljava/lang/StackTraceElement;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "createdAt", "[Ljava/lang/StackTraceElement;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "javax/sql/CommonDataSource", "javax/transaction/TransactionManager", "javax/transaction/TransactionSynchronizationRegistry", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "javax/sql/CommonDataSource", "jakarta/transaction/TransactionManager", "jakarta/transaction/TransactionSynchronizationRegistry", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
@@ -130,9 +130,9 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/RollbackException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/RollbackException");
 Label label3 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label3, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label3, "jakarta/transaction/SystemException");
 Label label4 = new Label();
 Label label5 = new Label();
 Label label6 = new Label();
@@ -279,8 +279,8 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljavax/transaction/TransactionManager;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljakarta/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNONNULL, label16);
@@ -296,7 +296,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/m
 methodVisitor.visitLabel(label8);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/transaction/Transaction"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/transaction/Transaction"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "closeConnection", "(Z)V", false);
@@ -337,15 +337,15 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label16);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitJumpInsn(IFNULL, label18);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljavax/transaction/Transaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljakarta/transaction/Transaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "isUnderTransaction", "(I)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label18);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label34 = new Label();
@@ -366,17 +366,17 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label18);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 6);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "isUnderTransaction", "(I)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label20);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/sql/Connection;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "key", "Lorg/apache/openejb/resource/jdbc/managed/local/Key;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionSynchronizationRegistry", "getResource", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionSynchronizationRegistry", "getResource", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/Connection");
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -391,12 +391,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/jdbc/m
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "getXAResource", "()Ljavax/transaction/xa/XAResource;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "enlistResource", "(Ljavax/transaction/xa/XAResource;)Z", true);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -411,11 +411,11 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "jav
 Label label36 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label36);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/RollbackException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/RollbackException"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitJumpInsn(GOTO, label36);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitTypeInsn(NEW, "java/sql/SQLException");
 methodVisitor.visitInsn(DUP);
@@ -426,18 +426,18 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label36);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "key", "Lorg/apache/openejb/resource/jdbc/managed/local/Key;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionSynchronizationRegistry", "putResource", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionSynchronizationRegistry", "putResource", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization", "<init>", "(Lorg/apache/openejb/resource/jdbc/managed/local/ManagedConnection;Lorg/apache/openejb/resource/jdbc/managed/local/ManagedConnection$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "xaConnection", "Ljavax/sql/XAConnection;");
 Label label37 = new Label();
@@ -1132,7 +1132,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("ManagedConnection{transactionManager=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(", key=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -1142,7 +1142,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(", registry=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "registry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(", xaResource=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -1162,7 +1162,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(", currentTransaction=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/managed/local/ManagedConnection", "currentTransaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(", closed=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

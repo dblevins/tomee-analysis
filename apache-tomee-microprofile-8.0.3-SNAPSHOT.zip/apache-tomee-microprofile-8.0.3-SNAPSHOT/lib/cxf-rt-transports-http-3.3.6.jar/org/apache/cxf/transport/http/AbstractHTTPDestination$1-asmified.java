@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", null, "org/apache/cxf/io/DelegatingInputStream", null);
 
-classWriter.visitOuterClass("org/apache/cxf/transport/http/AbstractHTTPDestination", "setupMessage", "(Lorg/apache/cxf/message/Message;Ljavax/servlet/ServletConfig;Ljavax/servlet/ServletContext;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V");
+classWriter.visitOuterClass("org/apache/cxf/transport/http/AbstractHTTPDestination", "setupMessage", "(Lorg/apache/cxf/message/Message;Ljakarta/servlet/ServletConfig;Ljakarta/servlet/ServletContext;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V");
 
 classWriter.visitInnerClass("org/apache/cxf/transport/http/AbstractHTTPDestination$1", null, null, 0);
 
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$exchange",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$req", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$req", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/http/AbstractHTTPDestination;Ljava/io/InputStream;Lorg/apache/cxf/message/Exchange;Ljavax/servlet/http/HttpServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/http/AbstractHTTPDestination;Ljava/io/InputStream;Lorg/apache/cxf/message/Exchange;Ljakarta/servlet/http/HttpServletRequest;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -51,7 +51,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", "val$exchange", "Lorg/apache/cxf/message/Exchange;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", "val$req", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", "val$req", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/io/DelegatingInputStream", "<init>", "(Ljava/io/InputStream;)V", false);
@@ -85,8 +85,8 @@ methodVisitor.visitLdcInsn("HTTP.REQUEST");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/transport/http/HttpServletRequestSnapshot");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", "val$req", "Ljavax/servlet/http/HttpServletRequest;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http/HttpServletRequestSnapshot", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/AbstractHTTPDestination$1", "val$req", "Ljakarta/servlet/http/HttpServletRequest;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http/HttpServletRequestSnapshot", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);

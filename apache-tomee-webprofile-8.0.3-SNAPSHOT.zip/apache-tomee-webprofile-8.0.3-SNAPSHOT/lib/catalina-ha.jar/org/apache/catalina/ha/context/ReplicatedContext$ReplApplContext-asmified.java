@@ -58,10 +58,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getFacade", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getFacade", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "getFacade", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ApplicationContext", "getFacade", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

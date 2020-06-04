@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/QueryTimeoutException", null, "javax/persistence/QueryTimeoutException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/QueryTimeoutException", null, "jakarta/persistence/QueryTimeoutException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -72,19 +72,19 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "[Ljava/lang/Throwable;", "java/lang/Object", Opcodes.INTEGER}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "java/lang/Throwable"});
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/persistence/Query");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/persistence/Query");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/Query");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/Query");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "[Ljava/lang/Throwable;", "java/lang/Object", Opcodes.INTEGER}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "java/lang/Throwable"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "[Ljava/lang/Throwable;", "java/lang/Object", Opcodes.INTEGER}, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "java/lang/Throwable", "javax/persistence/Query"});
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/QueryTimeoutException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljavax/persistence/Query;)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "[Ljava/lang/Throwable;", "java/lang/Object", Opcodes.INTEGER}, 4, new Object[] {Opcodes.UNINITIALIZED_THIS, "java/lang/String", "java/lang/Throwable", "jakarta/persistence/Query"});
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/QueryTimeoutException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljakarta/persistence/Query;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/QueryTimeoutException", "_fatal", "Z");
@@ -195,7 +195,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/QueryTimeoutException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/QueryTimeoutException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintStream;)V", false);
@@ -208,7 +208,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/QueryTimeoutException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/QueryTimeoutException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintWriter;)V", false);

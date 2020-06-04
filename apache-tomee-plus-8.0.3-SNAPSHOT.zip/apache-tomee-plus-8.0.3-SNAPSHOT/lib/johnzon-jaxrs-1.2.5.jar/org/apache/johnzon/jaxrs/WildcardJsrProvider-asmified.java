@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jaxrs/WildcardJsrProvider", "Lorg/apache/johnzon/jaxrs/DelegateProvider<Ljavax/json/JsonStructure;>;", "org/apache/johnzon/jaxrs/DelegateProvider", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jaxrs/WildcardJsrProvider", "Lorg/apache/johnzon/jaxrs/DelegateProvider<Ljakarta/json/JsonStructure;>;", "org/apache/johnzon/jaxrs/DelegateProvider", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Produces;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Produces;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "*/json");
@@ -38,7 +38,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/Consumes;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/Consumes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, "*/json");
@@ -60,7 +60,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jaxrs/JsrMessag
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/jaxrs/JsrMessageBodyWriter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jaxrs/JsrMessageBodyWriter", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jaxrs/DelegateProvider", "<init>", "(Ljavax/ws/rs/ext/MessageBodyReader;Ljavax/ws/rs/ext/MessageBodyWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jaxrs/DelegateProvider", "<init>", "(Ljakarta/ws/rs/ext/MessageBodyReader;Ljakarta/ws/rs/ext/MessageBodyWriter;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

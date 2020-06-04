@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", null, "java/lang/Object", new String[] { "javax/websocket/SendHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", null, "java/lang/Object", new String[] { "jakarta/websocket/SendHandler" });
 
 classWriter.visitInnerClass("org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "org/apache/tomcat/websocket/WsRemoteEndpointImplBase", "BlockingSendHandler", ACC_PRIVATE | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/tomcat/websocket/WsRemoteEndpointImplBase$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "sendResult", "Ljavax/websocket/SendResult;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "sendResult", "Ljakarta/websocket/SendResult;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,26 +39,26 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljavax/websocket/SendResult;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljakarta/websocket/SendResult;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljavax/websocket/SendResult;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljakarta/websocket/SendResult;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljavax/websocket/SendResult;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljakarta/websocket/SendResult;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSendResult", "()Ljavax/websocket/SendResult;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSendResult", "()Ljakarta/websocket/SendResult;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljavax/websocket/SendResult;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler", "sendResult", "Ljakarta/websocket/SendResult;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

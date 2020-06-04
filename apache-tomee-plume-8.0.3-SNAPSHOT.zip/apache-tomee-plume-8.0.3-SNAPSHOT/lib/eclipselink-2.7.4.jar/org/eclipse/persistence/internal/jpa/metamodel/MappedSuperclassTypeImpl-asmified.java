@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/MappedSuperclassTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl<TX;>;Ljavax/persistence/metamodel/MappedSuperclassType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", new String[] { "javax/persistence/metamodel/MappedSuperclassType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metamodel/MappedSuperclassTypeImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl<TX;>;Ljakarta/persistence/metamodel/MappedSuperclassType<TX;>;", "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", new String[] { "jakarta/persistence/metamodel/MappedSuperclassType" });
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(3770722221322920646L));
@@ -121,7 +121,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", "getAttribute", "(Ljava/lang/String;)Ljavax/persistence/metamodel/Attribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metamodel/IdentifiableTypeImpl", "getAttribute", "(Ljava/lang/String;)Ljakarta/persistence/metamodel/Attribute;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl");
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label3 = new Label();
@@ -139,9 +139,9 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljavax/persistence/metamodel/Type$PersistenceType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljakarta/persistence/metamodel/Type$PersistenceType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljavax/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

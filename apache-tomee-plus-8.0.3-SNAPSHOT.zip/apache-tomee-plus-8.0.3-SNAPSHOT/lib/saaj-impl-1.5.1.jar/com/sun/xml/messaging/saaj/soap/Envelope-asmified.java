@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/messaging/saaj/soap/Envelope", null, "java/lang/Object", new String[] { "javax/xml/soap/SOAPEnvelope" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/messaging/saaj/soap/Envelope", null, "java/lang/Object", new String[] { "jakarta/xml/soap/SOAPEnvelope" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getContent", "()Ljavax/xml/transform/Source;", null, null);
@@ -37,11 +37,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "output", "(L
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setStaxBridge", "(Lcom/sun/xml/messaging/saaj/soap/StaxBridge;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setStaxBridge", "(Lcom/sun/xml/messaging/saaj/soap/StaxBridge;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStaxBridge", "()Lcom/sun/xml/messaging/saaj/soap/StaxBridge;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStaxBridge", "()Lcom/sun/xml/messaging/saaj/soap/StaxBridge;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

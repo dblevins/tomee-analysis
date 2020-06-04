@@ -689,7 +689,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/UpgradeToken", "<init>", "(Ljavax/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/UpgradeToken", "<init>", "(Ljakarta/servlet/http/HttpUpgradeHandler;Lorg/apache/tomcat/ContextBind;Lorg/apache/tomcat/InstanceManager;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/coyote/ActionCode", "UPGRADE", "Lorg/apache/coyote/ActionCode;");

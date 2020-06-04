@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ruleSet", "Lcom/sun/faces/ap
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "switches", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/faces/flow/SwitchNode;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "switches", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/flow/SwitchNode;>;", null);
 fieldVisitor.visitEnd();
 }
 {

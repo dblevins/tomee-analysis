@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "validateRsvB
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExtensionResponse", "()Ljavax/websocket/Extension;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExtensionResponse", "()Ljakarta/websocket/Extension;", null, null);
 methodVisitor.visitEnd();
 }
 {

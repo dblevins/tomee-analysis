@@ -45,7 +45,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.faces.FactoryFinder");
+methodVisitor.visitLdcInsn("jakarta.faces.FactoryFinder");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "classForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

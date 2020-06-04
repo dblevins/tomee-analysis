@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "Lorg/apache/openejb/cdi/OpenEJBLifecycle$InternalBean<Ljavax/servlet/http/HttpServletRequest;>;", "org/apache/openejb/cdi/OpenEJBLifecycle$InternalBean", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "Lorg/apache/openejb/cdi/OpenEJBLifecycle$InternalBean<Ljakarta/servlet/http/HttpServletRequest;>;", "org/apache/openejb/cdi/OpenEJBLifecycle$InternalBean", null);
 
 classWriter.visitInnerClass("org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "org/apache/openejb/cdi/OpenEJBLifecycle", "HttpServletRequestBean", ACC_PUBLIC | ACC_STATIC);
 
@@ -37,8 +37,8 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/w
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletRequest;"));
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletRequest;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/OpenEJBLifecycle$InternalBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
@@ -47,12 +47,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "types", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "types", "Ljava/util/Set;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpServletRequest;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean", "types", "Ljava/util/Set;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletRequest;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletRequest;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);

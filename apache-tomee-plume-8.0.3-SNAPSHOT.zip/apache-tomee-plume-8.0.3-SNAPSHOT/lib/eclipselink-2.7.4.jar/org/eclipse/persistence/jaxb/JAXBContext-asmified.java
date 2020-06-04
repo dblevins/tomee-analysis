@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBContext", null, "javax/xml/bind/JAXBContext", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBContext", null, "jakarta/xml/bind/JAXBContext", null);
 
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/JAXBContext$1", null, null, 0);
 
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RI_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "DEFAULT_VALIDATION_EVENT_HANDLER", "Ljavax/xml/bind/ValidationEventHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "DEFAULT_VALIDATION_EVENT_HANDLER", "Ljakarta/xml/bind/ValidationEventHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -105,7 +105,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jaxb/JAXBContext$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext$1", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/jaxb/JAXBContext", "DEFAULT_VALIDATION_EVENT_HANDLER", "Ljavax/xml/bind/ValidationEventHandler;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/jaxb/JAXBContext", "DEFAULT_VALIDATION_EVENT_HANDLER", "Ljakarta/xml/bind/ValidationEventHandler;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();
@@ -114,7 +114,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicBoolean");
 methodVisitor.visitInsn(DUP);
@@ -135,10 +135,10 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicBoolean");
 methodVisitor.visitInsn(DUP);
@@ -164,7 +164,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/oxm/XMLContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicBoolean");
 methodVisitor.visitInsn(DUP);
@@ -189,7 +189,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/oxm/XMLContext;Lorg/eclipse/persistence/jaxb/compiler/Generator;[Ljava/lang/reflect/Type;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicBoolean");
 methodVisitor.visitInsn(DUP);
@@ -217,7 +217,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/oxm/XMLContext;Lorg/eclipse/persistence/jaxb/compiler/Generator;[Lorg/eclipse/persistence/jaxb/TypeMappingInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicBoolean");
 methodVisitor.visitInsn(DUP);
@@ -380,7 +380,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "refreshMetadata", "()V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "refreshMetadata", "()V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext", "newContextState", "()Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;", false);
@@ -398,7 +398,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "newContextState", "()Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "newContextState", "()Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -483,7 +483,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljavax/xml/bind/SchemaOutputResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/jaxb/json/JsonSchemaOutputResolver");
@@ -494,7 +494,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jaxb/json/JsonSchemaOutputResolver");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/json/JsonSchemaOutputResolver", "getRootClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "generateJsonSchema", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "generateJsonSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/lang/Class;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -502,7 +502,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "generateSchema", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "generateSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/util/Map;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -510,7 +510,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateJsonSchema", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateJsonSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -530,7 +530,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext", "getJsonSchemaMarshaller", "()Ljavax/xml/bind/Marshaller;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/JAXBContext", "getJsonSchemaMarshaller", "()Ljakarta/xml/bind/Marshaller;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -545,13 +545,13 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn(".json");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/Marshaller", "marshal", "(Ljava/lang/Object;Ljavax/xml/transform/Result;)V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/Marshaller", "marshal", "(Ljava/lang/Object;Ljavax/xml/transform/Result;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext", "javax/xml/bind/SchemaOutputResolver", "java/lang/Class", "org/eclipse/persistence/internal/jaxb/json/schema/JsonSchemaGenerator", "org/eclipse/persistence/internal/jaxb/json/schema/model/JsonSchema"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext", "jakarta/xml/bind/SchemaOutputResolver", "java/lang/Class", "org/eclipse/persistence/internal/jaxb/json/schema/JsonSchemaGenerator", "org/eclipse/persistence/internal/jaxb/json/schema/model/JsonSchema"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "exceptionDuringSchemaGeneration", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/exceptions/JAXBException;", false);
@@ -563,7 +563,7 @@ methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getJsonSchemaMarshaller", "()Ljavax/xml/bind/Marshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getJsonSchemaMarshaller", "()Ljakarta/xml/bind/Marshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext", "jsonSchemaMarshaller", "Lorg/eclipse/persistence/jaxb/JAXBMarshaller;");
@@ -576,7 +576,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/internal/jaxb/json/schema/model/JsonSchema;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jaxb/JAXBContextFactory", "createContext", "([Ljava/lang/Class;Ljava/util/Map;)Ljavax/xml/bind/JAXBContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jaxb/JAXBContextFactory", "createContext", "([Ljava/lang/Class;Ljava/util/Map;)Ljakarta/xml/bind/JAXBContext;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jaxb/JAXBContext");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -609,7 +609,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/util/Map;)V", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/util/Map<Ljavax/xml/namespace/QName;Ljava/lang/reflect/Type;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/util/Map;)V", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/util/Map<Ljavax/xml/namespace/QName;Ljava/lang/reflect/Type;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -629,7 +629,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext", "javax/xml/bind/SchemaOutputResolver", "java/util/Map", "org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/jaxb/JAXBContext", "jakarta/xml/bind/SchemaOutputResolver", "java/util/Map", "org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "exceptionDuringSchemaGeneration", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/exceptions/JAXBException;", false);
@@ -658,7 +658,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "<init>", "(Ljavax/xml/bind/SchemaOutputResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver", "<init>", "(Ljakarta/xml/bind/SchemaOutputResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/schema/SchemaModelGenerator", "generateSchemas", "(Ljava/util/List;Lorg/eclipse/persistence/internal/oxm/schema/SchemaModelGeneratorProperties;Lorg/eclipse/persistence/internal/oxm/schema/SchemaModelOutputResolver;Ljava/util/Map;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(POP);
@@ -669,7 +669,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/eclipse/persiste
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Generator", "generateSchemaFiles", "(Ljavax/xml/bind/SchemaOutputResolver;Ljava/util/Map;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/compiler/Generator", "generateSchemaFiles", "(Ljakarta/xml/bind/SchemaOutputResolver;Ljava/util/Map;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -678,7 +678,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext", "contextState", "Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;");
@@ -689,7 +689,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUnmarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUnmarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/JAXBContext", "contextState", "Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;");
@@ -1066,7 +1066,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createJAXBElementFromXMLRoot", "(Lorg/eclipse/persistence/internal/oxm/Root;Ljava/lang/Class;)Ljavax/xml/bind/JAXBElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createJAXBElementFromXMLRoot", "(Lorg/eclipse/persistence/internal/oxm/Root;Ljava/lang/Class;)Ljakarta/xml/bind/JAXBElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/Root", "getObject", "()Ljava/lang/Object;", false);
@@ -1099,7 +1099,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/oxm/Root");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElementFromXMLRoot", "(Lorg/eclipse/persistence/internal/oxm/Root;Ljava/lang/Class;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElementFromXMLRoot", "(Lorg/eclipse/persistence/internal/oxm/Root;Ljava/lang/Class;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "set", "(ILjava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label3);
@@ -1127,7 +1127,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/Root", "getLocalName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -1136,16 +1136,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jaxb/WrappedValue");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jaxb/WrappedValue", "getValue", "()Ljava/lang/Object;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/bind/JAXBElement");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1186,7 +1186,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/xml/namespace/QName", "java/util/Map"}, 0, null);
@@ -1200,7 +1200,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
@@ -1208,23 +1208,23 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljavax/xml/bind/JAXBElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createJAXBElement", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)Ljakarta/xml/bind/JAXBElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1247,12 +1247,12 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/core/h
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
@@ -1291,7 +1291,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createBinder", "(Ljava/lang/Class;)Ljavax/xml/bind/Binder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createBinder", "(Ljava/lang/Class;)Ljakarta/xml/bind/Binder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1302,7 +1302,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createBinder", "()Ljavax/xml/bind/Binder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createBinder", "()Ljakarta/xml/bind/Binder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createBinder", "()Lorg/eclipse/persistence/jaxb/JAXBBinder;", false);
@@ -1311,7 +1311,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createMarshaller", "()Ljavax/xml/bind/Marshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createMarshaller", "()Ljakarta/xml/bind/Marshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createMarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBMarshaller;", false);
@@ -1320,7 +1320,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createUnmarshaller", "()Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", false);
@@ -1329,7 +1329,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createValidator", "()Ljavax/xml/bind/Validator;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createValidator", "()Ljakarta/xml/bind/Validator;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createValidator", "()Lorg/eclipse/persistence/jaxb/JAXBValidator;", false);
@@ -1338,7 +1338,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createJAXBIntrospector", "()Ljavax/xml/bind/JAXBIntrospector;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createJAXBIntrospector", "()Ljakarta/xml/bind/JAXBIntrospector;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBContext", "createJAXBIntrospector", "()Lorg/eclipse/persistence/jaxb/JAXBIntrospector;", false);

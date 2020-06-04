@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extensions", "Lj
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extensionClasses", "Ljava/util/Set;", "Ljava/util/Set<Ljava/lang/Class<+Ljavax/enterprise/inject/spi/Extension;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "extensionClasses", "Ljava/util/Set;", "Ljava/util/Set<Ljava/lang/Class<+Ljakarta/enterprise/inject/spi/Extension;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -113,7 +113,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Set"}, 0, 
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ExtensionLoader", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getLoaderService", "()Lorg/apache/webbeans/spi/LoaderService;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/Extension;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/Extension;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/LoaderService", "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/List;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -129,7 +129,7 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Extension");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Extension");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -152,7 +152,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "info", "(Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/enterprise/inject/spi/Extension"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/enterprise/inject/spi/Extension"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ExtensionLoader", "extensionClasses", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -169,18 +169,18 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ExtensionLoader", "addExtension", "(Ljavax/enterprise/inject/spi/Extension;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ExtensionLoader", "addExtension", "(Ljakarta/enterprise/inject/spi/Extension;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/enterprise/inject/spi/DefinitionException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/enterprise/inject/spi/DefinitionException");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/enterprise/inject/spi/DeploymentException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/enterprise/inject/spi/DeploymentException");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitLabel(label8);
@@ -217,7 +217,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addExtension", "(Ljavax/enterprise/inject/spi/Extension;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addExtension", "(Ljakarta/enterprise/inject/spi/Extension;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ExtensionLoader", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -238,7 +238,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ExtensionLoader", "manager", "Lorg/apache/webbeans/container/BeanManagerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addBean", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addBean", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);

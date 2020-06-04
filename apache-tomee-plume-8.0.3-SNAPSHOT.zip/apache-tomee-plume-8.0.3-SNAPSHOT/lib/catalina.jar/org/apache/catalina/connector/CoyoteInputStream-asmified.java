@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/connector/CoyoteInputStream", null, "javax/servlet/ServletInputStream", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/connector/CoyoteInputStream", null, "jakarta/servlet/ServletInputStream", null);
 
 classWriter.visitInnerClass("org/apache/catalina/connector/CoyoteInputStream$PrivilegedReadBuffer", "org/apache/catalina/connector/CoyoteInputStream", "PrivilegedReadBuffer", ACC_PRIVATE | ACC_STATIC);
 
@@ -46,7 +46,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/catalina/connector/InputBuffer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletInputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletInputStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/CoyoteInputStream", "ib", "Lorg/apache/catalina/connector/InputBuffer;");
@@ -392,12 +392,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadListener", "(Ljavax/servlet/ReadListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadListener", "(Ljakarta/servlet/ReadListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/CoyoteInputStream", "ib", "Lorg/apache/catalina/connector/InputBuffer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/InputBuffer", "setReadListener", "(Ljavax/servlet/ReadListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/InputBuffer", "setReadListener", "(Ljakarta/servlet/ReadListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

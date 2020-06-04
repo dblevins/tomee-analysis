@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "configure", "(Ljavax/ws/rs/client/ClientBuilder;)Ljavax/ws/rs/client/ClientBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "configure", "(Ljakarta/ws/rs/client/ClientBuilder;)Ljakarta/ws/rs/client/ClientBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/ServiceLoader", "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", false);
@@ -53,7 +53,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/opentracing/Cli
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider", "configure", "(Ljavax/ws/rs/client/ClientBuilder;)Ljavax/ws/rs/client/ClientBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider", "configure", "(Ljakarta/ws/rs/client/ClientBuilder;)Ljakarta/ws/rs/client/ClientBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "configure", "(Ljavax/ws/rs/client/ClientBuilder;Ljava/util/concurrent/ExecutorService;)Ljavax/ws/rs/client/ClientBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "configure", "(Ljakarta/ws/rs/client/ClientBuilder;Ljava/util/concurrent/ExecutorService;)Ljakarta/ws/rs/client/ClientBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/ServiceLoader", "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", false);
@@ -83,7 +83,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider", "configure", "(Ljavax/ws/rs/client/ClientBuilder;Ljava/util/concurrent/ExecutorService;)Ljavax/ws/rs/client/ClientBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider", "configure", "(Ljakarta/ws/rs/client/ClientBuilder;Ljava/util/concurrent/ExecutorService;)Ljakarta/ws/rs/client/ClientBuilder;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

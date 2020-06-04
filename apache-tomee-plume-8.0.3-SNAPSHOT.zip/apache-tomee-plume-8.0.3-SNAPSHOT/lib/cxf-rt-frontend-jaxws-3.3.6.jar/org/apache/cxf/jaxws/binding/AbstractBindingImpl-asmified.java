@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/jaxws/binding/AbstractBindingImpl", null, "java/lang/Object", new String[] { "javax/xml/ws/Binding" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/jaxws/binding/AbstractBindingImpl", null, "java/lang/Object", new String[] { "jakarta/xml/ws/Binding" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handlerChain", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handlerChain", "Ljava/util/List;", "Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlerChain", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlerChain", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlerChain", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

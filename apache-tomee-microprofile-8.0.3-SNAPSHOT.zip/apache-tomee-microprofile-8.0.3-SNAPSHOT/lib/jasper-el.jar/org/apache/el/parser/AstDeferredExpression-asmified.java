@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstDeferredExpression", "children", "[Lorg/apache/el/parser/Node;");
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstDeferredExpression", "children", "[Lorg/apache/el/parser/Node;");
@@ -61,7 +61,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstDeferredExpression", "children", "[Lorg/apache/el/parser/Node;");
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstDeferredExpression", "children", "[Lorg/apache/el/parser/Node;");

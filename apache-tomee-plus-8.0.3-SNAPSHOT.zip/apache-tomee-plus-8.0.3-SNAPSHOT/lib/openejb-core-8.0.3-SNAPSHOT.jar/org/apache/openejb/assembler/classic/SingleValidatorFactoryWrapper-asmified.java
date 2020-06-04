@@ -22,40 +22,40 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", null, "java/lang/Object", new String[] { "javax/validation/ValidatorFactory", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", null, "java/lang/Object", new String[] { "jakarta/validation/ValidatorFactory", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "logger", "Lorg/apache/openejb/util/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE | ACC_TRANSIENT, "factory", "Ljavax/validation/ValidatorFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE | ACC_TRANSIENT, "factory", "Ljakarta/validation/ValidatorFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/validation/ValidatorFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/validation/ValidatorFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidator", "()Ljavax/validation/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidator", "()Ljakarta/validation/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getValidator", "()Ljavax/validation/Validator;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getValidator", "()Ljakarta/validation/Validator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "factory", "()Ljavax/validation/ValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "factory", "()Ljakarta/validation/ValidatorFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -68,7 +68,7 @@ methodVisitor.visitTryCatchBlock(label3, label4, label5, null);
 Label label6 = new Label();
 methodVisitor.visitTryCatchBlock(label5, label6, label5, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -77,13 +77,13 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label8);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "lookupFactory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/bval/ValidatorUtil", "lookupFactory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
@@ -111,47 +111,47 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "usingContext", "()Ljavax/validation/ValidatorContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "usingContext", "()Ljakarta/validation/ValidatorContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "usingContext", "()Ljavax/validation/ValidatorContext;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "usingContext", "()Ljakarta/validation/ValidatorContext;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageInterpolator", "()Ljavax/validation/MessageInterpolator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageInterpolator", "()Ljakarta/validation/MessageInterpolator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getMessageInterpolator", "()Ljavax/validation/MessageInterpolator;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getMessageInterpolator", "()Ljakarta/validation/MessageInterpolator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTraversableResolver", "()Ljavax/validation/TraversableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTraversableResolver", "()Ljakarta/validation/TraversableResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getTraversableResolver", "()Ljavax/validation/TraversableResolver;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getTraversableResolver", "()Ljakarta/validation/TraversableResolver;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorFactory", "()Ljavax/validation/ConstraintValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorFactory", "()Ljakarta/validation/ConstraintValidatorFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getConstraintValidatorFactory", "()Ljavax/validation/ConstraintValidatorFactory;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getConstraintValidatorFactory", "()Ljakarta/validation/ConstraintValidatorFactory;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -160,29 +160,29 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClockProvider", "()Ljavax/validation/ClockProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClockProvider", "()Ljakarta/validation/ClockProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljavax/validation/ValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "getClockProvider", "()Ljavax/validation/ClockProvider;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "()Ljakarta/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "getClockProvider", "()Ljakarta/validation/ClockProvider;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -191,15 +191,15 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljavax/validation/ValidatorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper", "factory", "Ljakarta/validation/ValidatorFactory;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "close", "()V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/validation/ValidatorFactory"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/validation/ValidatorFactory"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

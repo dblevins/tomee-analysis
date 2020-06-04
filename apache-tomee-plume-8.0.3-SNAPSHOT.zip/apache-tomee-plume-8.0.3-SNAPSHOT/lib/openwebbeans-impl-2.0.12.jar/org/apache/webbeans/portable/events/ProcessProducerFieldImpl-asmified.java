@@ -22,51 +22,51 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/ProcessBeanImpl<TT;>;Ljavax/enterprise/inject/spi/ProcessProducerField<TX;TT;>;", "org/apache/webbeans/portable/events/ProcessBeanImpl", new String[] { "javax/enterprise/inject/spi/ProcessProducerField" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "<X:Ljava/lang/Object;T:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/ProcessBeanImpl<TT;>;Ljakarta/enterprise/inject/spi/ProcessProducerField<TX;TT;>;", "org/apache/webbeans/portable/events/ProcessBeanImpl", new String[] { "jakarta/enterprise/inject/spi/ProcessProducerField" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedField", "Ljavax/enterprise/inject/spi/AnnotatedField;", "Ljavax/enterprise/inject/spi/AnnotatedField<TX;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedField", "Ljakarta/enterprise/inject/spi/AnnotatedField;", "Ljakarta/enterprise/inject/spi/AnnotatedField<TX;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;", "Ljavax/enterprise/inject/spi/AnnotatedParameter<TX;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;", "Ljakarta/enterprise/inject/spi/AnnotatedParameter<TX;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/component/ProducerFieldBean;Ljavax/enterprise/inject/spi/AnnotatedField;Ljavax/enterprise/inject/spi/AnnotatedParameter;)V", "(Lorg/apache/webbeans/component/ProducerFieldBean<TT;>;Ljavax/enterprise/inject/spi/AnnotatedField<TX;>;Ljavax/enterprise/inject/spi/AnnotatedParameter<TX;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/component/ProducerFieldBean;Ljakarta/enterprise/inject/spi/AnnotatedField;Ljakarta/enterprise/inject/spi/AnnotatedParameter;)V", "(Lorg/apache/webbeans/component/ProducerFieldBean<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedField<TX;>;Ljakarta/enterprise/inject/spi/AnnotatedParameter<TX;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessBeanImpl", "<init>", "(Ljavax/enterprise/inject/spi/Bean;Ljavax/enterprise/inject/spi/Annotated;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessBeanImpl", "<init>", "(Ljakarta/enterprise/inject/spi/Bean;Ljakarta/enterprise/inject/spi/Annotated;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedField", "Ljavax/enterprise/inject/spi/AnnotatedField;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedField", "Ljakarta/enterprise/inject/spi/AnnotatedField;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedProducerField", "()Ljavax/enterprise/inject/spi/AnnotatedField;", "()Ljavax/enterprise/inject/spi/AnnotatedField<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedProducerField", "()Ljakarta/enterprise/inject/spi/AnnotatedField;", "()Ljakarta/enterprise/inject/spi/AnnotatedField<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedField", "Ljavax/enterprise/inject/spi/AnnotatedField;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedField", "Ljakarta/enterprise/inject/spi/AnnotatedField;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedDisposedParameter", "()Ljavax/enterprise/inject/spi/AnnotatedParameter;", "()Ljavax/enterprise/inject/spi/AnnotatedParameter<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedDisposedParameter", "()Ljakarta/enterprise/inject/spi/AnnotatedParameter;", "()Ljakarta/enterprise/inject/spi/AnnotatedParameter<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedParameter", "Ljavax/enterprise/inject/spi/AnnotatedParameter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessProducerFieldImpl", "annotatedParameter", "Ljakarta/enterprise/inject/spi/AnnotatedParameter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

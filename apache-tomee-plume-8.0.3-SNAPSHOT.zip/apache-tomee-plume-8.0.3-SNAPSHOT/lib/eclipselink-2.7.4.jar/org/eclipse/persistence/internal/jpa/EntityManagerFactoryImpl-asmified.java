@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", null, "java/lang/Object", new String[] { "javax/persistence/EntityManagerFactory", "javax/persistence/PersistenceUnitUtil", "org/eclipse/persistence/jpa/JpaEntityManagerFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/EntityManagerFactory", "jakarta/persistence/PersistenceUnitUtil", "org/eclipse/persistence/jpa/JpaEntityManagerFactory" });
 
 classWriter.visitInnerClass("org/eclipse/persistence/sessions/UnitOfWork$CommitOrderType", "org/eclipse/persistence/sessions/UnitOfWork", "CommitOrderType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
@@ -476,51 +476,51 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "()Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "()Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljava/util/Map;)Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljava/util/Map;)Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljavax/persistence/SynchronizationType;)Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljakarta/persistence/SynchronizationType;)Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljavax/persistence/SynchronizationType;Ljava/util/Map;)Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEntityManager", "(Ljakarta/persistence/SynchronizationType;Ljava/util/Map;)Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -559,7 +559,7 @@ methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "java/util/Map", "javax/persistence/SynchronizationType", "org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "java/lang/String", "org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "java/util/Map"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "java/util/Map", "jakarta/persistence/SynchronizationType", "org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "java/lang/String", "org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "java/util/Map"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label3);
@@ -584,7 +584,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "createEntityManagerImpl", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "createEntityManagerImpl", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)Lorg/eclipse/persistence/internal/jpa/EntityManagerImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
@@ -641,22 +641,22 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlushMode", "()Ljavax/persistence/FlushModeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlushMode", "()Ljakarta/persistence/FlushModeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getFlushMode", "()Ljavax/persistence/FlushModeType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getFlushMode", "()Ljakarta/persistence/FlushModeType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlushMode", "(Ljavax/persistence/FlushModeType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlushMode", "(Ljakarta/persistence/FlushModeType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "setFlushMode", "(Ljavax/persistence/FlushModeType;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "setFlushMode", "(Ljakarta/persistence/FlushModeType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -714,11 +714,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitUtil", "()Ljavax/persistence/PersistenceUnitUtil;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitUtil", "()Ljakarta/persistence/PersistenceUnitUtil;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getPersistenceUnitUtil", "()Ljavax/persistence/PersistenceUnitUtil;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getPersistenceUnitUtil", "()Ljakarta/persistence/PersistenceUnitUtil;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -798,11 +798,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCache", "()Ljavax/persistence/Cache;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCache", "()Ljakarta/persistence/Cache;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getCache", "()Ljavax/persistence/Cache;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getCache", "()Ljakarta/persistence/Cache;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -828,32 +828,32 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCriteriaBuilder", "()Ljavax/persistence/criteria/CriteriaBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCriteriaBuilder", "()Ljakarta/persistence/criteria/CriteriaBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getCriteriaBuilder", "()Ljavax/persistence/criteria/CriteriaBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getCriteriaBuilder", "()Ljakarta/persistence/criteria/CriteriaBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetamodel", "()Ljavax/persistence/metamodel/Metamodel;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetamodel", "()Ljakarta/persistence/metamodel/Metamodel;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getMetamodel", "()Ljavax/persistence/metamodel/Metamodel;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getMetamodel", "()Ljakarta/persistence/metamodel/Metamodel;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMetamodel", "(Ljavax/persistence/metamodel/Metamodel;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMetamodel", "(Ljakarta/persistence/metamodel/Metamodel;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "delegate", "Lorg/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "setMetamodel", "(Ljavax/persistence/metamodel/Metamodel;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "setMetamodel", "(Ljakarta/persistence/metamodel/Metamodel;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -914,11 +914,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedQuery", "(Ljava/lang/String;Ljavax/persistence/Query;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedQuery", "(Ljava/lang/String;Ljakarta/persistence/Query;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/internal/jpa/QueryImpl;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/Query", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/Query", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/QueryImpl");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -927,14 +927,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/Da
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/queries/DatabaseQuery");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/QueryImpl", "lockMode", "Ljavax/persistence/LockModeType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/QueryImpl", "lockMode", "Ljakarta/persistence/LockModeType;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/queries/ObjectLevelReadQuery");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/QueryImpl", "lockMode", "Ljavax/persistence/LockModeType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/LockModeType", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/QueryImpl", "lockMode", "Ljakarta/persistence/LockModeType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/LockModeType", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl", "getServerSession", "()Lorg/eclipse/persistence/sessions/server/ServerSession;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/ObjectLevelReadQuery", "setLockModeType", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Z", false);
@@ -1058,14 +1058,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/persistence/PersistenceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/persistence/PersistenceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("unable_to_unwrap_jpa");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/EntityManagerFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/EntityManagerFactory;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
@@ -1074,13 +1074,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/localization/ExceptionLocalization", "buildMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/PersistenceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/PersistenceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedEntityGraph", "(Ljava/lang/String;Ljavax/persistence/EntityGraph;)V", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljavax/persistence/EntityGraph<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNamedEntityGraph", "(Ljava/lang/String;Ljakarta/persistence/EntityGraph;)V", "<T:Ljava/lang/Object;>(Ljava/lang/String;Ljakarta/persistence/EntityGraph<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/EntityGraphImpl");

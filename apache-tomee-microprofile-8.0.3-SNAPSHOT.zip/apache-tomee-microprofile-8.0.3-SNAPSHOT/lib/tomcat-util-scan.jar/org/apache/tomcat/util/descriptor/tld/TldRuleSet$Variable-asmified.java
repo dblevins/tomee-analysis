@@ -176,9 +176,9 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toTagVariableInfo", "()Ljavax/servlet/jsp/tagext/TagVariableInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toTagVariableInfo", "()Ljakarta/servlet/jsp/tagext/TagVariableInfo;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/tagext/TagVariableInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/tagext/TagVariableInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable", "nameGiven", "Ljava/lang/String;");
@@ -190,7 +190,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable", "declare", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable", "scope", "I");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagVariableInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagVariableInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();

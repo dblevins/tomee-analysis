@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", null, "java/lang/Object", new String[] { "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "javax/xml/bind/ValidationEventLocator" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", null, "java/lang/Object", new String[] { "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "jakarta/xml/bind/ValidationEventLocator" });
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "Snapshot", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -80,23 +80,23 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "getPublicId", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "publicId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx", "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventLocator", "getOffset", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventLocator", "getOffset", "()I", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "offset", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventLocator", "getURL", "()Ljava/net/URL;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventLocator", "getURL", "()Ljava/net/URL;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "url", "Ljava/net/URL;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventLocator", "getObject", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventLocator", "getObject", "()Ljava/lang/Object;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "object", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventLocator", "getNode", "()Lorg/w3c/dom/Node;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventLocator", "getNode", "()Lorg/w3c/dom/Node;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot", "node", "Lorg/w3c/dom/Node;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
@@ -175,7 +175,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljavax/xml/bind/ValidationEventLocator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljakarta/xml/bind/ValidationEventLocator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);

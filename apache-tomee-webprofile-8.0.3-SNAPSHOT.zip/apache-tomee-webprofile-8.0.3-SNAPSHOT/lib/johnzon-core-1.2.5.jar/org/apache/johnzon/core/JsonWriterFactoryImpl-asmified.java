@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonWriterFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "javax/json/JsonWriterFactory" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonWriterFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "jakarta/json/JsonWriterFactory" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "UTF8_CHARSET", "Ljava/nio/charset/Charset;", null, null);
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "SUPPORTED_CONFIG_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "factory", "Ljavax/json/stream/JsonGeneratorFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "factory", "Ljakarta/json/stream/JsonGeneratorFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -50,27 +50,27 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterFactoryImpl", "internalConfig", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonGeneratorFactoryImpl", "<init>", "(Ljava/util/Map;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterFactoryImpl", "factory", "Ljavax/json/stream/JsonGeneratorFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonWriterFactoryImpl", "factory", "Ljakarta/json/stream/JsonGeneratorFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/Writer;)Ljavax/json/JsonWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/Writer;)Ljakarta/json/JsonWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonWriterImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterFactoryImpl", "factory", "Ljavax/json/stream/JsonGeneratorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonWriterFactoryImpl", "factory", "Ljakarta/json/stream/JsonGeneratorFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/stream/JsonGeneratorFactory", "createGenerator", "(Ljava/io/Writer;)Ljavax/json/stream/JsonGenerator;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "<init>", "(Ljavax/json/stream/JsonGenerator;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/stream/JsonGeneratorFactory", "createGenerator", "(Ljava/io/Writer;)Ljakarta/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonWriterImpl", "<init>", "(Ljakarta/json/stream/JsonGenerator;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/OutputStream;)Ljavax/json/JsonWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/OutputStream;)Ljakarta/json/JsonWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/OutputStreamWriter");
@@ -78,13 +78,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/johnzon/core/JsonWriterFactoryImpl", "UTF8_CHARSET", "Ljava/nio/charset/Charset;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/OutputStreamWriter", "<init>", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonWriterFactoryImpl", "createWriter", "(Ljava/io/Writer;)Ljavax/json/JsonWriter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonWriterFactoryImpl", "createWriter", "(Ljava/io/Writer;)Ljakarta/json/JsonWriter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Ljavax/json/JsonWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWriter", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Ljakarta/json/JsonWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/OutputStreamWriter");
@@ -92,7 +92,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/OutputStreamWriter", "<init>", "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonWriterFactoryImpl", "createWriter", "(Ljava/io/Writer;)Ljavax/json/JsonWriter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonWriterFactoryImpl", "createWriter", "(Ljava/io/Writer;)Ljakarta/json/JsonWriter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

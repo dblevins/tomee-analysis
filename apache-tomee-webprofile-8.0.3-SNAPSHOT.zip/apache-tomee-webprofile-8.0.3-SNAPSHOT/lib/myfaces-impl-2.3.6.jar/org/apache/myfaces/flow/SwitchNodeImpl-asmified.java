@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/SwitchNodeImpl", null, "javax/faces/flow/SwitchNode", new String[] { "org/apache/myfaces/flow/Freezable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/SwitchNodeImpl", null, "jakarta/faces/flow/SwitchNode", new String[] { "org/apache/myfaces/flow/Freezable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_defaultOutcome", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_defaultOutcomeEL", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_defaultOutcomeEL", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_id", "Ljava/lang/String;", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_cases", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_cases", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_unmodifiableCases", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_unmodifiableCases", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,7 +52,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/SwitchNode", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/SwitchNode", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_id", "Ljava/lang/String;");
@@ -71,7 +71,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/flow/SwitchCase;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCases", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/flow/SwitchCase;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_unmodifiableCases", "Ljava/util/List;");
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCase", "(Ljavax/faces/flow/SwitchCase;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCase", "(Ljakarta/faces/flow/SwitchCase;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/SwitchNodeImpl", "checkInitialized", "()V", false);
@@ -94,17 +94,17 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultOutcome", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultOutcome", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljakarta/el/ValueExpression;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
@@ -143,7 +143,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/flow/SwitchCase");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/flow/SwitchCase");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/myfaces/flow/Freezable");
@@ -189,19 +189,19 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcome", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultOutcome", "(Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultOutcome", "(Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/SwitchNodeImpl", "checkInitialized", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcomeEL", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/SwitchNodeImpl", "_defaultOutcome", "Ljava/lang/String;");

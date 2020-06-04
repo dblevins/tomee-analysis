@@ -35,15 +35,15 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dataRepresentati
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "readerProxy", "Ljavax/batch/api/chunk/ItemReader;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "readerProxy", "Ljakarta/batch/api/chunk/ItemReader;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "writerProxy", "Ljavax/batch/api/chunk/ItemWriter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "writerProxy", "Ljakarta/batch/api/chunk/ItemWriter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,19 +55,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jobInstanceID", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/batch/api/chunk/ItemReader;Ljavax/batch/api/chunk/ItemWriter;Ljavax/batch/api/chunk/CheckpointAlgorithm;JLjava/lang/String;Lorg/apache/batchee/spi/PersistenceManagerService;Lorg/apache/batchee/spi/DataRepresentationService;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/batch/api/chunk/ItemReader;Ljakarta/batch/api/chunk/ItemWriter;Ljakarta/batch/api/chunk/CheckpointAlgorithm;JLjava/lang/String;Lorg/apache/batchee/spi/PersistenceManagerService;Lorg/apache/batchee/spi/DataRepresentationService;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "readerProxy", "Ljavax/batch/api/chunk/ItemReader;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "readerProxy", "Ljakarta/batch/api/chunk/ItemReader;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "writerProxy", "Ljavax/batch/api/chunk/ItemWriter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "writerProxy", "Ljakarta/batch/api/chunk/ItemWriter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "stepId", "Ljava/lang/String;");
@@ -93,8 +93,8 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/CheckpointAlgorithm", "beginCheckpoint", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/CheckpointAlgorithm", "beginCheckpoint", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -122,8 +122,8 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/CheckpointAlgorithm", "endCheckpoint", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/CheckpointAlgorithm", "endCheckpoint", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -151,8 +151,8 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/CheckpointAlgorithm", "isReadyToCheckpoint", "()Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/CheckpointAlgorithm", "isReadyToCheckpoint", "()Z", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);
@@ -183,8 +183,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "dataRepresentationService", "Lorg/apache/batchee/spi/DataRepresentationService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "readerProxy", "Ljavax/batch/api/chunk/ItemReader;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/ItemReader", "checkpointInfo", "()Ljava/io/Serializable;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "readerProxy", "Ljakarta/batch/api/chunk/ItemReader;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/ItemReader", "checkpointInfo", "()Ljava/io/Serializable;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/batchee/spi/DataRepresentationService", "toInternalRepresentation", "(Ljava/lang/Object;)[B", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/container/impl/controller/chunk/CheckpointData");
@@ -216,8 +216,8 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "dataRepresentationService", "Lorg/apache/batchee/spi/DataRepresentationService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "writerProxy", "Ljavax/batch/api/chunk/ItemWriter;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/ItemWriter", "checkpointInfo", "()Ljava/io/Serializable;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "writerProxy", "Ljakarta/batch/api/chunk/ItemWriter;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/ItemWriter", "checkpointInfo", "()Ljava/io/Serializable;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/batchee/spi/DataRepresentationService", "toInternalRepresentation", "(Ljava/lang/Object;)[B", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/container/impl/controller/chunk/CheckpointData");
@@ -345,8 +345,8 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljavax/batch/api/chunk/CheckpointAlgorithm;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/CheckpointAlgorithm", "checkpointTimeout", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/chunk/CheckpointManager", "checkpointAlgorithm", "Ljakarta/batch/api/chunk/CheckpointAlgorithm;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/CheckpointAlgorithm", "checkpointTimeout", "()I", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);

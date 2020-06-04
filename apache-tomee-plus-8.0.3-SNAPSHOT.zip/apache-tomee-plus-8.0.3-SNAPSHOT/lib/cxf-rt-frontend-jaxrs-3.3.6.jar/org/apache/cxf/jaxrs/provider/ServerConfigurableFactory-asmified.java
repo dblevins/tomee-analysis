@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxrs/provider/ServerConfigurableFactory", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "create", "(Ljavax/ws/rs/core/FeatureContext;)Ljavax/ws/rs/core/Configurable;", "(Ljavax/ws/rs/core/FeatureContext;)Ljavax/ws/rs/core/Configurable<Ljavax/ws/rs/core/FeatureContext;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "create", "(Ljakarta/ws/rs/core/FeatureContext;)Ljakarta/ws/rs/core/Configurable;", "(Ljakarta/ws/rs/core/FeatureContext;)Ljakarta/ws/rs/core/Configurable<Ljakarta/ws/rs/core/FeatureContext;>;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

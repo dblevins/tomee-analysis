@@ -288,7 +288,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getBeanManagerImpl", "()Lorg/apache/webbeans/container/BeanManagerImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/inject/OWBInjector", "inject", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/inject/OWBInjector", "inject", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/testing/SingleApplicationComposerRunner", "APP", "Ljava/util/concurrent/atomic/AtomicReference;");

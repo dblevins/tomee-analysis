@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/jasper/el/ELContextImpl$1", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/jasper/el/ELContextImpl$1", null, "jakarta/el/FunctionMapper", null);
 
 classWriter.visitOuterClass("org/apache/jasper/el/ELContextImpl", null, null);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/jasper/el/ELContextImpl$1", null, null, 
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

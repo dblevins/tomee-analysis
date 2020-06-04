@@ -22,25 +22,25 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", null, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", new String[] { "javax/persistence/criteria/Predicate" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", null, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", new String[] { "jakarta/persistence/criteria/Predicate" });
 
-classWriter.visitInnerClass("javax/persistence/criteria/Predicate$BooleanOperator", "javax/persistence/criteria/Predicate", "BooleanOperator", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/criteria/Predicate$BooleanOperator", "jakarta/persistence/criteria/Predicate", "BooleanOperator", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "booloperator", "Ljavax/persistence/criteria/Predicate$BooleanOperator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "booloperator", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", "<T:Ljava/lang/Object;>(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List<Ljavax/persistence/criteria/Expression<*>;>;Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", "<T:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List<Ljakarta/persistence/criteria/Expression<*>;>;Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
@@ -57,8 +57,8 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "getOperator", "()Ljavax/persistence/criteria/Predicate$BooleanOperator;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "getOperator", "()Ljakarta/persistence/criteria/Predicate$BooleanOperator;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitInsn(ICONST_1);
@@ -73,16 +73,16 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOperator", "()Ljavax/persistence/criteria/Predicate$BooleanOperator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOperator", "()Ljakarta/persistence/criteria/Predicate$BooleanOperator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressions", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/criteria/Expression<Ljava/lang/Boolean;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressions", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/criteria/Expression<Ljava/lang/Boolean;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "expressions", "Ljava/util/List;");
@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "not", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "not", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -107,11 +107,11 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "OR", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "OR", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -120,11 +120,11 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/eclipse/persiste
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -146,14 +146,14 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "currentNode", "Lorg/eclipse/persistence/expressions/Expression;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/expressions/Expression", "not", "()Lorg/eclipse/persistence/expressions/Expression;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
@@ -164,11 +164,11 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOperator", "(Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setOperator", "(Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/PredicateImpl", "booloperator", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

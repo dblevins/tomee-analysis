@@ -40,7 +40,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljavax/faces/context/FacesContext;Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 5);

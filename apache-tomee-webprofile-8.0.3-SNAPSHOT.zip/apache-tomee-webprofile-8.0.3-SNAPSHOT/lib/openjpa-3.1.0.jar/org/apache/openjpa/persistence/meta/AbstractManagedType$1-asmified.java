@@ -28,7 +28,7 @@ classWriter.visitOuterClass("org/apache/openjpa/persistence/meta/AbstractManaged
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/PluralAttribute$CollectionType", "javax/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/PluralAttribute$CollectionType", "jakarta/persistence/metamodel/PluralAttribute", "CollectionType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I", null, null);
@@ -49,14 +49,14 @@ Label label6 = new Label();
 Label label7 = new Label();
 Label label8 = new Label();
 methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/NoSuchFieldError");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "values", "()[Ljavax/persistence/metamodel/PluralAttribute$CollectionType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "values", "()[Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitIntInsn(NEWARRAY, T_INT);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType$1", "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType$1", "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "COLLECTION", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label1);
@@ -67,8 +67,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType$1", "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "LIST", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label4);
@@ -79,8 +79,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/AbstractManagedType$1", "$SwitchMap$javax$persistence$metamodel$PluralAttribute$CollectionType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljavax/persistence/metamodel/PluralAttribute$CollectionType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "SET", "Ljakarta/persistence/metamodel/PluralAttribute$CollectionType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/PluralAttribute$CollectionType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label7);

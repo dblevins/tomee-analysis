@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/faces/config/configpopulator/JsfRIRuntimePopulator", null, "javax/faces/application/ApplicationConfigurationPopulator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/faces/config/configpopulator/JsfRIRuntimePopulator", null, "jakarta/faces/application/ApplicationConfigurationPopulator", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/ApplicationConfigurationPopulator", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/ApplicationConfigurationPopulator", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -399,7 +399,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.event.PostConstructViewMapEvent");
+methodVisitor.visitLdcInsn("jakarta.faces.event.PostConstructViewMapEvent");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -414,7 +414,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIViewRoot");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIViewRoot");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -453,7 +453,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.event.PreDestroyViewMapEvent");
+methodVisitor.visitLdcInsn("jakarta.faces.event.PreDestroyViewMapEvent");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -468,7 +468,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIViewRoot");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIViewRoot");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -496,7 +496,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.BigDecimal");
+methodVisitor.visitLdcInsn("jakarta.faces.BigDecimal");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -511,7 +511,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BigDecimalConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BigDecimalConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -535,7 +535,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.BigInteger");
+methodVisitor.visitLdcInsn("jakarta.faces.BigInteger");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -550,7 +550,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BigIntegerConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BigIntegerConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -574,7 +574,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Boolean");
+methodVisitor.visitLdcInsn("jakarta.faces.Boolean");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -589,7 +589,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BooleanConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BooleanConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -613,7 +613,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Byte");
+methodVisitor.visitLdcInsn("jakarta.faces.Byte");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -628,7 +628,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.ByteConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.ByteConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -652,7 +652,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Character");
+methodVisitor.visitLdcInsn("jakarta.faces.Character");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -667,7 +667,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.CharacterConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.CharacterConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -691,7 +691,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.DateTime");
+methodVisitor.visitLdcInsn("jakarta.faces.DateTime");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -706,7 +706,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.DateTimeConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.DateTimeConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -730,7 +730,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Double");
+methodVisitor.visitLdcInsn("jakarta.faces.Double");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -745,7 +745,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.DoubleConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.DoubleConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -769,7 +769,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Float");
+methodVisitor.visitLdcInsn("jakarta.faces.Float");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -784,7 +784,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.FloatConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.FloatConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -808,7 +808,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Integer");
+methodVisitor.visitLdcInsn("jakarta.faces.Integer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -823,7 +823,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.IntegerConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.IntegerConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -847,7 +847,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Long");
+methodVisitor.visitLdcInsn("jakarta.faces.Long");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -862,7 +862,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.LongConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.LongConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -886,7 +886,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Number");
+methodVisitor.visitLdcInsn("jakarta.faces.Number");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -901,7 +901,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.NumberConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.NumberConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -925,7 +925,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Short");
+methodVisitor.visitLdcInsn("jakarta.faces.Short");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -940,7 +940,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.ShortConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.ShortConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -979,7 +979,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BigDecimalConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BigDecimalConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1018,7 +1018,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BigIntegerConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BigIntegerConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1057,7 +1057,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.BooleanConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.BooleanConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1096,7 +1096,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.ByteConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.ByteConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1135,7 +1135,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.CharacterConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.CharacterConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1174,7 +1174,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.DoubleConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.DoubleConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1213,7 +1213,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.FloatConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.FloatConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1252,7 +1252,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.IntegerConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.IntegerConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1291,7 +1291,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.LongConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.LongConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1330,7 +1330,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.ShortConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.ShortConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1369,7 +1369,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.convert.EnumConverter");
+methodVisitor.visitLdcInsn("jakarta.faces.convert.EnumConverter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1432,7 +1432,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.behavior.AjaxBehavior");
+methodVisitor.visitLdcInsn("jakarta.faces.component.behavior.AjaxBehavior");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1456,7 +1456,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Bean");
+methodVisitor.visitLdcInsn("jakarta.faces.Bean");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1471,7 +1471,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.BeanValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.BeanValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1495,7 +1495,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.DoubleRange");
+methodVisitor.visitLdcInsn("jakarta.faces.DoubleRange");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1510,7 +1510,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.DoubleRangeValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.DoubleRangeValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1534,7 +1534,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Length");
+methodVisitor.visitLdcInsn("jakarta.faces.Length");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1549,7 +1549,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.LengthValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.LengthValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1573,7 +1573,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.LongRange");
+methodVisitor.visitLdcInsn("jakarta.faces.LongRange");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1588,7 +1588,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.LongRangeValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.LongRangeValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1612,7 +1612,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.RegularExpression");
+methodVisitor.visitLdcInsn("jakarta.faces.RegularExpression");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1627,7 +1627,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.RegexValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.RegexValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1651,7 +1651,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Required");
+methodVisitor.visitLdcInsn("jakarta.faces.Required");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1666,7 +1666,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.validator.RequiredValidator");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.RequiredValidator");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1924,7 +1924,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Composite");
+methodVisitor.visitLdcInsn("jakarta.faces.Composite");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -1963,7 +1963,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.ComponentResourceContainer");
+methodVisitor.visitLdcInsn("jakarta.faces.ComponentResourceContainer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2173,7 +2173,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Column");
+methodVisitor.visitLdcInsn("jakarta.faces.Column");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2188,7 +2188,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIColumn");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIColumn");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2212,7 +2212,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Command");
+methodVisitor.visitLdcInsn("jakarta.faces.Command");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2227,7 +2227,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UICommand");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UICommand");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2251,7 +2251,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Data");
+methodVisitor.visitLdcInsn("jakarta.faces.Data");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2266,7 +2266,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIData");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIData");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2290,7 +2290,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Form");
+methodVisitor.visitLdcInsn("jakarta.faces.Form");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2305,7 +2305,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIForm");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIForm");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2329,7 +2329,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Graphic");
+methodVisitor.visitLdcInsn("jakarta.faces.Graphic");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2344,7 +2344,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIGraphic");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIGraphic");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2368,7 +2368,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.ImportConstants");
+methodVisitor.visitLdcInsn("jakarta.faces.ImportConstants");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2383,7 +2383,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIImportConstants");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIImportConstants");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2407,7 +2407,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2422,7 +2422,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIInput");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIInput");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2446,7 +2446,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Message");
+methodVisitor.visitLdcInsn("jakarta.faces.Message");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2461,7 +2461,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIMessage");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIMessage");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2485,7 +2485,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2500,7 +2500,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIMessages");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIMessages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2524,7 +2524,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.NamingContainer");
+methodVisitor.visitLdcInsn("jakarta.faces.NamingContainer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2539,7 +2539,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UINamingContainer");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UINamingContainer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2563,7 +2563,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2578,7 +2578,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIOutput");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIOutput");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2602,7 +2602,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutcomeTarget");
+methodVisitor.visitLdcInsn("jakarta.faces.OutcomeTarget");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2617,7 +2617,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIOutcomeTarget");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIOutcomeTarget");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2641,7 +2641,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Panel");
+methodVisitor.visitLdcInsn("jakarta.faces.Panel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2656,7 +2656,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIPanel");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIPanel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2680,7 +2680,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.ViewParameter");
+methodVisitor.visitLdcInsn("jakarta.faces.ViewParameter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2695,7 +2695,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIViewParameter");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIViewParameter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2719,7 +2719,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.ViewAction");
+methodVisitor.visitLdcInsn("jakarta.faces.ViewAction");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2734,7 +2734,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIViewAction");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIViewAction");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2758,7 +2758,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Parameter");
+methodVisitor.visitLdcInsn("jakarta.faces.Parameter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2773,7 +2773,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIParameter");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIParameter");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2797,7 +2797,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectBoolean");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectBoolean");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2812,7 +2812,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UISelectBoolean");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UISelectBoolean");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2836,7 +2836,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectItem");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectItem");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2851,7 +2851,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UISelectItem");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UISelectItem");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2875,7 +2875,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectItems");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectItems");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2890,7 +2890,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UISelectItems");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UISelectItems");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2914,7 +2914,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectMany");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectMany");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2929,7 +2929,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UISelectMany");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UISelectMany");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2953,7 +2953,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectOne");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectOne");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2968,7 +2968,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UISelectOne");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UISelectOne");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -2992,7 +2992,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.ViewRoot");
+methodVisitor.visitLdcInsn("jakarta.faces.ViewRoot");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3007,7 +3007,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIViewRoot");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIViewRoot");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3031,7 +3031,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Websocket");
+methodVisitor.visitLdcInsn("jakarta.faces.Websocket");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3046,7 +3046,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.UIWebsocket");
+methodVisitor.visitLdcInsn("jakarta.faces.component.UIWebsocket");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3070,7 +3070,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlColumn");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlColumn");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3085,7 +3085,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlColumn");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlColumn");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3109,7 +3109,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlCommandButton");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlCommandButton");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3124,7 +3124,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlCommandButton");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlCommandButton");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3148,7 +3148,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlCommandLink");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlCommandLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3163,7 +3163,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlCommandLink");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlCommandLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3187,7 +3187,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlCommandScript");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlCommandScript");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3202,7 +3202,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlCommandScript");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlCommandScript");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3226,7 +3226,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlDataTable");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlDataTable");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3241,7 +3241,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlDataTable");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlDataTable");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3265,7 +3265,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlForm");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlForm");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3280,7 +3280,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlForm");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlForm");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3304,7 +3304,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlGraphicImage");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlGraphicImage");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3319,7 +3319,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlGraphicImage");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlGraphicImage");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3343,7 +3343,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlInputFile");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlInputFile");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3358,7 +3358,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlInputFile");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlInputFile");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3382,7 +3382,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlInputHidden");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlInputHidden");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3397,7 +3397,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlInputHidden");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlInputHidden");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3421,7 +3421,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlInputSecret");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlInputSecret");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3436,7 +3436,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlInputSecret");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlInputSecret");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3460,7 +3460,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlInputText");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlInputText");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3475,7 +3475,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlInputText");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlInputText");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3499,7 +3499,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlInputTextarea");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlInputTextarea");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3514,7 +3514,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlInputTextarea");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlInputTextarea");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3538,7 +3538,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlMessage");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlMessage");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3553,7 +3553,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlMessage");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlMessage");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3577,7 +3577,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlMessages");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlMessages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3592,7 +3592,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlMessages");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlMessages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3616,7 +3616,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutputFormat");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutputFormat");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3631,7 +3631,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutputFormat");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutputFormat");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3655,7 +3655,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutputLabel");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutputLabel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3670,7 +3670,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutputLabel");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutputLabel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3694,7 +3694,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutputLink");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutputLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3709,7 +3709,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutputLink");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutputLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3733,7 +3733,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutcomeTargetLink");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutcomeTargetLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3748,7 +3748,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutcomeTargetLink");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutcomeTargetLink");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3772,7 +3772,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutcomeTargetButton");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutcomeTargetButton");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3787,7 +3787,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutcomeTargetButton");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutcomeTargetButton");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3811,7 +3811,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlOutputText");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlOutputText");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3826,7 +3826,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlOutputText");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlOutputText");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3850,7 +3850,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlPanelGrid");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlPanelGrid");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3865,7 +3865,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlPanelGrid");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlPanelGrid");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3889,7 +3889,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlPanelGroup");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlPanelGroup");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3904,7 +3904,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlPanelGroup");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlPanelGroup");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3928,7 +3928,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectBooleanCheckbox");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectBooleanCheckbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3943,7 +3943,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectBooleanCheckbox");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectBooleanCheckbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3967,7 +3967,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectManyCheckbox");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectManyCheckbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -3982,7 +3982,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectManyCheckbox");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectManyCheckbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4006,7 +4006,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectManyListbox");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectManyListbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4021,7 +4021,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectManyListbox");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectManyListbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4045,7 +4045,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectManyMenu");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectManyMenu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4060,7 +4060,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectManyMenu");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectManyMenu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4084,7 +4084,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectOneListbox");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectOneListbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4099,7 +4099,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectOneListbox");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectOneListbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4123,7 +4123,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectOneMenu");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectOneMenu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4138,7 +4138,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectOneMenu");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectOneMenu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4162,7 +4162,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.HtmlSelectOneRadio");
+methodVisitor.visitLdcInsn("jakarta.faces.HtmlSelectOneRadio");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4177,7 +4177,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlSelectOneRadio");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlSelectOneRadio");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4201,7 +4201,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutputDoctype");
+methodVisitor.visitLdcInsn("jakarta.faces.OutputDoctype");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4216,7 +4216,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlDoctype");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlDoctype");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4240,7 +4240,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutputHead");
+methodVisitor.visitLdcInsn("jakarta.faces.OutputHead");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4255,7 +4255,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlHead");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlHead");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4279,7 +4279,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutputBody");
+methodVisitor.visitLdcInsn("jakarta.faces.OutputBody");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4294,7 +4294,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.component.html.HtmlBody");
+methodVisitor.visitLdcInsn("jakarta.faces.component.html.HtmlBody");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4323,7 +4323,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Command");
+methodVisitor.visitLdcInsn("jakarta.faces.Command");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4338,7 +4338,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Button");
+methodVisitor.visitLdcInsn("jakarta.faces.Button");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4377,7 +4377,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Command");
+methodVisitor.visitLdcInsn("jakarta.faces.Command");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4392,7 +4392,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Link");
+methodVisitor.visitLdcInsn("jakarta.faces.Link");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4431,7 +4431,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Command");
+methodVisitor.visitLdcInsn("jakarta.faces.Command");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4446,7 +4446,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.Script");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4485,7 +4485,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Data");
+methodVisitor.visitLdcInsn("jakarta.faces.Data");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4500,7 +4500,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Table");
+methodVisitor.visitLdcInsn("jakarta.faces.Table");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4539,7 +4539,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Form");
+methodVisitor.visitLdcInsn("jakarta.faces.Form");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4554,7 +4554,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Form");
+methodVisitor.visitLdcInsn("jakarta.faces.Form");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4593,7 +4593,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Graphic");
+methodVisitor.visitLdcInsn("jakarta.faces.Graphic");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4608,7 +4608,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Image");
+methodVisitor.visitLdcInsn("jakarta.faces.Image");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4647,7 +4647,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Panel");
+methodVisitor.visitLdcInsn("jakarta.faces.Panel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4701,7 +4701,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4716,7 +4716,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.File");
+methodVisitor.visitLdcInsn("jakarta.faces.File");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4755,7 +4755,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4770,7 +4770,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Hidden");
+methodVisitor.visitLdcInsn("jakarta.faces.Hidden");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4809,7 +4809,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4824,7 +4824,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Secret");
+methodVisitor.visitLdcInsn("jakarta.faces.Secret");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4863,7 +4863,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4878,7 +4878,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Text");
+methodVisitor.visitLdcInsn("jakarta.faces.Text");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4917,7 +4917,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Input");
+methodVisitor.visitLdcInsn("jakarta.faces.Input");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4932,7 +4932,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Textarea");
+methodVisitor.visitLdcInsn("jakarta.faces.Textarea");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4971,7 +4971,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Message");
+methodVisitor.visitLdcInsn("jakarta.faces.Message");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -4986,7 +4986,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Message");
+methodVisitor.visitLdcInsn("jakarta.faces.Message");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5025,7 +5025,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5040,7 +5040,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5079,7 +5079,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5094,7 +5094,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Format");
+methodVisitor.visitLdcInsn("jakarta.faces.Format");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5133,7 +5133,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5148,7 +5148,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Label");
+methodVisitor.visitLdcInsn("jakarta.faces.Label");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5187,7 +5187,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5202,7 +5202,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Link");
+methodVisitor.visitLdcInsn("jakarta.faces.Link");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5241,7 +5241,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutcomeTarget");
+methodVisitor.visitLdcInsn("jakarta.faces.OutcomeTarget");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5256,7 +5256,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Link");
+methodVisitor.visitLdcInsn("jakarta.faces.Link");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5295,7 +5295,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.OutcomeTarget");
+methodVisitor.visitLdcInsn("jakarta.faces.OutcomeTarget");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5310,7 +5310,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Button");
+methodVisitor.visitLdcInsn("jakarta.faces.Button");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5349,7 +5349,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5364,7 +5364,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Text");
+methodVisitor.visitLdcInsn("jakarta.faces.Text");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5403,7 +5403,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Panel");
+methodVisitor.visitLdcInsn("jakarta.faces.Panel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5418,7 +5418,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Grid");
+methodVisitor.visitLdcInsn("jakarta.faces.Grid");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5457,7 +5457,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Panel");
+methodVisitor.visitLdcInsn("jakarta.faces.Panel");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5472,7 +5472,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Group");
+methodVisitor.visitLdcInsn("jakarta.faces.Group");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5511,7 +5511,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectBoolean");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectBoolean");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5526,7 +5526,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Checkbox");
+methodVisitor.visitLdcInsn("jakarta.faces.Checkbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5565,7 +5565,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectMany");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectMany");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5580,7 +5580,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Checkbox");
+methodVisitor.visitLdcInsn("jakarta.faces.Checkbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5619,7 +5619,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectMany");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectMany");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5634,7 +5634,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Listbox");
+methodVisitor.visitLdcInsn("jakarta.faces.Listbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5673,7 +5673,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectMany");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectMany");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5688,7 +5688,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Menu");
+methodVisitor.visitLdcInsn("jakarta.faces.Menu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5727,7 +5727,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectOne");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectOne");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5742,7 +5742,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Listbox");
+methodVisitor.visitLdcInsn("jakarta.faces.Listbox");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5781,7 +5781,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectOne");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectOne");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5796,7 +5796,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Menu");
+methodVisitor.visitLdcInsn("jakarta.faces.Menu");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5835,7 +5835,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.SelectOne");
+methodVisitor.visitLdcInsn("jakarta.faces.SelectOne");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5850,7 +5850,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Radio");
+methodVisitor.visitLdcInsn("jakarta.faces.Radio");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5889,7 +5889,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.NamingContainer");
+methodVisitor.visitLdcInsn("jakarta.faces.NamingContainer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5904,7 +5904,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Composite");
+methodVisitor.visitLdcInsn("jakarta.faces.Composite");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5943,7 +5943,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5958,7 +5958,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.CompositeFacet");
+methodVisitor.visitLdcInsn("jakarta.faces.CompositeFacet");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -5997,7 +5997,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6051,7 +6051,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6105,7 +6105,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6120,7 +6120,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Doctype");
+methodVisitor.visitLdcInsn("jakarta.faces.Doctype");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6159,7 +6159,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6174,7 +6174,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Head");
+methodVisitor.visitLdcInsn("jakarta.faces.Head");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6213,7 +6213,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Output");
+methodVisitor.visitLdcInsn("jakarta.faces.Output");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6228,7 +6228,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Body");
+methodVisitor.visitLdcInsn("jakarta.faces.Body");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6267,7 +6267,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.Script");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);
@@ -6282,7 +6282,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createEl
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.Websocket");
+methodVisitor.visitLdcInsn("jakarta.faces.Websocket");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", true);
 methodVisitor.visitInsn(POP);

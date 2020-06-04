@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -79,8 +79,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/ee/RegistryManagedRuntime", "_registryName", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/RegistryManagedRuntime$TransactionManagerRegistryFacade", "<init>", "(Lorg/apache/openjpa/ee/RegistryManagedRuntime;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/RegistryManagedRuntime$TransactionManagerRegistryFacade", "<init>", "(Lorg/apache/openjpa/ee/RegistryManagedRuntime;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/ee/RegistryManagedRuntime", "_tm", "Lorg/apache/openjpa/ee/RegistryManagedRuntime$TransactionManagerRegistryFacade;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -105,9 +105,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "(Ljava/lang/Throwable;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/RegistryManagedRuntime", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "setRollbackOnly", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/RegistryManagedRuntime", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -140,7 +140,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionKey", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionKey", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/ee/RegistryManagedRuntime", "_tm", "Lorg/apache/openjpa/ee/RegistryManagedRuntime$TransactionManagerRegistryFacade;");
@@ -150,15 +150,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doNonTransactionalWork", "(Ljava/lang/Runnable;)V", null, new String[] { "javax/transaction/NotSupportedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doNonTransactionalWork", "(Ljava/lang/Runnable;)V", null, new String[] { "jakarta/transaction/NotSupportedException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/NotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/NotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/RegistryManagedRuntime", "_loc", "Lorg/apache/openjpa/lib/util/Localizer;");
 methodVisitor.visitLdcInsn("tsr-cannot-suspend");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/Localizer", "get", "(Ljava/lang/String;)Lorg/apache/openjpa/lib/util/Localizer$Message;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/Localizer$Message", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/NotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/NotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

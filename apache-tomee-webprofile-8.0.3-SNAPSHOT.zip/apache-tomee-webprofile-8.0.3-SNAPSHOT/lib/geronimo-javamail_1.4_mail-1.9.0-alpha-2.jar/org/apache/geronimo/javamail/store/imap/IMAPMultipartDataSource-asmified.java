@@ -22,24 +22,24 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", null, "javax/mail/internet/MimePartDataSource", new String[] { "javax/mail/MultipartDataSource" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", null, "jakarta/mail/internet/MimePartDataSource", new String[] { "jakarta/mail/MultipartDataSource" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parts", "[Ljavax/mail/BodyPart;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parts", "[Ljakarta/mail/BodyPart;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;Ljavax/mail/internet/MimePart;Ljava/lang/String;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;Ljakarta/mail/internet/MimePart;Ljava/lang/String;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimePartDataSource", "<init>", "(Ljavax/mail/internet/MimePart;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimePartDataSource", "<init>", "(Ljakarta/mail/internet/MimePart;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "parts", "[Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
 methodVisitor.visitInsn(ARRAYLENGTH);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/mail/BodyPart");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljavax/mail/BodyPart;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/mail/BodyPart");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljakarta/mail/BodyPart;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
@@ -63,12 +63,12 @@ Label label2 = new Label();
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljavax/mail/BodyPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljakarta/mail/BodyPart;");
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljavax/mail/BodyPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljakarta/mail/BodyPart;");
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/imap/IMAPMimeBodyPart");
 methodVisitor.visitInsn(DUP);
@@ -100,17 +100,17 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCount", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljavax/mail/BodyPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljakarta/mail/BodyPart;");
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBodyPart", "(I)Ljavax/mail/BodyPart;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBodyPart", "(I)Ljakarta/mail/BodyPart;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljavax/mail/BodyPart;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "parts", "[Ljakarta/mail/BodyPart;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitInsn(ARETURN);

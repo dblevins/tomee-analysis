@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listEntries", "Lorg/apache/m
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scopeValueExpression", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scopeValueExpression", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -282,7 +282,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljakarta/el/ValueExpression;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -304,10 +304,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedBeanScopeValueExpression", "(Ljavax/faces/context/FacesContext;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedBeanScopeValueExpression", "(Ljakarta/faces/context/FacesContext;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljakarta/el/ValueExpression;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -316,26 +316,26 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/impl/dig
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scope", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "javax/faces/context/FacesContext"}, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "javax/el/ValueExpression"});
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "jakarta/faces/context/FacesContext"}, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "jakarta/el/ValueExpression"});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl", "scopeValueExpression", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();

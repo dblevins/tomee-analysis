@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesConfigData", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfigData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesConfigData", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfigData;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

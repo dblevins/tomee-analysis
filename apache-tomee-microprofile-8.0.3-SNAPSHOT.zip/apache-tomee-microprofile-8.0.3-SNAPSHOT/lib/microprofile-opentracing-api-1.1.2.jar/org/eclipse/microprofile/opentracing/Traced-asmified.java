@@ -29,7 +29,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Document
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/InterceptorBinding;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/InterceptorBinding;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ annotationVisitor0.visit(null, Boolean.TRUE);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
@@ -68,7 +68,7 @@ annotationVisitor0.visit(null, "");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/util/Nonbinding;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/util/Nonbinding;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

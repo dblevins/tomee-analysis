@@ -41,11 +41,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rc", "Lorg/apache/cxf/jaxrs/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contentType", "Ljavax/ws/rs/core/MediaType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contentType", "Ljakarta/ws/rs/core/MediaType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "acceptTypes", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/core/MediaType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "acceptTypes", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/core/MediaType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -54,10 +54,10 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparatorBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljavax/ws/rs/core/MediaType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljakarta/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/core/MediaType", "WILDCARD_TYPE", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "acceptTypes", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -89,7 +89,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;ZLjavax/ws/rs/core/MediaType;Ljava/util/List;)V", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;ZLjavax/ws/rs/core/MediaType;Ljava/util/List<Ljavax/ws/rs/core/MediaType;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;ZLjakarta/ws/rs/core/MediaType;Ljava/util/List;)V", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;ZLjakarta/ws/rs/core/MediaType;Ljava/util/List<Ljakarta/ws/rs/core/MediaType;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -97,7 +97,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "<init>", "(Lorg/apache/cxf/message/Message;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "acceptTypes", "Ljava/util/List;");
@@ -145,10 +145,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/OperationReso
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "httpMethod", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljavax/ws/rs/core/MediaType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "contentType", "Ljakarta/ws/rs/core/MediaType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "acceptTypes", "Ljava/util/List;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "compare", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;ZLjava/lang/String;Ljavax/ws/rs/core/MediaType;Ljava/util/List;)I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfoComparator", "compare", "(Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;Lorg/apache/cxf/jaxrs/model/OperationResourceInfo;ZLjava/lang/String;Ljakarta/ws/rs/core/MediaType;Ljava/util/List;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();

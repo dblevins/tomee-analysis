@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Boolean;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "resolveLifecycleProviderFromService", "(Ljavax/faces/context/ExternalContext;)Z");
+classWriter.visitOuterClass("org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "resolveLifecycleProviderFromService", "(Ljakarta/faces/context/ExternalContext;)Z");
 
 classWriter.visitInnerClass("org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$extContext", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$extContext", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "this$0", "Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -55,8 +55,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Boolean;", null, new String[] { "java/lang/ClassNotFoundException", "java/lang/NoClassDefFoundError", "java/lang/InstantiationException", "java/lang/IllegalAccessException", "java/lang/reflect/InvocationTargetException", "java/security/PrivilegedActionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/ServiceProviderFinderFactory", "getServiceProviderFinder", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ServiceProviderFinder;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/ServiceProviderFinderFactory", "getServiceProviderFinder", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ServiceProviderFinder;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "LIFECYCLE_PROVIDER", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/spi/ServiceProviderFinder", "getServiceProviderList", "(Ljava/lang/String;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -78,8 +78,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "this$0", "Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "access$000", "(Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;Ljava/lang/String;Ljavax/faces/context/ExternalContext;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "access$000", "(Lorg/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory;Ljava/lang/String;Ljakarta/faces/context/ExternalContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/config/annotation/DiscoverableLifecycleProvider;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -94,8 +94,8 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/config/annotation/DiscoverableLifecycleProvider", "isAvailable", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory", "LIFECYCLE_PROVIDER_INSTANCE_KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);

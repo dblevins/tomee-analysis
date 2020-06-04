@@ -22,23 +22,23 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/logical/LogicalMessageContextImpl", null, "org/apache/cxf/jaxws/context/WrappedMessageContext", new String[] { "javax/xml/ws/handler/LogicalMessageContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/logical/LogicalMessageContextImpl", null, "org/apache/cxf/jaxws/context/WrappedMessageContext", new String[] { "jakarta/xml/ws/handler/LogicalMessageContext" });
 
-classWriter.visitInnerClass("javax/xml/ws/handler/MessageContext$Scope", "javax/xml/ws/handler/MessageContext", "Scope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/xml/ws/handler/MessageContext$Scope", "jakarta/xml/ws/handler/MessageContext", "Scope", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/message/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/ws/handler/MessageContext$Scope", "HANDLER", "Ljavax/xml/ws/handler/MessageContext$Scope;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Lorg/apache/cxf/message/Message;Ljavax/xml/ws/handler/MessageContext$Scope;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/ws/handler/MessageContext$Scope", "HANDLER", "Ljakarta/xml/ws/handler/MessageContext$Scope;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/context/WrappedMessageContext", "<init>", "(Lorg/apache/cxf/message/Message;Ljakarta/xml/ws/handler/MessageContext$Scope;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "()Ljavax/xml/ws/LogicalMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "()Ljakarta/xml/ws/LogicalMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/handler/logical/LogicalMessageImpl");
 methodVisitor.visitInsn(DUP);

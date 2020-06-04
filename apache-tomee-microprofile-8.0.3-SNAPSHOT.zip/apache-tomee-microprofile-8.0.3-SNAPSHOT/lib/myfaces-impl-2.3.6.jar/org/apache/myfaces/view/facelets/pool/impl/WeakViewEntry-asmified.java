@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", null, "org/apache/myfaces/view/facelets/pool/ViewEntry", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRootRef", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljavax/faces/component/UIViewRoot;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRootRef", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljakarta/faces/component/UIViewRoot;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRoot", "Ljavax/faces/component/UIViewRoot;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewRoot", "Ljakarta/faces/component/UIViewRoot;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "result", "Lorg/apache/myface
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/pool/ViewEntry", "<init>", "()V", false);
@@ -58,13 +58,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRootRef", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ref/WeakReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIViewRoot");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIViewRoot");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljakarta/faces/component/UIViewRoot;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRootRef", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljakarta/faces/component/UIViewRoot;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRootRef", "Ljava/lang/ref/WeakReference;");
@@ -89,18 +89,18 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRootRef", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ref/WeakReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIViewRoot");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIViewRoot");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljakarta/faces/component/UIViewRoot;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewRoot", "(Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewRoot", "(Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/ref/WeakReference");
@@ -110,7 +110,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ref/WeakReference", "<in
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRootRef", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry", "viewRoot", "Ljakarta/faces/component/UIViewRoot;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

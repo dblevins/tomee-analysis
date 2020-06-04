@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,19 +38,19 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "<init>", "(Ljavax/resource/spi/endpoint/MessageEndpointFactory;Lorg/apache/activemq/ra/MessageActivationSpec;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "<init>", "(Ljakarta/resource/spi/endpoint/MessageEndpointFactory;Lorg/apache/activemq/ra/MessageActivationSpec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/endpoint/MessageEndpointFactory;Lorg/apache/activemq/ra/MessageActivationSpec;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/endpoint/MessageEndpointFactory;Lorg/apache/activemq/ra/MessageActivationSpec;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "activationSpec", "Lorg/apache/activemq/ra/MessageActivationSpec;");
@@ -68,10 +68,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageEndpointFactory", "()Ljavax/resource/spi/endpoint/MessageEndpointFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageEndpointFactory", "()Ljakarta/resource/spi/endpoint/MessageEndpointFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -80,7 +80,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "activationSpec", "Lorg/apache/activemq/ra/MessageActivationSpec;");
@@ -124,9 +124,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointA
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "messageEndpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitInsn(ICONST_1);
 Label label4 = new Label();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_FINAL | ACC_SUPER, "org/apache/geronimo/connector/work/WorkerContext$1", null, "javax/resource/spi/work/WorkAdapter", null);
+classWriter.visit(V1_6, ACC_FINAL | ACC_SUPER, "org/apache/geronimo/connector/work/WorkerContext$1", null, "jakarta/resource/spi/work/WorkAdapter", null);
 
 classWriter.visitOuterClass("org/apache/geronimo/connector/work/WorkerContext", null, null);
 
@@ -32,44 +32,44 @@ classWriter.visitInnerClass("org/apache/geronimo/connector/work/WorkerContext$1"
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/work/WorkAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workRejected", "(Ljavax/resource/spi/work/WorkEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workRejected", "(Ljakarta/resource/spi/work/WorkEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getException", "()Ljavax/resource/spi/work/WorkException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getException", "()Ljakarta/resource/spi/work/WorkException;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getException", "()Ljavax/resource/spi/work/WorkException;", false);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/resource/spi/work/WorkCompletedException");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getException", "()Ljakarta/resource/spi/work/WorkException;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/resource/spi/work/WorkCompletedException");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getException", "()Ljavax/resource/spi/work/WorkException;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getException", "()Ljakarta/resource/spi/work/WorkException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkException", "getCause", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/work/WorkerContext", "access$000", "()Lorg/slf4j/Logger;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getWork", "()Ljavax/resource/spi/work/Work;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getWork", "()Ljakarta/resource/spi/work/Work;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getException", "()Ljavax/resource/spi/work/WorkException;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getException", "()Ljakarta/resource/spi/work/WorkException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkException", "getCause", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;Ljava/lang/Throwable;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/work/WorkerContext", "access$000", "()Lorg/slf4j/Logger;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getWork", "()Ljavax/resource/spi/work/Work;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getWork", "()Ljakarta/resource/spi/work/Work;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkEvent", "getException", "()Ljavax/resource/spi/work/WorkException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkEvent", "getException", "()Ljakarta/resource/spi/work/WorkException;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;Ljava/lang/Throwable;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

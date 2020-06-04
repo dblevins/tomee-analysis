@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/push/WebsocketChannelManager$ViewScope", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/faces/view/ViewScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/faces/view/ViewScoped;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("com/sun/faces/push/WebsocketChannelManager$ViewScope", "com/sun/faces/push/WebsocketChannelManager", "ViewScope", ACC_PUBLIC | ACC_STATIC);
@@ -56,7 +56,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "deregisterViewScope", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

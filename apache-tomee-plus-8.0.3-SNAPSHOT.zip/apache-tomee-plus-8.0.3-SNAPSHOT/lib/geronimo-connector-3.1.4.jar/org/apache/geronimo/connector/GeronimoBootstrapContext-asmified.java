@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/GeronimoBootstrapContext", null, "java/lang/Object", new String[] { "javax/resource/spi/BootstrapContext" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/GeronimoBootstrapContext", null, "java/lang/Object", new String[] { "jakarta/resource/spi/BootstrapContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "workManager", "Lorg/apache/geronimo/connector/work/GeronimoWorkManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xATerminator", "Ljavax/resource/spi/XATerminator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xATerminator", "Ljakarta/resource/spi/XATerminator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,16 +46,16 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "workManager", "Lorg/apache/geronimo/connector/work/GeronimoWorkManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/work/GeronimoWorkManager;Ljavax/resource/spi/XATerminator;Ljavax/transaction/TransactionSynchronizationRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/work/GeronimoWorkManager;Ljakarta/resource/spi/XATerminator;Ljakarta/transaction/TransactionSynchronizationRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -64,16 +64,16 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "workManager", "Lorg/apache/geronimo/connector/work/GeronimoWorkManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWorkManager", "()Ljavax/resource/spi/work/WorkManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWorkManager", "()Ljakarta/resource/spi/work/WorkManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "workManager", "Lorg/apache/geronimo/connector/work/GeronimoWorkManager;");
@@ -82,16 +82,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXATerminator", "()Ljavax/resource/spi/XATerminator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXATerminator", "()Ljakarta/resource/spi/XATerminator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "xATerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "()Ljava/util/Timer;", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "()Ljava/util/Timer;", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/Timer");
 methodVisitor.visitInsn(DUP);
@@ -103,16 +103,16 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "transactionSynchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/resource/spi/work/WorkContext;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/resource/spi/work/WorkContext;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/GeronimoBootstrapContext", "workManager", "Lorg/apache/geronimo/connector/work/GeronimoWorkManager;");

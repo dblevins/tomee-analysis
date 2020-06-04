@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", null, "javax/servlet/jsp/tagext/TagSupport", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", null, "jakarta/servlet/jsp/tagext/TagSupport", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "value", "Ljava/lang/Object;", null, null);
@@ -40,7 +40,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagSupport", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "init", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -85,7 +85,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "jakarta/servlet/jsp/JspException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -134,23 +134,23 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/f
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "var", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "scope", "I");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;I)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;I)V", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.timeZone");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "scope", "I");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/servlet/jsp/jstl/core/Config", "set", "(Ljavax/servlet/jsp/PageContext;Ljava/lang/String;Ljava/lang/Object;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/core/Config", "set", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;Ljava/lang/Object;I)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitIntInsn(BIPUSH, 6);
 methodVisitor.visitInsn(IRETURN);

@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonGenerator", "()Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonGenerator", "()Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "generator", "Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;");
@@ -83,13 +83,13 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/mapper/DynamicMappingGenera
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "delegate", "Lorg/apache/johnzon/mapper/MappingGenerator;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "getJsonGenerator", "()Ljavax/json/stream/JsonGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "getJsonGenerator", "()Ljakarta/json/stream/JsonGenerator;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "writeStart", "Ljava/lang/Runnable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "keyName", "Ljava/lang/String;");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator", "<init>", "(Ljavax/json/stream/JsonGenerator;Ljava/lang/Runnable;Ljava/lang/String;Lorg/apache/johnzon/mapper/DynamicMappingGenerator$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator", "<init>", "(Ljakarta/json/stream/JsonGenerator;Ljava/lang/Runnable;Ljava/lang/String;Lorg/apache/johnzon/mapper/DynamicMappingGenerator$1;)V", false);
 methodVisitor.visitInsn(DUP_X1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "generator", "Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;");
 Label label1 = new Label();
@@ -99,13 +99,13 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "generator", "Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;");
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/json/stream/JsonGenerator"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/json/stream/JsonGenerator"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "delegate", "Lorg/apache/johnzon/mapper/MappingGenerator;");
@@ -113,28 +113,28 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "ensureGenerator", "(Ljavax/json/stream/JsonGenerator;)Ljavax/json/stream/JsonGenerator;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "ensureGenerator", "(Ljakarta/json/stream/JsonGenerator;)Ljakarta/json/stream/JsonGenerator;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/String;Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeObject", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "delegate", "Lorg/apache/johnzon/mapper/MappingGenerator;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "ensureGenerator", "(Ljavax/json/stream/JsonGenerator;)Ljavax/json/stream/JsonGenerator;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljavax/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "ensureGenerator", "(Ljakarta/json/stream/JsonGenerator;)Ljakarta/json/stream/JsonGenerator;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/johnzon/mapper/MappingGenerator", "writeObject", "(Ljava/lang/Object;Ljakarta/json/stream/JsonGenerator;)Lorg/apache/johnzon/mapper/MappingGenerator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "ensureGenerator", "(Ljavax/json/stream/JsonGenerator;)Ljavax/json/stream/JsonGenerator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "ensureGenerator", "(Ljakarta/json/stream/JsonGenerator;)Ljakarta/json/stream/JsonGenerator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "generator", "Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;");
@@ -146,7 +146,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/mapper/DynamicMappingGenerator", "generator", "Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator", "access$100", "(Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;)Ljavax/json/stream/JsonGenerator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator", "access$100", "(Lorg/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator;)Ljakarta/json/stream/JsonGenerator;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -155,7 +155,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/mapper/DynamicMapping
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "getJsonGenerator", "()Ljavax/json/stream/JsonGenerator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/mapper/DynamicMappingGenerator", "getJsonGenerator", "()Ljakarta/json/stream/JsonGenerator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

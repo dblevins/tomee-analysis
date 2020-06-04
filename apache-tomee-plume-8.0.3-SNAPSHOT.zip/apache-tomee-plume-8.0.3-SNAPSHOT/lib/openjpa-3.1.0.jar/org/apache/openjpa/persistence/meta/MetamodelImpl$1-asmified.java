@@ -28,7 +28,7 @@ classWriter.visitOuterClass("org/apache/openjpa/persistence/meta/MetamodelImpl",
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/MetamodelImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$SwitchMap$javax$persistence$metamodel$Type$PersistenceType", "[I", null, null);
@@ -49,14 +49,14 @@ Label label6 = new Label();
 Label label7 = new Label();
 Label label8 = new Label();
 methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/NoSuchFieldError");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/metamodel/Type$PersistenceType", "values", "()[Ljavax/persistence/metamodel/Type$PersistenceType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "values", "()[Ljakarta/persistence/metamodel/Type$PersistenceType;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitIntInsn(NEWARRAY, T_INT);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl$1", "$SwitchMap$javax$persistence$metamodel$Type$PersistenceType", "[I");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl$1", "$SwitchMap$javax$persistence$metamodel$Type$PersistenceType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "ENTITY", "Ljavax/persistence/metamodel/Type$PersistenceType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "ENTITY", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label1);
@@ -67,8 +67,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl$1", "$SwitchMap$javax$persistence$metamodel$Type$PersistenceType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "EMBEDDABLE", "Ljavax/persistence/metamodel/Type$PersistenceType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "EMBEDDABLE", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label4);
@@ -79,8 +79,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/meta/MetamodelImpl$1", "$SwitchMap$javax$persistence$metamodel$Type$PersistenceType", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljavax/persistence/metamodel/Type$PersistenceType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "MAPPED_SUPERCLASS", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/metamodel/Type$PersistenceType", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label7);

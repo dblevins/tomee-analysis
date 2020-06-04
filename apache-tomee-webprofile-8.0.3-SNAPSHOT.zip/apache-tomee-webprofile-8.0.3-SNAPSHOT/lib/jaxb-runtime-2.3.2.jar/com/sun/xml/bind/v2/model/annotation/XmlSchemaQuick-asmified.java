@@ -22,21 +22,21 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", null, "com/sun/xml/bind/v2/model/annotation/Quick", new String[] { "javax/xml/bind/annotation/XmlSchema" });
+classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", null, "com/sun/xml/bind/v2/model/annotation/Quick", new String[] { "jakarta/xml/bind/annotation/XmlSchema" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "core", "Ljavax/xml/bind/annotation/XmlSchema;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "core", "Ljakarta/xml/bind/annotation/XmlSchema;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlSchema;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlSchema;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/Quick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -45,7 +45,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAnnotation", "()Ljava/lang/annotation/Annotation;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -57,16 +57,16 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/annotation/XmlSchema
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlSchema");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljavax/xml/bind/annotation/XmlSchema;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlSchema");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/Locatable;Ljakarta/xml/bind/annotation/XmlSchema;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "annotationType", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljavax/xml/bind/annotation/XmlSchema;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "annotationType", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljakarta/xml/bind/annotation/XmlSchema;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchema;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchema;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -75,8 +75,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "location", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "location", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "location", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -85,38 +85,38 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "namespace", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "namespace", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "namespace", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlns", "()[Ljavax/xml/bind/annotation/XmlNs;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlns", "()[Ljakarta/xml/bind/annotation/XmlNs;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljavax/xml/bind/annotation/XmlNs;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljakarta/xml/bind/annotation/XmlNs;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "elementFormDefault", "()Ljavax/xml/bind/annotation/XmlNsForm;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "elementFormDefault", "()Ljakarta/xml/bind/annotation/XmlNsForm;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "elementFormDefault", "()Ljavax/xml/bind/annotation/XmlNsForm;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "elementFormDefault", "()Ljakarta/xml/bind/annotation/XmlNsForm;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "attributeFormDefault", "()Ljavax/xml/bind/annotation/XmlNsForm;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "attributeFormDefault", "()Ljakarta/xml/bind/annotation/XmlNsForm;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljavax/xml/bind/annotation/XmlSchema;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "attributeFormDefault", "()Ljavax/xml/bind/annotation/XmlNsForm;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick", "core", "Ljakarta/xml/bind/annotation/XmlSchema;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "attributeFormDefault", "()Ljakarta/xml/bind/annotation/XmlNsForm;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

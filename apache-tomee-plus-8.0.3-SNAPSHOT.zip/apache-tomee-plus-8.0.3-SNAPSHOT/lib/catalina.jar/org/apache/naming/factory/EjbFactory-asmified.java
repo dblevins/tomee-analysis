@@ -49,7 +49,7 @@ Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
-methodVisitor.visitLdcInsn("javax.ejb.Factory");
+methodVisitor.visitLdcInsn("jakarta.ejb.Factory");
 methodVisitor.visitLdcInsn("org.apache.naming.factory.OpenEjbFactory");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ServerSessionImpl$1", null, "java/lang/Object", new String[] { "javax/resource/spi/work/WorkListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ServerSessionImpl$1", null, "java/lang/Object", new String[] { "jakarta/resource/spi/work/WorkListener" });
 
 classWriter.visitOuterClass("org/apache/activemq/ra/ServerSessionImpl", "start", "()V");
 
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workAccepted", "(Ljavax/resource/spi/work/WorkEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workAccepted", "(Ljakarta/resource/spi/work/WorkEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ServerSessionImpl$1", "this$0", "Lorg/apache/activemq/ra/ServerSessionImpl;");
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workRejected", "(Ljavax/resource/spi/work/WorkEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workRejected", "(Ljakarta/resource/spi/work/WorkEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ServerSessionImpl$1", "this$0", "Lorg/apache/activemq/ra/ServerSessionImpl;");
@@ -83,7 +83,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workStarted", "(Ljavax/resource/spi/work/WorkEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workStarted", "(Ljakarta/resource/spi/work/WorkEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ServerSessionImpl$1", "this$0", "Lorg/apache/activemq/ra/ServerSessionImpl;");
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workCompleted", "(Ljavax/resource/spi/work/WorkEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "workCompleted", "(Ljakarta/resource/spi/work/WorkEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ServerSessionImpl$1", "this$0", "Lorg/apache/activemq/ra/ServerSessionImpl;");

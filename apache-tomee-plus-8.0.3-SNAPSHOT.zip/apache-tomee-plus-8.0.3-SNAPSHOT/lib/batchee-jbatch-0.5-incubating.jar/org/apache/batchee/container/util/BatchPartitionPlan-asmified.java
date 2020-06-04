@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/util/BatchPartitionPlan", null, "java/lang/Object", new String[] { "javax/batch/api/partition/PartitionPlan" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/util/BatchPartitionPlan", null, "java/lang/Object", new String[] { "jakarta/batch/api/partition/PartitionPlan" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "partitionCount", "I", null, null);

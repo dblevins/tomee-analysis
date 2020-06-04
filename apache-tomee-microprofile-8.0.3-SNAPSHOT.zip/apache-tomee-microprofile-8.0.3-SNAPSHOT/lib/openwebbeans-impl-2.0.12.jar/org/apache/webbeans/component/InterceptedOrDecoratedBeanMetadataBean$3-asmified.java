@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean$3", "Ljavax/enterprise/util/TypeLiteral<Ljavax/enterprise/inject/spi/Bean<TT;>;>;", "javax/enterprise/util/TypeLiteral", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean$3", "Ljakarta/enterprise/util/TypeLiteral<Ljakarta/enterprise/inject/spi/Bean<TT;>;>;", "jakarta/enterprise/util/TypeLiteral", null);
 
 classWriter.visitOuterClass("org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;)V");
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/webbeans/component/InterceptedOrDecorate
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/TypeLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/TypeLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

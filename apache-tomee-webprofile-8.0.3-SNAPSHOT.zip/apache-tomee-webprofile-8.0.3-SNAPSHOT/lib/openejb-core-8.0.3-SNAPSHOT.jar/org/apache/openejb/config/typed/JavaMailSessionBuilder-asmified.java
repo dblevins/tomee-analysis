@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/typed/JavaMailSessionBuilder", null, "org/apache/openejb/config/sys/Resource", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRootElement;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRootElement;", true);
 annotationVisitor0.visit("name", "JavaMailSession");
 annotationVisitor0.visitEnd();
 }
@@ -43,7 +43,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("org.apache.openejb.core.MailSessionFactory");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/typed/JavaMailSessionBuilder", "setClassName", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.mail.Session");
+methodVisitor.visitLdcInsn("jakarta.mail.Session");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/typed/JavaMailSessionBuilder", "setType", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("JavaMailSession");

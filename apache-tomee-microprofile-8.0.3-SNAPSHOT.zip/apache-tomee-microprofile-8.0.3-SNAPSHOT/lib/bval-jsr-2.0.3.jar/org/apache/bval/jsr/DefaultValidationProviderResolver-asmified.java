@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultValidationProviderResolver", null, "java/lang/Object", new String[] { "javax/validation/ValidationProviderResolver" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultValidationProviderResolver", null, "java/lang/Object", new String[] { "jakarta/validation/ValidationProviderResolver" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Lorg/apache/commons/weaver/privilizer/Privilizing;", false);
@@ -49,7 +49,7 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 classWriter.visitInnerClass("org/apache/bval/jsr/DefaultValidationProviderResolver$org_apache_bval_util_reflection_Reflection$$newInstance$$Ljava_lang_Class$_ACTION", "org/apache/bval/jsr/DefaultValidationProviderResolver", "org_apache_bval_util_reflection_Reflection$$newInstance$$Ljava_lang_Class$_ACTION", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SPI_CFG", "Ljava/lang/String;", null, "META-INF/services/javax.validation.spi.ValidationProvider");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SPI_CFG", "Ljava/lang/String;", null, "META-INF/services/jakarta.validation.spi.ValidationProvider");
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationProviders", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/validation/spi/ValidationProvider<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationProviders", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/validation/spi/ValidationProvider<*>;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -118,7 +118,7 @@ methodVisitor.visitLabel(label14);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/DefaultValidationProviderResolver", "getCurrentClassLoader", "()Ljava/lang/ClassLoader;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("META-INF/services/javax.validation.spi.ValidationProvider");
+methodVisitor.visitLdcInsn("META-INF/services/jakarta.validation.spi.ValidationProvider");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label17 = new Label();
@@ -223,7 +223,7 @@ methodVisitor.visitJumpInsn(GOTO, label21);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/bval/jsr/DefaultValidationProviderResolver", "java/util/ArrayList", "java/lang/ClassLoader", "java/util/Enumeration", "java/net/URL"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -234,7 +234,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label21);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/io/BufferedReader", Opcodes.NULL}, 0, null);
@@ -246,11 +246,11 @@ methodVisitor.visitJumpInsn(GOTO, label22);
 methodVisitor.visitLabel(label16);
 methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/bval/jsr/DefaultValidationProviderResolver", "java/util/ArrayList"}, 1, new Object[] {"java/io/IOException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("Error trying to read a META-INF/services/javax.validation.spi.ValidationProvider");
+methodVisitor.visitLdcInsn("Error trying to read a META-INF/services/jakarta.validation.spi.ValidationProvider");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label22);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/ClassLoader", "java/util/Enumeration"}, 0, null);
@@ -270,7 +270,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/spi/ValidationProvider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/spi/ValidationProvider;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "asSubclass", "(Ljava/lang/Class;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -284,7 +284,7 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -299,7 +299,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);

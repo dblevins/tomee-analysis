@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/criteria/CriteriaQuery<TT;>;", "java/lang/Object", new String[] { "javax/persistence/criteria/CriteriaQuery" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/criteria/CriteriaQuery<TT;>;", "java/lang/Object", new String[] { "jakarta/persistence/criteria/CriteriaQuery" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toCQL", "()Ljava/lang/String;", null, null);

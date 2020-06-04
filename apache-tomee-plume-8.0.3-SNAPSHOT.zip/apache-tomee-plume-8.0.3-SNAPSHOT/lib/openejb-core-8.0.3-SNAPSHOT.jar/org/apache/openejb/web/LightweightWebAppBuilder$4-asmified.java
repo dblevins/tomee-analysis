@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$webContext
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$config", "Ljavax/servlet/FilterConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$config", "Ljakarta/servlet/FilterConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;[Ljava/lang/String;Ljava/lang/Class;Lorg/apache/openejb/core/WebContext;Ljavax/servlet/FilterConfig;Lorg/apache/openejb/web/LightweightWebAppBuilder$DeployedWebObjects;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/web/LightweightWebAppBuilder;[Ljava/lang/String;Ljava/lang/Class;Lorg/apache/openejb/core/WebContext;Ljakarta/servlet/FilterConfig;Lorg/apache/openejb/web/LightweightWebAppBuilder$DeployedWebObjects;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -71,7 +71,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$webContext", "Lorg/apache/openejb/core/WebContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$config", "Ljavax/servlet/FilterConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$config", "Ljakarta/servlet/FilterConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$deployedWebObjects", "Lorg/apache/openejb/web/LightweightWebAppBuilder$DeployedWebObjects;");
@@ -130,7 +130,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$config", "Ljavax/servlet/FilterConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/web/LightweightWebAppBuilder$4", "val$config", "Ljakarta/servlet/FilterConfig;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

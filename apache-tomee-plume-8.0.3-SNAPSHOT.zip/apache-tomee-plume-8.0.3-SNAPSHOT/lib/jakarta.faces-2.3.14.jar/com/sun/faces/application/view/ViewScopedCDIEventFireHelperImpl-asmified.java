@@ -29,27 +29,27 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "viewScopeInitializedEvent", "Ljavax/enterprise/event/Event;", "Ljavax/enterprise/event/Event<Ljavax/faces/component/UIViewRoot;>;", null);
+fieldVisitor = classWriter.visitField(0, "viewScopeInitializedEvent", "Ljakarta/enterprise/event/Event;", "Ljakarta/enterprise/event/Event<Ljakarta/faces/component/UIViewRoot;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/enterprise/context/Initialized;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/faces/view/ViewScoped;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/enterprise/context/Initialized;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/faces/view/ViewScoped;"));
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "viewScopeDestroyedEvent", "Ljavax/enterprise/event/Event;", "Ljavax/enterprise/event/Event<Ljavax/faces/component/UIViewRoot;>;", null);
+fieldVisitor = classWriter.visitField(0, "viewScopeDestroyedEvent", "Ljakarta/enterprise/event/Event;", "Ljakarta/enterprise/event/Event<Ljakarta/faces/component/UIViewRoot;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/enterprise/context/Destroyed;", true);
-annotationVisitor0.visit("value", Type.getType("Ljavax/faces/view/ViewScoped;"));
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/enterprise/context/Destroyed;", true);
+annotationVisitor0.visit("value", Type.getType("Ljakarta/faces/view/ViewScoped;"));
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -64,23 +64,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireInitializedEvent", "(Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireInitializedEvent", "(Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl", "viewScopeInitializedEvent", "Ljavax/enterprise/event/Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl", "viewScopeInitializedEvent", "Ljakarta/enterprise/event/Event;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/event/Event", "fire", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/event/Event", "fire", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireDestroyedEvent", "(Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fireDestroyedEvent", "(Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl", "viewScopeDestroyedEvent", "Ljavax/enterprise/event/Event;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl", "viewScopeDestroyedEvent", "Ljakarta/enterprise/event/Event;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/event/Event", "fire", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/event/Event", "fire", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -65,13 +65,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/StateCache", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN");
 methodVisitor.visitLdcInsn("random");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getStringInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLdcInsn("secureRandom");
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -82,17 +82,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "csrfSessionTokenFactory", "Lorg/apache/myfaces/application/viewstate/CsrfSessionTokenFactory;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "javax/faces/context/FacesContext", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "jakarta/faces/context/FacesContext", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/viewstate/RandomCsrfSessionTokenFactory");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/RandomCsrfSessionTokenFactory", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/viewstate/RandomCsrfSessionTokenFactory", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "csrfSessionTokenFactory", "Lorg/apache/myfaces/application/viewstate/CsrfSessionTokenFactory;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -106,18 +106,18 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveSerializedView", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveSerializedView", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "encodeSerializedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "encodeSerializedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreSerializedView", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreSerializedView", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
@@ -125,8 +125,8 @@ methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "getClientViewStateTimeout", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/Long;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "getClientViewStateTimeout", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/Long;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J", false);
 methodVisitor.visitVarInsn(LSTORE, 5);
 methodVisitor.visitVarInsn(LLOAD, 5);
@@ -224,14 +224,14 @@ methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encodeSerializedState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encodeSerializedState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "getClientViewStateTimeout", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/Long;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "getClientViewStateTimeout", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/Long;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J", false);
 methodVisitor.visitInsn(LCONST_0);
 methodVisitor.visitInsn(LCMP);
@@ -303,8 +303,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getViewId", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -312,7 +312,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isWriteStateAfterRenderViewRequired", "(Ljavax/faces/context/FacesContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isWriteStateAfterRenderViewRequired", "(Ljakarta/faces/context/FacesContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -320,7 +320,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getClientViewStateTimeout", "(Ljavax/faces/context/ExternalContext;)Ljava/lang/Long;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getClientViewStateTimeout", "(Ljakarta/faces/context/ExternalContext;)Ljava/lang/Long;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "_clientViewStateTimeout", "Ljava/lang/Long;");
@@ -331,7 +331,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("org.apache.myfaces.CLIENT_VIEW_STATE_TIMEOUT");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "INIT_PARAM_CLIENT_VIEW_STATE_TIMEOUT_DEFAULT", "Ljava/lang/Long;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getLongInitParameter", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;J)J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/WebConfigParamUtils", "getLongInitParameter", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;J)J", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Long", "valueOf", "(J)Ljava/lang/Long;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "_clientViewStateTimeout", "Ljava/lang/Long;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -353,18 +353,18 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCryptographicallyStrongTokenFromSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCryptographicallyStrongTokenFromSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "csrfSessionTokenFactory", "Lorg/apache/myfaces/application/viewstate/CsrfSessionTokenFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/CsrfSessionTokenFactory", "createCryptographicallyStrongTokenFromSession", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/viewstate/CsrfSessionTokenFactory", "createCryptographicallyStrongTokenFromSession", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateTokenProcessor", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/token/StateTokenProcessor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateTokenProcessor", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/token/StateTokenProcessor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/viewstate/ClientSideStateCacheImpl", "stateTokenProcessor", "Lorg/apache/myfaces/application/viewstate/token/StateTokenProcessor;");

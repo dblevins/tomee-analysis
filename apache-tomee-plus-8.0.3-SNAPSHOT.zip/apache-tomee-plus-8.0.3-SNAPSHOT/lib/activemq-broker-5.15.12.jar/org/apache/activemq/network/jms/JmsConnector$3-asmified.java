@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/network/jms/JmsConnector$3", null, "java/lang/Object", new String[] { "java/lang/Runnable" });
 
-classWriter.visitOuterClass("org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljavax/jms/Connection;)V");
+classWriter.visitOuterClass("org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljakarta/jms/Connection;)V");
 
 classWriter.visitInnerClass("org/apache/activemq/network/jms/JmsConnector$3", null, null, 0);
 

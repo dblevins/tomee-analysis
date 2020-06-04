@@ -22,21 +22,21 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<C::Ljavax/ws/rs/core/Configurable<TC;>;>Lorg/apache/cxf/jaxrs/impl/ConfigurableImpl<TC;>;", "org/apache/cxf/jaxrs/impl/ConfigurableImpl", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<C::Ljakarta/ws/rs/core/Configurable<TC;>;>Lorg/apache/cxf/jaxrs/impl/ConfigurableImpl<TC;>;", "org/apache/cxf/jaxrs/impl/ConfigurableImpl", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Configurable;)V", "(TC;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Configurable;)V", "(TC;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<init>", "(Ljavax/ws/rs/core/Configurable;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl", "<init>", "(Ljakarta/ws/rs/core/Configurable;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Configurable;Ljavax/ws/rs/core/Configuration;)V", "(TC;Ljavax/ws/rs/core/Configuration;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Configurable;Ljakarta/ws/rs/core/Configuration;)V", "(TC;Ljakarta/ws/rs/core/Configuration;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -45,19 +45,19 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/ConfigurationImpl");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ws/rs/RuntimeType", "CLIENT", "Ljavax/ws/rs/RuntimeType;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "<init>", "(Ljavax/ws/rs/RuntimeType;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ws/rs/RuntimeType", "CLIENT", "Ljakarta/ws/rs/RuntimeType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "<init>", "(Ljakarta/ws/rs/RuntimeType;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/ws/rs/core/Configurable", "javax/ws/rs/core/Configuration"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/ws/rs/core/Configurable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/ws/rs/core/Configurable", "jakarta/ws/rs/core/Configuration"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/ws/rs/core/Configurable"});
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/ConfigurationImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "<init>", "(Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "<init>", "(Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/ws/rs/core/Configurable", "javax/ws/rs/core/Configuration"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/ws/rs/core/Configurable", "javax/ws/rs/core/Configuration"});
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurableImpl", "<init>", "(Ljavax/ws/rs/core/Configurable;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/ws/rs/core/Configurable", "jakarta/ws/rs/core/Configuration"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/ws/rs/core/Configurable", "jakarta/ws/rs/core/Configuration"});
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurableImpl", "<init>", "(Ljakarta/ws/rs/core/Configurable;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

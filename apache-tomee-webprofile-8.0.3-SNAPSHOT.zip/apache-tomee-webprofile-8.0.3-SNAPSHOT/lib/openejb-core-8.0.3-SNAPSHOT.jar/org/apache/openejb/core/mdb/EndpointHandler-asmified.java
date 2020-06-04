@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaResource", "Lj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceFactory;Ljavax/transaction/xa/XAResource;)V", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/mdb/BaseMdbContainer;Lorg/apache/openejb/BeanContext;Lorg/apache/openejb/core/mdb/MdbInstanceFactory;Ljavax/transaction/xa/XAResource;)V", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "javax/resource/spi/ApplicationServerInternalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeDelivery", "(Ljava/lang/reflect/Method;)V", null, new String[] { "jakarta/resource/spi/ApplicationServerInternalException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -131,10 +131,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/ApplicationServerInternalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/ApplicationServerInternalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/ApplicationServerInternalException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -146,12 +146,12 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "recreateInstance", "(Z)V", null, new String[] { "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "recreateInstance", "(Z)V", null, new String[] { "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/spi/UnavailableException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/spi/UnavailableException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -164,7 +164,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/spi/UnavailableException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/spi/UnavailableException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/mdb/State", "RELEASED", "Lorg/apache/openejb/core/mdb/State;");
@@ -240,7 +240,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "afterDelivery", "()V", null, new String[] { "javax/resource/spi/ApplicationServerInternalException", "javax/resource/spi/UnavailableException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "afterDelivery", "()V", null, new String[] { "jakarta/resource/spi/ApplicationServerInternalException", "jakarta/resource/spi/UnavailableException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/mdb/AbstractEndpointHandler", "afterDelivery", "()V", false);

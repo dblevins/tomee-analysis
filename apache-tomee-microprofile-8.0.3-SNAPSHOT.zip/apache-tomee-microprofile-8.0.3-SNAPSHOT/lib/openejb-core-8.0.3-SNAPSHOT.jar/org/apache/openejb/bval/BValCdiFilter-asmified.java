@@ -45,10 +45,10 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "accept", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Z", "(Ljavax/enterprise/inject/spi/AnnotatedType<*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "accept", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Z", "(Ljakarta/enterprise/inject/spi/AnnotatedType<*>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);

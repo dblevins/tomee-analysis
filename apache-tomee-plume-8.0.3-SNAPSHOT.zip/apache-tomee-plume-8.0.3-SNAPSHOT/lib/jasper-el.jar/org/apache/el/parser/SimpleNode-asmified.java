@@ -221,7 +221,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -231,7 +231,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -241,7 +241,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -249,13 +249,13 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/el/PropertyNotWritableException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/PropertyNotWritableException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("error.syntax.set");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/util/MessageFactory", "get", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/PropertyNotWritableException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/PropertyNotWritableException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -304,7 +304,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;[Ljava/lang/Object;)Ljava/lang/Object;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;[Ljava/lang/Object;)Ljava/lang/Object;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -314,7 +314,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljavax/el/MethodInfo;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;)Ljavax/el/MethodInfo;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljakarta/el/MethodInfo;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;)Ljakarta/el/MethodInfo;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -440,7 +440,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueReference", "(Lorg/apache/el/lang/EvaluationContext;)Ljavax/el/ValueReference;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueReference", "(Lorg/apache/el/lang/EvaluationContext;)Ljakarta/el/ValueReference;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

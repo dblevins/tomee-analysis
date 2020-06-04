@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/el/MethodExpressionImpl", null, "javax/el/MethodExpression", new String[] { "java/io/Externalizable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/el/MethodExpressionImpl", null, "jakarta/el/MethodExpression", new String[] { "java/io/Externalizable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "expectedType", "Ljava/lang/Class;", "Ljava/lang/Class<*>;", null);
@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "expr", "Ljava/lang/String;",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "fnMapper", "Ljavax/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "fnMapper", "Ljakarta/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "varMapper", "Ljavax/el/VariableMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "varMapper", "Ljakarta/el/VariableMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,16 +52,16 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/MethodExpression", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/MethodExpression", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/el/parser/Node;Ljavax/el/FunctionMapper;Ljavax/el/VariableMapper;Ljava/lang/Class;[Ljava/lang/Class;)V", "(Ljava/lang/String;Lorg/apache/el/parser/Node;Ljavax/el/FunctionMapper;Ljavax/el/VariableMapper;Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/el/parser/Node;Ljakarta/el/FunctionMapper;Ljakarta/el/VariableMapper;Ljava/lang/Class;[Ljava/lang/Class;)V", "(Ljava/lang/String;Lorg/apache/el/parser/Node;Ljakarta/el/FunctionMapper;Ljakarta/el/VariableMapper;Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/MethodExpression", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/MethodExpression", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "expr", "Ljava/lang/String;");
@@ -70,10 +70,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "node", "Lorg/apache/el/parser/Node;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "expectedType", "Ljava/lang/Class;");
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Ljavax/el/ELContext;)Ljavax/el/MethodInfo;", null, new String[] { "javax/el/PropertyNotFoundException", "javax/el/MethodNotFoundException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Ljakarta/el/ELContext;)Ljakarta/el/MethodInfo;", null, new String[] { "jakarta/el/PropertyNotFoundException", "jakarta/el/MethodNotFoundException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/MethodExpressionImpl", "getNode", "()Lorg/apache/el/parser/Node;", false);
@@ -127,10 +127,10 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/el/lang/EvaluationContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljavax/el/VariableMapper;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/EvaluationContext", "<init>", "(Ljavax/el/ELContext;Ljavax/el/FunctionMapper;Ljavax/el/VariableMapper;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljakarta/el/VariableMapper;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/EvaluationContext", "<init>", "(Ljakarta/el/ELContext;Ljakarta/el/FunctionMapper;Ljakarta/el/VariableMapper;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -140,7 +140,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "paramTypes", "[Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/el/parser/Node", "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljavax/el/MethodInfo;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/el/parser/Node", "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljakarta/el/MethodInfo;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -152,7 +152,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getNode", "()Lorg/apache/el/parser/Node;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getNode", "()Lorg/apache/el/parser/Node;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "node", "Lorg/apache/el/parser/Node;");
@@ -182,16 +182,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/el/ELContext;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "javax/el/PropertyNotFoundException", "javax/el/MethodNotFoundException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/el/ELContext;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "jakarta/el/PropertyNotFoundException", "jakarta/el/MethodNotFoundException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/el/lang/EvaluationContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljavax/el/VariableMapper;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/EvaluationContext", "<init>", "(Ljavax/el/ELContext;Ljavax/el/FunctionMapper;Ljavax/el/VariableMapper;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljakarta/el/VariableMapper;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/lang/EvaluationContext", "<init>", "(Ljakarta/el/ELContext;Ljakarta/el/FunctionMapper;Ljakarta/el/VariableMapper;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -245,13 +245,13 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "pa
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectInput", "readObject", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/FunctionMapper");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/FunctionMapper");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectInput", "readObject", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/VariableMapper");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/VariableMapper");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -286,11 +286,11 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/util/ReflectionUtil",
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectOutput", "writeObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectOutput", "writeObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/MethodExpressionImpl", "varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectOutput", "writeObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);

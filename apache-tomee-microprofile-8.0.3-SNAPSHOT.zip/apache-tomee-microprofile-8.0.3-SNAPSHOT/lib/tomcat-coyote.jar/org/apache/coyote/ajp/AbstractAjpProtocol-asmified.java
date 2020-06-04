@@ -425,7 +425,7 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/UpgradeToken", "getHttpUpgradeHandler", "()Ljavax/servlet/http/HttpUpgradeHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/UpgradeToken", "getHttpUpgradeHandler", "()Ljakarta/servlet/http/HttpUpgradeHandler;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);

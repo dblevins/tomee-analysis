@@ -29,7 +29,7 @@ classWriter.visitOuterClass("org/apache/openejb/core/cmp/cmp2/CmrSet", "iterator
 classWriter.visitInnerClass("org/apache/openejb/core/cmp/cmp2/CmrSet$2", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentEntity", "Ljavax/ejb/EntityBean;", "TBean;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "currentEntity", "Ljakarta/ejb/EntityBean;", "TBean;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/ejb/EJBLocalObject;", "()TProxy;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/ejb/EJBLocalObject;", "()TProxy;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "this$0", "Lorg/apache/openejb/core/cmp/cmp2/CmrSet;");
@@ -89,13 +89,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "iterator", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EntityBean");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EntityBean");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "this$0", "Lorg/apache/openejb/core/cmp/cmp2/CmrSet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljavax/ejb/EntityBean;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$300", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;Ljavax/ejb/EntityBean;)Ljavax/ejb/EJBLocalObject;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljakarta/ejb/EntityBean;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$300", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;Ljakarta/ejb/EntityBean;)Ljakarta/ejb/EJBLocalObject;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -138,14 +138,14 @@ methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "this$0", "Lorg/apache/openejb/core/cmp/cmp2/CmrSet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljavax/ejb/EntityBean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "currentEntity", "Ljakarta/ejb/EntityBean;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$600", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;Ljava/lang/Object;)Lorg/apache/openejb/core/cmp/cmp2/Cmp2Entity;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "this$0", "Lorg/apache/openejb/core/cmp/cmp2/CmrSet;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$400", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "this$0", "Lorg/apache/openejb/core/cmp/cmp2/CmrSet;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$500", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;)Ljavax/ejb/EntityBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/cmp2/CmrSet", "access$500", "(Lorg/apache/openejb/core/cmp/cmp2/CmrSet;)Ljakarta/ejb/EntityBean;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/cmp/cmp2/Cmp2Entity", "OpenEJB_removeCmr", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -157,7 +157,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "next", "()Ljavax/ejb/EJBLocalObject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/cmp/cmp2/CmrSet$2", "next", "()Ljakarta/ejb/EJBLocalObject;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

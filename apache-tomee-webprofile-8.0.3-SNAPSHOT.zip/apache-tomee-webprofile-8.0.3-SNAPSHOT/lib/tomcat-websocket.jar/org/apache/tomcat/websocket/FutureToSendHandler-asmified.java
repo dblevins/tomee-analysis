@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/FutureToSendHandler", "Ljava/lang/Object;Ljava/util/concurrent/Future<Ljava/lang/Void;>;Ljavax/websocket/SendHandler;", "java/lang/Object", new String[] { "java/util/concurrent/Future", "javax/websocket/SendHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/FutureToSendHandler", "Ljava/lang/Object;Ljava/util/concurrent/Future<Ljava/lang/Void;>;Ljakarta/websocket/SendHandler;", "java/lang/Object", new String[] { "java/util/concurrent/Future", "jakarta/websocket/SendHandler" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wsSession", "Lor
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "result", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljavax/websocket/SendResult;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "result", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljakarta/websocket/SendResult;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljavax/websocket/SendResult;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onResult", "(Ljakarta/websocket/SendResult;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/FutureToSendHandler", "result", "Ljava/util/concurrent/atomic/AtomicReference;");
@@ -154,8 +154,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/FutureToSendHandler", "result", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/SendResult");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/SendResult");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ExecutionException");
@@ -163,8 +163,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/FutureToSendHandler", "result", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/SendResult");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/SendResult");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ExecutionException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
@@ -243,8 +243,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/FutureToSendHandler", "result", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/SendResult");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/SendResult");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ExecutionException");
@@ -252,8 +252,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/FutureToSendHandler", "result", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/SendResult");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/SendResult");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/websocket/SendResult", "getException", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ExecutionException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);

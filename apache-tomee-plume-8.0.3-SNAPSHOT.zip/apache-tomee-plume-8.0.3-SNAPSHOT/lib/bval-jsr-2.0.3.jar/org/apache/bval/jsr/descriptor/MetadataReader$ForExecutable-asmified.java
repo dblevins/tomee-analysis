@@ -87,12 +87,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "this$0", "Lorg/apache/bval/jsr/descriptor/MetadataReader;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/MetadataReader", "access$000", "(Lorg/apache/bval/jsr/descriptor/MetadataReader;)Lorg/apache/bval/jsr/ApacheValidatorFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "meta", "Lorg/apache/bval/jsr/metadata/Meta;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/Meta", "getHost", "()Ljava/lang/reflect/AnnotatedElement;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/reflect/Executable");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "getParameterNames", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "executableBuilder", "Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable;");
@@ -169,7 +169,7 @@ methodVisitor.visitMaxs(8, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_ABSTRACT, "getParameterNames", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", "(Ljavax/validation/ParameterNameProvider;TE;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_ABSTRACT, "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", "(Ljakarta/validation/ParameterNameProvider;TE;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitEnd();
 }
 {

@@ -385,7 +385,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("VALIDATION_APPLIES_TO");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitLdcInsn("validationAppliesTo");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ConstraintTarget", "IMPLICIT", "Ljavax/validation/ConstraintTarget;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ConstraintTarget", "IMPLICIT", "Ljakarta/validation/ConstraintTarget;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/function/Predicate", "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/ConstraintAnnotationAttributes", "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/util/function/Predicate;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/ConstraintAnnotationAttributes", "VALIDATION_APPLIES_TO", "Lorg/apache/bval/jsr/ConstraintAnnotationAttributes;");

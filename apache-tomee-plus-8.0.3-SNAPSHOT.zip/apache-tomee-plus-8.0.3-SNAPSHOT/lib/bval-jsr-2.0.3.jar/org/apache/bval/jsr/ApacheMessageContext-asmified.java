@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/bval/jsr/ApacheMessageContext", null, "java/lang/Object", new String[] { "javax/validation/MessageInterpolator$Context" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/bval/jsr/ApacheMessageContext", null, "java/lang/Object", new String[] { "jakarta/validation/MessageInterpolator$Context" });
 
-classWriter.visitInnerClass("javax/validation/MessageInterpolator$Context", "javax/validation/MessageInterpolator", "Context", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/MessageInterpolator$Context", "jakarta/validation/MessageInterpolator", "Context", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getConfigurationProperty", "(Ljava/lang/String;)Ljava/lang/String;", null, null);

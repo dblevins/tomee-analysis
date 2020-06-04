@@ -59,12 +59,12 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionManager;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/transaction/TransactionManager;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionManager");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

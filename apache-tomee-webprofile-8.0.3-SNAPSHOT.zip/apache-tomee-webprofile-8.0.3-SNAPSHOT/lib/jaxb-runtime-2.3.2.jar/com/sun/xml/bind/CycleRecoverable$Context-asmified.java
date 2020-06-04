@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/
 classWriter.visitInnerClass("com/sun/xml/bind/CycleRecoverable$Context", "com/sun/xml/bind/CycleRecoverable", "Context", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMarshaller", "()Ljavax/xml/bind/Marshaller;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMarshaller", "()Ljakarta/xml/bind/Marshaller;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

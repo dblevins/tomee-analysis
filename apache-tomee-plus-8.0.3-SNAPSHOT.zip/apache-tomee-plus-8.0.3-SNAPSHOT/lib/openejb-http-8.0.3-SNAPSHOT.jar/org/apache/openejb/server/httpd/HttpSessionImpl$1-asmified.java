@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/httpd/HttpSessionImpl$1", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpSessionContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/httpd/HttpSessionImpl$1", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpSessionContext" });
 
-classWriter.visitOuterClass("org/apache/openejb/server/httpd/HttpSessionImpl", "getSessionContext", "()Ljavax/servlet/http/HttpSessionContext;");
+classWriter.visitOuterClass("org/apache/openejb/server/httpd/HttpSessionImpl", "getSessionContext", "()Ljakarta/servlet/http/HttpSessionContext;");
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/HttpSessionImpl$1", null, null, 0);
 
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSession", "(Ljava/lang/String;)Ljavax/servlet/http/HttpSession;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSession", "(Ljava/lang/String;)Ljakarta/servlet/http/HttpSession;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpSessionImpl$1", "val$component", "Lorg/apache/openejb/server/httpd/session/SessionManager;");
@@ -68,11 +68,11 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/http/HttpSessionEvent"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/http/HttpSessionEvent"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/servlet/http/HttpSession"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/servlet/http/HttpSession"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

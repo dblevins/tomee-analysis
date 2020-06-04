@@ -34,16 +34,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "initWebsocketSessionLRUCache", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "initWebsocketSessionLRUCache", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/push/cdi/WebsocketApplicationSessionHolder", "initWebsocketSessionLRUCache", "(Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/push/cdi/WebsocketApplicationSessionHolder", "initWebsocketSessionLRUCache", "(Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "clearWebsocketSessionLRUCache", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "clearWebsocketSessionLRUCache", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/push/cdi/WebsocketApplicationSessionHolder", "clearWebsocketSessionLRUCache", "()V", false);
 methodVisitor.visitInsn(RETURN);

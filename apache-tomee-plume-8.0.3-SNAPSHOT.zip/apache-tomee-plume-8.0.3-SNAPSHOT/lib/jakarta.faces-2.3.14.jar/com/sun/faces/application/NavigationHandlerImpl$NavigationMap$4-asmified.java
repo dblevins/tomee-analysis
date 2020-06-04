@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$4", "Ljava/util/AbstractSet<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;>;>;", "java/util/AbstractSet", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$4", "Ljava/util/AbstractSet<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;>;>;", "java/util/AbstractSet", null);
 
 classWriter.visitOuterClass("com/sun/faces/application/NavigationHandlerImpl$NavigationMap", "entrySet", "()Ljava/util/Set;");
 
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/NavigationHandlerImpl$NavigationMap$4$1");
 methodVisitor.visitInsn(DUP);

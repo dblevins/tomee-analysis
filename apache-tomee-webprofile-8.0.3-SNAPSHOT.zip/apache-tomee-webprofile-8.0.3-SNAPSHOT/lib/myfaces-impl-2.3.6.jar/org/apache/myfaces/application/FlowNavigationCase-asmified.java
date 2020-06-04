@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/application/FlowNavigationCase", null, "javax/faces/application/NavigationCaseWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/application/FlowNavigationCase", null, "jakarta/faces/application/NavigationCaseWrapper", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_delegate", "Ljavax/faces/application/NavigationCase;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_delegate", "Ljakarta/faces/application/NavigationCase;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_toFlowDocumentId", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/application/NavigationCase;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/application/NavigationCase;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/NavigationCaseWrapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/NavigationCaseWrapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/FlowNavigationCase", "_delegate", "Ljavax/faces/application/NavigationCase;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/FlowNavigationCase", "_delegate", "Ljakarta/faces/application/NavigationCase;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/FlowNavigationCase", "_fromOutcome", "Ljava/lang/String;");
@@ -55,10 +55,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/application/NavigationCase;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/application/NavigationCase;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/FlowNavigationCase", "_delegate", "Ljavax/faces/application/NavigationCase;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/FlowNavigationCase", "_delegate", "Ljakarta/faces/application/NavigationCase;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -85,7 +85,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/FlowNavigationCase", "getWrapped", "()Ljavax/faces/application/NavigationCase;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/FlowNavigationCase", "getWrapped", "()Ljakarta/faces/application/NavigationCase;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljava/util/Date;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljava/util/Date;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDateStyle", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDateStyle", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeStyle", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeStyle", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPattern", "(Ljava/lang/String;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPattern", "(Ljava/lang/String;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeZone", "(Ljava/lang/Object;)V", null, new String[] { "javax/servlet/jsp/JspTagException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimeZone", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/servlet/jsp/JspTagException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

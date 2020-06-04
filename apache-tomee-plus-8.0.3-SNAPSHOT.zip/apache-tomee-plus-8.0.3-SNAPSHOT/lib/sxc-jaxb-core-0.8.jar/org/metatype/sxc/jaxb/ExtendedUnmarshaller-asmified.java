@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", null, "java/lang/Object", new String[] { "javax/xml/bind/Unmarshaller" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", null, "java/lang/Object", new String[] { "jakarta/xml/bind/Unmarshaller" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "read", "(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class;Ljava/lang/Boolean;Lorg/metatype/sxc/jaxb/RuntimeContext;)Ljava/lang/Object;", "(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class<*>;Ljava/lang/Boolean;Lorg/metatype/sxc/jaxb/RuntimeContext;)Ljava/lang/Object;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "read", "(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class;Ljava/lang/Boolean;Lorg/metatype/sxc/jaxb/RuntimeContext;)Ljava/lang/Object;", "(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class<*>;Ljava/lang/Boolean;Lorg/metatype/sxc/jaxb/RuntimeContext;)Ljava/lang/Object;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

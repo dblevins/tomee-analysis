@@ -141,7 +141,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/container/InjectableBeanManager");
 methodVisitor.visitInsn(DUP);

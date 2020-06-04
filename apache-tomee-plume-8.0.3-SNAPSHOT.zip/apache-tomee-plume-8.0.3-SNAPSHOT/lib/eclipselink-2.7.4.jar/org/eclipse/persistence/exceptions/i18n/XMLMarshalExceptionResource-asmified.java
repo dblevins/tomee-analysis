@@ -290,7 +290,7 @@ methodVisitor.visitLdcInsn("25021");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("Class {0} invalid for SwaRef. Must be javax.activation.DataHandler.");
+methodVisitor.visitLdcInsn("Class {0} invalid for SwaRef. Must be jakarta.activation.DataHandler.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);

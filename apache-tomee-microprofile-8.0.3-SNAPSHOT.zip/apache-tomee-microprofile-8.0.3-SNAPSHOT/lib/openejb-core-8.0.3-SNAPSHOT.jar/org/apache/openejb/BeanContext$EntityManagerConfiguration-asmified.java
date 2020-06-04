@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "properties", "Lj
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "synchronizationType", "Ljavax/persistence/SynchronizationType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "synchronizationType", "Ljakarta/persistence/SynchronizationType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Map;Ljavax/persistence/SynchronizationType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Map;Ljakarta/persistence/SynchronizationType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$EntityManagerConfiguration", "properties", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$EntityManagerConfiguration", "synchronizationType", "Ljavax/persistence/SynchronizationType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$EntityManagerConfiguration", "synchronizationType", "Ljakarta/persistence/SynchronizationType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -59,10 +59,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSynchronizationType", "()Ljavax/persistence/SynchronizationType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSynchronizationType", "()Ljakarta/persistence/SynchronizationType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$EntityManagerConfiguration", "synchronizationType", "Ljavax/persistence/SynchronizationType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$EntityManagerConfiguration", "synchronizationType", "Ljakarta/persistence/SynchronizationType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

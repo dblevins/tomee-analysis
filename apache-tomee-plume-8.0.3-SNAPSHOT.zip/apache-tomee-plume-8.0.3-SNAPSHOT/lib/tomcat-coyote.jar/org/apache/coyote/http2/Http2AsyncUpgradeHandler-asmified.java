@@ -151,19 +151,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processConnection", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processConnection", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "processConnectionCallback", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "processConnectionCallback", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2UpgradeHandler", "processConnection", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2UpgradeHandler", "processConnection", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -1371,11 +1371,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "init", "(Ljavax/servlet/http/WebConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "init", "(Ljakarta/servlet/http/WebConnection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2UpgradeHandler", "init", "(Ljavax/servlet/http/WebConnection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2UpgradeHandler", "init", "(Ljakarta/servlet/http/WebConnection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

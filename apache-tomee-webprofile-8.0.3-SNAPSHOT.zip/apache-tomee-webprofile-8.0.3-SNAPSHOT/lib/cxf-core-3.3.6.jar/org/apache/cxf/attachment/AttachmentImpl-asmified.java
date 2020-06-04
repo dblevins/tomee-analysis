@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/attachment/AttachmentImpl", null, "java/lang/Object", new String[] { "org/apache/cxf/message/Attachment" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataHandler", "Ljavax/activation/DataHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dataHandler", "Ljakarta/activation/DataHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/activation/DataHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -72,11 +72,11 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/attachment/AttachmentImpl", "id", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getCommandMap", "()Ljavax/activation/CommandMap;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "setCommandMap", "(Ljavax/activation/CommandMap;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getCommandMap", "()Ljakarta/activation/CommandMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "setCommandMap", "(Ljakarta/activation/CommandMap;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -91,24 +91,24 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataHandler", "()Ljavax/activation/DataHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataHandler", "()Ljakarta/activation/DataHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDataHandler", "(Ljavax/activation/DataHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDataHandler", "(Ljakarta/activation/DataHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljavax/activation/DataHandler;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getCommandMap", "()Ljavax/activation/CommandMap;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "setCommandMap", "(Ljavax/activation/CommandMap;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/attachment/AttachmentImpl", "dataHandler", "Ljakarta/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "getCommandMap", "()Ljakarta/activation/CommandMap;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "setCommandMap", "(Ljakarta/activation/CommandMap;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

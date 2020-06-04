@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "base64AttData", "Lorg/jvnet/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/soap/SOAPElement;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/soap/SOAPElement;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -91,8 +91,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxReaderEx", "base64AttData", "Lorg/jvnet/staxex/Base64Data;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxReaderEx", "binaryText", "Lorg/jvnet/staxex/BinaryText;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/BinaryText", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data", "set", "(Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/BinaryText", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data", "set", "(Ljakarta/activation/DataHandler;)V", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);

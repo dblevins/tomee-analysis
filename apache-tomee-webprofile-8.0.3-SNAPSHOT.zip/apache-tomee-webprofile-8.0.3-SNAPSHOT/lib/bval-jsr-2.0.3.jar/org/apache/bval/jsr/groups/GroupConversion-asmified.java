@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/groups/GroupConversion", null, "java/lang/Object", new String[] { "javax/validation/metadata/GroupConversionDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/groups/GroupConversion", null, "java/lang/Object", new String[] { "jakarta/validation/metadata/GroupConversionDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/groups/GroupConversion$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

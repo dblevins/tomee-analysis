@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/connector/work/pool/WorkExecutor", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doExecute", "(Lorg/apache/geronimo/connector/work/WorkerContext;Ljava/util/concurrent/Executor;)V", null, new String[] { "javax/resource/spi/work/WorkException", "java/lang/InterruptedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doExecute", "(Lorg/apache/geronimo/connector/work/WorkerContext;Ljava/util/concurrent/Executor;)V", null, new String[] { "jakarta/resource/spi/work/WorkException", "java/lang/InterruptedException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

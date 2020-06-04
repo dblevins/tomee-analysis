@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/pojo/PojoEndpointClient", null, "org/apache/tomcat/websocket/pojo/PojoEndpointBase", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/List;)V", "(Ljava/lang/Object;Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;)V", new String[] { "javax/websocket/DeploymentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/util/List;)V", "(Ljava/lang/Object;Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;)V", new String[] { "jakarta/websocket/DeploymentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/websocket/pojo/PojoEndpointBase", "<init>", "()V", false);
@@ -49,12 +49,12 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onOpen", "(Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onOpen", "(Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointClient", "doOnOpen", "(Ljavax/websocket/Session;Ljavax/websocket/EndpointConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/pojo/PojoEndpointClient", "doOnOpen", "(Ljakarta/websocket/Session;Ljakarta/websocket/EndpointConfig;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

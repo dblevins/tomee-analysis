@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/facelets/tag/TagLibrary", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "containsNamespace", "(Ljava/lang/String;Ljavax/faces/view/facelets/Tag;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "containsNamespace", "(Ljava/lang/String;Ljakarta/faces/view/facelets/Tag;)Z", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "containsTagH
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTagHandler", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/view/facelets/TagConfig;)Ljavax/faces/view/facelets/TagHandler;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTagHandler", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/view/facelets/TagConfig;)Ljakarta/faces/view/facelets/TagHandler;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitEnd();
 }
 {

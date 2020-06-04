@@ -147,7 +147,7 @@ methodVisitor.visitMaxs(10, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerMBean", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerMBean", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/monitoring/ObjectNameBuilder");
 methodVisitor.visitInsn(DUP);
@@ -170,7 +170,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/pojo/PojoWsContainer", "target", "Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "set", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/openejb/monitoring/ObjectNameBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/cxf/pojo/PojoWsContainer$WsServiceMBean");
@@ -187,7 +187,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/pojo/PojoW
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/pojo/PojoWsContainer", "mbean", "Lorg/apache/openejb/server/cxf/pojo/PojoWsContainer$WsServiceMBean;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);

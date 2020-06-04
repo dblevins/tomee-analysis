@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "source", "Ljava/lang/String;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converterProvider", "Ljavax/ws/rs/ext/ParamConverterProvider;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "converterProvider", "Ljakarta/ws/rs/ext/ParamConverterProvider;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljavax/ws/rs/ext/ParamConverterProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljakarta/ws/rs/ext/ParamConverterProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "contentFieldName", "Ljava/lang/String;");
@@ -113,11 +113,11 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "withFieldTypeConverter", "(Ljavax/ws/rs/ext/ParamConverterProvider;)Lorg/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "withFieldTypeConverter", "(Ljakarta/ws/rs/ext/ParamConverterProvider;)Lorg/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljavax/ws/rs/ext/ParamConverterProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljakarta/ws/rs/ext/ParamConverterProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -182,10 +182,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFieldTypeConverter", "()Ljavax/ws/rs/ext/ParamConverterProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFieldTypeConverter", "()Ljakarta/ws/rs/ext/ParamConverterProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljavax/ws/rs/ext/ParamConverterProvider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata", "converterProvider", "Ljakarta/ws/rs/ext/ParamConverterProvider;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

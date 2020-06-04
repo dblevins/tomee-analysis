@@ -69,7 +69,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/Transient;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/Transient;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/AnnotatedElement", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);

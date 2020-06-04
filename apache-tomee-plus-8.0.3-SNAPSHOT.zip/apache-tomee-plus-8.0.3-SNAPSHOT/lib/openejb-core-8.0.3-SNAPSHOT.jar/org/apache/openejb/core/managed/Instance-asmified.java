@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "bean", "Ljava/lan
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "beanTransaction", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljava/util/Stack;", "Ljava/util/Stack<Ljavax/transaction/Transaction;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljava/util/Stack;", "Ljava/util/Stack<Ljakarta/transaction/Transaction;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -73,7 +73,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lock", "Ljava/ut
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "entityManagers", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "entityManagers", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "entityManagerArr
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljavax/enterprise/context/spi/CreationalContext;Ljava/util/Map;)V", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljavax/enterprise/context/spi/CreationalContext;Ljava/util/Map<Ljavax/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljakarta/enterprise/context/spi/CreationalContext;Ljava/util/Map;)V", "(Lorg/apache/openejb/BeanContext;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljakarta/enterprise/context/spi/CreationalContext;Ljava/util/Map<Ljakarta/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -109,7 +109,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "interceptors", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "entityManagers", "Ljava/util/Map;");
@@ -121,7 +121,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljavax/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljavax/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljakarta/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljakarta/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -160,7 +160,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/core/managed/Instance", "java/lang/Object", "java/lang/Object", "java/lang/Object", "java/util/Map", "javax/enterprise/context/spi/CreationalContext", "[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/core/managed/Instance", "java/lang/Object", "java/lang/Object", "java/lang/Object", "java/util/Map", "jakarta/enterprise/context/spi/CreationalContext", "[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "primaryKey", "Ljava/lang/Object;");
@@ -172,7 +172,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "interceptors", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance", "entityManagerArray", "[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;");
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getTransaction", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getTransaction", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "transaction", "Ljava/util/Stack;");
@@ -239,14 +239,14 @@ methodVisitor.visitJumpInsn(IFLE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "transaction", "Ljava/util/Stack;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Stack", "peek", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Transaction");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Transaction");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/Transaction"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/Transaction"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -261,7 +261,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setTransaction", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setTransaction", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "transaction", "Ljava/util/Stack;");
@@ -330,7 +330,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getEntityManagers", "(Lorg/apache/openejb/util/Index;)Ljava/util/Map;", "(Lorg/apache/openejb/util/Index<Ljavax/persistence/EntityManagerFactory;Lorg/apache/openejb/BeanContext$EntityManagerConfiguration;>;)Ljava/util/Map<Ljavax/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getEntityManagers", "(Lorg/apache/openejb/util/Index;)Ljava/util/Map;", "(Lorg/apache/openejb/util/Index<Ljakarta/persistence/EntityManagerFactory;Lorg/apache/openejb/BeanContext$EntityManagerConfiguration;>;)Ljava/util/Map<Ljakarta/persistence/EntityManagerFactory;Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "entityManagers", "Ljava/util/Map;");
@@ -357,7 +357,7 @@ methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Index", "getKey", "(I)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/EntityManagerFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/EntityManagerFactory");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "entityManagerArray", "[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;");

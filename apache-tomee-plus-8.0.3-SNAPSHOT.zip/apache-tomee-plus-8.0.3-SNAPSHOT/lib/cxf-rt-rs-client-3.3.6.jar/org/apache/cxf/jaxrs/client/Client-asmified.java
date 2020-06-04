@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxrs/client/Client", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "type", "(Ljavax/ws/rs/core/MediaType;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "type", "(Ljakarta/ws/rs/core/MediaType;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "type", "(Lja
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "accept", "([Ljavax/ws/rs/core/MediaType;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "accept", "([Ljakarta/ws/rs/core/MediaType;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT,
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "match", "(Ljavax/ws/rs/core/EntityTag;Z)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "match", "(Ljakarta/ws/rs/core/EntityTag;Z)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "modified", "
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cookie", "(Ljavax/ws/rs/core/Cookie;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cookie", "(Ljakarta/ws/rs/core/Cookie;)Lorg/apache/cxf/jaxrs/client/Client;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT,
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "headers", "(Ljavax/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/Client;", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/jaxrs/client/Client;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "headers", "(Ljakarta/ws/rs/core/MultivaluedMap;)Lorg/apache/cxf/jaxrs/client/Client;", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Lorg/apache/cxf/jaxrs/client/Client;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -89,7 +89,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "reset", "()L
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", "()Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", "()Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -101,7 +101,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCurrentUR
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getResponse", "()Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getResponse", "()Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitEnd();
 }
 {

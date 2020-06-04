@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/JaxWsClientProxy;Ljavax/xml/ws/AsyncHandler;Ljava/lang/Object;Lorg/apache/cxf/service/model/BindingOperationInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/JaxWsClientProxy;Ljakarta/xml/ws/AsyncHandler;Ljava/lang/Object;Lorg/apache/cxf/service/model/BindingOperationInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -48,7 +48,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxWsClientProxy$1"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback", "<init>", "(Ljavax/xml/ws/AsyncHandler;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback", "<init>", "(Ljakarta/xml/ws/AsyncHandler;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();

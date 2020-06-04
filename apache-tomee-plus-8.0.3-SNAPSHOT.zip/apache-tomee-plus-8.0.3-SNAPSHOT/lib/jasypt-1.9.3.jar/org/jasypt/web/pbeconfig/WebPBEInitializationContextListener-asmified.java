@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", null, "java/lang/Object", new String[] { "javax/servlet/ServletContextListener" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletContextListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INIT_PARAM_INITIALIZER_CLASS_NAME", "Ljava/lang/String;", null, "webPBEInitializerClassName");
@@ -38,14 +38,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextDestroyed", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljavax/servlet/ServletContextEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextInitialized", "(Ljakarta/servlet/ServletContextEvent;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -58,9 +58,9 @@ methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/Instantiatio
 Label label6 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label6, "java/lang/IllegalAccessException");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletContextEvent", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletContextEvent", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitLdcInsn("webPBEInitializerClassName");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jasypt/commons/CommonUtils", "isEmpty", "(Ljava/lang/String;)Z", false);
@@ -85,7 +85,7 @@ methodVisitor.visitLabel(label1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", "javax/servlet/ServletContextEvent", "java/lang/String", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", "jakarta/servlet/ServletContextEvent", "java/lang/String", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/jasypt/exceptions/EncryptionInitializationException");
 methodVisitor.visitInsn(DUP);
@@ -129,7 +129,7 @@ methodVisitor.visitLabel(label4);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", "javax/servlet/ServletContextEvent", "java/lang/String", "java/lang/Class", "org/jasypt/web/pbeconfig/WebPBEInitializer"}, 1, new Object[] {"java/lang/InstantiationException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/jasypt/web/pbeconfig/WebPBEInitializationContextListener", "jakarta/servlet/ServletContextEvent", "java/lang/String", "java/lang/Class", "org/jasypt/web/pbeconfig/WebPBEInitializer"}, 1, new Object[] {"java/lang/InstantiationException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/jasypt/exceptions/EncryptionInitializationException");
 methodVisitor.visitInsn(DUP);

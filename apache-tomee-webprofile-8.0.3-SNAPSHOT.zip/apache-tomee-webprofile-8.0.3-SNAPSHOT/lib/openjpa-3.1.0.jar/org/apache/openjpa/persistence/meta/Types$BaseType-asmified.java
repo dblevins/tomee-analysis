@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/Types$BaseType", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/metamodel/Type<TX;>;", "java/lang/Object", new String[] { "javax/persistence/metamodel/Type" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/Types$BaseType", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/metamodel/Type<TX;>;", "java/lang/Object", new String[] { "jakarta/persistence/metamodel/Type" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$BaseType", "org/apache/openjpa/persistence/meta/Types", "BaseType", ACC_STATIC | ACC_ABSTRACT);
 

@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeBinary"
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeBinary", "(Ljavax/activation/DataHandler;)V", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "writeBinary", "(Ljakarta/activation/DataHandler;)V", null, new String[] { "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitEnd();
 }
 {

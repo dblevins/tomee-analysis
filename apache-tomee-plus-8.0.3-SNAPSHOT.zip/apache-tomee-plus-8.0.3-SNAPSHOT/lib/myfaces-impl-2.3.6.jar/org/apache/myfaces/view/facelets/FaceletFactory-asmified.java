@@ -42,35 +42,35 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljava/net/URL;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljava/net/URL;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/net/URL;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacelet", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/net/URL;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewMetadataFacelet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewMetadataFacelet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewMetadataFacelet", "(Ljava/net/URL;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewMetadataFacelet", "(Ljava/net/URL;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponentMetadataFacelet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponentMetadataFacelet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponentMetadataFacelet", "(Ljava/net/URL;)Ljavax/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCompositeComponentMetadataFacelet", "(Ljava/net/URL;)Ljakarta/faces/view/facelets/Facelet;", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "compileComponentFacelet", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljavax/faces/view/facelets/Facelet;", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/faces/view/facelets/Facelet;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "compileComponentFacelet", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljakarta/faces/view/facelets/Facelet;", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/faces/view/facelets/Facelet;", null);
 methodVisitor.visitEnd();
 }
 {

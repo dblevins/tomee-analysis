@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/oxm/ByteArrayDataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 {
 fieldVisitor = classWriter.visitField(0, "contentType", "Ljava/lang/String;", null, null);

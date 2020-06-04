@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "EPR_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "jaxbContext", "Ljavax/xml/bind/JAXBContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "jaxbContext", "Ljakarta/xml/bind/JAXBContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -60,7 +60,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getJAXBContext", "()Ljavax/xml/bind/JAXBContext;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getJAXBContext", "()Ljakarta/xml/bind/JAXBContext;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -73,7 +73,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljakarta/xml/bind/JAXBContext;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitInsn(ICONST_1);
@@ -82,8 +82,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/v200408/ObjectFactory;"));
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/bind/JAXBContext", "newInstance", "([Ljava/lang/Class;)Ljavax/xml/bind/JAXBContext;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/JAXBContext", "newInstance", "([Ljava/lang/Class;)Ljakarta/xml/bind/JAXBContext;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -101,13 +101,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setJAXBContext", "(Ljavax/xml/bind/JAXBContext;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setJAXBContext", "(Ljakarta/xml/bind/JAXBContext;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -121,14 +121,14 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/ws/addressing/VersionTransformer$Names200408", "jaxbContext", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/xml/bind/JAXBContext", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/xml/bind/JAXBContext", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(MONITOREXIT);

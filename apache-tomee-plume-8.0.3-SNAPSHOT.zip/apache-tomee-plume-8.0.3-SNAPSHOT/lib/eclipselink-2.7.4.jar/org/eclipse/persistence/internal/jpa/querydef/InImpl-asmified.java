@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "<T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl;Ljavax/persistence/criteria/CriteriaBuilder$In<TT;>;", "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", new String[] { "javax/persistence/criteria/CriteriaBuilder$In" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "<T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl;Ljakarta/persistence/criteria/CriteriaBuilder$In<TT;>;", "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", new String[] { "jakarta/persistence/criteria/CriteriaBuilder$In" });
 
-classWriter.visitInnerClass("javax/persistence/criteria/CriteriaBuilder$In", "javax/persistence/criteria/CriteriaBuilder", "In", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/persistence/criteria/CriteriaBuilder$In", "jakarta/persistence/criteria/CriteriaBuilder", "In", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parentNode", "Lorg/eclipse/persistence/expressions/Expression;", null, null);
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "leftExpression", "Lorg/ecl
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Ljava/util/Collection;Ljava/util/List;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Ljava/util/Collection;Ljava/util/List;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -45,7 +45,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/expressions/Expression", "in", "(Ljava/util/Collection;)Lorg/eclipse/persistence/expressions/Expression;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("in");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "leftExpression", "Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;");
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Ljava/util/List;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;Ljava/util/List;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -70,17 +70,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/expression
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/persistence/metamodel/Metamodel", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "java/util/List"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/persistence/metamodel/Metamodel"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/persistence/metamodel/Metamodel", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "java/util/List"}, 2, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/persistence/metamodel/Metamodel"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "getCurrentNode", "()Lorg/eclipse/persistence/expressions/Expression;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "getCurrentNode", "()Lorg/eclipse/persistence/expressions/Expression;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/expressions/Expression", "equal", "(Lorg/eclipse/persistence/expressions/Expression;)Lorg/eclipse/persistence/expressions/Expression;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/persistence/metamodel/Metamodel", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "java/util/List"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "javax/persistence/metamodel/Metamodel", "org/eclipse/persistence/expressions/Expression"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/persistence/metamodel/Metamodel", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "org/eclipse/persistence/internal/jpa/querydef/ExpressionImpl", "java/util/List"}, 3, new Object[] {Opcodes.UNINITIALIZED_THIS, "jakarta/persistence/metamodel/Metamodel", "org/eclipse/persistence/expressions/Expression"});
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("in");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "leftExpression", "Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;");
@@ -89,7 +89,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljavax/persistence/criteria/Expression;", "()Ljavax/persistence/criteria/Expression<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpression", "()Ljakarta/persistence/criteria/Expression;", "()Ljakarta/persistence/criteria/Expression<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "leftExpression", "Lorg/eclipse/persistence/internal/jpa/querydef/ExpressionImpl;");
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "(Ljava/lang/Object;)Ljavax/persistence/criteria/CriteriaBuilder$In;", "(TT;)Ljavax/persistence/criteria/CriteriaBuilder$In<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "(Ljava/lang/Object;)Ljakarta/persistence/criteria/CriteriaBuilder$In;", "(TT;)Ljakarta/persistence/criteria/CriteriaBuilder$In<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "currentNode", "Lorg/eclipse/persistence/expressions/Expression;");
@@ -134,7 +134,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CriteriaBuilder$In;", "(Ljavax/persistence/criteria/Expression<+TT;>;)Ljavax/persistence/criteria/CriteriaBuilder$In<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CriteriaBuilder$In;", "(Ljakarta/persistence/criteria/Expression<+TT;>;)Ljakarta/persistence/criteria/CriteriaBuilder$In<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/querydef/InternalExpression");
@@ -268,7 +268,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "not", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "not", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -286,12 +286,12 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/InImpl", "parentNode", "Lorg/eclipse/persistence/expressions/Expression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("not");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundExpressionImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/expressions/Expression;Ljava/util/List;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_1);

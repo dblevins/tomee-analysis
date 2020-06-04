@@ -216,7 +216,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "checkXmlGregorianCalendarFieldRef", "(Ljavax/xml/namespace/QName;Ljavax/xml/datatype/XMLGregorianCalendar;)V", null, new String[] { "javax/xml/bind/MarshalException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "checkXmlGregorianCalendarFieldRef", "(Ljavax/xml/namespace/QName;Ljavax/xml/datatype/XMLGregorianCalendar;)V", null, new String[] { "jakarta/xml/bind/MarshalException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -346,7 +346,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "length", "()I", false);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label9);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/MarshalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/MarshalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -365,7 +365,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/MarshalException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/MarshalException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -394,7 +394,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Ljavax/xml/namespace/QName;Ljavax/xml/datatype/XMLGregorianCalendar;)V", null, new String[] { "javax/xml/bind/MarshalException" });
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Ljavax/xml/namespace/QName;Ljavax/xml/datatype/XMLGregorianCalendar;)V", null, new String[] { "jakarta/xml/bind/MarshalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -689,7 +689,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/impl/RuntimeBuiltinLeafInfoImpl$11");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/activation/DataHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/activation/DataHandler;"));
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);

@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(0, "sortOrder", "Ljava/lang/String;", null
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "destinations", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+fieldVisitor = classWriter.visitField(0, "destinations", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDestinations", "(Ljava/util/Map;)Lorg/apache/activemq/broker/jmx/DestinationsViewFilter;", "(Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;)Lorg/apache/activemq/broker/jmx/DestinationsViewFilter;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDestinations", "(Ljava/util/Map;)Lorg/apache/activemq/broker/jmx/DestinationsViewFilter;", "(Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;)Lorg/apache/activemq/broker/jmx/DestinationsViewFilter;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -183,7 +183,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getPagedDestinations", "(II)Ljava/util/Map;", "(II)Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+methodVisitor = classWriter.visitMethod(0, "getPagedDestinations", "(II)Ljava/util/Map;", "(II)Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/google/common/collect/ImmutableMap", "builder", "()Lcom/google/common/collect/ImmutableMap$Builder;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -260,7 +260,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getOrdering", "()Lcom/google/common/collect/Ordering;", "()Lcom/google/common/collect/Ordering<Ljava/util/Map$Entry<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;>;", null);
+methodVisitor = classWriter.visitMethod(0, "getOrdering", "()Lcom/google/common/collect/Ordering;", "()Lcom/google/common/collect/Ordering<Ljava/util/Map$Entry<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/broker/jmx/DestinationsViewFilter$2");
 methodVisitor.visitInsn(DUP);
@@ -271,7 +271,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDestinations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDestinations", "()Ljava/util/Map;", "()Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/jmx/DestinationsViewFilter", "destinations", "Ljava/util/Map;");

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$Model$2", null, "java/util/concurrent/ThreadPoolExecutor", null);
 
-classWriter.visitOuterClass("org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$Model", "<init>", "(ZLjavax/interceptor/InvocationContext;Lorg/eclipse/microprofile/faulttolerance/Bulkhead;ZLorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram;)V");
+classWriter.visitOuterClass("org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$Model", "<init>", "(ZLjakarta/interceptor/InvocationContext;Lorg/eclipse/microprofile/faulttolerance/Bulkhead;ZLorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram;Lorg/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram;)V");
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram", "org/apache/safeguard/impl/metrics/FaultToleranceMetrics", "Histogram", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 

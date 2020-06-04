@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/transaction/JTATransactionController", null, "org/eclipse/persistence/transaction/AbstractTransactionController", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_STATIC, "defaultTransactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_STATIC, "defaultTransactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -103,8 +103,8 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTAT
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "acquireTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "acquireTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -121,7 +121,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/transaction/AbstractTransactionController", "<init>", "()V", false);
@@ -132,7 +132,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/transactio
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "listenerFactory", "Lorg/eclipse/persistence/transaction/SynchronizationListenerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -141,10 +141,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerSynchronization_impl", "(Lorg/eclipse/persistence/transaction/AbstractSynchronizationListener;Ljava/lang/Object;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Transaction");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Transaction");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Synchronization");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Synchronization");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -153,8 +153,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTransaction_impl", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -171,8 +171,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTransactionStatus_impl", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getStatus", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getStatus", "()I", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
@@ -182,8 +182,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "beginTransaction_impl", "()V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "begin", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "begin", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -192,8 +192,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "commitTransaction_impl", "()V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "commit", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "commit", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -202,8 +202,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "rollbackTransaction_impl", "()V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "rollback", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "rollback", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -212,8 +212,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "markTransactionForRollback_impl", "()V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "setRollbackOnly", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/transaction/JTATransactionController", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -329,12 +329,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "acquireTransactionManager", "()Ljavax/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "acquireTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljakarta/transaction/TransactionManager;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -354,20 +354,20 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/transaction/JTATransactionController", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -387,18 +387,18 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDefaultTransactionManager", "()Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDefaultTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setDefaultTransactionManager", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setDefaultTransactionManager", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/transaction/JTATransactionController", "defaultTransactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

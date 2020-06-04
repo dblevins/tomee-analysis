@@ -46,11 +46,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/resolver/implicitobject/FacesContextImplicitObject", "facesContext", "(Ljavax/el/ELContext;)Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/resolver/implicitobject/FacesContextImplicitObject", "facesContext", "(Ljakarta/el/ELContext;)Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -69,7 +69,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("facesContext");
 methodVisitor.visitLdcInsn("Per-request information for a JSF request");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/context/FacesContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/context/FacesContext;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/resolver/implicitobject/FacesContextImplicitObject", "makeDescriptor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)Ljava/beans/FeatureDescriptor;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);

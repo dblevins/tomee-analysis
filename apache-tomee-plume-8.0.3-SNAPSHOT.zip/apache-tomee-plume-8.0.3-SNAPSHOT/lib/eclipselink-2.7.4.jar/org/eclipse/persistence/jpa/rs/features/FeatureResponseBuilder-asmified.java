@@ -25,23 +25,23 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/rs/features/FeatureResponseBuilder", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildReadAllQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<Ljava/lang/Object;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildReadAllQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<Ljava/lang/Object;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildReportQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<[Ljava/lang/Object;>;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildReportQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<[Ljava/lang/Object;>;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildSingleEntityResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildSingleEntityResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildAttributeResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildAttributeResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildSingleResultQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildSingleResultQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

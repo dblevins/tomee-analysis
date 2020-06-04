@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl$2", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/Void;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "predeploy", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Ljavax/persistence/spi/ClassTransformer;");
+classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl", "predeploy", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Ljakarta/persistence/spi/ClassTransformer;");
 
 classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl$2", null, null, 0);
 

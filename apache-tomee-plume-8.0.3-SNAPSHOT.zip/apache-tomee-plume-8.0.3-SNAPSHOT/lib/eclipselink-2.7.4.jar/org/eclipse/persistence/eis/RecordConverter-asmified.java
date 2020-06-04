@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/eis/RecordConverter", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "converterFromAdapterRecord", "(Ljavax/resource/cci/Record;)Ljavax/resource/cci/Record;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "converterFromAdapterRecord", "(Ljakarta/resource/cci/Record;)Ljakarta/resource/cci/Record;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "converterToAdapterRecord", "(Ljavax/resource/cci/Record;)Ljavax/resource/cci/Record;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "converterToAdapterRecord", "(Ljakarta/resource/cci/Record;)Ljakarta/resource/cci/Record;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

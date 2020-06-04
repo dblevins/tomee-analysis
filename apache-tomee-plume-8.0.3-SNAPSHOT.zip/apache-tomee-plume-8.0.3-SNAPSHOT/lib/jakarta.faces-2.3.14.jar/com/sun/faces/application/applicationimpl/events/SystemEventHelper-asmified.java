@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/faces/application/applicationimpl/events/Sy
 classWriter.visitInnerClass("com/sun/faces/util/Cache$Factory", "com/sun/faces/util/Cache", "Factory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "systemEventInfoCache", "Lcom/sun/faces/util/Cache;", "Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/SystemEventInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "systemEventInfoCache", "Lcom/sun/faces/util/Cache;", "Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/SystemEventInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Z)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Object;Ljava/lang/Class<*>;Z)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Z)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Object;Ljava/lang/Class<*>;Z)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label0 = new Label();

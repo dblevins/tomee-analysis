@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSerializableBean", "(Ljavax/enterprise/context/spi/Contextual;)Ljavax/enterprise/context/spi/Contextual;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/context/spi/Contextual<TT;>;)Ljavax/enterprise/context/spi/Contextual<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSerializableBean", "(Ljakarta/enterprise/context/spi/Contextual;)Ljakarta/enterprise/context/spi/Contextual;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/context/spi/Contextual<TT;>;)Ljakarta/enterprise/context/spi/Contextual<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/webbeans/container/SerializableBean");
@@ -54,7 +54,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/WebBeansUtil", "getPassivationId", "(Ljavax/enterprise/context/spi/Contextual;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/WebBeansUtil", "getPassivationId", "(Ljakarta/enterprise/context/spi/Contextual;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
@@ -71,8 +71,8 @@ methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/container/SerializableBean");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Bean");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/SerializableBean", "<init>", "(Ljavax/enterprise/inject/spi/Bean;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Bean");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/SerializableBean", "<init>", "(Ljakarta/enterprise/inject/spi/Bean;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/SerializableBeanVault", "serializableBeans", "Ljava/util/Map;");

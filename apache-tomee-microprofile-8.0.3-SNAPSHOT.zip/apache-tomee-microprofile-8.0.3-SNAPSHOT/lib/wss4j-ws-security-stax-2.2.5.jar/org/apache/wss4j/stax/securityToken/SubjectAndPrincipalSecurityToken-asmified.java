@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/wss4j/stax/securityToken/SubjectAndPrincipalSecurityToken", null, "java/lang/Object", new String[] { "org/apache/xml/security/stax/securityToken/SecurityToken" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubject", "()Ljavax/security/auth/Subject;", null, new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubject", "()Ljakarta/security/auth/Subject;", null, new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
 methodVisitor.visitEnd();
 }
 {

@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "returnType", "Ljava/lang/Cla
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "provider", "Ljavax/inject/Provider;", "Ljavax/inject/Provider<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "provider", "Ljakarta/inject/Provider;", "Ljakarta/inject/Provider<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "proxy", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/inject/Provider;Z)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljavax/inject/Provider<TT;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/inject/Provider;Z)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljakarta/inject/Provider<TT;>;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractProducer", "<init>", "()V", false);
@@ -57,7 +57,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "returnType", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljavax/inject/Provider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljakarta/inject/Provider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "proxy", "Z");
@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Object;", "(Ljava/util/Map<Ljavax/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "produce", "(Ljava/util/Map;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Object;", "(Ljava/util/Map<Ljakarta/enterprise/inject/spi/Interceptor<*>;*>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "proxyInstance", "Ljava/lang/Object;");
@@ -104,16 +104,16 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljavax/inject/Provider;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/NormalScopeProxyFactory", "createProxyInstance", "(Ljava/lang/Class;Ljavax/inject/Provider;)Ljava/lang/Object;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljakarta/inject/Provider;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/NormalScopeProxyFactory", "createProxyInstance", "(Ljava/lang/Class;Ljakarta/inject/Provider;)Ljava/lang/Object;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "proxyInstance", "Ljava/lang/Object;");
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljavax/inject/Provider;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/inject/Provider", "get", "()Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "provider", "Ljakarta/inject/Provider;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/inject/Provider", "get", "()Ljava/lang/Object;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/ProviderBasedProducer", "proxyInstance", "Ljava/lang/Object;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

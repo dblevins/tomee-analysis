@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", null, "java/lang/Object", new String[] { "javax/servlet/AsyncListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", null, "java/lang/Object", new String[] { "jakarta/servlet/AsyncListener" });
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "org/apache/openejb/server/httpd/EEFilter", "AsynContextWrapper", ACC_PUBLIC | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "ScopeAwareListener", ACC_PRIVATE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/servlet/AsyncListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/servlet/AsyncListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;Ljavax/servlet/AsyncListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;Ljakarta/servlet/AsyncListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -46,13 +46,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljavax/servlet/AsyncListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljakarta/servlet/AsyncListener;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -64,9 +64,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEF
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljavax/servlet/AsyncListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljakarta/servlet/AsyncListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncListener", "onComplete", "(Ljavax/servlet/AsyncEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncListener", "onComplete", "(Ljakarta/servlet/AsyncEvent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label3 = new Label();
@@ -76,7 +76,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "access$200", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "javax/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "jakarta/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label4 = new Label();
@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -107,9 +107,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEF
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljavax/servlet/AsyncListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljakarta/servlet/AsyncListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncListener", "onTimeout", "(Ljavax/servlet/AsyncEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncListener", "onTimeout", "(Ljakarta/servlet/AsyncEvent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label3 = new Label();
@@ -119,7 +119,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "access$200", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "javax/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "jakarta/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label4 = new Label();
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -150,9 +150,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEF
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljavax/servlet/AsyncListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljakarta/servlet/AsyncListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncListener", "onError", "(Ljavax/servlet/AsyncEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncListener", "onError", "(Ljakarta/servlet/AsyncEvent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label3 = new Label();
@@ -162,7 +162,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "access$200", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "javax/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "jakarta/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label4 = new Label();
@@ -181,7 +181,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -193,9 +193,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEF
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljavax/servlet/AsyncListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "delegate", "Ljakarta/servlet/AsyncListener;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncListener", "onStartAsync", "(Ljavax/servlet/AsyncEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncListener", "onStartAsync", "(Ljakarta/servlet/AsyncEvent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label3 = new Label();
@@ -205,7 +205,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/EEFilter
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper", "access$200", "(Lorg/apache/openejb/server/httpd/EEFilter$AsynContextWrapper;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "javax/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener", "jakarta/servlet/AsyncEvent", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label4 = new Label();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/rs/security/oauth2/common/AccessToken", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/MappedSuperclass;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/MappedSuperclass;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -178,7 +178,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTokenKey", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/Id;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/Id;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -220,12 +220,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameters", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ElementCollection;", true);
-annotationVisitor0.visitEnum("fetch", "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ElementCollection;", true);
+annotationVisitor0.visitEnum("fetch", "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/MapKeyColumn;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/MapKeyColumn;", true);
 annotationVisitor0.visit("name", "propName");
 annotationVisitor0.visitEnd();
 }
@@ -306,7 +306,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncodedToken", "()Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/Transient;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/Transient;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

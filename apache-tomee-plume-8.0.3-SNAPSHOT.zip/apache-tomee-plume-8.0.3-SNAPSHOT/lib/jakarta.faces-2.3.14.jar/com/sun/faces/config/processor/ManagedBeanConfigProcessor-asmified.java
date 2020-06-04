@@ -118,14 +118,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "process", "(Ljavax/servlet/ServletContext;Ljavax/faces/context/FacesContext;[Lcom/sun/faces/config/manager/documents/DocumentInfo;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "process", "(Ljakarta/servlet/ServletContext;Ljakarta/faces/context/FacesContext;[Lcom/sun/faces/config/manager/documents/DocumentInfo;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/bean/ManagedBean;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/config/processor/ManagedBeanConfigProcessor", "processAnnotations", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;)V", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/bean/ManagedBean;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/config/processor/ManagedBeanConfigProcessor", "processAnnotations", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/ApplicationAssociate", "getInstance", "(Ljavax/servlet/ServletContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/ApplicationAssociate", "getInstance", "(Ljakarta/servlet/ServletContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "getBeanManager", "()Lcom/sun/faces/mgbean/BeanManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ICONST_0);
@@ -187,7 +187,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/NodeList", "getLengt
 methodVisitor.visitVarInsn(ISTORE, 10);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"com/sun/faces/config/processor/ManagedBeanConfigProcessor", "javax/servlet/ServletContext", "javax/faces/context/FacesContext", "[Lcom/sun/faces/config/manager/documents/DocumentInfo;", "com/sun/faces/mgbean/BeanManager", Opcodes.INTEGER, "org/w3c/dom/Document", "java/lang/String", "org/w3c/dom/NodeList", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"com/sun/faces/config/processor/ManagedBeanConfigProcessor", "jakarta/servlet/ServletContext", "jakarta/faces/context/FacesContext", "[Lcom/sun/faces/config/manager/documents/DocumentInfo;", "com/sun/faces/mgbean/BeanManager", Opcodes.INTEGER, "org/w3c/dom/Document", "java/lang/String", "org/w3c/dom/NodeList", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitVarInsn(ILOAD, 10);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
@@ -200,7 +200,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/processor/Man
 methodVisitor.visitIincInsn(9, 1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/config/processor/ManagedBeanConfigProcessor", "javax/servlet/ServletContext", "javax/faces/context/FacesContext", "[Lcom/sun/faces/config/manager/documents/DocumentInfo;", "com/sun/faces/mgbean/BeanManager", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/config/processor/ManagedBeanConfigProcessor", "jakarta/servlet/ServletContext", "jakarta/faces/context/FacesContext", "[Lcom/sun/faces/config/manager/documents/DocumentInfo;", "com/sun/faces/mgbean/BeanManager", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);

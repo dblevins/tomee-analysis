@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/AttributeNodeImpl<TX;>;Ljavax/persistence/EntityGraph<TX;>;Ljavax/persistence/Subgraph<TX;>;", "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", new String[] { "javax/persistence/EntityGraph", "javax/persistence/Subgraph" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "<X:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/AttributeNodeImpl<TX;>;Ljakarta/persistence/EntityGraph<TX;>;Ljakarta/persistence/Subgraph<TX;>;", "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", new String[] { "jakarta/persistence/EntityGraph", "jakarta/persistence/Subgraph" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "attributeGroup", "Lorg/eclipse/persistence/queries/AttributeGroup;", null, null);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "addAttributeNodes", "([Ljavax/persistence/metamodel/Attribute;)V", "([Ljavax/persistence/metamodel/Attribute<TX;*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "addAttributeNodes", "([Ljakarta/persistence/metamodel/Attribute;)V", "([Ljakarta/persistence/metamodel/Attribute<TX;*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "isMutable", "Z");
@@ -244,7 +244,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 Label label2 = new Label();
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/internal/jpa/EntityGraphImpl", "[Ljavax/persistence/metamodel/Attribute;", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljavax/persistence/metamodel/Attribute;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/internal/jpa/EntityGraphImpl", "[Ljakarta/persistence/metamodel/Attribute;", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljakarta/persistence/metamodel/Attribute;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
@@ -253,13 +253,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addAttributeNodeImpl", "(Lorg/eclipse/persistence/internal/jpa/AttributeNodeImpl;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "attributeGroup", "Lorg/eclipse/persistence/queries/AttributeGroup;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/AttributeGroup", "addAttribute", "(Ljava/lang/String;)V", false);
 methodVisitor.visitIincInsn(3, 1);
 methodVisitor.visitLabel(label1);
@@ -272,55 +272,55 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljavax/persistence/metamodel/Attribute;)Ljavax/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljavax/persistence/metamodel/Attribute<TX;TT;>;)Ljavax/persistence/Subgraph<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljakarta/persistence/metamodel/Attribute;)Ljakarta/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/Attribute<TX;TT;>;)Ljakarta/persistence/Subgraph<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "isCollection", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "isCollection", "()Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/PluralAttribute");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/PluralAttribute", "getBindableJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/PluralAttribute");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/PluralAttribute", "getBindableJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljavax/persistence/metamodel/Attribute;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljavax/persistence/metamodel/Attribute<TX;TT;>;Ljava/lang/Class<+TT;>;)Ljavax/persistence/Subgraph<+TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljakarta/persistence/metamodel/Attribute;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/Attribute<TX;TT;>;Ljava/lang/Class<+TT;>;)Ljakarta/persistence/Subgraph<+TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljava/lang/String;)Ljavax/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;)Ljavax/persistence/Subgraph<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljava/lang/String;)Ljakarta/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;)Ljakarta/persistence/Subgraph<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TX;>;)Ljavax/persistence/Subgraph<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TX;>;)Ljakarta/persistence/Subgraph<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "isMutable", "Z");
@@ -454,7 +454,7 @@ methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljavax/persistence/metamodel/Attribute;)Ljavax/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljavax/persistence/metamodel/Attribute<TX;TT;>;)Ljavax/persistence/Subgraph<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljakarta/persistence/metamodel/Attribute;)Ljakarta/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/Attribute<TX;TT;>;)Ljakarta/persistence/Subgraph<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "isMutable", "Z");
@@ -468,52 +468,52 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "isCollection", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "isCollection", "()Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/PluralAttribute");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/PluralAttribute", "getBindableJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/PluralAttribute");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/PluralAttribute", "getBindableJavaType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljavax/persistence/metamodel/Attribute;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljavax/persistence/metamodel/Attribute<TX;TT;>;Ljava/lang/Class<+TT;>;)Ljavax/persistence/Subgraph<+TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljakarta/persistence/metamodel/Attribute;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/Attribute<TX;TT;>;Ljava/lang/Class<+TT;>;)Ljakarta/persistence/Subgraph<+TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljava/lang/String;)Ljavax/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;)Ljavax/persistence/Subgraph<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljava/lang/String;)Ljakarta/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;)Ljakarta/persistence/Subgraph<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TX;>;)Ljavax/persistence/Subgraph<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addKeySubgraph", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", "<X:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TX;>;)Ljakarta/persistence/Subgraph<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "isMutable", "Z");
@@ -679,7 +679,7 @@ methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubclassSubgraph", "(Ljava/lang/Class;)Ljavax/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;)Ljavax/persistence/Subgraph<+TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSubclassSubgraph", "(Ljava/lang/Class;)Ljakarta/persistence/Subgraph;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;)Ljakarta/persistence/Subgraph<+TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "isMutable", "Z");
@@ -762,7 +762,7 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributeNodes", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/AttributeNode<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributeNodes", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/AttributeNode<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/EntityGraphImpl", "attributeNodes", "Ljava/util/Map;");

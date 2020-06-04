@@ -39,11 +39,11 @@ classWriter.visitInnerClass("org/apache/bval/el/ELFacade$EvaluationType", "org/a
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RESOLVER", "Ljavax/el/ELResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RESOLVER", "Ljakarta/el/ELResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expressionFactory", "Ljavax/el/ExpressionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expressionFactory", "Ljakarta/el/ExpressionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -52,8 +52,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/el/ExpressionFactory", "newInstance", "()Ljavax/el/ExpressionFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/el/ExpressionFactory", "newInstance", "()Ljakarta/el/ExpressionFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -78,24 +78,24 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/el/ELFacade$BValELContext", "<init>", "(Lorg/apache/bval/el/ELFacade;Lorg/apache/bval/el/ELFacade$1;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/el/ELFacade$BValELContext", "getVariableMapper", "()Ljavax/el/VariableMapper;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/el/ELFacade$BValELContext", "getVariableMapper", "()Ljakarta/el/VariableMapper;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/el/ELFacade;Ljavax/el/VariableMapper;)Ljava/util/function/BiConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/el/ELFacade", "lambda$interpolate$0", "(Ljavax/el/VariableMapper;Ljava/lang/String;Ljava/lang/Object;)V", false), Type.getType("(Ljava/lang/String;Ljava/lang/Object;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/el/ELFacade;Ljakarta/el/VariableMapper;)Ljava/util/function/BiConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/el/ELFacade", "lambda$interpolate$0", "(Ljakarta/el/VariableMapper;Ljava/lang/String;Ljava/lang/Object;)V", false), Type.getType("(Ljava/lang/String;Ljava/lang/Object;)V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "forEach", "(Ljava/util/function/BiConsumer;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("validatedValue");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/el/ELFacade$EvaluationType", "DEFERRED", "Lorg/apache/bval/el/ELFacade$EvaluationType;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/el/ELFacade$EvaluationType", "access$100", "(Lorg/apache/bval/el/ELFacade$EvaluationType;)Lorg/apache/bval/jsr/util/LookBehindRegexHolder;", false);
@@ -104,9 +104,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/util/LookBehin
 methodVisitor.visitLdcInsn("\\$0");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/regex/Matcher", "replaceAll", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
@@ -121,71 +121,71 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "initResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "initResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/el/CompositeELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/CompositeELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/CompositeELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/CompositeELResolver", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/MapELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/MapELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/MapELResolver", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/MapELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/ListELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/ListELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ListELResolver", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ListELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/ArrayELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/ArrayELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ArrayELResolver", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ArrayELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/ResourceBundleELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/ResourceBundleELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ResourceBundleELResolver", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ResourceBundleELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/el/BeanELResolver");
+methodVisitor.visitTypeInsn(NEW, "jakarta/el/BeanELResolver");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/BeanELResolver", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/CompositeELResolver", "add", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/BeanELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/CompositeELResolver", "add", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$interpolate$0", "(Ljavax/el/VariableMapper;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$interpolate$0", "(Ljakarta/el/VariableMapper;Ljava/lang/String;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/el/ELFacade", "RESOLVER", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/el/ELFacade", "RESOLVER", "Ljakarta/el/ELResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$500", "(Lorg/apache/bval/el/ELFacade;)Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$500", "(Lorg/apache/bval/el/ELFacade;)Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljavax/el/ExpressionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade", "expressionFactory", "Ljakarta/el/ExpressionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -193,8 +193,8 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/el/ELFacade", "initResolver", "()Ljavax/el/ELResolver;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/el/ELFacade", "RESOLVER", "Ljavax/el/ELResolver;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/el/ELFacade", "initResolver", "()Ljakarta/el/ELResolver;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/el/ELFacade", "RESOLVER", "Ljakarta/el/ELResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();

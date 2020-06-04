@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "<JsonType:Ljava/lang/Object;OriginalType:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/johnzon/mapper/TypeAwareAdapter<TOriginalType;TJsonType;>;", "java/lang/Object", new String[] { "org/apache/johnzon/mapper/TypeAwareAdapter" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/json/bind/adapter/JsonbAdapter;", "Ljavax/json/bind/adapter/JsonbAdapter<TOriginalType;TJsonType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/json/bind/adapter/JsonbAdapter;", "Ljakarta/json/bind/adapter/JsonbAdapter<TOriginalType;TJsonType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "to", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/bind/adapter/JsonbAdapter;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V", "(Ljavax/json/bind/adapter/JsonbAdapter<TOriginalType;TJsonType;>;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/bind/adapter/JsonbAdapter;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V", "(Ljakarta/json/bind/adapter/JsonbAdapter<TOriginalType;TJsonType;>;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljavax/json/bind/adapter/JsonbAdapter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljakarta/json/bind/adapter/JsonbAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "from", "Ljava/lang/reflect/Type;");
@@ -68,20 +68,20 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljavax/json/bind/adapter/JsonbAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljakarta/json/bind/adapter/JsonbAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/adapter/JsonbAdapter", "adaptFromJson", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/adapter/JsonbAdapter", "adaptFromJson", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/json/bind/JsonbException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/json/bind/JsonbException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/json/bind/JsonbException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/json/bind/JsonbException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -100,20 +100,20 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljavax/json/bind/adapter/JsonbAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter", "delegate", "Ljakarta/json/bind/adapter/JsonbAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/adapter/JsonbAdapter", "adaptToJson", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/adapter/JsonbAdapter", "adaptToJson", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/json/bind/JsonbException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/json/bind/JsonbException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/json/bind/JsonbException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/json/bind/JsonbException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

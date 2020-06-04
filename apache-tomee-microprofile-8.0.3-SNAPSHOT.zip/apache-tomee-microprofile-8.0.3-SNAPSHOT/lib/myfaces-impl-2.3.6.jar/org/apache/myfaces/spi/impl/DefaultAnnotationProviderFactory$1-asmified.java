@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Lorg/apache/myfaces/spi/AnnotationProvider;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "createAnnotationProvider", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;");
+classWriter.visitOuterClass("org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "createAnnotationProvider", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;");
 
 classWriter.visitInnerClass("org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$extContext", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$extContext", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "this$0", "Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -57,8 +57,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "this$0", "Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "val$extContext", "Ljavax/faces/context/ExternalContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "access$000", "(Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1", "val$extContext", "Ljakarta/faces/context/ExternalContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory", "access$000", "(Lorg/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory;Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProvider;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

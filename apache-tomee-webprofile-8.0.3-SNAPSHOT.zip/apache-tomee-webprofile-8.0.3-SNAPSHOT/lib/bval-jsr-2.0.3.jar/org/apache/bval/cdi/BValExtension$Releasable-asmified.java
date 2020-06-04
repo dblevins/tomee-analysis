@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/bval/cdi/BValExtension$Releasable", "org
 classWriter.visitInnerClass("org/apache/bval/cdi/BValExtension$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljavax/enterprise/context/spi/CreationalContext;", "Ljavax/enterprise/context/spi/CreationalContext<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljakarta/enterprise/context/spi/CreationalContext;", "Ljakarta/enterprise/context/spi/CreationalContext<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;", "Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;", "Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,16 +41,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "instance", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/enterprise/context/spi/CreationalContext;Ljavax/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;)V", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;Ljavax/enterprise/inject/spi/InjectionTarget<TT;>;TT;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/enterprise/context/spi/CreationalContext;Ljakarta/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;)V", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;Ljakarta/enterprise/inject/spi/InjectionTarget<TT;>;TT;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "context", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "context", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "instance", "Ljava/lang/Object;");
@@ -68,18 +68,18 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NoClassDefFoundError");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "instance", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "preDestroy", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "preDestroy", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljavax/enterprise/inject/spi/InjectionTarget;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "injectionTarget", "Ljakarta/enterprise/inject/spi/InjectionTarget;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "instance", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/InjectionTarget", "dispose", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/InjectionTarget", "dispose", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "context", "Ljavax/enterprise/context/spi/CreationalContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/CreationalContext", "release", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/cdi/BValExtension$Releasable", "context", "Ljakarta/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/CreationalContext", "release", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -102,13 +102,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/enterprise/context/spi/CreationalContext;Ljavax/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;Lorg/apache/bval/cdi/BValExtension$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/enterprise/context/spi/CreationalContext;Ljakarta/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;Lorg/apache/bval/cdi/BValExtension$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/cdi/BValExtension$Releasable", "<init>", "(Ljavax/enterprise/context/spi/CreationalContext;Ljavax/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/cdi/BValExtension$Releasable", "<init>", "(Ljakarta/enterprise/context/spi/CreationalContext;Ljakarta/enterprise/inject/spi/InjectionTarget;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();

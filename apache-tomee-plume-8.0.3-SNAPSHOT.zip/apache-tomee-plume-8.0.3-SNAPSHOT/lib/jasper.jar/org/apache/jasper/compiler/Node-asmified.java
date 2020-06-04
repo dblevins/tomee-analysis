@@ -101,7 +101,7 @@ classWriter.visitInnerClass("org/apache/jasper/compiler/Node$JspRoot", "org/apac
 classWriter.visitInnerClass("org/apache/jasper/compiler/Node$Root", "org/apache/jasper/compiler/Node", "Root", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ZERO_VARIABLE_INFO", "[Ljavax/servlet/jsp/tagext/VariableInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ZERO_VARIABLE_INFO", "[Ljakarta/servlet/jsp/tagext/VariableInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -665,9 +665,9 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "()[Ljavax/servlet/jsp/tagext/VariableInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "()[Ljakarta/servlet/jsp/tagext/VariableInfo;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/jasper/compiler/Node", "ZERO_VARIABLE_INFO", "[Ljavax/servlet/jsp/tagext/VariableInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/jasper/compiler/Node", "ZERO_VARIABLE_INFO", "[Ljakarta/servlet/jsp/tagext/VariableInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
@@ -676,8 +676,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/tagext/VariableInfo");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/jasper/compiler/Node", "ZERO_VARIABLE_INFO", "[Ljavax/servlet/jsp/tagext/VariableInfo;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/tagext/VariableInfo");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/jasper/compiler/Node", "ZERO_VARIABLE_INFO", "[Ljakarta/servlet/jsp/tagext/VariableInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();

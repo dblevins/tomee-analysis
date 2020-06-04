@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/o
 classWriter.visitInnerClass("org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer", "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "WebServiceClientCustomizer", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "features", "(Ljavax/xml/namespace/QName;Ljava/util/Properties;)[Ljavax/xml/ws/WebServiceFeature;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "features", "(Ljavax/xml/namespace/QName;Ljava/util/Properties;)[Ljakarta/xml/ws/WebServiceFeature;", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -150,7 +150,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/security/DefaultSec
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/DefaultSecurityContext", "<init>", "(Ljava/security/Principal;Ljavax/security/auth/Subject;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/DefaultSecurityContext", "<init>", "(Ljava/security/Principal;Ljakarta/security/auth/Subject;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "put", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/ws/security/wss4j/BinarySecurityTokenInterceptor", "org/apache/cxf/binding/soap/SoapMessage", "org/apache/cxf/headers/Header", "org/w3c/dom/Element", "org/w3c/dom/Element"}, 0, new Object[] {});

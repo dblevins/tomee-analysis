@@ -24,20 +24,20 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/spi/AnnotationProviderFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/myfaces/spi/AnnotationProviderFactory", "getAnnotationProviderFactory", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProviderFactory;");
+classWriter.visitOuterClass("org/apache/myfaces/spi/AnnotationProviderFactory", "getAnnotationProviderFactory", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/AnnotationProviderFactory;");
 
 classWriter.visitInnerClass("org/apache/myfaces/spi/AnnotationProviderFactory$1", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$ectx", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$ectx", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/AnnotationProviderFactory$1", "val$ectx", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/AnnotationProviderFactory$1", "val$ectx", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -48,10 +48,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Object;", null, new String[] { "java/security/PrivilegedActionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/spi/AnnotationProviderFactory$1", "val$ectx", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/spi/AnnotationProviderFactory$1", "val$ectx", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/spi/AnnotationProviderFactory;"));
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/AnnotationProviderFactory", "FACTORY_DEFAULT", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/SpiUtils", "build", "(Ljavax/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/SpiUtils", "build", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$SubqueryExpression", "org/apache/openjpa/persistence/criteria/Expressions", "SubqueryExpression", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/criteria/Subquery;)V", "(Ljavax/persistence/criteria/Subquery<TX;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/criteria/Subquery;)V", "(Ljakarta/persistence/criteria/Subquery<TX;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$SubqueryExpression", "<init>", "(Ljavax/persistence/criteria/Subquery;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$SubqueryExpression", "<init>", "(Ljakarta/persistence/criteria/Subquery;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

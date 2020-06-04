@@ -185,7 +185,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/SingleTypePropertyInfoImpl", "seed", "Lcom/sun/xml/bind/v2/model/impl/PropertySeed;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlList;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlList;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/impl/PropertySeed", "hasAnnotation", "(Ljava/lang/Class;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);

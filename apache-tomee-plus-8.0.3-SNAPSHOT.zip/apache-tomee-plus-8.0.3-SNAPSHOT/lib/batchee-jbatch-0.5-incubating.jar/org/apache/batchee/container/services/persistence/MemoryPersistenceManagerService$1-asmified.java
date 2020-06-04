@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_FINAL | ACC_SUPER, "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$1", "Ljava/util/concurrent/CopyOnWriteArrayList<Ljavax/batch/runtime/BatchStatus;>;", "java/util/concurrent/CopyOnWriteArrayList", null);
+classWriter.visit(V1_6, ACC_FINAL | ACC_SUPER, "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$1", "Ljava/util/concurrent/CopyOnWriteArrayList<Ljakarta/batch/runtime/BatchStatus;>;", "java/util/concurrent/CopyOnWriteArrayList", null);
 
 classWriter.visitOuterClass("org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService", null, null);
 
@@ -34,15 +34,15 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/CopyOnWriteArrayList", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STARTED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STARTED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$1", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STARTING", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STARTING", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$1", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STOPPING", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STOPPING", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$1", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

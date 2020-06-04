@@ -22,19 +22,19 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/context/ExceptionHandlerFactoryImpl", null, "javax/faces/context/ExceptionHandlerFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/context/ExceptionHandlerFactoryImpl", null, "jakarta/faces/context/ExceptionHandlerFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ExceptionHandlerFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ExceptionHandlerFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljavax/faces/context/ExceptionHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljakarta/faces/context/ExceptionHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/shared/context/SwitchAjaxExceptionHandlerWrapperImpl");
 methodVisitor.visitInsn(DUP);
@@ -43,11 +43,11 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/shared/context/ExceptionHandlerImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/context/ExceptionHandlerImpl", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/MyFacesExceptionHandlerWrapperImpl", "<init>", "(Ljavax/faces/context/ExceptionHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/MyFacesExceptionHandlerWrapperImpl", "<init>", "(Ljakarta/faces/context/ExceptionHandler;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/shared/context/AjaxExceptionHandlerImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/context/AjaxExceptionHandlerImpl", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/context/SwitchAjaxExceptionHandlerWrapperImpl", "<init>", "(Ljavax/faces/context/ExceptionHandler;Ljavax/faces/context/ExceptionHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/context/SwitchAjaxExceptionHandlerWrapperImpl", "<init>", "(Ljakarta/faces/context/ExceptionHandler;Ljakarta/faces/context/ExceptionHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();

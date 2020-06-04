@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -134,7 +134,7 @@ methodVisitor.visitMaxs(3, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

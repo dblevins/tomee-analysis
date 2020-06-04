@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljavax/ws/rs/core/Context;>;Ljavax/ws/rs/core/Context;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "javax/ws/rs/core/Context" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "Lorg/apache/webbeans/annotation/EmptyAnnotationLiteral<Ljakarta/ws/rs/core/Context;>;Ljakarta/ws/rs/core/Context;", "org/apache/webbeans/annotation/EmptyAnnotationLiteral", new String[] { "jakarta/ws/rs/core/Context" });
 
 classWriter.visitInnerClass("org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "org/apache/openejb/server/cxf/rs/CxfRSService", "ContextLiteral", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljavax/enterprise/util/AnnotationLiteral;", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/ws/rs/core/Context;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljakarta/enterprise/util/AnnotationLiteral;", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/ws/rs/core/Context;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "INSTANCE", "Ljavax/enterprise/util/AnnotationLiteral;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral", "INSTANCE", "Ljakarta/enterprise/util/AnnotationLiteral;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

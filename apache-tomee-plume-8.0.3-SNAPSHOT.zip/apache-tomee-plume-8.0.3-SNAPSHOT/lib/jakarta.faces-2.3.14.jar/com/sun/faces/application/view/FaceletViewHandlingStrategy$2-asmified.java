@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/view/FaceletViewHandlingStrategy$2", "Ljava/lang/Object;Lcom/sun/faces/util/Cache$Factory<Ljavax/faces/application/Resource;Ljava/beans/BeanInfo;>;", "java/lang/Object", new String[] { "com/sun/faces/util/Cache$Factory" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/view/FaceletViewHandlingStrategy$2", "Ljava/lang/Object;Lcom/sun/faces/util/Cache$Factory<Ljakarta/faces/application/Resource;Ljava/beans/BeanInfo;>;", "java/lang/Object", new String[] { "com/sun/faces/util/Cache$Factory" });
 
 classWriter.visitOuterClass("com/sun/faces/application/view/FaceletViewHandlingStrategy", "initialize", "()V");
 
@@ -47,15 +47,15 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljavax/faces/application/Resource;)Ljava/beans/BeanInfo;", null, new String[] { "java/lang/InterruptedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljakarta/faces/application/Resource;)Ljava/beans/BeanInfo;", null, new String[] { "java/lang/InterruptedException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/FaceletViewHandlingStrategy$2", "this$0", "Lcom/sun/faces/application/view/FaceletViewHandlingStrategy;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/FaceletViewHandlingStrategy", "createComponentMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/application/Resource;)Ljava/beans/BeanInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/FaceletViewHandlingStrategy", "createComponentMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/application/Resource;)Ljava/beans/BeanInfo;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -65,8 +65,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/Resource");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/FaceletViewHandlingStrategy$2", "newInstance", "(Ljavax/faces/application/Resource;)Ljava/beans/BeanInfo;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/Resource");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/view/FaceletViewHandlingStrategy$2", "newInstance", "(Ljakarta/faces/application/Resource;)Ljava/beans/BeanInfo;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

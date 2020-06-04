@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/ExceptionHandlerFactoryImpl", null, "javax/faces/context/ExceptionHandlerFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/ExceptionHandlerFactoryImpl", null, "jakarta/faces/context/ExceptionHandlerFactory", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "associate", "Lcom/sun/faces/application/ApplicationAssociate;", null, null);
@@ -33,19 +33,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ExceptionHandlerFactory", "<init>", "(Ljavax/faces/context/ExceptionHandlerFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ExceptionHandlerFactory", "<init>", "(Ljakarta/faces/context/ExceptionHandlerFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljavax/faces/context/ExceptionHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExceptionHandler", "()Ljakarta/faces/context/ExceptionHandler;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExceptionHandlerFactoryImpl", "getAssociate", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExceptionHandlerFactoryImpl", "getAssociate", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
@@ -58,7 +58,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExceptionHandlerImpl", "<init>", "(Z)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/AjaxExceptionHandlerImpl", "<init>", "(Ljavax/faces/context/ExceptionHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/AjaxExceptionHandlerImpl", "<init>", "(Ljakarta/faces/context/ExceptionHandler;)V", false);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/ExceptionHandlerImpl");
@@ -71,11 +71,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/Applicat
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/context/ExceptionHandlerFactoryImpl", "javax/faces/context/FacesContext", "com/sun/faces/application/ApplicationAssociate"}, 5, new Object[] {label0, label0, "com/sun/faces/context/AjaxExceptionHandlerImpl", label1, label1});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/context/ExceptionHandlerFactoryImpl", "jakarta/faces/context/FacesContext", "com/sun/faces/application/ApplicationAssociate"}, 5, new Object[] {label0, label0, "com/sun/faces/context/AjaxExceptionHandlerImpl", label1, label1});
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/context/ExceptionHandlerFactoryImpl", "javax/faces/context/FacesContext", "com/sun/faces/application/ApplicationAssociate"}, 6, new Object[] {label0, label0, "com/sun/faces/context/AjaxExceptionHandlerImpl", label1, label1, Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/context/ExceptionHandlerFactoryImpl", "jakarta/faces/context/FacesContext", "com/sun/faces/application/ApplicationAssociate"}, 6, new Object[] {label0, label0, "com/sun/faces/context/AjaxExceptionHandlerImpl", label1, label1, Opcodes.INTEGER});
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExceptionHandlerImpl", "<init>", "(Z)V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/AjaxNoAjaxExceptionHandler", "<init>", "(Lcom/sun/faces/context/AjaxExceptionHandlerImpl;Lcom/sun/faces/context/ExceptionHandlerImpl;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -85,7 +85,7 @@ methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAssociate", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/application/ApplicationAssociate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAssociate", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/application/ApplicationAssociate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/ExceptionHandlerFactoryImpl", "associate", "Lcom/sun/faces/application/ApplicationAssociate;");
@@ -99,8 +99,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/ExceptionHandlerFa
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/ApplicationAssociate", "getInstance", "(Ljavax/faces/context/ExternalContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/application/ApplicationAssociate", "getInstance", "(Ljakarta/faces/context/ExternalContext;)Lcom/sun/faces/application/ApplicationAssociate;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/context/ExceptionHandlerFactoryImpl", "associate", "Lcom/sun/faces/application/ApplicationAssociate;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

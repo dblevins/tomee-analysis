@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "org/jvnet/staxex/Base64Data$Base64DataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "org/jvnet/staxex/Base64Data$Base64DataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 classWriter.visitInnerClass("org/jvnet/staxex/Base64Data$Base64DataSource", "org/jvnet/staxex/Base64Data", "Base64DataSource", ACC_PRIVATE | ACC_FINAL);
 

@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljava/lang/Object;", "()TOnWireItemT;", new String[] { "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljava/lang/Object;", "()TOnWireItemT;", new String[] { "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -80,9 +80,9 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister$ListIteratorImpl", "this$0", "Lcom/sun/xml/bind/v2/runtime/reflect/AdaptedLister;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "access$000", "(Lcom/sun/xml/bind/v2/runtime/reflect/AdaptedLister;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "access$000", "(Lcom/sun/xml/bind/v2/runtime/reflect/AdaptedLister;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "marshal", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "marshal", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

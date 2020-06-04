@@ -29,13 +29,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "enabled", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/component/BeanAttributesImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Lorg/apache/webbeans/component/BeanAttributesImpl<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/component/BeanAttributesImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Lorg/apache/webbeans/component/BeanAttributesImpl<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/InterceptorBeanBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/InterceptorBeanBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -61,19 +61,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBean", "(Ljava/lang/Class;ZLjava/util/Map;)Lorg/apache/webbeans/component/SelfInterceptorBean;", "(Ljava/lang/Class<TT;>;ZLjava/util/Map<Ljavax/enterprise/inject/spi/InterceptionType;[Ljava/lang/reflect/Method;>;)Lorg/apache/webbeans/component/SelfInterceptorBean<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBean", "(Ljava/lang/Class;ZLjava/util/Map;)Lorg/apache/webbeans/component/SelfInterceptorBean;", "(Ljava/lang/Class<TT;>;ZLjava/util/Map<Ljakarta/enterprise/inject/spi/InterceptionType;[Ljava/lang/reflect/Method;>;)Lorg/apache/webbeans/component/SelfInterceptorBean<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/component/SelfInterceptorBean");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/SelfInterceptorBeanBuilder", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/SelfInterceptorBeanBuilder", "annotatedType", "Ljavax/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/SelfInterceptorBeanBuilder", "annotatedType", "Ljakarta/enterprise/inject/spi/AnnotatedType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/SelfInterceptorBeanBuilder", "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/SelfInterceptorBeanBuilder", "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/SelfInterceptorBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/SelfInterceptorBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;Ljava/util/Map;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();

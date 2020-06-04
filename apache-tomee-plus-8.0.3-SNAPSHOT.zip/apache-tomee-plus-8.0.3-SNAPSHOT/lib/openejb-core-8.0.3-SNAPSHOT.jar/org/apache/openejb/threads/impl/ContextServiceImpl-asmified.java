@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/threads/impl/ContextServiceImpl", null, "java/lang/Object", new String[] { "javax/enterprise/concurrent/ContextService" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/threads/impl/ContextServiceImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/concurrent/ContextService" });
 
 classWriter.visitInnerClass("org/apache/openejb/threads/impl/ContextServiceImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

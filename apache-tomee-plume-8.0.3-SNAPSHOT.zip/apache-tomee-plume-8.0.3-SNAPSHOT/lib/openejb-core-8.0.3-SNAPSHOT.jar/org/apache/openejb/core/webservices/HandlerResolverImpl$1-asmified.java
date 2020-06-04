@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/webservices/HandlerResolverImpl$1", "Lorg/apache/openejb/InjectionProcessor<Ljavax/xml/ws/handler/Handler;>;", "org/apache/openejb/InjectionProcessor", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/webservices/HandlerResolverImpl$1", "Lorg/apache/openejb/InjectionProcessor<Ljakarta/xml/ws/handler/Handler;>;", "org/apache/openejb/InjectionProcessor", null);
 
-classWriter.visitOuterClass("org/apache/openejb/core/webservices/HandlerResolverImpl", "buildHandlers", "(Ljavax/xml/ws/handler/PortInfo;Lorg/apache/openejb/core/webservices/HandlerChainData;)Ljava/util/List;");
+classWriter.visitOuterClass("org/apache/openejb/core/webservices/HandlerResolverImpl", "buildHandlers", "(Ljakarta/xml/ws/handler/PortInfo;Lorg/apache/openejb/core/webservices/HandlerChainData;)Ljava/util/List;");
 
 classWriter.visitInnerClass("org/apache/openejb/core/webservices/HandlerResolverImpl$1", null, null, 0);
 
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/core/webservices/HandlerResolverImpl;Ljavax/xml/ws/handler/Handler;Ljava/util/Collection;Ljavax/naming/Context;ZLorg/apache/webbeans/context/creational/CreationalContextImpl;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/core/webservices/HandlerResolverImpl;Ljakarta/xml/ws/handler/Handler;Ljava/util/Collection;Ljavax/naming/Context;ZLorg/apache/webbeans/context/creational/CreationalContextImpl;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

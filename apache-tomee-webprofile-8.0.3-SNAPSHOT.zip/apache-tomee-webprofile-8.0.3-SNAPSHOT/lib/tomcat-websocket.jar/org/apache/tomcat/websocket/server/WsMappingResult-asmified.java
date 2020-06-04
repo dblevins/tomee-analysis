@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/server/WsMappingResult", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "config", "Ljavax/websocket/server/ServerEndpointConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "config", "Ljakarta/websocket/server/ServerEndpointConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pathParams", "Lj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/websocket/server/ServerEndpointConfig;Ljava/util/Map;)V", "(Ljavax/websocket/server/ServerEndpointConfig;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/websocket/server/ServerEndpointConfig;Ljava/util/Map;)V", "(Ljakarta/websocket/server/ServerEndpointConfig;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsMappingResult", "config", "Ljavax/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsMappingResult", "config", "Ljakarta/websocket/server/ServerEndpointConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsMappingResult", "pathParams", "Ljava/util/Map;");
@@ -48,10 +48,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getConfig", "()Ljavax/websocket/server/ServerEndpointConfig;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getConfig", "()Ljakarta/websocket/server/ServerEndpointConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsMappingResult", "config", "Ljavax/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsMappingResult", "config", "Ljakarta/websocket/server/ServerEndpointConfig;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

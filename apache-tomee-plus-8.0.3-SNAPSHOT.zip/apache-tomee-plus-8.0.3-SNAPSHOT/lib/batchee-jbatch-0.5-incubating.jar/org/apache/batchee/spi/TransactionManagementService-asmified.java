@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/batchee/spi/TransactionManagementService", null, "java/lang/Object", new String[] { "org/apache/batchee/spi/BatchService" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "(Ljavax/batch/runtime/context/StepContext;)Lorg/apache/batchee/spi/TransactionManagerAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTransactionManager", "(Ljakarta/batch/runtime/context/StepContext;)Lorg/apache/batchee/spi/TransactionManagerAdapter;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -50,7 +50,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "extendClient
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "includeDefinition", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/view/facelets/Facelet;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "includeDefinition", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/view/facelets/Facelet;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
@@ -62,11 +62,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setComposite
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameter", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameter", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setParameter", "(Ljava/lang/String;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setParameter", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -74,7 +74,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isParameterE
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameterMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getParameterMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 methodVisitor.visitEnd();
 }
 {

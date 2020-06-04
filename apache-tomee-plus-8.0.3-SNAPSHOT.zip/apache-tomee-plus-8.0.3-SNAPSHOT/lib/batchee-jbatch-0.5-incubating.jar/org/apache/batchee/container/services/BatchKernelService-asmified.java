@@ -25,19 +25,19 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/batchee/container/services/BatchKernelService", null, "java/lang/Object", new String[] { "org/apache/batchee/spi/BatchService" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobExecution", "(J)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobExecution", "(J)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restartJob", "(JLjava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException", "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restartJob", "(JLjava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException", "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "startJob", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/JobStartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "startJob", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/JobStartException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "stopJob", "(J)V", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException", "javax/batch/operations/JobExecutionNotRunningException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "stopJob", "(J)V", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException", "jakarta/batch/operations/JobExecutionNotRunningException" });
 methodVisitor.visitEnd();
 }
 {
@@ -49,15 +49,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobInstan
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobInstance", "(J)Ljavax/batch/runtime/JobInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getJobInstance", "(J)Ljakarta/batch/runtime/JobInstance;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildNewParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobStartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildNewParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobStartException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildOnRestartParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "buildOnRestartParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException" });
 methodVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "startGenerat
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restartGeneratedJob", "(Lorg/apache/batchee/container/util/BatchWorkUnit;)V", null, new String[] { "javax/batch/operations/JobRestartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restartGeneratedJob", "(Lorg/apache/batchee/container/util/BatchWorkUnit;)V", null, new String[] { "jakarta/batch/operations/JobRestartException" });
 methodVisitor.visitEnd();
 }
 {

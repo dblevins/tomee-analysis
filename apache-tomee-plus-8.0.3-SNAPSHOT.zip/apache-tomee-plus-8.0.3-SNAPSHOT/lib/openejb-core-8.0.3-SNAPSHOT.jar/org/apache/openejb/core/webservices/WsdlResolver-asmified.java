@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/webservices/WsdlResolver", null, "java/lang/Object", new String[] { "javax/wsdl/xml/WSDLLocator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/webservices/WsdlResolver", null, "java/lang/Object", new String[] { "jakarta/wsdl/xml/WSDLLocator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "baseUri", "Ljava/lang/String;", null, null);

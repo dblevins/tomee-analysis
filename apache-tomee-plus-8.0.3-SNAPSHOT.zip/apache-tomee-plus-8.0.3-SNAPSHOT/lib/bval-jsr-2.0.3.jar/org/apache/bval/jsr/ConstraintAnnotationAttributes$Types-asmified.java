@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(0, "groups", "[Ljava/lang/Class;", "[Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "payload", "[Ljava/lang/Class;", "[Ljava/lang/Class<+Ljavax/validation/Payload;>;", null);
+fieldVisitor = classWriter.visitField(0, "payload", "[Ljava/lang/Class;", "[Ljava/lang/Class<+Ljakarta/validation/Payload;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(0, "value", "[Ljava/lang/annotation/Annota
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "validationAppliesTo", "Ljavax/validation/ConstraintTarget;", null, null);
+fieldVisitor = classWriter.visitField(0, "validationAppliesTo", "Ljakarta/validation/ConstraintTarget;", null, null);
 fieldVisitor.visitEnd();
 }
 {

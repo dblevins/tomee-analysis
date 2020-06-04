@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/threads/task/TriggerTask$LastExecutionImpl", null, "java/lang/Object", new String[] { "javax/enterprise/concurrent/LastExecution" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/threads/task/TriggerTask$LastExecutionImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/concurrent/LastExecution" });
 
 classWriter.visitInnerClass("org/apache/openejb/threads/task/TriggerTask$LastExecutionImpl", "org/apache/openejb/threads/task/TriggerTask", "LastExecutionImpl", ACC_PRIVATE | ACC_STATIC);
 

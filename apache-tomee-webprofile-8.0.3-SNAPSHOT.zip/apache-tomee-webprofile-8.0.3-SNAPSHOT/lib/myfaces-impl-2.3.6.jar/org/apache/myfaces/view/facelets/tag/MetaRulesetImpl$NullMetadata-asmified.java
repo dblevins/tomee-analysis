@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata", null, "javax/faces/view/facelets/Metadata", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata", null, "jakarta/faces/view/facelets/Metadata", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata", "org/apache/myfaces/view/facelets/tag/MetaRulesetImpl", "NullMetadata", ACC_PRIVATE | ACC_STATIC);
 
@@ -32,13 +32,13 @@ classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/MetaRulesetImp
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/Metadata", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/Metadata", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyMetadata", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);

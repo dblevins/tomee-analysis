@@ -38,10 +38,10 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Throwable" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/EJBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/EJBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Calling non-public methods of a local bean without any interfaces is not allowed");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/EJBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/EJBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

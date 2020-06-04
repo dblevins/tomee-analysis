@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljavax/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljakarta/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -97,11 +97,11 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljavax/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;Ljava/util/Map;Ljava/util/Map;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljakarta/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;Ljava/util/Map;Ljava/util/Map;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
@@ -127,7 +127,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/core/security/jaas/PropertiesLoginModule"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/core/security/jaas/PropertiesLoginModule", "javax/security/auth/Subject", "javax/security/auth/callback/CallbackHandler", "java/util/Map", "java/util/Map"}, 2, new Object[] {"org/apache/openejb/core/security/jaas/PropertiesLoginModule", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/core/security/jaas/PropertiesLoginModule", "jakarta/security/auth/Subject", "javax/security/auth/callback/CallbackHandler", "java/util/Map", "java/util/Map"}, 2, new Object[] {"org/apache/openejb/core/security/jaas/PropertiesLoginModule", Opcodes.INTEGER});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "debug", "Z");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("UsersFile");
@@ -465,8 +465,8 @@ methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "principals", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
@@ -512,8 +512,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "logout", "()Z", null, new String[] { "javax/security/auth/login/LoginException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/jaas/PropertiesLoginModule", "principals", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "removeAll", "(Ljava/util/Collection;)Z", true);

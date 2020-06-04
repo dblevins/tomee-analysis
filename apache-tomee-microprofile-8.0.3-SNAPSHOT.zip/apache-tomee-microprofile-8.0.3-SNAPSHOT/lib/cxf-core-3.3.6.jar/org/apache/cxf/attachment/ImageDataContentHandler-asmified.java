@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/attachment/ImageDataContentHandler", null, "java/lang/Object", new String[] { "javax/activation/DataContentHandler" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/attachment/ImageDataContentHandler", null, "java/lang/Object", new String[] { "jakarta/activation/DataContentHandler" });
 
 classWriter.visitInnerClass("org/apache/cxf/attachment/ImageDataContentHandler$1", null, null, ACC_STATIC);
 
@@ -40,17 +40,17 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/imageio/ImageIO", "read", "(Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljavax/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/awt/datatransfer/UnsupportedFlavorException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/awt/datatransfer/UnsupportedFlavorException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/attachment/ImageDataContentHandler", "FLAVORS", "[Ljava/awt/datatransfer/DataFlavor;");
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -77,7 +77,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/attachment/ImageDataContentHandler", "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/attachment/ImageDataContentHandler", "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -308,12 +308,12 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/attachment/ImageDataContentHandler", "FLAVORS", "[Ljava/awt/datatransfer/DataFlavor;");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitIincInsn(1, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/ActivationDataFlavor");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/ActivationDataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/awt/Image;"));
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("Image");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitIincInsn(4, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);

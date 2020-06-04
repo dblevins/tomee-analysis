@@ -27,17 +27,17 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/session/StandardSession$
 classWriter.visitInnerClass("org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade", "org/apache/catalina/session/StandardSession", "PrivilegedNewSessionFacade", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "session", "Ljavax/servlet/http/HttpSession;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "session", "Ljakarta/servlet/http/HttpSession;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpSession;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpSession;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade", "session", "Ljavax/servlet/http/HttpSession;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade", "session", "Ljakarta/servlet/http/HttpSession;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -48,8 +48,8 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/session/StandardSessionFacade");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade", "session", "Ljavax/servlet/http/HttpSession;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/session/StandardSessionFacade", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade", "session", "Ljakarta/servlet/http/HttpSession;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/session/StandardSessionFacade", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

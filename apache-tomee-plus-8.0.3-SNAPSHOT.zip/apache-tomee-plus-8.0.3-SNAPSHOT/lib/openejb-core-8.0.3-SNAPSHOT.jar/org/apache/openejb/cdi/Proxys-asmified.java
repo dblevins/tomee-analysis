@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "threadLocalRequestSessionProxy", "(Ljava/lang/ThreadLocal;Ljavax/servlet/http/HttpSession;)Ljavax/servlet/http/HttpSession;", "(Ljava/lang/ThreadLocal<+Ljavax/servlet/http/HttpServletRequest;>;Ljavax/servlet/http/HttpSession;)Ljavax/servlet/http/HttpSession;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "threadLocalRequestSessionProxy", "(Ljava/lang/ThreadLocal;Ljakarta/servlet/http/HttpSession;)Ljakarta/servlet/http/HttpSession;", "(Ljava/lang/ThreadLocal<+Ljakarta/servlet/http/HttpServletRequest;>;Ljakarta/servlet/http/HttpSession;)Ljakarta/servlet/http/HttpSession;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
@@ -64,7 +64,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpSession;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpSession;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -74,9 +74,9 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/cdi/Proxys$ThreadLocalSessi
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/Proxys$ThreadLocalSessionFromRequestHandler", "<init>", "(Ljava/lang/ThreadLocal;Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/Proxys$ThreadLocalSessionFromRequestHandler", "<init>", "(Ljava/lang/ThreadLocal;Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Proxy", "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSession");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSession");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

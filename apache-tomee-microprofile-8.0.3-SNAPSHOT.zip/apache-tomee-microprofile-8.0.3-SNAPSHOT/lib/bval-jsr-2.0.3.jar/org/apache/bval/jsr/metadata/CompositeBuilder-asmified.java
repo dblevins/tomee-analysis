@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getMetaParameters", "(Lorg/apache/bval/jsr/metadata/Meta;Ljava/util/function/BiFunction;)Ljava/util/List;", "<E:Ljava/lang/reflect/Executable;>(Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljava/util/function/BiFunction<Ljavax/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)Ljava/util/List<Lorg/apache/bval/jsr/metadata/Meta<Ljava/lang/reflect/Parameter;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getMetaParameters", "(Lorg/apache/bval/jsr/metadata/Meta;Ljava/util/function/BiFunction;)Ljava/util/List;", "<E:Ljava/lang/reflect/Executable;>(Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljava/util/function/BiFunction<Ljakarta/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)Ljava/util/List<Lorg/apache/bval/jsr/metadata/Meta<Ljava/lang/reflect/Parameter;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/Meta", "getHost", "()Ljava/lang/reflect/AnnotatedElement;", false);
@@ -126,7 +126,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/metadata/CompositeBuilder", "validatorFactory", "Lorg/apache/bval/jsr/ApacheValidatorFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/Meta", "getHost", "()Ljava/lang/reflect/AnnotatedElement;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/BiFunction", "apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -146,7 +146,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/metadata/CompositeBuilder", "validatorFactory", "Lorg/apache/bval/jsr/ApacheValidatorFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Exceptions", "raise", "(Ljava/util/function/Function;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", "<DELEGATE::Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;E::Ljava/lang/reflect/AnnotatedElement;>(Ljava/util/List<TDELEGATE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", "<DELEGATE::Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;E::Ljava/lang/reflect/AnnotatedElement;>(Ljava/util/List<TDELEGATE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/metadata/CompositeBuilder$ForContainer");
 methodVisitor.visitInsn(DUP);

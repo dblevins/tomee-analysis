@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", null, "java/lang/Object", new String[] { "javax/ws/rs/container/ContainerRequestFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/ContainerRequestFilter" });
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONSTRAINT", "Lorg/apache/openejb/util/Logger;", null, null);
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JWT_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,13 +47,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constraints", "L
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/container/ResourceInfo;Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/container/ResourceInfo;Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "constraints", "Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;");
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -84,7 +84,7 @@ methodVisitor.visitTryCatchBlock(label10, label11, label5, "java/lang/Throwable"
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "JWT_SUPPLIER", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/function/Supplier");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -134,8 +134,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "resourceInfo", "Ljavax/ws/rs/container/ResourceInfo;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "resourceInfo", "Ljakarta/ws/rs/container/ResourceInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -148,7 +148,7 @@ methodVisitor.visitLabel(label1);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "javax/ws/rs/container/ContainerRequestContext", "java/util/function/Supplier", "org/eclipse/microprofile/jwt/JsonWebToken", "java/lang/String", "java/lang/reflect/Method"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "jakarta/ws/rs/container/ContainerRequestContext", "java/util/function/Supplier", "org/eclipse/microprofile/jwt/JsonWebToken", "java/lang/String", "java/lang/reflect/Method"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "VALIDATION", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -201,14 +201,14 @@ Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label14);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ConstraintViolation");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ConstraintViolation");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ConstraintViolation", "getMessage", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ConstraintViolation", "getMessage", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ConstraintViolation", "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ConstraintDescriptor", "getAnnotation", "()Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ConstraintViolation", "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ConstraintDescriptor", "getAnnotation", "()Ljava/lang/annotation/Annotation;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "CONSTRAINT", "Lorg/apache/openejb/util/Logger;");
@@ -256,12 +256,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Logger", "
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "forbidden", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "forbidden", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", false);
 methodVisitor.visitLabel(label11);
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "javax/ws/rs/container/ContainerRequestContext"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "jakarta/ws/rs/container/ContainerRequestContext"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "printStackTrace", "()V", false);
@@ -274,13 +274,13 @@ methodVisitor.visitMaxs(4, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "forbidden", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "forbidden", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitIntInsn(SIPUSH, 403);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/Response", "status", "(I)Ljavax/ws/rs/core/Response$ResponseBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Response$ResponseBuilder", "build", "()Ljavax/ws/rs/core/Response;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljavax/ws/rs/core/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/Response", "status", "(I)Ljakarta/ws/rs/core/Response$ResponseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Response$ResponseBuilder", "build", "()Ljakarta/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "abortWith", "(Ljakarta/ws/rs/core/Response;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

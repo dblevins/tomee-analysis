@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/shared/renderkit/html/Htm
 classWriter.visitInnerClass("org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase", "MessagesIterator", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_next", "Ljava/lang/Object;"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;ZZLjava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;ZZLjava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -67,7 +67,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_clientId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -78,7 +78,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_clientId", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_componentMessagesIterator", "Ljava/util/Iterator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyIterator", "()Ljava/util/Iterator;", false);
@@ -89,14 +89,14 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "javax/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "jakarta/faces/context/FacesContext", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_globalMessagesIterator", "Ljava/util/Iterator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyIterator", "()Ljava/util/Iterator;", false);
@@ -110,7 +110,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyItera
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_globalMessagesIterator", "Ljava/util/Iterator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getClientIdsWithMessages", "()Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getClientIdsWithMessages", "()Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_clientIdsWithMessagesIterator", "Ljava/util/Iterator;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -162,8 +162,8 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_next", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "isRendered", "()Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "isRendered", "()Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitLabel(label3);
@@ -200,8 +200,8 @@ Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_next", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "isRendered", "()Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "isRendered", "()Z", false);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitLabel(label7);
@@ -232,10 +232,10 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_clientId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_clientId", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getMessages", "(Ljava/lang/String;)Ljava/util/Iterator;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_componentMessagesIterator", "Ljava/util/Iterator;");
 Label label11 = new Label();
 methodVisitor.visitLabel(label11);
@@ -256,8 +256,8 @@ Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label13);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator", "_next", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "isRendered", "()Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "isRendered", "()Z", false);
 methodVisitor.visitJumpInsn(IFNE, label11);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

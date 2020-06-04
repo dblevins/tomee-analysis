@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "describe", "()Ljavax/validation/metadata/ExecutableDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "describe", "()Ljakarta/validation/metadata/ExecutableDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters$ForConstructor", "validatorContext", "Lorg/apache/bval/jsr/ApacheFactoryContext;");
@@ -64,12 +64,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters$ForConstructor", "executable", "Ljava/lang/reflect/Executable;");
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/reflect/Constructor");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getDeclaringClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/DescriptorManager", "getBeanDescriptor", "(Ljava/lang/Class;)Ljavax/validation/metadata/BeanDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/DescriptorManager", "getBeanDescriptor", "(Ljava/lang/Class;)Ljakarta/validation/metadata/BeanDescriptor;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters$ForConstructor", "executable", "Ljava/lang/reflect/Executable;");
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/reflect/Constructor");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getParameterTypes", "()[Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/BeanDescriptor", "getConstraintsForConstructor", "([Ljava/lang/Class;)Ljavax/validation/metadata/ConstructorDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/BeanDescriptor", "getConstraintsForConstructor", "([Ljava/lang/Class;)Ljakarta/validation/metadata/ConstructorDescriptor;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -86,13 +86,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getParameterNames", "(Ljavax/validation/ParameterNameProvider;)Ljava/util/List;", "(Ljavax/validation/ParameterNameProvider;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;)Ljava/util/List;", "(Ljakarta/validation/ParameterNameProvider;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ValidateParameters$ForConstructor", "executable", "Ljava/lang/reflect/Executable;");
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/reflect/Constructor");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ParameterNameProvider", "getParameterNames", "(Ljava/lang/reflect/Constructor;)Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ParameterNameProvider", "getParameterNames", "(Ljava/lang/reflect/Constructor;)Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

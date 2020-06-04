@@ -36,7 +36,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/advisory/ConsumerEvent", "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljavax/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/advisory/ConsumerEvent", "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljakarta/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();

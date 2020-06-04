@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/transport/smtp/SMTPSendFailedException", null, "javax/mail/SendFailedException", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/transport/smtp/SMTPSendFailedException", null, "jakarta/mail/SendFailedException", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "cmd", "Ljava/lang/String;", null, null);
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "rc", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Exception;[Ljavax/mail/Address;[Ljavax/mail/Address;[Ljavax/mail/Address;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Exception;[Ljakarta/mail/Address;[Ljakarta/mail/Address;[Ljakarta/mail/Address;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/SendFailedException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;[Ljavax/mail/Address;[Ljavax/mail/Address;[Ljavax/mail/Address;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/SendFailedException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;[Ljakarta/mail/Address;[Ljakarta/mail/Address;[Ljakarta/mail/Address;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPSendFailedException", "cmd", "Ljava/lang/String;");

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig", null, "java/lang/Object", new String[] { "javax/validation/BootstrapConfiguration", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig", null, "java/lang/Object", new String[] { "jakarta/validation/BootstrapConfiguration", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig", "org/apache/openejb/assembler/classic/ValidatorBuilder", "OpenEjbBootstrapConfig", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executableValida
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validatedTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validatedTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "valueExtractorCl
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/lang/String;Ljava/util/Set;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljavax/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;ZLjava/util/Set;Ljava/util/Map;Ljava/lang/String;Ljava/util/Set;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;ZLjava/util/Set<Ljakarta/validation/executable/ExecutableType;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -176,7 +176,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatedExecutableTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/executable/ExecutableType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultValidatedExecutableTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/executable/ExecutableType;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig", "validatedTypes", "Ljava/util/Set;");

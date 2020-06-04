@@ -115,7 +115,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/GraphContext",
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/job/ValidateProperty", "access$000", "(Lorg/apache/bval/jsr/job/ValidateProperty;)Lorg/apache/bval/jsr/descriptor/ElementD;", false);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/validation/metadata/BeanDescriptor");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/validation/metadata/BeanDescriptor");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/job/ValidateProperty$LeafFrame");

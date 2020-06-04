@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", null, "java/lang/Object", new String[] { "javax/ws/rs/core/Configuration" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", null, "java/lang/Object", new String[] { "jakarta/ws/rs/core/Configuration" });
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "props", "Ljava/util/Map;", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "runtimeType", "Ljavax/ws/rs/RuntimeType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "runtimeType", "Ljakarta/ws/rs/RuntimeType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,11 +43,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "providers", "Ljava/util/Map;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "features", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/ws/rs/core/Feature;Ljava/lang/Boolean;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "features", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/ws/rs/core/Feature;Ljava/lang/Boolean;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/RuntimeType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/RuntimeType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -68,13 +68,13 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedHashMap", "<init>"
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "features", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljavax/ws/rs/RuntimeType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljakarta/ws/rs/RuntimeType;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Configuration;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Configuration;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -99,25 +99,25 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "props", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getRuntimeType", "()Ljavax/ws/rs/RuntimeType;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljavax/ws/rs/RuntimeType;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getRuntimeType", "()Ljakarta/ws/rs/RuntimeType;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljakarta/ws/rs/RuntimeType;");
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getClasses", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getClasses", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "(Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getInstances", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getInstances", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/impl/ConfigurationImpl", "javax/ws/rs/core/Configuration", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/impl/ConfigurationImpl", "jakarta/ws/rs/core/Configuration", "java/util/Set", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label2 = new Label();
@@ -126,26 +126,26 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/core/Feature");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/core/Feature");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "registerParentProvider", "(Ljava/lang/Object;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "registerParentProvider", "(Ljava/lang/Object;Ljakarta/ws/rs/core/Configuration;)V", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Feature");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Feature");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "features", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "isEnabled", "(Ljavax/ws/rs/core/Feature;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "isEnabled", "(Ljakarta/ws/rs/core/Feature;)Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -176,7 +176,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "createProvider", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "registerParentProvider", "(Ljava/lang/Object;Ljavax/ws/rs/core/Configuration;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "registerParentProvider", "(Ljava/lang/Object;Ljakarta/ws/rs/core/Configuration;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -185,12 +185,12 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "registerParentProvider", "(Ljava/lang/Object;Ljavax/ws/rs/core/Configuration;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "registerParentProvider", "(Ljava/lang/Object;Ljakarta/ws/rs/core/Configuration;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -279,7 +279,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFro
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/core/Feature");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/core/Feature");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
@@ -360,16 +360,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRuntimeType", "()Ljavax/ws/rs/RuntimeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRuntimeType", "()Ljakarta/ws/rs/RuntimeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljavax/ws/rs/RuntimeType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "runtimeType", "Ljakarta/ws/rs/RuntimeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEnabled", "(Ljavax/ws/rs/core/Feature;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEnabled", "(Ljakarta/ws/rs/core/Feature;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "features", "Ljava/util/Map;");
@@ -397,7 +397,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEnabled", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/ws/rs/core/Feature;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEnabled", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/ws/rs/core/Feature;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "features", "Ljava/util/Map;");
@@ -417,7 +417,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Feature");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Feature");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
@@ -540,7 +540,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFeature", "(Ljavax/ws/rs/core/Feature;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFeature", "(Ljakarta/ws/rs/core/Feature;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ConfigurationImpl", "features", "Ljava/util/Map;");

@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -72,7 +72,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
@@ -90,14 +90,14 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();

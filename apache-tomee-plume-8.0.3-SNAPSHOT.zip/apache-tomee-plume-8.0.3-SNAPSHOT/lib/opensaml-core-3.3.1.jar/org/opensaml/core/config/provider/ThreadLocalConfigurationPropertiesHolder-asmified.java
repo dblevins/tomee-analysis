@@ -27,7 +27,7 @@ classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/opensaml/core/c
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "properties", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/Properties;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nonnull;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/annotation/Nonnull;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();

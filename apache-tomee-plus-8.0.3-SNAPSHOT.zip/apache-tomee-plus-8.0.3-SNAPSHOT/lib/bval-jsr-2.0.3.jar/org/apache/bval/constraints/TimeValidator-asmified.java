@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/TimeValidator", "<A::Ljava/lang/annotation/Annotation;T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/validation/ConstraintValidator<TA;TT;>;", "java/lang/Object", new String[] { "javax/validation/ConstraintValidator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/TimeValidator", "<A::Ljava/lang/annotation/Annotation;T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/validation/ConstraintValidator<TA;TT;>;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidator" });
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -81,7 +81,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", "(TT;Ljavax/validation/ConstraintValidatorContext;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", "(TT;Ljakarta/validation/ConstraintValidatorContext;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -94,8 +94,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/TimeValidator", "now", "Ljava/util/function/Function;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ConstraintValidatorContext", "getClockProvider", "()Ljavax/validation/ClockProvider;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ClockProvider", "getClock", "()Ljava/time/Clock;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ConstraintValidatorContext", "getClockProvider", "()Ljakarta/validation/ClockProvider;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ClockProvider", "getClock", "()Ljava/time/Clock;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Comparator", "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/IntPredicate", "test", "(I)Z", true);

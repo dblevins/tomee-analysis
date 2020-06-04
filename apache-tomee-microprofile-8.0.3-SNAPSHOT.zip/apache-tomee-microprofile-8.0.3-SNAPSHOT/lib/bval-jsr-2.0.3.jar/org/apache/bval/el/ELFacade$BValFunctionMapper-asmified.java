@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/el/ELFacade$BValFunctionMapper", null, "javax/el/FunctionMapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/el/ELFacade$BValFunctionMapper", null, "jakarta/el/FunctionMapper", null);
 
 classWriter.visitInnerClass("org/apache/bval/el/ELFacade$BValFunctionMapper", "org/apache/bval/el/ELFacade", "BValFunctionMapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/bval/el/ELFacade$1", null, null, ACC_STA
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/FunctionMapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/FunctionMapper", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

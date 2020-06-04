@@ -26,20 +26,20 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/Uti
 
 classWriter.visitInnerClass("org/apache/tomcat/websocket/Util$DecoderMatch", "org/apache/tomcat/websocket/Util", "DecoderMatch", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$Binary", "javax/websocket/Decoder", "Binary", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$Binary", "jakarta/websocket/Decoder", "Binary", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$BinaryStream", "javax/websocket/Decoder", "BinaryStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$BinaryStream", "jakarta/websocket/Decoder", "BinaryStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$Text", "javax/websocket/Decoder", "Text", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$Text", "jakarta/websocket/Decoder", "Text", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/websocket/Decoder$TextStream", "javax/websocket/Decoder", "TextStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Decoder$TextStream", "jakarta/websocket/Decoder", "TextStream", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "textDecoders", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "textDecoders", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "binaryDecoders", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "binaryDecoders", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$Binary;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$Binary;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/DecoderEntry", "getDecoderClazz", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -99,7 +99,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/tomcat/websocket/DecoderEntry"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$BinaryStream;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$BinaryStream;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/DecoderEntry", "getDecoderClazz", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -114,7 +114,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$Text;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$Text;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/DecoderEntry", "getDecoderClazz", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -129,7 +129,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/websocket/Decoder$TextStream;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/websocket/Decoder$TextStream;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/websocket/DecoderEntry", "getDecoderClazz", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -161,7 +161,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTextDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTextDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/Util$DecoderMatch", "textDecoders", "Ljava/util/List;");
@@ -170,7 +170,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinaryDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinaryDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/Util$DecoderMatch", "binaryDecoders", "Ljava/util/List;");

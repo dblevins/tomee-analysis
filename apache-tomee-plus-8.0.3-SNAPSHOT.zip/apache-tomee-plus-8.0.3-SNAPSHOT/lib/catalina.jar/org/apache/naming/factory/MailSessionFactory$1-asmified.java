@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/naming/factory/MailSessionFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljavax/mail/Session;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/naming/factory/MailSessionFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/mail/Session;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
 classWriter.visitOuterClass("org/apache/naming/factory/MailSessionFactory", "getObjectInstance", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljava/lang/Object;");
 
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljavax/mail/Session;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljakarta/mail/Session;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/Properties");
 methodVisitor.visitInsn(DUP);
@@ -136,26 +136,26 @@ methodVisitor.visitLdcInsn("mail.user");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/mail/Authenticator", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/mail/Authenticator", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNULL, label4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/PasswordAuthentication");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/PasswordAuthentication");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/PasswordAuthentication", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/PasswordAuthentication", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/naming/factory/MailSessionFactory$1$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/naming/factory/MailSessionFactory$1$1", "<init>", "(Lorg/apache/naming/factory/MailSessionFactory$1;Ljavax/mail/PasswordAuthentication;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/naming/factory/MailSessionFactory$1$1", "<init>", "(Lorg/apache/naming/factory/MailSessionFactory$1;Ljakarta/mail/PasswordAuthentication;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/mail/Session", "getInstance", "(Ljava/util/Properties;Ljavax/mail/Authenticator;)Ljavax/mail/Session;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/mail/Session", "getInstance", "(Ljava/util/Properties;Ljakarta/mail/Authenticator;)Ljakarta/mail/Session;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARETURN);
@@ -166,7 +166,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/naming/factory/MailSessionFactory$1", "run", "()Ljavax/mail/Session;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/naming/factory/MailSessionFactory$1", "run", "()Ljakarta/mail/Session;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

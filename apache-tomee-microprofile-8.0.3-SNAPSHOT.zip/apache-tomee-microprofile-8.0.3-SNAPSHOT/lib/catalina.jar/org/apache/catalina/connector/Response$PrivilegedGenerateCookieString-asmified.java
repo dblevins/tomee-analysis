@@ -31,15 +31,15 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Lorg/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cookie", "Ljavax/servlet/http/Cookie;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cookie", "Ljakarta/servlet/http/Cookie;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljavax/servlet/http/HttpServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "request", "Ljakarta/servlet/http/HttpServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/Context;Ljavax/servlet/http/Cookie;Ljavax/servlet/http/HttpServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/catalina/Context;Ljakarta/servlet/http/Cookie;Ljakarta/servlet/http/HttpServletRequest;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,10 +48,10 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "context", "Lorg/apache/catalina/Context;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "cookie", "Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "cookie", "Ljakarta/servlet/http/Cookie;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "request", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -63,10 +63,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "context", "Lorg/apache/catalina/Context;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getCookieProcessor", "()Lorg/apache/tomcat/util/http/CookieProcessor;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "cookie", "Ljavax/servlet/http/Cookie;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "cookie", "Ljakarta/servlet/http/Cookie;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "request", "Ljavax/servlet/http/HttpServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/util/http/CookieProcessor", "generateHeader", "(Ljavax/servlet/http/Cookie;Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/connector/Response$PrivilegedGenerateCookieString", "request", "Ljakarta/servlet/http/HttpServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/util/http/CookieProcessor", "generateHeader", "(Ljakarta/servlet/http/Cookie;Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

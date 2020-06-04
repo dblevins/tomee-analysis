@@ -27,11 +27,11 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/application/ApplicationIm
 classWriter.visitInnerClass("org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "org/apache/myfaces/application/ApplicationImpl", "SystemListenerEntry", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_lstSystemEventListener", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/event/SystemEventListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_lstSystemEventListener", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/event/SystemEventListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_sourceClassMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljava/util/List<Ljavax/faces/event/SystemEventListener;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_sourceClassMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljava/util/List<Ljakarta/faces/event/SystemEventListener;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljavax/faces/event/SystemEventListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljakarta/faces/event/SystemEventListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -65,13 +65,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "getAnySourceListenersNotNull", "()Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListenerNoDuplicate", "(Ljava/util/List;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListenerNoDuplicate", "(Ljava/util/List;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljavax/faces/event/SystemEventListener;Ljava/lang/Class;)V", "(Ljavax/faces/event/SystemEventListener;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addListener", "(Ljakarta/faces/event/SystemEventListener;Ljava/lang/Class;)V", "(Ljakarta/faces/event/SystemEventListener;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -89,7 +89,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListener", "(Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListener", "(Ljakarta/faces/event/SystemEventListener;)V", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
@@ -99,7 +99,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "getSpecificSourceListenersNotNull", "(Ljava/lang/Class;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListenerNoDuplicate", "(Ljava/util/List;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "addListenerNoDuplicate", "(Ljava/util/List;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -107,7 +107,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljavax/faces/event/SystemEventListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljakarta/faces/event/SystemEventListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -136,7 +136,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljavax/faces/event/SystemEventListener;Ljava/lang/Class;)V", "(Ljavax/faces/event/SystemEventListener;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeListener", "(Ljakarta/faces/event/SystemEventListener;Ljava/lang/Class;)V", "(Ljakarta/faces/event/SystemEventListener;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "$assertionsDisabled", "Z");
 Label label0 = new Label();
@@ -154,7 +154,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "removeListener", "(Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "removeListener", "(Ljakarta/faces/event/SystemEventListener;)V", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
@@ -181,7 +181,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publish", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Ljavax/faces/event/SystemEvent;)V", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljava/lang/Object;Ljavax/faces/event/SystemEvent;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publish", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Ljakarta/faces/event/SystemEvent;)V", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljava/lang/Object;Ljakarta/faces/event/SystemEvent;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -198,7 +198,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/application/_ApplicationUtils", "_traverseListenerList", "(Ljavax/faces/context/FacesContext;Ljava/util/List;Ljava/lang/Class;Ljava/lang/Object;Ljavax/faces/event/SystemEvent;)Ljavax/faces/event/SystemEvent;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/application/_ApplicationUtils", "_traverseListenerList", "(Ljakarta/faces/context/FacesContext;Ljava/util/List;Ljava/lang/Class;Ljava/lang/Object;Ljakarta/faces/event/SystemEvent;)Ljakarta/faces/event/SystemEvent;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -208,14 +208,14 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/Applicati
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/application/_ApplicationUtils", "_traverseListenerList", "(Ljavax/faces/context/FacesContext;Ljava/util/List;Ljava/lang/Class;Ljava/lang/Object;Ljavax/faces/event/SystemEvent;)Ljavax/faces/event/SystemEvent;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/application/_ApplicationUtils", "_traverseListenerList", "(Ljakarta/faces/context/FacesContext;Ljava/util/List;Ljava/lang/Class;Ljava/lang/Object;Ljakarta/faces/event/SystemEvent;)Ljakarta/faces/event/SystemEvent;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addListenerNoDuplicate", "(Ljava/util/List;Ljavax/faces/event/SystemEventListener;)V", "(Ljava/util/List<Ljavax/faces/event/SystemEventListener;>;Ljavax/faces/event/SystemEventListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addListenerNoDuplicate", "(Ljava/util/List;Ljakarta/faces/event/SystemEventListener;)V", "(Ljava/util/List<Ljakarta/faces/event/SystemEventListener;>;Ljakarta/faces/event/SystemEventListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -233,7 +233,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "getAnySourceListenersNotNull", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/event/SystemEventListener;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "getAnySourceListenersNotNull", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/event/SystemEventListener;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "_lstSystemEventListener", "Ljava/util/List;");
@@ -253,7 +253,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "getSpecificSourceListenersNotNull", "(Ljava/lang/Class;)Ljava/util/List;", "(Ljava/lang/Class<*>;)Ljava/util/List<Ljavax/faces/event/SystemEventListener;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "getSpecificSourceListenersNotNull", "(Ljava/lang/Class;)Ljava/util/List;", "(Ljava/lang/Class<*>;)Ljava/util/List<Ljakarta/faces/event/SystemEventListener;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationImpl$SystemListenerEntry", "_sourceClassMap", "Ljava/util/Map;");

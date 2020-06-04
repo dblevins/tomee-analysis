@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/webbeans/spi/InjectionPointService", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "hasInjection", "(Ljavax/enterprise/inject/spi/Annotated;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "hasInjection", "(Ljakarta/enterprise/inject/spi/Annotated;)Z", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

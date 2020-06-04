@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", null, "java/lang/Object", new String[] { "javax/transaction/Transaction" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", null, "java/lang/Object", new String[] { "jakarta/transaction/Transaction" });
 
 classWriter.visitInnerClass("org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "org/apache/openejb/ri/sp/PseudoTransactionService", "MyTransaction", ACC_PUBLIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registeredSynchronizations", "Ljava/util/List;", "Ljava/util/List<Ljavax/transaction/Synchronization;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "registeredSynchronizations", "Ljava/util/List;", "Ljava/util/List<Ljakarta/transaction/Synchronization;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -114,7 +114,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "registeredSynchronizations", "Ljava/util/List;");
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerInterposedSynchronization", "(Ljavax/transaction/Synchronization;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerInterposedSynchronization", "(Ljakarta/transaction/Synchronization;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "registeredSynchronizations", "Ljava/util/List;");
@@ -226,7 +226,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/transaction/RollbackException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/transaction/RollbackException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -243,9 +243,9 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "rollback", "()V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/RollbackException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/RollbackException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/RollbackException", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/RollbackException", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -259,12 +259,12 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/E
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", "rollback", "()V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/RollbackException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/RollbackException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/RollbackException", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/RollbackException", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/transaction/RollbackException", "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/RollbackException");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/transaction/RollbackException", "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/RollbackException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -364,10 +364,10 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Synchronization");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Synchronization");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "beforeCompletion", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "beforeCompletion", "()V", true);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -398,17 +398,17 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/Synchronization");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/Synchronization");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Synchronization", "afterCompletion", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Synchronization", "afterCompletion", "(I)V", true);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", Opcodes.INTEGER, "java/util/Iterator", "javax/transaction/Synchronization"}, 1, new Object[] {"java/lang/RuntimeException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction", Opcodes.INTEGER, "java/util/Iterator", "jakarta/transaction/Synchronization"}, 1, new Object[] {"java/lang/RuntimeException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/ri/sp/PseudoTransactionService", "access$100", "()Lorg/apache/openejb/util/Logger;", false);
 methodVisitor.visitLdcInsn("Synchronization afterCompletion threw a RuntimeException");

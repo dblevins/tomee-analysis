@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/EndpointImpl", null, "javax/xml/ws/Endpoint", new String[] { "org/apache/cxf/interceptor/InterceptorProvider", "org/apache/cxf/configuration/Configurable", "java/lang/AutoCloseable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/EndpointImpl", null, "jakarta/xml/ws/Endpoint", new String[] { "org/apache/cxf/interceptor/InterceptorProvider", "org/apache/cxf/configuration/Configurable", "java/lang/AutoCloseable" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/EndpointImpl$DoubleAddInterceptorList", "org/apache/cxf/jaxws/EndpointImpl", "DoubleAddInterceptorList", 0);
 
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CHEC
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PUBLISH_PERMISSION", "Ljavax/xml/ws/WebServicePermission;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PUBLISH_PERMISSION", "Ljakarta/xml/ws/WebServicePermission;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -139,11 +139,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "inFault", "Ljava/util/List;"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handlers", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "handlers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "endpointContext", "Ljavax/xml/ws/EndpointContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "endpointContext", "Ljakarta/xml/ws/EndpointContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -165,7 +165,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Lorg/apache/cxf/jaxws/JaxWsServerFactoryBean;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/Endpoint", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/Endpoint", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/util/ModCountCopyOnWriteArrayList");
 methodVisitor.visitInsn(DUP);
@@ -216,16 +216,16 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/Endpoint", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/Endpoint", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/util/ModCountCopyOnWriteArrayList");
 methodVisitor.visitInsn(DUP);
@@ -271,13 +271,13 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "org/apache/cxf/Bus", "java/lang/Object", "java/lang/String", "java/lang/String", "[Ljavax/xml/ws/WebServiceFeature;"}, 1, new Object[] {"org/apache/cxf/jaxws/EndpointImpl"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "org/apache/cxf/Bus", "java/lang/Object", "java/lang/String", "java/lang/String", "[Ljakarta/xml/ws/WebServiceFeature;"}, 1, new Object[] {"org/apache/cxf/jaxws/EndpointImpl"});
 methodVisitor.visitTypeInsn(NEW, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/String", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "org/apache/cxf/Bus", "java/lang/Object", "java/lang/String", "java/lang/String", "[Ljavax/xml/ws/WebServiceFeature;"}, 2, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "org/apache/cxf/Bus", "java/lang/Object", "java/lang/String", "java/lang/String", "[Ljakarta/xml/ws/WebServiceFeature;"}, 2, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "java/lang/String"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/EndpointImpl", "wsdlLocation", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/JaxWsServerFactoryBean");
@@ -315,7 +315,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -324,7 +324,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljavax/xml/ws/WebServiceFeature;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/EndpointImpl", "<init>", "(Lorg/apache/cxf/Bus;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljakarta/xml/ws/WebServiceFeature;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
@@ -362,12 +362,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "()Ljavax/xml/ws/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "()Ljakarta/xml/ws/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getEndpoint", "()Lorg/apache/cxf/endpoint/Endpoint;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl", "getJaxwsBinding", "()Ljavax/xml/ws/Binding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/support/JaxWsEndpointImpl", "getJaxwsBinding", "()Ljakarta/xml/ws/Binding;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -763,9 +763,9 @@ methodVisitor.visitJumpInsn(IFNULL, label13);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/service/model/EndpointInfo", "getService", "()Lorg/apache/cxf/service/model/ServiceInfo;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/wsdl11/WSDLServiceBuilder", "WSDL_DEFINITION", "Ljava/lang/String;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/wsdl/Definition;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/wsdl/Definition;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/service/model/ServiceInfo", "getProperty", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Definition");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Definition");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label14 = new Label();
@@ -777,16 +777,16 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/Bus", "getExtensi
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/wsdl/WSDLManager");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "wsdlLocation", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/wsdl/WSDLManager", "getDefinition", "(Ljava/lang/String;)Ljavax/wsdl/Definition;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/wsdl/WSDLManager", "getDefinition", "(Ljava/lang/String;)Ljakarta/wsdl/Definition;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label14);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/wsdl/Definition"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/wsdl/Definition"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/frontend/WSDLGetUtils");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/frontend/WSDLGetUtils", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/frontend/WSDLGetUtils", "updateWSDLPublishedEndpointAddress", "(Ljavax/wsdl/Definition;Lorg/apache/cxf/service/model/EndpointInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/frontend/WSDLGetUtils", "updateWSDLPublishedEndpointAddress", "(Ljakarta/wsdl/Definition;Lorg/apache/cxf/service/model/EndpointInfo;)V", false);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -851,10 +851,10 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/jaxws/
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label18);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "java/lang/String", "org/apache/cxf/endpoint/ServerImpl", "org/apache/cxf/common/classloader/ClassLoaderUtils$ClassLoaderHolder"}, 1, new Object[] {"java/lang/Throwable"});
@@ -1275,7 +1275,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljavax/xml/ws/WebServicePermission;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljakarta/xml/ws/WebServicePermission;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -1284,7 +1284,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/SecurityMa
 methodVisitor.visitLdcInsn("org.apache.cxf.jaxws.checkPublishEndpointPermission");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "getBoolean", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljavax/xml/ws/WebServicePermission;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljakarta/xml/ws/WebServicePermission;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/AccessController", "checkPermission", "(Ljava/security/Permission;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1616,7 +1616,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlers", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlers", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "handlers", "Ljava/util/List;");
@@ -1631,7 +1631,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandlers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "handlers", "Ljava/util/List;");
@@ -1761,7 +1761,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getEndpointReference", "([Lorg/w3c/dom/Element;)Ljavax/xml/ws/EndpointReference;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getEndpointReference", "([Lorg/w3c/dom/Element;)Ljakarta/xml/ws/EndpointReference;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1773,7 +1773,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "isPublished", "()Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label4);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/i18n/Message");
 methodVisitor.visitInsn(DUP);
@@ -1783,13 +1783,13 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/common/i18n/Message", "<init>", "(Ljava/lang/String;Ljava/util/logging/Logger;[Ljava/lang/Object;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/i18n/Message", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getBinding", "()Ljavax/xml/ws/Binding;", false);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/ws/http/HTTPBinding");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getBinding", "()Ljakarta/xml/ws/Binding;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/ws/http/HTTPBinding");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
@@ -1806,24 +1806,24 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationExce
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "address", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "address", "(Ljava/lang/String;)Ljavax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "address", "(Ljava/lang/String;)Ljakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "serviceName", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "serviceName", "(Ljavax/xml/namespace/QName;)Ljavax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "serviceName", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "endpointName", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "endpointName", "(Ljavax/xml/namespace/QName;)Ljavax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "endpointName", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label6 = new Label();
@@ -1837,7 +1837,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label7 = new Label();
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "[Lorg/w3c/dom/Element;", "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "[Lorg/w3c/dom/Element;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "[Lorg/w3c/dom/Element;", "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "[Lorg/w3c/dom/Element;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label6);
@@ -1847,7 +1847,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "referenceParameter", "(Lorg/w3c/dom/Element;)Ljavax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "referenceParameter", "(Lorg/w3c/dom/Element;)Ljakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label7);
@@ -1856,7 +1856,7 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "wsdlLocation", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "wsdlDocumentLocation", "(Ljava/lang/String;)Ljavax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "wsdlDocumentLocation", "(Ljava/lang/String;)Ljakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
@@ -1867,7 +1867,7 @@ methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/jaxws/EndpointReference
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getClassLoader", "()Ljava/lang/ClassLoader;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClassLoader", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "build", "()Ljavax/xml/ws/wsaddressing/W3CEndpointReference;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "build", "()Ljakarta/xml/ws/wsaddressing/W3CEndpointReference;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -1876,7 +1876,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "setContextClas
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "[Lorg/w3c/dom/Element;", "javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "java/lang/ClassLoader"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/EndpointImpl", "[Lorg/w3c/dom/Element;", "jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder", "java/lang/ClassLoader"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -1888,9 +1888,9 @@ methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getEndpointReference", "(Ljava/lang/Class;[Lorg/w3c/dom/Element;)Ljavax/xml/ws/EndpointReference;", "<T:Ljavax/xml/ws/EndpointReference;>(Ljava/lang/Class<TT;>;[Lorg/w3c/dom/Element;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getEndpointReference", "(Ljava/lang/Class;[Lorg/w3c/dom/Element;)Ljakarta/xml/ws/EndpointReference;", "<T:Ljakarta/xml/ws/EndpointReference;>(Ljava/lang/Class<TT;>;[Lorg/w3c/dom/Element;)TT;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/wsaddressing/W3CEndpointReference;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/wsaddressing/W3CEndpointReference;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
@@ -1898,13 +1898,13 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getEndpointReference", "([Lorg/w3c/dom/Element;)Ljavax/xml/ws/EndpointReference;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getEndpointReference", "([Lorg/w3c/dom/Element;)Ljakarta/xml/ws/EndpointReference;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/EndpointReference");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/EndpointReference");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/i18n/Message");
 methodVisitor.visitInsn(DUP);
@@ -1919,32 +1919,32 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/common/i18n/Message", "<init>", "(Ljava/lang/String;Ljava/util/logging/Logger;[Ljava/lang/Object;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/i18n/Message", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(10, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEndpointContext", "(Ljavax/xml/ws/EndpointContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setEndpointContext", "(Ljakarta/xml/ws/EndpointContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/EndpointImpl", "endpointContext", "Ljavax/xml/ws/EndpointContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/EndpointImpl", "endpointContext", "Ljakarta/xml/ws/EndpointContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEndpointContext", "()Ljavax/xml/ws/EndpointContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEndpointContext", "()Ljakarta/xml/ws/EndpointContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "endpointContext", "Ljavax/xml/ws/EndpointContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/EndpointImpl", "endpointContext", "Ljakarta/xml/ws/EndpointContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publish", "(Ljavax/xml/ws/spi/http/HttpContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publish", "(Ljakarta/xml/ws/spi/http/HttpContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "getServerFactory", "()Lorg/apache/cxf/jaxws/JaxWsServerFactoryBean;", false);
@@ -1957,13 +1957,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiTransportFactory");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiTransportFactory", "<init>", "(Ljavax/xml/ws/spi/http/HttpContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiTransportFactory", "<init>", "(Ljakarta/xml/ws/spi/http/HttpContext;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/frontend/ServerFactoryBean", "setDestinationFactory", "(Lorg/apache/cxf/transport/DestinationFactory;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/frontend/ServerFactoryBean"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/spi/http/HttpContext", "getPath", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/spi/http/HttpContext", "getPath", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/EndpointImpl", "publish", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -1981,11 +1981,11 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServicePermission");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServicePermission");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("publishEndpoint");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServicePermission", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljavax/xml/ws/WebServicePermission;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServicePermission", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "PUBLISH_PERMISSION", "Ljakarta/xml/ws/WebServicePermission;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/jaxws/EndpointImpl;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/logging/LogUtils", "getL7dLogger", "(Ljava/lang/Class;)Ljava/util/logging/Logger;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxws/EndpointImpl", "LOG", "Ljava/util/logging/Logger;");

@@ -22,15 +22,15 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPMessage", null, "javax/mail/internet/MimeMessage", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/imap/IMAPMessage", null, "jakarta/mail/internet/MimeMessage", null);
 
-classWriter.visitInnerClass("javax/mail/Flags$Flag", "javax/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/Flags$Flag", "jakarta/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/mail/Message$RecipientType", "javax/mail/Message", "RecipientType", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/Message$RecipientType", "jakarta/mail/Message", "RecipientType", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/mail/UIDFolder$FetchProfileItem", "javax/mail/UIDFolder", "FetchProfileItem", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/UIDFolder$FetchProfileItem", "jakarta/mail/UIDFolder", "FetchProfileItem", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/mail/FetchProfile$Item", "javax/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/FetchProfile$Item", "jakarta/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", "org/apache/geronimo/javamail/store/imap/IMAPFolder", "FetchProfileItem", ACC_PUBLIC | ACC_STATIC);
 
@@ -75,7 +75,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "allHeadersRetrieved", "Z",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_STATIC, "dateFormat", "Ljavax/mail/internet/MailDateFormat;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_STATIC, "dateFormat", "Ljakarta/mail/internet/MailDateFormat;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "<init>", "(Ljavax/mail/Folder;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "<init>", "(Ljakarta/mail/Folder;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "uid", "J");
@@ -99,12 +99,12 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "store", "Lorg/apache/geronimo/javamail/store/imap/IMAPStore;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljakarta/mail/Flags;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/internet/InternetHeaders");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/internet/InternetHeaders");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/InternetHeaders", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/InternetHeaders", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
@@ -114,7 +114,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExpunged", "(Z)V", null,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "setExpunged", "(Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "setExpunged", "(Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "isExpunged", "()Z", false);
 Label label0 = new Label();
@@ -128,30 +128,30 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getFlags", "()Ljavax/mail/Flags;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getFlags", "()Ljakarta/mail/Flags;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadFlags", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getFlags", "()Ljavax/mail/Flags;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getFlags", "()Ljakarta/mail/Flags;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "isSet", "(Ljavax/mail/Flags$Flag;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "isSet", "(Ljakarta/mail/Flags$Flag;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadFlags", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "isSet", "(Ljavax/mail/Flags$Flag;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "isSet", "(Ljakarta/mail/Flags$Flag;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setFlags", "(Ljavax/mail/Flags;Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setFlags", "(Ljakarta/mail/Flags;Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -168,7 +168,7 @@ methodVisitor.visitTryCatchBlock(label6, label7, label6, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(MONITORENTER);
@@ -183,8 +183,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "sequenceNumber", "I");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "setFlags", "(ILjavax/mail/Flags;Z)Ljavax/mail/Flags;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "setFlags", "(ILjakarta/mail/Flags;Z)Ljakarta/mail/Flags;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljakarta/mail/Flags;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -218,7 +218,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentStream", "()Ljava/io/InputStream;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentStream", "()Ljava/io/InputStream;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "content", "[B");
@@ -230,13 +230,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadContent", "()V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getContentStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getContentStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/io/OutputStream;)V", null, new String[] { "java/io/IOException", "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeTo", "(Ljava/io/OutputStream;)V", null, new String[] { "java/io/IOException", "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "content", "[B");
@@ -250,8 +250,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
@@ -288,13 +288,13 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFrom", "()[Ljavax/mail/Address;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFrom", "()[Ljakarta/mail/Address;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -303,21 +303,21 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljavax/mail/Address;", "clone", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljakarta/mail/Address;", "clone", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSender", "()Ljavax/mail/Address;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSender", "()Ljakarta/mail/Address;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -333,46 +333,46 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRecipients", "(Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRecipients", "(Ljakarta/mail/Message$RecipientType;)[Ljakarta/mail/Address;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Message$RecipientType", "TO", "Ljavax/mail/Message$RecipientType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Message$RecipientType", "TO", "Ljakarta/mail/Message$RecipientType;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Message$RecipientType", "CC", "Ljavax/mail/Message$RecipientType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Message$RecipientType", "CC", "Ljakarta/mail/Message$RecipientType;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Message$RecipientType", "BCC", "Ljavax/mail/Message$RecipientType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Message$RecipientType", "BCC", "Ljakarta/mail/Message$RecipientType;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getRecipients", "(Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getRecipients", "(Ljakarta/mail/Message$RecipientType;)[Ljakarta/mail/Address;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -382,21 +382,21 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljavax/mail/Address;", "clone", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljakarta/mail/Address;", "clone", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReplyTo", "()[Ljavax/mail/Address;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReplyTo", "()[Ljakarta/mail/Address;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -405,15 +405,15 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljavax/mail/Address;", "clone", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/mail/Address;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "[Ljakarta/mail/Address;", "clone", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/mail/Address;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -431,7 +431,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "envelope", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "subject", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/mail/internet/MimeUtility", "decodeText", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/mail/internet/MimeUtility", "decodeText", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -444,7 +444,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSentDate", "()Ljava/util/Date;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSentDate", "()Ljava/util/Date;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
@@ -456,7 +456,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReceivedDate", "()Ljava/util/Date;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReceivedDate", "()Ljava/util/Date;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
@@ -467,7 +467,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSize", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
@@ -478,7 +478,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLineCount", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLineCount", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
@@ -490,7 +490,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInReplyTo", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInReplyTo", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
@@ -502,46 +502,46 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentType", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentType", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljavax/mail/internet/ContentType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljakarta/mail/internet/ContentType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isMimeType", "(Ljava/lang/String;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isMimeType", "(Ljava/lang/String;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljavax/mail/internet/ContentType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljakarta/mail/internet/ContentType;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentType", "match", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentType", "match", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDisposition", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDisposition", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljavax/mail/internet/ContentDisposition;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljakarta/mail/internet/ContentDisposition;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljavax/mail/internet/ContentDisposition;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentDisposition", "getDisposition", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljakarta/mail/internet/ContentDisposition;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentDisposition", "getDisposition", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -550,7 +550,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoding", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoding", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
@@ -562,7 +562,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentID", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentID", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
@@ -574,7 +574,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentMD5", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentMD5", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
@@ -586,7 +586,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDescription", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDescription", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -604,7 +604,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "contentDescription", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/mail/internet/MimeUtility", "decodeText", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/mail/internet/MimeUtility", "decodeText", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -617,7 +617,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentLanguage", "()[Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentLanguage", "()[Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
@@ -646,7 +646,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageID", "()Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageID", "()Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadEnvelope", "()V", false);
@@ -658,398 +658,398 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFrom", "(Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFrom", "(Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFrom", "([Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFrom", "([Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSender", "(Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSender", "(Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecipients", "(Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecipients", "(Ljakarta/mail/Message$RecipientType;[Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecipients", "(Ljavax/mail/Message$RecipientType;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRecipients", "(Ljakarta/mail/Message$RecipientType;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRecipients", "(Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRecipients", "(Ljakarta/mail/Message$RecipientType;[Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReplyTo", "([Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReplyTo", "([Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSubject", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSubject", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSubject", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSubject", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSentDate", "(Ljava/util/Date;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSentDate", "(Ljava/util/Date;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisposition", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDisposition", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentID", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentID", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentMD5", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentMD5", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDescription", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDescription", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDescription", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDescription", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentLanguage", "([Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContentLanguage", "([Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaders", "()Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaders", "()Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getNonMatchingHeaders", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaderLines", "()Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllHeaderLines", "()Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaderLines", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadHeaders", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getNonMatchingHeaderLines", "([Ljava/lang/String;)Ljava/util/Enumeration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeHeader", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeHeader", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeaderLine", "(Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addHeaderLine", "(Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveChanges", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveChanges", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP messages are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/mail/internet/InternetAddress", "toString", "([Ljavax/mail/Address;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/mail/internet/InternetAddress", "toString", "([Ljakarta/mail/Address;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;Ljavax/mail/Address;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;Ljakarta/mail/Address;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Address", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Address", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "updateHeader", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getDataHandler", "()Ljavax/activation/DataHandler;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getDataHandler", "()Ljakarta/activation/DataHandler;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "loadBodyStructure", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljakarta/activation/DataHandler;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1058,7 +1058,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource");
 methodVisitor.visitInsn(DUP);
@@ -1068,11 +1068,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "section", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "<init>", "(Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;Ljavax/mail/internet/MimePart;Ljava/lang/String;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljavax/activation/DataSource;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource", "<init>", "(Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;Ljakarta/mail/internet/MimePart;Ljava/lang/String;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljakarta/activation/DataSource;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1080,7 +1080,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "isAttachedMessage", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/DataHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/DataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage");
 methodVisitor.visitInsn(DUP);
@@ -1096,40 +1096,40 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage", "<init>", "(Lorg/apache/geronimo/javamail/store/imap/IMAPMessage;Ljava/lang/String;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljavax/mail/internet/ContentType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljakarta/mail/internet/ContentType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljavax/activation/DataHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dh", "Ljakarta/activation/DataHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MimeMessage", "getDataHandler", "()Ljavax/activation/DataHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MimeMessage", "getDataHandler", "()Ljakarta/activation/DataHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(9, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDataHandler", "(Ljavax/activation/DataHandler;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDataHandler", "(Ljakarta/activation/DataHandler;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/IllegalWriteException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/IllegalWriteException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("IMAP body parts are read-only");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/IllegalWriteException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateHeaders", "(Ljava/io/InputStream;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateHeaders", "(Ljava/io/InputStream;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/internet/InternetHeaders");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/internet/InternetHeaders");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/InternetHeaders", "<init>", "(Ljava/io/InputStream;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/InternetHeaders", "<init>", "(Ljava/io/InputStream;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "allHeadersRetrieved", "Z");
@@ -1138,7 +1138,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadFlags", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadFlags", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1153,13 +1153,13 @@ methodVisitor.visitTryCatchBlock(label5, label6, label5, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljakarta/mail/Flags;");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1172,8 +1172,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "sequenceNumber", "I");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "fetchFlags", "(I)Ljavax/mail/Flags;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "fetchFlags", "(I)Ljakarta/mail/Flags;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljakarta/mail/Flags;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -1206,7 +1206,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadHeaders", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadHeaders", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1227,7 +1227,7 @@ methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1242,8 +1242,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "sequenceNumber", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "section", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "fetchHeaders", "(ILjava/lang/String;)Ljavax/mail/internet/InternetHeaders;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPConnection", "fetchHeaders", "(ILjava/lang/String;)Ljakarta/mail/internet/InternetHeaders;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "allHeadersRetrieved", "Z");
@@ -1279,7 +1279,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadEnvelope", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadEnvelope", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1302,7 +1302,7 @@ methodVisitor.visitLabel(label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1367,7 +1367,7 @@ methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "updateEnvelope", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "updateEnvelope", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1375,40 +1375,40 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("From");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljavax/mail/internet/InternetAddress;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljakarta/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljakarta/mail/internet/InternetAddress;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Sender");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;Ljavax/mail/Address;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;Ljakarta/mail/Address;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("To");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljavax/mail/internet/InternetAddress;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljakarta/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Cc");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljavax/mail/internet/InternetAddress;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljakarta/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Bcc");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljavax/mail/internet/InternetAddress;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljakarta/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Reply-To");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljavax/mail/internet/InternetAddress;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljavax/mail/internet/InternetAddress;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljakarta/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;[Ljakarta/mail/internet/InternetAddress;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Subject");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1424,7 +1424,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadBodyStructure", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "loadBodyStructure", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1445,7 +1445,7 @@ methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "checkValidity", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1496,7 +1496,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "updateBodyStructure", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "updateBodyStructure", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1590,20 +1590,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Content-Type");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljavax/mail/internet/ContentType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "mimeType", "Ljakarta/mail/internet/ContentType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljavax/mail/internet/ContentDisposition;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljakarta/mail/internet/ContentDisposition;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("Content-Disposition");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "bodyStructure", "Lorg/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljavax/mail/internet/ContentDisposition;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/ContentDisposition", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure", "disposition", "Ljakarta/mail/internet/ContentDisposition;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/ContentDisposition", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "updateHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1629,7 +1629,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "loadContent", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "loadContent", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1648,7 +1648,7 @@ methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1735,10 +1735,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/IMAPFolder");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPFolder", "getMessageConnection", "()Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -1746,10 +1746,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/IMAPFolder");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPFolder", "releaseMessageConnection", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPConnection;)V", false);
@@ -1758,7 +1758,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "()V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "()V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -1768,7 +1768,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "(Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkValidity", "(Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1786,7 +1786,7 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(MONITORENTER);
@@ -1828,10 +1828,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "isExpunged", "()Z", false);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label10);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessageRemovedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessageRemovedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Illegal opertion on a deleted message");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessageRemovedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessageRemovedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitInsn(RETURN);
@@ -1839,11 +1839,11 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evaluateFetch", "(Ljavax/mail/FetchProfile;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "evaluateFetch", "(Ljakarta/mail/FetchProfile;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/UIDFolder$FetchProfileItem", "UID", "Ljavax/mail/UIDFolder$FetchProfileItem;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/UIDFolder$FetchProfileItem", "UID", "Ljakarta/mail/UIDFolder$FetchProfileItem;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1855,8 +1855,8 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "ENVELOPE", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "ENVELOPE", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1866,19 +1866,19 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "FLAGS", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "FLAGS", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljavax/mail/Flags;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "flags", "Ljakarta/mail/Flags;");
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "CONTENT_INFO", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "CONTENT_INFO", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1889,7 +1889,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", "HEADERS", "Lorg/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1900,7 +1900,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem", "SIZE", "Lorg/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1911,7 +1911,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "getHeaderNames", "()[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "getHeaderNames", "()[Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -1923,11 +1923,11 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label8);
 methodVisitor.visitInsn(ICONST_1);
@@ -1942,7 +1942,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "updateMessageInformation", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPFetchResponse;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(0, "updateMessageInformation", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPFetchResponse;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPFetchResponse", "getDataItems", "()Ljava/util/List;", false);
@@ -1998,7 +1998,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPUid", "uid", "J");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "uid", "J");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljavax/mail/Folder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "folder", "Ljakarta/mail/Folder;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/imap/IMAPFolder");
 methodVisitor.visitTypeInsn(NEW, "java/lang/Long");
 methodVisitor.visitInsn(DUP);
@@ -2006,7 +2006,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "uid", "J");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Long", "<init>", "(J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPFolder", "addToUidCache", "(Ljava/lang/Long;Ljavax/mail/Message;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPFolder", "addToUidCache", "(Ljava/lang/Long;Ljakarta/mail/Message;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2024,8 +2024,8 @@ Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "allHeadersRetrieved", "Z");
@@ -2033,8 +2033,8 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "mergeHeaders", "(Ljavax/mail/internet/InternetHeaders;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "mergeHeaders", "(Ljakarta/mail/internet/InternetHeaders;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitIincInsn(3, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -2044,11 +2044,11 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "mergeHeaders", "(Ljavax/mail/internet/InternetHeaders;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "mergeHeaders", "(Ljakarta/mail/internet/InternetHeaders;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getAllHeaders", "()Ljava/util/Enumeration;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
@@ -2058,21 +2058,21 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/mail/Header");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/mail/Header");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Header", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Header", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Header", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Header", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 6);
@@ -2087,7 +2087,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/internet/InternetHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/internet/InternetHeaders", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitIincInsn(6, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -2095,7 +2095,7 @@ methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljavax/mail/internet/InternetHeaders;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "headers", "Ljakarta/mail/internet/InternetHeaders;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
@@ -2114,10 +2114,10 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitIntInsn(BIPUSH, 10);
 methodVisitor.visitInsn(BASTORE);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "CRLF", "[B");
-methodVisitor.visitTypeInsn(NEW, "javax/mail/internet/MailDateFormat");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/internet/MailDateFormat");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/internet/MailDateFormat", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dateFormat", "Ljavax/mail/internet/MailDateFormat;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/internet/MailDateFormat", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/javamail/store/imap/IMAPMessage", "dateFormat", "Ljakarta/mail/internet/MailDateFormat;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 0);
 methodVisitor.visitEnd();

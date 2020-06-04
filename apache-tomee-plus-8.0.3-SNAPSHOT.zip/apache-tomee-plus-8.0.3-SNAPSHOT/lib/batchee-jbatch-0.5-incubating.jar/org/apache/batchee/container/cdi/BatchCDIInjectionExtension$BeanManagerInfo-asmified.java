@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/batchee/container/cdi/BatchCDIInjectionE
 classWriter.visitInnerClass("org/apache/batchee/container/cdi/BatchCDIInjectionExtension$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "loadTimeBm", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "loadTimeBm", "Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "finalBm", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "finalBm", "Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,10 +47,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "cdi", "Ljava/lang/Boolean;");
@@ -59,32 +59,32 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$002", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljavax/enterprise/inject/spi/BeanManager;)Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$002", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljakarta/enterprise/inject/spi/BeanManager;)Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljavax/enterprise/inject/spi/BeanManager;)Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljakarta/enterprise/inject/spi/BeanManager;)Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "finalBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -99,10 +99,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "loadTimeBm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

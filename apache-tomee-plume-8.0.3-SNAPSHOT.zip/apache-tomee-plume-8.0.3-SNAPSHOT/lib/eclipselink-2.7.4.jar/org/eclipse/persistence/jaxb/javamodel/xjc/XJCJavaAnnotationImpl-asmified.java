@@ -381,7 +381,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlEnum;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlEnum;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label24 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label24);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/timer/TimerData$TimerDataSynchronization", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/timer/TimerData$TimerDataSynchronization", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/timer/TimerData$TimerDataSynchronization", "org/apache/openejb/core/timer/TimerData", "TimerDataSynchronization", ACC_PRIVATE);
 
@@ -85,11 +85,11 @@ methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/core/timer/TimerStoreException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/EJBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/EJBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Failed on afterCompletion");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/EJBException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/EJBException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

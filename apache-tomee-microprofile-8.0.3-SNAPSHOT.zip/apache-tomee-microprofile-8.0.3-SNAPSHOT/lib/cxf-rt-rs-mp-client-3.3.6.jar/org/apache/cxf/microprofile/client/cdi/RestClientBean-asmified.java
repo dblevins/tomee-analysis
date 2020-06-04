@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "Ljava/lang/Object;Ljavax/enterprise/inject/spi/Bean<Ljava/lang/Object;>;Ljavax/enterprise/inject/spi/PassivationCapable;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Bean", "javax/enterprise/inject/spi/PassivationCapable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "Ljava/lang/Object;Ljakarta/enterprise/inject/spi/Bean<Ljava/lang/Object;>;Ljakarta/enterprise/inject/spi/PassivationCapable;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Bean", "jakarta/enterprise/inject/spi/PassivationCapable" });
 
 classWriter.visitInnerClass("org/apache/cxf/microprofile/client/cdi/RestClientBean$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -93,7 +93,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_LITERAL", "Ljavax/enterprise/inject/Default;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_LITERAL", "Ljakarta/enterprise/inject/Default;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -105,11 +105,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "scope", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanManager", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanManager", "Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljavax/enterprise/inject/spi/BeanManager;)V", "(Ljava/lang/Class<*>;Ljavax/enterprise/inject/spi/BeanManager;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljakarta/enterprise/inject/spi/BeanManager;)V", "(Ljava/lang/Class<*>;Ljakarta/enterprise/inject/spi/BeanManager;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -118,7 +118,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "clientInterface", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "beanManager", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "readScope", "()Ljava/lang/Class;", false);
@@ -147,7 +147,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder");
 methodVisitor.visitInsn(DUP);
@@ -190,7 +190,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 6);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/microprofile/client/cdi/RestClientBean", "javax/enterprise/context/spi/CreationalContext", "org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder", "java/lang/String", "java/util/List", "java/util/Map", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/microprofile/client/cdi/RestClientBean", "jakarta/enterprise/context/spi/CreationalContext", "org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder", "java/lang/String", "java/util/List", "java/util/Map", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label1 = new Label();
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(5, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
@@ -254,7 +254,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "DEFAULT_LITERAL", "Ljavax/enterprise/inject/Default;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "DEFAULT_LITERAL", "Ljakarta/enterprise/inject/Default;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
@@ -439,10 +439,10 @@ methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "beanManager", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "isScope", "(Ljava/lang/Class;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "isScope", "(Ljava/lang/Class;)Z", true);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -459,7 +459,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/Dependent;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -643,19 +643,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getPriorityFromClass", "(Ljava/lang/Class;I)I", "(Ljava/lang/Class<*>;I)I", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/annotation/Priority;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/annotation/Priority;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/annotation/Priority");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/annotation/Priority");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/annotation/Priority", "value", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/annotation/Priority", "value", "()I", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/annotation/Priority"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/annotation/Priority"}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
@@ -1367,7 +1367,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/microprofile/client/cdi/RestCli
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral", "<init>", "(Lorg/apache/cxf/microprofile/client/cdi/RestClientBean$1;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "DEFAULT_LITERAL", "Ljavax/enterprise/inject/Default;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/microprofile/client/cdi/RestClientBean", "DEFAULT_LITERAL", "Ljakarta/enterprise/inject/Default;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();

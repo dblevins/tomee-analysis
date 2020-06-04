@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/Validator$ValidateVisitor$1MapperELVisitor", null, "org/apache/jasper/compiler/ELNode$Visitor", null);
 
-classWriter.visitOuterClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "getFunctionMapper", "(Lorg/apache/jasper/compiler/ELNode$Nodes;)Ljavax/el/FunctionMapper;");
+classWriter.visitOuterClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "getFunctionMapper", "(Lorg/apache/jasper/compiler/ELNode$Nodes;)Ljakarta/el/FunctionMapper;");
 
 classWriter.visitInnerClass("org/apache/jasper/compiler/Validator$ValidateVisitor", "org/apache/jasper/compiler/Validator", "ValidateVisitor", ACC_PRIVATE | ACC_STATIC);
 
@@ -75,7 +75,7 @@ methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/ClassNotFoun
 Label label6 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label6, "java/lang/NoSuchMethodException");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljavax/servlet/jsp/tagext/FunctionInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljakarta/servlet/jsp/tagext/FunctionInfo;", false);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label7);
 methodVisitor.visitInsn(RETURN);
@@ -90,8 +90,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Validator$ValidateVisitor$1MapperELVisitor", "this$0", "Lorg/apache/jasper/compiler/Validator$ValidateVisitor;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/compiler/Validator$ValidateVisitor", "access$500", "(Lorg/apache/jasper/compiler/Validator$ValidateVisitor;)Ljava/lang/ClassLoader;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljavax/servlet/jsp/tagext/FunctionInfo;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/FunctionInfo", "getFunctionClass", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljakarta/servlet/jsp/tagext/FunctionInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/FunctionInfo", "getFunctionClass", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
@@ -109,8 +109,8 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljavax/servlet/jsp/tagext/FunctionInfo;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/FunctionInfo", "getFunctionClass", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/ELNode$Function", "getFunctionInfo", "()Ljakarta/servlet/jsp/tagext/FunctionInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/FunctionInfo", "getFunctionClass", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);

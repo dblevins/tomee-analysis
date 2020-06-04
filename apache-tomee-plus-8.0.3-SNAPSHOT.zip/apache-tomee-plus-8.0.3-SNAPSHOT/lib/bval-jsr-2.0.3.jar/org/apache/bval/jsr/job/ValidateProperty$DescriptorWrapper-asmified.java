@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL, "wrapped", "Lorg/apache/bval/js
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/validation/metadata/ElementDescriptor;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/validation/metadata/ElementDescriptor;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);

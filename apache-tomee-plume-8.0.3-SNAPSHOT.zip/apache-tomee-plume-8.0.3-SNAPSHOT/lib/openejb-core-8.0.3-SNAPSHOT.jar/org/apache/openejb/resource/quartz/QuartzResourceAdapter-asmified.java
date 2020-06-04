@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/quartz/QuartzResourceAdapter", null, "java/lang/Object", new String[] { "javax/resource/spi/ResourceAdapter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/quartz/QuartzResourceAdapter", null, "java/lang/Object", new String[] { "jakarta/resource/spi/ResourceAdapter" });
 
 classWriter.visitInnerClass("org/apache/openejb/resource/quartz/QuartzResourceAdapter$Data", "org/apache/openejb/resource/quartz/QuartzResourceAdapter", "Data", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "scheduler", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bootstrapContext", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljavax/resource/spi/BootstrapContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bootstrapContext", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljakarta/resource/spi/BootstrapContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljavax/resource/spi/BootstrapContext;)V", null, new String[] { "javax/resource/spi/ResourceAdapterInternalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "(Ljakarta/resource/spi/BootstrapContext;)V", null, new String[] { "jakarta/resource/spi/ResourceAdapterInternalException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -187,7 +187,7 @@ methodVisitor.visitLabel(label1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/resource/quartz/QuartzResourceAdapter", "javax/resource/spi/BootstrapContext", "java/util/concurrent/CountDownLatch", Opcodes.LONG, Opcodes.INTEGER}, 1, new Object[] {"java/lang/InterruptedException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/resource/quartz/QuartzResourceAdapter", "jakarta/resource/spi/BootstrapContext", "java/util/concurrent/CountDownLatch", Opcodes.LONG, Opcodes.INTEGER}, 1, new Object[] {"java/lang/InterruptedException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -209,11 +209,11 @@ methodVisitor.visitLdcInsn("Error creating Quartz Scheduler");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Logger", "error", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/ResourceAdapterInternalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/ResourceAdapterInternalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Error creating Quartz Scheduler");
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/ResourceAdapterInternalException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/ResourceAdapterInternalException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Throwable"}, 0, null);
@@ -254,12 +254,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBootstrapContext", "()Ljavax/resource/spi/BootstrapContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBootstrapContext", "()Ljakarta/resource/spi/BootstrapContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/QuartzResourceAdapter", "bootstrapContext", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/BootstrapContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/BootstrapContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -437,7 +437,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "endpointActivation", "(Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "endpointActivation", "(Ljakarta/resource/spi/endpoint/MessageEndpointFactory;Ljakarta/resource/spi/ActivationSpec;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -451,10 +451,10 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Quartz Scheduler is not available");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/quartz/Scheduler"}, 0, null);
@@ -463,11 +463,11 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/resource/quartz/JobSp
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/endpoint/MessageEndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljavax/resource/spi/endpoint/MessageEndpoint;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/endpoint/MessageEndpointFactory", "createEndpoint", "(Ljavax/transaction/xa/XAResource;)Ljakarta/resource/spi/endpoint/MessageEndpoint;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "setEndpoint", "(Ljavax/resource/spi/endpoint/MessageEndpoint;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "setEndpoint", "(Ljakarta/resource/spi/endpoint/MessageEndpoint;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/quartz/Job");
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -498,11 +498,11 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/quartz/SchedulerException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Failed to schedule job");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -511,7 +511,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "endpointDeactivation", "(Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "endpointDeactivation", "(Ljakarta/resource/spi/endpoint/MessageEndpointFactory;Ljakarta/resource/spi/ActivationSpec;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -554,11 +554,11 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "getEndpoint", "()Ljavax/resource/spi/endpoint/MessageEndpoint;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/endpoint/MessageEndpoint", "release", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "getEndpoint", "()Ljakarta/resource/spi/endpoint/MessageEndpoint;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/endpoint/MessageEndpoint", "release", "()V", true);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/resource/quartz/QuartzResourceAdapter", "javax/resource/spi/endpoint/MessageEndpointFactory", "javax/resource/spi/ActivationSpec", "org/apache/openejb/quartz/Scheduler", "org/apache/openejb/resource/quartz/JobSpec"}, 1, new Object[] {"org/apache/openejb/quartz/SchedulerException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/resource/quartz/QuartzResourceAdapter", "jakarta/resource/spi/endpoint/MessageEndpointFactory", "jakarta/resource/spi/ActivationSpec", "org/apache/openejb/quartz/Scheduler", "org/apache/openejb/resource/quartz/JobSpec"}, 1, new Object[] {"org/apache/openejb/quartz/SchedulerException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -575,8 +575,8 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "getEndpoint", "()Ljavax/resource/spi/endpoint/MessageEndpoint;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/endpoint/MessageEndpoint", "release", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/quartz/JobSpec", "getEndpoint", "()Ljakarta/resource/spi/endpoint/MessageEndpoint;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/endpoint/MessageEndpoint", "release", "()V", true);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "java/lang/Throwable"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -588,7 +588,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXAResources", "([Ljavax/resource/spi/ActivationSpec;)[Ljavax/transaction/xa/XAResource;", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXAResources", "([Ljakarta/resource/spi/ActivationSpec;)[Ljavax/transaction/xa/XAResource;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "javax/transaction/xa/XAResource");

@@ -44,14 +44,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getFacesConfigurationProviderFactory", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getFacesConfigurationProviderFactory", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/security/PrivilegedActionException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/FacesConfigurationProviderFactory", "FACTORY_KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProviderFactory");
@@ -70,7 +70,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/spi/FacesConfigurationProviderFactory$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/spi/FacesConfigurationProviderFactory$1", "<init>", "(Ljavax/faces/context/ExternalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/spi/FacesConfigurationProviderFactory$1", "<init>", "(Ljakarta/faces/context/ExternalContext;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/AccessController", "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProviderFactory");
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -80,7 +80,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;"));
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/FacesConfigurationProviderFactory", "FACTORY_DEFAULT", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/SpiUtils", "build", "(Ljavax/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/impl/SpiUtils", "build", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesConfigurationProviderFactory");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label1);
@@ -90,10 +90,10 @@ methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/security/PrivilegedActionException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -102,7 +102,7 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/FacesConfigurationProviderFactory", "setFacesConfigurationProviderFactory", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/spi/FacesConfigurationProviderFactory", "setFacesConfigurationProviderFactory", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -111,10 +111,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setFacesConfigurationProviderFactory", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setFacesConfigurationProviderFactory", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/spi/FacesConfigurationProviderFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/FacesConfigurationProviderFactory", "FACTORY_KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -124,7 +124,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesConfigurationProvider", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesConfigurationProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesConfigurationProvider", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesConfigurationProvider;", null, null);
 methodVisitor.visitEnd();
 }
 {

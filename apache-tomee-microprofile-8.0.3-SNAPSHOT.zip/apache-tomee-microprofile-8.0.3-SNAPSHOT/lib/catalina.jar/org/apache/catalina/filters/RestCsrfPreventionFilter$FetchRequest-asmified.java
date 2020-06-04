@@ -60,7 +60,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/filters/RestCsrfPreventionFilter$FetchRequest", "fetchRequest", "Ljava/util/function/Predicate;");
@@ -74,7 +74,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$FetchRequest", "nonceFromSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getSession", "(Z)Ljavax/servlet/http/HttpSession;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getSession", "(Z)Ljakarta/servlet/http/HttpSession;", true);
 methodVisitor.visitLdcInsn("org.apache.catalina.filters.CSRF_REST_NONCE");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/filters/RestCsrfPreventionFilter$NonceSupplier", "getNonce", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
@@ -89,7 +89,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/filters/RestCsrfPreventionFilter$FetchRequest", "nonceToSession", "Lorg/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getSession", "(Z)Ljavax/servlet/http/HttpSession;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getSession", "(Z)Ljakarta/servlet/http/HttpSession;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "requireNonNull", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitLdcInsn("org.apache.catalina.filters.CSRF_REST_NONCE");
 methodVisitor.visitVarInsn(ALOAD, 3);

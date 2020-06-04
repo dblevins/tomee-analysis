@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/view/FaceletViewHandlingStrategy$1", null, "com/sun/faces/facelets/el/VariableMapperWrapper", null);
 
-classWriter.visitOuterClass("com/sun/faces/application/view/FaceletViewHandlingStrategy", "createComponentMetadata", "(Ljavax/faces/context/FacesContext;Ljavax/faces/application/Resource;)Ljava/beans/BeanInfo;");
+classWriter.visitOuterClass("com/sun/faces/application/view/FaceletViewHandlingStrategy", "createComponentMetadata", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/application/Resource;)Ljava/beans/BeanInfo;");
 
 classWriter.visitInnerClass("com/sun/faces/application/view/FaceletViewHandlingStrategy$1", null, null, 0);
 
@@ -33,24 +33,24 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/application/view/FaceletViewHandlingStrategy;Ljavax/el/VariableMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/application/view/FaceletViewHandlingStrategy;Ljakarta/el/VariableMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/view/FaceletViewHandlingStrategy$1", "this$0", "Lcom/sun/faces/application/view/FaceletViewHandlingStrategy;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "<init>", "(Ljavax/el/VariableMapper;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "<init>", "(Ljakarta/el/VariableMapper;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

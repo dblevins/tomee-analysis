@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<X:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter<Ljavax/persistence/metamodel/Attribute<-TX;*>;>;", "java/lang/Object", new String[] { "org/apache/openjpa/persistence/meta/AbstractManagedType$Filter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<X:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/openjpa/persistence/meta/AbstractManagedType$Filter<Ljakarta/persistence/metamodel/Attribute<-TX;*>;>;", "java/lang/Object", new String[] { "org/apache/openjpa/persistence/meta/AbstractManagedType$Filter" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "org/apache/openjpa/persistence/meta/AbstractManagedType", "DeclaredAttributeFilter", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/AbstractManagedType$Filter", "org/apache/openjpa/persistence/meta/AbstractManagedType", "Filter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "owner", "Ljavax/persistence/metamodel/ManagedType;", "Ljavax/persistence/metamodel/ManagedType<TX;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "owner", "Ljakarta/persistence/metamodel/ManagedType;", "Ljakarta/persistence/metamodel/ManagedType<TX;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,24 +37,24 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_invert", "Z", n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/persistence/metamodel/ManagedType;)V", "(Ljavax/persistence/metamodel/ManagedType<TX;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/persistence/metamodel/ManagedType;)V", "(Ljakarta/persistence/metamodel/ManagedType<TX;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljavax/persistence/metamodel/ManagedType;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljakarta/persistence/metamodel/ManagedType;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/persistence/metamodel/ManagedType;Z)V", "(Ljavax/persistence/metamodel/ManagedType<TX;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/persistence/metamodel/ManagedType;Z)V", "(Ljakarta/persistence/metamodel/ManagedType<TX;>;Z)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljavax/persistence/metamodel/ManagedType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljakarta/persistence/metamodel/ManagedType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "_invert", "Z");
@@ -63,16 +63,16 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "selects", "(Ljavax/persistence/metamodel/Attribute;)Z", "(Ljavax/persistence/metamodel/Attribute<-TX;*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "selects", "(Ljakarta/persistence/metamodel/Attribute;)Z", "(Ljakarta/persistence/metamodel/Attribute<-TX;*>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "_invert", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getDeclaringType", "()Ljavax/persistence/metamodel/ManagedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getDeclaringType", "()Ljakarta/persistence/metamodel/ManagedType;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljavax/persistence/metamodel/ManagedType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljakarta/persistence/metamodel/ManagedType;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label1);
 methodVisitor.visitInsn(ICONST_1);
@@ -85,9 +85,9 @@ methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Attribute", "getDeclaringType", "()Ljavax/persistence/metamodel/ManagedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Attribute", "getDeclaringType", "()Ljakarta/persistence/metamodel/ManagedType;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljavax/persistence/metamodel/ManagedType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljakarta/persistence/metamodel/ManagedType;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitInsn(ICONST_1);
@@ -109,7 +109,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljavax/persistence/metamodel/ManagedType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "owner", "Ljakarta/persistence/metamodel/ManagedType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "_invert", "Z");
 Label label1 = new Label();
@@ -118,11 +118,11 @@ methodVisitor.visitInsn(ICONST_1);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter"}, 3, new Object[] {label0, label0, "javax/persistence/metamodel/ManagedType"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter"}, 3, new Object[] {label0, label0, "jakarta/persistence/metamodel/ManagedType"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter"}, 4, new Object[] {label0, label0, "javax/persistence/metamodel/ManagedType", Opcodes.INTEGER});
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljavax/persistence/metamodel/ManagedType;Z)V", false);
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter"}, 4, new Object[] {label0, label0, "jakarta/persistence/metamodel/ManagedType", Opcodes.INTEGER});
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "<init>", "(Ljakarta/persistence/metamodel/ManagedType;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -141,8 +141,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/Attribute");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "selects", "(Ljavax/persistence/metamodel/Attribute;)Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/Attribute");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter", "selects", "(Ljakarta/persistence/metamodel/Attribute;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -101,7 +101,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/ValidationEventHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/ValidationEventHandler;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/jaxb/IDResolverWrapper", "START_DOCUMENT_PARAMS", "[Ljava/lang/Class;");
 methodVisitor.visitInsn(RETURN);
@@ -298,7 +298,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

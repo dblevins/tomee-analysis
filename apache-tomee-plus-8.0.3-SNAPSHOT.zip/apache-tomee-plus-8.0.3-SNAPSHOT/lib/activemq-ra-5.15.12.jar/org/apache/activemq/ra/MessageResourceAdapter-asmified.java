@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/ra/MessageResourceAdapter", null, "java/lang/Object", new String[] { "javax/resource/spi/ResourceAdapter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/ra/MessageResourceAdapter", null, "java/lang/Object", new String[] { "jakarta/resource/spi/ResourceAdapter" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "makeConnection", "(Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "makeConnection", "(Lorg/apache/activemq/ra/MessageActivationSpec;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "makeConnection", "(Lorg/apache/activemq/ra/MessageActivationSpec;)Lorg/apache/activemq/ActiveMQConnection;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getBootstrapContext", "()Ljavax/resource/spi/BootstrapContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getBootstrapContext", "()Ljakarta/resource/spi/BootstrapContext;", null, null);
 methodVisitor.visitEnd();
 }
 {

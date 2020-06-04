@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/resolver/CachingTraversableResolver", null, "java/lang/Object", new String[] { "javax/validation/TraversableResolver", "org/apache/bval/jsr/resolver/CachingRelevant" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/resolver/CachingTraversableResolver", null, "java/lang/Object", new String[] { "jakarta/validation/TraversableResolver", "org/apache/bval/jsr/resolver/CachingRelevant" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/resolver/CachingTraversableResolver$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "org/apache/bval/jsr/resolver/CachingTraversableResolver", "CacheEntry", ACC_PRIVATE | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljavax/validation/TraversableResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljakarta/validation/TraversableResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljava/util/Map;", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "needsCaching", "(Ljavax/validation/TraversableResolver;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "needsCaching", "(Ljakarta/validation/TraversableResolver;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/bval/jsr/resolver/CachingRelevant");
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/validation/TraversableResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/validation/TraversableResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -76,35 +76,35 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "cache", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cacheFor", "(Ljavax/validation/TraversableResolver;)Ljavax/validation/TraversableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "cacheFor", "(Ljakarta/validation/TraversableResolver;)Ljakarta/validation/TraversableResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "needsCaching", "(Ljavax/validation/TraversableResolver;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "needsCaching", "(Ljakarta/validation/TraversableResolver;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/resolver/CachingTraversableResolver");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "<init>", "(Ljavax/validation/TraversableResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "<init>", "(Ljakarta/validation/TraversableResolver;)V", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/validation/TraversableResolver"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/validation/TraversableResolver"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReachable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class<*>;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReachable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class<*>;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry");
 methodVisitor.visitInsn(DUP);
@@ -114,7 +114,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "<init>", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "<init>", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$1;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "cache", "Ljava/util/Map;");
@@ -127,13 +127,13 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/TraversableResolver", "isReachable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/TraversableResolver", "isReachable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "access$102", "(Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry;Ljava/lang/Boolean;)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(POP);
@@ -154,13 +154,13 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/Cachin
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/TraversableResolver", "isReachable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/TraversableResolver", "isReachable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "access$102", "(Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry;Ljava/lang/Boolean;)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(POP);
@@ -174,7 +174,7 @@ methodVisitor.visitMaxs(8, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCascadable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class<*>;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCascadable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class<*>;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry");
 methodVisitor.visitInsn(DUP);
@@ -184,7 +184,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "<init>", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "<init>", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$1;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "cache", "Ljava/util/Map;");
@@ -197,13 +197,13 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "access$202", "(Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry;Ljava/lang/Boolean;)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(POP);
@@ -224,13 +224,13 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/Cachin
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/resolver/CachingTraversableResolver", "delegate", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljavax/validation/Path$Node;Ljava/lang/Class;Ljavax/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/TraversableResolver", "isCascadable", "(Ljava/lang/Object;Ljakarta/validation/Path$Node;Ljava/lang/Class;Ljakarta/validation/Path;Ljava/lang/annotation/ElementType;)Z", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry", "access$202", "(Lorg/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry;Ljava/lang/Boolean;)Ljava/lang/Boolean;", false);
 methodVisitor.visitInsn(POP);

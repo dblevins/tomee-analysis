@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/schema/SchemaReference" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/schema/SchemaReference" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "schemaLocation", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "referencedSchema", "Ljavax/wsdl/extensions/schema/Schema;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "referencedSchema", "Ljakarta/wsdl/extensions/schema/Schema;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "schemaLocation", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljavax/wsdl/extensions/schema/Schema;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljakarta/wsdl/extensions/schema/Schema;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -97,20 +97,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReferencedSchema", "()Ljavax/wsdl/extensions/schema/Schema;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReferencedSchema", "()Ljakarta/wsdl/extensions/schema/Schema;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljavax/wsdl/extensions/schema/Schema;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljakarta/wsdl/extensions/schema/Schema;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReferencedSchema", "(Ljavax/wsdl/extensions/schema/Schema;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReferencedSchema", "(Ljakarta/wsdl/extensions/schema/Schema;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljavax/wsdl/extensions/schema/Schema;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl", "referencedSchema", "Ljakarta/wsdl/extensions/schema/Schema;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

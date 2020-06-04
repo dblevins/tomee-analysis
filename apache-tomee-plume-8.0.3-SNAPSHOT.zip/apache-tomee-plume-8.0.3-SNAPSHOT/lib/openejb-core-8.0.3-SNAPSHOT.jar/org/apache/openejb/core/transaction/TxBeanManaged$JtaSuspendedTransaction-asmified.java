@@ -29,11 +29,11 @@ classWriter.visitInnerClass("org/apache/openejb/core/transaction/TxBeanManaged$J
 classWriter.visitInnerClass("org/apache/openejb/core/transaction/BeanTransactionPolicy$SuspendedTransaction", "org/apache/openejb/core/transaction/BeanTransactionPolicy", "SuspendedTransaction", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transaction", "Ljavax/transaction/Transaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transaction", "Ljakarta/transaction/Transaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,10 +46,10 @@ methodVisitor.visitLdcInsn("transaction is null");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "javax/transaction/Transaction"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "jakarta/transaction/Transaction"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -62,18 +62,18 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/transaction/Transaction"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/transaction/Transaction"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "rollback", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "rollback", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -91,10 +91,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction;)Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction;)Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

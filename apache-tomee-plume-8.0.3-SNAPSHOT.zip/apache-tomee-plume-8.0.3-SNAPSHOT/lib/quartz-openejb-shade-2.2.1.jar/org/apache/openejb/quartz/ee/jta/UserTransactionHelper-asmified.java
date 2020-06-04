@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "lookupUserTransaction", "()Ljavax/transaction/UserTransaction;", null, new String[] { "org/apache/openejb/quartz/SchedulerException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "lookupUserTransaction", "()Ljakarta/transaction/UserTransaction;", null, new String[] { "org/apache/openejb/quartz/SchedulerException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext");
 methodVisitor.visitInsn(DUP);
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "returnUserTransaction", "(Ljavax/transaction/UserTransaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "returnUserTransaction", "(Ljakarta/transaction/UserTransaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();

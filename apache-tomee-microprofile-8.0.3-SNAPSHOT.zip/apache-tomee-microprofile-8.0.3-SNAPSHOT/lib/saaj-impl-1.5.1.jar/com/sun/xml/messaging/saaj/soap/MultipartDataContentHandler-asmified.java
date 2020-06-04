@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", null, "java/lang/Object", new String[] { "javax/activation/DataContentHandler" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", null, "java/lang/Object", new String[] { "jakarta/activation/DataContentHandler" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "myDF", "Ljavax/activation/ActivationDataFlavor;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "myDF", "Ljakarta/activation/ActivationDataFlavor;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -34,13 +34,13 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/ActivationDataFlavor");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/ActivationDataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart;"));
 methodVisitor.visitLdcInsn("multipart/mixed");
 methodVisitor.visitLdcInsn("Multipart");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljavax/activation/ActivationDataFlavor;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljakarta/activation/ActivationDataFlavor;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
@@ -53,24 +53,24 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/awt/datatransfer/DataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljavax/activation/ActivationDataFlavor;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljakarta/activation/ActivationDataFlavor;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljavax/activation/DataSource;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljavax/activation/ActivationDataFlavor;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "myDF", "Ljakarta/activation/ActivationDataFlavor;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/ActivationDataFlavor", "equals", "(Ljava/awt/datatransfer/DataFlavor;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/ActivationDataFlavor", "equals", "(Ljava/awt/datatransfer/DataFlavor;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler", "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -93,9 +93,9 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart", "<init>", "(Ljavax/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart", "<init>", "(Ljakarta/activation/DataSource;Lcom/sun/xml/messaging/saaj/packaging/mime/internet/ContentType;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

@@ -26,7 +26,7 @@ classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/model/impl/ElementInfoIm
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl", "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "PropertyImpl", ACC_PROTECTED);
 
-classWriter.visitInnerClass("javax/xml/bind/annotation/XmlElementDecl$GLOBAL", "javax/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/xml/bind/annotation/XmlElementDecl$GLOBAL", "jakarta/xml/bind/annotation/XmlElementDecl", "GLOBAL", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tagName", "Ljavax/xml/namespace/QName;", null, null);
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "scope", "Lcom/su
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "property", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expectedMimeType", "Ljavax/activation/MimeType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "expectedMimeType", "Ljakarta/activation/MimeType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -109,17 +109,17 @@ methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementIn
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlElementDecl");
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlElementDecl");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "$assertionsDisabled", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/AssertionError");
 methodVisitor.visitInsn(DUP);
@@ -131,7 +131,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/model/impl/ElementI
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitTypeInsn(INSTANCEOF, "com/sun/xml/bind/v2/model/annotation/Locatable");
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitTypeInsn(NEW, "java/lang/AssertionError");
@@ -152,7 +152,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "elementType", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "nav", "()Lcom/sun/xml/bind/v2/model/nav/Navigator;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "asDecl", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "getBaseClass", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -173,7 +173,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Na
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/IllegalAnnotationException", "<init>", "(Ljava/lang/String;Ljava/lang/annotation/Annotation;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
@@ -181,8 +181,8 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "parseElementName", "(Ljavax/xml/bind/annotation/XmlElementDecl;)Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "parseElementName", "(Ljakarta/xml/bind/annotation/XmlElementDecl;)Ljavax/xml/namespace/QName;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "tagName", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "nav", "()Lcom/sun/xml/bind/v2/model/nav/Navigator;", false);
@@ -197,11 +197,11 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label4 = new Label();
@@ -213,18 +213,18 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "nav", "()Lcom/sun/xml/bind/v2/model/nav/Navigator;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Adapter", "<init>", "(Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Adapter", "<init>", "(Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljava/lang/Object;", "com/sun/xml/bind/v2/model/core/Adapter", "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljava/lang/Object;", "com/sun/xml/bind/v2/model/core/Adapter", "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlAttachmentRef;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlAttachmentRef;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlAttachmentRef");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlAttachmentRef");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitJumpInsn(IFNULL, label3);
@@ -333,7 +333,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitLdcInsn("scope");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getClassValue", "(Ljava/lang/annotation/Annotation;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -342,7 +342,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/Ele
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "nav", "()Lcom/sun/xml/bind/v2/model/nav/Navigator;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlElementDecl$GLOBAL;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "ref", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "isSameType", "(Ljava/lang/Object;Ljava/lang/Object;)Z", true);
 Label label11 = new Label();
@@ -380,7 +380,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Na
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/IllegalAnnotationException", "<init>", "(Ljava/lang/String;Ljava/lang/annotation/Annotation;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label13);
@@ -403,12 +403,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "property", "Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/Util", "calcExpectedMediaType", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationSource;Lcom/sun/xml/bind/v2/model/impl/ModelBuilder;)Ljavax/activation/MimeType;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "expectedMimeType", "Ljavax/activation/MimeType;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/model/impl/Util", "calcExpectedMediaType", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationSource;Lcom/sun/xml/bind/v2/model/impl/ModelBuilder;)Ljakarta/activation/MimeType;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "expectedMimeType", "Ljakarta/activation/MimeType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlInlineBinaryData;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlInlineBinaryData;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "method", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "hasMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;)Z", true);
@@ -430,13 +430,13 @@ methodVisitor.visitMaxs(8, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_FINAL, "parseElementName", "(Ljavax/xml/bind/annotation/XmlElementDecl;)Ljavax/xml/namespace/QName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_FINAL, "parseElementName", "(Ljakarta/xml/bind/annotation/XmlElementDecl;)Ljavax/xml/namespace/QName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "namespace", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "namespace", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("##default");
@@ -445,7 +445,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchema;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchema;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "nav", "()Lcom/sun/xml/bind/v2/model/nav/Navigator;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -453,17 +453,17 @@ methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementIn
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/nav/Navigator", "getDeclaringClassForMethod", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "getPackageAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlSchema");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlSchema");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "namespace", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "namespace", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "java/lang/String", "javax/xml/bind/annotation/XmlSchema"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "java/lang/String", "jakarta/xml/bind/annotation/XmlSchema"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "builder", "Lcom/sun/xml/bind/v2/model/impl/ModelBuilder;");
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ModelBuilder", "defaultNsUri", "Ljava/lang/String;");
@@ -560,7 +560,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "calcId", "()Lcom/sun/xml/b
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlID;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlID;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "method", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "hasMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;)Z", true);
@@ -572,7 +572,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "reader", "()Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlIDREF;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlIDREF;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "method", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "hasMethodAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;)Z", true);
@@ -626,19 +626,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "link", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "substitutionHeadName", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "substitutionHeadName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "substitutionHeadNamespace", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "substitutionHeadNamespace", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlElementDecl", "substitutionHeadName", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlElementDecl", "substitutionHeadName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -671,7 +671,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLo
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/IllegalAnnotationException", "<init>", "(Ljava/lang/String;Ljava/lang/annotation/Annotation;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/model/impl/ModelBuilder", "reportError", "(Lcom/sun/xml/bind/v2/runtime/IllegalAnnotationException;)V", false);
 Label label2 = new Label();
@@ -762,10 +762,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljavax/xml/bind/annotation/XmlElementDecl;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljakarta/xml/bind/annotation/XmlElementDecl;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljavax/xml/bind/annotation/XmlElementDecl;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "anno", "Ljakarta/xml/bind/annotation/XmlElementDecl;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -798,10 +798,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljavax/activation/MimeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$600", "(Lcom/sun/xml/bind/v2/model/impl/ElementInfoImpl;)Ljakarta/activation/MimeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "expectedMimeType", "Ljavax/activation/MimeType;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "expectedMimeType", "Ljakarta/activation/MimeType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

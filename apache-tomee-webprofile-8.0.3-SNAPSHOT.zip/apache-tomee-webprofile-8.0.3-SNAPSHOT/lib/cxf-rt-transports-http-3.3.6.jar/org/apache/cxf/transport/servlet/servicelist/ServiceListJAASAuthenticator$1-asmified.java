@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/servicelist/ServiceListJAASAuthenticator$1", null, "java/lang/Object", new String[] { "javax/security/auth/callback/CallbackHandler" });
 
-classWriter.visitOuterClass("org/apache/cxf/transport/servlet/servicelist/ServiceListJAASAuthenticator", "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;");
+classWriter.visitOuterClass("org/apache/cxf/transport/servlet/servicelist/ServiceListJAASAuthenticator", "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;");
 
 classWriter.visitInnerClass("org/apache/cxf/transport/servlet/servicelist/ServiceListJAASAuthenticator$1", null, null, 0);
 

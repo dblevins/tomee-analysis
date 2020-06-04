@@ -43,11 +43,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()L
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "column", "()Ljavax/persistence/Column;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "column", "()Ljakarta/persistence/Column;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
-AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljavax/persistence/Column;");
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitAnnotation(null, "Ljakarta/persistence/Column;");
 annotationVisitor1.visit("name", "SOP");
 annotationVisitor1.visitEnd();
 }

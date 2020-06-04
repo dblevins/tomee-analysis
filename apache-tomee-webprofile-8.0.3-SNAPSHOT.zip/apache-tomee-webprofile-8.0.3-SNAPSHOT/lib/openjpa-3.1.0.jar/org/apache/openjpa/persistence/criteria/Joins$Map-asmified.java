@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/Joins$Map", "<Z:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/Joins$AbstractCollection<TZ;Ljava/util/Map<TK;TV;>;TV;>;Ljavax/persistence/criteria/MapJoin<TZ;TK;TV;>;", "org/apache/openjpa/persistence/criteria/Joins$AbstractCollection", new String[] { "javax/persistence/criteria/MapJoin" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/Joins$Map", "<Z:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/Joins$AbstractCollection<TZ;Ljava/util/Map<TK;TV;>;TV;>;Ljakarta/persistence/criteria/MapJoin<TZ;TK;TV;>;", "org/apache/openjpa/persistence/criteria/Joins$AbstractCollection", new String[] { "jakarta/persistence/criteria/MapJoin" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Joins$KeyJoin", "org/apache/openjpa/persistence/criteria/Joins", "KeyJoin", ACC_STATIC);
 
@@ -49,19 +49,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_keyJoin", "Lorg/apache/open
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$MapAttributeImpl;Ljavax/persistence/criteria/JoinType;)V", "(Lorg/apache/openjpa/persistence/criteria/FromImpl<*TZ;>;Lorg/apache/openjpa/persistence/meta/Members$MapAttributeImpl<-TZ;TK;TV;>;Ljavax/persistence/criteria/JoinType;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$MapAttributeImpl;Ljakarta/persistence/criteria/JoinType;)V", "(Lorg/apache/openjpa/persistence/criteria/FromImpl<*TZ;>;Lorg/apache/openjpa/persistence/meta/Members$MapAttributeImpl<-TZ;TK;TV;>;Ljakarta/persistence/criteria/JoinType;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$AbstractCollection", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$PluralAttributeImpl;Ljavax/persistence/criteria/JoinType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$AbstractCollection", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$PluralAttributeImpl;Ljakarta/persistence/criteria/JoinType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "on", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/MapJoin;", "(Ljavax/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Ljavax/persistence/criteria/MapJoin<TZ;TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "on", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/MapJoin;", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Ljakarta/persistence/criteria/MapJoin<TZ;TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "on", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/MapJoin;", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/MapJoin<TZ;TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "on", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/MapJoin;", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/MapJoin<TZ;TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -83,7 +83,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOn", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOn", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -94,36 +94,36 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getModel", "()Ljavax/persistence/metamodel/MapAttribute;", "()Ljavax/persistence/metamodel/MapAttribute<-TZ;TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getModel", "()Ljakarta/persistence/metamodel/MapAttribute;", "()Ljakarta/persistence/metamodel/MapAttribute<-TZ;TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Joins$Map", "_member", "Lorg/apache/openjpa/persistence/meta/Members$Member;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/MapAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/MapAttribute");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "joinKey", "()Ljavax/persistence/criteria/Join;", "()Ljavax/persistence/criteria/Join<Ljava/util/Map<TK;TV;>;TK;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "joinKey", "()Ljakarta/persistence/criteria/Join;", "()Ljakarta/persistence/criteria/Join<Ljava/util/Map<TK;TV;>;TK;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/JoinType", "INNER", "Ljavax/persistence/criteria/JoinType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "joinKey", "(Ljavax/persistence/criteria/JoinType;)Ljavax/persistence/criteria/Join;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/JoinType", "INNER", "Ljakarta/persistence/criteria/JoinType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "joinKey", "(Ljakarta/persistence/criteria/JoinType;)Ljakarta/persistence/criteria/Join;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "joinKey", "(Ljavax/persistence/criteria/JoinType;)Ljavax/persistence/criteria/Join;", "(Ljavax/persistence/criteria/JoinType;)Ljavax/persistence/criteria/Join<Ljava/util/Map<TK;TV;>;TK;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "joinKey", "(Ljakarta/persistence/criteria/JoinType;)Ljakarta/persistence/criteria/Join;", "(Ljakarta/persistence/criteria/JoinType;)Ljakarta/persistence/criteria/Join<Ljava/util/Map<TK;TV;>;TK;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Joins$Map", "_member", "Lorg/apache/openjpa/persistence/meta/Members$Member;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Members$Member", "owner", "Lorg/apache/openjpa/persistence/meta/AbstractManagedType;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/AbstractManagedType", "model", "Lorg/apache/openjpa/persistence/meta/MetamodelImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljavax/persistence/metamodel/MapAttribute;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/MapAttribute", "getJavaType", "()Ljava/lang/Class;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "getType", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/Type;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljakarta/persistence/metamodel/MapAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/MapAttribute", "getJavaType", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "getType", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/Type;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/meta/AbstractManagedType");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/meta/Members$KeyAttributeImpl");
@@ -140,7 +140,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$KeyJoin", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl;Ljavax/persistence/criteria/JoinType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Joins$KeyJoin", "<init>", "(Lorg/apache/openjpa/persistence/criteria/FromImpl;Lorg/apache/openjpa/persistence/meta/Members$KeyAttributeImpl;Ljakarta/persistence/criteria/JoinType;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/Joins$Map", "_keyJoin", "Lorg/apache/openjpa/persistence/criteria/Joins$KeyJoin;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/Joins$Map", "_keyJoin", "Lorg/apache/openjpa/persistence/criteria/Joins$KeyJoin;");
@@ -149,7 +149,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "entry", "()Ljavax/persistence/criteria/Expression;", "()Ljavax/persistence/criteria/Expression<Ljava/util/Map$Entry<TK;TV;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "entry", "()Ljakarta/persistence/criteria/Expression;", "()Ljakarta/persistence/criteria/Expression<Ljava/util/Map$Entry<TK;TV;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Joins$MapEntry");
 methodVisitor.visitInsn(DUP);
@@ -160,7 +160,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "key", "()Ljavax/persistence/criteria/Path;", "()Ljavax/persistence/criteria/Path<TK;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "key", "()Ljakarta/persistence/criteria/Path;", "()Ljakarta/persistence/criteria/Path<TK;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Joins$MapKey");
 methodVisitor.visitInsn(DUP);
@@ -171,7 +171,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "()Ljavax/persistence/criteria/Path;", "()Ljavax/persistence/criteria/Path<TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "value", "()Ljakarta/persistence/criteria/Path;", "()Ljakarta/persistence/criteria/Path<TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -205,39 +205,39 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljavax/persistence/metamodel/PluralAttribute;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljakarta/persistence/metamodel/PluralAttribute;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljavax/persistence/metamodel/MapAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljakarta/persistence/metamodel/MapAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "on", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/Join;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "on", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/Join;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "on", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/MapJoin;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "on", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/MapJoin;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "on", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/Join;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "on", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/Join;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "on", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/MapJoin;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "on", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/MapJoin;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljavax/persistence/metamodel/Bindable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljakarta/persistence/metamodel/Bindable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljavax/persistence/metamodel/MapAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Joins$Map", "getModel", "()Ljakarta/persistence/metamodel/MapAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

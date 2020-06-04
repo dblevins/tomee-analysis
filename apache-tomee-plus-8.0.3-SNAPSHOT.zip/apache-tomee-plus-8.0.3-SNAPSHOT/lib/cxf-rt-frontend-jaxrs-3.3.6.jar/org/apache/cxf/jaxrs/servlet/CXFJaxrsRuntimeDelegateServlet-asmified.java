@@ -45,7 +45,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/ext/RuntimeDelegate", "setInstance", "(Ljavax/ws/rs/ext/RuntimeDelegate;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/ext/RuntimeDelegate", "setInstance", "(Ljakarta/ws/rs/ext/RuntimeDelegate;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

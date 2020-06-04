@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/criteria/PredicateImpl", "Lorg/apache/openjpa/persistence/criteria/ExpressionImpl<Ljava/lang/Boolean;>;Ljavax/persistence/criteria/Predicate;", "org/apache/openjpa/persistence/criteria/ExpressionImpl", new String[] { "javax/persistence/criteria/Predicate" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/criteria/PredicateImpl", "Lorg/apache/openjpa/persistence/criteria/ExpressionImpl<Ljava/lang/Boolean;>;Ljakarta/persistence/criteria/Predicate;", "org/apache/openjpa/persistence/criteria/ExpressionImpl", new String[] { "jakarta/persistence/criteria/Predicate" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/PredicateImpl$Or", "org/apache/openjpa/persistence/criteria/PredicateImpl", "Or", ACC_STATIC);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/PredicateImpl$And", "org/apache/openjpa/persistence/criteria/PredicateImpl", "And", ACC_STATIC);
 
-classWriter.visitInnerClass("javax/persistence/criteria/Predicate$BooleanOperator", "javax/persistence/criteria/Predicate", "BooleanOperator", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/criteria/Predicate$BooleanOperator", "jakarta/persistence/criteria/Predicate", "BooleanOperator", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$Not", "org/apache/openjpa/persistence/criteria/Expressions", "Not", ACC_PUBLIC | ACC_STATIC);
 
@@ -39,27 +39,27 @@ classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$NotEqual", "org/apache/openjpa/persistence/criteria/Expressions", "NotEqual", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "TRUE_CONSTANT", "Ljavax/persistence/criteria/Expression;", "Ljavax/persistence/criteria/Expression<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "TRUE_CONSTANT", "Ljakarta/persistence/criteria/Expression;", "Ljakarta/persistence/criteria/Expression<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "FALSE_CONSTANT", "Ljavax/persistence/criteria/Expression;", "Ljavax/persistence/criteria/Expression<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "FALSE_CONSTANT", "Ljakarta/persistence/criteria/Expression;", "Ljakarta/persistence/criteria/Expression<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "TRUE", "Ljavax/persistence/criteria/Predicate;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "TRUE", "Ljakarta/persistence/criteria/Predicate;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "FALSE", "Ljavax/persistence/criteria/Predicate;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "FALSE", "Ljakarta/persistence/criteria/Predicate;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "_exps", "Ljava/util/List;", "Ljava/util/List<Ljavax/persistence/criteria/Predicate;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "_exps", "Ljava/util/List;", "Ljava/util/List<Ljakarta/persistence/criteria/Predicate;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -70,14 +70,14 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "<init>", "(Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "<init>", "(Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Boolean;"));
@@ -93,17 +93,17 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_negated", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_VARARGS, "<init>", "(Ljavax/persistence/criteria/Predicate$BooleanOperator;[Ljavax/persistence/criteria/Predicate;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_VARARGS, "<init>", "(Ljakarta/persistence/criteria/Predicate$BooleanOperator;[Ljakarta/persistence/criteria/Predicate;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "<init>", "(Ljavax/persistence/criteria/Predicate$BooleanOperator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "<init>", "(Ljakarta/persistence/criteria/Predicate$BooleanOperator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -112,7 +112,7 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/persistence/criteria/PredicateImpl", "javax/persistence/criteria/Predicate$BooleanOperator", "[Ljavax/persistence/criteria/Predicate;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/persistence/criteria/PredicateImpl", "jakarta/persistence/criteria/Predicate$BooleanOperator", "[Ljakarta/persistence/criteria/Predicate;"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -125,7 +125,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label2 = new Label();
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljavax/persistence/criteria/Predicate;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljakarta/persistence/criteria/Predicate;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label3 = new Label();
@@ -136,7 +136,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "add", "(Ljavax/persistence/criteria/Expression;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "add", "(Ljakarta/persistence/criteria/Expression;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -147,7 +147,7 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljavax/persistence/criteria/Expression;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", "(Ljavax/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljakarta/persistence/criteria/Expression;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -164,7 +164,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_exps", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/criteria/Predicate");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/criteria/Predicate");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -173,7 +173,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/persistence/criteria/PredicateImpl", "javax/persistence/criteria/Expression", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/persistence/criteria/PredicateImpl", "jakarta/persistence/criteria/Expression", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(MONITOREXIT);
@@ -188,7 +188,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressions", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/criteria/Expression<Ljava/lang/Boolean;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressions", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/criteria/Expression<Ljava/lang/Boolean;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/CopyOnWriteArrayList");
 methodVisitor.visitInsn(DUP);
@@ -214,10 +214,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getOperator", "()Ljavax/persistence/criteria/Predicate$BooleanOperator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getOperator", "()Ljakarta/persistence/criteria/Predicate$BooleanOperator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -247,7 +247,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expressions$Not");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Not", "<init>", "(Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Not", "<init>", "(Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/Expressions$Not", "markNegated", "()Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
@@ -265,9 +265,9 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "TRUE", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "TRUE", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljakarta/persistence/criteria/Predicate;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expressions$Constant");
@@ -280,19 +280,19 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expres
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Equal", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Equal", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljakarta/persistence/criteria/Predicate;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "Ljakarta/persistence/criteria/Predicate;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "FALSE", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "FALSE", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljakarta/persistence/criteria/Predicate;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expressions$Constant");
@@ -305,11 +305,11 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expres
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$NotEqual", "<init>", "(Ljavax/persistence/criteria/Expression;Ljavax/persistence/criteria/Expression;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$NotEqual", "<init>", "(Ljakarta/persistence/criteria/Expression;Ljakarta/persistence/criteria/Expression;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljakarta/persistence/criteria/Predicate;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljavax/persistence/criteria/Predicate;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "Ljakarta/persistence/criteria/Predicate;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
@@ -324,8 +324,8 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitInsn(ICONST_1);
@@ -361,18 +361,18 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "()Ljavax/persistence/criteria/Predicate;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE", "()Ljakarta/persistence/criteria/Predicate;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "()Ljavax/persistence/criteria/Predicate;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE", "()Ljakarta/persistence/criteria/Predicate;", false);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/persistence/criteria/Predicate"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/persistence/criteria/Predicate"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/criteria/PredicateImpl");
@@ -392,17 +392,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_exps", "Ljava/util/List;");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/criteria/Predicate");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/criteria/Predicate");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "isNegated", "()Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/criteria/Predicate", "not", "()Ljavax/persistence/criteria/Predicate;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/criteria/Predicate", "not", "()Ljakarta/persistence/criteria/Predicate;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/criteria/Predicate"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/criteria/Predicate"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/criteria/PredicateImpl");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -434,8 +434,8 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/ExpressionImpl", "toKernelExpression", "(Lorg/apache/openjpa/kernel/exps/ExpressionFactory;Lorg/apache/openjpa/persistence/criteria/CriteriaQueryImpl;)Lorg/apache/openjpa/kernel/exps/Expression;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -471,8 +471,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljav
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/criteria/PredicateImpl");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/Predicate$BooleanOperator", "AND", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label9);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -528,10 +528,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_exps", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/persistence/criteria/Expression");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/persistence/criteria/Expression");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/persistence/criteria/Expression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "acceptVisit", "(Lorg/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;[Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/persistence/criteria/Expression;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "acceptVisit", "(Lorg/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;[Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -560,21 +560,21 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_exps", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/persistence/criteria/Expression");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/persistence/criteria/Expression");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitLdcInsn(" ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljavax/persistence/criteria/Predicate$BooleanOperator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/PredicateImpl", "_op", "Ljakarta/persistence/criteria/Predicate$BooleanOperator;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "asValue", "(Lorg/apache/openjpa/persistence/criteria/AliasContext;[Ljavax/persistence/criteria/Expression;Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "asValue", "(Lorg/apache/openjpa/persistence/criteria/AliasContext;[Ljakarta/persistence/criteria/Expression;Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label2 = new Label();
@@ -605,7 +605,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "not", "()Ljavax/persistence/criteria/Predicate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "not", "()Ljakarta/persistence/criteria/Predicate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/PredicateImpl", "not", "()Lorg/apache/openjpa/persistence/criteria/PredicateImpl;", false);
@@ -621,13 +621,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Object;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE_CONSTANT", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "TRUE_CONSTANT", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/criteria/Expressions$Constant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/criteria/Expressions$Constant", "<init>", "(Ljava/lang/Object;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE_CONSTANT", "Ljavax/persistence/criteria/Expression;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/PredicateImpl", "FALSE_CONSTANT", "Ljakarta/persistence/criteria/Expression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();

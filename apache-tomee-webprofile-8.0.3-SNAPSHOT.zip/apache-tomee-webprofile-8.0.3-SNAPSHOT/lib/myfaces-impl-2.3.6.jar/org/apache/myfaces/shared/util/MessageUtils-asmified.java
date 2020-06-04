@@ -24,10 +24,10 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/shared/util/MessageUtils", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/faces/application/FacesMessage$Severity", "javax/faces/application/FacesMessage", "Severity", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/faces/application/FacesMessage$Severity", "jakarta/faces/application/FacesMessage", "Severity", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_BUNDLE", "Ljava/lang/String;", null, "javax.faces.Messages");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_BUNDLE", "Ljava/lang/String;", null, "jakarta.faces.Messages");
 fieldVisitor.visitEnd();
 }
 {
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -58,14 +58,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -76,112 +76,112 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "setSeverity", "(Ljavax/faces/application/FacesMessage$Severity;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "setSeverity", "(Ljakarta/faces/application/FacesMessage$Severity;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "setSeverity", "(Ljavax/faces/application/FacesMessage$Severity;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "setSeverity", "(Ljakarta/faces/application/FacesMessage$Severity;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -189,40 +189,40 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/util/MessageUtils", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
@@ -251,14 +251,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/util/MessageUtils", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
@@ -288,8 +288,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljavax/faces/context/FacesContext;)Ljavax/faces/application/FacesMessage;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;[Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)Ljakarta/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
@@ -332,34 +332,34 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessageFromBundle", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessageFromBundle", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -368,7 +368,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Locale", "getDefault", "(
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Locale", "javax/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Locale", "jakarta/faces/context/FacesContext"}, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Locale", "getDefault", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
@@ -378,13 +378,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -406,8 +406,8 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getMessageBundle", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getMessageBundle", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -436,9 +436,9 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label13);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "getCurrentLoader", "(Ljava/lang/Object;)Ljava/lang/ClassLoader;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/ResourceBundle", "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;)Ljava/util/ResourceBundle;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -542,17 +542,17 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/M
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label19);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessageFromBundle", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessageFromBundle", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -579,8 +579,8 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getMessageBundle", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getMessageBundle", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 8);
@@ -601,7 +601,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"java/lang/String", "javax/faces/context/FacesContext", "java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/lang/String", "java/lang/String", "java/util/ResourceBundle"}, 1, new Object[] {"java/util/MissingResourceException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"java/lang/String", "jakarta/faces/context/FacesContext", "java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "java/lang/String", "java/lang/String", "java/lang/String", "java/util/ResourceBundle"}, 1, new Object[] {"java/util/MissingResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label15);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -639,9 +639,9 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 Label label18 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label18);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.Messages");
+methodVisitor.visitLdcInsn("jakarta.faces.Messages");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "getCurrentLoader", "(Ljava/lang/Object;)Ljava/lang/ClassLoader;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/ResourceBundle", "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;)Ljava/util/ResourceBundle;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
@@ -745,23 +745,23 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/M
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label24);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -769,24 +769,24 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getCurrentLocale", "()Ljava/util/Locale;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljavax/faces/context/FacesContext;)Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Locale;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getCurrentLocale", "(Ljavax/faces/context/FacesContext;)Ljava/util/Locale;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getCurrentLocale", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Locale;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label1 = new Label();
@@ -806,23 +806,23 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/application/FacesMessage$Severity;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/FacesMessage", "setSeverity", "(Ljavax/faces/application/FacesMessage$Severity;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/FacesMessage", "setSeverity", "(Ljakarta/faces/application/FacesMessage$Severity;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -841,13 +841,13 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -911,42 +911,42 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/M
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/FacesMessage", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -975,7 +975,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljavax/faces/context/FacesContext;)Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -998,7 +998,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Locale"}, 
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label3 = new Label();
@@ -1006,19 +1006,19 @@ methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/application/FacesMessage"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/application/FacesMessage"}, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Locale", "getDefault", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessage", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMessage", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1047,7 +1047,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljavax/faces/context/FacesContext;)Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getCurrentLocale", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -1072,7 +1072,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label3 = new Label();
@@ -1080,7 +1080,7 @@ methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/application/FacesMessage"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/application/FacesMessage"}, 0, null);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Locale", "getDefault", "()Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1088,16 +1088,16 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljavax/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/MessageUtils", "getMessageFromBundle", "(Ljava/lang/String;Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getLabel", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getLabel", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("label");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -1115,14 +1115,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I"
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("label");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "javax/el/ValueExpression"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "jakarta/el/ValueExpression"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -1135,14 +1135,14 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("label");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getValueExpression", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/el/ValueExpression"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/el/ValueExpression"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label4 = new Label();
@@ -1153,30 +1153,30 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIComponent", "getClientId", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getClientId", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getApplication", "()Ljavax/faces/application/Application;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getApplication", "()Ljakarta/faces/application/Application;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/FacesContext"}, 0, null);
-methodVisitor.visitLdcInsn("javax.faces.application.ApplicationFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/ApplicationFactory");
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitLdcInsn("jakarta.faces.application.ApplicationFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/ApplicationFactory");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ApplicationFactory", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ApplicationFactory", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

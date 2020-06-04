@@ -22,15 +22,15 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject", "Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor<Ljava/util/Optional<*>;>;", "java/lang/Object", new String[] { "javax/validation/valueextraction/ValueExtractor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject", "Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor<Ljava/util/Optional<*>;>;", "java/lang/Object", new String[] { "jakarta/validation/valueextraction/ValueExtractor" });
 
 {
-annotationVisitor0 = classWriter.visitTypeAnnotation(268435456, TypePath.fromString("0;0;"), "Ljavax/validation/valueextraction/ExtractedValue;", true);
+annotationVisitor0 = classWriter.visitTypeAnnotation(268435456, TypePath.fromString("0;0;"), "Ljakarta/validation/valueextraction/ExtractedValue;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject", "org/apache/bval/jsr/valueextraction/OptionalExtractor", "ForObject", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/valueextraction/ValueExtractor$ValueReceiver", "javax/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "jakarta/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -42,26 +42,26 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "extractValues", "(Ljava/util/Optional;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", "(Ljava/util/Optional<*>;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "extractValues", "(Ljava/util/Optional;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", "(Ljava/util/Optional<*>;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/valueextraction/ValueExtractor$ValueReceiver", "value", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "value", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "extractValues", "(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "extractValues", "(Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Optional");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject", "extractValues", "(Ljava/util/Optional;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject", "extractValues", "(Ljava/util/Optional;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

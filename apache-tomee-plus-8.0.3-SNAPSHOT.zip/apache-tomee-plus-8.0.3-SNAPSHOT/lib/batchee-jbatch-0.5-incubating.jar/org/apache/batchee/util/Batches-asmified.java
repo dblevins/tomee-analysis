@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/util/Batches", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BATCH_END_STATUSES", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/batch/runtime/BatchStatus;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BATCH_END_STATUSES", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/batch/runtime/BatchStatus;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -40,36 +40,36 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitForEnd", "(J)V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/batch/runtime/BatchRuntime", "getJobOperator", "()Ljavax/batch/operations/JobOperator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/batch/runtime/BatchRuntime", "getJobOperator", "()Ljakarta/batch/operations/JobOperator;", false);
 methodVisitor.visitVarInsn(LLOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitForEnd", "(Ljavax/batch/operations/JobOperator;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitForEnd", "(Ljakarta/batch/operations/JobOperator;J)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitForEnd", "(Ljavax/batch/operations/JobOperator;J)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitForEnd", "(Ljakarta/batch/operations/JobOperator;J)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitFor", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitFor", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitFor", "(J)Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitFor", "(J)Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/batch/runtime/BatchRuntime", "getJobOperator", "()Ljavax/batch/operations/JobOperator;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/batch/runtime/BatchRuntime", "getJobOperator", "()Ljakarta/batch/operations/JobOperator;", false);
 methodVisitor.visitVarInsn(LLOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitFor", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "waitFor", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitFor", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "waitFor", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(LLOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/JobOperatorImpl", "waitFor", "(J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -97,7 +97,7 @@ methodVisitor.visitLdcInsn(new Long(100L));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "sleep", "(J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
@@ -107,12 +107,12 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/I
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/batch/runtime/BatchStatus"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/batch/runtime/BatchStatus"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "isDone", "(Ljavax/batch/runtime/BatchStatus;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "isDone", "(Ljakarta/batch/runtime/BatchStatus;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isDone", "(Ljavax/batch/runtime/BatchStatus;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isDone", "(Ljakarta/batch/runtime/BatchStatus;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/util/Batches", "BATCH_END_STATUSES", "Ljava/util/Collection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -132,23 +132,23 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isDone", "(Ljavax/batch/operations/JobOperator;J)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isDone", "(Ljakarta/batch/operations/JobOperator;J)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "isDone", "(Ljavax/batch/runtime/BatchStatus;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "getBatchStatus", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/util/Batches", "isDone", "(Ljakarta/batch/runtime/BatchStatus;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getBatchStatus", "(Ljavax/batch/operations/JobOperator;J)Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getBatchStatus", "(Ljakarta/batch/operations/JobOperator;J)Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/operations/JobOperator", "getJobExecution", "(J)Ljavax/batch/runtime/JobExecution;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/runtime/JobExecution", "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/operations/JobOperator", "getJobExecution", "(J)Ljakarta/batch/runtime/JobExecution;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/runtime/JobExecution", "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -157,22 +157,22 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_4);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/batch/runtime/BatchStatus");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/batch/runtime/BatchStatus");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "COMPLETED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "COMPLETED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "FAILED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "FAILED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STOPPED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STOPPED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "ABANDONED", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "ABANDONED", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/batchee/util/Batches", "BATCH_END_STATUSES", "Ljava/util/Collection;");

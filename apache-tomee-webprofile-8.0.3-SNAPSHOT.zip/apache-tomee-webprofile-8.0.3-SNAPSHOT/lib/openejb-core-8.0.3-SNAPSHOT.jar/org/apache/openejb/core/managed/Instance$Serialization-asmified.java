@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "interceptors", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -79,8 +79,8 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/managed/Ins
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "bean", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -210,10 +210,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "interceptors", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "creationalContext", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "creationalContext", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/managed/Instance$Serialization", "entityManagerArray", "[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/managed/Instance", "<init>", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljavax/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/managed/Instance", "<init>", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;Ljakarta/enterprise/context/spi/CreationalContext;[Lorg/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 1);
 methodVisitor.visitEnd();

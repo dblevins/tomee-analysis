@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "upload", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "upload", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/blob/BlobUploader", "file", "Ljava/io/File;");

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildReadAllQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<Ljava/lang/Object;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildReadAllQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<Ljava/lang/Object;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildReportQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<[Ljava/lang/Object;>;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildReportQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/util/List;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<[Ljava/lang/Object;>;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildAttributeResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildAttributeResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/util/Collection");
@@ -94,7 +94,7 @@ methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildSingleResultQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildSingleResultQueryResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/list/SingleResultQueryList");
 methodVisitor.visitInsn(DUP);
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildSingleEntityResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljavax/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildSingleEntityResponse", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", "(Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;Ljakarta/ws/rs/core/UriInfo;)Ljava/lang/Object;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -167,7 +167,7 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createShellJAXBElementList", "(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;", "(Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljava/lang/Object;)Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createShellJAXBElementList", "(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;", "(Ljava/util/List<Lorg/eclipse/persistence/internal/queries/ReportItem;>;Ljava/lang/Object;)Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -216,7 +216,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/eclipse/persiste
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
@@ -226,7 +226,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -274,7 +274,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
 methodVisitor.visitInsn(DUP);
@@ -283,7 +283,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 7);

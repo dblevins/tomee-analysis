@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/webapp/MyFacesServlet", null, "java/lang/Object", new String[] { "javax/servlet/Servlet", "org/apache/myfaces/shared_impl/webapp/webxml/DelegatedFacesServlet" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/webapp/MyFacesServlet", null, "java/lang/Object", new String[] { "jakarta/servlet/Servlet", "org/apache/myfaces/shared_impl/webapp/webxml/DelegatedFacesServlet" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log", "Ljava/util/logging/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljavax/faces/webapp/FacesServlet;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljakarta/faces/webapp/FacesServlet;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,10 +42,10 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/webapp/FacesServlet");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/webapp/FacesServlet");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/webapp/FacesServlet", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/webapp/FacesServlet", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -64,18 +64,18 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/webapp/FacesServlet", "destroy", "()V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/webapp/FacesServlet", "destroy", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletConfig", "()Ljavax/servlet/ServletConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletConfig", "()Ljakarta/servlet/ServletConfig;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/webapp/FacesServlet", "getServletConfig", "()Ljavax/servlet/ServletConfig;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/webapp/FacesServlet", "getServletConfig", "()Ljakarta/servlet/ServletConfig;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -84,17 +84,17 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletInfo", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/webapp/FacesServlet", "getServletInfo", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/webapp/FacesServlet", "getServletInfo", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljavax/servlet/ServletConfig;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Ljakarta/servlet/ServletConfig;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletConfig", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "_facesInitializer", "Lorg/apache/myfaces/webapp/FacesInitializer;");
@@ -102,18 +102,18 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/FacesInitializerFactory", "getFacesInitializer", "(Ljavax/servlet/ServletContext;)Lorg/apache/myfaces/webapp/FacesInitializer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/webapp/FacesInitializerFactory", "getFacesInitializer", "(Ljakarta/servlet/ServletContext;)Lorg/apache/myfaces/webapp/FacesInitializer;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "_facesInitializer", "Lorg/apache/myfaces/webapp/FacesInitializer;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/servlet/ServletContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/servlet/ServletContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "_facesInitializer", "Lorg/apache/myfaces/webapp/FacesInitializer;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "initStartupFacesContext", "(Ljavax/servlet/ServletContext;)Ljavax/faces/context/FacesContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "initStartupFacesContext", "(Ljakarta/servlet/ServletContext;)Ljakarta/faces/context/FacesContext;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("org.apache.myfaces.webapp.StartupServletContextListener.FACES_INIT_DONE");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -124,7 +124,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue"
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/context/FacesContext", "java/lang/Boolean"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/context/FacesContext", "java/lang/Boolean"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/MyFacesServlet", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "WARNING", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -138,18 +138,18 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "_facesInitializer", "Lorg/apache/myfaces/webapp/FacesInitializer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletConfig", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "initFaces", "(Ljavax/servlet/ServletContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "initFaces", "(Ljakarta/servlet/ServletContext;)V", true);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "_facesInitializer", "Lorg/apache/myfaces/webapp/FacesInitializer;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "destroyStartupFacesContext", "(Ljavax/faces/context/FacesContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/webapp/FacesInitializer", "destroyStartupFacesContext", "(Ljakarta/faces/context/FacesContext;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/webapp/FacesServlet", "init", "(Ljavax/servlet/ServletConfig;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/webapp/FacesServlet", "init", "(Ljakarta/servlet/ServletConfig;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/MyFacesServlet", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -157,9 +157,9 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("MyFacesServlet for context '");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletConfig", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitLdcInsn("/");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("' initialized.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -170,7 +170,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "service", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "service", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/MyFacesServlet", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
@@ -183,10 +183,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "finest
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljavax/faces/webapp/FacesServlet;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/webapp/MyFacesServlet", "delegate", "Ljakarta/faces/webapp/FacesServlet;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/webapp/FacesServlet", "service", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/webapp/FacesServlet", "service", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/webapp/MyFacesServlet", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);

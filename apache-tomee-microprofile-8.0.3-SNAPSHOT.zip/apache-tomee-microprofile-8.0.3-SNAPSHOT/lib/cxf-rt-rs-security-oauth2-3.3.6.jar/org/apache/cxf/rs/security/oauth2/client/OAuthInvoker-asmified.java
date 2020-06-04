@@ -102,7 +102,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/ws/rs/NotAuthorizedException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/ws/rs/NotAuthorizedException");
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("oauth2.call.retried");

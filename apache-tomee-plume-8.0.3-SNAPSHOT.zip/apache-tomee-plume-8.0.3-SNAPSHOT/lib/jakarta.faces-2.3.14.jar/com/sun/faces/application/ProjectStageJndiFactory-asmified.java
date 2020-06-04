@@ -78,8 +78,8 @@ methodVisitor.visitLdcInsn("'stage' property not defined.  Defaulting to Product
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ProjectStage", "Production", "Ljavax/faces/application/ProjectStage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ProjectStage", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage", "Production", "Ljakarta/faces/application/ProjectStage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ProjectStage", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();

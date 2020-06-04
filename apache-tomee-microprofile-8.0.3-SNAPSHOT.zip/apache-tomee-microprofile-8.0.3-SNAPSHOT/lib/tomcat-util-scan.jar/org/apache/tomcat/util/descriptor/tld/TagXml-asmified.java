@@ -61,11 +61,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dynamicAttributes", "Z", nul
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "attributes", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/jsp/tagext/TagAttributeInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "attributes", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/jsp/tagext/TagAttributeInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "variables", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/jsp/tagext/TagVariableInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "variables", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/jsp/tagext/TagVariableInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -262,7 +262,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/servlet/jsp/tagext/TagAttributeInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/servlet/jsp/tagext/TagAttributeInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TagXml", "attributes", "Ljava/util/List;");
@@ -271,7 +271,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariables", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/servlet/jsp/tagext/TagVariableInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariables", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/servlet/jsp/tagext/TagVariableInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TagXml", "variables", "Ljava/util/List;");

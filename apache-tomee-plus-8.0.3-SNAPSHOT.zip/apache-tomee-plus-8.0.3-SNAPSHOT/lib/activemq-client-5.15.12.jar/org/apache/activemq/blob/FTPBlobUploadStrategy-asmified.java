@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadFile", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/File;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -134,7 +134,7 @@ methodVisitor.visitMaxs(3, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uploadStream", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;Ljava/io/InputStream;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -205,7 +205,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/net/ftp/FTPClient", "storeFile", "(Ljava/lang/String;Ljava/io/InputStream;)Z", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label6);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/JMSException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/JMSException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -216,7 +216,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/net/ftp/FTPClient", "getReplyString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/JMSException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

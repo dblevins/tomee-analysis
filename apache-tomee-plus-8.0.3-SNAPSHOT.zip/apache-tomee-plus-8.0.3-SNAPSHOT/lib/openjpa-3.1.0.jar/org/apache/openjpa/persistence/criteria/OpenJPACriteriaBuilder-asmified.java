@@ -22,26 +22,26 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaBuilder", null, "java/lang/Object", new String[] { "javax/persistence/criteria/CriteriaBuilder" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaBuilder", null, "java/lang/Object", new String[] { "jakarta/persistence/criteria/CriteriaBuilder" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LANG_CRITERIA", "Ljava/lang/String;", null, "javax.persistence.criteria");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LANG_CRITERIA", "Ljava/lang/String;", null, "jakarta.persistence.criteria");
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "qbe", "(Ljavax/persistence/criteria/From;Ljava/lang/Object;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;[Ljavax/persistence/metamodel/Attribute;)Ljavax/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljavax/persistence/criteria/From<*TT;>;TT;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;[Ljavax/persistence/metamodel/Attribute<**>;)Ljavax/persistence/criteria/Predicate;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "qbe", "(Ljakarta/persistence/criteria/From;Ljava/lang/Object;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;[Ljakarta/persistence/metamodel/Attribute;)Ljakarta/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/criteria/From<*TT;>;TT;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;[Ljakarta/persistence/metamodel/Attribute<**>;)Ljakarta/persistence/criteria/Predicate;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "qbe", "(Ljavax/persistence/criteria/From;Ljava/lang/Object;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;)Ljavax/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljavax/persistence/criteria/From<*TT;>;TT;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;)Ljavax/persistence/criteria/Predicate;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "qbe", "(Ljakarta/persistence/criteria/From;Ljava/lang/Object;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;)Ljakarta/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/criteria/From<*TT;>;TT;Lorg/apache/openjpa/persistence/criteria/ComparisonStyle;)Ljakarta/persistence/criteria/Predicate;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "qbe", "(Ljavax/persistence/criteria/From;Ljava/lang/Object;[Ljavax/persistence/metamodel/Attribute;)Ljavax/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljavax/persistence/criteria/From<*TT;>;TT;[Ljavax/persistence/metamodel/Attribute<**>;)Ljavax/persistence/criteria/Predicate;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS | ACC_ABSTRACT, "qbe", "(Ljakarta/persistence/criteria/From;Ljava/lang/Object;[Ljakarta/persistence/metamodel/Attribute;)Ljakarta/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/criteria/From<*TT;>;TT;[Ljakarta/persistence/metamodel/Attribute<**>;)Ljakarta/persistence/criteria/Predicate;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "qbe", "(Ljavax/persistence/criteria/From;Ljava/lang/Object;)Ljavax/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljavax/persistence/criteria/From<*TT;>;TT;)Ljavax/persistence/criteria/Predicate;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "qbe", "(Ljakarta/persistence/criteria/From;Ljava/lang/Object;)Ljakarta/persistence/criteria/Predicate;", "<T:Ljava/lang/Object;>(Ljakarta/persistence/criteria/From<*TT;>;TT;)Ljakarta/persistence/criteria/Predicate;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "qbeStyle", "
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetamodel", "()Ljavax/persistence/metamodel/Metamodel;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetamodel", "()Ljakarta/persistence/metamodel/Metamodel;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -61,11 +61,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery"
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTupleQuery", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery;", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery<Ljavax/persistence/Tuple;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTupleQuery", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery;", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery<Ljakarta/persistence/Tuple;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createTupleQuery", "()Ljavax/persistence/criteria/CriteriaQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createTupleQuery", "()Ljakarta/persistence/criteria/CriteriaQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaBuilder", "createTupleQuery", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery;", true);
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createQuery", "(Ljava/lang/Class;)Ljavax/persistence/criteria/CriteriaQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createQuery", "(Ljava/lang/Class;)Ljakarta/persistence/criteria/CriteriaQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createQuery", "()Ljavax/persistence/criteria/CriteriaQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createQuery", "()Ljakarta/persistence/criteria/CriteriaQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/OpenJPACriteriaBuilder", "createQuery", "()Lorg/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery;", true);

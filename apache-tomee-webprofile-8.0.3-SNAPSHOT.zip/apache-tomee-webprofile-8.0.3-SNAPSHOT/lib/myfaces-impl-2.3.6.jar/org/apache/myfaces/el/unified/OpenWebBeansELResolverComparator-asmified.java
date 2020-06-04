@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/OpenWebBeansELResolverComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/el/ELResolver;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/OpenWebBeansELResolverComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/el/ELResolver;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OWB_RESOLVER_OLD", "Ljava/lang/String;", null, "org.apache.webbeans.el.WebBeansELResolver");
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/el/ELResolver;Ljavax/el/ELResolver;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/el/ELResolver;Ljakarta/el/ELResolver;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
@@ -94,10 +94,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ELResolver");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ELResolver");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ELResolver");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/OpenWebBeansELResolverComparator", "compare", "(Ljavax/el/ELResolver;Ljavax/el/ELResolver;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ELResolver");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/OpenWebBeansELResolverComparator", "compare", "(Ljakarta/el/ELResolver;Ljakarta/el/ELResolver;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

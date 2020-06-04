@@ -25,17 +25,17 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/assembler/DeployerEjb", null, "java/lang/Object", new String[] { "org/apache/openejb/assembler/Deployer" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Singleton;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Singleton;", true);
 annotationVisitor0.visit("name", "openejb/Deployer");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Lock;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/ejb/LockType;", "READ");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Lock;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/ejb/LockType;", "READ");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/Remote;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/Remote;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 annotationVisitor1.visit(null, Type.getType("Lorg/apache/openejb/assembler/Deployer;"));
@@ -44,12 +44,12 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ejb/TransactionManagement;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/ejb/TransactionManagementType;", "BEAN");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ejb/TransactionManagement;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/ejb/TransactionManagementType;", "BEAN");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Alternative;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Alternative;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
@@ -744,11 +744,11 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Logger", "error", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/validation/ValidationException");
 Label label42 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label42);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label42);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -794,12 +794,12 @@ Label label47 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label47);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/validation/ValidationException");
 Label label48 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label48);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label48);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

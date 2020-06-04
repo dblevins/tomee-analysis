@@ -41,11 +41,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "configuredInterceptorClasses
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbInterceptors", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Class<*>;Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbInterceptors", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Class<*>;Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "additionalInterceptorBinding
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "additionalInterceptorBindingTypesAnnotatedTypes", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/enterprise/inject/spi/AnnotatedType<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "additionalInterceptorBindingTypesAnnotatedTypes", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/enterprise/inject/spi/AnnotatedType<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -164,13 +164,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEjbInterceptorForClass", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/Interceptor;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljavax/enterprise/inject/spi/Interceptor<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEjbInterceptorForClass", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/Interceptor;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljakarta/enterprise/inject/spi/Interceptor<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "ejbInterceptors", "Ljava/util/concurrent/ConcurrentMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Interceptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Interceptor");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -179,7 +179,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getAnnotatedElementFactory", "()Lorg/apache/webbeans/portable/AnnotatedElementFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "getAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "getAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -188,15 +188,15 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getAnnotatedElementFactory", "()Lorg/apache/webbeans/portable/AnnotatedElementFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "newAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "newAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/enterprise/inject/spi/Interceptor", "javax/enterprise/inject/spi/AnnotatedType"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/enterprise/inject/spi/Interceptor", "jakarta/enterprise/inject/spi/AnnotatedType"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "forContext", "(Lorg/apache/webbeans/config/WebBeansContext;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory", "newBeanAttibutes", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory", "newBeanAttibutes", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "build", "()Lorg/apache/webbeans/component/BeanAttributesImpl;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/component/creation/EjbInterceptorBeanBuilder");
@@ -205,7 +205,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/EjbInterceptorBeanBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/component/BeanAttributesImpl;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/creation/EjbInterceptorBeanBuilder", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/component/BeanAttributesImpl;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/EjbInterceptorBeanBuilder", "defineEjbInterceptorRules", "()V", false);
@@ -217,7 +217,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/Intercepto
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/ConcurrentMap", "putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Interceptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Interceptor");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
@@ -391,7 +391,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "resolveInterceptors", "(Ljavax/enterprise/inject/spi/InterceptionType;[Ljava/lang/annotation/Annotation;)Ljava/util/List;", "(Ljavax/enterprise/inject/spi/InterceptionType;[Ljava/lang/annotation/Annotation;)Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "resolveInterceptors", "(Ljakarta/enterprise/inject/spi/InterceptionType;[Ljava/lang/annotation/Annotation;)Ljava/util/List;", "(Ljakarta/enterprise/inject/spi/InterceptionType;[Ljava/lang/annotation/Annotation;)Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -410,21 +410,21 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Interceptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Interceptor");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "intercepts", "(Ljavax/enterprise/inject/spi/InterceptionType;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "intercepts", "(Ljakarta/enterprise/inject/spi/InterceptionType;)Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorsManager", "intercepts", "(Ljavax/enterprise/inject/spi/Interceptor;[Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorsManager", "intercepts", "(Ljakarta/enterprise/inject/spi/Interceptor;[Ljava/lang/annotation/Annotation;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorsManager", "isInterceptorClassEnabled", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -449,10 +449,10 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "intercepts", "(Ljavax/enterprise/inject/spi/Interceptor;[Ljava/lang/annotation/Annotation;)Z", "(Ljavax/enterprise/inject/spi/Interceptor<*>;[Ljava/lang/annotation/Annotation;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "intercepts", "(Ljakarta/enterprise/inject/spi/Interceptor;[Ljava/lang/annotation/Annotation;)Z", "(Ljakarta/enterprise/inject/spi/Interceptor<*>;[Ljava/lang/annotation/Annotation;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "getInterceptorBindings", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "getInterceptorBindings", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label0 = new Label();
@@ -481,12 +481,12 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/AnnotatedType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/AnnotatedType");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
@@ -496,7 +496,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorsManager", "inBindingArray", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorsManager", "inBindingArray", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -526,7 +526,7 @@ methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "inBindingArray", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", "(Ljavax/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "inBindingArray", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", "(Ljakarta/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -549,7 +549,7 @@ methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/AnnotationUtil", "isCdiAnnotationEqual", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/AnnotationUtil", "isCdiAnnotationEqual", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitInsn(ICONST_1);
@@ -605,7 +605,7 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCdiInterceptor", "(Ljavax/enterprise/inject/spi/Interceptor;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addCdiInterceptor", "(Ljakarta/enterprise/inject/spi/Interceptor;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "cdiInterceptors", "Ljava/util/List;");
@@ -615,13 +615,13 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "beanManager", "Lorg/apache/webbeans/container/BeanManagerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addPassivationInfo", "(Ljavax/enterprise/inject/spi/Bean;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "addPassivationInfo", "(Ljakarta/enterprise/inject/spi/Bean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "cdiInterceptors", "Ljava/util/List;");
@@ -657,7 +657,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInterceptorBindingType", "(Ljavax/enterprise/inject/spi/AnnotatedType;)V", "(Ljavax/enterprise/inject/spi/AnnotatedType<+Ljava/lang/annotation/Annotation;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInterceptorBindingType", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)V", "(Ljakarta/enterprise/inject/spi/AnnotatedType<+Ljava/lang/annotation/Annotation;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "additionalInterceptorBindingTypesAnnotatedTypes", "Ljava/util/Collection;");
@@ -729,11 +729,11 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/AnnotatedType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/AnnotatedType");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -771,11 +771,11 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getAnnotatedElementFactory", "()Lorg/apache/webbeans/portable/AnnotatedElementFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "newAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/AnnotatedElementFactory", "newAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/interceptor/Interceptor;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/interceptor/Interceptor;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "isAnnotationPresent", "(Ljava/lang/Class;)Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -831,13 +831,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPriorityClazzInterceptor", "(Ljava/lang/Class;Ljavax/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljavax/annotation/Priority;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPriorityClazzInterceptor", "(Ljava/lang/Class;Ljakarta/annotation/Priority;)V", "(Ljava/lang/Class<*>;Ljakarta/annotation/Priority;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorsManager", "priorityInterceptors", "Lorg/apache/webbeans/util/PriorityClasses;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/PriorityClasses", "add", "(Ljava/lang/Class;Ljavax/annotation/Priority;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/util/PriorityClasses", "add", "(Ljava/lang/Class;Ljakarta/annotation/Priority;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

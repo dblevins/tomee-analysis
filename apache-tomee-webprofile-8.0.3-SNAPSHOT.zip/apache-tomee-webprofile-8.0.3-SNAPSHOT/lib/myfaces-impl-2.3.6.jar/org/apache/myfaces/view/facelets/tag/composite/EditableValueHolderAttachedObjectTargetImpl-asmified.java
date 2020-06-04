@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", null, "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "javax/faces/view/EditableValueHolderAttachedObjectTarget" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl", null, "org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "jakarta/faces/view/EditableValueHolderAttachedObjectTarget" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(-9102891289180454L));

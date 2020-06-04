@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "maxDepth", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljavax/faces/application/ResourceVisitOption;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljakarta/faces/application/ResourceVisitOption;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "stack", "Ljava/util/Deque;",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -56,7 +56,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedList", "<init>", "
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "stack", "Ljava/util/Deque;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "basePath", "Ljava/lang/String;");
@@ -65,12 +65,12 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "options", "[Ljavax/faces/application/ResourceVisitOption;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "options", "[Ljakarta/faces/application/ResourceVisitOption;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "basePath", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label0 = new Label();
@@ -78,7 +78,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label0);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "javax/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/util/Set"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "jakarta/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/util/Set"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -99,7 +99,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "isTopLevelViewsOnly", "([Ljavax/faces/application/ResourceVisitOption;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "isTopLevelViewsOnly", "([Ljakarta/faces/application/ResourceVisitOption;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
@@ -112,7 +112,7 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "isTopLevelViewsOnly", "([Ljavax/faces/application/ResourceVisitOption;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "isTopLevelViewsOnly", "([Ljakarta/faces/application/ResourceVisitOption;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
@@ -132,7 +132,7 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "isTopLevelViewsOnly", "([Ljavax/faces/application/ResourceVisitOption;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "isTopLevelViewsOnly", "([Ljakarta/faces/application/ResourceVisitOption;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
@@ -145,7 +145,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "[Ljavax/faces/application/ResourceVisitOption;", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "[Ljakarta/faces/application/ResourceVisitOption;", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label1 = new Label();
@@ -155,7 +155,7 @@ methodVisitor.visitVarInsn(ILOAD, 5);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ResourceVisitOption", "TOP_LEVEL_VIEWS_ONLY", "Ljavax/faces/application/ResourceVisitOption;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ResourceVisitOption", "TOP_LEVEL_VIEWS_ONLY", "Ljakarta/faces/application/ResourceVisitOption;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label2);
 methodVisitor.visitInsn(ICONST_1);
@@ -206,10 +206,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/Exter
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label3);
@@ -299,10 +299,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/Exter
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljavax/faces/context/FacesContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ExternalContextResourceLoaderIterator", "facesContext", "Ljakarta/faces/context/FacesContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label3);

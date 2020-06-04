@@ -43,64 +43,64 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_TRANSIENT, "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "sessionMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/flow/FlowCDIContext", "access$000", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/flow/Flow;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/flow/FlowCDIContext", "access$000", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/flow/Flow;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/flow/FlowHandlerImpl", "getFlowStack", "(Ljavax/faces/context/FacesContext;)Lcom/sun/faces/flow/FlowHandlerImpl$FlowDeque;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/flow/FlowHandlerImpl", "getFlowStack", "(Ljakarta/faces/context/FacesContext;)Lcom/sun/faces/flow/FlowHandlerImpl$FlowDeque;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/FlowHandlerImpl$FlowDeque", "getCurrentFlowDepth", "()I", false);
 methodVisitor.visitVarInsn(ISTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "generateKeyForCDIBeansBelongToAFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "generateKeyForCDIBeansBelongToAFlow", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;I)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "sessionMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "generateKeyForCDIBeansBelongToAFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "generateKeyForCDIBeansBelongToAFlow", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "generateKeyForCDIBeansBelongToAFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;I)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "generateKeyForCDIBeansBelongToAFlow", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;I)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getClientWindow", "()Ljavax/faces/lifecycle/ClientWindow;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getClientWindow", "()Ljakarta/faces/lifecycle/ClientWindow;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -112,10 +112,10 @@ methodVisitor.visitLdcInsn("Unable to obtain current ClientWindow.  Is the Clien
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/lifecycle/ClientWindow"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/lifecycle/ClientWindow"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/flow/Flow", "getClientWindowFlowId", "(Ljavax/faces/lifecycle/ClientWindow;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/flow/Flow", "getClientWindowFlowId", "(Ljakarta/faces/lifecycle/ClientWindow;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -267,7 +267,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getFlowScopedCreationalMapForCurrentFlow", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/enterprise/context/spi/CreationalContext<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getFlowScopedCreationalMapForCurrentFlow", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/enterprise/context/spi/CreationalContext<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -386,11 +386,11 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/faces/context/FacesContext;Lcom/sun/faces/flow/FlowCDIContext$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/faces/context/FacesContext;Lcom/sun/faces/flow/FlowCDIContext$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -423,13 +423,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;ILcom/sun/faces/flow/FlowCDIContext$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;ILcom/sun/faces/flow/FlowCDIContext$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "<init>", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper", "<init>", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();

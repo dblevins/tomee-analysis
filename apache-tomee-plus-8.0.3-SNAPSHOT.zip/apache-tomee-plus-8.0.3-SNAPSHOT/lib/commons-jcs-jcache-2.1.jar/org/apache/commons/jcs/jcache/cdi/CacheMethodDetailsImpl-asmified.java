@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljavax/cache/annotation/CacheMethodDetails<TA;>;", "java/lang/Object", new String[] { "javax/cache/annotation/CacheMethodDetails" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljakarta/cache/annotation/CacheMethodDetails<TA;>;", "java/lang/Object", new String[] { "jakarta/cache/annotation/CacheMethodDetails" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "delegate", "Ljavax/interceptor/InvocationContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "delegate", "Ljakarta/interceptor/InvocationContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,18 +41,18 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cacheName", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/interceptor/InvocationContext;Ljava/lang/annotation/Annotation;Ljava/lang/String;)V", "(Ljavax/interceptor/InvocationContext;TA;Ljava/lang/String;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/annotation/Annotation;Ljava/lang/String;)V", "(Ljakarta/interceptor/InvocationContext;TA;Ljava/lang/String;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "delegate", "Ljavax/interceptor/InvocationContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "delegate", "Ljakarta/interceptor/InvocationContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getAnnotations", "()[Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "(Ljava/util/Collection;)V", false);
@@ -71,8 +71,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethod", "()Ljava/lang/reflect/Method;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "delegate", "Ljavax/interceptor/InvocationContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "delegate", "Ljakarta/interceptor/InvocationContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultMessageInterpolator", null, "java/lang/Object", new String[] { "javax/validation/MessageInterpolator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/DefaultMessageInterpolator", null, "java/lang/Object", new String[] { "jakarta/validation/MessageInterpolator" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Lorg/apache/commons/weaver/privilizer/Privilizing;", false);
@@ -48,7 +48,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/DefaultMessageInterpolator$Comp
 
 classWriter.visitInnerClass("org/apache/bval/jsr/DefaultMessageInterpolator$1", null, null, ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/MessageInterpolator$Context", "javax/validation/MessageInterpolator", "Context", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/MessageInterpolator$Context", "jakarta/validation/MessageInterpolator", "Context", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("org/apache/commons/weaver/privilizer/Privilizing$CallTo", "org/apache/commons/weaver/privilizer/Privilizing", "CallTo", ACC_PUBLIC | ACC_STATIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -217,20 +217,20 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolate", "(Ljava/lang/String;Ljavax/validation/MessageInterpolator$Context;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolate", "(Ljava/lang/String;Ljakarta/validation/MessageInterpolator$Context;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/DefaultMessageInterpolator", "defaultLocale", "Ljava/util/Locale;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/DefaultMessageInterpolator", "interpolate", "(Ljava/lang/String;Ljavax/validation/MessageInterpolator$Context;Ljava/util/Locale;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/DefaultMessageInterpolator", "interpolate", "(Ljava/lang/String;Ljakarta/validation/MessageInterpolator$Context;Ljava/util/Locale;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolate", "(Ljava/lang/String;Ljavax/validation/MessageInterpolator$Context;Ljava/util/Locale;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "interpolate", "(Ljava/lang/String;Ljakarta/validation/MessageInterpolator$Context;Ljava/util/Locale;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("{");
@@ -249,8 +249,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/DefaultMessageInterpolator", "getSharedInterpolatedMessage", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/MessageInterpolator$Context", "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ConstraintDescriptor", "getAttributes", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/MessageInterpolator$Context", "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ConstraintDescriptor", "getAttributes", "()Ljava/util/Map;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -260,7 +260,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/DefaultMessageInterpolator", "evaluateExpressionLanguage", "(Ljava/lang/String;Ljavax/validation/MessageInterpolator$Context;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/DefaultMessageInterpolator", "evaluateExpressionLanguage", "(Ljava/lang/String;Ljakarta/validation/MessageInterpolator$Context;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -268,7 +268,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/DefaultMessageInterp
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/MessageInterpolator$Context", "getValidatedValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/MessageInterpolator$Context", "getValidatedValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/el/MessageEvaluator", "interpolate", "(Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
@@ -361,7 +361,7 @@ methodVisitor.visitMaxs(5, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "evaluateExpressionLanguage", "(Ljava/lang/String;Ljavax/validation/MessageInterpolator$Context;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "evaluateExpressionLanguage", "(Ljava/lang/String;Ljakarta/validation/MessageInterpolator$Context;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/DefaultMessageInterpolator", "evaluator", "Lorg/apache/bval/el/MessageEvaluator;");
@@ -369,8 +369,8 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/MessageInterpolator$Context", "getConstraintDescriptor", "()Ljavax/validation/metadata/ConstraintDescriptor;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/ConstraintDescriptor", "getMessageTemplate", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/MessageInterpolator$Context", "getConstraintDescriptor", "()Ljakarta/validation/metadata/ConstraintDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/ConstraintDescriptor", "getMessageTemplate", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
@@ -380,7 +380,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "of", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/DefaultMessageInterpolator", "lambda$evaluateExpressionLanguage$1", "(Ljavax/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;", false), Type.getType("(Ljavax/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/DefaultMessageInterpolator", "lambda$evaluateExpressionLanguage$1", "(Ljakarta/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;", false), Type.getType("(Ljakarta/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -1163,7 +1163,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$evaluateExpressionLanguage$1", "(Ljavax/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$evaluateExpressionLanguage$1", "(Ljakarta/validation/MessageInterpolator$Context;)Lorg/apache/bval/jsr/ApacheMessageContext;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1172,7 +1172,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/ApacheMessageContext;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/MessageInterpolator$Context", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/MessageInterpolator$Context", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/ApacheMessageContext");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);

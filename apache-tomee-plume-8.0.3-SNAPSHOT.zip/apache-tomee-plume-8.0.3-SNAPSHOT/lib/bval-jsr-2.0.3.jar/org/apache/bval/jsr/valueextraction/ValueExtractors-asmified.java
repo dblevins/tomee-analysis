@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "parent", "Lorg/a
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "valueExtractors", "Lorg/apache/bval/util/Lazy;", "Lorg/apache/bval/util/Lazy<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "valueExtractors", "Lorg/apache/bval/util/Lazy;", "Lorg/apache/bval/util/Lazy<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "children", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "searchCache", "Lorg/apache/bval/util/Lazy;", "Lorg/apache/bval/util/Lazy<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "searchCache", "Lorg/apache/bval/util/Lazy;", "Lorg/apache/bval/util/Lazy<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,10 +67,10 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "onDuplicateConta
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getExtractedType", "(Ljavax/validation/valueextraction/ValueExtractor;Ljava/lang/reflect/Type;)Ljava/lang/Class;", "(Ljavax/validation/valueextraction/ValueExtractor<*>;Ljava/lang/reflect/Type;)Ljava/lang/Class<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getExtractedType", "(Ljakarta/validation/valueextraction/ValueExtractor;Ljava/lang/reflect/Type;)Ljava/lang/Class;", "(Ljakarta/validation/valueextraction/ValueExtractor<*>;Ljava/lang/reflect/Type;)Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljavax/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljakarta/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/metadata/ContainerElementKey", "getAnnotatedType", "()Ljava/lang/reflect/AnnotatedType;", false);
@@ -101,7 +101,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/bval/jsr/metadata/ContainerElementKey", "java/lang/reflect/Type"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/Class");
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/valueextraction/ValueExtractorDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/valueextraction/ValueExtractorDefinitionException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/valueextraction/ValueExtractorDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/valueextraction/ValueExtractorDefinitionException;")});
 methodVisitor.visitLdcInsn("%s did not resolve to a %s relative to %s");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -114,7 +114,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isUnwrapByDefault", "(Ljavax/validation/valueextraction/ValueExtractor;)Z", "(Ljavax/validation/valueextraction/ValueExtractor<*>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isUnwrapByDefault", "(Ljakarta/validation/valueextraction/ValueExtractor;)Z", "(Ljakarta/validation/valueextraction/ValueExtractor<*>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -136,7 +136,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/UnwrapByDefault;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/UnwrapByDefault;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAnnotationPresent", "(Ljava/lang/Class;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "loadValueExtractors", "(Ljava/lang/String;)Ljava/util/stream/Stream;", "(Ljava/lang/String;)Ljava/util/stream/Stream<Ljavax/validation/valueextraction/ValueExtractor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "loadValueExtractors", "(Ljava/lang/String;)Ljava/util/stream/Stream;", "(Ljava/lang/String;)Ljava/util/stream/Stream<Ljakarta/validation/valueextraction/ValueExtractor<*>;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -265,7 +265,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getClasses", "()[Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Stream", "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
@@ -273,7 +273,7 @@ methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/lang/Class;)Ljava/util/func
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$loadValueExtractors$3", "(Ljava/lang/Class;)Ljava/lang/Class;", false), Type.getType("(Ljava/lang/Class;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Class;)Ljavax/validation/valueextraction/ValueExtractor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Class;)Ljakarta/validation/valueextraction/ValueExtractor;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
@@ -416,7 +416,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$OnDuplicateContainerElementKey;Ljava/util/Map;)V", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$OnDuplicateContainerElementKey;Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$OnDuplicateContainerElementKey;Ljava/util/Map;)V", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$OnDuplicateContainerElementKey;Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -463,7 +463,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljavax/validation/valueextraction/ValueExtractor;)V", "(Ljavax/validation/valueextraction/ValueExtractor<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Ljakarta/validation/valueextraction/ValueExtractor;)V", "(Ljakarta/validation/valueextraction/ValueExtractor<*>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -472,7 +472,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljavax/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljakarta/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label4 = new Label();
@@ -514,13 +514,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/valueextraction/ValueExtractorDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/valueextraction/ValueExtractorDeclarationException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/valueextraction/ValueExtractorDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/valueextraction/ValueExtractorDeclarationException;")});
 methodVisitor.visitLdcInsn("Multiple context-level %ss specified for %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
@@ -572,7 +572,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueExtractors", "()Ljava/util/Map;", "()Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueExtractors", "()Ljava/util/Map;", "()Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/util/Lazy");
 methodVisitor.visitInsn(DUP);
@@ -592,13 +592,13 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljavax/validation/valueextraction/ValueExtractor;", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljavax/validation/valueextraction/ValueExtractor<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "find", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljakarta/validation/valueextraction/ValueExtractor;", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljakarta/validation/valueextraction/ValueExtractor<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors", "searchCache", "Lorg/apache/bval/util/Lazy;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/util/Lazy", "optional", "()Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$find$6", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljava/util/Map;)Ljavax/validation/valueextraction/ValueExtractor;", false), Type.getType("(Ljava/util/Map;)Ljavax/validation/valueextraction/ValueExtractor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$find$6", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljava/util/Map;)Ljakarta/validation/valueextraction/ValueExtractor;", false), Type.getType("(Ljava/util/Map;)Ljakarta/validation/valueextraction/ValueExtractor;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -607,7 +607,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Optional"}, 0, null);
@@ -622,7 +622,7 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
@@ -642,7 +642,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Ljava/util/Map;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true), Type.getType("(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljavax/validation/valueextraction/ValueExtractor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Ljava/util/Map;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true), Type.getType("(Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Ljakarta/validation/valueextraction/ValueExtractor;")});
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/function/Function", "identity", "()Ljava/util/function/Function;", true);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/BinaryOperator;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$find$7", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false), Type.getType("(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Lorg/apache/bval/jsr/metadata/ContainerElementKey;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;")});
 methodVisitor.visitInvokeDynamicInsn("get", "()Ljava/util/function/Supplier;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "java/util/LinkedHashMap", "<init>", "()V", false), Type.getType("()Ljava/util/LinkedHashMap;")});
@@ -653,7 +653,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Ljava/util/Map;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$find$8", "(Ljava/util/Map;Ljavax/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;", false), Type.getType("(Ljavax/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Ljava/util/Map;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$find$8", "(Ljava/util/Map;Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;", false), Type.getType("(Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "maximallySpecific", "(Ljava/util/Collection;Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -671,17 +671,17 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Map", "java/util/Optional"}, 0, null);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ConstraintDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ConstraintDeclarationException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ConstraintDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ConstraintDeclarationException;")});
 methodVisitor.visitLdcInsn("Could not determine %s for %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
@@ -689,16 +689,16 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Exceptions", "create", "(Ljava/util/function/Function;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Exception;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/ConstraintDeclarationException");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/ConstraintDeclarationException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findUnwrappingInfo", "(Ljava/lang/Class;Ljavax/validation/metadata/ValidateUnwrappedValue;)Ljava/util/Optional;", "(Ljava/lang/Class<*>;Ljavax/validation/metadata/ValidateUnwrappedValue;)Ljava/util/Optional<Lorg/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findUnwrappingInfo", "(Ljava/lang/Class;Ljakarta/validation/metadata/ValidateUnwrappedValue;)Ljava/util/Optional;", "(Ljava/lang/Class<*>;Ljakarta/validation/metadata/ValidateUnwrappedValue;)Ljava/util/Optional<Lorg/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/metadata/ValidateUnwrappedValue", "SKIP", "Ljavax/validation/metadata/ValidateUnwrappedValue;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/metadata/ValidateUnwrappedValue", "SKIP", "Ljakarta/validation/metadata/ValidateUnwrappedValue;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "empty", "()Ljava/util/Optional;", false);
@@ -715,7 +715,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/lang/Class;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$findUnwrappingInfo$9", "(Ljava/lang/Class;Ljava/util/Map$Entry;)Z", false), Type.getType("(Ljava/util/Map$Entry;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitInvokeDynamicInsn("test", "(Ljavax/validation/metadata/ValidateUnwrappedValue;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$findUnwrappingInfo$10", "(Ljavax/validation/metadata/ValidateUnwrappedValue;Ljava/util/Map$Entry;)Z", false), Type.getType("(Ljava/util/Map$Entry;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "(Ljakarta/validation/metadata/ValidateUnwrappedValue;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$findUnwrappingInfo$10", "(Ljakarta/validation/metadata/ValidateUnwrappedValue;Ljava/util/Map$Entry;)Z", false), Type.getType("(Ljava/util/Map$Entry;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$findUnwrappingInfo$11", "(Ljava/util/Map$Entry;)Lorg/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo;", false), Type.getType("(Ljava/util/Map$Entry;)Lorg/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
@@ -735,15 +735,15 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "isPresent", 
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/metadata/ValidateUnwrappedValue", "UNWRAP", "Ljavax/validation/metadata/ValidateUnwrappedValue;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/metadata/ValidateUnwrappedValue", "UNWRAP", "Ljakarta/validation/metadata/ValidateUnwrappedValue;");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ConstraintDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ConstraintDeclarationException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ConstraintDeclarationException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ConstraintDeclarationException;")});
 methodVisitor.visitLdcInsn("Could not determine %s for %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
@@ -760,7 +760,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "populate", "(Ljava/util/function/Supplier;)V", "(Ljava/util/function/Supplier<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "populate", "(Ljava/util/function/Supplier;)V", "(Ljava/util/function/Supplier<Ljava/util/Map<Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors", "parent", "Lorg/apache/bval/jsr/valueextraction/ValueExtractors;");
@@ -842,24 +842,24 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", 
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/metadata/ContainerElementKey");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$1;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findUnwrappingInfo$10", "(Ljavax/validation/metadata/ValidateUnwrappedValue;Ljava/util/Map$Entry;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findUnwrappingInfo$10", "(Ljakarta/validation/metadata/ValidateUnwrappedValue;Ljava/util/Map$Entry;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/metadata/ValidateUnwrappedValue", "UNWRAP", "Ljavax/validation/metadata/ValidateUnwrappedValue;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/metadata/ValidateUnwrappedValue", "UNWRAP", "Ljakarta/validation/metadata/ValidateUnwrappedValue;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "isUnwrapByDefault", "(Ljavax/validation/valueextraction/ValueExtractor;)Z", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "isUnwrapByDefault", "(Ljakarta/validation/valueextraction/ValueExtractor;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
@@ -890,7 +890,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$find$8", "(Ljava/util/Map;Ljavax/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$find$8", "(Ljava/util/Map;Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/lang/Class;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -910,12 +910,12 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$find$6", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljava/util/Map;)Ljavax/validation/valueextraction/ValueExtractor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$find$6", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljava/util/Map;)Ljakarta/validation/valueextraction/ValueExtractor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -945,7 +945,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$loadValueExtractors$3", "(Ljava/lang/Class;)Ljava/lang/Class;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "asSubclass", "(Ljava/lang/Class;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -987,7 +987,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/reflection/Reflection", "toClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "asSubclass", "(Ljava/lang/Class;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1005,14 +1005,14 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljava/util/Map;Ljavax/validation/valueextraction/ValueExtractor;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$static$0", "(Ljava/util/Map;Ljakarta/validation/valueextraction/ValueExtractor;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljavax/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ContainerElementKey", "forValueExtractor", "(Ljakarta/validation/valueextraction/ValueExtractor;)Lorg/apache/bval/jsr/metadata/ContainerElementKey;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/valueextraction/ValueExtractor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/valueextraction/ValueExtractor");
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -1060,16 +1060,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/TreeMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Ljava/util/Map;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$static$0", "(Ljava/util/Map;Ljavax/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljavax/validation/valueextraction/ValueExtractor;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Ljava/util/Map;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$static$0", "(Ljava/util/Map;Ljakarta/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljakarta/validation/valueextraction/ValueExtractor;)V")});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "split", "(Ljava/lang/String;)Ljava/util/stream/Stream;", false);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "lambda$static$1", "(Ljava/lang/String;)Ljava/lang/Class;", false), Type.getType("(Ljava/lang/String;)Ljava/lang/Class;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Class;)Ljavax/validation/valueextraction/ValueExtractor;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/valueextraction/ValueExtractors", "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Class;)Ljakarta/validation/valueextraction/ValueExtractor;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "forEach", "(Ljava/util/function/Consumer;)V", true);
@@ -1077,7 +1077,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(".container");

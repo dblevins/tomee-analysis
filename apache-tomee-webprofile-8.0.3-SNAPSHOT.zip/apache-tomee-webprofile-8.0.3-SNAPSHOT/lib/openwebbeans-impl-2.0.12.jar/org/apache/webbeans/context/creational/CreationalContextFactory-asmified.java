@@ -41,20 +41,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCreationalContext", "(Ljavax/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", "(Ljavax/enterprise/context/spi/Contextual<TT;>;)Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCreationalContext", "(Ljakarta/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", "(Ljakarta/enterprise/context/spi/Contextual<TT;>;)Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/context/creational/CreationalContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/CreationalContextFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/creational/CreationalContextImpl", "<init>", "(Ljavax/enterprise/context/spi/Contextual;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/creational/CreationalContextImpl", "<init>", "(Ljakarta/enterprise/context/spi/Contextual;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "wrappedCreationalContext", "(Ljavax/enterprise/context/spi/CreationalContext;Ljavax/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;Ljavax/enterprise/context/spi/Contextual<TT;>;)Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "wrappedCreationalContext", "(Ljakarta/enterprise/context/spi/CreationalContext;Ljakarta/enterprise/context/spi/Contextual;)Lorg/apache/webbeans/context/creational/CreationalContextImpl;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;Ljakarta/enterprise/context/spi/Contextual<TT;>;)Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/context/creational/WrappedCreationalContext");
 methodVisitor.visitInsn(DUP);
@@ -62,7 +62,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/context/creational/CreationalContextFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/creational/WrappedCreationalContext", "<init>", "(Ljavax/enterprise/context/spi/Contextual;Ljavax/enterprise/context/spi/CreationalContext;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/context/creational/WrappedCreationalContext", "<init>", "(Ljakarta/enterprise/context/spi/Contextual;Ljakarta/enterprise/context/spi/CreationalContext;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();

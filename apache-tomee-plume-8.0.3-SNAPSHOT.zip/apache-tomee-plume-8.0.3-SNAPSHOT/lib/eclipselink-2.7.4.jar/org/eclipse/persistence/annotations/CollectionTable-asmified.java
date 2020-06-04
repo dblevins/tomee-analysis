@@ -67,7 +67,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "primaryKeyJoinColumns", "()[Ljavax/persistence/PrimaryKeyJoinColumn;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "primaryKeyJoinColumns", "()[Ljakarta/persistence/PrimaryKeyJoinColumn;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
@@ -79,7 +79,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uniqueConstraints", "()[Ljavax/persistence/UniqueConstraint;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "uniqueConstraints", "()[Ljakarta/persistence/UniqueConstraint;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

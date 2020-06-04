@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tei/ImportTEI", null, "javax/servlet/jsp/tagext/TagExtraInfo", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/tei/ImportTEI", null, "jakarta/servlet/jsp/tagext/TagExtraInfo", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "VAR", "Ljava/lang/String;", null, "var");
@@ -36,22 +36,22 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagExtraInfo", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagExtraInfo", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljavax/servlet/jsp/tagext/TagData;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljakarta/servlet/jsp/tagext/TagData;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("var");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tei/Util", "isSpecified", "(Ljavax/servlet/jsp/tagext/TagData;Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tei/Util", "isSpecified", "(Ljakarta/servlet/jsp/tagext/TagData;Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("varReader");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tei/Util", "isSpecified", "(Ljavax/servlet/jsp/tagext/TagData;Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tei/Util", "isSpecified", "(Ljakarta/servlet/jsp/tagext/TagData;Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);

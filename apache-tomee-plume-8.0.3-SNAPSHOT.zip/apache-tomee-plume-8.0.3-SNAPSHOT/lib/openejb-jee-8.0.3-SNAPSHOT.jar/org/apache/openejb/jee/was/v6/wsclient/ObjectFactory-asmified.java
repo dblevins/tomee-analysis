@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -108,101 +108,101 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWebServicesClient", "(Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createWebServicesClient", "(Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "webservice_client.xmi");
 annotationVisitor0.visit("name", "WebServicesClient");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", "_WebServicesClient_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/was/v6/wsclient/WebServicesClient;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponentScopedRefs", "(Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponentScopedRefs", "(Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "webservice_client.xmi");
 annotationVisitor0.visit("name", "ComponentScopedRefs");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", "_ComponentScopedRefs_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/was/v6/wsclient/ComponentScopedRefs;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHandler", "(Lorg/apache/openejb/jee/was/v6/wsclient/Handler;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/Handler;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/Handler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHandler", "(Lorg/apache/openejb/jee/was/v6/wsclient/Handler;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/Handler;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/Handler;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "webservice_client.xmi");
 annotationVisitor0.visit("name", "Handler");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", "_Handler_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/was/v6/wsclient/Handler;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPortComponentRef", "(Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPortComponentRef", "(Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "webservice_client.xmi");
 annotationVisitor0.visit("name", "PortComponentRef");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", "_PortComponentRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/was/v6/wsclient/PortComponentRef;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceRef", "(Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;)Ljavax/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceRef", "(Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "webservice_client.xmi");
 annotationVisitor0.visit("name", "ServiceRef");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/jee/was/v6/wsclient/ObjectFactory", "_ServiceRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/jee/was/v6/wsclient/ServiceRef;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

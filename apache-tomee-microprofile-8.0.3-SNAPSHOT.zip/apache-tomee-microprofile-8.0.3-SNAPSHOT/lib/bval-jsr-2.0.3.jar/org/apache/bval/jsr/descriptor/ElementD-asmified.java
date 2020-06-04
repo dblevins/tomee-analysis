@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/ElementD", "<E::Ljava/lang/reflect/AnnotatedElement;R:Lorg/apache/bval/jsr/descriptor/MetadataReader$ForElement<TE;*>;>Ljava/lang/Object;Ljavax/validation/metadata/ElementDescriptor;", "java/lang/Object", new String[] { "javax/validation/metadata/ElementDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/ElementD", "<E::Ljava/lang/reflect/AnnotatedElement;R:Lorg/apache/bval/jsr/descriptor/MetadataReader$ForElement<TE;*>;>Ljava/lang/Object;Ljakarta/validation/metadata/ElementDescriptor;", "java/lang/Object", new String[] { "jakarta/validation/metadata/ElementDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/ElementD$NonRoot", "org/apache/bval/jsr/descriptor/ElementD", "NonRoot", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForElement", "org/apache/bval/jsr/descriptor/MetadataReader", "ForElement", 0);
 
-classWriter.visitInnerClass("javax/validation/metadata/ElementDescriptor$ConstraintFinder", "javax/validation/metadata/ElementDescriptor", "ConstraintFinder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/metadata/ElementDescriptor$ConstraintFinder", "jakarta/validation/metadata/ElementDescriptor", "ConstraintFinder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "genericType", "Ljava/lang/reflect/Type;", null, null);
@@ -100,7 +100,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintDescriptors", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/metadata/ConstraintDescriptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintDescriptors", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/metadata/ConstraintDescriptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ElementD", "constraints", "Ljava/util/Set;");
@@ -109,14 +109,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "findConstraints", "()Ljavax/validation/metadata/ElementDescriptor$ConstraintFinder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "findConstraints", "()Ljakarta/validation/metadata/ElementDescriptor$ConstraintFinder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/descriptor/Finder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ElementD", "groupsComputer", "Lorg/apache/bval/jsr/groups/GroupsComputer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/descriptor/Finder", "<init>", "(Lorg/apache/bval/jsr/groups/GroupsComputer;Ljavax/validation/metadata/ElementDescriptor;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/descriptor/Finder", "<init>", "(Lorg/apache/bval/jsr/groups/GroupsComputer;Ljakarta/validation/metadata/ElementDescriptor;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();

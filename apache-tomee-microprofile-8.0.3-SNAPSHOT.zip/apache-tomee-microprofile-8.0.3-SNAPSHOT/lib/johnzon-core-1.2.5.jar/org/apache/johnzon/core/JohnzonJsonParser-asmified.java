@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/johnzon/core/JohnzonJsonParser", null, "java/lang/Object", new String[] { "javax/json/stream/JsonParser" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/johnzon/core/JohnzonJsonParser", null, "java/lang/Object", new String[] { "jakarta/json/stream/JsonParser" });
 
 classWriter.visitInnerClass("org/apache/johnzon/core/JohnzonJsonParser$JohnzonJsonParserWrapper", "org/apache/johnzon/core/JohnzonJsonParser", "JohnzonJsonParserWrapper", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/json/stream/JsonParser$Event", "javax/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/stream/JsonParser$Event", "jakarta/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isFitLong", "()Z", null, null);
@@ -37,7 +37,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isNotTooLong
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "current", "()Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "current", "()Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/tomcat/JarScanner", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "scan", "(Lorg/apache/tomcat/JarScanType;Ljavax/servlet/ServletContext;Lorg/apache/tomcat/JarScannerCallback;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "scan", "(Lorg/apache/tomcat/JarScanType;Ljakarta/servlet/ServletContext;Lorg/apache/tomcat/JarScannerCallback;)V", null, null);
 methodVisitor.visitEnd();
 }
 {

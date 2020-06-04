@@ -25,31 +25,31 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/core/timer/EjbTimerService", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTimer", "(J)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTimer", "(J)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTimers", "(Ljava/lang/Object;)Ljava/util/Collection;", "(Ljava/lang/Object;)Ljava/util/Collection<Ljavax/ejb/Timer;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getTimers", "(Ljava/lang/Object;)Ljava/util/Collection;", "(Ljava/lang/Object;)Ljava/util/Collection<Ljakarta/ejb/Timer;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JJLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JJLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/ScheduleExpression;Ljavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/ScheduleExpression;Ljakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitEnd();
 }
 {

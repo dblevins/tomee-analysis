@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl", null, "org/apache/bval/jsr/util/NodeImpl", new String[] { "javax/validation/Path$CrossParameterNode" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl", null, "org/apache/bval/jsr/util/NodeImpl", new String[] { "jakarta/validation/Path$CrossParameterNode" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl", "org/apache/bval/jsr/util/NodeImpl", "CrossParameterNodeImpl", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/Path$Node", "javax/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$Node", "jakarta/validation/Path", "Node", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/validation/Path$CrossParameterNode", "javax/validation/Path", "CrossParameterNode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/Path$CrossParameterNode", "jakarta/validation/Path", "CrossParameterNode", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/NodeImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -44,19 +44,19 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/validation/Path$Node;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/validation/Path$Node;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl", "<init>", "(Ljavax/validation/Path$Node;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/NodeImpl", "<init>", "(Ljakarta/validation/Path$Node;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKind", "()Ljavax/validation/ElementKind;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKind", "()Ljakarta/validation/ElementKind;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ElementKind", "CROSS_PARAMETER", "Ljavax/validation/ElementKind;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ElementKind", "CROSS_PARAMETER", "Ljakarta/validation/ElementKind;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

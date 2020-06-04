@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/wsdl/AbstractWSDLPlugin", null, "java/lang/Object", new String[] { "org/apache/cxf/wsdl/WSDLExtensibilityPlugin" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,20 +38,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExtensionRegistry", "(Ljavax/wsdl/extensions/ExtensionRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExtensionRegistry", "(Ljakarta/wsdl/extensions/ExtensionRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl/AbstractWSDLPlugin", "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl/AbstractWSDLPlugin", "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtenstionRegistry", "()Ljavax/wsdl/extensions/ExtensionRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtenstionRegistry", "()Ljakarta/wsdl/extensions/ExtensionRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl/AbstractWSDLPlugin", "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/wsdl/AbstractWSDLPlugin", "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

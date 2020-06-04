@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(0, "optimizeBase64Data", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "mtomAttachmentMarshaller", "Ljavax/xml/bind/attachment/AttachmentMarshaller;", null, null);
+fieldVisitor = classWriter.visitField(0, "mtomAttachmentMarshaller", "Ljakarta/xml/bind/attachment/AttachmentMarshaller;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -131,8 +131,8 @@ methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/jvnet/staxex/util/MtomStreamWriter");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/util/MtomStreamWriter", "getAttachmentMarshaller", "()Ljavax/xml/bind/attachment/AttachmentMarshaller;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter", "mtomAttachmentMarshaller", "Ljavax/xml/bind/attachment/AttachmentMarshaller;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/util/MtomStreamWriter", "getAttachmentMarshaller", "()Ljakarta/xml/bind/attachment/AttachmentMarshaller;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter", "mtomAttachmentMarshaller", "Ljakarta/xml/bind/attachment/AttachmentMarshaller;");
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(ICONST_0);
@@ -325,7 +325,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/jvnet/staxex/Base64Data");
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter", "mtomAttachmentMarshaller", "Ljavax/xml/bind/attachment/AttachmentMarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter", "mtomAttachmentMarshaller", "Ljakarta/xml/bind/attachment/AttachmentMarshaller;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/jvnet/staxex/Base64Data");
@@ -334,8 +334,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter", "out", "Ljavax/xml/stream/XMLStreamWriter;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/jvnet/staxex/XMLStreamWriterEx");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data", "getDataHandler", "()Ljavax/activation/DataHandler;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/XMLStreamWriterEx", "writeBinary", "(Ljavax/activation/DataHandler;)V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/jvnet/staxex/Base64Data", "getDataHandler", "()Ljakarta/activation/DataHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/jvnet/staxex/XMLStreamWriterEx", "writeBinary", "(Ljakarta/activation/DataHandler;)V", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label0);

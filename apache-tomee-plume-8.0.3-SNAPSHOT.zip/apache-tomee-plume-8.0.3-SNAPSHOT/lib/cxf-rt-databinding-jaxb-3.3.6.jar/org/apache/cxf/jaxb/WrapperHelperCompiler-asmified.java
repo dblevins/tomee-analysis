@@ -731,7 +731,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxb/WrapperHelperC
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Class"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label6 = new Label();
@@ -867,7 +867,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/common/util/ASMHe
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label8 = new Label();
@@ -1437,7 +1437,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getRet
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxb/WrapperHelperCompiler", "createObjectWrapper", "(Lorg/apache/cxf/common/util/ASMHelper$MethodVisitor;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/common/util/ASMHelper$Label"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getReturnType", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -1455,7 +1455,7 @@ methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/common/util/ASMHelper$MethodVisitor", "visitJumpInsn", "(ILorg/apache/cxf/common/util/ASMHelper$Label;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/common/util/ASMHelper$Opcodes", "INVOKEVIRTUAL", "I");
-methodVisitor.visitLdcInsn("javax/xml/bind/JAXBElement");
+methodVisitor.visitLdcInsn("jakarta/xml/bind/JAXBElement");
 methodVisitor.visitLdcInsn("getValue");
 methodVisitor.visitLdcInsn("()Ljava/lang/Object;");
 methodVisitor.visitInsn(ICONST_0);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/SizeValidator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/validation/ConstraintValidator<Ljavax/validation/constraints/Size;TT;>;", "java/lang/Object", new String[] { "javax/validation/ConstraintValidator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/SizeValidator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/validation/ConstraintValidator<Ljakarta/validation/constraints/Size;TT;>;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidator" });
 
 classWriter.visitInnerClass("org/apache/bval/constraints/SizeValidator$ForMap", "org/apache/bval/constraints/SizeValidator", "ForMap", ACC_PUBLIC | ACC_STATIC);
 
@@ -57,24 +57,24 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljavax/validation/constraints/Size;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljakarta/validation/constraints/Size;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/Size", "min", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/Size", "min", "()I", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/SizeValidator", "min", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/Size", "max", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/Size", "max", "()I", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/SizeValidator", "max", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/SizeValidator", "min", "I");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFGE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Min cannot be negative");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -82,10 +82,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/SizeValidator", "max", "I");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFGE, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Max cannot be negative");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -95,10 +95,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/constraints/SizeValidator", "min", "I");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Max cannot be less than Min");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -107,7 +107,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", "(TT;Ljavax/validation/ConstraintValidatorContext;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", "(TT;Ljakarta/validation/ConstraintValidatorContext;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -147,8 +147,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraints/Size");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/SizeValidator", "initialize", "(Ljavax/validation/constraints/Size;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraints/Size");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/SizeValidator", "initialize", "(Ljakarta/validation/constraints/Size;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

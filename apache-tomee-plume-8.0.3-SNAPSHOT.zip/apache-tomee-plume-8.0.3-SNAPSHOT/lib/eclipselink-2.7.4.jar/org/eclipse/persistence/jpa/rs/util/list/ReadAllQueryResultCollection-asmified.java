@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/util/list/ReadAllQueryResultCollection", "Ljava/lang/Object;Lorg/eclipse/persistence/jpa/rs/util/list/PageableCollection<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "org/eclipse/persistence/jpa/rs/util/list/PageableCollection" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRootElement;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRootElement;", true);
 annotationVisitor0.visit("name", "result");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
 annotationVisitor1.visit(null, "items");

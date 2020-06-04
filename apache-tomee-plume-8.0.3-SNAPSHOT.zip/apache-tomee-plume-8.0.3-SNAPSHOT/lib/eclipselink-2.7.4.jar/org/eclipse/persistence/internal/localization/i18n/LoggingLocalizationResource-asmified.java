@@ -3124,7 +3124,7 @@ methodVisitor.visitLdcInsn("metadata_warning_ignore_mapping_metadata");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("Ignoring the javax.persistence metadata applied to the attribute [{0}] from class [{1}]. javax.persistence metadata is ignored on fields or properties that are transient, static or abstract.");
+methodVisitor.visitLdcInsn("Ignoring the jakarta.persistence metadata applied to the attribute [{0}] from class [{1}]. jakarta.persistence metadata is ignored on fields or properties that are transient, static or abstract.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);

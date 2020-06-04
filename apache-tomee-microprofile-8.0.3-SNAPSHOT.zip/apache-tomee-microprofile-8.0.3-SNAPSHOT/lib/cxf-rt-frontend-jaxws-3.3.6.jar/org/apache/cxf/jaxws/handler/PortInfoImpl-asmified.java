@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/PortInfoImpl", null, "java/lang/Object", new String[] { "javax/xml/ws/handler/PortInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/handler/PortInfoImpl", null, "java/lang/Object", new String[] { "jakarta/xml/ws/handler/PortInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bindingID", "Ljava/lang/String;", null, null);

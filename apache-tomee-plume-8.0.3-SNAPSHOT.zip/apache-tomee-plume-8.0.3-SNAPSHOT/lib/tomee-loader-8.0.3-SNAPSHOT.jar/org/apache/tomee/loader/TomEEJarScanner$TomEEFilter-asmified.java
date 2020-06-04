@@ -147,7 +147,7 @@ methodVisitor.visitInsn(ICONST_4);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax.faces-2.");
+methodVisitor.visitLdcInsn("jakarta.faces-2.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);

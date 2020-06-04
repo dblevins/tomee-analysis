@@ -83,7 +83,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/tld/TagXml", "getAttributes", "()Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/tld/TldRuleSet$Attribute", "toTagAttributeInfo", "()Ljavax/servlet/jsp/tagext/TagAttributeInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/descriptor/tld/TldRuleSet$Attribute", "toTagAttributeInfo", "()Ljakarta/servlet/jsp/tagext/TagAttributeInfo;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

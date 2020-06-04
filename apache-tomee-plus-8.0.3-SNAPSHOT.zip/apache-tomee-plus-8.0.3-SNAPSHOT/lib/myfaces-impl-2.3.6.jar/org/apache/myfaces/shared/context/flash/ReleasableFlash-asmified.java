@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/shared/context/flash/ReleasableFlash", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "clearFlashMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "clearFlashMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

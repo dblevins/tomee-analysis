@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "processJMSMessage", "(Ljavax/jms/Message;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "processJMSMessage", "(Ljakarta/jms/Message;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/AbstractSession", "getCommandManager", "()Lorg/eclipse/persistence/sessions/coordination/CommandManager;", false);
@@ -55,7 +55,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/session
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "onMessage", "(Ljavax/jms/Message;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "onMessage", "(Ljakarta/jms/Message;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();

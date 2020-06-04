@@ -29,14 +29,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "preScannedURLs",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;ZZZLjava/util/Collection;)V", "(Ljavax/servlet/ServletContext;ZZZLjava/util/Collection<Ljava/net/URL;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;ZZZLjava/util/Collection;)V", "(Ljakarta/servlet/ServletContext;ZZZLjava/util/Collection<Ljava/net/URL;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/servlet/TldScanner", "<init>", "(Ljavax/servlet/ServletContext;ZZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/servlet/TldScanner", "<init>", "(Ljakarta/servlet/ServletContext;ZZZ)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/servlet/TldPreScanned", "preScannedURLs", "Ljava/util/Collection;");

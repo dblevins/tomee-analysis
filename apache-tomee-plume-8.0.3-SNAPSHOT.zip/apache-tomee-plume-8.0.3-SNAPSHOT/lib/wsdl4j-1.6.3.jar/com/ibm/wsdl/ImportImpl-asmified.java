@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/ImportImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "javax/wsdl/Import" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/ImportImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "jakarta/wsdl/Import" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "namespaceURI", "Ljava/lang/String;", null, null);
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "locationURI", "Ljava/lang/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "definition", "Ljavax/wsdl/Definition;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "definition", "Ljakarta/wsdl/Definition;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/ImportImpl", "locationURI", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/ibm/wsdl/Constants", "IMPORT_ATTR_NAMES", "[Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
@@ -105,20 +105,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefinition", "(Ljavax/wsdl/Definition;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefinition", "(Ljakarta/wsdl/Definition;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefinition", "()Ljavax/wsdl/Definition;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefinition", "()Ljakarta/wsdl/Definition;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -178,7 +178,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -188,8 +188,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("\ndefinition=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getDocumentBaseURI", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getDocumentBaseURI", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
@@ -201,8 +201,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("\ndefinition namespaceURI=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljavax/wsdl/Definition;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getTargetNamespace", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/ImportImpl", "definition", "Ljakarta/wsdl/Definition;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getTargetNamespace", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);

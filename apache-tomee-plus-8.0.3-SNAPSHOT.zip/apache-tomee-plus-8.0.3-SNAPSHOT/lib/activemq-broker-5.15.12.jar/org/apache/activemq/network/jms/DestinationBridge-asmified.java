@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/activemq/network/jms/DestinationBridge", null, "java/lang/Object", new String[] { "org/apache/activemq/Service", "javax/jms/MessageListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/activemq/network/jms/DestinationBridge", null, "java/lang/Object", new String[] { "org/apache/activemq/Service", "jakarta/jms/MessageListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Lorg/slf4j/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "consumer", "Ljavax/jms/MessageConsumer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "consumer", "Ljakarta/jms/MessageConsumer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,20 +67,20 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConsumer", "()Ljavax/jms/MessageConsumer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConsumer", "()Ljakarta/jms/MessageConsumer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "consumer", "Ljavax/jms/MessageConsumer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "consumer", "Ljakarta/jms/MessageConsumer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConsumer", "(Ljavax/jms/MessageConsumer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConsumer", "(Ljakarta/jms/MessageConsumer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/jms/DestinationBridge", "consumer", "Ljavax/jms/MessageConsumer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/network/jms/DestinationBridge", "consumer", "Ljakarta/jms/MessageConsumer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -115,16 +115,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processReplyToDestination", "(Ljavax/jms/Destination;)Ljavax/jms/Destination;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processReplyToDestination", "(Ljakarta/jms/Destination;)Ljakarta/jms/Destination;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "jmsConnector", "Lorg/apache/activemq/network/jms/JmsConnector;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnnectionForConsumer", "()Ljavax/jms/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnnectionForConsumer", "()Ljakarta/jms/Connection;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnectionForProducer", "()Ljavax/jms/Connection;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "createReplyToBridge", "(Ljavax/jms/Destination;Ljavax/jms/Connection;Ljavax/jms/Connection;)Ljavax/jms/Destination;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnectionForProducer", "()Ljakarta/jms/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "createReplyToBridge", "(Ljakarta/jms/Destination;Ljakarta/jms/Connection;Ljakarta/jms/Connection;)Ljakarta/jms/Destination;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -140,10 +140,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/Atomic
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "createConsumer", "()Ljavax/jms/MessageConsumer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "createConsumer", "()Ljakarta/jms/MessageConsumer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "createProducer", "()Ljavax/jms/MessageProducer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "createProducer", "()Ljakarta/jms/MessageProducer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -240,7 +240,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/Destinat
 Label label18 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label18);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "getJMSReplyTo", "()Ljavax/jms/Destination;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "getJMSReplyTo", "()Ljakarta/jms/Destination;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label19 = new Label();
@@ -250,40 +250,40 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/Destinat
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "processReplyToDestination", "(Ljavax/jms/Destination;)Ljavax/jms/Destination;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljavax/jms/Message;Ljavax/jms/Destination;)Ljavax/jms/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "processReplyToDestination", "(Ljakarta/jms/Destination;)Ljakarta/jms/Destination;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljakarta/jms/Message;Ljakarta/jms/Destination;)Ljakarta/jms/Message;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label20 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label20);
 methodVisitor.visitLabel(label19);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "javax/jms/Destination"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "jakarta/jms/Destination"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "jmsMessageConvertor", "Lorg/apache/activemq/network/jms/JmsMesageConvertor;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljavax/jms/Message;)Ljavax/jms/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label20);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/activemq/network/jms/DestinationBridge", "javax/jms/Message", Opcodes.INTEGER, Opcodes.INTEGER, "javax/jms/Message"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/activemq/network/jms/DestinationBridge", "jakarta/jms/Message", Opcodes.INTEGER, Opcodes.INTEGER, "jakarta/jms/Message"}, 0, new Object[] {});
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label18);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "setJMSReplyTo", "(Ljavax/jms/Destination;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "setJMSReplyTo", "(Ljakarta/jms/Destination;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "jmsMessageConvertor", "Lorg/apache/activemq/network/jms/JmsMesageConvertor;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljavax/jms/Message;)Ljavax/jms/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/network/jms/JmsMesageConvertor", "convert", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label16);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/jms/Message"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/jms/Message"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "sendMessage", "(Ljavax/jms/Message;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "sendMessage", "(Ljakarta/jms/Message;)V", false);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
@@ -292,14 +292,14 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "jmsConnector", "Lorg/apache/activemq/network/jms/JmsConnector;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnectionForProducer", "()Ljavax/jms/Connection;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljavax/jms/Connection;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnectionForProducer", "()Ljakarta/jms/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljakarta/jms/Connection;)V", false);
 methodVisitor.visitLabel(label14);
 methodVisitor.visitJumpInsn(GOTO, label16);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Message", "acknowledge", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Message", "acknowledge", "()V", true);
 methodVisitor.visitLabel(label7);
 Label label21 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label21);
@@ -309,15 +309,15 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/DestinationBridge", "jmsConnector", "Lorg/apache/activemq/network/jms/JmsConnector;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnnectionForConsumer", "()Ljavax/jms/Connection;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljavax/jms/Connection;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/DestinationBridge", "getConnnectionForConsumer", "()Ljakarta/jms/Connection;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/network/jms/JmsConnector", "handleConnectionFailure", "(Ljakarta/jms/Connection;)V", false);
 methodVisitor.visitLabel(label15);
 methodVisitor.visitJumpInsn(GOTO, label16);
 methodVisitor.visitLabel(label21);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/DestinationBridge", "javax/jms/Message", Opcodes.INTEGER, Opcodes.INTEGER}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/DestinationBridge", "jakarta/jms/Message", Opcodes.INTEGER, Opcodes.INTEGER}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/network/jms/DestinationBridge", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("failed to forward message on attempt: {} reason: {} message: {}");
@@ -364,23 +364,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createConsumer", "()Ljavax/jms/MessageConsumer;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createConsumer", "()Ljakarta/jms/MessageConsumer;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createProducer", "()Ljavax/jms/MessageProducer;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createProducer", "()Ljakarta/jms/MessageProducer;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "sendMessage", "(Ljavax/jms/Message;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "sendMessage", "(Ljakarta/jms/Message;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getConnnectionForConsumer", "()Ljavax/jms/Connection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getConnnectionForConsumer", "()Ljakarta/jms/Connection;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getConnectionForProducer", "()Ljavax/jms/Connection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getConnectionForProducer", "()Ljakarta/jms/Connection;", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointBasic", null, "org/apache/tomcat/websocket/WsRemoteEndpointBase", new String[] { "javax/websocket/RemoteEndpoint$Basic" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/WsRemoteEndpointBasic", null, "org/apache/tomcat/websocket/WsRemoteEndpointBase", new String[] { "jakarta/websocket/RemoteEndpoint$Basic" });
 
-classWriter.visitInnerClass("javax/websocket/RemoteEndpoint$Basic", "javax/websocket/RemoteEndpoint", "Basic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/RemoteEndpoint$Basic", "jakarta/websocket/RemoteEndpoint", "Basic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;)V", null, null);
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendObject", "(Ljava/lang/Object;)V", null, new String[] { "java/io/IOException", "javax/websocket/EncodeException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendObject", "(Ljava/lang/Object;)V", null, new String[] { "java/io/IOException", "jakarta/websocket/EncodeException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsRemoteEndpointBasic", "base", "Lorg/apache/tomcat/websocket/WsRemoteEndpointImplBase;");

@@ -26,7 +26,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/bval/jsr
 
 classWriter.visitInnerClass("org/apache/bval/jsr/valueextraction/ExtractValues$Receiver", "org/apache/bval/jsr/valueextraction/ExtractValues", "Receiver", ACC_PRIVATE | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/validation/valueextraction/ValueExtractor$ValueReceiver", "javax/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "jakarta/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -40,12 +40,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)Ljava/util/List;", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;)Ljava/util/List<Lorg/apache/bval/jsr/GraphContext;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "extract", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)Ljava/util/List;", "(Lorg/apache/bval/jsr/GraphContext;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;)Ljava/util/List<Lorg/apache/bval/jsr/GraphContext;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/validation/ValidationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/validation/ValidationException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -91,22 +91,22 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/GraphContext", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/valueextraction/ValueExtractor", "extractValues", "(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/valueextraction/ValueExtractor", "extractValues", "(Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", true);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "org/apache/bval/jsr/metadata/ContainerElementKey", "javax/validation/valueextraction/ValueExtractor", "org/apache/bval/jsr/valueextraction/ExtractValues$Receiver"}, 1, new Object[] {"javax/validation/ValidationException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/bval/jsr/GraphContext", "org/apache/bval/jsr/metadata/ContainerElementKey", "jakarta/validation/valueextraction/ValueExtractor", "org/apache/bval/jsr/valueextraction/ExtractValues$Receiver"}, 1, new Object[] {"jakarta/validation/ValidationException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

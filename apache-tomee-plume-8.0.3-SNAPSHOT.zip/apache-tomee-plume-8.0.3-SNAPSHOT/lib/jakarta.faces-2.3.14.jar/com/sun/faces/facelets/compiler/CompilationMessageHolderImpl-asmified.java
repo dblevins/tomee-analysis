@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/compiler/CompilationMessageHolderImpl", null, "java/lang/Object", new String[] { "com/sun/faces/facelets/compiler/CompilerPackageCompilationMessageHolder" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messageListMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljavax/faces/application/FacesMessage;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messageListMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMessageListMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljavax/faces/application/FacesMessage;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getMessageListMap", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamespacePrefixMessages", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List<Ljavax/faces/application/FacesMessage;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNamespacePrefixMessages", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -96,7 +96,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processCompilationMessages", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processCompilationMessages", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/compiler/CompilationMessageHolderImpl", "getMessageListMap", "()Ljava/util/Map;", false);
@@ -130,12 +130,12 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljavax/faces/application/FacesMessage;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "addMessage", "(Ljava/lang/String;Ljakarta/faces/application/FacesMessage;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);

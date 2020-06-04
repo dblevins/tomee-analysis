@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBMetaDataImpl", null, "java/lang/Object", new String[] { "javax/ejb/EJBMetaData", "java/io/Externalizable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBMetaDataImpl", null, "java/lang/Object", new String[] { "jakarta/ejb/EJBMetaData", "java/io/Externalizable" });
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -91,7 +91,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_TRANSIENT, "keyClass",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_TRANSIENT, "ejbHomeProxy", "Ljavax/ejb/EJBHome;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_TRANSIENT, "ejbHomeProxy", "Ljakarta/ejb/EJBHome;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -343,10 +343,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -501,7 +501,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setEJBHomeProxy", "(Lorg
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -590,7 +590,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBMetaDataImp
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectOutput", "writeObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectOutput", "writeObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -746,8 +746,8 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/EJBMetaDataImp
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectInput", "readObject", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EJBHome");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljavax/ejb/EJBHome;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EJBHome");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/EJBMetaDataImpl", "ejbHomeProxy", "Ljakarta/ejb/EJBHome;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/io/ObjectInput", "readByte", "()B", true);

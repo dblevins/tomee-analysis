@@ -37,23 +37,23 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "associate", "Lco
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "actionListener", "Ljavax/faces/event/ActionListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "actionListener", "Ljakarta/faces/event/ActionListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "navigationHandler", "Ljavax/faces/application/NavigationHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "navigationHandler", "Ljakarta/faces/application/NavigationHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "viewHandler", "Ljavax/faces/application/ViewHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "viewHandler", "Ljakarta/faces/application/ViewHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "resourceHandler", "Ljavax/faces/application/ResourceHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "resourceHandler", "Ljakarta/faces/application/ResourceHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "stateManager", "Ljavax/faces/application/StateManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "stateManager", "Ljakarta/faces/application/StateManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -85,16 +85,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewHandler", "()Ljavax/faces/application/ViewHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "viewHandler", "Ljavax/faces/application/ViewHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "viewHandler", "Ljakarta/faces/application/ViewHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setViewHandler", "(Ljavax/faces/application/ViewHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setViewHandler", "(Ljakarta/faces/application/ViewHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("viewHandler");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -104,7 +104,7 @@ methodVisitor.visitLdcInsn("ViewHandler");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Singletons", "notRequestServiced", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "viewHandler", "Ljavax/faces/application/ViewHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "viewHandler", "Ljakarta/faces/application/ViewHandler;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -130,16 +130,16 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceHandler", "()Ljavax/faces/application/ResourceHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceHandler", "()Ljakarta/faces/application/ResourceHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "resourceHandler", "Ljavax/faces/application/ResourceHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "resourceHandler", "Ljakarta/faces/application/ResourceHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setResourceHandler", "(Ljavax/faces/application/ResourceHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setResourceHandler", "(Ljakarta/faces/application/ResourceHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("resourceHandler");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -149,7 +149,7 @@ methodVisitor.visitLdcInsn("ResourceHandler");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Singletons", "notRequestServiced", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "resourceHandler", "Ljavax/faces/application/ResourceHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "resourceHandler", "Ljakarta/faces/application/ResourceHandler;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -169,16 +169,16 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateManager", "()Ljavax/faces/application/StateManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateManager", "()Ljakarta/faces/application/StateManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "stateManager", "Ljavax/faces/application/StateManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "stateManager", "Ljakarta/faces/application/StateManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setStateManager", "(Ljavax/faces/application/StateManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setStateManager", "(Ljakarta/faces/application/StateManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("stateManager");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -188,7 +188,7 @@ methodVisitor.visitLdcInsn("StateManager");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Singletons", "notRequestServiced", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "stateManager", "Ljavax/faces/application/StateManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "stateManager", "Ljakarta/faces/application/StateManager;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -214,23 +214,23 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActionListener", "()Ljavax/faces/event/ActionListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActionListener", "()Ljakarta/faces/event/ActionListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "actionListener", "Ljavax/faces/event/ActionListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "actionListener", "Ljakarta/faces/event/ActionListener;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setActionListener", "(Ljavax/faces/event/ActionListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setActionListener", "(Ljakarta/faces/event/ActionListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("actionListener");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "actionListener", "Ljavax/faces/event/ActionListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "actionListener", "Ljakarta/faces/event/ActionListener;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -255,23 +255,23 @@ methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNavigationHandler", "()Ljavax/faces/application/NavigationHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNavigationHandler", "()Ljakarta/faces/application/NavigationHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "navigationHandler", "Ljavax/faces/application/NavigationHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "navigationHandler", "Ljakarta/faces/application/NavigationHandler;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setNavigationHandler", "(Ljavax/faces/application/NavigationHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setNavigationHandler", "(Ljakarta/faces/application/NavigationHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("navigationHandler");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "navigationHandler", "Ljavax/faces/application/NavigationHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/applicationimpl/Singletons", "navigationHandler", "Ljakarta/faces/application/NavigationHandler;");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -296,17 +296,17 @@ methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlowHandler", "()Ljavax/faces/flow/FlowHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlowHandler", "()Ljakarta/faces/flow/FlowHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "associate", "Lcom/sun/faces/application/ApplicationAssociate;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "getFlowHandler", "()Ljavax/faces/flow/FlowHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "getFlowHandler", "()Ljakarta/faces/flow/FlowHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setFlowHandler", "(Ljavax/faces/flow/FlowHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "setFlowHandler", "(Ljakarta/faces/flow/FlowHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("flowHandler");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -314,7 +314,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "associate", "Lcom/sun/faces/application/ApplicationAssociate;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "setFlowHandler", "(Ljavax/faces/flow/FlowHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "setFlowHandler", "(Ljakarta/faces/flow/FlowHandler;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/application/applicationimpl/Singletons", "LOGGER", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -498,7 +498,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceBundle", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceBundle", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("context");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -510,7 +510,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/Singletons", "associate", "Lcom/sun/faces/application/ApplicationAssociate;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "getResourceBundle", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationAssociate", "getResourceBundle", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

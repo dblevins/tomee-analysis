@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/application/ApplicationFactoryImpl", null, "javax/faces/application/ApplicationFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/application/ApplicationFactoryImpl", null, "jakarta/faces/application/ApplicationFactory", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log", "Ljava/util/logging/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_application", "Ljavax/faces/application/Application;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_application", "Ljakarta/faces/application/Application;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -40,7 +40,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/ApplicationFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/ApplicationFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_myfacesInstanceAddedToApplicationMap", "Z");
@@ -57,7 +57,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/ApplicationImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationImpl", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljakarta/faces/application/Application;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationFactoryImpl", "putApplicationOnMap", "()V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/application/ApplicationFactoryImpl", "log", "Ljava/util/logging/Logger;");
@@ -84,10 +84,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplication", "()Ljavax/faces/application/Application;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplication", "()Ljakarta/faces/application/Application;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljakarta/faces/application/Application;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -98,13 +98,13 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/App
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljakarta/faces/application/Application;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setApplication", "(Ljavax/faces/application/Application;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setApplication", "(Ljakarta/faces/application/Application;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -118,7 +118,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljakarta/faces/application/Application;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/application/ApplicationFactoryImpl", "putApplicationOnMap", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -128,28 +128,28 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "putApplicationOnMap", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.application.ApplicationImpl");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_application", "Ljakarta/faces/application/Application;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/application/ApplicationFactoryImpl", "_myfacesInstanceAddedToApplicationMap", "Z");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/FacesContext"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

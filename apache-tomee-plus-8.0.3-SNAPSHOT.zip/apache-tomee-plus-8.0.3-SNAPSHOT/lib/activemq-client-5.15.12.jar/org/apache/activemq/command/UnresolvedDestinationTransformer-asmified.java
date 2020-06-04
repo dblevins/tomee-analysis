@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/command/UnresolvedDestinationTransformer", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "transform", "(Ljavax/jms/Destination;)Lorg/apache/activemq/command/ActiveMQDestination;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "transform", "(Ljakarta/jms/Destination;)Lorg/apache/activemq/command/ActiveMQDestination;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "transform", "(Ljava/lang/String;)Lorg/apache/activemq/command/ActiveMQDestination;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "transform", "(Ljava/lang/String;)Lorg/apache/activemq/command/ActiveMQDestination;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

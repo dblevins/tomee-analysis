@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENFO
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SERVER_CONTAINER_SERVLET_CONTEXT_ATTRIBUTE", "Ljava/lang/String;", null, "javax.websocket.server.ServerContainer");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SERVER_CONTAINER_SERVLET_CONTEXT_ATTRIBUTE", "Ljava/lang/String;", null, "jakarta.websocket.server.ServerContainer");
 fieldVisitor.visitEnd();
 }
 {

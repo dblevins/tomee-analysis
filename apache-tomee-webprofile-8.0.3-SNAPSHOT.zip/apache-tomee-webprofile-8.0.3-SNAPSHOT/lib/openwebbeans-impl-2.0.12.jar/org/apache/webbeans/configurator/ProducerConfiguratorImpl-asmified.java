@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/ProducerConfiguratorImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/configurator/ProducerConfigurator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/ProducerConfiguratorImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/configurator/ProducerConfigurator" });
 
 classWriter.visitInnerClass("org/apache/webbeans/configurator/ProducerConfiguratorImpl$ConfiguredProducer", "org/apache/webbeans/configurator/ProducerConfiguratorImpl", "ConfiguredProducer", ACC_PUBLIC);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "disposeWithCallback", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoints", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoints", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceWith", "(Ljava/util/function/Function;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator;", "<U:TT;>(Ljava/util/function/Function<Ljavax/enterprise/context/spi/CreationalContext<TU;>;TU;>;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceWith", "(Ljava/util/function/Function;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator;", "<U:TT;>(Ljava/util/function/Function<Ljakarta/enterprise/context/spi/CreationalContext<TU;>;TU;>;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "disposeWith", "(Ljava/util/function/Consumer;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator;", "(Ljava/util/function/Consumer<TT;>;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "disposeWith", "(Ljava/util/function/Consumer;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator;", "(Ljava/util/function/Consumer<TT;>;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -75,7 +75,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInjectionPoint", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator;", "(Ljavax/enterprise/inject/spi/InjectionPoint;)Ljavax/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInjectionPoint", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator;", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljakarta/enterprise/inject/spi/configurator/ProducerConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ProducerConfiguratorImpl", "injectionPoints", "Ljava/util/Set;");
@@ -88,7 +88,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljavax/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>()Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljakarta/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>()Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/configurator/ProducerConfiguratorImpl$ConfiguredProducer");
 methodVisitor.visitInsn(DUP);

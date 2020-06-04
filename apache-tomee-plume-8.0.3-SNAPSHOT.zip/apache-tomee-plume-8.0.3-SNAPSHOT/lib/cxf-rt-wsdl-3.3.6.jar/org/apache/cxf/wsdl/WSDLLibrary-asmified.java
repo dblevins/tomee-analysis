@@ -55,7 +55,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ISTORE, 0);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.wsdl.Definition");
+methodVisitor.visitLdcInsn("jakarta.wsdl.Definition");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/wsdl/WSDLLibrary;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/classloader/ClassLoaderUtils", "loadClass", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/wss4j/binding/wsu10/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -84,61 +84,61 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExpires", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljavax/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExpires", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 annotationVisitor0.visit("name", "Expires");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/binding/wsu10/ObjectFactory", "_Expires_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCreated", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljavax/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCreated", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 annotationVisitor0.visit("name", "Created");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/binding/wsu10/ObjectFactory", "_Created_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/wss4j/binding/wsu10/AttributedDateTime;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimestamp", "(Lorg/apache/wss4j/binding/wsu10/TimestampType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/TimestampType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/TimestampType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimestamp", "(Lorg/apache/wss4j/binding/wsu10/TimestampType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/wss4j/binding/wsu10/TimestampType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/wss4j/binding/wsu10/TimestampType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 annotationVisitor0.visit("name", "Timestamp");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/binding/wsu10/ObjectFactory", "_Timestamp_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/wss4j/binding/wsu10/TimestampType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

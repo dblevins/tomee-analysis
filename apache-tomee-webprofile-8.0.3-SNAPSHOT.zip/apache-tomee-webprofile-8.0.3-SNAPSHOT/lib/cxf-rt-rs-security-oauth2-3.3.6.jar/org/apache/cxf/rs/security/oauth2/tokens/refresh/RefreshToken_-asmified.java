@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken_", null, "org/apache/cxf/rs/security/oauth2/common/ServerAccessToken_", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/metamodel/StaticMetamodel;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/metamodel/StaticMetamodel;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken;"));
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "accessTokens", "Ljavax/persistence/metamodel/ListAttribute;", "Ljavax/persistence/metamodel/ListAttribute<Lorg/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC | ACC_VOLATILE, "accessTokens", "Ljakarta/persistence/metamodel/ListAttribute;", "Ljakarta/persistence/metamodel/ListAttribute<Lorg/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {

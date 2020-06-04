@@ -85,9 +85,9 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getPriority", "(Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/ContractComparator", "microProfileClientFactoryBean", "Lorg/apache/cxf/microprofile/client/MicroProfileClientFactoryBean;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "getConfiguration", "()Ljavax/ws/rs/core/Configuration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean", "getConfiguration", "()Ljakarta/ws/rs/core/Configuration;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/Configuration", "getContracts", "(Ljava/lang/Class;)Ljava/util/Map;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();

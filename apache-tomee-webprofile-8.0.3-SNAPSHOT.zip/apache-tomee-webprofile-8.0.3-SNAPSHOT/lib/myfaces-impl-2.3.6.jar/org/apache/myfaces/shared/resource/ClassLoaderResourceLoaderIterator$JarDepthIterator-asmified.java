@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "maxDepth", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljavax/faces/application/ResourceVisitOption;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljakarta/faces/application/ResourceVisitOption;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(0, "iterator", "Ljava/util/Iterator;", "Lj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/net/URL;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/net/URL;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -90,7 +90,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "options", "[Ljavax/faces/application/ResourceVisitOption;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "options", "[Ljakarta/faces/application/ResourceVisitOption;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("/");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "endsWith", "(Ljava/lang/String;)Z", false);
@@ -104,7 +104,7 @@ methodVisitor.visitInsn(ISUB);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(II)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URL", "openConnection", "()Ljava/net/URLConnection;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/net/JarURLConnection");
@@ -210,14 +210,14 @@ methodVisitor.visitLabel(label6);
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/net/JarURLConnection", Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/net/JarURLConnection", Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 13);
 methodVisitor.visitLabel(label15);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator", "java/net/URL", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;"}, 0, new Object[] {});
 Label label16 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label16);
 methodVisitor.visitLabel(label10);

@@ -22,17 +22,17 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/AnyLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Any;>;Ljavax/enterprise/inject/Any;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/Any" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/AnyLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Any;>;Ljakarta/enterprise/inject/Any;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/Any" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC, "INSTANCE", "Ljavax/enterprise/inject/Any;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC, "INSTANCE", "Ljakarta/enterprise/inject/Any;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -41,7 +41,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equals", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/enterprise/inject/Any");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/enterprise/inject/Any");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -68,7 +68,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/config/cdi/AnyLiteral");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/config/cdi/AnyLiteral", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/config/cdi/AnyLiteral", "INSTANCE", "Ljavax/enterprise/inject/Any;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/config/cdi/AnyLiteral", "INSTANCE", "Ljakarta/enterprise/inject/Any;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

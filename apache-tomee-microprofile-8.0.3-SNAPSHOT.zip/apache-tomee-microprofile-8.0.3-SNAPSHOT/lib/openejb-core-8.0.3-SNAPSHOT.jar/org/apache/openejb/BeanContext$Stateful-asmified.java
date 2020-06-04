@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/openejb/BeanContext$Stateful", "org/apac
 classWriter.visitInnerClass("org/apache/openejb/BeanContext$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "extendedEntityManagerFactories", "Lorg/apache/openejb/util/Index;", "Lorg/apache/openejb/util/Index<Ljavax/persistence/EntityManagerFactory;Lorg/apache/openejb/BeanContext$EntityManagerConfiguration;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "extendedEntityManagerFactories", "Lorg/apache/openejb/util/Index;", "Lorg/apache/openejb/util/Index<Ljakarta/persistence/EntityManagerFactory;Lorg/apache/openejb/BeanContext$EntityManagerConfiguration;>;", null);
 fieldVisitor.visitEnd();
 }
 {

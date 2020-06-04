@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/decorator/DecoratorComparator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Comparator<Ljavax/enterprise/inject/spi/Decorator<TT;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/decorator/DecoratorComparator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/enterprise/inject/spi/Decorator<TT;>;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -45,7 +45,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/enterprise/inject/spi/Decorator;Ljavax/enterprise/inject/spi/Decorator;)I", "(Ljavax/enterprise/inject/spi/Decorator<TT;>;Ljavax/enterprise/inject/spi/Decorator<TT;>;)I", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/enterprise/inject/spi/Decorator;Ljakarta/enterprise/inject/spi/Decorator;)I", "(Ljakarta/enterprise/inject/spi/Decorator<TT;>;Ljakarta/enterprise/inject/spi/Decorator<TT;>;)I", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -57,10 +57,10 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Decorator", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Decorator", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Decorator", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Decorator", "getBeanClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/decorator/DecoratorComparator", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -77,10 +77,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Decorator");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Decorator");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Decorator");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/decorator/DecoratorComparator", "compare", "(Ljavax/enterprise/inject/spi/Decorator;Ljavax/enterprise/inject/spi/Decorator;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Decorator");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/decorator/DecoratorComparator", "compare", "(Ljakarta/enterprise/inject/spi/Decorator;Ljakarta/enterprise/inject/spi/Decorator;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

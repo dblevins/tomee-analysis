@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createContextState", "()Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createContextState", "()Lorg/eclipse/persistence/jaxb/JAXBContext$JAXBContextState;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {

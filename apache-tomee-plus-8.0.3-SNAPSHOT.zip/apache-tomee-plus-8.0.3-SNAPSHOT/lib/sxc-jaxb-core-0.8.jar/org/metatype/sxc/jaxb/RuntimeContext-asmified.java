@@ -26,9 +26,9 @@ classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/metatype/sxc/jaxb/RuntimeCo
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/xml/bind/Unmarshaller$Listener", "javax/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/xml/bind/Unmarshaller$Listener", "jakarta/xml/bind/Unmarshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
-classWriter.visitInnerClass("javax/xml/bind/Marshaller$Listener", "javax/xml/bind/Marshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/xml/bind/Marshaller$Listener", "jakarta/xml/bind/Marshaller", "Listener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "properties", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
@@ -183,7 +183,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addXmlId", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addXmlId", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -248,7 +248,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveXmlIdRef", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/String;Lorg/metatype/sxc/jaxb/IdRefTarget;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveXmlIdRef", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/String;Lorg/metatype/sxc/jaxb/IdRefTarget;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -324,7 +324,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveXmlIdRefs", "()V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveXmlIdRefs", "()V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -430,18 +430,18 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeUnmarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeUnmarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getListener", "()Ljavax/xml/bind/Unmarshaller$Listener;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getListener", "()Ljakarta/xml/bind/Unmarshaller$Listener;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "beforeUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
@@ -489,18 +489,18 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "afterUnmarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "afterUnmarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getListener", "()Ljavax/xml/bind/Unmarshaller$Listener;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getListener", "()Ljakarta/xml/bind/Unmarshaller$Listener;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Unmarshaller$Listener", "afterUnmarshal", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
@@ -542,12 +542,12 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getEventHandler", "()Ljavax/xml/bind/ValidationEventHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getEventHandler", "()Ljakarta/xml/bind/ValidationEventHandler;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -556,14 +556,14 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/metatype/sxc/jaxb/ValidationEventLocatorImpl", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljavax/xml/bind/ValidationEventLocator;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventHandler", "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljakarta/xml/bind/ValidationEventLocator;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventHandler", "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/UnmarshalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/UnmarshalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/UnmarshalException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/UnmarshalException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -581,17 +581,17 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeMarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Marshaller;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "beforeMarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Marshaller;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getListener", "()Ljavax/xml/bind/Marshaller$Listener;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getListener", "()Ljakarta/xml/bind/Marshaller$Listener;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Marshaller$Listener", "beforeMarshal", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Marshaller$Listener", "beforeMarshal", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 6);
@@ -626,24 +626,24 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "afterMarshal", "(Ljava/lang/Object;Ljavax/xml/bind/Marshaller;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/metatype/sxc/jaxb/LifecycleCallback", "afterMarshal", "(Ljava/lang/Object;Ljakarta/xml/bind/Marshaller;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getListener", "()Ljavax/xml/bind/Marshaller$Listener;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getListener", "()Ljakarta/xml/bind/Marshaller$Listener;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/Marshaller$Listener", "afterMarshal", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/Marshaller$Listener", "afterMarshal", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedAttribute", "(Lorg/metatype/sxc/util/Attribute;[Ljavax/xml/namespace/QName;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedAttribute", "(Lorg/metatype/sxc/util/Attribute;[Ljavax/xml/namespace/QName;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -672,7 +672,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElement", "(Lorg/metatype/sxc/util/XoXMLStreamReader;[Ljavax/xml/namespace/QName;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElement", "(Lorg/metatype/sxc/util/XoXMLStreamReader;[Ljavax/xml/namespace/QName;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -700,7 +700,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unexpectedXsiType", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class<TT;>;)TT;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unexpectedXsiType", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class<TT;>;)TT;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
@@ -744,7 +744,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedSubclass", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedSubclass", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
@@ -840,7 +840,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readXmlAny", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class<TT;>;Z)TT;", new String[] { "javax/xml/bind/JAXBException", "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readXmlAny", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Z)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class<TT;>;Z)TT;", new String[] { "jakarta/xml/bind/JAXBException", "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
@@ -866,14 +866,14 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unexpectedNullValue", "(Ljava/lang/Object;Ljava/lang/String;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unexpectedNullValue", "(Ljava/lang/Object;Ljava/lang/String;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElementType", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElementType", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -960,7 +960,7 @@ methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElementRef", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedElementRef", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -1066,7 +1066,7 @@ methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeXmlAny", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "javax/xml/bind/JAXBException", "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeXmlAny", "(Lorg/metatype/sxc/util/XoXMLStreamWriter;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V", null, new String[] { "jakarta/xml/bind/JAXBException", "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -1135,7 +1135,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedEnumValue", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/String;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedEnumValue", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/String;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1167,7 +1167,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedEnumConst", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V", "<T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/String;TT;[TT;)V", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "unexpectedEnumConst", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V", "<T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/String;TT;[TT;)V", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1203,7 +1203,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlAdapterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlAdapterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1236,7 +1236,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlAdapterError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "xmlAdapterError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1272,7 +1272,7 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uncreatableCollection", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uncreatableCollection", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1306,7 +1306,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldGetError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldGetError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1333,7 +1333,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldGetError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldGetError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1363,7 +1363,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldSetError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fieldSetError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1390,7 +1390,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1419,7 +1419,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getterError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getterError", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1451,7 +1451,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setterError", "(Lorg/metatype/sxc/util/XoXMLStreamReader;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Exception;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1485,7 +1485,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "validationError", "(Ljava/lang/String;Ljavax/xml/stream/Location;Ljava/lang/Throwable;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "validationError", "(Ljava/lang/String;Ljavax/xml/stream/Location;Ljava/lang/Throwable;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1500,7 +1500,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "validationError", "(Ljava/lang/String;Lorg/metatype/sxc/jaxb/ValidationEventLocatorImpl;Ljava/lang/Throwable;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "validationError", "(Ljava/lang/String;Lorg/metatype/sxc/jaxb/ValidationEventLocatorImpl;Ljava/lang/Throwable;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -1510,7 +1510,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "marshaller", "Lorg/metatype/sxc/jaxb/ExtendedMarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getEventHandler", "()Ljavax/xml/bind/ValidationEventHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedMarshaller", "getEventHandler", "()Ljakarta/xml/bind/ValidationEventHandler;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -1520,29 +1520,29 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/metatype/sxc/jaxb/RuntimeContext", "unmarshaller", "Lorg/metatype/sxc/jaxb/ExtendedUnmarshaller;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getEventHandler", "()Ljavax/xml/bind/ValidationEventHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/metatype/sxc/jaxb/ExtendedUnmarshaller", "getEventHandler", "()Ljakarta/xml/bind/ValidationEventHandler;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljavax/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEventHandler", "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljakarta/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEventHandler", "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/UnmarshalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/UnmarshalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/UnmarshalException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/UnmarshalException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitInsn(RETURN);

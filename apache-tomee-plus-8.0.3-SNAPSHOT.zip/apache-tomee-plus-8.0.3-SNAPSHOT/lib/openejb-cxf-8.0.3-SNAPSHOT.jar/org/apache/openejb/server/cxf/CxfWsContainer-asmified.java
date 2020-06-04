@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "serviceConfigu
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jmxName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jmxName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -106,8 +106,8 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/transport/http/AbstractHT
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "destination", "Lorg/apache/cxf/transport/http/AbstractHTTPDestination;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/cxf/CxfWsContainer", "registerMBean", "()Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "jmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/cxf/CxfWsContainer", "registerMBean", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "jmxName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
@@ -134,7 +134,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createEnd
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "registerMBean", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "registerMBean", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -163,8 +163,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "unregisterMBean", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "jmxName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "unregisterSilently", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "jmxName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "unregisterSilently", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -189,10 +189,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/CxfWsContainer", "destination", "Lorg/apache/cxf/transport/http/AbstractHTTPDestination;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/server/httpd/HttpRequest", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/server/httpd/HttpRequest", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/AbstractHTTPDestination", "invoke", "(Ljavax/servlet/ServletConfig;Ljavax/servlet/ServletContext;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/AbstractHTTPDestination", "invoke", "(Ljakarta/servlet/ServletConfig;Ljakarta/servlet/ServletContext;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label4 = new Label();

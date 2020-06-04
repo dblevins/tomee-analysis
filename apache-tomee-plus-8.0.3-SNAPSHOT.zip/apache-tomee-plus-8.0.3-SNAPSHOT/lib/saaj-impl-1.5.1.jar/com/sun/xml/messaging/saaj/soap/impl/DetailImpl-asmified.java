@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", null, "com/sun/xml/messaging/saaj/soap/impl/FaultElementImpl", new String[] { "javax/xml/soap/Detail" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", null, "com/sun/xml/messaging/saaj/soap/impl/FaultElementImpl", new String[] { "jakarta/xml/soap/Detail" });
 
 classWriter.visitInnerClass("com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1", null, null, 0);
 
@@ -49,19 +49,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/DetailEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/DetailEntry;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -72,11 +72,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDetailEntry", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/DetailEntry;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addDetailEntry", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/DetailEntry;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -87,58 +87,58 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addElement", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addElement", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "addDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "addDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addElement", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addElement", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "addDetailEntry", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "addDetailEntry", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/SOAPElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "convertToSoapElement", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/SOAPElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "getSoapDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljavax/xml/soap/Node;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl", "find", "(Lorg/w3c/dom/Node;)Ljakarta/xml/soap/Node;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/soap/DetailEntry");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/soap/DetailEntry");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/SOAPElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/SOAPElement");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/soap/Node"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/soap/Node"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/name/NameImpl", "copyElementName", "(Lorg/w3c/dom/Element;)Ljavax/xml/soap/Name;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/messaging/saaj/soap/name/NameImpl", "copyElementName", "(Lorg/w3c/dom/Element;)Ljakarta/xml/soap/Name;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "createDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/impl/ElementImpl");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "replaceElementWithSOAPElement", "(Lorg/w3c/dom/Element;Lcom/sun/xml/messaging/saaj/soap/impl/ElementImpl;)Ljavax/xml/soap/SOAPElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl", "replaceElementWithSOAPElement", "(Lorg/w3c/dom/Element;Lcom/sun/xml/messaging/saaj/soap/impl/ElementImpl;)Ljakarta/xml/soap/SOAPElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDetailEntries", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljavax/xml/soap/DetailEntry;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDetailEntries", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljakarta/xml/soap/DetailEntry;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1");
 methodVisitor.visitInsn(DUP);

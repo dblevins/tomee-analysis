@@ -136,12 +136,12 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getHandler", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/String;)Lcom/sun/faces/facelets/tag/composite/PropertyHandler;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getHandler", "(Ljakarta/faces/view/facelets/FaceletContext;Ljava/lang/String;)Lcom/sun/faces/facelets/tag/composite/PropertyHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ProjectStage", "Development", "Ljavax/faces/application/ProjectStage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "isProjectStage", "(Ljavax/faces/application/ProjectStage;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage", "Development", "Ljakarta/faces/application/ProjectStage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "isProjectStage", "(Ljakarta/faces/application/ProjectStage;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/facelets/tag/composite/PropertyHandlerManager", "DEV_ONLY_ATTRIBUTES", "[Ljava/lang/String;");

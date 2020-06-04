@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", null, "java/lang/Object", new String[] { "javax/transaction/UserTransaction" });
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", null, "java/lang/Object", new String[] { "jakarta/transaction/UserTransaction" });
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "org/apache/openejb/quartz/ee/jta/UserTransactionHelper", "UserTransactionWithContext", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(0, "context", "Ljavax/naming/InitialContex
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "userTransaction", "Ljavax/transaction/UserTransaction;", null, null);
+fieldVisitor = classWriter.visitField(0, "userTransaction", "Ljakarta/transaction/UserTransaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,8 +71,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "context", "Ljavax/naming/InitialContext;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper", "access$000", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/naming/InitialContext", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/UserTransaction");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/UserTransaction");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 methodVisitor.visitLabel(label4);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
@@ -90,7 +90,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -188,62 +188,62 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "javax/transaction/NotSupportedException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "begin", "()V", null, new String[] { "jakarta/transaction/NotSupportedException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "begin", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "begin", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "javax/transaction/RollbackException", "javax/transaction/HeuristicMixedException", "javax/transaction/HeuristicRollbackException", "java/lang/SecurityException", "java/lang/IllegalStateException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commit", "()V", null, new String[] { "jakarta/transaction/RollbackException", "jakarta/transaction/HeuristicMixedException", "jakarta/transaction/HeuristicRollbackException", "java/lang/SecurityException", "java/lang/IllegalStateException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "commit", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "commit", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollback", "()V", null, new String[] { "java/lang/IllegalStateException", "java/lang/SecurityException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "rollback", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "rollback", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "()V", null, new String[] { "java/lang/IllegalStateException", "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "setRollbackOnly", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatus", "()I", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "getStatus", "()I", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "getStatus", "()I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionTimeout", "(I)V", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/UserTransaction", "setTransactionTimeout", "(I)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/UserTransaction", "setTransactionTimeout", "(I)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

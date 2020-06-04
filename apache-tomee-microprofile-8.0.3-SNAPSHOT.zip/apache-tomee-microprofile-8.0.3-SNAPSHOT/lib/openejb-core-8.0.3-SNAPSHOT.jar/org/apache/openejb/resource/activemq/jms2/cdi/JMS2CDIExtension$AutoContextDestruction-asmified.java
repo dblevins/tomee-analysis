@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ser
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "contexts", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;Ljavax/jms/JMSContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "contexts", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;Ljakarta/jms/JMSContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "push", "(Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;Ljavax/jms/JMSContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "push", "(Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;Ljakarta/jms/JMSContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction", "contexts", "Ljava/util/Map;");
@@ -64,13 +64,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "find", "(Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;)Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "find", "(Lorg/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key;)Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction", "contexts", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/JMSContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/JMSContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -78,14 +78,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "destroy", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/JMSRuntimeException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/JMSRuntimeException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction", "contexts", "Ljava/util/Map;");
 Label label3 = new Label();
@@ -99,23 +99,23 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label4 = new Label();
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/jms/JMSRuntimeException", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/jms/JMSRuntimeException", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/JMSContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/JMSContext");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/JMSContext", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/JMSContext", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction", "javax/jms/JMSRuntimeException", "java/util/Iterator", "javax/jms/JMSContext"}, 1, new Object[] {"javax/jms/JMSRuntimeException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction", "jakarta/jms/JMSRuntimeException", "java/util/Iterator", "jakarta/jms/JMSContext"}, 1, new Object[] {"jakarta/jms/JMSRuntimeException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ASTORE, 1);

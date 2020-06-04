@@ -635,14 +635,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeExternal", "(Ljavax/enterprise/inject/spi/Bean;Ljava/lang/Object;Ljava/io/ObjectOutput;)V", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;TT;Ljava/io/ObjectOutput;)V", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeExternal", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/lang/Object;Ljava/io/ObjectOutput;)V", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;TT;Ljava/io/ObjectOutput;)V", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readExternal", "(Ljavax/enterprise/inject/spi/Bean;Ljava/io/ObjectInput;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;Ljava/io/ObjectInput;)TT;", new String[] { "java/io/IOException", "java/lang/ClassNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readExternal", "(Ljakarta/enterprise/inject/spi/Bean;Ljava/io/ObjectInput;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;Ljava/io/ObjectInput;)TT;", new String[] { "java/io/IOException", "java/lang/ClassNotFoundException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/webbeans/component/ResourceBean");

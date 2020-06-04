@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_6, ACC_SUPER, "org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", null, "java/lang/Object", new String[] { "org/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors" });
 
-classWriter.visitInnerClass("javax/resource/spi/TransactionSupport$TransactionSupportLevel", "javax/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "jakarta/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", "org/apache/geronimo/connector/outbound/GenericConnectionManager", "InterceptorsImpl", ACC_PRIVATE | ACC_STATIC);
 
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "poolingSupport",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Ljavax/transaction/TransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/ClassLoader;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Ljakarta/transaction/TransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/ClassLoader;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -63,7 +63,7 @@ methodVisitor.visitLdcInsn("To use Subject in pooling, you need a SecurityDomain
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "java/lang/String", "org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker", "javax/transaction/TransactionManager", "javax/resource/spi/ManagedConnectionFactory", "java/lang/ClassLoader"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "java/lang/String", "org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker", "jakarta/transaction/TransactionManager", "jakarta/resource/spi/ManagedConnectionFactory", "java/lang/ClassLoader"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
@@ -82,14 +82,14 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/resource/spi/TransactionSupport");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/resource/spi/TransactionSupport");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/spi/TransactionSupport");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/spi/TransactionSupport");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/TransactionSupport", "getTransactionSupport", "()Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/TransactionSupport", "getTransactionSupport", "()Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;", true);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/connector/outbound/GenericConnectionManager", "log", "Lorg/slf4j/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -105,16 +105,16 @@ methodVisitor.visitVarInsn(ALOAD, 10);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "NoTransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "NoTransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/connector/outbound/connectionmanagerconfig/NoTransactions", "INSTANCE", "Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/resource/spi/TransactionSupport", "javax/resource/spi/TransactionSupport$TransactionSupportLevel"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/resource/spi/TransactionSupport", "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "LocalTransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "LocalTransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -189,7 +189,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/G
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "addTransactionInterceptors", "(Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljavax/transaction/TransactionManager;)Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "addTransactionInterceptors", "(Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljakarta/transaction/TransactionManager;)Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;", false);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label8 = new Label();

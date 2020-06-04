@@ -114,7 +114,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isDefault", "()Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/groups/Default;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/groups/Default;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/groups/Group", "group", "Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
@@ -216,7 +216,7 @@ methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, nul
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/groups/Group");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/groups/Default;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/groups/Default;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/groups/Group", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/groups/Group", "DEFAULT", "Lorg/apache/bval/jsr/groups/Group;");
 methodVisitor.visitInsn(RETURN);

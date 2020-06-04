@@ -43,7 +43,7 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -58,9 +58,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "retry", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "retry", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -78,7 +78,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/retry/BaseRetryInterceptor", "cache", "Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache", "getUnwrapped", "()Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/cache/Key", "<init>", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -91,7 +91,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/safeguard/impl/retry/BaseRetryInterceptor", "cache", "Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache", "create", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Cache", "create", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -110,12 +110,12 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/retry/Bas
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/safeguard/impl/interceptor/IdGeneratorInterceptor;"));
@@ -161,14 +161,14 @@ methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/retry/BaseRetryInterceptor", "javax/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Model", "java/util/Map", "java/lang/Object", "java/lang/String", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/retry/BaseRetryInterceptor", "jakarta/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Model", "java/util/Map", "java/lang/Object", "java/lang/String", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context", "access$400", "(Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Context;)I", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFLT, label6);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context", "access$400", "(Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Context;)I", false);
@@ -216,7 +216,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor;Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ErrorHandler;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/safeguard/impl/retry/BaseRetryInterceptor", "lambda$retry$0", "(Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljavax/interceptor/InvocationContext;Ljava/lang/Exception;)Ljava/util/concurrent/Future;", false), Type.getType("(Ljava/lang/Exception;)Ljava/util/concurrent/Future;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor;Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ErrorHandler;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/safeguard/impl/retry/BaseRetryInterceptor", "lambda$retry$0", "(Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljakarta/interceptor/InvocationContext;Ljava/lang/Exception;)Ljava/util/concurrent/Future;", false), Type.getType("(Ljava/lang/Exception;)Ljava/util/concurrent/Future;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label9);
@@ -225,7 +225,7 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/retry/BaseRetryInterceptor", "javax/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Model", "java/util/Map", "java/lang/Object", "java/lang/String", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/safeguard/impl/retry/BaseRetryInterceptor", "jakarta/interceptor/InvocationContext", "java/util/Map", "org/apache/safeguard/impl/cache/Key", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Model", "java/util/Map", "java/lang/Object", "java/lang/String", "org/apache/safeguard/impl/retry/BaseRetryInterceptor$Context"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -323,7 +323,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "executeFi
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$retry$0", "(Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljavax/interceptor/InvocationContext;Ljava/lang/Exception;)Ljava/util/concurrent/Future;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$retry$0", "(Ljava/util/Map;Ljava/lang/String;Lorg/apache/safeguard/impl/retry/BaseRetryInterceptor$Model;Ljakarta/interceptor/InvocationContext;Ljava/lang/Exception;)Ljava/util/concurrent/Future;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -334,7 +334,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/safeguard/impl/retry/Ba
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/Future;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/concurrent/Future");
 methodVisitor.visitInsn(ARETURN);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/discovery/AfterDeploymentValidationImpl", null, "org/apache/webbeans/portable/events/EventBase", new String[] { "javax/enterprise/inject/spi/AfterDeploymentValidation" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/discovery/AfterDeploymentValidationImpl", null, "org/apache/webbeans/portable/events/EventBase", new String[] { "jakarta/enterprise/inject/spi/AfterDeploymentValidation" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanManagerImpl", "Lorg/apache/webbeans/container/BeanManagerImpl;", null, null);

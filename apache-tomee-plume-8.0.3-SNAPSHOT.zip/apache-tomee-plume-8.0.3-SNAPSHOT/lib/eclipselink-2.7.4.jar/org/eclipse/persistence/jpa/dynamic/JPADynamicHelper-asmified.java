@@ -25,22 +25,22 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/dynamic/JPADynamicHelper", null, "org/eclipse/persistence/dynamic/DynamicHelper", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManagerFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManagerFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getServerSession", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/server/Server;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getServerSession", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/server/Server;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/dynamic/DynamicHelper", "<init>", "(Lorg/eclipse/persistence/sessions/DatabaseSession;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "getDatabaseSession", "()Lorg/eclipse/persistence/internal/sessions/DatabaseSessionImpl;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/dynamic/DynamicHelper", "<init>", "(Lorg/eclipse/persistence/sessions/DatabaseSession;)V", false);
 methodVisitor.visitInsn(RETURN);

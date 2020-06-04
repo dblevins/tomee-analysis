@@ -526,7 +526,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addServlet", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/startup/Tomcat", "getHost", "()Lorg/apache/catalina/Host;", false);
@@ -537,18 +537,18 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/Context");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/startup/Tomcat", "addServlet", "(Lorg/apache/catalina/Context;Ljava/lang/String;Ljavax/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/startup/Tomcat", "addServlet", "(Lorg/apache/catalina/Context;Ljava/lang/String;Ljakarta/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addServlet", "(Lorg/apache/catalina/Context;Ljava/lang/String;Ljavax/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addServlet", "(Lorg/apache/catalina/Context;Ljava/lang/String;Ljakarta/servlet/Servlet;)Lorg/apache/catalina/Wrapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/startup/Tomcat$ExistingStandardWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/startup/Tomcat$ExistingStandardWrapper", "<init>", "(Ljavax/servlet/Servlet;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/startup/Tomcat$ExistingStandardWrapper", "<init>", "(Ljakarta/servlet/Servlet;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl", null, "javax/faces/view/ViewDeclarationLanguageFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl", null, "jakarta/faces/view/ViewDeclarationLanguageFactory", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "viewHandlingStrategyManager", "Lcom/sun/faces/application/view/ViewHandlingStrategyManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "allViewDeclarationLanguages", "Ljava/util/List;", "Ljava/util/List<Ljavax/faces/view/ViewDeclarationLanguage;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "allViewDeclarationLanguages", "Ljava/util/List;", "Ljava/util/List<Ljakarta/faces/view/ViewDeclarationLanguage;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/ViewDeclarationLanguageFactory", "<init>", "(Ljavax/faces/view/ViewDeclarationLanguageFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/ViewDeclarationLanguageFactory", "<init>", "(Ljakarta/faces/view/ViewDeclarationLanguageFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "(Ljava/lang/String;)Ljavax/faces/view/ViewDeclarationLanguage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewDeclarationLanguage", "(Ljava/lang/String;)Ljakarta/faces/view/ViewDeclarationLanguage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl", "getViewHandlingStrategyManager", "()Lcom/sun/faces/application/view/ViewHandlingStrategyManager;", false);
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllViewDeclarationLanguages", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/faces/view/ViewDeclarationLanguage;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllViewDeclarationLanguages", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/faces/view/ViewDeclarationLanguage;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl", "allViewDeclarationLanguages", "Ljava/util/List;");

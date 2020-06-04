@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "Ljava/lang/Object;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljavax/ejb/TransactionAttribute;>;", "java/lang/Object", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "Ljava/lang/Object;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljakarta/ejb/TransactionAttribute;>;", "java/lang/Object", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans", "org/apache/openejb/config/AnnotationDeployer", "ProcessAnnotatedBeans", ACC_PUBLIC | ACC_STATIC);
 
@@ -66,14 +66,14 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljavax/ejb/TransactionAttribute;Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljakarta/ejb/TransactionAttribute;Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/ContainerTransaction");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/TransactionAttribute", "value", "()Ljavax/ejb/TransactionAttributeType;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "cast", "(Ljavax/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/TransactionAttribute", "value", "()Ljakarta/ejb/TransactionAttributeType;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "cast", "(Ljakarta/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -92,14 +92,14 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljavax/ejb/TransactionAttribute;Ljava/lang/reflect/Method;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljakarta/ejb/TransactionAttribute;Ljava/lang/reflect/Method;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/ContainerTransaction");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/TransactionAttribute", "value", "()Ljavax/ejb/TransactionAttributeType;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "cast", "(Ljavax/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/TransactionAttribute", "value", "()Ljakarta/ejb/TransactionAttributeType;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "cast", "(Ljakarta/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "ejbName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -116,18 +116,18 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljavax/ejb/TransactionAttribute;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljakarta/ejb/TransactionAttribute;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/TransactionAttribute;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/TransactionAttribute;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "cast", "(Ljavax/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "cast", "(Ljakarta/ejb/TransactionAttributeType;)Lorg/apache/openejb/jee/TransAttribute;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ejb/TransactionAttributeType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ejb/TransactionAttributeType", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/jee/TransAttribute", "valueOf", "(Ljava/lang/String;)Lorg/apache/openejb/jee/TransAttribute;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
@@ -138,9 +138,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/TransactionAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/TransactionAttribute");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "addMethodLevelDeclaration", "(Ljavax/ejb/TransactionAttribute;Ljava/lang/reflect/Method;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "addMethodLevelDeclaration", "(Ljakarta/ejb/TransactionAttribute;Ljava/lang/reflect/Method;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -150,9 +150,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/TransactionAttribute");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/TransactionAttribute");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "addClassLevelDeclaration", "(Ljavax/ejb/TransactionAttribute;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler", "addClassLevelDeclaration", "(Ljakarta/ejb/TransactionAttribute;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

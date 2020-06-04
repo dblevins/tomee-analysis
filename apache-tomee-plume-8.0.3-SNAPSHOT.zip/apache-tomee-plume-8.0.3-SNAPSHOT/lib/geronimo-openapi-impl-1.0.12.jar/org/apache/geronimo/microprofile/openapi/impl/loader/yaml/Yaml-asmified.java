@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$11", null, null, ACC_STATIC | ACC_SYNTHETIC);
@@ -153,26 +153,26 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/o
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/fasterxml/jackson/databind/module/SimpleModule", "addSerializer", "(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonString;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonString;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$5");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonString;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonString;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$5", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/fasterxml/jackson/databind/module/SimpleModule", "addSerializer", "(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$6");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonNumber;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonNumber;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$6", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/fasterxml/jackson/databind/module/SimpleModule", "addSerializer", "(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonValue;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonValue;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$7");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonValue;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonValue;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$7", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/fasterxml/jackson/databind/module/SimpleModule", "addSerializer", "(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;", false);
 methodVisitor.visitInsn(POP);

@@ -24,16 +24,16 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/json/JsonPatch$Operation", "javax/json/JsonPatch", "Operation", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/JsonPatch$Operation", "jakarta/json/JsonPatch", "Operation", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/johnzon/core/JsonPatchImpl$PatchValue", "org/apache/johnzon/core/JsonPatchImpl", "PatchValue", ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "provider", "Ljavax/json/spi/JsonProvider;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "provider", "Ljakarta/json/spi/JsonProvider;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "operation", "Ljavax/json/JsonPatch$Operation;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "operation", "Ljakarta/json/JsonPatch$Operation;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "from", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "Ljavax/json/JsonValue;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "Ljakarta/json/JsonValue;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "str", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "json", "Ljavax/json/JsonObject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "json", "Ljakarta/json/JsonObject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,39 +61,39 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "hash", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/json/spi/JsonProvider;Ljavax/json/JsonPatch$Operation;Ljava/lang/String;Ljava/lang/String;Ljavax/json/JsonValue;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/json/spi/JsonProvider;Ljakarta/json/JsonPatch$Operation;Ljava/lang/String;Ljava/lang/String;Ljakarta/json/JsonValue;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "provider", "Ljavax/json/spi/JsonProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "provider", "Ljakarta/json/spi/JsonProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonPointerImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonPointerImpl", "<init>", "(Ljavax/json/spi/JsonProvider;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonPointerImpl", "<init>", "(Ljakarta/json/spi/JsonProvider;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "path", "Lorg/apache/johnzon/core/JsonPointerImpl;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/JsonPatch$Operation", "MOVE", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/JsonPatch$Operation", "MOVE", "Ljakarta/json/JsonPatch$Operation;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/json/JsonPatch$Operation", "COPY", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/json/JsonPatch$Operation", "COPY", "Ljakarta/json/JsonPatch$Operation;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/johnzon/core/JsonPatchImpl$PatchValue", "javax/json/spi/JsonProvider", "javax/json/JsonPatch$Operation", "java/lang/String", "java/lang/String", "javax/json/JsonValue"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/johnzon/core/JsonPatchImpl$PatchValue", "jakarta/json/spi/JsonProvider", "jakarta/json/JsonPatch$Operation", "java/lang/String", "java/lang/String", "jakarta/json/JsonValue"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonPointerImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonPointerImpl", "<init>", "(Ljavax/json/spi/JsonProvider;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonPointerImpl", "<init>", "(Ljakarta/json/spi/JsonProvider;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "from", "Lorg/apache/johnzon/core/JsonPointerImpl;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -106,7 +106,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
@@ -141,9 +141,9 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/johnzon/core/JsonPatchImpl$PatchValue");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label3);
 methodVisitor.visitInsn(ICONST_0);
@@ -186,20 +186,20 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label10);
 methodVisitor.visitInsn(ICONST_1);
@@ -236,8 +236,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$Pa
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/JsonPatch$Operation", "hashCode", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/JsonPatch$Operation", "hashCode", "()I", false);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitIntInsn(BIPUSH, 31);
 methodVisitor.visitVarInsn(ILOAD, 2);
@@ -270,11 +270,11 @@ methodVisitor.visitIntInsn(BIPUSH, 31);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(IMUL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label9);
@@ -341,7 +341,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("{op: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(", path: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -356,7 +356,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(", value: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitIntInsn(BIPUSH, 125);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(C)Ljava/lang/StringBuilder;", false);
@@ -385,7 +385,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "toJson", "()Ljavax/json/JsonObject;", null, null);
+methodVisitor = classWriter.visitMethod(0, "toJson", "()Ljakarta/json/JsonObject;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -394,7 +394,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljavax/json/JsonObject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljakarta/json/JsonObject;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -403,23 +403,23 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljavax/json/JsonObject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljakarta/json/JsonObject;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "provider", "Ljavax/json/spi/JsonProvider;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/spi/JsonProvider", "createObjectBuilder", "()Ljavax/json/JsonObjectBuilder;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "provider", "Ljakarta/json/spi/JsonProvider;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/spi/JsonProvider", "createObjectBuilder", "()Ljakarta/json/JsonObjectBuilder;", false);
 methodVisitor.visitLdcInsn("op");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/JsonPatch$Operation", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/JsonPatch$Operation", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/json/JsonObjectBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/json/JsonObjectBuilder;", true);
 methodVisitor.visitLdcInsn("path");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "path", "Lorg/apache/johnzon/core/JsonPointerImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonPointerImpl", "getJsonPointer", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/json/JsonObjectBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/json/JsonObjectBuilder;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "from", "Lorg/apache/johnzon/core/JsonPointerImpl;");
@@ -430,26 +430,26 @@ methodVisitor.visitLdcInsn("from");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "from", "Lorg/apache/johnzon/core/JsonPointerImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonPointerImpl", "getJsonPointer", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/json/JsonObjectBuilder;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/json/JsonObjectBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "javax/json/JsonObjectBuilder"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "jakarta/json/JsonObjectBuilder"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("value");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljavax/json/JsonValue;)Ljavax/json/JsonObjectBuilder;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonObjectBuilder", "add", "(Ljava/lang/String;Ljakarta/json/JsonValue;)Ljakarta/json/JsonObjectBuilder;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonObjectBuilder", "build", "()Ljavax/json/JsonObject;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljavax/json/JsonObject;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonObjectBuilder", "build", "()Ljakarta/json/JsonObject;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljakarta/json/JsonObject;");
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -467,25 +467,25 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljavax/json/JsonObject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "json", "Ljakarta/json/JsonObject;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/johnzon/core/JsonPatchImpl$PatchValue;)Ljavax/json/JsonPatch$Operation;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/johnzon/core/JsonPatchImpl$PatchValue;)Ljakarta/json/JsonPatch$Operation;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljavax/json/JsonPatch$Operation;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "operation", "Ljakarta/json/JsonPatch$Operation;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/johnzon/core/JsonPatchImpl$PatchValue;)Ljavax/json/JsonValue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/johnzon/core/JsonPatchImpl$PatchValue;)Ljakarta/json/JsonValue;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljavax/json/JsonValue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonPatchImpl$PatchValue", "value", "Ljakarta/json/JsonValue;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

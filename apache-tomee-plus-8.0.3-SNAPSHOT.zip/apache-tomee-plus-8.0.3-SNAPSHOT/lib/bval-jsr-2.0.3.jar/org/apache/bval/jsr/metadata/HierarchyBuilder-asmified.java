@@ -282,7 +282,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", "<DELEGATE::Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;E::Ljava/lang/reflect/AnnotatedElement;>(Ljava/util/List<TDELEGATE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", "<DELEGATE::Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;E::Ljava/lang/reflect/AnnotatedElement;>(Ljava/util/List<TDELEGATE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer<TE;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
@@ -292,7 +292,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljavax/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/CompositeBuilder", "forContainer", "(Ljava/util/List;Lorg/apache/bval/jsr/metadata/Meta;Ljakarta/validation/ElementKind;)Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForContainer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -311,7 +311,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/HierarchyBuilder$ForContainer", "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Ljava/util/List;Ljavax/validation/ElementKind;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/HierarchyBuilder$ForContainer", "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Ljava/util/List;Ljakarta/validation/ElementKind;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ARETURN);

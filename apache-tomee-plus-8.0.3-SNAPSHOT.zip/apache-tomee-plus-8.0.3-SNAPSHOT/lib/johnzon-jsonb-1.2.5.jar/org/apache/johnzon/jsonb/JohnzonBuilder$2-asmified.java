@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/JohnzonBuilder$2", "Lorg/apache/johnzon/jsonb/JohnzonBuilder$Lazy<Ljavax/json/stream/JsonParserFactory;>;", "org/apache/johnzon/jsonb/JohnzonBuilder$Lazy", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/JohnzonBuilder$2", "Lorg/apache/johnzon/jsonb/JohnzonBuilder$Lazy<Ljakarta/json/stream/JsonParserFactory;>;", "org/apache/johnzon/jsonb/JohnzonBuilder$Lazy", null);
 
 classWriter.visitOuterClass("org/apache/johnzon/jsonb/JohnzonBuilder", "createJsonParserFactory", "()Ljava/util/function/Supplier;");
 
@@ -50,13 +50,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doCreate", "()Ljavax/json/stream/JsonParserFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doCreate", "()Ljakarta/json/stream/JsonParserFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/jsonb/JohnzonBuilder$2", "this$0", "Lorg/apache/johnzon/jsonb/JohnzonBuilder;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/jsonb/JohnzonBuilder", "access$100", "(Lorg/apache/johnzon/jsonb/JohnzonBuilder;)Ljavax/json/spi/JsonProvider;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/johnzon/jsonb/JohnzonBuilder", "access$100", "(Lorg/apache/johnzon/jsonb/JohnzonBuilder;)Ljakarta/json/spi/JsonProvider;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/spi/JsonProvider", "createParserFactory", "(Ljava/util/Map;)Ljavax/json/stream/JsonParserFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/spi/JsonProvider", "createParserFactory", "(Ljava/util/Map;)Ljakarta/json/stream/JsonParserFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -65,7 +65,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_BRIDGE | ACC_SYNTHETIC, "doCreate", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/JohnzonBuilder$2", "doCreate", "()Ljavax/json/stream/JsonParserFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/JohnzonBuilder$2", "doCreate", "()Ljakarta/json/stream/JsonParserFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

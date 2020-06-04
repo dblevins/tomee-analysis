@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljava/util/concurrent/Callable;Ljava/util/concurrent/Callable;Ljavax/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", "(Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljava/util/concurrent/Callable<TV;>;Ljava/util/concurrent/Callable<TV;>;Ljavax/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference<Ljava/util/concurrent/Future<TV;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljava/util/concurrent/Callable;Ljava/util/concurrent/Callable;Ljakarta/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", "(Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljava/util/concurrent/Callable<TV;>;Ljava/util/concurrent/Callable<TV;>;Ljakarta/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference<Ljava/util/concurrent/Future<TV;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -38,7 +38,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/threads/task/TriggerTask", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljavax/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/threads/task/TriggerTask", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljakarta/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/threads/task/TriggerCallable", "delegate", "Ljava/util/concurrent/Callable;");

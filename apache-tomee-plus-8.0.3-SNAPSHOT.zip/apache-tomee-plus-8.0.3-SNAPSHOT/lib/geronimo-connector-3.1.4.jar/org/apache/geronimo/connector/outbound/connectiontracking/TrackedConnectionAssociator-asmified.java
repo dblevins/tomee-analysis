@@ -29,15 +29,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isLazyConnec
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "enter", "(Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;)Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "enter", "(Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;)Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "newTransaction", "()V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "newTransaction", "()V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "exit", "(Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "exit", "(Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContext;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

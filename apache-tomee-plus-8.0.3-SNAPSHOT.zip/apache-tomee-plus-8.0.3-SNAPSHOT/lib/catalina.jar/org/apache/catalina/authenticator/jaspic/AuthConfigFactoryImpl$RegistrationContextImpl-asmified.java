@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", null, "java/lang/Object", new String[] { "javax/security/auth/message/config/AuthConfigFactory$RegistrationContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", null, "java/lang/Object", new String[] { "jakarta/security/auth/message/config/AuthConfigFactory$RegistrationContext" });
 
 classWriter.visitInnerClass("org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationListenerWrapper", "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl", "RegistrationListenerWrapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("org/apache/catalina/authenticator/jaspic/AuthConfig
 
 classWriter.visitInnerClass("org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/security/auth/message/config/AuthConfigFactory$RegistrationContext", "javax/security/auth/message/config/AuthConfigFactory", "RegistrationContext", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/security/auth/message/config/AuthConfigFactory$RegistrationContext", "jakarta/security/auth/message/config/AuthConfigFactory", "RegistrationContext", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageLayer", "Ljava/lang/String;", null, null);
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "persistent", "Z"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "provider", "Ljavax/security/auth/message/config/AuthConfigProvider;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "provider", "Ljakarta/security/auth/message/config/AuthConfigProvider;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "listeners", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjavax/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjavax/security/auth/message/config/AuthConfigProvider;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjakarta/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjakarta/security/auth/message/config/AuthConfigProvider;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -84,7 +84,7 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "persistent", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "provider", "Ljavax/security/auth/message/config/AuthConfigProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "provider", "Ljakarta/security/auth/message/config/AuthConfigProvider;");
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
@@ -96,7 +96,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "java/lang/String", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "javax/security/auth/message/config/AuthConfigProvider", "java/util/Map", "java/util/Map"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "java/lang/String", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "jakarta/security/auth/message/config/AuthConfigProvider", "java/util/Map", "java/util/Map"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", false);
@@ -142,10 +142,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getProvider", "()Ljavax/security/auth/message/config/AuthConfigProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getProvider", "()Ljakarta/security/auth/message/config/AuthConfigProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "provider", "Ljavax/security/auth/message/config/AuthConfigProvider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "provider", "Ljakarta/security/auth/message/config/AuthConfigProvider;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -177,7 +177,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "removeListener", "(Ljavax/security/auth/message/config/RegistrationListener;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "removeListener", "(Ljakarta/security/auth/message/config/RegistrationListener;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
@@ -197,7 +197,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationListenerWrapper");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationListenerWrapper", "getListener", "()Ljavax/security/auth/message/config/RegistrationListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationListenerWrapper", "getListener", "()Ljakarta/security/auth/message/config/RegistrationListener;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();
@@ -230,16 +230,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl;)Ljavax/security/auth/message/config/AuthConfigProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl;)Ljakarta/security/auth/message/config/AuthConfigProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "getProvider", "()Ljavax/security/auth/message/config/AuthConfigProvider;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "getProvider", "()Ljakarta/security/auth/message/config/AuthConfigProvider;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjavax/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjakarta/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -248,7 +248,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjavax/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjakarta/security/auth/message/config/AuthConfigProvider;Ljava/util/Map;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
@@ -263,11 +263,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$700", "(Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl;Ljavax/security/auth/message/config/RegistrationListener;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$700", "(Lorg/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl;Ljakarta/security/auth/message/config/RegistrationListener;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "removeListener", "(Ljavax/security/auth/message/config/RegistrationListener;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationContextImpl", "removeListener", "(Ljakarta/security/auth/message/config/RegistrationListener;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

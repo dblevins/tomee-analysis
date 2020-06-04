@@ -280,7 +280,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/QueryMetaData", "_convertPositionalParametersToNamed", "Z");
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitLdcInsn("javax.persistence.JPQL");
+methodVisitor.visitLdcInsn("jakarta.persistence.JPQL");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/QueryMetaData", "_language", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);

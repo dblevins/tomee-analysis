@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "<T:Ljava/lang/Object;X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/EventBase;Ljavax/enterprise/inject/spi/ProcessInjectionPoint<TT;TX;>;", "org/apache/webbeans/portable/events/EventBase", new String[] { "javax/enterprise/inject/spi/ProcessInjectionPoint" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "<T:Ljava/lang/Object;X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/EventBase;Ljakarta/enterprise/inject/spi/ProcessInjectionPoint<TT;TX;>;", "org/apache/webbeans/portable/events/EventBase", new String[] { "jakarta/enterprise/inject/spi/ProcessInjectionPoint" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,19 +33,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "injectionPointConfigurator",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/InjectionPoint;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/EventBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoint", "()Ljavax/enterprise/inject/spi/InjectionPoint;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoint", "()Ljakarta/enterprise/inject/spi/InjectionPoint;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "checkState", "()V", false);
@@ -55,24 +55,24 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPointConfigurator", "Lorg/apache/webbeans/configurator/InjectionPointConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/configurator/InjectionPointConfiguratorImpl", "getInjectionPoint", "()Ljavax/enterprise/inject/spi/InjectionPoint;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/configurator/InjectionPointConfiguratorImpl", "getInjectionPoint", "()Ljakarta/enterprise/inject/spi/InjectionPoint;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setInjectionPoint", "(Ljavax/enterprise/inject/spi/InjectionPoint;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setInjectionPoint", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPointConfigurator", "Lorg/apache/webbeans/configurator/InjectionPointConfiguratorImpl;");
@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureInjectionPoint", "()Ljavax/enterprise/inject/spi/configurator/InjectionPointConfigurator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configureInjectionPoint", "()Ljakarta/enterprise/inject/spi/configurator/InjectionPointConfigurator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "checkState", "()V", false);
@@ -107,8 +107,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/configurator/InjectionPointConfiguratorImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljavax/enterprise/inject/spi/InjectionPoint;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/configurator/InjectionPointConfiguratorImpl", "<init>", "(Ljavax/enterprise/inject/spi/InjectionPoint;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPoint", "Ljakarta/enterprise/inject/spi/InjectionPoint;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/configurator/InjectionPointConfiguratorImpl", "<init>", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessInjectionPointImpl", "injectionPointConfigurator", "Lorg/apache/webbeans/configurator/InjectionPointConfiguratorImpl;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

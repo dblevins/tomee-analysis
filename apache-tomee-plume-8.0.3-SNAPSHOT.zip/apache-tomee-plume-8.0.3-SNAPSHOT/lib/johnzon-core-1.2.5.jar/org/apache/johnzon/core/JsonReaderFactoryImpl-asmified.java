@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonReaderFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "javax/json/JsonReaderFactory" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/core/JsonReaderFactoryImpl", null, "org/apache/johnzon/core/AbstractJsonFactory", new String[] { "jakarta/json/JsonReaderFactory" });
 
 classWriter.visitInnerClass("org/apache/johnzon/core/BufferStrategy$BufferProvider", "org/apache/johnzon/core/BufferStrategy", "BufferProvider", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/Reader;)Ljavax/json/JsonReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/Reader;)Ljakarta/json/JsonReader;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonReaderImpl");
 methodVisitor.visitInsn(DUP);
@@ -65,13 +65,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParser
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonReaderFactoryImpl", "parserFactory", "Lorg/apache/johnzon/core/JsonParserFactoryImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParserFactoryImpl", "getValueBufferProvider", "()Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljavax/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljakarta/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/InputStream;)Ljavax/json/JsonReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/InputStream;)Ljakarta/json/JsonReader;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonReaderImpl");
 methodVisitor.visitInsn(DUP);
@@ -82,13 +82,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParser
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonReaderFactoryImpl", "parserFactory", "Lorg/apache/johnzon/core/JsonParserFactoryImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParserFactoryImpl", "getValueBufferProvider", "()Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljavax/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljakarta/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljavax/json/JsonReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljakarta/json/JsonReader;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonReaderImpl");
 methodVisitor.visitInsn(DUP);
@@ -100,13 +100,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParser
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonReaderFactoryImpl", "parserFactory", "Lorg/apache/johnzon/core/JsonParserFactoryImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParserFactoryImpl", "getValueBufferProvider", "()Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljavax/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljakarta/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljavax/json/stream/JsonParser;)Ljavax/json/JsonReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createReader", "(Ljakarta/json/stream/JsonParser;)Ljakarta/json/JsonReader;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/johnzon/core/JsonReaderImpl");
 methodVisitor.visitInsn(DUP);
@@ -114,7 +114,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/johnzon/core/JsonReaderFactoryImpl", "parserFactory", "Lorg/apache/johnzon/core/JsonParserFactoryImpl;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/JsonParserFactoryImpl", "getValueBufferProvider", "()Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljavax/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonReaderImpl", "<init>", "(Ljakarta/json/stream/JsonParser;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

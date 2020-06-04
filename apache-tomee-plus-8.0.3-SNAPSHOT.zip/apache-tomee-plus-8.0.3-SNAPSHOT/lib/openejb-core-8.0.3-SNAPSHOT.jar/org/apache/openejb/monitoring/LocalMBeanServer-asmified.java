@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/monitoring/LocalMBeanServer", null, "java/lang/Object", new String[] { "javax/management/MBeanServer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/monitoring/LocalMBeanServer", null, "java/lang/Object", new String[] { "jakarta/management/MBeanServer" });
 
 classWriter.visitInnerClass("org/apache/openejb/monitoring/LocalMBeanServer$NoOpMBeanServer", "org/apache/openejb/monitoring/LocalMBeanServer", "NoOpMBeanServer", ACC_PRIVATE | ACC_STATIC);
 
@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "()Ljavax/management/MBeanServer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "()Ljakarta/management/MBeanServer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "INSTANCE", "Lorg/apache/openejb/monitoring/LocalMBeanServer;");
 methodVisitor.visitInsn(ARETURN);
@@ -81,27 +81,27 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isRegistered", "(Ljavax/management/ObjectName;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isRegistered", "(Ljakarta/management/ObjectName;)Z", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -124,29 +124,29 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/monitoring/DynamicMBeanWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/DynamicMBeanWrapper", "<init>", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unregisterSilently", "(Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "unregisterSilently", "(Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -187,7 +187,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/openmbean/OpenType");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/openmbean/OpenType");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 5);
@@ -200,44 +200,44 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ILOAD, 5);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/CompositeType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/CompositeType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/CompositeType", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/CompositeType", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/CompositeDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/CompositeDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
@@ -297,129 +297,129 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "s", "()Ljavax/management/MBeanServer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "s", "()Ljakarta/management/MBeanServer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "isJMXActive", "()Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/LocalMBeanServer$NoOpMBeanServer", "INSTANCE", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/LocalMBeanServer$NoOpMBeanServer", "INSTANCE", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/ReflectionException", "javax/management/InstanceAlreadyExistsException", "javax/management/MBeanRegistrationException", "javax/management/MBeanException", "javax/management/NotCompliantMBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/InstanceAlreadyExistsException", "jakarta/management/MBeanRegistrationException", "jakarta/management/MBeanException", "jakarta/management/NotCompliantMBeanException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/ReflectionException", "javax/management/InstanceAlreadyExistsException", "javax/management/MBeanRegistrationException", "javax/management/MBeanException", "javax/management/NotCompliantMBeanException", "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/InstanceAlreadyExistsException", "jakarta/management/MBeanRegistrationException", "jakarta/management/MBeanException", "jakarta/management/NotCompliantMBeanException", "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/ReflectionException", "javax/management/InstanceAlreadyExistsException", "javax/management/MBeanRegistrationException", "javax/management/MBeanException", "javax/management/NotCompliantMBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/InstanceAlreadyExistsException", "jakarta/management/MBeanRegistrationException", "jakarta/management/MBeanException", "jakarta/management/NotCompliantMBeanException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/ReflectionException", "javax/management/InstanceAlreadyExistsException", "javax/management/MBeanRegistrationException", "javax/management/MBeanException", "javax/management/NotCompliantMBeanException", "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/InstanceAlreadyExistsException", "jakarta/management/MBeanRegistrationException", "jakarta/management/MBeanException", "jakarta/management/NotCompliantMBeanException", "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "createMBean", "(Ljava/lang/String;Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/InstanceAlreadyExistsException", "javax/management/MBeanRegistrationException", "javax/management/NotCompliantMBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/InstanceAlreadyExistsException", "jakarta/management/MBeanRegistrationException", "jakarta/management/NotCompliantMBeanException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unregisterMBean", "(Ljavax/management/ObjectName;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/MBeanRegistrationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unregisterMBean", "(Ljakarta/management/ObjectName;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/MBeanRegistrationException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectInstance", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getObjectInstance", "(Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getObjectInstance", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getObjectInstance", "(Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "queryMBeans", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set<Ljavax/management/ObjectInstance;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "queryMBeans", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set;", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set<Ljakarta/management/ObjectInstance;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "queryMBeans", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "queryMBeans", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "queryNames", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set<Ljavax/management/ObjectName;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "queryNames", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set;", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set<Ljakarta/management/ObjectName;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "queryNames", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "queryNames", "(Ljakarta/management/ObjectName;Ljakarta/management/QueryExp;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isRegistered", "(Ljavax/management/ObjectName;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isRegistered", "(Ljakarta/management/ObjectName;)Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isRegistered", "(Ljavax/management/ObjectName;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isRegistered", "(Ljakarta/management/ObjectName;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -427,65 +427,65 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanCount", "()Ljava/lang/Integer;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getMBeanCount", "()Ljava/lang/Integer;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getMBeanCount", "()Ljava/lang/Integer;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/MBeanException", "javax/management/AttributeNotFoundException", "javax/management/InstanceNotFoundException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/MBeanException", "jakarta/management/AttributeNotFoundException", "jakarta/management/InstanceNotFoundException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getAttribute", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getAttribute", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "(Ljavax/management/ObjectName;[Ljava/lang/String;)Ljavax/management/AttributeList;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "(Ljakarta/management/ObjectName;[Ljava/lang/String;)Ljakarta/management/AttributeList;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getAttributes", "(Ljavax/management/ObjectName;[Ljava/lang/String;)Ljavax/management/AttributeList;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getAttributes", "(Ljakarta/management/ObjectName;[Ljava/lang/String;)Ljakarta/management/AttributeList;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljavax/management/ObjectName;Ljavax/management/Attribute;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/AttributeNotFoundException", "javax/management/InvalidAttributeValueException", "javax/management/MBeanException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljakarta/management/ObjectName;Ljakarta/management/Attribute;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/AttributeNotFoundException", "jakarta/management/InvalidAttributeValueException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "setAttribute", "(Ljavax/management/ObjectName;Ljavax/management/Attribute;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "setAttribute", "(Ljakarta/management/ObjectName;Ljakarta/management/Attribute;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttributes", "(Ljavax/management/ObjectName;Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttributes", "(Ljakarta/management/ObjectName;Ljakarta/management/AttributeList;)Ljakarta/management/AttributeList;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "setAttributes", "(Ljavax/management/ObjectName;Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "setAttributes", "(Ljakarta/management/ObjectName;Ljakarta/management/AttributeList;)Ljakarta/management/AttributeList;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljavax/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/MBeanException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljakarta/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "invoke", "(Ljavax/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "invoke", "(Ljakarta/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
@@ -493,8 +493,8 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultDomain", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getDefaultDomain", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getDefaultDomain", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -502,203 +502,203 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDomains", "()[Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getDomains", "()[Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getDomains", "()[Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "addNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "addNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/ObjectName;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "removeNotificationListener", "(Ljakarta/management/ObjectName;Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanInfo", "(Ljavax/management/ObjectName;)Ljavax/management/MBeanInfo;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/IntrospectionException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanInfo", "(Ljakarta/management/ObjectName;)Ljakarta/management/MBeanInfo;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/IntrospectionException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getMBeanInfo", "(Ljavax/management/ObjectName;)Ljavax/management/MBeanInfo;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getMBeanInfo", "(Ljakarta/management/ObjectName;)Ljakarta/management/MBeanInfo;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isInstanceOf", "(Ljavax/management/ObjectName;Ljava/lang/String;)Z", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isInstanceOf", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Z", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isInstanceOf", "(Ljavax/management/ObjectName;Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isInstanceOf", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/ReflectionException", "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "instantiate", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "instantiate", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljava/lang/Object;", null, new String[] { "javax/management/ReflectionException", "javax/management/MBeanException", "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;Ljakarta/management/ObjectName;)Ljava/lang/Object;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/MBeanException", "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "instantiate", "(Ljava/lang/String;Ljakarta/management/ObjectName;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/ReflectionException", "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "instantiate", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "instantiate", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/ReflectionException", "javax/management/MBeanException", "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "instantiate", "(Ljava/lang/String;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/ReflectionException", "jakarta/management/MBeanException", "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "instantiate", "(Ljava/lang/String;Ljakarta/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/OperationsException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljakarta/management/ObjectName;[B)Ljava/io/ObjectInputStream;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/OperationsException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "deserialize", "(Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "deserialize", "(Ljakarta/management/ObjectName;[B)Ljava/io/ObjectInputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", null, new String[] { "javax/management/OperationsException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", null, new String[] { "jakarta/management/OperationsException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljava/lang/String;Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", null, new String[] { "javax/management/InstanceNotFoundException", "javax/management/OperationsException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deserialize", "(Ljava/lang/String;Ljakarta/management/ObjectName;[B)Ljava/io/ObjectInputStream;", null, new String[] { "jakarta/management/InstanceNotFoundException", "jakarta/management/OperationsException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "deserialize", "(Ljava/lang/String;Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "deserialize", "(Ljava/lang/String;Ljakarta/management/ObjectName;[B)Ljava/io/ObjectInputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoaderFor", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoaderFor", "(Ljakarta/management/ObjectName;)Ljava/lang/ClassLoader;", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getClassLoaderFor", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getClassLoaderFor", "(Ljakarta/management/ObjectName;)Ljava/lang/ClassLoader;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoader", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;", null, new String[] { "javax/management/InstanceNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoader", "(Ljakarta/management/ObjectName;)Ljava/lang/ClassLoader;", null, new String[] { "jakarta/management/InstanceNotFoundException" });
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getClassLoader", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getClassLoader", "(Ljakarta/management/ObjectName;)Ljava/lang/ClassLoader;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -706,8 +706,8 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoaderRepository", "()Ljavax/management/loading/ClassLoaderRepository;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "getClassLoaderRepository", "()Ljavax/management/loading/ClassLoaderRepository;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "s", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "getClassLoaderRepository", "()Ljavax/management/loading/ClassLoaderRepository;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

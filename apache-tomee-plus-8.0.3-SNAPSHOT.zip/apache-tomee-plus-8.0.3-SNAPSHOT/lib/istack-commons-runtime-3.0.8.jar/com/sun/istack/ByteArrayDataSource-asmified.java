@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/istack/ByteArrayDataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/istack/ByteArrayDataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contentType", "Ljava/lang/String;", null, null);

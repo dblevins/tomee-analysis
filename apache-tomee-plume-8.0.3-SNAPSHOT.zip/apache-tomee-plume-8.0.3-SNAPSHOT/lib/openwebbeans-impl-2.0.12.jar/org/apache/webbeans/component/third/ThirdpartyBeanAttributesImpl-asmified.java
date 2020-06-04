@@ -29,16 +29,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "qualifiers", "Lj
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/enterprise/inject/spi/BeanAttributes;)V", "(Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/enterprise/inject/spi/BeanAttributes;)V", "(Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/BeanAttributesImpl", "<init>", "(Ljavax/enterprise/inject/spi/BeanAttributes;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/BeanAttributesImpl", "<init>", "(Ljakarta/enterprise/inject/spi/BeanAttributes;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/third/ThirdpartyBeanAttributesImpl", "calculateQualifiers", "(Ljavax/enterprise/inject/spi/BeanAttributes;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/third/ThirdpartyBeanAttributesImpl", "calculateQualifiers", "(Ljakarta/enterprise/inject/spi/BeanAttributes;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/third/ThirdpartyBeanAttributesImpl", "qualifiers", "Ljava/util/Set;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -54,10 +54,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "calculateQualifiers", "(Ljavax/enterprise/inject/spi/BeanAttributes;)Ljava/util/Set;", "(Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;)Ljava/util/Set<Ljava/lang/annotation/Annotation;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "calculateQualifiers", "(Ljakarta/enterprise/inject/spi/BeanAttributes;)Ljava/util/Set;", "(Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;)Ljava/util/Set<Ljava/lang/annotation/Annotation;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanAttributes", "getQualifiers", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanAttributes", "getQualifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();

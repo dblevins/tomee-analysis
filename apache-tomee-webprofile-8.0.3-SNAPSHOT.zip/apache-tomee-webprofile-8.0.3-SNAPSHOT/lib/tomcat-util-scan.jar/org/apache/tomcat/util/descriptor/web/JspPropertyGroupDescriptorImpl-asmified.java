@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/JspPropertyGroupDescriptorImpl", null, "java/lang/Object", new String[] { "javax/servlet/descriptor/JspPropertyGroupDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/JspPropertyGroupDescriptorImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/descriptor/JspPropertyGroupDescriptor" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jspPropertyGroup", "Lorg/apache/tomcat/util/descriptor/web/JspPropertyGroup;", null, null);

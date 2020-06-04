@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/binding/http/HTTPBindingImpl", null, "org/apache/cxf/jaxws/binding/AbstractBindingImpl", new String[] { "javax/xml/ws/http/HTTPBinding" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/binding/http/HTTPBindingImpl", null, "org/apache/cxf/jaxws/binding/AbstractBindingImpl", new String[] { "jakarta/xml/ws/http/HTTPBinding" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/service/model/BindingInfo;Lorg/apache/cxf/jaxws/support/JaxWsEndpointImpl;)V", null, null);
@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlerChain", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/ws/handler/Handler;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHandlerChain", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/ws/handler/Handler;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -70,13 +70,13 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/handler/Handler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/handler/Handler");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/ws/handler/LogicalHandler");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/ws/handler/LogicalHandler");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

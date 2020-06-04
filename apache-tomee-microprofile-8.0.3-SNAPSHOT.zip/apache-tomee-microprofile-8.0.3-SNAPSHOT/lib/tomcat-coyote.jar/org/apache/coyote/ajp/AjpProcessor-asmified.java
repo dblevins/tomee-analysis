@@ -2605,7 +2605,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "writeData", "(Ljava/nio/By
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/ajp/AjpProcessor", "response", "Lorg/apache/coyote/Response;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljavax/servlet/WriteListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljakarta/servlet/WriteListener;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ICONST_1);

@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "executorServic
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "trigger", "Ljavax/enterprise/concurrent/Trigger;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "trigger", "Ljakarta/enterprise/concurrent/Trigger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "futureRef", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "lastExecution", "Ljavax/enterprise/concurrent/LastExecution;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "lastExecution", "Ljakarta/enterprise/concurrent/LastExecution;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -69,7 +69,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "result", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljavax/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljavax/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference<Ljava/util/concurrent/Future<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljakarta/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference;)V", "(Ljava/lang/Object;Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;Ljakarta/enterprise/concurrent/Trigger;Ljava/util/Date;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicReference<Ljava/util/concurrent/Future<TT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -85,7 +85,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/threads/task/TriggerTask", "executorService", "Lorg/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/threads/task/TriggerTask", "trigger", "Ljavax/enterprise/concurrent/Trigger;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/threads/task/TriggerTask", "trigger", "Ljakarta/enterprise/concurrent/Trigger;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/threads/task/TriggerTask", "scheduledTime", "Ljava/util/Date;");
@@ -175,10 +175,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLastExecution", "()Ljavax/enterprise/concurrent/LastExecution;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLastExecution", "()Ljakarta/enterprise/concurrent/LastExecution;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/threads/task/TriggerTask", "lastExecution", "Ljavax/enterprise/concurrent/LastExecution;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/threads/task/TriggerTask", "lastExecution", "Ljakarta/enterprise/concurrent/LastExecution;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

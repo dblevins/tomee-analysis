@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl", null, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "javax/faces/view/BehaviorHolderAttachedObjectTarget" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl", null, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", new String[] { "jakarta/faces/view/BehaviorHolderAttachedObjectTarget" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "event", "Ljava/lang/String;", null, null);
@@ -80,11 +80,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTargets", "(Ljavax/faces/component/UIComponent;)Ljava/util/List;", "(Ljavax/faces/component/UIComponent;)Ljava/util/List<Ljavax/faces/component/UIComponent;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTargets", "(Ljakarta/faces/component/UIComponent;)Ljava/util/List;", "(Ljakarta/faces/component/UIComponent;)Ljava/util/List<Ljakarta/faces/component/UIComponent;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", "getTargets", "(Ljavax/faces/component/UIComponent;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/composite/AttachedObjectTargetImpl", "getTargets", "(Ljakarta/faces/component/UIComponent;)Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -104,7 +104,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/UIComponent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/UIComponent");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/composite/BehaviorHolderWrapper");
@@ -114,7 +114,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl", "getEvent", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/composite/BehaviorHolderWrapper", "<init>", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/composite/BehaviorHolderWrapper", "<init>", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);

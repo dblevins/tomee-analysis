@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/HandlerChainsStringQNameAdapter", "Ljavax/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljavax/xml/namespace/QName;>;", "javax/xml/bind/annotation/adapters/XmlAdapter", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/HandlerChainsStringQNameAdapter", "Ljakarta/xml/bind/annotation/adapters/XmlAdapter<Ljava/lang/String;Ljavax/xml/namespace/QName;>;", "jakarta/xml/bind/annotation/adapters/XmlAdapter", null);
 
 classWriter.visitInnerClass("org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter", "org/apache/openejb/jee/JaxbJavaee", "HandlerChainsNamespaceFilter", ACC_PUBLIC | ACC_STATIC);
 
@@ -38,7 +38,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -34,39 +34,39 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStandardFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getStandardFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetaInfServicesFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMetaInfServicesFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotationsFacesConfig", "(Ljavax/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotationsFacesConfig", "(Ljakarta/faces/context/ExternalContext;Z)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getClassloaderFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getClassloaderFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getContextSpecifiedFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getContextSpecifiedFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getWebAppFacesConfig", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getWebAppFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/element/FacesConfig;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesFlowFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFacesFlowFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getApplicationConfigurationResourceDocumentPopulatorFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFaceletTaglibFacesConfig", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFaceletTaglibFacesConfig", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/List<Lorg/apache/myfaces/config/element/FacesConfig;>;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

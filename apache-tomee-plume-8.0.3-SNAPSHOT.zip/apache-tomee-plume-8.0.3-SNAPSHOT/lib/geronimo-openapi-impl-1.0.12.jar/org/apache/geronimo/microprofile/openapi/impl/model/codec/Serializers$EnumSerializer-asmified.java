@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer", "<E:Ljava/lang/Enum<TE;>;>Ljava/lang/Object;Ljavax/json/bind/adapter/JsonbAdapter<TE;Ljava/lang/String;>;", "java/lang/Object", new String[] { "javax/json/bind/adapter/JsonbAdapter" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer", "<E:Ljava/lang/Enum<TE;>;>Ljava/lang/Object;Ljakarta/json/bind/adapter/JsonbAdapter<TE;Ljava/lang/String;>;", "java/lang/Object", new String[] { "jakarta/json/bind/adapter/JsonbAdapter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EnumSerializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers", "EnumSerializer", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT);

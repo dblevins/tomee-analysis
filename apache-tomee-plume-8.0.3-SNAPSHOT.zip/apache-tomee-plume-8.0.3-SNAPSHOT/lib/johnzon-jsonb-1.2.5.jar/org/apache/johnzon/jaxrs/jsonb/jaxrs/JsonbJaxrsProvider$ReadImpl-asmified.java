@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/johnzon/jaxrs/
 classWriter.visitInnerClass("org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider$ReadImpl", "org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider", "ReadImpl", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doRead", "(Ljavax/json/bind/Jsonb;Ljava/lang/reflect/Type;Ljava/io/InputStream;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doRead", "(Ljakarta/json/bind/Jsonb;Ljava/lang/reflect/Type;Ljava/io/InputStream;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

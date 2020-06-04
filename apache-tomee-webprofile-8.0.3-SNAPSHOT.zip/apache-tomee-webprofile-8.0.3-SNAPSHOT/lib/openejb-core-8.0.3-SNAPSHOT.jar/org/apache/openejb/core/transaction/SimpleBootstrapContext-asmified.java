@@ -22,60 +22,60 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/transaction/SimpleBootstrapContext", null, "java/lang/Object", new String[] { "javax/resource/spi/BootstrapContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/transaction/SimpleBootstrapContext", null, "java/lang/Object", new String[] { "jakarta/resource/spi/BootstrapContext" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "workManager", "Ljavax/resource/spi/work/WorkManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "workManager", "Ljakarta/resource/spi/work/WorkManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaTerminator", "Ljavax/resource/spi/XATerminator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xaTerminator", "Ljakarta/resource/spi/XATerminator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/work/WorkManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/work/WorkManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/resource/spi/work/WorkManager;Ljavax/resource/spi/XATerminator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/resource/spi/work/WorkManager;Ljakarta/resource/spi/XATerminator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWorkManager", "()Ljavax/resource/spi/work/WorkManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWorkManager", "()Ljakarta/resource/spi/work/WorkManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXATerminator", "()Ljavax/resource/spi/XATerminator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXATerminator", "()Ljakarta/resource/spi/XATerminator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -92,19 +92,19 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljavax/transaction/TransactionSynchronizationRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSynchronizationRegistry", "()Ljakarta/transaction/TransactionSynchronizationRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/transaction/TransactionSynchronizationRegistry");
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljavax/resource/spi/XATerminator;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "xaTerminator", "Ljakarta/resource/spi/XATerminator;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionSynchronizationRegistry");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -114,15 +114,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/resource/spi/work/WorkContext;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/resource/spi/work/WorkContext;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/geronimo/connector/work/GeronimoWorkManager");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleBootstrapContext", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/connector/work/GeronimoWorkManager");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);

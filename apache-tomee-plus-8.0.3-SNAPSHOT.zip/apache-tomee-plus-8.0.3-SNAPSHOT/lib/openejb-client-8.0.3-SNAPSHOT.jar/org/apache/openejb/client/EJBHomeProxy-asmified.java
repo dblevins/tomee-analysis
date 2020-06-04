@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/client/EJBHomeProxy", null, "java/lang/Object", new String[] { "java/io/Serializable", "javax/ejb/EJBHome" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/client/EJBHomeProxy", null, "java/lang/Object", new String[] { "java/io/Serializable", "jakarta/ejb/EJBHome" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getEJBHomeHandler", "()Lorg/apache/openejb/client/EJBHomeHandler;", null, null);

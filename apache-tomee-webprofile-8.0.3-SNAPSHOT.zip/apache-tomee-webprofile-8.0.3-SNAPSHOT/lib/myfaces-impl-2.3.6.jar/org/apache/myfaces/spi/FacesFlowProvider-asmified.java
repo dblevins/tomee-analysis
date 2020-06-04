@@ -34,23 +34,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotatedFlows", "(Ljavax/faces/context/FacesContext;)Ljava/util/Iterator;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Iterator<Ljavax/faces/flow/Flow;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotatedFlows", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Iterator;", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Iterator<Ljakarta/faces/flow/Flow;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doAfterEnterFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doAfterEnterFlow", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doBeforeExitFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doBeforeExitFlow", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/flow/Flow;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCurrentFlowScope", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCurrentFlowScope", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "refreshClientWindow", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "refreshClientWindow", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

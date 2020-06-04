@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/ScheduleExpression;Ljavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/ScheduleExpression;Ljakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method or auto-started task");
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JJLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JJLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");
@@ -86,7 +86,7 @@ methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JLjavax/ejb/TimerConfig;)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTimer", "(Ljava/lang/Object;Ljava/lang/reflect/Method;JLjakarta/ejb/TimerConfig;)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");
@@ -98,7 +98,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimer", "(J)Ljavax/ejb/Timer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimer", "(J)Ljakarta/ejb/Timer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimers", "(Ljava/lang/Object;)Ljava/util/Collection;", "(Ljava/lang/Object;)Ljava/util/Collection<Ljavax/ejb/Timer;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimers", "(Ljava/lang/Object;)Ljava/util/Collection;", "(Ljava/lang/Object;)Ljava/util/Collection<Ljakarta/ejb/Timer;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/timer/NullEjbTimerServiceImpl", "log", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("Null ! TimerService operation not supported for a bean without an ejbTimeout method  or auto-started task");

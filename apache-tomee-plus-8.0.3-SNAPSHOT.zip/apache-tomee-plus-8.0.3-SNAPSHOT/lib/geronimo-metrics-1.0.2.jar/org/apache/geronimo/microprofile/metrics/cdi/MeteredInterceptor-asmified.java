@@ -29,11 +29,11 @@ annotationVisitor0 = classWriter.visitAnnotation("Lorg/eclipse/microprofile/metr
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/interceptor/Interceptor;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/interceptor/Interceptor;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(1000));
 annotationVisitor0.visitEnd();
 }
@@ -42,27 +42,27 @@ classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "registry", "Lorg/eclipse/microprofile/metrics/MetricRegistry;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljavax/enterprise/inject/spi/Bean;", "Ljavax/enterprise/inject/spi/Bean<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljakarta/enterprise/inject/spi/Bean;", "Ljakarta/enterprise/inject/spi/Bean<*>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/enterprise/inject/Intercepted;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/enterprise/inject/Intercepted;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "beanManager", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "beanManager", "Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -86,37 +86,37 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onConstructor", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onConstructor", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundConstruct;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundConstruct;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getConstructor", "()Ljava/lang/reflect/Constructor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getConstructor", "()Ljava/lang/reflect/Constructor;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "findMeter", "(Ljava/lang/reflect/Executable;)Lorg/eclipse/microprofile/metrics/Meter;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/metrics/Meter", "mark", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMethod", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMethod", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/interceptor/AroundInvoke;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/interceptor/AroundInvoke;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "findMeter", "(Ljava/lang/reflect/Executable;)Lorg/eclipse/microprofile/metrics/Meter;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/metrics/Meter", "mark", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -174,24 +174,24 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "beanManager", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "bean", "Ljavax/enterprise/inject/spi/Bean;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Bean", "getBeanClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getMethods", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getMethods", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getConstructors", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getConstructors", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Stream", "concat", "(Ljava/util/stream/Stream;Ljava/util/stream/Stream;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/lang/reflect/Executable;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "lambda$findMeter$0", "(Ljava/lang/reflect/Executable;Ljavax/enterprise/inject/spi/AnnotatedCallable;)Z", false), Type.getType("(Ljavax/enterprise/inject/spi/AnnotatedCallable;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/lang/reflect/Executable;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "lambda$findMeter$0", "(Ljava/lang/reflect/Executable;Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Z", false), Type.getType("(Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "findFirst", "()Ljava/util/Optional;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "lambda$findMeter$1", "(Ljavax/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;", false), Type.getType("(Ljavax/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "lambda$findMeter$1", "(Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;", false), Type.getType("(Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -204,11 +204,11 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Modifier", "isAbs
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/eclipse/microprofile/metrics/Meter", "javax/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/eclipse/microprofile/metrics/Meter", "jakarta/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Executable", "getDeclaringClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitLabel(label8);
@@ -221,11 +221,11 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "javax/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 2, new Object[] {"java/lang/Class", "java/lang/reflect/Executable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "jakarta/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 2, new Object[] {"java/lang/Class", "java/lang/reflect/Executable"});
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/microprofile/metrics/annotation/Metered", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "javax/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 3, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "jakarta/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 3, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String"});
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label11);
@@ -236,13 +236,13 @@ methodVisitor.visitInsn(ICONST_1);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "javax/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 3, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "jakarta/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 3, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label12);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "javax/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 4, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor", "java/lang/reflect/Executable", "org/eclipse/microprofile/metrics/Meter", "jakarta/enterprise/inject/spi/AnnotatedType", "org/eclipse/microprofile/metrics/annotation/Metered"}, 4, new Object[] {"java/lang/Class", "java/lang/reflect/Executable", "java/lang/String", Opcodes.INTEGER});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/metrics/annotation/Metered;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKEINTERFACE, "org/eclipse/microprofile/metrics/annotation/Metered", "name", "()Ljava/lang/String;", true), Type.getType("(Lorg/eclipse/microprofile/metrics/annotation/Metered;)Ljava/lang/String;")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "map", "(Ljava/util/function/Function;)Ljava/util/Optional;", false);
@@ -298,21 +298,21 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findMeter$1", "(Ljavax/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findMeter$1", "(Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Lorg/eclipse/microprofile/metrics/annotation/Metered;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/microprofile/metrics/annotation/Metered;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedCallable", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedCallable", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/microprofile/metrics/annotation/Metered");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findMeter$0", "(Ljava/lang/reflect/Executable;Ljavax/enterprise/inject/spi/AnnotatedCallable;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$findMeter$0", "(Ljava/lang/reflect/Executable;Ljakarta/enterprise/inject/spi/AnnotatedCallable;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedCallable", "getJavaMember", "()Ljava/lang/reflect/Member;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedCallable", "getJavaMember", "()Ljava/lang/reflect/Member;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(IRETURN);

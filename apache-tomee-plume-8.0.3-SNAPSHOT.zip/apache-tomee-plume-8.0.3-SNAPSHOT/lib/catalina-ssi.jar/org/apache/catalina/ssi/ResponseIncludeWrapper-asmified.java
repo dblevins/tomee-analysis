@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/ssi/ResponseIncludeWrapper", null, "javax/servlet/http/HttpServletResponseWrapper", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/ssi/ResponseIncludeWrapper", null, "jakarta/servlet/http/HttpServletResponseWrapper", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LAST_MODIFIED", "Ljava/lang/String;", null, "last-modified");
@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "lastModified", "J", null, 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "captureServletOutputStream", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "captureServletOutputStream", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletOutputStream", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,17 +45,17 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "printWriter", "Ljava/io/Pr
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletOutputStream;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/ServletOutputStream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "lastModified", "J");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -64,12 +64,12 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "flushOutputStreamOrWriter", "()V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "flush", "()V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "flush", "()V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -89,7 +89,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriter", "()Ljava/io/PrintWriter;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -106,7 +106,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/io/OutputStreamWriter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ssi/ResponseIncludeWrapper", "getCharacterEncoding", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/OutputStreamWriter", "<init>", "(Ljava/io/OutputStream;Ljava/lang/String;)V", false);
@@ -127,24 +127,24 @@ methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "printWriter", "Ljava/io/PrintWriter;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljavax/servlet/ServletOutputStream;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "captureServletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/ResponseIncludeWrapper", "servletOutputStream", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -170,7 +170,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(LLOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "addDateHeader", "(Ljava/lang/String;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "addDateHeader", "(Ljava/lang/String;J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);
@@ -195,7 +195,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);
@@ -227,7 +227,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(LLOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "setDateHeader", "(Ljava/lang/String;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "setDateHeader", "(Ljava/lang/String;J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);
@@ -252,7 +252,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", false);

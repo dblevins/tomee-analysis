@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomee/microprofile/jwt/cdi/ClaimBean$ClaimLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/jwt/Claim;>;Lorg/eclipse/microprofile/jwt/Claim;", "javax/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/jwt/Claim" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomee/microprofile/jwt/cdi/ClaimBean$ClaimLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/jwt/Claim;>;Lorg/eclipse/microprofile/jwt/Claim;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/jwt/Claim" });
 
 classWriter.visitInnerClass("org/apache/tomee/microprofile/jwt/cdi/ClaimBean$ClaimLiteral", "org/apache/tomee/microprofile/jwt/cdi/ClaimBean", "ClaimLiteral", ACC_PRIVATE | ACC_STATIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/tomee/microprofile/jwt/cdi/ClaimBean$1",
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

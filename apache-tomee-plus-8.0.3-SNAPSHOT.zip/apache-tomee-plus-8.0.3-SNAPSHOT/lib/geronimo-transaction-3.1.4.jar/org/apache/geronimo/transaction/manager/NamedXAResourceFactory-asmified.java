@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getName", "(
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNamedXAResource", "()Lorg/apache/geronimo/transaction/manager/NamedXAResource;", null, new String[] { "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNamedXAResource", "()Lorg/apache/geronimo/transaction/manager/NamedXAResource;", null, new String[] { "jakarta/transaction/SystemException" });
 methodVisitor.visitEnd();
 }
 {

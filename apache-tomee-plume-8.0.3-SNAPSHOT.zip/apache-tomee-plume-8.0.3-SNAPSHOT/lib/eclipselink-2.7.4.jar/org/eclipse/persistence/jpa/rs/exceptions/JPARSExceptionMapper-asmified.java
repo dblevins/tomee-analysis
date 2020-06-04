@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "Lorg/eclipse/persistence/jpa/rs/exceptions/AbstractExceptionMapper;Ljavax/ws/rs/ext/ExceptionMapper<Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;>;", "org/eclipse/persistence/jpa/rs/exceptions/AbstractExceptionMapper", new String[] { "javax/ws/rs/ext/ExceptionMapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "Lorg/eclipse/persistence/jpa/rs/exceptions/AbstractExceptionMapper;Ljakarta/ws/rs/ext/ExceptionMapper<Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;>;", "org/eclipse/persistence/jpa/rs/exceptions/AbstractExceptionMapper", new String[] { "jakarta/ws/rs/ext/ExceptionMapper" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException", "getCause", "()Ljava/lang/Throwable;", false);
@@ -64,18 +64,18 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "buildResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "buildResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "toResponse", "(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "toResponse", "(Ljava/lang/Throwable;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jpa/rs/exceptions/JPARSException");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "toResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper", "toResponse", "(Lorg/eclipse/persistence/jpa/rs/exceptions/JPARSException;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

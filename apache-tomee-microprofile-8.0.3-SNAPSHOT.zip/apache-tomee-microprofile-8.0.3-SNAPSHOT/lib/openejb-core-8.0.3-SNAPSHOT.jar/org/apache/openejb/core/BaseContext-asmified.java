@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openejb/core/BaseContext", null, "java/lang/Object", new String[] { "javax/ejb/EJBContext", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openejb/core/BaseContext", null, "java/lang/Object", new String[] { "jakarta/ejb/EJBContext", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/BaseContext$State", "org/apache/openejb/core/BaseContext", "State", ACC_PUBLIC | ACC_STATIC);
 
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "securityServic
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "userTransaction", "Ljavax/transaction/UserTransaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "userTransaction", "Ljakarta/transaction/UserTransaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -50,13 +50,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/transaction/EjbUserTransaction");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/EjbUserTransaction", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseContext", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljavax/transaction/UserTransaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseContext", "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljakarta/transaction/UserTransaction;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljavax/transaction/UserTransaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/openejb/spi/SecurityService;Ljakarta/transaction/UserTransaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -68,8 +68,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/BaseContext$UserTransa
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseContext$UserTransactionWrapper", "<init>", "(Lorg/apache/openejb/core/BaseContext;Ljavax/transaction/UserTransaction;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/BaseContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/BaseContext$UserTransactionWrapper", "<init>", "(Lorg/apache/openejb/core/BaseContext;Ljakarta/transaction/UserTransaction;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/BaseContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
@@ -125,10 +125,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/BaseContext$Call", "getContextData", "Lorg/apache/openejb/core/BaseContext$Call;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/BaseContext", "doCheck", "(Lorg/apache/openejb/core/BaseContext$Call;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/interceptor/InvocationContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/interceptor/InvocationContext;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ThreadContext", "get", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/interceptor/InvocationContext");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/interceptor/InvocationContext");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -154,7 +154,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -162,13 +162,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ThreadContext", "getBeanContext", "()Lorg/apache/openejb/BeanContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBHome", "()Ljavax/ejb/EJBHome;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBHome", "()Ljakarta/ejb/EJBHome;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBLocalHome", "()Ljavax/ejb/EJBLocalHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBLocalHome", "()Ljakarta/ejb/EJBLocalHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -176,7 +176,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ThreadContext", "getBeanContext", "()Lorg/apache/openejb/BeanContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBLocalHome", "()Ljavax/ejb/EJBLocalHome;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/BeanContext", "getEJBLocalHome", "()Ljakarta/ejb/EJBLocalHome;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
@@ -251,21 +251,21 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserTransaction", "()Ljavax/transaction/UserTransaction;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserTransaction", "()Ljakarta/transaction/UserTransaction;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/BaseContext$Call", "getUserTransaction", "Lorg/apache/openejb/core/BaseContext$Call;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/BaseContext", "doCheck", "(Lorg/apache/openejb/core/BaseContext$Call;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/BaseContext", "userTransaction", "Ljavax/transaction/UserTransaction;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/BaseContext", "getUserTransaction", "(Ljavax/transaction/UserTransaction;)Ljavax/transaction/UserTransaction;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/BaseContext", "userTransaction", "Ljakarta/transaction/UserTransaction;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/BaseContext", "getUserTransaction", "(Ljakarta/transaction/UserTransaction;)Ljakarta/transaction/UserTransaction;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserTransaction", "(Ljavax/transaction/UserTransaction;)Ljavax/transaction/UserTransaction;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserTransaction", "(Ljakarta/transaction/UserTransaction;)Ljakarta/transaction/UserTransaction;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -425,7 +425,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimerService", "()Ljavax/ejb/TimerService;", null, new String[] { "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimerService", "()Ljakarta/ejb/TimerService;", null, new String[] { "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

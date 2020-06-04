@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonStringParserAdapter", "Lorg/apache/johnzon/jsonb/JsonValueParserAdapter<Ljavax/json/JsonString;>;", "org/apache/johnzon/jsonb/JsonValueParserAdapter", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonStringParserAdapter", "Lorg/apache/johnzon/jsonb/JsonValueParserAdapter<Ljakarta/json/JsonString;>;", "org/apache/johnzon/jsonb/JsonValueParserAdapter", null);
 
 classWriter.visitInnerClass("org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonStringParserAdapter", "org/apache/johnzon/jsonb/JsonValueParserAdapter", "JsonStringParserAdapter", ACC_PRIVATE | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/JsonString;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/JsonString;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/JsonValueParserAdapter", "<init>", "(Ljavax/json/JsonValue;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/JsonValueParserAdapter", "<init>", "(Ljakarta/json/JsonValue;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -40,9 +40,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getString", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonStringParserAdapter", "getValue", "()Ljavax/json/JsonValue;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonString");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/JsonString", "getString", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonStringParserAdapter", "getValue", "()Ljakarta/json/JsonValue;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonString");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/JsonString", "getString", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

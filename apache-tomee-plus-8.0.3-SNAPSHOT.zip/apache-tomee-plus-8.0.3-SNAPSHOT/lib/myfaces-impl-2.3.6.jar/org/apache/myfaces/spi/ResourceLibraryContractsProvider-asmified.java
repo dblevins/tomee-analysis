@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExternalContextResourceLibraryContracts", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getExternalContextResourceLibraryContracts", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getClassloaderResourceLibraryContracts", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getClassloaderResourceLibraryContracts", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Set<Ljava/lang/String;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

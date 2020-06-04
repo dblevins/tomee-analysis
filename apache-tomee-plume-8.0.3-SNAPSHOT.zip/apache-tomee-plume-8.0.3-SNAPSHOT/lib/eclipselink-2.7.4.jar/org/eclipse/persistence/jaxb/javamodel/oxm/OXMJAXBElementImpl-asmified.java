@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "javaModel", "Lorg/eclipse/pe
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_XML_BIND_JAXBELEMENT", "Ljava/lang/String;", null, "javax.xml.bind.JAXBElement");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_XML_BIND_JAXBELEMENT", "Ljava/lang/String;", null, "jakarta.xml.bind.JAXBElement");
 fieldVisitor.visitEnd();
 }
 {
@@ -204,7 +204,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQualifiedName", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.xml.bind.JAXBElement");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.JAXBElement");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

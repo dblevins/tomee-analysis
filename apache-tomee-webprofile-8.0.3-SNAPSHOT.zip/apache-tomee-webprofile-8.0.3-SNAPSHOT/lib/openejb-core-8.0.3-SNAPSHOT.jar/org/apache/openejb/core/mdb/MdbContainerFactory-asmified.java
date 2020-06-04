@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "securityService", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -153,20 +153,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceAdapter", "()Ljavax/resource/spi/ResourceAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceAdapter", "()Ljakarta/resource/spi/ResourceAdapter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceAdapter", "(Ljavax/resource/spi/ResourceAdapter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceAdapter", "(Ljakarta/resource/spi/ResourceAdapter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -521,7 +521,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainer
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "securityService", "Lorg/apache/openejb/spi/SecurityService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "messageListenerInterface", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -540,7 +540,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "useOneSchedulerThreadByBean", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "evictionThreads", "I");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/mdb/MdbPoolContainer", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/spi/SecurityService;Ljavax/resource/spi/ResourceAdapter;Ljava/lang/Class;Ljava/lang/Class;ZLorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Pool$Builder;IZI)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/mdb/MdbPoolContainer", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/spi/SecurityService;Ljakarta/resource/spi/ResourceAdapter;Ljava/lang/Class;Ljava/lang/Class;ZLorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Duration;Lorg/apache/openejb/util/Pool$Builder;IZI)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/MdbPoolContainer", "getProperties", "()Ljava/util/Properties;", false);
@@ -558,7 +558,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainer
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "securityService", "Lorg/apache/openejb/spi/SecurityService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "messageListenerInterface", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -567,7 +567,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "instanceLimit", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/mdb/MdbContainerFactory", "failOnUnknownActivationSpec", "Z");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/mdb/MdbContainer", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/spi/SecurityService;Ljavax/resource/spi/ResourceAdapter;Ljava/lang/Class;Ljava/lang/Class;IZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/mdb/MdbContainer", "<init>", "(Ljava/lang/Object;Lorg/apache/openejb/spi/SecurityService;Ljakarta/resource/spi/ResourceAdapter;Ljava/lang/Class;Ljava/lang/Class;IZ)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/mdb/MdbContainer", "getProperties", "()Ljava/util/Properties;", false);

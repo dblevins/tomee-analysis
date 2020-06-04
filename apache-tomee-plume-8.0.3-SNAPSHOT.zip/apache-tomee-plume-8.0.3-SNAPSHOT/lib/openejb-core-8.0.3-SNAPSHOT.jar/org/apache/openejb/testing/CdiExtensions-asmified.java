@@ -43,7 +43,7 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljavax/enterprise/inject/spi/Extension;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljakarta/enterprise/inject/spi/Extension;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

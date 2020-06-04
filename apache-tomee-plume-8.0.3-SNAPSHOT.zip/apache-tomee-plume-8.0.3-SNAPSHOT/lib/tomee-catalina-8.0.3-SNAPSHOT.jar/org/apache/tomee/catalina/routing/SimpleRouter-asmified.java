@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "prefix", "Ljava/lang/String;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -243,7 +243,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "route", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "route", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -458,17 +458,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/Obje
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/monitoring/DynamicMBeanWrapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/DynamicMBeanWrapper", "<init>", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
@@ -478,7 +478,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/tomee/cata
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -493,14 +493,14 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljakarta/management/ObjectName;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -515,7 +515,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActiveRoutes", "()Ljavax/management/openmbean/TabularData;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/management/ManagedAttribute;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/management/ManagedAttribute;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -535,7 +535,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/routing/SimpleRouter", "routes", "[Lorg/apache/tomee/catalina/routing/Route;");
 methodVisitor.visitInsn(ARRAYLENGTH);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/openmbean/OpenType");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/openmbean/OpenType");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -556,7 +556,7 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 4);
@@ -586,38 +586,38 @@ methodVisitor.visitIincInsn(4, 1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/CompositeType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/CompositeType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("routes");
 methodVisitor.visitLdcInsn("routes");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/CompositeType", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/CompositeType", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularType");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("router");
 methodVisitor.visitLdcInsn("routes");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularType", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/TabularDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/TabularDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/TabularDataSupport", "<init>", "(Ljavax/management/openmbean/TabularType;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
-methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/CompositeDataSupport");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/openmbean/CompositeDataSupport");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/openmbean/CompositeDataSupport", "<init>", "(Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/openmbean/TabularDataSupport", "put", "(Ljavax/management/openmbean/CompositeData;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
@@ -632,7 +632,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRoute", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/management/ManagedOperation;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/management/ManagedOperation;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -656,7 +656,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeRoute", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/management/ManagedOperation;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/management/ManagedOperation;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

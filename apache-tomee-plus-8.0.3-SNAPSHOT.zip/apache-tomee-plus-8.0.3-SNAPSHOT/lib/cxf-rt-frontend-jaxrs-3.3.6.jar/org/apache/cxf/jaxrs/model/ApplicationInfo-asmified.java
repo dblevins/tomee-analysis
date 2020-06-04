@@ -22,26 +22,26 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/model/ApplicationInfo", "Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljavax/ws/rs/core/Application;>;", "org/apache/cxf/jaxrs/model/ProviderInfo", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/model/ApplicationInfo", "Lorg/apache/cxf/jaxrs/model/ProviderInfo<Ljakarta/ws/rs/core/Application;>;", "org/apache/cxf/jaxrs/model/ProviderInfo", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "overridingProps", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Application;Lorg/apache/cxf/Bus;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Application;Lorg/apache/cxf/Bus;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/ApplicationInfo", "<init>", "(Ljavax/ws/rs/core/Application;Ljava/util/Map;Lorg/apache/cxf/Bus;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/ApplicationInfo", "<init>", "(Ljakarta/ws/rs/core/Application;Ljava/util/Map;Lorg/apache/cxf/Bus;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/core/Application;Ljava/util/Map;Lorg/apache/cxf/Bus;)V", "(Ljavax/ws/rs/core/Application;Ljava/util/Map<Ljava/lang/Class<*>;Lorg/apache/cxf/jaxrs/impl/tl/ThreadLocalProxy<*>;>;Lorg/apache/cxf/Bus;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/core/Application;Ljava/util/Map;Lorg/apache/cxf/Bus;)V", "(Ljakarta/ws/rs/core/Application;Ljava/util/Map<Ljava/lang/Class<*>;Lorg/apache/cxf/jaxrs/impl/tl/ThreadLocalProxy<*>;>;Lorg/apache/cxf/Bus;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -61,8 +61,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperties", "()Ljava/ut
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/model/ProviderInfo", "getProvider", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/Application");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Application", "getProperties", "()Ljava/util/Map;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/Application");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Application", "getProperties", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/ApplicationInfo", "overridingProps", "Ljava/util/Map;");

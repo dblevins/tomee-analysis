@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/BaseContext$1", null, "org/apache/openejb/core/timer/TimerServiceImpl", null);
 
-classWriter.visitOuterClass("org/apache/openejb/core/BaseContext", "getTimerService", "()Ljavax/ejb/TimerService;");
+classWriter.visitOuterClass("org/apache/openejb/core/BaseContext", "getTimerService", "()Ljakarta/ejb/TimerService;");
 
 classWriter.visitInnerClass("org/apache/openejb/core/BaseContext$1", null, null, 0);
 
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllTimers", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljavax/ejb/Timer;>;", new String[] { "java/lang/IllegalStateException", "javax/ejb/EJBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllTimers", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljakarta/ejb/Timer;>;", new String[] { "java/lang/IllegalStateException", "jakarta/ejb/EJBException" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/timer/Timers", "all", "()Ljava/util/Collection;", false);
 methodVisitor.visitInsn(ARETURN);

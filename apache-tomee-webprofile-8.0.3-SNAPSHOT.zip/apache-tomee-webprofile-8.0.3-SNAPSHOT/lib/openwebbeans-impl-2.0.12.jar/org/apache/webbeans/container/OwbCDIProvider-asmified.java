@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/OwbCDIProvider", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/CDIProvider" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/OwbCDIProvider", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/CDIProvider" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "OWB_CDI", "Lorg/apache/webbeans/container/OwbCDI;", null, null);
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCDI", "()Ljavax/enterprise/inject/spi/CDI;", "()Ljavax/enterprise/inject/spi/CDI<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCDI", "()Ljakarta/enterprise/inject/spi/CDI;", "()Ljakarta/enterprise/inject/spi/CDI<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/container/OwbCDIProvider", "OWB_CDI", "Lorg/apache/webbeans/container/OwbCDI;");
 methodVisitor.visitInsn(ARETURN);

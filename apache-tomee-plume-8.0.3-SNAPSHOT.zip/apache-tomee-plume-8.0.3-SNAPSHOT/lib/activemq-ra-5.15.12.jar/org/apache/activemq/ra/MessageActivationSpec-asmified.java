@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/ra/MessageActivationSpec", null, "java/lang/Object", new String[] { "javax/resource/spi/ActivationSpec" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/ra/MessageActivationSpec", null, "java/lang/Object", new String[] { "jakarta/resource/spi/ActivationSpec" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isValidUseRAManagedTransaction", "(Ljava/util/List;)Z", "(Ljava/util/List<Ljava/lang/String;>;)Z", null);
@@ -53,7 +53,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isValidEnabl
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getResourceAdapter", "()Ljavax/resource/spi/ResourceAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getResourceAdapter", "()Ljakarta/resource/spi/ResourceAdapter;", null, null);
 methodVisitor.visitEnd();
 }
 {

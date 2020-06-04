@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/impl/DefaultFaceletFactory$1", "Ljava/lang/Object;Ljavax/faces/view/facelets/FaceletCache$MemberFactory<Lcom/sun/faces/facelets/impl/DefaultFacelet;>;", "java/lang/Object", new String[] { "javax/faces/view/facelets/FaceletCache$MemberFactory" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/impl/DefaultFaceletFactory$1", "Ljava/lang/Object;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<Lcom/sun/faces/facelets/impl/DefaultFacelet;>;", "java/lang/Object", new String[] { "jakarta/faces/view/facelets/FaceletCache$MemberFactory" });
 
-classWriter.visitOuterClass("com/sun/faces/facelets/impl/DefaultFaceletFactory", "initCache", "(Ljavax/faces/view/facelets/FaceletCache;)Ljavax/faces/view/facelets/FaceletCache;");
+classWriter.visitOuterClass("com/sun/faces/facelets/impl/DefaultFaceletFactory", "initCache", "(Ljakarta/faces/view/facelets/FaceletCache;)Ljakarta/faces/view/facelets/FaceletCache;");
 
 classWriter.visitInnerClass("com/sun/faces/facelets/impl/DefaultFaceletFactory$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/faces/view/facelets/FaceletCache$MemberFactory", "javax/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/view/facelets/FaceletCache$MemberFactory", "jakarta/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom/sun/faces/facelets/impl/DefaultFaceletFactory;", null, null);

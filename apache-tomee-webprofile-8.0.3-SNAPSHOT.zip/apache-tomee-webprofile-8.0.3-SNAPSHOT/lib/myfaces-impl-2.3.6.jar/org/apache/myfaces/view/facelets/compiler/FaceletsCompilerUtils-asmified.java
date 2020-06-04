@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "hasChildren", "(Ljavax/faces/view/facelets/TagConfig;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "hasChildren", "(Ljakarta/faces/view/facelets/TagConfig;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/view/facelets/TagConfig", "getNextHandler", "()Ljavax/faces/view/facelets/FaceletHandler;", true);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljavax/faces/view/facelets/FaceletHandler;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/view/facelets/TagConfig", "getNextHandler", "()Ljakarta/faces/view/facelets/FaceletHandler;", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/compiler/CompilationUnit", "LEAF", "Ljakarta/faces/view/facelets/FaceletHandler;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitInsn(ICONST_1);

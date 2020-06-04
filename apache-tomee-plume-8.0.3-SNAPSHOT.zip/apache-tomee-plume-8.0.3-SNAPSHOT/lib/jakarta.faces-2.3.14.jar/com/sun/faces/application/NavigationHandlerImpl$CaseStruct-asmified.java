@@ -33,19 +33,19 @@ fieldVisitor = classWriter.visitField(0, "viewId", "Ljava/lang/String;", null, n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "navCase", "Ljavax/faces/application/NavigationCase;", null, null);
+fieldVisitor = classWriter.visitField(0, "navCase", "Ljakarta/faces/application/NavigationCase;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "currentFlow", "Ljavax/faces/flow/Flow;", null, null);
+fieldVisitor = classWriter.visitField(0, "currentFlow", "Ljakarta/faces/flow/Flow;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "newFlow", "Ljavax/faces/flow/Flow;", null, null);
+fieldVisitor = classWriter.visitField(0, "newFlow", "Ljakarta/faces/flow/Flow;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "facesFlowCallNode", "Ljavax/faces/flow/FlowCallNode;", null, null);
+fieldVisitor = classWriter.visitField(0, "facesFlowCallNode", "Ljakarta/faces/flow/FlowCallNode;", null, null);
 fieldVisitor.visitEnd();
 }
 {

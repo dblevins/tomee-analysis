@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -204,181 +204,181 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createECKeyValue", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createECKeyValue", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "ECKeyValue");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_ECKeyValue_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPrime", "(Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPrime", "(Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "Prime");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_Prime_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/PrimeFieldParamsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGnB", "(Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createGnB", "(Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "GnB");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_GnB_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTnB", "(Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTnB", "(Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "TnB");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_TnB_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/TnBFieldParamsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPnB", "(Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPnB", "(Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "PnB");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_PnB_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/PnBFieldParamsType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOCSPResponse", "([B)Ljavax/xml/bind/JAXBElement;", "([B)Ljavax/xml/bind/JAXBElement<[B>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOCSPResponse", "([B)Ljakarta/xml/bind/JAXBElement;", "([B)Ljakarta/xml/bind/JAXBElement<[B>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "OCSPResponse");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_OCSPResponse_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("[B"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDEREncodedKeyValue", "(Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createDEREncodedKeyValue", "(Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "DEREncodedKeyValue");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_DEREncodedKeyValue_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyInfoReference", "(Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createKeyInfoReference", "(Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "KeyInfoReference");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_KeyInfoReference_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/KeyInfoReferenceType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createX509Digest", "(Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createX509Digest", "(Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2009/xmldsig11#");
 annotationVisitor0.visit("name", "X509Digest");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/binding/xmldsig11/ObjectFactory", "_X509Digest_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/xml/security/binding/xmldsig11/X509DigestType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

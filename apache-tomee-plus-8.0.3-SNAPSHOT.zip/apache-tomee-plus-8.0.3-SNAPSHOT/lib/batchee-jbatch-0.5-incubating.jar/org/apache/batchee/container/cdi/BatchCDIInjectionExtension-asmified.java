@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", null, "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Extension" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", null, "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Extension" });
 
 classWriter.visitInnerClass("org/apache/batchee/container/cdi/BatchCDIInjectionExtension$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -63,27 +63,27 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "beforeBeanDiscovery", "(Ljavax/enterprise/inject/spi/BeforeBeanDiscovery;Ljavax/enterprise/inject/spi/BeanManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "beforeBeanDiscovery", "(Ljakarta/enterprise/inject/spi/BeforeBeanDiscovery;Ljakarta/enterprise/inject/spi/BeanManager;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/batchee/container/cdi/BatchProducerBean;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljavax/enterprise/inject/spi/AnnotatedType;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/BeforeBeanDiscovery", "addAnnotatedType", "(Ljavax/enterprise/inject/spi/AnnotatedType;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeanManager", "createAnnotatedType", "(Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/BeforeBeanDiscovery", "addAnnotatedType", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBeanManager", "(Ljavax/enterprise/inject/spi/AfterBeanDiscovery;Ljavax/enterprise/inject/spi/BeanManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBeanManager", "(Ljakarta/enterprise/inject/spi/AfterBeanDiscovery;Ljakarta/enterprise/inject/spi/BeanManager;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(2, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -103,7 +103,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/cdi/B
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$002", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljavax/enterprise/inject/spi/BeanManager;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$002", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljakarta/enterprise/inject/spi/BeanManager;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -112,10 +112,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cleanupFinalBeanManagers", "(Ljavax/enterprise/inject/spi/AfterDeploymentValidation;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cleanupFinalBeanManagers", "(Ljakarta/enterprise/inject/spi/AfterDeploymentValidation;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -139,7 +139,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/container/cdi/BatchCD
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljavax/enterprise/inject/spi/BeanManager;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljakarta/enterprise/inject/spi/BeanManager;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -149,10 +149,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cleanupStoredBeanManagerOnShutdown", "(Ljavax/enterprise/inject/spi/BeforeShutdown;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cleanupStoredBeanManagerOnShutdown", "(Ljakarta/enterprise/inject/spi/BeforeShutdown;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/event/Observes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/event/Observes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -194,7 +194,7 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanManager", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -222,16 +222,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/BeanManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/BeanManager");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/batch/operations/BatchRuntimeException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/batch/operations/BatchRuntimeException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("unable to resolve BeanManager");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/batch/operations/BatchRuntimeException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/batch/operations/BatchRuntimeException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -240,7 +240,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/Ba
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", "getBeanManagerInfo", "(Ljava/lang/ClassLoader;)Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$100", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$100", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label10 = new Label();
@@ -253,16 +253,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", "resolveBeanManagerViaJndi", "()Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", "resolveBeanManagerViaJndi", "()Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label11);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$000", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$000", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "javax/enterprise/inject/spi/BeanManager", "java/lang/Object"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "jakarta/enterprise/inject/spi/BeanManager", "java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNONNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -284,7 +284,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/Ba
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljavax/enterprise/inject/spi/BeanManager;)Ljavax/enterprise/inject/spi/BeanManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo", "access$102", "(Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo;Ljakarta/enterprise/inject/spi/BeanManager;)Ljakarta/enterprise/inject/spi/BeanManager;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(MONITOREXIT);
@@ -306,21 +306,21 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "resolveBeanManagerViaJndi", "()Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "resolveBeanManagerViaJndi", "()Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/naming/NamingException");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/BeanManager;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/BeanManager;"));
 methodVisitor.visitTypeInsn(NEW, "javax/naming/InitialContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/naming/InitialContext", "<init>", "()V", false);
 methodVisitor.visitLdcInsn("java:comp/BeanManager");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/naming/InitialContext", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/BeanManager");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/BeanManager");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -442,7 +442,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", "bmpSingleton", "Lorg/apache/batchee/container/cdi/BatchCDIInjectionExtension;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.enterprise.inject.spi.CDI");
+methodVisitor.visitLdcInsn("jakarta.enterprise.inject.spi.CDI");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/cdi/BatchCDIInjectionExtension", "loader", "()Ljava/lang/ClassLoader;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;", false);

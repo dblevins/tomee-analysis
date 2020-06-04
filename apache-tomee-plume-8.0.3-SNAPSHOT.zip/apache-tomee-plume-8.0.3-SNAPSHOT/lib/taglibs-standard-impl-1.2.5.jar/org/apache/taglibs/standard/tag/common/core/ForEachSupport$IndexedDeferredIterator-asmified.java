@@ -31,18 +31,18 @@ classWriter.visitInnerClass("org/apache/taglibs/standard/tag/common/core/ForEach
 classWriter.visitInnerClass("org/apache/taglibs/standard/tag/common/core/ForEachSupport$DeferredIterator", "org/apache/taglibs/standard/tag/common/core/ForEachSupport", "DeferredIterator", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "itemsValueExpression", "Ljavax/el/ValueExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "itemsValueExpression", "Ljakarta/el/ValueExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Iterator;Ljavax/el/ValueExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/util/Iterator;Ljakarta/el/ValueExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$DeferredIterator", "<init>", "(Ljava/util/Iterator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "itemsValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "itemsValueExpression", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -54,10 +54,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "iterator", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/jstl/core/IndexedValueExpression");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/jstl/core/IndexedValueExpression");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "itemsValueExpression", "Ljavax/el/ValueExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "itemsValueExpression", "Ljakarta/el/ValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "currentIndex", "I");
@@ -65,18 +65,18 @@ methodVisitor.visitInsn(DUP_X1);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IADD);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "currentIndex", "I");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/jstl/core/IndexedValueExpression", "<init>", "(Ljavax/el/ValueExpression;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/core/IndexedValueExpression", "<init>", "(Ljakarta/el/ValueExpression;I)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/util/Iterator;Ljavax/el/ValueExpression;Lorg/apache/taglibs/standard/tag/common/core/ForEachSupport$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljava/util/Iterator;Ljakarta/el/ValueExpression;Lorg/apache/taglibs/standard/tag/common/core/ForEachSupport$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "<init>", "(Ljava/util/Iterator;Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/core/ForEachSupport$IndexedDeferredIterator", "<init>", "(Ljava/util/Iterator;Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

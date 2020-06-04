@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Ljavax/enterprise/inject/spi/BeanAttributes;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;)Ljavax/enterprise/inject/spi/BeanAttributes;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljakarta/enterprise/inject/spi/BeanAttributes;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;)Ljakarta/enterprise/inject/spi/BeanAttributes;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -99,9 +99,9 @@ methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "access$000", "(Lorg/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes;)Ljavax/enterprise/inject/spi/BeanAttributes;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "access$000", "(Lorg/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes;)Ljakarta/enterprise/inject/spi/BeanAttributes;", false);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/enterprise/inject/spi/BeanAttributes"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/enterprise/inject/spi/BeanAttributes"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();

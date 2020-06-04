@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/ConsumerInfo", "getConsumerId", "()Lorg/apache/activemq/command/ConsumerId;", false);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/advisory/ConsumerEvent", "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljavax/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/advisory/ConsumerEvent", "<init>", "(Lorg/apache/activemq/advisory/ConsumerEventSource;Ljakarta/jms/Destination;Lorg/apache/activemq/command/ConsumerId;I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/advisory/ConsumerStartedEvent", "consumerInfo", "Lorg/apache/activemq/command/ConsumerInfo;");

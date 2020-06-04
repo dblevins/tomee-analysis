@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PER
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "emf", "Ljavax/persistence/EntityManagerFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "emf", "Ljakarta/persistence/EntityManagerFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,22 +46,22 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newEntityManager", "()Ljavax/persistence/EntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newEntityManager", "()Ljakarta/persistence/EntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider", "emf", "Ljavax/persistence/EntityManagerFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider", "emf", "Ljakarta/persistence/EntityManagerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider", "config", "Ljava/util/Properties;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManagerFactory", "createEntityManager", "(Ljava/util/Map;)Ljavax/persistence/EntityManager;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManagerFactory", "createEntityManager", "(Ljava/util/Map;)Ljakarta/persistence/EntityManager;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "(Ljavax/persistence/EntityManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "(Ljakarta/persistence/EntityManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "close", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -74,8 +74,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("persistence.jpa.unit-name");
 methodVisitor.visitLdcInsn("batchee");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/Persistence", "createEntityManagerFactory", "(Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider", "emf", "Ljavax/persistence/EntityManagerFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/Persistence", "createEntityManagerFactory", "(Ljava/lang/String;)Ljakarta/persistence/EntityManagerFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider", "emf", "Ljakarta/persistence/EntityManagerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/Properties");
 methodVisitor.visitInsn(DUP);

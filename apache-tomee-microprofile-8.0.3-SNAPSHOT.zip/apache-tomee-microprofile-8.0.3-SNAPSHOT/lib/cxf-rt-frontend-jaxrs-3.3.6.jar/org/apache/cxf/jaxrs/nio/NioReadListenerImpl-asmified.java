@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/nio/NioReadListenerImpl", null, "java/lang/Object", new String[] { "javax/servlet/ReadListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/nio/NioReadListenerImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/ReadListener" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Ljava/util/logging/Logger;", null, null);
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "in", "Lorg/apach
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/jaxrs/nio/NioReadEntity;Ljavax/servlet/ServletInputStream;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/jaxrs/nio/NioReadEntity;Ljakarta/servlet/ServletInputStream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/nio/NioInputStream");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/nio/NioInputStream", "<init>", "(Ljavax/servlet/ServletInputStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/nio/NioInputStream", "<init>", "(Ljakarta/servlet/ServletInputStream;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/nio/NioReadListenerImpl", "in", "Lorg/apache/cxf/jaxrs/nio/NioInputStream;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -105,9 +105,9 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/nio/NioReadListener
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/nio/NioReadEntity", "getError", "()Lorg/apache/cxf/jaxrs/nio/NioErrorHandler;", false);
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/nio/NioReadListenerImpl", "getAsyncResponse", "()Ljavax/ws/rs/container/AsyncResponse;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/nio/NioReadListenerImpl", "getAsyncResponse", "()Ljakarta/ws/rs/container/AsyncResponse;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/AsyncResponse", "resume", "(Ljava/lang/Throwable;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/AsyncResponse", "resume", "(Ljava/lang/Throwable;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
@@ -141,13 +141,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAsyncResponse", "()Ljavax/ws/rs/container/AsyncResponse;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAsyncResponse", "()Ljakarta/ws/rs/container/AsyncResponse;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/container/AsyncResponse;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/container/AsyncResponse;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Exchange", "get", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/container/AsyncResponse");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/container/AsyncResponse");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

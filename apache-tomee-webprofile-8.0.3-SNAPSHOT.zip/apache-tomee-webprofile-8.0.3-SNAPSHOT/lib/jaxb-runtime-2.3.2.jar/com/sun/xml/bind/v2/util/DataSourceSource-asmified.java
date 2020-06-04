@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/util/DataSourceSource", null, "javax/xml/transform/stream/StreamSource", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "source", "Ljavax/activation/DataSource;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "source", "Ljakarta/activation/DataSource;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,26 +41,26 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "is", "Ljava/io/InputStream;"
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/activation/DataHandler;)V", null, new String[] { "javax/activation/MimeTypeParseException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/activation/DataHandler;)V", null, new String[] { "jakarta/activation/MimeTypeParseException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getDataSource", "()Ljavax/activation/DataSource;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/util/DataSourceSource", "<init>", "(Ljavax/activation/DataSource;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getDataSource", "()Ljakarta/activation/DataSource;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/util/DataSourceSource", "<init>", "(Ljakarta/activation/DataSource;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/activation/DataSource;)V", null, new String[] { "javax/activation/MimeTypeParseException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/activation/DataSource;)V", null, new String[] { "jakarta/activation/MimeTypeParseException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/transform/stream/StreamSource", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljakarta/activation/DataSource;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -71,16 +71,16 @@ methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/util/DataSourceSourc
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/bind/v2/util/DataSourceSource", "javax/activation/DataSource", "java/lang/String"}, 0, new Object[] {});
-methodVisitor.visitTypeInsn(NEW, "javax/activation/MimeType");
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/xml/bind/v2/util/DataSourceSource", "jakarta/activation/DataSource", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/MimeType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/MimeType", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/MimeType", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("charset");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/MimeType", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/MimeType", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "charset", "Ljava/lang/String;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -135,8 +135,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/InputStreamReader");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "charset", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/InputStreamReader", "<init>", "(Ljava/io/InputStream;Ljava/lang/String;)V", false);
@@ -183,8 +183,8 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "is", "Ljava/io/InputStream;");
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -204,10 +204,10 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataSource", "()Ljavax/activation/DataSource;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDataSource", "()Ljakarta/activation/DataSource;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/util/DataSourceSource", "source", "Ljakarta/activation/DataSource;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

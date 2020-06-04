@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", null, "javax/servlet/http/HttpServletRequestWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", null, "jakarta/servlet/http/HttpServletRequestWrapper", null);
 
 classWriter.visitInnerClass("org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "org/apache/cxf/transport/servlet/AbstractHTTPServlet", "HttpServletRequestRedirectFilter", ACC_PRIVATE | ACC_STATIC);
 
@@ -35,11 +35,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletPath", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "pathInfo", "Ljava/lang/String;");
@@ -66,7 +66,7 @@ methodVisitor.visitLdcInsn("");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "servletPath", "Ljava/lang/String;");
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "javax/servlet/http/HttpServletRequest", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "jakarta/servlet/http/HttpServletRequest", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestRedirectFilter", "servletPath", "Ljava/lang/String;");
@@ -147,7 +147,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletRequestWrapper", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletRequestWrapper", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

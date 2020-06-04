@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", null, "java/lang/Object", new String[] { "javax/persistence/EntityManager" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", null, "java/lang/Object", new String[] { "jakarta/persistence/EntityManager" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getActiveSession", "()Lorg/eclipse/persistence/sessions/Session;", null, null);
@@ -69,31 +69,31 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSession",
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/Call;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/Call;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/Call;Ljava/lang/Class;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQuery", "(Lorg/eclipse/persistence/queries/Call;Ljava/lang/Class;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQueryByExample", "(Ljava/lang/Object;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createQueryByExample", "(Ljava/lang/Object;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDescriptorNamedQuery", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDescriptorNamedQuery", "(Ljava/lang/String;Ljava/lang/Class;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDescriptorNamedQuery", "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/List;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDescriptorNamedQuery", "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/List;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitEnd();
 }
 {

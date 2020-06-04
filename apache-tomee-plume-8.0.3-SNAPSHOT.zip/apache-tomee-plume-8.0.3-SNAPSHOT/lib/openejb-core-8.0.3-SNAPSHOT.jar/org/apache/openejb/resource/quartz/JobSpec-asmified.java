@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/resource/quartz/JobSpec", null, "java/lang/Object", new String[] { "javax/resource/spi/ActivationSpec" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/openejb/resource/quartz/JobSpec", null, "java/lang/Object", new String[] { "jakarta/resource/spi/ActivationSpec" });
 
 classWriter.visitInnerClass("org/apache/openejb/resource/quartz/QuartzResourceAdapter$JobEndpoint", "org/apache/openejb/resource/quartz/QuartzResourceAdapter", "JobEndpoint", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "detail", "Lorg/apache/openej
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "invalidProperty", "Ljavax/resource/spi/InvalidPropertyException;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "invalidProperty", "Ljakarta/resource/spi/InvalidPropertyException;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -453,7 +453,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openejb/resource/quartz/JobSpec", "java/lang/String", "[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String", "java/text/SimpleDateFormat"}, 1, new Object[] {"java/text/ParseException"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/InvalidPropertyException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/InvalidPropertyException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -464,8 +464,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/InvalidPropertyException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljavax/resource/spi/InvalidPropertyException;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/InvalidPropertyException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljakarta/resource/spi/InvalidPropertyException;");
 methodVisitor.visitIincInsn(5, 1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
@@ -476,18 +476,18 @@ methodVisitor.visitMaxs(5, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "()V", null, new String[] { "javax/resource/spi/InvalidPropertyException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "()V", null, new String[] { "jakarta/resource/spi/InvalidPropertyException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/openejb/quartz/SchedulerException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljavax/resource/spi/InvalidPropertyException;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljakarta/resource/spi/InvalidPropertyException;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljavax/resource/spi/InvalidPropertyException;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "invalidProperty", "Ljakarta/resource/spi/InvalidPropertyException;");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -606,10 +606,10 @@ methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/quartz/SchedulerException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/InvalidPropertyException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/InvalidPropertyException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/InvalidPropertyException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/InvalidPropertyException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -618,39 +618,39 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceAdapter", "()Ljavax/resource/spi/ResourceAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceAdapter", "()Ljakarta/resource/spi/ResourceAdapter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceAdapter", "(Ljavax/resource/spi/ResourceAdapter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceAdapter", "(Ljakarta/resource/spi/ResourceAdapter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "resourceAdapter", "Ljavax/resource/spi/ResourceAdapter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "resourceAdapter", "Ljakarta/resource/spi/ResourceAdapter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getEndpoint", "()Ljavax/resource/spi/endpoint/MessageEndpoint;", null, null);
+methodVisitor = classWriter.visitMethod(0, "getEndpoint", "()Ljakarta/resource/spi/endpoint/MessageEndpoint;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/quartz/JobSpec", "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "setEndpoint", "(Ljavax/resource/spi/endpoint/MessageEndpoint;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "setEndpoint", "(Ljakarta/resource/spi/endpoint/MessageEndpoint;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "endpoint", "Ljavax/resource/spi/endpoint/MessageEndpoint;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/quartz/JobSpec", "endpoint", "Ljakarta/resource/spi/endpoint/MessageEndpoint;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -29,7 +29,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Document
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/validation/Constraint;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/validation/Constraint;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("validatedBy");
 annotationVisitor1.visit(null, Type.getType("Lorg/apache/tomee/microprofile/jwt/Directory$Constraint;"));
@@ -78,7 +78,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljavax/validation/Payload;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljakarta/validation/Payload;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

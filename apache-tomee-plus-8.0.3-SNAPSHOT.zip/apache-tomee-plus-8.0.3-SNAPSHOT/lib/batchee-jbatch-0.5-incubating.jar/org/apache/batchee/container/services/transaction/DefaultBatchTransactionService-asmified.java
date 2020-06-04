@@ -60,7 +60,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/batchee/container/services/transaction/DefaultBatchTransactionService;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getClassLoader", "()Ljava/lang/ClassLoader;", false);
-methodVisitor.visitLdcInsn("javax.transaction.UserTransaction");
+methodVisitor.visitLdcInsn("jakarta.transaction.UserTransaction");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/container/services/transaction/JTAUserTransactionAdapter");
@@ -79,7 +79,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "(Ljavax/batch/runtime/context/StepContext;)Lorg/apache/batchee/spi/TransactionManagerAdapter;", null, new String[] { "org/apache/batchee/container/exception/TransactionManagementException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "(Ljakarta/batch/runtime/context/StepContext;)Lorg/apache/batchee/spi/TransactionManagerAdapter;", null, new String[] { "org/apache/batchee/container/exception/TransactionManagementException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/services/transaction/DefaultBatchTransactionService", "getTransactionManager", "()Lorg/apache/batchee/spi/TransactionManagerAdapter;", false);

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", null, "org/eclipse/persistence/internal/jpa/querydef/SelectionImpl", new String[] { "javax/persistence/criteria/CompoundSelection" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", null, "org/eclipse/persistence/internal/jpa/querydef/SelectionImpl", new String[] { "jakarta/persistence/criteria/CompoundSelection" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "subSelections", "Ljava/util/ArrayList;", "Ljava/util/ArrayList<Ljavax/persistence/criteria/Selection<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "subSelections", "Ljava/util/ArrayList;", "Ljava/util/ArrayList<Ljakarta/persistence/criteria/Selection<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,19 +33,19 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "duplicateAliasNames", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljavax/persistence/criteria/Selection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljakarta/persistence/criteria/Selection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "<init>", "(Ljava/lang/Class;[Ljavax/persistence/criteria/Selection;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "<init>", "(Ljava/lang/Class;[Ljakarta/persistence/criteria/Selection;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljavax/persistence/criteria/Selection;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;[Ljakarta/persistence/criteria/Selection;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -71,7 +71,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label0);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljavax/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljavax/persistence/criteria/Selection;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljakarta/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljakarta/persistence/criteria/Selection;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitInsn(AALOAD);
@@ -100,9 +100,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/lo
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljavax/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", "javax/persistence/criteria/Selection", Opcodes.INTEGER, Opcodes.INTEGER, "[Ljavax/persistence/criteria/Selection;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljakarta/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", "jakarta/persistence/criteria/Selection", Opcodes.INTEGER, Opcodes.INTEGER, "[Ljakarta/persistence/criteria/Selection;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/criteria/Selection", "getAlias", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/criteria/Selection", "getAlias", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 Label label3 = new Label();
@@ -145,7 +145,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/ArrayList", "add", "(Lja
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(6, 1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljavax/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljavax/persistence/criteria/Selection;"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "java/lang/Class", "[Ljakarta/persistence/criteria/Selection;", Opcodes.INTEGER, "java/util/Map", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljakarta/persistence/criteria/Selection;"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitJumpInsn(IF_ICMPLT, label1);
@@ -162,7 +162,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/criteria/Selection<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/criteria/Selection<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "subSelections", "Ljava/util/ArrayList;");
@@ -193,7 +193,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl", "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/criteria/Selection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/criteria/Selection");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/querydef/InternalSelection");

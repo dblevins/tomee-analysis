@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDetailEntry", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/DetailEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDetailEntry", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/DetailEntry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/DetailEntry1_1Impl");
 methodVisitor.visitInsn(DUP);
@@ -67,13 +67,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/ver1_1/Detail1_1Impl", "getOwnerDocument", "()Lorg/w3c/dom/Document;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/DetailEntry1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/soap/Name;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/DetailEntry1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljakarta/xml/soap/Name;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/DetailEntry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createDetailEntry", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/DetailEntry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/DetailEntry1_1Impl");
 methodVisitor.visitInsn(DUP);

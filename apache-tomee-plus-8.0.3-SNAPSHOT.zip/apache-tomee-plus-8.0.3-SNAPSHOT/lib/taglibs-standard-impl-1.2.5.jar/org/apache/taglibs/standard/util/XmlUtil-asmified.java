@@ -387,7 +387,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/util/XmlUti
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/DocumentBuilderFactory", "setValidating", "(Z)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/util/XmlUtil", "PARSER_FACTORY", "Ljavax/xml/parsers/DocumentBuilderFactory;");
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/DocumentBuilderFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitLabel(label1);
@@ -408,7 +408,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/util/Xm
 methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/transform/sax/SAXTransformerFactory");
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/taglibs/standard/util/XmlUtil", "TRANSFORMER_FACTORY", "Ljavax/xml/transform/sax/SAXTransformerFactory;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/util/XmlUtil", "TRANSFORMER_FACTORY", "Ljavax/xml/transform/sax/SAXTransformerFactory;");
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/sax/SAXTransformerFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitLabel(label4);
@@ -432,7 +432,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/util/XmlUti
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "setNamespaceAware", "(Z)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/util/XmlUtil", "SAXPARSER_FACTORY", "Ljavax/xml/parsers/SAXParserFactory;");
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/parsers/SAXParserFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitLabel(label7);

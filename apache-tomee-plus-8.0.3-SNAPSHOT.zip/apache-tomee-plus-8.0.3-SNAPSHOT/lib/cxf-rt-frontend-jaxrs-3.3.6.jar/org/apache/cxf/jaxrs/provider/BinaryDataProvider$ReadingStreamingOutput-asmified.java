@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/provider/BinaryDataProvider$ReadingStreamingOutput", null, "java/lang/Object", new String[] { "javax/ws/rs/core/StreamingOutput" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/provider/BinaryDataProvider$ReadingStreamingOutput", null, "java/lang/Object", new String[] { "jakarta/ws/rs/core/StreamingOutput" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/BinaryDataProvider$ReadingStreamingOutput", "org/apache/cxf/jaxrs/provider/BinaryDataProvider", "ReadingStreamingOutput", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 

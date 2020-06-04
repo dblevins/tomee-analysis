@@ -122,8 +122,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "setName", "(Ljava/lang/String;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "RESOURCE_LOCAL", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/PersistenceUnitTransactionType", "RESOURCE_LOCAL", "Ljakarta/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("eclipselink.session-name");
@@ -173,7 +173,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitInfo", "()Ljavax/persistence/spi/PersistenceUnitInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitInfo", "()Ljakarta/persistence/spi/PersistenceUnitInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "puInfo", "Lorg/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo;");
@@ -338,12 +338,12 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl", "puInfo", "Lorg/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo", "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);

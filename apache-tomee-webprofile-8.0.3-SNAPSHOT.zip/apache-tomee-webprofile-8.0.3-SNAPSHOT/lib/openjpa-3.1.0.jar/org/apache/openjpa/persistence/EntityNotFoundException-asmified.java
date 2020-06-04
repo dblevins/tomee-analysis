@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/EntityNotFoundException", null, "javax/persistence/EntityNotFoundException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/EntityNotFoundException", null, "jakarta/persistence/EntityNotFoundException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -45,7 +45,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Strin
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/EntityNotFoundException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/EntityNotFoundException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/EntityNotFoundException", "_fatal", "Z");
@@ -156,7 +156,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/EntityNotFoundException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/EntityNotFoundException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintStream;)V", false);
@@ -169,7 +169,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/EntityNotFoundException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/EntityNotFoundException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintWriter;)V", false);

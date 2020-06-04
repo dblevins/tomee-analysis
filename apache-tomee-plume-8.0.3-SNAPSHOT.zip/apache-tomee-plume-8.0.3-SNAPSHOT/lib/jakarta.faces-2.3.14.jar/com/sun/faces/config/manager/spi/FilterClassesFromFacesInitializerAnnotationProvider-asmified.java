@@ -29,11 +29,11 @@ classWriter.visitInnerClass("com/sun/faces/config/WebConfiguration$WebContextIni
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/spi/AnnotationProvider", "<init>", "(Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/spi/AnnotationProvider", "<init>", "(Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -50,9 +50,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClasses", "(Lja
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/manager/spi/FilterClassesFromFacesInitializerAnnotationProvider", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/manager/spi/FilterClassesFromFacesInitializerAnnotationProvider", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitLdcInsn("com.sun.faces.AnnotatedClasses");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/manager/spi/FilterClassesFromFacesInitializerAnnotationProvider", "createAnnotatedMap", "(Ljava/util/Set;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);

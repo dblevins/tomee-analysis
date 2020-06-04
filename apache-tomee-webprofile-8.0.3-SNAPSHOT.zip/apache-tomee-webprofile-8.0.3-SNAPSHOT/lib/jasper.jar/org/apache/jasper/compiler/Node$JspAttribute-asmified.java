@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "el", "Lorg/apach
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "namedAttributeNo
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/apache/jasper/compiler/ELNode$Nodes;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/apache/jasper/compiler/ELNode$Nodes;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -104,13 +104,13 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "namedAttribute", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validateEL", "(Ljavax/el/ExpressionFactory;Ljavax/el/ELContext;)V", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validateEL", "(Ljakarta/el/ExpressionFactory;Ljakarta/el/ELContext;)V", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "el", "Lorg/apache/jasper/compiler/ELNode$Nodes;");
@@ -121,7 +121,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "value", "Ljava/lang/String;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljavax/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljakarta/el/ELContext;Ljava/lang/String;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -130,7 +130,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/compiler/Node$NamedAttribute;Ljavax/servlet/jsp/tagext/TagAttributeInfo;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/compiler/Node$NamedAttribute;Ljakarta/servlet/jsp/tagext/TagAttributeInfo;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -162,7 +162,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "namedAttribute", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "uri", "Ljava/lang/String;");
@@ -198,10 +198,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagAttributeInfo", "()Ljavax/servlet/jsp/tagext/TagAttributeInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagAttributeInfo", "()Ljakarta/servlet/jsp/tagext/TagAttributeInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -210,12 +210,12 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isDeferredInput", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagAttributeInfo", "isDeferredValue", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagAttributeInfo", "isDeferredValue", "()Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -231,12 +231,12 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isDeferredMethodInput", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagAttributeInfo", "isDeferredMethod", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagAttributeInfo", "isDeferredMethod", "()Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
@@ -252,7 +252,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpectedTypeName", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -260,8 +260,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$Js
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagAttributeInfo", "getExpectedTypeName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagAttributeInfo", "getExpectedTypeName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -269,8 +269,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$JspAttribute", "isDeferredMethodInput", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagAttributeInfo", "getMethodSignature", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagAttributeInfo", "getMethodSignature", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -298,15 +298,15 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterTypeNames", "()[Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/Node$JspAttribute", "isDeferredMethodInput", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljavax/servlet/jsp/tagext/TagAttributeInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagAttributeInfo", "getMethodSignature", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/Node$JspAttribute", "tai", "Ljakarta/servlet/jsp/tagext/TagAttributeInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagAttributeInfo", "getMethodSignature", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label0);

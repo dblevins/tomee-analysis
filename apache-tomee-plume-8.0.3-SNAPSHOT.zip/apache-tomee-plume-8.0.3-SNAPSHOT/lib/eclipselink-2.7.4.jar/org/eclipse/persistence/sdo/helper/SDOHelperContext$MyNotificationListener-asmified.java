@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationListener", null, "java/lang/Object", new String[] { "javax/management/NotificationListener" });
+classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationListener", null, "java/lang/Object", new String[] { "jakarta/management/NotificationListener" });
 
 classWriter.visitInnerClass("org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationListener", "org/eclipse/persistence/sdo/helper/SDOHelperContext", "MyNotificationListener", ACC_PRIVATE | ACC_STATIC);
 
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleNotification", "(Ljakarta/management/Notification;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationListener", "server", "I");
@@ -73,18 +73,18 @@ methodVisitor.visitTableSwitchInsn(0, 1, label2, new Label[] { label0, label1 })
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/management/AttributeChangeNotification");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/management/AttributeChangeNotification");
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/AttributeChangeNotification");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/AttributeChangeNotification");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/AttributeChangeNotification", "getAttributeName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/AttributeChangeNotification", "getAttributeName", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("ActiveVersionState");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/AttributeChangeNotification", "getNewValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/AttributeChangeNotification", "getNewValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
@@ -97,10 +97,10 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/Notification", "getUserData", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/Notification", "getUserData", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/sdo/helper/SDOHelperContext", "access$2", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "getKeyProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "getKeyProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/sdo/helper/SDOHelperContext", "access$3", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationListener", "appName", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/sdo/helper/SDOHelperContext", "access$4", "()Ljava/util/concurrent/ConcurrentHashMap;", false);

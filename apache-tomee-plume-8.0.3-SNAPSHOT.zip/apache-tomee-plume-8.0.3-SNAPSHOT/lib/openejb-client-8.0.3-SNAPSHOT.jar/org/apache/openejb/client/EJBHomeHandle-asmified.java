@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBHomeHandle", null, "java/lang/Object", new String[] { "java/io/Externalizable", "javax/ejb/HomeHandle" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/client/EJBHomeHandle", null, "java/lang/Object", new String[] { "java/io/Externalizable", "jakarta/ejb/HomeHandle" });
 
 classWriter.visitInnerClass("org/apache/openejb/client/JNDIContext$AuthenticationInfo", "org/apache/openejb/client/JNDIContext", "AuthenticationInfo", ACC_PUBLIC | ACC_STATIC);
 
@@ -93,7 +93,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljavax/ejb/EJBHome;", null, new String[] { "java/rmi/RemoteException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljakarta/ejb/EJBHome;", null, new String[] { "java/rmi/RemoteException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/EJBHomeHandle", "ejbHomeProxy", "Lorg/apache/openejb/client/EJBHomeProxy;");

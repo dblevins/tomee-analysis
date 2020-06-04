@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PASS
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionSpec", "Ljavax/resource/cci/ConnectionSpec;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionSpec", "Ljakarta/resource/cci/ConnectionSpec;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionFactory", "Ljavax/resource/cci/ConnectionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "connectionFactory", "Ljakarta/resource/cci/ConnectionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -167,7 +167,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectToDataSource", "(Lorg/eclipse/persistence/eis/EISAccessor;Ljava/util/Properties;)Ljavax/resource/cci/Connection;", null, new String[] { "org/eclipse/persistence/exceptions/DatabaseException", "org/eclipse/persistence/exceptions/ValidationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connectToDataSource", "(Lorg/eclipse/persistence/eis/EISAccessor;Ljava/util/Properties;)Ljakarta/resource/cci/Connection;", null, new String[] { "org/eclipse/persistence/exceptions/DatabaseException", "org/eclipse/persistence/exceptions/ValidationException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -176,12 +176,12 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/resource/ResourceException");
 Label label6 = new Label();
 Label label7 = new Label();
-methodVisitor.visitTryCatchBlock(label6, label7, label5, "javax/resource/ResourceException");
+methodVisitor.visitTryCatchBlock(label6, label7, label5, "jakarta/resource/ResourceException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionFactory", "()Ljavax/resource/cci/ConnectionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionFactory", "()Ljakarta/resource/cci/ConnectionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -191,15 +191,15 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISCon
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getName", "()Ljavax/naming/Name;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljavax/naming/Name;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/cci/ConnectionFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/cci/ConnectionFactory");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljavax/resource/cci/ConnectionFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljakarta/resource/cci/ConnectionFactory;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/eis/EISConnectionSpec", "org/eclipse/persistence/eis/EISAccessor", "java/util/Properties", "javax/resource/cci/ConnectionFactory"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/eis/EISConnectionSpec", "org/eclipse/persistence/eis/EISAccessor", "java/util/Properties", "jakarta/resource/cci/ConnectionFactory"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getName", "()Ljavax/naming/Name;", false);
@@ -210,30 +210,30 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/ConnectionFactory", "getRecordFactory", "()Ljavax/resource/cci/RecordFactory;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISAccessor", "setRecordFactory", "(Ljavax/resource/cci/RecordFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/ConnectionFactory", "getRecordFactory", "()Ljakarta/resource/cci/RecordFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISAccessor", "setRecordFactory", "(Ljakarta/resource/cci/RecordFactory;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionSpec", "()Ljavax/resource/cci/ConnectionSpec;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionSpec", "()Ljakarta/resource/cci/ConnectionSpec;", false);
 methodVisitor.visitJumpInsn(IFNONNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/ConnectionFactory", "getConnection", "()Ljavax/resource/cci/Connection;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/ConnectionFactory", "getConnection", "()Ljakarta/resource/cci/Connection;", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionSpec", "()Ljavax/resource/cci/ConnectionSpec;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/cci/ConnectionFactory", "getConnection", "(Ljavax/resource/cci/ConnectionSpec;)Ljavax/resource/cci/Connection;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "getConnectionSpec", "()Ljakarta/resource/cci/ConnectionSpec;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/cci/ConnectionFactory", "getConnection", "(Ljakarta/resource/cci/ConnectionSpec;)Ljakarta/resource/cci/Connection;", true);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/ResourceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/ResourceException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/eis/EISException", "resourceException", "(Ljavax/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/eis/EISException", "resourceException", "(Ljakarta/resource/ResourceException;Lorg/eclipse/persistence/eis/EISAccessor;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/eis/EISException;", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
@@ -305,19 +305,19 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnectionFactory", "()Ljavax/resource/cci/ConnectionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnectionFactory", "()Ljakarta/resource/cci/ConnectionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionFactory", "Ljavax/resource/cci/ConnectionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionFactory", "Ljakarta/resource/cci/ConnectionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnectionSpec", "()Ljavax/resource/cci/ConnectionSpec;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnectionSpec", "()Ljakarta/resource/cci/ConnectionSpec;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionSpec", "Ljavax/resource/cci/ConnectionSpec;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionSpec", "Ljakarta/resource/cci/ConnectionSpec;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -352,11 +352,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionFactory", "(Ljavax/resource/cci/ConnectionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionFactory", "(Ljakarta/resource/cci/ConnectionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionFactory", "Ljavax/resource/cci/ConnectionFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionFactory", "Ljakarta/resource/cci/ConnectionFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -366,18 +366,18 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionFactoryObject"
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/cci/ConnectionFactory");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljavax/resource/cci/ConnectionFactory;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/cci/ConnectionFactory");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionFactory", "(Ljakarta/resource/cci/ConnectionFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionSpec", "(Ljavax/resource/cci/ConnectionSpec;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionSpec", "(Ljakarta/resource/cci/ConnectionSpec;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionSpec", "Ljavax/resource/cci/ConnectionSpec;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/eis/EISConnectionSpec", "connectionSpec", "Ljakarta/resource/cci/ConnectionSpec;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -387,8 +387,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setConnectionSpecObject", "
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/resource/cci/ConnectionSpec");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljavax/resource/cci/ConnectionSpec;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/resource/cci/ConnectionSpec");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/eis/EISConnectionSpec", "setConnectionSpec", "(Ljakarta/resource/cci/ConnectionSpec;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

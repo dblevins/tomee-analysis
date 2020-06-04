@@ -25,343 +25,343 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metadata/MetadataConstants", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ACCESS", "Ljava/lang/String;", null, "javax.persistence.Access");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ACCESS", "Ljava/lang/String;", null, "jakarta.persistence.Access");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ASSOCIATION_OVERRIDE", "Ljava/lang/String;", null, "javax.persistence.AssociationOverride");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ASSOCIATION_OVERRIDE", "Ljava/lang/String;", null, "jakarta.persistence.AssociationOverride");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ASSOCIATION_OVERRIDES", "Ljava/lang/String;", null, "javax.persistence.AssociationOverrides");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ASSOCIATION_OVERRIDES", "Ljava/lang/String;", null, "jakarta.persistence.AssociationOverrides");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ATTRIBUTE_OVERRIDE", "Ljava/lang/String;", null, "javax.persistence.AttributeOverride");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ATTRIBUTE_OVERRIDE", "Ljava/lang/String;", null, "jakarta.persistence.AttributeOverride");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ATTRIBUTE_OVERRIDES", "Ljava/lang/String;", null, "javax.persistence.AttributeOverrides");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ATTRIBUTE_OVERRIDES", "Ljava/lang/String;", null, "jakarta.persistence.AttributeOverrides");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_BASIC", "Ljava/lang/String;", null, "javax.persistence.Basic");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_BASIC", "Ljava/lang/String;", null, "jakarta.persistence.Basic");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE", "Ljava/lang/String;", null, "javax.persistence.Cache");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE", "Ljava/lang/String;", null, "jakarta.persistence.Cache");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHEABLE", "Ljava/lang/String;", null, "javax.persistence.Cacheable");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHEABLE", "Ljava/lang/String;", null, "jakarta.persistence.Cacheable");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "javax.persistence.CacheRetrieveMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.CacheRetrieveMode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE_STORE_MODE", "Ljava/lang/String;", null, "javax.persistence.CacheStoreMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CACHE_STORE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.CacheStoreMode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLLECTION_TABLE", "Ljava/lang/String;", null, "javax.persistence.CollectionTable");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLLECTION_TABLE", "Ljava/lang/String;", null, "jakarta.persistence.CollectionTable");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLUMN", "Ljava/lang/String;", null, "javax.persistence.Column");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.Column");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLUMN_RESULT", "Ljava/lang/String;", null, "javax.persistence.ColumnResult");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_COLUMN_RESULT", "Ljava/lang/String;", null, "jakarta.persistence.ColumnResult");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERT", "Ljava/lang/String;", null, "javax.persistence.Convert");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERT", "Ljava/lang/String;", null, "jakarta.persistence.Convert");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERTS", "Ljava/lang/String;", null, "javax.persistence.Converts");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERTS", "Ljava/lang/String;", null, "jakarta.persistence.Converts");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERTER", "Ljava/lang/String;", null, "javax.persistence.Converter");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_CONVERTER", "Ljava/lang/String;", null, "jakarta.persistence.Converter");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_DISCRIMINATOR_COLUMN", "Ljava/lang/String;", null, "javax.persistence.DiscriminatorColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_DISCRIMINATOR_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.DiscriminatorColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_DISCRIMINATOR_VALUE", "Ljava/lang/String;", null, "javax.persistence.DiscriminatorValue");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_DISCRIMINATOR_VALUE", "Ljava/lang/String;", null, "jakarta.persistence.DiscriminatorValue");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ELEMENT_COLLECTION", "Ljava/lang/String;", null, "javax.persistence.ElementCollection");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ELEMENT_COLLECTION", "Ljava/lang/String;", null, "jakarta.persistence.ElementCollection");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDABLE", "Ljava/lang/String;", null, "javax.persistence.Embeddable");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDABLE", "Ljava/lang/String;", null, "jakarta.persistence.Embeddable");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDED", "Ljava/lang/String;", null, "javax.persistence.Embedded");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDED", "Ljava/lang/String;", null, "jakarta.persistence.Embedded");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDED_ID", "Ljava/lang/String;", null, "javax.persistence.EmbeddedId");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EMBEDDED_ID", "Ljava/lang/String;", null, "jakarta.persistence.EmbeddedId");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY", "Ljava/lang/String;", null, "javax.persistence.Entity");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY", "Ljava/lang/String;", null, "jakarta.persistence.Entity");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_GRAPH", "Ljava/lang/String;", null, "javax.persistence.NamedEntityGraph");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_GRAPH", "Ljava/lang/String;", null, "jakarta.persistence.NamedEntityGraph");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_GRAPHS", "Ljava/lang/String;", null, "javax.persistence.NamedEntityGraphs");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_GRAPHS", "Ljava/lang/String;", null, "jakarta.persistence.NamedEntityGraphs");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_LISTENERS", "Ljava/lang/String;", null, "javax.persistence.EntityListeners");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_LISTENERS", "Ljava/lang/String;", null, "jakarta.persistence.EntityListeners");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_RESULT", "Ljava/lang/String;", null, "javax.persistence.EntityResult");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENTITY_RESULT", "Ljava/lang/String;", null, "jakarta.persistence.EntityResult");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENUMERATED", "Ljava/lang/String;", null, "javax.persistence.Enumerated");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ENUMERATED", "Ljava/lang/String;", null, "jakarta.persistence.Enumerated");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EXCLUDE_DEFAULT_LISTENERS", "Ljava/lang/String;", null, "javax.persistence.ExcludeDefaultListeners");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EXCLUDE_DEFAULT_LISTENERS", "Ljava/lang/String;", null, "jakarta.persistence.ExcludeDefaultListeners");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EXCLUDE_SUPERCLASS_LISTENERS", "Ljava/lang/String;", null, "javax.persistence.ExcludeSuperclassListeners");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_EXCLUDE_SUPERCLASS_LISTENERS", "Ljava/lang/String;", null, "jakarta.persistence.ExcludeSuperclassListeners");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_FIELD_RESULT", "Ljava/lang/String;", null, "javax.persistence.FieldResult");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_FIELD_RESULT", "Ljava/lang/String;", null, "jakarta.persistence.FieldResult");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_GENERATED_VALUE", "Ljava/lang/String;", null, "javax.persistence.GeneratedValue");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_GENERATED_VALUE", "Ljava/lang/String;", null, "jakarta.persistence.GeneratedValue");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ID", "Ljava/lang/String;", null, "javax.persistence.Id");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ID", "Ljava/lang/String;", null, "jakarta.persistence.Id");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ID_CLASS", "Ljava/lang/String;", null, "javax.persistence.IdClass");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ID_CLASS", "Ljava/lang/String;", null, "jakarta.persistence.IdClass");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_INHERITANCE", "Ljava/lang/String;", null, "javax.persistence.Inheritance");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_INHERITANCE", "Ljava/lang/String;", null, "jakarta.persistence.Inheritance");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_COLUMN", "Ljava/lang/String;", null, "javax.persistence.JoinColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.JoinColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_COLUMNS", "Ljava/lang/String;", null, "javax.persistence.JoinColumns");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_COLUMNS", "Ljava/lang/String;", null, "jakarta.persistence.JoinColumns");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_TABLE", "Ljava/lang/String;", null, "javax.persistence.JoinTable");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_JOIN_TABLE", "Ljava/lang/String;", null, "jakarta.persistence.JoinTable");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_LOB", "Ljava/lang/String;", null, "javax.persistence.Lob");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_LOB", "Ljava/lang/String;", null, "jakarta.persistence.Lob");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MANY_TO_MANY", "Ljava/lang/String;", null, "javax.persistence.ManyToMany");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MANY_TO_MANY", "Ljava/lang/String;", null, "jakarta.persistence.ManyToMany");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MANY_TO_ONE", "Ljava/lang/String;", null, "javax.persistence.ManyToOne");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MANY_TO_ONE", "Ljava/lang/String;", null, "jakarta.persistence.ManyToOne");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY", "Ljava/lang/String;", null, "javax.persistence.MapKey");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY", "Ljava/lang/String;", null, "jakarta.persistence.MapKey");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_CLASS", "Ljava/lang/String;", null, "javax.persistence.MapKeyClass");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_CLASS", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyClass");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_COLUMN", "Ljava/lang/String;", null, "javax.persistence.MapKeyColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_ENUMERATED", "Ljava/lang/String;", null, "javax.persistence.MapKeyEnumerated");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_ENUMERATED", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyEnumerated");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_JOIN_COLUMN", "Ljava/lang/String;", null, "javax.persistence.MapKeyJoinColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_JOIN_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyJoinColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_JOIN_COLUMNS", "Ljava/lang/String;", null, "javax.persistence.MapKeyJoinColumns");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_JOIN_COLUMNS", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyJoinColumns");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_TEMPORAL", "Ljava/lang/String;", null, "javax.persistence.MapKeyTemporal");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAP_KEY_TEMPORAL", "Ljava/lang/String;", null, "jakarta.persistence.MapKeyTemporal");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAPPED_SUPERCLASS", "Ljava/lang/String;", null, "javax.persistence.MappedSuperclass");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAPPED_SUPERCLASS", "Ljava/lang/String;", null, "jakarta.persistence.MappedSuperclass");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAPS_ID", "Ljava/lang/String;", null, "javax.persistence.MapsId");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_MAPS_ID", "Ljava/lang/String;", null, "jakarta.persistence.MapsId");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_NATIVE_QUERY", "Ljava/lang/String;", null, "javax.persistence.NamedNativeQuery");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_NATIVE_QUERY", "Ljava/lang/String;", null, "jakarta.persistence.NamedNativeQuery");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_NATIVE_QUERIES", "Ljava/lang/String;", null, "javax.persistence.NamedNativeQueries");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_NATIVE_QUERIES", "Ljava/lang/String;", null, "jakarta.persistence.NamedNativeQueries");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_QUERY", "Ljava/lang/String;", null, "javax.persistence.NamedQuery");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_QUERY", "Ljava/lang/String;", null, "jakarta.persistence.NamedQuery");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_QUERIES", "Ljava/lang/String;", null, "javax.persistence.NamedQueries");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_QUERIES", "Ljava/lang/String;", null, "jakarta.persistence.NamedQueries");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_STORED_PROCEDURE_QUERY", "Ljava/lang/String;", null, "javax.persistence.NamedStoredProcedureQuery");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_STORED_PROCEDURE_QUERY", "Ljava/lang/String;", null, "jakarta.persistence.NamedStoredProcedureQuery");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_STORED_PROCEDURE_QUERIES", "Ljava/lang/String;", null, "javax.persistence.NamedStoredProcedureQueries");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_NAMED_STORED_PROCEDURE_QUERIES", "Ljava/lang/String;", null, "jakarta.persistence.NamedStoredProcedureQueries");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ONE_TO_MANY", "Ljava/lang/String;", null, "javax.persistence.OneToMany");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ONE_TO_MANY", "Ljava/lang/String;", null, "jakarta.persistence.OneToMany");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ONE_TO_ONE", "Ljava/lang/String;", null, "javax.persistence.OneToOne");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ONE_TO_ONE", "Ljava/lang/String;", null, "jakarta.persistence.OneToOne");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ORDER_BY", "Ljava/lang/String;", null, "javax.persistence.OrderBy");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ORDER_BY", "Ljava/lang/String;", null, "jakarta.persistence.OrderBy");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ORDER_COLUMN", "Ljava/lang/String;", null, "javax.persistence.OrderColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_ORDER_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.OrderColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PARAMETER", "Ljava/lang/String;", null, "javax.persistence.Parameter");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PARAMETER", "Ljava/lang/String;", null, "jakarta.persistence.Parameter");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_LOAD", "Ljava/lang/String;", null, "javax.persistence.PostLoad");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_LOAD", "Ljava/lang/String;", null, "jakarta.persistence.PostLoad");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_PERSIST", "Ljava/lang/String;", null, "javax.persistence.PostPersist");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_PERSIST", "Ljava/lang/String;", null, "jakarta.persistence.PostPersist");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_REMOVE", "Ljava/lang/String;", null, "javax.persistence.PostRemove");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_REMOVE", "Ljava/lang/String;", null, "jakarta.persistence.PostRemove");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_UPDATE", "Ljava/lang/String;", null, "javax.persistence.PostUpdate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_POST_UPDATE", "Ljava/lang/String;", null, "jakarta.persistence.PostUpdate");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_PERSIST", "Ljava/lang/String;", null, "javax.persistence.PrePersist");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_PERSIST", "Ljava/lang/String;", null, "jakarta.persistence.PrePersist");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_REMOVE", "Ljava/lang/String;", null, "javax.persistence.PreRemove");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_REMOVE", "Ljava/lang/String;", null, "jakarta.persistence.PreRemove");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_UPDATE", "Ljava/lang/String;", null, "javax.persistence.PreUpdate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRE_UPDATE", "Ljava/lang/String;", null, "jakarta.persistence.PreUpdate");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRIMARY_KEY_JOIN_COLUMN", "Ljava/lang/String;", null, "javax.persistence.PrimaryKeyJoinColumn");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRIMARY_KEY_JOIN_COLUMN", "Ljava/lang/String;", null, "jakarta.persistence.PrimaryKeyJoinColumn");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRIMARY_KEY_JOIN_COLUMNS", "Ljava/lang/String;", null, "javax.persistence.PrimaryKeyJoinColumns");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PRIMARY_KEY_JOIN_COLUMNS", "Ljava/lang/String;", null, "jakarta.persistence.PrimaryKeyJoinColumns");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SECONDARY_TABLE", "Ljava/lang/String;", null, "javax.persistence.SecondaryTable");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SECONDARY_TABLE", "Ljava/lang/String;", null, "jakarta.persistence.SecondaryTable");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SECONDARY_TABLES", "Ljava/lang/String;", null, "javax.persistence.SecondaryTables");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SECONDARY_TABLES", "Ljava/lang/String;", null, "jakarta.persistence.SecondaryTables");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SEQUENCE_GENERATOR", "Ljava/lang/String;", null, "javax.persistence.SequenceGenerator");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SEQUENCE_GENERATOR", "Ljava/lang/String;", null, "jakarta.persistence.SequenceGenerator");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SEQUENCE_GENERATORS", "Ljava/lang/String;", null, "javax.persistence.SequenceGenerators");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SEQUENCE_GENERATORS", "Ljava/lang/String;", null, "jakarta.persistence.SequenceGenerators");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SQL_RESULT_SET_MAPPING", "Ljava/lang/String;", null, "javax.persistence.SqlResultSetMapping");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SQL_RESULT_SET_MAPPING", "Ljava/lang/String;", null, "jakarta.persistence.SqlResultSetMapping");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SQL_RESULT_SET_MAPPINGS", "Ljava/lang/String;", null, "javax.persistence.SqlResultSetMappings");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_SQL_RESULT_SET_MAPPINGS", "Ljava/lang/String;", null, "jakarta.persistence.SqlResultSetMappings");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_STORED_PROCEDURE_PARAMETER", "Ljava/lang/String;", null, "javax.persistence.StoredProcedureParameter");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_STORED_PROCEDURE_PARAMETER", "Ljava/lang/String;", null, "jakarta.persistence.StoredProcedureParameter");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE", "Ljava/lang/String;", null, "javax.persistence.Table");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE", "Ljava/lang/String;", null, "jakarta.persistence.Table");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE_GENERATOR", "Ljava/lang/String;", null, "javax.persistence.TableGenerator");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE_GENERATOR", "Ljava/lang/String;", null, "jakarta.persistence.TableGenerator");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE_GENERATORS", "Ljava/lang/String;", null, "javax.persistence.TableGenerators");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TABLE_GENERATORS", "Ljava/lang/String;", null, "jakarta.persistence.TableGenerators");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TEMPORAL", "Ljava/lang/String;", null, "javax.persistence.Temporal");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TEMPORAL", "Ljava/lang/String;", null, "jakarta.persistence.Temporal");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TRANSIENT", "Ljava/lang/String;", null, "javax.persistence.Transient");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_TRANSIENT", "Ljava/lang/String;", null, "jakarta.persistence.Transient");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_UNIQUE_CONSTRAINT", "Ljava/lang/String;", null, "javax.persistence.UniqueConstraint");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_UNIQUE_CONSTRAINT", "Ljava/lang/String;", null, "jakarta.persistence.UniqueConstraint");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_VERSION", "Ljava/lang/String;", null, "javax.persistence.Version");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_VERSION", "Ljava/lang/String;", null, "jakarta.persistence.Version");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_STATIC_METAMODEL", "Ljava/lang/String;", null, "javax.persistence.metamodel.StaticMetamodel");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_STATIC_METAMODEL", "Ljava/lang/String;", null, "jakarta.persistence.metamodel.StaticMetamodel");
 fieldVisitor.visitEnd();
 }
 {
@@ -505,7 +505,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "MAPP
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PERSISTENCE_PACKAGE_PREFIX", "Ljava/lang/String;", null, "javax.persistence");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_PERSISTENCE_PACKAGE_PREFIX", "Ljava/lang/String;", null, "jakarta.persistence");
 fieldVisitor.visitEnd();
 }
 {

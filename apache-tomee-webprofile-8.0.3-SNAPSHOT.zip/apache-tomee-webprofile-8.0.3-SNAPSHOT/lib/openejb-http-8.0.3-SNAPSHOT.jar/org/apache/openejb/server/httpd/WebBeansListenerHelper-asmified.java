@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "FAK
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "destroyFakedRequest", "(Ljavax/servlet/ServletRequestListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "destroyFakedRequest", "(Ljakarta/servlet/ServletRequestListener;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -47,7 +47,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue"
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequestListener", "requestDestroyed", "(Ljavax/servlet/ServletRequestEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequestListener", "requestDestroyed", "(Ljakarta/servlet/ServletRequestEvent;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Boolean"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "FAKE_REQUEST", "Ljava/lang/ThreadLocal;");
@@ -68,26 +68,26 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljavax/servlet/ServletRequestListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "ensureRequestScope", "(Lorg/apache/webbeans/spi/ContextsService;Ljakarta/servlet/ServletRequestListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/RequestScoped;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljavax/enterprise/context/spi/Context;", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/RequestScoped;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljakarta/enterprise/context/spi/Context;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/RequestScoped;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljavax/enterprise/context/spi/Context;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/context/spi/Context", "isActive", "()Z", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/RequestScoped;"));
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/ContextsService", "getCurrentContext", "(Ljava/lang/Class;)Ljakarta/enterprise/context/spi/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/context/spi/Context", "isActive", "()Z", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/enterprise/context/spi/Context"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/enterprise/context/spi/Context"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequestListener", "requestInitialized", "(Ljavax/servlet/ServletRequestEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequestListener", "requestInitialized", "(Ljakarta/servlet/ServletRequestEvent;)V", true);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/httpd/WebBeansListenerHelper", "FAKE_REQUEST", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);

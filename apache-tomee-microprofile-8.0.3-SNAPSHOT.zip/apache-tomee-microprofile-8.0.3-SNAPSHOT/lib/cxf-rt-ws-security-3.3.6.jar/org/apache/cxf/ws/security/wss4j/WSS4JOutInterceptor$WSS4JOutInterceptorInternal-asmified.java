@@ -399,9 +399,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine",
 methodVisitor.visitLabel(label22);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/soap/SOAPMessage;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/soap/SOAPMessage;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getContent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/soap/SOAPMessage");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/soap/SOAPMessage");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 Label label23 = new Label();
@@ -423,9 +423,9 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/binding/soap/Soap
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/binding/soap/SoapFault", "<init>", "(Lorg/apache/cxf/common/i18n/Message;Ljavax/xml/namespace/QName;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label23);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/soap/SOAPMessage"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/soap/SOAPMessage"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor$WSS4JOutInterceptorInternal", "this$0", "Lorg/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor;");

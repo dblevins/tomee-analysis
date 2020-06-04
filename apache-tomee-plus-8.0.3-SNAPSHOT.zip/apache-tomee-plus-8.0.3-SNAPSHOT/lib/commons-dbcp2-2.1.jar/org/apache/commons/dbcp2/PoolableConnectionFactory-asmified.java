@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_connFactory", "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dataSourceJmxName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dataSourceJmxName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -113,7 +113,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "UNKNOWN_TRANSACTI
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/commons/dbcp2/ConnectionFactory;Ljavax/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/commons/dbcp2/ConnectionFactory;Ljakarta/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -173,7 +173,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "_connFactory", "Lorg/apache/commons/dbcp2/ConnectionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
@@ -508,14 +508,14 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "maxOpenPreparedStatements", "I");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig", "setMaxTotal", "(I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label9);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -562,7 +562,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/dbcp2/PoolingCo
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label11);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -571,24 +571,24 @@ Label label12 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(",connectionpool=connections,connection=");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(J)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label12);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/dbcp2/PoolableConnection");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -599,7 +599,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "_disconnectionSqlCodes", "Ljava/util/Collection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "_fastFailValidation", "Z");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljavax/management/ObjectName;Ljava/util/Collection;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljakarta/management/ObjectName;Ljava/util/Collection;Z)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/pool2/impl/DefaultPooledObject");
 methodVisitor.visitInsn(DUP);
@@ -1046,10 +1046,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDataSourceJmxName", "()Ljavax/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDataSourceJmxName", "()Ljakarta/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnectionFactory", "dataSourceJmxName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

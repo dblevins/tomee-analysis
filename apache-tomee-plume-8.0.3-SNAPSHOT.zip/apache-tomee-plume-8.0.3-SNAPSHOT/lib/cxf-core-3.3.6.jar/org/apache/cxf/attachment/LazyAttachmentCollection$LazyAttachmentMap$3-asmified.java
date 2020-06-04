@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap$3", "Ljava/util/AbstractCollection<Ljavax/activation/DataHandler;>;", "java/util/AbstractCollection", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap$3", "Ljava/util/AbstractCollection<Ljakarta/activation/DataHandler;>;", "java/util/AbstractCollection", null);
 
 classWriter.visitOuterClass("org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap", "values", "()Ljava/util/Collection;");
 
@@ -49,7 +49,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljavax/activation/DataHandler;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljakarta/activation/DataHandler;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap$3$1");
 methodVisitor.visitInsn(DUP);

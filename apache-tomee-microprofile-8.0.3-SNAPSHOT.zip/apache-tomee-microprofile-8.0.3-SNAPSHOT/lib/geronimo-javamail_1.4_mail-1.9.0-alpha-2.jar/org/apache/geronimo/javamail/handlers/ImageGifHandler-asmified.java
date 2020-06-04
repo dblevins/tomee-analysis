@@ -28,13 +28,13 @@ classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/ha
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/activation/ActivationDataFlavor");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/ActivationDataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/awt/Image;"));
 methodVisitor.visitLdcInsn("image/gif");
 methodVisitor.visitLdcInsn("GIF Image");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/handlers/AbstractImageHandler", "<init>", "(Ljavax/activation/ActivationDataFlavor;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/handlers/AbstractImageHandler", "<init>", "(Ljakarta/activation/ActivationDataFlavor;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();

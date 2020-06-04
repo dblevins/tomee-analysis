@@ -22,25 +22,25 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/PartialViewContextFactoryImpl", null, "javax/faces/context/PartialViewContextFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/PartialViewContextFactoryImpl", null, "jakarta/faces/context/PartialViewContextFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/PartialViewContextFactory", "<init>", "(Ljavax/faces/context/PartialViewContextFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/PartialViewContextFactory", "<init>", "(Ljakarta/faces/context/PartialViewContextFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPartialViewContext", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/context/PartialViewContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPartialViewContext", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/context/PartialViewContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/PartialViewContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/PartialViewContextImpl", "<init>", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/PartialViewContextImpl", "<init>", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

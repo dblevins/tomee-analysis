@@ -63,15 +63,15 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljav
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "<init>", "(Lorg/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter;Ljavax/activation/DataHandler;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "setDataHandler", "(Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler", "<init>", "(Lorg/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter;Ljakarta/activation/DataHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "setDataHandler", "(Ljakarta/activation/DataHandler;)V", false);
 methodVisitor.visitIincInsn(2, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);

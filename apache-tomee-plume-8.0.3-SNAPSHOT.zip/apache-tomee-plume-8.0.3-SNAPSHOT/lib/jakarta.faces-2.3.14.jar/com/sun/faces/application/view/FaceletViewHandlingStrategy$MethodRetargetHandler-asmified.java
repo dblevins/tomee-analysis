@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/faces/application/view/FaceletViewHandlingS
 classWriter.visitInnerClass("com/sun/faces/application/view/FaceletViewHandlingStrategy$MethodRetargetHandler", "com/sun/faces/application/view/FaceletViewHandlingStrategy", "MethodRetargetHandler", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retarget", "(Ljavax/faces/context/FacesContext;Lcom/sun/faces/application/view/FaceletViewHandlingStrategy$CompCompInterfaceMethodMetadata;Ljava/lang/Object;Ljavax/faces/component/UIComponent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "retarget", "(Ljakarta/faces/context/FacesContext;Lcom/sun/faces/application/view/FaceletViewHandlingStrategy$CompCompInterfaceMethodMetadata;Ljava/lang/Object;Ljakarta/faces/component/UIComponent;)V", null, null);
 methodVisitor.visitEnd();
 }
 {

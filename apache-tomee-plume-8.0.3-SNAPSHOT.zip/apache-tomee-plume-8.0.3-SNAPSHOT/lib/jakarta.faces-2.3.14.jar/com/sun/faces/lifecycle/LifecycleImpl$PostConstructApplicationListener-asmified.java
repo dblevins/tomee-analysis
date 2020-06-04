@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener", null, "java/lang/Object", new String[] { "javax/faces/event/SystemEventListener" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener", null, "java/lang/Object", new String[] { "jakarta/faces/event/SystemEventListener" });
 
 classWriter.visitInnerClass("com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener", "com/sun/faces/lifecycle/LifecycleImpl", "PostConstructApplicationListener", ACC_PRIVATE);
 
@@ -48,13 +48,13 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isListenerForSource", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/application/Application");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/application/Application");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljavax/faces/event/SystemEvent;)V", null, new String[] { "javax/faces/event/AbortProcessingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processEvent", "(Ljakarta/faces/event/SystemEvent;)V", null, new String[] { "jakarta/faces/event/AbortProcessingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener", "this$0", "Lcom/sun/faces/lifecycle/LifecycleImpl;");

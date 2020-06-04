@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/core/cmp/CmpEngine", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBean", "(Ljavax/ejb/EntityBean;Lorg/apache/openejb/core/ThreadContext;)Ljava/lang/Object;", null, new String[] { "javax/ejb/CreateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBean", "(Ljakarta/ejb/EntityBean;Lorg/apache/openejb/core/ThreadContext;)Ljava/lang/Object;", null, new String[] { "jakarta/ejb/CreateException" });
 methodVisitor.visitEnd();
 }
 {
@@ -41,15 +41,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "removeBean",
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "queryBeans", "(Lorg/apache/openejb/core/ThreadContext;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/openejb/core/ThreadContext;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;", new String[] { "javax/ejb/FinderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "queryBeans", "(Lorg/apache/openejb/core/ThreadContext;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/openejb/core/ThreadContext;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;", new String[] { "jakarta/ejb/FinderException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "queryBeans", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;", new String[] { "javax/ejb/FinderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "queryBeans", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;", new String[] { "jakarta/ejb/FinderException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "executeUpdateQuery", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)I", null, new String[] { "javax/ejb/FinderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "executeUpdateQuery", "(Lorg/apache/openejb/BeanContext;Ljava/lang/String;[Ljava/lang/Object;)I", null, new String[] { "jakarta/ejb/FinderException" });
 methodVisitor.visitEnd();
 }
 {

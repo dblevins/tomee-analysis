@@ -34,10 +34,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljavax/persistence/EntityManager;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljakarta/persistence/EntityManager;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljavax/persistence/EntityManagerFactory;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljakarta/persistence/EntityManagerFactory;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -58,7 +58,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/IllegalArgumentException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljavax/persistence/Query;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isEclipseLink", "(Ljakarta/persistence/Query;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/jpa/JpaQuery");
@@ -85,14 +85,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isReportQuery", "(Ljavax/persistence/Query;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isReportQuery", "(Ljakarta/persistence/Query;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "isEclipseLink", "(Ljavax/persistence/Query;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "isEclipseLink", "(Ljakarta/persistence/Query;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/DatabaseQuery", "isReportQuery", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_1);
@@ -105,10 +105,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getReportQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/ReportQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getReportQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/ReportQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/DatabaseQuery", "isReportQuery", "()Z", false);
@@ -136,7 +136,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDatabaseQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDatabaseQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/jpa/JpaQuery");
@@ -165,10 +165,10 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getReadAllQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/ReadAllQuery;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getReadAllQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/ReadAllQuery;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljavax/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getDatabaseQuery", "(Ljakarta/persistence/Query;)Lorg/eclipse/persistence/queries/DatabaseQuery;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/DatabaseQuery", "isReadAllQuery", "()Z", false);
@@ -196,18 +196,18 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;Ljavax/persistence/EntityManager;)Ljavax/persistence/Query;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;Ljakarta/persistence/EntityManager;)Ljakarta/persistence/Query;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;)Ljavax/persistence/Query;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "createQuery", "(Lorg/eclipse/persistence/queries/DatabaseQuery;)Ljakarta/persistence/Query;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/jpa/JpaEntityManager");
@@ -219,13 +219,13 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/EntityManager");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/EntityManager", "getDelegate", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/EntityManager");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -243,7 +243,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManagerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManagerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/jpa/JpaEntityManagerFactory");
@@ -271,19 +271,19 @@ methodVisitor.visitMaxs(7, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManagerFactory", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getEntityManagerFactory", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljavax/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManager", "(Ljakarta/persistence/EntityManager;)Lorg/eclipse/persistence/jpa/JpaEntityManager;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "getEntityManagerFactory", "()Ljavax/persistence/EntityManagerFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "getEntityManagerFactory", "()Ljakarta/persistence/EntityManagerFactory;", true);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "getEntityManagerFactory", "()Ljavax/persistence/EntityManagerFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManager", "getEntityManagerFactory", "()Ljakarta/persistence/EntityManagerFactory;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate", "getOwner", "()Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -295,37 +295,37 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDatabaseSession", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/DatabaseSession;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getDatabaseSession", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/DatabaseSession;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManagerFactory", "getDatabaseSession", "()Lorg/eclipse/persistence/internal/sessions/DatabaseSessionImpl;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getServerSession", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/server/Server;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getServerSession", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/server/Server;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManagerFactory", "getServerSession", "()Lorg/eclipse/persistence/sessions/server/ServerSession;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getSessionBroker", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/broker/SessionBroker;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getSessionBroker", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/sessions/broker/SessionBroker;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/JpaHelper", "getEntityManagerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/eclipse/persistence/jpa/JpaEntityManagerFactory;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/jpa/JpaEntityManagerFactory", "getSessionBroker", "()Lorg/eclipse/persistence/sessions/broker/SessionBroker;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createEntityManagerFactory", "(Lorg/eclipse/persistence/sessions/server/Server;)Ljavax/persistence/EntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createEntityManagerFactory", "(Lorg/eclipse/persistence/sessions/server/Server;)Ljakarta/persistence/EntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl");
 methodVisitor.visitInsn(DUP);
@@ -337,7 +337,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createEntityManagerFactory", "(Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createEntityManagerFactory", "(Ljava/lang/String;)Ljakarta/persistence/EntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/sessions/factories/SessionFactory");
 methodVisitor.visitInsn(DUP);

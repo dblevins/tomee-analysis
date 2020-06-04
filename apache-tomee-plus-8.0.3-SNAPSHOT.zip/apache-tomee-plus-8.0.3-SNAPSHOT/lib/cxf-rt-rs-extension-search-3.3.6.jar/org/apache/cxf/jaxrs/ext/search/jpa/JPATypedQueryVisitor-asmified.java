@@ -22,48 +22,48 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "<T:Ljava/lang/Object;>Lorg/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor<TT;TT;Ljavax/persistence/TypedQuery<TT;>;>;", "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "<T:Ljava/lang/Object;>Lorg/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor<TT;TT;Ljakarta/persistence/TypedQuery<TT;>;>;", "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)V", "(Ljavax/persistence/EntityManager;Ljava/lang/Class<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)V", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;)V", "(Ljavax/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;)V", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/List;)V", "(Ljavax/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/List;)V", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/lang/String;)V", "(Ljavax/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/lang/String;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/lang/String;)V", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/lang/String;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -71,29 +71,29 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", "(Ljavax/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor", "<init>", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;Ljava/util/Map;Ljava/util/List;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQuery", "()Ljavax/persistence/TypedQuery;", "()Ljavax/persistence/TypedQuery<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQuery", "()Ljakarta/persistence/TypedQuery;", "()Ljakarta/persistence/TypedQuery<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "getTypedQuery", "()Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "getTypedQuery", "()Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -102,7 +102,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getQuery", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "getQuery", "()Ljavax/persistence/TypedQuery;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor", "getQuery", "()Ljakarta/persistence/TypedQuery;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

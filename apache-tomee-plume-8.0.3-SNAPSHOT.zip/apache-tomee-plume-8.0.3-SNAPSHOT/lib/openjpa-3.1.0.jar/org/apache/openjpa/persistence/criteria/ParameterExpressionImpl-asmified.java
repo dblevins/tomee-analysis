@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/ParameterExpressionImpl", "<T:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/ExpressionImpl<TT;>;Ljavax/persistence/criteria/ParameterExpression<TT;>;Lorg/apache/openjpa/persistence/criteria/BindableParameter;", "org/apache/openjpa/persistence/criteria/ExpressionImpl", new String[] { "javax/persistence/criteria/ParameterExpression", "org/apache/openjpa/persistence/criteria/BindableParameter" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/ParameterExpressionImpl", "<T:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/ExpressionImpl<TT;>;Ljakarta/persistence/criteria/ParameterExpression<TT;>;Lorg/apache/openjpa/persistence/criteria/BindableParameter;", "org/apache/openjpa/persistence/criteria/ExpressionImpl", new String[] { "jakarta/persistence/criteria/ParameterExpression", "org/apache/openjpa/persistence/criteria/BindableParameter" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_name", "Ljava/lang/String;", null, null);

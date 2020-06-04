@@ -40,7 +40,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "map", "(Ljavax/json/stream/JsonParser;Ljavax/json/JsonReaderFactory;)Ljavax/json/JsonReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "map", "(Ljakarta/json/stream/JsonParser;Ljakarta/json/JsonReaderFactory;)Ljakarta/json/JsonReader;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -49,7 +49,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/IllegalAcces
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/reflect/InvocationTargetException");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/JsonReader;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/JsonReader;"));
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/johnzon/mapper/JohnzonCores", "CREATE_READER", "Ljava/lang/reflect/Method;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
@@ -60,7 +60,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/json/JsonReader");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/json/JsonReader");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -108,7 +108,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/json/stream/JsonParser;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/json/stream/JsonParser;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);

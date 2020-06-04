@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/utils/JAXRSUtils$2", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/ws/rs/core/MediaType;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/utils/JAXRSUtils$2", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/ws/rs/core/MediaType;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 classWriter.visitOuterClass("org/apache/cxf/jaxrs/utils/JAXRSUtils", "sortMediaTypes", "(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;");
 
@@ -45,13 +45,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/utils/JAXRSUtils$2", "val$qs", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "compareMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;Ljava/lang/String;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "compareMediaTypes", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;Ljava/lang/String;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -61,10 +61,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/MediaType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/MediaType");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/MediaType");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/utils/JAXRSUtils$2", "compare", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/MediaType");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/utils/JAXRSUtils$2", "compare", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

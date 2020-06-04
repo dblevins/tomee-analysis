@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/util/cdi11/CDIUtil", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createHelperBean", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljavax/enterprise/inject/spi/Bean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createHelperBean", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljakarta/enterprise/inject/spi/Bean;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/MessageImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "javax/wsdl/Message" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/MessageImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "jakarta/wsdl/Message" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "parts", "Ljava/util/Map;", null, null);
@@ -97,10 +97,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPart", "(Ljavax/wsdl/Part;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPart", "(Ljakarta/wsdl/Part;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Part", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Part", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/MessageImpl", "parts", "Ljava/util/Map;");
@@ -118,25 +118,25 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPart", "(Ljava/lang/String;)Ljavax/wsdl/Part;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPart", "(Ljava/lang/String;)Ljakarta/wsdl/Part;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/MessageImpl", "parts", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Part");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Part");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePart", "(Ljava/lang/String;)Ljavax/wsdl/Part;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePart", "(Ljava/lang/String;)Ljakarta/wsdl/Part;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/MessageImpl", "parts", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Part");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Part");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -179,7 +179,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ibm/wsdl/MessageImpl", "getPart", "(Ljava/lang/String;)Ljavax/wsdl/Part;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ibm/wsdl/MessageImpl", "getPart", "(Ljava/lang/String;)Ljakarta/wsdl/Part;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label3 = new Label();

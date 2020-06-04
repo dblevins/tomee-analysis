@@ -81,15 +81,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSchemaLoc
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getElementFormDefault", "(Ljava/lang/String;)Ljavax/xml/bind/annotation/XmlNsForm;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getElementFormDefault", "(Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttributeFormDefault", "(Ljava/lang/String;)Ljavax/xml/bind/annotation/XmlNsForm;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAttributeFormDefault", "(Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "dump", "(Ljavax/xml/transform/Result;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "dump", "(Ljavax/xml/transform/Result;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/reflect/Method;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/cxf/jaxws/interceptors/SwAOutInterceptor", "callSWARefMethod", "(Ljavax/xml/bind/JAXBContext;)Z");
+classWriter.visitOuterClass("org/apache/cxf/jaxws/interceptors/SwAOutInterceptor", "callSWARefMethod", "(Ljakarta/xml/bind/JAXBContext;)Z");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$ctx", "Ljavax/xml/bind/JAXBContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$ctx", "Ljakarta/xml/bind/JAXBContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/interceptors/SwAOutInterceptor;Ljavax/xml/bind/JAXBContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxws/interceptors/SwAOutInterceptor;Ljakarta/xml/bind/JAXBContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "this$0", "Lorg/apache/cxf/jaxws/interceptors/SwAOutInterceptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "val$ctx", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "val$ctx", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -55,7 +55,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/reflect/Method;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "val$ctx", "Ljavax/xml/bind/JAXBContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$1", "val$ctx", "Ljakarta/xml/bind/JAXBContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitLdcInsn("hasSwaRef");
 methodVisitor.visitInsn(ICONST_0);

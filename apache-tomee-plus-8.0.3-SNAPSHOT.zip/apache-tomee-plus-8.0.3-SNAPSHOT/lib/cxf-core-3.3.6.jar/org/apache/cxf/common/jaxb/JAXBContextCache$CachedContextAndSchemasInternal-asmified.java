@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/common/jaxb/JAXBC
 classWriter.visitInnerClass("org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal", "org/apache/cxf/common/jaxb/JAXBContextCache", "CachedContextAndSchemasInternal", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljavax/xml/bind/JAXBContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljakarta/xml/bind/JAXBContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "schemas", "Ljava/util/Collec
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set;)V", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set;)V", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Set<Ljava/lang/Class<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -60,12 +60,12 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljavax/xml/bind/JAXBContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljakarta/xml/bind/JAXBContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemasInternal", "context", "Ljava/lang/ref/WeakReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ref/WeakReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/JAXBContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

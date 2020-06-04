@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider", null, "java/lang/Object", new String[] { "javax/ws/rs/ext/ParamConverterProvider" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider", null, "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ParamConverterProvider" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$ZonedDateTimeConverter", "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider", "ZonedDateTimeConverter", ACC_PUBLIC);
@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConverter", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljakarta/ws/rs/ext/ParamConverter;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljakarta/ws/rs/ext/ParamConverter<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/time/LocalDateTime;"));

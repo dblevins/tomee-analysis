@@ -114,7 +114,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/transport/http/osgi/ServletExpo
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http/osgi/ServletExporter", "<init>", "(Ljavax/servlet/Servlet;Lorg/osgi/service/http/HttpService;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http/osgi/ServletExporter", "<init>", "(Ljakarta/servlet/Servlet;Lorg/osgi/service/http/HttpService;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/osgi/HttpServiceTrackerCust", "servletExporter", "Lorg/apache/cxf/transport/http/osgi/ServletExporter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);

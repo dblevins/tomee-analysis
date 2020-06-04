@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/portable/InjectionTargetImpl$ConstructorInstanceProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/inject/Provider<TT;>;", "java/lang/Object", new String[] { "javax/inject/Provider" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/portable/InjectionTargetImpl$ConstructorInstanceProvider", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/inject/Provider<TT;>;", "java/lang/Object", new String[] { "jakarta/inject/Provider" });
 
 classWriter.visitInnerClass("org/apache/webbeans/portable/InjectionTargetImpl$ConstructorInstanceProvider", "org/apache/webbeans/portable/InjectionTargetImpl", "ConstructorInstanceProvider", ACC_PRIVATE | ACC_STATIC);
 

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/rs/security/oauth2/common/ServerAccessToken", null, "org/apache/cxf/rs/security/oauth2/common/AccessToken", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/MappedSuperclass;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/MappedSuperclass;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -236,7 +236,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClient", "()Lorg/apache/cxf/rs/security/oauth2/common/Client;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ManyToOne;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ManyToOne;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -259,8 +259,8 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getScopes", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/cxf/rs/security/oauth2/common/OAuthPermission;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ManyToMany;", true);
-annotationVisitor0.visitEnum("fetch", "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ManyToMany;", true);
+annotationVisitor0.visitEnum("fetch", "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -283,7 +283,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Lorg/apache/cxf/rs/security/oauth2/common/UserSubject;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ManyToOne;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ManyToOne;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -344,12 +344,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAudiences", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ElementCollection;", true);
-annotationVisitor0.visitEnum("fetch", "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ElementCollection;", true);
+annotationVisitor0.visitEnum("fetch", "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/OrderColumn;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/OrderColumn;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -410,12 +410,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtraProperties", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/ElementCollection;", true);
-annotationVisitor0.visitEnum("fetch", "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/ElementCollection;", true);
+annotationVisitor0.visitEnum("fetch", "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/persistence/MapKeyColumn;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/persistence/MapKeyColumn;", true);
 annotationVisitor0.visit("name", "extraPropName");
 annotationVisitor0.visitEnd();
 }

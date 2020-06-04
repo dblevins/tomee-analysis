@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAX
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "THREAD_LOCAL", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljavax/jms/Session;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "THREAD_LOCAL", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljakarta/jms/Session;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,11 +51,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "endpointActiva
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "endpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "endpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "workManager", "Ljavax/resource/spi/work/WorkManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "workManager", "Ljakarta/resource/spi/work/WorkManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dest", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectWork", "Ljavax/resource/spi/work/Work;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "connectWork", "Ljakarta/resource/spi/work/Work;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -95,7 +95,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "running", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/activemq/ra/MessageResourceAdapter;Lorg/apache/activemq/ra/ActiveMQEndpointActivationKey;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/activemq/ra/MessageResourceAdapter;Lorg/apache/activemq/ra/ActiveMQEndpointActivationKey;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -125,19 +125,19 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointW
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointActivationKey", "Lorg/apache/activemq/ra/ActiveMQEndpointActivationKey;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "getMessageEndpointFactory", "()Ljavax/resource/spi/endpoint/MessageEndpointFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "getMessageEndpointFactory", "()Ljakarta/resource/spi/endpoint/MessageEndpointFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageResourceAdapter", "getBootstrapContext", "()Ljavax/resource/spi/BootstrapContext;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/BootstrapContext", "getWorkManager", "()Ljavax/resource/spi/work/WorkManager;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageResourceAdapter", "getBootstrapContext", "()Ljakarta/resource/spi/BootstrapContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/BootstrapContext", "getWorkManager", "()Ljakarta/resource/spi/work/WorkManager;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointFactory", "Ljavax/resource/spi/endpoint/MessageEndpointFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointFactory", "Ljakarta/resource/spi/endpoint/MessageEndpointFactory;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "ON_MESSAGE_METHOD", "Ljava/lang/reflect/Method;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/endpoint/MessageEndpointFactory", "isDeliveryTransacted", "(Ljava/lang/reflect/Method;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/endpoint/MessageEndpointFactory", "isDeliveryTransacted", "(Ljava/lang/reflect/Method;)Z", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "transacted", "Z");
 methodVisitor.visitLabel(label1);
 Label label6 = new Label();
@@ -145,10 +145,10 @@ methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/ra/ActiveMQEndpointWorker", "org/apache/activemq/ra/MessageResourceAdapter", "org/apache/activemq/ra/ActiveMQEndpointActivationKey"}, 1, new Object[] {"java/lang/NoSuchMethodException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Endpoint does not implement the onMessage method.");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -158,7 +158,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ra/ActiveMQEndpointWorker$1", "<init>", "(Lorg/apache/activemq/ra/ActiveMQEndpointWorker;Lorg/apache/activemq/ra/MessageResourceAdapter;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "endpointActivationKey", "Lorg/apache/activemq/ra/ActiveMQEndpointActivationKey;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "getActivationSpec", "()Lorg/apache/activemq/ra/MessageActivationSpec;", false);
@@ -185,7 +185,7 @@ methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/ra/ActiveMQEndpointWorker", "org/apache/activemq/ra/MessageResourceAdapter", "org/apache/activemq/ra/ActiveMQEndpointActivationKey", "org/apache/activemq/ra/MessageActivationSpec"}, 1, new Object[] {"javax/naming/NamingException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -196,11 +196,11 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageActivationSpec", "getDestination", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn("javax.jms.Queue");
+methodVisitor.visitLdcInsn("jakarta.jms.Queue");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageActivationSpec", "getDestinationType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
@@ -216,7 +216,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointW
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn("javax.jms.Topic");
+methodVisitor.visitLdcInsn("jakarta.jms.Topic");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageActivationSpec", "getDestinationType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
@@ -232,7 +232,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointW
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/ResourceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -243,7 +243,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/ra/MessageActivationSpec", "getDestinationType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/ResourceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -252,12 +252,12 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "safeClose", "(Ljavax/jms/Connection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "safeClose", "(Ljakarta/jms/Connection;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/JMSException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/JMSException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -265,13 +265,13 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpoint
 methodVisitor.visitLdcInsn("Closing connection to broker");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Connection", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Connection", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/jms/JMSException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/jms/JMSException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("failed to close c {}");
@@ -285,12 +285,12 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "safeClose", "(Ljavax/jms/ConnectionConsumer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "safeClose", "(Ljakarta/jms/ConnectionConsumer;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/JMSException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/JMSException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -298,13 +298,13 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpoint
 methodVisitor.visitLdcInsn("Closing ConnectionConsumer");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/ConnectionConsumer", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/ConnectionConsumer", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/jms/JMSException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/jms/JMSException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("failed to close cc {}");
@@ -318,7 +318,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "()V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "start", "()V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -330,7 +330,7 @@ methodVisitor.visitTryCatchBlock(label3, label4, label2, null);
 Label label5 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label5, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -472,7 +472,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/resource/spi/work/WorkException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/resource/spi/work/WorkException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
@@ -482,7 +482,7 @@ methodVisitor.visitTryCatchBlock(label0, label6, label5, null);
 Label label7 = new Label();
 methodVisitor.visitTryCatchBlock(label5, label7, label5, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -497,18 +497,18 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "workManager", "Ljavax/resource/spi/work/WorkManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "workManager", "Ljakarta/resource/spi/work/WorkManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitLdcInsn(new Long(9223372036854775807L));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/work/WorkManager", "scheduleWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/work/WorkManager", "scheduleWork", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;)V", true);
 methodVisitor.visitLabel(label1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/resource/spi/work/WorkException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/resource/spi/work/WorkException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -548,20 +548,20 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "consumer", "Lorg/apache/activemq/ActiveMQConnectionConsumer;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "safeClose", "(Ljavax/jms/ConnectionConsumer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "safeClose", "(Ljakarta/jms/ConnectionConsumer;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "consumer", "Lorg/apache/activemq/ActiveMQConnectionConsumer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connection", "Lorg/apache/activemq/ActiveMQConnection;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "safeClose", "(Ljavax/jms/Connection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "safeClose", "(Ljakarta/jms/Connection;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connection", "Lorg/apache/activemq/ActiveMQConnection;");
@@ -585,7 +585,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerThreadSession", "(Ljavax/jms/Session;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "registerThreadSession", "(Ljakarta/jms/Session;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "THREAD_LOCAL", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -595,7 +595,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterThreadSession", "(Ljavax/jms/Session;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "unregisterThreadSession", "(Ljakarta/jms/Session;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "THREAD_LOCAL", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitInsn(ACONST_NULL);
@@ -624,7 +624,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
@@ -714,10 +714,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$500", "(Lorg/apache/activemq/ra/ActiveMQEndpointWorker;)Ljavax/resource/spi/work/Work;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$500", "(Lorg/apache/activemq/ra/ActiveMQEndpointWorker;)Ljakarta/resource/spi/work/Work;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljavax/resource/spi/work/Work;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQEndpointWorker", "connectWork", "Ljakarta/resource/spi/work/Work;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -812,13 +812,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ThreadLocal", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "THREAD_LOCAL", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/jms/MessageListener;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/jms/MessageListener;"));
 methodVisitor.visitLdcInsn("onMessage");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/jms/Message;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/jms/Message;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/activemq/ra/ActiveMQEndpointWorker", "ON_MESSAGE_METHOD", "Ljava/lang/reflect/Method;");

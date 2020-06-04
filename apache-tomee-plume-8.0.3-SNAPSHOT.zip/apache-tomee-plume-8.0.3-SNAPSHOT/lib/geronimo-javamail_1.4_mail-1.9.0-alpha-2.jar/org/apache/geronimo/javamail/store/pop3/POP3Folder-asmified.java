@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/pop3/POP3Folder", null, "javax/mail/Folder", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/store/pop3/POP3Folder", null, "jakarta/mail/Folder", null);
 
-classWriter.visitInnerClass("javax/mail/Flags$Flag", "javax/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/Flags$Flag", "jakarta/mail/Flags", "Flag", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/mail/FetchProfile$Item", "javax/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/mail/FetchProfile$Item", "jakarta/mail/FetchProfile", "Item", ACC_PUBLIC | ACC_STATIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "isFolderOpen", "Z", null, null);
@@ -61,7 +61,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/gero
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/Folder", "<init>", "(Ljavax/mail/Store;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/Folder", "<init>", "(Ljakarta/mail/Store;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "isFolderOpen", "Z");
@@ -106,17 +106,17 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParent", "()Ljavax/mail/Folder;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParent", "()Ljakarta/mail/Folder;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljavax/mail/Store;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Store", "getDefaultFolder", "()Ljavax/mail/Folder;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljakarta/mail/Store;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Store", "getDefaultFolder", "()Ljakarta/mail/Folder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "exists", "Z");
@@ -125,18 +125,18 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "list", "(Ljava/lang/String;)[Ljavax/mail/Folder;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "list", "(Ljava/lang/String;)[Ljakarta/mail/Folder;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Only INBOX is supported in POP3, no sub folders");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSeparator", "()C", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSeparator", "()C", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "folderType", "I");
@@ -153,7 +153,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(I)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(I)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -161,7 +161,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNewMessages", "()Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNewMessages", "()Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -169,40 +169,40 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolder", "(Ljava/lang/String;)Ljavax/mail/Folder;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFolder", "(Ljava/lang/String;)Ljakarta/mail/Folder;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Only INBOX is supported in POP3, no sub folders");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Z)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Z)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Only INBOX is supported in POP3 and INBOX cannot be deleted");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "renameTo", "(Ljavax/mail/Folder;)Z", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "renameTo", "(Ljakarta/mail/Folder;)Z", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Only INBOX is supported in POP3 and INBOX cannot be renamed");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "open", "(I)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "open", "(I)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -244,11 +244,11 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Unable to execute STAT command");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -267,7 +267,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "(Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "(Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -309,12 +309,12 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "expungeDeletedMessages", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "expungeDeletedMessages", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/MessagingException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "mode", "I");
 methodVisitor.visitInsn(ICONST_2);
@@ -338,8 +338,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/Flags$Flag", "DELETED", "Ljavax/mail/Flags$Flag;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Message", "isSet", "(Ljavax/mail/Flags$Flag;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/Flags$Flag", "DELETED", "Ljakarta/mail/Flags$Flag;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Message", "isSet", "(Ljakarta/mail/Flags$Flag;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -351,7 +351,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -364,7 +364,7 @@ methodVisitor.visitInsn(IADD);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitIincInsn(2, 1);
@@ -375,7 +375,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "cleanupFolder", "(Z)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "cleanupFolder", "(Z)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
@@ -391,7 +391,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNCHRONIZED, "getMessageConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_SYNCHRONIZED, "getMessageConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "getConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", false);
@@ -400,7 +400,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "releaseMessageConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(0, "releaseMessageConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -415,7 +415,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/mail/MessagingException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/mail/MessagingException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "isFolderOpen", "Z");
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -423,7 +423,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/pop3/POP3Store");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Store", "isConnected", "()Z", false);
 methodVisitor.visitJumpInsn(IFNE, label1);
@@ -443,17 +443,17 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPermanentFlags", "()Ljavax/mail/Flags;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPermanentFlags", "()Ljakarta/mail/Flags;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/Flags");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/Flags");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/Flags", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/Flags", "<init>", "()V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageCount", "()I", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageCount", "()I", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "msgCount", "I");
@@ -462,7 +462,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(I)Ljavax/mail/Message;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(I)Ljakarta/mail/Message;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "checkOpen", "()V", false);
@@ -476,10 +476,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MessagingException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MessagingException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Invalid Message number");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MessagingException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -496,7 +496,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/store/pop3/POP3Me
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/pop3/POP3Message", "<init>", "(Ljavax/mail/Folder;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/pop3/POP3Message", "<init>", "(Ljakarta/mail/Folder;I)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "messageCache", "[Lorg/apache/geronimo/javamail/store/pop3/POP3Message;");
@@ -513,23 +513,23 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "appendMessages", "([Ljavax/mail/Message;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "appendMessages", "([Ljakarta/mail/Message;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Message appending is not supported in POP3");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "expunge", "()[Ljavax/mail/Message;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "expunge", "()[Ljakarta/mail/Message;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/mail/MethodNotSupportedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/mail/MethodNotSupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Expunge is not supported in POP3");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/MethodNotSupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -546,7 +546,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "fetch", "([Ljavax/mail/Message;Ljavax/mail/FetchProfile;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "fetch", "([Ljakarta/mail/Message;Ljakarta/mail/FetchProfile;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "checkOpen", "()V", false);
@@ -564,47 +564,47 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "ENVELOPE", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "ENVELOPE", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("Subject");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Message", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Message", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Message", "getSize", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Message", "getSize", "()I", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "CONTENT_INFO", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "CONTENT_INFO", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/pop3/POP3Message");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Message", "loadContent", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Message", "getSize", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Message", "getSize", "()I", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/mail/FetchProfile$Item", "FLAGS", "Ljavax/mail/FetchProfile$Item;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "contains", "(Ljavax/mail/FetchProfile$Item;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/mail/FetchProfile$Item", "FLAGS", "Ljakarta/mail/FetchProfile$Item;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "contains", "(Ljakarta/mail/FetchProfile$Item;)Z", false);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Message", "getFlags", "()Ljavax/mail/Flags;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Message", "getFlags", "()Ljakarta/mail/Flags;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/FetchProfile", "getHeaderNames", "()[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/FetchProfile", "getHeaderNames", "()[Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("Subject");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Message", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Message", "getHeader", "(Ljava/lang/String;)[Ljava/lang/String;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitIincInsn(3, 1);
@@ -615,7 +615,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getUID", "(Ljavax/mail/Message;)Ljava/lang/String;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getUID", "(Ljakarta/mail/Message;)Ljava/lang/String;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "checkOpen", "()V", false);
@@ -661,21 +661,21 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "notifyMessageChangedListeners", "(ILjavax/mail/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "notifyMessageChangedListeners", "(ILjakarta/mail/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/mail/Folder", "notifyMessageChangedListeners", "(ILjavax/mail/Message;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/mail/Folder", "notifyMessageChangedListeners", "(ILjakarta/mail/Message;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "getConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "getConnection", "()Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/pop3/POP3Store");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/pop3/POP3Store", "getFolderConnection", "(Lorg/apache/geronimo/javamail/store/pop3/POP3Folder;)Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;", false);
@@ -684,10 +684,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "releaseConnection", "(Lorg/apache/geronimo/javamail/store/pop3/connection/POP3Connection;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljavax/mail/Store;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/store/pop3/POP3Folder", "store", "Ljakarta/mail/Store;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/store/pop3/POP3Store");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

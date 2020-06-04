@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/conversation/ConversationStorageBean", "Ljava/lang/Object;Ljavax/enterprise/inject/spi/Bean<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;Ljavax/enterprise/inject/spi/PassivationCapable;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Bean", "javax/enterprise/inject/spi/PassivationCapable", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/conversation/ConversationStorageBean", "Ljava/lang/Object;Ljakarta/enterprise/inject/spi/Bean<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;Ljakarta/enterprise/inject/spi/PassivationCapable;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Bean", "jakarta/enterprise/inject/spi/PassivationCapable", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OWB_INTERNAL_CONVERSATION_STORAGE_BEAN_PASSIVATION_ID", "Ljava/lang/String;", null, "apache.openwebbeans.OwbInternalConversationStorageBean");
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Set;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;)Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Set;", "(Ljakarta/enterprise/context/spi/CreationalContext<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;)Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ConcurrentHashMap");
 methodVisitor.visitInsn(DUP);
@@ -68,7 +68,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/util/Set;Ljavax/enterprise/context/spi/CreationalContext;)V", "(Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;Ljavax/enterprise/context/spi/CreationalContext<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/util/Set;Ljakarta/enterprise/context/spi/CreationalContext;)V", "(Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;Ljakarta/enterprise/context/spi/CreationalContext<Ljava/util/Set<Lorg/apache/webbeans/context/ConversationContext;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -111,7 +111,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Collections", "EMPTY_SET", "Ljava/util/Set;");
 methodVisitor.visitInsn(ARETURN);
@@ -153,7 +153,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getScope", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/SessionScoped;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/context/SessionScoped;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -239,23 +239,23 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationStorageBean", "destroy", "(Ljava/util/Set;Ljavax/enterprise/context/spi/CreationalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationStorageBean", "destroy", "(Ljava/util/Set;Ljakarta/enterprise/context/spi/CreationalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationStorageBean", "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/conversation/ConversationStorageBean", "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

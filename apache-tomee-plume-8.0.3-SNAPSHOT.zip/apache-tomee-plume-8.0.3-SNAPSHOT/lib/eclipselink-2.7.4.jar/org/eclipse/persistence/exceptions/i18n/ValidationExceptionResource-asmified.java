@@ -3904,7 +3904,7 @@ methodVisitor.visitLdcInsn("7352");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("The converter class [{0}] must implement the JPA javax.persistence.AttributeConverter<X, Y> interface to be a valid converter class.");
+methodVisitor.visitLdcInsn("The converter class [{0}] must implement the JPA jakarta.persistence.AttributeConverter<X, Y> interface to be a valid converter class.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);

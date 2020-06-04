@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", null, "java/lang/Object", new String[] { "org/apache/cxf/continuations/Continuation", "javax/servlet/AsyncListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", null, "java/lang/Object", new String[] { "org/apache/cxf/continuations/Continuation", "jakarta/servlet/AsyncListener" });
 
 classWriter.visitInnerClass("org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "Servlet3Continuation", ACC_PUBLIC);
 
@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BLO
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "context", "Ljavax/servlet/AsyncContext;", null, null);
+fieldVisitor = classWriter.visitField(0, "context", "Ljakarta/servlet/AsyncContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -82,13 +82,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "isNew", "Z");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljavax/servlet/http/HttpServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitLdcInsn("cxf.continuation.message");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "inMessage", "Lorg/apache/cxf/message/Message;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "getExchange", "()Lorg/apache/cxf/message/Exchange;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Exchange", "getInMessage", "()Lorg/apache/cxf/message/Message;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "inMessage", "Lorg/apache/cxf/message/Message;");
@@ -106,13 +106,13 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/util/Property
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "blockRestart", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljavax/servlet/http/HttpServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "startAsync", "()Ljavax/servlet/AsyncContext;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljakarta/servlet/http/HttpServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "startAsync", "()Ljakarta/servlet/AsyncContext;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "addListener", "(Ljavax/servlet/AsyncListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "addListener", "(Ljakarta/servlet/AsyncListener;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -132,19 +132,19 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "this$0", "Lorg/apache/cxf/transport/http/Servlet3ContinuationProvider;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljavax/servlet/http/HttpServletRequest;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "startAsync", "()Ljavax/servlet/AsyncContext;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "req", "Ljakarta/servlet/http/HttpServletRequest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "startAsync", "()Ljakarta/servlet/AsyncContext;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "addListener", "(Ljavax/servlet/AsyncListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "addListener", "(Ljakarta/servlet/AsyncListener;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "isComplete", "Z");
@@ -152,11 +152,11 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "javax/servlet/AsyncContext"}, 1, new Object[] {"java/lang/IllegalStateException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "jakarta/servlet/AsyncContext"}, 1, new Object[] {"java/lang/IllegalStateException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -175,8 +175,8 @@ methodVisitor.visitInsn(LCONST_0);
 methodVisitor.visitInsn(LCMP);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "getTimeout", "()J", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "getTimeout", "()J", true);
 methodVisitor.visitVarInsn(LSTORE, 3);
 methodVisitor.visitVarInsn(LLOAD, 3);
 methodVisitor.visitVarInsn(LLOAD, 1);
@@ -198,9 +198,9 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "isResumed", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "setTimeout", "(J)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "setTimeout", "(J)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "updateMessageForSuspend", "()V", false);
 methodVisitor.visitInsn(ICONST_1);
@@ -230,8 +230,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3Co
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "dispatch", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "dispatch", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -265,8 +265,8 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "isComplete", "Z");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljavax/servlet/AsyncContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/AsyncContext", "complete", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "context", "Ljakarta/servlet/AsyncContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/AsyncContext", "complete", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -368,7 +368,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onComplete", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "this$0", "Lorg/apache/cxf/transport/http/Servlet3ContinuationProvider;");
@@ -416,7 +416,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onError", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "callback", "Lorg/apache/cxf/continuations/ContinuationCallback;");
@@ -425,7 +425,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "callback", "Lorg/apache/cxf/continuations/ContinuationCallback;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/AsyncEvent", "getThrowable", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/AsyncEvent", "getThrowable", "()Ljava/lang/Throwable;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/continuations/ContinuationCallback", "onError", "(Ljava/lang/Throwable;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -434,14 +434,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onStartAsync", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljavax/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onTimeout", "(Ljakarta/servlet/AsyncEvent;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "resume", "()V", false);
@@ -530,7 +530,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -539,8 +539,8 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet3Continuation", "this$0", "Lorg/apache/cxf/transport/http/Servlet3ContinuationProvider;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "resp", "Ljavax/servlet/http/HttpServletResponse;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletResponse", "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/http/Servlet3ContinuationProvider", "resp", "Ljakarta/servlet/http/HttpServletResponse;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletResponse", "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

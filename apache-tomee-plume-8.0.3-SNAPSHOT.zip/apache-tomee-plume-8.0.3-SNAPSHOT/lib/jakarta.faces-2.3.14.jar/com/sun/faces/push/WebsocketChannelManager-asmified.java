@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/push/WebsocketChannelManager", null, "java/lang/Object", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/SessionScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/SessionScoped;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("com/sun/faces/push/WebsocketChannelManager$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
@@ -87,7 +87,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "socketSessions", "Lcom/sun/faces/push/WebsocketSessionManager;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -95,7 +95,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "socketUsers", "Lcom/sun/faces/push/WebsocketUserManager;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/inject/Inject;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/inject/Inject;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;Ljava/io/Serializable;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "register", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;Ljava/io/Serializable;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/push/WebsocketChannelManager$1", "$SwitchMap$com$sun$faces$push$WebsocketChannelManager$Scope", "[I");
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -154,7 +154,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/push/WebsocketChannelManager", "getViewScope", "(Z)Ljava/util/Map;", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljavax/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljakarta/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -175,7 +175,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/push/WebsocketChannelManager", "getViewScope", "(Z)Ljava/util/Map;", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljavax/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljakarta/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -196,7 +196,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/push/WebsocketChannelManager", "sessionScope", "Ljava/util/concurrent/ConcurrentMap;");
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljavax/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/push/WebsocketChannelManager", "register", "(Ljakarta/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -208,14 +208,14 @@ methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "register", "(Ljavax/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", "(Ljavax/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "register", "(Ljakarta/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map;[Ljava/util/Map;)Ljava/lang/String;", "(Ljakarta/faces/context/FacesContext;Ljava/io/Serializable;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "getViewHandler", "()Ljavax/faces/application/ViewHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ViewHandler", "getWebsocketURL", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ViewHandler", "getWebsocketURL", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -231,7 +231,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 9);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"com/sun/faces/push/WebsocketChannelManager", "javax/faces/context/FacesContext", "java/io/Serializable", "java/lang/String", "java/util/Map", "[Ljava/util/Map;", "java/lang/String", "[Ljava/util/Map;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"com/sun/faces/push/WebsocketChannelManager", "jakarta/faces/context/FacesContext", "java/io/Serializable", "java/lang/String", "java/util/Map", "[Ljava/util/Map;", "java/lang/String", "[Ljava/util/Map;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 9);
 methodVisitor.visitVarInsn(ILOAD, 8);
 Label label2 = new Label();
@@ -339,7 +339,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "deregisterSessionScope", "()V", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PreDestroy;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/annotation/PreDestroy;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();

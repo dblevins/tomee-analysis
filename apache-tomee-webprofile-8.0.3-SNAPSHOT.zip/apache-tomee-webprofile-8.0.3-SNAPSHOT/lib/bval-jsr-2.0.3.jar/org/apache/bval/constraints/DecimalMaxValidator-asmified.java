@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/DecimalMaxValidator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/validation/ConstraintValidator<Ljavax/validation/constraints/DecimalMax;TT;>;", "java/lang/Object", new String[] { "javax/validation/ConstraintValidator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/DecimalMaxValidator", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/validation/ConstraintValidator<Ljakarta/validation/constraints/DecimalMax;TT;>;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidator" });
 
 classWriter.visitInnerClass("org/apache/bval/constraints/DecimalMaxValidator$ForNumber", "org/apache/bval/constraints/DecimalMaxValidator", "ForNumber", ACC_PUBLIC | ACC_STATIC);
 
@@ -46,7 +46,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljavax/validation/constraints/DecimalMax;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljakarta/validation/constraints/DecimalMax;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -57,7 +57,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/math/BigDecimal");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/DecimalMax", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/DecimalMax", "value", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigDecimal", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/DecimalMaxValidator", "maxValue", "Ljava/math/BigDecimal;");
 methodVisitor.visitLabel(label1);
@@ -72,7 +72,7 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/DecimalMax", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/DecimalMax", "value", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" does not represent a valid BigDecimal format");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -83,7 +83,7 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/DecimalMax", "inclusive", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/DecimalMax", "inclusive", "()Z", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/DecimalMaxValidator", "inclusive", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -132,8 +132,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraints/DecimalMax");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/DecimalMaxValidator", "initialize", "(Ljavax/validation/constraints/DecimalMax;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraints/DecimalMax");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/DecimalMaxValidator", "initialize", "(Ljakarta/validation/constraints/DecimalMax;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

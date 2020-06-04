@@ -25,17 +25,17 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate", null, "com/sun/faces/facelets/tag/jsf/html/ComponentResourceDelegate", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/ComponentHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/ComponentHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/ComponentResourceDelegate", "<init>", "(Ljavax/faces/view/facelets/ComponentHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/ComponentResourceDelegate", "<init>", "(Ljakarta/faces/view/facelets/ComponentHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getLocationTarget", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getLocationTarget", "(Ljakarta/faces/view/facelets/FaceletContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("head");
 methodVisitor.visitInsn(ARETURN);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter$ServletOutputStreamAdapter", null, "javax/servlet/ServletOutputStream", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter$ServletOutputStreamAdapter", null, "jakarta/servlet/ServletOutputStream", null);
 
 classWriter.visitInnerClass("org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter$ServletOutputStreamAdapter", "org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter", "ServletOutputStreamAdapter", ACC_PRIVATE | ACC_STATIC);
 
@@ -34,7 +34,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/io/OutputStream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletOutputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletOutputStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter$ServletOutputStreamAdapter", "delegate", "Ljava/io/OutputStream;");
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljavax/servlet/WriteListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);

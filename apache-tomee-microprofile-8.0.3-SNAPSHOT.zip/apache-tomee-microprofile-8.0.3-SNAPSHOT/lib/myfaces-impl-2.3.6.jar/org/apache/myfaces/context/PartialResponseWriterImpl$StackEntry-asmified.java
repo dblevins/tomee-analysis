@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/context/PartialResponseWr
 classWriter.visitInnerClass("org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "org/apache/myfaces/context/PartialResponseWriterImpl", "StackEntry", 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "writer", "Ljavax/faces/context/ResponseWriter;", null, null);
+fieldVisitor = classWriter.visitField(0, "writer", "Ljakarta/faces/context/ResponseWriter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/context/PartialResponseWriterImpl;Ljavax/faces/context/ResponseWriter;Ljava/io/Writer;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/context/PartialResponseWriterImpl;Ljakarta/faces/context/ResponseWriter;Ljava/io/Writer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljavax/faces/context/ResponseWriter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljakarta/faces/context/ResponseWriter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "_doubleBuffer", "Ljava/io/Writer;");
@@ -57,20 +57,20 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriter", "()Ljavax/faces/context/ResponseWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriter", "()Ljakarta/faces/context/ResponseWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljavax/faces/context/ResponseWriter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljakarta/faces/context/ResponseWriter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriter", "(Ljavax/faces/context/ResponseWriter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriter", "(Ljakarta/faces/context/ResponseWriter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljavax/faces/context/ResponseWriter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry", "writer", "Ljakarta/faces/context/ResponseWriter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

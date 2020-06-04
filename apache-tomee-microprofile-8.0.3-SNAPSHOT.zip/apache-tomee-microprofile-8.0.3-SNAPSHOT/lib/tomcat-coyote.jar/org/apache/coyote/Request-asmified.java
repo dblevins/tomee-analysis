@@ -185,7 +185,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sendfile", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_VOLATILE, "listener", "Ljavax/servlet/ReadListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_VOLATILE, "listener", "Ljakarta/servlet/ReadListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -339,16 +339,16 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReadListener", "()Ljavax/servlet/ReadListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReadListener", "()Ljakarta/servlet/ReadListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/Request", "listener", "Ljavax/servlet/ReadListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/Request", "listener", "Ljakarta/servlet/ReadListener;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadListener", "(Ljavax/servlet/ReadListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadListener", "(Ljakarta/servlet/ReadListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -363,7 +363,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Request", "getReadListener", "()Ljavax/servlet/ReadListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Request", "getReadListener", "()Ljakarta/servlet/ReadListener;", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
@@ -399,7 +399,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/concurrent/atomic/AtomicBoolean"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/Request", "listener", "Ljavax/servlet/ReadListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/Request", "listener", "Ljakarta/servlet/ReadListener;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -1312,7 +1312,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/Request", "attributes"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "clear", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/Request", "listener", "Ljavax/servlet/ReadListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/Request", "listener", "Ljakarta/servlet/ReadListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/Request", "allDataReadEventSent", "Ljava/util/concurrent/atomic/AtomicBoolean;");
 methodVisitor.visitInsn(ICONST_0);

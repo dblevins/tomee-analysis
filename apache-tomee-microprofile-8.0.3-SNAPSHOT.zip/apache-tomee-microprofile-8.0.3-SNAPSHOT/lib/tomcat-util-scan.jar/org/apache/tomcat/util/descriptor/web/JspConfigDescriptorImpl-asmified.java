@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/JspConfigDescriptorImpl", null, "java/lang/Object", new String[] { "javax/servlet/descriptor/JspConfigDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/descriptor/web/JspConfigDescriptorImpl", null, "java/lang/Object", new String[] { "jakarta/servlet/descriptor/JspConfigDescriptor" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jspPropertyGroups", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/servlet/descriptor/JspPropertyGroupDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jspPropertyGroups", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/servlet/descriptor/JspPropertyGroupDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "taglibs", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/servlet/descriptor/TaglibDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "taglibs", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/servlet/descriptor/TaglibDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Collection;Ljava/util/Collection;)V", "(Ljava/util/Collection<Ljavax/servlet/descriptor/JspPropertyGroupDescriptor;>;Ljava/util/Collection<Ljavax/servlet/descriptor/TaglibDescriptor;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Collection;Ljava/util/Collection;)V", "(Ljava/util/Collection<Ljakarta/servlet/descriptor/JspPropertyGroupDescriptor;>;Ljava/util/Collection<Ljakarta/servlet/descriptor/TaglibDescriptor;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspPropertyGroups", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljavax/servlet/descriptor/JspPropertyGroupDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJspPropertyGroups", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljakarta/servlet/descriptor/JspPropertyGroupDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -60,7 +60,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglibs", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljavax/servlet/descriptor/TaglibDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTaglibs", "()Ljava/util/Collection;", "()Ljava/util/Collection<Ljakarta/servlet/descriptor/TaglibDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);

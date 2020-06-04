@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "portQName", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "serviceClass", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/xml/ws/Service;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "serviceClass", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/xml/ws/Service;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "portRefs", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/net/URL;Ljava/util/List;Ljava/util/List;Ljava/util/Collection;Ljava/util/Properties;)V", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class<+Ljavax/xml/ws/Service;>;Ljavax/xml/namespace/QName;Ljava/lang/Class<*>;Ljava/net/URL;Ljava/util/List<Lorg/apache/openejb/core/webservices/PortRefData;>;Ljava/util/List<Lorg/apache/openejb/core/webservices/HandlerChainData;>;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljava/util/Properties;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/net/URL;Ljava/util/List;Ljava/util/List;Ljava/util/Collection;Ljava/util/Properties;)V", "(Ljava/lang/String;Ljavax/xml/namespace/QName;Ljava/lang/Class<+Ljakarta/xml/ws/Service;>;Ljavax/xml/namespace/QName;Ljava/lang/Class<*>;Ljava/net/URL;Ljava/util/List<Lorg/apache/openejb/core/webservices/PortRefData;>;Ljava/util/List<Lorg/apache/openejb/core/webservices/HandlerChainData;>;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljava/util/Properties;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/ivm/naming/Reference", "<init>", "()V", false);
@@ -366,18 +366,18 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/webservices
 methodVisitor.visitLabel(label6);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 9);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/Service;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/Service;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "serviceClass", "Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/ws/Service", "create", "(Ljava/net/URL;Ljavax/xml/namespace/QName;)Ljavax/xml/ws/Service;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/ws/Service", "create", "(Ljava/net/URL;Ljavax/xml/namespace/QName;)Ljakarta/xml/ws/Service;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Properties", "javax/xml/ws/Service"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Properties", "jakarta/xml/ws/Service"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "serviceClass", "Ljava/lang/Class;");
 methodVisitor.visitInsn(ICONST_2);
@@ -402,7 +402,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/ws/Service");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/ws/Service");
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label7);
@@ -439,7 +439,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/webservices
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label23);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/ws/Service"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/ws/Service"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "handlerChains", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
@@ -458,14 +458,14 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/webservice
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/Service", "setHandlerResolver", "(Ljavax/xml/ws/handler/HandlerResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/Service", "setHandlerResolver", "(Ljakarta/xml/ws/handler/HandlerResolver;)V", false);
 methodVisitor.visitLabel(label24);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "referenceClass", "Ljava/lang/Class;");
 Label label25 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label25);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/Service;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/Service;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "referenceClass", "Ljava/lang/Class;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
@@ -481,9 +481,9 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer", "features", "(Ljavax/xml/namespace/QName;Ljava/util/Properties;)[Ljavax/xml/ws/WebServiceFeature;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer", "features", "(Ljavax/xml/namespace/QName;Ljava/util/Properties;)[Ljakarta/xml/ws/WebServiceFeature;", true);
 methodVisitor.visitLabel(label27);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[Ljavax/xml/ws/WebServiceFeature;"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[Ljakarta/xml/ws/WebServiceFeature;"});
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitVarInsn(ALOAD, 11);
 Label label28 = new Label();
@@ -493,11 +493,11 @@ methodVisitor.visitInsn(ARRAYLENGTH);
 Label label29 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label29);
 methodVisitor.visitLabel(label28);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "[Ljavax/xml/ws/WebServiceFeature;"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "[Ljakarta/xml/ws/WebServiceFeature;"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "referenceClass", "Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/Service", "getPort", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/Service", "getPort", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 10);
 Label label30 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label30);
@@ -507,10 +507,10 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "referenceClass", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/ws/Service", "getPort", "(Ljava/lang/Class;[Ljavax/xml/ws/WebServiceFeature;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/ws/Service", "getPort", "(Ljava/lang/Class;[Ljakarta/xml/ws/WebServiceFeature;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label30);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "java/lang/String", "java/util/Set", "java/net/URL", "javax/xml/namespace/QName", "java/util/Map", "java/util/List", "org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer", "java/util/Properties", "javax/xml/ws/Service", "java/lang/Object"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/openejb/core/ivm/naming/JaxWsServiceReference", "java/lang/String", "java/util/Set", "java/net/URL", "javax/xml/namespace/QName", "java/util/Map", "java/util/List", "org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer", "java/util/Properties", "jakarta/xml/ws/Service", "java/lang/Object"}, 0, new Object[] {});
 Label label31 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label31);
 methodVisitor.visitLabel(label25);

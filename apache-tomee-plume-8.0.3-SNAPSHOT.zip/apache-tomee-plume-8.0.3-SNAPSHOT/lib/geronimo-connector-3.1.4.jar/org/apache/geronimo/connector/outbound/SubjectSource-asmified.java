@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/connector/outbound/SubjectSource", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubject", "()Ljavax/security/auth/Subject;", null, new String[] { "java/lang/SecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubject", "()Ljakarta/security/auth/Subject;", null, new String[] { "java/lang/SecurityException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

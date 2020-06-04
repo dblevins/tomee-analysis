@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/querydef/SelectionImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/criteria/Selection<TX;>;Lorg/eclipse/persistence/internal/jpa/querydef/InternalSelection;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/persistence/criteria/Selection", "org/eclipse/persistence/internal/jpa/querydef/InternalSelection", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/querydef/SelectionImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/criteria/Selection<TX;>;Lorg/eclipse/persistence/internal/jpa/querydef/InternalSelection;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/persistence/criteria/Selection", "org/eclipse/persistence/internal/jpa/querydef/InternalSelection", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "javaType", "Ljava/lang/Class;", "Ljava/lang/Class<TX;>;", null);
@@ -61,7 +61,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;)Ljavax/persistence/criteria/Selection;", "(Ljava/lang/String;)Ljavax/persistence/criteria/Selection<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;)Ljakarta/persistence/criteria/Selection;", "(Ljava/lang/String;)Ljakarta/persistence/criteria/Selection<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -90,7 +90,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/criteria/Selection<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/criteria/Selection<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);

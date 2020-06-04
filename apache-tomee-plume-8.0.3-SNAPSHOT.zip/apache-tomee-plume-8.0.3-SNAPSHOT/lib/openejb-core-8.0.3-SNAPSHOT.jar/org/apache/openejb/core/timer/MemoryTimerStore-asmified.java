@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "taskStore", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tasksByTransaction", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/transaction/Transaction;Lorg/apache/openejb/core/timer/MemoryTimerStore$TimerDataView;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tasksByTransaction", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/transaction/Transaction;Lorg/apache/openejb/core/timer/MemoryTimerStore$TimerDataView;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,11 +53,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "counter", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -79,7 +79,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/Atomic
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "counter", "Ljava/util/concurrent/atomic/AtomicLong;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
@@ -201,7 +201,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCalendarTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/ScheduleExpression;Ljavax/ejb/TimerConfig;Z)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCalendarTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/ScheduleExpression;Ljakarta/ejb/TimerConfig;Z)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "counter", "Ljava/util/concurrent/atomic/AtomicLong;");
@@ -217,7 +217,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/CalendarTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/TimerConfig;Ljavax/ejb/ScheduleExpression;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/CalendarTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/TimerConfig;Ljakarta/ejb/ScheduleExpression;Z)V", false);
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/MemoryTimerStore", "getTasks", "()Lorg/apache/openejb/core/timer/MemoryTimerStore$TimerDataView;", false);
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(11, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createIntervalTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjavax/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createIntervalTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;JLjakarta/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "counter", "Ljava/util/concurrent/atomic/AtomicLong;");
@@ -245,7 +245,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(LLOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/IntervalTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/TimerConfig;Ljava/util/Date;J)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/IntervalTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/TimerConfig;Ljava/util/Date;J)V", false);
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/MemoryTimerStore", "getTasks", "()Lorg/apache/openejb/core/timer/MemoryTimerStore$TimerDataView;", false);
@@ -257,7 +257,7 @@ methodVisitor.visitMaxs(12, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSingleActionTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljavax/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSingleActionTimer", "(Lorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Date;Ljakarta/ejb/TimerConfig;)Lorg/apache/openejb/core/timer/TimerData;", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "counter", "Ljava/util/concurrent/atomic/AtomicLong;");
@@ -272,7 +272,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/SingleActionTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/ejb/TimerConfig;Ljava/util/Date;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/SingleActionTimerData", "<init>", "(JLorg/apache/openejb/core/timer/EjbTimerServiceImpl;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/ejb/TimerConfig;Ljava/util/Date;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/MemoryTimerStore", "getTasks", "()Lorg/apache/openejb/core/timer/MemoryTimerStore$TimerDataView;", false);
@@ -326,27 +326,27 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/SystemException");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitIntInsn(BIPUSH, 6);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "transactionManager", "Ljavax/transaction/TransactionManager;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "transactionManager", "Ljakarta/transaction/TransactionManager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/transaction/Transaction", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/transaction/Transaction", Opcodes.INTEGER}, 0, null);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -377,7 +377,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/timer/MemoryTimerStore
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "<init>", "(Lorg/apache/openejb/core/timer/MemoryTimerStore;Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "<init>", "(Lorg/apache/openejb/core/timer/MemoryTimerStore;Ljakarta/transaction/Transaction;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/MemoryTimerStore", "tasksByTransaction", "Ljava/util/Map;");

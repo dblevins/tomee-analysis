@@ -1307,7 +1307,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSourceImpl", "(Ljava/lang/Class;)Ljavax/xml/transform/Source;", "<T::Ljavax/xml/transform/Source;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "java/sql/SQLException" });
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/util/JAXBSource;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/util/JAXBSource;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
@@ -1819,7 +1819,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/jdbc/JDBCSQLXML", "setW
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/jdbc/JDBCSQLXML", "setReadable", "(Z)V", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/util/JAXBResult;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/util/JAXBResult;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet$ApplicationImpl", null, "javax/ws/rs/core/Application", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet$ApplicationImpl", null, "jakarta/ws/rs/core/Application", null);
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet$ApplicationImpl", "org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet", "ApplicationImpl", ACC_PRIVATE | ACC_STATIC);
 
@@ -34,7 +34,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Application", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Application", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet$ApplicationImpl", "applicationSingletons", "Ljava/util/Set;");

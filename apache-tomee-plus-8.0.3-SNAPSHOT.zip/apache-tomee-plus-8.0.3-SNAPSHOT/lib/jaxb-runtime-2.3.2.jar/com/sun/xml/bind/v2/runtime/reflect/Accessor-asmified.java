@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ERR
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAXB_ELEMENT_VALUE", "Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", "Lcom/sun/xml/bind/v2/runtime/reflect/Accessor<Ljavax/xml/bind/JAXBElement;Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAXB_ELEMENT_VALUE", "Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", "Lcom/sun/xml/bind/v2/runtime/reflect/Accessor<Ljakarta/xml/bind/JAXBElement;Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -213,7 +213,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "adapt", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter<TT;TValueT;>;>;)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor<TBeanT;TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "adapt", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter<TT;TValueT;>;>;)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor<TBeanT;TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/reflect/AdaptedAccessor");
 methodVisitor.visitInsn(DUP);
@@ -305,7 +305,7 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/awt/Image;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_5);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/activation/DataHandler;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/activation/DataHandler;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 6);

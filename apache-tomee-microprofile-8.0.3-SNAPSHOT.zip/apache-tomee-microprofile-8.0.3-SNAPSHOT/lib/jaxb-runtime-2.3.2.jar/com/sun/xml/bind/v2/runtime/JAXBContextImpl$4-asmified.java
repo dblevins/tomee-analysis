@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$4", null, "java/lang/Object", new String[] { "com/sun/xml/bind/api/ErrorListener" });
 
-classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl", "generateSchema", "(Ljavax/xml/bind/SchemaOutputResolver;)V");
+classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl", "generateSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;)V");
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl$4", null, null, 0);
 

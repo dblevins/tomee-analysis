@@ -86,9 +86,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "()Lorg/apache/ba
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/impl/controller/FlowController", "jobContext", "Lorg/apache/batchee/container/impl/JobContextImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/JobContextImpl", "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/batch/runtime/BatchStatus", "STOPPING", "Ljavax/batch/runtime/BatchStatus;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/batch/runtime/BatchStatus", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/JobContextImpl", "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/batch/runtime/BatchStatus", "STOPPING", "Ljakarta/batch/runtime/BatchStatus;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/batch/runtime/BatchStatus", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -22,30 +22,30 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", null, "java/lang/Object", new String[] { "javax/management/DynamicMBean" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", null, "java/lang/Object", new String[] { "jakarta/management/DynamicMBean" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PING", "Ljava/lang/String;", null, "ping");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ATTRIBUTE_LIST", "Ljavax/management/AttributeList;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ATTRIBUTE_LIST", "Ljakarta/management/AttributeList;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_ATTRIBUTES", "[Ljavax/management/MBeanAttributeInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_ATTRIBUTES", "[Ljakarta/management/MBeanAttributeInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_NOTIFICATIONS", "[Ljavax/management/MBeanNotificationInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_NOTIFICATIONS", "[Ljakarta/management/MBeanNotificationInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_PARAMETERS", "[Ljavax/management/MBeanParameterInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_PARAMETERS", "[Ljakarta/management/MBeanParameterInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PING_INFO", "Ljavax/management/MBeanOperationInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PING_INFO", "Ljakarta/management/MBeanOperationInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,11 +53,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "hosts", "Ljava/u
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "info", "Ljavax/management/MBeanInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "info", "Ljakarta/management/MBeanInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -110,7 +110,7 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitInsn(RETURN);
@@ -128,28 +128,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/Obje
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isRegistered", "(Ljavax/management/ObjectName;)Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isRegistered", "(Ljakarta/management/ObjectName;)Z", true);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/monitoring/ObjectNameBuilder", "javax/management/MBeanServer"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/monitoring/ObjectNameBuilder", "jakarta/management/MBeanServer"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
@@ -176,10 +176,10 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -198,7 +198,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/MBeanException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "hosts", "Ljava/util/Collection;");
@@ -230,7 +230,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/remot
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -243,16 +243,16 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" doesn't exist");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanException", "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanException", "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanInfo", "()Ljavax/management/MBeanInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanInfo", "()Ljakarta/management/MBeanInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljavax/management/MBeanInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljakarta/management/MBeanInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -260,43 +260,43 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/remo
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljavax/management/MBeanInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljakarta/management/MBeanInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/AttributeNotFoundException", "javax/management/MBeanException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/AttributeNotFoundException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/AttributeNotFoundException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/AttributeNotFoundException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/AttributeNotFoundException", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/AttributeNotFoundException", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljavax/management/Attribute;)V", null, new String[] { "javax/management/AttributeNotFoundException", "javax/management/InvalidAttributeValueException", "javax/management/MBeanException", "javax/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljakarta/management/Attribute;)V", null, new String[] { "jakarta/management/AttributeNotFoundException", "jakarta/management/InvalidAttributeValueException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/AttributeNotFoundException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/AttributeNotFoundException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/AttributeNotFoundException", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/AttributeNotFoundException", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "([Ljava/lang/String;)Ljavax/management/AttributeList;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "([Ljava/lang/String;)Ljakarta/management/AttributeList;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljavax/management/AttributeList;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljakarta/management/AttributeList;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttributes", "(Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttributes", "(Ljakarta/management/AttributeList;)Ljakarta/management/AttributeList;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljavax/management/AttributeList;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljakarta/management/AttributeList;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -324,7 +324,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanOperationInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanOperationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -335,37 +335,37 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_PARAMETERS", "[Ljavax/management/MBeanParameterInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_PARAMETERS", "[Ljakarta/management/MBeanParameterInfo;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanOperationInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/MBeanParameterInfo;Ljava/lang/String;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanOperationInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljakarta/management/MBeanParameterInfo;Ljava/lang/String;I)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "PING_INFO", "Ljavax/management/MBeanOperationInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "PING_INFO", "Ljakarta/management/MBeanOperationInfo;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/monitoring/remote/RemoteResourceMonitor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("Monitor remote resources");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_ATTRIBUTES", "[Ljavax/management/MBeanAttributeInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_ATTRIBUTES", "[Ljakarta/management/MBeanAttributeInfo;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanOperationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanOperationInfo");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/management/MBeanOperationInfo;");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_NOTIFICATIONS", "[Ljavax/management/MBeanNotificationInfo;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/MBeanAttributeInfo;[Ljavax/management/MBeanConstructorInfo;[Ljavax/management/MBeanOperationInfo;[Ljavax/management/MBeanNotificationInfo;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljavax/management/MBeanInfo;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/management/MBeanOperationInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_NOTIFICATIONS", "[Ljakarta/management/MBeanNotificationInfo;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljakarta/management/MBeanAttributeInfo;[Ljakarta/management/MBeanConstructorInfo;[Ljakarta/management/MBeanOperationInfo;[Ljakarta/management/MBeanNotificationInfo;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "info", "Ljakarta/management/MBeanInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 4);
 methodVisitor.visitEnd();
@@ -469,40 +469,40 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/management/AttributeList");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/AttributeList");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/AttributeList", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljavax/management/AttributeList;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/AttributeList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "ATTRIBUTE_LIST", "Ljakarta/management/AttributeList;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanAttributeInfo");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_ATTRIBUTES", "[Ljavax/management/MBeanAttributeInfo;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanAttributeInfo");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_ATTRIBUTES", "[Ljakarta/management/MBeanAttributeInfo;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanNotificationInfo");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_NOTIFICATIONS", "[Ljavax/management/MBeanNotificationInfo;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanNotificationInfo");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_NOTIFICATIONS", "[Ljakarta/management/MBeanNotificationInfo;");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanParameterInfo");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_PARAMETERS", "[Ljavax/management/MBeanParameterInfo;");
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanOperationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanParameterInfo");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "EMPTY_PARAMETERS", "[Ljakarta/management/MBeanParameterInfo;");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanOperationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("ping");
 methodVisitor.visitLdcInsn("ping the parameter host");
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanParameterInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanParameterInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanParameterInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanParameterInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("host");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitLdcInsn("the host to ping");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanParameterInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanParameterInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanOperationInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/MBeanParameterInfo;Ljava/lang/String;I)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "PING_INFO", "Ljavax/management/MBeanOperationInfo;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanOperationInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljakarta/management/MBeanParameterInfo;Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/monitoring/remote/RemoteResourceMonitor", "PING_INFO", "Ljakarta/management/MBeanOperationInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(12, 0);
 methodVisitor.visitEnd();

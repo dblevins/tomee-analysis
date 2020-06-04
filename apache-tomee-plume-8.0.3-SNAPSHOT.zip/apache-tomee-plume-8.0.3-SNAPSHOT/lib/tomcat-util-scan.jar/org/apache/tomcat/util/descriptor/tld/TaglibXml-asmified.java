@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "listeners", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "functions", "Ljava/util/List;", "Ljava/util/List<Ljavax/servlet/jsp/tagext/FunctionInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "functions", "Ljava/util/List;", "Ljava/util/List<Ljakarta/servlet/jsp/tagext/FunctionInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -275,12 +275,12 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFunction", "(Ljava/lang/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TaglibXml", "functions", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/tagext/FunctionInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/tagext/FunctionInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/FunctionInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/FunctionInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
@@ -288,7 +288,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctions", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/servlet/jsp/tagext/FunctionInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctions", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/servlet/jsp/tagext/FunctionInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/tld/TaglibXml", "functions", "Ljava/util/List;");

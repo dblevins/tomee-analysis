@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/server/httpd
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/HttpSessionImpl$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/Collection;", "Ljava/util/Collection<Ljavax/servlet/http/HttpSessionListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/Collection;", "Ljava/util/Collection<Ljakarta/servlet/http/HttpSessionListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -89,7 +89,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/server/httpd/HttpSessionImpl", "java/lang/String", Opcodes.LONG}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpSessionListener;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpSessionListener;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/LightweightWebAppBuilderListenerExtractor", "findByTypeForContext", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/Collection;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/HttpSessionImpl", "listeners", "Ljava/util/Collection;");
 methodVisitor.visitInsn(RETURN);
@@ -104,10 +104,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpSess
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "isEmpty", "()Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/http/HttpSessionEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/http/HttpSessionEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpSessionEvent", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpSessionEvent", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpSessionImpl", "listeners", "Ljava/util/Collection;");
@@ -115,20 +115,20 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator
 methodVisitor.visitVarInsn(ASTORE, 2);
 Label label1 = new Label();
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/servlet/http/HttpSessionEvent", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/servlet/http/HttpSessionEvent", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSessionListener");
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpSessionListener;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpSessionListener;"));
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSessionListener");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSessionListener", "sessionCreated", "(Ljavax/servlet/http/HttpSessionEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSessionListener", "sessionCreated", "(Ljakarta/servlet/http/HttpSessionEvent;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -267,10 +267,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpSess
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "isEmpty", "()Z", true);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label10);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/http/HttpSessionEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/http/HttpSessionEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpSessionEvent", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpSessionEvent", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpSessionImpl", "listeners", "Ljava/util/Collection;");
@@ -278,26 +278,26 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label11 = new Label();
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/servlet/http/HttpSessionEvent", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/servlet/http/HttpSessionEvent", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label10);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSessionListener");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/http/HttpSessionListener;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/http/HttpSessionListener;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/http/HttpSessionListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/http/HttpSessionListener");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSessionListener", "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSessionListener", "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", true);
 methodVisitor.visitLabel(label1);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/server/httpd/HttpSessionImpl", "java/lang/Object", "javax/servlet/http/HttpSessionEvent", "java/util/Iterator", "javax/servlet/http/HttpSessionListener"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/server/httpd/HttpSessionImpl", "java/lang/Object", "jakarta/servlet/http/HttpSessionEvent", "java/util/Iterator", "jakarta/servlet/http/HttpSessionListener"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -464,14 +464,14 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/HttpSessionImpl", "touch", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletContext;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -500,7 +500,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionContext", "()Ljavax/servlet/http/HttpSessionContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionContext", "()Ljakarta/servlet/http/HttpSessionContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/HttpSessionImpl", "touch", "()V", false);

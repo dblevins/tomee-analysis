@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", null, null);
 methodVisitor.visitEnd();
 }
 {

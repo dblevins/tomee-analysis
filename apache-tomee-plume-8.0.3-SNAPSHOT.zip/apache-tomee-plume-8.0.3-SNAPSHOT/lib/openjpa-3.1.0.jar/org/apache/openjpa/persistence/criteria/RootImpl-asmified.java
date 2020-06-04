@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/RootImpl", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/FromImpl<TX;TX;>;Ljavax/persistence/criteria/Root<TX;>;", "org/apache/openjpa/persistence/criteria/FromImpl", new String[] { "javax/persistence/criteria/Root" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/persistence/criteria/RootImpl", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/criteria/FromImpl<TX;TX;>;Ljakarta/persistence/criteria/Root<TX;>;", "org/apache/openjpa/persistence/criteria/FromImpl", new String[] { "jakarta/persistence/criteria/Root" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$Entity", "org/apache/openjpa/persistence/meta/Types", "Entity", ACC_PUBLIC | ACC_STATIC);
 
@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getModel", "()Ljavax/persistence/metamodel/EntityType;", "()Ljavax/persistence/metamodel/EntityType<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getModel", "()Ljakarta/persistence/metamodel/EntityType;", "()Ljakarta/persistence/metamodel/EntityType<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/RootImpl", "_entity", "Lorg/apache/openjpa/persistence/meta/Types$Entity;");
@@ -57,7 +57,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addToContext", "(Lorg/apach
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljavax/persistence/criteria/Selection;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljakarta/persistence/criteria/Selection;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -107,7 +107,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljavax/persistence/criteria/Selection;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljakarta/persistence/criteria/Selection;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "ctx", "()Lorg/apache/openjpa/kernel/exps/Context;", false);
@@ -121,7 +121,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCa
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getRegisteredRootVariable", "(Ljavax/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getRegisteredRootVariable", "(Ljakarta/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", false);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -177,7 +177,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljavax/persistence/criteria/Selection;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/CriteriaQueryImpl", "getAlias", "(Ljakarta/persistence/criteria/Selection;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/criteria/RootImpl", "_entity", "Lorg/apache/openjpa/persistence/meta/Types$Entity;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Types$Entity", "meta", "Lorg/apache/openjpa/meta/ClassMetaData;");
@@ -197,7 +197,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "asValue", "(Lorg/apache/ope
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredRootVariable", "(Ljavax/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredRootVariable", "(Ljakarta/persistence/criteria/Root;)Lorg/apache/openjpa/kernel/exps/Value;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -212,7 +212,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openjpa/kernel/exps/Value"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredValue", "(Ljavax/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredValue", "(Ljakarta/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
@@ -227,14 +227,14 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "isRegistered", "(Ljavax/persistence/criteria/Selection;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "isRegistered", "(Ljakarta/persistence/criteria/Selection;)Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredValue", "(Ljavax/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/persistence/criteria/AliasContext", "getRegisteredValue", "(Ljakarta/persistence/criteria/Selection;)Lorg/apache/openjpa/kernel/exps/Value;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/exps/Value", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
@@ -274,10 +274,10 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljavax/persistence/metamodel/Bindable;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getModel", "()Ljakarta/persistence/metamodel/Bindable;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/RootImpl", "getModel", "()Ljavax/persistence/metamodel/EntityType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/criteria/RootImpl", "getModel", "()Ljakarta/persistence/metamodel/EntityType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

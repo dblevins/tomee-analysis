@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSOAP12Fault", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljava/util/Locale;)Ljavax/xml/soap/SOAPFault;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSOAP12Fault", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljava/util/Locale;)Ljakarta/xml/soap/SOAPFault;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -68,7 +68,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBodyElement", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPBodyElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBodyElement", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPBodyElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/BodyElement1_1Impl");
 methodVisitor.visitInsn(DUP);
@@ -77,13 +77,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/ve
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/SOAPDocument");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/messaging/saaj/soap/SOAPDocument", "getDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/BodyElement1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/soap/Name;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/BodyElement1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljakarta/xml/soap/Name;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBodyElement", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPBodyElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBodyElement", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPBodyElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/BodyElement1_1Impl");
 methodVisitor.visitInsn(DUP);
@@ -110,10 +110,10 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isFault", "(Ljavax/xml/soap/SOAPElement;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isFault", "(Ljakarta/xml/soap/SOAPElement;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/soap/SOAPElement", "getElementName", "()Ljavax/xml/soap/Name;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/soap/SOAPElement", "getElementName", "()Ljakarta/xml/soap/Name;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/ver1_1/Body1_1Impl", "getFaultName", "(Ljava/lang/String;)Lcom/sun/xml/messaging/saaj/soap/name/NameImpl;", false);
@@ -123,7 +123,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createFaultElement", "()Ljavax/xml/soap/SOAPFault;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createFaultElement", "()Ljakarta/xml/soap/SOAPFault;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/Fault1_1Impl");
 methodVisitor.visitInsn(DUP);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ResourceContextImpl", null, "java/lang/Object", new String[] { "javax/ws/rs/container/ResourceContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ResourceContextImpl", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/ResourceContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CONTEXT_PROVIDER_PROP", "Ljava/lang/String;", null, "org.apache.cxf.jaxrs.resource.context.provider");

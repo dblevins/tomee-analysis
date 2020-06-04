@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/websocket/TransformationFactory", null, "java/lang/Object", null);
 
-classWriter.visitInnerClass("javax/websocket/Extension$Parameter", "javax/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/Extension$Parameter", "jakarta/websocket/Extension", "Parameter", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Ljava/util/List;Z)Lorg/apache/tomcat/websocket/Transformation;", "(Ljava/lang/String;Ljava/util/List<Ljava/util/List<Ljavax/websocket/Extension$Parameter;>;>;Z)Lorg/apache/tomcat/websocket/Transformation;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljava/lang/String;Ljava/util/List;Z)Lorg/apache/tomcat/websocket/Transformation;", "(Ljava/lang/String;Ljava/util/List<Ljava/util/List<Ljakarta/websocket/Extension$Parameter;>;>;Z)Lorg/apache/tomcat/websocket/Transformation;", null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("permessage-deflate");
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/MaxValidatorForString", "Ljava/lang/Object;Ljavax/validation/ConstraintValidator<Ljavax/validation/constraints/Max;Ljava/lang/String;>;", "java/lang/Object", new String[] { "javax/validation/ConstraintValidator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/constraints/MaxValidatorForString", "Ljava/lang/Object;Ljakarta/validation/ConstraintValidator<Ljakarta/validation/constraints/Max;Ljava/lang/String;>;", "java/lang/Object", new String[] { "jakarta/validation/ConstraintValidator" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "max", "J", null, null);
@@ -38,18 +38,18 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljavax/validation/constraints/Max;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljakarta/validation/constraints/Max;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/constraints/Max", "value", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/constraints/Max", "value", "()J", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/constraints/MaxValidatorForString", "max", "J");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/String;Ljavax/validation/ConstraintValidatorContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isValid", "(Ljava/lang/String;Ljakarta/validation/ConstraintValidatorContext;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -89,13 +89,13 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "isValid", "(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/MaxValidatorForString", "isValid", "(Ljava/lang/String;Ljavax/validation/ConstraintValidatorContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/MaxValidatorForString", "isValid", "(Ljava/lang/String;Ljakarta/validation/ConstraintValidatorContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -105,8 +105,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraints/Max");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/MaxValidatorForString", "initialize", "(Ljavax/validation/constraints/Max;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraints/Max");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/constraints/MaxValidatorForString", "initialize", "(Ljakarta/validation/constraints/Max;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/AttributeNode<TX;>;", "java/lang/Object", new String[] { "javax/persistence/AttributeNode" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/AttributeNode<TX;>;", "java/lang/Object", new String[] { "jakarta/persistence/AttributeNode" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "currentAttribute", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "subgraphs", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class;Ljavax/persistence/Subgraph;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "subgraphs", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class;Ljakarta/persistence/Subgraph;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "keySubgraphs", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class;Ljavax/persistence/Subgraph;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "keySubgraphs", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class;Ljakarta/persistence/Subgraph;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubgraphs", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/Class;Ljavax/persistence/Subgraph;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubgraphs", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/Class;Ljakarta/persistence/Subgraph;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", "subgraphs", "Ljava/util/Map;");
@@ -87,7 +87,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKeySubgraphs", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/Class;Ljavax/persistence/Subgraph;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKeySubgraphs", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/Class;Ljakarta/persistence/Subgraph;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/AttributeNodeImpl", "keySubgraphs", "Ljava/util/Map;");

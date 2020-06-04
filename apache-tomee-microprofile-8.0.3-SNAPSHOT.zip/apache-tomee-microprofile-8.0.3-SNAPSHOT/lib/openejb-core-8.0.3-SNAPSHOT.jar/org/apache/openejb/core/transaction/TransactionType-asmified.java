@@ -91,11 +91,11 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljavax/ejb/TransactionAttributeType;)Lorg/apache/openejb/core/transaction/TransactionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljakarta/ejb/TransactionAttributeType;)Lorg/apache/openejb/core/transaction/TransactionType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/TransactionType$1", "$SwitchMap$javax$ejb$TransactionAttributeType", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ejb/TransactionAttributeType", "ordinal", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ejb/TransactionAttributeType", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();

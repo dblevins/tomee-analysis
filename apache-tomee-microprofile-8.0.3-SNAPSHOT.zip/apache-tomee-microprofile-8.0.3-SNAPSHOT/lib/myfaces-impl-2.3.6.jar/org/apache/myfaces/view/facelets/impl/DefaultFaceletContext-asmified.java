@@ -27,11 +27,11 @@ classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/impl/DefaultFaceletContext$CompositeComponentTemplateManager", "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "CompositeComponentTemplateManager", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_faces", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_faces", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_ctx", "Ljavax/el/ELContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_ctx", "Ljakarta/el/ELContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_faceletHierarch
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_varMapper", "Ljavax/el/VariableMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_varMapper", "Ljakarta/el/VariableMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_varMapperBase", "Lorg/apach
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_fnMapper", "Ljavax/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_fnMapper", "Ljakarta/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -101,20 +101,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/AbstractFaceletContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljavax/faces/context/FacesContext;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljakarta/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljavax/el/FunctionMapper;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljakarta/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
@@ -192,29 +192,29 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/view/facelets/AbstractFacelet;Lorg/apache/myfaces/view/facelets/FaceletCompositionContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/view/facelets/AbstractFacelet;Lorg/apache/myfaces/view/facelets/FaceletCompositionContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/AbstractFaceletContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getELContext", "()Ljavax/el/ELContext;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getELContext", "()Ljakarta/el/ELContext;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getFunctionMapper", "()Ljavax/el/FunctionMapper;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getVariableMapper", "()Ljavax/el/VariableMapper;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getVariableMapper", "()Ljakarta/el/VariableMapper;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -225,7 +225,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/De
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
@@ -233,18 +233,18 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/De
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "javax/faces/context/FacesContext", "org/apache/myfaces/view/facelets/AbstractFacelet", "org/apache/myfaces/view/facelets/FaceletCompositionContext"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "jakarta/faces/context/FacesContext", "org/apache/myfaces/view/facelets/AbstractFacelet", "org/apache/myfaces/view/facelets/FaceletCompositionContext"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "<init>", "(Ljavax/el/VariableMapper;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/el/DefaultVariableMapper", "<init>", "(Ljakarta/el/VariableMapper;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_defaultVarMapper", "Lorg/apache/myfaces/view/facelets/el/DefaultVariableMapper;");
@@ -317,40 +317,40 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "javax/faces/context/FacesContext", "org/apache/myfaces/view/facelets/AbstractFacelet", "org/apache/myfaces/view/facelets/FaceletCompositionContext"}, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "jakarta/faces/context/FacesContext", "org/apache/myfaces/view/facelets/AbstractFacelet", "org/apache/myfaces/view/facelets/FaceletCompositionContext"}, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", Opcodes.INTEGER});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_isCacheELExpressions", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_faces", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableMapper", "(Ljavax/el/VariableMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVariableMapper", "(Ljakarta/el/VariableMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/myfaces/view/facelets/el/VariableMapperBase");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
@@ -362,49 +362,49 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext"});
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "javax/el/VariableMapper"}, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "org/apache/myfaces/view/facelets/el/VariableMapperBase"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "jakarta/el/VariableMapper"}, 2, new Object[] {"org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "org/apache/myfaces/view/facelets/el/VariableMapperBase"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapperBase", "Lorg/apache/myfaces/view/facelets/el/VariableMapperBase;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionMapper", "(Ljavax/el/FunctionMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFunctionMapper", "(Ljakarta/el/FunctionMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeFacelet", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeFacelet", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "include", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "include", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljavax/el/FunctionMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_fnMapper", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljavax/el/VariableMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljakarta/el/VariableMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -413,9 +413,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -424,10 +424,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -605,19 +605,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ValueExpression", "getValue", "(Ljavax/el/ELContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ValueExpression", "getValue", "(Ljakarta/el/ELContext;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -630,31 +630,31 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_varMapper", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/el/ValueExpression;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljavax/el/ValueExpression;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ExpressionFactory", "createValueExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljakarta/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/VariableMapper", "setVariable", "(Ljava/lang/String;Ljakarta/el/ValueExpression;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -663,24 +663,24 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeFacelet", "(Ljavax/faces/component/UIComponent;Ljava/net/URL;)V", null, new String[] { "java/io/IOException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeFacelet", "(Ljakarta/faces/component/UIComponent;Ljava/net/URL;)V", null, new String[] { "java/io/IOException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "include", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljavax/faces/component/UIComponent;Ljava/net/URL;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "include", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljakarta/faces/component/UIComponent;Ljava/net/URL;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getELResolver", "()Ljavax/el/ELResolver;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getELResolver", "()Ljakarta/el/ELResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -752,7 +752,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeDefinition", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeDefinition", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_isolatedTemplateContext", "Ljava/util/List;");
@@ -765,7 +765,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/TemplateContext", "includeDefinition", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/view/facelets/Facelet;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/TemplateContext", "includeDefinition", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/view/facelets/Facelet;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
@@ -920,7 +920,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeCompositeComponentDefinition", "(Ljavax/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "includeCompositeComponentDefinition", "(Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Z", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_isolatedTemplateContext", "Ljava/util/List;");
@@ -937,7 +937,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/facelets/TemplateClient", "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;Ljava/lang/String;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/myfaces/view/facelets/TemplateClient", "apply", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/view/facelets/TemplateClient"}, 0, null);
@@ -1036,8 +1036,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPropertyResolved", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "isPropertyResolved", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "isPropertyResolved", "()Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -1046,22 +1046,22 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolved", "(Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_ctx", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "setPropertyResolved", "(Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "setPropertyResolved", "(Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyCompositeComponent", "(Ljavax/faces/component/UIComponent;Ljavax/faces/application/Resource;)V", null, new String[] { "java/io/IOException", "javax/faces/view/facelets/FaceletException", "javax/faces/FacesException", "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "applyCompositeComponent", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/application/Resource;)V", null, new String[] { "java/io/IOException", "jakarta/faces/view/facelets/FaceletException", "jakarta/faces/FacesException", "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/DefaultFaceletContext", "_facelet", "Lorg/apache/myfaces/view/facelets/AbstractFacelet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "applyCompositeComponent", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljavax/faces/component/UIComponent;Ljavax/faces/application/Resource;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/AbstractFacelet", "applyCompositeComponent", "(Lorg/apache/myfaces/view/facelets/AbstractFaceletContext;Ljakarta/faces/component/UIComponent;Ljakarta/faces/application/Resource;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

@@ -42,10 +42,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesFlowProvider", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesFlowProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesFlowProvider", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/FacesFlowProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultFacesFlowProviderFactory", "FACES_CONFIGURATION_MERGER_INSTANCE_KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/FacesFlowProvider");
@@ -54,7 +54,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljavax/faces/context/ExternalContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljakarta/faces/context/ExternalContext;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLdcInsn("org.apache.myfaces.flow.cdi.DefaultCDIFacesFlowProvider");

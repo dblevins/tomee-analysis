@@ -29,24 +29,24 @@ classWriter.visitInnerClass("org/apache/openejb/resource/activemq/jms2/TomEEProd
 classWriter.visitInnerClass("org/apache/openejb/resource/activemq/jms2/TomEEProducer$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "message", "Ljavax/jms/Message;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "message", "Ljakarta/jms/Message;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "completionListener", "Ljavax/jms/CompletionListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "completionListener", "Ljakarta/jms/CompletionListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljavax/jms/Message;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljakarta/jms/Message;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljavax/jms/CompletionListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljakarta/jms/CompletionListener;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -55,34 +55,34 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onSuccess", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljavax/jms/CompletionListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljakarta/jms/CompletionListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljavax/jms/Message;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/CompletionListener", "onCompletion", "(Ljavax/jms/Message;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljakarta/jms/Message;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/CompletionListener", "onCompletion", "(Ljakarta/jms/Message;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljavax/jms/JMSException;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onException", "(Ljakarta/jms/JMSException;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljavax/jms/CompletionListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "completionListener", "Ljakarta/jms/CompletionListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljavax/jms/Message;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "message", "Ljakarta/jms/Message;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/CompletionListener", "onException", "(Ljavax/jms/Message;Ljava/lang/Exception;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/CompletionListener", "onException", "(Ljakarta/jms/Message;Ljava/lang/Exception;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;Lorg/apache/openejb/resource/activemq/jms2/TomEEProducer$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljavax/jms/Message;Ljavax/jms/CompletionListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback", "<init>", "(Ljakarta/jms/Message;Ljakarta/jms/CompletionListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

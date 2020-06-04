@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "defineEjbBean", "(Ljava/lang/Class;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Lorg/apache/webbeans/config/WebBeansContext;)Ljavax/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;Lorg/apache/webbeans/config/WebBeansContext;)Ljavax/enterprise/inject/spi/Bean<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "defineEjbBean", "(Ljava/lang/Class;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Lorg/apache/webbeans/config/WebBeansContext;)Ljakarta/enterprise/inject/spi/Bean;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;Lorg/apache/webbeans/config/WebBeansContext;)Ljakarta/enterprise/inject/spi/Bean<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getPluginLoader", "()Lorg/apache/webbeans/plugins/PluginLoader;", false);
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/plugins/OpenWebBeansEjbPlugin", "defineSessionBean", "(Ljava/lang/Class;Ljavax/enterprise/inject/spi/BeanAttributes;Ljavax/enterprise/inject/spi/AnnotatedType;)Ljavax/enterprise/inject/spi/Bean;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/webbeans/spi/plugins/OpenWebBeansEjbPlugin", "defineSessionBean", "(Ljava/lang/Class;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljakarta/enterprise/inject/spi/AnnotatedType;)Ljakarta/enterprise/inject/spi/Bean;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();

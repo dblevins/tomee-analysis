@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/ObserverMethod<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/ObserverMethod" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/ObserverMethod<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/ObserverMethod" });
 
 classWriter.visitInnerClass("org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "ConfiguredObserverMethod", ACC_PUBLIC);
 
-classWriter.visitInnerClass("javax/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer", "javax/enterprise/inject/spi/configurator/ObserverMethodConfigurator", "EventConsumer", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer", "jakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator", "EventConsumer", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;", null, null);
@@ -61,7 +61,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$100", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/inject/spi/Extension;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$100", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/inject/spi/Extension;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Class"});
@@ -90,21 +90,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReception", "()Ljavax/enterprise/event/Reception;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReception", "()Ljakarta/enterprise/event/Reception;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$400", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/event/Reception;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$400", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/event/Reception;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionPhase", "()Ljavax/enterprise/event/TransactionPhase;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionPhase", "()Ljakarta/enterprise/event/TransactionPhase;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$500", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/event/TransactionPhase;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$500", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/event/TransactionPhase;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -117,14 +117,14 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventContextImpl", "<init>", "(Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "notify", "(Ljavax/enterprise/inject/spi/EventContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventContextImpl", "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "notify", "(Ljakarta/enterprise/inject/spi/EventContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "notify", "(Ljavax/enterprise/inject/spi/EventContext;)V", "(Ljavax/enterprise/inject/spi/EventContext<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "notify", "(Ljakarta/enterprise/inject/spi/EventContext;)V", "(Ljakarta/enterprise/inject/spi/EventContext<TT;>;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -133,26 +133,26 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$600", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$600", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$700", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/inject/spi/ObserverMethod;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$700", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/inject/spi/ObserverMethod;", false);
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$700", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/inject/spi/ObserverMethod;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$700", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/inject/spi/ObserverMethod;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ObserverMethod", "notify", "(Ljavax/enterprise/inject/spi/EventContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ObserverMethod", "notify", "(Ljakarta/enterprise/inject/spi/EventContext;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod", "this$0", "Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$600", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljavax/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl", "access$600", "(Lorg/apache/webbeans/configurator/ObserverMethodConfiguratorImpl;)Ljakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer", "accept", "(Ljavax/enterprise/inject/spi/EventContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer", "accept", "(Ljakarta/enterprise/inject/spi/EventContext;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label4 = new Label();

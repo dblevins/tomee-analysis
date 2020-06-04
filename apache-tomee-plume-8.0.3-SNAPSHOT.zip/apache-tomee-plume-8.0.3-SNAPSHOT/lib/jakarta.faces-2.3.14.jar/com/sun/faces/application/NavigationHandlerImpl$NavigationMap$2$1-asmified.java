@@ -35,7 +35,7 @@ classWriter.visitInnerClass("com/sun/faces/application/NavigationHandlerImpl$Nav
 classWriter.visitInnerClass("com/sun/faces/application/NavigationHandlerImpl$NavigationMap$2$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "i", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;>;>;", null);
+fieldVisitor = classWriter.visitField(0, "i", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {

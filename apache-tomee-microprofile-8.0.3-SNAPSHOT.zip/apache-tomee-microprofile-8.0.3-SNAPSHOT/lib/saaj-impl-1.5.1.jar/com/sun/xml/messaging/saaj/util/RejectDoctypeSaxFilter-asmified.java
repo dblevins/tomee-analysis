@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lexicalHandler", "Lorg/xml/s
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/parsers/SAXParser;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/parsers/SAXParser;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

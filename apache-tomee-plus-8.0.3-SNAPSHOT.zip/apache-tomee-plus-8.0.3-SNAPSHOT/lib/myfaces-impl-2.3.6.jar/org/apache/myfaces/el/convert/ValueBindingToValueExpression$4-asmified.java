@@ -24,14 +24,14 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "Ljava/lang/Object;Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression$Invoker<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "org/apache/myfaces/el/convert/ValueBindingToValueExpression$Invoker" });
 
-classWriter.visitOuterClass("org/apache/myfaces/el/convert/ValueBindingToValueExpression", "setValue", "(Ljavax/el/ELContext;Ljava/lang/Object;)V");
+classWriter.visitOuterClass("org/apache/myfaces/el/convert/ValueBindingToValueExpression", "setValue", "(Ljakarta/el/ELContext;Ljava/lang/Object;)V");
 
 classWriter.visitInnerClass("org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", null, null, 0);
 
 classWriter.visitInnerClass("org/apache/myfaces/el/convert/ValueBindingToValueExpression$Invoker", "org/apache/myfaces/el/convert/ValueBindingToValueExpression", "Invoker", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljavax/el/ELContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljakarta/el/ELContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,14 +43,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;Ljavax/el/ELContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;Ljakarta/el/ELContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "this$0", "Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$value", "Ljava/lang/Object;");
@@ -65,15 +65,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "()Ljava/lang/Obje
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "this$0", "Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/el/convert/ValueBindingToValueExpression", "access$100", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;)Ljavax/faces/el/ValueBinding;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/el/convert/ValueBindingToValueExpression", "access$100", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;)Ljakarta/faces/el/ValueBinding;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "this$0", "Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$context", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/el/convert/ValueBindingToValueExpression", "access$000", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;Ljavax/el/ELContext;)Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$context", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/el/convert/ValueBindingToValueExpression", "access$000", "(Lorg/apache/myfaces/el/convert/ValueBindingToValueExpression;Ljakarta/el/ELContext;)Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/convert/ValueBindingToValueExpression$4", "val$value", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/el/ValueBinding", "setValue", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/el/ValueBinding", "setValue", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/faces/facelets/compiler/CompilationMessageHolder", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNamespacePrefixMessages", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List<Ljavax/faces/application/FacesMessage;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getNamespacePrefixMessages", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;", null);
 methodVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "removeNamesp
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "processCompilationMessages", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "processCompilationMessages", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

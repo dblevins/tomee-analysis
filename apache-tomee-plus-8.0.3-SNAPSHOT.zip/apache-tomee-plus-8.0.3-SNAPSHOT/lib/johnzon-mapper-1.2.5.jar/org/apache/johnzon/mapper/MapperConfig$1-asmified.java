@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromJson", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fromJson", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

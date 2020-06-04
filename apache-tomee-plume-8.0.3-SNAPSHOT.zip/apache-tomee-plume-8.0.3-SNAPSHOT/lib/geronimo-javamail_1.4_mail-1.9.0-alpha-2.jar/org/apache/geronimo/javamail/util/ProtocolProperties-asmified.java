@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "protocolPrefix", "Ljava/la
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljavax/mail/Session;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "session", "Ljakarta/mail/Session;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,13 +45,13 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "defaultPort", "I", null, n
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/mail/Session;Ljava/lang/String;ZI)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/mail/Session;Ljava/lang/String;ZI)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "protocol", "Ljava/lang/String;");
@@ -78,10 +78,10 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSession", "()Ljavax/mail/Session;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSession", "()Ljakarta/mail/Session;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -127,9 +127,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -148,8 +148,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -170,9 +170,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -243,9 +243,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -263,9 +263,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -327,8 +327,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperties", "()Ljava/util/Properties;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljavax/mail/Session;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/util/ProtocolProperties", "session", "Ljakarta/mail/Session;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/mail/Session", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

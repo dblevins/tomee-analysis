@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INST
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory11", "Ljavax/xml/soap/MessageFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory11", "Ljakarta/xml/soap/MessageFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory12", "Ljavax/xml/soap/MessageFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory12", "Ljakarta/xml/soap/MessageFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -108,17 +108,17 @@ methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "getFactory", "(Lorg/apache/cxf/binding/soap/SoapMessage;)Ljavax/xml/soap/MessageFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "getFactory", "(Lorg/apache/cxf/binding/soap/SoapMessage;)Ljakarta/xml/soap/MessageFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/MessageFactory", "createMessage", "()Ljavax/xml/soap/SOAPMessage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/MessageFactory", "createMessage", "()Ljakarta/xml/soap/SOAPMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/soap/SOAPMessage;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/soap/SOAPMessage;"));
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "setContent", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/w3c/dom/Node;"));
@@ -129,7 +129,7 @@ methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/staxutils/W3CDOMStreamW
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/binding/soap/saaj/SAAJStreamWriter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/binding/soap/saaj/SAAJStreamWriter", "<init>", "(Ljavax/xml/soap/SOAPPart;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/binding/soap/saaj/SAAJStreamWriter", "<init>", "(Ljakarta/xml/soap/SOAPPart;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "put", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor", "access$000", "()Ljava/lang/String;", false);
@@ -164,7 +164,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getFactory", "(Lorg/apache/cxf/binding/soap/SoapMessage;)Ljavax/xml/soap/MessageFactory;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getFactory", "(Lorg/apache/cxf/binding/soap/SoapMessage;)Ljakarta/xml/soap/MessageFactory;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getVersion", "()Lorg/apache/cxf/binding/soap/SoapVersion;", false);
@@ -172,18 +172,18 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/cxf/binding/soap/Soap11");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljakarta/xml/soap/MessageFactory;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getVersion", "()Lorg/apache/cxf/binding/soap/SoapVersion;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljavax/xml/soap/MessageFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljakarta/xml/soap/MessageFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljakarta/xml/soap/MessageFactory;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory11", "Ljakarta/xml/soap/MessageFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -193,23 +193,23 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/cxf/binding/soap/Soap12");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljakarta/xml/soap/MessageFactory;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getVersion", "()Lorg/apache/cxf/binding/soap/SoapVersion;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljavax/xml/soap/MessageFactory;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljakarta/xml/soap/MessageFactory;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljakarta/xml/soap/MessageFactory;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljavax/xml/soap/MessageFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor", "factory12", "Ljakarta/xml/soap/MessageFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljavax/xml/soap/MessageFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver", "createMessageFactory", "(Lorg/apache/cxf/binding/soap/SoapVersion;)Ljakarta/xml/soap/MessageFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

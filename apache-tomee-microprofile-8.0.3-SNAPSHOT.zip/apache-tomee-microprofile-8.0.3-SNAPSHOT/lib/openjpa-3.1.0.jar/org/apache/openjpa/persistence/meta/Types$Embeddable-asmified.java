@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/meta/Types$Embeddable", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/AbstractManagedType<TX;>;Ljavax/persistence/metamodel/EmbeddableType<TX;>;", "org/apache/openjpa/persistence/meta/AbstractManagedType", new String[] { "javax/persistence/metamodel/EmbeddableType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/meta/Types$Embeddable", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/AbstractManagedType<TX;>;Ljakarta/persistence/metamodel/EmbeddableType<TX;>;", "org/apache/openjpa/persistence/meta/AbstractManagedType", new String[] { "jakarta/persistence/metamodel/EmbeddableType" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$Embeddable", "org/apache/openjpa/persistence/meta/Types", "Embeddable", ACC_PUBLIC | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/persistence/metamodel/Type$PersistenceType", "javax/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/metamodel/Type$PersistenceType", "jakarta/persistence/metamodel/Type", "PersistenceType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/meta/ClassMetaData;Lorg/apache/openjpa/persistence/meta/MetamodelImpl;)V", null, null);
@@ -40,9 +40,9 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljavax/persistence/metamodel/Type$PersistenceType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceType", "()Ljakarta/persistence/metamodel/Type$PersistenceType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/metamodel/Type$PersistenceType", "EMBEDDABLE", "Ljavax/persistence/metamodel/Type$PersistenceType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/metamodel/Type$PersistenceType", "EMBEDDABLE", "Ljakarta/persistence/metamodel/Type$PersistenceType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -1816,7 +1816,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSignedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getSignedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -2021,7 +2021,7 @@ methodVisitor.visitMaxs(5, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getEncryptedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getEncryptedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/xml/security/stax/ext/SecurePart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);

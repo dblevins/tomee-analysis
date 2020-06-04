@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/ws/policy/v200409/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -96,41 +96,41 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAll", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAll", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
 annotationVisitor0.visit("name", "All");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/policy/v200409/ObjectFactory", "_All_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExactlyOne", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExactlyOne", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://schemas.xmlsoap.org/ws/2004/09/policy");
 annotationVisitor0.visit("name", "ExactlyOne");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/policy/v200409/ObjectFactory", "_ExactlyOne_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/policy/v200409/OperatorContentType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/j
 classWriter.visitInnerClass("org/apache/johnzon/mapper/ObjectConverter$Reader", "org/apache/johnzon/mapper/ObjectConverter", "Reader", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)Ljava/lang/Object;", "(Ljavax/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromJson", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)Ljava/lang/Object;", "(Ljakarta/json/JsonValue;Ljava/lang/reflect/Type;Lorg/apache/johnzon/mapper/MappingParser;)TT;", null);
 methodVisitor.visitEnd();
 }
 {

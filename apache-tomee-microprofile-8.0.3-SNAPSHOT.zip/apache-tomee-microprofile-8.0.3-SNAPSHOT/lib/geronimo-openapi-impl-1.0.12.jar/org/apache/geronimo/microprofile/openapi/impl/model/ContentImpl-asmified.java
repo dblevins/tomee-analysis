@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/ContentImpl", "Lorg/apache/geronimo/microprofile/openapi/impl/model/APIMap<Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/media/MediaType;>;Lorg/eclipse/microprofile/openapi/models/media/Content;", "org/apache/geronimo/microprofile/openapi/impl/model/APIMap", new String[] { "org/eclipse/microprofile/openapi/models/media/Content" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 {

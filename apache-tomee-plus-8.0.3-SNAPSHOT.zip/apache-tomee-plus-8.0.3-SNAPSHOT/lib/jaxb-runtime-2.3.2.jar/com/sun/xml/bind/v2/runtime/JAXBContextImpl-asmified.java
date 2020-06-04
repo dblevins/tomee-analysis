@@ -75,11 +75,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "elements", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "marshallerPool", "Lcom/sun/istack/Pool;", "Lcom/sun/istack/Pool<Ljavax/xml/bind/Marshaller;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "marshallerPool", "Lcom/sun/istack/Pool;", "Lcom/sun/istack/Pool<Ljakarta/xml/bind/Marshaller;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "unmarshallerPool", "Lcom/sun/istack/Pool;", "Lcom/sun/istack/Pool<Ljavax/xml/bind/Unmarshaller;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "unmarshallerPool", "Lcom/sun/istack/Pool;", "Lcom/sun/istack/Pool<Ljakarta/xml/bind/Unmarshaller;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -155,7 +155,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "fastBoot", "Z", n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "xmlNsSet", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/xml/bind/annotation/XmlNs;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "xmlNsSet", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/xml/bind/annotation/XmlNs;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -175,7 +175,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXmlNsSet", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/xml/bind/annotation/XmlNs;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXmlNsSet", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/xml/bind/annotation/XmlNs;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "xmlNsSet", "Ljava/util/Set;");
@@ -184,7 +184,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -516,21 +516,21 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBCo
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "annotationReader", "Lcom/sun/xml/bind/v2/model/annotation/RuntimeAnnotationReader;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlSchema;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlSchema;"));
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/annotation/RuntimeAnnotationReader", "getPackageAnnotation", "(Ljava/lang/Class;Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/annotation/Locatable;)Ljava/lang/annotation/Annotation;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlSchema");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlSchema");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 Label label19 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label19);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljavax/xml/bind/annotation/XmlNs;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljakarta/xml/bind/annotation/XmlNs;", true);
 methodVisitor.visitJumpInsn(IFNULL, label19);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljavax/xml/bind/annotation/XmlNs;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljakarta/xml/bind/annotation/XmlNs;", true);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitJumpInsn(IFLE, label19);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -543,11 +543,11 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "xmlNsSet", "Ljava/util/Set;");
 methodVisitor.visitLabel(label20);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/util/Map$Entry", "com/sun/xml/bind/v2/runtime/ClassBeanInfoImpl", "javax/xml/bind/annotation/XmlSchema"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/util/Map$Entry", "com/sun/xml/bind/v2/runtime/ClassBeanInfoImpl", "jakarta/xml/bind/annotation/XmlSchema"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "xmlNsSet", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljavax/xml/bind/annotation/XmlNs;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/XmlSchema", "xmlns", "()[Ljakarta/xml/bind/annotation/XmlNs;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
@@ -674,7 +674,7 @@ methodVisitor.visitLabel(label25);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"com/sun/xml/bind/v2/runtime/JAXBContextImpl", "com/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder", "java/util/Collection", Opcodes.INTEGER, "com/sun/xml/bind/v2/model/runtime/RuntimeTypeInfoSet"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "beanInfoMap", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/JAXBElement;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -764,16 +764,16 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/bind/api/TypeReference");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/api/TypeReference", "get", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlList;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlList;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/api/TypeReference", "get", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlList");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlList");
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 7);
@@ -787,14 +787,14 @@ methodVisitor.visitJumpInsn(IFNULL, label36);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/core/Adapter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "value", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "value", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Adapter", "<init>", "(Ljava/lang/Object;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitLabel(label36);
-methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"com/sun/xml/bind/v2/runtime/JAXBContextImpl", "com/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder", "java/util/Collection", Opcodes.INTEGER, "com/sun/xml/bind/v2/model/runtime/RuntimeTypeInfoSet", "com/sun/xml/bind/v2/model/nav/Navigator", "java/util/Iterator", "com/sun/xml/bind/api/TypeReference", "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "com/sun/xml/bind/v2/model/core/Adapter", "javax/xml/bind/annotation/XmlList", "java/lang/Class"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"com/sun/xml/bind/v2/runtime/JAXBContextImpl", "com/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder", "java/util/Collection", Opcodes.INTEGER, "com/sun/xml/bind/v2/model/runtime/RuntimeTypeInfoSet", "com/sun/xml/bind/v2/model/nav/Navigator", "java/util/Iterator", "com/sun/xml/bind/api/TypeReference", "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "com/sun/xml/bind/v2/model/core/Adapter", "jakarta/xml/bind/annotation/XmlList", "java/lang/Class"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlAttachmentRef;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlAttachmentRef;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/api/TypeReference", "get", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
 Label label37 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label37);
@@ -1411,7 +1411,7 @@ methodVisitor.visitMaxs(2, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getBeanInfo", "(Ljava/lang/Object;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getBeanInfo", "(Ljava/lang/Object;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1431,7 +1431,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/w3c/dom/Document");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/Messages", "ELEMENT_NEEDED_BUT_FOUND_DOCUMENT", "Lcom/sun/xml/bind/v2/runtime/Messages;");
 methodVisitor.visitInsn(ICONST_1);
@@ -1442,11 +1442,11 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/Messages", "UNKNOWN_CLASS", "Lcom/sun/xml/bind/v2/runtime/Messages;");
 methodVisitor.visitInsn(ICONST_1);
@@ -1457,7 +1457,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1479,7 +1479,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getBeanInfo", "(Ljava/lang/Class;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo<TT;>;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getBeanInfo", "(Ljava/lang/Class;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Lcom/sun/xml/bind/v2/runtime/JaxBeanInfo<TT;>;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1495,7 +1495,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"com/sun/xml/bind/v2/
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -1506,7 +1506,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" is not known to this context");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1879,7 +1879,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidator", "()Ljavax/xml/bind/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidator", "()Ljakarta/xml/bind/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -1893,7 +1893,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createJAXBIntrospector", "()Ljavax/xml/bind/JAXBIntrospector;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createJAXBIntrospector", "()Ljakarta/xml/bind/JAXBIntrospector;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$3");
 methodVisitor.visitInsn(DUP);
@@ -1916,14 +1916,14 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/api/TypeReference", "get", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/annotation/XmlList;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/annotation/XmlList;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/api/TypeReference", "get", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/annotation/XmlList");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/bind/annotation/XmlList");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/model/core/Ref");
 methodVisitor.visitInsn(DUP);
@@ -1935,7 +1935,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/api/TypeReference", "type", "Ljava/lang/reflect/Type;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Ref", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Ref", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -1966,7 +1966,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljavax/xml/bind/SchemaOutputResolver;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljakarta/xml/bind/SchemaOutputResolver;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1996,7 +1996,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$4", "<init>", "(Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;[Lorg/xml/sax/SAXParseException;[Lorg/xml/sax/SAXParseException;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/schemagen/XmlSchemaGenerator", "write", "(Ljavax/xml/bind/SchemaOutputResolver;Lcom/sun/xml/bind/api/ErrorListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/schemagen/XmlSchemaGenerator", "write", "(Ljakarta/xml/bind/SchemaOutputResolver;Lcom/sun/xml/bind/api/ErrorListener;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
@@ -2265,26 +2265,26 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinder", "(Ljava/lang/Class;)Ljavax/xml/bind/Binder;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljavax/xml/bind/Binder<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinder", "(Ljava/lang/Class;)Ljakarta/xml/bind/Binder;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/Binder<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/w3c/dom/Node;"));
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createBinder", "()Ljavax/xml/bind/Binder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createBinder", "()Ljakarta/xml/bind/Binder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/api/JAXBRIContext", "createBinder", "(Ljava/lang/Class;)Ljavax/xml/bind/Binder;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/api/JAXBRIContext", "createBinder", "(Ljava/lang/Class;)Ljakarta/xml/bind/Binder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinder", "()Ljavax/xml/bind/Binder;", "()Ljavax/xml/bind/Binder<Lorg/w3c/dom/Node;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinder", "()Ljakarta/xml/bind/Binder;", "()Ljakarta/xml/bind/Binder<Lorg/w3c/dom/Node;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/BinderImpl");
 methodVisitor.visitInsn(DUP);
@@ -2298,7 +2298,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementName", "(Ljava/lang/Object;)Ljavax/xml/namespace/QName;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementName", "(Ljava/lang/Object;)Ljavax/xml/namespace/QName;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2327,7 +2327,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementName", "(Ljava/lang/Class;)Ljavax/xml/namespace/QName;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementName", "(Ljava/lang/Class;)Ljavax/xml/namespace/QName;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2383,7 +2383,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementPropertyAccessor", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/sun/xml/bind/api/RawAccessor;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementPropertyAccessor", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/sun/xml/bind/api/RawAccessor;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2394,7 +2394,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(INSTANCEOF, "com/sun/xml/bind/v2/runtime/ClassBeanInfoImpl");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -2404,7 +2404,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" is not a bean");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"com/sun/xml/bind/v2/runtime/JaxBeanInfo"}, 0, null);
@@ -2462,7 +2462,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -2478,7 +2478,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(7, 11);
 methodVisitor.visitEnd();
@@ -2690,7 +2690,7 @@ methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAugmented", "(Ljava/lang/Class;)Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", "(Ljava/lang/Class<*>;)Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createAugmented", "(Ljava/lang/Class;)Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", "(Ljava/lang/Class<*>;)Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "classes", "[Ljava/lang/Class;");
@@ -2730,7 +2730,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createMarshaller", "()Ljavax/xml/bind/Marshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createMarshaller", "()Ljakarta/xml/bind/Marshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createMarshaller", "()Lcom/sun/xml/bind/v2/runtime/MarshallerImpl;", false);
@@ -2739,7 +2739,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createUnmarshaller", "()Ljavax/xml/bind/Unmarshaller;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createUnmarshaller", "()Ljakarta/xml/bind/Unmarshaller;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createUnmarshaller", "()Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallerImpl;", false);
@@ -2793,7 +2793,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder;Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$1;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$JAXBContextBuilder;Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl$1;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

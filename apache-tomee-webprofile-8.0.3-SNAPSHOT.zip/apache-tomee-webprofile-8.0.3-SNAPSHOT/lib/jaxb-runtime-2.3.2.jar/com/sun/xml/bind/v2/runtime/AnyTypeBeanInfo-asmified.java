@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nilIncluded", "Z", null, nul
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "domHandler", "Ljavax/xml/bind/annotation/W3CDomHandler;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "domHandler", "Ljakarta/xml/bind/annotation/W3CDomHandler;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -157,10 +157,10 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/w3c/dom/Element");
-methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljavax/xml/bind/annotation/W3CDomHandler;");
+methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljakarta/xml/bind/annotation/W3CDomHandler;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/XMLSerializer", "writeDom", "(Ljava/lang/Object;Ljavax/xml/bind/annotation/DomHandler;Ljava/lang/Object;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/XMLSerializer", "writeDom", "(Ljava/lang/Object;Ljakarta/xml/bind/annotation/DomHandler;Ljava/lang/Object;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitIincInsn(5, 1);
@@ -261,7 +261,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "serializeRoot", "(Ljava/lang/Object;Lcom/sun/xml/bind/v2/runtime/XMLSerializer;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/helpers/ValidationEventImpl");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/helpers/ValidationEventImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/Messages", "UNABLE_TO_MARSHAL_NON_ELEMENT", "Lcom/sun/xml/bind/v2/runtime/Messages;");
@@ -276,8 +276,8 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Messages", "format", "([Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljavax/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/XMLSerializer", "reportError", "(Ljavax/xml/bind/ValidationEvent;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/helpers/ValidationEventImpl", "<init>", "(ILjava/lang/String;Ljakarta/xml/bind/ValidationEventLocator;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/XMLSerializer", "reportError", "(Ljakarta/xml/bind/ValidationEvent;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 3);
 methodVisitor.visitEnd();
@@ -407,14 +407,14 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/annotation/W3CDomHandler");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/annotation/W3CDomHandler");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/annotation/W3CDomHandler", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljavax/xml/bind/annotation/W3CDomHandler;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/annotation/W3CDomHandler", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljakarta/xml/bind/annotation/W3CDomHandler;");
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljavax/xml/bind/annotation/W3CDomHandler;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "<init>", "(Ljavax/xml/bind/annotation/DomHandler;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domHandler", "Ljakarta/xml/bind/annotation/W3CDomHandler;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader", "<init>", "(Ljakarta/xml/bind/annotation/DomHandler;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/bind/v2/runtime/AnyTypeBeanInfo", "domLoader", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/DomLoader;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);

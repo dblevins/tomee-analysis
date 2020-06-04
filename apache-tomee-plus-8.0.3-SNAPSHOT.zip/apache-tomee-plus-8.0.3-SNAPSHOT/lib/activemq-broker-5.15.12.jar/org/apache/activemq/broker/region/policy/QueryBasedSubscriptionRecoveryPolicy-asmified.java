@@ -120,7 +120,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1", "<init>", "(Lorg/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy;Lorg/apache/activemq/broker/region/Topic;Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/policy/MessageQuery", "execute", "(Lorg/apache/activemq/command/ActiveMQDestination;Ljavax/jms/MessageListener;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/region/policy/MessageQuery", "execute", "(Lorg/apache/activemq/command/ActiveMQDestination;Ljakarta/jms/MessageListener;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -188,7 +188,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "dispatchInitialMessage", "(Ljavax/jms/Message;Lorg/apache/activemq/broker/region/Destination;Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "dispatchInitialMessage", "(Ljakarta/jms/Message;Lorg/apache/activemq/broker/region/Destination;Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/region/SubscriptionRecovery;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -197,7 +197,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ActiveMQMessageTransformation", "transformMessage", "(Ljavax/jms/Message;Lorg/apache/activemq/ActiveMQConnection;)Lorg/apache/activemq/command/ActiveMQMessage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/ActiveMQMessageTransformation", "transformMessage", "(Ljakarta/jms/Message;Lorg/apache/activemq/ActiveMQConnection;)Lorg/apache/activemq/command/ActiveMQMessage;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/command/ActiveMQMessage", "getDestination", "()Lorg/apache/activemq/command/ActiveMQDestination;", false);
@@ -228,7 +228,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "javax/jms/Message", "org/apache/activemq/broker/region/Destination", "org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/broker/region/SubscriptionRecovery"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "jakarta/jms/Message", "org/apache/activemq/broker/region/Destination", "org/apache/activemq/broker/ConnectionContext", "org/apache/activemq/broker/region/SubscriptionRecovery"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "LOG", "Lorg/slf4j/Logger;");
 methodVisitor.visitLdcInsn("Failed to dispatch initial message: {} into subscription. Reason: ");
@@ -242,7 +242,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "configure", "(Lorg/apache/activemq/command/ActiveMQMessage;)V", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "configure", "(Lorg/apache/activemq/command/ActiveMQMessage;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy", "messageSequence", "Ljava/util/concurrent/atomic/AtomicLong;");

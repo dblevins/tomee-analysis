@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getClassLoad
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPersistenceUnitInfo", "()Ljavax/persistence/spi/PersistenceUnitInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPersistenceUnitInfo", "()Ljakarta/persistence/spi/PersistenceUnitInfo;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setSharedCac
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setTransactionType", "(Ljakarta/persistence/spi/PersistenceUnitTransactionType;)Lorg/eclipse/persistence/jpa/config/PersistenceUnit;", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -22,20 +22,20 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jsf/TagHandlerDelegateFactoryImpl", null, "javax/faces/view/facelets/TagHandlerDelegateFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/tag/jsf/TagHandlerDelegateFactoryImpl", null, "jakarta/faces/view/facelets/TagHandlerDelegateFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagHandlerDelegateFactory", "<init>", "(Ljavax/faces/view/facelets/TagHandlerDelegateFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/TagHandlerDelegateFactory", "<init>", "(Ljakarta/faces/view/facelets/TagHandlerDelegateFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponentHandlerDelegate", "(Ljavax/faces/view/facelets/ComponentHandler;)Ljavax/faces/view/facelets/TagHandlerDelegate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponentHandlerDelegate", "(Ljakarta/faces/view/facelets/ComponentHandler;)Ljakarta/faces/view/facelets/TagHandlerDelegate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "com/sun/faces/facelets/tag/jsf/html/StylesheetResourceHandler");
@@ -44,7 +44,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate", "<init>", "(Ljavax/faces/view/facelets/ComponentHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate", "<init>", "(Ljakarta/faces/view/facelets/ComponentHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -55,47 +55,47 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/html/ScriptResourceDelegate");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/ScriptResourceDelegate", "<init>", "(Ljavax/faces/view/facelets/ComponentHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/html/ScriptResourceDelegate", "<init>", "(Ljakarta/faces/view/facelets/ComponentHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl", "<init>", "(Ljavax/faces/view/facelets/ComponentHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl", "<init>", "(Ljakarta/faces/view/facelets/ComponentHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidatorHandlerDelegate", "(Ljavax/faces/view/facelets/ValidatorHandler;)Ljavax/faces/view/facelets/TagHandlerDelegate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidatorHandlerDelegate", "(Ljakarta/faces/view/facelets/ValidatorHandler;)Ljakarta/faces/view/facelets/TagHandlerDelegate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/ValidatorTagHandlerDelegateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ValidatorTagHandlerDelegateImpl", "<init>", "(Ljavax/faces/view/facelets/ValidatorHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ValidatorTagHandlerDelegateImpl", "<init>", "(Ljakarta/faces/view/facelets/ValidatorHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverterHandlerDelegate", "(Ljavax/faces/view/facelets/ConverterHandler;)Ljavax/faces/view/facelets/TagHandlerDelegate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverterHandlerDelegate", "(Ljakarta/faces/view/facelets/ConverterHandler;)Ljakarta/faces/view/facelets/TagHandlerDelegate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/ConverterTagHandlerDelegateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ConverterTagHandlerDelegateImpl", "<init>", "(Ljavax/faces/view/facelets/ConverterHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/ConverterTagHandlerDelegateImpl", "<init>", "(Ljakarta/faces/view/facelets/ConverterHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBehaviorHandlerDelegate", "(Ljavax/faces/view/facelets/BehaviorHandler;)Ljavax/faces/view/facelets/TagHandlerDelegate;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBehaviorHandlerDelegate", "(Ljakarta/faces/view/facelets/BehaviorHandler;)Ljakarta/faces/view/facelets/TagHandlerDelegate;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/tag/jsf/BehaviorTagHandlerDelegateImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/BehaviorTagHandlerDelegateImpl", "<init>", "(Ljavax/faces/view/facelets/BehaviorHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/jsf/BehaviorTagHandlerDelegateImpl", "<init>", "(Ljakarta/faces/view/facelets/BehaviorHandler;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

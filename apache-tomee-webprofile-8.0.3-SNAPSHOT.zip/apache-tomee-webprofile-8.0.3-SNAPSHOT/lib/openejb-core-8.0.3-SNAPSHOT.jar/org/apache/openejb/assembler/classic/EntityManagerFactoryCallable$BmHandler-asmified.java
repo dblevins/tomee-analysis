@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/openejb/assembler/classic/EntityManagerF
 classWriter.visitInnerClass("org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE | ACC_TRANSIENT, "bm", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE | ACC_TRANSIENT, "bm", "Ljakarta/enterprise/inject/spi/BeanManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -83,7 +83,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -92,7 +92,7 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -101,7 +101,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/config/WebBeansContext", "currentInstance", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getBeanManagerImpl", "()Lorg/apache/webbeans/container/BeanManagerImpl;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/InjectableBeanManager", "<init>", "(Lorg/apache/webbeans/container/BeanManagerImpl;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -119,7 +119,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler", "bm", "Ljakarta/enterprise/inject/spi/BeanManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();

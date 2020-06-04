@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/impl/DefaultFaceletCache", "Ljavax/faces/view/facelets/FaceletCache<Lcom/sun/faces/facelets/impl/DefaultFacelet;>;", "javax/faces/view/facelets/FaceletCache", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/facelets/impl/DefaultFaceletCache", "Ljakarta/faces/view/facelets/FaceletCache<Lcom/sun/faces/facelets/impl/DefaultFacelet;>;", "jakarta/faces/view/facelets/FaceletCache", null);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/impl/DefaultFaceletCache$NoCache", "com/sun/faces/facelets/impl/DefaultFaceletCache", "NoCache", ACC_PRIVATE | ACC_STATIC);
 
@@ -40,7 +40,7 @@ classWriter.visitInnerClass("com/sun/faces/util/ExpiringConcurrentCache$ExpiryCh
 
 classWriter.visitInnerClass("com/sun/faces/util/ConcurrentCache$Factory", "com/sun/faces/util/ConcurrentCache", "Factory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/faces/view/facelets/FaceletCache$MemberFactory", "javax/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/view/facelets/FaceletCache$MemberFactory", "jakarta/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOGGER", "Ljava/util/logging/Logger;", null, null);
@@ -58,7 +58,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "(J)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/FaceletCache", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/FaceletCache", "<init>", "()V", false);
 methodVisitor.visitVarInsn(LLOAD, 1);
 methodVisitor.visitInsn(LCONST_0);
 methodVisitor.visitInsn(LCMP);
@@ -283,10 +283,10 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/RuntimeException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -312,19 +312,19 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/impl/DefaultFaceletCache", "getMemberFactory", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/impl/DefaultFaceletCache", "getMemberFactory", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/impl/DefaultFaceletCache", "getMetadataMemberFactory", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/impl/DefaultFaceletCache", "getMetadataMemberFactory", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

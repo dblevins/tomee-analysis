@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/server/httpd/HttpRequest", null, "java/lang/Object", new String[] { "java/io/Serializable", "javax/servlet/http/HttpServletRequest" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/server/httpd/HttpRequest", null, "java/lang/Object", new String[] { "java/io/Serializable", "jakarta/servlet/http/HttpServletRequest" });
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/HttpRequest$Method", "org/apache/openejb/server/httpd/HttpRequest", "Method", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 

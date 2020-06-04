@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/cxf/jaxws/JaxwsClientCallback$2", null, 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/JaxwsClientCallback$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL, "handler", "Ljavax/xml/ws/AsyncHandler;", "Ljavax/xml/ws/AsyncHandler<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_FINAL, "handler", "Ljakarta/xml/ws/AsyncHandler;", "Ljakarta/xml/ws/AsyncHandler<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_FINAL, "proxy", "Ljava/lang/Object;", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/xml/ws/AsyncHandler;Ljava/lang/Object;)V", "(Ljavax/xml/ws/AsyncHandler<TT;>;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/xml/ws/AsyncHandler;Ljava/lang/Object;)V", "(Ljakarta/xml/ws/AsyncHandler<TT;>;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/endpoint/ClientCallback", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljavax/xml/ws/AsyncHandler;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljakarta/xml/ws/AsyncHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "proxy", "Ljava/lang/Object;");
@@ -67,16 +67,16 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "result", "[Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljavax/xml/ws/AsyncHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljakarta/xml/ws/AsyncHandler;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljavax/xml/ws/AsyncHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljakarta/xml/ws/AsyncHandler;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/JaxwsClientCallback$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback$1", "<init>", "(Lorg/apache/cxf/jaxws/JaxwsClientCallback;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/AsyncHandler", "handleResponse", "(Ljavax/xml/ws/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/AsyncHandler", "handleResponse", "(Ljakarta/xml/ws/Response;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -126,17 +126,17 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxws/JaxwsClientCallback", "mapThrowable", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "exception", "Ljava/lang/Throwable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljavax/xml/ws/AsyncHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljakarta/xml/ws/AsyncHandler;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljavax/xml/ws/AsyncHandler;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/JaxwsClientCallback", "handler", "Ljakarta/xml/ws/AsyncHandler;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/JaxwsClientCallback$2");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JaxwsClientCallback$2", "<init>", "(Lorg/apache/cxf/jaxws/JaxwsClientCallback;Ljava/lang/Throwable;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/AsyncHandler", "handleResponse", "(Ljavax/xml/ws/Response;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/AsyncHandler", "handleResponse", "(Ljakarta/xml/ws/Response;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);

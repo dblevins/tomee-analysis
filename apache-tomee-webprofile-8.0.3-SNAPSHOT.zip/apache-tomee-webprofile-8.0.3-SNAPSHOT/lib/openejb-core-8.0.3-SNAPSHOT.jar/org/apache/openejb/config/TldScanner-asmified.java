@@ -944,7 +944,7 @@ methodVisitor.visitLdcInsn("taglibs-standard-jstlel");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitLdcInsn("javax.faces-2.");
+methodVisitor.visitLdcInsn("jakarta.faces-2.");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);

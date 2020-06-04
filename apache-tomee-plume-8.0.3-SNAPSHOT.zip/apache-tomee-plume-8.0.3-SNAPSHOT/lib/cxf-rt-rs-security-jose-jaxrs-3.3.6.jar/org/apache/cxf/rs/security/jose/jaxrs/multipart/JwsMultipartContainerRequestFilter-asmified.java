@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter", null, "org/apache/cxf/rs/security/jose/jaxrs/multipart/AbstractJwsMultipartVerificationFilter", new String[] { "javax/ws/rs/container/ContainerRequestFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter", null, "org/apache/cxf/rs/security/jose/jaxrs/multipart/AbstractJwsMultipartVerificationFilter", new String[] { "jakarta/ws/rs/container/ContainerRequestFilter" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/container/PreMatching;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/container/PreMatching;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/Priority;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/Priority;", true);
 annotationVisitor0.visit("value", new Integer(1002));
 annotationVisitor0.visitEnd();
 }
@@ -43,12 +43,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljavax/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "filter", "(Ljakarta/ws/rs/container/ContainerRequestContext;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ContainerRequestContext", "getMediaType", "()Ljavax/ws/rs/core/MediaType;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter", "addMultipartFilterIfNeeded", "(Ljavax/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ContainerRequestContext", "getMediaType", "()Ljakarta/ws/rs/core/MediaType;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter", "addMultipartFilterIfNeeded", "(Ljakarta/ws/rs/core/MediaType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

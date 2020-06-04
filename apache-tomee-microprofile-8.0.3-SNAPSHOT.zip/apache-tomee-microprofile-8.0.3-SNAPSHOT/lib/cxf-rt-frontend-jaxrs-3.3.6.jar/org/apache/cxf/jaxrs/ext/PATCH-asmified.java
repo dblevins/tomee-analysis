@@ -39,7 +39,7 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/HttpMethod;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/HttpMethod;", true);
 annotationVisitor0.visit("value", "PATCH");
 annotationVisitor0.visitEnd();
 }

@@ -26,7 +26,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/johnzon/core/Comment
 
 classWriter.visitInnerClass("org/apache/johnzon/core/BufferStrategy$BufferProvider", "org/apache/johnzon/core/BufferStrategy", "BufferProvider", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/json/stream/JsonParser$Event", "javax/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/json/stream/JsonParser$Event", "jakarta/json/stream/JsonParser", "Event", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/io/InputStream;ILorg/apache/johnzon/core/BufferStrategy$BufferProvider;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider;Z)V", "(Ljava/io/InputStream;ILorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;Lorg/apache/johnzon/core/BufferStrategy$BufferProvider<[C>;Z)V", null);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "defaultHandling", "(C)Ljavax/json/stream/JsonParser$Event;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "defaultHandling", "(C)Ljakarta/json/stream/JsonParser$Event;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitIntInsn(BIPUSH, 47);
@@ -95,7 +95,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitIntInsn(BIPUSH, 10);
 methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/CommentsJsonStreamParserImpl", "next", "()Ljavax/json/stream/JsonParser$Event;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/CommentsJsonStreamParserImpl", "next", "()Ljakarta/json/stream/JsonParser$Event;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -125,13 +125,13 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/CommentsJsonStreamParserImpl", "readNextNonWhitespaceChar", "(C)C", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/CommentsJsonStreamParserImpl", "next", "()Ljavax/json/stream/JsonParser$Event;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/johnzon/core/CommentsJsonStreamParserImpl", "next", "()Ljakarta/json/stream/JsonParser$Event;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonStreamParserImpl", "defaultHandling", "(C)Ljavax/json/stream/JsonParser$Event;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonStreamParserImpl", "defaultHandling", "(C)Ljakarta/json/stream/JsonParser$Event;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();

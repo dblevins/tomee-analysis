@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/ee/OSGiManag
 classWriter.visitInnerClass("org/apache/openjpa/ee/OSGiManagedRuntime$Listener", "org/apache/openjpa/ee/OSGiManagedRuntime", "Listener", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "transactionManager", "Ljavax/transaction/TransactionManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "transactionManager", "Ljakarta/transaction/TransactionManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -70,7 +70,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntim
 methodVisitor.visitLdcInsn("(objectClass=javax.transaction.TransactionManager)");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/framework/BundleContext", "addServiceListener", "(Lorg/osgi/framework/ServiceListener;Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.transaction.TransactionManager");
+methodVisitor.visitLdcInsn("jakarta.transaction.TransactionManager");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/framework/BundleContext", "getServiceReference", "(Ljava/lang/String;)Lorg/osgi/framework/ServiceReference;", true);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "serviceReference", "Lorg/osgi/framework/ServiceReference;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "serviceReference", "Lorg/osgi/framework/ServiceReference;");
@@ -79,8 +79,8 @@ methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "serviceReference", "Lorg/osgi/framework/ServiceReference;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/framework/BundleContext", "getService", "(Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionManager");
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/transaction/TransactionManager");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -102,7 +102,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntim
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/framework/BundleContext", "ungetService", "(Lorg/osgi/framework/ServiceReference;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "serviceReference", "Lorg/osgi/framework/ServiceReference;");
 methodVisitor.visitLabel(label1);
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljavax/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -151,17 +151,17 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(MONITORENTER);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/InternalException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("No javax.transaction.TransactionManager service is currently registered as an OSGi service.");
+methodVisitor.visitLdcInsn("No jakarta.transaction.TransactionManager service is currently registered as an OSGi service.");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/util/InternalException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label1);
@@ -181,9 +181,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRollbackOnly", "(Ljava/lang/Throwable;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/OSGiManagedRuntime", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionManager", "getTransaction", "()Ljavax/transaction/Transaction;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "setRollbackOnly", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/ee/OSGiManagedRuntime", "getTransactionManager", "()Ljakarta/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionManager", "getTransaction", "()Ljakarta/transaction/Transaction;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "setRollbackOnly", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -207,11 +207,11 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Ljavax/transaction/TransactionManager;)Ljavax/transaction/TransactionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$102", "(Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/TransactionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljavax/transaction/TransactionManager;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "transactionManager", "Ljakarta/transaction/TransactionManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "<V:Ljava/lang/Object;>Ljavax/faces/view/facelets/FaceletCache<TV;>;", "javax/faces/view/facelets/FaceletCache", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "<V:Ljava/lang/Object;>Ljakarta/faces/view/facelets/FaceletCache<TV;>;", "jakarta/faces/view/facelets/FaceletCache", null);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", null, null, 0);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/faces/view/facelets/FaceletCache$MemberFactory", "javax/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/view/facelets/FaceletCache$MemberFactory", "jakarta/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/FaceletCache$InstanceFactory", "com/sun/faces/facelets/FaceletCache", "InstanceFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -37,18 +37,18 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "privateApi", "Lcom/sun/faces
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "memberFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "memberFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "metadataMemberFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "metadataMemberFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/facelets/FaceletCache;)V", "(Lcom/sun/faces/facelets/FaceletCache<TV;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/FaceletCache", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/view/facelets/FaceletCache", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "privateApi", "Lcom/sun/faces/facelets/FaceletCache;");
@@ -101,19 +101,19 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMemberFactories", "(Ljavax/faces/view/facelets/FaceletCache$MemberFactory;Ljavax/faces/view/facelets/FaceletCache$MemberFactory;)V", "(Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMemberFactories", "(Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;)V", "(Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$1");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$1", "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljavax/faces/view/facelets/FaceletCache$MemberFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$1", "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljavax/faces/view/facelets/FaceletCache$MemberFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "privateApi", "Lcom/sun/faces/facelets/FaceletCache;");
@@ -125,19 +125,19 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMemberFactory", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMemberFactory", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "memberFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "memberFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataMemberFactory", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", "()Ljavax/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataMemberFactory", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", "()Ljakarta/faces/view/facelets/FaceletCache$MemberFactory<TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "metadataMemberFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "metadataMemberFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

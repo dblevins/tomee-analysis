@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProvidedJAXRSApplication", null, "javax/ws/rs/core/Application", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProvidedJAXRSApplication", null, "jakarta/ws/rs/core/Application", null);
 
 classWriter.visitInnerClass("org/apache/openejb/config/AnnotationDeployer$ProvidedJAXRSApplication", "org/apache/openejb/config/AnnotationDeployer", "ProvidedJAXRSApplication", ACC_PUBLIC | ACC_STATIC);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("org/apache/openejb/config/AnnotationDeployer$Provid
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Application", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Application", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

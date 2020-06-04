@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl<TX;>;Ljavax/enterprise/inject/spi/ProcessSyntheticAnnotatedType<TX;>;", "org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl", new String[] { "javax/enterprise/inject/spi/ProcessSyntheticAnnotatedType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl<TX;>;Ljakarta/enterprise/inject/spi/ProcessSyntheticAnnotatedType<TX;>;", "org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl", new String[] { "jakarta/enterprise/inject/spi/ProcessSyntheticAnnotatedType" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "source", "Ljavax/enterprise/inject/spi/Extension;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "source", "Ljakarta/enterprise/inject/spi/Extension;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,26 +33,26 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "modifiedAnnotatedType", "Z",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/Extension;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType<TX;>;Ljavax/enterprise/inject/spi/Extension;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/Extension;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType<TX;>;Ljakarta/enterprise/inject/spi/Extension;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "source", "Ljavax/enterprise/inject/spi/Extension;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "source", "Ljakarta/enterprise/inject/spi/Extension;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSource", "()Ljavax/enterprise/inject/spi/Extension;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSource", "()Ljakarta/enterprise/inject/spi/Extension;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "checkState", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "source", "Ljavax/enterprise/inject/spi/Extension;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl", "source", "Ljakarta/enterprise/inject/spi/Extension;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

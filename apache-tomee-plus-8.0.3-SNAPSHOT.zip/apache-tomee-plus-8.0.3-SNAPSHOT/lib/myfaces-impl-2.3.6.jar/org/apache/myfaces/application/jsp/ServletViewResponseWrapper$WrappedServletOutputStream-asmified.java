@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/application/jsp/ServletViewResponseWrapper$WrappedServletOutputStream", null, "javax/servlet/ServletOutputStream", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/application/jsp/ServletViewResponseWrapper$WrappedServletOutputStream", null, "jakarta/servlet/ServletOutputStream", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/application/jsp/ServletViewResponseWrapper$WrappedServletOutputStream", "org/apache/myfaces/application/jsp/ServletViewResponseWrapper", "WrappedServletOutputStream", ACC_STATIC);
 
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletOutputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletOutputStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/application/jsp/ServletViewResponseWrapper$WrappedServletOutputStream$WrappedByteArrayOutputStream");
 methodVisitor.visitInsn(DUP);
@@ -131,7 +131,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljavax/servlet/WriteListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

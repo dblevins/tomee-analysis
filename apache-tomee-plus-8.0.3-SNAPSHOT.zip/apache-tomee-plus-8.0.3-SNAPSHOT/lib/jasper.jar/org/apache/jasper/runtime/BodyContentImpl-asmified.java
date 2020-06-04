@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/runtime/BodyContentImpl", null, "javax/servlet/jsp/tagext/BodyContent", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/jasper/runtime/BodyContentImpl", null, "jakarta/servlet/jsp/tagext/BodyContent", null);
 
 classWriter.visitInnerClass("org/apache/jasper/runtime/BodyContentImpl$2", null, null, ACC_STATIC);
 
@@ -53,11 +53,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "writer", "Ljava/io/Writer;",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/jsp/JspWriter;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/jsp/JspWriter;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/BodyContent", "<init>", "(Ljavax/servlet/jsp/JspWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/BodyContent", "<init>", "(Ljakarta/servlet/jsp/JspWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/jasper/runtime/BodyContentImpl", "TAG_BUFFER_SIZE", "I");
 methodVisitor.visitIntInsn(NEWARRAY, T_CHAR);

@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "annotatedSet", "Ljava/util/S
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletContext;Lcom/sun/faces/config/InitFacesContext;Lcom/sun/faces/config/manager/tasks/ProvideMetadataToAnnotationScanTask;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletContext;Lcom/sun/faces/config/InitFacesContext;Lcom/sun/faces/config/manager/tasks/ProvideMetadataToAnnotationScanTask;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -50,7 +50,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindAnnotatedConfigClasses", "facesContext", "Lcom/sun/faces/config/InitFacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/spi/AnnotationProviderFactory", "createAnnotationProvider", "(Ljavax/servlet/ServletContext;)Lcom/sun/faces/spi/AnnotationProvider;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/spi/AnnotationProviderFactory", "createAnnotationProvider", "(Ljakarta/servlet/ServletContext;)Lcom/sun/faces/spi/AnnotationProvider;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindAnnotatedConfigClasses", "provider", "Lcom/sun/faces/spi/AnnotationProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -58,7 +58,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindA
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("com.sun.faces.AnnotatedClasses");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindAnnotatedConfigClasses", "annotatedSet", "Ljava/util/Set;");
 methodVisitor.visitInsn(RETURN);

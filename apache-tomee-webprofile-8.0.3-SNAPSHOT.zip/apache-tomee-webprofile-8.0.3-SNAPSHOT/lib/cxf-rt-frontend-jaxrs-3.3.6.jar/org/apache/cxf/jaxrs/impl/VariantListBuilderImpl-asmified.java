@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", null, "javax/ws/rs/core/Variant$VariantListBuilder", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", null, "jakarta/ws/rs/core/Variant$VariantListBuilder", null);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Variant$VariantListBuilder", "javax/ws/rs/core/Variant", "VariantListBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Variant$VariantListBuilder", "jakarta/ws/rs/core/Variant", "VariantListBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "encodings", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/String;>;", null);
@@ -35,18 +35,18 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "languages", "Ljava/util/List
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mediaTypes", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/core/MediaType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mediaTypes", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/core/MediaType;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "variants", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/core/Variant;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "variants", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/core/Variant;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant$VariantListBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant$VariantListBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "()Ljavax/ws/rs/core/Variant$VariantListBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "()Ljakarta/ws/rs/core/Variant$VariantListBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "addVariants", "()V", false);
@@ -84,7 +84,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/ws/rs/core/Variant;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/ws/rs/core/Variant;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "addVariants", "()V", false);
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "encodings", "([Ljava/lang/String;)Ljavax/ws/rs/core/Variant$VariantListBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "encodings", "([Ljava/lang/String;)Ljakarta/ws/rs/core/Variant$VariantListBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "encodings", "Ljava/util/List;");
@@ -115,7 +115,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "mediaTypes", "([Ljavax/ws/rs/core/MediaType;)Ljavax/ws/rs/core/Variant$VariantListBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "mediaTypes", "([Ljakarta/ws/rs/core/MediaType;)Ljakarta/ws/rs/core/Variant$VariantListBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "mediaTypes", "Ljava/util/List;");
@@ -176,7 +176,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "handleLanguages", "(Ljavax/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "handleLanguages", "(Ljakarta/ws/rs/core/MediaType;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -200,13 +200,13 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "variants", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Locale");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant", "<init>", "(Ljavax/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant", "<init>", "(Ljakarta/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -232,7 +232,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/MediaType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/MediaType");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "languages", "Ljava/util/List;");
@@ -241,11 +241,11 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "handleLanguages", "(Ljavax/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "handleLanguages", "(Ljakarta/ws/rs/core/MediaType;)V", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/core/MediaType"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/core/MediaType"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "encodings", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
@@ -268,13 +268,13 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "variants", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Locale");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant", "<init>", "(Ljavax/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant", "<init>", "(Ljakarta/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label5);
@@ -285,13 +285,13 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "variants", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Locale");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant", "<init>", "(Ljavax/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant", "<init>", "(Ljakarta/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label3);
@@ -304,7 +304,7 @@ methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "handleLanguages", "(Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "handleLanguages", "(Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "languages", "Ljava/util/List;");
@@ -343,12 +343,12 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "variants", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant", "<init>", "(Ljavax/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant", "<init>", "(Ljakarta/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -360,12 +360,12 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "variants", "Ljava/util/List;");
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/Variant");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/Variant");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/Variant", "<init>", "(Ljavax/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/Variant", "<init>", "(Ljakarta/ws/rs/core/MediaType;Ljava/util/Locale;Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label5);
@@ -378,7 +378,7 @@ methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "languages", "([Ljava/util/Locale;)Ljavax/ws/rs/core/Variant$VariantListBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "languages", "([Ljava/util/Locale;)Ljakarta/ws/rs/core/Variant$VariantListBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl", "languages", "Ljava/util/List;");

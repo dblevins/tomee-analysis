@@ -1029,7 +1029,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/BeanManagerImpl", "isInterceptorBinding", "(Ljava/lang/Class;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label6);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/decorator/Decorator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/decorator/Decorator;"));
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", null, "java/lang/Object", new String[] { "javax/servlet/ServletConfig" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", null, "java/lang/Object", new String[] { "jakarta/servlet/ServletConfig" });
 
-classWriter.visitOuterClass("org/apache/cxf/transport/servlet/AbstractHTTPServlet", "init", "(Ljavax/servlet/FilterConfig;)V");
+classWriter.visitOuterClass("org/apache/cxf/transport/servlet/AbstractHTTPServlet", "init", "(Ljakarta/servlet/FilterConfig;)V");
 
 classWriter.visitInnerClass("org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$filterConfig", "Ljavax/servlet/FilterConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$filterConfig", "Ljakarta/servlet/FilterConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/servlet/AbstractHTTPServlet;Ljavax/servlet/FilterConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/transport/servlet/AbstractHTTPServlet;Ljakarta/servlet/FilterConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "this$0", "Lorg/apache/cxf/transport/servlet/AbstractHTTPServlet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljavax/servlet/FilterConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljakarta/servlet/FilterConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -55,18 +55,18 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletName", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljavax/servlet/FilterConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterConfig", "getFilterName", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljakarta/servlet/FilterConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterConfig", "getFilterName", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljavax/servlet/FilterConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterConfig", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljakarta/servlet/FilterConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -75,9 +75,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljavax/servlet/FilterConfig;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljakarta/servlet/FilterConfig;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterConfig", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterConfig", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -86,8 +86,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInitParameterNames", "()Ljava/util/Enumeration;", "()Ljava/util/Enumeration<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljavax/servlet/FilterConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/FilterConfig", "getInitParameterNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/transport/servlet/AbstractHTTPServlet$1", "val$filterConfig", "Ljakarta/servlet/FilterConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/FilterConfig", "getInitParameterNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

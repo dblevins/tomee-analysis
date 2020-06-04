@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/CascadableContainerD", "<P:Lorg/apache/bval/jsr/descriptor/ElementD<**>;E::Ljava/lang/reflect/AnnotatedElement;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<TP;TE;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForContainer<TE;>;>;Ljavax/validation/metadata/CascadableDescriptor;Ljavax/validation/metadata/ContainerDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "javax/validation/metadata/CascadableDescriptor", "javax/validation/metadata/ContainerDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/CascadableContainerD", "<P:Lorg/apache/bval/jsr/descriptor/ElementD<**>;E::Ljava/lang/reflect/AnnotatedElement;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<TP;TE;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForContainer<TE;>;>;Ljakarta/validation/metadata/CascadableDescriptor;Ljakarta/validation/metadata/ContainerDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "jakarta/validation/metadata/CascadableDescriptor", "jakarta/validation/metadata/ContainerDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForContainer", "org/apache/bval/jsr/descriptor/MetadataReader", "ForContainer", 0);
 
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "groupConversions
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "containerElementTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/metadata/ContainerElementTypeDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "containerElementTypes", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/metadata/ContainerElementTypeDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -64,7 +64,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MetadataReader$ForContainer", "getContainerElementTypes", "(Lorg/apache/bval/jsr/descriptor/CascadableContainerD;)Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljavax/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Lorg/apache/bval/jsr/descriptor/ContainerElementTypeD;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljakarta/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Lorg/apache/bval/jsr/descriptor/ContainerElementTypeD;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/ToUnmodifiable", "set", "()Ljava/util/stream/Collector;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", true);
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getGroupConversions", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/metadata/GroupConversionDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getGroupConversions", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/metadata/GroupConversionDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/CascadableContainerD", "groupConversions", "Ljava/util/Set;");
@@ -106,7 +106,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedContainerElementTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/metadata/ContainerElementTypeDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedContainerElementTypes", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/metadata/ContainerElementTypeDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/CascadableContainerD", "containerElementTypes", "Ljava/util/Set;");

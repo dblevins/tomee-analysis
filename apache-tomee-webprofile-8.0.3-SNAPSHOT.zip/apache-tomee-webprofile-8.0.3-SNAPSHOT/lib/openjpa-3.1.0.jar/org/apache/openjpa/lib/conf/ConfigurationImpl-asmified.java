@@ -2278,7 +2278,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.persistence");
+methodVisitor.visitLdcInsn("jakarta.persistence");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);

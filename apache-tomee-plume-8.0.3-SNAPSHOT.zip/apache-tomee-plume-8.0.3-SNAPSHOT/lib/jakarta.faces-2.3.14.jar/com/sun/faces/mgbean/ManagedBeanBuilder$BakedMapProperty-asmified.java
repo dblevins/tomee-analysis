@@ -61,7 +61,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -127,7 +127,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/ManagedBeanBuilder$BakedMapProperty", "mapEntries", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/ManagedBeanBuilder", "initMap", "(Ljava/util/Map;Ljava/util/Map;Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/ManagedBeanBuilder", "initMap", "(Ljava/util/Map;Ljava/util/Map;Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitVarInsn(ILOAD, 5);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label10);
@@ -149,7 +149,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/ManagedBeanBuilder$BakedMapProperty", "java/lang/Object", "javax/faces/context/FacesContext", "java/lang/reflect/Method", "java/util/Map", Opcodes.INTEGER, "java/lang/reflect/Method"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/faces/mgbean/ManagedBeanBuilder$BakedMapProperty", "java/lang/Object", "jakarta/faces/context/FacesContext", "java/lang/reflect/Method", "java/util/Map", Opcodes.INTEGER, "java/lang/reflect/Method"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLdcInsn("com.sun.faces.MANAGED_BEAN_UNABLE_TO_SET_PROPERTY_ERROR");
 methodVisitor.visitInsn(ICONST_2);

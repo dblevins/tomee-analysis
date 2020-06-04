@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1", "Ljava/lang/Object;Ljavax/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "javax/ws/rs/client/InvocationCallback" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1", "Ljava/lang/Object;Ljakarta/ws/rs/client/InvocationCallback<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/client/InvocationCallback" });
 
 classWriter.visitOuterClass("org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl", null, null);
 

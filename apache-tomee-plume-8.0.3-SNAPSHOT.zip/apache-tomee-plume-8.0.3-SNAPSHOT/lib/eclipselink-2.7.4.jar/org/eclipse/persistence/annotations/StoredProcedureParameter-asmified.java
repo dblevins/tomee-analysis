@@ -47,10 +47,10 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "mode", "()Ljavax/persistence/ParameterMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "mode", "()Ljakarta/persistence/ParameterMode;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/ParameterMode;", "IN");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/ParameterMode;", "IN");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

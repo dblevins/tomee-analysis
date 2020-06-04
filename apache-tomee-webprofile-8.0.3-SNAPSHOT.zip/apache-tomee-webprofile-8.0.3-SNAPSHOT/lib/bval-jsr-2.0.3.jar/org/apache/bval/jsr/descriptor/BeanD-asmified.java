@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/BeanD", "<T:Ljava/lang/Object;>Lorg/apache/bval/jsr/descriptor/ElementD<Ljava/lang/Class<TT;>;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForBean<TT;>;>;Ljavax/validation/metadata/BeanDescriptor;", "org/apache/bval/jsr/descriptor/ElementD", new String[] { "javax/validation/metadata/BeanDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/BeanD", "<T:Ljava/lang/Object;>Lorg/apache/bval/jsr/descriptor/ElementD<Ljava/lang/Class<TT;>;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForBean<TT;>;>;Ljakarta/validation/metadata/BeanDescriptor;", "org/apache/bval/jsr/descriptor/ElementD", new String[] { "jakarta/validation/metadata/BeanDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForBean", "org/apache/bval/jsr/descriptor/MetadataReader", "ForBean", 0);
 
@@ -35,11 +35,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanClass", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertiesMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/validation/metadata/PropertyDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "propertiesMap", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/validation/metadata/PropertyDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "properties", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/metadata/PropertyDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "properties", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/metadata/PropertyDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,11 +55,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "groupStrategy", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constrainedConstructors", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/validation/metadata/ConstructorDescriptor;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constrainedConstructors", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/validation/metadata/ConstructorDescriptor;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "methodCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/util/Set<Ljavax/validation/metadata/MethodType;>;Ljava/util/Set<Ljavax/validation/metadata/MethodDescriptor;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "methodCache", "Ljava/util/Map;", "Ljava/util/Map<Ljava/util/Set<Ljakarta/validation/metadata/MethodType;>;Ljava/util/Set<Ljakarta/validation/metadata/MethodDescriptor;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -93,7 +93,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "propertiesMap", "Ljava/util/Map;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "values", "()Ljava/util/Collection;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljavax/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Ljavax/validation/metadata/PropertyDescriptor;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljakarta/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Ljakarta/validation/metadata/PropertyDescriptor;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/util/ToUnmodifiable", "set", "()Ljava/util/stream/Collector;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", true);
@@ -169,28 +169,28 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintsForProperty", "(Ljava/lang/String;)Ljavax/validation/metadata/PropertyDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintsForProperty", "(Ljava/lang/String;)Ljakarta/validation/metadata/PropertyDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/BeanD", "getProperty", "(Ljava/lang/String;)Ljavax/validation/metadata/PropertyDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/BeanD", "getProperty", "(Ljava/lang/String;)Ljakarta/validation/metadata/PropertyDescriptor;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "properties", "Ljava/util/Set;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/util/Set;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true), Type.getType("(Ljavax/validation/metadata/PropertyDescriptor;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "(Ljava/util/Set;)Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true), Type.getType("(Ljakarta/validation/metadata/PropertyDescriptor;)Z")});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Optional", "orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/PropertyDescriptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/PropertyDescriptor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedProperties", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/metadata/PropertyDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedProperties", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/metadata/PropertyDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "properties", "Ljava/util/Set;");
@@ -199,7 +199,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstraintsForMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljavax/validation/metadata/MethodDescriptor;", "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljavax/validation/metadata/MethodDescriptor;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstraintsForMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljakarta/validation/metadata/MethodDescriptor;", "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljakarta/validation/metadata/MethodDescriptor;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/StringUtils", "isBlank", "(Ljava/lang/CharSequence;)Z", false);
@@ -216,13 +216,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/Signature", "<init>", "(Ljava/lang/String;[Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/MethodDescriptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/MethodDescriptor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstrainedMethods", "(Ljavax/validation/metadata/MethodType;[Ljavax/validation/metadata/MethodType;)Ljava/util/Set;", "(Ljavax/validation/metadata/MethodType;[Ljavax/validation/metadata/MethodType;)Ljava/util/Set<Ljavax/validation/metadata/MethodDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstrainedMethods", "(Ljakarta/validation/metadata/MethodType;[Ljakarta/validation/metadata/MethodType;)Ljava/util/Set;", "(Ljakarta/validation/metadata/MethodType;[Ljakarta/validation/metadata/MethodType;)Ljava/util/Set<Ljakarta/validation/metadata/MethodDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "methodCache", "Ljava/util/Map;");
@@ -238,7 +238,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstraintsForConstructor", "([Ljava/lang/Class;)Ljavax/validation/metadata/ConstructorDescriptor;", "([Ljava/lang/Class<*>;)Ljavax/validation/metadata/ConstructorDescriptor;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "getConstraintsForConstructor", "([Ljava/lang/Class;)Ljakarta/validation/metadata/ConstructorDescriptor;", "([Ljava/lang/Class<*>;)Ljakarta/validation/metadata/ConstructorDescriptor;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "constructors", "Ljava/util/Map;");
@@ -250,13 +250,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Lj
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/metadata/Signature", "<init>", "(Ljava/lang/String;[Ljava/lang/Class;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/ConstructorDescriptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/ConstructorDescriptor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedConstructors", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/validation/metadata/ConstructorDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstrainedConstructors", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/validation/metadata/ConstructorDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "constrainedConstructors", "Ljava/util/Set;");
@@ -265,7 +265,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperty", "(Ljava/lang/String;)Ljavax/validation/metadata/PropertyDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperty", "(Ljava/lang/String;)Ljakarta/validation/metadata/PropertyDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/StringUtils", "isBlank", "(Ljava/lang/CharSequence;)Z", false);
@@ -278,7 +278,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/BeanD", "propertiesMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/metadata/PropertyDescriptor");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/metadata/PropertyDescriptor");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -329,7 +329,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/validation/metadata/MethodType", "values", "()[Ljavax/validation/metadata/MethodType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/validation/metadata/MethodType", "values", "()[Ljakarta/validation/metadata/MethodType;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
@@ -361,7 +361,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MethodD", "getMethodType", "()Ljavax/validation/metadata/MethodType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MethodD", "getMethodType", "()Ljakarta/validation/metadata/MethodType;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);

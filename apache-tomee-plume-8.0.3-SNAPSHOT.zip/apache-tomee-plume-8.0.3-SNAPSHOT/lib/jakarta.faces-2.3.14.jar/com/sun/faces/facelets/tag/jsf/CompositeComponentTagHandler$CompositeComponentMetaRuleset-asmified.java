@@ -37,12 +37,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "type", "Ljava/lang/Class;", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/Class;Ljava/beans/BeanInfo;)V", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/Class<*>;Ljava/beans/BeanInfo;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/Class;Ljava/beans/BeanInfo;)V", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/Class<*>;Ljava/beans/BeanInfo;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/MetaRulesetImpl", "<init>", "(Ljavax/faces/view/facelets/Tag;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/MetaRulesetImpl", "<init>", "(Ljakarta/faces/view/facelets/Tag;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$CompositeComponentMetaRuleset", "compBeanInfo", "Ljava/beans/BeanInfo;");
@@ -54,7 +54,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMetadataTarget", "()Ljavax/faces/view/facelets/MetadataTarget;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMetadataTarget", "()Ljakarta/faces/view/facelets/MetadataTarget;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -73,10 +73,10 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/beans/IntrospectionException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

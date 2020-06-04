@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/faces/el/FacesCompositeELResolver", null, "javax/el/CompositeELResolver", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "com/sun/faces/el/FacesCompositeELResolver", null, "jakarta/el/CompositeELResolver", null);
 
 classWriter.visitInnerClass("com/sun/faces/el/FacesCompositeELResolver$ELResolverChainType", "com/sun/faces/el/FacesCompositeELResolver", "ELResolverChainType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("com/sun/faces/el/FacesCompositeELResolver$ELResolve
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/CompositeELResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/CompositeELResolver", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -40,11 +40,11 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getChainType
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addRootELResolver", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addRootELResolver", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addPropertyELResolver", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addPropertyELResolver", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

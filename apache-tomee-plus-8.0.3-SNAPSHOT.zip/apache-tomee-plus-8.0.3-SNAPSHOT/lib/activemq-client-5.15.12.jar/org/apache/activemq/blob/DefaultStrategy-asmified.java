@@ -63,7 +63,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createMessageURL", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/net/URL;", null, new String[] { "javax/jms/JMSException", "java/net/MalformedURLException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createMessageURL", "(Lorg/apache/activemq/command/ActiveMQBlobMessage;)Ljava/net/URL;", null, new String[] { "jakarta/jms/JMSException", "java/net/MalformedURLException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/net/URL");
 methodVisitor.visitInsn(DUP);

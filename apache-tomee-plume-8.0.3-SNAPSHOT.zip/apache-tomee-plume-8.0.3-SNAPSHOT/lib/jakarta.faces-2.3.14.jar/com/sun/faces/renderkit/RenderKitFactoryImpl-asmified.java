@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/renderkit/RenderKitFactoryImpl", null, "javax/faces/render/RenderKitFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/renderkit/RenderKitFactoryImpl", null, "jakarta/faces/render/RenderKitFactory", null);
 
 classWriter.visitInnerClass("java/util/concurrent/ConcurrentHashMap$KeySetView", "java/util/concurrent/ConcurrentHashMap", "KeySetView", ACC_PUBLIC | ACC_STATIC);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "className", "Ljava/lang/St
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "renderKits", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljava/lang/String;Ljavax/faces/render/RenderKit;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "renderKits", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljava/lang/String;Ljakarta/faces/render/RenderKit;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -43,7 +43,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/render/RenderKitFactory", "<init>", "(Ljavax/faces/render/RenderKitFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/render/RenderKitFactory", "<init>", "(Ljakarta/faces/render/RenderKitFactory;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ConcurrentHashMap");
 methodVisitor.visitInsn(DUP);
@@ -54,13 +54,13 @@ methodVisitor.visitLdcInsn("HTML_BASIC");
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/renderkit/RenderKitImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/renderkit/RenderKitImpl", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/RenderKitFactoryImpl", "addRenderKit", "(Ljava/lang/String;Ljavax/faces/render/RenderKit;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/renderkit/RenderKitFactoryImpl", "addRenderKit", "(Ljava/lang/String;Ljakarta/faces/render/RenderKit;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRenderKit", "(Ljava/lang/String;Ljavax/faces/render/RenderKit;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRenderKit", "(Ljava/lang/String;Ljakarta/faces/render/RenderKit;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -111,7 +111,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRenderKit", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/render/RenderKit;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRenderKit", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/render/RenderKit;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -136,7 +136,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/renderkit/RenderKitFactoryImpl", "renderKits", "Ljava/util/concurrent/ConcurrentHashMap;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/ConcurrentHashMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/render/RenderKit");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/render/RenderKit");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();

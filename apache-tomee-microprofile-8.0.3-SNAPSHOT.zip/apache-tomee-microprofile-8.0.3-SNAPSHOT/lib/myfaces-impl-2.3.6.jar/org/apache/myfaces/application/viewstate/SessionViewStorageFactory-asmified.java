@@ -50,11 +50,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSerializedViewCollection", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/SerializedViewCollection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSerializedViewCollection", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/application/viewstate/SerializedViewCollection;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSerializedViewKey", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;TK;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createSerializedViewKey", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;TK;)Lorg/apache/myfaces/application/viewstate/SerializedViewKey;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

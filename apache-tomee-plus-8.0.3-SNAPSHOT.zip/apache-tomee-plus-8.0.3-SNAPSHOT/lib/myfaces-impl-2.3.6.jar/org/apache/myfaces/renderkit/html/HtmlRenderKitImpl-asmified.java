@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", null, "javax/faces/render/RenderKit", new String[] { "org/apache/myfaces/renderkit/LazyRenderKit" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", null, "jakarta/faces/render/RenderKit", new String[] { "org/apache/myfaces/renderkit/LazyRenderKit" });
 
 classWriter.visitInnerClass("org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "LazyRendererWrapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -33,22 +33,22 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_renderers", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljavax/faces/render/Renderer;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_renderers", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/render/Renderer;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_responseStateManager", "Ljavax/faces/render/ResponseStateManager;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_responseStateManager", "Ljakarta/faces/render/ResponseStateManager;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_clientBehaviorRenderers", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/faces/render/ClientBehaviorRenderer;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_clientBehaviorRenderers", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/faces/render/ClientBehaviorRenderer;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/render/RenderKit", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/render/RenderKit", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/ConcurrentHashMap");
 methodVisitor.visitInsn(DUP);
@@ -61,7 +61,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/renderkit/html/HtmlResponseStateManager");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlResponseStateManager", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_responseStateManager", "Ljavax/faces/render/ResponseStateManager;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_responseStateManager", "Ljakarta/faces/render/ResponseStateManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClientBehaviorRenderer", "(Ljava/lang/String;Ljavax/faces/render/ClientBehaviorRenderer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClientBehaviorRenderer", "(Ljava/lang/String;Ljakarta/faces/render/ClientBehaviorRenderer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -105,7 +105,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientBehaviorRenderer", "(Ljava/lang/String;)Ljavax/faces/render/ClientBehaviorRenderer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientBehaviorRenderer", "(Ljava/lang/String;)Ljakarta/faces/render/ClientBehaviorRenderer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -121,7 +121,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_clientBehaviorRenderers", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/render/ClientBehaviorRenderer");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/render/ClientBehaviorRenderer");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRenderer", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/render/Renderer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRenderer", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/render/Renderer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -174,10 +174,10 @@ methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/render/Renderer");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/render/Renderer");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Map", "javax/faces/render/Renderer"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Map", "jakarta/faces/render/Renderer"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -203,7 +203,7 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "getWrapped", "()Ljavax/faces/render/Renderer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "getWrapped", "()Ljakarta/faces/render/Renderer;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -218,7 +218,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRenderer", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/render/Renderer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRenderer", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/render/Renderer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -263,7 +263,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_put", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/render/Renderer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_put", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/render/Renderer;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -344,7 +344,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/renderkit/html/HtmlRenderKi
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_put", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/render/Renderer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_put", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/render/Renderer;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINEST", "Ljava/util/logging/Level;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "isLoggable", "(Ljava/util/logging/Level;)Z", false);
@@ -375,7 +375,7 @@ methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "_put", "(Ljava/lang/String;Ljava/lang/String;Ljavax/faces/render/Renderer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNCHRONIZED, "_put", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/faces/render/Renderer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_renderers", "Ljava/util/Map;");
@@ -439,10 +439,10 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponseStateManager", "()Ljavax/faces/render/ResponseStateManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponseStateManager", "()Ljakarta/faces/render/ResponseStateManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_responseStateManager", "Ljavax/faces/render/ResponseStateManager;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "_responseStateManager", "Ljakarta/faces/render/ResponseStateManager;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -483,21 +483,21 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseWriter", "(Ljava/io/Writer;Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/context/ResponseWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseWriter", "(Ljava/io/Writer;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/context/ResponseWriter;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/config/MyfacesConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/shared/config/MyfacesConfig;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getPartialViewContext", "()Ljavax/faces/context/PartialViewContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/PartialViewContext", "isAjaxRequest", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getPartialViewContext", "()Ljakarta/faces/context/PartialViewContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/PartialViewContext", "isAjaxRequest", "()Z", false);
 methodVisitor.visitVarInsn(ISTORE, 8);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 9);
@@ -513,10 +513,10 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/renderkit/Con
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {"java/lang/String", "[Ljava/lang/String;"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {"java/lang/String", "[Ljava/lang/String;"});
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "XHTML_ALLOWED_CONTENT_TYPES", "[Ljava/lang/String;");
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {"java/lang/String", "[Ljava/lang/String;", "[Ljava/lang/String;"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {"java/lang/String", "[Ljava/lang/String;", "[Ljava/lang/String;"});
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "chooseWriterContentType", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label0);
@@ -525,7 +525,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "getContentTypeFromAcceptHeader", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "getContentTypeFromAcceptHeader", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitJumpInsn(IFNULL, label3);
@@ -538,10 +538,10 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/renderkit/Con
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {"java/lang/String", "[Ljava/lang/String;"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 2, new Object[] {"java/lang/String", "[Ljava/lang/String;"});
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "XHTML_ALLOWED_CONTENT_TYPES", "[Ljava/lang/String;");
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {"java/lang/String", "[Ljava/lang/String;", "[Ljava/lang/String;"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {"java/lang/String", "[Ljava/lang/String;", "[Ljava/lang/String;"});
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/ContentTypeUtils", "chooseWriterContentType", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label3);
@@ -622,10 +622,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label14);
 methodVisitor.visitLabel(label13);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {label12, label12, "java/lang/StringBuilder"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 3, new Object[] {label12, label12, "java/lang/StringBuilder"});
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitLabel(label14);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "javax/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 4, new Object[] {label12, label12, "java/lang/StringBuilder", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "java/io/Writer", "java/lang/String", "java/lang/String", "jakarta/faces/context/FacesContext", "org/apache/myfaces/shared/config/MyfacesConfig", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String"}, 4, new Object[] {label12, label12, "java/lang/StringBuilder", "java/lang/String"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
@@ -681,8 +681,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/shared/config/M
 Label label22 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label22);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/application/ProjectStage", "Production", "Ljavax/faces/application/ProjectStage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "isProjectStage", "(Ljavax/faces/application/ProjectStage;)Z", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage", "Production", "Ljakarta/faces/application/ProjectStage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "isProjectStage", "(Ljakarta/faces/application/ProjectStage;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label22);
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/renderkit/html/EarlyFlushHtmlResponseWriterImpl");
 methodVisitor.visitInsn(DUP);
@@ -710,7 +710,7 @@ methodVisitor.visitMaxs(7, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseStream", "(Ljava/io/OutputStream;)Ljavax/faces/context/ResponseStream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseStream", "(Ljava/io/OutputStream;)Ljakarta/faces/context/ResponseStream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream");
 methodVisitor.visitInsn(DUP);

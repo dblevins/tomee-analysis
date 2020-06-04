@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/common/jaxb/JAXBUtils$1", null, "javax/xml/bind/SchemaOutputResolver", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/common/jaxb/JAXBUtils$1", null, "jakarta/xml/bind/SchemaOutputResolver", null);
 
-classWriter.visitOuterClass("org/apache/cxf/common/jaxb/JAXBUtils", "generateJaxbSchemas", "(Ljavax/xml/bind/JAXBContext;Ljava/util/Map;)Ljava/util/List;");
+classWriter.visitOuterClass("org/apache/cxf/common/jaxb/JAXBUtils", "generateJaxbSchemas", "(Ljakarta/xml/bind/JAXBContext;Ljava/util/Map;)Ljava/util/List;");
 
 classWriter.visitInnerClass("org/apache/cxf/common/jaxb/JAXBUtils$1", null, null, ACC_STATIC);
 
@@ -46,7 +46,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/common/jaxb/JAXBUtils$1", "val$results", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/SchemaOutputResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/SchemaOutputResolver", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

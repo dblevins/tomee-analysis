@@ -615,7 +615,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/jms/MessageFormatException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/jms/MessageFormatException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
@@ -648,12 +648,12 @@ methodVisitor.visitVarInsn(LSTORE, 11);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/activemq/broker/scheduler/memory/InMemoryJobScheduler", "java/lang/String", "org/apache/activemq/util/ByteSequence", "java/lang/String", Opcodes.LONG, Opcodes.LONG, Opcodes.INTEGER, Opcodes.LONG, Opcodes.LONG}, 1, new Object[] {"javax/jms/MessageFormatException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/activemq/broker/scheduler/memory/InMemoryJobScheduler", "java/lang/String", "org/apache/activemq/util/ByteSequence", "java/lang/String", Opcodes.LONG, Opcodes.LONG, Opcodes.INTEGER, Opcodes.LONG, Opcodes.LONG}, 1, new Object[] {"jakarta/jms/MessageFormatException"});
 methodVisitor.visitVarInsn(ASTORE, 13);
 methodVisitor.visitTypeInsn(NEW, "java/io/IOException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 13);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/jms/MessageFormatException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/jms/MessageFormatException", "getMessage", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/IOException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
@@ -1086,7 +1086,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "calculateNextExecutionTime", "(Lorg/apache/activemq/broker/scheduler/memory/InMemoryJob;JI)J", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "calculateNextExecutionTime", "(Lorg/apache/activemq/broker/scheduler/memory/InMemoryJob;JI)J", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitVarInsn(LSTORE, 5);
@@ -1182,7 +1182,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lorg/apache/activemq/broker/scheduler/memory/InMemoryJobScheduler;Lorg/apache/activemq/broker/scheduler/memory/InMemoryJob;JI)J", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lorg/apache/activemq/broker/scheduler/memory/InMemoryJobScheduler;Lorg/apache/activemq/broker/scheduler/memory/InMemoryJob;JI)J", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

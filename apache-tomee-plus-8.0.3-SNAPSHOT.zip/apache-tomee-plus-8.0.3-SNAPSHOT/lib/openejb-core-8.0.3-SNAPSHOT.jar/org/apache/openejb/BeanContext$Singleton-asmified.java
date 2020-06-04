@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/openejb/BeanContext$Singleton", "org/apa
 classWriter.visitInnerClass("org/apache/openejb/BeanContext$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lockType", "Ljavax/ejb/LockType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lockType", "Ljakarta/ejb/LockType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,8 +46,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/ejb/LockType", "WRITE", "Ljavax/ejb/LockType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/ejb/LockType", "WRITE", "Ljakarta/ejb/LockType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljakarta/ejb/LockType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/LinkedHashSet");
 methodVisitor.visitInsn(DUP);
@@ -67,21 +67,21 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1202", "(Lorg/apache/openejb/BeanContext$Singleton;Ljavax/ejb/LockType;)Ljavax/ejb/LockType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1202", "(Lorg/apache/openejb/BeanContext$Singleton;Ljakarta/ejb/LockType;)Ljakarta/ejb/LockType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljakarta/ejb/LockType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1200", "(Lorg/apache/openejb/BeanContext$Singleton;)Ljavax/ejb/LockType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$1200", "(Lorg/apache/openejb/BeanContext$Singleton;)Ljakarta/ejb/LockType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljavax/ejb/LockType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/BeanContext$Singleton", "lockType", "Ljakarta/ejb/LockType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

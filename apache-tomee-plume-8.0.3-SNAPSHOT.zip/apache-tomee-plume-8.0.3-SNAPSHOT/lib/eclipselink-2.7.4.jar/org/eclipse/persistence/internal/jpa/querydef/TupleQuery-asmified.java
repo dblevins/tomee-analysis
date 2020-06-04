@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/TupleQuery", null, "org/eclipse/persistence/queries/ReportQuery", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "selections", "Ljava/util/List;", "Ljava/util/List<-Ljavax/persistence/criteria/Selection<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "selections", "Ljava/util/List;", "Ljava/util/List<-Ljakarta/persistence/criteria/Selection<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<-Ljavax/persistence/criteria/Selection<*>;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<-Ljakarta/persistence/criteria/Selection<*>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/queries/ReportQuery", "<init>", "()V", false);

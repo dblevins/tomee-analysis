@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "Ljava/lang/Object;Ljavax/enterprise/inject/spi/Producer<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/Producer" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "Ljava/lang/Object;Ljakarta/enterprise/inject/spi/Producer<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/Producer" });
 
-classWriter.visitOuterClass("org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean", "getProducer", "()Ljavax/enterprise/inject/spi/Producer;");
+classWriter.visitOuterClass("org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean", "getProducer", "()Ljakarta/enterprise/inject/spi/Producer;");
 
 classWriter.visitInnerClass("org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean", "org/apache/webbeans/configurator/BeanConfiguratorImpl", "ConstructedBean", ACC_PUBLIC);
 
 classWriter.visitInnerClass("org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "instance", "Ljavax/enterprise/inject/Instance;", "Ljavax/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "instance", "Ljakarta/enterprise/inject/Instance;", "Ljakarta/enterprise/inject/Instance<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,21 +47,21 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/configurator/BeanCon
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/enterprise/inject/spi/CDI", "current", "()Ljavax/enterprise/inject/spi/CDI;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljavax/enterprise/inject/Instance;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/enterprise/inject/spi/CDI", "current", "()Ljakarta/enterprise/inject/spi/CDI;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljakarta/enterprise/inject/Instance;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produce", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "this$1", "Lorg/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean;");
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean", "this$0", "Lorg/apache/webbeans/configurator/BeanConfiguratorImpl;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/BeanConfiguratorImpl", "access$500", "(Lorg/apache/webbeans/configurator/BeanConfiguratorImpl;)Ljava/util/function/Function;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljavax/enterprise/inject/Instance;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljakarta/enterprise/inject/Instance;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -82,7 +82,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanCon
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/configurator/BeanConfiguratorImpl", "access$800", "(Lorg/apache/webbeans/configurator/BeanConfiguratorImpl;)Ljava/util/function/BiConsumer;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljavax/enterprise/inject/Instance;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "instance", "Ljakarta/enterprise/inject/Instance;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/BiConsumer", "accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1", "this$1", "Lorg/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean;");

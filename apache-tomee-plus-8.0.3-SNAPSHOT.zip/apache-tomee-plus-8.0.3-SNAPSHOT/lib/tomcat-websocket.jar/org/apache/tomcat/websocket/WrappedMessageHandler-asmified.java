@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMaxMessag
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getWrappedHandler", "()Ljavax/websocket/MessageHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getWrappedHandler", "()Ljakarta/websocket/MessageHandler;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

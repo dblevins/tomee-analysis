@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/sessions/co
 classWriter.visitInnerClass("org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "JMSOnMessageHelper", 0);
 
 {
-fieldVisitor = classWriter.visitField(0, "message", "Ljavax/jms/Message;", null, null);
+fieldVisitor = classWriter.visitField(0, "message", "Ljakarta/jms/Message;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection;Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection;Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -44,10 +44,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljavax/jms/Message;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljakarta/jms/Message;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljavax/jms/Message;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljakarta/jms/Message;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -58,8 +58,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "this$0", "Lorg/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljavax/jms/Message;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "onMessage", "(Ljavax/jms/Message;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper", "message", "Ljakarta/jms/Message;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "onMessage", "(Ljakarta/jms/Message;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

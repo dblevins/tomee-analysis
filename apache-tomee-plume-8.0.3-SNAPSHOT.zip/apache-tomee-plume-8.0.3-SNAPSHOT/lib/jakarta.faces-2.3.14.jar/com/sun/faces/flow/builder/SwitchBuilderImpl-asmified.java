@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/SwitchBuilderImpl", null, "javax/faces/flow/builder/SwitchBuilder", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/flow/builder/SwitchBuilderImpl", null, "jakarta/faces/flow/builder/SwitchBuilder", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;", null, null);
@@ -44,7 +44,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/flow/builder/FlowBuilderImpl;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/flow/builder/SwitchBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/flow/builder/SwitchBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/flow/builder/SwitchBuilderImpl", "root", "Lcom/sun/faces/flow/builder/FlowBuilderImpl;");
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "defaultOutcome", "(Ljava/lang/String;)Ljavax/faces/flow/builder/SwitchCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "defaultOutcome", "(Ljava/lang/String;)Ljakarta/faces/flow/builder/SwitchCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("outcome");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -92,7 +92,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "defaultOutcome", "(Ljavax/el/ValueExpression;)Ljavax/faces/flow/builder/SwitchCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "defaultOutcome", "(Ljakarta/el/ValueExpression;)Ljakarta/faces/flow/builder/SwitchCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("outcome");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -100,7 +100,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull"
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/SwitchBuilderImpl", "switchNode", "Lcom/sun/faces/flow/SwitchNodeImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/SwitchNodeImpl", "setDefaultOutcome", "(Ljavax/el/ValueExpression;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/SwitchNodeImpl", "setDefaultOutcome", "(Ljakarta/el/ValueExpression;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/SwitchBuilderImpl", "switchCaseBuilder", "Lcom/sun/faces/flow/builder/SwitchCaseBuilderImpl;");
 methodVisitor.visitInsn(ARETURN);
@@ -122,11 +122,11 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "switchCase", "()Ljavax/faces/flow/builder/SwitchCaseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "switchCase", "()Ljakarta/faces/flow/builder/SwitchCaseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/flow/builder/SwitchBuilderImpl", "switchCaseBuilder", "Lcom/sun/faces/flow/builder/SwitchCaseBuilderImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/SwitchCaseBuilderImpl", "switchCase", "()Ljavax/faces/flow/builder/SwitchCaseBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/SwitchCaseBuilderImpl", "switchCase", "()Ljakarta/faces/flow/builder/SwitchCaseBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -150,7 +150,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljavax/faces/flow/builder/SwitchBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljakarta/faces/flow/builder/SwitchBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/SwitchBuilderImpl", "markAsStartNode", "()Lcom/sun/faces/flow/builder/SwitchBuilderImpl;", false);
@@ -159,7 +159,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljavax/faces/flow/builder/NodeBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "markAsStartNode", "()Ljakarta/faces/flow/builder/NodeBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/flow/builder/SwitchBuilderImpl", "markAsStartNode", "()Lcom/sun/faces/flow/builder/SwitchBuilderImpl;", false);

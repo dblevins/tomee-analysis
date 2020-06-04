@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Lorg/apache/catalina/connector/Request;Lorg/apache/catalina/connector/Response;)V", null, new String[] { "java/io/IOException", "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Lorg/apache/catalina/connector/Request;Lorg/apache/catalina/connector/Response;)V", null, new String[] { "java/io/IOException", "jakarta/servlet/ServletException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -107,7 +107,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/catalina/OpenEJBValve", "securityService", "Lorg/apache/tomee/catalina/TomcatSecurityService;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/OpenEJBSecurityListener", "<init>", "(Lorg/apache/tomee/catalina/TomcatSecurityService;Lorg/apache/catalina/connector/Request;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/AsyncContextImpl", "addListener", "(Ljavax/servlet/AsyncListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/AsyncContextImpl", "addListener", "(Ljakarta/servlet/AsyncListener;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/catalina/OpenEJBValve", "getNext", "()Lorg/apache/catalina/Valve;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);

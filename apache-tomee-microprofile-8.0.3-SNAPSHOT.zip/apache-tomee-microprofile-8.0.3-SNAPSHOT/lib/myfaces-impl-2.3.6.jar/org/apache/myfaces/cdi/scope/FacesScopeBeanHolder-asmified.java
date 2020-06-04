@@ -49,10 +49,10 @@ methodVisitor.visitMaxs(0, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContextualStorage", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getContextualStorage", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oam.FACES_SCOPE_MAP");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/cdi/util/ContextualStorage");
@@ -65,10 +65,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/ContextualStorage", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;ZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/ContextualStorage", "<init>", "(Ljakarta/enterprise/inject/spi/BeanManager;ZZ)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oam.FACES_SCOPE_MAP");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -81,10 +81,10 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextualStorageNoCreate", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextualStorageNoCreate", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oam.FACES_SCOPE_MAP");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/cdi/util/ContextualStorage");
@@ -93,7 +93,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;Z)Ljava/util/Map;", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;Z)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesScopeMap", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;Z)Ljava/util/Map;", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;Z)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -102,7 +102,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "getContextualStorage", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "getContextualStorage", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/ContextualStorage", "getStorage", "()Ljava/util/Map;", false);
@@ -148,7 +148,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "getContextualStorageNoCreate", "(Ljavax/enterprise/inject/spi/BeanManager;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "getContextualStorageNoCreate", "(Ljakarta/enterprise/inject/spi/BeanManager;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNULL, label3);
@@ -172,10 +172,10 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "forceNewStorage", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "forceNewStorage", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("oam.FACES_SCOPE_MAP");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/cdi/util/ContextualStorage");
@@ -184,11 +184,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroyBeans", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroyBeans", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "forceNewStorage", "(Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/scope/FacesScopeBeanHolder", "forceNewStorage", "(Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/cdi/util/ContextualStorage;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();

@@ -22,34 +22,34 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/context/FacesContextFactoryImpl", null, "javax/faces/context/FacesContextFactory", new String[] { "org/apache/myfaces/context/ReleaseableFacesContextFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/context/FacesContextFactoryImpl", null, "jakarta/faces/context/FacesContextFactory", new String[] { "org/apache/myfaces/context/ReleaseableFacesContextFactory" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log", "Ljava/util/logging/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_externalContextFactory", "Ljavax/faces/context/ExternalContextFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_externalContextFactory", "Ljakarta/faces/context/ExternalContextFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_exceptionHandlerFactory", "Ljavax/faces/context/ExceptionHandlerFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_exceptionHandlerFactory", "Ljakarta/faces/context/ExceptionHandlerFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_applicationFactory", "Ljavax/faces/application/ApplicationFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_applicationFactory", "Ljakarta/faces/application/ApplicationFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_renderKitFactory", "Ljavax/faces/render/RenderKitFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_renderKitFactory", "Ljakarta/faces/render/RenderKitFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_partialViewContextFactory", "Ljavax/faces/context/PartialViewContextFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_partialViewContextFactory", "Ljakarta/faces/context/PartialViewContextFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_firstExternalContextInstance", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljavax/faces/context/ExternalContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_firstExternalContextInstance", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljakarta/faces/context/ExternalContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -62,11 +62,11 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/SecurityExce
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/FacesContextFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/FacesContextFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.faces.context._MyFacesExternalContextHelper");
+methodVisitor.visitLdcInsn("jakarta.faces.context._MyFacesExternalContextHelper");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "classForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -123,36 +123,36 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_firstExternalContextInstance", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.context.ExternalContextFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/context/ExternalContextFactory");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_externalContextFactory", "Ljavax/faces/context/ExternalContextFactory;");
+methodVisitor.visitLdcInsn("jakarta.faces.context.ExternalContextFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/context/ExternalContextFactory");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_externalContextFactory", "Ljakarta/faces/context/ExternalContextFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.context.ExceptionHandlerFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/context/ExceptionHandlerFactory");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_exceptionHandlerFactory", "Ljavax/faces/context/ExceptionHandlerFactory;");
+methodVisitor.visitLdcInsn("jakarta.faces.context.ExceptionHandlerFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/context/ExceptionHandlerFactory");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_exceptionHandlerFactory", "Ljakarta/faces/context/ExceptionHandlerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.application.ApplicationFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/ApplicationFactory");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitLdcInsn("jakarta.faces.application.ApplicationFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/ApplicationFactory");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.render.RenderKitFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/render/RenderKitFactory");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljavax/faces/render/RenderKitFactory;");
+methodVisitor.visitLdcInsn("jakarta.faces.render.RenderKitFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/render/RenderKitFactory");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljakarta/faces/render/RenderKitFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.context.PartialViewContextFactory");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/context/PartialViewContextFactory");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljavax/faces/context/PartialViewContextFactory;");
+methodVisitor.visitLdcInsn("jakarta.faces.context.PartialViewContextFactory");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/FactoryFinder", "getFactory", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/context/PartialViewContextFactory");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljakarta/faces/context/PartialViewContextFactory;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljavax/faces/lifecycle/Lifecycle;)Ljavax/faces/context/FacesContext;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljakarta/faces/lifecycle/Lifecycle;)Ljakarta/faces/context/FacesContext;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -195,11 +195,11 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_externalContextFactory", "Ljavax/faces/context/ExternalContextFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_externalContextFactory", "Ljakarta/faces/context/ExternalContextFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContextFactory", "getExternalContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContextFactory", "getExternalContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -208,10 +208,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextF
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getRequestMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequestMap", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("org.apache.myfaces.context.servlet.ServletExternalContextImpl");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/context/ExternalContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/context/ExternalContext");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNULL, label4);
@@ -220,7 +220,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextF
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/faces/context/ExternalContext", "javax/faces/context/ExternalContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/faces/context/ExternalContext", "jakarta/faces/context/ExternalContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/myfaces/context/ReleaseableExternalContext");
 Label label5 = new Label();
@@ -232,12 +232,12 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/context/ReleaseableExternalContext");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljavax/faces/render/RenderKitFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljakarta/faces/render/RenderKitFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljavax/faces/context/PartialViewContextFactory;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljavax/faces/application/ApplicationFactory;Ljavax/faces/render/RenderKitFactory;Ljavax/faces/context/PartialViewContextFactory;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljakarta/faces/context/PartialViewContextFactory;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljakarta/faces/application/ApplicationFactory;Ljakarta/faces/render/RenderKitFactory;Ljakarta/faces/context/PartialViewContextFactory;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
@@ -256,12 +256,12 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/context/ReleaseableExternalContext");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljavax/faces/render/RenderKitFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljakarta/faces/render/RenderKitFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljavax/faces/context/PartialViewContextFactory;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljavax/faces/application/ApplicationFactory;Ljavax/faces/render/RenderKitFactory;Ljavax/faces/context/PartialViewContextFactory;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljakarta/faces/context/PartialViewContextFactory;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljakarta/faces/application/ApplicationFactory;Ljakarta/faces/render/RenderKitFactory;Ljakarta/faces/context/PartialViewContextFactory;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label7);
@@ -272,20 +272,20 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_applicationFactory", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljavax/faces/render/RenderKitFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_renderKitFactory", "Ljakarta/faces/render/RenderKitFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljavax/faces/context/PartialViewContextFactory;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljavax/faces/application/ApplicationFactory;Ljavax/faces/render/RenderKitFactory;Ljavax/faces/context/PartialViewContextFactory;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_partialViewContextFactory", "Ljakarta/faces/context/PartialViewContextFactory;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/context/servlet/FacesContextImpl", "<init>", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/context/ReleaseableExternalContext;Lorg/apache/myfaces/context/ReleaseableFacesContextFactory;Ljakarta/faces/application/ApplicationFactory;Ljakarta/faces/render/RenderKitFactory;Ljakarta/faces/context/PartialViewContextFactory;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/FacesContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/FacesContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_exceptionHandlerFactory", "Ljavax/faces/context/ExceptionHandlerFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExceptionHandlerFactory", "getExceptionHandler", "()Ljavax/faces/context/ExceptionHandler;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "setExceptionHandler", "(Ljavax/faces/context/ExceptionHandler;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/FacesContextFactoryImpl", "_exceptionHandlerFactory", "Ljakarta/faces/context/ExceptionHandlerFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExceptionHandlerFactory", "getExceptionHandler", "()Ljakarta/faces/context/ExceptionHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "setExceptionHandler", "(Ljakarta/faces/context/ExceptionHandler;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 8);

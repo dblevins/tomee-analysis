@@ -153,7 +153,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/persistence/PersistenceContext;Lorg/apache/openejb/config/AnnotationDeployer$Member;)Lorg/apache/openejb/config/PersistenceContextAnn;", null, new String[] { "org/apache/openejb/OpenEJBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/persistence/PersistenceContext;Lorg/apache/openejb/config/AnnotationDeployer$Member;)Lorg/apache/openejb/config/PersistenceContextAnn;", null, new String[] { "org/apache/openejb/OpenEJBException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/config/PersistenceContextAnnFactory", "useAsm", "Z");
 Label label0 = new Label();
@@ -168,7 +168,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/Persiste
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/PersistenceContext", "name", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/PersistenceContext", "name", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label2 = new Label();
@@ -237,7 +237,7 @@ methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/PersistenceContextAnnFactory$DirectPersistenceContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/PersistenceContextAnnFactory$DirectPersistenceContext", "<init>", "(Ljavax/persistence/PersistenceContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/PersistenceContextAnnFactory$DirectPersistenceContext", "<init>", "(Ljakarta/persistence/PersistenceContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
@@ -252,7 +252,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 0);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.persistence.PersistenceContext");
+methodVisitor.visitLdcInsn("jakarta.persistence.PersistenceContext");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

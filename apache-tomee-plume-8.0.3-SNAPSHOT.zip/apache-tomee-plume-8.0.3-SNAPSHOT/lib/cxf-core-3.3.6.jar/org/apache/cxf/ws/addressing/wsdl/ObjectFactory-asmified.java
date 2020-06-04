@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/ws/addressing/wsdl/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -90,61 +90,61 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceName", "(Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServiceName", "(Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2006/05/addressing/wsdl");
 annotationVisitor0.visit("name", "ServiceName");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/wsdl/ObjectFactory", "_ServiceName_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/wsdl/ServiceNameType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInterfaceName", "(Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;)Ljavax/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInterfaceName", "(Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2006/05/addressing/wsdl");
 annotationVisitor0.visit("name", "InterfaceName");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/wsdl/ObjectFactory", "_InterfaceName_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/wsdl/AttributedQNameType;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUsingAddressing", "(Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;)Ljavax/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;)Ljavax/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUsingAddressing", "(Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;)Ljakarta/xml/bind/JAXBElement<Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.w3.org/2006/05/addressing/wsdl");
 annotationVisitor0.visit("name", "UsingAddressing");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/addressing/wsdl/ObjectFactory", "_UsingAddressing_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/ws/addressing/wsdl/UsingAddressing;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

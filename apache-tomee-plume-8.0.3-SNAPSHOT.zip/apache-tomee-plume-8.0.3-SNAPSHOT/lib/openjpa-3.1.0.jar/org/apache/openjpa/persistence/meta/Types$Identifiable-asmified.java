@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/Types$Identifiable", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/AbstractManagedType<TX;>;Ljavax/persistence/metamodel/IdentifiableType<TX;>;", "org/apache/openjpa/persistence/meta/AbstractManagedType", new String[] { "javax/persistence/metamodel/IdentifiableType" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/meta/Types$Identifiable", "<X:Ljava/lang/Object;>Lorg/apache/openjpa/persistence/meta/AbstractManagedType<TX;>;Ljakarta/persistence/metamodel/IdentifiableType<TX;>;", "org/apache/openjpa/persistence/meta/AbstractManagedType", new String[] { "jakarta/persistence/metamodel/IdentifiableType" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/Types$Identifiable", "org/apache/openjpa/persistence/meta/Types", "Identifiable", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSupertype", "()Ljavax/persistence/metamodel/IdentifiableType;", "()Ljavax/persistence/metamodel/IdentifiableType<-TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSupertype", "()Ljakarta/persistence/metamodel/IdentifiableType;", "()Ljakarta/persistence/metamodel/IdentifiableType<-TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Types$Identifiable", "meta", "Lorg/apache/openjpa/meta/ClassMetaData;");
@@ -75,8 +75,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Types$Identifiable", "model", "Lorg/apache/openjpa/persistence/meta/MetamodelImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "getDescribedType", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "managedType", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/ManagedType;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/metamodel/IdentifiableType");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "managedType", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/ManagedType;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/metamodel/IdentifiableType");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -125,7 +125,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIdType", "()Ljavax/persistence/metamodel/Type;", "()Ljavax/persistence/metamodel/Type<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIdType", "()Ljakarta/persistence/metamodel/Type;", "()Ljakarta/persistence/metamodel/Type<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/Types$Identifiable", "hasSingleIdAttribute", "()Z", false);
@@ -150,7 +150,7 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/meta/Types$Identifiable", "model", "Lorg/apache/openjpa/persistence/meta/MetamodelImpl;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "getType", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/Type;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/meta/MetamodelImpl", "getType", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/Type;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

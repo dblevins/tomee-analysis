@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "systemEvent", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "systemEvent", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sourceClass", "Ljava/lang/Cl
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/faces/event/SystemEventListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "listeners", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/faces/event/SystemEventListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "constructorMap", "Ljava/util
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -86,7 +86,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getListeners", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/faces/event/SystemEventListener;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getListeners", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/faces/event/SystemEventListener;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/events/EventInfo", "listeners", "Ljava/util/Set;");
@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSystemEvent", "(Ljava/lang/Object;)Ljavax/faces/event/SystemEvent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createSystemEvent", "(Ljava/lang/Object;)Ljakarta/faces/event/SystemEvent;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -121,16 +121,16 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/event/SystemEvent");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/event/SystemEvent");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/application/applicationimpl/events/EventInfo", "java/lang/Object", "java/lang/reflect/Constructor"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/FacesException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/FacesException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljavax/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/wsdl/extensions/ExtensibilityElement;", new String[] { "javax/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljakarta/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/wsdl/extensions/ExtensibilityElement;", new String[] { "jakarta/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -51,10 +51,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/xml/wsdl11/
 methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/namespace/QName");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/xml/wsdl11/XmlIoPlugin", "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/xml/wsdl11/XmlIoPlugin", "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/tools/common/ToolConstants", "XML_FORMAT", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljavax/wsdl/extensions/ExtensibilityElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljakarta/wsdl/extensions/ExtensibilityElement;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/cxf/wsdl/JAXBExtensibilityElement");
@@ -68,7 +68,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/binding/xml/wsdl11/XmlIoPlugin", "java/util/Map", "org/apache/cxf/bindings/xformat/XMLBindingMessageFormat", "java/lang/Class", "javax/xml/namespace/QName", "javax/wsdl/extensions/ExtensibilityElement"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/binding/xml/wsdl11/XmlIoPlugin", "java/util/Map", "org/apache/cxf/bindings/xformat/XMLBindingMessageFormat", "java/lang/Class", "javax/xml/namespace/QName", "jakarta/wsdl/extensions/ExtensibilityElement"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/bindings/xformat/XMLBindingMessageFormat");
 methodVisitor.visitVarInsn(ASTORE, 2);

@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/event/EventContextImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventContext<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/EventContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/event/EventContextImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventContext<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/EventContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "event", "Ljava/lang/Object;", "TT;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", "(TT;Ljavax/enterprise/inject/spi/EventMetadata;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", "(TT;Ljakarta/enterprise/inject/spi/EventMetadata;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/EventContextImpl", "event", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/EventContextImpl", "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/EventContextImpl", "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -57,10 +57,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "()Ljavax/enterprise/inject/spi/EventMetadata;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadata", "()Ljakarta/enterprise/inject/spi/EventMetadata;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventContextImpl", "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/EventContextImpl", "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

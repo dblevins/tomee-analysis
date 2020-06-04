@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/microprofile/rest/client/RestClientBuilder", "Ljava/lang/Object;Ljavax/ws/rs/core/Configurable<Lorg/eclipse/microprofile/rest/client/RestClientBuilder;>;", "java/lang/Object", new String[] { "javax/ws/rs/core/Configurable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/microprofile/rest/client/RestClientBuilder", "Ljava/lang/Object;Ljakarta/ws/rs/core/Configurable<Lorg/eclipse/microprofile/rest/client/RestClientBuilder;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/core/Configurable" });
 
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 

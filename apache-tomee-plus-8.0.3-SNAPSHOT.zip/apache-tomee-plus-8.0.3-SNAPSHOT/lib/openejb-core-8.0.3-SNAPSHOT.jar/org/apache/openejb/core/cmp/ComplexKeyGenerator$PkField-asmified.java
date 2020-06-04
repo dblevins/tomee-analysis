@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "copyToPkObject", "(Ljavax/ejb/EntityBean;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "copyToPkObject", "(Ljakarta/ejb/EntityBean;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/ComplexKeyGenerator$PkField", "entityBeanField", "Ljava/lang/reflect/Field;");

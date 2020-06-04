@@ -64,11 +64,11 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCurrentSingletonContext", "()Ljavax/enterprise/context/spi/Context;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCurrentSingletonContext", "()Ljakarta/enterprise/context/spi/Context;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/webbeans/corespi/se/DefaultContextsService", "singletonContext", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/context/spi/Context");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/context/spi/Context");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

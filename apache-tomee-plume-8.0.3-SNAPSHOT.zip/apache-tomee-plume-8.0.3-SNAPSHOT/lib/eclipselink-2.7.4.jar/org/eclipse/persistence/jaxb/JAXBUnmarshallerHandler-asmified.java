@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBUnmarshallerHandler", null, "org/eclipse/persistence/platform/xml/SAXDocumentBuilder", new String[] { "javax/xml/bind/UnmarshallerHandler" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/JAXBUnmarshallerHandler", null, "org/eclipse/persistence/platform/xml/SAXDocumentBuilder", new String[] { "jakarta/xml/bind/UnmarshallerHandler" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jaxbUnmarshaller", "Lorg/eclipse/persistence/jaxb/JAXBUnmarshaller;", null, null);
@@ -69,7 +69,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResult", "()Ljava/lang/Object;", null, new String[] { "javax/xml/bind/JAXBException", "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResult", "()Ljava/lang/Object;", null, new String[] { "jakarta/xml/bind/JAXBException", "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBUnmarshallerHandler", "getDocument", "()Lorg/w3c/dom/Document;", false);

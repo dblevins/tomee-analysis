@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "org/apache/catalina/session/StandardSessionContext", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpSessionContext" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER | ACC_DEPRECATED, "org/apache/catalina/session/StandardSessionContext", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpSessionContext" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/Deprecated;", true);
@@ -55,7 +55,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getSession", "(Ljava/lang/String;)Ljavax/servlet/http/HttpSession;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getSession", "(Ljava/lang/String;)Ljakarta/servlet/http/HttpSession;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();

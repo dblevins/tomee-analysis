@@ -41,7 +41,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/metadata/HierarchyBuilder$Cross
 classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL, "getParameterNames", "Ljava/util/function/BiFunction;", "Ljava/util/function/BiFunction<Ljavax/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_FINAL, "getParameterNames", "Ljava/util/function/BiFunction;", "Ljava/util/function/BiFunction<Ljakarta/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable;Lorg/apache/bval/jsr/metadata/Meta;Ljava/util/function/BiFunction;)V", "(Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable<TE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljava/util/function/BiFunction<Ljavax/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/metadata/HierarchyBuilder;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable;Lorg/apache/bval/jsr/metadata/Meta;Ljava/util/function/BiFunction;)V", "(Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable<TE;>;Lorg/apache/bval/jsr/metadata/Meta<TE;>;Ljava/util/function/BiFunction<Ljakarta/validation/ParameterNameProvider;TE;Ljava/util/List<Ljava/lang/String;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

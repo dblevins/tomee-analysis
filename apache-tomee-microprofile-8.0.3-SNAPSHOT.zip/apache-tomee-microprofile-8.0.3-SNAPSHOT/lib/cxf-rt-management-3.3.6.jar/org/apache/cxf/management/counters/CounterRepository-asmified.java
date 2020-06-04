@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "counters", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/cxf/management/counters/Counter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "counters", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/cxf/management/counters/Counter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,7 +87,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCounters", "()Ljava/util/Map;", "()Ljava/util/Map<Ljavax/management/ObjectName;Lorg/apache/cxf/management/counters/Counter;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCounters", "()Ljava/util/Map;", "()Ljava/util/Map<Ljakarta/management/ObjectName;Lorg/apache/cxf/management/counters/Counter;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/management/counters/CounterRepository", "counters", "Ljava/util/Map;");
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "increaseCounter", "(Ljavax/management/ObjectName;Lorg/apache/cxf/management/counters/MessageHandlingTimeRecorder;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "increaseCounter", "(Ljakarta/management/ObjectName;Lorg/apache/cxf/management/counters/MessageHandlingTimeRecorder;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -154,7 +154,7 @@ Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "getCounter", "(Ljavax/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "getCounter", "(Ljakarta/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -166,13 +166,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/locks/Lock"
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "getCounter", "(Ljavax/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "getCounter", "(Ljakarta/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "createCounter", "(Ljavax/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/management/counters/CounterRepository", "createCounter", "(Ljakarta/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/management/counters/CounterRepository", "counters", "Ljava/util/Map;");
@@ -226,7 +226,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCounter", "(Ljavax/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCounter", "(Ljakarta/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/management/counters/CounterRepository", "counters", "Ljava/util/Map;");
@@ -238,18 +238,18 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCounter", "(Ljavax/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createCounter", "(Ljakarta/management/ObjectName;)Lorg/apache/cxf/management/counters/Counter;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/JMException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/JMException");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/management/counters/ResponseTimeCounter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/management/counters/ResponseTimeCounter", "<init>", "(Ljavax/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/management/counters/ResponseTimeCounter", "<init>", "(Ljakarta/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/management/counters/CounterRepository", "bus", "Lorg/apache/cxf/Bus;");
@@ -264,12 +264,12 @@ methodVisitor.visitJumpInsn(IF_ACMPEQ, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/management/InstrumentationManager", "register", "(Lorg/apache/cxf/management/ManagedComponent;)Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/management/InstrumentationManager", "register", "(Lorg/apache/cxf/management/ManagedComponent;)Ljakarta/management/ObjectName;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/management/counters/CounterRepository", "javax/management/ObjectName", "org/apache/cxf/management/counters/Counter", "org/apache/cxf/management/InstrumentationManager"}, 1, new Object[] {"javax/management/JMException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/management/counters/CounterRepository", "jakarta/management/ObjectName", "org/apache/cxf/management/counters/Counter", "org/apache/cxf/management/InstrumentationManager"}, 1, new Object[] {"jakarta/management/JMException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/counters/CounterRepository", "LOG", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "WARNING", "Ljava/util/logging/Level;");

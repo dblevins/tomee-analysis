@@ -65,11 +65,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "lazyAnnotated
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lazyAtLoader", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/Class<*>;Ljavax/enterprise/inject/spi/AnnotatedType<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lazyAtLoader", "Ljava/util/function/Function;", "Ljava/util/function/Function<Ljava/lang/Class<*>;Ljakarta/enterprise/inject/spi/AnnotatedType<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(ZLjava/lang/reflect/Type;Ljava/lang/String;Ljava/util/function/Function;[Ljava/lang/annotation/Annotation;)V", "(ZLjava/lang/reflect/Type;Ljava/lang/String;Ljava/util/function/Function<Ljava/lang/Class<*>;Ljavax/enterprise/inject/spi/AnnotatedType<*>;>;[Ljava/lang/annotation/Annotation;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(ZLjava/lang/reflect/Type;Ljava/lang/String;Ljava/util/function/Function;[Ljava/lang/annotation/Annotation;)V", "(ZLjava/lang/reflect/Type;Ljava/lang/String;Ljava/util/function/Function<Ljava/lang/Class<*>;Ljakarta/enterprise/inject/spi/AnnotatedType<*>;>;[Ljava/lang/annotation/Annotation;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -226,12 +226,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/Bean
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "lazyAnnotatedTypes", "Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "access$100", "(Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;)Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "access$100", "(Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;)Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "qualifier", "Ljava/lang/annotation/Annotation;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "qualifier", "Ljava/lang/annotation/Annotation;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey", "qualifierEquals", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey", "qualifierEquals", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
@@ -312,10 +312,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "qualifier", "Ljava/lang/annotation/Annotation;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/function/Function", "apply", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/AnnotatedType");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/AnnotatedType");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;[Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/container/BeanCacheKey$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;[Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/container/BeanCacheKey$1;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/container/BeanCacheKey", "lazyAnnotatedTypes", "Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;");
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label6);
@@ -332,11 +332,11 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map",
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "lazyAtLoader", "Ljava/util/function/Function;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/IntFunction;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(I)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey", "lambda$ensureQualifierAtAreLoaded$0", "(I)[Ljavax/enterprise/inject/spi/AnnotatedType;", false), Type.getType("(I)[Ljavax/enterprise/inject/spi/AnnotatedType;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/IntFunction;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(I)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey", "lambda$ensureQualifierAtAreLoaded$0", "(I)[Ljakarta/enterprise/inject/spi/AnnotatedType;", false), Type.getType("(I)[Ljakarta/enterprise/inject/spi/AnnotatedType;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/enterprise/inject/spi/AnnotatedType;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/enterprise/inject/spi/AnnotatedType;");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;[Ljavax/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/container/BeanCacheKey$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;[Ljakarta/enterprise/inject/spi/AnnotatedType;Lorg/apache/webbeans/container/BeanCacheKey$1;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/container/BeanCacheKey", "lazyAnnotatedTypes", "Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;");
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -424,12 +424,12 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/annotation
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/BeanCacheKey", "lazyAnnotatedTypes", "Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "access$300", "(Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;)[Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes", "access$300", "(Lorg/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes;)[Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey", "qualifierEquals", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/container/BeanCacheKey", "qualifierEquals", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -577,7 +577,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "qualifierEquals", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", "(Ljavax/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "qualifierEquals", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", "(Ljakarta/enterprise/inject/spi/AnnotatedType<*>;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -591,7 +591,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/AnnotationUtil", "isCdiAnnotationEqual", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/util/AnnotationUtil", "isCdiAnnotationEqual", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
@@ -693,10 +693,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$ensureQualifierAtAreLoaded$0", "(I)[Ljavax/enterprise/inject/spi/AnnotatedType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$ensureQualifierAtAreLoaded$0", "(I)[Ljakarta/enterprise/inject/spi/AnnotatedType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/enterprise/inject/spi/AnnotatedType");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/enterprise/inject/spi/AnnotatedType");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/johnzon/core/JsonLocationImpl", null, "java/lang/Object", new String[] { "javax/json/stream/JsonLocation", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/johnzon/core/JsonLocationImpl", null, "java/lang/Object", new String[] { "jakarta/json/stream/JsonLocation", "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "UNKNOWN_LOCATION", "Ljavax/json/stream/JsonLocation;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "UNKNOWN_LOCATION", "Ljakarta/json/stream/JsonLocation;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -227,7 +227,7 @@ methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitLdcInsn(new Long(-1L));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/core/JsonLocationImpl", "<init>", "(JJJ)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/johnzon/core/JsonLocationImpl", "UNKNOWN_LOCATION", "Ljavax/json/stream/JsonLocation;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/johnzon/core/JsonLocationImpl", "UNKNOWN_LOCATION", "Ljakarta/json/stream/JsonLocation;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 0);
 methodVisitor.visitEnd();

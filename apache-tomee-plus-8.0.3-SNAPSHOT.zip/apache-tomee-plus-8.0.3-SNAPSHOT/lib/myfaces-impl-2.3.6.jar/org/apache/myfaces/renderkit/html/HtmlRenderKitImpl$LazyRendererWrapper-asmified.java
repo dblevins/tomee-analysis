@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", null, "javax/faces/render/RendererWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", null, "jakarta/faces/render/RendererWrapper", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "LazyRendererWrapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,14 +31,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "rendererClass", "Ljava/lang/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljavax/faces/render/Renderer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljakarta/faces/render/Renderer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/render/RendererWrapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/render/RendererWrapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "rendererClass", "Ljava/lang/String;");
@@ -47,10 +47,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/render/Renderer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/render/Renderer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljavax/faces/render/Renderer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljakarta/faces/render/Renderer;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -58,12 +58,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "rendererClass", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "simpleClassForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/render/Renderer");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljavax/faces/render/Renderer;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/render/Renderer");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljakarta/faces/render/Renderer;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljavax/faces/render/Renderer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "delegate", "Ljakarta/faces/render/Renderer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -72,7 +72,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "getWrapped", "()Ljavax/faces/render/Renderer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper", "getWrapped", "()Ljakarta/faces/render/Renderer;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

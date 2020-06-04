@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "executorProvider", "Lorg/apa
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Lorg/apache/cxf/service/Service;Lorg/apache/cxf/service/model/EndpointInfo;Lorg/apache/cxf/jaxws/ServiceImpl;Ljava/util/List;)V", "(Lorg/apache/cxf/Bus;Lorg/apache/cxf/service/Service;Lorg/apache/cxf/service/model/EndpointInfo;Lorg/apache/cxf/jaxws/ServiceImpl;Ljava/util/List<Ljavax/xml/ws/WebServiceFeature;>;)V", new String[] { "org/apache/cxf/endpoint/EndpointException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/cxf/Bus;Lorg/apache/cxf/service/Service;Lorg/apache/cxf/service/model/EndpointInfo;Lorg/apache/cxf/jaxws/ServiceImpl;Ljava/util/List;)V", "(Lorg/apache/cxf/Bus;Lorg/apache/cxf/service/Service;Lorg/apache/cxf/service/model/EndpointInfo;Lorg/apache/cxf/jaxws/ServiceImpl;Ljava/util/List<Ljakarta/xml/ws/WebServiceFeature;>;)V", new String[] { "org/apache/cxf/endpoint/EndpointException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

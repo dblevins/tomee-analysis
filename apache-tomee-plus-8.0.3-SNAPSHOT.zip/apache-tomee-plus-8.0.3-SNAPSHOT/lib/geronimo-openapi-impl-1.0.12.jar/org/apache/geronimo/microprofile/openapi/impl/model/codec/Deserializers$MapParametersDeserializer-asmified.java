@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$MapParametersDeserializer", "Lorg/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer<Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/microprofile/openapi/models/parameters/Parameter;>;>;", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$BaseDeserializer", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$MapParametersDeserializer", "org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers", "MapParametersDeserializer", ACC_PUBLIC | ACC_STATIC);

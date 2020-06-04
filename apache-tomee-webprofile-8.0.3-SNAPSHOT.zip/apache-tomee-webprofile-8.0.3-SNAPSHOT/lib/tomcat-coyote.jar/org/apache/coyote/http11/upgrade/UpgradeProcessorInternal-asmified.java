@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http11/upgrade/UpgradeProcessorBase", "<init>", "(Lorg/apache/coyote/UpgradeToken;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/UpgradeToken", "getHttpUpgradeHandler", "()Ljavax/servlet/http/HttpUpgradeHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/UpgradeToken", "getHttpUpgradeHandler", "()Ljakarta/servlet/http/HttpUpgradeHandler;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/coyote/http11/upgrade/InternalHttpUpgradeHandler");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http11/upgrade/UpgradeProcessorInternal", "internalHttpUpgradeHandler", "Lorg/apache/coyote/http11/upgrade/InternalHttpUpgradeHandler;");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -133,7 +133,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "()Ljavax/servlet/ServletInputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "()Ljakarta/servlet/ServletInputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -141,7 +141,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

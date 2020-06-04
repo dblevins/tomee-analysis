@@ -29,15 +29,15 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "formatter", "L
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/json/bind/annotation/JsonbDateFormat;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljakarta/json/bind/annotation/JsonbDateFormat;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/converter/JsonbLocaleParserConverterBase", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/annotation/JsonbDateFormat", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/annotation/JsonbDateFormat", "value", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/annotation/JsonbDateFormat", "locale", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/annotation/JsonbDateFormat", "locale", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("##time-in-millis");
@@ -51,7 +51,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "javax/json/bind/annotation/JsonbDateFormat", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 1, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "jakarta/json/bind/annotation/JsonbDateFormat", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 1, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase"});
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("##default");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
@@ -69,7 +69,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/time/format/DateTimeFormatter", "ofPattern", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "javax/json/bind/annotation/JsonbDateFormat", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 2, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "java/time/format/DateTimeFormatter"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "jakarta/json/bind/annotation/JsonbDateFormat", "java/lang/String", "java/lang/String", Opcodes.INTEGER}, 2, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "java/time/format/DateTimeFormatter"});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JsonbDateConverterBase", "formatter", "Ljava/time/format/DateTimeFormatter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);

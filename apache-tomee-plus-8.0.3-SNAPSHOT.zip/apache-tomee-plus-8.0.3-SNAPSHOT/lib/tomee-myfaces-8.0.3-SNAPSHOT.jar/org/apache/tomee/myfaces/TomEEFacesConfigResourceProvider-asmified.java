@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaInfConfigurationResources", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaInfConfigurationResources", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Collection<Ljava/net/URL;>;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -135,7 +135,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 8);
 Label label9 = new Label();
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "javax/faces/context/ExternalContext", "java/lang/ClassLoader", "java/util/Collection", "java/util/Enumeration", "java/util/List", "java/util/concurrent/ExecutorService", "java/util/Collection", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "jakarta/faces/context/ExternalContext", "java/lang/ClassLoader", "java/util/Collection", "java/util/Enumeration", "java/util/List", "java/util/concurrent/ExecutorService", "java/util/Collection", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label10 = new Label();
@@ -194,7 +194,7 @@ methodVisitor.visitLabel(label1);
 Label label13 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label13);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "javax/faces/context/ExternalContext", "java/lang/ClassLoader", "java/util/Collection", "java/util/Enumeration", "java/util/List", "java/util/concurrent/ExecutorService", "java/util/Collection", "java/util/Iterator", "java/util/concurrent/Future"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider", "jakarta/faces/context/ExternalContext", "java/lang/ClassLoader", "java/util/Collection", "java/util/Enumeration", "java/util/List", "java/util/concurrent/ExecutorService", "java/util/Collection", "java/util/Iterator", "java/util/concurrent/Future"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

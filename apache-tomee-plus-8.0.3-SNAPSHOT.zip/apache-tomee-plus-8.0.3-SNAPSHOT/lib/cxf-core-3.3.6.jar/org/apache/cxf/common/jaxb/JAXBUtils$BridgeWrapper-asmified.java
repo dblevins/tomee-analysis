@@ -27,27 +27,27 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/c
 classWriter.visitInnerClass("org/apache/cxf/common/jaxb/JAXBUtils$BridgeWrapper", "org/apache/cxf/common/jaxb/JAXBUtils", "BridgeWrapper", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Ljavax/xml/stream/XMLStreamReader;Ljavax/xml/bind/attachment/AttachmentUnmarshaller;)Ljava/lang/Object;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Ljavax/xml/stream/XMLStreamReader;Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)Ljava/lang/Object;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Ljava/io/InputStream;)Ljava/lang/Object;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Ljava/io/InputStream;)Ljava/lang/Object;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Lorg/w3c/dom/Node;Ljavax/xml/bind/attachment/AttachmentUnmarshaller;)Ljava/lang/Object;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unmarshal", "(Lorg/w3c/dom/Node;Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)Ljava/lang/Object;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;Ljavax/xml/bind/attachment/AttachmentMarshaller;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;Ljakarta/xml/bind/attachment/AttachmentMarshaller;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Ljavax/xml/transform/stream/StreamResult;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Ljavax/xml/transform/stream/StreamResult;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Lorg/w3c/dom/Node;Ljavax/xml/bind/attachment/AttachmentMarshaller;)V", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "marshal", "(Ljava/lang/Object;Lorg/w3c/dom/Node;Ljakarta/xml/bind/attachment/AttachmentMarshaller;)V", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

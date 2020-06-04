@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", null, "javax/el/ELContext", null);
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", null, "jakarta/el/ELContext", null);
 
-classWriter.visitOuterClass("com/sun/faces/ext/component/ValueExpressionAnalyzer", "decorateELContext", "(Ljavax/el/ELContext;Ljavax/el/ELResolver;)Ljavax/el/ELContext;");
+classWriter.visitOuterClass("com/sun/faces/ext/component/ValueExpressionAnalyzer", "decorateELContext", "(Ljakarta/el/ELContext;Ljakarta/el/ELResolver;)Ljakarta/el/ELContext;");
 
 classWriter.visitInnerClass("com/sun/faces/ext/component/ValueExpressionAnalyzer$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$resolver", "Ljavax/el/ELResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$resolver", "Ljakarta/el/ELResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljavax/el/ELContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$context", "Ljakarta/el/ELContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,28 +41,28 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/ext/component/ValueExpressionAnalyzer;Ljavax/el/ELResolver;Ljavax/el/ELContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/ext/component/ValueExpressionAnalyzer;Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "this$0", "Lcom/sun/faces/ext/component/ValueExpressionAnalyzer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$resolver", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$resolver", "Ljakarta/el/ELResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ELContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ELContext", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$resolver", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$resolver", "Ljakarta/el/ELResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -71,9 +71,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -82,8 +82,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocale", "()Ljava/util/Locale;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getLocale", "()Ljava/util/Locale;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getLocale", "()Ljava/util/Locale;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -92,8 +92,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPropertyResolved", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "isPropertyResolved", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "isPropertyResolved", "()Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -102,10 +102,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "putContext", "(Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -114,9 +114,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLocale", "(Ljava/util/Locale;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "setLocale", "(Ljava/util/Locale;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "setLocale", "(Ljava/util/Locale;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -125,29 +125,29 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyResolved", "(Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "setPropertyResolved", "(Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "setPropertyResolved", "(Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljavax/el/FunctionMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getFunctionMapper", "()Ljavax/el/FunctionMapper;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljavax/el/VariableMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljakarta/el/VariableMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljavax/el/ELContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/ELContext", "getVariableMapper", "()Ljavax/el/VariableMapper;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/ext/component/ValueExpressionAnalyzer$1", "val$context", "Ljakarta/el/ELContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/ELContext", "getVariableMapper", "()Ljakarta/el/VariableMapper;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

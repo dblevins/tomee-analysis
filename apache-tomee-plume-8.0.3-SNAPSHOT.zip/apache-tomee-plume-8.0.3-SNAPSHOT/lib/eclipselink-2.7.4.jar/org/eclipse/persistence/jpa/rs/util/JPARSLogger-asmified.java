@@ -236,7 +236,7 @@ methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "exiting", "(Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "exiting", "(Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "defaultLog", "Lorg/eclipse/persistence/logging/SessionLog;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -244,13 +244,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "exiting", "(Lorg/eclipse/persistence/logging/SessionLog;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util/JPARSLogger", "exiting", "(Lorg/eclipse/persistence/logging/SessionLog;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "exiting", "(Lorg/eclipse/persistence/logging/SessionLog;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "exiting", "(Lorg/eclipse/persistence/logging/SessionLog;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/persistence/jpa/rs/PersistenceContext;Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -276,7 +276,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/PersistenceContext", "marshall", "(Ljava/lang/Object;Ljavax/ws/rs/core/MediaType;Ljava/io/OutputStream;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/PersistenceContext", "marshall", "(Ljava/lang/Object;Ljakarta/ws/rs/core/MediaType;Ljava/io/OutputStream;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/weaving/PersistenceWeavedRest");
 Label label4 = new Label();
@@ -319,7 +319,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/util
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/logging/SessionLog", "java/lang/String", "java/lang/String", "org/eclipse/persistence/jpa/rs/PersistenceContext", "java/lang/Object", "javax/ws/rs/core/MediaType"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/logging/SessionLog", "java/lang/String", "java/lang/String", "org/eclipse/persistence/jpa/rs/PersistenceContext", "java/lang/Object", "jakarta/ws/rs/core/MediaType"}, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getMessage", "()Ljava/lang/String;", false);

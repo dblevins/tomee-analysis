@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/dbcp2/PoolableConnection", "Lorg/apache/commons/dbcp2/DelegatingConnection<Ljava/sql/Connection;>;Lorg/apache/commons/dbcp2/PoolableConnectionMXBean;", "org/apache/commons/dbcp2/DelegatingConnection", new String[] { "org/apache/commons/dbcp2/PoolableConnectionMXBean" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "MBEAN_SERVER", "Ljavax/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "MBEAN_SERVER", "Ljakarta/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_pool", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_jmxName", "Ljavax/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_jmxName", "Ljakarta/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,14 +57,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_fastFailValidat
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljavax/management/ObjectName;Ljava/util/Collection;Z)V", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool<Lorg/apache/commons/dbcp2/PoolableConnection;>;Ljavax/management/ObjectName;Ljava/util/Collection<Ljava/lang/String;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljakarta/management/ObjectName;Ljava/util/Collection;Z)V", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool<Lorg/apache/commons/dbcp2/PoolableConnection;>;Ljakarta/management/ObjectName;Ljava/util/Collection<Ljava/lang/String;>;Z)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/InstanceAlreadyExistsException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/MBeanRegistrationException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/NotCompliantMBeanException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/InstanceAlreadyExistsException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/MBeanRegistrationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/NotCompliantMBeanException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/DelegatingConnection", "<init>", "(Ljava/sql/Connection;)V", false);
@@ -82,7 +82,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_pool", "Lorg/apache/commons/pool2/ObjectPool;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljakarta/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_disconnectionSqlCodes", "Ljava/util/Collection;");
@@ -93,15 +93,15 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/commons/dbcp2/PoolableConnection", "java/sql/Connection", "org/apache/commons/pool2/ObjectPool", "javax/management/ObjectName", "java/util/Collection", Opcodes.INTEGER}, 1, new Object[] {"javax/management/JMException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/commons/dbcp2/PoolableConnection", "java/sql/Connection", "org/apache/commons/pool2/ObjectPool", "jakarta/management/ObjectName", "java/util/Collection", Opcodes.INTEGER}, 1, new Object[] {"jakarta/management/JMException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -110,7 +110,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljavax/management/ObjectName;)V", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool<Lorg/apache/commons/dbcp2/PoolableConnection;>;Ljavax/management/ObjectName;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljakarta/management/ObjectName;)V", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool<Lorg/apache/commons/dbcp2/PoolableConnection;>;Ljakarta/management/ObjectName;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -118,7 +118,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljavax/management/ObjectName;Ljava/util/Collection;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/commons/pool2/ObjectPool;Ljakarta/management/ObjectName;Ljava/util/Collection;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
@@ -313,25 +313,25 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/MBeanRegistrationException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/InstanceNotFoundException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/MBeanRegistrationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/InstanceNotFoundException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
 methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/sql/SQLException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljavax/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljakarta/management/ObjectName;");
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljavax/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/dbcp2/PoolableConnection", "_jmxName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/management/JMException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/management/JMException"});
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -636,10 +636,10 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljavax/management/MBeanServer;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);

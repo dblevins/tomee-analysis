@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/annotation/EmptyAnnotationLiteral", "<T::Ljava/lang/annotation/Annotation;>Ljavax/enterprise/util/AnnotationLiteral<TT;>;", "javax/enterprise/util/AnnotationLiteral", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/webbeans/annotation/EmptyAnnotationLiteral", "<T::Ljava/lang/annotation/Annotation;>Ljakarta/enterprise/util/AnnotationLiteral<TT;>;", "jakarta/enterprise/util/AnnotationLiteral", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "annotationType", "Ljava/lang/Class;", "Ljava/lang/Class<TT;>;", null);
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);

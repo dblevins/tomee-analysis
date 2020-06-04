@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "POS
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "isMultipartContent", "(Ljavax/servlet/http/HttpServletRequest;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "isMultipartContent", "(Ljakarta/servlet/http/HttpServletRequest;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("POST");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -44,7 +44,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/http/fileupload/FileUploadBase", "isMultipartContent", "(Lorg/apache/tomcat/util/http/fileupload/RequestContext;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 1);
@@ -70,26 +70,26 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "parseParameterMap", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Map;", "(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/tomcat/util/http/fileupload/FileItem;>;>;", new String[] { "org/apache/tomcat/util/http/fileupload/FileUploadException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "parseParameterMap", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/util/Map;", "(Ljakarta/servlet/http/HttpServletRequest;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/tomcat/util/http/fileupload/FileItem;>;>;", new String[] { "org/apache/tomcat/util/http/fileupload/FileUploadException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletFileUpload", "parseParameterMap", "(Lorg/apache/tomcat/util/http/fileupload/RequestContext;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getItemIterator", "(Ljavax/servlet/http/HttpServletRequest;)Lorg/apache/tomcat/util/http/fileupload/FileItemIterator;", null, new String[] { "org/apache/tomcat/util/http/fileupload/FileUploadException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getItemIterator", "(Ljakarta/servlet/http/HttpServletRequest;)Lorg/apache/tomcat/util/http/fileupload/FileItemIterator;", null, new String[] { "org/apache/tomcat/util/http/fileupload/FileUploadException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljavax/servlet/http/HttpServletRequest;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext", "<init>", "(Ljakarta/servlet/http/HttpServletRequest;)V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/http/fileupload/FileUpload", "getItemIterator", "(Lorg/apache/tomcat/util/http/fileupload/RequestContext;)Lorg/apache/tomcat/util/http/fileupload/FileItemIterator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);

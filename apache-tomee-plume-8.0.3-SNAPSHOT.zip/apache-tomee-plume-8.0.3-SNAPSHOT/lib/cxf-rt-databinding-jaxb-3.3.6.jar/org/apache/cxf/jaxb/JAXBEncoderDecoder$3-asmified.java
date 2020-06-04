@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/cxf/jaxb/JAXBEncoderDecoder", "unmarshall", "(Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/apache/cxf/jaxb/JAXBEncoderDecoder", "unmarshall", "(Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/apache/cxf/jaxb/JAXBEncoderDecoder$3", null, null, ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$u", "Ljavax/xml/bind/Unmarshaller;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$u", "Ljakarta/xml/bind/Unmarshaller;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -49,11 +49,11 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$unwrap", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$u", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$u", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$source", "Ljava/lang/Object;");
@@ -76,7 +76,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$u", "Ljavax/xml/bind/Unmarshaller;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$u", "Ljakarta/xml/bind/Unmarshaller;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$source", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -85,7 +85,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$clazz", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/JAXBEncoderDecoder$3", "val$unwrap", "Z");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxb/JAXBEncoderDecoder", "access$200", "(Ljavax/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxb/JAXBEncoderDecoder", "access$200", "(Ljakarta/xml/bind/Unmarshaller;Ljava/lang/Object;Ljavax/xml/namespace/QName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();

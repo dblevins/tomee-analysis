@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/comma
 classWriter.visitInnerClass("org/apache/activemq/command/ActiveMQMessage$PropertySetter", "org/apache/activemq/command/ActiveMQMessage", "PropertySetter", ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "set", "(Lorg/apache/activemq/command/Message;Ljava/lang/Object;)V", null, new String[] { "javax/jms/MessageFormatException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "set", "(Lorg/apache/activemq/command/Message;Ljava/lang/Object;)V", null, new String[] { "jakarta/jms/MessageFormatException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

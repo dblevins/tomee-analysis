@@ -22,24 +22,24 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", null, "javax/servlet/ServletOutputStream", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", null, "jakarta/servlet/ServletOutputStream", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "m", "Lorg/apache/cxf/message/Message;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "os", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "os", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/servlet/ServletOutputStream;Lorg/apache/cxf/message/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/servlet/ServletOutputStream;Lorg/apache/cxf/message/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/ServletOutputStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletOutputStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "m", "Lorg/apache/cxf/message/Message;");
@@ -53,9 +53,9 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "setComittedStatus", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "write", "(I)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "write", "(I)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -66,9 +66,9 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "setComittedStatus", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "write", "([B)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "write", "([B)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -79,11 +79,11 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "setComittedStatus", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "write", "([BII)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "write", "([BII)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -106,19 +106,19 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReady", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "isReady", "()Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "isReady", "()Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljavax/servlet/WriteListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/ServletOutputStreamFilter", "os", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/ServletOutputStream", "setWriteListener", "(Ljavax/servlet/WriteListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/ServletOutputStream", "setWriteListener", "(Ljakarta/servlet/WriteListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

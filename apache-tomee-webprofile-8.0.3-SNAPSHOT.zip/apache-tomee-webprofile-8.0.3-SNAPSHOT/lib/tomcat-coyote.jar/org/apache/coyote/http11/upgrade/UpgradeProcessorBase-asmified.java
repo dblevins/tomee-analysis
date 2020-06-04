@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/coyote/http11/upgrade/UpgradeProcessorBase", null, "org/apache/coyote/AbstractProcessorLight", new String[] { "javax/servlet/http/WebConnection" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/coyote/http11/upgrade/UpgradeProcessorBase", null, "org/apache/coyote/AbstractProcessorLight", new String[] { "jakarta/servlet/http/WebConnection" });
 
 classWriter.visitInnerClass("org/apache/tomcat/util/net/AbstractEndpoint$Handler", "org/apache/tomcat/util/net/AbstractEndpoint", "Handler", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 

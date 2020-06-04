@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream", null, "javax/faces/context/ResponseStream", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream", null, "jakarta/faces/context/ResponseStream", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream", "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl", "MyFacesResponseStream", ACC_PRIVATE | ACC_STATIC);
 
@@ -34,7 +34,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/io/OutputStream;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ResponseStream", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ResponseStream", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream", "output", "Ljava/io/OutputStream;");

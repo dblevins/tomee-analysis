@@ -180,15 +180,15 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isPayloadEmpty", "(Ljavax/ws/rs/core/HttpHeaders;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isPayloadEmpty", "(Ljakarta/ws/rs/core/HttpHeaders;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/HttpHeaders", "getRequestHeaders", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider", "isPayloadEmpty", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/HttpHeaders", "getRequestHeaders", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider", "isPayloadEmpty", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -198,16 +198,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isPayloadEmpty", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isPayloadEmpty", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "isPayloadEmpty", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "reportEmptyContentLength", "()V", null, new String[] { "javax/ws/rs/core/NoContentException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "reportEmptyContentLength", "()V", null, new String[] { "jakarta/ws/rs/core/NoContentException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/i18n/Message");
 methodVisitor.visitInsn(DUP);
@@ -221,10 +221,10 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider", "LOG", "Ljava/util/logging/Logger;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/NoContentException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/NoContentException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/NoContentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/NoContentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();

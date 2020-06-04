@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/InterceptionFactoryImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/InterceptionFactory<TT;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/InterceptionFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/container/InterceptionFactoryImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/InterceptionFactory<TT;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/InterceptionFactory" });
 
 classWriter.visitInnerClass("org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "org/apache/webbeans/intercept/InterceptorResolutionService", "BeanInterceptorInfo", ACC_PUBLIC | ACC_STATIC);
 
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "called", "Z",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/context/creational/CreationalContextImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/util/Set<Ljava/lang/annotation/Annotation;>;Lorg/apache/webbeans/context/creational/CreationalContextImpl<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -65,7 +65,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/configurator/AnnotatedType
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/container/InterceptionFactoryImpl", "configurator", "Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -78,7 +78,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignoreFinalMethods", "()Ljavax/enterprise/inject/spi/InterceptionFactory;", "()Ljavax/enterprise/inject/spi/InterceptionFactory<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ignoreFinalMethods", "()Ljakarta/enterprise/inject/spi/InterceptionFactory;", "()Ljakarta/enterprise/inject/spi/InterceptionFactory<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -89,7 +89,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configure", "()Ljavax/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator;", "()Ljavax/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configure", "()Ljakarta/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator;", "()Ljakarta/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/InterceptionFactoryImpl", "configurator", "Lorg/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl;");
@@ -141,13 +141,13 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/webbeans/c
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/webbeans/container/InterceptionFactoryImpl", "java/lang/Object", "java/lang/ClassLoader", "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "org/apache/webbeans/portable/AnnotatedTypeImpl"}, 5, new Object[] {"org/apache/webbeans/intercept/InterceptorResolutionService", "java/util/Set", "java/util/Set", "org/apache/webbeans/portable/AnnotatedTypeImpl", Opcodes.INTEGER});
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorResolutionService", "calculateInterceptorInfo", "(Ljava/util/Set;Ljava/util/Set;Ljavax/enterprise/inject/spi/AnnotatedType;Z)Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorResolutionService", "calculateInterceptorInfo", "(Ljava/util/Set;Ljava/util/Set;Ljakarta/enterprise/inject/spi/AnnotatedType;Z)Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "getCachedProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory", "getCachedProxyClass", "(Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/ClassLoader;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/container/InterceptionFactoryImpl", "context", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -166,7 +166,7 @@ methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/inject/spi/InterceptionFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/enterprise/inject/spi/InterceptionFactory;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(">>");
@@ -191,7 +191,7 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/container/InterceptionFactoryImpl", "lambda$createInterceptedInstance$0", "(Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Boolean;", false), Type.getType("(Lorg/apache/webbeans/context/creational/CreationalContextImpl;)Ljava/lang/Boolean;")});
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/BiFunction;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/webbeans/container/InterceptionFactoryImpl", "lambda$createInterceptedInstance$1", "(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;", false), Type.getType("(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;")});
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorResolutionService", "createProxiedInstance", "(Ljava/lang/Object;Lorg/apache/webbeans/context/creational/CreationalContextImpl;Ljavax/enterprise/context/spi/CreationalContext;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljava/lang/Class;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;Ljava/util/function/Function;Ljava/util/function/BiFunction;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/intercept/InterceptorResolutionService", "createProxiedInstance", "(Ljava/lang/Object;Lorg/apache/webbeans/context/creational/CreationalContextImpl;Ljakarta/enterprise/context/spi/CreationalContext;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo;Ljava/lang/Class;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;Ljava/util/function/Function;Ljava/util/function/BiFunction;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(11, 10);
 methodVisitor.visitEnd();

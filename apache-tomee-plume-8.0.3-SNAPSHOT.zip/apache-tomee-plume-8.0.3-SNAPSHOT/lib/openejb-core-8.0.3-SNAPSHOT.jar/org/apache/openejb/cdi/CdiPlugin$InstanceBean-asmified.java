@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "<T:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/webbeans/component/OwbBean<TT;>;Ljavax/enterprise/inject/spi/PassivationCapable;", "java/lang/Object", new String[] { "org/apache/webbeans/component/OwbBean", "javax/enterprise/inject/spi/PassivationCapable" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "<T:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/webbeans/component/OwbBean<TT;>;Ljakarta/enterprise/inject/spi/PassivationCapable;", "java/lang/Object", new String[] { "org/apache/webbeans/component/OwbBean", "jakarta/enterprise/inject/spi/PassivationCapable" });
 
 classWriter.visitInnerClass("org/apache/openejb/cdi/CdiPlugin$InstanceBean", "org/apache/openejb/cdi/CdiPlugin", "InstanceBean", ACC_PRIVATE | ACC_STATIC);
 
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/enterprise/inject/spi/InjectionPoint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInjectionPoints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/enterprise/inject/spi/InjectionPoint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptySet", "()Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -137,22 +137,22 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "bean", "Lorg/apache/openejb/cdi/CdiEjbBean;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "createEjb", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "createEjb", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "owbProxy", "Ljava/lang/Object;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/inject/spi/SessionBeanType", "STATEFUL", "Ljavax/enterprise/inject/spi/SessionBeanType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/inject/spi/SessionBeanType", "STATEFUL", "Ljakarta/enterprise/inject/spi/SessionBeanType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "bean", "Lorg/apache/openejb/cdi/CdiEjbBean;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "getEjbType", "()Ljavax/enterprise/inject/spi/SessionBeanType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/SessionBeanType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "getEjbType", "()Ljakarta/enterprise/inject/spi/SessionBeanType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/SessionBeanType", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "bean", "Lorg/apache/openejb/cdi/CdiEjbBean;");
@@ -168,13 +168,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", "(TT;Ljavax/enterprise/context/spi/CreationalContext<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", "(TT;Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)V", null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/inject/spi/SessionBeanType", "STATEFUL", "Ljavax/enterprise/inject/spi/SessionBeanType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/inject/spi/SessionBeanType", "STATEFUL", "Ljakarta/enterprise/inject/spi/SessionBeanType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "bean", "Lorg/apache/openejb/cdi/CdiEjbBean;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "getEjbType", "()Ljavax/enterprise/inject/spi/SessionBeanType;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/enterprise/inject/spi/SessionBeanType", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "getEjbType", "()Ljakarta/enterprise/inject/spi/SessionBeanType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/enterprise/inject/spi/SessionBeanType", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitInsn(RETURN);
@@ -184,13 +184,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/CdiPlugin$InstanceBean", "bean", "Lorg/apache/openejb/cdi/CdiEjbBean;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "destroy", "(Ljava/lang/Object;Ljavax/enterprise/context/spi/CreationalContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/CdiEjbBean", "destroy", "(Ljava/lang/Object;Ljakarta/enterprise/context/spi/CreationalContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljavax/enterprise/inject/spi/Producer;", "()Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProducer", "()Ljakarta/enterprise/inject/spi/Producer;", "()Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/cdi/CdiPlugin$EjbProducer");
 methodVisitor.visitInsn(DUP);

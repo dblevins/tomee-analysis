@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/ExternalContextFactoryImpl", null, "javax/faces/context/ExternalContextFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/context/ExternalContextFactoryImpl", null, "jakarta/faces/context/ExternalContextFactory", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DEFAULT_EXTERNAL_CONTEXT_KEY", "Ljava/lang/String;", null, null);
@@ -33,13 +33,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null)
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/ExternalContextFactory", "<init>", "(Ljavax/faces/context/ExternalContextFactory;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/ExternalContextFactory", "<init>", "(Ljakarta/faces/context/ExternalContextFactory;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExternalContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/faces/context/ExternalContext;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExternalContext", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljakarta/faces/context/ExternalContext;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("servletContext");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -53,24 +53,24 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "notNull"
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/context/ExternalContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletContext");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletRequest");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletRequest");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletResponse");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExternalContextImpl", "<init>", "(Ljavax/servlet/ServletContext;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletResponse");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/context/ExternalContextImpl", "<init>", "(Ljakarta/servlet/ServletContext;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/servlet/ServletRequest");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/servlet/ServletRequest");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/ServletRequest");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletRequest");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/context/ExternalContextFactoryImpl", "DEFAULT_EXTERNAL_CONTEXT_KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/context/ExternalContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/ExternalContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/PortImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "javax/wsdl/Port" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/PortImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "jakarta/wsdl/Port" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "name", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "binding", "Ljavax/wsdl/Binding;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "binding", "Ljakarta/wsdl/Binding;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -50,7 +50,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/PortImpl", "name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljavax/wsdl/Binding;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljakarta/wsdl/Binding;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/ibm/wsdl/Constants", "PORT_ATTR_NAMES", "[Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
@@ -79,20 +79,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinding", "(Ljavax/wsdl/Binding;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinding", "(Ljakarta/wsdl/Binding;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljavax/wsdl/Binding;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljakarta/wsdl/Binding;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "()Ljavax/wsdl/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "()Ljakarta/wsdl/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljavax/wsdl/Binding;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljakarta/wsdl/Binding;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -117,7 +117,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljavax/wsdl/Binding;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljakarta/wsdl/Binding;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -127,7 +127,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("\n");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljavax/wsdl/Binding;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/PortImpl", "binding", "Ljakarta/wsdl/Binding;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);

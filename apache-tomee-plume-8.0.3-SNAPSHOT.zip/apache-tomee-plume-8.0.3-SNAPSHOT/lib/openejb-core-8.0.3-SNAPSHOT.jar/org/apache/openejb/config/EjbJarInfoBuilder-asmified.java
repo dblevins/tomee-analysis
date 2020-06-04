@@ -3141,7 +3141,7 @@ methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.jms.MessageListener");
+methodVisitor.visitLdcInsn("jakarta.jms.MessageListener");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/MessageDrivenBeanInfo", "mdbInterface", "Ljava/lang/String;");
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

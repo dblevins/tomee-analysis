@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/bval/jsr/util/AnnotationProxyBuilder$ConvertGroupAnnotation", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/validation/groups/ConvertGroup;>;Ljavax/validation/groups/ConvertGroup;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/validation/groups/ConvertGroup" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/bval/jsr/util/AnnotationProxyBuilder$ConvertGroupAnnotation", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/validation/groups/ConvertGroup;>;Ljakarta/validation/groups/ConvertGroup;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/validation/groups/ConvertGroup" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/util/AnnotationProxyBuilder$ConvertGroupAnnotation", "org/apache/bval/jsr/util/AnnotationProxyBuilder", "ConvertGroupAnnotation", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -42,7 +42,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/util/AnnotationProxyBuilder$ConvertGroupAnnotation", "from", "Ljava/lang/Class;");

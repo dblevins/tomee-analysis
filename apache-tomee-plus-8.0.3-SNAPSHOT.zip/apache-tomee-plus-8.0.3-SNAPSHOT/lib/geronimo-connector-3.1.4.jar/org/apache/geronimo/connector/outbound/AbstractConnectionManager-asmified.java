@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", null, "java/lang/Object", new String[] { "org/apache/geronimo/connector/outbound/ConnectionManagerContainer", "javax/resource/spi/ConnectionManager", "javax/resource/spi/LazyAssociatableConnectionManager", "org/apache/geronimo/connector/outbound/PoolingAttributes" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", null, "java/lang/Object", new String[] { "org/apache/geronimo/connector/outbound/ConnectionManagerContainer", "jakarta/resource/spi/ConnectionManager", "jakarta/resource/spi/LazyAssociatableConnectionManager", "org/apache/geronimo/connector/outbound/PoolingAttributes" });
 
 classWriter.visitInnerClass("org/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors", "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "Interceptors", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_TRANSIENT, "
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_TRANSIENT, "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_TRANSIENT, "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -55,7 +55,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "transactionManager", "Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "name", "Ljava/lang/String;");
@@ -64,7 +64,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -76,7 +76,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "transactionManager", "Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "name", "Ljava/lang/String;");
@@ -85,18 +85,18 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConnectionFactory", "()Ljava/lang/Object;", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConnectionFactory", "()Ljava/lang/Object;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/ManagedConnectionFactory", "createConnectionFactory", "(Ljavax/resource/spi/ConnectionManager;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/resource/spi/ManagedConnectionFactory", "createConnectionFactory", "(Ljakarta/resource/spi/ConnectionManager;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectionManager", "()Ljavax/resource/spi/ConnectionManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getConnectionManager", "()Ljakarta/resource/spi/ConnectionManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -104,10 +104,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedConnectionFactory", "()Ljavax/resource/spi/ManagedConnectionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedConnectionFactory", "()Ljakarta/resource/spi/ManagedConnectionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -131,21 +131,21 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/A
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "getRecoveryStack", "()Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljavax/resource/spi/ManagedConnectionFactory;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/OutboundNamedXAResourceFactory", "<init>", "(Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljavax/resource/spi/ManagedConnectionFactory;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "managedConnectionFactory", "Ljakarta/resource/spi/ManagedConnectionFactory;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/OutboundNamedXAResourceFactory", "<init>", "(Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/ConnectionInterceptor;Ljakarta/resource/spi/ManagedConnectionFactory;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", "registerNamedXAResourceFactory", "(Lorg/apache/geronimo/transaction/manager/NamedXAResourceFactory;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allocateConnection", "(Ljavax/resource/spi/ManagedConnectionFactory;Ljavax/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allocateConnection", "(Ljakarta/resource/spi/ManagedConnectionFactory;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "<init>", "(Ljavax/resource/spi/ManagedConnectionFactory;Ljavax/resource/spi/ConnectionRequestInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "<init>", "(Ljakarta/resource/spi/ManagedConnectionFactory;Ljakarta/resource/spi/ConnectionRequestInfo;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/outbound/ConnectionInfo");
 methodVisitor.visitInsn(DUP);
@@ -180,13 +180,13 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "associateConnection", "(Ljava/lang/Object;Ljavax/resource/spi/ManagedConnectionFactory;Ljavax/resource/spi/ConnectionRequestInfo;)V", null, new String[] { "javax/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "associateConnection", "(Ljava/lang/Object;Ljakarta/resource/spi/ManagedConnectionFactory;Ljakarta/resource/spi/ConnectionRequestInfo;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "<init>", "(Ljavax/resource/spi/ManagedConnectionFactory;Ljavax/resource/spi/ConnectionRequestInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/ManagedConnectionInfo", "<init>", "(Ljakarta/resource/spi/ManagedConnectionFactory;Ljakarta/resource/spi/ConnectionRequestInfo;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/outbound/ConnectionInfo");
 methodVisitor.visitInsn(DUP);
@@ -205,7 +205,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inactiveConnectionClosed", "(Ljava/lang/Object;Ljavax/resource/spi/ManagedConnectionFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inactiveConnectionClosed", "(Ljava/lang/Object;Ljakarta/resource/spi/ManagedConnectionFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 3);

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", null, "javax/xml/bind/SchemaOutputResolver", null);
+classWriter.visit(V1_7, ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", null, "jakarta/xml/bind/SchemaOutputResolver", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "logger", "Ljava/util/logging/Logger;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resolver", "Ljavax/xml/bind/SchemaOutputResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "resolver", "Ljakarta/xml/bind/SchemaOutputResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,10 +37,10 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/bind/SchemaOutputResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/bind/SchemaOutputResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/SchemaOutputResolver", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/SchemaOutputResolver", "<init>", "()V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", "$assertionsDisabled", "Z");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -51,10 +51,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/AssertionError", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/xml/bind/v2/schemagen/FoolProofResolver", "javax/xml/bind/SchemaOutputResolver"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"com/sun/xml/bind/v2/schemagen/FoolProofResolver", "jakarta/xml/bind/SchemaOutputResolver"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", "resolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", "resolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -79,10 +79,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", "resolver", "Ljavax/xml/bind/SchemaOutputResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/schemagen/FoolProofResolver", "resolver", "Ljakarta/xml/bind/SchemaOutputResolver;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/SchemaOutputResolver", "createOutput", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Result;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();

@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pool", "Ljava/ut
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/bind/annotation/JsonbNumberFormat;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/bind/annotation/JsonbNumberFormat;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/johnzon/jsonb/converter/JsonbLocaleParserConverterBase", "<init>", "()V", false);
@@ -46,10 +46,10 @@ methodVisitor.visitIntInsn(BIPUSH, 30);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ArrayBlockingQueue", "<init>", "(I)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/johnzon/jsonb/converter/JsonbNumberConverter", "pool", "Ljava/util/Queue;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/annotation/JsonbNumberFormat", "locale", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/annotation/JsonbNumberFormat", "locale", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/annotation/JsonbNumberFormat", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/annotation/JsonbNumberFormat", "value", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLdcInsn("##default");
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -60,7 +60,7 @@ methodVisitor.visitInsn(ICONST_1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbNumberConverter", "javax/json/bind/annotation/JsonbNumberFormat", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/johnzon/jsonb/converter/JsonbNumberConverter", "jakarta/json/bind/annotation/JsonbNumberFormat", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDataModel", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Object;)Ljavax/faces/model/DataModel;", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<*>;Ljava/lang/Object;)Ljavax/faces/model/DataModel;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createDataModel", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Object;)Ljakarta/faces/model/DataModel;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<*>;Ljava/lang/Object;)Ljakarta/faces/model/DataModel;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

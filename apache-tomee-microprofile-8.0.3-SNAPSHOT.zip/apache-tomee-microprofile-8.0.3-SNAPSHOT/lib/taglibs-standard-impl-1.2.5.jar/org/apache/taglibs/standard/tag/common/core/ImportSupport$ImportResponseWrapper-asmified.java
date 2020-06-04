@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_SUPER, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", null, "javax/servlet/http/HttpServletResponseWrapper", null);
+classWriter.visit(V1_5, ACC_SUPER, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", null, "jakarta/servlet/http/HttpServletResponseWrapper", null);
 
 classWriter.visitInnerClass("org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "org/apache/taglibs/standard/tag/common/core/ImportSupport", "ImportResponseWrapper", ACC_PRIVATE);
 
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bos", "Ljava/io/ByteArrayOut
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sos", "Ljavax/servlet/ServletOutputStream;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sos", "Ljakarta/servlet/ServletOutputStream;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,14 +57,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/taglibs/standard/tag/common/core/ImportSupport;Ljavax/servlet/http/HttpServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/taglibs/standard/tag/common/core/ImportSupport;Ljakarta/servlet/http/HttpServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "this$0", "Lorg/apache/taglibs/standard/tag/common/core/ImportSupport;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljavax/servlet/http/HttpServletResponse;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpServletResponseWrapper", "<init>", "(Ljakarta/servlet/http/HttpServletResponse;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/StringWriter");
 methodVisitor.visitInsn(DUP);
@@ -80,7 +80,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/taglibs/standard/tag/common/core/Im
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper$1", "<init>", "(Lorg/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "sos", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "sos", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(SIPUSH, 200);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "status", "I");
@@ -115,7 +115,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljavax/servlet/ServletOutputStream;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOutputStream", "()Ljakarta/servlet/ServletOutputStream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "isWriterUsed", "Z");
@@ -132,7 +132,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "isStreamUsed", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "sos", "Ljavax/servlet/ServletOutputStream;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/core/ImportSupport$ImportResponseWrapper", "sos", "Ljakarta/servlet/ServletOutputStream;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

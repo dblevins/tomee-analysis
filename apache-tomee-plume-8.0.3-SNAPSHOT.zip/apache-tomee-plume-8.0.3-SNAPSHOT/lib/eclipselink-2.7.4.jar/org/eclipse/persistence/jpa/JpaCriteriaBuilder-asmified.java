@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaCriteriaBuilder", null, "java/lang/Object", new String[] { "javax/persistence/criteria/CriteriaBuilder" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaCriteriaBuilder", null, "java/lang/Object", new String[] { "jakarta/persistence/criteria/CriteriaBuilder" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromExpression", "(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class;)Ljavax/persistence/criteria/Expression;", "<T:Ljava/lang/Object;>(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class<TT;>;)Ljavax/persistence/criteria/Expression<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromExpression", "(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class;)Ljakarta/persistence/criteria/Expression;", "<T:Ljava/lang/Object;>(Lorg/eclipse/persistence/expressions/Expression;Ljava/lang/Class<TT;>;)Ljakarta/persistence/criteria/Expression<TT;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromExpression", "(Lorg/eclipse/persistence/expressions/Expression;)Ljavax/persistence/criteria/Expression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromExpression", "(Lorg/eclipse/persistence/expressions/Expression;)Ljakarta/persistence/criteria/Expression;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toExpression", "(Ljavax/persistence/criteria/Expression;)Lorg/eclipse/persistence/expressions/Expression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "toExpression", "(Ljakarta/persistence/criteria/Expression;)Lorg/eclipse/persistence/expressions/Expression;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

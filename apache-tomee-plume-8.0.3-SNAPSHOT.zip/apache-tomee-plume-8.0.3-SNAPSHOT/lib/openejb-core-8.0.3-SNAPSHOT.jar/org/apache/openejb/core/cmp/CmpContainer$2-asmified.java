@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/CmpContainer$2", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/CmpContainer$2", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
-classWriter.visitOuterClass("org/apache/openejb/core/cmp/CmpContainer", "ejbLoad", "(Ljavax/ejb/EntityBean;)V");
+classWriter.visitOuterClass("org/apache/openejb/core/cmp/CmpContainer", "ejbLoad", "(Ljakarta/ejb/EntityBean;)V");
 
 classWriter.visitInnerClass("org/apache/openejb/core/cmp/CmpContainer$2", null, null, 0);
 
@@ -49,9 +49,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "beforeCompletion", "()V", n
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$2", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer", "synchronizationRegistry", "Ljavax/transaction/TransactionSynchronizationRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer", "synchronizationRegistry", "Ljakarta/transaction/TransactionSynchronizationRegistry;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$100", "()Ljava/lang/Object;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/TransactionSynchronizationRegistry", "getResource", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/TransactionSynchronizationRegistry", "getResource", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/LinkedHashSet");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -72,12 +72,12 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/EntityBean");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/EntityBean");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/cmp/CmpContainer$2", "this$0", "Lorg/apache/openejb/core/cmp/CmpContainer;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$200", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljavax/ejb/EntityBean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/cmp/CmpContainer", "access$200", "(Lorg/apache/openejb/core/cmp/CmpContainer;Ljakarta/ejb/EntityBean;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

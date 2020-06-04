@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", null, "java/lang/Object", new String[] { "javax/ws/rs/core/Link$Builder" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", null, "java/lang/Object", new String[] { "jakarta/ws/rs/core/Link$Builder" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/impl/LinkBuilderImpl$LinkImpl", "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "LinkImpl", ACC_STATIC);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Link$Builder", "javax/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Link$Builder", "jakarta/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DOUBLE_QUOTE", "Ljava/lang/String;", null, "\"");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ub", "Ljavax/ws/rs/core/UriBuilder;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ub", "Ljakarta/ws/rs/core/UriBuilder;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -60,7 +60,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "build", "([Ljava/lang/Object;)Ljavax/ws/rs/core/Link;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "build", "([Ljava/lang/Object;)Ljakarta/ws/rs/core/Link;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "buildRelativized", "(Ljava/net/URI;[Ljava/lang/Object;)Ljavax/ws/rs/core/Link;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "buildRelativized", "(Ljava/net/URI;[Ljava/lang/Object;)Ljakarta/ws/rs/core/Link;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -107,29 +107,29 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "getResolvedUri", "([Ljava/lang/Object;)Ljava/net/URI;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/UriBuilderImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "baseUri", "Ljava/net/URI;");
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "baseUri", "Ljava/net/URI;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "isAbsolute", "()Z", false);
@@ -144,11 +144,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "isAbsolute", "()Z"
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "baseUri", "Ljava/net/URI;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "resolve", "(Ljavax/ws/rs/core/UriBuilder;Ljava/net/URI;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/HttpUtils", "resolve", "(Ljakarta/ws/rs/core/UriBuilder;Ljava/net/URI;)Ljava/net/URI;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/net/URI"}, 0, null);
@@ -158,16 +158,16 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "link", "(Ljavax/ws/rs/core/Link;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "link", "(Ljakarta/ws/rs/core/Link;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromLink", "(Ljavax/ws/rs/core/Link;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromLink", "(Ljakarta/ws/rs/core/Link;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "params", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/Link", "getParams", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/Link", "getParams", "()Ljava/util/Map;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -175,7 +175,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "link", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "link", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
@@ -205,8 +205,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IADD);
@@ -294,7 +294,7 @@ methodVisitor.visitMaxs(4, 11);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "param", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "param", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -314,7 +314,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rel", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rel", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "params", "Ljava/util/Map;");
@@ -346,63 +346,63 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("rel");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "title", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "title", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("title");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "type", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "type", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("type");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "param", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/ws/rs/core/UriBuilder", "fromUri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uriBuilder", "(Ljavax/ws/rs/core/UriBuilder;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uriBuilder", "(Ljakarta/ws/rs/core/UriBuilder;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljavax/ws/rs/core/UriBuilder;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl", "ub", "Ljakarta/ws/rs/core/UriBuilder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -437,7 +437,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "baseUri", "(Ljava/net/URI;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "baseUri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -448,7 +448,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "baseUri", "(Ljava/lang/String;)Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "baseUri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

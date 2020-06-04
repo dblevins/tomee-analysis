@@ -911,7 +911,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/ext/search/AbstractSearchConditionParser", "EMPTY_ANNOTTAIONS", "[Ljava/lang/annotation/Annotation;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/ServerProviderFactory", "createParameterHandler", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lorg/apache/cxf/message/Message;)Ljavax/ws/rs/ext/ParamConverter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/provider/ServerProviderFactory", "createParameterHandler", "(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lorg/apache/cxf/message/Message;)Ljakarta/ws/rs/ext/ParamConverter;", false);
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitInsn(ICONST_1);
 Label label3 = new Label();

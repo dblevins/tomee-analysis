@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$2", null, "javax/activation/DataHandler", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$2", null, "jakarta/activation/DataHandler", null);
 
 classWriter.visitOuterClass("org/apache/cxf/jaxws/interceptors/SwAOutInterceptor", "processAttachments", "(Lorg/apache/cxf/binding/soap/SoapMessage;Lorg/apache/cxf/binding/soap/model/SoapBodyInfo;)V");
 
@@ -55,7 +55,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/SwAOut
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/DataHandler", "<init>", "(Ljava/lang/Object;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 6);
 methodVisitor.visitEnd();

@@ -343,7 +343,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/TempClassL
 Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label13);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.");
+methodVisitor.visitLdcInsn("jakarta.faces.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label14);

@@ -175,7 +175,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/bind/Marshaller;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/bind/Marshaller;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/kernel/Broker", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization", "org/apache/openjpa/lib/util/Closeable", "org/apache/openjpa/kernel/StoreContext", "org/apache/openjpa/kernel/ConnectionRetainModes", "org/apache/openjpa/kernel/DetachState", "org/apache/openjpa/kernel/LockLevels", "org/apache/openjpa/kernel/RestoreState", "org/apache/openjpa/kernel/AutoClear", "org/apache/openjpa/kernel/AutoDetach", "org/apache/openjpa/event/CallbackModes" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/kernel/Broker", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization", "org/apache/openjpa/lib/util/Closeable", "org/apache/openjpa/kernel/StoreContext", "org/apache/openjpa/kernel/ConnectionRetainModes", "org/apache/openjpa/kernel/DetachState", "org/apache/openjpa/kernel/LockLevels", "org/apache/openjpa/kernel/RestoreState", "org/apache/openjpa/kernel/AutoClear", "org/apache/openjpa/kernel/AutoDetach", "org/apache/openjpa/event/CallbackModes" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setImplicitBehavior", "(Lorg/apache/openjpa/kernel/OpCallbacks;Lorg/apache/openjpa/util/RuntimeExceptionTranslator;)V", null, null);

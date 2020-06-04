@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljavax/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startDocument", "(Ljakarta/xml/bind/ValidationEventHandler;)V", null, new String[] { "org/xml/sax/SAXException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
@@ -48,8 +48,8 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/jaxb/JAXBErrorHa
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBErrorHandler", "getValidationEventHandler", "()Ljavax/xml/bind/ValidationEventHandler;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/IDResolver", "startDocument", "(Ljavax/xml/bind/ValidationEventHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/JAXBErrorHandler", "getValidationEventHandler", "()Ljakarta/xml/bind/ValidationEventHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/IDResolver", "startDocument", "(Ljakarta/xml/bind/ValidationEventHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

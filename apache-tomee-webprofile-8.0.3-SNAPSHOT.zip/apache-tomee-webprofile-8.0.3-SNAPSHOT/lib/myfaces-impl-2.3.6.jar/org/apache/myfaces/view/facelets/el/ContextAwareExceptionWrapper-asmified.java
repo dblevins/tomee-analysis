@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/el/ContextAwareExceptionWrapper", "Ljava/lang/Object;Ljavax/faces/FacesWrapper<Ljava/lang/Throwable;>;Lorg/apache/myfaces/view/facelets/el/ContextAware;", "java/lang/Object", new String[] { "javax/faces/FacesWrapper", "org/apache/myfaces/view/facelets/el/ContextAware" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/el/ContextAwareExceptionWrapper", "Ljava/lang/Object;Ljakarta/faces/FacesWrapper<Ljava/lang/Throwable;>;Lorg/apache/myfaces/view/facelets/el/ContextAware;", "java/lang/Object", new String[] { "jakarta/faces/FacesWrapper", "org/apache/myfaces/view/facelets/el/ContextAware" });
 
 classWriter.visitEnd();
 

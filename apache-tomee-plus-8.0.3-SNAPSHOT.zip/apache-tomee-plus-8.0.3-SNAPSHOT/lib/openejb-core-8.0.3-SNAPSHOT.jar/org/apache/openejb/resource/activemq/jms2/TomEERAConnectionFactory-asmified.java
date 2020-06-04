@@ -26,38 +26,38 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/act
 
 classWriter.visitInnerClass("org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/resource/spi/TransactionSupport$TransactionSupportLevel", "javax/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "jakarta/resource/spi/TransactionSupport", "TransactionSupportLevel", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/ra/ActiveMQManagedConnectionFactory;Ljavax/resource/spi/ConnectionManager;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/ra/ActiveMQManagedConnectionFactory;Ljakarta/resource/spi/ConnectionManager;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ra/ActiveMQConnectionFactory", "<init>", "(Lorg/apache/activemq/ra/ActiveMQManagedConnectionFactory;Ljavax/resource/spi/ConnectionManager;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/ra/ActiveMQConnectionFactory", "<init>", "(Lorg/apache/activemq/ra/ActiveMQManagedConnectionFactory;Ljakarta/resource/spi/ConnectionManager;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "XATransaction", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "XATransaction", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "()Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "()Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -98,7 +98,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("transactionSupportLevel mode not supported:");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -112,18 +112,18 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ILOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(I)Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(I)Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -164,7 +164,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("transactionSupportLevel mode not supported:");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -178,18 +178,18 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -230,7 +230,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("transactionSupportLevel mode not supported:");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -244,18 +244,18 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(Ljava/lang/String;Ljava/lang/String;I)Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContext", "(Ljava/lang/String;Ljava/lang/String;I)Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1", "$SwitchMap$javax$resource$spi$TransactionSupport$TransactionSupportLevel", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/TransactionSupport$TransactionSupportLevel", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -296,7 +296,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("transactionSupportLevel mode not supported:");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
@@ -310,22 +310,22 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSupport", "()Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionSupport", "()Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionSupport", "(Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionSupport", "(Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -339,7 +339,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljavax/resource/spi/TransactionSupport$TransactionSupportLevel;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory", "transactionSupportLevel", "Ljakarta/resource/spi/TransactionSupport$TransactionSupportLevel;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

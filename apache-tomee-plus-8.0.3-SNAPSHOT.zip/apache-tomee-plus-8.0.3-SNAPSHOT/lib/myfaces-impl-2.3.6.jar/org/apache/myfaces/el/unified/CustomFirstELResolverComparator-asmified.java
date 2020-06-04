@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/el/ELResolver;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/el/ELResolver;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_facesConfigResolvers", "Ljava/util/List;", "Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_facesConfigResolvers", "Ljava/util/List;", "Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/el/ELResolver;Ljavax/el/ELResolver;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/el/ELResolver;Ljakarta/el/ELResolver;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "_getFacesConfigElResolvers", "()Ljava/util/List;", false);
@@ -85,17 +85,17 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "_getFacesConfigElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/el/ELResolver;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "_getFacesConfigElResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/el/ELResolver;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "_facesConfigResolvers", "Ljava/util/List;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getExternalContext", "()Ljavax/faces/context/ExternalContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/RuntimeConfig", "getCurrentInstance", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/config/RuntimeConfig;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -114,10 +114,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ELResolver");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ELResolver");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/el/ELResolver");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "compare", "(Ljavax/el/ELResolver;Ljavax/el/ELResolver;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/el/ELResolver");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/el/unified/CustomFirstELResolverComparator", "compare", "(Ljakarta/el/ELResolver;Ljakarta/el/ELResolver;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/rs/util/list/SingleResultQuery", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFields", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFields", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setFields", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/xml/bind/JAXBElement;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setFields", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/xml/bind/JAXBElement;>;)V", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "hasNext", "(
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "next", "()Ljava/lang/Object;", "()TE;", new String[] { "org/xml/sax/SAXException", "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "next", "()Ljava/lang/Object;", "()TE;", new String[] { "org/xml/sax/SAXException", "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

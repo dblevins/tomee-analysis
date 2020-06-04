@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/RollbackException", null, "javax/persistence/RollbackException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/RollbackException", null, "jakarta/persistence/RollbackException", new String[] { "java/io/Serializable", "org/apache/openjpa/util/ExceptionInfo" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -42,7 +42,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/RollbackException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/RollbackException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/persistence/RollbackException", "_failed", "Ljava/lang/Object;");
@@ -145,7 +145,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/RollbackException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/RollbackException", "printStackTrace", "(Ljava/io/PrintStream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintStream;)V", false);
@@ -158,7 +158,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printStackTrace", "(Ljava/i
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/persistence/RollbackException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/persistence/RollbackException", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/Exceptions", "printNestedThrowables", "(Lorg/apache/openjpa/util/ExceptionInfo;Ljava/io/PrintWriter;)V", false);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization", "org/apache/openejb/core/timer/MemoryTimerStore$TimerDataView" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization", "org/apache/openejb/core/timer/MemoryTimerStore$TimerDataView" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "org/apache/openejb/core/timer/MemoryTimerStore", "TxTimerDataView", ACC_PRIVATE);
 
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "concurentExcepti
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tansactionReference", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljavax/transaction/Transaction;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "tansactionReference", "Ljava/lang/ref/WeakReference;", "Ljava/lang/ref/WeakReference<Ljakarta/transaction/Transaction;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,14 +53,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/timer/MemoryTimerStore;Ljavax/transaction/Transaction;)V", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/core/timer/MemoryTimerStore;Ljakarta/transaction/Transaction;)V", null, new String[] { "org/apache/openejb/core/timer/TimerStoreException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/RollbackException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/RollbackException");
 Label label3 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label3, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label3, "jakarta/transaction/SystemException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "this$0", "Lorg/apache/openejb/core/timer/MemoryTimerStore;");
@@ -111,7 +111,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "registerSynchronization", "(Ljavax/transaction/Synchronization;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "registerSynchronization", "(Ljakarta/transaction/Synchronization;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/ref/WeakReference");
 methodVisitor.visitInsn(DUP);
@@ -122,7 +122,7 @@ methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "org/apache/openejb/core/timer/MemoryTimerStore", "javax/transaction/Transaction"}, 1, new Object[] {"javax/transaction/RollbackException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView", "org/apache/openejb/core/timer/MemoryTimerStore", "jakarta/transaction/Transaction"}, 1, new Object[] {"jakarta/transaction/RollbackException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/timer/TimerStoreException");
 methodVisitor.visitInsn(DUP);
@@ -130,7 +130,7 @@ methodVisitor.visitLdcInsn("Transaction has been rolled back");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerStoreException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/timer/TimerStoreException");
 methodVisitor.visitInsn(DUP);

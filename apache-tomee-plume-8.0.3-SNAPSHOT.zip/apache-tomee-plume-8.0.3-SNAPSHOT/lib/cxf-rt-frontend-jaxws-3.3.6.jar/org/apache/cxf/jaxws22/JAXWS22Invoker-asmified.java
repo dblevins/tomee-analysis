@@ -29,11 +29,11 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/Deprecated;", true)
 annotationVisitor0.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/ws/spi/Invoker;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/ws/spi/Invoker;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JAXWSMethodInvoker", "<init>", "(Ljavax/xml/ws/spi/Invoker;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/JAXWSMethodInvoker", "<init>", "(Ljakarta/xml/ws/spi/Invoker;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/cmp2/CmrSet$1", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/core/cmp/cmp2/CmrSet$1", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
-classWriter.visitOuterClass("org/apache/openejb/core/cmp/cmp2/CmrSet", "<init>", "(Ljavax/ejb/EntityBean;Ljava/lang/String;Lorg/apache/openejb/BeanContext;Ljava/lang/String;Ljava/util/Collection;)V");
+classWriter.visitOuterClass("org/apache/openejb/core/cmp/cmp2/CmrSet", "<init>", "(Ljakarta/ejb/EntityBean;Ljava/lang/String;Lorg/apache/openejb/BeanContext;Ljava/lang/String;Ljava/util/Collection;)V");
 
 classWriter.visitInnerClass("org/apache/openejb/core/cmp/cmp2/CmrSet$1", null, null, 0);
 

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", null, "java/awt/Component", new String[] { "javax/activation/DataContentHandler" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", null, "java/awt/Component", new String[] { "jakarta/activation/DataContentHandler" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "myDF", "Ljavax/activation/ActivationDataFlavor;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "myDF", "Ljakarta/activation/ActivationDataFlavor;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,9 +38,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDF", "()Ljavax/activation/ActivationDataFlavor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDF", "()Ljakarta/activation/ActivationDataFlavor;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "myDF", "Ljavax/activation/ActivationDataFlavor;");
+methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "myDF", "Ljakarta/activation/ActivationDataFlavor;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -53,24 +53,24 @@ methodVisitor.visitTypeInsn(ANEWARRAY, "java/awt/datatransfer/DataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljavax/activation/ActivationDataFlavor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljakarta/activation/ActivationDataFlavor;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljavax/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransferData", "(Ljava/awt/datatransfer/DataFlavor;Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljavax/activation/ActivationDataFlavor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljakarta/activation/ActivationDataFlavor;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/ActivationDataFlavor", "equals", "(Ljava/awt/datatransfer/DataFlavor;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/ActivationDataFlavor", "equals", "(Ljava/awt/datatransfer/DataFlavor;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -80,10 +80,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljavax/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContent", "(Ljakarta/activation/DataSource;)Ljava/lang/Object;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -92,7 +92,7 @@ methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "javax/activation/DataSource", "java/io/InputStream", Opcodes.INTEGER, Opcodes.TOP, "[B"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "jakarta/activation/DataSource", "java/io/InputStream", Opcodes.INTEGER, Opcodes.TOP, "[B"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 3);
@@ -128,7 +128,7 @@ methodVisitor.visitVarInsn(ISTORE, 6);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "javax/activation/DataSource", "java/io/InputStream", Opcodes.INTEGER, Opcodes.INTEGER, "[B", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "jakarta/activation/DataSource", "java/io/InputStream", Opcodes.INTEGER, Opcodes.INTEGER, "[B", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitLdcInsn(new Integer(262144));
 methodVisitor.visitInsn(IADD);
@@ -177,8 +177,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("\"");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljavax/activation/ActivationDataFlavor;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/ActivationDataFlavor", "getMimeType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljakarta/activation/ActivationDataFlavor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/ActivationDataFlavor", "getMimeType", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("\" DataContentHandler requires Image object, was given object of type ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -197,8 +197,8 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljavax/activation/ActivationDataFlavor;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/ActivationDataFlavor", "getMimeType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "getDF", "()Ljakarta/activation/ActivationDataFlavor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/ActivationDataFlavor", "getMimeType", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(" encoding not supported");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -211,13 +211,13 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/activation/ActivationDataFlavor");
+methodVisitor.visitTypeInsn(NEW, "jakarta/activation/ActivationDataFlavor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/awt/Image;"));
 methodVisitor.visitLdcInsn("image/gif");
 methodVisitor.visitLdcInsn("GIF Image");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "myDF", "Ljavax/activation/ActivationDataFlavor;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/activation/ActivationDataFlavor", "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/xml/messaging/saaj/soap/GifDataContentHandler", "myDF", "Ljakarta/activation/ActivationDataFlavor;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 0);
 methodVisitor.visitEnd();

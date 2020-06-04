@@ -68,7 +68,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.");
+methodVisitor.visitLdcInsn("jakarta.persistence.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label2);

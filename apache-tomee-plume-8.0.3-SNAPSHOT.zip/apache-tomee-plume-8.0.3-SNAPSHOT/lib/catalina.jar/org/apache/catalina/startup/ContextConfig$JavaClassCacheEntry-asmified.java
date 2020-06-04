@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "interfaceNames", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sciSet", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/servlet/ServletContainerInitializer;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sciSet", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/servlet/ServletContainerInitializer;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -77,7 +77,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSciSet", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/servlet/ServletContainerInitializer;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSciSet", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/servlet/ServletContainerInitializer;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/startup/ContextConfig$JavaClassCacheEntry", "sciSet", "Ljava/util/Set;");
@@ -86,7 +86,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSciSet", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljavax/servlet/ServletContainerInitializer;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSciSet", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljakarta/servlet/ServletContainerInitializer;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

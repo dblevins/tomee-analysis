@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "<T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl<TT;>;Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", new String[] { "javax/persistence/criteria/CriteriaUpdate" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "<T:Ljava/lang/Object;>Lorg/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl<TT;>;Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", new String[] { "jakarta/persistence/criteria/CriteriaUpdate" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(5069513243268181150L));
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "root", "Ljavax/persistence/criteria/Root;", "Ljavax/persistence/criteria/Root<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "root", "Ljakarta/persistence/criteria/Root;", "Ljakarta/persistence/criteria/Root<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "query", "Lorg/eclipse/pers
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class;)V", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class;)V", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "<init>", "(Ljavax/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "<init>", "(Ljakarta/persistence/metamodel/Metamodel;Lorg/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/queries/UpdateAllQuery");
 methodVisitor.visitInsn(DUP);
@@ -60,70 +60,70 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "from", "(Ljava/lang/Class;)Ljavax/persistence/criteria/Root;", "(Ljava/lang/Class<TT;>;)Ljavax/persistence/criteria/Root<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "from", "(Ljava/lang/Class;)Ljakarta/persistence/criteria/Root;", "(Ljava/lang/Class<TT;>;)Ljakarta/persistence/criteria/Root<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "getRoot", "()Ljavax/persistence/criteria/Root;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "getRoot", "()Ljakarta/persistence/criteria/Root;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "from", "(Ljavax/persistence/metamodel/EntityType;)Ljavax/persistence/criteria/Root;", "(Ljavax/persistence/metamodel/EntityType<TT;>;)Ljavax/persistence/criteria/Root<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "from", "(Ljakarta/persistence/metamodel/EntityType;)Ljakarta/persistence/criteria/Root;", "(Ljakarta/persistence/metamodel/EntityType<TT;>;)Ljakarta/persistence/criteria/Root<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "getRoot", "()Ljavax/persistence/criteria/Root;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "getRoot", "()Ljakarta/persistence/criteria/Root;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRoot", "()Ljavax/persistence/criteria/Root;", "()Ljavax/persistence/criteria/Root<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRoot", "()Ljakarta/persistence/criteria/Root;", "()Ljakarta/persistence/criteria/Root<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljavax/persistence/criteria/Root;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljakarta/persistence/criteria/Root;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "getResultType", "()Ljava/lang/Class;", false);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "queryType", "Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/Metamodel", "entity", "(Ljava/lang/Class;)Ljavax/persistence/metamodel/EntityType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/Metamodel", "entity", "(Ljava/lang/Class;)Ljakarta/persistence/metamodel/EntityType;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/querydef/RootImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "metamodel", "Ljavax/persistence/metamodel/Metamodel;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "metamodel", "Ljakarta/persistence/metamodel/Metamodel;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "queryType", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/UpdateAllQuery", "getExpressionBuilder", "()Lorg/eclipse/persistence/expressions/ExpressionBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/RootImpl", "<init>", "(Ljavax/persistence/metamodel/ManagedType;Ljavax/persistence/metamodel/Metamodel;Ljava/lang/Class;Lorg/eclipse/persistence/expressions/Expression;Ljavax/persistence/metamodel/Bindable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/RootImpl", "<init>", "(Ljakarta/persistence/metamodel/ManagedType;Ljakarta/persistence/metamodel/Metamodel;Ljava/lang/Class;Lorg/eclipse/persistence/expressions/Expression;Ljakarta/persistence/metamodel/Bindable;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljavax/persistence/criteria/Root;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljakarta/persistence/criteria/Root;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljavax/persistence/criteria/Root;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljakarta/persistence/criteria/Root;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/persistence/metamodel/SingularAttribute;Ljava/lang/Object;)Ljavax/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;X:TY;>(Ljavax/persistence/metamodel/SingularAttribute<-TT;TY;>;TX;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/persistence/metamodel/SingularAttribute;Ljava/lang/Object;)Ljakarta/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;X:TY;>(Ljakarta/persistence/metamodel/SingularAttribute<-TT;TY;>;TX;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/SingularAttribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/SingularAttribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/UpdateAllQuery", "addUpdate", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -132,12 +132,12 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/persistence/metamodel/SingularAttribute;Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;>(Ljavax/persistence/metamodel/SingularAttribute<-TT;TY;>;Ljavax/persistence/criteria/Expression<+TY;>;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/persistence/metamodel/SingularAttribute;Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;>(Ljakarta/persistence/metamodel/SingularAttribute<-TT;TY;>;Ljakarta/persistence/criteria/Expression<+TY;>;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/metamodel/SingularAttribute", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/metamodel/SingularAttribute", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/jpa/querydef/InternalSelection");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/jpa/querydef/InternalSelection", "getCurrentNode", "()Lorg/eclipse/persistence/expressions/Expression;", true);
@@ -148,7 +148,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/persistence/criteria/Path;Ljava/lang/Object;)Ljavax/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;X:TY;>(Ljavax/persistence/criteria/Path<TY;>;TX;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/persistence/criteria/Path;Ljava/lang/Object;)Ljakarta/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;X:TY;>(Ljakarta/persistence/criteria/Path<TY;>;TX;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljavax/persistence/criteria/Path;Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;>(Ljavax/persistence/criteria/Path<TY;>;Ljavax/persistence/criteria/Expression<+TY;>;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljakarta/persistence/criteria/Path;Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CriteriaUpdate;", "<Y:Ljava/lang/Object;>(Ljakarta/persistence/criteria/Path<TY;>;Ljakarta/persistence/criteria/Expression<+TY;>;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
@@ -180,7 +180,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/criteria/CriteriaUpdate;", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/criteria/CriteriaUpdate;", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "query", "Lorg/eclipse/persistence/queries/UpdateAllQuery;");
@@ -193,23 +193,23 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "where", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CriteriaUpdate;", "(Ljavax/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "where", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CriteriaUpdate;", "(Ljakarta/persistence/criteria/Expression<Ljava/lang/Boolean;>;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "where", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CommonAbstractCriteria;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/criteria/CriteriaUpdate");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "where", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CommonAbstractCriteria;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/criteria/CriteriaUpdate");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "where", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/CriteriaUpdate;", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/CriteriaUpdate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "where", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/CriteriaUpdate;", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/CriteriaUpdate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "where", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/CommonAbstractCriteria;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/persistence/criteria/CriteriaUpdate");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/querydef/CommonAbstractCriteriaImpl", "where", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/CommonAbstractCriteria;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/persistence/criteria/CriteriaUpdate");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -218,13 +218,13 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "integrateRoot", "(Lorg/eclipse/persistence/internal/jpa/querydef/RootImpl;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljavax/persistence/criteria/Root;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljakarta/persistence/criteria/Root;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljavax/persistence/criteria/Root;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "root", "Ljakarta/persistence/criteria/Root;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -253,21 +253,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_VARARGS | ACC_SYNTHETIC, "where", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/CommonAbstractCriteria;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_VARARGS | ACC_SYNTHETIC, "where", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/CommonAbstractCriteria;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "where", "([Ljavax/persistence/criteria/Predicate;)Ljavax/persistence/criteria/CriteriaUpdate;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "where", "([Ljakarta/persistence/criteria/Predicate;)Ljakarta/persistence/criteria/CriteriaUpdate;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "where", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CommonAbstractCriteria;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "where", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CommonAbstractCriteria;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "where", "(Ljavax/persistence/criteria/Expression;)Ljavax/persistence/criteria/CriteriaUpdate;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl", "where", "(Ljakarta/persistence/criteria/Expression;)Ljakarta/persistence/criteria/CriteriaUpdate;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

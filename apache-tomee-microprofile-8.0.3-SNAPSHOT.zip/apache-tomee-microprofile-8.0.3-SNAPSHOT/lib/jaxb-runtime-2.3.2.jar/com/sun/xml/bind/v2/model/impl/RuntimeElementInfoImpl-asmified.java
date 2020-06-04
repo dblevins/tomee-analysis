@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/xml/bind/v2/model/impl/RuntimeElementInfoIm
 classWriter.visitInnerClass("com/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl", "com/sun/xml/bind/v2/model/impl/ElementInfoImpl", "PropertyImpl", ACC_PROTECTED);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapterType", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapterType", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,7 +87,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/xml/bind/JAXBElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/xml/bind/JAXBElement;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/bind/v2/model/impl/Utils", "REFLECTION_NAVIGATOR", "Lcom/sun/xml/bind/v2/model/nav/Navigator;");
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/AnnotatedParameterImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/AbstractAnnotated;Ljavax/enterprise/inject/spi/AnnotatedParameter<TX;>;", "org/apache/webbeans/portable/AbstractAnnotated", new String[] { "javax/enterprise/inject/spi/AnnotatedParameter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/portable/AnnotatedParameterImpl", "<X:Ljava/lang/Object;>Lorg/apache/webbeans/portable/AbstractAnnotated;Ljakarta/enterprise/inject/spi/AnnotatedParameter<TX;>;", "org/apache/webbeans/portable/AbstractAnnotated", new String[] { "jakarta/enterprise/inject/spi/AnnotatedParameter" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;", "Ljavax/enterprise/inject/spi/AnnotatedCallable<TX;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;", "Ljakarta/enterprise/inject/spi/AnnotatedCallable<TX;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "position", "I", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Type;Ljavax/enterprise/inject/spi/AnnotatedCallable;I)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Type;Ljavax/enterprise/inject/spi/AnnotatedCallable<TX;>;I)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Type;Ljakarta/enterprise/inject/spi/AnnotatedCallable;I)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Type;Ljakarta/enterprise/inject/spi/AnnotatedCallable<TX;>;I)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -41,7 +41,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractAnnotated", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/reflect/Type;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "position", "I");
@@ -50,28 +50,28 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedParameter;Lorg/apache/webbeans/portable/AnnotatedMethodImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/AnnotatedParameter<TX;>;Lorg/apache/webbeans/portable/AnnotatedMethodImpl;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedParameter;Lorg/apache/webbeans/portable/AnnotatedMethodImpl;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/AnnotatedParameter<TX;>;Lorg/apache/webbeans/portable/AnnotatedMethodImpl;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractAnnotated", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljavax/enterprise/inject/spi/Annotated;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/portable/AbstractAnnotated", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljakarta/enterprise/inject/spi/Annotated;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedParameter", "getPosition", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedParameter", "getPosition", "()I", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "position", "I");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaringCallable", "()Ljavax/enterprise/inject/spi/AnnotatedCallable;", "()Ljavax/enterprise/inject/spi/AnnotatedCallable<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaringCallable", "()Ljakarta/enterprise/inject/spi/AnnotatedCallable;", "()Ljakarta/enterprise/inject/spi/AnnotatedCallable<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -124,9 +124,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getOwningClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedCallable", "getDeclaringType", "()Ljavax/enterprise/inject/spi/AnnotatedType;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedCallable", "getDeclaringType", "()Ljakarta/enterprise/inject/spi/AnnotatedType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedType", "getJavaClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -135,8 +135,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDeclaringClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljavax/enterprise/inject/spi/AnnotatedCallable;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/AnnotatedCallable", "getJavaMember", "()Ljava/lang/reflect/Member;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/portable/AnnotatedParameterImpl", "declaringCallable", "Ljakarta/enterprise/inject/spi/AnnotatedCallable;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/AnnotatedCallable", "getJavaMember", "()Ljava/lang/reflect/Member;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Member", "getDeclaringClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);

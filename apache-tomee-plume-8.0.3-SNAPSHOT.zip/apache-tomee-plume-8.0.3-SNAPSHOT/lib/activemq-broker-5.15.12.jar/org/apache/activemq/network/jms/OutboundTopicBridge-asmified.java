@@ -123,58 +123,58 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerTopic", "(Ljavax/jms/Topic;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerTopic", "(Ljakarta/jms/Topic;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setProducerTopic", "(Ljavax/jms/Topic;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setProducerTopic", "(Ljakarta/jms/Topic;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerTopic", "()Ljavax/jms/Topic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerTopic", "()Ljakarta/jms/Topic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getProducerTopic", "()Ljavax/jms/Topic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getProducerTopic", "()Ljakarta/jms/Topic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerConnection", "(Ljavax/jms/TopicConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setProducerConnection", "(Ljakarta/jms/TopicConnection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setProducerConnection", "(Ljavax/jms/TopicConnection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setProducerConnection", "(Ljakarta/jms/TopicConnection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerConnection", "()Ljavax/jms/TopicConnection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getProducerConnection", "()Ljakarta/jms/TopicConnection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getProducerConnection", "()Ljavax/jms/TopicConnection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getProducerConnection", "()Ljakarta/jms/TopicConnection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerTopic", "(Ljavax/jms/Topic;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerTopic", "(Ljakarta/jms/Topic;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setConsumerTopic", "(Ljavax/jms/Topic;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setConsumerTopic", "(Ljakarta/jms/Topic;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerTopic", "()Ljavax/jms/Topic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerTopic", "()Ljakarta/jms/Topic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getConsumerTopic", "()Ljavax/jms/Topic;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getConsumerTopic", "()Ljakarta/jms/Topic;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -199,20 +199,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerConnection", "(Ljavax/jms/TopicConnection;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "setConsumerConnection", "(Ljakarta/jms/TopicConnection;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setConsumerConnection", "(Ljavax/jms/TopicConnection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "setConsumerConnection", "(Ljakarta/jms/TopicConnection;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerConnection", "()Ljavax/jms/TopicConnection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getConsumerConnection", "()Ljakarta/jms/TopicConnection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getConsumerConnection", "()Ljavax/jms/TopicConnection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/network/jms/TopicBridge", "getConsumerConnection", "()Ljakarta/jms/TopicConnection;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

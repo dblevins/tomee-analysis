@@ -223,14 +223,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "createAttributeInfo", "()Ljavax/management/MBeanAttributeInfo;", null, null);
+methodVisitor = classWriter.visitMethod(0, "createAttributeInfo", "()Ljakarta/management/MBeanAttributeInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljavax/management/MBeanFeatureInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljakarta/management/MBeanFeatureInfo;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanAttributeInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanAttributeInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/AttributeInfo", "getName", "()Ljava/lang/String;", false);
@@ -243,13 +243,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/Att
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/modeler/AttributeInfo", "isWriteable", "()Z", false);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanAttributeInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljavax/management/MBeanFeatureInfo;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanAttributeInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljakarta/management/MBeanFeatureInfo;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljavax/management/MBeanFeatureInfo;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanAttributeInfo");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/AttributeInfo", "info", "Ljakarta/management/MBeanFeatureInfo;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanAttributeInfo");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(9, 1);
 methodVisitor.visitEnd();

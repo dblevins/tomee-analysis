@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER | ACC_SYNTHETIC, "org/apache/bval/jsr/ConfigurationImpl$doBuildValidatorFactory_ACTION", "Ljava/security/PrivilegedAction<Ljavax/validation/ValidatorFactory;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER | ACC_SYNTHETIC, "org/apache/bval/jsr/ConfigurationImpl$doBuildValidatorFactory_ACTION", "Ljava/security/PrivilegedAction<Ljakarta/validation/ValidatorFactory;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "f1", "Lorg/apache/bval/jsr/ConfigurationImpl;", null, null);
@@ -45,7 +45,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Object;
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConfigurationImpl$doBuildValidatorFactory_ACTION", "f1", "Lorg/apache/bval/jsr/ConfigurationImpl;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/ConfigurationImpl", "__privileged_access$0", "(Lorg/apache/bval/jsr/ConfigurationImpl;)Ljavax/validation/ValidatorFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/ConfigurationImpl", "__privileged_access$0", "(Lorg/apache/bval/jsr/ConfigurationImpl;)Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,29 +22,29 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/SimpleProducerFactory", "<P:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/enterprise/inject/spi/ProducerFactory<TP;>;", "java/lang/Object", new String[] { "javax/enterprise/inject/spi/ProducerFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/component/SimpleProducerFactory", "<P:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/enterprise/inject/spi/ProducerFactory<TP;>;", "java/lang/Object", new String[] { "jakarta/enterprise/inject/spi/ProducerFactory" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "producer", "Ljavax/enterprise/inject/spi/Producer;", "Ljavax/enterprise/inject/spi/Producer<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "producer", "Ljakarta/enterprise/inject/spi/Producer;", "Ljakarta/enterprise/inject/spi/Producer<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/Producer;)V", "(Ljavax/enterprise/inject/spi/Producer<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/Producer;)V", "(Ljakarta/enterprise/inject/spi/Producer<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/SimpleProducerFactory", "producer", "Ljavax/enterprise/inject/spi/Producer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/SimpleProducerFactory", "producer", "Ljakarta/enterprise/inject/spi/Producer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljavax/enterprise/inject/spi/Bean<TT;>;)Ljavax/enterprise/inject/spi/Producer<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createProducer", "(Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/Producer;", "<T:Ljava/lang/Object;>(Ljakarta/enterprise/inject/spi/Bean<TT;>;)Ljakarta/enterprise/inject/spi/Producer<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/SimpleProducerFactory", "producer", "Ljavax/enterprise/inject/spi/Producer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/SimpleProducerFactory", "producer", "Ljakarta/enterprise/inject/spi/Producer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

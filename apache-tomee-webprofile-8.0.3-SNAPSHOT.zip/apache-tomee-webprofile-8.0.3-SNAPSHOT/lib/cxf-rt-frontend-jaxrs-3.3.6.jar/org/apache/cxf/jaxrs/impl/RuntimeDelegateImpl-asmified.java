@@ -22,25 +22,25 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", null, "javax/ws/rs/ext/RuntimeDelegate", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", null, "jakarta/ws/rs/ext/RuntimeDelegate", null);
 
-classWriter.visitInnerClass("javax/ws/rs/ext/RuntimeDelegate$HeaderDelegate", "javax/ws/rs/ext/RuntimeDelegate", "HeaderDelegate", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate", "jakarta/ws/rs/ext/RuntimeDelegate", "HeaderDelegate", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Response$ResponseBuilder", "javax/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Response$ResponseBuilder", "jakarta/ws/rs/core/Response", "ResponseBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Variant$VariantListBuilder", "javax/ws/rs/core/Variant", "VariantListBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Variant$VariantListBuilder", "jakarta/ws/rs/core/Variant", "VariantListBuilder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT);
 
-classWriter.visitInnerClass("javax/ws/rs/core/Link$Builder", "javax/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/core/Link$Builder", "jakarta/ws/rs/core/Link", "Builder", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "headerProviders", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljavax/ws/rs/ext/RuntimeDelegate$HeaderDelegate<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "headerProviders", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Ljakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/ext/RuntimeDelegate", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/ext/RuntimeDelegate", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -48,7 +48,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/MediaType;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/MediaType;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MediaTypeHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MediaTypeHeaderProvider", "<init>", "()V", false);
@@ -56,7 +56,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/CacheControl;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/CacheControl;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/CacheControlHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/CacheControlHeaderProvider", "<init>", "()V", false);
@@ -64,7 +64,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/EntityTag;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/EntityTag;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/EntityTagHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/EntityTagHeaderProvider", "<init>", "()V", false);
@@ -72,7 +72,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Cookie;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Cookie;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/CookieHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/CookieHeaderProvider", "<init>", "()V", false);
@@ -80,7 +80,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/NewCookie;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/NewCookie;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/NewCookieHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/NewCookieHeaderProvider", "<init>", "()V", false);
@@ -88,7 +88,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Link;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Link;"));
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/LinkHeaderProvider");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/LinkHeaderProvider", "<init>", "()V", false);
@@ -110,7 +110,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Response$ResponseBuilder;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Response$ResponseBuilder;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
@@ -123,7 +123,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/UriBuilder;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/UriBuilder;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
@@ -136,7 +136,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Variant$VariantListBuilder;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/core/Variant$VariantListBuilder;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
@@ -154,7 +154,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHeaderDelegate", "(Ljava/lang/Class;)Ljavax/ws/rs/ext/RuntimeDelegate$HeaderDelegate;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljavax/ws/rs/ext/RuntimeDelegate$HeaderDelegate<TT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createHeaderDelegate", "(Ljava/lang/Class;)Ljakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate<TT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -170,13 +170,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl", "headerProviders", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/ext/RuntimeDelegate$HeaderDelegate");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseBuilder", "()Ljavax/ws/rs/core/Response$ResponseBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createResponseBuilder", "()Ljakarta/ws/rs/core/Response$ResponseBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/ResponseBuilderImpl");
 methodVisitor.visitInsn(DUP);
@@ -186,7 +186,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/UriBuilderImpl");
 methodVisitor.visitInsn(DUP);
@@ -196,7 +196,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createVariantListBuilder", "()Ljavax/ws/rs/core/Variant$VariantListBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createVariantListBuilder", "()Ljakarta/ws/rs/core/Variant$VariantListBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/VariantListBuilderImpl");
 methodVisitor.visitInsn(DUP);
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljavax/ws/rs/core/Application;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/ws/rs/core/Application;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException", "java/lang/UnsupportedOperationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createEndpoint", "(Ljakarta/ws/rs/core/Application;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/ws/rs/core/Application;Ljava/lang/Class<TT;>;)TT;", new String[] { "java/lang/IllegalArgumentException", "java/lang/UnsupportedOperationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -233,7 +233,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ResourceUtils", "createApplication", "(Ljavax/ws/rs/core/Application;ZZZLorg/apache/cxf/Bus;)Lorg/apache/cxf/jaxrs/JAXRSServerFactoryBean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ResourceUtils", "createApplication", "(Ljakarta/ws/rs/core/Application;ZZZLorg/apache/cxf/Bus;)Lorg/apache/cxf/jaxrs/JAXRSServerFactoryBean;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/jaxrs/JAXRSServerFactoryBean;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -260,7 +260,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createLinkBuilder", "()Ljavax/ws/rs/core/Link$Builder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createLinkBuilder", "()Ljakarta/ws/rs/core/Link$Builder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/LinkBuilderImpl");
 methodVisitor.visitInsn(DUP);

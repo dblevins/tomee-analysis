@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "sm"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CLASS_SERVLET_CONTEXT", "Ljava/lang/Class;", "Ljava/lang/Class<Ljavax/servlet/ServletContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "CLASS_SERVLET_CONTEXT", "Ljava/lang/Class;", "Ljava/lang/Class<Ljakarta/servlet/ServletContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -223,12 +223,12 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/ClassNotFoun
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/descriptor/Constants", "PACKAGE_NAME", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/res/StringManager", "getManager", "(Ljava/lang/String;)Lorg/apache/tomcat/util/res/StringManager;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/util/descriptor/DigesterFactory", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/ServletContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/ServletContext;"));
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/util/descriptor/DigesterFactory", "CLASS_SERVLET_CONTEXT", "Ljava/lang/Class;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.JspContext");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.JspContext");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label1);

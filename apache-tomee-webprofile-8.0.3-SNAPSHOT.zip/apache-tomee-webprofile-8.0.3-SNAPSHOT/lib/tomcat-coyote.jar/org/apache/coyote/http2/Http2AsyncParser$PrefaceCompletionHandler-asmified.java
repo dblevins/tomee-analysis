@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "prefaceValidated", "Z", null
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webConnection", "Ljavax/servlet/http/WebConnection;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "webConnection", "Ljakarta/servlet/http/WebConnection;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_VARARGS, "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -75,7 +75,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "prefaceValidated", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "webConnection", "Ljavax/servlet/http/WebConnection;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "webConnection", "Ljakarta/servlet/http/WebConnection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "stream", "Lorg/apache/coyote/http2/Stream;");
@@ -269,10 +269,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "this$0", "Lorg/apache/coyote/http2/Http2AsyncParser;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/coyote/http2/Http2AsyncParser", "access$400", "(Lorg/apache/coyote/http2/Http2AsyncParser;)Lorg/apache/coyote/http2/Http2AsyncUpgradeHandler;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "webConnection", "Ljavax/servlet/http/WebConnection;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "webConnection", "Ljakarta/servlet/http/WebConnection;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "stream", "Lorg/apache/coyote/http2/Stream;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/http2/Http2AsyncUpgradeHandler", "processConnectionCallback", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/http2/Http2AsyncUpgradeHandler", "processConnectionCallback", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "this$0", "Lorg/apache/coyote/http2/Http2AsyncParser;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/coyote/http2/Http2AsyncParser", "access$400", "(Lorg/apache/coyote/http2/Http2AsyncParser;)Lorg/apache/coyote/http2/Http2AsyncUpgradeHandler;", false);
@@ -297,7 +297,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;Lorg/apache/coyote/http2/Http2AsyncParser$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;Lorg/apache/coyote/http2/Http2AsyncParser$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -305,7 +305,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/coyote/http2/Http2AsyncParser$PrefaceCompletionHandler", "<init>", "(Lorg/apache/coyote/http2/Http2AsyncParser;Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;[B[Ljava/nio/ByteBuffer;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();

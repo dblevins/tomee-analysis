@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/http/HTTPUrlReplacementImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/http/HTTPUrlReplacement" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/http/HTTPUrlReplacementImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/http/HTTPUrlReplacement" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);

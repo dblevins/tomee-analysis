@@ -70,7 +70,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/impl/FlowScopeMa
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/faces/context/FacesContext", "getCurrentInstance", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/context/FacesContext", "getCurrentInstance", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -78,7 +78,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/impl/FlowScopeMa
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/impl/DefaultFacesFlowProvider", "createOrRestoreMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/impl/DefaultFacesFlowProvider", "createOrRestoreMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Z)Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/impl/FlowScopeMap", "_delegate", "Ljava/util/Map;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

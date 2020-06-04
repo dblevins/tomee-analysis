@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/rs/security/oauth2/provider/OOBResponseDeliverer", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deliver", "(Lorg/apache/cxf/rs/security/oauth2/common/OOBAuthorizationResponse;)Ljavax/ws/rs/core/Response;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deliver", "(Lorg/apache/cxf/rs/security/oauth2/common/OOBAuthorizationResponse;)Ljakarta/ws/rs/core/Response;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", null, "javax/servlet/jsp/tagext/TagLibraryInfo", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", null, "jakarta/servlet/jsp/tagext/TagLibraryInfo", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEB_INF_TAGS", "Ljava/lang/String;", null, "/WEB-INF/tags");
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pi", "Lorg/apach
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "vec", "Ljava/util/Vector;", "Ljava/util/Vector<Ljavax/servlet/jsp/tagext/TagFileInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "vec", "Ljava/util/Vector;", "Ljava/util/Vector<Ljakarta/servlet/jsp/tagext/TagFileInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -83,7 +83,7 @@ methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/NumberFormat
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagLibraryInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagLibraryInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "pc", "Lorg/apache/jasper/compiler/ParserController;");
@@ -102,8 +102,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "()V"
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "vec", "Ljava/util/Vector;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/tagext/FunctionInfo");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "functions", "[Ljavax/servlet/jsp/tagext/FunctionInfo;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/tagext/FunctionInfo");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "functions", "[Ljakarta/servlet/jsp/tagext/FunctionInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("1.0");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "tlibversion", "Ljava/lang/String;");
@@ -247,16 +247,16 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/descriptor/tld/TldResourcePath", "<init>", "(Ljava/net/URL;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 12);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 13);
 methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitLdcInsn("org.apache.jasper.XML_VALIDATE_TLD");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "parseBoolean", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitVarInsn(ISTORE, 14);
 methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitLdcInsn("org.apache.jasper.XML_BLOCK_EXTERNAL");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 15);
 methodVisitor.visitVarInsn(ALOAD, 15);
 Label label17 = new Label();
@@ -266,7 +266,7 @@ methodVisitor.visitVarInsn(ISTORE, 16);
 Label label18 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label18);
 methodVisitor.visitLabel(label17);
-methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/jasper/compiler/ImplicitTagLibraryInfo", "org/apache/jasper/JspCompilationContext", "org/apache/jasper/compiler/ParserController", "org/apache/jasper/compiler/PageInfo", "java/lang/String", "java/lang/String", "org/apache/jasper/compiler/ErrorDispatcher", "java/util/Set", "java/util/Iterator", "java/lang/String", Opcodes.TOP, "java/net/URL", "org/apache/tomcat/util/descriptor/tld/TldResourcePath", "javax/servlet/ServletContext", Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/jasper/compiler/ImplicitTagLibraryInfo", "org/apache/jasper/JspCompilationContext", "org/apache/jasper/compiler/ParserController", "org/apache/jasper/compiler/PageInfo", "java/lang/String", "java/lang/String", "org/apache/jasper/compiler/ErrorDispatcher", "java/util/Set", "java/util/Iterator", "java/lang/String", Opcodes.TOP, "java/net/URL", "org/apache/tomcat/util/descriptor/tld/TldResourcePath", "jakarta/servlet/ServletContext", Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "parseBoolean", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitVarInsn(ISTORE, 16);
@@ -364,7 +364,7 @@ methodVisitor.visitMaxs(6, 18);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagFile", "(Ljava/lang/String;)Ljavax/servlet/jsp/tagext/TagFileInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagFile", "(Ljava/lang/String;)Ljakarta/servlet/jsp/tagext/TagFileInfo;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -372,7 +372,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/jasper/JasperException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagLibraryInfo", "getTagFile", "(Ljava/lang/String;)Ljavax/servlet/jsp/tagext/TagFileInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagLibraryInfo", "getTagFile", "(Ljava/lang/String;)Ljakarta/servlet/jsp/tagext/TagFileInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label3 = new Label();
@@ -389,7 +389,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/servlet/jsp/tagext/TagFileInfo", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/servlet/jsp/tagext/TagFileInfo", "java/lang/String"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
@@ -399,13 +399,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/compiler/TagFileProcessor", "parseTagFileDirectives", "(Lorg/apache/jasper/compiler/ParserController;Ljava/lang/String;Ljava/lang/String;Lorg/apache/tomcat/Jar;Ljavax/servlet/jsp/tagext/TagLibraryInfo;)Ljavax/servlet/jsp/tagext/TagInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/compiler/TagFileProcessor", "parseTagFileDirectives", "(Lorg/apache/jasper/compiler/ParserController;Ljava/lang/String;Ljava/lang/String;Lorg/apache/tomcat/Jar;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;)Ljakarta/servlet/jsp/tagext/TagInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/jasper/compiler/ImplicitTagLibraryInfo", "java/lang/String", "javax/servlet/jsp/tagext/TagFileInfo", "java/lang/String", "javax/servlet/jsp/tagext/TagInfo"}, 1, new Object[] {"org/apache/jasper/JasperException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/jasper/compiler/ImplicitTagLibraryInfo", "java/lang/String", "jakarta/servlet/jsp/tagext/TagFileInfo", "java/lang/String", "jakarta/servlet/jsp/tagext/TagInfo"}, 1, new Object[] {"org/apache/jasper/JasperException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "java/lang/RuntimeException");
 methodVisitor.visitInsn(DUP);
@@ -416,12 +416,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/RuntimeException", "<ini
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/tagext/TagFileInfo");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/tagext/TagFileInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagFileInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagFileInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagInfo;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "vec", "Ljava/util/Vector;");
@@ -431,12 +431,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "vec", "Ljava/util/Vector;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/tagext/TagFileInfo");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "tagFiles", "[Ljavax/servlet/jsp/tagext/TagFileInfo;");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/tagext/TagFileInfo");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "tagFiles", "[Ljakarta/servlet/jsp/tagext/TagFileInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "vec", "Ljava/util/Vector;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "tagFiles", "[Ljavax/servlet/jsp/tagext/TagFileInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "tagFiles", "[Ljakarta/servlet/jsp/tagext/TagFileInfo;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "copyInto", "([Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
@@ -446,7 +446,7 @@ methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagLibraryInfos", "()[Ljavax/servlet/jsp/tagext/TagLibraryInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagLibraryInfos", "()[Ljakarta/servlet/jsp/tagext/TagLibraryInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/compiler/ImplicitTagLibraryInfo", "pi", "Lorg/apache/jasper/compiler/PageInfo;");
@@ -454,9 +454,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/compiler/PageInf
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "javax/servlet/jsp/tagext/TagLibraryInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/servlet/jsp/tagext/TagLibraryInfo");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/servlet/jsp/tagext/TagLibraryInfo;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/servlet/jsp/tagext/TagLibraryInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

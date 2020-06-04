@@ -61,7 +61,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pkJoinColumns", "()[Ljavax/persistence/PrimaryKeyJoinColumn;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "pkJoinColumns", "()[Ljakarta/persistence/PrimaryKeyJoinColumn;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

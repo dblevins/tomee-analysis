@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "filter", "Ljavax/management/NotificationFilter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "filter", "Ljakarta/management/NotificationFilter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,29 +33,29 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC, "handback", "Ljava/lang/Object
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "listener", "Ljavax/management/NotificationListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "listener", "Ljakarta/management/NotificationListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "handback", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljavax/management/NotificationListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljakarta/management/NotificationListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljavax/management/NotificationListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "listener", "Ljakarta/management/NotificationListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljavax/management/NotificationFilter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "filter", "Ljakarta/management/NotificationFilter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry", "handback", "Ljava/lang/Object;");

@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverProxy", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/ws/rs/ext/ContextResolver<TT;>;", "java/lang/Object", new String[] { "javax/ws/rs/ext/ContextResolver" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverProxy", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/ws/rs/ext/ContextResolver<TT;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ContextResolver" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverProxy", "org/apache/cxf/jaxrs/provider/ProviderFactory", "ContextResolverProxy", ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "candidates", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/ext/ContextResolver<TT;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "candidates", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/ext/ContextResolver<TT;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/ws/rs/ext/ContextResolver<TT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/ws/rs/ext/ContextResolver<TT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -58,11 +58,11 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/ext/ContextResolver");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/ext/ContextResolver");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/ext/ContextResolver", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/ContextResolver", "getContext", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label2 = new Label();
@@ -80,7 +80,7 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/ws/rs/ext/ContextResolver<TT;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResolvers", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/ws/rs/ext/ContextResolver<TT;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverProxy", "candidates", "Ljava/util/List;");

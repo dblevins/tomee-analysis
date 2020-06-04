@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createFile", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceMeta;Ljava/io/File;Lorg/apache/myfaces/resource/TempDirFileCacheResourceLoader;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "createFile", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceMeta;Ljava/io/File;Lorg/apache/myfaces/resource/TempDirFileCacheResourceLoader;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/resource/TempDirFileCacheResourceLoader$FileProducer", "created", "Z");
@@ -62,7 +62,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/resource/TempDirFileCacheResourceLoader", "createTemporalFileVersion", "(Ljavax/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceMeta;Ljava/io/File;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/resource/TempDirFileCacheResourceLoader", "createTemporalFileVersion", "(Ljakarta/faces/context/FacesContext;Lorg/apache/myfaces/shared/resource/ResourceMeta;Ljava/io/File;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/resource/TempDirFileCacheResourceLoader$FileProducer", "created", "Z");

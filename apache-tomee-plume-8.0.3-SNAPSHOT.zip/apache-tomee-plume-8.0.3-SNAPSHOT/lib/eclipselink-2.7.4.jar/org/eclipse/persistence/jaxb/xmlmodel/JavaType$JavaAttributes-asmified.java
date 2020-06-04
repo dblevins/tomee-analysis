@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/xmlmodel/JavaType$JavaAttributes", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "");
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("propOrder");
@@ -42,12 +42,12 @@ annotationVisitor0.visitEnd();
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/xmlmodel/JavaType$JavaAttributes", "org/eclipse/persistence/jaxb/xmlmodel/JavaType", "JavaAttributes", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "javaAttribute", "Ljava/util/List;", "Ljava/util/List<Ljavax/xml/bind/JAXBElement<+Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "javaAttribute", "Ljava/util/List;", "Ljava/util/List<Ljakarta/xml/bind/JAXBElement<+Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementRef;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementRef;", true);
 annotationVisitor0.visit("name", "java-attribute");
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
-annotationVisitor0.visit("type", Type.getType("Ljavax/xml/bind/JAXBElement;"));
+annotationVisitor0.visit("type", Type.getType("Ljakarta/xml/bind/JAXBElement;"));
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJavaAttribute", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/xml/bind/JAXBElement<+Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJavaAttribute", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/xml/bind/JAXBElement<+Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/jaxb/xmlmodel/JavaType$JavaAttributes", "javaAttribute", "Ljava/util/List;");

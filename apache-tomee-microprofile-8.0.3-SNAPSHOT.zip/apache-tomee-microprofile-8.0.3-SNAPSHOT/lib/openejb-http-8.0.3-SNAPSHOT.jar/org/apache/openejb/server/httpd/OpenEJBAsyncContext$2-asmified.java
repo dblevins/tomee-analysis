@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", null, "org/apache/openejb/server/httpd/HttpRequestImpl", null);
 
-classWriter.visitOuterClass("org/apache/openejb/server/httpd/OpenEJBAsyncContext", "dispatch", "(Ljavax/servlet/ServletContext;Ljava/lang/String;)V");
+classWriter.visitOuterClass("org/apache/openejb/server/httpd/OpenEJBAsyncContext", "dispatch", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;)V");
 
 classWriter.visitInnerClass("org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", null, null, 0);
 
@@ -135,12 +135,12 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "()Ljavax/servlet/ServletInputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInputStream", "()Ljakarta/servlet/ServletInputStream;", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getInputStream", "()Ljavax/servlet/ServletInputStream;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getInputStream", "()Ljakarta/servlet/ServletInputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -150,9 +150,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -162,8 +162,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributeNames", "()Ljav
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getAttributeNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttributeNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -173,10 +173,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -186,9 +186,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeader", "(Ljava/lang/St
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getHeader", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getHeader", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -198,8 +198,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaderNames", "()Ljava/u
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getHeaderNames", "()Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getHeaderNames", "()Ljava/util/Enumeration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -209,9 +209,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHeaders", "(Ljava/lang/S
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getHeaders", "(Ljava/lang/String;)Ljava/util/Enumeration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getHeaders", "(Ljava/lang/String;)Ljava/util/Enumeration;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -221,9 +221,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIntHeader", "(Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getIntHeader", "(Ljava/lang/String;)I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getIntHeader", "(Ljava/lang/String;)I", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -233,8 +233,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethod", "()Ljava/lang/S
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/OpenEJBAsyncContext$2", "this$0", "Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/httpd/OpenEJBAsyncContext", "access$400", "(Lorg/apache/openejb/server/httpd/OpenEJBAsyncContext;)Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getMethod", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

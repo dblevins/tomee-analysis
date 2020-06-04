@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SER
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "FACES_SERVLET", "Ljava/lang/String;", null, "javax.faces.webapp.FacesServlet");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "FACES_SERVLET", "Ljava/lang/String;", null, "jakarta.faces.webapp.FacesServlet");
 fieldVisitor.visitEnd();
 }
 {
@@ -177,7 +177,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/ConfigureListener$WebXmlProcessor$WebXmlHandler", "this$0", "Lcom/sun/faces/config/ConfigureListener$WebXmlProcessor;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/config/ConfigureListener$WebXmlProcessor", "access$400", "(Lcom/sun/faces/config/ConfigureListener$WebXmlProcessor;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitLdcInsn("javax.faces.webapp.FacesServlet");
+methodVisitor.visitLdcInsn("jakarta.faces.webapp.FacesServlet");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/ConfigureListener$WebXmlProcessor$WebXmlHandler", "content", "Ljava/lang/StringBuffer;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "toString", "()Ljava/lang/String;", false);

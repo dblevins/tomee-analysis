@@ -168,7 +168,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXMLMetadataSource", "createJAXBProperty", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXMLMetadataSource", "createJAXBProperty", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitJumpInsn(IFNULL, label2);
@@ -219,7 +219,7 @@ methodVisitor.visitMaxs(5, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createJAXBProperty", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createJAXBProperty", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;Lorg/eclipse/persistence/jaxb/xmlmodel/ObjectFactory;Lorg/eclipse/persistence/jaxb/xmlmodel/JavaType;Z)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "getAttributeAccessor", "()Lorg/eclipse/persistence/mappings/AttributeAccessor;", false);
@@ -369,7 +369,7 @@ methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "createXmlElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljavax/xml/bind/JAXBElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "createXmlElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljakarta/xml/bind/JAXBElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();

@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJavaModelInput", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaModelInput;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJavaModelInput", "()Lorg/eclipse/persistence/jaxb/javamodel/JavaModelInput;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createClassModelFromOXM", "(Lorg/eclipse/persistence/dynamic/DynamicClassLoader;)[Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createClassModelFromOXM", "(Lorg/eclipse/persistence/dynamic/DynamicClassLoader;)[Lorg/eclipse/persistence/jaxb/javamodel/JavaClass;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

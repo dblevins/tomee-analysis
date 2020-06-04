@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljavax/faces/application/FacesMessage;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/faces/application/FacesMessage;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitInnerClass("com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "com/sun/faces/context/FacesContextImpl", "ComponentMessagesIterator", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messages", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljavax/faces/application/FacesMessage;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messages", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messagesSize", "I", null, nu
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "inner", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljavax/faces/application/FacesMessage;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "inner", "Ljava/util/Iterator;", "Ljava/util/Iterator<Ljakarta/faces/application/FacesMessage;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "keys", "Ljava/util/Iterator;
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljavax/faces/application/FacesMessage;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljakarta/faces/application/FacesMessage;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -138,7 +138,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/faces/application/FacesMessage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/faces/application/FacesMessage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "outerIndex", "I");
@@ -163,7 +163,7 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "inner", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -180,7 +180,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "inner", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/application/FacesMessage");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/application/FacesMessage");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -210,7 +210,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "next", "()Ljavax/faces/application/FacesMessage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/context/FacesContextImpl$ComponentMessagesIterator", "next", "()Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

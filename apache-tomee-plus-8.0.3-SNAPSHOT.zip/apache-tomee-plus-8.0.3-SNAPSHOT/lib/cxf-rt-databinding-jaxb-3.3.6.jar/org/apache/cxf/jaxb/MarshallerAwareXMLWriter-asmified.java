@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxb/MarshallerAwareXMLWriter", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setMarshaller", "(Ljavax/xml/bind/Marshaller;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setMarshaller", "(Ljakarta/xml/bind/Marshaller;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

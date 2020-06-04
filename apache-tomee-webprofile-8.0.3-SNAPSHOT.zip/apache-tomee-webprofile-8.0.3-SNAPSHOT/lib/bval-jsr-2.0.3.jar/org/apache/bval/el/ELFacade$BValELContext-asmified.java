@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/el/ELFacade$BValELContext", null, "javax/el/ELContext", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/el/ELFacade$BValELContext", null, "jakarta/el/ELContext", null);
 
 classWriter.visitInnerClass("org/apache/bval/el/ELFacade$BValELContext", "org/apache/bval/el/ELFacade", "BValELContext", ACC_PRIVATE);
 
@@ -33,11 +33,11 @@ classWriter.visitInnerClass("org/apache/bval/el/ELFacade$BValFunctionMapper", "o
 classWriter.visitInnerClass("org/apache/bval/el/ELFacade$BValVariableMapper", "org/apache/bval/el/ELFacade", "BValVariableMapper", ACC_PRIVATE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "functions", "Ljavax/el/FunctionMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "functions", "Ljakarta/el/FunctionMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "variables", "Ljavax/el/VariableMapper;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "variables", "Ljakarta/el/VariableMapper;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,13 +51,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade$BValELContext", "this$0", "Lorg/apache/bval/el/ELFacade;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/el/ELContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/el/ELContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/el/ELFacade$BValFunctionMapper");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/el/ELFacade$BValFunctionMapper", "<init>", "(Lorg/apache/bval/el/ELFacade$1;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade$BValELContext", "functions", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade$BValELContext", "functions", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/el/ELFacade$BValVariableMapper");
 methodVisitor.visitInsn(DUP);
@@ -65,33 +65,33 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade$BValELContext", "this$0", "Lorg/apache/bval/el/ELFacade;");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/el/ELFacade$BValVariableMapper", "<init>", "(Lorg/apache/bval/el/ELFacade;Lorg/apache/bval/el/ELFacade$1;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade$BValELContext", "variables", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/el/ELFacade$BValELContext", "variables", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/el/ELFacade", "access$400", "()Ljavax/el/ELResolver;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/el/ELFacade", "access$400", "()Ljakarta/el/ELResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljavax/el/FunctionMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionMapper", "()Ljakarta/el/FunctionMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade$BValELContext", "functions", "Ljavax/el/FunctionMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade$BValELContext", "functions", "Ljakarta/el/FunctionMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljavax/el/VariableMapper;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVariableMapper", "()Ljakarta/el/VariableMapper;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade$BValELContext", "variables", "Ljavax/el/VariableMapper;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/el/ELFacade$BValELContext", "variables", "Ljakarta/el/VariableMapper;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,17 +22,17 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/DefaultLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Default;>;Ljavax/enterprise/inject/Default;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/enterprise/inject/Default" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/DefaultLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Default;>;Ljakarta/enterprise/inject/Default;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/enterprise/inject/Default" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC, "INSTANCE", "Ljavax/enterprise/inject/Default;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC, "INSTANCE", "Ljakarta/enterprise/inject/Default;", null, null);
 fieldVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -41,7 +41,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equals", "(Ljava/lang/Object;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/enterprise/inject/Default");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/enterprise/inject/Default");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -68,7 +68,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/config/cdi/DefaultLiteral");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/config/cdi/DefaultLiteral", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/config/cdi/DefaultLiteral", "INSTANCE", "Ljavax/enterprise/inject/Default;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/geronimo/config/cdi/DefaultLiteral", "INSTANCE", "Ljakarta/enterprise/inject/Default;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

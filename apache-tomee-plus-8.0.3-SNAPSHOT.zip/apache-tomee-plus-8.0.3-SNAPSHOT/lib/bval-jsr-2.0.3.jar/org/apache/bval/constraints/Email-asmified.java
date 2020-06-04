@@ -33,7 +33,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Document
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/validation/Constraint;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/validation/Constraint;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("validatedBy");
 annotationVisitor1.visitEnd();
@@ -41,7 +41,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/validation/constraints/Email;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/validation/constraints/Email;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -74,8 +74,8 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/validation/OverridesAttribute;", true);
-annotationVisitor0.visit("constraint", Type.getType("Ljavax/validation/constraints/Email;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/validation/OverridesAttribute;", true);
+annotationVisitor0.visit("constraint", Type.getType("Ljakarta/validation/constraints/Email;"));
 annotationVisitor0.visit("name", "groups");
 annotationVisitor0.visitEnd();
 }
@@ -89,15 +89,15 @@ annotationVisitor0.visit(null, "{org.apache.bval.constraints.Email.message}");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/validation/OverridesAttribute;", true);
-annotationVisitor0.visit("constraint", Type.getType("Ljavax/validation/constraints/Email;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/validation/OverridesAttribute;", true);
+annotationVisitor0.visit("constraint", Type.getType("Ljakarta/validation/constraints/Email;"));
 annotationVisitor0.visit("name", "message");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljavax/validation/Payload;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljakarta/validation/Payload;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
@@ -107,8 +107,8 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/validation/OverridesAttribute;", true);
-annotationVisitor0.visit("constraint", Type.getType("Ljavax/validation/constraints/Email;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/validation/OverridesAttribute;", true);
+annotationVisitor0.visit("constraint", Type.getType("Ljakarta/validation/constraints/Email;"));
 annotationVisitor0.visit("name", "payload");
 annotationVisitor0.visitEnd();
 }

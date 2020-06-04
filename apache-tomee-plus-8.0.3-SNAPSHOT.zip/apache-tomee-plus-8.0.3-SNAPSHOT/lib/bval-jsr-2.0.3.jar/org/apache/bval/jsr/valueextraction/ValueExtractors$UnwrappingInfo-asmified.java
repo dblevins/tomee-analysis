@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "containerElementK
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "valueExtractor", "Ljavax/validation/valueextraction/ValueExtractor;", "Ljavax/validation/valueextraction/ValueExtractor<*>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "valueExtractor", "Ljakarta/validation/valueextraction/ValueExtractor;", "Ljakarta/validation/valueextraction/ValueExtractor<*>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)V", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor<*>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)V", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,7 +46,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "containerElementKey", "Lorg/apache/bval/jsr/metadata/ContainerElementKey;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljavax/validation/valueextraction/ValueExtractor;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljakarta/validation/valueextraction/ValueExtractor;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -160,8 +160,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/valueextraction/ValueExtra
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljavax/validation/valueextraction/ValueExtractor;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljakarta/validation/valueextraction/ValueExtractor;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
@@ -180,7 +180,7 @@ methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljavax/validation/valueextraction/ValueExtractor;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "valueExtractor", "Ljakarta/validation/valueextraction/ValueExtractor;");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -188,12 +188,12 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;Lorg/apache/bval/jsr/valueextraction/ValueExtractors$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljavax/validation/valueextraction/ValueExtractor;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo", "<init>", "(Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljakarta/validation/valueextraction/ValueExtractor;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

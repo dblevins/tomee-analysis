@@ -184,7 +184,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildBean", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildBean", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/mgbean/ManagedBeanBuilder", "properties", "Ljava/util/List;");
@@ -207,7 +207,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/mgbean/ManagedBeanBuilder$BakedProperty", "set", "(Ljava/lang/Object;Ljavax/faces/context/FacesContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/mgbean/ManagedBeanBuilder$BakedProperty", "set", "(Ljava/lang/Object;Ljakarta/faces/context/FacesContext;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -702,7 +702,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/beans/PropertyDescriptor"}, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/component/UIComponent;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/component/UIComponent;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/mgbean/ManagedBeanBuilder", "getBeanClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);

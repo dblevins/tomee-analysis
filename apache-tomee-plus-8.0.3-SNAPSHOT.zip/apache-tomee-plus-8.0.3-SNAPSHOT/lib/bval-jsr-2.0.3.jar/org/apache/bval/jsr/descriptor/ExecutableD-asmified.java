@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/ExecutableD", "<E:Ljava/lang/reflect/Executable;R:Lorg/apache/bval/jsr/descriptor/MetadataReader$ForExecutable<TE;TR;>;SELF:Lorg/apache/bval/jsr/descriptor/ExecutableD<TE;TR;TSELF;>;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<Lorg/apache/bval/jsr/descriptor/BeanD<*>;TE;TR;>;Ljavax/validation/metadata/ExecutableDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "javax/validation/metadata/ExecutableDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/jsr/descriptor/ExecutableD", "<E:Ljava/lang/reflect/Executable;R:Lorg/apache/bval/jsr/descriptor/MetadataReader$ForExecutable<TE;TR;>;SELF:Lorg/apache/bval/jsr/descriptor/ExecutableD<TE;TR;TSELF;>;>Lorg/apache/bval/jsr/descriptor/ElementD$NonRoot<Lorg/apache/bval/jsr/descriptor/BeanD<*>;TE;TR;>;Ljakarta/validation/metadata/ExecutableDescriptor;", "org/apache/bval/jsr/descriptor/ElementD$NonRoot", new String[] { "jakarta/validation/metadata/ExecutableDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForExecutable", "org/apache/bval/jsr/descriptor/MetadataReader", "ForExecutable", ACC_ABSTRACT);
 
@@ -87,7 +87,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "parameters", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "stream", "()Ljava/util/stream/Stream;", true);
-methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljavax/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Lorg/apache/bval/jsr/descriptor/ParameterD;)Z")});
+methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljakarta/validation/metadata/ElementDescriptor;)Z", false), Type.getType("(Lorg/apache/bval/jsr/descriptor/ParameterD;)Z")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "anyMatch", "(Ljava/util/function/Predicate;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -110,7 +110,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/descriptor/Executabl
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "returnValue", "Lorg/apache/bval/jsr/descriptor/ReturnValueD;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljavax/validation/metadata/ElementDescriptor;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/descriptor/DescriptorManager", "isConstrained", "(Ljakarta/validation/metadata/ElementDescriptor;)Z", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "returnValueIsConstrained", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
@@ -126,7 +126,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getParameterDescriptors", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/validation/metadata/ParameterDescriptor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getParameterDescriptors", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/validation/metadata/ParameterDescriptor;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "parameters", "Ljava/util/List;");
@@ -135,7 +135,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getCrossParameterDescriptor", "()Ljavax/validation/metadata/CrossParameterDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getCrossParameterDescriptor", "()Ljakarta/validation/metadata/CrossParameterDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "crossParameter", "Lorg/apache/bval/jsr/descriptor/CrossParameterD;");
@@ -144,7 +144,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getReturnValueDescriptor", "()Ljavax/validation/metadata/ReturnValueDescriptor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getReturnValueDescriptor", "()Ljakarta/validation/metadata/ReturnValueDescriptor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/descriptor/ExecutableD", "returnValue", "Lorg/apache/bval/jsr/descriptor/ReturnValueD;");

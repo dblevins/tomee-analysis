@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/interceptor/JaxWsInvocationContext", null, "org/apache/openejb/core/interceptor/ReflectionInvocationContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageContext", "Ljavax/xml/ws/handler/MessageContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "messageContext", "Ljakarta/xml/ws/handler/MessageContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Lorg/apache/openejb/core/Operation;Ljava/util/List;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/xml/ws/handler/MessageContext;[Ljava/lang/Object;)V", "(Lorg/apache/openejb/core/Operation;Ljava/util/List<Lorg/apache/openejb/core/interceptor/Interceptor;>;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/xml/ws/handler/MessageContext;[Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Lorg/apache/openejb/core/Operation;Ljava/util/List;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/xml/ws/handler/MessageContext;[Ljava/lang/Object;)V", "(Lorg/apache/openejb/core/Operation;Ljava/util/List<Lorg/apache/openejb/core/interceptor/Interceptor;>;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/xml/ws/handler/MessageContext;[Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -40,7 +40,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext", "<init>", "(Lorg/apache/openejb/core/Operation;Ljava/util/List;Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/interceptor/JaxWsInvocationContext", "messageContext", "Ljavax/xml/ws/handler/MessageContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/interceptor/JaxWsInvocationContext", "messageContext", "Ljakarta/xml/ws/handler/MessageContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
@@ -49,7 +49,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextData", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/JaxWsInvocationContext", "messageContext", "Ljavax/xml/ws/handler/MessageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/JaxWsInvocationContext", "messageContext", "Ljakarta/xml/ws/handler/MessageContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

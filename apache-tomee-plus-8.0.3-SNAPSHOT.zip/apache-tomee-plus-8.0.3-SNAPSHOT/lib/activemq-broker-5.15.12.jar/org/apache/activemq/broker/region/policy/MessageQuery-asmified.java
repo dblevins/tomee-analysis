@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/broker/region/policy/MessageQuery", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "execute", "(Lorg/apache/activemq/command/ActiveMQDestination;Ljavax/jms/MessageListener;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "execute", "(Lorg/apache/activemq/command/ActiveMQDestination;Ljakarta/jms/MessageListener;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitEnd();
 }
 {

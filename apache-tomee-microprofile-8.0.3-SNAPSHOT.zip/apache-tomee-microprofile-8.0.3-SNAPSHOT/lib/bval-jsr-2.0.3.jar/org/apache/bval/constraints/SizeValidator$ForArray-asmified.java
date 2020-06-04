@@ -61,8 +61,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraints/Size");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/SizeValidator", "initialize", "(Ljavax/validation/constraints/Size;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraints/Size");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/constraints/SizeValidator", "initialize", "(Ljakarta/validation/constraints/Size;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

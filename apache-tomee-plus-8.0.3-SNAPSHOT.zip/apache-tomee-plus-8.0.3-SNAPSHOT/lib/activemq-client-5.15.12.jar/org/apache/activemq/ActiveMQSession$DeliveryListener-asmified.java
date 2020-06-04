@@ -27,11 +27,11 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/a
 classWriter.visitInnerClass("org/apache/activemq/ActiveMQSession$DeliveryListener", "org/apache/activemq/ActiveMQSession", "DeliveryListener", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "beforeDelivery", "(Lorg/apache/activemq/ActiveMQSession;Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "beforeDelivery", "(Lorg/apache/activemq/ActiveMQSession;Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "afterDelivery", "(Lorg/apache/activemq/ActiveMQSession;Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "afterDelivery", "(Lorg/apache/activemq/ActiveMQSession;Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

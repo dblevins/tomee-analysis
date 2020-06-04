@@ -35,14 +35,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;Ljavax/servlet/http/HttpSession;Lorg/apache/openejb/server/httpd/BeginWebBeansListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/server/httpd/HttpRequestImpl;Ljakarta/servlet/http/HttpSession;Lorg/apache/openejb/server/httpd/BeginWebBeansListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "this$0", "Lorg/apache/openejb/server/httpd/HttpRequestImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletSessionAdapter", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/ServletSessionAdapter", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "listener", "Lorg/apache/openejb/server/httpd/BeginWebBeansListener;");
@@ -63,12 +63,12 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/Se
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "listener", "Lorg/apache/openejb/server/httpd/BeginWebBeansListener;");
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/http/HttpSessionEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/http/HttpSessionEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "session", "Ljavax/servlet/http/HttpSession;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpSessionEvent", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/BeginWebBeansListener", "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "session", "Ljakarta/servlet/http/HttpSession;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpSessionEvent", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/BeginWebBeansListener", "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
@@ -76,12 +76,12 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/T
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "listener", "Lorg/apache/openejb/server/httpd/BeginWebBeansListener;");
-methodVisitor.visitTypeInsn(NEW, "javax/servlet/http/HttpSessionEvent");
+methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/http/HttpSessionEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "session", "Ljavax/servlet/http/HttpSession;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/http/HttpSessionEvent", "<init>", "(Ljavax/servlet/http/HttpSession;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/BeginWebBeansListener", "sessionDestroyed", "(Ljavax/servlet/http/HttpSessionEvent;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener", "session", "Ljakarta/servlet/http/HttpSession;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/http/HttpSessionEvent", "<init>", "(Ljakarta/servlet/http/HttpSession;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/httpd/BeginWebBeansListener", "sessionDestroyed", "(Ljakarta/servlet/http/HttpSessionEvent;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);

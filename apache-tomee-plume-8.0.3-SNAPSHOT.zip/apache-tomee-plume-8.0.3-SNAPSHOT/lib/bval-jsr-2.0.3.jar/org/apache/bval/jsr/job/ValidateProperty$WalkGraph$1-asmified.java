@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ValidateProperty$WalkGraph$1", null, "java/lang/Object", new String[] { "javax/validation/valueextraction/ValueExtractor$ValueReceiver" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ValidateProperty$WalkGraph$1", null, "java/lang/Object", new String[] { "jakarta/validation/valueextraction/ValueExtractor$ValueReceiver" });
 
 classWriter.visitOuterClass("org/apache/bval/jsr/job/ValidateProperty$WalkGraph", "handleContainer", "(Ljava/lang/Object;Lorg/apache/bval/jsr/metadata/ContainerElementKey;Ljava/lang/String;)Ljava/lang/Object;");
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidateProperty$WalkGraph"
 
 classWriter.visitInnerClass("org/apache/bval/jsr/job/ValidateProperty$WalkGraph$1", null, null, 0);
 
-classWriter.visitInnerClass("javax/validation/valueextraction/ValueExtractor$ValueReceiver", "javax/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "jakarta/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$indexOrKey", "Ljava/lang/String;", null, null);

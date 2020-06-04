@@ -22,54 +22,54 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", null, "javax/faces/context/FacesContextWrapper", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", null, "jakarta/faces/context/FacesContextWrapper", null);
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport", "LoadComponentTagDeclarationFacesContextWrapper", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "delegate", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "root", "Ljavax/faces/component/UIViewRoot;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "root", "Ljakarta/faces/component/UIViewRoot;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/context/FacesContextWrapper", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/context/FacesContextWrapper", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewRoot", "()Ljavax/faces/component/UIViewRoot;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "root", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "root", "Ljakarta/faces/component/UIViewRoot;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewRoot", "(Ljavax/faces/component/UIViewRoot;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewRoot", "(Ljakarta/faces/component/UIViewRoot;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "root", "Ljavax/faces/component/UIViewRoot;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "root", "Ljakarta/faces/component/UIViewRoot;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -78,7 +78,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "setWrapperAsCurrentFacesContext", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "setCurrentInstance", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "setCurrentInstance", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -87,8 +87,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "restoreCurrentFacesContext", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljavax/faces/context/FacesContext;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "setCurrentInstance", "(Ljavax/faces/context/FacesContext;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "delegate", "Ljakarta/faces/context/FacesContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "setCurrentInstance", "(Ljakarta/faces/context/FacesContext;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -97,7 +97,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "getWrapped", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper", "getWrapped", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

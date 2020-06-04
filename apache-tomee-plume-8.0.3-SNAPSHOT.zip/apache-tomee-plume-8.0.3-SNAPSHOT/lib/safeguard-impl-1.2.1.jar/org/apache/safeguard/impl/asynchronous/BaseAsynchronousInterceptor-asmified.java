@@ -44,14 +44,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getExecutor", "(Ljavax/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getExecutor", "(Ljakarta/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "around", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "around", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getReturnType", "()Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/CompletionStage;"));
@@ -61,14 +61,14 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "newCompletableFuture", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "newCompletableFuture", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "getExecutor", "(Ljavax/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "getExecutor", "(Ljakarta/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("run", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;)Ljava/lang/Runnable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$around$3", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;)V", false), Type.getType("()V")});
+methodVisitor.visitInvokeDynamicInsn("run", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;)Ljava/lang/Runnable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$around$3", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;)V", false), Type.getType("()V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Executor", "execute", "(Ljava/lang/Runnable;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -82,15 +82,15 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "newFuture", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "newFuture", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "getExecutor", "(Ljavax/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "getExecutor", "(Ljakarta/interceptor/InvocationContext;)Ljava/util/concurrent/Executor;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("run", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljavax/interceptor/InvocationContext;)Ljava/lang/Runnable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$around$4", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljavax/interceptor/InvocationContext;)V", false), Type.getType("()V")});
+methodVisitor.visitInvokeDynamicInsn("run", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljakarta/interceptor/InvocationContext;)Ljava/lang/Runnable;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("()V"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$around$4", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljakarta/interceptor/InvocationContext;)V", false), Type.getType("()V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Executor", "execute", "(Ljava/lang/Runnable;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
@@ -108,7 +108,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" (from: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getMethod", "()Ljava/lang/reflect/Method;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(").Should be Future or CompletionStage.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -145,7 +145,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newFuture", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;", "(Ljavax/interceptor/InvocationContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newFuture", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;", "(Ljakarta/interceptor/InvocationContext;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper");
 methodVisitor.visitInsn(DUP);
@@ -156,7 +156,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newCompletableFuture", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;", "(Ljavax/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture<Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "newCompletableFuture", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;", "(Ljakarta/interceptor/InvocationContext;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture<Ljava/lang/Object;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture");
 methodVisitor.visitInsn(DUP);
@@ -166,7 +166,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$around$4", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljavax/interceptor/InvocationContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$around$4", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper;Ljakarta/interceptor/InvocationContext;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -176,7 +176,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper", "before", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/Future;"));
@@ -208,7 +208,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$around$3", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$around$3", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -218,7 +218,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture", "before", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "proceed", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/CompletionStage;"));
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -228,7 +228,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;)Ljava/util/function/BiFunction;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$null$2", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;)Ljava/util/function/BiFunction;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "lambda$null$2", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/CompletionStage", "handle", "(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
@@ -248,7 +248,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$null$2", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljavax/interceptor/InvocationContext;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$null$2", "(Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture;Ljakarta/interceptor/InvocationContext;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture", "after", "()V", false);
@@ -256,7 +256,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/interceptor/InvocationContext", "getContextData", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor", "getErrorHandler", "(Ljava/util/Map;)Lorg/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ErrorHandler;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);

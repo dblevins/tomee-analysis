@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/connector/work/WorkContextHandler", "<E::Ljavax/resource/spi/work/WorkContext;>Ljava/lang/Object;", "java/lang/Object", null);
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/connector/work/WorkContextHandler", "<E::Ljakarta/resource/spi/work/WorkContext;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "before", "(Ljavax/resource/spi/work/WorkContext;)V", "(TE;)V", new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "before", "(Ljakarta/resource/spi/work/WorkContext;)V", "(TE;)V", new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "after", "(Ljavax/resource/spi/work/WorkContext;)V", "(TE;)V", new String[] { "javax/resource/spi/work/WorkCompletedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "after", "(Ljakarta/resource/spi/work/WorkContext;)V", "(TE;)V", new String[] { "jakarta/resource/spi/work/WorkCompletedException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "supports", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/resource/spi/work/WorkContext;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "supports", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/resource/spi/work/WorkContext;>;)Z", null);
 methodVisitor.visitEnd();
 }
 {

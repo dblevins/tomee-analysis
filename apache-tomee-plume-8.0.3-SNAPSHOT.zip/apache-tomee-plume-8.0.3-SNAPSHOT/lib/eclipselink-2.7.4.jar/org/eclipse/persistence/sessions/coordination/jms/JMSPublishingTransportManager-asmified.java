@@ -81,11 +81,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/c
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "getTopicConnectionFactory", "(Ljavax/naming/Context;)Ljavax/jms/TopicConnectionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "getTopicConnectionFactory", "(Ljavax/naming/Context;)Ljakarta/jms/TopicConnectionFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "getTopic", "(Ljavax/naming/Context;)Ljavax/jms/Topic;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "getTopic", "(Ljavax/naming/Context;)Ljakarta/jms/Topic;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection");
 methodVisitor.visitInsn(DUP);
@@ -96,7 +96,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "reuseJMSTopicPublisher", "Z");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "<init>", "(Lorg/eclipse/persistence/sessions/coordination/RemoteCommandManager;Ljavax/jms/TopicConnectionFactory;Ljavax/jms/Topic;ZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection", "<init>", "(Lorg/eclipse/persistence/sessions/coordination/RemoteCommandManager;Ljakarta/jms/TopicConnectionFactory;Ljakarta/jms/Topic;ZZ)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -108,7 +108,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "close", 
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", Opcodes.INTEGER, "javax/naming/Context", "javax/jms/TopicConnectionFactory", "javax/jms/Topic", Opcodes.TOP, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection"}, 1, new Object[] {"javax/naming/NamingException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", Opcodes.INTEGER, "javax/naming/Context", "jakarta/jms/TopicConnectionFactory", "jakarta/jms/Topic", Opcodes.TOP, "org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection"}, 1, new Object[] {"javax/naming/NamingException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -290,7 +290,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopic", "(Ljavax/naming/Context;)Ljavax/jms/Topic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopic", "(Ljavax/naming/Context;)Ljakarta/jms/Topic;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -301,7 +301,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "topicName", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Topic");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Topic");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -325,7 +325,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicConnectionFactory", "(Ljavax/naming/Context;)Ljavax/jms/TopicConnectionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getTopicConnectionFactory", "(Ljavax/naming/Context;)Ljakarta/jms/TopicConnectionFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -336,7 +336,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager", "connectionFactoryName", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/TopicConnectionFactory");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/TopicConnectionFactory");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

@@ -29,15 +29,15 @@ classWriter.visitInnerClass("org/apache/batchee/jaxb/ExceptionClassFilter$Includ
 classWriter.visitInnerClass("org/apache/batchee/jaxb/ExceptionClassFilter$Exclude", "org/apache/batchee/jaxb/ExceptionClassFilter", "Exclude", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryProcessListeners", "Ljava/util/List;", "Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryProcessListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryProcessListeners", "Ljava/util/List;", "Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryProcessListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryReadListeners", "Ljava/util/List;", "Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryReadListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryReadListeners", "Ljava/util/List;", "Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryReadListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryWriteListeners", "Ljava/util/List;", "Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryWriteListener;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_retryWriteListeners", "Ljava/util/List;", "Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryWriteListener;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -272,7 +272,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryProcessListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryProcessListener;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryProcessListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryProcessListener;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -282,7 +282,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryReadListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryReadListener;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryReadListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryReadListener;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -292,7 +292,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryWriteListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/batch/api/chunk/listener/RetryWriteListener;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRetryWriteListener", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/batch/api/chunk/listener/RetryWriteListener;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -371,17 +371,17 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/listener/RetryReadListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/batch/api/chunk/listener/RetryReadListener");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/listener/RetryReadListener", "onRetryReadException", "(Ljava/lang/Exception;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/listener/RetryReadListener", "onRetryReadException", "(Ljava/lang/Exception;)V", true);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/util/Iterator", "javax/batch/api/chunk/listener/RetryReadListener"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/util/Iterator", "jakarta/batch/api/chunk/listener/RetryReadListener"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/controller/chunk/ExceptionConfig", "wrapBatchException", "(Ljava/lang/Exception;)V", false);
@@ -444,18 +444,18 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/listener/RetryProcessListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/batch/api/chunk/listener/RetryProcessListener");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/listener/RetryProcessListener", "onRetryProcessException", "(Ljava/lang/Object;Ljava/lang/Exception;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/listener/RetryProcessListener", "onRetryProcessException", "(Ljava/lang/Object;Ljava/lang/Exception;)V", true);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/lang/Object", "java/util/Iterator", "javax/batch/api/chunk/listener/RetryProcessListener"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/lang/Object", "java/util/Iterator", "jakarta/batch/api/chunk/listener/RetryProcessListener"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/controller/chunk/ExceptionConfig", "wrapBatchException", "(Ljava/lang/Exception;)V", false);
@@ -518,18 +518,18 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/listener/RetryWriteListener");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/batch/api/chunk/listener/RetryWriteListener");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/batch/api/chunk/listener/RetryWriteListener", "onRetryWriteException", "(Ljava/util/List;Ljava/lang/Exception;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/batch/api/chunk/listener/RetryWriteListener", "onRetryWriteException", "(Ljava/util/List;Ljava/lang/Exception;)V", true);
 methodVisitor.visitLabel(label1);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/util/List", "java/util/Iterator", "javax/batch/api/chunk/listener/RetryWriteListener"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/impl/controller/chunk/RetryHandler", "java/lang/Exception", "java/util/List", "java/util/Iterator", "jakarta/batch/api/chunk/listener/RetryWriteListener"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/controller/chunk/ExceptionConfig", "wrapBatchException", "(Ljava/lang/Exception;)V", false);

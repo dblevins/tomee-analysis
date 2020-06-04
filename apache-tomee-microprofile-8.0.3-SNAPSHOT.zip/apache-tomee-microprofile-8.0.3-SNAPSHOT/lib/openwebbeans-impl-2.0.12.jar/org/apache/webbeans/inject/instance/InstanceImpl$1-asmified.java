@@ -69,8 +69,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/Inst
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/inject/instance/InstanceImpl$1", "val$beans", "Ljava/util/Iterator;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/enterprise/inject/spi/Bean");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/inject/instance/InstanceImpl", "access$000", "(Lorg/apache/webbeans/inject/instance/InstanceImpl;Ljavax/enterprise/inject/spi/Bean;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/enterprise/inject/spi/Bean");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/inject/instance/InstanceImpl", "access$000", "(Lorg/apache/webbeans/inject/instance/InstanceImpl;Ljakarta/enterprise/inject/spi/Bean;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

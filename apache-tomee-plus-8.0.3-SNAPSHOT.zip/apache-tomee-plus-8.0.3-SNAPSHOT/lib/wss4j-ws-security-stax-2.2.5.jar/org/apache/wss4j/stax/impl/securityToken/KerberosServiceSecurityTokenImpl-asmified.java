@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "kerberosTokenDecoder", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljavax/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljakarta/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -170,8 +170,8 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "login", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "getSubject", "()Ljavax/security/auth/Subject;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "getSubject", "()Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/common/kerberos/KerberosContextAndServiceNameCallback", "getServiceName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -179,8 +179,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label9);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
@@ -222,9 +222,9 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/security/auth/Subject", "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/security/auth/Subject", "doAs", "(Ljakarta/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/common/kerberos/KerberosServiceContext");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label1);
@@ -289,8 +289,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljavax/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "setSubject", "(Ljavax/security/auth/Subject;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "setSubject", "(Ljakarta/security/auth/Subject;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
@@ -374,10 +374,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljavax/security/auth/Subject;", null, new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljakarta/security/auth/Subject;", null, new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl", "subject", "Ljakarta/security/auth/Subject;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

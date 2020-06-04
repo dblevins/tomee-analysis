@@ -85,11 +85,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "failed", "Ljava/util/concu
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "foreignConnection", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljavax/jms/Connection;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "foreignConnection", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljakarta/jms/Connection;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "localConnection", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljavax/jms/Connection;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "localConnection", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljakarta/jms/Connection;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -125,7 +125,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "localClientId", "Ljava/lan
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "replyToBridges", "Lorg/apache/activemq/util/LRUCache;", "Lorg/apache/activemq/util/LRUCache<Ljavax/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "replyToBridges", "Lorg/apache/activemq/util/LRUCache;", "Lorg/apache/activemq/util/LRUCache<Ljakarta/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -231,7 +231,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "createLRUCache", "()Lorg/apache/activemq/util/LRUCache;", "()Lorg/apache/activemq/util/LRUCache<Ljavax/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "createLRUCache", "()Lorg/apache/activemq/util/LRUCache;", "()Lorg/apache/activemq/util/LRUCache<Ljakarta/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/network/jms/JmsConnector$1");
 methodVisitor.visitInsn(DUP);
@@ -460,8 +460,8 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/JmsConnector", "foreignConnection", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Connection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Connection", "close", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Connection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Connection", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
@@ -478,8 +478,8 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/JmsConnector", "localConnection", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Connection");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/Connection", "close", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Connection");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/Connection", "close", "()V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label5);
@@ -555,7 +555,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createReplyToBridge", "(Ljavax/jms/Destination;Ljavax/jms/Connection;Ljavax/jms/Connection;)Ljavax/jms/Destination;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createReplyToBridge", "(Ljakarta/jms/Destination;Ljakarta/jms/Connection;Ljakarta/jms/Connection;)Ljakarta/jms/Destination;", null, null);
 methodVisitor.visitEnd();
 }
 {
@@ -573,23 +573,23 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocalConnection", "()Ljavax/jms/Connection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocalConnection", "()Ljakarta/jms/Connection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/JmsConnector", "localConnection", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Connection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Connection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getForeignConnection", "()Ljavax/jms/Connection;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getForeignConnection", "()Ljakarta/jms/Connection;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/network/jms/JmsConnector", "foreignConnection", "Ljava/util/concurrent/atomic/AtomicReference;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/Connection");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/Connection");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -995,7 +995,7 @@ methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "initializ
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "handleConnectionFailure", "(Ljavax/jms/Connection;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "handleConnectionFailure", "(Ljakarta/jms/Connection;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1055,7 +1055,7 @@ methodVisitor.visitLabel(label1);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/JmsConnector", "javax/jms/Connection", "java/util/Iterator", "org/apache/activemq/network/jms/DestinationBridge"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/JmsConnector", "jakarta/jms/Connection", "java/util/Iterator", "org/apache/activemq/network/jms/DestinationBridge"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -1101,7 +1101,7 @@ methodVisitor.visitLabel(label4);
 Label label15 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label15);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/JmsConnector", "javax/jms/Connection", "java/util/Iterator", "org/apache/activemq/network/jms/DestinationBridge"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/network/jms/JmsConnector", "jakarta/jms/Connection", "java/util/Iterator", "org/apache/activemq/network/jms/DestinationBridge"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label15);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

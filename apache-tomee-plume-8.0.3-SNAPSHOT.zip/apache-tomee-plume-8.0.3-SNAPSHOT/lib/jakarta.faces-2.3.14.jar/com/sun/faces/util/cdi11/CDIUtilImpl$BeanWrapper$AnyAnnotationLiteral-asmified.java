@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper$AnyAnnotationLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/enterprise/inject/Any;>;", "javax/enterprise/util/AnnotationLiteral", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper$AnyAnnotationLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/enterprise/inject/Any;>;", "jakarta/enterprise/util/AnnotationLiteral", null);
 
 classWriter.visitInnerClass("com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper", "com/sun/faces/util/cdi11/CDIUtilImpl", "BeanWrapper", ACC_PRIVATE | ACC_STATIC);
 
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

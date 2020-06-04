@@ -389,7 +389,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/jndi/ActiveMQInitialContextFactory", "createQueue", "(Ljava/lang/String;)Ljavax/jms/Queue;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/jndi/ActiveMQInitialContextFactory", "createQueue", "(Ljava/lang/String;)Ljakarta/jms/Queue;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
@@ -441,7 +441,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/jndi/ActiveMQInitialContextFactory", "createTopic", "(Ljava/lang/String;)Ljavax/jms/Topic;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/jndi/ActiveMQInitialContextFactory", "createTopic", "(Ljava/lang/String;)Ljakarta/jms/Topic;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
@@ -454,7 +454,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createQueue", "(Ljava/lang/String;)Ljavax/jms/Queue;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createQueue", "(Ljava/lang/String;)Ljakarta/jms/Queue;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/command/ActiveMQQueue");
 methodVisitor.visitInsn(DUP);
@@ -465,7 +465,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createTopic", "(Ljava/lang/String;)Ljavax/jms/Topic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createTopic", "(Ljava/lang/String;)Ljakarta/jms/Topic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/command/ActiveMQTopic");
 methodVisitor.visitInsn(DUP);

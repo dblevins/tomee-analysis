@@ -31,15 +31,15 @@ classWriter.visitInnerClass("org/apache/webbeans/intercept/InterceptorResolution
 classWriter.visitInnerClass("org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "org/apache/webbeans/intercept/InterceptorResolutionService", "BeanInterceptorInfo", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbInterceptors", "Ljava/util/LinkedHashSet;", "Ljava/util/LinkedHashSet<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ejbInterceptors", "Ljava/util/LinkedHashSet;", "Ljava/util/LinkedHashSet<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constructorCdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constructorCdiInterceptors", "Ljava/util/List;", "Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "selfInterceptorBean", "Lorg/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "decorators", "Ljava/util/List;", "Ljava/util/List<Ljavax/enterprise/inject/spi/Decorator<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "decorators", "Ljava/util/List;", "Ljava/util/List<Ljakarta/enterprise/inject/spi/Decorator<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -63,11 +63,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nonInterceptedMethods", "Lja
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lifecycleMethodInterceptorInfos", "Ljava/util/Map;", "Ljava/util/Map<Ljavax/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lifecycleMethodInterceptorInfos", "Ljava/util/Map;", "Ljava/util/Map<Ljakarta/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Ljava/util/LinkedHashSet;Ljava/util/List;Ljava/util/List;Lorg/apache/webbeans/component/SelfInterceptorBean;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;Ljava/util/Map;)V", "(Ljava/util/List<Ljavax/enterprise/inject/spi/Decorator<*>;>;Ljava/util/LinkedHashSet<Ljavax/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;Lorg/apache/webbeans/component/SelfInterceptorBean<*>;Ljava/util/Map<Ljava/lang/reflect/Constructor<*>;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;>;Ljava/util/Map<Ljava/lang/reflect/Method;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;>;Ljava/util/List<Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljavax/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Ljava/util/LinkedHashSet;Ljava/util/List;Ljava/util/List;Lorg/apache/webbeans/component/SelfInterceptorBean;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;Ljava/util/Map;)V", "(Ljava/util/List<Ljakarta/enterprise/inject/spi/Decorator<*>;>;Ljava/util/LinkedHashSet<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;Lorg/apache/webbeans/component/SelfInterceptorBean<*>;Ljava/util/Map<Ljava/lang/reflect/Constructor<*>;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;>;Ljava/util/Map<Ljava/lang/reflect/Method;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;>;Ljava/util/List<Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljakarta/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(2, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecorators", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/Decorator<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecorators", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/Decorator<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "decorators", "Ljava/util/List;");
@@ -112,7 +112,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEjbInterceptors", "()Ljava/util/LinkedHashSet;", "()Ljava/util/LinkedHashSet<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEjbInterceptors", "()Ljava/util/LinkedHashSet;", "()Ljava/util/LinkedHashSet<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "ejbInterceptors", "Ljava/util/LinkedHashSet;");
@@ -121,7 +121,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "cdiInterceptors", "Ljava/util/List;");
@@ -130,7 +130,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstructorCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstructorCdiInterceptors", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "constructorCdiInterceptors", "Ljava/util/List;");
@@ -175,7 +175,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLifecycleMethodInterceptorInfos", "()Ljava/util/Map;", "()Ljava/util/Map<Ljavax/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLifecycleMethodInterceptorInfos", "()Ljava/util/Map;", "()Ljava/util/Map<Ljakarta/enterprise/inject/spi/InterceptionType;Lorg/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo", "lifecycleMethodInterceptorInfos", "Ljava/util/Map;");

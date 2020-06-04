@@ -85,7 +85,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "outputDir", "Ljava/lang/Stri
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -121,7 +121,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "protoTypeMode", "Z", null, n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -133,7 +133,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "out
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -144,13 +144,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -161,13 +161,13 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/JspCompilationContext", "<init>", "(Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljavax/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagInfo;Lorg/apache/jasper/Options;Ljakarta/servlet/ServletContext;Lorg/apache/jasper/servlet/JspServletWrapper;Lorg/apache/jasper/compiler/JspRuntimeContext;Lorg/apache/tomcat/Jar;Z)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -190,7 +190,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "jsw", "Lorg/apache/jasper/servlet/JspServletWrapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -209,7 +209,7 @@ methodVisitor.visitVarInsn(ASTORE, 9);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/jasper/JspCompilationContext", "java/lang/String", "javax/servlet/jsp/tagext/TagInfo", "org/apache/jasper/Options", "javax/servlet/ServletContext", "org/apache/jasper/servlet/JspServletWrapper", "org/apache/jasper/compiler/JspRuntimeContext", "org/apache/tomcat/Jar", Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/jasper/JspCompilationContext", "java/lang/String", "jakarta/servlet/jsp/tagext/TagInfo", "org/apache/jasper/Options", "jakarta/servlet/ServletContext", "org/apache/jasper/servlet/JspServletWrapper", "org/apache/jasper/compiler/JspRuntimeContext", "org/apache/tomcat/Jar", Opcodes.INTEGER, "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "charAt", "(I)C", false);
@@ -257,7 +257,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/jasper/Constants", "JSP_PACK
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "basePackageName", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "tagJar", "Lorg/apache/tomcat/Jar;");
@@ -594,10 +594,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/JspCompilationContext", "canonicalURI", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -606,10 +606,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResource", "(Ljava/lang/String;)Ljava/net/URL;", null, new String[] { "java/net/MalformedURLException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/JspCompilationContext", "canonicalURI", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getResource", "(Ljava/lang/String;)Ljava/net/URL;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -618,10 +618,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", "(Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/JspCompilationContext", "canonicalURI", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -630,13 +630,13 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getRealPath", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -682,8 +682,8 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "className", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "className", "Ljava/lang/String;");
@@ -1061,20 +1061,20 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagInfo", "()Ljavax/servlet/jsp/tagext/TagInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTagInfo", "()Ljakarta/servlet/jsp/tagext/TagInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTagInfo", "(Ljavax/servlet/jsp/tagext/TagInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTagInfo", "(Ljakarta/servlet/jsp/tagext/TagInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -1106,8 +1106,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationCo
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitIntInsn(BIPUSH, 46);
@@ -1254,10 +1254,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljavax/servlet/ServletContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServletContext", "()Ljakarta/servlet/ServletContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "context", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -1288,8 +1288,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationCo
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -1602,8 +1602,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationCo
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -1725,8 +1725,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/JspCompilationCo
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljavax/servlet/jsp/tagext/TagInfo;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/JspCompilationContext", "tagInfo", "Ljakarta/servlet/jsp/tagext/TagInfo;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/tagext/TagInfo", "getTagClassName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitIntInsn(BIPUSH, 46);

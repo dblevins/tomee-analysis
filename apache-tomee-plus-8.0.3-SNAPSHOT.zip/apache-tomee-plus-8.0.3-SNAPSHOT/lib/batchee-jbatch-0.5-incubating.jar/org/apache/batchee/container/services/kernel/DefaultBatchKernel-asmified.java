@@ -96,7 +96,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startJob", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/JobStartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startJob", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/JobStartException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "servicesManager", "Lorg/apache/batchee/container/services/ServicesManager;");
@@ -128,7 +128,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "stopJob", "(J)V", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException", "javax/batch/operations/JobExecutionNotRunningException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "stopJob", "(J)V", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException", "jakarta/batch/operations/JobExecutionNotRunningException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "executionId2jobControllerMap", "Ljava/util/Map;");
@@ -140,7 +140,7 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/batch/operations/JobExecutionNotRunningException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/batch/operations/JobExecutionNotRunningException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -152,7 +152,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn("is not running.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/batch/operations/JobExecutionNotRunningException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/batch/operations/JobExecutionNotRunningException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/batchee/container/ThreadRootController"}, 0, null);
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restartJob", "(JLjava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException", "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restartJob", "(JLjava/util/Properties;)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException", "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "servicesManager", "Lorg/apache/batchee/container/services/ServicesManager;");
@@ -253,7 +253,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobExecution", "(J)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "javax/batch/operations/NoSuchJobExecutionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobExecution", "(J)Lorg/apache/batchee/container/services/InternalJobExecution;", null, new String[] { "jakarta/batch/operations/NoSuchJobExecutionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "servicesManager", "Lorg/apache/batchee/container/services/ServicesManager;");
@@ -290,7 +290,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobInstance", "(J)Ljavax/batch/runtime/JobInstance;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJobInstance", "(J)Ljakarta/batch/runtime/JobInstance;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "servicesManager", "Lorg/apache/batchee/container/services/ServicesManager;");
@@ -298,13 +298,13 @@ methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/batchee/container/services/
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/services/ServicesManager", "service", "(Ljava/lang/Class;)Lorg/apache/batchee/spi/BatchService;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/container/services/JobStatusManagerService");
 methodVisitor.visitVarInsn(LLOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/jobinstance/JobExecutionHelper", "getJobInstance", "(Lorg/apache/batchee/container/services/JobStatusManagerService;J)Ljavax/batch/runtime/JobInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/impl/jobinstance/JobExecutionHelper", "getJobInstance", "(Lorg/apache/batchee/container/services/JobStatusManagerService;J)Ljakarta/batch/runtime/JobInstance;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildNewParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobStartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildNewParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobStartException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/util/PartitionsBuilderConfig", "getJobModels", "()Ljava/util/List;", false);
@@ -391,16 +391,16 @@ methodVisitor.visitMaxs(5, 13);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildOnRestartParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildOnRestartParallelPartitions", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List;", "(Lorg/apache/batchee/container/util/PartitionsBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;Lorg/apache/batchee/container/impl/StepContextImpl;)Ljava/util/List<Lorg/apache/batchee/container/util/BatchPartitionWorkUnit;>;", new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/batch/operations/NoSuchJobExecutionException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/batch/operations/NoSuchJobExecutionException");
 Label label3 = new Label();
 Label label4 = new Label();
 Label label5 = new Label();
-methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/batch/operations/JobExecutionAlreadyCompleteException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "jakarta/batch/operations/JobExecutionAlreadyCompleteException");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/util/PartitionsBuilderConfig", "getJobModels", "()Ljava/util/List;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
@@ -467,7 +467,7 @@ methodVisitor.visitLabel(label1);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/PartitionsBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/container/impl/StepContextImpl", "java/util/List", "[Ljava/util/Properties;", "java/util/List", Opcodes.INTEGER, "java/util/Iterator", "org/apache/batchee/jaxb/JSLJob", "java/util/Properties", Opcodes.LONG}, 1, new Object[] {"javax/batch/operations/NoSuchJobExecutionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/PartitionsBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/container/impl/StepContextImpl", "java/util/List", "[Ljava/util/Properties;", "java/util/List", Opcodes.INTEGER, "java/util/Iterator", "org/apache/batchee/jaxb/JSLJob", "java/util/Properties", Opcodes.LONG}, 1, new Object[] {"jakarta/batch/operations/NoSuchJobExecutionException"});
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -508,7 +508,7 @@ methodVisitor.visitLabel(label4);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/PartitionsBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/container/impl/StepContextImpl", "java/util/List", "[Ljava/util/Properties;", "java/util/List", Opcodes.INTEGER, "java/util/Iterator", "org/apache/batchee/jaxb/JSLJob", "java/util/Properties"}, 1, new Object[] {"javax/batch/operations/JobExecutionAlreadyCompleteException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/PartitionsBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/container/impl/StepContextImpl", "java/util/List", "[Ljava/util/Properties;", "java/util/List", Opcodes.INTEGER, "java/util/Iterator", "org/apache/batchee/jaxb/JSLJob", "java/util/Properties"}, 1, new Object[] {"jakarta/batch/operations/JobExecutionAlreadyCompleteException"});
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -522,7 +522,7 @@ methodVisitor.visitMaxs(5, 15);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restartGeneratedJob", "(Lorg/apache/batchee/container/util/BatchWorkUnit;)V", null, new String[] { "javax/batch/operations/JobRestartException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restartGeneratedJob", "(Lorg/apache/batchee/container/util/BatchWorkUnit;)V", null, new String[] { "jakarta/batch/operations/JobRestartException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/kernel/DefaultBatchKernel", "executorService", "Lorg/apache/batchee/spi/BatchThreadPoolService;");
@@ -644,12 +644,12 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildOnRestartFlowInSplitWorkUnit", "(Lorg/apache/batchee/container/util/FlowInSplitBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;)Lorg/apache/batchee/container/util/BatchFlowInSplitWorkUnit;", null, new String[] { "javax/batch/operations/JobRestartException", "javax/batch/operations/JobExecutionAlreadyCompleteException", "javax/batch/operations/JobExecutionNotMostRecentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildOnRestartFlowInSplitWorkUnit", "(Lorg/apache/batchee/container/util/FlowInSplitBuilderConfig;Lorg/apache/batchee/container/impl/JobContextImpl;)Lorg/apache/batchee/container/util/BatchFlowInSplitWorkUnit;", null, new String[] { "jakarta/batch/operations/JobRestartException", "jakarta/batch/operations/JobExecutionAlreadyCompleteException", "jakarta/batch/operations/JobExecutionNotMostRecentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/batch/operations/NoSuchJobExecutionException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/batch/operations/NoSuchJobExecutionException");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/util/FlowInSplitBuilderConfig", "getJobModel", "()Lorg/apache/batchee/jaxb/JSLJob;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -668,7 +668,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/FlowInSplitBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/jaxb/JSLJob", Opcodes.LONG}, 1, new Object[] {"javax/batch/operations/NoSuchJobExecutionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/batchee/container/services/kernel/DefaultBatchKernel", "org/apache/batchee/container/util/FlowInSplitBuilderConfig", "org/apache/batchee/container/impl/JobContextImpl", "org/apache/batchee/jaxb/JSLJob", Opcodes.LONG}, 1, new Object[] {"jakarta/batch/operations/NoSuchJobExecutionException"});
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);

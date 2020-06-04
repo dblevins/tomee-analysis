@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "org/apache/geronimo/connector/ConnectorTransactionContext", "ConnectorSynchronization", ACC_PRIVATE | ACC_STATIC);
 
@@ -35,11 +35,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ctx", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljavax/transaction/Transaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transaction", "Ljakarta/transaction/Transaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/ConnectorTransactionContext;Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/ConnectorTransactionContext;Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "ctx", "Lorg/apache/geronimo/connector/ConnectorTransactionContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -136,8 +136,8 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljavax/transaction/Transaction;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "access$100", "(Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljakarta/transaction/Transaction;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "access$100", "(Ljakarta/transaction/Transaction;)V", false);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label6);
@@ -145,8 +145,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/T
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljavax/transaction/Transaction;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "access$100", "(Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "transaction", "Ljakarta/transaction/Transaction;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "access$100", "(Ljakarta/transaction/Transaction;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label11);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$ZonedDateTimeConverter", "Ljava/lang/Object;Ljavax/ws/rs/ext/ParamConverter<Ljava/time/ZonedDateTime;>;", "java/lang/Object", new String[] { "javax/ws/rs/ext/ParamConverter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$ZonedDateTimeConverter", "Ljava/lang/Object;Ljakarta/ws/rs/ext/ParamConverter<Ljava/time/ZonedDateTime;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ParamConverter" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$ZonedDateTimeConverter", "org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider", "ZonedDateTimeConverter", ACC_PUBLIC);
 

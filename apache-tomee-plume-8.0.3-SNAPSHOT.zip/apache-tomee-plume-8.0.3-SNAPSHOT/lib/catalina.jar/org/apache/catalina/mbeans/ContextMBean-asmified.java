@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findApplicationParameters", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findApplicationParameters", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findConstraints", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findConstraints", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -114,7 +114,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPage", "(I)Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPage", "(I)Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -129,7 +129,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "findErrorPage", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "findErrorPage", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -148,7 +148,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPage", "(Ljava/lang/Throwable;)Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPage", "(Ljava/lang/Throwable;)Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -163,7 +163,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPages", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findErrorPages", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -203,7 +203,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterDef", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterDef", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -220,7 +220,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterDefs", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterDefs", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -260,7 +260,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterMaps", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findFilterMaps", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContextMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);

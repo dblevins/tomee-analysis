@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "intersect", "(Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MediaType;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "intersect", "(Ljakarta/ws/rs/core/MediaType;Ljakarta/ws/rs/core/MediaType;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);

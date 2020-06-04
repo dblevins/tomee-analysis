@@ -29,7 +29,7 @@ classWriter.visitOuterClass("org/apache/openejb/server/cxf/rs/CxfRsHttpListener"
 classWriter.visitInnerClass("org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljavax/validation/Validator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$validator", "Ljakarta/validation/Validator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/server/cxf/rs/CxfRsHttpListener;Ljavax/validation/Validator;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openejb/server/cxf/rs/CxfRsHttpListener;Ljakarta/validation/Validator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", "this$0", "Lorg/apache/openejb/server/cxf/rs/CxfRsHttpListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/validation/JAXRSBeanValidationOutInterceptor", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -66,21 +66,21 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "handleValidation", "(Lorg/apache/cxf/message/Message;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List;)V", "(Lorg/apache/cxf/message/Message;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List<Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", "val$validator", "Ljavax/validation/Validator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$5", "val$validator", "Ljakarta/validation/Validator;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/Validator", "getConstraintsForClass", "(Ljava/lang/Class;)Ljavax/validation/metadata/BeanDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/Validator", "getConstraintsForClass", "(Ljava/lang/Class;)Ljakarta/validation/metadata/BeanDescriptor;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getParameterTypes", "()[Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/BeanDescriptor", "getConstraintsForMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljavax/validation/metadata/MethodDescriptor;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/BeanDescriptor", "getConstraintsForMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljakarta/validation/metadata/MethodDescriptor;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/metadata/MethodDescriptor", "hasConstrainedReturnValue", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/metadata/MethodDescriptor", "hasConstrainedReturnValue", "()Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -89,7 +89,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/validation/JAXRSBeanValidationOutInterceptor", "handleValidation", "(Lorg/apache/cxf/message/Message;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/validation/metadata/MethodDescriptor"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/validation/metadata/MethodDescriptor"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();

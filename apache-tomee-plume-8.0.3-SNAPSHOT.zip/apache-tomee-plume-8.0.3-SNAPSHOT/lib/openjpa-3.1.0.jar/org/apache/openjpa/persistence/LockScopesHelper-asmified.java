@@ -34,13 +34,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toLockScope", "(Ljavax/persistence/PessimisticLockScope;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toLockScope", "(Ljakarta/persistence/PessimisticLockScope;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/PessimisticLockScope", "NORMAL", "Ljavax/persistence/PessimisticLockScope;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/PessimisticLockScope", "NORMAL", "Ljakarta/persistence/PessimisticLockScope;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitLabel(label0);
@@ -55,17 +55,17 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "fromLockScope", "(I)Ljavax/persistence/PessimisticLockScope;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "fromLockScope", "(I)Ljakarta/persistence/PessimisticLockScope;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 0);
 methodVisitor.visitIntInsn(BIPUSH, 10);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/PessimisticLockScope", "NORMAL", "Ljavax/persistence/PessimisticLockScope;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/PessimisticLockScope", "NORMAL", "Ljakarta/persistence/PessimisticLockScope;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/PessimisticLockScope", "EXTENDED", "Ljavax/persistence/PessimisticLockScope;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/PessimisticLockScope", "EXTENDED", "Ljakarta/persistence/PessimisticLockScope;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

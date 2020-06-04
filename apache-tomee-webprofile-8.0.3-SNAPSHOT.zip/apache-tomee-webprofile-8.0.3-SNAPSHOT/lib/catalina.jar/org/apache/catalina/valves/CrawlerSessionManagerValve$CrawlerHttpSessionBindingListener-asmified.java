@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/valves/CrawlerSessionManagerValve$CrawlerHttpSessionBindingListener", null, "java/lang/Object", new String[] { "javax/servlet/http/HttpSessionBindingListener", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/valves/CrawlerSessionManagerValve$CrawlerHttpSessionBindingListener", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpSessionBindingListener", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/catalina/valves/CrawlerSessionManagerValve$CrawlerHttpSessionBindingListener", "org/apache/catalina/valves/CrawlerSessionManagerValve", "CrawlerHttpSessionBindingListener", ACC_PRIVATE | ACC_STATIC);
 
@@ -56,7 +56,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "valueUnbound", "(Ljavax/servlet/http/HttpSessionBindingEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "valueUnbound", "(Ljakarta/servlet/http/HttpSessionBindingEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/valves/CrawlerSessionManagerValve$CrawlerHttpSessionBindingListener", "clientIdentifier", "Ljava/lang/String;");
@@ -70,8 +70,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/valves/CrawlerSessio
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/valves/CrawlerSessionManagerValve$CrawlerHttpSessionBindingListener", "clientIdentifier", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/http/HttpSessionBindingEvent", "getSession", "()Ljavax/servlet/http/HttpSession;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/http/HttpSessionBindingEvent", "getSession", "()Ljakarta/servlet/http/HttpSession;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpSession", "getId", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);

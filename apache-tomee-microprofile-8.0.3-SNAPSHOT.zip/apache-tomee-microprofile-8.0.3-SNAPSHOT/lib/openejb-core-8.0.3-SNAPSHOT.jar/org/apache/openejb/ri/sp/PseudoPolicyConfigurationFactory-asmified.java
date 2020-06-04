@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory", null, "javax/security/jacc/PolicyConfigurationFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory", null, "jakarta/security/jacc/PolicyConfigurationFactory", null);
 
 classWriter.visitInnerClass("org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory$1", null, null, 0);
 
@@ -30,7 +30,7 @@ classWriter.visitInnerClass("org/apache/openejb/ri/sp/PseudoPolicyConfigurationF
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/jacc/PolicyConfigurationFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/security/jacc/PolicyConfigurationFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -38,7 +38,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "install", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.security.jacc.PolicyConfigurationFactory.provider");
+methodVisitor.visitLdcInsn("jakarta.security.jacc.PolicyConfigurationFactory.provider");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/JavaSecurityManagers", "setSystemProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
@@ -47,7 +47,7 @@ methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPolicyConfiguration", "(Ljava/lang/String;Z)Ljavax/security/jacc/PolicyConfiguration;", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPolicyConfiguration", "(Ljava/lang/String;Z)Ljakarta/security/jacc/PolicyConfiguration;", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory$1");
 methodVisitor.visitInsn(DUP);
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inService", "(Ljava/lang/String;)Z", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inService", "(Ljava/lang/String;)Z", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);

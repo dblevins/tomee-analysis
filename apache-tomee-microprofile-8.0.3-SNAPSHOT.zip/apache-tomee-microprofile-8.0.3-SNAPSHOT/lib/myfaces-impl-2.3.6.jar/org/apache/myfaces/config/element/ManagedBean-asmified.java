@@ -90,7 +90,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isManagedBea
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getManagedBeanScopeValueExpression", "(Ljavax/faces/context/FacesContext;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getManagedBeanScopeValueExpression", "(Ljakarta/faces/context/FacesContext;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitEnd();
 }
 {

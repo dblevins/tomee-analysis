@@ -24,14 +24,14 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/el/stream/Stream$1", null, "org/apache/el/stream/Stream$OpIterator", null);
 
-classWriter.visitOuterClass("org/apache/el/stream/Stream", "filter", "(Ljavax/el/LambdaExpression;)Lorg/apache/el/stream/Stream;");
+classWriter.visitOuterClass("org/apache/el/stream/Stream", "filter", "(Ljakarta/el/LambdaExpression;)Lorg/apache/el/stream/Stream;");
 
 classWriter.visitInnerClass("org/apache/el/stream/Stream$1", null, null, 0);
 
 classWriter.visitInnerClass("org/apache/el/stream/Stream$OpIterator", "org/apache/el/stream/Stream", "OpIterator", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$le", "Ljavax/el/LambdaExpression;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$le", "Ljakarta/el/LambdaExpression;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,14 +39,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/el/stream/Stream;Ljavax/el/LambdaExpression;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/el/stream/Stream;Ljakarta/el/LambdaExpression;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$1", "this$0", "Lorg/apache/el/stream/Stream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$1", "val$le", "Ljavax/el/LambdaExpression;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/el/stream/Stream$1", "val$le", "Ljakarta/el/LambdaExpression;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/el/stream/Stream$OpIterator", "<init>", "(Lorg/apache/el/stream/Stream$1;)V", false);
@@ -73,16 +73,16 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$1", "val$le", "Ljavax/el/LambdaExpression;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/stream/Stream$1", "val$le", "Ljakarta/el/LambdaExpression;");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/el/LambdaExpression", "invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToBoolean", "(Ljavax/el/ELContext;Ljava/lang/Object;Z)Ljava/lang/Boolean;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/lang/ELSupport", "coerceToBoolean", "(Ljakarta/el/ELContext;Ljava/lang/Object;Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);

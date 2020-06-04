@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/activemq/jms2/XAJMSContextImpl", null, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", new String[] { "javax/jms/XAJMSContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/activemq/jms2/XAJMSContextImpl", null, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", new String[] { "jakarta/jms/XAJMSContext" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -33,13 +33,13 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljavax/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "<init>", "(Ljakarta/jms/ConnectionFactory;ILjava/lang/String;Ljava/lang/String;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljavax/jms/JMSContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContext", "()Ljakarta/jms/JMSContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -49,12 +49,12 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getXAResource", "()Ljavax/transaction/xa/XAResource;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/jms/XASession;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/jms/XASession;"));
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/activemq/jms2/XAJMSContextImpl", "session", "()Ljavax/jms/Session;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/activemq/jms2/XAJMSContextImpl", "session", "()Ljakarta/jms/Session;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/jms/XASession");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/XASession", "getXAResource", "()Ljavax/transaction/xa/XAResource;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/jms/XASession");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/XASession", "getXAResource", "()Ljavax/transaction/xa/XAResource;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

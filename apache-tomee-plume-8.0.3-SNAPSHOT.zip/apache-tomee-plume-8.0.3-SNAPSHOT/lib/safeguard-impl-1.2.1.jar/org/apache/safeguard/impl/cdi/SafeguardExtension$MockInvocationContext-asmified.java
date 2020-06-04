@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/cdi/SafeguardExtension$MockInvocationContext", null, "java/lang/Object", new String[] { "javax/interceptor/InvocationContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/safeguard/impl/cdi/SafeguardExtension$MockInvocationContext", null, "java/lang/Object", new String[] { "jakarta/interceptor/InvocationContext" });
 
 classWriter.visitInnerClass("org/apache/safeguard/impl/cdi/SafeguardExtension$MockInvocationContext", "org/apache/safeguard/impl/cdi/SafeguardExtension", "MockInvocationContext", ACC_PRIVATE | ACC_STATIC);
 

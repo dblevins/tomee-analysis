@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/jpa/transaction/JTATransactionWrapper$1", null, "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/internal/jpa/transaction/JTATransactionWrapper$1", null, "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/transaction/JTATransactionWrapper", "registerIfRequired", "(Lorg/eclipse/persistence/internal/sessions/UnitOfWorkImpl;)V");
 

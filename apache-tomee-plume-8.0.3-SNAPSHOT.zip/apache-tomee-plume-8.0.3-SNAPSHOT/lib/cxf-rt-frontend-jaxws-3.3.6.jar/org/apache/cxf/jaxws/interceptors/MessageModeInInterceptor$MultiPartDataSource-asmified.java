@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor", "MultiPartDataSource", ACC_PRIVATE | ACC_STATIC);
 
@@ -53,7 +53,7 @@ fieldVisitor = classWriter.visitField(0, "writer", "Ljava/io/Writer;", null, nul
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "rootPart", "Ljavax/activation/DataSource;", null, null);
+fieldVisitor = classWriter.visitField(0, "rootPart", "Ljakarta/activation/DataSource;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -69,7 +69,7 @@ fieldVisitor = classWriter.visitField(0, "att", "Lorg/apache/cxf/message/Attachm
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/message/Message;Ljavax/activation/DataSource;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/message/Message;Ljakarta/activation/DataSource;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -123,13 +123,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "org/apache/cxf/message/Message", "javax/activation/DataSource", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "org/apache/cxf/message/Message", "jakarta/activation/DataSource", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "contentType", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljakarta/activation/DataSource;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/io/OutputStreamWriter");
@@ -193,7 +193,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "nextCurrent", "()V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljakarta/activation/DataSource;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -205,12 +205,12 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "writingHeaders", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getInputStream", "()Ljava/io/InputStream;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "current", "Ljava/io/InputStream;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljavax/activation/DataSource;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljakarta/activation/DataSource;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
@@ -236,8 +236,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/Messag
 methodVisitor.visitLdcInsn("Content-Type: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Writer", "append", "(Ljava/lang/CharSequence;)Ljava/io/Writer;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljavax/activation/DataSource;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "rootPart", "Ljakarta/activation/DataSource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/activation/DataSource", "getContentType", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Writer", "append", "(Ljava/lang/CharSequence;)Ljava/io/Writer;", false);
 methodVisitor.visitLdcInsn("\r\n");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Writer", "append", "(Ljava/lang/CharSequence;)Ljava/io/Writer;", false);
@@ -273,8 +273,8 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/Messag
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "att", "Lorg/apache/cxf/message/Attachment;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljavax/activation/DataHandler;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Attachment", "getDataHandler", "()Ljakarta/activation/DataHandler;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource", "current", "Ljava/io/InputStream;");
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);

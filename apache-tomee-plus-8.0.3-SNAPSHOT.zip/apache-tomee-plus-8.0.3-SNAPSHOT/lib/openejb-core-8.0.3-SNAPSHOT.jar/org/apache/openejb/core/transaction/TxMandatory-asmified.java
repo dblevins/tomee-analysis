@@ -25,33 +25,33 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/transaction/TxMandatory", null, "org/apache/openejb/core/transaction/JtaTransactionPolicy", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clientTx", "Ljavax/transaction/Transaction;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "clientTx", "Ljakarta/transaction/Transaction;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/transaction/TransactionManager;)V", null, new String[] { "org/apache/openejb/SystemException", "org/apache/openejb/ApplicationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/transaction/TransactionManager;)V", null, new String[] { "org/apache/openejb/SystemException", "org/apache/openejb/ApplicationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/TransactionType", "Mandatory", "Lorg/apache/openejb/core/transaction/TransactionType;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/JtaTransactionPolicy", "<init>", "(Lorg/apache/openejb/core/transaction/TransactionType;Ljavax/transaction/TransactionManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/JtaTransactionPolicy", "<init>", "(Lorg/apache/openejb/core/transaction/TransactionType;Ljakarta/transaction/TransactionManager;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/TxMandatory", "getTransaction", "()Ljavax/transaction/Transaction;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljavax/transaction/Transaction;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/TxMandatory", "getTransaction", "()Ljakarta/transaction/Transaction;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljakarta/transaction/Transaction;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/ApplicationException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitTypeInsn(NEW, "javax/transaction/TransactionRequiredException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/transaction/TransactionRequiredException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/transaction/TransactionRequiredException", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/transaction/TransactionRequiredException", "<init>", "()V", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/ApplicationException", "<init>", "(Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/transaction/TxMandatory", "javax/transaction/TransactionManager"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/transaction/TxMandatory", "jakarta/transaction/TransactionManager"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
@@ -73,10 +73,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentTransaction", "()Ljavax/transaction/Transaction;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCurrentTransaction", "()Ljakarta/transaction/Transaction;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljavax/transaction/Transaction;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/TxMandatory", "clientTx", "Ljakarta/transaction/Transaction;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

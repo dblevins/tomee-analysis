@@ -35,7 +35,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/el/parser/AstLessThanEqual", "children", "[Lorg/apache/el/parser/Node;");
@@ -74,7 +74,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/parser/AstLessThanEqual", "compare", "(Ljavax/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/el/parser/AstLessThanEqual", "compare", "(Ljakarta/el/ELContext;Ljava/lang/Object;Ljava/lang/Object;)I", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFGT, label3);
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");

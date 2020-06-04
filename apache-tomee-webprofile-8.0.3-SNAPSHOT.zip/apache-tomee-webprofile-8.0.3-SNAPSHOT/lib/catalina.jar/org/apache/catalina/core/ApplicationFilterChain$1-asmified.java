@@ -24,16 +24,16 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/catalina/core/ApplicationFilterChain$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/Void;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/catalina/core/ApplicationFilterChain", "doFilter", "(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V");
+classWriter.visitOuterClass("org/apache/catalina/core/ApplicationFilterChain", "doFilter", "(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V");
 
 classWriter.visitInnerClass("org/apache/catalina/core/ApplicationFilterChain$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$req", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$req", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$res", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$res", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,17 +41,17 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/catalina/core/ApplicationFilterChain;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/catalina/core/ApplicationFilterChain;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "this$0", "Lorg/apache/catalina/core/ApplicationFilterChain;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$req", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$req", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$res", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$res", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -59,15 +59,15 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Void;", null, new String[] { "javax/servlet/ServletException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/Void;", null, new String[] { "jakarta/servlet/ServletException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "this$0", "Lorg/apache/catalina/core/ApplicationFilterChain;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$req", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$req", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$res", "Ljavax/servlet/ServletResponse;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/core/ApplicationFilterChain", "access$000", "(Lorg/apache/catalina/core/ApplicationFilterChain;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ApplicationFilterChain$1", "val$res", "Ljakarta/servlet/ServletResponse;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/core/ApplicationFilterChain", "access$000", "(Lorg/apache/catalina/core/ApplicationFilterChain;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);

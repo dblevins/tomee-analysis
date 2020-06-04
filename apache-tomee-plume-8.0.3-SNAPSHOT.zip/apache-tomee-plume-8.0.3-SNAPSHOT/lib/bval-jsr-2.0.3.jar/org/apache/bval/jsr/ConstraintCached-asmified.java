@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "constraintValida
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validators", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Lorg/apache/bval/jsr/descriptor/ConstraintD<*>;Ljavax/validation/ConstraintValidator<**>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validators", "Ljava/util/concurrent/ConcurrentMap;", "Ljava/util/concurrent/ConcurrentMap<Lorg/apache/bval/jsr/descriptor/ConstraintD<*>;Ljakarta/validation/ConstraintValidator<**>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -76,7 +76,7 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidators", "()Ljava/util/concurrent/ConcurrentMap;", "()Ljava/util/concurrent/ConcurrentMap<Lorg/apache/bval/jsr/descriptor/ConstraintD<*>;Ljavax/validation/ConstraintValidator<**>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidators", "()Ljava/util/concurrent/ConcurrentMap;", "()Ljava/util/concurrent/ConcurrentMap<Lorg/apache/bval/jsr/descriptor/ConstraintD<*>;Ljakarta/validation/ConstraintValidator<**>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ConstraintCached", "validators", "Ljava/util/concurrent/ConcurrentMap;");
@@ -103,7 +103,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorClasses", "(Ljava/lang/Class;)Ljava/util/List;", "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/List<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorClasses", "(Ljava/lang/Class;)Ljava/util/List;", "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/List<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

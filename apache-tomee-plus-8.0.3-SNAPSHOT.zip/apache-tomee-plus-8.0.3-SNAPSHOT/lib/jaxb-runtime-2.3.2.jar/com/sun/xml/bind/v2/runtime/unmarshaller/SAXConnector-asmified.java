@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/SAXConnector", null, "java/lang/Object", new String[] { "javax/xml/bind/UnmarshallerHandler" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/bind/v2/runtime/unmarshaller/SAXConnector", null, "java/lang/Object", new String[] { "jakarta/xml/bind/UnmarshallerHandler" });
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/unmarshaller/SAXConnector$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResult", "()Ljava/lang/Object;", null, new String[] { "javax/xml/bind/JAXBException", "java/lang/IllegalStateException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResult", "()Ljava/lang/Object;", null, new String[] { "jakarta/xml/bind/JAXBException", "java/lang/IllegalStateException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/unmarshaller/SAXConnector", "context", "Lcom/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext;");

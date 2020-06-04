@@ -320,7 +320,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "iterator", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)Ljava/util/Iterator;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)Ljava/util/Iterator<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "iterator", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)Ljava/util/Iterator;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)Ljava/util/Iterator<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -347,10 +347,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoader", "javax/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/lang/String"}, 1, new Object[] {"java/lang/StringBuilder"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoader", "jakarta/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/lang/String"}, 1, new Object[] {"java/lang/StringBuilder"});
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoader", "javax/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljavax/faces/application/ResourceVisitOption;", "java/lang/String"}, 2, new Object[] {"java/lang/StringBuilder", "java/lang/String"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/myfaces/shared/resource/ClassLoaderResourceLoader", "jakarta/faces/context/FacesContext", "java/lang/String", Opcodes.INTEGER, "[Ljakarta/faces/application/ResourceVisitOption;", "java/lang/String"}, 2, new Object[] {"java/lang/StringBuilder", "java/lang/String"});
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -367,7 +367,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator", "<init>", "(Ljava/net/URL;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator", "<init>", "(Ljava/net/URL;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();

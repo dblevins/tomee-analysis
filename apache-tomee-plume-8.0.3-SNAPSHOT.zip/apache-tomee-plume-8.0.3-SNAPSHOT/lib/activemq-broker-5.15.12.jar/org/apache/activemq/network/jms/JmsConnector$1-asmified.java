@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/activemq/network/jms/JmsConnector$1", "Lorg/apache/activemq/util/LRUCache<Ljavax/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", "org/apache/activemq/util/LRUCache", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/activemq/network/jms/JmsConnector$1", "Lorg/apache/activemq/util/LRUCache<Ljakarta/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;", "org/apache/activemq/util/LRUCache", null);
 
 classWriter.visitOuterClass("org/apache/activemq/network/jms/JmsConnector", "createLRUCache", "()Lorg/apache/activemq/util/LRUCache;");
 
@@ -44,7 +44,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "removeEldestEntry", "(Ljava/util/Map$Entry;)Z", "(Ljava/util/Map$Entry<Ljavax/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "removeEldestEntry", "(Ljava/util/Map$Entry;)Z", "(Ljava/util/Map$Entry<Ljakarta/jms/Destination;Lorg/apache/activemq/network/jms/DestinationBridge;>;)Z", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

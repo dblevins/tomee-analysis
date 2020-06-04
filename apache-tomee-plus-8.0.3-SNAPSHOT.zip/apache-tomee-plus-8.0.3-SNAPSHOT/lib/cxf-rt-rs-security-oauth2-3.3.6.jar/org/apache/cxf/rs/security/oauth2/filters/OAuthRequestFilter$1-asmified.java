@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/rs/security/oauth2/filters/OAuthRequestFilter$1", null, "java/lang/Object", new String[] { "org/apache/cxf/security/SecurityContext" });
 
-classWriter.visitOuterClass("org/apache/cxf/rs/security/oauth2/filters/OAuthRequestFilter", "createSecurityContext", "(Ljavax/servlet/http/HttpServletRequest;Lorg/apache/cxf/rs/security/oauth2/common/AccessTokenValidation;)Lorg/apache/cxf/security/SecurityContext;");
+classWriter.visitOuterClass("org/apache/cxf/rs/security/oauth2/filters/OAuthRequestFilter", "createSecurityContext", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/cxf/rs/security/oauth2/common/AccessTokenValidation;)Lorg/apache/cxf/security/SecurityContext;");
 
 classWriter.visitInnerClass("org/apache/cxf/rs/security/oauth2/filters/OAuthRequestFilter$1", null, null, 0);
 

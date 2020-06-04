@@ -35,17 +35,17 @@ fieldVisitor = classWriter.visitField(0, "ending", "Lorg/apache/cxf/jaxws/handle
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/ws/Binding;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/xml/ws/Binding;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("pre-marshal");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "<init>", "(Ljavax/xml/ws/Binding;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor", "<init>", "(Ljakarta/xml/ws/Binding;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor$LogicalHandlerFaultOutEndingInterceptor");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor$LogicalHandlerFaultOutEndingInterceptor", "<init>", "(Ljavax/xml/ws/Binding;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor$LogicalHandlerFaultOutEndingInterceptor", "<init>", "(Ljakarta/xml/ws/Binding;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor", "ending", "Lorg/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor$LogicalHandlerFaultOutEndingInterceptor;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
@@ -59,8 +59,8 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/stream/XMLStreamException");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor", "binding", "Ljavax/xml/ws/Binding;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/ws/Binding", "getHandlerChain", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor", "binding", "Ljakarta/xml/ws/Binding;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/Binding", "getHandlerChain", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);

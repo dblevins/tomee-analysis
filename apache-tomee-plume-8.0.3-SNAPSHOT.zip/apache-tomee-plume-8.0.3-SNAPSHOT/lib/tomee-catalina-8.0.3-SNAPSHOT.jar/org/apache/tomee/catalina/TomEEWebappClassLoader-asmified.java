@@ -516,7 +516,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label40);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.");
+methodVisitor.visitLdcInsn("jakarta.faces.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label41 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label41);
@@ -1151,8 +1151,8 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/catalina/TomEEWebappCla
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/catalina/TomEEWebappClassLoader", "CONTEXT", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/Context");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getServletContext", "()Ljavax/servlet/ServletContext;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getContextPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "isEmpty", "()Z", false);
@@ -1606,7 +1606,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/E
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitLdcInsn("META-INF/services/javax.servlet.ServletContainerInitializer");
+methodVisitor.visitLdcInsn("META-INF/services/jakarta.servlet.ServletContainerInitializer");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label6 = new Label();
@@ -1655,7 +1655,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "enumeratio
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
-methodVisitor.visitLdcInsn("META-INF/services/javax.websocket.ContainerProvider");
+methodVisitor.visitLdcInsn("META-INF/services/jakarta.websocket.ContainerProvider");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label10 = new Label();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller", null, "javax/xml/bind/attachment/AttachmentMarshaller", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller", null, "jakarta/xml/bind/attachment/AttachmentMarshaller", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "threshold", "I", null, null);
@@ -44,7 +44,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Collection;Ljava/lang/Integer;)V", "(Ljava/util/Collection<Lorg/apache/cxf/message/Attachment;>;Ljava/lang/Integer;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/attachment/AttachmentMarshaller", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/attachment/AttachmentMarshaller", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(SIPUSH, 5120);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller", "threshold", "I");
@@ -133,7 +133,7 @@ methodVisitor.visitMaxs(7, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljavax/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMtomAttachment", "(Ljakarta/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller", "isXop", "Z");
@@ -141,7 +141,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller", "threshold", "I");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "createMtomAttachmentFromDH", "(ZLjavax/activation/DataHandler;Ljava/lang/String;I)Lorg/apache/cxf/message/Attachment;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/attachment/AttachmentUtil", "createMtomAttachmentFromDH", "(ZLjakarta/activation/DataHandler;Ljava/lang/String;I)Lorg/apache/cxf/message/Attachment;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -176,7 +176,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljavax/activation/DataHandler;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSwaRefAttachment", "(Ljakarta/activation/DataHandler;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -191,7 +191,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/attachment/AttachmentImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljavax/activation/DataHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/attachment/AttachmentImpl", "<init>", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ICONST_0);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/timer/TimerImpl", null, "java/lang/Object", new String[] { "javax/ejb/Timer", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/timer/TimerImpl", null, "java/lang/Object", new String[] { "jakarta/ejb/Timer", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "timerData", "Lorg/apache/openejb/core/timer/TimerData;", null, null);
@@ -41,7 +41,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cancel", "()V", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cancel", "()V", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimeRemaining", "()J", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimeRemaining", "()J", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -64,10 +64,10 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/NoMoreTimeoutsException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/NoMoreTimeoutsException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("The timer has no future timeouts");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/NoMoreTimeoutsException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/NoMoreTimeoutsException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Date"}, 0, null);
@@ -79,7 +79,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNextTimeout", "()Ljava/util/Date;", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNextTimeout", "()Ljava/util/Date;", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -90,10 +90,10 @@ methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/NoMoreTimeoutsException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/NoMoreTimeoutsException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("The timer has no future timeouts");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/NoMoreTimeoutsException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/NoMoreTimeoutsException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Date"}, 0, null);
@@ -105,7 +105,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInfo", "()Ljava/io/Serializable;", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInfo", "()Ljava/io/Serializable;", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandle", "()Ljavax/ejb/TimerHandle;", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandle", "()Ljakarta/ejb/TimerHandle;", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -148,7 +148,7 @@ methodVisitor.visitMaxs(5, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchedule", "()Ljavax/ejb/ScheduleExpression;", null, new String[] { "javax/ejb/EJBException", "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchedule", "()Ljakarta/ejb/ScheduleExpression;", null, new String[] { "jakarta/ejb/EJBException", "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -161,7 +161,7 @@ methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/TimerImpl", "timerData", "Lorg/apache/openejb/core/timer/TimerData;");
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/core/timer/CalendarTimerData");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/timer/CalendarTimerData", "getSchedule", "()Ljavax/ejb/ScheduleExpression;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/timer/CalendarTimerData", "getSchedule", "()Ljakarta/ejb/ScheduleExpression;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -174,7 +174,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPersistent", "()Z", null, new String[] { "javax/ejb/EJBException", "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isPersistent", "()Z", null, new String[] { "jakarta/ejb/EJBException", "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -186,7 +186,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCalendarTimer", "()Z", null, new String[] { "javax/ejb/EJBException", "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCalendarTimer", "()Z", null, new String[] { "jakarta/ejb/EJBException", "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/timer/TimerImpl", "checkState", "()V", false);
@@ -209,7 +209,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "checkState", "()V", null, new String[] { "java/lang/IllegalStateException", "javax/ejb/NoSuchObjectLocalException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "checkState", "()V", null, new String[] { "java/lang/IllegalStateException", "jakarta/ejb/NoSuchObjectLocalException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/TimerImpl", "timerData", "Lorg/apache/openejb/core/timer/TimerData;");
@@ -220,10 +220,10 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/TimerImpl", "timerData", "Lorg/apache/openejb/core/timer/TimerData;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/timer/TimerData", "isStopped", "()Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/NoSuchObjectLocalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/NoSuchObjectLocalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("Timer has been cancelled");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/NoSuchObjectLocalException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/NoSuchObjectLocalException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -232,10 +232,10 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/timer/TimerImpl"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/timer/TimerData", "isExpired", "()Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/ejb/NoSuchObjectLocalException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ejb/NoSuchObjectLocalException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("The timer has expired");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ejb/NoSuchObjectLocalException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ejb/NoSuchObjectLocalException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

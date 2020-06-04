@@ -107,7 +107,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -265,7 +265,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parsePartNumber", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parsePartNumber", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuffer");
 methodVisitor.visitInsn(DUP);
@@ -328,7 +328,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseSectionName", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseSectionName", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuffer");
 methodVisitor.visitInsn(DUP);
@@ -374,7 +374,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseHeaderList", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseHeaderList", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer$Token;", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
@@ -409,7 +409,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseSubstringValues", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "parseSubstringValues", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_0);

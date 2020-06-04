@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "core", "Lcom/sun
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapter", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "adapter", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/xml/bind/v2/runtime/reflect/Lister;Ljava/lang/Class;)V", "(Lcom/sun/xml/bind/v2/runtime/reflect/Lister<TBeanT;TPropT;TInMemItemT;TPackT;>;Ljava/lang/Class<+Ljavax/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/xml/bind/v2/runtime/reflect/Lister;Ljava/lang/Class;)V", "(Lcom/sun/xml/bind/v2/runtime/reflect/Lister<TBeanT;TPropT;TInMemItemT;TPackT;>;Ljava/lang/Class<+Ljakarta/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/reflect/Lister", "<init>", "()V", false);
@@ -50,12 +50,12 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAdapter", "()Ljavax/xml/bind/annotation/adapters/XmlAdapter;", "()Ljavax/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getAdapter", "()Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", "()Ljakarta/xml/bind/annotation/adapters/XmlAdapter<TOnWireItemT;TInMemItemT;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/xml/bind/v2/runtime/Coordinator", "_getInstance", "()Lcom/sun/xml/bind/v2/runtime/Coordinator;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "adapter", "Ljava/lang/Class;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "getAdapter", "(Ljava/lang/Class;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/Coordinator", "getAdapter", "(Ljava/lang/Class;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -98,9 +98,9 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "getAdapter", "()Ljavax/xml/bind/annotation/adapters/XmlAdapter;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "getAdapter", "()Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/annotation/adapters/XmlAdapter", "unmarshal", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/bind/annotation/adapters/XmlAdapter", "unmarshal", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
@@ -150,10 +150,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/xml/bind/v2/runtime/reflect/AdaptedLister;)Ljavax/xml/bind/annotation/adapters/XmlAdapter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lcom/sun/xml/bind/v2/runtime/reflect/AdaptedLister;)Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "getAdapter", "()Ljavax/xml/bind/annotation/adapters/XmlAdapter;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/runtime/reflect/AdaptedLister", "getAdapter", "()Ljakarta/xml/bind/annotation/adapters/XmlAdapter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/cdi/JsonbProducer", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/ApplicationScoped;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -42,24 +42,24 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljavax/json/bind/Jsonb;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "()Ljakarta/json/bind/Jsonb;", null, null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/json/bind/spi/JsonbProvider", "provider", "()Ljavax/json/bind/spi/JsonbProvider;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/json/bind/spi/JsonbProvider", "create", "()Ljavax/json/bind/JsonbBuilder;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/JsonbBuilder", "build", "()Ljavax/json/bind/Jsonb;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/json/bind/spi/JsonbProvider", "provider", "()Ljakarta/json/bind/spi/JsonbProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/json/bind/spi/JsonbProvider", "create", "()Ljakarta/json/bind/JsonbBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/JsonbBuilder", "build", "()Ljakarta/json/bind/Jsonb;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "(Ljavax/json/bind/Jsonb;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "(Ljakarta/json/bind/Jsonb;)V", null, null);
 methodVisitor.visitAnnotableParameterCount(1, true);
 {
-annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/enterprise/inject/Disposes;", true);
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljakarta/enterprise/inject/Disposes;", true);
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
@@ -69,7 +69,7 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/json/bind/Jsonb", "close", "()V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/json/bind/Jsonb", "close", "()V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);

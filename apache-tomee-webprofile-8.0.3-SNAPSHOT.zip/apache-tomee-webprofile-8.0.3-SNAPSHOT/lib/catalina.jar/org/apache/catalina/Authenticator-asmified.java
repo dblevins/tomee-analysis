@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/catalina/Authenticator", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "authenticate", "(Lorg/apache/catalina/connector/Request;Ljavax/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "authenticate", "(Lorg/apache/catalina/connector/Request;Ljakarta/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "login", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/catalina/connector/Request;)V", null, new String[] { "javax/servlet/ServletException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "login", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/catalina/connector/Request;)V", null, new String[] { "jakarta/servlet/ServletException" });
 methodVisitor.visitEnd();
 }
 {

@@ -997,7 +997,7 @@ methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitJumpInsn(IFNULL, label9);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PostLoad");
+methodVisitor.visitLdcInsn("jakarta.persistence.PostLoad");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label10 = new Label();
@@ -1011,7 +1011,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/internal/jpa/metadata/listeners/EntityListenerMetadata", "[Ljava/lang/reflect/Method;", "org/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor", "java/lang/reflect/Method", Opcodes.INTEGER, Opcodes.INTEGER, "[Ljava/lang/reflect/Method;", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PostPersist");
+methodVisitor.visitLdcInsn("jakarta.persistence.PostPersist");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label11 = new Label();
@@ -1025,7 +1025,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PostRemove");
+methodVisitor.visitLdcInsn("jakarta.persistence.PostRemove");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label12 = new Label();
@@ -1039,7 +1039,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PostUpdate");
+methodVisitor.visitLdcInsn("jakarta.persistence.PostUpdate");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label13 = new Label();
@@ -1053,7 +1053,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PrePersist");
+methodVisitor.visitLdcInsn("jakarta.persistence.PrePersist");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label14 = new Label();
@@ -1067,7 +1067,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label14);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PreRemove");
+methodVisitor.visitLdcInsn("jakarta.persistence.PreRemove");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 Label label15 = new Label();
@@ -1081,7 +1081,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/j
 methodVisitor.visitLabel(label15);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("javax.persistence.PreUpdate");
+methodVisitor.visitLdcInsn("jakarta.persistence.PreUpdate");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod", "isAnnotationPresent", "(Ljava/lang/String;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/classes/ClassAccessor;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label9);

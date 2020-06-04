@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/ApplicationImpl", null, "javax/faces/application/Application", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/application/ApplicationImpl", null, "jakarta/faces/application/Application", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "THIS_LIBRARY", "Ljava/lang/String;", null, "com.sun.faces.composite.this.library");
@@ -64,7 +64,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/Application", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/Application", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/applicationimpl/Stage");
 methodVisitor.visitInsn(DUP);
@@ -125,20 +125,20 @@ methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publishEvent", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publishEvent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "publishEvent", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "publishEvent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publishEvent", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "publishEvent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "events", "Lcom/sun/faces/application/applicationimpl/Events;");
@@ -147,144 +147,144 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "getProjectStage", "()Ljavax/faces/application/ProjectStage;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "publishEvent", "(Ljavax/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Ljavax/faces/application/ProjectStage;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "getProjectStage", "()Ljakarta/faces/application/ProjectStage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "publishEvent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Ljakarta/faces/application/ProjectStage;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "subscribeToEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljavax/faces/event/SystemEventListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "subscribeToEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljakarta/faces/event/SystemEventListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljavax/faces/event/SystemEventListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljakarta/faces/event/SystemEventListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "events", "Lcom/sun/faces/application/applicationimpl/Events;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "subscribeToEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsubscribeFromEvent", "(Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljavax/faces/event/SystemEventListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsubscribeFromEvent", "(Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljakarta/faces/event/SystemEventListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljavax/faces/event/SystemEventListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;Ljakarta/faces/event/SystemEventListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "events", "Lcom/sun/faces/application/applicationimpl/Events;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljavax/faces/event/SystemEventListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Events", "unsubscribeFromEvent", "(Ljava/lang/Class;Ljava/lang/Class;Ljakarta/faces/event/SystemEventListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addELContextListener", "(Ljavax/el/ELContextListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addELContextListener", "(Ljakarta/el/ELContextListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "addELContextListener", "(Ljavax/el/ELContextListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "addELContextListener", "(Ljakarta/el/ELContextListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeELContextListener", "(Ljavax/el/ELContextListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeELContextListener", "(Ljakarta/el/ELContextListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "removeELContextListener", "(Ljavax/el/ELContextListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "removeELContextListener", "(Ljakarta/el/ELContextListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELContextListeners", "()[Ljavax/el/ELContextListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELContextListeners", "()[Ljakarta/el/ELContextListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getELContextListeners", "()[Ljavax/el/ELContextListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getELContextListeners", "()[Ljakarta/el/ELContextListener;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluateExpressionGet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class<+TT;>;)TT;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluateExpressionGet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class<+TT;>;)TT;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "evaluateExpressionGet", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "evaluateExpressionGet", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljavax/el/ELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getELResolver", "()Ljakarta/el/ELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getELResolver", "()Ljavax/el/ELResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getELResolver", "()Ljakarta/el/ELResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addELResolver", "(Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addELResolver", "(Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "addELResolver", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "addELResolver", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationELResolvers", "()Ljavax/el/CompositeELResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplicationELResolvers", "()Ljakarta/el/CompositeELResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getApplicationELResolvers", "()Ljavax/el/CompositeELResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getApplicationELResolvers", "()Ljakarta/el/CompositeELResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -311,127 +311,127 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewHandler", "()Ljavax/faces/application/ViewHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getViewHandler", "()Ljavax/faces/application/ViewHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getViewHandler", "()Ljakarta/faces/application/ViewHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewHandler", "(Ljavax/faces/application/ViewHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewHandler", "(Ljakarta/faces/application/ViewHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setViewHandler", "(Ljavax/faces/application/ViewHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setViewHandler", "(Ljakarta/faces/application/ViewHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceHandler", "()Ljavax/faces/application/ResourceHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceHandler", "()Ljakarta/faces/application/ResourceHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getResourceHandler", "()Ljavax/faces/application/ResourceHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getResourceHandler", "()Ljakarta/faces/application/ResourceHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceHandler", "(Ljavax/faces/application/ResourceHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setResourceHandler", "(Ljakarta/faces/application/ResourceHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setResourceHandler", "(Ljavax/faces/application/ResourceHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setResourceHandler", "(Ljakarta/faces/application/ResourceHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateManager", "()Ljavax/faces/application/StateManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStateManager", "()Ljakarta/faces/application/StateManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getStateManager", "()Ljavax/faces/application/StateManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getStateManager", "()Ljakarta/faces/application/StateManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStateManager", "(Ljavax/faces/application/StateManager;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStateManager", "(Ljakarta/faces/application/StateManager;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setStateManager", "(Ljavax/faces/application/StateManager;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setStateManager", "(Ljakarta/faces/application/StateManager;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActionListener", "()Ljavax/faces/event/ActionListener;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getActionListener", "()Ljakarta/faces/event/ActionListener;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getActionListener", "()Ljavax/faces/event/ActionListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getActionListener", "()Ljakarta/faces/event/ActionListener;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setActionListener", "(Ljavax/faces/event/ActionListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setActionListener", "(Ljakarta/faces/event/ActionListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setActionListener", "(Ljavax/faces/event/ActionListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setActionListener", "(Ljakarta/faces/event/ActionListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNavigationHandler", "()Ljavax/faces/application/NavigationHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNavigationHandler", "()Ljakarta/faces/application/NavigationHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getNavigationHandler", "()Ljavax/faces/application/NavigationHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getNavigationHandler", "()Ljakarta/faces/application/NavigationHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNavigationHandler", "(Ljavax/faces/application/NavigationHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNavigationHandler", "(Ljakarta/faces/application/NavigationHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setNavigationHandler", "(Ljavax/faces/application/NavigationHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setNavigationHandler", "(Ljakarta/faces/application/NavigationHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlowHandler", "()Ljavax/faces/flow/FlowHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFlowHandler", "()Ljakarta/faces/flow/FlowHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getFlowHandler", "()Ljavax/faces/flow/FlowHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getFlowHandler", "()Ljakarta/faces/flow/FlowHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlowHandler", "(Ljavax/faces/flow/FlowHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFlowHandler", "(Ljakarta/faces/flow/FlowHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setFlowHandler", "(Ljavax/faces/flow/FlowHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "setFlowHandler", "(Ljakarta/faces/flow/FlowHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -521,13 +521,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceBundle", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceBundle", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "singletons", "Lcom/sun/faces/application/applicationimpl/Singletons;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getResourceBundle", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Singletons", "getResourceBundle", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/ResourceBundle;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -545,12 +545,12 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBehavior", "(Ljava/lang/String;)Ljavax/faces/component/behavior/Behavior;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBehavior", "(Ljava/lang/String;)Ljakarta/faces/component/behavior/Behavior;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createBehavior", "(Ljava/lang/String;)Ljavax/faces/component/behavior/Behavior;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createBehavior", "(Ljava/lang/String;)Ljakarta/faces/component/behavior/Behavior;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -566,12 +566,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljava/lang/String;)Ljavax/faces/component/UIComponent;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljava/lang/String;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -589,20 +589,20 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljavax/el/ValueExpression;Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljakarta/el/ValueExpression;Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljavax/el/ValueExpression;Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljakarta/el/ValueExpression;Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljavax/el/ValueExpression;Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljakarta/el/ValueExpression;Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
@@ -610,47 +610,47 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljavax/el/ValueExpression;Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljakarta/el/ValueExpression;Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljavax/faces/context/FacesContext;Ljavax/faces/application/Resource;)Ljavax/faces/component/UIComponent;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/application/Resource;)Ljakarta/faces/component/UIComponent;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "getExpressionFactory", "()Ljavax/el/ExpressionFactory;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljavax/faces/context/FacesContext;Ljavax/faces/application/Resource;Ljavax/el/ExpressionFactory;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/ApplicationImpl", "getExpressionFactory", "()Ljakarta/el/ExpressionFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/application/Resource;Ljakarta/el/ExpressionFactory;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljavax/faces/el/ValueBinding;Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", null, new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createComponent", "(Ljakarta/faces/el/ValueBinding;Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", null, new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljavax/faces/el/ValueBinding;Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljavax/faces/component/UIComponent;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createComponent", "(Ljakarta/faces/el/ValueBinding;Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -690,23 +690,23 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverter", "(Ljava/lang/String;)Ljavax/faces/convert/Converter;", "(Ljava/lang/String;)Ljavax/faces/convert/Converter<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverter", "(Ljava/lang/String;)Ljakarta/faces/convert/Converter;", "(Ljava/lang/String;)Ljakarta/faces/convert/Converter<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createConverter", "(Ljava/lang/String;)Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createConverter", "(Ljava/lang/String;)Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverter", "(Ljava/lang/Class;)Ljavax/faces/convert/Converter;", "(Ljava/lang/Class<*>;)Ljavax/faces/convert/Converter<*>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConverter", "(Ljava/lang/Class;)Ljakarta/faces/convert/Converter;", "(Ljava/lang/Class<*>;)Ljakarta/faces/convert/Converter<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createConverter", "(Ljava/lang/Class;)Ljavax/faces/convert/Converter;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createConverter", "(Ljava/lang/Class;)Ljakarta/faces/convert/Converter;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -744,12 +744,12 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidator", "(Ljava/lang/String;)Ljavax/faces/validator/Validator;", "(Ljava/lang/String;)Ljavax/faces/validator/Validator<*>;", new String[] { "javax/faces/FacesException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createValidator", "(Ljava/lang/String;)Ljakarta/faces/validator/Validator;", "(Ljava/lang/String;)Ljakarta/faces/validator/Validator<*>;", new String[] { "jakarta/faces/FacesException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "instanceFactory", "Lcom/sun/faces/application/applicationimpl/InstanceFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createValidator", "(Ljava/lang/String;)Ljavax/faces/validator/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/InstanceFactory", "createValidator", "(Ljava/lang/String;)Ljakarta/faces/validator/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -786,60 +786,60 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProjectStage", "()Ljavax/faces/application/ProjectStage;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProjectStage", "()Ljakarta/faces/application/ProjectStage;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "stage", "Lcom/sun/faces/application/applicationimpl/Stage;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Stage", "getProjectStage", "(Ljavax/faces/application/Application;)Ljavax/faces/application/ProjectStage;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/Stage", "getProjectStage", "(Ljakarta/faces/application/Application;)Ljakarta/faces/application/ProjectStage;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchExpressionHandler", "()Ljavax/faces/component/search/SearchExpressionHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchExpressionHandler", "()Ljakarta/faces/component/search/SearchExpressionHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "searchExpression", "Lcom/sun/faces/application/applicationimpl/SearchExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "getSearchExpressionHandler", "()Ljavax/faces/component/search/SearchExpressionHandler;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "getSearchExpressionHandler", "()Ljakarta/faces/component/search/SearchExpressionHandler;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSearchExpressionHandler", "(Ljavax/faces/component/search/SearchExpressionHandler;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSearchExpressionHandler", "(Ljakarta/faces/component/search/SearchExpressionHandler;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "searchExpression", "Lcom/sun/faces/application/applicationimpl/SearchExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "setSearchExpressionHandler", "(Ljavax/faces/component/search/SearchExpressionHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "setSearchExpressionHandler", "(Ljakarta/faces/component/search/SearchExpressionHandler;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSearchKeywordResolver", "(Ljavax/faces/component/search/SearchKeywordResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSearchKeywordResolver", "(Ljakarta/faces/component/search/SearchKeywordResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "searchExpression", "Lcom/sun/faces/application/applicationimpl/SearchExpression;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "addSearchKeywordResolver", "(Ljavax/faces/component/search/SearchKeywordResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "addSearchKeywordResolver", "(Ljakarta/faces/component/search/SearchKeywordResolver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchKeywordResolver", "()Ljavax/faces/component/search/SearchKeywordResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchKeywordResolver", "()Ljakarta/faces/component/search/SearchKeywordResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "searchExpression", "Lcom/sun/faces/application/applicationimpl/SearchExpression;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "getSearchKeywordResolver", "()Ljavax/faces/component/search/SearchKeywordResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/SearchExpression", "getSearchKeywordResolver", "()Ljakarta/faces/component/search/SearchKeywordResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getPropertyResolver", "()Ljavax/faces/el/PropertyResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getPropertyResolver", "()Ljakarta/faces/el/PropertyResolver;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -847,13 +847,13 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getPropertyResolver", "()Ljavax/faces/el/PropertyResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getPropertyResolver", "()Ljakarta/faces/el/PropertyResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setPropertyResolver", "(Ljavax/faces/el/PropertyResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setPropertyResolver", "(Ljakarta/faces/el/PropertyResolver;)V", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -862,13 +862,13 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "setPropertyResolver", "(Ljavax/faces/el/PropertyResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "setPropertyResolver", "(Ljakarta/faces/el/PropertyResolver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "createMethodBinding", "(Ljava/lang/String;[Ljava/lang/Class;)Ljavax/faces/el/MethodBinding;", "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljavax/faces/el/MethodBinding;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "createMethodBinding", "(Ljava/lang/String;[Ljava/lang/Class;)Ljakarta/faces/el/MethodBinding;", "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljakarta/faces/el/MethodBinding;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -878,13 +878,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "createMethodBinding", "(Ljava/lang/String;[Ljava/lang/Class;)Ljavax/faces/el/MethodBinding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "createMethodBinding", "(Ljava/lang/String;[Ljava/lang/Class;)Ljakarta/faces/el/MethodBinding;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "createValueBinding", "(Ljava/lang/String;)Ljavax/faces/el/ValueBinding;", null, new String[] { "javax/faces/el/ReferenceSyntaxException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "createValueBinding", "(Ljava/lang/String;)Ljakarta/faces/el/ValueBinding;", null, new String[] { "jakarta/faces/el/ReferenceSyntaxException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -893,13 +893,13 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "createValueBinding", "(Ljava/lang/String;)Ljavax/faces/el/ValueBinding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "createValueBinding", "(Ljava/lang/String;)Ljakarta/faces/el/ValueBinding;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getVariableResolver", "()Ljavax/faces/el/VariableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "getVariableResolver", "()Ljakarta/faces/el/VariableResolver;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -907,13 +907,13 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getVariableResolver", "()Ljavax/faces/el/VariableResolver;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "getVariableResolver", "()Ljakarta/faces/el/VariableResolver;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setVariableResolver", "(Ljavax/faces/el/VariableResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setVariableResolver", "(Ljakarta/faces/el/VariableResolver;)V", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -922,7 +922,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/ApplicationImpl", "expressionLanguage", "Lcom/sun/faces/application/applicationimpl/ExpressionLanguage;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "setVariableResolver", "(Ljavax/faces/el/VariableResolver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/application/applicationimpl/ExpressionLanguage", "setVariableResolver", "(Ljakarta/faces/el/VariableResolver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

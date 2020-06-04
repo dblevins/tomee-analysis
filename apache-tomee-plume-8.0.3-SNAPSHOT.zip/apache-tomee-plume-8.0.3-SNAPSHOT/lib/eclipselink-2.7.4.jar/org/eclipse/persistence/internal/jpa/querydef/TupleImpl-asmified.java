@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/TupleImpl", null, "java/lang/Object", new String[] { "javax/persistence/Tuple", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/querydef/TupleImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/Tuple", "java/io/Serializable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "selections", "Ljava/util/List;", "Ljava/util/List<-Ljavax/persistence/criteria/Selection<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "selections", "Ljava/util/List;", "Ljava/util/List<-Ljakarta/persistence/criteria/Selection<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "rqr", "Lorg/eclipse/persis
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Lorg/eclipse/persistence/queries/ReportQueryResult;)V", "(Ljava/util/List<-Ljavax/persistence/criteria/Selection<*>;>;Lorg/eclipse/persistence/queries/ReportQueryResult;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Lorg/eclipse/persistence/queries/ReportQueryResult;)V", "(Ljava/util/List<-Ljakarta/persistence/criteria/Selection<*>;>;Lorg/eclipse/persistence/queries/ReportQueryResult;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljavax/persistence/TupleElement;)Ljava/lang/Object;", "<X:Ljava/lang/Object;>(Ljavax/persistence/TupleElement<TX;>;)TX;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljakarta/persistence/TupleElement;)Ljava/lang/Object;", "<X:Ljava/lang/Object;>(Ljakarta/persistence/TupleElement<TX;>;)TX;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/TupleImpl", "selections", "Ljava/util/List;");
@@ -265,7 +265,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/TupleElement<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElements", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/TupleElement<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/querydef/TupleImpl", "selections", "Ljava/util/List;");

@@ -55,7 +55,7 @@ fieldVisitor = classWriter.visitField(0, "mBypassCache", "Z", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "pageContext", "Ljavax/servlet/jsp/PageContext;", null, null);
+fieldVisitor = classWriter.visitField(0, "pageContext", "Ljakarta/servlet/jsp/PageContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -109,8 +109,8 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/servlet/jsp/PageContext");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/jsp/PageContext");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "parseExpressionString", "(Ljava/lang/String;)Ljava/lang/Object;", false);
@@ -378,18 +378,18 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljavax/servlet/jsp/PageContext;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "getServletContext", "()Ljavax/servlet/ServletContext;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/ELEvaluator", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
 methodVisitor.visitLdcInsn("org.apache.taglibs.standard.lang.jstl.exprCacheSize");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getInitParameter", "(Ljava/lang/String;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label2 = new Label();

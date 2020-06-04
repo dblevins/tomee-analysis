@@ -57,19 +57,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getImage", "
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValue", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Object;", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setValue", "(Lorg/apache/el/lang/EvaluationContext;Ljava/lang/Object;)V", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getType", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class;", "(Lorg/apache/el/lang/EvaluationContext;)Ljava/lang/Class<*>;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isReadOnly", "(Lorg/apache/el/lang/EvaluationContext;)Z", null, new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
@@ -77,15 +77,15 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "accept", "(L
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljavax/el/MethodInfo;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;)Ljavax/el/MethodInfo;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMethodInfo", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;)Ljakarta/el/MethodInfo;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;)Ljakarta/el/MethodInfo;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "invoke", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;[Ljava/lang/Object;)Ljava/lang/Object;", new String[] { "javax/el/ELException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "invoke", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;", "(Lorg/apache/el/lang/EvaluationContext;[Ljava/lang/Class<*>;[Ljava/lang/Object;)Ljava/lang/Object;", new String[] { "jakarta/el/ELException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValueReference", "(Lorg/apache/el/lang/EvaluationContext;)Ljavax/el/ValueReference;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getValueReference", "(Lorg/apache/el/lang/EvaluationContext;)Ljakarta/el/ValueReference;", null, null);
 methodVisitor.visitEnd();
 }
 {

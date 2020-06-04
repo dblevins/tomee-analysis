@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/lang/model/element/Element", "getModifiers", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/Transient;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/Transient;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/meta/SourceAnnotationHandler", "isAnnotatedWith", "(Ljavax/lang/model/element/Element;Ljava/lang/Class;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);

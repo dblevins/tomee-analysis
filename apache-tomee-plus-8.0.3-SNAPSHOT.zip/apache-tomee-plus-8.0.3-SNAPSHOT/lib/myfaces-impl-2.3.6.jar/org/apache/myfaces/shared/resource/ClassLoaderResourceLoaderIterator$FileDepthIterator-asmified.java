@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "maxDepth", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljavax/faces/application/ResourceVisitOption;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "options", "[Ljakarta/faces/application/ResourceVisitOption;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "basePathName", "Ljava/lang/S
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/io/File;Ljava/lang/String;I[Ljavax/faces/application/ResourceVisitOption;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "<init>", "(Ljava/io/File;Ljava/lang/String;I[Ljakarta/faces/application/ResourceVisitOption;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -71,7 +71,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$FileDepthIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$FileDepthIterator", "options", "[Ljavax/faces/application/ResourceVisitOption;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$FileDepthIterator", "options", "[Ljakarta/faces/application/ResourceVisitOption;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$FileDepthIterator", "directory", "Ljava/io/File;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "listFiles", "()[Ljava/io/File;", false);

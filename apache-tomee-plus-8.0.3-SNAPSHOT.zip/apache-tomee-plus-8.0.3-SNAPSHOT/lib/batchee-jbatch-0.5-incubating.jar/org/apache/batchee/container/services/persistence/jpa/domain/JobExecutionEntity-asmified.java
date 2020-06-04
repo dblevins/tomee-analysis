@@ -25,39 +25,39 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/Entity;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/Entity;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/NamedQueries;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/NamedQueries;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/persistence/NamedQuery;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/persistence/NamedQuery;");
 annotationVisitor2.visit("name", "org.apache.batchee.container.services.persistence.jpa.domain.JobExecutionEntity.mostRecent");
 annotationVisitor2.visit("query", "SELECT e FROM JobExecutionEntity e WHERE e.instance.jobInstanceId = :instanceId ORDER BY e.createTime DESC");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/persistence/NamedQuery;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/persistence/NamedQuery;");
 annotationVisitor2.visit("name", "org.apache.batchee.container.services.persistence.jpa.domain.JobExecutionEntity.findByInstance");
 annotationVisitor2.visit("query", "SELECT e FROM JobExecutionEntity e WHERE e.instance.jobInstanceId = :instanceId");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/persistence/NamedQuery;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/persistence/NamedQuery;");
 annotationVisitor2.visit("name", "org.apache.batchee.container.services.persistence.jpa.domain.JobExecutionEntity.deleteByInstanceId");
 annotationVisitor2.visit("query", "delete from JobExecutionEntity e where e.instance.jobInstanceId = :instanceId");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/persistence/NamedQuery;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/persistence/NamedQuery;");
 annotationVisitor2.visit("name", "org.apache.batchee.container.services.persistence.jpa.domain.JobExecutionEntity.deleteByDate");
 annotationVisitor2.visit("query", "delete from JobExecutionEntity e where e.endTime < :date");
 annotationVisitor2.visitEnd();
 }
 {
-AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljavax/persistence/NamedQuery;");
+AnnotationVisitor annotationVisitor2 = annotationVisitor1.visitAnnotation(null, "Ljakarta/persistence/NamedQuery;");
 annotationVisitor2.visit("name", "org.apache.batchee.container.services.persistence.jpa.domain.JobExecutionEntity.findRunning");
 annotationVisitor2.visit("query", "SELECT e FROM JobExecutionEntity e WHERE e.batchStatus in :statuses and e.instance.name = :name");
 annotationVisitor2.visitEnd();
@@ -67,7 +67,7 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/persistence/Table;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/persistence/Table;", true);
 annotationVisitor0.visit("name", "BATCH_JOBEXECUTION");
 annotationVisitor0.visitEnd();
 }
@@ -80,11 +80,11 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "executionId", "J", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/persistence/Id;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/persistence/Id;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/persistence/GeneratedValue;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/persistence/GeneratedValue;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -106,10 +106,10 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "updateTime", "Ljava/sql/Time
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljavax/batch/runtime/BatchStatus;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "batchStatus", "Ljakarta/batch/runtime/BatchStatus;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/persistence/Enumerated;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/persistence/EnumType;", "STRING");
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/persistence/Enumerated;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/persistence/EnumType;", "STRING");
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -121,7 +121,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jobProperties", "Ljava/lang/String;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/persistence/Lob;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/persistence/Lob;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -129,7 +129,7 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "instance", "Lorg/apache/batchee/container/services/persistence/jpa/domain/JobInstanceEntity;", null, null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/persistence/ManyToOne;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/persistence/ManyToOne;", true);
 annotationVisitor0.visitEnd();
 }
 fieldVisitor.visitEnd();
@@ -229,20 +229,20 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchStatus", "()Ljavax/batch/runtime/BatchStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBatchStatus", "()Ljakarta/batch/runtime/BatchStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljavax/batch/runtime/BatchStatus;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBatchStatus", "(Ljakarta/batch/runtime/BatchStatus;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity", "batchStatus", "Ljavax/batch/runtime/BatchStatus;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity", "batchStatus", "Ljakarta/batch/runtime/BatchStatus;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbApplicationFactory", null, "javax/faces/application/ApplicationFactory", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/jsf/OwbApplicationFactory", null, "jakarta/faces/application/ApplicationFactory", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "wrapped", "Ljavax/faces/application/ApplicationFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "wrapped", "Ljakarta/faces/application/ApplicationFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "wrappedApplication", "Ljavax/faces/application/Application;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "wrappedApplication", "Ljakarta/faces/application/Application;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,13 +37,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "webBeansContext", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/application/ApplicationFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/application/ApplicationFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/ApplicationFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/ApplicationFactory", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/config/WebBeansContext", "currentInstance", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplication", "()Ljavax/faces/application/Application;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getApplication", "()Ljakarta/faces/application/Application;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -61,33 +61,33 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/container/Bean
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljavax/faces/application/ApplicationFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ApplicationFactory", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljakarta/faces/application/ApplicationFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ApplicationFactory", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljakarta/faces/application/Application;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/jsf/OwbApplication");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljavax/faces/application/ApplicationFactory;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ApplicationFactory", "getApplication", "()Ljavax/faces/application/Application;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbApplication", "<init>", "(Ljavax/faces/application/Application;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljakarta/faces/application/ApplicationFactory;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ApplicationFactory", "getApplication", "()Ljakarta/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbApplication", "<init>", "(Ljakarta/faces/application/Application;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljakarta/faces/application/Application;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljakarta/faces/application/Application;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setApplication", "(Ljavax/faces/application/Application;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setApplication", "(Ljakarta/faces/application/Application;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
@@ -99,23 +99,23 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/jsf/OwbApplication");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbApplication", "<init>", "(Ljavax/faces/application/Application;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljavax/faces/application/Application;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/jsf/OwbApplication", "<init>", "(Ljakarta/faces/application/Application;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrappedApplication", "Ljakarta/faces/application/Application;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/ApplicationFactory", "setApplication", "(Ljavax/faces/application/Application;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/ApplicationFactory", "setApplication", "(Ljakarta/faces/application/Application;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljavax/faces/application/ApplicationFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWrapped", "()Ljakarta/faces/application/ApplicationFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljavax/faces/application/ApplicationFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/jsf/OwbApplicationFactory", "wrapped", "Ljakarta/faces/application/ApplicationFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -124,7 +124,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "getWrapped", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbApplicationFactory", "getWrapped", "()Ljavax/faces/application/ApplicationFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/jsf/OwbApplicationFactory", "getWrapped", "()Ljakarta/faces/application/ApplicationFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

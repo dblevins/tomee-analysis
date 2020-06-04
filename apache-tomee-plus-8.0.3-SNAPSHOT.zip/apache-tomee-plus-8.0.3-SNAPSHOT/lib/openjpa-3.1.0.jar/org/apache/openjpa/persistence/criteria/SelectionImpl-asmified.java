@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/criteria/SelectionImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/criteria/Selection<TX;>;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;", "java/lang/Object", new String[] { "javax/persistence/criteria/Selection", "org/apache/openjpa/persistence/criteria/CriteriaExpression" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/openjpa/persistence/criteria/SelectionImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/criteria/Selection<TX;>;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;", "java/lang/Object", new String[] { "jakarta/persistence/criteria/Selection", "org/apache/openjpa/persistence/criteria/CriteriaExpression" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_cls", "Ljava/lang/Class;", "Ljava/lang/Class<TX;>;", null);
@@ -67,7 +67,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;)Ljavax/persistence/criteria/Selection;", "(Ljava/lang/String;)Ljavax/persistence/criteria/Selection<TX;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "alias", "(Ljava/lang/String;)Ljakarta/persistence/criteria/Selection;", "(Ljava/lang/String;)Ljakarta/persistence/criteria/Selection<TX;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -174,7 +174,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/persistence/criteria/Selection<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCompoundSelectionItems", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/persistence/criteria/Selection<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -344,8 +344,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/persistence/criteria/Expression;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "acceptVisit", "(Lorg/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;[Ljavax/persistence/criteria/Expression;)V", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/persistence/criteria/Expression;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/criteria/Expressions", "acceptVisit", "(Lorg/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor;Lorg/apache/openjpa/persistence/criteria/CriteriaExpression;[Ljakarta/persistence/criteria/Expression;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

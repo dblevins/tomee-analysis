@@ -1993,7 +1993,7 @@ methodVisitor.visitMaxs(8, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "readConnectionPreface", "(Ljavax/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, new String[] { "org/apache/coyote/http2/Http2Exception" });
+methodVisitor = classWriter.visitMethod(0, "readConnectionPreface", "(Ljakarta/servlet/http/WebConnection;Lorg/apache/coyote/http2/Stream;)V", null, new String[] { "org/apache/coyote/http2/Http2Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

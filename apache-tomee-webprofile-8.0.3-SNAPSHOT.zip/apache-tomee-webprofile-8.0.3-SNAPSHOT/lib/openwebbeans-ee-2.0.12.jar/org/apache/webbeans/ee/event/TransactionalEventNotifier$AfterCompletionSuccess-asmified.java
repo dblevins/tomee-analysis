@@ -31,13 +31,13 @@ classWriter.visitInnerClass("org/apache/webbeans/ee/event/TransactionalEventNoti
 classWriter.visitInnerClass("org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "org/apache/webbeans/ee/event/TransactionalEventNotifier", "AbstractSynchronization", ACC_PRIVATE | ACC_STATIC);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "<init>", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "<init>", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -58,13 +58,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/ee/event/TransactionalEventNotifier$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;Lorg/apache/webbeans/ee/event/TransactionalEventNotifier$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionSuccess", "<init>", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionSuccess", "<init>", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/bind/InternalAccessorFactory", null, "java/lang/Object", new String[] { "com/sun/xml/bind/AccessorFactory" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createFieldAccessor", "(Ljava/lang/Class;Ljava/lang/reflect/Field;ZZ)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", null, new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createFieldAccessor", "(Ljava/lang/Class;Ljava/lang/reflect/Field;ZZ)Lcom/sun/xml/bind/v2/runtime/reflect/Accessor;", null, new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

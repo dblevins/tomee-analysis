@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/core/mdb/InboundRecovery", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "recover", "(Ljavax/resource/spi/ResourceAdapter;Ljavax/resource/spi/ActivationSpec;Ljava/lang/String;)V", null, new String[] { "org/apache/openejb/OpenEJBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "recover", "(Ljakarta/resource/spi/ResourceAdapter;Ljakarta/resource/spi/ActivationSpec;Ljava/lang/String;)V", null, new String[] { "org/apache/openejb/OpenEJBException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

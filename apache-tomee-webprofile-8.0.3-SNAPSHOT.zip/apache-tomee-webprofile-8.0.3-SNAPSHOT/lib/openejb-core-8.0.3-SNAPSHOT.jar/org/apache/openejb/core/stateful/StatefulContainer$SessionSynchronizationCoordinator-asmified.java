@@ -441,7 +441,7 @@ methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/stateful/Instance", "setTransaction", "(Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/stateful/Instance", "setTransaction", "(Ljakarta/transaction/Transaction;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/stateful/StatefulContainer$SessionSynchronizationCoordinator", "this$0", "Lorg/apache/openejb/core/stateful/StatefulContainer;");
 methodVisitor.visitVarInsn(ALOAD, 5);

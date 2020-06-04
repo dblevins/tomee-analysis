@@ -24,12 +24,12 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Lorg/apache/jasper/el/ELContextImpl;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("org/apache/jasper/runtime/JspApplicationContextImpl", "createELContext", "(Ljavax/servlet/jsp/JspContext;)Lorg/apache/jasper/el/ELContextImpl;");
+classWriter.visitOuterClass("org/apache/jasper/runtime/JspApplicationContextImpl", "createELContext", "(Ljakarta/servlet/jsp/JspContext;)Lorg/apache/jasper/el/ELContextImpl;");
 
 classWriter.visitInnerClass("org/apache/jasper/runtime/JspApplicationContextImpl$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$r", "Ljavax/el/ELResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$r", "Ljakarta/el/ELResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,14 +37,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspApplicationContextImpl;Ljavax/el/ELResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspApplicationContextImpl;Ljakarta/el/ELResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "this$0", "Lorg/apache/jasper/runtime/JspApplicationContextImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "val$r", "Ljavax/el/ELResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "val$r", "Ljakarta/el/ELResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -57,8 +57,8 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/jasper/el/ELContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "val$r", "Ljavax/el/ELResolver;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/el/ELContextImpl", "<init>", "(Ljavax/el/ELResolver;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspApplicationContextImpl$1", "val$r", "Ljakarta/el/ELResolver;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/jasper/el/ELContextImpl", "<init>", "(Ljakarta/el/ELResolver;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();

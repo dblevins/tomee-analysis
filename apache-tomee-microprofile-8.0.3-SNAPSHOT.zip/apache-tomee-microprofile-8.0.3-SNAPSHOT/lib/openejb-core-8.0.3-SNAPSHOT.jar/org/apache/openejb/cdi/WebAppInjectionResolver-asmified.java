@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "implResolveByType", "(ZLjava/lang/reflect/Type;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljava/util/Set;", "(ZLjava/lang/reflect/Type;Ljava/lang/Class<*>;[Ljava/lang/annotation/Annotation;)Ljava/util/Set<Ljavax/enterprise/inject/spi/Bean<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "implResolveByType", "(ZLjava/lang/reflect/Type;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)Ljava/util/Set;", "(ZLjava/lang/reflect/Type;Ljava/lang/Class<*>;[Ljava/lang/annotation/Annotation;)Ljava/util/Set<Ljakarta/enterprise/inject/spi/Bean<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);

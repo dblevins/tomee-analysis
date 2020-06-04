@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "generateKey", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", "(Ljavax/faces/context/FacesContext;)TK;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "generateKey", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", "(Ljakarta/faces/context/FacesContext;)TK;", null);
 methodVisitor.visitEnd();
 }
 {

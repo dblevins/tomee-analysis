@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorAttachedObjectTarget", null, "java/lang/Object", new String[] { "javax/faces/view/BehaviorHolderAttachedObjectTarget" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorAttachedObjectTarget", null, "java/lang/Object", new String[] { "jakarta/faces/view/BehaviorHolderAttachedObjectTarget" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getEvent", "()Ljava/lang/String;", null, null);

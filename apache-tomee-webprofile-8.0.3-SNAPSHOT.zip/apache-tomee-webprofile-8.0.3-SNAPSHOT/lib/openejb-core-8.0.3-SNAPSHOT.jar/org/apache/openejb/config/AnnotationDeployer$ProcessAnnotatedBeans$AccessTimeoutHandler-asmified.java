@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljavax/ejb/AccessTimeout;>;", "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler;Lorg/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler<Ljakarta/ejb/AccessTimeout;>;", "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler", new String[] { "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AnnotationHandler" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans", "org/apache/openejb/config/AnnotationDeployer", "ProcessAnnotatedBeans", ACC_PUBLIC | ACC_STATIC);
 
@@ -59,7 +59,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljavax/ejb/AccessTimeout;Ljava/lang/Class;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassLevelDeclaration", "(Ljakarta/ejb/AccessTimeout;Ljava/lang/Class;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -68,14 +68,14 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "toTimeout", "(Ljavax/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "toTimeout", "(Ljakarta/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ContainerConcurrency", "setAccessTimeout", "(Lorg/apache/openejb/jee/Timeout;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljavax/ejb/AccessTimeout;Ljava/lang/reflect/Method;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethodLevelDeclaration", "(Ljakarta/ejb/AccessTimeout;Ljava/lang/reflect/Method;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -84,14 +84,14 @@ methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "toTimeout", "(Ljavax/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "toTimeout", "(Ljakarta/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/ContainerConcurrency", "setAccessTimeout", "(Lorg/apache/openejb/jee/Timeout;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toTimeout", "(Ljavax/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toTimeout", "(Ljakarta/ejb/AccessTimeout;)Lorg/apache/openejb/jee/Timeout;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/Timeout");
 methodVisitor.visitInsn(DUP);
@@ -99,11 +99,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/Timeout", "
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/AccessTimeout", "value", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/AccessTimeout", "value", "()J", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/Timeout", "setTimeout", "(J)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ejb/AccessTimeout", "unit", "()Ljava/util/concurrent/TimeUnit;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ejb/AccessTimeout", "unit", "()Ljava/util/concurrent/TimeUnit;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/Timeout", "setUnit", "(Ljava/util/concurrent/TimeUnit;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
@@ -111,9 +111,9 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljavax/ejb/AccessTimeout;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<Ljakarta/ejb/AccessTimeout;>;", null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ejb/AccessTimeout;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ejb/AccessTimeout;"));
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -152,9 +152,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/AccessTimeout");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/AccessTimeout");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "addMethodLevelDeclaration", "(Ljavax/ejb/AccessTimeout;Ljava/lang/reflect/Method;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "addMethodLevelDeclaration", "(Ljakarta/ejb/AccessTimeout;Ljava/lang/reflect/Method;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -164,9 +164,9 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ejb/AccessTimeout");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ejb/AccessTimeout");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "addClassLevelDeclaration", "(Ljavax/ejb/AccessTimeout;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler", "addClassLevelDeclaration", "(Ljakarta/ejb/AccessTimeout;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

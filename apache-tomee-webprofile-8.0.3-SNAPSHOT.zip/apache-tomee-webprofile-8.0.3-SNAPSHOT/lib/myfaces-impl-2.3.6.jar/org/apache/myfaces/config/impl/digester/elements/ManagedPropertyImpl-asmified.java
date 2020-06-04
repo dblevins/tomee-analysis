@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/myfaces/config/impl/digester/elements/Ma
 classWriter.visitInnerClass("org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$DummyValueBinding", "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DummyValueBinding", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DUMMY_VB", "Ljavax/faces/el/ValueBinding;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DUMMY_VB", "Ljakarta/faces/el/ValueBinding;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_propertyClass", "Ljava/lang
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "_valueBinding", "Ljavax/faces/el/ValueBinding;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "_valueBinding", "Ljakarta/faces/el/ValueBinding;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -216,15 +216,15 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRuntimeValue", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRuntimeValue", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "getValueBinding", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/el/ValueBinding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "getValueBinding", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/el/ValueBinding;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljavax/faces/el/ValueBinding;");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljakarta/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljakarta/faces/el/ValueBinding;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -234,9 +234,9 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljakarta/faces/el/ValueBinding;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/el/ValueBinding", "getValue", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/el/ValueBinding", "getValue", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Object"});
 methodVisitor.visitInsn(ARETURN);
@@ -244,10 +244,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueBinding", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/el/ValueBinding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValueBinding", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/el/ValueBinding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljakarta/faces/el/ValueBinding;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -256,22 +256,22 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/impl/dig
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_value", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "createValueBinding", "(Ljava/lang/String;)Ljavax/faces/el/ValueBinding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createValueBinding", "(Ljava/lang/String;)Ljakarta/faces/el/ValueBinding;", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl"});
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljakarta/faces/el/ValueBinding;");
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "javax/faces/context/FacesContext"}, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "javax/faces/el/ValueBinding"});
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "jakarta/faces/context/FacesContext"}, 2, new Object[] {"org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "jakarta/faces/el/ValueBinding"});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljakarta/faces/el/ValueBinding;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "_valueBinding", "Ljakarta/faces/el/ValueBinding;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -293,7 +293,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/config/impl/digester/elemen
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$DummyValueBinding", "<init>", "(Lorg/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$1;)V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljavax/faces/el/ValueBinding;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl", "DUMMY_VB", "Ljakarta/faces/el/ValueBinding;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);
 methodVisitor.visitEnd();

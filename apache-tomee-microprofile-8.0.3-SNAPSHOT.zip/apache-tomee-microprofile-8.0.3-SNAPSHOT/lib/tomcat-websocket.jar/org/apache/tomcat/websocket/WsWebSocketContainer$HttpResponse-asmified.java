@@ -31,11 +31,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "status", "I", nu
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handshakeResponse", "Ljavax/websocket/HandshakeResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "handshakeResponse", "Ljakarta/websocket/HandshakeResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILjavax/websocket/HandshakeResponse;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILjakarta/websocket/HandshakeResponse;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -44,7 +44,7 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse", "status", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse", "handshakeResponse", "Ljavax/websocket/HandshakeResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse", "handshakeResponse", "Ljakarta/websocket/HandshakeResponse;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -59,10 +59,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandshakeResponse", "()Ljavax/websocket/HandshakeResponse;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHandshakeResponse", "()Ljakarta/websocket/HandshakeResponse;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse", "handshakeResponse", "Ljavax/websocket/HandshakeResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse", "handshakeResponse", "Ljakarta/websocket/HandshakeResponse;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

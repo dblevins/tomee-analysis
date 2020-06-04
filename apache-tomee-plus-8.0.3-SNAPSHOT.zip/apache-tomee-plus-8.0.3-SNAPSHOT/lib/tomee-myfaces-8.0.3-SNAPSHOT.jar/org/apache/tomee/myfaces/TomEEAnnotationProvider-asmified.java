@@ -40,7 +40,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClasses", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Map;", "(Ljavax/faces/context/ExternalContext;)Ljava/util/Map<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/util/Set<Ljava/lang/Class<*>;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAnnotatedClasses", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Map;", "(Ljakarta/faces/context/ExternalContext;)Ljava/util/Map<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/util/Set<Ljava/lang/Class<*>;>;>;", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -123,7 +123,7 @@ methodVisitor.visitLabel(label1);
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label11);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "javax/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map", "java/util/Iterator", "java/util/Map$Entry"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "jakarta/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map", "java/util/Iterator", "java/util/Map$Entry"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label11);
@@ -163,7 +163,7 @@ methodVisitor.visitLabel(label4);
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label14);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 14, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "javax/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map", "java/util/Iterator", "java/util/Map$Entry", "java/lang/Class", "java/util/Set", "java/util/Set", "java/util/Iterator", "java/lang/String"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 14, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "jakarta/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map", "java/util/Iterator", "java/util/Map$Entry", "java/lang/Class", "java/util/Set", "java/util/Set", "java/util/Iterator", "java/lang/String"}, 1, new Object[] {"java/lang/ClassNotFoundException"});
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/myfaces/TomEEAnnotationProvider", "LOGGER", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -190,7 +190,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label10);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "javax/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/tomee/myfaces/TomEEAnnotationProvider", "jakarta/faces/context/ExternalContext", "java/lang/ClassLoader", "org/apache/openejb/assembler/classic/WebAppBuilder", "java/util/Map", "java/util/Map", "java/util/Map"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 15);

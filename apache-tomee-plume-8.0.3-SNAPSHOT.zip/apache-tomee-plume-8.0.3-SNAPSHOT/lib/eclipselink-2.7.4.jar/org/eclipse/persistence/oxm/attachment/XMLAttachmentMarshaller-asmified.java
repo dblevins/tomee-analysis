@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/oxm/attachment/XMLAttachmentMarshaller", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addMtomAttachment", "(Ljavax/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addMtomAttachment", "(Ljakarta/activation/DataHandler;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addSwaRefAttachment", "(Ljavax/activation/DataHandler;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addSwaRefAttachment", "(Ljakarta/activation/DataHandler;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 {

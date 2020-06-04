@@ -1329,7 +1329,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "waitForSpace", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage;Ljava/lang/String;)V", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage<*>;Ljava/lang/String;)V", new String[] { "java/io/IOException", "java/lang/InterruptedException", "javax/jms/ResourceAllocationException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "waitForSpace", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage;Ljava/lang/String;)V", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage<*>;Ljava/lang/String;)V", new String[] { "java/io/IOException", "java/lang/InterruptedException", "jakarta/jms/ResourceAllocationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1343,7 +1343,7 @@ methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "waitForSpace", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage;ILjava/lang/String;)V", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage<*>;ILjava/lang/String;)V", new String[] { "java/io/IOException", "java/lang/InterruptedException", "javax/jms/ResourceAllocationException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "waitForSpace", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage;ILjava/lang/String;)V", "(Lorg/apache/activemq/broker/ConnectionContext;Lorg/apache/activemq/broker/ProducerBrokerExchange;Lorg/apache/activemq/usage/Usage<*>;ILjava/lang/String;)V", new String[] { "java/io/IOException", "java/lang/InterruptedException", "jakarta/jms/ResourceAllocationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ConnectionContext", "isNetworkConnection", "()Z", false);
@@ -1359,10 +1359,10 @@ methodVisitor.visitLdcInsn("sendFailIfNoSpace, forcing exception on send, usage:
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/ResourceAllocationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/ResourceAllocationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -1390,10 +1390,10 @@ methodVisitor.visitLdcInsn("sendFailIfNoSpaceAfterTimeout expired, forcing excep
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
-methodVisitor.visitTypeInsn(NEW, "javax/jms/ResourceAllocationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/jms/ResourceAllocationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/jms/ResourceAllocationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

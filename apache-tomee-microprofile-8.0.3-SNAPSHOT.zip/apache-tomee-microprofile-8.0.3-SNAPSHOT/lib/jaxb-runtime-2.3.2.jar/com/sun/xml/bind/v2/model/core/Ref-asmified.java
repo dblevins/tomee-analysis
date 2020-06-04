@@ -75,7 +75,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/impl/ModelBuilderI;Ljava/lang/Object;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", "(Lcom/sun/xml/bind/v2/model/impl/ModelBuilderI<TT;TC;**>;TT;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/impl/ModelBuilderI;Ljava/lang/Object;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", "(Lcom/sun/xml/bind/v2/model/impl/ModelBuilderI<TT;TC;**>;TT;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -85,13 +85,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/bind/v2/model/impl/M
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Ref", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Ref", "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader<TT;TC;**>;Lcom/sun/xml/bind/v2/model/nav/Navigator<TT;TC;**>;TT;Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljavax/xml/bind/annotation/XmlList;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;Ljava/lang/Object;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", "(Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader<TT;TC;**>;Lcom/sun/xml/bind/v2/model/nav/Navigator<TT;TC;**>;TT;Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Ljakarta/xml/bind/annotation/XmlList;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -105,13 +105,13 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Adapter", "<init>", "(Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/bind/v2/model/core/Adapter", "<init>", "(Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;Lcom/sun/xml/bind/v2/model/annotation/AnnotationReader;Lcom/sun/xml/bind/v2/model/nav/Navigator;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/model/core/Adapter", "defaultType", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "com/sun/xml/bind/v2/model/nav/Navigator", "java/lang/Object", "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "javax/xml/bind/annotation/XmlList", "com/sun/xml/bind/v2/model/core/Adapter"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "com/sun/xml/bind/v2/model/nav/Navigator", "java/lang/Object", "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "jakarta/xml/bind/annotation/XmlList", "com/sun/xml/bind/v2/model/core/Adapter"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/core/Ref", "type", "Ljava/lang/Object;");
@@ -129,7 +129,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"com/sun/xml/bind/v2/model/core/Ref"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "com/sun/xml/bind/v2/model/nav/Navigator", "java/lang/Object", "javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "javax/xml/bind/annotation/XmlList", "com/sun/xml/bind/v2/model/core/Adapter"}, 2, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", "com/sun/xml/bind/v2/model/annotation/AnnotationReader", "com/sun/xml/bind/v2/model/nav/Navigator", "java/lang/Object", "jakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter", "jakarta/xml/bind/annotation/XmlList", "com/sun/xml/bind/v2/model/core/Adapter"}, 2, new Object[] {"com/sun/xml/bind/v2/model/core/Ref", Opcodes.INTEGER});
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/model/core/Ref", "valueList", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 7);

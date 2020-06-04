@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/DateHeaderProvider", "Ljava/lang/Object;Ljavax/ws/rs/ext/RuntimeDelegate$HeaderDelegate<Ljava/util/Date;>;", "java/lang/Object", new String[] { "javax/ws/rs/ext/RuntimeDelegate$HeaderDelegate" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/DateHeaderProvider", "Ljava/lang/Object;Ljakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate<Ljava/util/Date;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate" });
 
-classWriter.visitInnerClass("javax/ws/rs/ext/RuntimeDelegate$HeaderDelegate", "javax/ws/rs/ext/RuntimeDelegate", "HeaderDelegate", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate", "jakarta/ws/rs/ext/RuntimeDelegate", "HeaderDelegate", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);

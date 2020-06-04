@@ -25,23 +25,23 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/geronimo/transaction/manager/XidImporter", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "importXid", "(Ljavax/transaction/xa/Xid;J)Ljavax/transaction/Transaction;", null, new String[] { "javax/transaction/xa/XAException", "javax/transaction/SystemException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "importXid", "(Ljavax/transaction/xa/Xid;J)Ljakarta/transaction/Transaction;", null, new String[] { "javax/transaction/xa/XAException", "jakarta/transaction/SystemException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "commit", "(Ljavax/transaction/Transaction;Z)V", null, new String[] { "javax/transaction/xa/XAException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "commit", "(Ljakarta/transaction/Transaction;Z)V", null, new String[] { "javax/transaction/xa/XAException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "forget", "(Ljavax/transaction/Transaction;)V", null, new String[] { "javax/transaction/xa/XAException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "forget", "(Ljakarta/transaction/Transaction;)V", null, new String[] { "javax/transaction/xa/XAException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "prepare", "(Ljavax/transaction/Transaction;)I", null, new String[] { "javax/transaction/xa/XAException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "prepare", "(Ljakarta/transaction/Transaction;)I", null, new String[] { "javax/transaction/xa/XAException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "rollback", "(Ljavax/transaction/Transaction;)V", null, new String[] { "javax/transaction/xa/XAException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "rollback", "(Ljakarta/transaction/Transaction;)V", null, new String[] { "javax/transaction/xa/XAException" });
 methodVisitor.visitEnd();
 }
 {

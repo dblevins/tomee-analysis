@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "links", "Ljava/u
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "uriInfo", "Ljavax/ws/rs/core/UriInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "uriInfo", "Ljakarta/ws/rs/core/UriInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxrs/model/wadl/WadlGenerator;Ljava/util/List;Ljavax/ws/rs/core/UriInfo;)V", "(Ljava/util/List<Ljava/net/URI;>;Ljavax/ws/rs/core/UriInfo;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/cxf/jaxrs/model/wadl/WadlGenerator;Ljava/util/List;Ljakarta/ws/rs/core/UriInfo;)V", "(Ljava/util/List<Ljava/net/URI;>;Ljakarta/ws/rs/core/UriInfo;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -53,7 +53,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter", "links", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter", "uriInfo", "Ljavax/ws/rs/core/UriInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter", "uriInfo", "Ljakarta/ws/rs/core/UriInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -91,14 +91,14 @@ methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/net/URI"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter", "uriInfo", "Ljavax/ws/rs/core/UriInfo;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljavax/ws/rs/core/UriBuilder;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter", "uriInfo", "Ljakarta/ws/rs/core/UriInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/UriInfo", "getBaseUriBuilder", "()Ljakarta/ws/rs/core/UriBuilder;", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/ws/rs/core/UriBuilder", "build", "([Ljava/lang/Object;)Ljava/net/URI;", false);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/net/URI"});
 methodVisitor.visitVarInsn(ASTORE, 4);

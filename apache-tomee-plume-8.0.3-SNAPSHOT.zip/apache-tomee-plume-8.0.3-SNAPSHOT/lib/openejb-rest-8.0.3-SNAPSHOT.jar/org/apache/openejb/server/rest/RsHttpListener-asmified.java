@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/server/rest/RsHttpListener", null, "java/lang/Object", new String[] { "org/apache/openejb/server/httpd/HttpListener" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deploySingleton", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/Application;Ljava/util/Collection;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljavax/ws/rs/core/Application;Ljava/util/Collection<Ljava/lang/Object;>;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deploySingleton", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/Application;Ljava/util/Collection;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljakarta/ws/rs/core/Application;Ljava/util/Collection<Ljava/lang/Object;>;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deployPojo", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljavax/ws/rs/core/Application;Ljava/util/Collection;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/Collection;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class<*>;Ljavax/ws/rs/core/Application;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/Collection<Ljava/lang/Object;>;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deployPojo", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;Ljakarta/ws/rs/core/Application;Ljava/util/Collection;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/Collection;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class<*>;Ljakarta/ws/rs/core/Application;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Ljava/util/Collection<Ljava/lang/Object;>;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
 methodVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "undeploy", "
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deployApplication", "(Ljavax/ws/rs/core/Application;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/util/Collection;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljavax/ws/rs/core/Application;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection<Ljava/lang/Object;>;Ljava/util/Map<Ljava/lang/String;Lorg/apache/openejb/server/rest/EJBRestServiceInfo;>;Ljava/lang/ClassLoader;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "deployApplication", "(Ljakarta/ws/rs/core/Application;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/util/Collection;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", "(Ljakarta/ws/rs/core/Application;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection<Ljava/lang/Object;>;Ljava/util/Map<Ljava/lang/String;Lorg/apache/openejb/server/rest/EJBRestServiceInfo;>;Ljava/lang/ClassLoader;Ljava/util/Collection<Lorg/apache/openejb/Injection;>;Ljavax/naming/Context;Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/openejb/assembler/classic/util/ServiceConfiguration;)V", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

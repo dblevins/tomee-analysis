@@ -55,7 +55,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "()V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/persistence/EntityManagerFactory;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/persistence/EntityManagerFactory;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/lib/util/J2DoPrivHelper", "getClassLoaderAction", "(Ljava/lang/Class;)Ljava/security/PrivilegedAction;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/AccessController", "doPrivileged", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

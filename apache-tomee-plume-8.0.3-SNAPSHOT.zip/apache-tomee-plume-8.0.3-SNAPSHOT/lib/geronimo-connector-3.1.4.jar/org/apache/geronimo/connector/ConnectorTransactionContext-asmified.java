@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/geronimo/connector/ConnectorTransactionC
 classWriter.visitInnerClass("org/apache/geronimo/connector/outbound/TransactionCachingInterceptor$ManagedConnectionInfos", "org/apache/geronimo/connector/outbound/TransactionCachingInterceptor", "ManagedConnectionInfos", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DATA_INDEX", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljavax/transaction/Transaction;Lorg/apache/geronimo/connector/ConnectorTransactionContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DATA_INDEX", "Ljava/util/concurrent/ConcurrentHashMap;", "Ljava/util/concurrent/ConcurrentHashMap<Ljakarta/transaction/Transaction;Lorg/apache/geronimo/connector/ConnectorTransactionContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,12 +46,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljavax/transaction/Transaction;)Lorg/apache/geronimo/connector/ConnectorTransactionContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljakarta/transaction/Transaction;)Lorg/apache/geronimo/connector/ConnectorTransactionContext;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/transaction/SystemException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/transaction/SystemException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -76,7 +76,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/Conn
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/transaction/Transaction", "getStatus", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/transaction/Transaction", "getStatus", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(ICONST_3);
@@ -93,8 +93,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/ConnectorTransac
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "<init>", "(Lorg/apache/geronimo/connector/ConnectorTransactionContext;Ljavax/transaction/Transaction;)V", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/transaction/manager/TransactionImpl", "registerInterposedSynchronization", "(Ljavax/transaction/Synchronization;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization", "<init>", "(Lorg/apache/geronimo/connector/ConnectorTransactionContext;Ljakarta/transaction/Transaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/transaction/manager/TransactionImpl", "registerInterposedSynchronization", "(Ljakarta/transaction/Synchronization;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "DATA_INDEX", "Ljava/util/concurrent/ConcurrentHashMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -104,7 +104,7 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/geronimo/connector/ConnectorTransactionContext"}, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/transaction/SystemException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/transaction/SystemException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/RuntimeException");
 methodVisitor.visitInsn(DUP);
@@ -120,10 +120,10 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljavax/transaction/Transaction;Lorg/apache/geronimo/connector/ConnectionReleaser;)Lorg/apache/geronimo/connector/outbound/TransactionCachingInterceptor$ManagedConnectionInfos;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "get", "(Ljakarta/transaction/Transaction;Lorg/apache/geronimo/connector/ConnectionReleaser;)Lorg/apache/geronimo/connector/outbound/TransactionCachingInterceptor$ManagedConnectionInfos;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "get", "(Ljavax/transaction/Transaction;)Lorg/apache/geronimo/connector/ConnectorTransactionContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "get", "(Ljakarta/transaction/Transaction;)Lorg/apache/geronimo/connector/ConnectorTransactionContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -148,7 +148,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "remove", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "remove", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "DATA_INDEX", "Ljava/util/concurrent/ConcurrentHashMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -212,10 +212,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Ljavax/transaction/Transaction;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Ljakarta/transaction/Transaction;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "remove", "(Ljavax/transaction/Transaction;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/geronimo/connector/ConnectorTransactionContext", "remove", "(Ljakarta/transaction/Transaction;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

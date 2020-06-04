@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/interceptor/ReflectionInvocationContext", null, "java/lang/Object", new String[] { "javax/interceptor/InvocationContext" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/interceptor/ReflectionInvocationContext", null, "java/lang/Object", new String[] { "jakarta/interceptor/InvocationContext" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/interceptor/ReflectionInvocationContext$NoOpInvocation", "org/apache/openejb/core/interceptor/ReflectionInvocationContext", "NoOpInvocation", ACC_PRIVATE | ACC_STATIC);
 
@@ -478,14 +478,14 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getParameterTypes", "()[Ljava/lang/Class;", false);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/interceptor/InvocationContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/interceptor/InvocationContext;"));
 methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$InterceptorInvocation");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$InterceptorInvocation", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/interceptor/InvocationContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$InterceptorInvocation", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/interceptor/InvocationContext;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/openejb/core/interceptor/Interceptor", "java/lang/Object", "java/lang/reflect/Method"}, 0, null);
@@ -496,7 +496,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/ReflectionInvocationContext", "parameters", "[Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/interceptor/InvocationContext;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation", "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/interceptor/InvocationContext;[Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);

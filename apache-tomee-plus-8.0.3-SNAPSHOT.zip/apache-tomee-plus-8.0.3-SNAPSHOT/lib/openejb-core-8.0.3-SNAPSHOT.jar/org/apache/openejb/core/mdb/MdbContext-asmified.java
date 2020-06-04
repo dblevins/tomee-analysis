@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/mdb/MdbContext", null, "org/apache/openejb/core/BaseContext", new String[] { "javax/ejb/MessageDrivenContext", "java/io/Flushable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/mdb/MdbContext", null, "org/apache/openejb/core/BaseContext", new String[] { "jakarta/ejb/MessageDrivenContext", "java/io/Flushable" });
 
 classWriter.visitInnerClass("org/apache/openejb/core/mdb/MdbContext$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljavax/ejb/EJBHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBHome", "()Ljakarta/ejb/EJBHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBLocalHome", "()Ljavax/ejb/EJBLocalHome;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEJBLocalHome", "()Ljakarta/ejb/EJBLocalHome;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
 methodVisitor.visitInsn(DUP);

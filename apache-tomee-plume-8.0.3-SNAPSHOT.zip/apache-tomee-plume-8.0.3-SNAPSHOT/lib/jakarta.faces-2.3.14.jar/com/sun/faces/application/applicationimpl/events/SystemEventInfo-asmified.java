@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Lcom/sun/faces/util
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "systemEvent", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "systemEvent", "Ljava/lang/Class;", "Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);

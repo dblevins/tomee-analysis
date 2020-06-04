@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/PersistenceProviderImpl", null, "java/lang/Object", new String[] { "javax/persistence/spi/PersistenceProvider", "javax/persistence/spi/ProviderUtil" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/PersistenceProviderImpl", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/PersistenceProvider", "jakarta/persistence/spi/ProviderUtil" });
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/PersistenceProviderImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -262,7 +262,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContainerEntityManagerFactory", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createContainerEntityManagerFactory", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -287,7 +287,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProductDerivation", "load", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/lib/conf/ConfigurationProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProductDerivation", "load", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/lib/conf/ConfigurationProvider;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitJumpInsn(IFNONNULL, label6);
@@ -300,7 +300,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLdcInsn("ClassTransformerOptions");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getProperties", "()Ljava/util/Properties;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getProperties", "()Ljava/util/Properties;", true);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/lib/conf/Configurations", "getProperty", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -311,17 +311,17 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getNewTempClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getNewTempClassLoader", "()Ljava/lang/ClassLoader;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "newConfigurationImpl", "()Lorg/apache/openjpa/conf/OpenJPAConfiguration;", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/persistence/PersistenceProviderImpl$ClassTransformerImpl", "<init>", "(Lorg/apache/openjpa/lib/conf/ConfigurationProvider;Ljava/lang/String;Ljava/lang/ClassLoader;Lorg/apache/openjpa/conf/OpenJPAConfiguration;Lorg/apache/openjpa/persistence/PersistenceProviderImpl$1;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "addTransformer", "(Ljavax/persistence/spi/ClassTransformer;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "addTransformer", "(Ljakarta/persistence/spi/ClassTransformer;)V", true);
 methodVisitor.visitLabel(label1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openjpa/persistence/PersistenceProviderImpl", "javax/persistence/spi/PersistenceUnitInfo", "java/util/Map", "org/apache/openjpa/persistence/PersistenceProductDerivation", "java/lang/Object", "org/apache/openjpa/lib/conf/ConfigurationProvider", "java/lang/Exception", "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openjpa/persistence/PersistenceProviderImpl", "jakarta/persistence/spi/PersistenceUnitInfo", "java/util/Map", "org/apache/openjpa/persistence/PersistenceProductDerivation", "java/lang/Object", "org/apache/openjpa/lib/conf/ConfigurationProvider", "java/lang/Exception", "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -342,7 +342,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label9);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/osgi/BundleUtils", "runningUnderOSGi", "()Z", false);
 Label label10 = new Label();
@@ -375,7 +375,7 @@ methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "setPersistenceEnvironmentInfo", "(Lorg/apache/openjpa/conf/OpenJPAConfiguration;Ljavax/persistence/spi/PersistenceUnitInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "setPersistenceEnvironmentInfo", "(Lorg/apache/openjpa/conf/OpenJPAConfiguration;Ljakarta/persistence/spi/PersistenceUnitInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitLdcInsn("openjpa.Runtime");
@@ -449,7 +449,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" for PU ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn(".");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -461,7 +461,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openjpa/persistence/PersistenceProviderImpl", "javax/persistence/spi/PersistenceUnitInfo", "java/util/Map", "org/apache/openjpa/persistence/PersistenceProductDerivation"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openjpa/persistence/PersistenceProviderImpl", "jakarta/persistence/spi/PersistenceUnitInfo", "java/util/Map", "org/apache/openjpa/persistence/PersistenceProductDerivation"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/PersistenceExceptions", "toPersistenceException", "(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;", false);
@@ -470,7 +470,7 @@ methodVisitor.visitMaxs(8, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSchema", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
 methodVisitor.visitInsn(DUP);
@@ -492,7 +492,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPersistenceEnvironmentInfo", "(Lorg/apache/openjpa/conf/OpenJPAConfiguration;Ljavax/persistence/spi/PersistenceUnitInfo;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPersistenceEnvironmentInfo", "(Lorg/apache/openjpa/conf/OpenJPAConfiguration;Ljakarta/persistence/spi/PersistenceUnitInfo;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/conf/OpenJPAConfigurationImpl");
@@ -518,19 +518,19 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, 
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("PersistenceUnitRootUrl");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitRootUrl", "()Ljava/net/URL;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getPersistenceUnitRootUrl", "()Ljava/net/URL;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("MappingFileNames");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getMappingFileNames", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getMappingFileNames", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("JarFiles");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/persistence/spi/PersistenceUnitInfo", "getJarFileUrls", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/persistence/spi/PersistenceUnitInfo", "getJarFileUrls", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -540,7 +540,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProviderUtil", "()Ljavax/persistence/spi/ProviderUtil;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProviderUtil", "()Ljakarta/persistence/spi/ProviderUtil;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
@@ -630,57 +630,57 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoaded", "(Ljava/lang/Object;)Ljavax/persistence/spi/LoadState;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoaded", "(Ljava/lang/Object;)Ljakarta/persistence/spi/LoadState;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoadedWithReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoadedWithReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLoadedWithoutReference", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/LoadState", "UNKNOWN", "Ljavax/persistence/spi/LoadState;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/spi/LoadState", "UNKNOWN", "Ljakarta/persistence/spi/LoadState;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistenceUtil", "isLoaded", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/persistence/spi/LoadState;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistenceUtil", "isLoaded", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/persistence/spi/LoadState;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createContainerEntityManagerFactory", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Ljavax/persistence/EntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createContainerEntityManagerFactory", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Ljakarta/persistence/EntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "createContainerEntityManagerFactory", "(Ljavax/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/persistence/PersistenceProviderImpl", "createContainerEntityManagerFactory", "(Ljakarta/persistence/spi/PersistenceUnitInfo;Ljava/util/Map;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createEntityManagerFactory", "(Ljava/lang/String;Ljava/util/Map;)Ljavax/persistence/EntityManagerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "createEntityManagerFactory", "(Ljava/lang/String;Ljava/util/Map;)Ljakarta/persistence/EntityManagerFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

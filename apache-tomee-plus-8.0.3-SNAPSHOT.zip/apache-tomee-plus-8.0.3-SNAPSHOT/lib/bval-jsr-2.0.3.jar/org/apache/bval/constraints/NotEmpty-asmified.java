@@ -29,7 +29,7 @@ annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Document
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/validation/Constraint;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/validation/Constraint;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("validatedBy");
 annotationVisitor1.visitEnd();
@@ -56,7 +56,7 @@ annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", 
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/validation/constraints/NotEmpty;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/validation/constraints/NotEmpty;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -85,15 +85,15 @@ annotationVisitor0.visit(null, "{org.apache.bval.constraints.NotEmpty.message}")
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/validation/OverridesAttribute;", true);
-annotationVisitor0.visit("constraint", Type.getType("Ljavax/validation/constraints/NotEmpty;"));
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/validation/OverridesAttribute;", true);
+annotationVisitor0.visit("constraint", Type.getType("Ljakarta/validation/constraints/NotEmpty;"));
 annotationVisitor0.visit("name", "message");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljavax/validation/Payload;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "payload", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<+Ljakarta/validation/Payload;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {

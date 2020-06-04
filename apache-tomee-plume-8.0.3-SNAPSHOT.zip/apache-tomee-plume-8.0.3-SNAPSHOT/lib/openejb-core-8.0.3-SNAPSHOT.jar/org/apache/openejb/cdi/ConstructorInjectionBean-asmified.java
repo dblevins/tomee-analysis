@@ -37,20 +37,20 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "passivationCapab
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/enterprise/inject/spi/AnnotatedType;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/AnnotatedType;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/Boolean;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/Boolean;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/Boolean;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/Boolean;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/Boolean;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Ljava/lang/Class<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/Boolean;)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -63,28 +63,28 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "forContext", "(Lorg/apache/webbeans/config/WebBeansContext;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory", "newBeanAttibutes", "(Ljavax/enterprise/inject/spi/AnnotatedType;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory", "newBeanAttibutes", "(Ljakarta/enterprise/inject/spi/AnnotatedType;)Lorg/apache/webbeans/component/creation/BeanAttributesBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/component/creation/BeanAttributesBuilder", "build", "()Lorg/apache/webbeans/component/BeanAttributesImpl;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/InjectionTargetBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/InjectionTargetBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;)V", false);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/cdi/ConstructorInjectionBean", "INJECTION_TARGET_FIELD", "Ljava/lang/reflect/Field;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/cdi/ConstructorInjectionBean$ConstructorInjectionTarget");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "getAnnotatedType", "()Ljavax/enterprise/inject/spi/AnnotatedType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "getAnnotatedType", "()Ljakarta/enterprise/inject/spi/AnnotatedType;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "getInjectionPoints", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/cdi/ConstructorInjectionBean", "getWebBeansContext", "()Lorg/apache/webbeans/config/WebBeansContext;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/ConstructorInjectionBean$ConstructorInjectionTarget", "<init>", "(Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/cdi/ConstructorInjectionBean$ConstructorInjectionTarget", "<init>", "(Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/util/Set;Lorg/apache/webbeans/config/WebBeansContext;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Field", "set", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/cdi/ConstructorInjectionBean", "org/apache/webbeans/config/WebBeansContext", "java/lang/Class", "javax/enterprise/inject/spi/AnnotatedType", "java/lang/Boolean"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/cdi/ConstructorInjectionBean", "org/apache/webbeans/config/WebBeansContext", "java/lang/Class", "jakarta/enterprise/inject/spi/AnnotatedType", "java/lang/Boolean"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/OpenEJBRuntimeException");
 methodVisitor.visitInsn(DUP);

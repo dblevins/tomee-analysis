@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$3", null, "javax/xml/bind/JAXBIntrospector", null);
+classWriter.visit(V1_7, ACC_SUPER, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$3", null, "jakarta/xml/bind/JAXBIntrospector", null);
 
-classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createJAXBIntrospector", "()Ljavax/xml/bind/JAXBIntrospector;");
+classWriter.visitOuterClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl", "createJAXBIntrospector", "()Ljakarta/xml/bind/JAXBIntrospector;");
 
 classWriter.visitInnerClass("com/sun/xml/bind/v2/runtime/JAXBContextImpl$3", null, null, 0);
 
@@ -39,7 +39,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$3", "this$0", "Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBIntrospector", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBIntrospector", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -70,7 +70,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/bind/JAXBException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/bind/v2/runtime/JAXBContextImpl$3", "this$0", "Lcom/sun/xml/bind/v2/runtime/JAXBContextImpl;");
@@ -79,7 +79,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/bind/v2/runtime/JAXBCo
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/bind/JAXBException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/bind/JAXBException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

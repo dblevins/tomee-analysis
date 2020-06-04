@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotUnderstoodHeaderElement", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPHeaderElement;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotUnderstoodHeaderElement", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPHeaderElement;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/xml/messaging/saaj/soap/ver1_1/Header1_1Impl", "log", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "SEVERE", "Ljava/util/logging/Level;");
@@ -118,7 +118,7 @@ methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createHeaderElement", "(Ljavax/xml/soap/Name;)Ljavax/xml/soap/SOAPHeaderElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createHeaderElement", "(Ljakarta/xml/soap/Name;)Ljakarta/xml/soap/SOAPHeaderElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/HeaderElement1_1Impl");
 methodVisitor.visitInsn(DUP);
@@ -127,13 +127,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/messaging/saaj/soap/ve
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/xml/messaging/saaj/soap/SOAPDocument");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/xml/messaging/saaj/soap/SOAPDocument", "getDocument", "()Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/HeaderElement1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljavax/xml/soap/Name;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/messaging/saaj/soap/ver1_1/HeaderElement1_1Impl", "<init>", "(Lcom/sun/xml/messaging/saaj/soap/SOAPDocumentImpl;Ljakarta/xml/soap/Name;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createHeaderElement", "(Ljavax/xml/namespace/QName;)Ljavax/xml/soap/SOAPHeaderElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createHeaderElement", "(Ljavax/xml/namespace/QName;)Ljakarta/xml/soap/SOAPHeaderElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/xml/messaging/saaj/soap/ver1_1/HeaderElement1_1Impl");
 methodVisitor.visitInsn(DUP);

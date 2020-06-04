@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/jpa/rs/PersistenceContext$1", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventHandler" });
+classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/jpa/rs/PersistenceContext$1", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventHandler" });
 
-classWriter.visitOuterClass("org/eclipse/persistence/jpa/rs/PersistenceContext", "unmarshal", "(Ljava/lang/Class;Ljavax/ws/rs/core/MediaType;Ljava/io/InputStream;)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/eclipse/persistence/jpa/rs/PersistenceContext", "unmarshal", "(Ljava/lang/Class;Ljakarta/ws/rs/core/MediaType;Ljava/io/InputStream;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/eclipse/persistence/jpa/rs/PersistenceContext$1", null, null, 0);
 
@@ -45,10 +45,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljavax/xml/bind/ValidationEvent;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handleEvent", "(Ljakarta/xml/bind/ValidationEvent;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/bind/ValidationEvent", "getSeverity", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/bind/ValidationEvent", "getSeverity", "()I", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitInsn(ICONST_0);

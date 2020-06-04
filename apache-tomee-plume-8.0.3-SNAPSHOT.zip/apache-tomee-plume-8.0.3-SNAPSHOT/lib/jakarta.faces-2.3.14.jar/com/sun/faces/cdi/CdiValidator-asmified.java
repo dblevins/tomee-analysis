@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/CdiValidator", null, "java/lang/Object", new String[] { "javax/faces/validator/Validator", "javax/faces/component/StateHolder" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/CdiValidator", null, "java/lang/Object", new String[] { "jakarta/faces/validator/Validator", "jakarta/faces/component/StateHolder" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validatorId", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljavax/faces/validator/Validator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljakarta/faces/validator/Validator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/faces/validator/Validator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/faces/validator/Validator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -51,13 +51,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiValidator", "validatorId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljavax/faces/validator/Validator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljakarta/faces/validator/Validator;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -71,7 +71,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
@@ -103,37 +103,37 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDelegate", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/validator/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDelegate", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/validator/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljavax/faces/validator/Validator;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljakarta/faces/validator/Validator;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiValidator", "validatorId", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "createValidator", "(Ljava/lang/String;)Ljavax/faces/validator/Validator;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljavax/faces/validator/Validator;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createValidator", "(Ljava/lang/String;)Ljakarta/faces/validator/Validator;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljakarta/faces/validator/Validator;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljavax/faces/validator/Validator;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiValidator", "delegate", "Ljakarta/faces/validator/Validator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)V", null, new String[] { "javax/faces/validator/ValidatorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/Object;)V", null, new String[] { "jakarta/faces/validator/ValidatorException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiValidator", "getDelegate", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/validator/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiValidator", "getDelegate", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/validator/Validator;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/validator/Validator", "validate", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/validator/Validator", "validate", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIComponent;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

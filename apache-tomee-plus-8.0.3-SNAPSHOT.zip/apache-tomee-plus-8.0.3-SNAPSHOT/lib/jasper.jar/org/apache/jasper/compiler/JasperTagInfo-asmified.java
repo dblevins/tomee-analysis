@@ -22,14 +22,14 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/JasperTagInfo", null, "javax/servlet/jsp/tagext/TagInfo", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/compiler/JasperTagInfo", null, "jakarta/servlet/jsp/tagext/TagInfo", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "dynamicAttrsMapName", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;Ljavax/servlet/jsp/tagext/TagExtraInfo;[Ljavax/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljavax/servlet/jsp/tagext/TagVariableInfo;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;Ljakarta/servlet/jsp/tagext/TagExtraInfo;[Ljakarta/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljakarta/servlet/jsp/tagext/TagVariableInfo;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -43,7 +43,7 @@ methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/TagInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/jsp/tagext/TagLibraryInfo;Ljavax/servlet/jsp/tagext/TagExtraInfo;[Ljavax/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljavax/servlet/jsp/tagext/TagVariableInfo;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/tagext/TagInfo", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljakarta/servlet/jsp/tagext/TagLibraryInfo;Ljakarta/servlet/jsp/tagext/TagExtraInfo;[Ljakarta/servlet/jsp/tagext/TagAttributeInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljakarta/servlet/jsp/tagext/TagVariableInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/compiler/JasperTagInfo", "dynamicAttrsMapName", "Ljava/lang/String;");

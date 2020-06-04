@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/view/facelets/pool/ViewPoolFactory", "Ljava/lang/Object;Ljavax/faces/FacesWrapper<Lorg/apache/myfaces/view/facelets/pool/ViewPoolFactory;>;", "java/lang/Object", new String[] { "javax/faces/FacesWrapper" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/view/facelets/pool/ViewPoolFactory", "Ljava/lang/Object;Ljakarta/faces/FacesWrapper<Lorg/apache/myfaces/view/facelets/pool/ViewPoolFactory;>;", "java/lang/Object", new String[] { "jakarta/faces/FacesWrapper" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewPool", "(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewPool;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getViewPool", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/component/UIViewRoot;)Lorg/apache/myfaces/view/facelets/pool/ViewPool;", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/webbeans/event/ObserverMethodImpl$Observ
 classWriter.visitInnerClass("org/apache/webbeans/event/ObserverMethodImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljavax/enterprise/inject/spi/Bean;", "Ljavax/enterprise/inject/spi/Bean<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bean", "Ljakarta/enterprise/inject/spi/Bean;", "Ljakarta/enterprise/inject/spi/Bean<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "instance", "Ljava/lang/Objec
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "creational", "Ljavax/enterprise/context/spi/CreationalContext;", "Ljavax/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "creational", "Ljakarta/enterprise/context/spi/CreationalContext;", "Ljakarta/enterprise/context/spi/CreationalContext<Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -72,19 +72,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;)Ljavax/enterprise/inject/spi/Bean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;)Ljakarta/enterprise/inject/spi/Bean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$300", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;)Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$300", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;)Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "creational", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "creational", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -121,23 +121,23 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$302", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/enterprise/context/spi/CreationalContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$302", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;Ljakarta/enterprise/context/spi/CreationalContext;)Ljakarta/enterprise/context/spi/CreationalContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "creational", "Ljavax/enterprise/context/spi/CreationalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "creational", "Ljakarta/enterprise/context/spi/CreationalContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$202", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;Ljavax/enterprise/inject/spi/Bean;)Ljavax/enterprise/inject/spi/Bean;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$202", "(Lorg/apache/webbeans/event/ObserverMethodImpl$ObserverParams;Ljakarta/enterprise/inject/spi/Bean;)Ljakarta/enterprise/inject/spi/Bean;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP_X1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "bean", "Ljavax/enterprise/inject/spi/Bean;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/event/ObserverMethodImpl$ObserverParams", "bean", "Ljakarta/enterprise/inject/spi/Bean;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();

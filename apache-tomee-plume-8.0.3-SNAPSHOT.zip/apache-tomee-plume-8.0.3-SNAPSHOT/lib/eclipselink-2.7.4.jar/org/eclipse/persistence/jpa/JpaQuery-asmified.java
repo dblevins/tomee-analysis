@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaQuery", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/TypedQuery<TX;>;", "java/lang/Object", new String[] { "javax/persistence/TypedQuery" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/eclipse/persistence/jpa/JpaQuery", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/TypedQuery<TX;>;", "java/lang/Object", new String[] { "jakarta/persistence/TypedQuery" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getDatabaseQuery", "()Lorg/eclipse/persistence/queries/DatabaseQuery;", null, null);

@@ -33,27 +33,27 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC, "subject", "Ljava/lang/String;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "from", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "from", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "sender", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "sender", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "replyTo", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "replyTo", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "to", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "to", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "cc", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "cc", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC, "bcc", "[Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "bcc", "[Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC, "messageID", "Ljava/lang/Strin
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "javax/mail/MessagingException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer;)V", null, new String[] { "jakarta/mail/MessagingException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -82,28 +82,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "subject", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "from", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "sender", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "replyTo", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "to", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "cc", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljavax/mail/internet/InternetAddress;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readAddressList", "()[Ljakarta/mail/internet/InternetAddress;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope", "bcc", "[Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer", "readStringOrNil", "()Ljava/lang/String;", false);

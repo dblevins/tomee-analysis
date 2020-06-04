@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$1", null, "com/sun/faces/facelets/el/VariableMapperWrapper", null);
 
-classWriter.visitOuterClass("com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler", "applyCompositeComponent", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V");
+classWriter.visitOuterClass("com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler", "applyCompositeComponent", "(Ljakarta/faces/view/facelets/FaceletContext;Ljakarta/faces/component/UIComponent;)V");
 
 classWriter.visitInnerClass("com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$1", null, null, 0);
 
@@ -33,24 +33,24 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler;Ljavax/el/VariableMapper;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler;Ljakarta/el/VariableMapper;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$1", "this$0", "Lcom/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "<init>", "(Ljavax/el/VariableMapper;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "<init>", "(Ljakarta/el/VariableMapper;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "resolveVariable", "(Ljava/lang/String;)Ljavax/el/ValueExpression;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/el/VariableMapperWrapper", "resolveVariable", "(Ljava/lang/String;)Ljakarta/el/ValueExpression;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

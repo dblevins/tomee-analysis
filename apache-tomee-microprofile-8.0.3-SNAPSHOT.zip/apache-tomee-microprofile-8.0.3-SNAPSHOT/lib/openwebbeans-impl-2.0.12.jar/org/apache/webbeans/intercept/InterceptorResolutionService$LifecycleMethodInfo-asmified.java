@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/webbeans/intercept/InterceptorResolution
 classWriter.visitInnerClass("org/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo", "org/apache/webbeans/intercept/InterceptorResolutionService", "LifecycleMethodInfo", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "methods", "Ljava/util/List;", "Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "methods", "Ljava/util/List;", "Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "methodInterceptorInfo", "Lor
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;)V", "(Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/List;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;)V", "(Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;Lorg/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -57,7 +57,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethods", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/enterprise/inject/spi/AnnotatedMethod<*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethods", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/enterprise/inject/spi/AnnotatedMethod<*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo", "methods", "Ljava/util/List;");

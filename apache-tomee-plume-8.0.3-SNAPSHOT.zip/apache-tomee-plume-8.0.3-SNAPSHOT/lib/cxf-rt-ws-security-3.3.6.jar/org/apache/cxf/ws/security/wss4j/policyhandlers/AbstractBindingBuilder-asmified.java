@@ -67,7 +67,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "wssConfig", "L
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "saaj", "Ljavax/xml/soap/SOAPMessage;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "saaj", "Ljakarta/xml/soap/SOAPMessage;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -155,7 +155,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sgndEndSuppTokList", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/wss4j/dom/engine/WSSConfig;Lorg/apache/wss4j/policy/model/AbstractBinding;Ljavax/xml/soap/SOAPMessage;Lorg/apache/wss4j/dom/message/WSSecHeader;Lorg/apache/cxf/ws/policy/AssertionInfoMap;Lorg/apache/cxf/binding/soap/SoapMessage;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/wss4j/dom/engine/WSSConfig;Lorg/apache/wss4j/policy/model/AbstractBinding;Ljakarta/xml/soap/SOAPMessage;Lorg/apache/wss4j/dom/message/WSSecHeader;Lorg/apache/cxf/ws/policy/AssertionInfoMap;Lorg/apache/cxf/binding/soap/SoapMessage;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -192,7 +192,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "secHeader", "Lorg/apache/wss4j/dom/message/WSSecHeader;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getExchange", "()Lorg/apache/cxf/message/Exchange;", false);
 methodVisitor.visitLdcInsn("_sendSignatureValues_");
@@ -230,7 +230,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/policy/model/AbstractSy
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/policy/model/AbstractSymmetricAsymmetricBinding", "isProtectTokens", "()Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "org/apache/wss4j/dom/engine/WSSConfig", "org/apache/wss4j/policy/model/AbstractBinding", "javax/xml/soap/SOAPMessage", "org/apache/wss4j/dom/message/WSSecHeader", "org/apache/cxf/ws/policy/AssertionInfoMap", "org/apache/cxf/binding/soap/SoapMessage", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "org/apache/wss4j/dom/engine/WSSConfig", "org/apache/wss4j/policy/model/AbstractBinding", "jakarta/xml/soap/SOAPMessage", "org/apache/wss4j/dom/message/WSSecHeader", "org/apache/cxf/ws/policy/AssertionInfoMap", "org/apache/cxf/binding/soap/SoapMessage", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "LOG", "Ljava/util/logging/Logger;");
 methodVisitor.visitLdcInsn("Disabling SecurityConstants.STORE_BYTES_IN_ATTACHMENT due to EncryptBeforeSigning or ProtectTokens policy.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine", "(Ljava/lang/String;)V", false);
@@ -254,7 +254,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Element", "getOwnerD
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/dom/WSDocInfo", "<init>", "(Lorg/w3c/dom/Document;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "wsDocInfo", "Lorg/apache/wss4j/dom/WSDocInfo;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getBody", "(Ljavax/xml/soap/SOAPMessage;)Ljavax/xml/soap/SOAPBody;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getBody", "(Ljakarta/xml/soap/SOAPMessage;)Ljakarta/xml/soap/SOAPBody;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 Label label2 = new Label();
@@ -1078,7 +1078,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/soap/SOAPException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/soap/SOAPException");
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
@@ -1119,7 +1119,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/util/Collection", Opcodes.INTEGER, "java/util/List", "java/util/Iterator", "org/apache/cxf/ws/policy/AssertionInfo"}, 1, new Object[] {"javax/xml/soap/SOAPException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/util/Collection", Opcodes.INTEGER, "java/util/List", "java/util/Iterator", "org/apache/cxf/ws/policy/AssertionInfo"}, 1, new Object[] {"jakarta/xml/soap/SOAPException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
 methodVisitor.visitInsn(DUP);
@@ -1138,7 +1138,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "handleSupportingTokens", "(Lorg/apache/wss4j/policy/model/SupportingTokens;ZLjava/util/List;)Ljava/util/List;", "(Lorg/apache/wss4j/policy/model/SupportingTokens;ZLjava/util/List<Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;>;)Ljava/util/List<Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;>;", new String[] { "org/apache/wss4j/common/ext/WSSecurityException", "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "handleSupportingTokens", "(Lorg/apache/wss4j/policy/model/SupportingTokens;ZLjava/util/List;)Ljava/util/List;", "(Lorg/apache/wss4j/policy/model/SupportingTokens;ZLjava/util/List<Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;>;)Ljava/util/List<Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;>;", new String[] { "org/apache/wss4j/common/ext/WSSecurityException", "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1442,9 +1442,9 @@ methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPPart", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPPart", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/DOMUtils", "getDomElement", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", false);
@@ -1498,7 +1498,7 @@ methodVisitor.visitMaxs(8, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "signSupportingToken", "(Lorg/apache/cxf/ws/security/tokenstore/SecurityToken;Ljava/lang/String;Lorg/apache/wss4j/policy/model/AbstractToken;Lorg/apache/wss4j/policy/model/SupportingTokens;)Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "signSupportingToken", "(Lorg/apache/cxf/ws/security/tokenstore/SecurityToken;Ljava/lang/String;Lorg/apache/wss4j/policy/model/AbstractToken;Lorg/apache/wss4j/policy/model/SupportingTokens;)Lorg/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken;", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -3276,7 +3276,7 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncryptedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncryptedParts", "()Ljava/util/List;", "()Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
@@ -3497,7 +3497,7 @@ methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSignedParts", "(Lorg/apache/wss4j/policy/model/SupportingTokens;)Ljava/util/List;", "(Lorg/apache/wss4j/policy/model/SupportingTokens;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSignedParts", "(Lorg/apache/wss4j/policy/model/SupportingTokens;)Ljava/util/List;", "(Lorg/apache/wss4j/policy/model/SupportingTokens;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 2);
@@ -3729,7 +3729,7 @@ methodVisitor.visitMaxs(6, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPartsAndElements", "(ZZLjava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;", "(ZZLjava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPartsAndElements", "(ZZLjava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;", "(ZZLjava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
@@ -3777,15 +3777,15 @@ methodVisitor.visitMaxs(6, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getParts", "(ZZLjava/util/List;Ljava/util/List;)Ljava/util/List;", "(ZZLjava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;Ljava/util/List<Lorg/w3c/dom/Element;>;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getParts", "(ZZLjava/util/List;Ljava/util/List;)Ljava/util/List;", "(ZZLjava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;Ljava/util/List<Lorg/w3c/dom/Element;>;)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getBody", "(Ljavax/xml/soap/SOAPMessage;)Ljavax/xml/soap/SOAPBody;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getBody", "(Ljakarta/xml/soap/SOAPMessage;)Ljakarta/xml/soap/SOAPBody;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/DOMUtils", "getDomElement", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", false);
@@ -3841,15 +3841,15 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getHeader", "(Ljavax/xml/soap/SOAPMessage;)Ljavax/xml/soap/SOAPHeader;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/saaj/SAAJUtils", "getHeader", "(Ljakarta/xml/soap/SOAPMessage;)Ljakarta/xml/soap/SOAPHeader;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 8);
 Label label2 = new Label();
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/xml/soap/SOAPHeader", "java/util/Iterator"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/xml/soap/SOAPHeader", "java/util/Iterator"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label3 = new Label();
@@ -3952,7 +3952,7 @@ methodVisitor.visitMaxs(4, 15);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getElements", "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Z)Ljava/util/List;", "(Ljava/lang/String;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;Ljava/util/List<Lorg/w3c/dom/Element;>;Z)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getElements", "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Z)Ljava/util/List;", "(Ljava/lang/String;Ljava/util/List<Lorg/apache/wss4j/policy/model/XPath;>;Ljava/util/List<Lorg/w3c/dom/Element;>;Z)Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;", new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -3982,7 +3982,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/xpath/XPathFactory", "new
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/xpath/XPathFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
@@ -4020,16 +4020,16 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/policy/model/XPath", "getPrefixNamespaceMap", "()Ljava/util/Map;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/helpers/MapNamespaceContext", "<init>", "(Ljava/util/Map;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
 methodVisitor.visitLabel(label9);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/wss4j/policy/model/XPath", "javax/xml/xpath/XPath"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/wss4j/policy/model/XPath", "jakarta/xml/xpath/XPath"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPPart", "getEnvelope", "()Ljavax/xml/soap/SOAPEnvelope;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPPart", "getEnvelope", "()Ljakarta/xml/soap/SOAPEnvelope;", false);
 methodVisitor.visitVarInsn(ASTORE, 12);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/DOMUtils", "getDomElement", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", false);
@@ -4039,15 +4039,15 @@ methodVisitor.visitVarInsn(ALOAD, 10);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/policy/model/XPath", "getXPath", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 12);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/xpath/XPathConstants", "NODESET", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/xpath/XPathConstants", "NODESET", "Ljavax/xml/namespace/QName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/w3c/dom/NodeList");
 methodVisitor.visitVarInsn(ASTORE, 11);
 methodVisitor.visitLabel(label4);
 Label label10 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/lang/String", "java/util/List", "java/util/List", Opcodes.INTEGER, "java/util/List", Opcodes.INTEGER, "javax/xml/xpath/XPathFactory", "java/util/Iterator", "org/apache/wss4j/policy/model/XPath", "javax/xml/xpath/XPath", "org/w3c/dom/NodeList"}, 1, new Object[] {"javax/xml/xpath/XPathExpressionException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/lang/String", "java/util/List", "java/util/List", Opcodes.INTEGER, "java/util/List", Opcodes.INTEGER, "javax/xml/xpath/XPathFactory", "java/util/Iterator", "org/apache/wss4j/policy/model/XPath", "jakarta/xml/xpath/XPath", "org/w3c/dom/NodeList"}, 1, new Object[] {"javax/xml/xpath/XPathExpressionException"});
 methodVisitor.visitVarInsn(ASTORE, 12);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "LOG", "Ljava/util/logging/Logger;");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "WARNING", "Ljava/util/logging/Level;");
@@ -4211,7 +4211,7 @@ methodVisitor.visitVarInsn(ALOAD, 14);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label13);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/lang/String", "java/util/List", "java/util/List", Opcodes.INTEGER, "java/util/List", Opcodes.INTEGER, "javax/xml/xpath/XPathFactory", "java/util/Iterator", "org/apache/wss4j/policy/model/XPath", "javax/xml/xpath/XPath", "org/w3c/dom/NodeList", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "java/lang/String", "java/util/List", "java/util/List", Opcodes.INTEGER, "java/util/List", Opcodes.INTEGER, "javax/xml/xpath/XPathFactory", "java/util/Iterator", "org/apache/wss4j/policy/model/XPath", "jakarta/xml/xpath/XPath", "org/w3c/dom/NodeList", Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitIincInsn(12, 1);
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label11);
@@ -4363,8 +4363,8 @@ methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/token/X509Security");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/token/X509Security", "<init>", "(Lorg/w3c/dom/Document;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 8);
@@ -5868,8 +5868,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doSymmSignatureDerived", "(Lorg/apache/wss4j/policy/model/AbstractToken;Lorg/apache/cxf/ws/security/tokenstore/SecurityToken;Ljava/util/List;ZZ)V", "(Lorg/apache/wss4j/policy/model/AbstractToken;Lorg/apache/cxf/ws/security/tokenstore/SecurityToken;Ljava/util/List<Lorg/apache/wss4j/common/WSEncryptionPart;>;ZZ)V", new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljavax/xml/soap/SOAPMessage;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/soap/SOAPMessage", "getSOAPPart", "()Ljavax/xml/soap/SOAPPart;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder", "saaj", "Ljakarta/xml/soap/SOAPMessage;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "getSOAPPart", "()Ljakarta/xml/soap/SOAPPart;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/dom/message/WSSecDKSign");
 methodVisitor.visitInsn(DUP);

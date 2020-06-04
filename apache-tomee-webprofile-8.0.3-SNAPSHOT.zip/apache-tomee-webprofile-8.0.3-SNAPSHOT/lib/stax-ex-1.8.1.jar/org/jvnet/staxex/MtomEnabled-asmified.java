@@ -33,7 +33,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addBinaryTex
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addBinaryText", "(Ljava/lang/String;Ljavax/activation/DataHandler;)Lorg/jvnet/staxex/BinaryText;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "addBinaryText", "(Ljava/lang/String;Ljakarta/activation/DataHandler;)Lorg/jvnet/staxex/BinaryText;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

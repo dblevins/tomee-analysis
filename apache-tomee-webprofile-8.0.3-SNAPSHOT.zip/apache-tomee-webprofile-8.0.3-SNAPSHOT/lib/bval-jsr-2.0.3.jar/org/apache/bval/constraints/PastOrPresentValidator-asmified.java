@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/PastOrPresentValidator", "<T::Ljava/lang/Comparable<TT;>;>Lorg/apache/bval/constraints/TimeValidator<Ljavax/validation/constraints/PastOrPresent;TT;>;", "org/apache/bval/constraints/TimeValidator", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/bval/constraints/PastOrPresentValidator", "<T::Ljava/lang/Comparable<TT;>;>Lorg/apache/bval/constraints/TimeValidator<Ljakarta/validation/constraints/PastOrPresent;TT;>;", "org/apache/bval/constraints/TimeValidator", null);
 
 classWriter.visitInnerClass("org/apache/bval/constraints/PastOrPresentValidator$ForYearMonth", "org/apache/bval/constraints/PastOrPresentValidator", "ForYearMonth", ACC_PUBLIC | ACC_STATIC);
 

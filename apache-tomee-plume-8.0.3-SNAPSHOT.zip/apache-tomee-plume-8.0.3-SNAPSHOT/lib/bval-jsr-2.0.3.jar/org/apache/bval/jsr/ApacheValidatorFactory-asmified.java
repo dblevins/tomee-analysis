@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/ApacheValidatorFactory", null, "java/lang/Object", new String[] { "javax/validation/ValidatorFactory", "java/lang/Cloneable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/ApacheValidatorFactory", null, "java/lang/Object", new String[] { "jakarta/validation/ValidatorFactory", "java/lang/Cloneable" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Lorg/apache/commons/weaver/privilizer/Privilizing;", false);
@@ -105,23 +105,23 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "valueExtractors"
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messageResolver", "Ljavax/validation/MessageInterpolator;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "messageResolver", "Ljakarta/validation/MessageInterpolator;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "traversableResolver", "Ljavax/validation/TraversableResolver;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "traversableResolver", "Ljakarta/validation/TraversableResolver;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "constraintValidatorFactory", "Ljavax/validation/ConstraintValidatorFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "constraintValidatorFactory", "Ljakarta/validation/ConstraintValidatorFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parameterNameProvider", "Ljavax/validation/ParameterNameProvider;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parameterNameProvider", "Ljakarta/validation/ParameterNameProvider;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clockProvider", "Ljavax/validation/ClockProvider;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clockProvider", "Ljakarta/validation/ClockProvider;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -145,12 +145,12 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/jsr/ApacheValidatorFact
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/ApacheValidationProvider;"));
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/validation/Validation", "byProvider", "(Ljava/lang/Class;)Ljavax/validation/bootstrap/ProviderSpecificBootstrap;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/bootstrap/ProviderSpecificBootstrap", "configure", "()Ljavax/validation/Configuration;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/validation/Validation", "byProvider", "(Ljava/lang/Class;)Ljakarta/validation/bootstrap/ProviderSpecificBootstrap;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/bootstrap/ProviderSpecificBootstrap", "configure", "()Ljakarta/validation/Configuration;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/ApacheValidatorConfiguration");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/jsr/ApacheValidatorConfiguration", "buildValidatorFactory", "()Ljavax/validation/ValidatorFactory;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/jsr/ApacheValidatorConfiguration", "buildValidatorFactory", "()Ljakarta/validation/ValidatorFactory;", true);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/ApacheValidatorFactory;"));
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ValidatorFactory", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ValidatorFactory", "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/bval/jsr/ApacheValidatorFactory");
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/ApacheValidatorFactory", "DEFAULT_FACTORY", "Lorg/apache/bval/jsr/ApacheValidatorFactory;");
 methodVisitor.visitLabel(label5);
@@ -192,13 +192,13 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/jsr/valueextraction/Val
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "<init>", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors$OnDuplicateContainerElementKey;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/valueextraction/ValueExtractor;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/valueextraction/ValueExtractor;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ParticipantFactory", "loadServices", "(Ljava/lang/Class;)Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "add", "(Ljavax/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljavax/validation/valueextraction/ValueExtractor;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "add", "(Ljakarta/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljakarta/validation/valueextraction/ValueExtractor;)V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "forEach", "(Ljava/util/function/Consumer;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
@@ -206,7 +206,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/validation/spi/ConfigurationState;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/validation/spi/ConfigurationState;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -245,29 +245,29 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "(Ljava/util/Map;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "properties", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljavax/validation/ParameterNameProvider;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljakarta/validation/ParameterNameProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getMessageInterpolator", "()Ljavax/validation/MessageInterpolator;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljavax/validation/MessageInterpolator;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getMessageInterpolator", "()Ljakarta/validation/MessageInterpolator;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljakarta/validation/MessageInterpolator;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getTraversableResolver", "()Ljavax/validation/TraversableResolver;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getTraversableResolver", "()Ljakarta/validation/TraversableResolver;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getConstraintValidatorFactory", "()Ljavax/validation/ConstraintValidatorFactory;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljavax/validation/ConstraintValidatorFactory;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getConstraintValidatorFactory", "()Ljakarta/validation/ConstraintValidatorFactory;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljakarta/validation/ConstraintValidatorFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getClockProvider", "()Ljavax/validation/ClockProvider;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljavax/validation/ClockProvider;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getClockProvider", "()Ljakarta/validation/ClockProvider;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljakarta/validation/ClockProvider;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/bval/util/CloseableAble");
 Label label0 = new Label();
@@ -280,7 +280,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/util/CloseableAb
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/bval/jsr/ApacheValidatorFactory", "javax/validation/spi/ConfigurationState"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/bval/jsr/ApacheValidatorFactory", "jakarta/validation/spi/ConfigurationState"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/ParticipantFactory");
 methodVisitor.visitInsn(DUP);
@@ -311,13 +311,13 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/ApacheValidator
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "createChild", "()Lorg/apache/bval/jsr/valueextraction/ValueExtractors;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "valueExtractors", "Lorg/apache/bval/jsr/valueextraction/ValueExtractors;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/spi/ConfigurationState", "getValueExtractors", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/spi/ConfigurationState", "getValueExtractors", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "valueExtractors", "Lorg/apache/bval/jsr/valueextraction/ValueExtractors;");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "add", "(Ljavax/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljavax/validation/valueextraction/ValueExtractor;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/valueextraction/ValueExtractors;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ValueExtractors", "add", "(Ljakarta/validation/valueextraction/ValueExtractor;)V", false), Type.getType("(Ljakarta/validation/valueextraction/ValueExtractor;)V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "forEach", "(Ljava/util/function/Consumer;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/bval/jsr/util/AnnotationsManager");
@@ -327,7 +327,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/util/Annotatio
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "annotationsManager", "Lorg/apache/bval/jsr/util/AnnotationsManager;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/ApacheValidatorFactory", "loadAndVerifyUserCustomizations", "(Ljavax/validation/spi/ConfigurationState;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/bval/jsr/ApacheValidatorFactory", "loadAndVerifyUserCustomizations", "(Ljakarta/validation/spi/ConfigurationState;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 2);
 methodVisitor.visitEnd();
@@ -351,11 +351,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidator", "()Ljavax/validation/Validator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidator", "()Ljakarta/validation/Validator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "usingContext", "()Lorg/apache/bval/jsr/ApacheFactoryContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getValidator", "()Ljavax/validation/Validator;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheFactoryContext", "getValidator", "()Ljakarta/validation/Validator;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -395,14 +395,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setMessageInterpolator", "(Ljavax/validation/MessageInterpolator;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setMessageInterpolator", "(Ljakarta/validation/MessageInterpolator;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljavax/validation/MessageInterpolator;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljakarta/validation/MessageInterpolator;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -410,23 +410,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageInterpolator", "()Ljavax/validation/MessageInterpolator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageInterpolator", "()Ljakarta/validation/MessageInterpolator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljavax/validation/MessageInterpolator;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "messageResolver", "Ljakarta/validation/MessageInterpolator;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setTraversableResolver", "(Ljavax/validation/TraversableResolver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setTraversableResolver", "(Ljakarta/validation/TraversableResolver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -434,14 +434,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameterNameProvider", "(Ljavax/validation/ParameterNameProvider;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setParameterNameProvider", "(Ljakarta/validation/ParameterNameProvider;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljavax/validation/ParameterNameProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljakarta/validation/ParameterNameProvider;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -449,14 +449,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClockProvider", "(Ljavax/validation/ClockProvider;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClockProvider", "(Ljakarta/validation/ClockProvider;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljavax/validation/ClockProvider;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljakarta/validation/ClockProvider;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -464,23 +464,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTraversableResolver", "()Ljavax/validation/TraversableResolver;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTraversableResolver", "()Ljakarta/validation/TraversableResolver;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljavax/validation/TraversableResolver;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "traversableResolver", "Ljakarta/validation/TraversableResolver;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setConstraintValidatorFactory", "(Ljavax/validation/ConstraintValidatorFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "setConstraintValidatorFactory", "(Ljakarta/validation/ConstraintValidatorFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljavax/validation/ConstraintValidatorFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljakarta/validation/ConstraintValidatorFactory;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/bval/jsr/DefaultConstraintValidatorFactory;"));
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
@@ -499,28 +499,28 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorFactory", "()Ljavax/validation/ConstraintValidatorFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConstraintValidatorFactory", "()Ljakarta/validation/ConstraintValidatorFactory;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljavax/validation/ConstraintValidatorFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "constraintValidatorFactory", "Ljakarta/validation/ConstraintValidatorFactory;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterNameProvider", "()Ljavax/validation/ParameterNameProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterNameProvider", "()Ljakarta/validation/ParameterNameProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljavax/validation/ParameterNameProvider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "parameterNameProvider", "Ljakarta/validation/ParameterNameProvider;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClockProvider", "()Ljavax/validation/ClockProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClockProvider", "()Ljakarta/validation/ClockProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljavax/validation/ClockProvider;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/ApacheValidatorFactory", "clockProvider", "Ljakarta/validation/ClockProvider;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -631,7 +631,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/bval/jsr/A
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -643,7 +643,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(" not supported");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -1225,11 +1225,11 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/RuntimeException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/validation/ValidationException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/validation/ValidationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/RuntimeException", "getCause", "()Ljava/lang/Throwable;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/validation/ValidationException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
@@ -1368,7 +1368,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadAndVerifyUserCustomizations", "(Ljavax/validation/spi/ConfigurationState;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "loadAndVerifyUserCustomizations", "(Ljakarta/validation/spi/ConfigurationState;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/ApacheValidatorFactory;)Ljava/util/function/BiConsumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/ApacheValidatorFactory", "lambda$loadAndVerifyUserCustomizations$0", "(Ljava/lang/Class;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForBean;)V", false), Type.getType("(Ljava/lang/Class;Lorg/apache/bval/jsr/metadata/MetadataBuilder$ForBean;)V")});
@@ -1380,7 +1380,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ParticipantFac
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/ApacheValidatorFactory;Ljavax/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/ApacheValidatorFactory", "lambda$loadAndVerifyUserCustomizations$1", "(Ljavax/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;Lorg/apache/bval/jsr/metadata/MetadataSource;)V", false), Type.getType("(Lorg/apache/bval/jsr/metadata/MetadataSource;)V")});
+methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/ApacheValidatorFactory;Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/bval/jsr/ApacheValidatorFactory", "lambda$loadAndVerifyUserCustomizations$1", "(Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;Lorg/apache/bval/jsr/metadata/MetadataSource;)V", false), Type.getType("(Lorg/apache/bval/jsr/metadata/MetadataSource;)V")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "forEach", "(Ljava/util/function/Consumer;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 3);
@@ -1396,7 +1396,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "usingContext", "()Ljavax/validation/ValidatorContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "usingContext", "()Ljakarta/validation/ValidatorContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ApacheValidatorFactory", "usingContext", "()Lorg/apache/bval/jsr/ApacheFactoryContext;", false);
@@ -1405,7 +1405,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$loadAndVerifyUserCustomizations$1", "(Ljavax/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;Lorg/apache/bval/jsr/metadata/MetadataSource;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$loadAndVerifyUserCustomizations$1", "(Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/BiConsumer;Lorg/apache/bval/jsr/metadata/MetadataSource;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1419,7 +1419,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInvokeDynamicInsn("accept", "(Lorg/apache/bval/jsr/ConstraintCached;)Ljava/util/function/Consumer;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)V"), new Handle(Opcodes.H_INVOKEVIRTUAL, "org/apache/bval/jsr/ConstraintCached", "add", "(Lorg/apache/bval/jsr/metadata/ValidatorMappingProvider;)V", false), Type.getType("(Lorg/apache/bval/jsr/metadata/ValidatorMappingProvider;)V")});
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/jsr/metadata/MetadataSource", "process", "(Ljavax/validation/spi/ConfigurationState;Ljava/util/function/Consumer;Ljava/util/function/BiConsumer;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/bval/jsr/metadata/MetadataSource", "process", "(Ljakarta/validation/spi/ConfigurationState;Ljava/util/function/Consumer;Ljava/util/function/BiConsumer;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();

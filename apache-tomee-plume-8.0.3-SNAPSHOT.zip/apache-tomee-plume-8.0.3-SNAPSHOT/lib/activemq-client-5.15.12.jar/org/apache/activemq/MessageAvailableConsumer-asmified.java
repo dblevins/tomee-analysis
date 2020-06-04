@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/MessageAvailableConsumer", null, "java/lang/Object", new String[] { "javax/jms/MessageConsumer" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/activemq/MessageAvailableConsumer", null, "java/lang/Object", new String[] { "jakarta/jms/MessageConsumer" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setAvailableListener", "(Lorg/apache/activemq/MessageAvailableListener;)V", null, null);

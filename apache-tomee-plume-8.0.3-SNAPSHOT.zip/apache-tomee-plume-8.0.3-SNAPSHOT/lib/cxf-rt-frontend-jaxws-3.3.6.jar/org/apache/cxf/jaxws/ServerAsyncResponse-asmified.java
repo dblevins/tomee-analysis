@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/ServerAsyncResponse", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/xml/ws/Response<TT;>;", "java/lang/Object", new String[] { "javax/xml/ws/Response" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxws/ServerAsyncResponse", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/xml/ws/Response<TT;>;", "java/lang/Object", new String[] { "jakarta/xml/ws/Response" });
 
 {
 fieldVisitor = classWriter.visitField(0, "value", "Ljava/lang/Object;", "TT;", null);

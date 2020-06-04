@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/work/GeronimoWorkManager", null, "java/lang/Object", new String[] { "javax/resource/spi/work/WorkManager" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/connector/work/GeronimoWorkManager", null, "java/lang/Object", new String[] { "jakarta/resource/spi/work/WorkManager" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "syncWorkExecutorPool", "Ljava/util/concurrent/Executor;", null, null);
@@ -175,7 +175,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljavax/resource/spi/work/Work;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljakarta/resource/spi/work/Work;)V", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
@@ -183,7 +183,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "syncWorkExecutor", "Lorg/apache/geronimo/connector/work/pool/WorkExecutor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -194,7 +194,7 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;)V", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
 methodVisitor.visitInsn(DUP);
@@ -204,7 +204,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -222,14 +222,14 @@ methodVisitor.visitMaxs(8, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljavax/resource/spi/work/Work;)J", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljakarta/resource/spi/work/Work;)J", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -251,7 +251,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;)J", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
 methodVisitor.visitInsn(DUP);
@@ -261,7 +261,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -283,14 +283,14 @@ methodVisitor.visitMaxs(8, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljavax/resource/spi/work/Work;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljakarta/resource/spi/work/Work;)V", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -308,7 +308,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;)V", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/WorkerContext");
 methodVisitor.visitInsn(DUP);
@@ -318,7 +318,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/work/WorkerContext", "<init>", "(Ljakarta/resource/spi/work/Work;JLjakarta/resource/spi/work/ExecutionContext;Ljakarta/resource/spi/work/WorkListener;Ljava/util/Collection;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
@@ -336,7 +336,7 @@ methodVisitor.visitMaxs(8, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "executeWork", "(Lorg/apache/geronimo/connector/work/WorkerContext;Lorg/apache/geronimo/connector/work/pool/WorkExecutor;Ljava/util/concurrent/Executor;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "executeWork", "(Lorg/apache/geronimo/connector/work/WorkerContext;Lorg/apache/geronimo/connector/work/pool/WorkExecutor;Ljava/util/concurrent/Executor;)V", null, new String[] { "jakarta/resource/spi/work/WorkException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -351,7 +351,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/geronimo/connector/work/pool/WorkExecutor", "doExecute", "(Lorg/apache/geronimo/connector/work/WorkerContext;Ljava/util/concurrent/Executor;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/WorkerContext", "getWorkException", "()Ljavax/resource/spi/work/WorkException;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/connector/work/WorkerContext", "getWorkException", "()Ljakarta/resource/spi/work/WorkException;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -365,15 +365,15 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/InterruptedException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkCompletedException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/resource/spi/work/WorkCompletedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("The execution has been interrupted.");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkCompletedException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/resource/spi/work/WorkCompletedException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("-1");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkCompletedException", "setErrorCode", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/resource/spi/work/WorkCompletedException", "setErrorCode", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
@@ -383,7 +383,7 @@ methodVisitor.visitMaxs(4, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljavax/resource/spi/work/WorkContext;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isContextSupported", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<+Ljakarta/resource/spi/work/WorkContext;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/connector/work/GeronimoWorkManager", "workContextHandlers", "Ljava/util/Collection;");

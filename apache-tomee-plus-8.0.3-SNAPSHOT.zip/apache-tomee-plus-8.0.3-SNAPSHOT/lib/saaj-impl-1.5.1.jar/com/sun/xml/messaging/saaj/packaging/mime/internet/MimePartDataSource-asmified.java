@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePartDataSource", null, "java/lang/Object", new String[] { "javax/activation/DataSource" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/sun/xml/messaging/saaj/packaging/mime/internet/MimePartDataSource", null, "java/lang/Object", new String[] { "jakarta/activation/DataSource" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "part", "Lcom/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart;", null, null);

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/view/facelets/component/_JsfElement", null, "javax/faces/component/UIPanel", new String[] { "org/apache/myfaces/view/facelets/component/_EventProperties", "org/apache/myfaces/view/facelets/component/_FocusBlurProperties", "org/apache/myfaces/view/facelets/component/_ChangeSelectProperties", "org/apache/myfaces/view/facelets/component/_StyleProperties" });
+classWriter.visit(V1_8, ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/view/facelets/component/_JsfElement", null, "jakarta/faces/component/UIPanel", new String[] { "org/apache/myfaces/view/facelets/component/_EventProperties", "org/apache/myfaces/view/facelets/component/_FocusBlurProperties", "org/apache/myfaces/view/facelets/component/_ChangeSelectProperties", "org/apache/myfaces/view/facelets/component/_StyleProperties" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "COMPONENT_FAMILY", "Ljava/lang/String;", null, "javax.faces.Panel");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "COMPONENT_FAMILY", "Ljava/lang/String;", null, "jakarta.faces.Panel");
 fieldVisitor.visitEnd();
 }
 {
@@ -36,7 +36,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/component/UIPanel", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/UIPanel", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

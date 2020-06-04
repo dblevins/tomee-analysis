@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/MetadataMap", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/ws/rs/core/MultivaluedMap<TK;TV;>;", "java/lang/Object", new String[] { "javax/ws/rs/core/MultivaluedMap" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/MetadataMap", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/ws/rs/core/MultivaluedMap<TK;TV;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/core/MultivaluedMap" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/impl/MetadataMap$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -802,10 +802,10 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equalsIgnoreValueOrder", "(Ljavax/ws/rs/core/MultivaluedMap;)Z", "(Ljavax/ws/rs/core/MultivaluedMap<TK;TV;>;)Z", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equalsIgnoreValueOrder", "(Ljakarta/ws/rs/core/MultivaluedMap;)Z", "(Ljakarta/ws/rs/core/MultivaluedMap<TK;TV;>;)Z", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "keySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "keySet", "()Ljava/util/Set;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
@@ -838,7 +838,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/Metadata
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);

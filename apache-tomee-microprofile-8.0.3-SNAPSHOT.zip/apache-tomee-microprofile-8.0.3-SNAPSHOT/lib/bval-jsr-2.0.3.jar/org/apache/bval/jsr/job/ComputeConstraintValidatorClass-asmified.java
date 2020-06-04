@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljava/util/function/Supplier<Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;>;", "java/lang/Object", new String[] { "java/util/function/Supplier" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljava/util/function/Supplier<Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;>;", "java/lang/Object", new String[] { "java/util/function/Supplier" });
 
 {
 annotationVisitor0 = classWriter.visitAnnotation("Lorg/apache/commons/weaver/privilizer/Privilizing;", false);
@@ -73,7 +73,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "descriptor", "Lo
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validationTarget", "Ljavax/validation/constraintvalidation/ValidationTarget;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validationTarget", "Ljakarta/validation/constraintvalidation/ValidationTarget;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -81,7 +81,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "validatedType", 
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/ConstraintCached;Lorg/apache/bval/jsr/descriptor/ConstraintD;Ljavax/validation/constraintvalidation/ValidationTarget;Ljava/lang/Class;)V", "(Lorg/apache/bval/jsr/ConstraintCached;Lorg/apache/bval/jsr/descriptor/ConstraintD<TA;>;Ljavax/validation/constraintvalidation/ValidationTarget;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/bval/jsr/ConstraintCached;Lorg/apache/bval/jsr/descriptor/ConstraintD;Ljakarta/validation/constraintvalidation/ValidationTarget;Ljava/lang/Class;)V", "(Lorg/apache/bval/jsr/ConstraintCached;Lorg/apache/bval/jsr/descriptor/ConstraintD<TA;>;Ljakarta/validation/constraintvalidation/ValidationTarget;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -107,8 +107,8 @@ methodVisitor.visitLdcInsn("validationTarget");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Validate", "notNull", "(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/constraintvalidation/ValidationTarget");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "validationTarget", "Ljavax/validation/constraintvalidation/ValidationTarget;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/constraintvalidation/ValidationTarget");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "validationTarget", "Ljakarta/validation/constraintvalidation/ValidationTarget;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("validatedType");
@@ -122,7 +122,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "descriptor", "Lorg/apache/bval/jsr/descriptor/ConstraintD;");
@@ -140,12 +140,12 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass$1", "$SwitchMap$javax$validation$constraintvalidation$ValidationTarget", "[I");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "validationTarget", "Ljavax/validation/constraintvalidation/ValidationTarget;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/validation/constraintvalidation/ValidationTarget", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "validationTarget", "Ljakarta/validation/constraintvalidation/ValidationTarget;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/validation/constraintvalidation/ValidationTarget", "ordinal", "()I", false);
 methodVisitor.visitInsn(IALOAD);
 Label label0 = new Label();
 Label label1 = new Label();
@@ -171,7 +171,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findCrossParameterValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findCrossParameterValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
@@ -210,7 +210,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ConstraintDefinitionException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ConstraintDefinitionException;")});
 methodVisitor.visitLdcInsn("%d cross-parameter %ss found for constraint type %s");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -240,7 +240,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/ValidatorUtils
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/reflection/TypeUtils", "isAssignable", "(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/ConstraintDefinitionException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/ConstraintDefinitionException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/ConstraintDefinitionException;")});
 methodVisitor.visitLdcInsn("Cross-parameter %s %s does not support the validation of an object array");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -263,7 +263,7 @@ methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findAnnotatedElementValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljavax/validation/ConstraintValidator<TA;*>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "findAnnotatedElementValidator", "(Ljava/util/Set;)Ljava/lang/Class;", "(Ljava/util/Set<Lorg/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo<TA;>;>;)Ljava/lang/Class<+Ljakarta/validation/ConstraintValidator<TA;*>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "stream", "()Ljava/util/stream/Stream;", true);
@@ -330,7 +330,7 @@ methodVisitor.visitLdcInsn("> 1 maximally specific");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "java/lang/String"}, 0, null);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/UnexpectedTypeException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/UnexpectedTypeException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/UnexpectedTypeException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/UnexpectedTypeException;")});
 methodVisitor.visitLdcInsn("%s %s %s found for annotated element of type %s");
 methodVisitor.visitInsn(ICONST_4);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -357,7 +357,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/job/ComputeConstrain
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/reflection/TypeUtils", "toString", "(Ljava/lang/reflect/Type;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/util/Exceptions", "create", "(Ljava/util/function/Function;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Exception;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/validation/UnexpectedTypeException");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/validation/UnexpectedTypeException");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(6, 6);
 methodVisitor.visitEnd();
@@ -731,7 +731,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Objects", "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", false);
-methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "javax/validation/UnexpectedTypeException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljavax/validation/UnexpectedTypeException;")});
+methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_NEWINVOKESPECIAL, "jakarta/validation/UnexpectedTypeException", "<init>", "(Ljava/lang/String;)V", false), Type.getType("(Ljava/lang/String;)Ljakarta/validation/UnexpectedTypeException;")});
 methodVisitor.visitLdcInsn("Detected collision of constraint and target type between %s and %s");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
@@ -754,7 +754,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "getSupportedTargets", "()Ljava/util/Set;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/constraintvalidation/ValidationTarget", "ANNOTATED_ELEMENT", "Ljavax/validation/constraintvalidation/ValidationTarget;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/constraintvalidation/ValidationTarget", "ANNOTATED_ELEMENT", "Ljakarta/validation/constraintvalidation/ValidationTarget;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -765,7 +765,7 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo", "getSupportedTargets", "()Ljava/util/Set;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/constraintvalidation/ValidationTarget", "PARAMETERS", "Ljavax/validation/constraintvalidation/ValidationTarget;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/constraintvalidation/ValidationTarget", "PARAMETERS", "Ljakarta/validation/constraintvalidation/ValidationTarget;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -774,7 +774,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "__privileged_clinit0", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/validation/ConstraintValidator;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/validation/ConstraintValidator;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSimpleName", "()Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/bval/jsr/job/ComputeConstraintValidatorClass", "CV", "Ljava/lang/String;");
 methodVisitor.visitInsn(RETURN);

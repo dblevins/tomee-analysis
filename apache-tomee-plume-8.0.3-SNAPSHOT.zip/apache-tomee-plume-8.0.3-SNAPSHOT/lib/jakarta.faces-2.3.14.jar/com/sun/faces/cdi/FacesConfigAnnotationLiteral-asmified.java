@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/FacesConfigAnnotationLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/faces/annotation/FacesConfig;>;Ljavax/faces/annotation/FacesConfig;", "javax/enterprise/util/AnnotationLiteral", new String[] { "javax/faces/annotation/FacesConfig" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/cdi/FacesConfigAnnotationLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/faces/annotation/FacesConfig;>;Ljakarta/faces/annotation/FacesConfig;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "jakarta/faces/annotation/FacesConfig" });
 
-classWriter.visitInnerClass("javax/faces/annotation/FacesConfig$Version", "javax/faces/annotation/FacesConfig", "Version", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/faces/annotation/FacesConfig$Version", "jakarta/faces/annotation/FacesConfig", "Version", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -34,15 +34,15 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "version", "()Ljavax/faces/annotation/FacesConfig$Version;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "version", "()Ljakarta/faces/annotation/FacesConfig$Version;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/faces/annotation/FacesConfig$Version", "JSF_2_3", "Ljavax/faces/annotation/FacesConfig$Version;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/annotation/FacesConfig$Version", "JSF_2_3", "Ljakarta/faces/annotation/FacesConfig$Version;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

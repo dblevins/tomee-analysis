@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/impl/PageContextImpl", null, "org/apache/myfaces/view/facelets/PageContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_attributes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_attributes", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -48,7 +48,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljavax/el/ValueExpression;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljakarta/el/ValueExpression;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/impl/PageContextImpl", "_attributes", "Ljava/util/Map;");

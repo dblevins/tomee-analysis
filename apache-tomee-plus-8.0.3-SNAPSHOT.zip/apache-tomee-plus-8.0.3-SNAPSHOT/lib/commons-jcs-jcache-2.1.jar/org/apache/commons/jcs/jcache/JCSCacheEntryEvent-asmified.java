@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCacheEntryEvent", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljavax/cache/event/CacheEntryEvent<TK;TV;>;", "javax/cache/event/CacheEntryEvent", null);
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCacheEntryEvent", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljakarta/cache/event/CacheEntryEvent<TK;TV;>;", "jakarta/cache/event/CacheEntryEvent", null);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(4761272981003897488L));
@@ -41,12 +41,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "value", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/cache/Cache;Ljavax/cache/event/EventType;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", "(Ljavax/cache/Cache<TK;TV;>;Ljavax/cache/event/EventType;TV;TK;TV;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/cache/Cache;Ljakarta/cache/event/EventType;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", "(Ljakarta/cache/Cache<TK;TV;>;Ljakarta/cache/event/EventType;TV;TK;TV;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/cache/event/CacheEntryEvent", "<init>", "(Ljavax/cache/Cache;Ljavax/cache/event/EventType;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/cache/event/CacheEntryEvent", "<init>", "(Ljakarta/cache/Cache;Ljakarta/cache/event/EventType;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSCacheEntryEvent", "old", "Ljava/lang/Object;");

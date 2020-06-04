@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/myfaces/view/facelets/compiler/SAXCompiler$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/apache/myfaces/view/facelets/compiler/SAXCompiler", "doCompileViewMetadata", "(Ljava/net/URL;Ljava/lang/String;)Ljavax/faces/view/facelets/FaceletHandler;");
+classWriter.visitOuterClass("org/apache/myfaces/view/facelets/compiler/SAXCompiler", "doCompileViewMetadata", "(Ljava/net/URL;Ljava/lang/String;)Ljakarta/faces/view/facelets/FaceletHandler;");
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/compiler/SAXCompiler$ViewMetadataHandler", "org/apache/myfaces/view/facelets/compiler/SAXCompiler", "ViewMetadataHandler", ACC_PRIVATE | ACC_STATIC);
 

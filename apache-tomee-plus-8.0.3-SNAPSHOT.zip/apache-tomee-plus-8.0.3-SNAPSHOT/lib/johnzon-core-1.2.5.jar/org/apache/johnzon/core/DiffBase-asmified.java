@@ -34,19 +34,19 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isJsonObject", "(Ljavax/json/JsonValue;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isJsonObject", "(Ljakarta/json/JsonValue;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/json/JsonObject");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/json/JsonObject");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isJsonArray", "(Ljavax/json/JsonValue;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "isJsonArray", "(Ljakarta/json/JsonValue;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/json/JsonArray");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/json/JsonArray");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

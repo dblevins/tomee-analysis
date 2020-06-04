@@ -411,7 +411,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("AlwaysPerformValidationWhenRequiredTrue");
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax.faces.ALWAYS_PERFORM_VALIDATION_WHEN_REQUIRED_IS_TRUE");
+methodVisitor.visitLdcInsn("jakarta.faces.ALWAYS_PERFORM_VALIDATION_WHEN_REQUIRED_IS_TRUE");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "AlwaysPerformValidationWhenRequiredTrue", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -469,7 +469,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("DisableFacesServletAutomaticMapping");
 methodVisitor.visitIntInsn(BIPUSH, 7);
-methodVisitor.visitLdcInsn("javax.faces.DISABLE_FACESSERVLET_TO_XHTML");
+methodVisitor.visitLdcInsn("jakarta.faces.DISABLE_FACESSERVLET_TO_XHTML");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "DisableFacesServletAutomaticMapping", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -603,7 +603,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("SerializeServerState");
 methodVisitor.visitIntInsn(BIPUSH, 23);
-methodVisitor.visitLdcInsn("javax.faces.SERIALIZE_SERVER_STATE");
+methodVisitor.visitLdcInsn("jakarta.faces.SERIALIZE_SERVER_STATE");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "SerializeServerState", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -637,7 +637,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("DisableFaceletJSFViewHandler");
 methodVisitor.visitIntInsn(BIPUSH, 27);
-methodVisitor.visitLdcInsn("javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
+methodVisitor.visitLdcInsn("jakarta.faces.DISABLE_FACELET_JSF_VIEWHANDLER");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "DisableFaceletJSFViewHandler", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -655,7 +655,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("DisableDefaultBeanValidator");
 methodVisitor.visitIntInsn(BIPUSH, 29);
-methodVisitor.visitLdcInsn("javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "DisableDefaultBeanValidator", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -663,7 +663,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("DateTimeConverterUsesSystemTimezone");
 methodVisitor.visitIntInsn(BIPUSH, 30);
-methodVisitor.visitLdcInsn("javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE");
+methodVisitor.visitLdcInsn("jakarta.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "DateTimeConverterUsesSystemTimezone", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -679,7 +679,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("FaceletsSkipComments");
 methodVisitor.visitIntInsn(BIPUSH, 32);
-methodVisitor.visitLdcInsn("javax.faces.FACELETS_SKIP_COMMENTS");
+methodVisitor.visitLdcInsn("jakarta.faces.FACELETS_SKIP_COMMENTS");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "FaceletsSkipComments", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -701,7 +701,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("PartialStateSaving");
 methodVisitor.visitIntInsn(BIPUSH, 34);
-methodVisitor.visitLdcInsn("javax.faces.PARTIAL_STATE_SAVING");
+methodVisitor.visitLdcInsn("jakarta.faces.PARTIAL_STATE_SAVING");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "PartialStateSaving", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -717,7 +717,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("InterpretEmptyStringSubmittedValuesAsNull");
 methodVisitor.visitIntInsn(BIPUSH, 36);
-methodVisitor.visitLdcInsn("javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL");
+methodVisitor.visitLdcInsn("jakarta.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "InterpretEmptyStringSubmittedValuesAsNull", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -813,7 +813,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("ViewRootPhaseListenerQueuesException");
 methodVisitor.visitIntInsn(BIPUSH, 48);
-methodVisitor.visitLdcInsn("javax.faces.VIEWROOT_PHASE_LISTENER_QUEUES_EXCEPTIONS");
+methodVisitor.visitLdcInsn("jakarta.faces.VIEWROOT_PHASE_LISTENER_QUEUES_EXCEPTIONS");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "ViewRootPhaseListenerQueuesException", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -821,7 +821,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("EnableValidateWholeBean");
 methodVisitor.visitIntInsn(BIPUSH, 49);
-methodVisitor.visitLdcInsn("javax.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.ENABLE_VALIDATE_WHOLE_BEAN");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "EnableValidateWholeBean", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");
@@ -829,7 +829,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/config/WebConfiguration$BooleanW
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("EnableWebsocketEndpoint");
 methodVisitor.visitIntInsn(BIPUSH, 50);
-methodVisitor.visitLdcInsn("javax.faces.ENABLE_WEBSOCKET_ENDPOINT");
+methodVisitor.visitLdcInsn("jakarta.faces.ENABLE_WEBSOCKET_ENDPOINT");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "EnableWebsocketEndpoint", "Lcom/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter;");

@@ -40,13 +40,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "initRequestInfo", "(Ljavax/servlet/http/HttpServletRequest;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "initRequestInfo", "(Ljakarta/servlet/http/HttpServletRequest;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/context/RequestInfos", "forceRequestInfo", "()Lorg/apache/openejb/server/context/RequestInfos$RequestInfo;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "getRemoteAddr", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getRemoteAddr", "()Ljava/lang/String;", true);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/context/RequestInfos$RequestInfo", "ip", "Ljava/lang/String;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/context/RequestInfos", "REQUEST_INFO", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitVarInsn(ALOAD, 1);

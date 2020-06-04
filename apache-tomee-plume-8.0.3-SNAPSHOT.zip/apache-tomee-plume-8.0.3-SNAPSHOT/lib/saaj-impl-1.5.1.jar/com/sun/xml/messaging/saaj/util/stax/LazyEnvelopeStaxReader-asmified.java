@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bodyQName", "Ljavax/xml/name
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/impl/EnvelopeImpl;)V", null, new String[] { "javax/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/xml/messaging/saaj/soap/impl/EnvelopeImpl;)V", null, new String[] { "jakarta/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxrs/client/ResponseExceptionMapper", "<E:Ljava/lang/Throwable;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromResponse", "(Ljavax/ws/rs/core/Response;)Ljava/lang/Throwable;", "(Ljavax/ws/rs/core/Response;)TE;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fromResponse", "(Ljakarta/ws/rs/core/Response;)Ljava/lang/Throwable;", "(Ljakarta/ws/rs/core/Response;)TE;", null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$IntegerParamConverter", "Ljava/lang/Object;Ljavax/ws/rs/ext/ParamConverter<Ljava/lang/Integer;>;", "java/lang/Object", new String[] { "javax/ws/rs/ext/ParamConverter" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$IntegerParamConverter", "Ljava/lang/Object;Ljakarta/ws/rs/ext/ParamConverter<Ljava/lang/Integer;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ParamConverter" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$IntegerParamConverter", "org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider", "IntegerParamConverter", ACC_PRIVATE | ACC_STATIC);
 

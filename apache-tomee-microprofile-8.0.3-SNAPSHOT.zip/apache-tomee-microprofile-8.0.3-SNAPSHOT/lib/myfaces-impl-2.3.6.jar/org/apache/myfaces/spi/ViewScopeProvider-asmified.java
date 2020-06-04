@@ -38,19 +38,19 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "onSessionDes
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "generateViewScopeId", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "generateViewScopeId", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;", null, null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createViewScopeMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createViewScopeMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restoreViewScopeMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "restoreViewScopeMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map;", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", null);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyViewScopeMap", "(Ljavax/faces/context/FacesContext;Ljava/lang/String;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "destroyViewScopeMap", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

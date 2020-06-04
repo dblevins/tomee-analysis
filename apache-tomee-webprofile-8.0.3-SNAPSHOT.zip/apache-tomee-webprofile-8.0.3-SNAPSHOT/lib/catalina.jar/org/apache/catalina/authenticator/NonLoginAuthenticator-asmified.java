@@ -34,13 +34,13 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doAuthenticate", "(Lorg/apache/catalina/connector/Request;Ljavax/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doAuthenticate", "(Lorg/apache/catalina/connector/Request;Ljakarta/servlet/http/HttpServletResponse;)Z", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/authenticator/NonLoginAuthenticator", "checkForCachedAuthentication", "(Lorg/apache/catalina/connector/Request;Ljavax/servlet/http/HttpServletResponse;Z)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/authenticator/NonLoginAuthenticator", "checkForCachedAuthentication", "(Lorg/apache/catalina/connector/Request;Ljakarta/servlet/http/HttpServletResponse;Z)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);

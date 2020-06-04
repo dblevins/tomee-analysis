@@ -373,17 +373,17 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ProducerBrokerExchange", "getConnectionContext", "()Lorg/apache/activemq/broker/ConnectionContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "getBrokerView", "()Lorg/apache/activemq/broker/jmx/BrokerViewMBean;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/BrokerViewMBean", "getQueueSubscribers", "()[Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/BrokerViewMBean", "getQueueSubscribers", "()[Ljakarta/management/ObjectName;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/ProducerBrokerExchange", "getConnectionContext", "()Lorg/apache/activemq/broker/ConnectionContext;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "getBrokerView", "()Lorg/apache/activemq/broker/jmx/BrokerViewMBean;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/BrokerViewMBean", "getTopicSubscribers", "()[Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/broker/jmx/BrokerViewMBean", "getTopicSubscribers", "()[Ljakarta/management/ObjectName;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label9);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -727,7 +727,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "getBrokerService", "()Lorg/apache/activemq/broker/BrokerService;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getBrokerObjectName", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerService", "getBrokerObjectName", "()Ljakarta/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -736,7 +736,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerS
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/activemq/broker/jmx/BrokerViewMBean;"));
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "newProxyInstance", "(Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "newProxyInstance", "(Ljakarta/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/activemq/broker/jmx/BrokerViewMBean");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/plugin/StatisticsBroker", "brokerView", "Lorg/apache/activemq/broker/jmx/BrokerViewMBean;");
 methodVisitor.visitLabel(label0);
@@ -769,7 +769,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljavax/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "sendSubStats", "(Lorg/apache/activemq/broker/ConnectionContext;[Ljakarta/management/ObjectName;Lorg/apache/activemq/command/ActiveMQDestination;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
@@ -791,7 +791,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/BrokerS
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/activemq/broker/jmx/SubscriptionViewMBean;"));
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "newProxyInstance", "(Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "newProxyInstance", "(Ljakarta/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/activemq/broker/jmx/SubscriptionViewMBean");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -812,7 +812,7 @@ methodVisitor.visitMaxs(4, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "prepareSubscriptionMessage", "(Lorg/apache/activemq/broker/jmx/SubscriptionViewMBean;)Lorg/apache/activemq/command/ActiveMQMapMessage;", null, new String[] { "javax/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "prepareSubscriptionMessage", "(Lorg/apache/activemq/broker/jmx/SubscriptionViewMBean;)Lorg/apache/activemq/command/ActiveMQMapMessage;", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/plugin/StatisticsBroker", "getBrokerService", "()Lorg/apache/activemq/broker/BrokerService;", false);

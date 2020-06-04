@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/transaction/Synchronization;", "java/lang/Object", new String[] { "javax/transaction/Synchronization" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/transaction/Synchronization;", "java/lang/Object", new String[] { "jakarta/transaction/Synchronization" });
 
 classWriter.visitInnerClass("org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "org/apache/webbeans/ee/event/TransactionalEventNotifier", "AbstractSynchronization", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "observer", "Ljavax/enterprise/inject/spi/ObserverMethod;", "Ljavax/enterprise/inject/spi/ObserverMethod<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "observer", "Ljakarta/enterprise/inject/spi/ObserverMethod;", "Ljakarta/enterprise/inject/spi/ObserverMethod<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,23 +35,23 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "event", "Ljava/l
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", "(Ljavax/enterprise/inject/spi/ObserverMethod<TT;>;TT;Ljavax/enterprise/inject/spi/EventMetadata;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/ObserverMethod;Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", "(Ljakarta/enterprise/inject/spi/ObserverMethod<TT;>;TT;Ljakarta/enterprise/inject/spi/EventMetadata;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "observer", "Ljavax/enterprise/inject/spi/ObserverMethod;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "observer", "Ljakarta/enterprise/inject/spi/ObserverMethod;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "event", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
@@ -79,15 +79,15 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "observer", "Ljavax/enterprise/inject/spi/ObserverMethod;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "observer", "Ljakarta/enterprise/inject/spi/ObserverMethod;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/webbeans/event/EventContextImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "event", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "metadata", "Ljavax/enterprise/inject/spi/EventMetadata;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventContextImpl", "<init>", "(Ljava/lang/Object;Ljavax/enterprise/inject/spi/EventMetadata;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/ObserverMethod", "notify", "(Ljavax/enterprise/inject/spi/EventContext;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization", "metadata", "Ljakarta/enterprise/inject/spi/EventMetadata;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/event/EventContextImpl", "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/inject/spi/EventMetadata;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/ObserverMethod", "notify", "(Ljakarta/enterprise/inject/spi/EventContext;)V", true);
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);

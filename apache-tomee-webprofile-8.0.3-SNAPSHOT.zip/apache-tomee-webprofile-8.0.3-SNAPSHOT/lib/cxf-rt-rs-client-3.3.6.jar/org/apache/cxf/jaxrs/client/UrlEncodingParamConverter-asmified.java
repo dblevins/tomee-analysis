@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/UrlEncodingParamConverter", "Ljava/lang/Object;Ljavax/ws/rs/ext/ParamConverter<Ljava/lang/String;>;", "java/lang/Object", new String[] { "javax/ws/rs/ext/ParamConverter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/client/UrlEncodingParamConverter", "Ljava/lang/Object;Ljakarta/ws/rs/ext/ParamConverter<Ljava/lang/String;>;", "java/lang/Object", new String[] { "jakarta/ws/rs/ext/ParamConverter" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "encodeClientParametersList", "Ljava/util/Set;", "Ljava/util/Set<Ljava/lang/Character;>;", null);

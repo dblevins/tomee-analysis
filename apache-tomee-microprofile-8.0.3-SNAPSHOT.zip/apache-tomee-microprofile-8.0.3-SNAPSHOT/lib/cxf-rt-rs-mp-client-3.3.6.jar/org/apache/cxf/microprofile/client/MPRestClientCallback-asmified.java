@@ -31,13 +31,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executor", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", "(Ljavax/ws/rs/client/InvocationCallback<TT;>;Lorg/apache/cxf/message/Message;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/ws/rs/client/InvocationCallback;Lorg/apache/cxf/message/Message;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", "(Ljakarta/ws/rs/client/InvocationCallback<TT;>;Lorg/apache/cxf/message/Message;Ljava/lang/Class<*>;Ljava/lang/reflect/Type;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "<init>", "(Ljavax/ws/rs/client/InvocationCallback;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/JaxrsClientCallback", "<init>", "(Ljakarta/ws/rs/client/InvocationCallback;Ljava/lang/Class;Ljava/lang/reflect/Type;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/concurrent/ExecutorService;"));
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Class;)Ljava/lang/Object;", true);
@@ -51,7 +51,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/AccessController", "d
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/concurrent/ExecutorService");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/microprofile/client/MPRestClientCallback", "javax/ws/rs/client/InvocationCallback", "org/apache/cxf/message/Message", "java/lang/Class", "java/lang/reflect/Type", "java/util/concurrent/ExecutorService"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/cxf/microprofile/client/MPRestClientCallback", "jakarta/ws/rs/client/InvocationCallback", "org/apache/cxf/message/Message", "java/lang/Class", "java/lang/reflect/Type", "java/util/concurrent/ExecutorService"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/MPRestClientCallback", "executor", "Ljava/util/concurrent/ExecutorService;");

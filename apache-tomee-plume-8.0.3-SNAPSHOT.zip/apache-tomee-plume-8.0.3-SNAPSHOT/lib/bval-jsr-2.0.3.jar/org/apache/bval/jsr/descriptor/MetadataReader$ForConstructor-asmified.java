@@ -50,23 +50,23 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "getParameterNames", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor;)Ljava/util/List;", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor<+TT;>;)Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(0, "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor;)Ljava/util/List;", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor<+TT;>;)Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/ParameterNameProvider", "getParameterNames", "(Ljava/lang/reflect/Constructor;)Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/ParameterNameProvider", "getParameterNames", "(Ljava/lang/reflect/Constructor;)Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_BRIDGE | ACC_SYNTHETIC, "getParameterNames", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_BRIDGE | ACC_SYNTHETIC, "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Executable;)Ljava/util/List;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/reflect/Constructor");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MetadataReader$ForConstructor", "getParameterNames", "(Ljavax/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/descriptor/MetadataReader$ForConstructor", "getParameterNames", "(Ljakarta/validation/ParameterNameProvider;Ljava/lang/reflect/Constructor;)Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

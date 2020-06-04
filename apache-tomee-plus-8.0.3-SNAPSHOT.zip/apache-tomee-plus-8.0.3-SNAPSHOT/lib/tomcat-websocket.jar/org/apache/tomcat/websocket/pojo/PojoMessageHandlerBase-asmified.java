@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "<T:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/tomcat/websocket/WrappedMessageHandler;", "java/lang/Object", new String[] { "org/apache/tomcat/websocket/WrappedMessageHandler" });
 
-classWriter.visitInnerClass("javax/websocket/RemoteEndpoint$Basic", "javax/websocket/RemoteEndpoint", "Basic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/websocket/RemoteEndpoint$Basic", "jakarta/websocket/RemoteEndpoint", "Basic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "pojo", "Ljava/lang/Object;", null, null);
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "method", "Ljav
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "session", "Ljavax/websocket/Session;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "session", "Ljakarta/websocket/Session;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "maxMessageSize
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/websocket/Session;[Ljava/lang/Object;IZIJ)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/websocket/Session;[Ljava/lang/Object;IZIJ)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -82,13 +82,13 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "java/lang/Object", "java/lang/reflect/Method", "javax/websocket/Session", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.LONG}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "java/lang/Object", "java/lang/reflect/Method", "jakarta/websocket/Session", "[Ljava/lang/Object;", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.LONG}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 10);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "session", "Ljavax/websocket/Session;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "session", "Ljakarta/websocket/Session;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "params", "[Ljava/lang/Object;");
@@ -115,7 +115,7 @@ Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/websocket/EncodeException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/websocket/EncodeException");
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
@@ -123,8 +123,8 @@ methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "session", "Ljavax/websocket/Session;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/Session", "getBasicRemote", "()Ljavax/websocket/RemoteEndpoint$Basic;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "session", "Ljakarta/websocket/Session;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/Session", "getBasicRemote", "()Ljakarta/websocket/RemoteEndpoint$Basic;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -134,10 +134,10 @@ methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/RemoteEndpoint$Basic", "sendText", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/RemoteEndpoint$Basic", "sendText", "(Ljava/lang/String;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/websocket/RemoteEndpoint$Basic"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/websocket/RemoteEndpoint$Basic"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/nio/ByteBuffer");
 Label label5 = new Label();
@@ -145,7 +145,7 @@ methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/nio/ByteBuffer");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/RemoteEndpoint$Basic", "sendBinary", "(Ljava/nio/ByteBuffer;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/RemoteEndpoint$Basic", "sendBinary", "(Ljava/nio/ByteBuffer;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -158,13 +158,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "[B");
 methodVisitor.visitTypeInsn(CHECKCAST, "[B");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/nio/ByteBuffer", "wrap", "([B)Ljava/nio/ByteBuffer;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/RemoteEndpoint$Basic", "sendBinary", "(Ljava/nio/ByteBuffer;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/RemoteEndpoint$Basic", "sendBinary", "(Ljava/nio/ByteBuffer;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/RemoteEndpoint$Basic", "sendObject", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/RemoteEndpoint$Basic", "sendObject", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 Label label7 = new Label();
@@ -184,16 +184,16 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getWrappedHandler", "()Ljavax/websocket/MessageHandler;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getWrappedHandler", "()Ljakarta/websocket/MessageHandler;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/websocket/MessageHandler");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/websocket/MessageHandler");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/websocket/MessageHandler");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/websocket/MessageHandler");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

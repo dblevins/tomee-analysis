@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContext", "(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContext", "(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -155,45 +155,45 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jaxb/dynam
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "nullSessionName", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContext", "([Ljava/lang/Class;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "([Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContext", "([Ljava/lang/Class;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "([Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "cannotCreateDynamicContextFromClasses", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Lorg/w3c/dom/Node;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Lorg/w3c/dom/Node;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Lorg/w3c/dom/Node;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Lorg/w3c/dom/Node;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "nullNode", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "xsdImportNotSource", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -216,15 +216,15 @@ methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Ljava/io/InputStream;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/io/InputStream;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Ljava/io/InputStream;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/io/InputStream;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "nullInputStream", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -247,15 +247,15 @@ methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Ljavax/xml/transform/Source;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljavax/xml/transform/Source;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromXSD", "(Ljavax/xml/transform/Source;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljavax/xml/transform/Source;Lorg/xml/sax/EntityResolver;Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "nullSource", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -278,7 +278,7 @@ methodVisitor.visitMaxs(8, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromOXM", "(Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "javax/xml/bind/JAXBException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createContextFromOXM", "(Ljava/lang/ClassLoader;Ljava/util/Map;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", "(Ljava/lang/ClassLoader;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext;", new String[] { "jakarta/xml/bind/JAXBException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -294,10 +294,10 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/l
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/JAXBException", "oxmKeyNotFound", "()Lorg/eclipse/persistence/exceptions/JAXBException;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

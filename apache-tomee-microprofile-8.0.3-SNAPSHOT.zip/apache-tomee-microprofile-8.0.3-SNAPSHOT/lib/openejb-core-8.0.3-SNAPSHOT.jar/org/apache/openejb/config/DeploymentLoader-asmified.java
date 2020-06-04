@@ -5135,7 +5135,7 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label6);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/WebApp", "contextParamsAsMap", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.CONFIG_FILES");
+methodVisitor.visitLdcInsn("jakarta.faces.CONFIG_FILES");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -5200,7 +5200,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/config/DeploymentLoa
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
-methodVisitor.visitLdcInsn("A faces configuration file should be context relative when specified in web.xml. Please fix the value of context parameter javax.faces.CONFIG_FILES for the file ");
+methodVisitor.visitLdcInsn("A faces configuration file should be context relative when specified in web.xml. Please fix the value of context parameter jakarta.faces.CONFIG_FILES for the file ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

@@ -1187,7 +1187,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "signPartsAndElements", "(Lorg/apache/wss4j/policy/model/SignedParts;Lorg/apache/wss4j/policy/model/SignedElements;)V", null, new String[] { "javax/xml/soap/SOAPException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "signPartsAndElements", "(Lorg/apache/wss4j/policy/model/SignedParts;Lorg/apache/wss4j/policy/model/SignedElements;)V", null, new String[] { "jakarta/xml/soap/SOAPException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler", "getProperties", "()Lorg/apache/wss4j/stax/ext/WSSSecurityProperties;", false);

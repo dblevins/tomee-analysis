@@ -50,7 +50,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_ABSTRACT, "invoke", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)Ljava/lang/Object;", "(Ljavax/el/ELResolver;Ljavax/el/ELContext;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_ABSTRACT, "invoke", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)Ljava/lang/Object;", "(Ljakarta/el/ELResolver;Ljakarta/el/ELContext;)TT;", null);
 methodVisitor.visitEnd();
 }
 {

@@ -56,8 +56,8 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeclaredConstraints", "(
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable$1", "this$1", "Lorg/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/validation/ConstraintTarget", "RETURN_VALUE", "Ljavax/validation/ConstraintTarget;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable", "access$200", "(Lorg/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable;Ljavax/validation/ConstraintTarget;)[Ljava/lang/annotation/Annotation;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/validation/ConstraintTarget", "RETURN_VALUE", "Ljakarta/validation/ConstraintTarget;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable", "access$200", "(Lorg/apache/bval/jsr/metadata/ReflectionBuilder$ForExecutable;Ljakarta/validation/ConstraintTarget;)[Ljava/lang/annotation/Annotation;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

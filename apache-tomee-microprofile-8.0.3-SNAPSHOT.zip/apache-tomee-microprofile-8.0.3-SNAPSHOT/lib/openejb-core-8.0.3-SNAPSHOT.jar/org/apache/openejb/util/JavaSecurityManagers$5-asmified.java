@@ -49,7 +49,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/lang/String;
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/util/JavaSecurityManagers$5", "val$moduleID", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/security/jacc/PolicyContext", "setContextID", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/security/jacc/PolicyContext", "setContextID", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);

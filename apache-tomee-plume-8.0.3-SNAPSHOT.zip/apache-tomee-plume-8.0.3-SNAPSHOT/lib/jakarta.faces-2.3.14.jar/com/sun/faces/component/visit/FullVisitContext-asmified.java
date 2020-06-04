@@ -22,32 +22,32 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/component/visit/FullVisitContext", null, "javax/faces/component/visit/VisitContext", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "com/sun/faces/component/visit/FullVisitContext", null, "jakarta/faces/component/visit/VisitContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljavax/faces/context/FacesContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "facesContext", "Ljakarta/faces/context/FacesContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "hints", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "hints", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/visit/FullVisitContext", "<init>", "(Ljavax/faces/context/FacesContext;Ljava/util/Set;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/component/visit/FullVisitContext", "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/util/Set;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/FacesContext;Ljava/util/Set;)V", "(Ljavax/faces/context/FacesContext;Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/FacesContext;Ljava/util/Set;)V", "(Ljakarta/faces/context/FacesContext;Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/component/visit/VisitContext", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/visit/VisitContext", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
@@ -56,10 +56,10 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "()V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/component/visit/FullVisitContext", "javax/faces/context/FacesContext", "java/util/Set"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"com/sun/faces/component/visit/FullVisitContext", "jakarta/faces/context/FacesContext", "java/util/Set"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/component/visit/FullVisitContext", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/component/visit/FullVisitContext", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
@@ -69,7 +69,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/component/visit/VisitHint;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/component/visit/VisitHint;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "noneOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -89,10 +89,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljavax/faces/context/FacesContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFacesContext", "()Ljakarta/faces/context/FacesContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/visit/FullVisitContext", "facesContext", "Ljavax/faces/context/FacesContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/visit/FullVisitContext", "facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -106,10 +106,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubtreeIdsToVisit", "(Ljavax/faces/component/UIComponent;)Ljava/util/Collection;", "(Ljavax/faces/component/UIComponent;)Ljava/util/Collection<Ljava/lang/String;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubtreeIdsToVisit", "(Ljakarta/faces/component/UIComponent;)Ljava/util/Collection;", "(Ljakarta/faces/component/UIComponent;)Ljava/util/Collection<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "javax/faces/component/NamingContainer");
+methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/component/NamingContainer");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
@@ -132,7 +132,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/faces/component/visit/VisitHint;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getHints", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/faces/component/visit/VisitHint;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/component/visit/FullVisitContext", "hints", "Ljava/util/Set;");
@@ -141,12 +141,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeVisitCallback", "(Ljavax/faces/component/UIComponent;Ljavax/faces/component/visit/VisitCallback;)Ljavax/faces/component/visit/VisitResult;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invokeVisitCallback", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/component/visit/VisitCallback;)Ljakarta/faces/component/visit/VisitResult;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/component/visit/VisitCallback", "visit", "(Ljavax/faces/component/visit/VisitContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/visit/VisitResult;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/component/visit/VisitCallback", "visit", "(Ljakarta/faces/component/visit/VisitContext;Ljakarta/faces/component/UIComponent;)Ljakarta/faces/component/visit/VisitResult;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

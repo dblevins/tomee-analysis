@@ -32,7 +32,7 @@ classWriter.visitInnerClass("com/sun/faces/facelets/impl/DefaultFaceletCache$Rec
 
 classWriter.visitInnerClass("com/sun/faces/util/ConcurrentCache$Factory", "com/sun/faces/util/ConcurrentCache", "Factory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
-classWriter.visitInnerClass("javax/faces/view/facelets/FaceletCache$MemberFactory", "javax/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/view/facelets/FaceletCache$MemberFactory", "jakarta/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$checkExpiry", "Z", null, null);
@@ -87,9 +87,9 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMill
 methodVisitor.visitVarInsn(LLOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/impl/DefaultFaceletCache$1", "this$0", "Lcom/sun/faces/facelets/impl/DefaultFaceletCache;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/impl/DefaultFaceletCache", "access$000", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/impl/DefaultFaceletCache", "access$000", "(Lcom/sun/faces/facelets/impl/DefaultFaceletCache;)Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/view/facelets/FaceletCache$MemberFactory", "newInstance", "(Ljava/net/URL;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/view/facelets/FaceletCache$MemberFactory", "newInstance", "(Ljava/net/URL;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "com/sun/faces/facelets/impl/DefaultFacelet");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/impl/DefaultFaceletCache$1", "val$refreshPeriod", "J");

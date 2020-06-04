@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ConstructorD", "<T:Ljava/lang/Object;>Lorg/apache/bval/jsr/descriptor/ExecutableD<Ljava/lang/reflect/Constructor<+TT;>;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForConstructor<TT;>;Lorg/apache/bval/jsr/descriptor/ConstructorD<TT;>;>;Ljavax/validation/metadata/ConstructorDescriptor;", "org/apache/bval/jsr/descriptor/ExecutableD", new String[] { "javax/validation/metadata/ConstructorDescriptor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/descriptor/ConstructorD", "<T:Ljava/lang/Object;>Lorg/apache/bval/jsr/descriptor/ExecutableD<Ljava/lang/reflect/Constructor<+TT;>;Lorg/apache/bval/jsr/descriptor/MetadataReader$ForConstructor<TT;>;Lorg/apache/bval/jsr/descriptor/ConstructorD<TT;>;>;Ljakarta/validation/metadata/ConstructorDescriptor;", "org/apache/bval/jsr/descriptor/ExecutableD", new String[] { "jakarta/validation/metadata/ConstructorDescriptor" });
 
 classWriter.visitInnerClass("org/apache/bval/jsr/descriptor/MetadataReader$ForConstructor", "org/apache/bval/jsr/descriptor/MetadataReader", "ForConstructor", 0);
 

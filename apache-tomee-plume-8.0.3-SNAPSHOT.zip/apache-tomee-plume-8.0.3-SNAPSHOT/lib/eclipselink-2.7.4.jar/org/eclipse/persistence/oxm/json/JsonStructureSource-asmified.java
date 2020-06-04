@@ -25,26 +25,26 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/oxm/json/JsonStructureSource", null, "org/eclipse/persistence/internal/oxm/record/ExtendedSource", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonStructure", "Ljavax/json/JsonStructure;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jsonStructure", "Ljakarta/json/JsonStructure;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/json/JsonStructure;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/json/JsonStructure;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/oxm/record/ExtendedSource", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonStructureSource", "jsonStructure", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/oxm/json/JsonStructureSource", "jsonStructure", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonStructure", "()Ljavax/json/JsonStructure;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJsonStructure", "()Ljakarta/json/JsonStructure;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonStructureSource", "jsonStructure", "Ljavax/json/JsonStructure;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/oxm/json/JsonStructureSource", "jsonStructure", "Ljakarta/json/JsonStructure;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -59,8 +59,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/o
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/json/JsonStructureSource", "getJsonStructure", "()Ljavax/json/JsonStructure;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader", "setJsonStructure", "(Ljavax/json/JsonStructure;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/json/JsonStructureSource", "getJsonStructure", "()Ljakarta/json/JsonStructure;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader", "setJsonStructure", "(Ljakarta/json/JsonStructure;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
@@ -77,8 +77,8 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/o
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/json/JsonStructureSource", "getJsonStructure", "()Ljavax/json/JsonStructure;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader", "setJsonStructure", "(Ljavax/json/JsonStructure;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/oxm/json/JsonStructureSource", "getJsonStructure", "()Ljakarta/json/JsonStructure;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader", "setJsonStructure", "(Ljakarta/json/JsonStructure;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);

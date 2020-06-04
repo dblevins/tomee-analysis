@@ -534,7 +534,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/coyote/http2/WindowAllocation
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http2/WindowAllocationManager", "stream", "Lorg/apache/coyote/http2/Stream;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/http2/Stream", "getCoyoteResponse", "()Lorg/apache/coyote/Response;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljavax/servlet/WriteListener;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Response", "getWriteListener", "()Ljakarta/servlet/WriteListener;", false);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label6);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/coyote/http2/WindowAllocationManager", "log", "Lorg/apache/juli/logging/Log;");

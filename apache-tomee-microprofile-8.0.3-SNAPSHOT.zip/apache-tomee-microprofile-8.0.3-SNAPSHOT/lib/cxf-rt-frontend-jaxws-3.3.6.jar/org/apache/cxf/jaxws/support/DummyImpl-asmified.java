@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/jaxws/support/DummyImpl", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/jws/soap/SOAPBinding;", true);
-annotationVisitor0.visitEnum("parameterStyle", "Ljavax/jws/soap/SOAPBinding$ParameterStyle;", "BARE");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/jws/soap/SOAPBinding;", true);
+annotationVisitor0.visitEnum("parameterStyle", "Ljakarta/jws/soap/SOAPBinding$ParameterStyle;", "BARE");
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/jws/soap/SOAPBinding$ParameterStyle", "javax/jws/soap/SOAPBinding", "ParameterStyle", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/jws/soap/SOAPBinding$ParameterStyle", "jakarta/jws/soap/SOAPBinding", "ParameterStyle", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitEnd();
 

@@ -24,16 +24,16 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "Ljava/lang/Object;Lcom/sun/faces/facelets/FaceletCache$InstanceFactory<TV;>;", "java/lang/Object", new String[] { "com/sun/faces/facelets/FaceletCache$InstanceFactory" });
 
-classWriter.visitOuterClass("com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "setMemberFactories", "(Ljavax/faces/view/facelets/FaceletCache$MemberFactory;Ljavax/faces/view/facelets/FaceletCache$MemberFactory;)V");
+classWriter.visitOuterClass("com/sun/faces/facelets/PrivateApiFaceletCacheAdapter", "setMemberFactories", "(Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;)V");
 
-classWriter.visitInnerClass("javax/faces/view/facelets/FaceletCache$MemberFactory", "javax/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/view/facelets/FaceletCache$MemberFactory", "jakarta/faces/view/facelets/FaceletCache", "MemberFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", null, null, 0);
 
 classWriter.visitInnerClass("com/sun/faces/facelets/FaceletCache$InstanceFactory", "com/sun/faces/facelets/FaceletCache", "InstanceFactory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$viewMetadataFaceletFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$viewMetadataFaceletFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,14 +41,14 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lcom
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljavax/faces/view/facelets/FaceletCache$MemberFactory;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "this$0", "Lcom/sun/faces/facelets/PrivateApiFaceletCacheAdapter;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "val$viewMetadataFaceletFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "val$viewMetadataFaceletFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
@@ -59,9 +59,9 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljava/net/URL;)Ljava/lang/Object;", "(Ljava/net/URL;)TV;", new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "val$viewMetadataFaceletFactory", "Ljavax/faces/view/facelets/FaceletCache$MemberFactory;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$2", "val$viewMetadataFaceletFactory", "Ljakarta/faces/view/facelets/FaceletCache$MemberFactory;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/view/facelets/FaceletCache$MemberFactory", "newInstance", "(Ljava/net/URL;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/view/facelets/FaceletCache$MemberFactory", "newInstance", "(Ljava/net/URL;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

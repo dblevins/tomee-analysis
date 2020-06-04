@@ -22,12 +22,12 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", null, "java/lang/Object", new String[] { "javax/websocket/server/ServerEndpointConfig" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", null, "java/lang/Object", new String[] { "jakarta/websocket/server/ServerEndpointConfig" });
 
-classWriter.visitInnerClass("javax/websocket/server/ServerEndpointConfig$Configurator", "javax/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
+classWriter.visitInnerClass("jakarta/websocket/server/ServerEndpointConfig$Configurator", "jakarta/websocket/server/ServerEndpointConfig", "Configurator", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "perSessionUserPr
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/websocket/server/ServerEndpointConfig;)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/websocket/server/ServerEndpointConfig;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,32 +46,32 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ConcurrentHas
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perSessionUserProperties", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perSessionUserProperties", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getUserProperties", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Encoder;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Encoder;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getEncoders", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getEncoders", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljavax/websocket/Decoder;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDecoders", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/Class<+Ljakarta/websocket/Decoder;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getDecoders", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getDecoders", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -89,8 +89,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEndpointClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<*>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getEndpointClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -99,8 +99,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPath", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getPath", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getPath", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -109,28 +109,28 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubprotocols", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/String;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getSubprotocols", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getSubprotocols", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensions", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/websocket/Extension;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensions", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/websocket/Extension;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getExtensions", "()Ljava/util/List;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getExtensions", "()Ljava/util/List;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfigurator", "()Ljavax/websocket/server/ServerEndpointConfig$Configurator;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfigurator", "()Ljakarta/websocket/server/ServerEndpointConfig$Configurator;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljavax/websocket/server/ServerEndpointConfig;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/websocket/server/ServerEndpointConfig", "getConfigurator", "()Ljavax/websocket/server/ServerEndpointConfig$Configurator;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig", "perEndpointConfig", "Ljakarta/websocket/server/ServerEndpointConfig;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/websocket/server/ServerEndpointConfig", "getConfigurator", "()Ljakarta/websocket/server/ServerEndpointConfig$Configurator;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl");
@@ -55,11 +55,11 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Ljavax/transaction/TransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/ClassLoader;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl", "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Ljava/lang/String;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Ljakarta/transaction/TransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "<init>", "(Lorg/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/AbstractConnectionManager", "<init>", "(Lorg/apache/geronimo/connector/outbound/AbstractConnectionManager$Interceptors;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(11, 9);
 methodVisitor.visitEnd();

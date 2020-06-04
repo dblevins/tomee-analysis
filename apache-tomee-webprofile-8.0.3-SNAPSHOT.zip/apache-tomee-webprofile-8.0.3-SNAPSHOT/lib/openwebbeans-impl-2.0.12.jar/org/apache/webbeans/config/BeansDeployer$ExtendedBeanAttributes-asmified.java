@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/webbeans/config/Bean
 classWriter.visitInnerClass("org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "org/apache/webbeans/config/BeansDeployer", "ExtendedBeanAttributes", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;", "Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;", "Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,13 +39,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ignoreFinalMetho
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanAttributes;ZZ)V", "(Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;ZZ)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/BeanAttributes;ZZ)V", "(Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;ZZ)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "isEjb", "Z");
@@ -57,10 +57,10 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes;)Ljavax/enterprise/inject/spi/BeanAttributes;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes;)Ljakarta/enterprise/inject/spi/BeanAttributes;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "beanAttributes", "Ljavax/enterprise/inject/spi/BeanAttributes;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes", "beanAttributes", "Ljakarta/enterprise/inject/spi/BeanAttributes;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -642,23 +642,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockScope", "()Ljavax/persistence/PessimisticLockScope;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLockScope", "()Ljakarta/persistence/PessimisticLockScope;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "getLockScope", "()I", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/LockScopesHelper", "fromLockScope", "(I)Ljavax/persistence/PessimisticLockScope;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/LockScopesHelper", "fromLockScope", "(I)Ljakarta/persistence/PessimisticLockScope;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockScope", "(Ljavax/persistence/PessimisticLockScope;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLockScope", "(Ljakarta/persistence/PessimisticLockScope;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/LockScopesHelper", "toLockScope", "(Ljavax/persistence/PessimisticLockScope;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/LockScopesHelper", "toLockScope", "(Ljakarta/persistence/PessimisticLockScope;)I", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "setLockScope", "(I)Lorg/apache/openjpa/kernel/FetchConfiguration;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -690,23 +690,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReadLockMode", "()Ljavax/persistence/LockModeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReadLockMode", "()Ljakarta/persistence/LockModeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "getReadLockLevel", "()I", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "fromLockLevel", "(I)Ljavax/persistence/LockModeType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "fromLockLevel", "(I)Ljakarta/persistence/LockModeType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setReadLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "toLockLevel", "(Ljavax/persistence/LockModeType;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "toLockLevel", "(Ljakarta/persistence/LockModeType;)I", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "setReadLockLevel", "(I)Lorg/apache/openjpa/kernel/FetchConfiguration;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -715,23 +715,23 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriteLockMode", "()Ljavax/persistence/LockModeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getWriteLockMode", "()Ljakarta/persistence/LockModeType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "getWriteLockLevel", "()I", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "fromLockLevel", "(I)Ljavax/persistence/LockModeType;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "fromLockLevel", "(I)Ljakarta/persistence/LockModeType;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteLockMode", "(Ljavax/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setWriteLockMode", "(Ljakarta/persistence/LockModeType;)Lorg/apache/openjpa/persistence/FetchPlan;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/persistence/FetchPlanImpl", "_fetch", "Lorg/apache/openjpa/kernel/DelegatingFetchConfiguration;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "toLockLevel", "(Ljavax/persistence/LockModeType;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/MixedLockLevelsHelper", "toLockLevel", "(Ljakarta/persistence/LockModeType;)I", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingFetchConfiguration", "setWriteLockLevel", "(I)Lorg/apache/openjpa/kernel/FetchConfiguration;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);

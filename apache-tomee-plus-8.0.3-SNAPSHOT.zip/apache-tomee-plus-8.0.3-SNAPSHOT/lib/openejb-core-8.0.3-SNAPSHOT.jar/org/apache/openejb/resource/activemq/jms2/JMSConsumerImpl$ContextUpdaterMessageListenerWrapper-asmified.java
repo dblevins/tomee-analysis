@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", null, "java/lang/Object", new String[] { "javax/jms/MessageListener" });
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", null, "java/lang/Object", new String[] { "jakarta/jms/MessageListener" });
 
 classWriter.visitInnerClass("org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl", "ContextUpdaterMessageListenerWrapper", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "context", "Lorg/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wrapped", "Ljavax/jms/MessageListener;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "wrapped", "Ljakarta/jms/MessageListener;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljavax/jms/MessageListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljakarta/jms/MessageListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -46,37 +46,37 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "context", "Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "wrapped", "Ljavax/jms/MessageListener;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "wrapped", "Ljakarta/jms/MessageListener;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljavax/jms/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "onMessage", "(Ljakarta/jms/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl", "access$100", "(Ljavax/jms/Message;)Ljavax/jms/Message;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl", "access$100", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "context", "Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "setLastMessage", "(Ljavax/jms/Message;)Ljavax/jms/Message;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/activemq/jms2/JMSContextImpl", "setLastMessage", "(Ljakarta/jms/Message;)Ljakarta/jms/Message;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "wrapped", "Ljavax/jms/MessageListener;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "wrapped", "Ljakarta/jms/MessageListener;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jms/MessageListener", "onMessage", "(Ljavax/jms/Message;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jms/MessageListener", "onMessage", "(Ljakarta/jms/Message;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljavax/jms/MessageListener;Lorg/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljakarta/jms/MessageListener;Lorg/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljavax/jms/MessageListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper", "<init>", "(Lorg/apache/openejb/resource/activemq/jms2/JMSContextImpl;Ljakarta/jms/MessageListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();

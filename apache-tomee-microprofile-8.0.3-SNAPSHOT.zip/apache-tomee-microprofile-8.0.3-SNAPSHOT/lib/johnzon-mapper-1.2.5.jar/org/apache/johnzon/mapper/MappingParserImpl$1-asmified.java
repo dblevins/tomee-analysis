@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/johnzon/mapper/MappingParserImpl$1", "Ljava/util/HashSet<Ljava/lang/String;>;", "java/util/HashSet", null);
 
-classWriter.visitOuterClass("org/apache/johnzon/mapper/MappingParserImpl", "buildObject", "(Ljava/lang/reflect/Type;Ljavax/json/JsonObject;ZLorg/apache/johnzon/mapper/internal/JsonPointerTracker;)Ljava/lang/Object;");
+classWriter.visitOuterClass("org/apache/johnzon/mapper/MappingParserImpl", "buildObject", "(Ljava/lang/reflect/Type;Ljakarta/json/JsonObject;ZLorg/apache/johnzon/mapper/internal/JsonPointerTracker;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("org/apache/johnzon/mapper/Mappings$ClassMapping", "org/apache/johnzon/mapper/Mappings", "ClassMapping", ACC_PUBLIC | ACC_STATIC);
 

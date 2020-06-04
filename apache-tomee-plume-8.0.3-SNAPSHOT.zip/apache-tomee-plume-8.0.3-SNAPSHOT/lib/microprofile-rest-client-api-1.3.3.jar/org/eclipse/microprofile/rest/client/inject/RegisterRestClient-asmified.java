@@ -43,11 +43,11 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Stereotype;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Stereotype;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/Dependent;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/context/Dependent;", true);
 annotationVisitor0.visitEnd();
 }
 {

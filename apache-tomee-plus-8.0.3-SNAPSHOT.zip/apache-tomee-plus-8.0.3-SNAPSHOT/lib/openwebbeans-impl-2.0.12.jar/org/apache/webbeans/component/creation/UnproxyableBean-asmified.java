@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/webbeans/component/creation/UnproxyableBean", "<T:Ljava/lang/Object;>Lorg/apache/webbeans/component/ManagedBean<TT;>;", "org/apache/webbeans/component/ManagedBean", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "exception", "Ljavax/enterprise/inject/UnproxyableResolutionException;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "exception", "Ljakarta/enterprise/inject/UnproxyableResolutionException;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljavax/enterprise/inject/spi/AnnotatedType;Ljava/lang/Class;Ljavax/enterprise/inject/UnproxyableResolutionException;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/BeanAttributes<TT;>;Ljavax/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/Class<TT;>;Ljavax/enterprise/inject/UnproxyableResolutionException;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljava/lang/Class;Ljakarta/enterprise/inject/UnproxyableResolutionException;)V", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/BeanAttributes<TT;>;Ljakarta/enterprise/inject/spi/AnnotatedType<TT;>;Ljava/lang/Class<TT;>;Ljakarta/enterprise/inject/UnproxyableResolutionException;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -37,10 +37,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/ManagedBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljavax/enterprise/inject/spi/AnnotatedType;Ljavax/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/component/ManagedBean", "<init>", "(Lorg/apache/webbeans/config/WebBeansContext;Lorg/apache/webbeans/component/WebBeansType;Ljakarta/enterprise/inject/spi/AnnotatedType;Ljakarta/enterprise/inject/spi/BeanAttributes;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljavax/enterprise/inject/UnproxyableResolutionException;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljakarta/enterprise/inject/UnproxyableResolutionException;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
@@ -49,16 +49,16 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "valid", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljavax/enterprise/inject/UnproxyableResolutionException;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljakarta/enterprise/inject/UnproxyableResolutionException;");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljavax/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "create", "(Ljakarta/enterprise/context/spi/CreationalContext;)Ljava/lang/Object;", "(Ljakarta/enterprise/context/spi/CreationalContext<TT;>;)TT;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljavax/enterprise/inject/UnproxyableResolutionException;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/component/creation/UnproxyableBean", "exception", "Ljakarta/enterprise/inject/UnproxyableResolutionException;");
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();

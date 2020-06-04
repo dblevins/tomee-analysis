@@ -49,7 +49,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cascade", "()[Ljavax/persistence/CascadeType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cascade", "()[Ljakarta/persistence/CascadeType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
 {
@@ -79,10 +79,10 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljavax/persistence/FetchType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "fetch", "()Ljakarta/persistence/FetchType;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visitEnum(null, "Ljavax/persistence/FetchType;", "EAGER");
+annotationVisitor0.visitEnum(null, "Ljakarta/persistence/FetchType;", "EAGER");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

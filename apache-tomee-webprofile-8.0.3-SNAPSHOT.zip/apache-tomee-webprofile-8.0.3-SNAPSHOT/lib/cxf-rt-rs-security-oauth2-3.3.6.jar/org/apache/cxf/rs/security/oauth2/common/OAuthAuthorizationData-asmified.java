@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData", null, "org/apache/cxf/rs/security/oauth2/common/OAuthRedirectionState", new String[] { "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRootElement;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRootElement;", true);
 annotationVisitor0.visit("name", "authorizationData");
 annotationVisitor0.visit("namespace", "http://org.apache.cxf.rs.security.oauth");
 annotationVisitor0.visitEnd();

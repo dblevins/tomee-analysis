@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", null, "java/lang/Object", new String[] { "org/apache/myfaces/view/facelets/el/ContextAwareExceptionWrapper" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_location", "Ljavax/faces/view/Location;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_location", "Ljakarta/faces/view/Location;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -41,13 +41,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_wrapped", "Ljava/lang/Throw
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/Location;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/view/Location;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", "_location", "Ljavax/faces/view/Location;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", "_location", "Ljakarta/faces/view/Location;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", "_expressionString", "Ljava/lang/String;");
@@ -62,10 +62,10 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljavax/faces/view/Location;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLocation", "()Ljakarta/faces/view/Location;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", "_location", "Ljavax/faces/view/Location;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/el/DefaultContextAwareELException", "_location", "Ljakarta/faces/view/Location;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

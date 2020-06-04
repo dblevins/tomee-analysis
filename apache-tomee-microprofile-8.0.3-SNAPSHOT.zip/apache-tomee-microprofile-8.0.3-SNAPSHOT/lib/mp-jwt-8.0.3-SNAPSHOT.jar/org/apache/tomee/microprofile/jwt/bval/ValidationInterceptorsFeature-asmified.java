@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptorsFeature", null, "java/lang/Object", new String[] { "javax/ws/rs/container/DynamicFeature" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptorsFeature", null, "java/lang/Object", new String[] { "jakarta/ws/rs/container/DynamicFeature" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/ws/rs/ext/Provider;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/ws/rs/ext/Provider;", true);
 annotationVisitor0.visitEnd();
 }
 {
@@ -38,10 +38,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configure", "(Ljavax/ws/rs/container/ResourceInfo;Ljavax/ws/rs/core/FeatureContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "configure", "(Ljakarta/ws/rs/container/ResourceInfo;Ljakarta/ws/rs/core/FeatureContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/container/ResourceInfo", "getResourceClass", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/container/ResourceInfo", "getResourceClass", "()Ljava/lang/Class;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints", "of", "(Ljava/lang/Class;)Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;", false);
@@ -54,8 +54,8 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/microprofile/jwt/bval/Validat
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "<init>", "(Ljavax/ws/rs/container/ResourceInfo;Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/FeatureContext", "register", "(Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/microprofile/jwt/bval/ValidationInterceptor", "<init>", "(Ljakarta/ws/rs/container/ResourceInfo;Lorg/apache/tomee/microprofile/jwt/bval/ValidationConstraints;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/FeatureContext", "register", "(Ljava/lang/Object;)Ljakarta/ws/rs/core/Configurable;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Class", "org/apache/tomee/microprofile/jwt/bval/ValidationConstraints"}, 0, null);

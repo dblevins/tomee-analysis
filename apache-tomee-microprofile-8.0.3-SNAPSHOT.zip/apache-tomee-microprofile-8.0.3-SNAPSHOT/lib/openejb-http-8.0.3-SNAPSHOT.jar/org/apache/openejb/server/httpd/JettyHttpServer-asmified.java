@@ -170,7 +170,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/httpd/JettyHttpServe
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/JettyHttpServer$1", "<init>", "(Lorg/apache/openejb/server/httpd/JettyHttpServer;Ljavax/servlet/ServletContext;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/httpd/JettyHttpServer$1", "<init>", "(Lorg/apache/openejb/server/httpd/JettyHttpServer;Ljakarta/servlet/ServletContext;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "org/mortbay/jetty/servlet/SessionHandler");
 methodVisitor.visitInsn(DUP);

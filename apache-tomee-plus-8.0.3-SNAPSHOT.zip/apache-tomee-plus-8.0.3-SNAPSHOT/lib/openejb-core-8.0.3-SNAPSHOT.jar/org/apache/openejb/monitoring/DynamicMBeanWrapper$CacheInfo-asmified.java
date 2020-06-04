@@ -29,7 +29,7 @@ classWriter.visitInnerClass("org/apache/openejb/monitoring/DynamicMBeanWrapper$C
 classWriter.visitInnerClass("org/apache/openejb/monitoring/DynamicMBeanWrapper$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "mBeanInfo", "Ljavax/management/MBeanInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "mBeanInfo", "Ljakarta/management/MBeanInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,13 +45,13 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "operations", "Lja
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljavax/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V", "(Ljavax/management/MBeanInfo;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(Ljakarta/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V", "(Ljakarta/management/MBeanInfo;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/reflect/Method;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo", "mBeanInfo", "Ljavax/management/MBeanInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo", "mBeanInfo", "Ljakarta/management/MBeanInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo", "getters", "Ljava/util/Map;");
@@ -66,14 +66,14 @@ methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljavax/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lorg/apache/openejb/monitoring/DynamicMBeanWrapper$1;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Ljakarta/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lorg/apache/openejb/monitoring/DynamicMBeanWrapper$1;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo", "<init>", "(Ljavax/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo", "<init>", "(Ljakarta/management/MBeanInfo;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();

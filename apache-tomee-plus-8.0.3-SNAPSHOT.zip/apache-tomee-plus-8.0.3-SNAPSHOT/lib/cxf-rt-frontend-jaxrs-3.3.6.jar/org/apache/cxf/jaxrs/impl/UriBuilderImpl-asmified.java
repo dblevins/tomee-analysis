@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", null, "javax/ws/rs/core/UriBuilder", new String[] { "java/lang/Cloneable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", null, "jakarta/ws/rs/core/UriBuilder", new String[] { "java/lang/Cloneable" });
 
 classWriter.visitInnerClass("org/apache/cxf/jaxrs/impl/UriBuilderImpl$UriParts", "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "UriParts", ACC_PRIVATE | ACC_STATIC);
 
@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "host", "Ljava/lang/String;",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "paths", "Ljava/util/List;", "Ljava/util/List<Ljavax/ws/rs/core/PathSegment;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "paths", "Ljava/util/List;", "Ljava/util/List<Ljakarta/ws/rs/core/PathSegment;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -69,11 +69,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "schemeSpecificPart", "Ljava/
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "query", "Ljavax/ws/rs/core/MultivaluedMap;", "Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "query", "Ljakarta/ws/rs/core/MultivaluedMap;", "Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "matrix", "Ljavax/ws/rs/core/MultivaluedMap;", "Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;", "Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -96,7 +96,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/UriBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/UriBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "port", "I");
@@ -109,12 +109,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -123,7 +123,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Map;)V", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/UriBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/UriBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "port", "I");
@@ -136,12 +136,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("expand.query.value.as.collection");
@@ -155,7 +155,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/net/URI;)V", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/UriBuilder", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/UriBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_M1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "port", "I");
@@ -168,12 +168,12 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "setUriParts", "(Ljava/net/URI;)V", false);
@@ -182,7 +182,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "build", "([Ljava/lang/Object;)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "build", "([Ljava/lang/Object;)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -288,11 +288,11 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/jaxrs/impl/UriBuilderImpl", Opcodes.INTEGER, Opcodes.INTEGER, "[Ljava/lang/Object;", "org/apache/cxf/jaxrs/impl/UriBuilderImpl$UriParts"}, 1, new Object[] {"java/net/URISyntaxException"});
 methodVisitor.visitVarInsn(ASTORE, 5);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/UriBuilderException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/UriBuilderException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("URI can not be built");
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/UriBuilderException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/UriBuilderException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(5, 6);
 methodVisitor.visitEnd();
@@ -758,7 +758,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "buildFromEncoded", "([Ljava/lang/Object;)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "buildFromEncoded", "([Ljava/lang/Object;)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
@@ -770,7 +770,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromMap", "(Ljava/util/Map;)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromMap", "(Ljava/util/Map;)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -782,7 +782,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doBuildFromMap", "(Ljava/util/Map;ZZ)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;ZZ)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doBuildFromMap", "(Ljava/util/Map;ZZ)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;ZZ)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -868,11 +868,11 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/cxf/jaxrs/impl/UriBuilderImpl", "java/util/Map", Opcodes.INTEGER, Opcodes.INTEGER}, 1, new Object[] {"java/net/URISyntaxException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "javax/ws/rs/core/UriBuilderException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/ws/rs/core/UriBuilderException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("URI can not be built");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/ws/rs/core/UriBuilderException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/ws/rs/core/UriBuilderException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(9, 10);
 methodVisitor.visitEnd();
@@ -1384,7 +1384,7 @@ methodVisitor.visitMaxs(4, 19);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromEncodedMap", "(Ljava/util/Map;)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromEncodedMap", "(Ljava/util/Map;)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -1504,7 +1504,7 @@ methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clone", "()Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clone", "()Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/UriBuilderImpl");
 methodVisitor.visitInsn(DUP);
@@ -1541,16 +1541,16 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "(Ljava/util/Map;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "(Ljava/util/Map;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "schemeSpecificPart", "Ljava/lang/String;");
@@ -1627,7 +1627,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fragment", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "fragment", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1638,7 +1638,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "host", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "host", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1661,7 +1661,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/Class;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/Class;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1676,9 +1676,9 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/Path;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/Path;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/Path");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/Path");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label1 = new Label();
@@ -1699,17 +1699,17 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Class", "javax/ws/rs/Path"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Class", "jakarta/ws/rs/Path"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/Path", "value", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/Path", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/Class;Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/Class;Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1743,7 +1743,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 6);
 Label label2 = new Label();
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/jaxrs/impl/UriBuilderImpl", "java/lang/Class", "java/lang/String", "javax/ws/rs/Path", "[Ljava/lang/reflect/Method;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/jaxrs/impl/UriBuilderImpl", "java/lang/Class", "java/lang/String", "jakarta/ws/rs/Path", "[Ljava/lang/reflect/Method;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ILOAD, 5);
 Label label3 = new Label();
@@ -1759,9 +1759,9 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/Path;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/Path;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/Path");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/Path");
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label5 = new Label();
@@ -1783,7 +1783,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/reflect/Method", "javax/ws/rs/Path"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/reflect/Method", "jakarta/ws/rs/Path"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label4);
@@ -1813,14 +1813,14 @@ methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/Path", "value", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/Path", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -1833,9 +1833,9 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/Path;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/ws/rs/Path;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/Path");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/Path");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
@@ -1862,28 +1862,28 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/ws/rs/Path"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/ws/rs/Path"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/Path", "value", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/Path", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "path", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "doPath", "(Ljava/lang/String;Z)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "doPath", "(Ljava/lang/String;Z)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doPath", "(Ljava/lang/String;Z)Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "doPath", "(Ljava/lang/String;Z)Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -1915,7 +1915,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/util/StringUt
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "originalPathEmpty", "Z");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label5 = new Label();
@@ -1931,7 +1931,7 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uriAsTemplate", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uriAsTemplate", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/IllegalArgumentException"}, 0, null);
@@ -2043,8 +2043,8 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z
 Label label11 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label11);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "isEmpty", "()Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "isEmpty", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label11);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "paths", "Ljava/util/List;");
@@ -2054,13 +2054,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", 
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "remove", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/PathSegment");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/PathSegment");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "paths", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "replacePathSegment", "(Ljavax/ws/rs/core/PathSegment;)Ljavax/ws/rs/core/PathSegment;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "replacePathSegment", "(Ljakarta/ws/rs/core/PathSegment;)Ljakarta/ws/rs/core/PathSegment;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label11);
@@ -2071,8 +2071,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "clear", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "clear", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "paths", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
@@ -2087,9 +2087,9 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", 
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/PathSegment");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/PathSegment");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitLabel(label12);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2098,7 +2098,7 @@ methodVisitor.visitMaxs(5, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "port", "(I)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "port", "(I)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 1);
 Label label0 = new Label();
@@ -2122,7 +2122,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheme", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheme", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2133,7 +2133,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "schemeSpecificPart", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "schemeSpecificPart", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -2181,7 +2181,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2192,7 +2192,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "userInfo", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "userInfo", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2270,8 +2270,8 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("&");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2306,7 +2306,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "userInfo", "Ljava/lang/String;");
 methodVisitor.visitJumpInsn(IFNONNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/util/CollectionUtils", "isEmpty", "(Ljava/util/Map;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -2413,16 +2413,16 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", 
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ISUB);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/PathSegment");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/PathSegment");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "clear", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "clear", "()V", true);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -2449,10 +2449,10 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/ws/rs/core/PathSegment");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/ws/rs/core/PathSegment");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/PathSegment", "getPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/PathSegment", "getPath", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
@@ -2463,7 +2463,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/ws/rs/core/PathSegment", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/ws/rs/core/PathSegment", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/model/URITemplate", "createExactTemplate", "(Ljava/lang/String;)Lorg/apache/cxf/jaxrs/model/URITemplate;", false);
 methodVisitor.visitInsn(ICONST_0);
@@ -2507,8 +2507,8 @@ methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljavax/ws/rs/core/MultivaluedMap;", true);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/PathSegment", "getMatrixParameters", "()Ljakarta/ws/rs/core/MultivaluedMap;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitJumpInsn(GOTO, label0);
@@ -2517,8 +2517,8 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -2530,15 +2530,15 @@ methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildQuery", "()Ljava/lang
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitIntInsn(BIPUSH, 38);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildParams", "(Ljavax/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildParams", "(Ljakarta/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "matrixParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "matrixParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2556,22 +2556,22 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "toStringList", "(Z[Ljava/lang/Object;)Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -2592,7 +2592,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "queryParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "queryParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2610,22 +2610,22 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "toStringList", "(Z[Ljava/lang/Object;)Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
@@ -2646,7 +2646,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replaceMatrix", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replaceMatrix", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2666,15 +2666,15 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn(";");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "replaceMatrixParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "replaceMatrixParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2698,22 +2698,22 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "toStringList", "(Z[Ljava/lang/Object;)Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -2723,7 +2723,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replacePath", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replacePath", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2744,7 +2744,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuild
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/net/URI", "create", "(Ljava/lang/String;)Ljava/net/URI;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label2);
@@ -2766,8 +2766,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "paths", "Ljava/util/List;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "clear", "()V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "clear", "()V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "clear", "()V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -2800,7 +2800,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replaceQuery", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "replaceQuery", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2817,15 +2817,15 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("&");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "replaceQueryParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "replaceQueryParam", "(Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2849,22 +2849,22 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "toStringList", "(Z[Ljava/lang/Object;)Ljava/util/List;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -2874,7 +2874,7 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "segment", "([Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "segment", "([Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -2907,7 +2907,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "doPath", "(Ljava/lang/String;Z)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "doPath", "(Ljava/lang/String;Z)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitIincInsn(4, 1);
 methodVisitor.visitJumpInsn(GOTO, label1);
@@ -3001,7 +3001,7 @@ methodVisitor.visitMaxs(4, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildParams", "(Ljavax/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", "(Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;C)Ljava/lang/String;", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildParams", "(Ljakarta/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", "(Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;C)Ljava/lang/String;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitIntInsn(BIPUSH, 38);
@@ -3021,7 +3021,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "entrySet", "()Ljava/util/Set;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 Label label2 = new Label();
@@ -3264,10 +3264,10 @@ methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildMatrix", "(Ljava/lang/StringBuilder;Ljavax/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/StringBuilder;Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildMatrix", "(Ljava/lang/StringBuilder;Ljakarta/ws/rs/core/MultivaluedMap;)V", "(Ljava/lang/StringBuilder;Ljakarta/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/MultivaluedMap", "isEmpty", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/MultivaluedMap", "isEmpty", "()Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -3278,7 +3278,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitIntInsn(BIPUSH, 59);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildParams", "(Ljavax/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildParams", "(Ljakarta/ws/rs/core/MultivaluedMap;C)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -3288,7 +3288,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "replacePathSegment", "(Ljavax/ws/rs/core/PathSegment;)Ljavax/ws/rs/core/PathSegment;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "replacePathSegment", "(Ljakarta/ws/rs/core/PathSegment;)Ljakarta/ws/rs/core/PathSegment;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -3296,14 +3296,14 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/ws/rs/core/PathSegment", "getPath", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/core/PathSegment", "getPath", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljavax/ws/rs/core/MultivaluedMap;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljavax/ws/rs/core/MultivaluedMap;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "matrix", "Ljakarta/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "buildMatrix", "(Ljava/lang/StringBuilder;Ljakarta/ws/rs/core/MultivaluedMap;)V", false);
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/PathSegmentImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -3314,7 +3314,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uri", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -3332,7 +3332,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/net/URI", "create", "(Ljava/lang/String;)Ljava/net/URI;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uri", "(Ljava/net/URI;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
@@ -3353,13 +3353,13 @@ methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Exception"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uriAsTemplate", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "uriAsTemplate", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uriAsTemplate", "(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "uriAsTemplate", "(Ljava/lang/String;)Ljakarta/ws/rs/core/UriBuilder;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitIntInsn(BIPUSH, 58);
@@ -3466,8 +3466,8 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("&");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljavax/ws/rs/core/MultivaluedMap;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljavax/ws/rs/core/MultivaluedMap;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getStructuredParams", "(Ljava/lang/String;Ljava/lang/String;ZZ)Ljakarta/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "query", "Ljakarta/ws/rs/core/MultivaluedMap;");
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -3476,7 +3476,7 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "([Ljava/lang/Object;Z)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "build", "([Ljava/lang/Object;Z)Ljava/net/URI;", null, new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_0);
@@ -3488,7 +3488,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromMap", "(Ljava/util/Map;Z)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;Z)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "javax/ws/rs/core/UriBuilderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "buildFromMap", "(Ljava/util/Map;Z)Ljava/net/URI;", "(Ljava/util/Map<Ljava/lang/String;*>;Z)Ljava/net/URI;", new String[] { "java/lang/IllegalArgumentException", "jakarta/ws/rs/core/UriBuilderException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -3523,43 +3523,43 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;Z)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;Z)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;Z)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplate", "(Ljava/lang/String;Ljava/lang/Object;Z)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ILOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplates", "(Ljava/util/Map;Z)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplates", "(Ljava/util/Map;Z)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplates", "(Ljava/util/Map;)Ljavax/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplates", "(Ljava/util/Map;)Ljakarta/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplates", "(Ljava/util/Map;Z)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplates", "(Ljava/util/Map;Z)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplates", "(Ljava/util/Map;Z)Ljavax/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)Ljavax/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplates", "(Ljava/util/Map;Z)Ljakarta/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)Ljakarta/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label0 = new Label();
@@ -3588,19 +3588,19 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplateFromEncoded", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplateFromEncoded", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/ws/rs/core/UriBuilder;", null, new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplatesFromEncoded", "(Ljava/util/Map;)Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "resolveTemplatesFromEncoded", "(Ljava/util/Map;)Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplatesFromEncoded", "(Ljava/util/Map;)Ljavax/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveTemplatesFromEncoded", "(Ljava/util/Map;)Ljakarta/ws/rs/core/UriBuilder;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/ws/rs/core/UriBuilder;", new String[] { "java/lang/IllegalArgumentException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -3684,7 +3684,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "clone", "()Ljava/lang/Object;", null, new String[] { "java/lang/CloneNotSupportedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "clone", "()Ljavax/ws/rs/core/UriBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/impl/UriBuilderImpl", "clone", "()Ljakarta/ws/rs/core/UriBuilder;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

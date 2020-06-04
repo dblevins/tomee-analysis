@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$1", "Ljava/lang/Object;Lorg/eclipse/microprofile/metrics/Gauge<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "org/eclipse/microprofile/metrics/Gauge" });
 
-classWriter.visitOuterClass("org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension", "lambda$afterBeanDiscovery$18", "(Ljavax/enterprise/inject/spi/AfterBeanDiscovery;Ljava/lang/String;Lorg/eclipse/microprofile/metrics/Metadata;)V");
+classWriter.visitOuterClass("org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension", "lambda$afterBeanDiscovery$18", "(Ljakarta/enterprise/inject/spi/AfterBeanDiscovery;Ljava/lang/String;Lorg/eclipse/microprofile/metrics/Metadata;)V");
 
 classWriter.visitInnerClass("org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$1", null, null, 0);
 

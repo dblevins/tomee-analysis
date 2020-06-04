@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "provider", "Lcom/sun/faces/s
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletContext", "Ljavax/servlet/ServletContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servletContext", "Ljakarta/servlet/ServletContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/spi/ConfigurationResourceProvider;Ljavax/servlet/ServletContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/sun/faces/spi/ConfigurationResourceProvider;Ljakarta/servlet/ServletContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -42,7 +42,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "provider", "Lcom/sun/faces/spi/ConfigurationResourceProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "servletContext", "Ljavax/servlet/ServletContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "servletContext", "Ljakarta/servlet/ServletContext;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
@@ -53,8 +53,8 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "provider", "Lcom/sun/faces/spi/ConfigurationResourceProvider;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "servletContext", "Ljavax/servlet/ServletContext;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/spi/ConfigurationResourceProvider", "getResources", "(Ljavax/servlet/ServletContext;)Ljava/util/Collection;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask", "servletContext", "Ljakarta/servlet/ServletContext;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "com/sun/faces/spi/ConfigurationResourceProvider", "getResources", "(Ljakarta/servlet/ServletContext;)Ljava/util/Collection;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);

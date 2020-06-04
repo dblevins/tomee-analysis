@@ -26,7 +26,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/catal
 
 classWriter.visitInnerClass("org/apache/catalina/realm/RealmBase$AllRolesMode", "org/apache/catalina/realm/RealmBase", "AllRolesMode", ACC_PROTECTED | ACC_STATIC);
 
-classWriter.visitInnerClass("javax/servlet/annotation/ServletSecurity$TransportGuarantee", "javax/servlet/annotation/ServletSecurity", "TransportGuarantee", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/servlet/annotation/ServletSecurity$TransportGuarantee", "jakarta/servlet/annotation/ServletSecurity", "TransportGuarantee", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log", "Lorg/apache/juli/logging/Log;", null, null);
@@ -2200,8 +2200,8 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/servlet/annotation/ServletSecurity$TransportGuarantee", "NONE", "Ljavax/servlet/annotation/ServletSecurity$TransportGuarantee;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/annotation/ServletSecurity$TransportGuarantee", "name", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/servlet/annotation/ServletSecurity$TransportGuarantee", "NONE", "Ljakarta/servlet/annotation/ServletSecurity$TransportGuarantee;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/annotation/ServletSecurity$TransportGuarantee", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
@@ -2223,8 +2223,8 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getRequest", "()Ljavax/servlet/http/HttpServletRequest;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/http/HttpServletRequest", "isSecure", "()Z", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getRequest", "()Ljakarta/servlet/http/HttpServletRequest;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "isSecure", "()Z", true);
 Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label9);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/realm/RealmBase", "log", "Lorg/apache/juli/logging/Log;");

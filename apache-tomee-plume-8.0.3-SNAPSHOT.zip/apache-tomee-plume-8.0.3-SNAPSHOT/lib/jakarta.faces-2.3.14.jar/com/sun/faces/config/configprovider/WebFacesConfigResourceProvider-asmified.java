@@ -48,16 +48,16 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResources", "(Ljavax/servlet/ServletContext;)Ljava/util/Collection;", "(Ljavax/servlet/ServletContext;)Ljava/util/Collection<Ljava/net/URI;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResources", "(Ljakarta/servlet/ServletContext;)Ljava/util/Collection;", "(Ljakarta/servlet/ServletContext;)Ljava/util/Collection<Ljava/net/URI;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/configprovider/BaseWebConfigResourceProvider", "getResources", "(Ljavax/servlet/ServletContext;)Ljava/util/Collection;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/config/configprovider/BaseWebConfigResourceProvider", "getResources", "(Ljakarta/servlet/ServletContext;)Ljava/util/Collection;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("/WEB-INF/faces-config.xml");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/config/configprovider/WebFacesConfigResourceProvider", "getContextURLForPath", "(Ljavax/servlet/ServletContext;Ljava/lang/String;)Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/config/configprovider/WebFacesConfigResourceProvider", "getContextURLForPath", "(Ljakarta/servlet/ServletContext;Ljava/lang/String;)Ljava/net/URI;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -71,7 +71,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Collection
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("com.sun.faces.webresources");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/servlet/ServletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 4);

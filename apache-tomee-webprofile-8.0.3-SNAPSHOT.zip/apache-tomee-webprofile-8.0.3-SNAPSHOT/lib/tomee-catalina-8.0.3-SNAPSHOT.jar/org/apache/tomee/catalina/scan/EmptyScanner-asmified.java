@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scan", "(Lorg/apache/tomcat/JarScanType;Ljavax/servlet/ServletContext;Lorg/apache/tomcat/JarScannerCallback;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scan", "(Lorg/apache/tomcat/JarScanType;Ljakarta/servlet/ServletContext;Lorg/apache/tomcat/JarScannerCallback;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);

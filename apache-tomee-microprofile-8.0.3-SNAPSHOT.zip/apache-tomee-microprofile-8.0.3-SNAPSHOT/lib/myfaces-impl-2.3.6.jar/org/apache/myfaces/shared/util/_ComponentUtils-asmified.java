@@ -34,11 +34,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStringValue", "(Ljavax/faces/context/FacesContext;Ljavax/faces/el/ValueBinding;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getStringValue", "(Ljakarta/faces/context/FacesContext;Ljakarta/faces/el/ValueBinding;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/el/ValueBinding", "getValue", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/el/ValueBinding", "getValue", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -54,11 +54,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "findNestingForm", "(Ljavax/faces/component/UIComponent;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/shared/renderkit/html/util/FormInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "findNestingForm", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/shared/renderkit/html/util/FormInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "findNestingForm", "(Ljavax/faces/component/UIComponent;Ljavax/faces/context/FacesContext;)Lorg/apache/myfaces/shared/renderkit/html/util/FormInfo;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/RendererUtils", "findNestingForm", "(Ljakarta/faces/component/UIComponent;Ljakarta/faces/context/FacesContext;)Lorg/apache/myfaces/shared/renderkit/html/util/FormInfo;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();

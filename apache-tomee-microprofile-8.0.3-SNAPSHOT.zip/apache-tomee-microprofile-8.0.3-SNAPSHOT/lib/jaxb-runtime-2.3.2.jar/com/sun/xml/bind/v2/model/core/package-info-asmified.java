@@ -25,9 +25,9 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_ABSTRACT | ACC_INTERFACE | ACC_SYNTHETIC, "com/sun/xml/bind/v2/model/core/package-info", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlSchema;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlSchema;", true);
 annotationVisitor0.visit("namespace", "http://jaxb.dev.java.net/xjc/model");
-annotationVisitor0.visitEnum("elementFormDefault", "Ljavax/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
+annotationVisitor0.visitEnum("elementFormDefault", "Ljakarta/xml/bind/annotation/XmlNsForm;", "QUALIFIED");
 annotationVisitor0.visitEnd();
 }
 classWriter.visitEnd();

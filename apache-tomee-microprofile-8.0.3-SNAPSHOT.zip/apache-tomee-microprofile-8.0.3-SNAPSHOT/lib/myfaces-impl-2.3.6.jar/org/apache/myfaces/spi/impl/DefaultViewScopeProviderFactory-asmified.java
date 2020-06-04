@@ -42,10 +42,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewScopeHandler", "(Ljavax/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ViewScopeProvider;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getViewScopeHandler", "(Ljakarta/faces/context/ExternalContext;)Lorg/apache/myfaces/spi/ViewScopeProvider;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultViewScopeProviderFactory", "VIEW_SCOPE_HANDLER_INSTANCE_KEY", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/spi/ViewScopeProvider");
@@ -54,7 +54,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljavax/faces/context/ExternalContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljakarta/faces/context/ExternalContext;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLdcInsn("org.apache.myfaces.cdi.impl.CDIManagedBeanHandlerImpl");
@@ -72,7 +72,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultViewScopeProviderFactory", "VIEW_SCOPE_HANDLER_INSTANCE_KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
@@ -85,10 +85,10 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewScopeHandler", "(Ljavax/faces/context/ExternalContext;Lorg/apache/myfaces/spi/ViewScopeProvider;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setViewScopeHandler", "(Ljakarta/faces/context/ExternalContext;Lorg/apache/myfaces/spi/ViewScopeProvider;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/spi/impl/DefaultViewScopeProviderFactory", "VIEW_SCOPE_HANDLER_INSTANCE_KEY", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);

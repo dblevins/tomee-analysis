@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljavax/servlet/jsp/PageContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/servlet/jsp/PageContext;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
 classWriter.visitInnerClass("org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "org/apache/jasper/runtime/JspFactoryImpl", "PrivilegedGetPageContext", ACC_PRIVATE | ACC_STATIC);
 
@@ -31,15 +31,15 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "factory", "Lorg/apache/jaspe
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servlet", "Ljavax/servlet/Servlet;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "servlet", "Ljakarta/servlet/Servlet;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "request", "Ljavax/servlet/ServletRequest;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "request", "Ljakarta/servlet/ServletRequest;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljavax/servlet/ServletResponse;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "response", "Ljakarta/servlet/ServletResponse;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "autoflush", "Z", null, null)
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)V", null, null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljakarta/servlet/Servlet;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljava/lang/String;ZIZ)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -68,13 +68,13 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "factory", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "servlet", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "servlet", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "response", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "errorPageURL", "Ljava/lang/String;");
@@ -92,16 +92,16 @@ methodVisitor.visitMaxs(2, 9);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljavax/servlet/jsp/PageContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljakarta/servlet/jsp/PageContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "factory", "Lorg/apache/jasper/runtime/JspFactoryImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "servlet", "Ljavax/servlet/Servlet;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "servlet", "Ljakarta/servlet/Servlet;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "request", "Ljavax/servlet/ServletRequest;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "request", "Ljakarta/servlet/ServletRequest;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "response", "Ljavax/servlet/ServletResponse;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "response", "Ljakarta/servlet/ServletResponse;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "errorPageURL", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -110,7 +110,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "bufferSize", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "autoflush", "Z");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspFactoryImpl", "access$000", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/jasper/runtime/JspFactoryImpl", "access$000", "(Lorg/apache/jasper/runtime/JspFactoryImpl;Ljakarta/servlet/Servlet;Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljakarta/servlet/jsp/PageContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(8, 1);
 methodVisitor.visitEnd();
@@ -119,7 +119,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "run", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "run", "()Ljavax/servlet/jsp/PageContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext", "run", "()Ljakarta/servlet/jsp/PageContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

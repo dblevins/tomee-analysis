@@ -65,7 +65,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "install", "()V", null, new String[] { "java/lang/ClassNotFoundException", "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "install", "()V", null, new String[] { "java/lang/ClassNotFoundException", "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -149,11 +149,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ClassNotFoundException",
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/security/jacc/PolicyContextException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/security/jacc/PolicyContextException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/PrivilegedActionException", "getException", "()Ljava/lang/Exception;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/jacc/PolicyContextException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/security/jacc/PolicyContextException", "<init>", "(Ljava/lang/Throwable;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -162,11 +162,11 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPolicyConfiguration", "(Ljava/lang/String;Z)Ljavax/security/jacc/PolicyConfiguration;", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getPolicyConfiguration", "(Ljava/lang/String;Z)Ljakarta/security/jacc/PolicyConfiguration;", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "inService", "(Ljava/lang/String;)Z", null, new String[] { "javax/security/jacc/PolicyContextException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "inService", "(Ljava/lang/String;)Z", null, new String[] { "jakarta/security/jacc/PolicyContextException" });
 methodVisitor.visitEnd();
 }
 {

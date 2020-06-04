@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/ConfigInjectionBean$ConfigPropertyLiteral", "Ljavax/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/config/inject/ConfigProperty;>;Lorg/eclipse/microprofile/config/inject/ConfigProperty;", "javax/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/config/inject/ConfigProperty" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/geronimo/config/cdi/ConfigInjectionBean$ConfigPropertyLiteral", "Ljakarta/enterprise/util/AnnotationLiteral<Lorg/eclipse/microprofile/config/inject/ConfigProperty;>;Lorg/eclipse/microprofile/config/inject/ConfigProperty;", "jakarta/enterprise/util/AnnotationLiteral", new String[] { "org/eclipse/microprofile/config/inject/ConfigProperty" });
 
 classWriter.visitInnerClass("org/apache/geronimo/config/cdi/ConfigInjectionBean$ConfigPropertyLiteral", "org/apache/geronimo/config/cdi/ConfigInjectionBean", "ConfigPropertyLiteral", ACC_PRIVATE | ACC_STATIC);
 
@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/apache/geronimo/config/cdi/ConfigInjectionBean$
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

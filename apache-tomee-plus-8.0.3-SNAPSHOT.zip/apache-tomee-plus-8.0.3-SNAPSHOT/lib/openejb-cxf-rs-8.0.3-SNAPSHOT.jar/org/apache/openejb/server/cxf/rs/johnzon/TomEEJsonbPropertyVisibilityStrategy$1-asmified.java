@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy$1", null, "java/lang/Object", new String[] { "javax/json/bind/config/PropertyVisibilityStrategy" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy$1", null, "java/lang/Object", new String[] { "jakarta/json/bind/config/PropertyVisibilityStrategy" });
 
-classWriter.visitOuterClass("org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy", "visibilityStrategy", "(Ljava/lang/Class;)Ljavax/json/bind/config/PropertyVisibilityStrategy;");
+classWriter.visitOuterClass("org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy", "visibilityStrategy", "(Ljava/lang/Class;)Ljakarta/json/bind/config/PropertyVisibilityStrategy;");
 
 classWriter.visitInnerClass("org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy$1", null, null, 0);
 

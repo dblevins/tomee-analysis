@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlRegistry;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlRegistry;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/eclipse/persistence/jaxb/xmlmodel/JavaType$JavaAttributes", "org/eclipse/persistence/jaxb/xmlmodel/JavaType", "JavaAttributes", ACC_PUBLIC | ACC_STATIC);
@@ -687,9 +687,9 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlJavaTypeAdapter", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlJavaTypeAdapter", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-java-type-adapter");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -697,21 +697,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlJavaTypeAdapter_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapter;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-attribute");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -719,21 +719,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlAttribute_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAttribute;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlInverseReference", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlInverseReference", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-inverse-reference");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -741,61 +741,61 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlInverseReference_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlInverseReference;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createJavaAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createJavaAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_JavaAttribute_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/JavaAttribute;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlClassExtractor", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlClassExtractor", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-class-extractor");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlClassExtractor_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlClassExtractor;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-null-policy");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -803,21 +803,21 @@ annotationVisitor0.visit("substitutionHeadName", "xml-abstract-null-policy");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlNullPolicy_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlNullPolicy;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElementRefs", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElementRefs", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-element-refs");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -825,21 +825,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlElementRefs_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRefs;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAnyElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAnyElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-any-element");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -847,41 +847,41 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlAnyElement_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyElement;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlSeeAlso", "(Ljava/util/List;)Ljavax/xml/bind/JAXBElement;", "(Ljava/util/List<Ljava/lang/String;>;)Ljavax/xml/bind/JAXBElement<Ljava/util/List<Ljava/lang/String;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlSeeAlso", "(Ljava/util/List;)Ljakarta/xml/bind/JAXBElement;", "(Ljava/util/List<Ljava/lang/String;>;)Ljakarta/xml/bind/JAXBElement<Ljava/util/List<Ljava/lang/String;>;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-see-also");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlSeeAlso_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Ljava/util/List;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlValue", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlValue", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-value");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -889,41 +889,41 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlValue_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlValue;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAccessMethods", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAccessMethods", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-access-methods");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlAccessMethods_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAccessMethods;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlTransient", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlTransient", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-transient");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -931,21 +931,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlTransient_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransient;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlVariableNode", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlVariableNode", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-variable-node");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -953,21 +953,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlVariableNode_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlVariableNode;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElement", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-element");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -975,41 +975,41 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlElement_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElement;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAbstractNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAbstractNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-abstract-null-policy");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlAbstractNullPolicy_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAbstractNullPolicy;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElementRef", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElementRef", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-element-ref");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1017,21 +1017,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlElementRef_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElementRef;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlIsSetNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlIsSetNullPolicy", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-is-set-null-policy");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1039,21 +1039,21 @@ annotationVisitor0.visit("substitutionHeadName", "xml-abstract-null-policy");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlIsSetNullPolicy_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlIsSetNullPolicy;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlTransformation", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlTransformation", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-transformation");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1061,21 +1061,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlTransformation_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlTransformation;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElements", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlElements", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-elements");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1083,41 +1083,41 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlElements_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlElements;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlProperties", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlProperties", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-properties");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlProperties_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlProperties;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAnyAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlAnyAttribute", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-any-attribute");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1125,21 +1125,21 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlAnyAttribute_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlJoinNodes", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;)Ljavax/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;)Ljavax/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createXmlJoinNodes", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;)Ljakarta/xml/bind/JAXBElement;", "(Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;)Ljakarta/xml/bind/JAXBElement<Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;>;", null);
 {
-annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElementDecl;", true);
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElementDecl;", true);
 annotationVisitor0.visit("namespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
 annotationVisitor0.visit("name", "xml-join-nodes");
 annotationVisitor0.visit("substitutionHeadNamespace", "http://www.eclipse.org/eclipselink/xsds/persistence/oxm");
@@ -1147,13 +1147,13 @@ annotationVisitor0.visit("substitutionHeadName", "java-attribute");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "javax/xml/bind/JAXBElement");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/bind/JAXBElement");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory", "_XmlJoinNodes_QNAME", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes;"));
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/bind/JAXBElement", "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(6, 2);
 methodVisitor.visitEnd();

@@ -31,17 +31,17 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "declaringClass",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ann", "Ljavax/jws/HandlerChain;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ann", "Ljakarta/jws/HandlerChain;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljavax/jws/HandlerChain;Ljava/lang/Class;)V", "(Ljavax/jws/HandlerChain;Ljava/lang/Class<*>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljakarta/jws/HandlerChain;Ljava/lang/Class;)V", "(Ljakarta/jws/HandlerChain;Ljava/lang/Class<*>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljavax/jws/HandlerChain;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljakarta/jws/HandlerChain;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "declaringClass", "Ljava/lang/Class;");
@@ -62,8 +62,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFileName", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljavax/jws/HandlerChain;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljakarta/jws/HandlerChain;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -73,25 +73,25 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "()V", null, nul
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljavax/jws/HandlerChain;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljakarta/jws/HandlerChain;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljavax/jws/HandlerChain;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljakarta/jws/HandlerChain;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/jws/HandlerChain", "file", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "javax/xml/ws/WebServiceException");
+methodVisitor.visitTypeInsn(NEW, "jakarta/xml/ws/WebServiceException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder", "access$000", "()Ljava/util/ResourceBundle;", false);
 methodVisitor.visitLdcInsn("ANNOTATION_WITHOUT_URL_EXC");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/ResourceBundle", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/xml/ws/WebServiceException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -113,7 +113,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(",");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljavax/jws/HandlerChain;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation", "ann", "Ljakarta/jws/HandlerChain;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitLdcInsn("]");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

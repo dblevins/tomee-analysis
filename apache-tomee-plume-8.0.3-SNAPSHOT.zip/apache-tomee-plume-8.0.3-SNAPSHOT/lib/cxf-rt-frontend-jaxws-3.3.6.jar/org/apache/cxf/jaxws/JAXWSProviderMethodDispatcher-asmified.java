@@ -67,7 +67,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/cxf/jaxws/
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/Provider;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/Provider;"));
 methodVisitor.visitLdcInsn("invoke");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");

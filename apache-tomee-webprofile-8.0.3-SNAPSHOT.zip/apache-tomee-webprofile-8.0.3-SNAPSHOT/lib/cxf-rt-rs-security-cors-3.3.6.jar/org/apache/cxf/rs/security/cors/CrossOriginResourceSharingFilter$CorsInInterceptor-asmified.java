@@ -57,7 +57,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/cors/CrossOri
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/model/OperationResourceInfo", "getAnnotatedMethod", "()Ljava/lang/reflect/Method;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "access$000", "(Lorg/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter;Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljavax/ws/rs/core/Response;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter", "access$000", "(Lorg/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter;Lorg/apache/cxf/message/Message;Ljava/lang/reflect/Method;)Ljakarta/ws/rs/core/Response;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);

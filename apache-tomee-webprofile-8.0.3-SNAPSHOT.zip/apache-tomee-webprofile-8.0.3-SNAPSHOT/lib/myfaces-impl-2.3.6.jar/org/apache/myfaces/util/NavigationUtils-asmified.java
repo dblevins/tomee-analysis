@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "convertNavigationCasesToAPI", "(Lorg/apache/myfaces/config/element/NavigationRule;)Ljava/util/Set;", "(Lorg/apache/myfaces/config/element/NavigationRule;)Ljava/util/Set<Ljavax/faces/application/NavigationCase;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "convertNavigationCasesToAPI", "(Lorg/apache/myfaces/config/element/NavigationRule;)Ljava/util/Set;", "(Lorg/apache/myfaces/config/element/NavigationRule;)Ljava/util/Set<Ljakarta/faces/application/NavigationCase;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/NavigationRule", "getNavigationCases", "()Ljava/util/List;", false);
@@ -79,7 +79,7 @@ methodVisitor.visitVarInsn(ISTORE, 6);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/myfaces/config/element/NavigationCase", "java/lang/String", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/application/NavigationCase");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/application/NavigationCase");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/NavigationRule", "getFromViewId", "()Ljava/lang/String;", false);
@@ -96,7 +96,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/Redirect", "getViewParams", "()Ljava/util/Map;", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ILOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/NavigationCase", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/NavigationCase", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ZZ)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 Label label4 = new Label();
@@ -104,7 +104,7 @@ methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(NEW, "javax/faces/application/NavigationCase");
+methodVisitor.visitTypeInsn(NEW, "jakarta/faces/application/NavigationCase");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/NavigationRule", "getFromViewId", "()Ljava/lang/String;", false);
@@ -119,7 +119,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/config/element/
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/application/NavigationCase", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ZZ)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/application/NavigationCase", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ZZ)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);

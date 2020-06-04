@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/bind/ValidationEventLocatorEx", null, "java/lang/Object", new String[] { "javax/xml/bind/ValidationEventLocator" });
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "com/sun/xml/bind/ValidationEventLocatorEx", null, "java/lang/Object", new String[] { "jakarta/xml/bind/ValidationEventLocator" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getFieldName", "()Ljava/lang/String;", null, null);

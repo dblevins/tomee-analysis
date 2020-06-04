@@ -29,16 +29,16 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "newInstance", "Ljava/lang/
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/inject/Provider;Ljava/util/List;Ljava/util/Map;Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)V", "(Ljavax/inject/Provider<TT;>;Ljava/util/List<Ljavax/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/Map<Ljavax/enterprise/inject/spi/Interceptor<*>;*>;Ljava/lang/reflect/Constructor<TT;>;[Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/inject/Provider;Ljava/util/List;Ljava/util/Map;Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)V", "(Ljakarta/inject/Provider<TT;>;Ljava/util/List<Ljakarta/enterprise/inject/spi/Interceptor<*>;>;Ljava/util/Map<Ljakarta/enterprise/inject/spi/Interceptor<*>;*>;Ljava/lang/reflect/Constructor<TT;>;[Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/inject/spi/InterceptionType", "AROUND_CONSTRUCT", "Ljavax/enterprise/inject/spi/InterceptionType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/inject/spi/InterceptionType", "AROUND_CONSTRUCT", "Ljakarta/enterprise/inject/spi/InterceptionType;");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorInvocationContext", "<init>", "(Ljavax/inject/Provider;Ljavax/enterprise/inject/spi/InterceptionType;Ljava/util/List;Ljava/util/Map;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/intercept/InterceptorInvocationContext", "<init>", "(Ljakarta/inject/Provider;Ljakarta/enterprise/inject/spi/InterceptionType;Ljava/util/List;Ljava/util/Map;Ljava/lang/reflect/AccessibleObject;[Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(7, 6);
 methodVisitor.visitEnd();

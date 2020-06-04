@@ -113,7 +113,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toBrokerFactory", "(Ljavax/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toBrokerFactory", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/apache/openjpa/kernel/BrokerFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -143,7 +143,7 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/persistence/EntityManagerFactory", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/persistence/EntityManagerFactory", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/ArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -235,7 +235,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toBroker", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "toBroker", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/kernel/Broker;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -265,7 +265,7 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"javax/persistence/EntityManager", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"jakarta/persistence/EntityManager", "java/lang/Class"}, 1, new Object[] {"java/lang/ClassCastException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/persistence/ArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -312,12 +312,12 @@ methodVisitor.visitInsn(ACONST_NULL);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/persistence/EntityManager"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/persistence/EntityManager"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/ImplHelper", "getManagedInstance", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/JPAFacadeHelper", "getMetaData", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openjpa/meta/ClassMetaData"});
 methodVisitor.visitInsn(ARETURN);
@@ -325,7 +325,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMetaData", "(Ljavax/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMetaData", "(Ljakarta/persistence/EntityManager;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -342,7 +342,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistence", "cast", "(Ljavax/persistence/EntityManager;)Lorg/apache/openjpa/persistence/OpenJPAEntityManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistence", "cast", "(Ljakarta/persistence/EntityManager;)Lorg/apache/openjpa/persistence/OpenJPAEntityManager;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/OpenJPAEntityManagerSPI");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
@@ -357,7 +357,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/MetaDataRe
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"javax/persistence/EntityManager", "java/lang/Class", "org/apache/openjpa/persistence/OpenJPAEntityManagerSPI"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"jakarta/persistence/EntityManager", "java/lang/Class", "org/apache/openjpa/persistence/OpenJPAEntityManagerSPI"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/PersistenceExceptions", "toPersistenceException", "(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;", false);
@@ -366,7 +366,7 @@ methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMetaData", "(Ljavax/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMetaData", "(Ljakarta/persistence/EntityManagerFactory;Ljava/lang/Class;)Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -383,7 +383,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistence", "cast", "(Ljavax/persistence/EntityManagerFactory;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/OpenJPAPersistence", "cast", "(Ljakarta/persistence/EntityManagerFactory;)Lorg/apache/openjpa/persistence/OpenJPAEntityManagerFactory;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/persistence/OpenJPAEntityManagerFactorySPI");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
@@ -397,7 +397,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/MetaDataRe
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"javax/persistence/EntityManagerFactory", "java/lang/Class", "org/apache/openjpa/persistence/OpenJPAEntityManagerFactorySPI"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"jakarta/persistence/EntityManagerFactory", "java/lang/Class", "org/apache/openjpa/persistence/OpenJPAEntityManagerFactorySPI"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/persistence/PersistenceExceptions", "toPersistenceException", "(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;", false);

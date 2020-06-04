@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/valueextraction/ListElementExtractor", "Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor<Ljava/util/List<*>;>;", "java/lang/Object", new String[] { "javax/validation/valueextraction/ValueExtractor" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/bval/jsr/valueextraction/ListElementExtractor", "Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor<Ljava/util/List<*>;>;", "java/lang/Object", new String[] { "jakarta/validation/valueextraction/ValueExtractor" });
 
 {
-annotationVisitor0 = classWriter.visitTypeAnnotation(268435456, TypePath.fromString("0;0;"), "Ljavax/validation/valueextraction/ExtractedValue;", true);
+annotationVisitor0 = classWriter.visitTypeAnnotation(268435456, TypePath.fromString("0;0;"), "Ljakarta/validation/valueextraction/ExtractedValue;", true);
 annotationVisitor0.visitEnd();
 }
-classWriter.visitInnerClass("javax/validation/valueextraction/ValueExtractor$ValueReceiver", "javax/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "jakarta/validation/valueextraction/ValueExtractor", "ValueReceiver", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -40,7 +40,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "extractValues", "(Ljava/util/List;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", "(Ljava/util/List<*>;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "extractValues", "(Ljava/util/List;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", "(Ljava/util/List<*>;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
@@ -60,7 +60,7 @@ methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/validation/valueextraction/ValueExtractor$ValueReceiver", "indexedValue", "(Ljava/lang/String;ILjava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/validation/valueextraction/ValueExtractor$ValueReceiver", "indexedValue", "(Ljava/lang/String;ILjava/lang/Object;)V", true);
 methodVisitor.visitIincInsn(3, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
@@ -70,13 +70,13 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "extractValues", "(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "extractValues", "(Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ListElementExtractor", "extractValues", "(Ljava/util/List;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/bval/jsr/valueextraction/ListElementExtractor", "extractValues", "(Ljava/util/List;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

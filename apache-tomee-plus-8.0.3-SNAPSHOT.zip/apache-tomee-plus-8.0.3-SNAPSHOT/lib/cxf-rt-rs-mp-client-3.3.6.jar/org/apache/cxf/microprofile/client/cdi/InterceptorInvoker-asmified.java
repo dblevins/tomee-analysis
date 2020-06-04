@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "interceptorInsta
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/Interceptor;Ljava/lang/Object;)V", "(Ljavax/enterprise/inject/spi/Interceptor<*>;Ljava/lang/Object;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/inject/spi/Interceptor;Ljava/lang/Object;)V", "(Ljakarta/enterprise/inject/spi/Interceptor<*>;Ljava/lang/Object;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptorInstance", "Ljava/lang/Object;");
@@ -48,15 +48,15 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "invoke", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(0, "invoke", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptor", "Ljavax/enterprise/inject/spi/Interceptor;");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/inject/spi/InterceptionType", "AROUND_INVOKE", "Ljavax/enterprise/inject/spi/InterceptionType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptor", "Ljakarta/enterprise/inject/spi/Interceptor;");
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/inject/spi/InterceptionType", "AROUND_INVOKE", "Ljakarta/enterprise/inject/spi/InterceptionType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "interceptorInstance", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/inject/spi/Interceptor", "intercept", "(Ljavax/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/inject/spi/Interceptor", "intercept", "(Ljakarta/enterprise/inject/spi/InterceptionType;Ljava/lang/Object;Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ActiveMQResourceAdapter$1", null, "java/lang/Thread", null);
 
-classWriter.visitOuterClass("org/apache/activemq/ra/ActiveMQResourceAdapter", "start", "(Ljavax/resource/spi/BootstrapContext;)V");
+classWriter.visitOuterClass("org/apache/activemq/ra/ActiveMQResourceAdapter", "start", "(Ljakarta/resource/spi/BootstrapContext;)V");
 
 classWriter.visitInnerClass("org/apache/activemq/ra/ActiveMQResourceAdapter$1", null, null, 0);
 

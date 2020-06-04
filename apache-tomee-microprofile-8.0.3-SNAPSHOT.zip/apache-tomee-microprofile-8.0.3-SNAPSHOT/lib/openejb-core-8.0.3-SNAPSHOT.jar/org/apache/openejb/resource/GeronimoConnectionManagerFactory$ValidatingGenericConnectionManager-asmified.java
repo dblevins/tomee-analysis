@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "pool", "Ljava/la
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/openejb/resource/AutoConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;J)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/openejb/resource/AutoConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;J)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -71,7 +71,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 8);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/GenericConnectionManager", "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljavax/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/connector/outbound/GenericConnectionManager", "<init>", "(Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport;Lorg/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport;Lorg/apache/geronimo/connector/outbound/SubjectSource;Lorg/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker;Lorg/apache/geronimo/transaction/manager/RecoverableTransactionManager;Ljakarta/resource/spi/ManagedConnectionFactory;Ljava/lang/String;Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(LLOAD, 9);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager", "validationInterval", "J");
@@ -85,7 +85,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ASTORE, 13);
 Label label6 = new Label();
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "org/apache/openejb/resource/AutoConnectionTracker", "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", "javax/resource/spi/ManagedConnectionFactory", "java/lang/String", "java/lang/ClassLoader", Opcodes.LONG, "org/apache/geronimo/connector/outbound/ConnectionInterceptor", "java/util/concurrent/locks/ReadWriteLock", "org/apache/geronimo/connector/outbound/ConnectionInterceptor"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "org/apache/openejb/resource/AutoConnectionTracker", "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", "jakarta/resource/spi/ManagedConnectionFactory", "java/lang/String", "java/lang/ClassLoader", Opcodes.LONG, "org/apache/geronimo/connector/outbound/ConnectionInterceptor", "java/util/concurrent/locks/ReadWriteLock", "org/apache/geronimo/connector/outbound/ConnectionInterceptor"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 13);
 methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/geronimo/connector/outbound/AbstractSinglePoolConnectionInterceptor");
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -112,7 +112,7 @@ methodVisitor.visitLabel(label1);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "org/apache/openejb/resource/AutoConnectionTracker", "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", "javax/resource/spi/ManagedConnectionFactory", "java/lang/String", "java/lang/ClassLoader", Opcodes.LONG, "org/apache/geronimo/connector/outbound/ConnectionInterceptor", "java/util/concurrent/locks/ReadWriteLock", "org/apache/geronimo/connector/outbound/ConnectionInterceptor"}, 1, new Object[] {"java/lang/ReflectiveOperationException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionSupport", "org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport", "org/apache/geronimo/connector/outbound/SubjectSource", "org/apache/openejb/resource/AutoConnectionTracker", "org/apache/geronimo/transaction/manager/RecoverableTransactionManager", "jakarta/resource/spi/ManagedConnectionFactory", "java/lang/String", "java/lang/ClassLoader", Opcodes.LONG, "org/apache/geronimo/connector/outbound/ConnectionInterceptor", "java/util/concurrent/locks/ReadWriteLock", "org/apache/geronimo/connector/outbound/ConnectionInterceptor"}, 1, new Object[] {"java/lang/ReflectiveOperationException"});
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label3);

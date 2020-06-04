@@ -22,18 +22,18 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/CdiBehavior", null, "java/lang/Object", new String[] { "javax/faces/component/behavior/Behavior", "javax/faces/component/StateHolder" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/cdi/CdiBehavior", null, "java/lang/Object", new String[] { "jakarta/faces/component/behavior/Behavior", "jakarta/faces/component/StateHolder" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "behaviorId", "Ljava/lang/String;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljavax/faces/component/behavior/Behavior;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "delegate", "Ljakarta/faces/component/behavior/Behavior;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/faces/component/behavior/Behavior;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/faces/component/behavior/Behavior;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -42,42 +42,42 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiBehavior", "behaviorId", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljavax/faces/component/behavior/Behavior;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljakarta/faces/component/behavior/Behavior;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "broadcast", "(Ljavax/faces/event/BehaviorEvent;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "broadcast", "(Ljakarta/faces/event/BehaviorEvent;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/event/BehaviorEvent", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiBehavior", "getDelegate", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/component/behavior/Behavior;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/event/BehaviorEvent", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/cdi/CdiBehavior", "getDelegate", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/component/behavior/Behavior;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/component/behavior/Behavior", "broadcast", "(Ljavax/faces/event/BehaviorEvent;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/component/behavior/Behavior", "broadcast", "(Ljakarta/faces/event/BehaviorEvent;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDelegate", "(Ljavax/faces/context/FacesContext;)Ljavax/faces/component/behavior/Behavior;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getDelegate", "(Ljakarta/faces/context/FacesContext;)Ljakarta/faces/component/behavior/Behavior;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljavax/faces/component/behavior/Behavior;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljakarta/faces/component/behavior/Behavior;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getApplication", "()Ljavax/faces/application/Application;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiBehavior", "behaviorId", "Ljava/lang/String;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/application/Application", "createBehavior", "(Ljava/lang/String;)Ljavax/faces/component/behavior/Behavior;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljavax/faces/component/behavior/Behavior;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createBehavior", "(Ljava/lang/String;)Ljakarta/faces/component/behavior/Behavior;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljakarta/faces/component/behavior/Behavior;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljavax/faces/component/behavior/Behavior;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/cdi/CdiBehavior", "delegate", "Ljakarta/faces/component/behavior/Behavior;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -91,7 +91,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljavax/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restoreState", "(Ljakarta/faces/context/FacesContext;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
@@ -108,7 +108,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljavax/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "saveState", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");

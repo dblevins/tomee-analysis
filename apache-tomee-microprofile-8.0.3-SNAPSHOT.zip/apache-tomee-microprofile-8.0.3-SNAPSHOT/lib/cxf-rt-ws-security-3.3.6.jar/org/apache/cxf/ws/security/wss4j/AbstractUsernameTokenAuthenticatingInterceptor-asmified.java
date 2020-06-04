@@ -131,13 +131,13 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/security/UsernameToken", "getNonce", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/security/UsernameToken", "getCreatedTime", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/security/SecurityContext", "getUserPrincipal", "()Ljava/security/Principal;", true);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "doCreateSecurityContext", "(Ljava/security/Principal;Ljavax/security/auth/Subject;)Lorg/apache/cxf/security/SecurityContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "doCreateSecurityContext", "(Ljava/security/Principal;Ljakarta/security/auth/Subject;)Lorg/apache/cxf/security/SecurityContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/security/SecurityContext;"));
@@ -148,7 +148,7 @@ methodVisitor.visitMaxs(6, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doResults", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Lorg/w3c/dom/Element;Lorg/w3c/dom/Element;Lorg/apache/wss4j/dom/handler/WSHandlerResult;Z)V", null, new String[] { "javax/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException", "org/apache/wss4j/common/ext/WSSecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doResults", "(Lorg/apache/cxf/binding/soap/SoapMessage;Ljava/lang/String;Lorg/w3c/dom/Element;Lorg/w3c/dom/Element;Lorg/apache/wss4j/dom/handler/WSHandlerResult;Z)V", null, new String[] { "jakarta/xml/soap/SOAPException", "javax/xml/stream/XMLStreamException", "org/apache/wss4j/common/ext/WSSecurityException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("RECV_RESULTS");
@@ -186,13 +186,13 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doCreateSecurityContext", "(Ljava/security/Principal;Ljavax/security/auth/Subject;)Lorg/apache/cxf/security/SecurityContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doCreateSecurityContext", "(Ljava/security/Principal;Ljakarta/security/auth/Subject;)Lorg/apache/cxf/security/SecurityContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/security/DefaultSecurityContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/DefaultSecurityContext", "<init>", "(Ljava/security/Principal;Ljavax/security/auth/Subject;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/DefaultSecurityContext", "<init>", "(Ljava/security/Principal;Ljakarta/security/auth/Subject;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -225,13 +225,13 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String", "java/lang/String", "org/apache/cxf/message/Message", "javax/security/auth/Subject"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String", "java/lang/String", "org/apache/cxf/message/Message", "jakarta/security/auth/Subject"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitLdcInsn("Failed Authentication : Subject has not been created");
 methodVisitor.visitVarInsn(ASTORE, 9);
@@ -250,11 +250,11 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/security/Principal");
@@ -282,7 +282,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/security/auth/Subject;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/security/auth/Subject;"));
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Class;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
@@ -290,7 +290,7 @@ methodVisitor.visitMaxs(6, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;", null, new String[] { "java/lang/SecurityException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createSubject", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;", null, new String[] { "java/lang/SecurityException" });
 methodVisitor.visitEnd();
 }
 {

@@ -25,12 +25,12 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/jee/bval/DefaultValidatedExecutableTypesType", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlAccessorType;", true);
-annotationVisitor0.visitEnum("value", "Ljavax/xml/bind/annotation/XmlAccessType;", "FIELD");
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlAccessorType;", true);
+annotationVisitor0.visitEnum("value", "Ljakarta/xml/bind/annotation/XmlAccessType;", "FIELD");
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/xml/bind/annotation/XmlType;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/bind/annotation/XmlType;", true);
 annotationVisitor0.visit("name", "default-validated-executable-typesType");
 annotationVisitor0.visit("namespace", "http://jboss.org/xml/ns/javax/validation/configuration");
 {
@@ -41,16 +41,16 @@ annotationVisitor1.visitEnd();
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "executableType", "Ljava/util/List;", "Ljava/util/List<Ljavax/validation/executable/ExecutableType;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "executableType", "Ljava/util/List;", "Ljava/util/List<Ljakarta/validation/executable/ExecutableType;>;", null);
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/XmlElement;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/XmlElement;", true);
 annotationVisitor0.visit("name", "executable-type");
 annotationVisitor0.visit("required", Boolean.TRUE);
 annotationVisitor0.visit("type", Type.getType("Ljava/lang/String;"));
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljakarta/xml/bind/annotation/adapters/XmlJavaTypeAdapter;", true);
 annotationVisitor0.visit("value", Type.getType("Lorg/apache/openejb/jee/bval/Adapter1;"));
 annotationVisitor0.visitEnd();
 }
@@ -66,7 +66,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExecutableType", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/validation/executable/ExecutableType;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExecutableType", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/validation/executable/ExecutableType;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/jee/bval/DefaultValidatedExecutableTypesType", "executableType", "Ljava/util/List;");

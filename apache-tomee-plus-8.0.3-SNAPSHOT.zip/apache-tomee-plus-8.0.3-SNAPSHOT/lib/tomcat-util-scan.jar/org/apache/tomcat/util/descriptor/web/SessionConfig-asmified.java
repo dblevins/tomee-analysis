@@ -57,7 +57,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cookieMaxAge", "Ljava/lang/I
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sessionTrackingModes", "Ljava/util/EnumSet;", "Ljava/util/EnumSet<Ljavax/servlet/SessionTrackingMode;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sessionTrackingModes", "Ljava/util/EnumSet;", "Ljava/util/EnumSet<Ljakarta/servlet/SessionTrackingMode;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -66,7 +66,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/servlet/SessionTrackingMode;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/servlet/SessionTrackingMode;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/EnumSet", "noneOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/descriptor/web/SessionConfig", "sessionTrackingModes", "Ljava/util/EnumSet;");
 methodVisitor.visitInsn(RETURN);
@@ -230,7 +230,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionTrackingModes", "()Ljava/util/EnumSet;", "()Ljava/util/EnumSet<Ljavax/servlet/SessionTrackingMode;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionTrackingModes", "()Ljava/util/EnumSet;", "()Ljava/util/EnumSet<Ljakarta/servlet/SessionTrackingMode;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/web/SessionConfig", "sessionTrackingModes", "Ljava/util/EnumSet;");
@@ -244,7 +244,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/descriptor/web/SessionConfig", "sessionTrackingModes", "Ljava/util/EnumSet;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/servlet/SessionTrackingMode", "valueOf", "(Ljava/lang/String;)Ljavax/servlet/SessionTrackingMode;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/SessionTrackingMode", "valueOf", "(Ljava/lang/String;)Ljakarta/servlet/SessionTrackingMode;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/EnumSet", "add", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

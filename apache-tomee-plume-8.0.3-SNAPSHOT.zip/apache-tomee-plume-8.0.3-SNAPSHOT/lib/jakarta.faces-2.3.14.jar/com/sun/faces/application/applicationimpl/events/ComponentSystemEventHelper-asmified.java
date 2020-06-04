@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/faces/application/applicationimpl/events/Co
 classWriter.visitInnerClass("com/sun/faces/util/Cache$Factory", "com/sun/faces/util/Cache", "Factory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sourceCache", "Lcom/sun/faces/util/Cache;", "Lcom/sun/faces/util/Cache<Ljava/lang/Class<*>;Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sourceCache", "Lcom/sun/faces/util/Cache;", "Lcom/sun/faces/util/Cache<Ljava/lang/Class<*>;Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", "(Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Ljava/lang/Class<*>;)Lcom/sun/faces/application/applicationimpl/events/EventInfo;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/applicationimpl/events/ComponentSystemEventHelper", "sourceCache", "Lcom/sun/faces/util/Cache;");

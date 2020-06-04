@@ -29,12 +29,12 @@ fieldVisitor = classWriter.visitField(0, "bus", "Lorg/apache/cxf/Bus;", null, nu
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/wsdl/xml/WSDLLocator;Lorg/apache/cxf/Bus;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/wsdl/xml/WSDLLocator;Lorg/apache/cxf/Bus;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "<init>", "(Ljava/lang/String;Ljavax/wsdl/xml/WSDLLocator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "<init>", "(Ljava/lang/String;Ljakarta/wsdl/xml/WSDLLocator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl11/ResourceManagerWSDLLocator", "bus", "Lorg/apache/cxf/Bus;");
@@ -52,7 +52,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/CatalogWSDLLocator", "<init>", "(Ljava/lang/String;Lorg/apache/cxf/Bus;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "<init>", "(Ljava/lang/String;Ljavax/wsdl/xml/WSDLLocator;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator", "<init>", "(Ljava/lang/String;Ljakarta/wsdl/xml/WSDLLocator;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/wsdl11/ResourceManagerWSDLLocator", "bus", "Lorg/apache/cxf/Bus;");

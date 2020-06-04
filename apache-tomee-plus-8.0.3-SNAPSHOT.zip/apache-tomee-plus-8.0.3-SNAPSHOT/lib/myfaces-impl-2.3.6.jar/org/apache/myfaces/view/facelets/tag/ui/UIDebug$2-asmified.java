@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/ui/UIDebug$2", "Ljava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/String;>;", "java/util/LinkedHashMap", null);
 
-classWriter.visitOuterClass("org/apache/myfaces/view/facelets/tag/ui/UIDebug", "writeDebugOutput", "(Ljavax/faces/context/FacesContext;)Ljava/lang/String;");
+classWriter.visitOuterClass("org/apache/myfaces/view/facelets/tag/ui/UIDebug", "writeDebugOutput", "(Ljakarta/faces/context/FacesContext;)Ljava/lang/String;");
 
 classWriter.visitInnerClass("org/apache/myfaces/view/facelets/tag/ui/UIDebug$2", null, null, ACC_STATIC);
 

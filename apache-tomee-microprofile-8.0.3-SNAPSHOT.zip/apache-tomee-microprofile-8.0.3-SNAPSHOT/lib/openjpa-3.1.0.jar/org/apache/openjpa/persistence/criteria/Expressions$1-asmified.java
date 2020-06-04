@@ -28,7 +28,7 @@ classWriter.visitOuterClass("org/apache/openjpa/persistence/criteria/Expressions
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/Expressions$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
-classWriter.visitInnerClass("javax/persistence/criteria/CriteriaBuilder$Trimspec", "javax/persistence/criteria/CriteriaBuilder", "Trimspec", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+classWriter.visitInnerClass("jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "jakarta/persistence/criteria/CriteriaBuilder", "Trimspec", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 classWriter.visitInnerClass("org/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor$TraversalStyle", "org/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor", "TraversalStyle", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
@@ -71,14 +71,14 @@ Label label18 = new Label();
 Label label19 = new Label();
 Label label20 = new Label();
 methodVisitor.visitTryCatchBlock(label18, label19, label20, "java/lang/NoSuchFieldError");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "values", "()[Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "values", "()[Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;", false);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitIntInsn(NEWARRAY, T_INT);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$1", "$SwitchMap$javax$persistence$criteria$CriteriaBuilder$Trimspec", "[I");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$1", "$SwitchMap$javax$persistence$criteria$CriteriaBuilder$Trimspec", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "LEADING", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "LEADING", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label1);
@@ -89,8 +89,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$1", "$SwitchMap$javax$persistence$criteria$CriteriaBuilder$Trimspec", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "TRAILING", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "TRAILING", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label4);
@@ -101,8 +101,8 @@ methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/criteria/Expressions$1", "$SwitchMap$javax$persistence$criteria$CriteriaBuilder$Trimspec", "[I");
-methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "BOTH", "Ljavax/persistence/criteria/CriteriaBuilder$Trimspec;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "BOTH", "Ljakarta/persistence/criteria/CriteriaBuilder$Trimspec;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/criteria/CriteriaBuilder$Trimspec", "ordinal", "()I", false);
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitInsn(IASTORE);
 methodVisitor.visitLabel(label7);

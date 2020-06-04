@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/eclipse/persistence/internal/xr/XRServiceFactory$XRPersistenceUnitInfo", null, "java/lang/Object", new String[] { "javax/persistence/spi/PersistenceUnitInfo" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/eclipse/persistence/internal/xr/XRServiceFactory$XRPersistenceUnitInfo", null, "java/lang/Object", new String[] { "jakarta/persistence/spi/PersistenceUnitInfo" });
 
 classWriter.visitInnerClass("org/eclipse/persistence/internal/xr/XRServiceFactory$XRPersistenceUnitInfo", "org/eclipse/persistence/internal/xr/XRServiceFactory", "XRPersistenceUnitInfo", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
 
@@ -43,7 +43,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljakarta/persistence/spi/PersistenceUnitTransactionType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -157,14 +157,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljavax/persistence/spi/ClassTransformer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljakarta/persistence/spi/ClassTransformer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljavax/persistence/SharedCacheMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljakarta/persistence/SharedCacheMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -172,7 +172,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljavax/persistence/ValidationMode;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljakarta/persistence/ValidationMode;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);

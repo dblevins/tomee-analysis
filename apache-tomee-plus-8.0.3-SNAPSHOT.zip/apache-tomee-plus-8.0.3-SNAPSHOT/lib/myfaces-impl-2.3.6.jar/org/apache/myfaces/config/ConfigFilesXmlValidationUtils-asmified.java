@@ -78,14 +78,14 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateFacesConfigFile", "(Ljava/net/URL;Ljavax/faces/context/ExternalContext;Ljava/lang/String;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateFacesConfigFile", "(Ljava/net/URL;Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("http://www.w3.org/2001/XMLSchema");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/validation/SchemaFactory", "newInstance", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/ConfigFilesXmlValidationUtils", "getFacesConfigSchemaFileAsSource", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/ConfigFilesXmlValidationUtils", "getFacesConfigSchemaFileAsSource", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -132,7 +132,7 @@ methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getFacesConfigSchemaFileAsSource", "(Ljavax/faces/context/ExternalContext;Ljava/lang/String;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getFacesConfigSchemaFileAsSource", "(Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)Ljavax/xml/transform/Source;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("1.2");
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -183,7 +183,7 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/io/InputStream"}, 0, null);
@@ -380,13 +380,13 @@ methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateFaceletTagLibFile", "(Ljava/net/URL;Ljavax/faces/context/ExternalContext;Ljava/lang/String;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/parsers/ParserConfigurationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "validateFaceletTagLibFile", "(Ljava/net/URL;Ljakarta/faces/context/ExternalContext;Ljava/lang/String;)V", null, new String[] { "org/xml/sax/SAXException", "java/io/IOException", "javax/xml/parsers/ParserConfigurationException" });
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("http://www.w3.org/2001/XMLSchema");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/validation/SchemaFactory", "newInstance", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/ConfigFilesXmlValidationUtils", "getFaceletSchemaFileAsSource", "(Ljavax/faces/context/ExternalContext;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/config/ConfigFilesXmlValidationUtils", "getFaceletSchemaFileAsSource", "(Ljakarta/faces/context/ExternalContext;)Ljavax/xml/transform/Source;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 Label label0 = new Label();
@@ -433,7 +433,7 @@ methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getFaceletSchemaFileAsSource", "(Ljavax/faces/context/ExternalContext;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getFaceletSchemaFileAsSource", "(Ljakarta/faces/context/ExternalContext;)Ljavax/xml/transform/Source;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitLdcInsn("org/apache/myfaces/resource/web-facelettaglibrary_2_0.xsd");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
@@ -443,7 +443,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("org/apache/myfaces/resource/web-facelettaglibrary_2_0.xsd");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/InputStream"}, 0, null);

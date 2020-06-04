@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "maxDepth", "I", 
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "externalContext", "Ljavax/faces/context/ExternalContext;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "externalContext", "Ljakarta/faces/context/ExternalContext;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "next", "Ljava/lang/String;",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -65,7 +65,7 @@ methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "maxDepth", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "externalContext", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "externalContext", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "extensions", "[Ljava/lang/String;");
@@ -136,9 +136,9 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "stack", "Ljava/util/ArrayDeque;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "externalContext", "Ljavax/faces/context/ExternalContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/faces/application/resource/ResourcePathsIterator", "externalContext", "Ljakarta/faces/context/ExternalContext;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResourcePaths", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/ArrayDeque", "addAll", "(Ljava/util/Collection;)Z", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);

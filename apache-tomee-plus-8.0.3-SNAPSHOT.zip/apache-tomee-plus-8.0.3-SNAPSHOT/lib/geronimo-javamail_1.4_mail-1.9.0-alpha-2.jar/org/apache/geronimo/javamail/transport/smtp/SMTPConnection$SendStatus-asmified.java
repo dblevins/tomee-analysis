@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(0, "status", "I", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(0, "address", "Ljavax/mail/internet/InternetAddress;", null, null);
+fieldVisitor = classWriter.visitField(0, "address", "Ljakarta/mail/internet/InternetAddress;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(0, "reply", "Lorg/apache/geronimo/javamail
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILjavax/mail/internet/InternetAddress;Ljava/lang/String;Lorg/apache/geronimo/javamail/transport/smtp/SMTPReply;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(ILjakarta/mail/internet/InternetAddress;Ljava/lang/String;Lorg/apache/geronimo/javamail/transport/smtp/SMTPReply;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -71,7 +71,7 @@ methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "status", "I");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "reply", "Lorg/apache/geronimo/javamail/transport/smtp/SMTPReply;");
@@ -89,10 +89,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAddress", "()Ljavax/mail/internet/InternetAddress;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAddress", "()Ljakarta/mail/internet/InternetAddress;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -116,7 +116,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getException", "(Z)Ljavax/mail/MessagingException;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getException", "(Z)Ljakarta/mail/MessagingException;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "status", "I");
@@ -125,7 +125,7 @@ methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressFailedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "cmd", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -134,7 +134,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/trans
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "reply", "Lorg/apache/geronimo/javamail/transport/smtp/SMTPReply;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/transport/smtp/SMTPReply", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressFailedException", "<init>", "(Ljavax/mail/internet/InternetAddress;Ljava/lang/String;ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressFailedException", "<init>", "(Ljakarta/mail/internet/InternetAddress;Ljava/lang/String;ILjava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ILOAD, 1);
@@ -143,7 +143,7 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressSucceededException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljavax/mail/internet/InternetAddress;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "address", "Ljakarta/mail/internet/InternetAddress;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "cmd", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -152,7 +152,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/trans
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus", "reply", "Lorg/apache/geronimo/javamail/transport/smtp/SMTPReply;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/transport/smtp/SMTPReply", "getMessage", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressSucceededException", "<init>", "(Ljavax/mail/internet/InternetAddress;Ljava/lang/String;ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/transport/smtp/SMTPAddressSucceededException", "<init>", "(Ljakarta/mail/internet/InternetAddress;Ljava/lang/String;ILjava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ACONST_NULL);

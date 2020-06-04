@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/config/ConfigImpl", null, "java/lang/Object", new String[] { "org/eclipse/microprofile/config/Config", "java/lang/AutoCloseable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Typed;", true);
 annotationVisitor0.visitEnd();
 }
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Vetoed;", true);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/enterprise/inject/Vetoed;", true);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/apache/geronimo/config/DefaultConfigBuilder$PrioritisedConverter", "org/apache/geronimo/config/DefaultConfigBuilder", "PrioritisedConverter", ACC_STATIC);
@@ -636,18 +636,18 @@ methodVisitor.visitIntInsn(BIPUSH, 100);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/annotation/Priority;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/annotation/Priority;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/annotation/Priority");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/annotation/Priority");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/annotation/Priority", "value", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/annotation/Priority", "value", "()I", true);
 methodVisitor.visitVarInsn(ISTORE, 2);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "javax/annotation/Priority"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "jakarta/annotation/Priority"}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 4);

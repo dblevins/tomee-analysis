@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSMutableEntry", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/cache/processor/MutableEntry<TK;TV;>;", "java/lang/Object", new String[] { "javax/cache/processor/MutableEntry" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/JCSMutableEntry", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/cache/processor/MutableEntry<TK;TV;>;", "java/lang/Object", new String[] { "jakarta/cache/processor/MutableEntry" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cache", "Ljavax/cache/Cache;", "Ljavax/cache/Cache<TK;TV;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cache", "Ljakarta/cache/Cache;", "Ljakarta/cache/Cache<TK;TV;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,13 +33,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "key", "Ljava/lan
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/cache/Cache;Ljava/lang/Object;)V", "(Ljavax/cache/Cache<TK;TV;>;TK;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/cache/Cache;Ljava/lang/Object;)V", "(Ljakarta/cache/Cache<TK;TV;>;TK;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljavax/cache/Cache;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljakarta/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "key", "Ljava/lang/Object;");
@@ -51,10 +51,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "exists", "()Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljavax/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljakarta/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "key", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "containsKey", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "containsKey", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
@@ -63,10 +63,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljavax/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljakarta/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "key", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "remove", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "remove", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -76,11 +76,11 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValue", "(Ljava/lang/Object;)V", "(TV;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljavax/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljakarta/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "key", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
@@ -98,10 +98,10 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValue", "()Ljava/lang/Object;", "()TV;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljavax/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "cache", "Ljakarta/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSMutableEntry", "key", "Ljava/lang/Object;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

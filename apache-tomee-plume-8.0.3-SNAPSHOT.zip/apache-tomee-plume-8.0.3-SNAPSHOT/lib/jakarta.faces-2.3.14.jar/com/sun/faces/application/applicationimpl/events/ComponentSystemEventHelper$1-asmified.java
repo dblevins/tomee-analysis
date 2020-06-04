@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/applicationimpl/events/ComponentSystemEventHelper$1", "Ljava/lang/Object;Lcom/sun/faces/util/Cache$Factory<Ljava/lang/Class<*>;Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;>;", "java/lang/Object", new String[] { "com/sun/faces/util/Cache$Factory" });
+classWriter.visit(V1_8, ACC_SUPER, "com/sun/faces/application/applicationimpl/events/ComponentSystemEventHelper$1", "Ljava/lang/Object;Lcom/sun/faces/util/Cache$Factory<Ljava/lang/Class<*>;Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;>;", "java/lang/Object", new String[] { "com/sun/faces/util/Cache$Factory" });
 
 classWriter.visitOuterClass("com/sun/faces/application/applicationimpl/events/ComponentSystemEventHelper", "<init>", "()V");
 
@@ -49,7 +49,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljava/lang/Class;)Lcom/sun/faces/util/Cache;", "(Ljava/lang/Class<*>;)Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljavax/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;", new String[] { "java/lang/InterruptedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljava/lang/Class;)Lcom/sun/faces/util/Cache;", "(Ljava/lang/Class<*>;)Lcom/sun/faces/util/Cache<Ljava/lang/Class<+Ljakarta/faces/event/SystemEvent;>;Lcom/sun/faces/application/applicationimpl/events/EventInfo;>;", new String[] { "java/lang/InterruptedException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/applicationimpl/events/ComponentSystemEventHelper$1$1");
 methodVisitor.visitInsn(DUP);

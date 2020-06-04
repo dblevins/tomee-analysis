@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/MPRestClientInvocationContextImpl", null, "java/lang/Object", new String[] { "javax/interceptor/InvocationContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/microprofile/client/cdi/MPRestClientInvocationContextImpl", null, "java/lang/Object", new String[] { "jakarta/interceptor/InvocationContext" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "target", "Ljava/lang/Object;", null, null);
@@ -137,7 +137,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/microprofile/client/cdi/M
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "invoke", "(Ljavax/interceptor/InvocationContext;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/microprofile/client/cdi/InterceptorInvoker", "invoke", "(Ljakarta/interceptor/InvocationContext;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 0);

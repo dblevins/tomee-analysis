@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "jmxExecute", "(Ljavax/management/MBeanServerConnection;)Ljava/lang/String;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "jmxExecute", "(Ljakarta/management/MBeanServerConnection;)Ljava/lang/String;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ant/jmx/JMXAccessorUnregisterTask", "getName", "()Ljava/lang/String;", false);
@@ -51,13 +51,13 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ant/jmx/JMXAccessorUnregisterTask", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ant/jmx/JMXAccessorUnregisterTask", "jmxUuregister", "(Ljavax/management/MBeanServerConnection;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ant/jmx/JMXAccessorUnregisterTask", "jmxUuregister", "(Ljakarta/management/MBeanServerConnection;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "jmxUuregister", "(Ljavax/management/MBeanServerConnection;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "jmxUuregister", "(Ljakarta/management/MBeanServerConnection;Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -78,11 +78,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ant/jmx/JMXAcc
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServerConnection", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServerConnection", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);

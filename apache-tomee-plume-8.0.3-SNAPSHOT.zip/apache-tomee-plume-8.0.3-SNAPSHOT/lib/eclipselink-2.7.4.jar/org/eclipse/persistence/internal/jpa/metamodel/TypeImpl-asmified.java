@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/TypeImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/persistence/metamodel/Type<TX;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "javax/persistence/metamodel/Type", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/eclipse/persistence/internal/jpa/metamodel/TypeImpl", "<X:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/persistence/metamodel/Type<TX;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "jakarta/persistence/metamodel/Type", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "javaClass", "Ljava/lang/Class;", "Ljava/lang/Class<TX;>;", null);

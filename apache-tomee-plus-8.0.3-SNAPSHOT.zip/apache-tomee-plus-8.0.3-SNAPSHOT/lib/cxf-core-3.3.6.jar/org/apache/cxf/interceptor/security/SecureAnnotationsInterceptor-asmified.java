@@ -31,7 +31,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_ANNOTATION_CLASS_NAME", "Ljava/lang/String;", null, "javax.annotation.security.RolesAllowed");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEFAULT_ANNOTATION_CLASS_NAME", "Ljava/lang/String;", null, "jakarta.annotation.security.RolesAllowed");
 fieldVisitor.visitEnd();
 }
 {
@@ -59,7 +59,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/security/SimpleAuthorizingInterceptor", "<init>", "(Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.annotation.security.RolesAllowed");
+methodVisitor.visitLdcInsn("jakarta.annotation.security.RolesAllowed");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/interceptor/security/SecureAnnotationsInterceptor", "annotationClassName", "Ljava/lang/String;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);

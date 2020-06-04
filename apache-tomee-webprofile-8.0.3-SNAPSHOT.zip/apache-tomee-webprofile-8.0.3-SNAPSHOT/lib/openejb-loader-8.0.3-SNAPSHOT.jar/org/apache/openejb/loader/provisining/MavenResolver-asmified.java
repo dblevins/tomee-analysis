@@ -367,7 +367,7 @@ methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitLdcInsn("//settings/localRepository/text()");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "getDocumentElement", "()Lorg/w3c/dom/Element;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label5);

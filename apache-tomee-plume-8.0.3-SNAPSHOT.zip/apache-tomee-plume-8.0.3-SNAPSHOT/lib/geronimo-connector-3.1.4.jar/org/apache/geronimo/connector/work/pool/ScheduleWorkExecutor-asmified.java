@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doExecute", "(Lorg/apache/geronimo/connector/work/WorkerContext;Ljava/util/concurrent/Executor;)V", null, new String[] { "javax/resource/spi/work/WorkException", "java/lang/InterruptedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doExecute", "(Lorg/apache/geronimo/connector/work/WorkerContext;Ljava/util/concurrent/Executor;)V", null, new String[] { "jakarta/resource/spi/work/WorkException", "java/lang/InterruptedException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/connector/work/pool/NamedRunnable");

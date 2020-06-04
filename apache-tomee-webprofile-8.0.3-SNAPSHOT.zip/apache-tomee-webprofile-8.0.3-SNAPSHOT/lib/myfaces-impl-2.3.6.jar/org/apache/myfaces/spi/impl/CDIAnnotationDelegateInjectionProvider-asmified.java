@@ -33,7 +33,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "available", "Z",
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/context/ExternalContext;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/faces/context/ExternalContext;)V", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -42,7 +42,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/spi/InjectionProvider", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljavax/faces/context/ExternalContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/util/ExternalSpecifications", "isCDIAvailable", "(Ljakarta/faces/context/ExternalContext;)Z", false);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitLabel(label0);
@@ -55,7 +55,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/context/ExternalContext;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/faces/context/ExternalContext;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", false);
 methodVisitor.visitInsn(ICONST_1);
@@ -70,7 +70,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/impl/CDIAnnotatio
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", "javax/faces/context/ExternalContext"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", "jakarta/faces/context/ExternalContext"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -86,7 +86,7 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider"});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", "javax/faces/context/ExternalContext"}, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", "jakarta/faces/context/ExternalContext"}, 2, new Object[] {"org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", Opcodes.INTEGER});
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider", "available", "Z");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 3);

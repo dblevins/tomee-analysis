@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/push/EndpointImpl$1", "Ljavax/enterprise/util/AnnotationLiteral<Ljavax/faces/event/WebsocketEvent$Opened;>;", "javax/enterprise/util/AnnotationLiteral", null);
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/myfaces/push/EndpointImpl$1", "Ljakarta/enterprise/util/AnnotationLiteral<Ljakarta/faces/event/WebsocketEvent$Opened;>;", "jakarta/enterprise/util/AnnotationLiteral", null);
 
 classWriter.visitOuterClass("org/apache/myfaces/push/EndpointImpl", null, null);
 
 classWriter.visitInnerClass("org/apache/myfaces/push/EndpointImpl$1", null, null, ACC_STATIC);
 
-classWriter.visitInnerClass("javax/faces/event/WebsocketEvent$Opened", "javax/faces/event/WebsocketEvent", "Opened", ACC_PUBLIC | ACC_STATIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("jakarta/faces/event/WebsocketEvent$Opened", "jakarta/faces/event/WebsocketEvent", "Opened", ACC_PUBLIC | ACC_STATIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(2789324L));
@@ -38,7 +38,7 @@ fieldVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/util/AnnotationLiteral", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljavax/management/MBeanFeatureInfo;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator", "Ljava/lang/Object;Ljava/util/Comparator<Ljakarta/management/MBeanFeatureInfo;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
 classWriter.visitInnerClass("org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator", "org/apache/openejb/monitoring/ManagedMBean", "MBeanFeatureInfoComparator", ACC_PRIVATE | ACC_STATIC);
 
@@ -40,12 +40,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljavax/management/MBeanFeatureInfo;Ljavax/management/MBeanFeatureInfo;)I", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljakarta/management/MBeanFeatureInfo;Ljakarta/management/MBeanFeatureInfo;)I", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/MBeanFeatureInfo", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/MBeanFeatureInfo", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/MBeanFeatureInfo", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/MBeanFeatureInfo", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "compareTo", "(Ljava/lang/String;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 3);
@@ -56,10 +56,10 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC,
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanFeatureInfo");
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanFeatureInfo");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanFeatureInfo");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator", "compare", "(Ljavax/management/MBeanFeatureInfo;Ljavax/management/MBeanFeatureInfo;)I", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanFeatureInfo");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator", "compare", "(Ljakarta/management/MBeanFeatureInfo;Ljakarta/management/MBeanFeatureInfo;)I", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();

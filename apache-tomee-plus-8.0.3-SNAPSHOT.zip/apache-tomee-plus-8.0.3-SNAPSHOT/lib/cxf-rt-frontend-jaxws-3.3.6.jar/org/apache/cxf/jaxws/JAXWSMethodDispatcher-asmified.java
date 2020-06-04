@@ -101,7 +101,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getRet
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
-methodVisitor.visitLdcInsn(Type.getType("Ljavax/xml/ws/Response;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljakarta/xml/ws/Response;"));
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getReturnType", "()Ljava/lang/Class;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
