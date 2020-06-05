@@ -1,9 +1,7 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT.zip
 
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/java-support-7.3.0.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/java-support-7.3.0.jar] - 12
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-saml-api-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-saml-api-3.3.1.jar] - 7
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-saml-impl-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-saml-impl-3.3.1.jar] - 7
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-soap-api-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-soap-api-3.3.1.jar] - 5
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-core-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-core-3.3.1.jar] - 5
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-xmlsec-api-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-xmlsec-api-3.3.1.jar] - 2
- - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-profile-api-3.3.1.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-profile-api-3.3.1.jar] - 1
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/javaee-api-8.0-4.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/javaee-api-8.0-4.jar] - 1111
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/openejb-core-8.0.3-SNAPSHOT.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/openejb-core-8.0.3-SNAPSHOT.jar] - 473
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/catalina.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/catalina.jar] - 119
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar] - 35
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT/lib/activemq-client-5.15.12.jar/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT/lib/activemq-client-5.15.12.jar] - 9

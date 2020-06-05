@@ -1,7 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/opensaml-soap-api-3.3.1.jar
 
- - link:org/opensaml/soap/client/SOAPClient.adoc[org/opensaml/soap/client/SOAPClient.class] - 1
- - link:org/opensaml/soap/client/http/AbstractPipelineHttpSOAPClient.adoc[org/opensaml/soap/client/http/AbstractPipelineHttpSOAPClient.class] - 1
- - link:org/opensaml/soap/client/http/HttpSOAPClient.adoc[org/opensaml/soap/client/http/HttpSOAPClient.class] - 1
- - link:org/opensaml/soap/client/http/HttpSOAPRequestParameters.adoc[org/opensaml/soap/client/http/HttpSOAPRequestParameters.class] - 1
- - link:org/opensaml/soap/client/http/PipelineFactoryHttpSOAPClient.adoc[org/opensaml/soap/client/http/PipelineFactoryHttpSOAPClient.class] - 1

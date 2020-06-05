@@ -1,7 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/opensaml-core-3.3.1.jar
 
- - link:org/opensaml/core/xml/persist/FilesystemLoadSaveManager.adoc[org/opensaml/core/xml/persist/FilesystemLoadSaveManager.class] - 1
- - link:org/opensaml/core/xml/persist/MapLoadSaveManager.adoc[org/opensaml/core/xml/persist/MapLoadSaveManager.class] - 1
- - link:org/opensaml/core/xml/util/AttributeMap.adoc[org/opensaml/core/xml/util/AttributeMap.class] - 1
- - link:org/opensaml/core/xml/util/IDIndex.adoc[org/opensaml/core/xml/util/IDIndex.class] - 1
- - link:org/opensaml/core/xml/util/IndexedXMLObjectChildrenList.adoc[org/opensaml/core/xml/util/IndexedXMLObjectChildrenList.class] - 1

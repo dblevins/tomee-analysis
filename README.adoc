@@ -1,5 +1,6 @@
 = Analysis
 
- - link:apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT.zip] - 39
- - link:apache-tomee-plume-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plume-8.0.3-SNAPSHOT.zip] - 39
- - link:apache-tomee-plus-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT.zip] - 39
+ - link:apache-tomee-plume-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plume-8.0.3-SNAPSHOT.zip] - 1747
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT.zip] - 1747
+ - link:apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT.zip] - 1738
+ - link:apache-tomee-webprofile-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-webprofile-8.0.3-SNAPSHOT.zip] - 1703

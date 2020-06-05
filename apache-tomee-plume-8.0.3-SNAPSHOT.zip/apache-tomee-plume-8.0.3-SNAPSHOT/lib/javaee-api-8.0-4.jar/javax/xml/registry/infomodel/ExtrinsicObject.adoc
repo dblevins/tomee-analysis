@@ -5,5 +5,4 @@
 == References
 
  - javax.xml.registry.JAXRException - 6
- - javax.activation.DataHandler - 2
  - javax.xml.registry.infomodel.RegistryEntry - 1

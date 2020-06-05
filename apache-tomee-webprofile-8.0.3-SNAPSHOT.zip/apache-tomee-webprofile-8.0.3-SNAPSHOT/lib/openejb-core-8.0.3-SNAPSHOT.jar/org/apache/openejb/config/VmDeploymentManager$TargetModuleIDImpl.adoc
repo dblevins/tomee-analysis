@@ -4,3 +4,5 @@
 
 == References
 
+ - javax.enterprise.deploy.spi.Target - 16
+ - javax.enterprise.deploy.spi.TargetModuleID - 9

@@ -1,3 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-profile-api-3.3.1.jar
 
- - link:org/opensaml/profile/context/ProfileRequestContext.adoc[org/opensaml/profile/context/ProfileRequestContext.class] - 1

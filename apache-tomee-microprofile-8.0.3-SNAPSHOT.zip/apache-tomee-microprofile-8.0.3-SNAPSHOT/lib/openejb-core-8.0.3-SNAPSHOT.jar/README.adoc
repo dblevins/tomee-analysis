@@ -1,2 +1,21 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-core-8.0.3-SNAPSHOT.jar
 
+ - link:org/apache/openejb/config/OpenEJBDeploymentManager.adoc[org/apache/openejb/config/OpenEJBDeploymentManager.class] - 131
+ - link:org/apache/openejb/config/VmDeploymentManager.adoc[org/apache/openejb/config/VmDeploymentManager.class] - 128
+ - link:org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl.adoc[org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl.class] - 42
+ - link:org/apache/openejb/config/OpenEJBDeploymentManager$ProgressObjectImpl.adoc[org/apache/openejb/config/OpenEJBDeploymentManager$ProgressObjectImpl.class] - 41
+ - link:org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl.adoc[org/apache/openejb/config/OpenEJBDeploymentManager$TargetModuleIDImpl.class] - 25
+ - link:org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl.adoc[org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl.class] - 25
+ - link:org/apache/openejb/config/VmDeploymentManager$TargetModuleIDImpl.adoc[org/apache/openejb/config/VmDeploymentManager$TargetModuleIDImpl.class] - 25
+ - link:org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl.adoc[org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl.class] - 25
+ - link:org/apache/openejb/config/VmDeploymentFactory.adoc[org/apache/openejb/config/VmDeploymentFactory.class] - 7
+ - link:org/apache/openejb/core/stateless/StatelessContainer.adoc[org/apache/openejb/core/stateless/StatelessContainer.class] - 5
+ - link:org/apache/openejb/core/singleton/SingletonContainer.adoc[org/apache/openejb/core/singleton/SingletonContainer.class] - 5
+ - link:org/apache/openejb/core/BaseSessionContext.adoc[org/apache/openejb/core/BaseSessionContext.class] - 4
+ - link:org/apache/openejb/core/interceptor/JaxRpcInvocationContext.adoc[org/apache/openejb/core/interceptor/JaxRpcInvocationContext.class] - 2
+ - link:org/apache/openejb/core/interceptor/InterceptorStack.adoc[org/apache/openejb/core/interceptor/InterceptorStack.class] - 2
+ - link:org/apache/openejb/mgmt/MEJBBean.adoc[org/apache/openejb/mgmt/MEJBBean.class] - 2
+ - link:org/apache/openejb/config/VmDeploymentManager$TargetImpl.adoc[org/apache/openejb/config/VmDeploymentManager$TargetImpl.class] - 1
+ - link:org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl.adoc[org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl.class] - 1
+ - link:org/apache/openejb/core/managed/ManagedContext.adoc[org/apache/openejb/core/managed/ManagedContext.class] - 1
+ - link:org/apache/openejb/core/stateful/StatefulContext.adoc[org/apache/openejb/core/stateful/StatefulContext.class] - 1

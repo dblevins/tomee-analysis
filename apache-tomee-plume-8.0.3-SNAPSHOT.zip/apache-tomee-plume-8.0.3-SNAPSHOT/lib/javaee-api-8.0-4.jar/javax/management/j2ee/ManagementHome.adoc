@@ -4,6 +4,4 @@
 
 == References
 
- - javax.ejb.EJBHome - 1
- - javax.ejb.CreateException - 1
  - javax.management.j2ee.Management - 1

@@ -23,7 +23,6 @@
  - javax.xml.registry.infomodel.Service - 2
  - javax.xml.registry.infomodel.ExtrinsicObject - 1
  - javax.xml.registry.infomodel.User - 1
- - javax.activation.DataHandler - 1
  - javax.xml.registry.infomodel.Key - 1
  - javax.xml.registry.infomodel.TelephoneNumber - 1
  - javax.xml.registry.infomodel.ServiceBinding - 1

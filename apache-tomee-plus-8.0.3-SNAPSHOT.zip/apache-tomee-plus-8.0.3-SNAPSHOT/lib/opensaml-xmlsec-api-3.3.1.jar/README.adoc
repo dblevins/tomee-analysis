@@ -1,4 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-xmlsec-api-3.3.1.jar
 
- - link:org/opensaml/xmlsec/signature/support/SignatureValidationProvider.adoc[org/opensaml/xmlsec/signature/support/SignatureValidationProvider.class] - 1
- - link:org/opensaml/xmlsec/signature/support/SignerProvider.adoc[org/opensaml/xmlsec/signature/support/SignerProvider.class] - 1

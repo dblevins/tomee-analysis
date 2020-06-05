@@ -4,4 +4,3 @@
 
 == References
 
- - javax.annotation.concurrent.NotThreadSafe - 1

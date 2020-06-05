@@ -1,9 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/opensaml-saml-api-3.3.1.jar
 
- - link:org/opensaml/saml/common/AbstractSAMLObjectUnmarshaller.adoc[org/opensaml/saml/common/AbstractSAMLObjectUnmarshaller.class] - 1
- - link:org/opensaml/saml/common/assertion/ValidationContext.adoc[org/opensaml/saml/common/assertion/ValidationContext.class] - 1
- - link:org/opensaml/saml/common/assertion/ValidationResult.adoc[org/opensaml/saml/common/assertion/ValidationResult.class] - 1
- - link:org/opensaml/saml/common/xml/SAMLSchemaBuilder.adoc[org/opensaml/saml/common/xml/SAMLSchemaBuilder.class] - 1
- - link:org/opensaml/saml/saml2/assertion/ConditionValidator.adoc[org/opensaml/saml/saml2/assertion/ConditionValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/StatementValidator.adoc[org/opensaml/saml/saml2/assertion/StatementValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/SubjectConfirmationValidator.adoc[org/opensaml/saml/saml2/assertion/SubjectConfirmationValidator.class] - 1

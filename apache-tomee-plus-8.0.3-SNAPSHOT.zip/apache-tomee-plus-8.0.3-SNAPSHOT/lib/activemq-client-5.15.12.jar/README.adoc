@@ -1,2 +1,6 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/activemq-client-5.15.12.jar
 
+ - link:org/apache/activemq/management/StatsImpl.adoc[org/apache/activemq/management/StatsImpl.class] - 6
+ - link:org/apache/activemq/management/CountStatisticImpl.adoc[org/apache/activemq/management/CountStatisticImpl.class] - 1
+ - link:org/apache/activemq/management/PollCountStatisticImpl.adoc[org/apache/activemq/management/PollCountStatisticImpl.class] - 1
+ - link:org/apache/activemq/management/StatisticImpl.adoc[org/apache/activemq/management/StatisticImpl.class] - 1

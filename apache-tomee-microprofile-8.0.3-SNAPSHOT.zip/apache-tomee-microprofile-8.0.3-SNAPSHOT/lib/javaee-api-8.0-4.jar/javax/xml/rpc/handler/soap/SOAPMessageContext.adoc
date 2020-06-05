@@ -4,5 +4,4 @@
 
 == References
 
- - javax.xml.soap.SOAPMessage - 2
  - javax.xml.rpc.handler.MessageContext - 1

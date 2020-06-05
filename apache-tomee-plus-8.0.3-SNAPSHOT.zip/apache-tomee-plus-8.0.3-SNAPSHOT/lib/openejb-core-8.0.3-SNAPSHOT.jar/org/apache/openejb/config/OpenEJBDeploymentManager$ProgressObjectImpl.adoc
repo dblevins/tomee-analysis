@@ -4,3 +4,11 @@
 
 == References
 
+ - javax.enterprise.deploy.spi.status.DeploymentStatus - 9
+ - javax.enterprise.deploy.spi.status.ProgressEvent - 9
+ - javax.enterprise.deploy.spi.TargetModuleID - 8
+ - javax.enterprise.deploy.spi.exceptions.OperationUnsupportedException - 6
+ - javax.enterprise.deploy.shared.CommandType - 4
+ - javax.enterprise.deploy.spi.status.ProgressListener - 3
+ - javax.enterprise.deploy.spi.status.ProgressObject - 1
+ - javax.enterprise.deploy.spi.status.ClientConfiguration - 1

@@ -1,9 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/opensaml-saml-impl-3.3.1.jar
 
- - link:org/opensaml/saml/saml2/assertion/impl/AbstractSubjectConfirmationValidator.adoc[org/opensaml/saml/saml2/assertion/impl/AbstractSubjectConfirmationValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/AudienceRestrictionConditionValidator.adoc[org/opensaml/saml/saml2/assertion/impl/AudienceRestrictionConditionValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/BearerSubjectConfirmationValidator.adoc[org/opensaml/saml/saml2/assertion/impl/BearerSubjectConfirmationValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/DelegationRestrictionConditionValidator.adoc[org/opensaml/saml/saml2/assertion/impl/DelegationRestrictionConditionValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/HolderOfKeySubjectConfirmationValidator.adoc[org/opensaml/saml/saml2/assertion/impl/HolderOfKeySubjectConfirmationValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/OneTimeUseConditionValidator.adoc[org/opensaml/saml/saml2/assertion/impl/OneTimeUseConditionValidator.class] - 1
- - link:org/opensaml/saml/saml2/assertion/impl/SenderVouchersSubjectConfirmationValidator.adoc[org/opensaml/saml/saml2/assertion/impl/SenderVouchersSubjectConfirmationValidator.class] - 1

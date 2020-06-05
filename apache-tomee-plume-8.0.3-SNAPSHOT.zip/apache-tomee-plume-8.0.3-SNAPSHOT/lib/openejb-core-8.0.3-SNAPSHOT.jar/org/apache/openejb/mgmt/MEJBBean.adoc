@@ -4,3 +4,5 @@
 
 == References
 
+ - javax.management.j2ee.ListenerRegistration - 1
+ - javax.management.j2ee.ManagementHome - 1

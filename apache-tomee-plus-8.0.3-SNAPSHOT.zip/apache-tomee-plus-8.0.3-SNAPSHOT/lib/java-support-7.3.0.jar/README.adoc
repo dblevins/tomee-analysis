@@ -1,14 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/java-support-7.3.0.jar
 
- - link:net/shibboleth/utilities/java/support/collection/ClassToInstanceMultiMap.adoc[net/shibboleth/utilities/java/support/collection/ClassToInstanceMultiMap.class] - 1
- - link:net/shibboleth/utilities/java/support/collection/IndexingObjectStore.adoc[net/shibboleth/utilities/java/support/collection/IndexingObjectStore.class] - 1
- - link:net/shibboleth/utilities/java/support/collection/LazyList.adoc[net/shibboleth/utilities/java/support/collection/LazyList.class] - 1
- - link:net/shibboleth/utilities/java/support/collection/LazyMap.adoc[net/shibboleth/utilities/java/support/collection/LazyMap.class] - 1
- - link:net/shibboleth/utilities/java/support/collection/LazySet.adoc[net/shibboleth/utilities/java/support/collection/LazySet.class] - 1
- - link:net/shibboleth/utilities/java/support/logic/TransformAndCheckFunction.adoc[net/shibboleth/utilities/java/support/logic/TransformAndCheckFunction.class] - 1
- - link:net/shibboleth/utilities/java/support/logic/TrimOrNullStringFunction.adoc[net/shibboleth/utilities/java/support/logic/TrimOrNullStringFunction.class] - 1
- - link:net/shibboleth/utilities/java/support/security/AccessControlService.adoc[net/shibboleth/utilities/java/support/security/AccessControlService.class] - 1
- - link:net/shibboleth/utilities/java/support/security/Type4UUIDIdentifierGenerationStrategy.adoc[net/shibboleth/utilities/java/support/security/Type4UUIDIdentifierGenerationStrategy.class] - 1
- - link:net/shibboleth/utilities/java/support/xml/BasicParserPool.adoc[net/shibboleth/utilities/java/support/xml/BasicParserPool.class] - 1
- - link:net/shibboleth/utilities/java/support/xml/SchemaBuilder.adoc[net/shibboleth/utilities/java/support/xml/SchemaBuilder.class] - 1
- - link:net/shibboleth/utilities/java/support/xml/SimpleNamespaceContext.adoc[net/shibboleth/utilities/java/support/xml/SimpleNamespaceContext.class] - 1
